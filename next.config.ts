@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  turbopack: {
+    root: "/Users/joeyq/Desktop/trumpfiles.fun-warp", // absolute path
+  },
+  experimental: {
+    allowDevelopmentBuild: true,
+  },
 };
 
 export default nextConfig;
