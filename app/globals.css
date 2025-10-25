@@ -6,7 +6,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-epilogue);
+  --font-heading: var(--font-arctic-guardian);
+  --font-arctic-3d: var(--font-arctic-3d);
+  --font-arctic-grad: var(--font-arctic-grad);
+  --font-arctic-laser: var(--font-arctic-laser);
+  --font-arctic-half: var(--font-arctic-half);
+  --font-arctic-twotone: var(--font-arctic-twotone);
+  --font-arctic-left: var(--font-arctic-left);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -85,14 +92,56 @@ html {
   color-scheme: dark;
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+
+/* Typography System */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-arctic-guardian);
+  font-weight: 400;
 }
+
+body {
+  font-family: var(--font-epilogue);
+}
+
+/* Paragraph text - Epilogue */
+p, .text-body {
+  font-family: var(--font-epilogue);
+  font-weight: 400;
+}
+
+/* Arctic Guardian Variant Utilities */
+@utility font-arctic-3d {
+  font-family: var(--font-arctic-3d);
+}
+
+@utility font-arctic-grad {
+  font-family: var(--font-arctic-grad);
+}
+
+@utility font-arctic-laser {
+  font-family: var(--font-arctic-laser);
+}
+
+@utility font-arctic-half {
+  font-family: var(--font-arctic-half);
+}
+
+@utility font-arctic-twotone {
+  font-family: var(--font-arctic-twotone);
+}
+
+@utility font-arctic-left {
+  font-family: var(--font-arctic-left);
+}
+
+@utility font-heading {
+  font-family: var(--font-arctic-guardian);
+}
+
+@utility font-sans {
+  font-family: var(--font-epilogue);
+}
+  
 
 /* Custom styles */
 .glass-card {
