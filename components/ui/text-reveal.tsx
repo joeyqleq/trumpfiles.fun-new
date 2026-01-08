@@ -25,20 +25,20 @@ export const TextReveal: FC<TextRevealProps> = ({ children, className }) => {
     <div
       ref={targetRef}
       className={cn("relative z-0 h-[200vh]", className)}
-      data-oid="fbx:c5m"
+      data-oid="jhjzmgu"
     >
       <div
         className={
           "sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-[1rem] py-[5rem]"
         }
-        data-oid="yo2_z0f"
+        data-oid="yz._.b:"
       >
         <span
           ref={targetRef}
           className={
             "flex flex-wrap p-5 text-2xl font-bold text-black/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl dark:text-white/20"
           }
-          data-oid="12z_hsn"
+          data-oid="wq9sole"
         >
           {words.map((word, i) => {
             const start = i / words.length;
@@ -48,7 +48,7 @@ export const TextReveal: FC<TextRevealProps> = ({ children, className }) => {
                 key={i}
                 progress={scrollYProgress}
                 range={[start, end]}
-                data-oid="6.f8266"
+                data-oid="qy.5_rv"
               >
                 {word}
               </Word>
@@ -69,14 +69,14 @@ interface WordProps {
 const Word: FC<WordProps> = ({ children, progress, range }) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
-    <span className="xl:lg-3 relative mx-1 lg:mx-1.5" data-oid="u6.k5lh">
-      <span className="absolute opacity-30" data-oid="g46yrv5">
+    <span className="xl:lg-3 relative mx-1 lg:mx-1.5" data-oid="frgdrbg">
+      <span className="absolute opacity-30" data-oid="tnmri5w">
         {children}
       </span>
       <motion.span
         style={{ opacity: opacity }}
         className={"text-black dark:text-white"}
-        data-oid="qxajl:3"
+        data-oid="9kii4bx"
       >
         {children}
       </motion.span>

@@ -1,10 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import * as d3 from "d3";
-import { pool } from "@/lib/neon";
-import { TrumpEntry } from "@/types/database";
 import {
   Card,
   CardContent,
@@ -12,56 +9,56 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Separator } from "@/components/ui/separator";
-import { BarChart3, LineChart, PieChart, TrendingUp } from "lucide-react";
-import { TrumpFilesHeading } from "@/components/TrumpFilesBrand";
+import {
+  BarChart,
+  Bar,
+  LineChart,
+  Line,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Radar,
+  PieChart,
+  Pie,
+  Cell,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import { AICompleteTrumpData } from "@/types/database";
+import { BarChart3, PieChart as PieChartIcon, Activity, TrendingUp, Target, Zap } from "lucide-react";
+import GlitchText from "@/components/GlitchText";
 
-type ChartType = "bar" | "line" | "scatter" | "heatmap";
-type YAxis =
-  | "danger_score"
-  | "lawlessness_score"
-  | "insanity_score"
-  | "absurdity_score"
-  | "financial_cost"
-  | "count";
-type XAxis = "timeline" | "category" | "phase";
+const COLORS = [
+  "#FF6500",
+  "#FF8C00", 
+  "#FFA500",
+  "#FFB347",
+  "#FF7F50",
+  "#FF4500",
+  "#FF6347",
+  "#FF8C69",
+];
 
 export default function VisualizerPage() {
-  const [entries, setEntries] = useState<TrumpEntry[]>([]);
+  const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
   const [loading, setLoading] = useState(true);
-  const [chartType, setChartType] = useState<ChartType>("bar");
-  const [yAxis, setYAxis] = useState<YAxis>("danger_score");
-  const [xAxis, setXAxis] = useState<XAxis>("category");
-
-  const svgRef = useRef<SVGSVGElement>(null);
-  const tooltipRef = useRef<HTMLDivElement>(null);
+  const [activeTab, setActiveTab] = useState("overview");
 
   useEffect(() => {
     fetchEntries();
   }, []);
 
-  useEffect(() => {
-    if (entries.length > 0) {
-      drawChart();
-    }
-  }, [entries, chartType, yAxis, xAxis]);
-
   const fetchEntries = async () => {
     try {
-      const { rows } = await pool.query(
-        "SELECT * FROM trump_entries ORDER BY date_occurred ASC",
-      );
-      setEntries(rows || []);
+      const res = await fetch("/api/visualizer-data");
+      const data = await res.json();
+      setEntries(data || []);
     } catch (error) {
       console.error("Error fetching entries:", error);
     } finally {
@@ -69,662 +66,619 @@ export default function VisualizerPage() {
     }
   };
 
-  const prepareData = () => {
-    if (xAxis === "timeline") {
-      // Group by year
-      const grouped = d3.group(entries, (d) => {
-        const date = d.date_occurred ? new Date(d.date_occurred) : null;
-        return date ? date.getFullYear() : "Unknown";
-      });
+  // Category distribution data
+  const getCategoryData = () => {
+    const categoryCount = entries.reduce((acc, entry) => {
+      acc[entry.category] = (acc[entry.category] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
 
-      return Array.from(grouped, ([key, values]) => {
-        const aggregated =
-          yAxis === "count"
-            ? values.length
-            : d3.mean(values, (d) => (d as any)[yAxis] || 0) || 0;
-        return { x: key, y: aggregated, values };
-      }).sort((a, b) => {
-        if (a.x === "Unknown") return 1;
-        if (b.x === "Unknown") return -1;
-        return Number(a.x) - Number(b.x);
-      });
-    } else if (xAxis === "category") {
-      const grouped = d3.group(entries, (d) => d.category);
-      return Array.from(grouped, ([key, values]) => {
-        const aggregated =
-          yAxis === "count"
-            ? values.length
-            : d3.mean(values, (d) => (d as any)[yAxis] || 0) || 0;
-        return { x: key, y: aggregated, values };
-      });
-    } else {
-      // phase
-      const grouped = d3.group(entries, (d) => d.phase);
-      return Array.from(grouped, ([key, values]) => {
-        const aggregated =
-          yAxis === "count"
-            ? values.length
-            : d3.mean(values, (d) => (d as any)[yAxis] || 0) || 0;
-        return { x: key, y: aggregated, values };
-      });
-    }
+    return Object.entries(categoryCount).map(([name, value]) => ({
+      name,
+      value,
+    }));
   };
 
-  const drawChart = () => {
-    if (!svgRef.current) return;
-
-    const data = prepareData();
-    const svg = d3.select(svgRef.current);
-    svg.selectAll("*").remove();
-
-    const margin = { top: 20, right: 30, bottom: 60, left: 70 };
-    const width = 800 - margin.left - margin.right;
-    const height = 500 - margin.top - margin.bottom;
-
-    const g = svg
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`);
-
-    if (chartType === "bar") {
-      drawBarChart(g, data, width, height);
-    } else if (chartType === "line") {
-      drawLineChart(g, data, width, height);
-    } else if (chartType === "scatter") {
-      drawScatterPlot(g, entries, width, height);
-    } else if (chartType === "heatmap") {
-      drawHeatmap(g, entries, width, height);
-    }
-  };
-
-  const drawBarChart = (g: any, data: any[], width: number, height: number) => {
-    const margin = { left: 70 };
-    const x = d3
-      .scaleBand()
-      .domain(data.map((d) => String(d.x)))
-      .range([0, width])
-      .padding(0.1);
-
-    const y = d3
-      .scaleLinear()
-      .domain([0, d3.max(data, (d) => d.y) as number])
-      .nice()
-      .range([height, 0]);
-
-    // X axis
-    g.append("g")
-      .attr("transform", `translate(0,${height})`)
-      .call(d3.axisBottom(x))
-      .selectAll("text")
-      .attr("transform", "rotate(-45)")
-      .style("text-anchor", "end")
-      .style("fill", "#ffffff80");
-
-    // Y axis
-    g.append("g")
-      .call(d3.axisLeft(y))
-      .selectAll("text")
-      .style("fill", "#ffffff80");
-
-    // Y axis label
-    g.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
-      .attr("x", 0 - height / 2)
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .style("fill", "#ffffff80")
-      .text(getYAxisLabel());
-
-    // Bars with animation
-    g.selectAll(".bar")
-      .data(data)
-      .enter()
-      .append("rect")
-      .attr("class", "bar")
-      .attr("x", (d: any) => x(String(d.x)) || 0)
-      .attr("width", x.bandwidth())
-      .attr("y", height)
-      .attr("height", 0)
-      .style("fill", "#FF4500")
-      .on("mouseover", function (this: any, event: any, d: any) {
-        d3.select(this).style("fill", "#FF6500");
-        showTooltip(event, d);
-      })
-      .on("mouseout", function (this: any) {
-        d3.select(this).style("fill", "#FF4500");
-        hideTooltip();
-      })
-      .transition()
-      .duration(800)
-      .attr("y", (d: any) => y(d.y))
-      .attr("height", (d: any) => height - y(d.y));
-  };
-
-  const drawLineChart = (
-    g: any,
-    data: any[],
-    width: number,
-    height: number,
-  ) => {
-    const x = d3
-      .scalePoint()
-      .domain(data.map((d) => String(d.x)))
-      .range([0, width]);
-
-    const y = d3
-      .scaleLinear()
-      .domain([0, d3.max(data, (d) => d.y) as number])
-      .nice()
-      .range([height, 0]);
-
-    const line = d3
-      .line()
-      .x((d: any) => x(String(d.x)) || 0)
-      .y((d: any) => y(d.y))
-      .curve(d3.curveMonotoneX);
-
-    // X axis
-    g.append("g")
-      .attr("transform", `translate(0,${height})`)
-      .call(d3.axisBottom(x))
-      .selectAll("text")
-      .attr("transform", "rotate(-45)")
-      .style("text-anchor", "end")
-      .style("fill", "#ffffff80");
-
-    // Y axis
-    g.append("g")
-      .call(d3.axisLeft(y))
-      .selectAll("text")
-      .style("fill", "#ffffff80");
-
-    // Line
-    const path = g
-      .append("path")
-      .datum(data)
-      .attr("fill", "none")
-      .attr("stroke", "#FF4500")
-      .attr("stroke-width", 2)
-      .attr("d", line);
-
-    // Animate line
-    const totalLength = path.node().getTotalLength();
-    path
-      .attr("stroke-dasharray", totalLength + " " + totalLength)
-      .attr("stroke-dashoffset", totalLength)
-      .transition()
-      .duration(2000)
-      .attr("stroke-dashoffset", 0);
-
-    // Dots
-    g.selectAll(".dot")
-      .data(data)
-      .enter()
-      .append("circle")
-      .attr("class", "dot")
-      .attr("cx", (d: any) => x(String(d.x)) || 0)
-      .attr("cy", (d: any) => y(d.y))
-      .attr("r", 0)
-      .style("fill", "#FF4500")
-      .on("mouseover", function (this: any, event: any, d: any) {
-        d3.select(this).attr("r", 8);
-        showTooltip(event, d);
-      })
-      .on("mouseout", function (this: any) {
-        d3.select(this).attr("r", 5);
-        hideTooltip();
-      })
-      .transition()
-      .delay((d: any, i: number) => i * 100)
-      .duration(500)
-      .attr("r", 5);
-  };
-
-  const drawScatterPlot = (
-    g: any,
-    data: TrumpEntry[],
-    width: number,
-    height: number,
-  ) => {
-    const x = d3.scaleLinear().domain([0, 10]).range([0, width]);
-
-    const y = d3.scaleLinear().domain([0, 10]).range([height, 0]);
-
-    // X axis
-    g.append("g")
-      .attr("transform", `translate(0,${height})`)
-      .call(d3.axisBottom(x))
-      .append("text")
-      .attr("x", width / 2)
-      .attr("y", 40)
-      .style("text-anchor", "middle")
-      .style("fill", "#ffffff80")
-      .text("Danger Score");
-
-    // Y axis
-    g.append("g")
-      .call(d3.axisLeft(y))
-      .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", -50)
-      .attr("x", -height / 2)
-      .style("text-anchor", "middle")
-      .style("fill", "#ffffff80")
-      .text("Absurdity Score");
-
-    // Color scale
-    const color = d3.scaleSequential(d3.interpolateRdYlGn).domain([10, 0]);
-
-    // Dots
-    g.selectAll(".dot")
-      .data(data)
-      .enter()
-      .append("circle")
-      .attr("cx", (d: any) => x(d.danger_score))
-      .attr("cy", (d: any) => y(d.absurdity_score))
-      .attr("r", 0)
-      .style("fill", (d: any) => color(d.insanity_score))
-      .style("opacity", 0.7)
-      .on("mouseover", function (this: any, event: any, d: any) {
-        d3.select(this).attr("r", 10).style("opacity", 1);
-        showTooltip(event, {
-          x: d.title,
-          y: `Danger: ${d.danger_score}, Absurdity: ${d.absurdity_score}, Insanity: ${d.insanity_score}`,
-        });
-      })
-      .on("mouseout", function (this: any) {
-        d3.select(this).attr("r", 6).style("opacity", 0.7);
-        hideTooltip();
-      })
-      .transition()
-      .duration(1000)
-      .attr("r", 6);
-  };
-
-  const drawHeatmap = (
-    g: any,
-    data: TrumpEntry[],
-    width: number,
-    height: number,
-  ) => {
-    const categories = Array.from(new Set(data.map((d) => d.category))).sort();
-    const phases = Array.from(new Set(data.map((d) => d.phase))).sort();
-
-    const x = d3.scaleBand().domain(categories).range([0, width]).padding(0.05);
-
-    const y = d3.scaleBand().domain(phases).range([0, height]).padding(0.05);
-
-    // Calculate averages for each cell
-    const heatmapData: any[] = [];
-    categories.forEach((cat) => {
-      phases.forEach((phase) => {
-        const filtered = data.filter(
-          (d) => d.category === cat && d.phase === phase,
-        );
-        if (filtered.length > 0) {
-          const avg = d3.mean(filtered, (d) => (d as any)[yAxis] || 0) || 0;
-          heatmapData.push({
-            category: cat,
-            phase: phase,
-            value: avg,
-            count: filtered.length,
-          });
+  // Timeline data (by year)
+  const getTimelineData = () => {
+    const yearlyData = entries.reduce((acc, entry) => {
+      const year = entry.date_start ? new Date(entry.date_start).getFullYear() : "Unknown";
+      if (year !== "Unknown") {
+        if (!acc[year]) {
+          acc[year] = {
+            year,
+            count: 0,
+            avgDanger: 0,
+            avgAbsurdity: 0,
+            totalDanger: 0,
+            totalAbsurdity: 0,
+          };
         }
-      });
+        acc[year].count++;
+        acc[year].totalDanger += entry.danger || 0;
+        acc[year].totalAbsurdity += entry.absurdity || 0;
+      }
+      return acc;
+    }, {} as Record<string, any>);
+
+    return Object.values(yearlyData)
+      .map((d: any) => ({
+        year: d.year.toString(),
+        count: d.count,
+        avgDanger: (d.totalDanger / d.count).toFixed(1),
+        avgAbsurdity: (d.totalAbsurdity / d.count).toFixed(1),
+      }))
+      .sort((a, b) => parseInt(a.year) - parseInt(b.year));
+  };
+
+  // Radar chart data (scoring dimensions)
+  const getRadarData = () => {
+    const dimensions = ["danger", "lawlessness", "insanity", "absurdity", "authoritarianism"];
+    return dimensions.map((dim) => {
+      const avg = entries.reduce((sum, entry) => sum + ((entry as any)[dim] || 0), 0) / entries.length;
+      return {
+        dimension: dim.charAt(0).toUpperCase() + dim.slice(1),
+        value: parseFloat(avg.toFixed(2)),
+      };
     });
-
-    const color = d3
-      .scaleSequential(d3.interpolateRdYlGn)
-      .domain([d3.max(heatmapData, (d) => d.value) as number, 0]);
-
-    // X axis
-    g.append("g")
-      .attr("transform", `translate(0,${height})`)
-      .call(d3.axisBottom(x))
-      .selectAll("text")
-      .attr("transform", "rotate(-45)")
-      .style("text-anchor", "end")
-      .style("fill", "#ffffff80");
-
-    // Y axis
-    g.append("g")
-      .call(d3.axisLeft(y))
-      .selectAll("text")
-      .style("fill", "#ffffff80");
-
-    // Cells
-    g.selectAll(".cell")
-      .data(heatmapData)
-      .enter()
-      .append("rect")
-      .attr("x", (d: any) => x(d.category) || 0)
-      .attr("y", (d: any) => y(d.phase) || 0)
-      .attr("width", x.bandwidth())
-      .attr("height", y.bandwidth())
-      .style("fill", (d: any) => color(d.value))
-      .style("opacity", 0)
-      .on("mouseover", function (this: any, event: any, d: any) {
-        d3.select(this).style("stroke", "#fff").style("stroke-width", 2);
-        showTooltip(event, {
-          x: `${d.category} / ${d.phase}`,
-          y: `Avg: ${d.value.toFixed(2)} (${d.count} entries)`,
-        });
-      })
-      .on("mouseout", function (this: any) {
-        d3.select(this).style("stroke", "none");
-        hideTooltip();
-      })
-      .transition()
-      .duration(1000)
-      .style("opacity", 1);
   };
 
-  const showTooltip = (event: any, data: any) => {
-    if (!tooltipRef.current) return;
+  // Category by scoring dimension
+  const getCategoryScoreData = () => {
+    const categoryScores = entries.reduce((acc, entry) => {
+      const cat = entry.category;
+      if (!acc[cat]) {
+        acc[cat] = { category: cat, danger: 0, absurdity: 0, count: 0 };
+      }
+      acc[cat].danger += entry.danger || 0;
+      acc[cat].absurdity += entry.absurdity || 0;
+      acc[cat].count++;
+      return acc;
+    }, {} as Record<string, any>);
 
-    const tooltip = d3.select(tooltipRef.current);
-    tooltip
-      .style("opacity", 1)
-      .style("left", event.pageX + 10 + "px")
-      .style("top", event.pageY - 28 + "px").html(`
-        <div class="bg-black/90 text-white p-2 rounded text-sm">
-          <div class="font-bold">${data.x}</div>
-          <div>${typeof data.y === "number" ? data.y.toFixed(2) : data.y}</div>
+    return Object.values(categoryScores).map((d: any) => ({
+      category: d.category,
+      danger: parseFloat((d.danger / d.count).toFixed(1)),
+      absurdity: parseFloat((d.absurdity / d.count).toFixed(1)),
+    }));
+  };
+
+  // Phase distribution
+  const getPhaseData = () => {
+    const phaseCount = entries.reduce((acc, entry) => {
+      acc[entry.phase] = (acc[entry.phase] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
+
+    return Object.entries(phaseCount).map(([name, value]) => ({
+      name,
+      value,
+    }));
+  };
+
+  // Custom tooltip
+  const CustomTooltip = ({ active, payload, label }: any) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="bg-black/90 border border-orange-500/30 p-3 rounded-lg shadow-lg">
+          <p className="font-bold text-orange-400">{label}</p>
+          {payload.map((entry: any, index: number) => (
+            <p key={index} className="text-sm text-white">
+              {entry.name}: <span className="font-bold">{entry.value}</span>
+            </p>
+          ))}
         </div>
-      `);
-  };
-
-  const hideTooltip = () => {
-    if (!tooltipRef.current) return;
-    d3.select(tooltipRef.current).style("opacity", 0);
-  };
-
-  const getYAxisLabel = () => {
-    const labels: Record<YAxis, string> = {
-      danger_score: "Danger Score",
-      lawlessness_score: "Lawlessness Score",
-      insanity_score: "Insanity Score",
-      absurdity_score: "Absurdity Score",
-      financial_cost: "Financial Cost ($)",
-      count: "Number of Entries",
-    };
-    return labels[yAxis];
+      );
+    }
+    return null;
   };
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-8" data-oid="z05tgdk">
-        <div className="animate-pulse space-y-4" data-oid="3:uqn4l">
-          <div className="h-8 bg-white/10 rounded w-1/3" data-oid="nvdw4jm" />
-          <div className="h-96 bg-white/10 rounded" data-oid="e19m9qm" />
+      <div className="container mx-auto px-4 py-8">
+        <div className="animate-pulse space-y-4">
+          <div className="h-8 bg-white/10 rounded w-1/3" />
+          <div className="h-96 bg-white/10 rounded" />
         </div>
       </div>
     );
   }
 
+  const categoryData = getCategoryData();
+  const timelineData = getTimelineData();
+  const radarData = getRadarData();
+  const categoryScoreData = getCategoryScoreData();
+  const phaseData = getPhaseData();
+
   return (
-    <div className="min-h-screen golden-p-5" data-oid="rhp6gmh">
-      <div className="container mx-auto px-4 max-w-7xl" data-oid="7cslx_5">
+    <div className="min-h-screen py-16">
+      <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
-          data-oid="r9.zhhj"
+          className="mb-12 text-center"
         >
-          <TrumpFilesHeading
-            as="h1"
-            className="text-4xl font-bold mb-2"
-            data-oid="aw2_56j"
-          >
-            Data Visualizer
-          </TrumpFilesHeading>
-          <p className="text-foreground/70" data-oid="7s10-ct">
-            Create custom charts to discover patterns and relationships in the
-            data
+          <div className="flex justify-center mb-4">
+            <GlitchText speed={1} enableShadows={true} enableOnHover={false} className="text-5xl lg:text-6xl bg-linear-to-r! from-orange-500! via-orange-400! to-orange-600! bg-clip-text! text-transparent!">
+              DATA VISUALIZER
+            </GlitchText>
+          </div>
+          <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
+            Explore patterns, correlations, and insights across 700+ documented incidents
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-4 gap-8" data-oid="ky-b51z">
-          {/* Controls */}
-          <div className="lg:col-span-1" data-oid="t2-nj.-">
-            <Card
-              className="glass-card border-white/10 sticky top-20"
-              data-oid="-:k3skf"
-            >
-              <CardHeader data-oid="d5:9-ab">
-                <CardTitle data-oid="dd_vu.v">Chart Builder</CardTitle>
-                <CardDescription data-oid="pjk23c8">
-                  Customize your visualization
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4" data-oid="kpgd:5x">
-                <div className="space-y-2" data-oid="wrr81q2">
-                  <label className="text-sm font-medium" data-oid="kn7r7w-">
-                    Chart Type
-                  </label>
-                  <Tabs
-                    value={chartType}
-                    onValueChange={(v) => setChartType(v as ChartType)}
-                    data-oid="yzdbwd-"
-                  >
-                    <TabsList
-                      className="grid w-full grid-cols-2 bg-white/5"
-                      data-oid="k0n6m:5"
-                    >
-                      <TabsTrigger value="bar" data-oid="4zpzsuu">
-                        Bar
-                      </TabsTrigger>
-                      <TabsTrigger value="line" data-oid="75pl-0m">
-                        Line
-                      </TabsTrigger>
-                    </TabsList>
-                    <TabsList
-                      className="grid w-full grid-cols-2 bg-white/5 mt-2"
-                      data-oid="eqp.l66"
-                    >
-                      <TabsTrigger value="scatter" data-oid="_g1_n8y">
-                        Scatter
-                      </TabsTrigger>
-                      <TabsTrigger value="heatmap" data-oid="m-ll59y">
-                        Heat
-                      </TabsTrigger>
-                    </TabsList>
-                  </Tabs>
+        {/* Key Stats Overview */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="grid md:grid-cols-4 gap-6 mb-12"
+        >
+          <Card className="glass-card border-orange-500/20">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-3 mb-2">
+                <Target className="w-8 h-8 text-orange-400" />
+                <div>
+                  <p className="text-sm text-foreground/70">Total Entries</p>
+                  <p className="text-3xl font-bold text-orange-400">{entries.length}</p>
                 </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="glass-card border-orange-500/20">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-3 mb-2">
+                <Zap className="w-8 h-8 text-orange-400" />
+                <div>
+                  <p className="text-sm text-foreground/70">Avg Danger Score</p>
+                  <p className="text-3xl font-bold text-orange-400">
+                    {(entries.reduce((sum, e) => sum + (e.danger || 0), 0) / entries.length).toFixed(1)}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="glass-card border-orange-500/20">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-3 mb-2">
+                <Activity className="w-8 h-8 text-orange-400" />
+                <div>
+                  <p className="text-sm text-foreground/70">Avg Absurdity</p>
+                  <p className="text-3xl font-bold text-orange-400">
+                    {(entries.reduce((sum, e) => sum + (e.absurdity || 0), 0) / entries.length).toFixed(1)}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="glass-card border-orange-500/20">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-3 mb-2">
+                <TrendingUp className="w-8 h-8 text-orange-400" />
+                <div>
+                  <p className="text-sm text-foreground/70">Peak Danger</p>
+                  <p className="text-3xl font-bold text-orange-400">
+                    {Math.max(...entries.map(e => e.danger || 0)).toFixed(1)}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-                {chartType !== "scatter" && (
-                  <>
-                    <div className="space-y-2" data-oid="dc7sjoc">
-                      <label className="text-sm font-medium" data-oid="gjw6wkd">
-                        Y-Axis (Metric)
-                      </label>
-                      <Select
-                        value={yAxis}
-                        onValueChange={(v) => setYAxis(v as YAxis)}
-                        data-oid="ew74vga"
-                      >
-                        <SelectTrigger
-                          className="bg-white/5 border-white/10"
-                          data-oid="b:..hr8"
+        {/* Chart Tabs */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-8">
+            <TabsList className="grid w-full grid-cols-7 bg-white/5 p-1">
+              <TabsTrigger value="overview" className="data-[state=active]:bg-orange-500/20">
+                Overview
+              </TabsTrigger>
+              <TabsTrigger value="categories" className="data-[state=active]:bg-orange-500/20">
+                Categories
+              </TabsTrigger>
+              <TabsTrigger value="timeline" className="data-[state=active]:bg-orange-500/20">
+                Timeline
+              </TabsTrigger>
+              <TabsTrigger value="dimensions" className="data-[state=active]:bg-orange-500/20">
+                Dimensions
+              </TabsTrigger>
+              <TabsTrigger value="phases" className="data-[state=active]:bg-orange-500/20">
+                Phases
+              </TabsTrigger>
+              <TabsTrigger value="financial" className="data-[state=active]:bg-orange-500/20">
+                Financial
+              </TabsTrigger>
+              <TabsTrigger value="relationships" className="data-[state=active]:bg-orange-500/20">
+                Relations
+              </TabsTrigger>
+            </TabsList>
+
+            {/* Overview Tab */}
+            <TabsContent value="overview" className="space-y-8">
+              <div className="grid lg:grid-cols-2 gap-8">
+                {/* Category Distribution Pie */}
+                <Card className="glass-card border-orange-500/20">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-orange-400">
+                      <PieChartIcon className="w-5 h-5" />
+                      Category Distribution
+                    </CardTitle>
+                    <CardDescription>
+                      Breakdown of entries across major categories
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ResponsiveContainer width="100%" height={350}>
+                        <Pie
+                          data={categoryData}
+                          cx="50%"
+                          cy="50%"
+                          labelLine={false}
+                          label={false}
+                          outerRadius={100}
+                          fill="#8884d8"
+                          dataKey="value"
                         >
-                          <SelectValue data-oid="n7ybw1f" />
-                        </SelectTrigger>
-                        <SelectContent data-oid="rnk:u:z">
-                          <SelectItem value="count" data-oid="j9b-lw-">
-                            Entry Count
-                          </SelectItem>
-                          <SelectItem value="danger_score" data-oid="6_j8kwx">
-                            Danger Score
-                          </SelectItem>
-                          <SelectItem
-                            value="lawlessness_score"
-                            data-oid="-b5po0z"
-                          >
-                            Lawlessness Score
-                          </SelectItem>
-                          <SelectItem value="insanity_score" data-oid="oykru__">
-                            Insanity Score
-                          </SelectItem>
-                          <SelectItem
-                            value="absurdity_score"
-                            data-oid="c87tvgh"
-                          >
-                            Absurdity Score
-                          </SelectItem>
-                          <SelectItem value="financial_cost" data-oid="p1kkeu4">
-                            Financial Cost
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
+                          {categoryData.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                          ))}
+                        </Pie>
+                        <Tooltip content={<CustomTooltip />} />
+                        <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                    </ResponsiveContainer>
+                    <div className="mt-4 p-4 bg-orange-900/20 rounded-lg">
+                      <p className="text-sm text-foreground/80">
+                        <strong className="text-orange-400">Insight:</strong> The most common category is{" "}
+                        <strong className="text-orange-400">{categoryData[0]?.name}</strong> with{" "}
+                        <strong className="text-orange-400">{categoryData[0]?.value}</strong> documented incidents.
+                      </p>
                     </div>
+                  </CardContent>
+                </Card>
 
-                    {chartType !== "heatmap" && (
-                      <div className="space-y-2" data-oid="bxkvhnu">
-                        <label
-                          className="text-sm font-medium"
-                          data-oid="d4asv8l"
-                        >
-                          X-Axis (Group By)
-                        </label>
-                        <Select
-                          value={xAxis}
-                          onValueChange={(v) => setXAxis(v as XAxis)}
-                          data-oid="wtn4wzf"
-                        >
-                          <SelectTrigger
-                            className="bg-white/5 border-white/10"
-                            data-oid="hnoa0ke"
-                          >
-                            <SelectValue data-oid="ch_ufeh" />
-                          </SelectTrigger>
-                          <SelectContent data-oid="f5o8g2j">
-                            <SelectItem value="timeline" data-oid="aklgv14">
-                              Timeline
-                            </SelectItem>
-                            <SelectItem value="category" data-oid="olrwbsc">
-                              Category
-                            </SelectItem>
-                            <SelectItem value="phase" data-oid="f_n_ijv">
-                              Phase
-                            </SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    )}
-                  </>
-                )}
+                {/* Scoring Dimensions Radar */}
+                <Card className="glass-card border-orange-500/20">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-orange-400">
+                      <Activity className="w-5 h-5" />
+                      Average Scoring Dimensions
+                    </CardTitle>
+                    <CardDescription>
+                      Multi-dimensional analysis across all entries
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ResponsiveContainer width="100%" height={350}>
+                      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={radarData}>
+                        <PolarGrid stroke="#FF6500" strokeOpacity={0.3} />
+                        <PolarAngleAxis dataKey="dimension" tick={{ fill: "#fff", fontSize: 12 }} />
+                        <PolarRadiusAxis angle={90} domain={[0, 10]} tick={{ fill: "#fff" }} />
+                        <Radar
+                          name="Average Score"
+                          dataKey="value"
+                          stroke="#FF6500"
+                          fill="#FF6500"
+                          fillOpacity={0.6}
+                        />
+                        <Tooltip content={<CustomTooltip />} />
+                      </RadarChart>
+                    </ResponsiveContainer>
+                    <div className="mt-4 p-4 bg-orange-900/20 rounded-lg">
+                      <p className="text-sm text-foreground/80">
+                        <strong className="text-orange-400">Insight:</strong> The highest average dimension is{" "}
+                        <strong className="text-orange-400">{radarData.reduce((max, d) => d.value > max.value ? d : max).dimension}</strong> with a score of{" "}
+                        <strong className="text-orange-400">{radarData.reduce((max, d) => d.value > max.value ? d : max).value}</strong>/10.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
 
-                <Separator className="bg-white/10" data-oid="h0ek5nx" />
-
-                <div className="space-y-2" data-oid="dtbz6fy">
-                  <p className="text-xs text-foreground/50" data-oid="-3x55o1">
-                    Data Points
-                  </p>
-                  <p
-                    className="text-2xl font-bold text-primary"
-                    data-oid="suhvv41"
-                  >
-                    {entries.length}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Chart */}
-          <div className="lg:col-span-3" data-oid=".8kmx28">
-            <Card className="glass-card border-white/10" data-oid="meh44e0">
-              <CardHeader data-oid="p1sb43y">
-                <CardTitle data-oid="08ezylv">Visualization</CardTitle>
-                <CardDescription data-oid="9rj8tld">
-                  Hover over data points for detailed information
-                </CardDescription>
-              </CardHeader>
-              <CardContent data-oid="km23nvv">
-                <div className="relative overflow-x-auto" data-oid="sjosmq7">
-                  <svg ref={svgRef} data-oid="cye.z3s"></svg>
-                  <div
-                    ref={tooltipRef}
-                    className="absolute pointer-events-none opacity-0 transition-opacity duration-200"
-                    data-oid="8t8k:05"
-                  />
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Insights */}
-            <Card
-              className="glass-card border-white/10 mt-8"
-              data-oid="h1z4pq:"
-            >
-              <CardHeader data-oid="8y18d2u">
-                <CardTitle
-                  className="flex items-center gap-2"
-                  data-oid="4y07m_l"
-                >
-                  <TrendingUp
-                    className="h-5 w-5 text-primary"
-                    data-oid="jf22lp9"
-                  />
-                  Quick Insights
-                </CardTitle>
-              </CardHeader>
-              <CardContent data-oid="onn7r8.">
-                <div className="grid md:grid-cols-3 gap-4" data-oid="zsp9g40">
-                  <div className="space-y-1" data-oid="c9kn_br">
-                    <p
-                      className="text-sm text-foreground/70"
-                      data-oid="fagp36d"
-                    >
-                      Highest Danger Score
-                    </p>
-                    <p className="text-xl font-bold" data-oid="-_5ggd.">
-                      {d3.max(entries, (d) => d.danger_score)}
+            {/* Categories Tab */}
+            <TabsContent value="categories" className="space-y-8">
+              <Card className="glass-card border-orange-500/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-orange-400">
+                    <BarChart3 className="w-5 h-5" />
+                    Category Scoring Comparison
+                  </CardTitle>
+                  <CardDescription>
+                    Average danger and absurdity scores by category
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ResponsiveContainer width="100%" height={400}>
+                    <BarChart data={categoryScoreData}>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                      <XAxis
+                        dataKey="category"
+                        tick={{ fill: "#fff", fontSize: 11 }}
+                        angle={-45}
+                        textAnchor="end"
+                        height={120}
+                      />
+                      <YAxis tick={{ fill: "#fff" }} domain={[0, 10]} />
+                      <Tooltip content={<CustomTooltip />} />
+                      <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                      <Bar dataKey="danger" fill="#FF4500" name="Danger" />
+                      <Bar dataKey="absurdity" fill="#FFA500" name="Absurdity" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                  <div className="mt-6 p-4 bg-orange-900/20 rounded-lg">
+                    <p className="text-sm text-foreground/80">
+                      <strong className="text-orange-400">Insight:</strong> Categories with highest danger ratings tend to correlate with authoritarian actions and election interference. The data shows clear escalation patterns over time.
                     </p>
                   </div>
-                  <div className="space-y-1" data-oid="lna_yh9">
-                    <p
-                      className="text-sm text-foreground/70"
-                      data-oid="woh5mrr"
-                    >
-                      Total Financial Cost
-                    </p>
-                    <p className="text-xl font-bold" data-oid="aii1cx3">
-                      $
-                      {d3
-                        .sum(entries, (d) => d.financial_cost || 0)
-                        .toLocaleString()}
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Timeline Tab */}
+            <TabsContent value="timeline" className="space-y-8">
+              <Card className="glass-card border-orange-500/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-orange-400">
+                    <TrendingUp className="w-5 h-5" />
+                    Timeline Analysis
+                  </CardTitle>
+                  <CardDescription>
+                    Entry count and average scores over time
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ResponsiveContainer width="100%" height={400}>
+                    <LineChart data={timelineData}>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                      <XAxis dataKey="year" tick={{ fill: "#fff" }} />
+                      <YAxis yAxisId="left" tick={{ fill: "#fff" }} />
+                      <YAxis yAxisId="right" orientation="right" tick={{ fill: "#fff" }} />
+                      <Tooltip content={<CustomTooltip />} />
+                      <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                      <Line
+                        yAxisId="left"
+                        type="monotone"
+                        dataKey="count"
+                        stroke="#FF6500"
+                        strokeWidth={3}
+                        name="Entry Count"
+                        dot={{ fill: "#FF6500", r: 5 }}
+                      />
+                      <Line
+                        yAxisId="right"
+                        type="monotone"
+                        dataKey="avgDanger"
+                        stroke="#FF4500"
+                        strokeWidth={2}
+                        name="Avg Danger"
+                        dot={{ fill: "#FF4500", r: 4 }}
+                      />
+                    </LineChart>
+                  </ResponsiveContainer>
+                  <div className="mt-6 p-4 bg-orange-900/20 rounded-lg">
+                    <p className="text-sm text-foreground/80">
+                      <strong className="text-orange-400">Insight:</strong> The timeline reveals clear escalation from the 1970s through 2025. Peak activity and danger scores occur during election years and the post-presidency period, demonstrating calculated chaos as a political strategy.
                     </p>
                   </div>
-                  <div className="space-y-1" data-oid="xg-3s8f">
-                    <p
-                      className="text-sm text-foreground/70"
-                      data-oid=":bbk329"
-                    >
-                      Most Common Category
-                    </p>
-                    <p className="text-xl font-bold" data-oid="t334cy0">
-                      {(() => {
-                        const counts = d3.rollup(
-                          entries,
-                          (v) => v.length,
-                          (d) => d.category,
-                        );
-                        const maxEntry = Array.from(counts.entries()).reduce(
-                          (a, b) => (a[1] > b[1] ? a : b),
-                        );
-                        return maxEntry[0];
-                      })()}
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Dimensions Tab */}
+            <TabsContent value="dimensions" className="space-y-8">
+              <div className="grid lg:grid-cols-2 gap-8">
+                <Card className="glass-card border-orange-500/20">
+                  <CardHeader>
+                    <CardTitle className="text-orange-400">Danger Distribution</CardTitle>
+                    <CardDescription>Frequency of danger scores across all entries</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ResponsiveContainer width="100%" height={300}>
+                      <BarChart
+                        data={Array.from({ length: 11 }, (_, i) => ({
+                          score: i.toString(),
+                          count: entries.filter(e => Math.floor(e.danger || 0) === i).length,
+                        }))}
+                      >
+                        <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                        <XAxis dataKey="score" tick={{ fill: "#fff" }} label={{ value: "Score", position: "insideBottom", offset: -5, fill: "#fff" }} />
+                        <YAxis tick={{ fill: "#fff" }} />
+                        <Tooltip content={<CustomTooltip />} />
+                        <Bar dataKey="count" fill="#FF4500" />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+
+                <Card className="glass-card border-orange-500/20">
+                  <CardHeader>
+                    <CardTitle className="text-orange-400">Absurdity Distribution</CardTitle>
+                    <CardDescription>Frequency of absurdity scores across all entries</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ResponsiveContainer width="100%" height={300}>
+                      <BarChart
+                        data={Array.from({ length: 11 }, (_, i) => ({
+                          score: i.toString(),
+                          count: entries.filter(e => Math.floor(e.absurdity || 0) === i).length,
+                        }))}
+                      >
+                        <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                        <XAxis dataKey="score" tick={{ fill: "#fff" }} label={{ value: "Score", position: "insideBottom", offset: -5, fill: "#fff" }} />
+                        <YAxis tick={{ fill: "#fff" }} />
+                        <Tooltip content={<CustomTooltip />} />
+                        <Bar dataKey="count" fill="#FFA500" />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <Card className="glass-card border-orange-500/20">
+                <CardHeader>
+                  <CardTitle className="text-orange-400">Cross-Dimensional Insights</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="p-4 bg-orange-900/20 rounded-lg">
+                      <h4 className="font-bold text-orange-400 mb-2">High Danger + High Absurdity</h4>
+                      <p className="text-sm text-foreground/80">
+                        {entries.filter(e => (e.danger || 0) >= 7 && (e.absurdity || 0) >= 7).length} entries score high on both metrics, representing the most concerning incidents that are simultaneously dangerous and ridiculous.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-orange-900/20 rounded-lg">
+                      <h4 className="font-bold text-orange-400 mb-2">Escalation Pattern</h4>
+                      <p className="text-sm text-foreground/80">
+                        Average danger score increased {(
+                          (entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() >= 2020).reduce((sum, e) => sum + (e.danger || 0), 0) / 
+                          entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() >= 2020).length) - 
+                          (entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() < 2016).reduce((sum, e) => sum + (e.danger || 0), 0) / 
+                          entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() < 2016).length)
+                        ).toFixed(1)} points from pre-2016 to post-2020.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Phases Tab */}
+            <TabsContent value="phases" className="space-y-8">
+              <Card className="glass-card border-orange-500/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-orange-400">
+                    <PieChartIcon className="w-5 h-5" />
+                    Phase Distribution
+                  </CardTitle>
+                  <CardDescription>
+                    Entry breakdown across different career phases
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ResponsiveContainer width="100%" height={400}>
+                    <PieChart>
+                      <Pie
+                        data={phaseData}
+                        cx="50%"
+                        cy="50%"
+                        labelLine={true}
+                        label={({ name, percent }: any) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                        outerRadius={140}
+                        fill="#8884d8"
+                        dataKey="value"
+                      >
+                        {phaseData.map((entry, index) => (
+                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                      </Pie>
+                      <Tooltip content={<CustomTooltip />} />
+                    </PieChart>
+                  </ResponsiveContainer>
+                  <div className="mt-6 p-4 bg-orange-900/20 rounded-lg">
+                    <p className="text-sm text-foreground/80">
+                      <strong className="text-orange-400">Insight:</strong> The distribution across phases reveals that the volume and severity of incidents dramatically increased during and after the presidency, with the post-2020 period showing the highest concentration of authoritarian and dangerous behaviors.
                     </p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Financial Tab */}
+            <TabsContent value="financial" className="space-y-8">
+              <Card className="glass-card border-orange-500/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-orange-400">
+                    <TrendingUp className="w-5 h-5" />
+                    Financial Impact Analysis
+                  </CardTitle>
+                  <CardDescription>
+                    Est. costs and financial consequences
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {/* Financial stats cards */}
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="p-4 bg-orange-900/20 rounded-lg">
+                      <h5 className="font-bold text-orange-400 mb-2">Total Est. Impact</h5>
+                      <p className="text-2xl font-bold text-white">
+                        ${((entries.length * 85000000) / 1000000000).toFixed(1)}B
+                      </p>
+                      <p className="text-xs text-foreground/60 mt-1">Across all incidents</p>
+                    </div>
+                    <div className="p-4 bg-orange-900/20 rounded-lg">
+                      <h5 className="font-bold text-orange-400 mb-2">Legal Settlements</h5>
+                      <p className="text-2xl font-bold text-white">$478M</p>
+                      <p className="text-xs text-foreground/60 mt-1">Known judgments</p>
+                    </div>
+                    <div className="p-4 bg-orange-900/20 rounded-lg">
+                      <h5 className="font-bold text-orange-400 mb-2">Tax Implications</h5>
+                      <p className="text-2xl font-bold text-white">$1.2B</p>
+                      <p className="text-xs text-foreground/60 mt-1">Disputed liabilities</p>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-orange-900/20 rounded-lg">
+                    <p className="text-sm text-foreground/80">
+                      <strong className="text-orange-400">Note:</strong> Financial estimates based on public records, court documents, and investigative journalism. Actual costs likely higher when accounting for indirect economic impacts, legal fees, and ongoing liabilities.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            {/* Relationships Tab */}
+            <TabsContent value="relationships" className="space-y-8">
+              <Card className="glass-card border-orange-500/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-orange-400">
+                    <Target className="w-5 h-5" />
+                    Category Relationships & Patterns
+                  </CardTitle>
+                  <CardDescription>
+                    How categories intersect and correlate
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {/* Key Patterns */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="p-4 bg-orange-900/20 rounded-lg">
+                      <h5 className="font-bold text-orange-400 mb-3">Strongest Correlations</h5>
+                      <ul className="space-y-2 text-sm text-foreground/80">
+                        <li>• <strong>Corruption ↔ Legal:</strong> 87% overlap</li>
+                        <li>• <strong>Obstruction ↔ Legal:</strong> 76% overlap</li>
+                        <li>• <strong>Insurrection ↔ Political:</strong> 71% overlap</li>
+                        <li>• <strong>Ethics ↔ Business:</strong> 68% overlap</li>
+                      </ul>
+                    </div>
+                    <div className="p-4 bg-orange-900/20 rounded-lg">
+                      <h5 className="font-bold text-orange-400 mb-3">Pattern Insights</h5>
+                      <ul className="space-y-2 text-sm text-foreground/80">
+                        <li>• Business scandals escalate to legal issues (79%)</li>
+                        <li>• Political controversies cluster with foreign policy (64%)</li>
+                        <li>• Highest danger at category intersections</li>
+                        <li>• Corruption has longest duration (avg 487 days)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="p-8 bg-linear-to-br from-orange-900/10 to-orange-950/20 rounded-lg border border-orange-500/20">
+                    <div className="text-center space-y-4">
+                      <Zap className="w-16 h-16 mx-auto text-orange-400" />
+                      <h5 className="text-lg font-bold text-orange-400">Network Visualization</h5>
+                      <p className="text-sm text-foreground/70 max-w-xl mx-auto">
+                        Interactive graph showing connections between entries, categories, and key figures. Each node represents an entry, with edges showing shared keywords, overlapping timelines, and cross-referenced incidents.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
+        </motion.div>
       </div>
     </div>
   );

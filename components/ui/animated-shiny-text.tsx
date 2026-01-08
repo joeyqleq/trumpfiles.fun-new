@@ -32,7 +32,7 @@ export const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
         className,
       )}
       {...props}
-      data-oid="nnwmlq4"
+      data-oid="1_djs4a"
     >
       {children}
     </span>

@@ -111,3 +111,30 @@ export interface AggregatedUserScore {
   avg_media_attention_score: number
   total_votes: number
 }
+
+// Neon Database View: ai_complete_trump_data
+export interface AICompleteTrumpData {
+  entry_number: number
+  title: string
+  synopsis: string
+  category: string
+  subcategory: string | null
+  phase: string
+  age: number | null
+  start_year: number | null
+  date_start: string | null
+  date_end: string | null
+  duration_days: number | null
+  fucked_up_score: string
+  fucked_up_rank: string
+  danger: number
+  authoritarianism: number
+  lawlessness: number
+  insanity: number
+  absurdity: number
+  credibility_risk: number
+  recency_intensity: number
+  impact_scope: number
+  rationale_short: string
+  all_keywords: string[]
+}

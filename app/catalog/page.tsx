@@ -2,8 +2,7 @@
 
 import { useState, useEffect, useMemo, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { pool } from "@/lib/neon";
-import { TrumpEntry } from "@/types/database";
+import { AICompleteTrumpData } from "@/types/database";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -31,16 +30,21 @@ import {
   ArrowLeft,
   ArrowRight,
 } from "lucide-react";
-import { TrumpFilesTitle } from "@/components/TrumpFilesBrand";
+import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
 import { MagicCard } from "@/components/ui/magic-card";
+import GlitchText from "@/components/GlitchText";
+import { FlippableEntryCard } from "@/components/FlippableEntryCard";
 
 export default function CatalogPage() {
-  const [entries, setEntries] = useState<TrumpEntry[]>([]);
+  const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
-  const [categoryFilter, setCategoryFilter] = useState("all");
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [phaseFilter, setPhaseFilter] = useState("all");
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [showFilters, setShowFilters] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(50);
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -50,10 +54,9 @@ export default function CatalogPage() {
 
   const fetchEntries = async () => {
     try {
-      const { rows } = await pool.query(
-        "SELECT * FROM ai_complete_trump_data ORDER BY fucked_up_rank ASC",
-      );
-      setEntries(rows || []);
+      const res = await fetch('/api/catalog-data');
+      const data = await res.json();
+      setEntries(data || []);
     } catch (error) {
       console.error("Error fetching entries:", error);
     } finally {
@@ -62,7 +65,7 @@ export default function CatalogPage() {
   };
 
   const filteredEntries = useMemo(() => {
-    return entries.filter((entry) => {
+    const filtered = entries.filter((entry) => {
       const matchesSearch =
         searchTerm === "" ||
         entry.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -73,12 +76,34 @@ export default function CatalogPage() {
           ));
 
       const matchesCategory =
-        categoryFilter === "all" || entry.category === categoryFilter;
+        selectedCategories.length === 0 || selectedCategories.includes(entry.category);
       const matchesPhase = phaseFilter === "all" || entry.phase === phaseFilter;
 
       return matchesSearch && matchesCategory && matchesPhase;
     });
-  }, [entries, searchTerm, categoryFilter, phaseFilter]);
+    return filtered;
+  }, [entries, searchTerm, selectedCategories, phaseFilter]);
+
+  const paginatedEntries = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return filteredEntries.slice(startIndex, endIndex);
+  }, [filteredEntries, currentPage, itemsPerPage]);
+
+  const totalPages = Math.ceil(filteredEntries.length / itemsPerPage);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleItemsPerPageChange = (increment: number) => {
+    const newAmount = itemsPerPage + increment;
+    if (newAmount >= 50) {
+      setItemsPerPage(newAmount);
+      setCurrentPage(1);
+    }
+  };
 
   const categories = useMemo(() => {
     const cats = new Set(entries.map((e) => e.category));
@@ -89,6 +114,28 @@ export default function CatalogPage() {
     const phs = new Set(entries.map((e) => e.phase));
     return Array.from(phs).sort();
   }, [entries]);
+
+  const toggleCategory = (category: string) => {
+    setSelectedCategories(prev => 
+      prev.includes(category)
+        ? prev.filter(c => c !== category)
+        : [...prev, category]
+    );
+  };
+
+  const getCategoryColor = (category: string) => {
+    const colors: Record<string, string> = {
+      'Insurrection': 'bg-linear-to-r from-orange-500/20 to-red-500/20 border-orange-500 text-orange-400 hover:from-orange-500/30 hover:to-red-500/30',
+      'Corruption': 'bg-orange-500/20 border-orange-500 text-orange-400 hover:bg-orange-500/30',
+      'Obstruction': 'bg-yellow-500/20 border-yellow-500 text-yellow-400 hover:bg-yellow-500/30',
+      'Legal': 'bg-blue-500/20 border-blue-500 text-blue-400 hover:bg-blue-500/30',
+      'Political': 'bg-purple-500/20 border-purple-500 text-purple-400 hover:bg-purple-500/30',
+      'Foreign Policy': 'bg-green-500/20 border-green-500 text-green-400 hover:bg-green-500/30',
+      'Ethics': 'bg-pink-500/20 border-pink-500 text-pink-400 hover:bg-pink-500/30',
+      'Business': 'bg-cyan-500/20 border-cyan-500 text-cyan-400 hover:bg-cyan-500/30',
+    };
+    return colors[category] || 'bg-gray-500/20 border-gray-500 text-gray-400 hover:bg-gray-500/30';
+  };
 
   const copyLink = async (entryNumber: number) => {
     const url = `${window.location.origin}/entry/${entryNumber}`;
@@ -110,7 +157,7 @@ export default function CatalogPage() {
           {[...Array(4)].map((_, i) => (
             <Skeleton
               key={i}
-              className="h-[500px] w-[400px]"
+              className="h-[500px] w-[400px] bg-linear-to-br from-orange-500/20 to-orange-600/10 animate-pulse"
               data-oid="1.l:-qv"
             />
           ))}
@@ -127,15 +174,20 @@ export default function CatalogPage() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="mb-8"
-          data-oid="rv2dy6."
         >
-          <TrumpFilesTitle className="text-4xl mb-2" data-oid="ydsew5g" />
-          <h2 className="text-2xl font-heading mb-2" data-oid="ks2s89z">
-            Catalog
-          </h2>
+          <TrumpFilesBrand size="3xl" className="mb-2" />
+          <div className="flex justify-center mb-2">
+            <GlitchText speed={1} enableShadows={true} enableOnHover={false} className="text-4xl lg:text-5xl bg-linear-to-r! from-orange-500! via-orange-400! to-red-500! bg-clip-text! text-transparent!">
+              CATALOG
+            </GlitchText>
+          </div>
           <p className="text-foreground/70" data-oid="irkfd3r">
-            Explore {entries.length} documented entries with comprehensive data
-            and analysis
+            Explore <span className="text-orange-400 font-semibold">{entries.length}</span> documented entries with comprehensive data
+            and analysis{filteredEntries.length !== entries.length && (
+              <span className="text-orange-400 ml-2">
+                ({filteredEntries.length} filtered)
+              </span>
+            )}
           </p>
         </motion.div>
 
@@ -161,50 +213,78 @@ export default function CatalogPage() {
             />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4" data-oid="xr8t1ln">
-            <Select
-              value={categoryFilter}
-              onValueChange={setCategoryFilter}
-              data-oid="aj_purc"
+          {/* Toggle Filters Button */}
+          <div className="flex justify-between items-center">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setShowFilters(!showFilters)}
+              className="bg-linear-to-r from-orange-500/20 to-red-500/20 border-orange-500/30 text-orange-400 hover:from-orange-500/30 hover:to-red-500/30 font-heading"
             >
-              <SelectTrigger
-                className="bg-white/5 border-white/10"
-                data-oid="gpndze-"
+              {showFilters ? 'Hide Filters' : 'Show Category Filters'}
+              {selectedCategories.length > 0 && (
+                <Badge className="ml-2 bg-orange-500 text-white border-none">
+                  {selectedCategories.length}
+                </Badge>
+              )}
+            </Button>
+            {selectedCategories.length > 0 && (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setSelectedCategories([])}
+                className="bg-linear-to-r from-orange-500/10 to-red-500/10 text-orange-400 hover:from-orange-500/20 hover:to-red-500/20 font-heading"
               >
-                <SelectValue
-                  placeholder="Filter by category"
-                  data-oid="-q917pj"
-                />
-              </SelectTrigger>
-              <SelectContent data-oid="y7cws-h">
-                <SelectItem value="all" data-oid="nk6rmog">
-                  All Categories
-                </SelectItem>
-                {categories.map((cat) => (
-                  <SelectItem key={cat} value={cat} data-oid="ah28pv.">
-                    {cat}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+                Clear Category Filters
+              </Button>
+            )}
+          </div>
 
+          {/* Category Filter Buttons - Collapsible */}
+          {showFilters && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="space-y-2"
+            >
+              <div className="flex flex-wrap gap-2">
+                {categories.map((cat) => (
+                  <Button
+                    key={cat}
+                    variant="outline"
+                    size="sm"
+                    onClick={() => toggleCategory(cat)}
+                    className={`transition-all ${
+                      selectedCategories.includes(cat)
+                        ? getCategoryColor(cat)
+                        : 'bg-white/5 border-white/20 text-foreground/70 hover:bg-white/10'
+                    }`}
+                  >
+                    {cat}
+                  </Button>
+                ))}
+              </div>
+            </motion.div>
+          )}
+
+          {/* Phase Filter */}
+          <div className="space-y-2">
+            <label className="text-sm font-medium">Filter by Phase</label>
             <Select
               value={phaseFilter}
               onValueChange={setPhaseFilter}
-              data-oid="s3ptcce"
             >
-              <SelectTrigger
-                className="bg-white/5 border-white/10"
-                data-oid="mhftm3i"
-              >
-                <SelectValue placeholder="Filter by phase" data-oid="494o:q:" />
+              <SelectTrigger className="bg-white/5 border-white/10">
+                <SelectValue placeholder="Filter by phase" />
               </SelectTrigger>
-              <SelectContent data-oid="aa:wotu">
-                <SelectItem value="all" data-oid="d6wt3dn">
+              <SelectContent>
+                <SelectItem value="all">
                   All Phases
                 </SelectItem>
                 {phases.map((phase) => (
-                  <SelectItem key={phase} value={phase} data-oid="enofxp0">
+                  <SelectItem key={phase} value={phase}>
                     {phase}
                   </SelectItem>
                 ))}
@@ -212,135 +292,80 @@ export default function CatalogPage() {
             </Select>
           </div>
 
-          <div className="flex items-center justify-between" data-oid="3zssuo8">
-            <p className="text-sm text-foreground/70" data-oid="2hg_vlf">
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-foreground/70">
               Showing {filteredEntries.length} of {entries.length} entries
+              {selectedCategories.length > 0 && (
+                <span className="ml-2 text-orange-400">({selectedCategories.length} categor{selectedCategories.length === 1 ? 'y' : 'ies'} selected)</span>
+              )}
             </p>
             <Button
               variant="ghost"
               size="sm"
               onClick={() => {
                 setSearchTerm("");
-                setCategoryFilter("all");
+                setSelectedCategories([]);
                 setPhaseFilter("all");
               }}
-              data-oid="07yczw9"
+              className="text-foreground/70"
             >
-              Clear Filters
+              Clear All Filters
             </Button>
           </div>
         </motion.div>
 
-        {/* Horizontal Scroll Section */}
-        <div className="relative" data-oid="penrt1q">
-          <div
-            ref={scrollRef}
-            className="flex space-x-6 overflow-x-auto pb-8 scrollbar-hide"
-            data-oid="02tpt_q"
-          >
-            {filteredEntries.map((entry, index) => (
-              <motion.div
-                key={entry.entry_number}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1 }}
-                className="w-[400px] flex-shrink-0"
-                data-oid="a2enc1r"
+        {/* Pagination Controls Top */}
+        <div className="flex justify-between items-center mb-6">
+          <div className="flex gap-2 items-center">
+            <span className="text-sm text-foreground/70">Showing {((currentPage - 1) * itemsPerPage) + 1}-{Math.min(currentPage * itemsPerPage, filteredEntries.length)} of {filteredEntries.length}</span>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => handleItemsPerPageChange(50)}
+              className="text-xs"
+            >
+              +50 per page
+            </Button>
+            {itemsPerPage > 50 && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => handleItemsPerPageChange(-50)}
+                className="text-xs"
               >
-                <MagicCard className="h-full" data-oid="ak9vz6n">
-                  <CardContent className="p-6" data-oid="kxule9l">
-                    <div
-                      className="flex justify-between items-start"
-                      data-oid="uv0oph:"
-                    >
-                      <Badge
-                        variant="outline"
-                        className="border-primary/50 text-primary"
-                        data-oid="k7jbgmh"
-                      >
-                        Rank: {entry.fucked_up_rank}
-                      </Badge>
-                      <Badge variant="secondary" data-oid="mvtrcmb">
-                        {entry.phase}
-                      </Badge>
-                    </div>
-                    <CardTitle
-                      className="mt-4 text-xl line-clamp-2 font-heading"
-                      data-oid="i4is9jq"
-                    >
-                      {entry.title}
-                    </CardTitle>
-                    <p
-                      className="text-sm text-foreground/70 mt-2 line-clamp-3"
-                      data-oid="vmxgm:r"
-                    >
-                      {entry.synopsis}
-                    </p>
-                    <div className="mt-4 space-y-2" data-oid="8npdm7c">
-                      <div
-                        className="flex items-center justify-between text-sm"
-                        data-oid="gc841j-"
-                      >
-                        <span className="font-bold" data-oid="0lijk14">
-                          Fucked-up Score:
-                        </span>
-                        <span
-                          className="font-mono text-primary font-bold text-lg"
-                          data-oid="jj-ovo8"
-                        >
-                          {entry.fucked_up_score}
-                        </span>
-                      </div>
-                      <div
-                        className="flex items-center justify-between text-xs"
-                        data-oid="vvofc.6"
-                      >
-                        <span data-oid="an6ox9t">Danger:</span>
-                        <span data-oid="aobdkxr">{entry.danger}</span>
-                      </div>
-                      <div
-                        className="flex items-center justify-between text-xs"
-                        data-oid="cwl9n-."
-                      >
-                        <span data-oid=".bwokpk">Insanity:</span>
-                        <span data-oid="xheua_q">{entry.insanity}</span>
-                      </div>
-                      <div
-                        className="flex items-center justify-between text-xs"
-                        data-oid="cqz_kek"
-                      >
-                        <span data-oid="u96nn7_">Absurdity:</span>
-                        <span data-oid="2gwtxf.">{entry.absurdity}</span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </MagicCard>
-              </motion.div>
-            ))}
+                -50 per page
+              </Button>
+            )}
+            <span className="text-xs text-foreground/60">({itemsPerPage}/page)</span>
           </div>
-          <div
-            className="absolute top-1/2 -translate-y-1/2 flex justify-between w-full"
-            data-oid="huk807n"
-          >
+          <div className="flex gap-2">
             <Button
-              onClick={() => scroll(-400)}
               variant="outline"
-              size="icon"
-              className="rounded-full h-12 w-12 -ml-6"
-              data-oid="qlwm3g2"
+              size="sm"
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
             >
-              <ArrowLeft data-oid="ctak66:" />
+              <ArrowLeft className="h-4 w-4" />
             </Button>
+            <span className="text-sm text-foreground/70 px-4 py-2">
+              Page {currentPage} of {totalPages}
+            </span>
             <Button
-              onClick={() => scroll(400)}
               variant="outline"
-              size="icon"
-              className="rounded-full h-12 w-12 -mr-6"
-              data-oid="bdvhklq"
+              size="sm"
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
             >
-              <ArrowRight data-oid="_7isqtb" />
+              <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
+        </div>
+
+        {/* Multi-row Grid with FlippableEntryCard */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {paginatedEntries.map((entry, index) => (
+            <FlippableEntryCard key={entry.entry_number} entry={entry} index={index} />
+          ))}
         </div>
 
         {filteredEntries.length === 0 && (

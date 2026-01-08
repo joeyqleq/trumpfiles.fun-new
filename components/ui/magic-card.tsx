@@ -74,7 +74,7 @@ export function MagicCard({
       onPointerMove={handlePointerMove}
       onPointerLeave={reset}
       onPointerEnter={reset}
-      data-oid="dk6lyko"
+      data-oid="vim9thp"
     >
       <motion.div
         className="bg-border pointer-events-none absolute inset-0 rounded-[inherit] duration-300 group-hover:opacity-100"
@@ -87,13 +87,14 @@ export function MagicCard({
           )
           `,
         }}
-        data-oid="-87t0wl"
+        data-oid="zlfcx45"
       />
 
       <div
         className="bg-background absolute inset-px rounded-[inherit]"
-        data-oid=".jz3yi1"
+        data-oid="7tjvge-"
       />
+
       <motion.div
         className="pointer-events-none absolute inset-px rounded-[inherit] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
@@ -102,10 +103,10 @@ export function MagicCard({
           `,
           opacity: gradientOpacity,
         }}
-        data-oid="vmdt18t"
+        data-oid="y2cdfhp"
       />
 
-      <div className="relative" data-oid=".uo:puv">
+      <div className="relative" data-oid="w48p-nu">
         {children}
       </div>
     </div>

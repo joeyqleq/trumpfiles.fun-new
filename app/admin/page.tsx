@@ -231,7 +231,7 @@ export default function AdminPage() {
     return (
       <div
         className="flex items-center justify-center min-h-screen"
-        data-oid="y8yyw8w"
+        data-oid="7.sxn:4"
       >
         Loading...
       </div>
@@ -242,12 +242,12 @@ export default function AdminPage() {
     return (
       <div
         className="flex items-center justify-center min-h-screen"
-        data-oid="6fnuktv"
+        data-oid="p5ckdk7"
       >
-        <Card className="glass-card border-white/10 p-8" data-oid="zk4w93m">
-          <CardHeader data-oid="jy5qo7y">
-            <CardTitle data-oid="mtjy1w9">Authentication Required</CardTitle>
-            <CardDescription data-oid="sq914be">
+        <Card className="glass-card border-white/10 p-8" data-oid="28k2c.-">
+          <CardHeader data-oid="1c:u-u9">
+            <CardTitle data-oid="0r1cl3r">Authentication Required</CardTitle>
+            <CardDescription data-oid="8:3h9hl">
               Please sign in to access the admin panel
             </CardDescription>
           </CardHeader>
@@ -257,91 +257,92 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="min-h-screen golden-p-5" data-oid="jl.fnse">
-      <div className="container mx-auto px-4 max-w-7xl" data-oid="nutbole">
+    <div className="min-h-screen golden-p-5" data-oid="whx0t:4">
+      <div className="container mx-auto px-4 max-w-7xl" data-oid="f0vo0se">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="mb-8"
-          data-oid="rle-na:"
+          data-oid="4iuxy-t"
         >
           <TrumpFilesHeading
-            as="h1"
             className="text-4xl font-bold mb-2"
-            data-oid="tvac6xx"
+            data-oid="0:7kcfy"
           >
             Admin Dashboard
           </TrumpFilesHeading>
-          <p className="text-foreground/70 font-sans" data-oid="8fv8r6e">
+          <p className="text-foreground/70 font-sans" data-oid="n_78w3_">
             Manage Trump Files data and monitor system analytics
           </p>
         </motion.div>
 
         {/* Stats */}
-        <div className="grid md:grid-cols-4 gap-6 mb-8" data-oid="mycxlhp">
-          <Card className="glass-card border-white/10" data-oid="uv_zrs_">
-            <CardHeader className="pb-3" data-oid="5paumhq">
-              <CardDescription data-oid="1eyom9g">
+        <div className="grid md:grid-cols-4 gap-6 mb-8" data-oid="09rwjjz">
+          <Card className="glass-card border-white/10" data-oid="eqnul1j">
+            <CardHeader className="pb-3" data-oid="ncpq7lp">
+              <CardDescription data-oid="7udzkez">
                 Total Entries
               </CardDescription>
             </CardHeader>
-            <CardContent data-oid="8uflb21">
-              <div className="flex items-center gap-2" data-oid="e8g_.9s">
-                <Database className="h-8 w-8 text-primary" data-oid="0-4wvm5" />
-                <span className="text-3xl font-bold" data-oid=":h1vj5v">
+            <CardContent data-oid="ucwhhzj">
+              <div className="flex items-center gap-2" data-oid="lg6z94j">
+                <Database className="h-8 w-8 text-primary" data-oid="7e8ppcg" />
+                <span className="text-3xl font-bold" data-oid="dbeb112">
                   {stats.totalEntries}
                 </span>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="glass-card border-white/10" data-oid="7-7xuys">
-            <CardHeader className="pb-3" data-oid="2_3q.we">
-              <CardDescription data-oid="ynpke9-">
+          <Card className="glass-card border-white/10" data-oid="sylryie">
+            <CardHeader className="pb-3" data-oid="tts0ksz">
+              <CardDescription data-oid="q2sy0ht">
                 User Comments
               </CardDescription>
             </CardHeader>
-            <CardContent data-oid="ycjie1i">
-              <div className="flex items-center gap-2" data-oid="hwz27h7">
+            <CardContent data-oid="yxzuf2i">
+              <div className="flex items-center gap-2" data-oid="dn5ufv1">
                 <MessageSquare
                   className="h-8 w-8 text-accent"
-                  data-oid="c1o_zin"
+                  data-oid="t2r:2db"
                 />
-                <span className="text-3xl font-bold" data-oid="naq2s_o">
+
+                <span className="text-3xl font-bold" data-oid="a8dk33l">
                   {stats.totalComments}
                 </span>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="glass-card border-white/10" data-oid="w7rur79">
-            <CardHeader className="pb-3" data-oid="6-qicd0">
-              <CardDescription data-oid="d9:uvs:">User Scores</CardDescription>
+          <Card className="glass-card border-white/10" data-oid="x5pgq2q">
+            <CardHeader className="pb-3" data-oid="3qgb6cs">
+              <CardDescription data-oid="otmucp9">User Scores</CardDescription>
             </CardHeader>
-            <CardContent data-oid="h.siqm:">
-              <div className="flex items-center gap-2" data-oid="mbtytyp">
-                <Users className="h-8 w-8 text-blue-500" data-oid="1-mv:7d" />
-                <span className="text-3xl font-bold" data-oid="xs-v2sn">
+            <CardContent data-oid="u1_dzap">
+              <div className="flex items-center gap-2" data-oid="q_lp7g9">
+                <Users className="h-8 w-8 text-blue-500" data-oid="zri:5op" />
+                <span className="text-3xl font-bold" data-oid="okrd7du">
                   {stats.totalScores}
                 </span>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="glass-card border-white/10" data-oid="bl1:4o8">
-            <CardHeader className="pb-3" data-oid="-zx861c">
-              <CardDescription data-oid=".c2zcca">
+          <Card className="glass-card border-white/10" data-oid="-pmcn4i">
+            <CardHeader className="pb-3" data-oid="yvlw:65">
+              <CardDescription data-oid="03tawnw">
                 Avg Danger Score
               </CardDescription>
             </CardHeader>
-            <CardContent data-oid="bt2o-rv">
-              <div className="flex items-center gap-2" data-oid="z3ete4y">
+            <CardContent data-oid="jgcpp-2">
+              <div className="flex items-center gap-2" data-oid="i:sr36v">
                 <TrendingUp
                   className="h-8 w-8 text-orange-500"
-                  data-oid="6kyuykv"
+                  data-oid=".3chuss"
                 />
-                <span className="text-3xl font-bold" data-oid="50-nxdw">
+
+                <span className="text-3xl font-bold" data-oid="4b6dyx7">
                   {stats.avgDanger}
                 </span>
               </div>
@@ -350,62 +351,64 @@ export default function AdminPage() {
         </div>
 
         {/* Main Content */}
-        <Tabs defaultValue="upload" className="space-y-4" data-oid="3uqezhh">
-          <TabsList className="bg-white/5" data-oid="8wy_k:w">
-            <TabsTrigger value="upload" data-oid=".-z_6v1">
+        {/*
+        <Tabs defaultValue="upload" className="space-y-4" data-oid="i_-7yt9">
+          <TabsList className="bg-white/5" data-oid="fhhh_w.">
+            <TabsTrigger value="upload" data-oid="ucjj90q">
               JSON Upload
             </TabsTrigger>
-            <TabsTrigger value="data" data-oid="-ahrpk1">
+            <TabsTrigger value="data" data-oid="d1bhqmo">
               Data Table
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="upload" data-oid=":g1vujw">
-            <Card className="glass-card border-white/10" data-oid="h7ba9su">
-              <CardHeader data-oid="oorj.k3">
+          <TabsContent value="upload" data-oid="w5n8y.f">
+            <Card className="glass-card border-white/10" data-oid="09sop-j">
+              <CardHeader data-oid="eogi6i7">
                 <CardTitle
                   className="flex items-center gap-2"
-                  data-oid="vspwzep"
+                  data-oid=".u6rv2q"
                 >
-                  <FileJson className="h-5 w-5" data-oid="a7pzmro" />
+                  <FileJson className="h-5 w-5" data-oid="192mw9:" />
                   Upload JSON Data
                 </CardTitle>
-                <CardDescription data-oid="mihn_e5">
+                <CardDescription data-oid="uq0i3ap">
                   Upload a JSON file containing new Trump Files entries
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6" data-oid="l2ebgo3">
+              <CardContent className="space-y-6" data-oid="ewm7bt2">
                 <div
                   className="border-2 border-dashed border-white/20 rounded-lg p-8 text-center"
-                  data-oid=".bltb-0"
+                  data-oid="f:333_8"
                 >
                   <Upload
                     className="h-12 w-12 text-foreground/50 mx-auto mb-4"
-                    data-oid="p67kdn9"
+                    data-oid="efepzwk"
                   />
+
                   <Input
                     type="file"
                     accept=".json"
                     onChange={handleFileChange}
                     className="max-w-sm mx-auto"
-                    data-oid="wg_bdbt"
+                    data-oid="ddxkwxg"
                   />
 
                   <p
                     className="text-sm text-foreground/50 mt-2"
-                    data-oid=".7r_40i"
+                    data-oid="xe8zsve"
                   >
                     Select a JSON file to upload
                   </p>
                 </div>
 
                 {jsonFile && (
-                  <div className="space-y-4" data-oid="sgx0wg.">
+                  <div className="space-y-4" data-oid="h:qsnkt">
                     <div
                       className="flex items-center justify-between p-4 bg-white/5 rounded-lg"
-                      data-oid="02m95ry"
+                      data-oid="wo8yl1d"
                     >
-                      <span className="text-sm" data-oid="3t7.adj">
+                      <span className="text-sm" data-oid="2gv32fh">
                         File: {jsonFile.name}
                       </span>
                       <Badge
@@ -414,7 +417,7 @@ export default function AdminPage() {
                             ? "default"
                             : "destructive"
                         }
-                        data-oid="shlue0h"
+                        data-oid="9cxq5dv"
                       >
                         {validationErrors.length === 0
                           ? "Valid"
@@ -424,30 +427,30 @@ export default function AdminPage() {
 
                     {validationErrors.length > 0 && (
                       <Alert
-                        className="bg-red-500/10 border-red-500/50"
-                        data-oid="c66egy-"
+                        className="bg-orange-500/10 border-orange-500/50"
+                        data-oid="3th0z8o"
                       >
-                        <AlertTriangle className="h-4 w-4" data-oid="t4cdtk4" />
-                        <AlertDescription data-oid="hakg2nb">
-                          <p className="font-semibold mb-2" data-oid="hpelf8a">
+                        <AlertTriangle className="h-4 w-4" data-oid="5aflbpg" />
+                        <AlertDescription data-oid="w0l9at:">
+                          <p className="font-semibold mb-2" data-oid="8s-.gzv">
                             Validation Errors:
                           </p>
                           <ul
                             className="list-disc list-inside space-y-1"
-                            data-oid="w:c2q30"
+                            data-oid="6uelg2i"
                           >
                             {validationErrors.slice(0, 10).map((error, i) => (
                               <li
                                 key={i}
                                 className="text-sm"
-                                data-oid="k4jw:7f"
+                                data-oid="h.lonez"
                               >
                                 {error.line && `Line ${error.line}: `}
                                 {error.field} - {error.message}
                               </li>
                             ))}
                             {validationErrors.length > 10 && (
-                              <li className="text-sm" data-oid="276d8lz">
+                              <li className="text-sm" data-oid="rnsnx86">
                                 ...and {validationErrors.length - 10} more
                                 errors
                               </li>
@@ -462,19 +465,19 @@ export default function AdminPage() {
                         className={
                           uploadResult.success
                             ? "bg-green-500/10 border-green-500/50"
-                            : "bg-red-500/10 border-red-500/50"
+                            : "bg-orange-500/10 border-orange-500/50"
                         }
-                        data-oid="wqxgng3"
+                        data-oid="wj9bs4h"
                       >
                         {uploadResult.success ? (
-                          <CheckCircle className="h-4 w-4" data-oid="bmoqb1z" />
+                          <CheckCircle className="h-4 w-4" data-oid="dmwonbk" />
                         ) : (
                           <AlertTriangle
                             className="h-4 w-4"
-                            data-oid="xik29o5"
+                            data-oid="lrdf48y"
                           />
                         )}
-                        <AlertDescription data-oid="og36jus">
+                        <AlertDescription data-oid="kzg_xz0">
                           {uploadResult.message}
                         </AlertDescription>
                       </Alert>
@@ -484,7 +487,7 @@ export default function AdminPage() {
                       onClick={handleUpload}
                       disabled={uploading || validationErrors.length > 0}
                       className="w-full"
-                      data-oid="0-dsgs7"
+                      data-oid="k1h:2sl"
                     >
                       {uploading ? "Uploading..." : "Upload Entries"}
                     </Button>
@@ -494,78 +497,78 @@ export default function AdminPage() {
             </Card>
           </TabsContent>
 
-          <TabsContent value="data" data-oid="6.3y_gi">
-            <Card className="glass-card border-white/10" data-oid="owg52_f">
-              <CardHeader data-oid="rb4qgd2">
-                <CardTitle data-oid="84xhnb_">Recent Entries</CardTitle>
-                <CardDescription data-oid="2u0jm0v">
+          <TabsContent value="data" data-oid="krg6bm5">
+            <Card className="glass-card border-white/10" data-oid="j2w.-9.">
+              <CardHeader data-oid="c_g1k5a">
+                <CardTitle data-oid="gd86sva">Recent Entries</CardTitle>
+                <CardDescription data-oid="ryr88ob">
                   View and manage the latest entries in the database
                 </CardDescription>
               </CardHeader>
-              <CardContent data-oid="u30d1.m">
-                <div className="overflow-x-auto" data-oid="yt5f8t.">
-                  <table className="w-full text-sm" data-oid="k-q-_dr">
-                    <thead data-oid="ujycehq">
+              <CardContent data-oid="1d6iemt">
+                <div className="overflow-x-auto" data-oid="ftr4kpy">
+                  <table className="w-full text-sm" data-oid="o372jbt">
+                    <thead data-oid="32kjt_m">
                       <tr
                         className="border-b border-white/10"
-                        data-oid="b54fe56"
+                        data-oid="q4_hc-0"
                       >
-                        <th className="text-left p-2" data-oid="7e:z9mm">
+                        <th className="text-left p-2" data-oid="mmkscv2">
                           #
                         </th>
-                        <th className="text-left p-2" data-oid="2q1..qb">
+                        <th className="text-left p-2" data-oid="xnrj:v6">
                           Title
                         </th>
-                        <th className="text-left p-2" data-oid="3_40hic">
+                        <th className="text-left p-2" data-oid="3upp_dy">
                           Category
                         </th>
-                        <th className="text-left p-2" data-oid=":vv4sdd">
+                        <th className="text-left p-2" data-oid="3ek95yg">
                           Phase
                         </th>
-                        <th className="text-left p-2" data-oid="6ohzoga">
+                        <th className="text-left p-2" data-oid="llp40dy">
                           Danger
                         </th>
-                        <th className="text-left p-2" data-oid="lx:lm36">
+                        <th className="text-left p-2" data-oid="-_9hwes">
                           Created
                         </th>
                       </tr>
                     </thead>
-                    <tbody data-oid="pdalzph">
+                    <tbody data-oid=":jkjsjj">
                       {entries.map((entry) => (
                         <tr
                           key={entry.entry_number}
                           className="border-b border-white/5 hover:bg-white/5"
-                          data-oid="mqn69ay"
+                          data-oid="t.hqqdk"
                         >
-                          <td className="p-2" data-oid="bhf_jmd">
+                          <td className="p-2" data-oid="65suo2e">
                             {entry.entry_number}
                           </td>
                           <td
                             className="p-2 max-w-xs truncate"
-                            data-oid="ytuxuog"
+                            data-oid="c-y70sg"
                           >
                             {entry.title}
                           </td>
-                          <td className="p-2" data-oid="cu69je2">
+                          <td className="p-2" data-oid="uvp_xmz">
                             <Badge
                               variant="secondary"
                               className="text-xs"
-                              data-oid="q93eszs"
+                              data-oid="06xan0u"
                             >
                               {entry.category}
                             </Badge>
                           </td>
-                          <td className="p-2" data-oid="gcdqmq2">
+                          <td className="p-2" data-oid="5xqyu6m">
                             {entry.phase}
                           </td>
-                          <td className="p-2" data-oid="3e_2m66">
-                            <span className={`font-mono`} data-oid="ie35jna">
+                          <td className="p-2" data-oid="bmlh5wk">
+                            <span className={`font-mono`} data-oid="1:9ivif">
                               {entry.danger_score}/10
                             </span>
                           </td>
                           <td
                             className="p-2 text-foreground/50"
-                            data-oid="rwd8ffq"
+                            data-oid="mybmaea"
                           >
                             {new Date(entry.created_at).toLocaleDateString()}
                           </td>
@@ -578,6 +581,7 @@ export default function AdminPage() {
             </Card>
           </TabsContent>
         </Tabs>
+        */}
       </div>
     </div>
   );

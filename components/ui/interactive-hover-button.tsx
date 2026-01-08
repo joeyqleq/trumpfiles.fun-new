@@ -14,26 +14,26 @@ export function InteractiveHoverButton({
         className,
       )}
       {...props}
-      data-oid=":8rd_4h"
+      data-oid="cb79b9h"
     >
-      <div className="flex items-center gap-2" data-oid="b-m.624">
+      <div className="flex items-center gap-2" data-oid="31e0:6z">
         <div
           className="bg-primary h-2 w-2 rounded-full transition-all duration-300 group-hover:scale-[100.8]"
-          data-oid="e613ub3"
+          data-oid="kk4c9fo"
         ></div>
         <span
           className="inline-block transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0"
-          data-oid="br0cp2g"
+          data-oid="_o3ldwo"
         >
           {children}
         </span>
       </div>
       <div
         className="text-primary-foreground absolute top-0 z-10 flex h-full w-full translate-x-12 items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:-translate-x-5 group-hover:opacity-100"
-        data-oid="b4xn2h:"
+        data-oid="1s:gbt7"
       >
-        <span data-oid="b8qm6_e">{children}</span>
-        <ArrowRight data-oid="x9:li3:" />
+        <span data-oid="q59dj62">{children}</span>
+        <ArrowRight data-oid="epo3plg" />
       </div>
     </button>
   );

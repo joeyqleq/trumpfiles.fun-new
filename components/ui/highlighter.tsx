@@ -99,7 +99,7 @@ export function Highlighter({
     <span
       ref={elementRef}
       className="relative inline-block bg-transparent"
-      data-oid="d5n:ed1"
+      data-oid="bhwwboh"
     >
       {children}
     </span>

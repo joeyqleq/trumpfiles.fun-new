@@ -1,0 +1,872 @@
+{
+  "metadata": {
+    "generated": "2025-10-27T18:32:33.834375Z",
+    "total_domains": 92,
+    "image_specs": {
+      "format": "PNG",
+      "size": "128x128px"
+    },
+    "source": "Clearbit Logo API"
+  },
+  "brands": [
+    {
+      "logo_file": "abcnews-go-com.png",
+      "domain": "abcnews.go.com",
+      "brand_name": "Go",
+      "total_entries": 3,
+      "example_entries": [
+        188,
+        200,
+        205
+      ]
+    },
+    {
+      "logo_file": "accountable-us.png",
+      "domain": "accountable.us",
+      "brand_name": "Accountable",
+      "total_entries": 1,
+      "example_entries": [
+        217
+      ]
+    },
+    {
+      "logo_file": "aclu-org.png",
+      "domain": "aclu.org",
+      "brand_name": "Aclu",
+      "total_entries": 3,
+      "example_entries": [
+        176,
+        179,
+        183
+      ]
+    },
+    {
+      "logo_file": "advancingdei-meltzercenter-org.png",
+      "domain": "advancingdei.meltzercenter.org",
+      "brand_name": "Meltzercenter",
+      "total_entries": 1,
+      "example_entries": [
+        191
+      ]
+    },
+    {
+      "logo_file": "afge-org.png",
+      "domain": "afge.org",
+      "brand_name": "Afge",
+      "total_entries": 2,
+      "example_entries": [
+        178,
+        215
+      ]
+    },
+    {
+      "logo_file": "americanimmigrationcouncil-org.png",
+      "domain": "americanimmigrationcouncil.org",
+      "brand_name": "Americanimmigrationcouncil",
+      "total_entries": 1,
+      "example_entries": [
+        222
+      ]
+    },
+    {
+      "logo_file": "americanprogress-org.png",
+      "domain": "americanprogress.org",
+      "brand_name": "Americanprogress",
+      "total_entries": 3,
+      "example_entries": [
+        197,
+        214,
+        215
+      ]
+    },
+    {
+      "logo_file": "amnesty-org.png",
+      "domain": "amnesty.org",
+      "brand_name": "Amnesty",
+      "total_entries": 1,
+      "example_entries": [
+        190
+      ]
+    },
+    {
+      "logo_file": "apha-org.png",
+      "domain": "apha.org",
+      "brand_name": "Apha",
+      "total_entries": 1,
+      "example_entries": [
+        213
+      ]
+    },
+    {
+      "logo_file": "axios-com.png",
+      "domain": "axios.com",
+      "brand_name": "Axios",
+      "total_entries": 1,
+      "example_entries": [
+        230
+      ]
+    },
+    {
+      "logo_file": "azpha-org.png",
+      "domain": "azpha.org",
+      "brand_name": "Azpha",
+      "total_entries": 1,
+      "example_entries": [
+        178
+      ]
+    },
+    {
+      "logo_file": "bostonreview-net.png",
+      "domain": "bostonreview.net",
+      "brand_name": "Bostonreview",
+      "total_entries": 1,
+      "example_entries": [
+        220
+      ]
+    },
+    {
+      "logo_file": "brennancenter-org.png",
+      "domain": "brennancenter.org",
+      "brand_name": "Brennancenter",
+      "total_entries": 1,
+      "example_entries": [
+        211
+      ]
+    },
+    {
+      "logo_file": "bu-edu.png",
+      "domain": "bu.edu",
+      "brand_name": "Bu",
+      "total_entries": 1,
+      "example_entries": [
+        193
+      ]
+    },
+    {
+      "logo_file": "bylinetimes-com.png",
+      "domain": "bylinetimes.com",
+      "brand_name": "Bylinetimes",
+      "total_entries": 1,
+      "example_entries": [
+        190
+      ]
+    },
+    {
+      "logo_file": "cbsnews-com.png",
+      "domain": "cbsnews.com",
+      "brand_name": "Cbsnews",
+      "total_entries": 1,
+      "example_entries": [
+        219
+      ]
+    },
+    {
+      "logo_file": "chicagoappleseed-org.png",
+      "domain": "chicagoappleseed.org",
+      "brand_name": "Chicagoappleseed",
+      "total_entries": 1,
+      "example_entries": [
+        224
+      ]
+    },
+    {
+      "logo_file": "chn-org.png",
+      "domain": "chn.org",
+      "brand_name": "Chn",
+      "total_entries": 2,
+      "example_entries": [
+        231,
+        232
+      ]
+    },
+    {
+      "logo_file": "citizensforethics-org.png",
+      "domain": "citizensforethics.org",
+      "brand_name": "Citizens for Responsibility and Ethics in Washington",
+      "total_entries": 1,
+      "example_entries": [
+        14
+      ]
+    },
+    {
+      "logo_file": "civilrights-org.png",
+      "domain": "civilrights.org",
+      "brand_name": "Civilrights",
+      "total_entries": 5,
+      "example_entries": [
+        181,
+        195,
+        199,
+        216,
+        232
+      ]
+    },
+    {
+      "logo_file": "cnn-com.png",
+      "domain": "cnn.com",
+      "brand_name": "Cnn",
+      "total_entries": 1,
+      "example_entries": [
+        205
+      ]
+    },
+    {
+      "logo_file": "columbialawreview-org.png",
+      "domain": "columbialawreview.org",
+      "brand_name": "Columbialawreview",
+      "total_entries": 1,
+      "example_entries": [
+        199
+      ]
+    },
+    {
+      "logo_file": "commoncause-org.png",
+      "domain": "commoncause.org",
+      "brand_name": "Commoncause",
+      "total_entries": 1,
+      "example_entries": [
+        216
+      ]
+    },
+    {
+      "logo_file": "commonwealthfund-org.png",
+      "domain": "commonwealthfund.org",
+      "brand_name": "Commonwealthfund",
+      "total_entries": 1,
+      "example_entries": [
+        221
+      ]
+    },
+    {
+      "logo_file": "congress-gov.png",
+      "domain": "congress.gov",
+      "brand_name": "Congress",
+      "total_entries": 1,
+      "example_entries": [
+        199
+      ]
+    },
+    {
+      "logo_file": "courthousenews-com.png",
+      "domain": "courthousenews.com",
+      "brand_name": "Courthousenews",
+      "total_entries": 1,
+      "example_entries": [
+        204
+      ]
+    },
+    {
+      "logo_file": "democracy2025-org.png",
+      "domain": "democracy2025.org",
+      "brand_name": "Democracy2025",
+      "total_entries": 1,
+      "example_entries": [
+        228
+      ]
+    },
+    {
+      "logo_file": "democracyforward-org.png",
+      "domain": "democracyforward.org",
+      "brand_name": "Democracyforward",
+      "total_entries": 2,
+      "example_entries": [
+        187,
+        220
+      ]
+    },
+    {
+      "logo_file": "dlrcgroup-com.png",
+      "domain": "dlrcgroup.com",
+      "brand_name": "Dlrcgroup",
+      "total_entries": 1,
+      "example_entries": [
+        212
+      ]
+    },
+    {
+      "logo_file": "docketwise-com.png",
+      "domain": "docketwise.com",
+      "brand_name": "Docketwise",
+      "total_entries": 1,
+      "example_entries": [
+        223
+      ]
+    },
+    {
+      "logo_file": "doctorsoftheworld-org.png",
+      "domain": "doctorsoftheworld.org",
+      "brand_name": "Doctorsoftheworld",
+      "total_entries": 3,
+      "example_entries": [
+        187,
+        222,
+        225
+      ]
+    },
+    {
+      "logo_file": "eascarpenters-org.png",
+      "domain": "eascarpenters.org",
+      "brand_name": "Eascarpenters",
+      "total_entries": 1,
+      "example_entries": [
+        189
+      ]
+    },
+    {
+      "logo_file": "eff-org.png",
+      "domain": "eff.org",
+      "brand_name": "Eff",
+      "total_entries": 1,
+      "example_entries": [
+        226
+      ]
+    },
+    {
+      "logo_file": "en-wikipedia-org.png",
+      "domain": "en.wikipedia.org",
+      "brand_name": "Wikipedia",
+      "total_entries": 1,
+      "example_entries": [
+        229
+      ]
+    },
+    {
+      "logo_file": "epi-org.png",
+      "domain": "epi.org",
+      "brand_name": "Epi",
+      "total_entries": 2,
+      "example_entries": [
+        200,
+        201
+      ]
+    },
+    {
+      "logo_file": "epiaction-org.png",
+      "domain": "epiaction.org",
+      "brand_name": "Epiaction",
+      "total_entries": 1,
+      "example_entries": [
+        201
+      ]
+    },
+    {
+      "logo_file": "epic-org.png",
+      "domain": "epic.org",
+      "brand_name": "Epic",
+      "total_entries": 1,
+      "example_entries": [
+        217
+      ]
+    },
+    {
+      "logo_file": "erudit-org.png",
+      "domain": "erudit.org",
+      "brand_name": "Erudit",
+      "total_entries": 1,
+      "example_entries": [
+        195
+      ]
+    },
+    {
+      "logo_file": "eur-nl.png",
+      "domain": "eur.nl",
+      "brand_name": "Eur",
+      "total_entries": 1,
+      "example_entries": [
+        185
+      ]
+    },
+    {
+      "logo_file": "govexec-com.png",
+      "domain": "govexec.com",
+      "brand_name": "Govexec",
+      "total_entries": 2,
+      "example_entries": [
+        208,
+        229
+      ]
+    },
+    {
+      "logo_file": "guttmacher-org.png",
+      "domain": "guttmacher.org",
+      "brand_name": "Guttmacher",
+      "total_entries": 1,
+      "example_entries": [
+        181
+      ]
+    },
+    {
+      "logo_file": "hcn-org.png",
+      "domain": "hcn.org",
+      "brand_name": "Hcn",
+      "total_entries": 1,
+      "example_entries": [
+        209
+      ]
+    },
+    {
+      "logo_file": "hepi-ac-uk.png",
+      "domain": "hepi.ac.uk",
+      "brand_name": "Ac",
+      "total_entries": 1,
+      "example_entries": [
+        191
+      ]
+    },
+    {
+      "logo_file": "hrw-org.png",
+      "domain": "hrw.org",
+      "brand_name": "Hrw",
+      "total_entries": 1,
+      "example_entries": [
+        187
+      ]
+    },
+    {
+      "logo_file": "hunton-com.png",
+      "domain": "hunton.com",
+      "brand_name": "Hunton",
+      "total_entries": 1,
+      "example_entries": [
+        225
+      ]
+    },
+    {
+      "logo_file": "ij-org.png",
+      "domain": "ij.org",
+      "brand_name": "Ij",
+      "total_entries": 1,
+      "example_entries": [
+        224
+      ]
+    },
+    {
+      "logo_file": "immigrantjustice-org.png",
+      "domain": "immigrantjustice.org",
+      "brand_name": "Immigrantjustice",
+      "total_entries": 1,
+      "example_entries": [
+        200
+      ]
+    },
+    {
+      "logo_file": "insideclimatenews-org.png",
+      "domain": "insideclimatenews.org",
+      "brand_name": "Insideclimatenews",
+      "total_entries": 1,
+      "example_entries": [
+        194
+      ]
+    },
+    {
+      "logo_file": "interfaithalliance-org.png",
+      "domain": "interfaithalliance.org",
+      "brand_name": "Interfaithalliance",
+      "total_entries": 1,
+      "example_entries": [
+        202
+      ]
+    },
+    {
+      "logo_file": "internetsociety-org.png",
+      "domain": "internetsociety.org",
+      "brand_name": "Internetsociety",
+      "total_entries": 1,
+      "example_entries": [
+        203
+      ]
+    },
+    {
+      "logo_file": "ipas-org.png",
+      "domain": "ipas.org",
+      "brand_name": "Ipas",
+      "total_entries": 1,
+      "example_entries": [
+        202
+      ]
+    },
+    {
+      "logo_file": "jacksonlewis-com.png",
+      "domain": "jacksonlewis.com",
+      "brand_name": "Jacksonlewis",
+      "total_entries": 1,
+      "example_entries": [
+        208
+      ]
+    },
+    {
+      "logo_file": "journals-sagepub-com.png",
+      "domain": "journals.sagepub.com",
+      "brand_name": "Sagepub",
+      "total_entries": 1,
+      "example_entries": [
+        192
+      ]
+    },
+    {
+      "logo_file": "justice-gov.png",
+      "domain": "justice.gov",
+      "brand_name": "U.S. Department of Justice",
+      "total_entries": 1,
+      "example_entries": [
+        13
+      ]
+    },
+    {
+      "logo_file": "kff-org.png",
+      "domain": "kff.org",
+      "brand_name": "Kff",
+      "total_entries": 3,
+      "example_entries": [
+        180,
+        193,
+        218
+      ]
+    },
+    {
+      "logo_file": "latimes-com.png",
+      "domain": "latimes.com",
+      "brand_name": "Latimes",
+      "total_entries": 1,
+      "example_entries": [
+        205
+      ]
+    },
+    {
+      "logo_file": "lemonde-fr.png",
+      "domain": "lemonde.fr",
+      "brand_name": "Lemonde",
+      "total_entries": 1,
+      "example_entries": [
+        196
+      ]
+    },
+    {
+      "logo_file": "lens-civicus-org.png",
+      "domain": "lens.civicus.org",
+      "brand_name": "Civicus",
+      "total_entries": 1,
+      "example_entries": [
+        190
+      ]
+    },
+    {
+      "logo_file": "libertyhumanrights-org-uk.png",
+      "domain": "libertyhumanrights.org.uk",
+      "brand_name": "Org",
+      "total_entries": 1,
+      "example_entries": [
+        190
+      ]
+    },
+    {
+      "logo_file": "medicarerights-org.png",
+      "domain": "medicarerights.org",
+      "brand_name": "Medicarerights",
+      "total_entries": 1,
+      "example_entries": [
+        221
+      ]
+    },
+    {
+      "logo_file": "michiganlawreview-org.png",
+      "domain": "michiganlawreview.org",
+      "brand_name": "Michiganlawreview",
+      "total_entries": 1,
+      "example_entries": [
+        218
+      ]
+    },
+    {
+      "logo_file": "monitor-civicus-org.png",
+      "domain": "monitor.civicus.org",
+      "brand_name": "Civicus",
+      "total_entries": 1,
+      "example_entries": [
+        230
+      ]
+    },
+    {
+      "logo_file": "motherjones-com.png",
+      "domain": "motherjones.com",
+      "brand_name": "Motherjones",
+      "total_entries": 1,
+      "example_entries": [
+        207
+      ]
+    },
+    {
+      "logo_file": "nativenewsonline-net.png",
+      "domain": "nativenewsonline.net",
+      "brand_name": "Nativenewsonline",
+      "total_entries": 1,
+      "example_entries": [
+        209
+      ]
+    },
+    {
+      "logo_file": "nclnet-org.png",
+      "domain": "nclnet.org",
+      "brand_name": "Nclnet",
+      "total_entries": 1,
+      "example_entries": [
+        201
+      ]
+    },
+    {
+      "logo_file": "nea-org.png",
+      "domain": "nea.org",
+      "brand_name": "Nea",
+      "total_entries": 3,
+      "example_entries": [
+        176,
+        188,
+        231
+      ]
+    },
+    {
+      "logo_file": "nilc-org.png",
+      "domain": "nilc.org",
+      "brand_name": "Nilc",
+      "total_entries": 1,
+      "example_entries": [
+        219
+      ]
+    },
+    {
+      "logo_file": "nwlc-org.png",
+      "domain": "nwlc.org",
+      "brand_name": "Nwlc",
+      "total_entries": 5,
+      "example_entries": [
+        176,
+        182,
+        183,
+        184,
+        218
+      ]
+    },
+    {
+      "logo_file": "nytimes-com.png",
+      "domain": "nytimes.com",
+      "brand_name": "Nytimes",
+      "total_entries": 2,
+      "example_entries": [
+        194,
+        225
+      ]
+    },
+    {
+      "logo_file": "pbs-org.png",
+      "domain": "pbs.org",
+      "brand_name": "PBS NewsHour",
+      "total_entries": 2,
+      "example_entries": [
+        15,
+        188
+      ]
+    },
+    {
+      "logo_file": "pen-org.png",
+      "domain": "pen.org",
+      "brand_name": "Pen",
+      "total_entries": 3,
+      "example_entries": [
+        179,
+        184,
+        210
+      ]
+    },
+    {
+      "logo_file": "phm-org-uk.png",
+      "domain": "phm.org.uk",
+      "brand_name": "Org",
+      "total_entries": 1,
+      "example_entries": [
+        185
+      ]
+    },
+    {
+      "logo_file": "policyreview-info.png",
+      "domain": "policyreview.info",
+      "brand_name": "Policyreview",
+      "total_entries": 1,
+      "example_entries": [
+        211
+      ]
+    },
+    {
+      "logo_file": "politico-com.png",
+      "domain": "politico.com",
+      "brand_name": "Politico",
+      "total_entries": 1,
+      "example_entries": [
+        206
+      ]
+    },
+    {
+      "logo_file": "prisonpolicy-org.png",
+      "domain": "prisonpolicy.org",
+      "brand_name": "Prisonpolicy",
+      "total_entries": 1,
+      "example_entries": [
+        200
+      ]
+    },
+    {
+      "logo_file": "privacyinternational-org.png",
+      "domain": "privacyinternational.org",
+      "brand_name": "Privacyinternational",
+      "total_entries": 1,
+      "example_entries": [
+        185
+      ]
+    },
+    {
+      "logo_file": "protectborrowers-org.png",
+      "domain": "protectborrowers.org",
+      "brand_name": "Protectborrowers",
+      "total_entries": 1,
+      "example_entries": [
+        188
+      ]
+    },
+    {
+      "logo_file": "reuters-com.png",
+      "domain": "reuters.com",
+      "brand_name": "Reuters",
+      "total_entries": 2,
+      "example_entries": [
+        194,
+        229
+      ]
+    },
+    {
+      "logo_file": "rfsu-se.png",
+      "domain": "rfsu.se",
+      "brand_name": "Rfsu",
+      "total_entries": 1,
+      "example_entries": [
+        202
+      ]
+    },
+    {
+      "logo_file": "skadden-com.png",
+      "domain": "skadden.com",
+      "brand_name": "Skadden",
+      "total_entries": 1,
+      "example_entries": [
+        208
+      ]
+    },
+    {
+      "logo_file": "stopaapihate-org.png",
+      "domain": "stopaapihate.org",
+      "brand_name": "Stopaapihate",
+      "total_entries": 1,
+      "example_entries": [
+        223
+      ]
+    },
+    {
+      "logo_file": "tcf-org.png",
+      "domain": "tcf.org",
+      "brand_name": "Tcf",
+      "total_entries": 2,
+      "example_entries": [
+        189,
+        201
+      ]
+    },
+    {
+      "logo_file": "techpolicy-press.png",
+      "domain": "techpolicy.press",
+      "brand_name": "Techpolicy",
+      "total_entries": 1,
+      "example_entries": [
+        177
+      ]
+    },
+    {
+      "logo_file": "theconversation-com.png",
+      "domain": "theconversation.com",
+      "brand_name": "Theconversation",
+      "total_entries": 1,
+      "example_entries": [
+        191
+      ]
+    },
+    {
+      "logo_file": "throughtheimmigrationlens-com.png",
+      "domain": "throughtheimmigrationlens.com",
+      "brand_name": "Throughtheimmigrationlens",
+      "total_entries": 1,
+      "example_entries": [
+        223
+      ]
+    },
+    {
+      "logo_file": "truthout-org.png",
+      "domain": "truthout.org",
+      "brand_name": "Truthout",
+      "total_entries": 1,
+      "example_entries": [
+        228
+      ]
+    },
+    {
+      "logo_file": "vera-org.png",
+      "domain": "vera.org",
+      "brand_name": "Vera",
+      "total_entries": 1,
+      "example_entries": [
+        187
+      ]
+    },
+    {
+      "logo_file": "vocal-media.png",
+      "domain": "vocal.media",
+      "brand_name": "Vocal",
+      "total_entries": 1,
+      "example_entries": [
+        230
+      ]
+    },
+    {
+      "logo_file": "whistleblower-org.png",
+      "domain": "whistleblower.org",
+      "brand_name": "Whistleblower",
+      "total_entries": 1,
+      "example_entries": [
+        228
+      ]
+    },
+    {
+      "logo_file": "whitehouse-gov.png",
+      "domain": "whitehouse.gov",
+      "brand_name": "Whitehouse",
+      "total_entries": 1,
+      "example_entries": [
+        222
+      ]
+    },
+    {
+      "logo_file": "williamsinstitute-law-ucla-edu.png",
+      "domain": "williamsinstitute.law.ucla.edu",
+      "brand_name": "Ucla",
+      "total_entries": 1,
+      "example_entries": [
+        192
+      ]
+    },
+    {
+      "logo_file": "wipfli-com.png",
+      "domain": "wipfli.com",
+      "brand_name": "Wipfli",
+      "total_entries": 1,
+      "example_entries": [
+        209
+      ]
+    }
+  ]
+}

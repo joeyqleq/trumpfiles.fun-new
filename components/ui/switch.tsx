@@ -17,14 +17,14 @@ function Switch({
         className,
       )}
       {...props}
-      data-oid="vy0p.fv"
+      data-oid="_w0h26y"
     >
       <SwitchPrimitive.Thumb
         data-slot="switch-thumb"
         className={cn(
           "bg-background dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-primary-foreground pointer-events-none block size-4 rounded-full ring-0 transition-transform data-[state=checked]:translate-x-[calc(100%-2px)] data-[state=unchecked]:translate-x-0",
         )}
-        data-oid="-3-cv0a"
+        data-oid="0px9x_n"
       />
     </SwitchPrimitive.Root>
   );

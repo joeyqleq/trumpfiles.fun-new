@@ -36,14 +36,14 @@ export const PulsatingButton = React.forwardRef<
           } as React.CSSProperties
         }
         {...props}
-        data-oid="evmfg6_"
+        data-oid="1wz4wuw"
       >
-        <div className="relative z-10" data-oid="4cqfyzp">
+        <div className="relative z-10" data-oid="nyc-.sb">
           {children}
         </div>
         <div
           className="absolute top-1/2 left-1/2 size-full -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-lg bg-inherit"
-          data-oid="m9k45e0"
+          data-oid="owcn7fq"
         />
       </button>
     );
