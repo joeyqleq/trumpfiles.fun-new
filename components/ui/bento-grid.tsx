@@ -3,6 +3,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import MagnetLines from "@/components/MagnetLines"
 
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
   children: ReactNode
@@ -55,45 +56,65 @@ const BentoCard = ({
     )}
     {...props}
   >
-    <div>{background}</div>
-    <div className="p-4">
-      <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 transition-all duration-300 lg:group-hover:-translate-y-10">
-        <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75" />
-        <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
-          {name}
-        </h3>
-        <p className="max-w-lg text-neutral-400">{description}</p>
-      </div>
+    {/* MagnetLines Background */}
+    <div className="absolute inset-0 z-0 opacity-30 pointer-events-none overflow-hidden flex items-center justify-center">
+      <MagnetLines
+        rows={6}
+        columns={8}
+        containerSize="100%"
+        lineColor="#f97316"
+        lineWidth="2px"
+        lineHeight="20px"
+        baseAngle={-15}
+        className="w-full h-full"
+        style={{ width: '100%', height: '100%' }}
+      />
+    </div>
+    
+    {/* Original background overlay */}
+    <div className="relative z-[1]">{background}</div>
+    
+    {/* Glassy content container */}
+    <div className="p-4 relative z-10">
+      <div className="backdrop-blur-md bg-black/30 rounded-xl p-4 border border-white/10">
+        <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 transition-all duration-300 lg:group-hover:-translate-y-10">
+          <Icon className="h-12 w-12 origin-left transform-gpu text-orange-500 transition-all duration-300 ease-in-out group-hover:scale-75" />
+          <h3 className="text-xl font-semibold text-neutral-100">
+            {name}
+          </h3>
+          <p className="max-w-lg text-neutral-300">{description}</p>
+        </div>
 
-      <div
-        className={cn(
-          "pointer-events-none flex w-full translate-y-0 transform-gpu flex-row items-center transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 lg:hidden"
-        )}
-      >
-        <Button
-          variant="link"
-          asChild
-          size="sm"
-          className="pointer-events-auto p-0"
+        <div
+          className={cn(
+            "pointer-events-none flex w-full translate-y-0 transform-gpu flex-row items-center transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 lg:hidden"
+          )}
         >
-          <a href={href}>
-            {cta}
-            <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
-          </a>
-        </Button>
+          <Button
+            variant="link"
+            asChild
+            size="sm"
+            className="pointer-events-auto p-0 text-orange-400"
+          >
+            <a href={href}>
+              {cta}
+              <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
+            </a>
+          </Button>
+        </div>
       </div>
     </div>
 
     <div
       className={cn(
-        "pointer-events-none absolute bottom-0 hidden w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 lg:flex"
+        "pointer-events-none absolute bottom-0 hidden w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 lg:flex z-20"
       )}
     >
       <Button
         variant="link"
         asChild
         size="sm"
-        className="pointer-events-auto p-0"
+        className="pointer-events-auto p-0 text-orange-400 backdrop-blur-md bg-black/50 px-3 py-1 rounded-full"
       >
         <a href={href}>
           {cta}
@@ -102,8 +123,9 @@ const BentoCard = ({
       </Button>
     </div>
 
-    <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
+    <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10 z-[5]" />
   </div>
 )
 
 export { BentoCard, BentoGrid }
+

@@ -47,8 +47,8 @@ function Orange({ mouse }: { mouse: { x: number; y: number } }) {
       <primitive
         ref={meshRef}
         object={scene}
-        scale={4.2} // Increased scale
-        position={[0, -0.5, 0]} // Adjusted position to prevent cropping
+        scale={3.8} // Slightly reduced scale to fit better
+        position={[0, 0.3, 0]} // Raised position to show full spherical base
         rotation={[0, 0, 0]} 
       />
     </Float>
@@ -71,7 +71,7 @@ export default function OrangeHero() {
       onMouseMove={handleMouseMove}
     >
       <Canvas
-        camera={{ position: [0, 0, 6], fov: 45 }} // Adjusted camera
+        camera={{ position: [0, 0.5, 8], fov: 45 }} // Raised camera position and pushed back to show full spherical base
         className="w-full h-full"
       >
         <Suspense fallback={null}>

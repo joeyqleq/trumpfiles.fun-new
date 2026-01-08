@@ -4,23 +4,31 @@ import Link from "next/link";
 import { Github, Twitter, Mail } from "lucide-react";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 
-export default function AsciiFooter() {
-  const asciiArt = `
-████████╗██╗  ██╗███████╗    ████████╗██████╗ ██╗   ██╗███╗   ███╗██████╗ 
-╚══██╔══╝██║  ██║██╔════╝    ╚══██╔══╝██╔══██╗██║   ██║████╗ ████║██╔══██╗
-   ██║   ███████║█████╗         ██║   ██████╔╝██║   ██║██╔████╔██║██████╔╝
-   ██║   ██╔══██║██╔══╝         ██║   ██╔══██╗██║   ██║██║╚██╔╝██║██╔═══╝ 
-   ██║   ██║  ██║███████╗       ██║   ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║     
-   ╚═╝   ╚═╝  ╚═╝╚══════╝       ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     
-                                                                            
+// ASCII Art for THE TRUMP FILES - Block letter style
+const ASCII_ART = `
+████████╗██╗  ██╗███████╗
+╚══██╔══╝██║  ██║██╔════╝
+   ██║   ███████║█████╗  
+   ██║   ██╔══██║██╔══╝  
+   ██║   ██║  ██║███████╗
+   ╚═╝   ╚═╝  ╚═╝╚══════╝
+
+████████╗██████╗ ██╗   ██╗███╗   ███╗██████╗ 
+╚══██╔══╝██╔══██╗██║   ██║████╗ ████║██╔══██╗
+   ██║   ██████╔╝██║   ██║██╔████╔██║██████╔╝
+   ██║   ██╔══██╗██║   ██║██║╚██╔╝██║██╔═══╝ 
+   ██║   ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║     
+   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     
+
 ███████╗██╗██╗     ███████╗███████╗
 ██╔════╝██║██║     ██╔════╝██╔════╝
 █████╗  ██║██║     █████╗  ███████╗
 ██╔══╝  ██║██║     ██╔══╝  ╚════██║
 ██║     ██║███████╗███████╗███████║
 ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
-  `;
+`;
 
+export default function AsciiFooter() {
   return (
     <footer className="relative border-t border-white/10 bg-black/50 backdrop-blur-sm overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -35,11 +43,14 @@ export default function AsciiFooter() {
       </div>
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid md:grid-cols-3 gap-8">
-          {/* ASCII Art */}
+          {/* ASCII Art Brand Title */}
           <div className="md:col-span-2">
-            <pre className="bg-linear-to-r from-orange-500 via-orange-400 to-red-500 bg-clip-text text-transparent text-sm font-mono leading-tight whitespace-pre overflow-x-auto">
-              {asciiArt}
+            <pre className="font-mono text-xs md:text-sm leading-none text-orange-500 whitespace-pre overflow-hidden select-none mb-4 bg-linear-to-r from-orange-500 via-orange-400 to-red-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+              {ASCII_ART}
             </pre>
+            <div className="font-mono text-xs text-orange-500/60 mt-2 tracking-widest">
+              ════════════════════════════════
+            </div>
             <p className="text-sm text-foreground/60 mt-6">
               A comprehensive, data-driven archive documenting 700+ incidents across 40+ years.
             </p>
