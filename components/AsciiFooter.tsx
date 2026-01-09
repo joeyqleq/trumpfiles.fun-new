@@ -4,29 +4,28 @@ import Link from "next/link";
 import { Github, Twitter, Mail } from "lucide-react";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 
-// ASCII Art for THE TRUMP FILES - Block letter style
+// ASCII Art - Simple block letters using only standard ASCII
 const ASCII_ART = `
 ████████╗██╗  ██╗███████╗
-╚══██╔══╝██║  ██║██╔════╝
-   ██║   ███████║█████╗  
-   ██║   ██╔══██║██╔══╝  
+   ██╔══╝██║  ██║██╔════╝
+   ██║   ███████║█████╗
+   ██║   ██╔══██║██╔══╝
    ██║   ██║  ██║███████╗
    ╚═╝   ╚═╝  ╚═╝╚══════╝
 
-████████╗██████╗ ██╗   ██╗███╗   ███╗██████╗ 
-╚══██╔══╝██╔══██╗██║   ██║████╗ ████║██╔══██╗
+████████╗██████╗ ██╗   ██╗███╗   ███╗██████╗
+   ██╔══╝██╔══██╗██║   ██║████╗ ████║██╔══██╗
    ██║   ██████╔╝██║   ██║██╔████╔██║██████╔╝
-   ██║   ██╔══██╗██║   ██║██║╚██╔╝██║██╔═══╝ 
-   ██║   ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║     
-   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     
+   ██║   ██╔══██╗██║   ██║██║╚██╔╝██║██╔═══╝
+   ██║   ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║
+   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝
 
 ███████╗██╗██╗     ███████╗███████╗
 ██╔════╝██║██║     ██╔════╝██╔════╝
 █████╗  ██║██║     █████╗  ███████╗
 ██╔══╝  ██║██║     ██╔══╝  ╚════██║
 ██║     ██║███████╗███████╗███████║
-╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
-`;
+╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝`;
 
 export default function AsciiFooter() {
   return (
@@ -45,7 +44,14 @@ export default function AsciiFooter() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* ASCII Art Brand Title */}
           <div className="md:col-span-2">
-            <pre className="font-mono text-xs md:text-sm leading-none text-orange-500 whitespace-pre overflow-hidden select-none mb-4 bg-linear-to-r from-orange-500 via-orange-400 to-red-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+            <pre 
+              className="leading-none text-orange-500 whitespace-pre overflow-hidden select-none mb-4 drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]"
+              style={{ 
+                fontFamily: '"Menlo", "Monaco", "Courier New", monospace',
+                fontSize: '0.65rem',
+                letterSpacing: '-0.03em'
+              }}
+            >
               {ASCII_ART}
             </pre>
             <div className="font-mono text-xs text-orange-500/60 mt-2 tracking-widest">
@@ -57,7 +63,7 @@ export default function AsciiFooter() {
           </div>
 
           {/* Links & Social */}
-          <div className="space-y-6">
+          <div className="space-y-6 ml-auto text-right">
             <div>
               <h3 className="text-lg font-bold mb-4 text-orange-400">Quick Links</h3>
               <ul className="space-y-2 text-sm">
