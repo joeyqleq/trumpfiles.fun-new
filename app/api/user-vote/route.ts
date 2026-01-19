@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { neonClient } from '@/lib/neonClient';
+import { sql } from '@/lib/neonClient';
 
 export async function POST(request: NextRequest) {
   try {
@@ -16,8 +16,6 @@ export async function POST(request: NextRequest) {
     // TODO: Get userId from session/auth when implemented
     const userIdOrIp = userId || request.headers.get('x-forwarded-for') || 'anonymous';
 
-    const sql = neonClient();
-    
     // Insert or update vote
     await sql`
       INSERT INTO user_votes (entry_number, user_id, score, voted_at)
@@ -61,8 +59,6 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const sql = neonClient();
-    
     const [voteStats] = await sql`
       SELECT 
         COUNT(*) as vote_count,

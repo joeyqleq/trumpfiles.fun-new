@@ -55,9 +55,12 @@ export function HoverBorderGradient({
             return () => clearInterval(interval);
         }
     }, [hovered]);
+    // Cast Tag to allow multiple children
+    const Component = Tag as React.ComponentType<React.HTMLAttributes<HTMLElement> & { children?: React.ReactNode }>;
+
     return (
-        <Tag
-            onMouseEnter={(event: React.MouseEvent<HTMLDivElement>) => {
+        <Component
+            onMouseEnter={() => {
                 setHovered(true);
             }}
             onMouseLeave={() => setHovered(false)}
@@ -94,6 +97,6 @@ export function HoverBorderGradient({
                 transition={{ ease: "linear", duration: duration ?? 1 }}
             />
             <div className="bg-black absolute z-1 flex-none inset-[2px] rounded-[100px]" />
-        </Tag>
+        </Component>
     );
 }

@@ -14,7 +14,7 @@ interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
   name: string
   className: string
   background: ReactNode
-  Icon: React.ElementType
+  Icon: React.ComponentType<{ className?: string }>
   description: string
   href: string
   cta: string
@@ -70,10 +70,10 @@ const BentoCard = ({
         style={{ width: '100%', height: '100%' }}
       />
     </div>
-    
+
     {/* Original background overlay */}
     <div className="relative z-[1]">{background}</div>
-    
+
     {/* Glassy content container */}
     <div className="p-4 relative z-10">
       <div className="backdrop-blur-md bg-black/30 rounded-xl p-4 border border-white/10">

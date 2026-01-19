@@ -6,6 +6,7 @@ import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
 import Image from "next/image";
 import { BookOpen, TrendingUp, Laugh, Database, Network, BarChart3, Brain } from "lucide-react";
 import GradientBlinds from "@/components/GradientBlinds";
+import PixelCard from "@/components/PixelCard";
 
 export default function WTFPage() {
   return (
@@ -82,14 +83,25 @@ export default function WTFPage() {
             What The Fuck Is All This?
           </h2>
           <div className="relative">
-            {/* Floating Trump Logo */}
-            <Image
-              src="/images/ascii_box.png"
-              alt="Trump ASCII Logo"
-              width={250}
-              height={250}
-              className="float-right ml-6 mb-4 mt-2"
-            />
+            {/* Floating PixelCard with Trump King Image */}
+            <div className="float-right ml-6 mb-4 mt-2">
+              <PixelCard
+                variant="default"
+                gap={5}
+                speed={40}
+                colors="#ff6b00,#ff8c00,#ffa500,#cc5500"
+                noFocus={false}
+                className="!w-[280px] !h-[350px] !aspect-auto"
+              >
+                <Image
+                  src="/images/trump_king.png"
+                  alt="Trump King"
+                  width={260}
+                  height={320}
+                  className="absolute inset-0 m-auto object-contain z-10 pointer-events-none drop-shadow-[0_0_15px_rgba(255,107,0,0.4)]"
+                />
+              </PixelCard>
+            </div>
             <div className="text-lg text-foreground/80 leading-relaxed space-y-4">
               <p>
                 The Trump Files is the internet's most <span className="text-orange-400 font-bold">comprehensive</span>, <span className="text-lg text-orange-300">absurd</span>, darkly <span className="font-bold">hilarious</span>, and [<span className="text-orange-400">painfully</span>] accurate attempt to document the nearly <span className="text-xl font-bold text-orange-400">unfathomable era</span> that is "life with Donald Trump."

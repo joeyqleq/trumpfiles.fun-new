@@ -51,9 +51,11 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
 
   // Parse actual source domains from entry data
   const getSourceLogos = () => {
-    if (!entry.sources || entry.sources.length === 0) return [];
-    
-    return entry.sources.slice(0, 3).map(sourceUrl => {
+    // Cast to any to handle optional sources field that may not be in type
+    const entrySources = (entry as { sources?: string[] }).sources;
+    if (!entrySources || entrySources.length === 0) return [];
+
+    return entrySources.slice(0, 3).map((sourceUrl: string) => {
       try {
         const url = new URL(sourceUrl);
         const domain = url.hostname.replace('www.', '');
@@ -68,7 +70,7 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
       }
     }).filter(Boolean) as { domain: string; logo: string; url: string }[];
   };
-  
+
   const sources = getSourceLogos();
 
   return (
@@ -270,11 +272,10 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                           <button
                             key={score}
                             onClick={() => handleVote(score)}
-                            className={`aspect-square rounded ${
-                              userVote === score
+                            className={`aspect-square rounded ${userVote === score
                                 ? `${getVoteColor(score)} ring-2 ring-white`
                                 : `${getVoteColor(score)}/30 hover:${getVoteColor(score)}`
-                            } transition-all flex items-center justify-center text-xs font-bold`}
+                              } transition-all flex items-center justify-center text-xs font-bold`}
                           >
                             {score}
                           </button>
@@ -306,9 +307,9 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                   <div>
                     <h4 className="text-sm font-semibold text-orange-400 mb-2">Discussion</h4>
                     <div className="space-y-2">
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
+                      <Button
+                        variant="outline"
+                        size="sm"
                         className="w-full"
                         onClick={() => window.location.href = `/entry/${entry.entry_number}#comments`}
                       >

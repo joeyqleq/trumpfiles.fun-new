@@ -66,17 +66,28 @@ export default function VisualizerPage() {
     }
   };
 
-  // Category distribution data
+  // Category distribution data - limited to top categories
   const getCategoryData = () => {
     const categoryCount = entries.reduce((acc, entry) => {
       acc[entry.category] = (acc[entry.category] || 0) + 1;
       return acc;
     }, {} as Record<string, number>);
 
-    return Object.entries(categoryCount).map(([name, value]) => ({
+    // Sort by count and take top 8, group rest into "Other"
+    const sorted = Object.entries(categoryCount)
+      .sort(([, a], [, b]) => b - a);
+
+    const topCategories = sorted.slice(0, 8).map(([name, value]) => ({
       name,
       value,
     }));
+
+    const otherCount = sorted.slice(8).reduce((sum, [, val]) => sum + val, 0);
+    if (otherCount > 0) {
+      topCategories.push({ name: "Other", value: otherCount });
+    }
+
+    return topCategories;
   };
 
   // Timeline data (by year)
@@ -323,22 +334,33 @@ export default function VisualizerPage() {
                   </CardHeader>
                   <CardContent>
                     <ResponsiveContainer width="100%" height={350}>
-                      <Pie
-                        data={categoryData}
-                        cx="50%"
-                        cy="50%"
-                        labelLine={false}
-                        label={false}
-                        outerRadius={100}
-                        fill="#8884d8"
-                        dataKey="value"
-                      >
-                        {categoryData.map((entry, index) => (
-                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                        ))}
-                      </Pie>
-                      <Tooltip content={<CustomTooltip />} />
-                      <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                      <PieChart>
+                        <Pie
+                          data={categoryData}
+                          cx="35%"
+                          cy="50%"
+                          labelLine={false}
+                          label={false}
+                          outerRadius={90}
+                          fill="#8884d8"
+                          dataKey="value"
+                        >
+                          {categoryData.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                          ))}
+                        </Pie>
+                        <Tooltip content={<CustomTooltip />} />
+                        <Legend
+                          layout="vertical"
+                          verticalAlign="middle"
+                          align="right"
+                          wrapperStyle={{
+                            paddingLeft: "20px",
+                            maxHeight: "300px",
+                            overflow: "hidden"
+                          }}
+                        />
+                      </PieChart>
                     </ResponsiveContainer>
                     <div className="mt-4 p-4 bg-orange-900/20 rounded-lg">
                       <p className="text-sm text-foreground/80">
@@ -573,11 +595,11 @@ export default function VisualizerPage() {
                     <PieChart>
                       <Pie
                         data={phaseData}
-                        cx="50%"
+                        cx="35%"
                         cy="50%"
-                        labelLine={true}
-                        label={({ name, percent }: any) => `${name}: ${(percent * 100).toFixed(0)}%`}
-                        outerRadius={140}
+                        labelLine={false}
+                        label={false}
+                        outerRadius={120}
                         fill="#8884d8"
                         dataKey="value"
                       >
@@ -586,6 +608,21 @@ export default function VisualizerPage() {
                         ))}
                       </Pie>
                       <Tooltip content={<CustomTooltip />} />
+                      <Legend
+                        layout="vertical"
+                        verticalAlign="middle"
+                        align="right"
+                        wrapperStyle={{
+                          paddingLeft: "20px",
+                          maxHeight: "350px",
+                          overflow: "hidden"
+                        }}
+                        formatter={(value: string, entry: any) => {
+                          const item = phaseData.find(d => d.name === value);
+                          const percent = item ? ((item.value / phaseData.reduce((sum, d) => sum + d.value, 0)) * 100).toFixed(0) : 0;
+                          return `${value}: ${percent}%`;
+                        }}
+                      />
                     </PieChart>
                   </ResponsiveContainer>
                   <div className="mt-6 p-4 bg-orange-900/20 rounded-lg">

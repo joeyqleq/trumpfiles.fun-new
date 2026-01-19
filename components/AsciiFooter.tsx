@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Github, Twitter, Mail } from "lucide-react";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
 
@@ -32,21 +33,21 @@ export default function AsciiFooter() {
     <footer className="relative border-t border-white/10 bg-black/50 backdrop-blur-sm overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <FlickeringGrid
-          squareSize={4}
-          gridGap={6}
+          squareSize={3}
+          gridGap={5}
           color="#f97316"
-          maxOpacity={0.15}
-          flickerChance={0.1}
+          maxOpacity={0.3}
+          flickerChance={0.2}
           className="w-full h-full"
         />
       </div>
       <div className="container mx-auto px-4 py-12 relative z-10">
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* ASCII Art Brand Title */}
-          <div className="md:col-span-2">
-            <pre 
+        <div className="grid md:grid-cols-3 gap-8 items-center">
+          {/* ASCII Art Brand Title - Left Column */}
+          <div className="flex flex-col justify-center">
+            <pre
               className="leading-none text-orange-500 whitespace-pre overflow-hidden select-none mb-4 drop-shadow-[0_0_10px_rgba(249,115,22,0.5)]"
-              style={{ 
+              style={{
                 fontFamily: '"Menlo", "Monaco", "Courier New", monospace',
                 fontSize: '0.65rem',
                 letterSpacing: '-0.03em'
@@ -62,8 +63,23 @@ export default function AsciiFooter() {
             </p>
           </div>
 
-          {/* Links & Social */}
-          <div className="space-y-6 ml-auto text-right">
+          {/* Trump Bathtub Image - Center Column (Centered Both Horizontally & Vertically) */}
+          <div className="flex items-center justify-center self-center">
+            <div className="relative group">
+              <Image
+                src="/images/trump_bathtub.png"
+                alt="Trump in Bathtub"
+                width={280}
+                height={280}
+                className="w-auto h-auto max-w-[280px] object-contain drop-shadow-[0_0_20px_rgba(249,115,22,0.4)] transition-all duration-500 group-hover:drop-shadow-[0_0_30px_rgba(249,115,22,0.6)] group-hover:scale-105"
+              />
+              {/* Animated border glow */}
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-500/20 via-transparent to-orange-500/20 animate-pulse opacity-50 pointer-events-none" />
+            </div>
+          </div>
+
+          {/* Links & Social - Right Column */}
+          <div className="space-y-6 text-right flex flex-col justify-center">
             <div>
               <h3 className="text-lg font-bold mb-4 text-orange-400">Quick Links</h3>
               <ul className="space-y-2 text-sm">
@@ -92,7 +108,7 @@ export default function AsciiFooter() {
 
             <div>
               <h3 className="text-lg font-bold mb-4 text-orange-400">Connect</h3>
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-end">
                 <a
                   href="https://github.com"
                   target="_blank"

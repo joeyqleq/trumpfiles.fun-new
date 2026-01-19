@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { JSX } from 'react';
 
 class Pixel {
@@ -180,7 +180,7 @@ export default function PixelCard({
   const pixelsRef = useRef<Pixel[]>([]);
   const animationRef = useRef<ReturnType<typeof requestAnimationFrame> | null>(null);
   const timePreviousRef = useRef(performance.now());
-  const reducedMotion = useRef(window.matchMedia('(prefers-reduced-motion: reduce)').matches).current;
+  const [reducedMotion, setReducedMotion] = useState(false);
 
   const variantCfg: VariantConfig = VARIANTS[variant] || VARIANTS.default;
   const finalGap = gap ?? variantCfg.gap;
@@ -265,6 +265,11 @@ export default function PixelCard({
   };
 
   useEffect(() => {
+    // Check for reduced motion preference (SSR safe)
+    if (typeof window !== 'undefined') {
+      setReducedMotion(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    }
+
     initPixels();
     const observer = new ResizeObserver(() => {
       initPixels();

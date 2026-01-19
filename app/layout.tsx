@@ -40,18 +40,43 @@ export default function RootLayout({
       <head data-oid="07:6u-c">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" data-oid="t7rm-0k" />
 
-        <Script id="matomo-tag-manager" data-oid="nrltwfv">
+        {/* Tianji Analytics */}
+        <Script
+          async
+          defer
+          src="https://tianji.p5n.lol/tracker.js"
+          data-website-id="cmkknj04j0001fiaeb33fvmi7"
+          strategy="afterInteractive"
+        />
+
+        {/* Matomo Analytics */}
+        <Script id="matomo-analytics" strategy="afterInteractive">
           {`
-              var _mtm = window._mtm = window._mtm || [];
-              _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-              (function() {
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.async=true; g.src='https://matomo.motherfucking.fun/js/container_A7d3EtEf.js'; s.parentNode.insertBefore(g,s);
-              })();
-            `}
+            var _paq = window._paq = window._paq || [];
+            _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+            _paq.push(["setDomains", ["*.trumpfiles.fun","*.www.trumpfiles.fun"]]);
+            _paq.push(["enableCrossDomainLinking"]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+              var u="//matomo.p5n.lol/";
+              _paq.push(['setTrackerUrl', u+'matomo.php']);
+              _paq.push(['setSiteId', '7']);
+              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+          `}
         </Script>
 
-        <Script async defer src="https://tianji.motherfucking.fun/tracker.js" data-website-id="cmh4cma6a4tg4wacz0fakjtx4" data-oid="ck3r8i1" />
+        {/* Matomo noscript fallback */}
+        <noscript>
+          <img
+            referrerPolicy="no-referrer-when-downgrade"
+            src="//matomo.p5n.lol/matomo.php?idsite=7&rec=1"
+            style={{ border: 0 }}
+            alt=""
+          />
+        </noscript>
       </head>
       <body className={`
           ${arcticGuardian.variable} 
