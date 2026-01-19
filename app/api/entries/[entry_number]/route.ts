@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from 'next/server';
-import { pool } from '@/lib/neon';
+import { sql } from '@/lib/neonClient';
 
 export async function GET(request: NextRequest, { params }: { params: Promise<{ entry_number: string }> }) {
   const resolvedParams = await params;
@@ -7,10 +7,7 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
 
   try {
     // Fetch entry
-    const { rows: entryRows } = await pool.query(
-      'SELECT * FROM ai_complete_trump_data WHERE entry_number = $1',
-      [entryNumber]
-    );
+    const entryRows = await sql`SELECT * FROM ai_complete_trump_data WHERE entry_number = ${entryNumber}`;
     const entry = entryRows[0];
 
     if (!entry) {
@@ -18,16 +15,10 @@ export async function GET(request: NextRequest, { params }: { params: Promise<{ 
     }
 
     // Fetch approved comments
-    const { rows: commentsRows } = await pool.query(
-      'SELECT * FROM user_comments WHERE entry_id = $1 AND is_approved = true ORDER BY created_at DESC',
-      [entry.id]
-    );
+    const commentsRows = await sql`SELECT * FROM user_comments WHERE entry_id = ${entry.id} AND is_approved = true ORDER BY created_at DESC`;
 
     // Fetch aggregated user scores
-    const { rows: scoresRows } = await pool.query(
-      'SELECT * FROM user_scores WHERE entry_id = $1',
-      [entry.id]
-    );
+    const scoresRows = await sql`SELECT * FROM user_scores WHERE entry_id = ${entry.id}`;
 
     return NextResponse.json({ entry, comments: commentsRows, scores: scoresRows });
   } catch (error) {

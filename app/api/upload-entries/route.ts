@@ -1,44 +1,40 @@
-
 import { NextResponse } from 'next/server'
-import { pool } from '@/lib/neon'
+import { neon } from '@neondatabase/serverless'
 
 export async function POST(request: Request) {
-  const client = await pool.connect()
+  // For transactions, we need to create a fresh connection
+  const databaseUrl = process.env.DATABASE_URL;
+  if (!databaseUrl) {
+    return NextResponse.json({ message: 'Database not configured' }, { status: 500 });
+  }
+
+  const sql = neon(databaseUrl);
+
   try {
     const data = await request.json()
-    
-    await client.query('BEGIN')
+
+    // Process entries one by one (serverless doesn't support traditional transactions)
+    // For bulk operations, we'll use individual inserts with ON CONFLICT
     for (const entry of data) {
-      const { id, scores, ...mainEntry } = entry
+      const { scores, ...mainEntry } = entry
       const { rationale_short, rationale_detail, ...individualScores } = scores
 
-      const mainEntryValues = Object.values(mainEntry)
-      // Ensure all values are present, providing defaults for any missing ones
-      const allValues = [...mainEntryValues, JSON.stringify(scores)];
+      await sql`
+        INSERT INTO trump_entries (entry_number, title, date_start, date_end, synopsis, rationale, category, subcategory, keywords, age, phase, fact_check, fact_check_sources, scores) 
+        VALUES (${mainEntry.entry_number}, ${mainEntry.title}, ${mainEntry.date_start}, ${mainEntry.date_end}, ${mainEntry.synopsis}, ${mainEntry.rationale}, ${mainEntry.category}, ${mainEntry.subcategory}, ${mainEntry.keywords}, ${mainEntry.age}, ${mainEntry.phase}, ${mainEntry.fact_check}, ${mainEntry.fact_check_sources}, ${JSON.stringify(scores)}) 
+        ON CONFLICT (entry_number) DO NOTHING
+      `
 
-      await client.query(
-        `INSERT INTO trump_entries (entry_number, title, date_start, date_end, synopsis, rationale, category, subcategory, keywords, age, phase, fact_check, fact_check_sources, scores) 
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) 
-         ON CONFLICT (entry_number) DO NOTHING`,
-        allValues
-      )
-
-      const individualScoresValues = [mainEntry.entry_number, ...Object.values(individualScores), rationale_short, rationale_detail];
-      await client.query(
-        `INSERT INTO trump_individual_scores (entry_number, insanity, absurdity, danger, authoritarianism, lawlessness, credibility_risk, recency_intensity, impact_scope, rationale_short, rationale_detail) 
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) 
-         ON CONFLICT (entry_number) DO NOTHING`,
-        individualScoresValues
-      )
+      await sql`
+        INSERT INTO trump_individual_scores (entry_number, insanity, absurdity, danger, authoritarianism, lawlessness, credibility_risk, recency_intensity, impact_scope, rationale_short, rationale_detail) 
+        VALUES (${mainEntry.entry_number}, ${individualScores.insanity}, ${individualScores.absurdity}, ${individualScores.danger}, ${individualScores.authoritarianism}, ${individualScores.lawlessness}, ${individualScores.credibility_risk}, ${individualScores.recency_intensity}, ${individualScores.impact_scope}, ${rationale_short}, ${rationale_detail}) 
+        ON CONFLICT (entry_number) DO NOTHING
+      `
     }
-    await client.query('COMMIT')
-    
+
     return NextResponse.json({ message: `Successfully processed ${data.length} entries` })
   } catch (error) {
-    await client.query('ROLLBACK')
     console.error('Upload error:', error)
     return NextResponse.json({ message: 'Failed to upload entries' }, { status: 500 })
-  } finally {
-    client.release()
   }
 }

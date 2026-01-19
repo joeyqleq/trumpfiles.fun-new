@@ -1,5 +1,6 @@
-import { Pool } from 'pg'
+// Re-export from neonClient for backward compatibility
+// This file exists because some API routes import from '@/lib/neon'
+export { sql } from './neonClient';
 
-export const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-})
+// Note: If you need pool-style queries, use sql from neonClient like this:
+// const result = await sql`SELECT * FROM table`;
