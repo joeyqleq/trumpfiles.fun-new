@@ -5,11 +5,36 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
 import Image from "next/image";
 import { BookOpen, TrendingUp, Laugh, Database, Network, BarChart3, Brain } from "lucide-react";
+import GradientBlinds from "@/components/GradientBlinds";
 
 export default function WTFPage() {
   return (
-    <div className="min-h-screen w-full dark:bg-black bg-white relative">
-      <div className="container mx-auto px-4 max-w-6xl py-16">
+    <div className="min-h-screen w-full relative">
+      {/* Animated Gradient Blinds Background */}
+      <div className="fixed inset-0 w-full h-full z-0 opacity-30 pointer-events-none">
+        <GradientBlinds
+          gradientColors={[
+            "#FF6B00",
+            "#FF8C00",
+            "#FFA500",
+            "#FFB733",
+            "#FF8C00",
+            "#FF6B00"
+          ]}
+          angle={45}
+          blindCount={24}
+          blindMinWidth={50}
+          noise={0.15}
+          mouseDampening={0.2}
+          spotlightRadius={0.6}
+          spotlightOpacity={0.8}
+          distortAmount={0.5}
+          mirrorGradient={true}
+          mixBlendMode="screen"
+        />
+      </div>
+
+      <div className="container mx-auto px-4 max-w-6xl py-16 relative z-10">
         {/* Hero Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

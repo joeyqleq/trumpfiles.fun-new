@@ -30,10 +30,10 @@ import {
   ArrowLeft,
   ArrowRight,
 } from "lucide-react";
-import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
 import { MagicCard } from "@/components/ui/magic-card";
 import GlitchText from "@/components/GlitchText";
 import { FlippableEntryCard } from "@/components/FlippableEntryCard";
+import TrueFocus from "@/components/TrueFocus";
 
 export default function CatalogPage() {
   const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
@@ -116,7 +116,7 @@ export default function CatalogPage() {
   }, [entries]);
 
   const toggleCategory = (category: string) => {
-    setSelectedCategories(prev => 
+    setSelectedCategories(prev =>
       prev.includes(category)
         ? prev.filter(c => c !== category)
         : [...prev, category]
@@ -173,15 +173,22 @@ export default function CatalogPage() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
+          className="mb-8 pt-8"
         >
-          <TrumpFilesBrand size="3xl" className="mb-2" />
-          <div className="flex justify-center mb-2">
-            <GlitchText speed={1} enableShadows={true} enableOnHover={false} className="text-4xl lg:text-5xl bg-linear-to-r! from-orange-500! via-orange-400! to-red-500! bg-clip-text! text-transparent!">
-              CATALOG
-            </GlitchText>
+          <div className="flex justify-center mb-6">
+            <div className="font-arctic-3d">
+              <TrueFocus
+                sentence="CATALOG"
+                manualMode={false}
+                blurAmount={3}
+                borderColor="#FF6500"
+                glowColor="rgba(255, 101, 0, 0.6)"
+                animationDuration={0.8}
+                pauseBetweenAnimations={2}
+              />
+            </div>
           </div>
-          <p className="text-foreground/70" data-oid="irkfd3r">
+          <p className="text-foreground/70 text-center" data-oid="irkfd3r">
             Explore <span className="text-orange-400 font-semibold">{entries.length}</span> documented entries with comprehensive data
             and analysis{filteredEntries.length !== entries.length && (
               <span className="text-orange-400 ml-2">
@@ -256,11 +263,10 @@ export default function CatalogPage() {
                     variant="outline"
                     size="sm"
                     onClick={() => toggleCategory(cat)}
-                    className={`transition-all ${
-                      selectedCategories.includes(cat)
-                        ? getCategoryColor(cat)
-                        : 'bg-white/5 border-white/20 text-foreground/70 hover:bg-white/10'
-                    }`}
+                    className={`transition-all ${selectedCategories.includes(cat)
+                      ? getCategoryColor(cat)
+                      : 'bg-white/5 border-white/20 text-foreground/70 hover:bg-white/10'
+                      }`}
                   >
                     {cat}
                   </Button>

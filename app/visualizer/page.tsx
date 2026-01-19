@@ -32,11 +32,11 @@ import {
 } from "recharts";
 import { AICompleteTrumpData } from "@/types/database";
 import { BarChart3, PieChart as PieChartIcon, Activity, TrendingUp, Target, Zap } from "lucide-react";
-import GlitchText from "@/components/GlitchText";
+import TrueFocus from "@/components/TrueFocus";
 
 const COLORS = [
   "#FF6500",
-  "#FF8C00", 
+  "#FF8C00",
   "#FFA500",
   "#FFB347",
   "#FF7F50",
@@ -199,12 +199,20 @@ export default function VisualizerPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-12 text-center"
         >
-          <div className="flex justify-center mb-4">
-            <GlitchText speed={1} enableShadows={true} enableOnHover={false} className="text-5xl lg:text-6xl bg-linear-to-r! from-orange-500! via-orange-400! to-orange-600! bg-clip-text! text-transparent!">
-              DATA VISUALIZER
-            </GlitchText>
+          <div className="flex justify-center mb-6">
+            <div className="font-arctic-3d">
+              <TrueFocus
+                sentence="DATA VISUALIZER"
+                manualMode={false}
+                blurAmount={3}
+                borderColor="#FF6500"
+                glowColor="rgba(255, 101, 0, 0.6)"
+                animationDuration={0.8}
+                pauseBetweenAnimations={2}
+              />
+            </div>
           </div>
-          <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/70 max-w-3xl mx-auto mt-4">
             Explore patterns, correlations, and insights across 700+ documented incidents
           </p>
         </motion.div>
@@ -315,22 +323,22 @@ export default function VisualizerPage() {
                   </CardHeader>
                   <CardContent>
                     <ResponsiveContainer width="100%" height={350}>
-                        <Pie
-                          data={categoryData}
-                          cx="50%"
-                          cy="50%"
-                          labelLine={false}
-                          label={false}
-                          outerRadius={100}
-                          fill="#8884d8"
-                          dataKey="value"
-                        >
-                          {categoryData.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                          ))}
-                        </Pie>
-                        <Tooltip content={<CustomTooltip />} />
-                        <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                      <Pie
+                        data={categoryData}
+                        cx="50%"
+                        cy="50%"
+                        labelLine={false}
+                        label={false}
+                        outerRadius={100}
+                        fill="#8884d8"
+                        dataKey="value"
+                      >
+                        {categoryData.map((entry, index) => (
+                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                      </Pie>
+                      <Tooltip content={<CustomTooltip />} />
+                      <Legend wrapperStyle={{ paddingTop: "20px" }} />
                     </ResponsiveContainer>
                     <div className="mt-4 p-4 bg-orange-900/20 rounded-lg">
                       <p className="text-sm text-foreground/80">
@@ -536,10 +544,10 @@ export default function VisualizerPage() {
                       <h4 className="font-bold text-orange-400 mb-2">Escalation Pattern</h4>
                       <p className="text-sm text-foreground/80">
                         Average danger score increased {(
-                          (entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() >= 2020).reduce((sum, e) => sum + (e.danger || 0), 0) / 
-                          entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() >= 2020).length) - 
-                          (entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() < 2016).reduce((sum, e) => sum + (e.danger || 0), 0) / 
-                          entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() < 2016).length)
+                          (entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() >= 2020).reduce((sum, e) => sum + (e.danger || 0), 0) /
+                            entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() >= 2020).length) -
+                          (entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() < 2016).reduce((sum, e) => sum + (e.danger || 0), 0) /
+                            entries.filter(e => e.date_start && new Date(e.date_start).getFullYear() < 2016).length)
                         ).toFixed(1)} points from pre-2016 to post-2020.
                       </p>
                     </div>

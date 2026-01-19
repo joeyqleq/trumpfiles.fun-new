@@ -19,9 +19,21 @@ export const arcticGuardianGrad = localFont({
   display: 'swap',
 });
 
+export const arcticGuardianGradItalic = localFont({
+  src: '../public/fonts/Arctic_Guardian/arcticguardiangradital.ttf',
+  variable: '--font-arctic-guardian-grad-italic',
+  display: 'swap',
+});
+
 export const arcticGuardianLaser = localFont({
   src: '../public/fonts/Arctic_Guardian/arcticguardianlaser.ttf',
   variable: '--font-arctic-guardian-laser',
+  display: 'swap',
+});
+
+export const arcticGuardianLaserItalic = localFont({
+  src: '../public/fonts/Arctic_Guardian/arcticguardianlaserital.ttf',
+  variable: '--font-arctic-guardian-laser-italic',
   display: 'swap',
 });
 
@@ -34,6 +46,12 @@ export const arcticGuardianHalf = localFont({
 export const arcticGuardianTwoTone = localFont({
   src: '../public/fonts/Arctic_Guardian/arcticguardiantwotone.ttf',
   variable: '--font-arctic-guardian-twotone',
+  display: 'swap',
+});
+
+export const arcticGuardianTwoToneItalic = localFont({
+  src: '../public/fonts/Arctic_Guardian/arcticguardiantwotoneital.ttf',
+  variable: '--font-arctic-guardian-twotone-italic',
   display: 'swap',
 });
 

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import GlitchText from "@/components/GlitchText";
+import TrueFocus from "@/components/TrueFocus";
 import { Calendar, MapPin, Users, Heart, DollarSign, Skull, Crown } from "lucide-react";
 
 export default function EnigmaPage() {
@@ -123,15 +123,18 @@ export default function EnigmaPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-16 text-center"
         >
-          <div className="flex justify-center mb-4">
-            <GlitchText 
-              speed={1} 
-              enableShadows={true} 
-              enableOnHover={false}
-              className="text-4xl lg:text-6xl bg-linear-to-r! from-orange-500! via-orange-400! to-red-500! bg-clip-text! text-transparent!"
-            >
-              THE ENIGMA
-            </GlitchText>
+          <div className="flex justify-center mb-6">
+            <div className="font-arctic-3d">
+              <TrueFocus
+                sentence="THE ENIGMA"
+                manualMode={false}
+                blurAmount={3}
+                borderColor="#FF6500"
+                glowColor="rgba(255, 101, 0, 0.6)"
+                animationDuration={0.8}
+                pauseBetweenAnimations={2}
+              />
+            </div>
           </div>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto italic">
             "The Enigma" - The nickname given by Trump to Jeffrey Epstein and himself in that controversial birthday card
@@ -196,7 +199,7 @@ export default function EnigmaPage() {
                     The Infamous Birthday Card
                   </h3>
                   <p className="text-foreground/70">
-                    The birthday card Trump wrote to Jeffrey Epstein, signing it "The Enigma" - 
+                    The birthday card Trump wrote to Jeffrey Epstein, signing it "The Enigma" -
                     a reference he claims never happened. The evidence says otherwise.
                   </p>
                 </div>
@@ -216,7 +219,7 @@ export default function EnigmaPage() {
             Timeline: A Life of Scandal & Spectacle
           </h2>
           <p className="text-center text-foreground/60 mb-12 max-w-3xl mx-auto">
-            From Queens real estate heir to reality TV star to President to indicted criminal - 
+            From Queens real estate heir to reality TV star to President to indicted criminal -
             a journey that proves the American Dream can become everyone else's nightmare.
           </p>
 
@@ -280,9 +283,9 @@ export default function EnigmaPage() {
                 The Enigma Continues...
               </h3>
               <p className="text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-                From humble beginnings as a millionaire's son to reality TV icon to the most controversial 
-                president in modern history, Donald Trump has left an indelible mark on America. 
-                Whether that mark is a stain or a badge depends on who you ask. 
+                From humble beginnings as a millionaire's son to reality TV icon to the most controversial
+                president in modern history, Donald Trump has left an indelible mark on America.
+                Whether that mark is a stain or a badge depends on who you ask.
                 But one thing is certain: <span className="text-orange-400 font-bold">The receipts are all here.</span>
               </p>
             </CardContent>

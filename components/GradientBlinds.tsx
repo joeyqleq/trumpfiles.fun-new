@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
 
@@ -11,6 +13,7 @@ export interface GradientBlindsProps {
   blindCount?: number;
   blindMinWidth?: number;
   mouseDampening?: number;
+  scrollDampening?: number;
   mirrorGradient?: boolean;
   spotlightRadius?: number;
   spotlightSoftness?: number;
@@ -48,6 +51,7 @@ const GradientBlinds: React.FC<GradientBlindsProps> = ({
   blindCount = 16,
   blindMinWidth = 60,
   mouseDampening = 0.15,
+  scrollDampening = 0.1,
   mirrorGradient = false,
   spotlightRadius = 0.5,
   spotlightSoftness = 1,
@@ -63,6 +67,7 @@ const GradientBlinds: React.FC<GradientBlindsProps> = ({
   const geometryRef = useRef<Triangle | null>(null);
   const rendererRef = useRef<Renderer | null>(null);
   const mouseTargetRef = useRef<[number, number]>([0, 0]);
+  const scrollTargetRef = useRef<number>(0);
   const lastTimeRef = useRef<number>(0);
   const firstResizeRef = useRef<boolean>(true);
 
@@ -103,6 +108,7 @@ precision mediump float;
 uniform vec3  iResolution;
 uniform vec2  iMouse;
 uniform float iTime;
+uniform float iScroll;
 
 uniform float uAngle;
 uniform float uNoise;
@@ -162,23 +168,33 @@ vec3 getGradientColor(float t){
 void mainImage( out vec4 fragColor, in vec2 fragCoord )
 {
     vec2 uv0 = fragCoord.xy / iResolution.xy;
+    
+    // Apply scroll offset to create movement effect
+    float scrollOffset = iScroll * 0.001;
 
     float aspect = iResolution.x / iResolution.y;
     vec2 p = uv0 * 2.0 - 1.0;
     p.x *= aspect;
-    vec2 pr = rotate2D(p, uAngle);
+    
+    // Add scroll-based rotation for dynamic effect
+    float dynamicAngle = uAngle + sin(scrollOffset * 0.5) * 0.1;
+    vec2 pr = rotate2D(p, dynamicAngle);
     pr.x /= aspect;
     vec2 uv = pr * 0.5 + 0.5;
 
     vec2 uvMod = uv;
     if (uDistort > 0.0) {
-      float a = uvMod.y * 6.0;
+      float a = uvMod.y * 6.0 + scrollOffset;
       float b = uvMod.x * 6.0;
       float w = 0.01 * uDistort;
       uvMod.x += sin(a) * w;
       uvMod.y += cos(b) * w;
     }
-    float t = uvMod.x;
+    
+    // Shift gradient based on scroll position
+    float t = uvMod.x + scrollOffset * 0.2;
+    t = fract(t); // Wrap around
+    
     if (uMirror > 0.5) {
       t = 1.0 - abs(1.0 - 2.0 * fract(t));
     }
@@ -190,7 +206,9 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
   float dn = d / r;
   float spot = (1.0 - 2.0 * pow(dn, uSpotlightSoftness)) * uSpotlightOpacity;
   vec3 cir = vec3(spot);
-  float stripe = fract(uvMod.x * max(uBlindCount, 1.0));
+  
+  // Add scroll-based stripe offset
+  float stripe = fract(uvMod.x * max(uBlindCount, 1.0) + scrollOffset * 0.5);
   if (uShineFlip > 0.5) stripe = 1.0 - stripe;
     vec3 ran = vec3(stripe);
 
@@ -212,6 +230,7 @@ void main() {
       iResolution: { value: [number, number, number] };
       iMouse: { value: [number, number] };
       iTime: { value: number };
+      iScroll: { value: number };
       uAngle: { value: number };
       uNoise: { value: number };
       uBlindCount: { value: number };
@@ -236,6 +255,7 @@ void main() {
       },
       iMouse: { value: [0, 0] },
       iTime: { value: 0 },
+      iScroll: { value: 0 },
       uAngle: { value: (angle * Math.PI) / 180 },
       uNoise: { value: noise },
       uBlindCount: { value: Math.max(1, blindCount) },
@@ -307,9 +327,22 @@ void main() {
     };
     canvas.addEventListener('pointermove', onPointerMove);
 
+    // Add scroll listener for scroll-responsive animation
+    const onScroll = () => {
+      scrollTargetRef.current = window.scrollY;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
     const loop = (t: number) => {
       rafRef.current = requestAnimationFrame(loop);
       uniforms.iTime.value = t * 0.001;
+
+      // Smooth scroll interpolation
+      const currentScroll = uniforms.iScroll.value;
+      const targetScroll = scrollTargetRef.current;
+      const scrollDelta = (targetScroll - currentScroll) * scrollDampening;
+      uniforms.iScroll.value = currentScroll + scrollDelta;
+
       if (mouseDampening > 0) {
         if (!lastTimeRef.current) lastTimeRef.current = t;
         const dt = (t - lastTimeRef.current) / 1000;
@@ -337,6 +370,7 @@ void main() {
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
       canvas.removeEventListener('pointermove', onPointerMove);
+      window.removeEventListener('scroll', onScroll);
       ro.disconnect();
       if (canvas.parentElement === container) {
         container.removeChild(canvas);
@@ -364,6 +398,7 @@ void main() {
     blindCount,
     blindMinWidth,
     mouseDampening,
+    scrollDampening,
     mirrorGradient,
     spotlightRadius,
     spotlightSoftness,
