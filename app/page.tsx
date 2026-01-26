@@ -41,7 +41,7 @@ const OrangeHero = dynamic(() => import("@/components/OrangeHero"), {
 const features = [
   {
     icon: Database,
-    title: "377+ Documented Entries",
+    title: "900+ Documented Entries",
     description:
       "Meticulously structured data with sources, scores, and fact-checks.",
   },
@@ -395,7 +395,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-linear-to-br from-orange-500/20 to-red-500/10" />
                 }
                 Icon={Database}
-                description="Browse 700+ meticulously documented entries with advanced filtering, scoring, and real-time updates."
+                description="Browse 900+ meticulously documented entries with advanced filtering, scoring, and real-time updates."
                 href="/catalog"
                 cta="Explore Catalog"
               />

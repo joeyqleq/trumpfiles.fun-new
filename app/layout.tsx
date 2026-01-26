@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ClerkProvider } from "@clerk/nextjs";
 import Navigation from "@/components/Navigation";
 import AsciiFooter from "@/components/AsciiFooter";
 import "./globals.css";
@@ -7,9 +6,10 @@ import Script from "next/script";
 import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, neuething } from "./fonts";
 import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
+
 export const metadata: Metadata = {
   title: "The Trump Files ::: Encyclopedia Orange",
-  description: "An interactive thermal encyclopedia cataloging the most absurd events, lewd behaviors, and all straight-up WHAT THE FUCK moments and things uttered by the one and only orange narcissist, the phenomenon Donald J. Trump. This project is a goldmine collection of 370+ remarkable journal entries scraped, filtered and analyzed by an army of AI bots and agents, then recreated as structured data, interactive visualizations so that humanity never has the opportunity to forget or cast any doubt on all the comedy and pain this President Orange Blob Trump brought to the whole world.",
+  description: "An interactive thermal encyclopedia cataloging the most absurd events, lewd behaviors, and all straight-up WHAT THE FUCK moments and things uttered by the one and only orange narcissist, the phenomenon Donald J. Trump. This project is a goldmine collection of 900+ remarkable journal entries scraped, filtered and analyzed by an army of AI bots and agents, then recreated as structured data, interactive visualizations so that humanity never has the opportunity to forget or cast any doubt on all the comedy and pain this President Orange Blob Trump brought to the whole world.",
   icons: {
     icon: [{
       url: "/favicon/favicon.ico"
@@ -30,15 +30,16 @@ export const metadata: Metadata = {
   manifest: "/favicon/site.webmanifest",
   metadataBase: new URL("https://trumpfiles.fun")
 };
+
 export default function RootLayout({
   children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <ClerkProvider data-oid=".s0fbp1">
-    <html lang="en" className="dark" data-oid="zksrn.l">
-      <head data-oid="07:6u-c">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" data-oid="t7rm-0k" />
+  return (
+    <html lang="en" className="dark">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Tianji Analytics */}
         <Script
@@ -91,16 +92,16 @@ export default function RootLayout({
           ${arcticGuardianLeft.variable}
           ${neuething.variable} 
           font-sans antialiased min-h-screen bg-background
-        `} data-oid="xpruuu3">
+        `}>
         <AnimatedBackground>
           <BlobCursor />
-          <Navigation data-oid="17ec3t2" />
-          <main className="pt-16" data-oid="ps7wmi3">
+          <Navigation />
+          <main className="pt-16">
             {children}
           </main>
           <AsciiFooter />
         </AnimatedBackground>
       </body>
     </html>
-  </ClerkProvider>;
+  );
 }
