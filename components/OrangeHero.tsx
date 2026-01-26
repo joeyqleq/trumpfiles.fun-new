@@ -1,9 +1,35 @@
 "use client";
 
-import { useRef, Suspense, useState, useEffect } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { OrbitControls, useGLTF, Environment, Float } from "@react-three/drei";
+import { useRef, Suspense, useState, useEffect, useCallback } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, useGLTF, Float } from "@react-three/drei";
 import { Group, MathUtils } from "three";
+
+// Error boundary for 3D content
+function ErrorFallback({ onRetry }: { onRetry: () => void }) {
+  return (
+    <div className="w-full h-full flex flex-col items-center justify-center text-center p-8">
+      <div className="text-6xl mb-4">🍊</div>
+      <p className="text-lg text-orange-400 mb-4">3D model loading failed</p>
+      <button
+        onClick={onRetry}
+        className="px-4 py-2 bg-orange-500/20 hover:bg-orange-500/30 border border-orange-500/50 rounded-lg text-orange-400 transition-colors"
+      >
+        Try Again
+      </button>
+    </div>
+  );
+}
+
+// Loading component for canvas
+function LoadingFallback() {
+  return (
+    <mesh>
+      <sphereGeometry args={[1.5, 32, 32]} />
+      <meshStandardMaterial color="#FF6B00" wireframe />
+    </mesh>
+  );
+}
 
 function Orange({ mouse }: { mouse: { x: number; y: number } }) {
   const meshRef = useRef<Group>(null);
@@ -16,18 +42,8 @@ function Orange({ mouse }: { mouse: { x: number; y: number } }) {
       meshRef.current.rotation.y += idleSpeed * delta;
 
       // Mouse interaction (lerp for smoothness)
-      const targetRotationY = mouse.x * 0.5; // Sensitivity
       const targetRotationX = mouse.y * 0.2;
 
-      // Blend idle rotation with mouse interaction
-      // Note: This is a simple blend. For purely idle vs interactive, we might want boolean flags.
-      // But adding continuous rotation + mouse influence creates a dynamic "alive" feel.
-      // Let's make it face forward (viewport) by default and rotate from there?
-      // Actually user wanted: "idle... keep rotating very slowly" AND "when user plays... it interacts".
-      
-      // Since it's rotating continuously, "facing viewport" changes. 
-      // Let's stick to a slow spin + mouse tilt.
-      
       // Tilt (X-axis) based on mouse Y
       meshRef.current.rotation.x = MathUtils.lerp(
         meshRef.current.rotation.x,
@@ -39,17 +55,17 @@ function Orange({ mouse }: { mouse: { x: number; y: number } }) {
 
   return (
     <Float
-      speed={2} // Faster float speed
-      rotationIntensity={0.5} 
-      floatIntensity={1} 
+      speed={2}
+      rotationIntensity={0.5}
+      floatIntensity={1}
       floatingRange={[-0.1, 0.1]}
     >
       <primitive
         ref={meshRef}
         object={scene}
-        scale={3.8} // Slightly reduced scale to fit better
-        position={[0, 0.3, 0]} // Raised position to show full spherical base
-        rotation={[0, 0, 0]} 
+        scale={3.8}
+        position={[0, 0.3, 0]}
+        rotation={[0, 0, 0]}
       />
     </Float>
   );
@@ -57,6 +73,9 @@ function Orange({ mouse }: { mouse: { x: number; y: number } }) {
 
 export default function OrangeHero() {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const [hasError, setHasError] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [retryKey, setRetryKey] = useState(0);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -65,52 +84,94 @@ export default function OrangeHero() {
     setMouse({ x, y });
   };
 
+  const handleRetry = useCallback(() => {
+    setHasError(false);
+    setIsLoaded(false);
+    setRetryKey((k) => k + 1);
+  }, []);
+
+  // Monitor for errors during canvas creation
+  useEffect(() => {
+    const handleError = (event: ErrorEvent) => {
+      if (
+        event.message.includes("WebGL") ||
+        event.message.includes("THREE") ||
+        event.message.includes("glb") ||
+        event.message.includes("GLB")
+      ) {
+        setHasError(true);
+      }
+    };
+
+    window.addEventListener("error", handleError);
+    return () => window.removeEventListener("error", handleError);
+  }, [retryKey]);
+
+  // Set loaded after mount with delay to ensure canvas renders
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [retryKey]);
+
+  if (hasError) {
+    return (
+      <div className="w-full h-full relative flex items-center justify-center">
+        <ErrorFallback onRetry={handleRetry} />
+      </div>
+    );
+  }
+
   return (
     <div
       className="w-full h-full relative flex items-center justify-center cursor-grab active:cursor-grabbing"
       onMouseMove={handleMouseMove}
     >
+      {/* Loading overlay */}
+      {!isLoaded && (
+        <div className="absolute inset-0 flex items-center justify-center z-10 bg-transparent">
+          <div className="animate-pulse text-2xl text-orange-400">
+            Loading 3D Model...
+          </div>
+        </div>
+      )}
+
       <Canvas
-        camera={{ position: [0, 0.5, 8], fov: 45 }} // Raised camera position and pushed back to show full spherical base
+        key={retryKey}
+        camera={{ position: [0, 0.5, 8], fov: 45 }}
         className="w-full h-full"
+        onCreated={() => setIsLoaded(true)}
+        onError={() => setHasError(true)}
+        gl={{
+          antialias: true,
+          powerPreference: "high-performance",
+          failIfMajorPerformanceCaveat: false,
+        }}
       >
-        <Suspense fallback={null}>
+        <Suspense fallback={<LoadingFallback />}>
+          {/* Simplified lighting - no external Environment to avoid network requests */}
           <ambientLight intensity={0.8} />
-          <directionalLight
-            position={[5, 10, 7]}
-            intensity={2}
-          />
-          <pointLight
-            position={[-10, -5, -5]}
-            intensity={1}
-            color="#FF4500"
+          <directionalLight position={[5, 10, 7]} intensity={2} />
+          <pointLight position={[-10, -5, -5]} intensity={1} color="#FF4500" />
+          {/* Add hemisphere light for better ambient fill */}
+          <hemisphereLight
+            color="#ffffff"
+            groundColor="#FF4500"
+            intensity={0.5}
           />
 
           <Orange mouse={mouse} />
-          
+
           <OrbitControls
             enableZoom={false}
             enablePan={false}
-            // Allow some rotation interaction but keep it constrained if desired?
-            // User said "mouse movement... spin". 
-            // OrbitControls conflicts with manual mesh rotation if both control the view.
-            // Let's use OrbitControls for interactivity if the mesh isn't auto-rotating the same axis?
-            // Actually, OrbitControls rotates the Camera. Mesh rotation rotates the object.
-            // The user request implies object rotation customization. 
-            // Let's keep orbit controls but maybe limit it or let it handle the "spin"?
-            // If we use OrbitControls, we don't need manual mesh rotation calc.
-            // "When the user plays around with it... then depending on mouse movement... rotate and spin".
-            // OrbitControls does exactly this.
-            // So: Auto-rotate enabled via OrbitControls?
             autoRotate={true}
             autoRotateSpeed={2}
             enableDamping={true}
-            // Limit vertical angle to prevent seeing top/bottom weirdly
             maxPolarAngle={Math.PI / 1.5}
             minPolarAngle={Math.PI / 3}
           />
-
-          <Environment preset="city" />
         </Suspense>
       </Canvas>
     </div>
@@ -119,4 +180,3 @@ export default function OrangeHero() {
 
 // Preload the GLB file
 useGLTF.preload("/orange_hero.glb");
-
