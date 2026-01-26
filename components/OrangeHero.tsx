@@ -40,9 +40,17 @@ function LoadingFallback() {
   );
 }
 
-function Orange({ mouse }: { mouse: { x: number; y: number } }) {
+// Orange component with onLoad callback
+function Orange({ mouse, onLoad }: { mouse: { x: number; y: number }; onLoad: () => void }) {
   const meshRef = useRef<Group>(null);
   const { scene } = useGLTF("/orange_hero.glb");
+
+  // Signal that the model has loaded
+  useEffect(() => {
+    if (scene) {
+      onLoad();
+    }
+  }, [scene, onLoad]);
 
   useFrame((state, delta) => {
     if (meshRef.current) {
@@ -83,7 +91,7 @@ function Orange({ mouse }: { mouse: { x: number; y: number } }) {
 export default function OrangeHero() {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
   const [hasError, setHasError] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isModelLoaded, setIsModelLoaded] = useState(false);
   const [retryKey, setRetryKey] = useState(0);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -95,8 +103,12 @@ export default function OrangeHero() {
 
   const handleRetry = useCallback(() => {
     setHasError(false);
-    setIsLoaded(false);
+    setIsModelLoaded(false);
     setRetryKey((k) => k + 1);
+  }, []);
+
+  const handleModelLoad = useCallback(() => {
+    setIsModelLoaded(true);
   }, []);
 
   // Monitor for errors during canvas creation
@@ -116,14 +128,6 @@ export default function OrangeHero() {
     return () => window.removeEventListener("error", handleError);
   }, [retryKey]);
 
-  // Set loaded after mount with delay to ensure canvas renders
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 500);
-    return () => clearTimeout(timer);
-  }, [retryKey]);
-
   if (hasError) {
     return (
       <div className="w-full h-full relative flex items-center justify-center">
@@ -137,10 +141,10 @@ export default function OrangeHero() {
       className="w-full h-full relative flex items-center justify-center cursor-grab active:cursor-grabbing"
       onMouseMove={handleMouseMove}
     >
-      {/* Loading overlay */}
-      {!isLoaded && (
-        <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 z-10 pointer-events-none">
-          <p className="text-lg text-orange-400/80 animate-pulse" style={{ fontFamily: 'var(--font-neuething)' }}>
+      {/* Loading message - shows until model is loaded */}
+      {!isModelLoaded && (
+        <div className="absolute inset-0 flex flex-col items-center justify-end pb-4 z-10 pointer-events-none">
+          <p className="text-base text-orange-400/80 animate-pulse" style={{ fontFamily: 'var(--font-neuething)' }}>
             Loading Mr. Trump&apos;s 3D model...
           </p>
         </div>
@@ -150,7 +154,6 @@ export default function OrangeHero() {
         key={retryKey}
         camera={{ position: [0, 0.5, 8], fov: 45 }}
         className="w-full h-full"
-        onCreated={() => setIsLoaded(true)}
         onError={() => setHasError(true)}
         gl={{
           antialias: true,
@@ -159,18 +162,17 @@ export default function OrangeHero() {
         }}
       >
         <Suspense fallback={<LoadingFallback />}>
-          {/* Simplified lighting - no external Environment to avoid network requests */}
+          {/* Simplified lighting */}
           <ambientLight intensity={0.8} />
           <directionalLight position={[5, 10, 7]} intensity={2} />
           <pointLight position={[-10, -5, -5]} intensity={1} color="#FF4500" />
-          {/* Add hemisphere light for better ambient fill */}
           <hemisphereLight
             color="#ffffff"
             groundColor="#FF4500"
             intensity={0.5}
           />
 
-          <Orange mouse={mouse} />
+          <Orange mouse={mouse} onLoad={handleModelLoad} />
 
           <OrbitControls
             enableZoom={false}
