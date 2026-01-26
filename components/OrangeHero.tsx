@@ -3,7 +3,7 @@
 import { useRef, Suspense, useState, useEffect, useCallback } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Float } from "@react-three/drei";
-import { Group, MathUtils } from "three";
+import { Group, MathUtils, Mesh } from "three";
 
 // Error boundary for 3D content
 function ErrorFallback({ onRetry }: { onRetry: () => void }) {
@@ -21,12 +21,21 @@ function ErrorFallback({ onRetry }: { onRetry: () => void }) {
   );
 }
 
-// Loading component for canvas
+// Loading component for canvas - glowing orange wireframe that rotates
 function LoadingFallback() {
+  const meshRef = useRef<Mesh>(null);
+
+  useFrame((state, delta) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.y += delta * 0.5;
+      meshRef.current.rotation.x += delta * 0.2;
+    }
+  });
+
   return (
-    <mesh>
-      <sphereGeometry args={[1.5, 32, 32]} />
-      <meshStandardMaterial color="#FF6B00" wireframe />
+    <mesh ref={meshRef} scale={2.5}>
+      <sphereGeometry args={[1, 16, 16]} />
+      <meshBasicMaterial color="#FF6B00" wireframe transparent opacity={0.6} />
     </mesh>
   );
 }
@@ -130,10 +139,10 @@ export default function OrangeHero() {
     >
       {/* Loading overlay */}
       {!isLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center z-10 bg-transparent">
-          <div className="animate-pulse text-2xl text-orange-400">
-            Loading 3D Model...
-          </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 z-10 pointer-events-none">
+          <p className="text-lg text-orange-400/80 animate-pulse" style={{ fontFamily: 'var(--font-neuething)' }}>
+            Loading Mr. Trump&apos;s 3D model...
+          </p>
         </div>
       )}
 
