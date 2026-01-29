@@ -7,6 +7,7 @@ interface TrumpFilesBrandProps {
   className?: string;
   size?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "hero";
   inline?: boolean;
+  static?: boolean; // Disable glitch animation for static display (e.g., nav)
 }
 
 // Orange gradient with glass effect
@@ -76,6 +77,7 @@ export const TrumpFilesBrand = ({
   className,
   size = "md",
   inline = false,
+  static: isStatic = false,
 }: TrumpFilesBrandProps) => {
   const sizeClasses = {
     sm: { text: "text-base", gap: "gap-1" },
@@ -104,12 +106,18 @@ export const TrumpFilesBrand = ({
       <span
         className={cn(
           "tracking-wide",
-          textSize,
-          ORANGE_GRADIENT
+          textSize
         )}
         style={{
           fontFamily: 'var(--font-arctic-guardian-grad-italic)',
-          fontStyle: 'italic'
+          fontStyle: 'italic',
+          // Brighter gradient for small sizes to improve visibility
+          background: size === 'sm'
+            ? 'linear-gradient(to right, #ff8c00, #ffc107, #ff6b00)'
+            : 'linear-gradient(to right, #f97316, #fbbf24, #ef4444)',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          color: 'transparent'
         }}
       >
         THE
@@ -130,8 +138,8 @@ export const TrumpFilesBrand = ({
         TRUMP
       </span>
 
-      {/* FILES - Arctic Guardian 3D (hollow) with internal shimmer effect */}
-      <FilesGlitchEffect>
+      {/* FILES - Arctic Guardian 3D (hollow) with optional shimmer effect */}
+      {isStatic ? (
         <span
           className={cn(
             "tracking-wider",
@@ -144,7 +152,22 @@ export const TrumpFilesBrand = ({
         >
           FILES
         </span>
-      </FilesGlitchEffect>
+      ) : (
+        <FilesGlitchEffect>
+          <span
+            className={cn(
+              "tracking-wider",
+              textSize,
+              ORANGE_GRADIENT
+            )}
+            style={{
+              fontFamily: 'var(--font-arctic-guardian-3d)'
+            }}
+          >
+            FILES
+          </span>
+        </FilesGlitchEffect>
+      )}
     </div>
   );
 };

@@ -2,20 +2,139 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { AICompleteTrumpData } from "@/types/database";
 import { MagicCard } from "@/components/ui/magic-card";
-import { ThumbsUp, Share2, Mail, Twitter, Facebook, RotateCw } from "lucide-react";
-import Image from "next/image";
+import { ThumbsUp, Mail, Twitter, Facebook, RotateCw, ExternalLink } from "lucide-react";
 
-interface FlippableEntryCardProps {
-  entry: AICompleteTrumpData;
-  index: number;
+// Source type from the database
+interface Source {
+  url: string;
+  title: string;
+  publisher: string;
+  source_type: string;
 }
 
-export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
+// Extended entry type with sources
+interface EntryWithSources extends AICompleteTrumpData {
+  sources?: Source[];
+}
+
+interface FlippableEntryCardProps {
+  entry: EntryWithSources;
+  index: number;
+  onEmailClick?: () => void;
+}
+
+// Domain aliases for logo matching (normalized domain -> logo filename)
+const DOMAIN_LOGO_MAP: Record<string, string> = {
+  // Major news sources with multiple domains or www issues
+  'theguardian.com': 'theguardian-com.png',
+  'guardian.com': 'theguardian-com.png',
+  'bbc.com': 'bbc-com.png',
+  'bbc.co.uk': 'bbc-co-uk.png',
+  'cnn.com': 'cnn-com.png',
+  'nytimes.com': 'nytimes-com.png',
+  'washingtonpost.com': 'washingtonpost.png',
+  'reuters.com': 'reuters-com.png',
+  'apnews.com': 'apnews-com.png',
+  'npr.org': 'npr-org.png',
+  'pbs.org': 'pbs-org.png',
+  'time.com': 'time-com.png',
+  'politico.com': 'politico-com.png',
+  'axios.com': 'axios-com.png',
+  'cbsnews.com': 'cbsnews-com.png',
+  'nbcnews.com': 'nbcnews-com.png',
+  'foxnews.com': 'foxnews-com.png',
+  'msnbc.com': 'msnbc-com.png',
+  'huffpost.com': 'huffpost-com.png',
+  'vox.com': 'vox-com.png',
+  'slate.com': 'slate-com.png',
+  'salon.com': 'salon-com.png',
+  'theatlantic.com': 'theatlantic-com.png',
+  'newyorker.com': 'newyorker-com.png',
+  'latimes.com': 'latimes-com.png',
+  'wsj.com': 'wsj-com.png',
+  'bloomberg.com': 'bloomberg-com.png',
+  'cnbc.com': 'cnbc-com.png',
+  'aljazeera.com': 'aljazeera-com.png',
+  'motherjones.com': 'motherjones-com.png',
+  'thehill.com': 'thehill-com.png',
+  'politifact.com': 'politifact-com.png',
+  'snopes.com': 'snopes-com.png',
+  'wikipedia.org': 'en-wikipedia-org.png',
+  'en.wikipedia.org': 'en-wikipedia-org.png',
+  'usatoday.com': 'usatoday-com.png',
+  'newsweek.com': 'newsweek-com.png',
+  'businessinsider.com': 'businessinsider-com.png',
+  'fortune.com': 'fortune-com.png',
+  'vanityfair.com': 'vanityfair-com.png',
+  'propublica.org': 'propublica-org.png',
+  'thedailybeast.com': 'thedailybeast-com.png',
+  'independent.co.uk': 'independent-co-uk.png',
+  'wired.com': 'wired-com.png',
+  'nature.com': 'nature-com.png',
+  'aclu.org': 'aclu-org.png',
+  'justice.gov': 'justice-gov.png',
+  'whitehouse.gov': 'whitehouse-gov.png',
+  'congress.gov': 'congress-gov.png',
+  'abcnews.go.com': 'abcnews-go-com.png',
+  'go.com': 'abcnews-go-com.png',
+  // Government fallbacks
+  'gov': 'congress-gov.png',
+  'state.gov': 'whitehouse-gov.png',
+};
+
+// Map domain to logo filename with smart fallbacks
+const getDomainLogoFile = (url: string): string | null => {
+  try {
+    const urlObj = new URL(url);
+    // Normalize domain - remove www and any subdomains for matching
+    const domain = urlObj.hostname.replace(/^www\./, '').replace(/^www2\./, '');
+
+    // Check direct mapping first
+    if (DOMAIN_LOGO_MAP[domain]) {
+      return DOMAIN_LOGO_MAP[domain];
+    }
+
+    // Try without subdomain (e.g., news.bbc.com -> bbc.com)
+    const parts = domain.split('.');
+    if (parts.length > 2) {
+      const baseDomain = parts.slice(-2).join('.');
+      if (DOMAIN_LOGO_MAP[baseDomain]) {
+        return DOMAIN_LOGO_MAP[baseDomain];
+      }
+    }
+
+    // Default: convert domain to filename format
+    return domain.replace(/\./g, '-') + '.png';
+  } catch {
+    return null;
+  }
+};
+
+// Get display name for publisher
+const getPublisherDisplayName = (publisher: string, url: string): string => {
+  if (publisher && publisher.trim()) return publisher;
+  try {
+    const urlObj = new URL(url);
+    const domain = urlObj.hostname.replace('www.', '');
+    // Capitalize first letter of each word
+    return domain.split('.')[0].charAt(0).toUpperCase() + domain.split('.')[0].slice(1);
+  } catch {
+    return 'Source';
+  }
+};
+
+// Truncate synopsis if too long (for back of card)
+const truncateSynopsis = (text: string, maxLength: number = 300): string => {
+  if (text.length <= maxLength) return text;
+  return text.substring(0, maxLength).trim() + '...';
+};
+
+export function FlippableEntryCard({ entry, index, onEmailClick }: FlippableEntryCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [userVote, setUserVote] = useState<number | null>(null);
   const [voteCount, setVoteCount] = useState(Math.floor(Math.random() * 1000)); // TODO: Get from DB
@@ -49,29 +168,37 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
     return "bg-red-500";
   };
 
-  // Parse actual source domains from entry data
-  const getSourceLogos = () => {
-    // Cast to any to handle optional sources field that may not be in type
-    const entrySources = (entry as { sources?: string[] }).sources;
-    if (!entrySources || entrySources.length === 0) return [];
-
-    return entrySources.slice(0, 3).map((sourceUrl: string) => {
-      try {
-        const url = new URL(sourceUrl);
-        const domain = url.hostname.replace('www.', '');
-        const logoFile = `${domain.replace(/\./g, '-')}.png`;
-        return {
-          domain,
-          logo: `/brand_logos/${logoFile}`,
-          url: sourceUrl
-        };
-      } catch {
-        return null;
-      }
-    }).filter(Boolean) as { domain: string; logo: string; url: string }[];
+  // Handle social sharing
+  const handleTwitterShare = () => {
+    const text = `Check out this Trump entry: "${entry.title}" - Score: ${parseFloat(entry.fucked_up_score).toFixed(2)}`;
+    const url = `${window.location.origin}/entry/${entry.entry_number}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    window.open(twitterUrl, '_blank', 'noopener,noreferrer,width=600,height=400');
   };
 
-  const sources = getSourceLogos();
+  const handleFacebookShare = () => {
+    const url = `${window.location.origin}/entry/${entry.entry_number}`;
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+    window.open(facebookUrl, '_blank', 'noopener,noreferrer,width=600,height=400');
+  };
+
+  const handleEmailShare = () => {
+    // Use the contact modal if provided, otherwise open mail client
+    if (onEmailClick) {
+      onEmailClick();
+    } else {
+      const subject = `Trump Entry #${entry.entry_number}: ${entry.title}`;
+      const body = `Check out this entry from TrumpFiles.fun:\n\n${entry.title}\nScore: ${parseFloat(entry.fucked_up_score).toFixed(2)}\n\n${entry.synopsis}\n\nView more: ${window.location.origin}/entry/${entry.entry_number}`;
+      window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+  };
+
+  // Get sources array - ensure it's always an array
+  const sources: Source[] = Array.isArray(entry.sources) ? entry.sources : [];
+
+  // Check if synopsis is too long
+  const isLongSynopsis = entry.synopsis.length > 300;
+  const displaySynopsis = truncateSynopsis(entry.synopsis);
 
   return (
     <motion.div
@@ -82,7 +209,7 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
       transition={{ delay: Math.min(index * 0.05, 0.5), duration: 0.3 }}
       className="perspective-1000"
     >
-      <div className="relative h-[600px]">
+      <div className="relative h-[680px]">
         <AnimatePresence mode="wait">
           {!isFlipped ? (
             // FRONT SIDE
@@ -94,9 +221,9 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
               className="absolute inset-0"
             >
               <MagicCard className="h-full hover:border-primary/50 transition-all">
-                <CardContent className="p-6 space-y-4 h-full flex flex-col">
-                  {/* Header */}
-                  <div className="flex justify-between items-start gap-2">
+                <CardContent className="p-6 h-full flex flex-col">
+                  {/* Header - Fixed height */}
+                  <div className="flex justify-between items-start gap-2 mb-3 flex-shrink-0">
                     <Badge variant="outline" className="border-primary/50 text-primary font-mono">
                       #{entry.fucked_up_rank}
                     </Badge>
@@ -105,21 +232,21 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                     </Badge>
                   </div>
 
-                  {/* Title & Category */}
-                  <div>
-                    <h3 className="text-lg font-heading line-clamp-2 mb-1 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent">
+                  {/* Title & Category - Fixed height */}
+                  <div className="flex-shrink-0 mb-3">
+                    <h3 className="text-lg font-arctic-grad line-clamp-4 mb-1 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent">
                       {entry.title}
                     </h3>
-                    <p className="text-xs text-primary">{entry.category}</p>
+                    <p className="text-xs text-primary font-arctic-left">{entry.category}</p>
                   </div>
 
-                  {/* Synopsis */}
-                  <p className="text-sm text-foreground/70 line-clamp-3 flex-shrink-0">
+                  {/* Synopsis - Fixed 3 lines */}
+                  <p className="text-sm text-foreground/70 line-clamp-3 flex-shrink-0 mb-3">
                     {entry.synopsis}
                   </p>
 
-                  {/* Metadata */}
-                  <div className="text-xs text-foreground/60 space-y-1">
+                  {/* Metadata - Fixed height */}
+                  <div className="text-xs text-foreground/60 space-y-1 flex-shrink-0 mb-3">
                     {entry.date_start && (
                       <div>Date: {new Date(entry.date_start).toLocaleDateString()}</div>
                     )}
@@ -128,18 +255,18 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                     )}
                   </div>
 
-                  {/* Fucked-up Score */}
-                  <div className="pt-2 border-t border-white/10">
+                  {/* Fucked-up Score - Fixed height */}
+                  <div className="pt-2 border-t border-white/10 flex-shrink-0 mb-2">
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-sm font-semibold">Fucked-up Score</span>
+                      <span className="text-sm font-arctic-half font-semibold">Fucked-up Score</span>
                       <span className="text-xl font-mono text-primary font-bold">
                         {parseFloat(entry.fucked_up_score).toFixed(2)}
                       </span>
                     </div>
                   </div>
 
-                  {/* Scoring Metrics with Progress Bars */}
-                  <div className="space-y-2 flex-1 overflow-auto">
+                  {/* Scoring Metrics - Flexible, takes remaining space */}
+                  <div className="space-y-2 flex-1 min-h-0 overflow-hidden">
                     {[
                       { label: "Danger", value: entry.danger, color: "from-orange-500 to-red-500" },
                       { label: "Authoritarianism", value: entry.authoritarianism, color: "from-orange-500 to-orange-600" },
@@ -164,9 +291,9 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                     ))}
                   </div>
 
-                  {/* Keywords */}
+                  {/* Keywords - Fixed height */}
                   {entry.all_keywords && entry.all_keywords.length > 0 && (
-                    <div className="flex flex-wrap gap-1 pt-2">
+                    <div className="flex flex-wrap gap-1 pt-2 flex-shrink-0">
                       {entry.all_keywords.slice(0, 3).map((keyword) => (
                         <Badge key={keyword} variant="outline" className="text-xs px-2 py-0 border-white/20">
                           {keyword}
@@ -180,10 +307,13 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                     </div>
                   )}
 
-                  {/* Flip Button */}
+                  {/* Spacer to push button down */}
+                  <div className="flex-grow" />
+
+                  {/* Flip Button - Always at bottom */}
                   <Button
                     onClick={() => setIsFlipped(true)}
-                    className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white shadow-lg shadow-orange-500/50"
+                    className="w-full mt-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white shadow-lg shadow-orange-500/50 flex-shrink-0"
                   >
                     <RotateCw className="h-4 w-4 mr-2" />
                     See Details
@@ -201,10 +331,10 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
               className="absolute inset-0"
             >
               <MagicCard className="h-full hover:border-primary/50 transition-all">
-                <CardContent className="p-6 space-y-4 h-full flex flex-col overflow-auto">
+                <CardContent className="p-6 space-y-3 h-full flex flex-col overflow-auto">
                   {/* Back Header */}
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-bold text-orange-400">Entry Details</h3>
+                  <div className="flex justify-between items-center flex-shrink-0">
+                    <h3 className="text-lg font-arctic-twotone text-orange-400">Entry Details</h3>
                     <Button
                       onClick={() => setIsFlipped(false)}
                       variant="ghost"
@@ -217,9 +347,14 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                   </div>
 
                   {/* Detailed Synopsis */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-orange-400 mb-2">Full Synopsis</h4>
-                    <p className="text-sm text-foreground/80">{entry.synopsis}</p>
+                  <div className="flex-shrink-0">
+                    <h4 className="text-sm font-arctic-laser font-semibold text-orange-400 mb-1">Synopsis</h4>
+                    <p className="text-sm text-foreground/80">
+                      {displaySynopsis}
+                      {isLongSynopsis && (
+                        <span className="text-orange-400/70 text-xs ml-1">[See full discussion for more]</span>
+                      )}
+                    </p>
                     {entry.rationale_short && (
                       <p className="text-sm text-foreground/70 mt-2 italic">
                         Context: {entry.rationale_short}
@@ -228,41 +363,68 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                   </div>
 
                   {/* Sources with Logos */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-orange-400 mb-2">Sources</h4>
-                    <div className="flex gap-2 flex-wrap">
-                      {sources.length > 0 ? (
-                        sources.map((source) => (
-                          <a
-                            key={source.domain}
-                            href={source.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="relative w-12 h-12 bg-white/10 rounded p-1 hover:bg-white/20 transition-all cursor-pointer"
-                            title={source.domain}
-                          >
-                            <Image
-                              src={source.logo}
-                              alt={source.domain}
-                              width={48}
-                              height={48}
-                              className="object-contain"
-                              onError={(e) => {
-                                const target = e.target as HTMLImageElement;
-                                target.style.display = 'none';
-                              }}
-                            />
-                          </a>
-                        ))
-                      ) : (
-                        <p className="text-xs text-foreground/60">No sources available</p>
-                      )}
+                  <div className="flex-shrink-0">
+                    <h4 className="text-sm font-arctic-half font-semibold text-orange-400 mb-2">Sources</h4>
+                    <div className="flex gap-2 flex-wrap items-center">
+                      {(() => {
+                        // Filter out generic placeholder sources
+                        const validSources = sources.filter(s =>
+                          s.url &&
+                          !s.url.includes('factcheck.org/person/') &&
+                          !s.url.includes('politifact.com/personalities/') &&
+                          !s.url.includes('wikipedia.org/wiki/Donald_Trump')
+                        );
+
+                        if (validSources.length > 0) {
+                          return validSources.slice(0, 4).map((source, idx) => {
+                            const logoFile = getDomainLogoFile(source.url);
+                            const displayName = getPublisherDisplayName(source.publisher, source.url);
+                            return (
+                              <a
+                                key={`${source.url}-${idx}`}
+                                href={source.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg px-2 py-1.5 transition-all group"
+                                title={source.title || displayName}
+                              >
+                                {logoFile ? (
+                                  <img
+                                    src={`/brand_logos/${logoFile}`}
+                                    alt={displayName}
+                                    className="w-5 h-5 object-contain rounded-sm"
+                                    onError={(e) => {
+                                      // Replace with ExternalLink icon on error
+                                      const target = e.target as HTMLImageElement;
+                                      target.style.display = 'none';
+                                      const parent = target.parentElement;
+                                      if (parent && !parent.querySelector('.fallback-icon')) {
+                                        const icon = document.createElement('span');
+                                        icon.innerHTML = '🔗';
+                                        icon.className = 'fallback-icon text-orange-400/60';
+                                        parent.insertBefore(icon, target);
+                                      }
+                                    }}
+                                  />
+                                ) : (
+                                  <ExternalLink className="w-4 h-4 text-orange-400/60 group-hover:text-orange-400" />
+                                )}
+                                <span className="text-xs text-foreground/70 group-hover:text-orange-400 transition-colors max-w-[100px] truncate">
+                                  {displayName}
+                                </span>
+                              </a>
+                            );
+                          });
+                        } else {
+                          return <p className="text-xs text-foreground/50 italic">Sources pending verification</p>;
+                        }
+                      })()}
                     </div>
                   </div>
 
                   {/* 10-Point Voting System */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-orange-400 mb-2">
+                  <div className="flex-shrink-0">
+                    <h4 className="text-sm font-arctic-left font-semibold text-orange-400 mb-2">
                       Rate This Entry ({voteCount} votes)
                     </h4>
                     <div className="grid grid-cols-10 gap-1">
@@ -273,8 +435,8 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                             key={score}
                             onClick={() => handleVote(score)}
                             className={`aspect-square rounded ${userVote === score
-                                ? `${getVoteColor(score)} ring-2 ring-white`
-                                : `${getVoteColor(score)}/30 hover:${getVoteColor(score)}`
+                              ? `${getVoteColor(score)} ring-2 ring-white`
+                              : `${getVoteColor(score)}/30 hover:${getVoteColor(score)}`
                               } transition-all flex items-center justify-center text-xs font-bold`}
                           >
                             {score}
@@ -284,19 +446,34 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                     </div>
                   </div>
 
-                  {/* Social Sharing */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-orange-400 mb-2">Share</h4>
+                  {/* Social Sharing - NOW WITH WORKING BUTTONS */}
+                  <div className="flex-shrink-0">
+                    <h4 className="text-sm font-arctic-3d font-semibold text-orange-400 mb-2">Share</h4>
                     <div className="flex gap-2">
-                      <Button size="sm" variant="outline" className="flex-1">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="flex-1"
+                        onClick={handleTwitterShare}
+                      >
                         <Twitter className="h-4 w-4 mr-1 text-orange-400" />
                         Twitter
                       </Button>
-                      <Button size="sm" variant="outline" className="flex-1">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="flex-1"
+                        onClick={handleFacebookShare}
+                      >
                         <Facebook className="h-4 w-4 mr-1 text-orange-400" />
                         Facebook
                       </Button>
-                      <Button size="sm" variant="outline" className="flex-1">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="flex-1"
+                        onClick={handleEmailShare}
+                      >
                         <Mail className="h-4 w-4 mr-1 text-orange-400" />
                         Email
                       </Button>
@@ -304,8 +481,8 @@ export function FlippableEntryCard({ entry, index }: FlippableEntryCardProps) {
                   </div>
 
                   {/* Comments Section */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-orange-400 mb-2">Discussion</h4>
+                  <div className="flex-shrink-0 mt-auto">
+                    <h4 className="text-sm font-arctic-grad font-semibold text-orange-400 mb-2">Discussion</h4>
                     <div className="space-y-2">
                       <Button
                         variant="outline"

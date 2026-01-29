@@ -14,7 +14,16 @@ import {
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Menu, X, Home, Library, Activity, HelpCircle, FileQuestion, ShieldAlert, Mail } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  Library,
+  Activity,
+  Brain,
+  Fingerprint,
+  Mail,
+} from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
@@ -22,15 +31,15 @@ import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const pathname = usePathname();
 
   const navItems = [
-    { name: "Home", href: "/", icon: <Home size={18} /> },
-    { name: "Catalog", href: "/catalog", icon: <Library size={18} /> },
-    { name: "Visualizer", href: "/visualizer", icon: <Activity size={18} /> },
-    { name: "WTF?", href: "/wtf", icon: <HelpCircle size={18} /> },
-    { name: "The Enigma", href: "/enigma", icon: <FileQuestion size={18} /> },
-    //{ name: "Admin", href: "/admin", icon: <ShieldAlert size={18} /> }, // Hidden for now as per task
+    { name: "Home", href: "/", icon: <Home size={16} /> },
+    { name: "Catalog", href: "/catalog", icon: <Library size={16} /> },
+    { name: "Visualizer", href: "/visualizer", icon: <Activity size={16} /> },
+    { name: "WTF?", href: "/wtf", icon: <Brain size={16} /> },
+    { name: "Enigma", href: "/enigma", icon: <Fingerprint size={16} /> },
   ];
 
   const handleContactSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -64,196 +73,258 @@ export default function Navigation() {
 
   return (
     <>
-      <nav
-        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-linear-to-r from-orange-950/80 via-black/80 to-orange-950/80 border-b border-orange-500/20 shadow-lg shadow-orange-500/10"
+      {/* Compact Horizontal Navigation */}
+      <motion.nav
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="fixed top-3 left-1/2 -translate-x-1/2 z-50"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <Link
-              href="/"
-              className="flex items-center space-x-2"
-              data-oid="aplmg26"
+        {/* Glow effect */}
+        <motion.div
+          className="absolute inset-0 rounded-full blur-lg"
+          style={{
+            background: "linear-gradient(90deg, #f97316, #ef4444, #f97316)",
+            backgroundSize: "200% 100%",
+          }}
+          animate={{
+            backgroundPosition: isHovered ? ["0% 50%", "100% 50%", "0% 50%"] : "0% 50%",
+            scale: isHovered ? 1.05 : 1,
+            opacity: isHovered ? 0.5 : 0.25,
+          }}
+          transition={{
+            backgroundPosition: { duration: 3, repeat: Infinity, ease: "linear" },
+            scale: { duration: 0.3 },
+            opacity: { duration: 0.3 },
+          }}
+        />
+
+        {/* Main compact container */}
+        <motion.div
+          className="relative flex items-center gap-0.5 px-2 py-1.5 rounded-full backdrop-blur-xl border border-orange-500/40"
+          style={{
+            background: "linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(20,8,0,0.95) 50%, rgba(0,0,0,0.9) 100%)",
+            boxShadow: isHovered
+              ? "0 0 30px rgba(249, 115, 22, 0.35), inset 0 1px 0 rgba(255,255,255,0.08)"
+              : "0 0 15px rgba(249, 115, 22, 0.2), inset 0 1px 0 rgba(255,255,255,0.08)",
+          }}
+          animate={{
+            borderColor: isHovered ? "rgba(249, 115, 22, 0.6)" : "rgba(249, 115, 22, 0.4)",
+          }}
+          transition={{ duration: 0.3 }}
+        >
+          {/* Logo + Brand - 3-Font Style (Static) */}
+          <Link
+            href="/"
+            className="flex items-center gap-2.5 px-2.5 py-1.5 rounded-full hover:bg-orange-500/10 transition-all duration-300 group"
+          >
+            <motion.div
+              whileHover={{ rotate: 360, scale: 1.1 }}
+              transition={{ duration: 0.5 }}
+              className="flex-shrink-0"
             >
               <Image
                 src="/logos/trumpfiles_orange_logo.png"
                 alt="Trump Files"
-                width={48}
-                height={48}
+                width={34}
+                height={34}
+                className="drop-shadow-[0_0_8px_rgba(249,115,22,0.6)]"
               />
+            </motion.div>
+            <TrumpFilesBrand size="sm" static className="hidden sm:flex" />
+          </Link>
 
-              <TrumpFilesBrand size="sm" />
-            </Link>
+          {/* Divider */}
+          <div className="hidden md:block w-px h-6 bg-gradient-to-b from-transparent via-orange-500/50 to-transparent mx-3" />
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-2">
-              {navItems.map((item) => (
+          {/* Desktop Navigation - Compact */}
+          <div className="hidden md:flex items-center gap-0.5">
+            {navItems.map((item, index) => (
+              <motion.div
+                key={item.name}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 + 0.2 }}
+              >
                 <Link
-                  key={item.name}
                   href={item.href}
-                  className={`relative group px-5 py-2.5 rounded-full text-base font-medium transition-all duration-300 overflow-hidden flex items-center gap-2 ${
-                    pathname === item.href
-                      ? "text-orange-400"
-                      : "text-foreground/80 hover:text-orange-300"
-                  }`}
+                  className={`relative group px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-1.5 ${pathname === item.href
+                    ? "text-orange-300"
+                    : "text-foreground/70 hover:text-orange-300"
+                    }`}
                 >
-                  {/* Multi-layered animated background */}
-                  <span className={`absolute inset-0 rounded-full transition-all duration-300 ${
-                    pathname === item.href
-                      ? "bg-linear-to-r from-orange-600/30 via-orange-500/30 to-red-500/30 scale-100"
-                      : "bg-linear-to-r from-orange-600/0 via-orange-500/0 to-red-500/0 scale-95 group-hover:scale-100 group-hover:from-orange-600/20 group-hover:via-orange-500/20 group-hover:to-red-500/20"
-                  }`} />
-                  
-                  {/* Glowing border layer */}
-                  <span className={`absolute inset-0 rounded-full transition-all duration-300 ${
-                    pathname === item.href
-                      ? "ring-2 ring-orange-500/50 ring-offset-2 ring-offset-transparent"
-                      : "ring-0 ring-orange-500/0 group-hover:ring-1 group-hover:ring-orange-500/30"
-                  }`} />
+                  {/* Active background */}
+                  {pathname === item.href && (
+                    <motion.span
+                      className="absolute inset-0 rounded-full bg-orange-500/15"
+                      layoutId="activeNavBg"
+                      transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                    />
+                  )}
 
-                  {/* Icon with animation */}
-                  <span className="relative z-10 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 text-orange-400/80 group-hover:text-orange-400">
+                  {/* Icon */}
+                  <span className={`relative z-10 ${pathname === item.href ? "text-orange-400" : "text-orange-400/50 group-hover:text-orange-400"}`}>
                     {item.icon}
                   </span>
 
-                  <span className="relative z-10">{item.name}</span>
+                  <span className="relative z-10 text-[13px]" style={{ fontFamily: 'var(--font-arctic-guardian-regular)' }}>{item.name}</span>
                 </Link>
-              ))}
-              <Button
-                variant="ghost"
-                onClick={() => setShowContact(true)}
-                className="ml-2 relative group px-5 py-2.5 rounded-full text-base font-medium text-foreground/80 hover:text-orange-300 transition-all duration-300 overflow-hidden flex items-center gap-2"
-              >
-                <span className="absolute inset-0 rounded-full bg-linear-to-r from-orange-600/0 via-orange-500/0 to-red-500/0 scale-95 group-hover:scale-100 group-hover:from-orange-600/20 group-hover:via-orange-500/20 group-hover:to-red-500/20 transition-all duration-300" />
-                <span className="relative z-10 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 text-orange-400/80 group-hover:text-orange-400">
-                  <Mail size={18} />
-                </span>
-                <span className="relative z-10">Contact</span>
-              </Button>
-            </div>
+              </motion.div>
+            ))}
 
-            {/* Mobile menu button */}
-            <button
-              className="md:hidden p-2 rounded-lg hover:bg-white/5 transition-colors"
-              onClick={() => setIsOpen(!isOpen)}
-              data-oid="cwx3jj4"
+            {/* Contact Button */}
+            <Button
+              variant="ghost"
+              onClick={() => setShowContact(true)}
+              className="px-3 py-1.5 h-auto rounded-full text-[13px] font-medium text-foreground/70 hover:text-orange-300 transition-all duration-200 flex items-center gap-1.5 hover:bg-orange-500/10"
             >
-              {isOpen ? (
-                <X size={24} data-oid="7ogodd3" />
-              ) : (
-                <Menu size={24} data-oid="74490it" />
-              )}
-            </button>
+              <Mail size={16} className="text-orange-400/50" />
+              <span style={{ fontFamily: 'var(--font-arctic-guardian-regular)' }}>Contact</span>
+            </Button>
           </div>
-        </div>
 
-        {/* Mobile Navigation */}
-        <AnimatePresence data-oid="bu.5ht9">
+
+
+          {/* Mobile menu button */}
+          <motion.button
+            className="md:hidden p-1.5 rounded-full hover:bg-orange-500/10 transition-colors text-orange-400 ml-1"
+            onClick={() => setIsOpen(!isOpen)}
+            whileTap={{ scale: 0.9 }}
+          >
+            <AnimatePresence mode="wait">
+              {isOpen ? (
+                <motion.div
+                  key="close"
+                  initial={{ rotate: -90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <X size={20} />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="menu"
+                  initial={{ rotate: 90, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Menu size={20} />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.button>
+        </motion.div>
+
+        {/* Mobile Navigation Dropdown */}
+        <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
+              initial={{ opacity: 0, y: -10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 8, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden border-t border-white/10"
-              data-oid="_ha-9-."
+              className="absolute top-full left-1/2 -translate-x-1/2 w-56 rounded-xl overflow-hidden"
+              style={{
+                background: "linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(20,8,0,0.95) 100%)",
+                boxShadow: "0 0 30px rgba(249, 115, 22, 0.25), inset 0 1px 0 rgba(255,255,255,0.08)",
+                border: "1px solid rgba(249, 115, 22, 0.4)",
+              }}
             >
-              <div
-                className="container mx-auto px-4 py-4 space-y-2"
-                data-oid="g6-ij6j"
-              >
-                {navItems.map((item) => (
-                  <Link
+              <div className="p-2 space-y-0.5">
+                {navItems.map((item, index) => (
+                  <motion.div
                     key={item.name}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className={`block px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                      pathname === item.href
-                        ? "bg-primary/20 text-primary"
-                        : "text-foreground/80 hover:text-foreground hover:bg-white/5"
-                    }`}
-                    data-oid="o84b_j7"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.05 }}
                   >
-                    {item.name}
-                  </Link>
+                    <Link
+                      href={item.href}
+                      onClick={() => setIsOpen(false)}
+                      className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-200 ${pathname === item.href
+                        ? "bg-orange-500/15 text-orange-300"
+                        : "text-foreground/70 hover:bg-orange-500/10 hover:text-orange-300"
+                        }`}
+                    >
+                      <span className={pathname === item.href ? "text-orange-400" : "text-orange-400/50"}>
+                        {item.icon}
+                      </span>
+                      <span className="text-sm font-medium">{item.name}</span>
+                    </Link>
+                  </motion.div>
                 ))}
-                <Button
-                  variant="ghost"
-                  onClick={() => {
-                    setShowContact(true);
-                    setIsOpen(false);
-                  }}
-                  className="w-full justify-start"
-                  data-oid="rj1l0x-"
+
+                {/* Mobile Contact */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.25 }}
                 >
-                  Contact
-                </Button>
+                  <button
+                    onClick={() => {
+                      setIsOpen(false);
+                      setShowContact(true);
+                    }}
+                    className="flex items-center gap-3 px-3 py-2 rounded-lg text-foreground/70 hover:bg-orange-500/10 hover:text-orange-300 transition-all duration-200 w-full"
+                  >
+                    <Mail size={16} className="text-orange-400/50" />
+                    <span className="text-sm font-medium">Contact</span>
+                  </button>
+                </motion.div>
+
               </div>
             </motion.div>
           )}
         </AnimatePresence>
-      </nav>
+      </motion.nav>
 
       {/* Contact Dialog */}
-      <Dialog
-        open={showContact}
-        onOpenChange={setShowContact}
-        data-oid="8bhrqky"
-      >
-        <DialogContent
-          className="glass-card border-white/10"
-          data-oid="qbhgxw5"
-        >
-          <DialogHeader data-oid="24bdr5a">
-            <DialogTitle data-oid="dqa8f:-">Contact Us</DialogTitle>
-            <DialogDescription data-oid="g4r5bjl">
-              Send us a message and we'll get back to you as soon as possible.
+      <Dialog open={showContact} onOpenChange={setShowContact}>
+        <DialogContent className="sm:max-w-[425px] bg-black/95 border-orange-500/30">
+          <DialogHeader>
+            <DialogTitle className="text-orange-400">Contact Us</DialogTitle>
+            <DialogDescription>
+              Have information to share? Found an error? We want to hear from you.
             </DialogDescription>
           </DialogHeader>
-          <form
-            onSubmit={handleContactSubmit}
-            className="space-y-4"
-            data-oid="e_9d3dt"
-          >
-            <div className="space-y-2" data-oid="0p9cl5v">
-              <Label htmlFor="name" data-oid="z8p0qp6">
-                Name
-              </Label>
+          <form onSubmit={handleContactSubmit} className="space-y-4">
+            <div>
+              <Label htmlFor="name">Name</Label>
               <Input
                 id="name"
                 name="name"
                 required
-                className="bg-white/5 border-white/10"
-                data-oid="nrsaig-"
+                className="bg-black/50 border-orange-500/30 focus:border-orange-500"
               />
             </div>
-            <div className="space-y-2" data-oid="31z1cn6">
-              <Label htmlFor="email" data-oid="3hy1wgt">
-                Email
-              </Label>
+            <div>
+              <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
                 name="email"
                 type="email"
                 required
-                className="bg-white/5 border-white/10"
-                data-oid="bvzor6k"
+                className="bg-black/50 border-orange-500/30 focus:border-orange-500"
               />
             </div>
-            <div className="space-y-2" data-oid="868y0ls">
-              <Label htmlFor="message" data-oid="_4w_ut6">
-                Message
-              </Label>
+            <div>
+              <Label htmlFor="message">Message</Label>
               <Textarea
                 id="message"
                 name="message"
                 required
                 rows={4}
-                className="bg-white/5 border-white/10"
-                data-oid="7pkediz"
+                className="bg-black/50 border-orange-500/30 focus:border-orange-500"
               />
             </div>
-            <Button type="submit" className="w-full" data-oid="xdx4fd3">
+            <Button
+              type="submit"
+              className="w-full bg-orange-600 hover:bg-orange-700 text-white"
+            >
               Send Message
             </Button>
           </form>

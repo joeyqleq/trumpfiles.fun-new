@@ -22,6 +22,12 @@ import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Marquee } from "@/components/ui/marquee";
 import { Sparkles, TrendingUp, Users, Zap as ZapIcon, AlertTriangle, Brain, Flame } from "lucide-react";
 import { AICompleteTrumpData } from "@/types/database";
+import ShinyText from "@/components/ShinyText";
+import ElectricBorder from "@/components/ElectricBorder";
+import { useEntryCount } from "@/hooks/useEntryCount";
+import { SparklesText } from "@/components/ui/sparkles-text";
+import { ShineBorder } from "@/components/ui/shine-border";
+import { HyperText } from "@/components/ui/hyper-text";
 
 // Dynamically import 3D component to avoid SSR issues
 const OrangeHero = dynamic(() => import("@/components/OrangeHero"), {
@@ -87,7 +93,7 @@ const MarqueeCard = ({ entry }: { entry: AICompleteTrumpData }) => {
   const absurdityPercent = ((entry.absurdity || 0) / 10) * 100;
 
   return (
-    <div className="w-[420px] mx-4 p-5 rounded-xl bg-black/50 backdrop-blur-sm border border-white/10 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10 transition-all duration-300 group">
+    <div className="w-[300px] sm:w-[420px] mx-2 sm:mx-4 p-4 sm:p-5 rounded-xl bg-black/50 backdrop-blur-sm border border-white/10 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10 transition-all duration-300 group">
       {/* Category Pill with unique color */}
       <div className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold mb-3 ${categoryStyle.bg} ${categoryStyle.text} ${categoryStyle.border} border`}>
         {entry.category}
@@ -142,6 +148,7 @@ const MarqueeCard = ({ entry }: { entry: AICompleteTrumpData }) => {
 
 export default function Home() {
   const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
+  const { count: entryCount, loading: entryLoading } = useEntryCount();
 
   useEffect(() => {
     const fetchEntries = async () => {
@@ -190,23 +197,26 @@ export default function Home() {
 
       {/* All content now relative and above background */}
       <div className="relative z-10">
+        {/* NEW HERO SECTION 
+            - Strict top/bottom alignment
+            - reduced vertical padding
+            - verified flex/grid structure
+        */}
         {/* Hero Section */}
         <section
-          className="relative overflow-hidden min-h-[calc(100vh-80px)] flex items-start pt-16 pb-8"
+          className="relative overflow-hidden min-h-[calc(100vh-80px)] flex items-stretch py-4"
         >
 
-          {/* SVG Decorations */}
-          {/* Wireframe Donut - Left Side with animated beam glow */}
+          {/* SVG Decorations - Keep unchanged */}
+          {/* Wireframe Donut - Left Side with animated beam glow - Hidden on mobile */}
           <div
-            className="absolute -left-40 top-1/2 -translate-y-1/2 w-[625px] h-[625px] opacity-20 pointer-events-none"
+            className="absolute -left-40 top-1/2 -translate-y-1/2 w-[625px] h-[625px] opacity-20 pointer-events-none hidden md:block"
           >
-            {/* Base SVG */}
             <img
               src="/images/bg-decor_wireframe_donut.svg"
               alt=""
               className="absolute inset-0 w-full h-full object-contain"
             />
-            {/* Animated glow overlay */}
             <div
               className="absolute inset-0 w-full h-full animate-beam-pulse"
               style={{
@@ -216,17 +226,15 @@ export default function Home() {
             />
           </div>
 
-          {/* Hula Hoops - Right Side with animated beam glow */}
+          {/* Hula Hoops - Right Side */}
           <div
-            className="absolute -right-24 top-1/3 w-[440px] h-[440px] opacity-15 pointer-events-none"
+            className="absolute -right-24 top-1/3 w-[440px] h-[440px] opacity-15 pointer-events-none hidden md:block"
           >
-            {/* Base SVG */}
             <img
               src="/images/bg-decor_hula-hoops.svg"
               alt=""
               className="absolute inset-0 w-full h-full object-contain"
             />
-            {/* Animated ring glow overlay */}
             <div
               className="absolute inset-0 w-full h-full rounded-full animate-beam-rotate"
               style={{
@@ -236,68 +244,139 @@ export default function Home() {
             />
           </div>
 
-          <div className="container mx-auto px-4 lg:px-12 relative z-10 w-full">
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-stretch max-w-7xl mx-auto">
-              {/* Left Content */}
-              <div className="flex flex-col justify-between items-center lg:items-start order-2 lg:order-1 py-8">
-                <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8 }}
-                  className="space-y-8 text-center lg:text-left"
-                >
-                  {/* Badge */}
+          <div className="container mx-auto px-4 lg:px-12 relative z-10 w-full flex-grow">
+            {/* Grid with items-stretch ensuring equal height columns */}
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 h-full items-stretch max-w-7xl mx-auto">
+
+              {/* Left Content Column */}
+              <div className="flex flex-col justify-between order-2 lg:order-1 h-full py-2">
+                {/* TOP Element: Badge (Aligned with Divider) */}
+                <div className="flex justify-center lg:justify-start">
                   <Badge
                     className="bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-500 border-orange-500/30 px-4 py-1.5 text-sm"
                   >
                     The Definitive Data-Driven Encyclopedia of Political Absurdity
                   </Badge>
+                </div>
 
-                  {/* Brand Title - Single Row */}
-                  <div className="py-4">
+                {/* MIDDLE Element: Text Content (Vertically centered by flex space) */}
+                <div className="flex-1 flex flex-col justify-center my-4 text-center lg:text-left">
+                  <div className="py-2">
                     <TrumpFilesBrand size="hero" className="justify-center lg:justify-start whitespace-nowrap" />
                   </div>
 
-                  {/* Description */}
-                  <p className="text-lg lg:text-xl text-foreground/80 max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ fontFamily: 'var(--font-neuething)', fontWeight: 500 }}>
+                  <p className="text-lg lg:text-xl text-foreground/80 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium mt-4" style={{ fontFamily: 'var(--font-neuething)' }}>
                     A comprehensive, data-driven archive of the 45th U.S.
                     President&apos;s most controversial and impactful moments. Explore,
                     analyze, and understand the data behind the headlines.
                   </p>
 
-                  {/* CTA Buttons */}
-                  <div className="flex flex-wrap gap-6 pt-6 justify-center lg:justify-start">
-                    <Link href="/catalog">
-                      <ShinyButton className="text-base px-6 py-3 bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/50">
-                        Explore The Files
-                      </ShinyButton>
-                    </Link>
-                    <Link href="/visualizer">
-                      <PulsatingButton className="text-base px-6 py-3 bg-orange-600 hover:bg-orange-700">
-                        Visualize The Data
-                      </PulsatingButton>
-                    </Link>
+                  <div className="flex justify-center lg:justify-start pt-6">
+                    <ElectricBorder
+                      color="#9eff2a"
+                      speed={1.5}
+                      chaos={0.08}
+                      borderRadius={16}
+                    >
+                      <div className="px-6 py-2.5 bg-black/60 backdrop-blur-sm rounded-2xl">
+                        <ShinyText
+                          text={entryLoading ? "Loading..." : `${entryCount}+ ENTRIES DOCUMENTED`}
+                          speed={2.9}
+                          delay={0.7}
+                          color="#ffb347"
+                          shineColor="#ffffff"
+                          spread={110}
+                          direction="left"
+                          yoyo
+                          pauseOnHover={false}
+                          disabled={false}
+                          className="text-sm md:text-base font-bold tracking-wide"
+                        />
+                      </div>
+                    </ElectricBorder>
                   </div>
-                </motion.div>
+                </div>
+
+                {/* BOTTOM Element: Buttons (Aligned with DJT/Sig) */}
+                <div className="flex flex-wrap gap-6 justify-center lg:justify-start pt-2">
+                  <Link href="/catalog">
+                    <ShinyButton className="text-base px-6 py-3 bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/50">
+                      Explore The Files
+                    </ShinyButton>
+                  </Link>
+                  <Link href="/visualizer">
+                    <PulsatingButton className="text-base px-6 py-3 bg-orange-600 hover:bg-orange-700">
+                      Visualize The Data
+                    </PulsatingButton>
+                  </Link>
+                </div>
               </div>
 
-              {/* Right - 3D Model */}
-              <div className="flex flex-col items-center justify-end order-1 lg:order-2">
+              {/* Right Content Column */}
+              <div className="flex flex-col justify-between order-1 lg:order-2 h-full py-2 relative z-20 pl-8 lg:pl-16">
+
+                {/* TOP Element: Divider (Aligned with Badge) */}
+                <div className="hidden lg:flex justify-start items-center h-[32px] overflow-visible -mt-1">
+                  {/* Height ensures vertical rhythm with badge */}
+                  <img
+                    src="/images/bg-decor_repeating_front-slash.svg"
+                    alt=""
+                    className="w-[300px] h-auto object-left opacity-60"
+                  />
+                </div>
+
+                {/* MIDDLE Element: 3D Model - Adjusted Size */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="relative w-full h-[45vh] lg:h-[72vh]"
+                  className="relative w-full flex-1 flex items-center justify-center -ml-8 lg:-ml-4 xl:ml-0 my-4"
                 >
-                  <OrangeHero />
+                  <div className="w-full max-w-[650px] aspect-square relative transform scale-110 lg:scale-115">
+                    <OrangeHero />
+                  </div>
                 </motion.div>
-                {/* Single Front-Slash Divider - aligned with button row width */}
-                <div className="hidden lg:flex justify-center mt-4">
-                  <img
-                    src="/images/bg-decor_repeating_front-slash.svg"
-                    alt=""
-                    className="w-[360px] h-14 opacity-50"
-                  />
+
+                {/* BOTTOM Element: DJT + Signature (Aligned with Buttons) */}
+                <div className="flex items-end gap-x-6 relative w-full justify-center lg:justify-start lg:pl-12 pt-2 mt-auto">
+                  <div className="relative leading-none">
+                    <SparklesText
+                      className="text-7xl lg:text-9xl font-black tracking-tighter !leading-none block p-0 m-0"
+                      colors={{ first: '#FFA500', second: '#FF4500' }}
+                      style={{
+                        fontFamily: 'var(--font-arctic-guardian-grad)',
+                        fontWeight: 900,
+                        background: 'linear-gradient(to bottom, #FFA500, #FF4500)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        display: 'inline-block'
+                      }}
+                    >
+                      DJT
+                    </SparklesText>
+                  </div>
+
+                  {/* Signature */}
+                  <div className="relative h-24 w-56 mb-2">
+                    {/* Border Effect */}
+                    <div className="absolute inset-0 z-20 pointer-events-none rounded-lg overflow-hidden">
+                      <ShineBorder
+                        shineColor={["#FFA500", "#FF4500", "#FFD700"]}
+                        borderWidth={2}
+                        duration={4}
+                        className="w-full h-full"
+                      />
+                    </div>
+
+                    {/* Actual Image - White Inverted to look good on dark - No background box */}
+                    <div className="relative z-10 w-full h-full">
+                      <img
+                        src="/images/trump_signature_2.svg"
+                        alt="Signature"
+                        className="w-full h-full object-contain filter invert brightness-0"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -377,17 +456,30 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-center mb-16"
+              className="text-center mb-16 relative"
             >
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-linear-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent font-(family-name:--font-arctic-guardian-semi)">
+              {/* ASCII Logo - Moved closer to the grid, ensuring no cut-off */}
+              <div className="absolute -top-8 -right-4 lg:right-16 lg:-top-16 w-36 h-36 lg:w-48 lg:h-48 z-20 pointer-events-none opacity-80 rotate-12 overflow-visible">
+                <ElectricBorder color="#FFA500" speed={1.2} chaos={0.1}>
+                  <img src="/images/trump_logo_ascii.svg" alt="ASCII Logo" className="w-full h-full object-contain p-2 bg-black/80 rounded-xl" />
+                </ElectricBorder>
+              </div>
+
+              {/* HyperText without custom font override - uses default font now */}
+              <HyperText
+                className="text-4xl lg:text-5xl font-bold mb-4 bg-linear-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent block relative z-10"
+                startOnView
+              >
                 Explore The Platform
-              </h2>
-              <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+              </HyperText>
+
+              <p className="text-lg text-foreground/70 max-w-2xl mx-auto relative z-10 mt-4">
                 Interactive tools and insights to understand the most documented presidency in history
               </p>
             </motion.div>
 
             <BentoGrid className="mx-auto max-w-6xl">
+              {/* Existing Bento Cards */}
               <BentoCard
                 name="Interactive Catalog"
                 className="col-span-3 lg:col-span-2"
@@ -446,13 +538,23 @@ export default function Home() {
                 transition={{ duration: 0.6 }}
                 className="text-center"
               >
-                {/* Title with translucent frame for better readability */}
-                <div className="inline-block px-8 py-4 rounded-xl bg-black/50 backdrop-blur-sm border border-orange-500/30 mb-4">
-                  <h2 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent font-heading">
-                    Live Data Stream
-                  </h2>
+                {/* Orange Logo - Increased size */}
+                <div className="flex justify-center mb-6">
+                  <img
+                    src="/logos/trumpfiles_orange_logo.png"
+                    alt="Trump Files Logo"
+                    className="h-32 md:h-48 object-contain scale-110"
+                    style={{ filter: "drop-shadow(0 0 15px rgba(255, 165, 0, 0.4))" }}
+                  />
                 </div>
-                <p className="text-base text-foreground/70">
+
+                {/* Title */}
+                <div className="inline-block px-8 py-4 rounded-xl bg-black/50 backdrop-blur-sm border border-orange-500/30 mb-4">
+                  <HyperText className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent font-heading block" startOnView>
+                    Live Data Stream
+                  </HyperText>
+                </div>
+                <p className="text-base text-foreground/70 mt-2">
                   {entries.length} documented incidents streaming in real-time
                 </p>
               </motion.div>
@@ -474,33 +576,55 @@ export default function Home() {
         {/* Mission Statement */}
         <section className="relative py-24 overflow-hidden">
           <div className="container mx-auto px-4 relative z-10">
-            <div className="glass-card p-12 text-center max-w-4xl mx-auto border-orange-500/20 shadow-lg shadow-orange-500/10">
-              <h2 className="text-4xl lg:text-5xl font-bold mb-8 bg-linear-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent font-(family-name:--font-arctic-guardian-semi)">
-                Our Mission
-              </h2>
-              <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
-                <p>
-                  <strong className="text-orange-400">The Trump Files</strong> is a scientific and entertainment exercise leveraging AI to scrape, catalogue, and analyze everything written about Trump's crimes, racism, narcissism, and compulsive lying.
-                </p>
-                <p>
-                  This archive serves to <strong className="text-orange-400">understand what makes him tick</strong>, provide evidence for potential prosecution, chronicle the worst of the worst for the historical record, and offer data-driven insights into his mind and methods.
-                </p>
-                <p>
-                  Our goal? <strong className="text-orange-400">Jail or bar from heaven</strong>—whichever comes first.
-                </p>
-                <div className="pt-6 flex gap-4 justify-center">
-                  <Link href="/catalog">
-                    <Button className="bg-linear-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
-                      Explore The Archive
-                    </Button>
-                  </Link>
-                  <Link href="/wtf">
-                    <Button variant="outline" className="border-orange-500/30 text-orange-400 hover:bg-orange-500/20">
-                      Learn More
-                    </Button>
-                  </Link>
+            {/* Grid Layout */}
+            <div className="max-w-6xl mx-auto grid lg:grid-cols-5 gap-8 items-center">
+
+              {/* Mission Text Card */}
+              <div className="lg:col-span-3">
+                <div className="glass-card p-6 sm:p-12 text-center max-w-4xl mx-auto border-orange-500/20 shadow-lg shadow-orange-500/10 h-full">
+                  <HyperText
+                    className="text-4xl lg:text-5xl font-bold mb-8 bg-linear-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent block"
+                    startOnView
+                  >
+                    Our Mission
+                  </HyperText>
+
+                  <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
+                    <p>
+                      <strong className="text-orange-400">The Trump Files</strong> is a scientific and entertainment exercise leveraging AI to scrape, catalogue, and analyze everything written about Trump's crimes, racism, narcissism, and compulsive lying.
+                    </p>
+                    <p>
+                      This archive serves to <strong className="text-orange-400">understand what makes him tick</strong>, provide evidence for potential prosecution, chronicle the worst of the worst for the historical record, and offer data-driven insights into his mind and methods.
+                    </p>
+                    <p>
+                      Our goal? <strong className="text-orange-400">Jail or bar from heaven</strong>—whichever comes first.
+                    </p>
+                    <div className="pt-6 flex gap-4 justify-center">
+                      <Link href="/catalog">
+                        <Button className="bg-linear-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600">
+                          Explore The Archive
+                        </Button>
+                      </Link>
+                      <Link href="/wtf">
+                        <Button variant="outline" className="border-orange-500/30 text-orange-400 hover:bg-orange-500/20">
+                          Learn More
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              {/* Macbeth Image - Takes 2/5 width, positioned to the right */}
+              <div className="lg:col-span-2 flex justify-center lg:justify-start">
+                <img
+                  src="/images/trump_macbeth.svg"
+                  alt="Trump Macbeth"
+                  className="w-full max-w-[400px] object-contain transform scale-110 lg:-translate-x-8"
+                  style={{ filter: "drop-shadow(0 0 20px rgba(255, 100, 0, 0.3))" }}
+                />
+              </div>
+
             </div>
           </div>
         </section>

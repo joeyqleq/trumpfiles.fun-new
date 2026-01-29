@@ -7,10 +7,14 @@ import Image from "next/image";
 import { BookOpen, TrendingUp, Laugh, Database, Network, BarChart3, Brain } from "lucide-react";
 import GradientBlinds from "@/components/GradientBlinds";
 import PixelCard from "@/components/PixelCard";
+import PageDecorations from "@/components/PageDecorations";
 
 export default function WTFPage() {
   return (
     <div className="min-h-screen w-full relative">
+      {/* Page Decorations with ASCII Trump images */}
+      <PageDecorations variant="wtf" />
+
       {/* Animated Gradient Blinds Background */}
       <div className="fixed inset-0 w-full h-full z-0 opacity-30 pointer-events-none">
         <GradientBlinds

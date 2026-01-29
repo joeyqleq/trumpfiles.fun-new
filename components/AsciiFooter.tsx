@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Github, Twitter, Mail } from "lucide-react";
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import { useEntryCount } from "@/hooks/useEntryCount";
 
 // ASCII Art - Simple block letters using only standard ASCII
 const ASCII_ART = `
@@ -29,6 +30,7 @@ const ASCII_ART = `
 ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝`;
 
 export default function AsciiFooter() {
+  const { formatted: entryCount } = useEntryCount();
   return (
     <footer className="relative border-t border-white/10 bg-black/50 backdrop-blur-sm overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -59,7 +61,7 @@ export default function AsciiFooter() {
               ════════════════════════════════
             </div>
             <p className="text-sm text-foreground/60 mt-6">
-              A comprehensive, data-driven archive documenting 700+ incidents across 40+ years.
+              A comprehensive, data-driven archive documenting {entryCount}+ incidents across 40+ years.
             </p>
           </div>
 

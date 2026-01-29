@@ -8,14 +8,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-neuething);
   --font-heading: var(--font-arctic-guardian);
-  --font-arctic-3d: var(--font-arctic-3d);
-  --font-arctic-grad: var(--font-arctic-grad);
+  --font-arctic-3d: var(--font-arctic-guardian-3d);
+  --font-arctic-grad: var(--font-arctic-guardian-grad);
   --font-arctic-grad-italic: var(--font-arctic-guardian-grad-italic);
-  --font-arctic-laser: var(--font-arctic-laser);
-  --font-arctic-half: var(--font-arctic-half);
-  --font-arctic-twotone: var(--font-arctic-twotone);
+  --font-arctic-laser: var(--font-arctic-guardian-laser);
+  --font-arctic-half: var(--font-arctic-guardian-half);
+  --font-arctic-twotone: var(--font-arctic-guardian-twotone);
   --font-arctic-twotone-italic: var(--font-arctic-guardian-twotone-italic);
-  --font-arctic-left: var(--font-arctic-left);
+  --font-arctic-left: var(--font-arctic-guardian-left);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -104,12 +104,14 @@
   }
 
   --animate-line-shadow: line-shadow 15s linear infinite;
+
   @keyframes line-shadow {
-  0% {
-    background-position: 0 0;
+    0% {
+      background-position: 0 0;
     }
-  100% {
-    background-position: 100% -100%;
+
+    100% {
+      background-position: 100% -100%;
     }
   }
 
@@ -194,7 +196,16 @@
       background-position: bottom center;
     }
   }
-}
+
+  --animate-shine: shine var(--duration) infinite linear
+;
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;}
+  50% {
+    background-position: 100% 100%;}
+  to {
+    background-position: 0% 0%;}}}
 
 :root {
   --radius: 0.75rem;
@@ -275,15 +286,15 @@ p,
 
 /* Arctic Guardian Variant Utilities */
 @utility font-arctic-3d {
-  font-family: var(--font-arctic-3d);
+  font-family: var(--font-arctic-guardian-3d);
 }
 
 @utility font-arctic-grad {
-  font-family: var(--font-arctic-grad);
+  font-family: var(--font-arctic-guardian-grad);
 }
 
 @utility font-arctic-grad-italic {
-  font-family: var(--font-arctic-grad-italic);
+  font-family: var(--font-arctic-guardian-grad-italic);
   font-style: italic;
 }
 
@@ -297,19 +308,19 @@ p,
 }
 
 @utility font-arctic-half {
-  font-family: var(--font-arctic-half);
+  font-family: var(--font-arctic-guardian-half);
 }
 
 @utility font-arctic-twotone {
-  font-family: var(--font-arctic-twotone);
+  font-family: var(--font-arctic-guardian-twotone);
 }
 
 @utility font-arctic-left {
-  font-family: var(--font-arctic-left);
+  font-family: var(--font-arctic-guardian-left);
 }
 
 @utility font-arctic-twotone-italic {
-  font-family: var(--font-arctic-twotone-italic);
+  font-family: var(--font-arctic-guardian-twotone-italic);
   font-style: italic;
 }
 
@@ -385,22 +396,26 @@ p,
 
 /* Beam glow animations for SVG decorations */
 @keyframes beamPulse {
-  0%, 100% { 
-    opacity: 0.3; 
-    transform: scale(0.95); 
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.95);
   }
-  50% { 
-    opacity: 0.7; 
-    transform: scale(1.05); 
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
   }
 }
 
 @keyframes beamRotate {
-  0% { 
-    transform: rotate(0deg); 
+  0% {
+    transform: rotate(0deg);
   }
-  100% { 
-    transform: rotate(360deg); 
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -525,6 +540,83 @@ p,
 
 .golden-p-8 {
   padding: 4.236rem;
+}
+
+/* Mobile-responsive golden padding overrides */
+@media (max-width: 768px) {
+  .golden-p-8 {
+    padding: 1.618rem;
+  }
+
+  .golden-p-5 {
+    padding: 1rem;
+  }
+}
+
+/* Mobile-First Responsive Utilities */
+@utility hide-on-mobile {
+  @media (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+@utility show-on-mobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+@utility mobile-text-center {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+@utility mobile-full-width {
+  @media (max-width: 768px) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Safe area for notched devices */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Touch-friendly tap targets */
+@utility touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Decorations - hide on mobile for performance */
+@media (max-width: 768px) {
+  .fixed.pointer-events-none.overflow-hidden.z-0 {
+    display: none;
+  }
+}
+
+/* Mobile card sizing */
+@media (max-width: 480px) {
+  .glass-card {
+    padding: 1rem;
+  }
+}
+
+/* Responsive marquee */
+@media (max-width: 768px) {
+  [class*="[--duration:150s]"] {
+    --duration: 80s;
+  }
 }
 
 @layer base {

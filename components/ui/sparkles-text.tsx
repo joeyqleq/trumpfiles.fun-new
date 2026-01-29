@@ -39,45 +39,10 @@ const Sparkle: React.FC<Sparkle> = ({ id, x, y, color, delay, scale }) => {
   )
 }
 
-interface SparklesTextProps {
-  /**
-   * @default <div />
-   * @type ReactElement
-   * @description
-   * The component to be rendered as the text
-   * */
-  as?: ReactElement
-
-  /**
-   * @default ""
-   * @type string
-   * @description
-   * The className of the text
-   */
-  className?: string
-
-  /**
-   * @required
-   * @type ReactNode
-   * @description
-   * The content to be displayed
-   * */
+interface SparklesTextProps extends React.HTMLAttributes<HTMLDivElement> {
+  // ... existing custom props ...
   children: React.ReactNode
-
-  /**
-   * @default 10
-   * @type number
-   * @description
-   * The count of sparkles
-   * */
   sparklesCount?: number
-
-  /**
-   * @default "{first: '#9E7AFF', second: '#FE8BBB'}"
-   * @type string
-   * @description
-   * The colors of the sparkles
-   * */
   colors?: {
     first: string
     second: string
@@ -132,12 +97,11 @@ export const SparklesText: React.FC<SparklesTextProps> = ({
     <div
       className={cn("text-6xl font-bold", className)}
       {...props}
-      style={
-        {
-          "--sparkles-first-color": `${colors.first}`,
-          "--sparkles-second-color": `${colors.second}`,
-        } as CSSProperties
-      }
+      style={{
+        ...props.style,
+        "--sparkles-first-color": colors.first,
+        "--sparkles-second-color": colors.second,
+      } as CSSProperties}
     >
       <span className="relative inline-block">
         {sparkles.map((sparkle) => (

@@ -5,6 +5,9 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import TrueFocus from "@/components/TrueFocus";
 import { Calendar, MapPin, Users, Heart, DollarSign, Skull, Crown } from "lucide-react";
+import PageDecorations from "@/components/PageDecorations";
+import { OrangeX, TwinkleStar as TwinkleStarDecor } from "@/components/PageDecorations";
+import PixelCard from "@/components/PixelCard";
 
 export default function EnigmaPage() {
   const bioData = [
@@ -115,8 +118,11 @@ export default function EnigmaPage() {
   ];
 
   return (
-    <div className="min-h-screen py-16">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <div className="min-h-screen py-16 relative">
+      {/* Background Decorations using actual assets */}
+      <PageDecorations variant="enigma" />
+
+      <div className="container mx-auto px-4 max-w-7xl relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -146,7 +152,7 @@ export default function EnigmaPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="grid lg:grid-cols-2 gap-8 mb-16"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-16"
         >
           {/* Left: Biographical Info */}
           <div className="space-y-4">
@@ -176,35 +182,41 @@ export default function EnigmaPage() {
             })}
           </div>
 
-          {/* Right: ProfileCard with Birthday Drawing */}
+          {/* Right: ProfileCard with Birthday Drawing - PixelCard Effect */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex items-start"
+            className="flex items-start justify-center order-first lg:order-last"
           >
-            <Card className="glass-card border-orange-500/30 overflow-hidden w-full">
-              <CardContent className="p-0">
-                <div className="relative w-full h-[600px]">
-                  <Image
-                    src="/images/enigmas_birthday_drawing.png"
-                    alt="Trump's Birthday Card to Epstein"
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </div>
-                <div className="p-6 bg-linear-to-t from-black/80 to-transparent">
-                  <h3 className="text-2xl font-bold text-orange-400 mb-2">
-                    The Infamous Birthday Card
-                  </h3>
-                  <p className="text-foreground/70">
-                    The birthday card Trump wrote to Jeffrey Epstein, signing it "The Enigma" -
-                    a reference he claims never happened. The evidence says otherwise.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="relative w-full max-w-[400px]">
+              <PixelCard
+                variant="default"
+                gap={5}
+                speed={40}
+                colors="#ff6b00,#ff8c00,#ffa500,#cc5500"
+                noFocus={false}
+                className="!w-full sm:!w-[350px] lg:!w-[400px] !h-[400px] sm:!h-[480px] lg:!h-[550px] !aspect-auto mx-auto"
+              >
+                <Image
+                  src="/images/enigmas_birthday_drawing.png"
+                  alt="Trump's Birthday Card to Epstein"
+                  width={380}
+                  height={480}
+                  className="absolute inset-0 m-auto object-contain z-10 pointer-events-none drop-shadow-[0_0_15px_rgba(255,107,0,0.4)]"
+                  priority
+                />
+              </PixelCard>
+              <div className="mt-4 text-center">
+                <h3 className="text-lg sm:text-xl font-bold text-orange-400 mb-2">
+                  The Infamous Birthday Card
+                </h3>
+                <p className="text-foreground/70 text-xs sm:text-sm max-w-[400px] mx-auto px-4">
+                  The birthday card Trump wrote to Jeffrey Epstein, signing it "The Enigma" -
+                  a reference he claims never happened.
+                </p>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
 
@@ -238,8 +250,14 @@ export default function EnigmaPage() {
                   transition={{ delay: index * 0.1 }}
                   className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center gap-8`}
                 >
-                  {/* Content Card */}
-                  <div className="flex-1">
+                  {/* Content Card with Decorator */}
+                  <div className="flex-1 relative">
+                    {/* Asset-based decorator */}
+                    <div className={`absolute ${index % 2 === 0 ? "-left-12" : "-right-12"} top-1/2 -translate-y-1/2`}>
+                      {index % 3 === 0 && <OrangeX size={35} opacity={0.25} />}
+                      {index % 3 === 1 && <TwinkleStarDecor size={30} opacity={0.4} />}
+                      {index % 3 === 2 && <OrangeX size={30} opacity={0.2} />}
+                    </div>
                     <Card className={`glass-card border-2 bg-linear-to-br ${event.color} bg-opacity-10 hover:scale-105 transition-all duration-300`}>
                       <CardContent className="p-6">
                         <div className="flex items-center gap-3 mb-3">
@@ -263,7 +281,13 @@ export default function EnigmaPage() {
                   </div>
 
                   {/* Spacer for opposite side */}
-                  <div className="flex-1" />
+                  <div className="flex-1 relative">
+                    {index % 2 !== 0 && (
+                      <div className="absolute -right-12 top-1/2 -translate-y-1/2">
+                        <TwinkleStarDecor size={25} opacity={0.35} />
+                      </div>
+                    )}
+                  </div>
                 </motion.div>
               ))}
             </div>

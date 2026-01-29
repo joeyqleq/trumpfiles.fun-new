@@ -43,7 +43,7 @@ function LoadingFallback() {
 // Orange component with onLoad callback
 function Orange({ mouse, onLoad }: { mouse: { x: number; y: number }; onLoad: () => void }) {
   const meshRef = useRef<Group>(null);
-  const { scene } = useGLTF("/orange_hero.glb");
+  const { scene } = useGLTF("/orange_hero_uncompressed.glb");
 
   // Signal that the model has loaded
   useEffect(() => {
@@ -190,4 +190,4 @@ export default function OrangeHero() {
 }
 
 // Preload the GLB file
-useGLTF.preload("/orange_hero.glb");
+useGLTF.preload("/orange_hero_uncompressed.glb");

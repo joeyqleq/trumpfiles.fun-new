@@ -3,8 +3,23 @@ import { sql } from '@/lib/neonClient';
 
 export async function GET() {
   try {
+    // Get entries with their sources aggregated
     const rows = await sql`
-      SELECT *
+      SELECT 
+        ranked.*,
+        COALESCE(
+          (
+            SELECT json_agg(json_build_object(
+              'url', ts.url,
+              'title', ts.title,
+              'publisher', ts.publisher,
+              'source_type', ts.source_type
+            ))
+            FROM trump_sources ts 
+            WHERE ts.entry_number = ranked.entry_number
+          ),
+          '[]'::json
+        ) as sources
       FROM (
         SELECT *,
           row_number() OVER (

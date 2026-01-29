@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo, useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { AICompleteTrumpData } from "@/types/database";
 import { Input } from "@/components/ui/input";
 import {
@@ -11,46 +11,87 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Slider } from "@/components/ui/slider";
+import { Label } from "@/components/ui/label";
 import {
   Search,
-  Copy,
-  Check,
-  TrendingUp,
-  AlertTriangle,
   ArrowLeft,
   ArrowRight,
+  SlidersHorizontal,
+  X,
+  ArrowUpDown,
+  Filter,
+  Flame,
+  Zap,
+  Gavel,
+  Brain
 } from "lucide-react";
-import { MagicCard } from "@/components/ui/magic-card";
-import GlitchText from "@/components/GlitchText";
 import { FlippableEntryCard } from "@/components/FlippableEntryCard";
 import TrueFocus from "@/components/TrueFocus";
+import PageDecorations from "@/components/PageDecorations";
+
+type SortOption =
+  | "entry_asc"
+  | "entry_desc"
+  | "score_desc"
+  | "score_asc"
+  | "date_desc"
+  | "date_asc"
+  | "danger_desc"
+  | "lawlessness_desc"
+  | "insanity_desc"
+  | "absurdity_desc"
+  | "title_asc"
+  | "title_desc";
+
+const SORT_OPTIONS: { value: SortOption; label: string }[] = [
+  { value: "entry_asc", label: "Entry # (1 → 500+)" },
+  { value: "entry_desc", label: "Entry # (500+ → 1)" },
+  { value: "score_desc", label: "Total Score (High → Low)" },
+  { value: "score_asc", label: "Total Score (Low → High)" },
+  { value: "danger_desc", label: "Danger Level (Highest)" },
+  { value: "lawlessness_desc", label: "Lawlessness (Highest)" },
+  { value: "insanity_desc", label: "Insanity (Highest)" },
+  { value: "absurdity_desc", label: "Absurdity (Highest)" },
+  { value: "date_desc", label: "Most Recent First" },
+  { value: "date_asc", label: "Oldest First" },
+  { value: "title_asc", label: "Title (A → Z)" },
+  { value: "title_desc", label: "Title (Z → A)" },
+];
 
 export default function CatalogPage() {
   const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // Basic Filters
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [phaseFilter, setPhaseFilter] = useState("all");
-  const [copiedId, setCopiedId] = useState<string | null>(null);
-  const [showFilters, setShowFilters] = useState(false);
+  const [sortBy, setSortBy] = useState<SortOption>("entry_asc");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(50);
 
-  const scrollRef = useRef<HTMLDivElement>(null);
+  // Advanced Filters
+  const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
+  const [minDanger, setMinDanger] = useState([0]);
+  const [minAbsurdity, setMinAbsurdity] = useState([0]);
+  const [minLawlessness, setMinLawlessness] = useState([0]);
+  const [minTotalScore, setMinTotalScore] = useState([0]);
+
+  // Scroll to top ref
+  const topRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetchEntries();
   }, []);
+
+  // Reset page when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedCategory, phaseFilter, minDanger, minAbsurdity, minLawlessness, minTotalScore]);
 
   const fetchEntries = async () => {
     try {
@@ -64,47 +105,7 @@ export default function CatalogPage() {
     }
   };
 
-  const filteredEntries = useMemo(() => {
-    const filtered = entries.filter((entry) => {
-      const matchesSearch =
-        searchTerm === "" ||
-        entry.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        entry.synopsis.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (entry.all_keywords &&
-          entry.all_keywords.some((k) =>
-            k.toLowerCase().includes(searchTerm.toLowerCase()),
-          ));
-
-      const matchesCategory =
-        selectedCategories.length === 0 || selectedCategories.includes(entry.category);
-      const matchesPhase = phaseFilter === "all" || entry.phase === phaseFilter;
-
-      return matchesSearch && matchesCategory && matchesPhase;
-    });
-    return filtered;
-  }, [entries, searchTerm, selectedCategories, phaseFilter]);
-
-  const paginatedEntries = useMemo(() => {
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    return filteredEntries.slice(startIndex, endIndex);
-  }, [filteredEntries, currentPage, itemsPerPage]);
-
-  const totalPages = Math.ceil(filteredEntries.length / itemsPerPage);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleItemsPerPageChange = (increment: number) => {
-    const newAmount = itemsPerPage + increment;
-    if (newAmount >= 50) {
-      setItemsPerPage(newAmount);
-      setCurrentPage(1);
-    }
-  };
-
+  // Get unique categories and phases
   const categories = useMemo(() => {
     const cats = new Set(entries.map((e) => e.category));
     return Array.from(cats).sort();
@@ -115,72 +116,114 @@ export default function CatalogPage() {
     return Array.from(phs).sort();
   }, [entries]);
 
-  const toggleCategory = (category: string) => {
-    setSelectedCategories(prev =>
-      prev.includes(category)
-        ? prev.filter(c => c !== category)
-        : [...prev, category]
-    );
+  // Filter and sort entries
+  const filteredAndSortedEntries = useMemo(() => {
+    // First filter
+    const filtered = entries.filter((entry) => {
+      // Search filter
+      const matchesSearch =
+        searchTerm === "" ||
+        entry.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        entry.synopsis.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (entry.all_keywords &&
+          entry.all_keywords.some((k) =>
+            k && k.toLowerCase().includes(searchTerm.toLowerCase()),
+          ));
+
+      // Category filter
+      const matchesCategory = selectedCategory === "all" || entry.category === selectedCategory;
+
+      // Phase filter
+      const matchesPhase = phaseFilter === "all" || entry.phase === phaseFilter;
+
+      // Advanced Numeric Filters
+      const matchesDanger = (entry.danger || 0) >= minDanger[0];
+      const matchesAbsurdity = (entry.absurdity || 0) >= minAbsurdity[0];
+      const matchesLawlessness = (entry.lawlessness || 0) >= minLawlessness[0];
+      const matchesTotalScore = parseFloat(entry.fucked_up_score || "0") >= minTotalScore[0];
+
+      return matchesSearch && matchesCategory && matchesPhase && matchesDanger && matchesAbsurdity && matchesLawlessness && matchesTotalScore;
+    });
+
+    // Then sort
+    filtered.sort((a, b) => {
+      // Helper for date sorting
+      const getDate = (d?: string) => d ? new Date(d).getTime() : 0;
+
+      switch (sortBy) {
+        case "entry_asc":
+          return a.entry_number - b.entry_number;
+        case "entry_desc":
+          return b.entry_number - a.entry_number;
+        case "score_desc":
+          return parseFloat(b.fucked_up_score) - parseFloat(a.fucked_up_score);
+        case "score_asc":
+          return parseFloat(a.fucked_up_score) - parseFloat(b.fucked_up_score);
+        case "danger_desc":
+          return (b.danger || 0) - (a.danger || 0);
+        case "lawlessness_desc":
+          return (b.lawlessness || 0) - (a.lawlessness || 0);
+        case "insanity_desc":
+          return (b.insanity || 0) - (a.insanity || 0);
+        case "absurdity_desc":
+          return (b.absurdity || 0) - (a.absurdity || 0);
+        case "date_desc":
+          return getDate(b.date_start || undefined) - getDate(a.date_start || undefined);
+        case "date_asc":
+          return getDate(a.date_start || undefined) - getDate(b.date_start || undefined);
+        case "title_asc":
+          return a.title.localeCompare(b.title);
+        case "title_desc":
+          return b.title.localeCompare(a.title);
+        default:
+          return 0;
+      }
+    });
+
+    return filtered;
+  }, [entries, searchTerm, selectedCategory, phaseFilter, sortBy, minDanger, minAbsurdity, minLawlessness, minTotalScore]);
+
+  // Pagination logic
+  const totalPages = Math.ceil(filteredAndSortedEntries.length / itemsPerPage);
+  const paginatedEntries = filteredAndSortedEntries.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const resetFilters = () => {
+    setSearchTerm("");
+    setSelectedCategory("all");
+    setPhaseFilter("all");
+    setSortBy("entry_asc");
+    setMinDanger([0]);
+    setMinAbsurdity([0]);
+    setMinLawlessness([0]);
+    setMinTotalScore([0]);
+    setCurrentPage(1);
   };
 
-  const getCategoryColor = (category: string) => {
-    const colors: Record<string, string> = {
-      'Insurrection': 'bg-linear-to-r from-orange-500/20 to-red-500/20 border-orange-500 text-orange-400 hover:from-orange-500/30 hover:to-red-500/30',
-      'Corruption': 'bg-orange-500/20 border-orange-500 text-orange-400 hover:bg-orange-500/30',
-      'Obstruction': 'bg-yellow-500/20 border-yellow-500 text-yellow-400 hover:bg-yellow-500/30',
-      'Legal': 'bg-blue-500/20 border-blue-500 text-blue-400 hover:bg-blue-500/30',
-      'Political': 'bg-purple-500/20 border-purple-500 text-purple-400 hover:bg-purple-500/30',
-      'Foreign Policy': 'bg-green-500/20 border-green-500 text-green-400 hover:bg-green-500/30',
-      'Ethics': 'bg-pink-500/20 border-pink-500 text-pink-400 hover:bg-pink-500/30',
-      'Business': 'bg-cyan-500/20 border-cyan-500 text-cyan-400 hover:bg-cyan-500/30',
-    };
-    return colors[category] || 'bg-gray-500/20 border-gray-500 text-gray-400 hover:bg-gray-500/30';
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    topRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
-  const copyLink = async (entryNumber: number) => {
-    const url = `${window.location.origin}/entry/${entryNumber}`;
-    await navigator.clipboard.writeText(url);
-    setCopiedId(entryNumber.toString());
-    setTimeout(() => setCopiedId(null), 2000);
-  };
-
-  const scroll = (scrollOffset: number) => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: scrollOffset, behavior: "smooth" });
-    }
-  };
-
-  if (loading) {
-    return (
-      <div className="container mx-auto px-4 py-8" data-oid="vrnc-v9">
-        <div className="flex space-x-6" data-oid="eg9rb:j">
-          {[...Array(4)].map((_, i) => (
-            <Skeleton
-              key={i}
-              className="h-[500px] w-[400px] bg-linear-to-br from-orange-500/20 to-orange-600/10 animate-pulse"
-              data-oid="1.l:-qv"
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
 
   return (
-    <div className="min-h-screen golden-p-5" data-oid="7g_b70t">
-      <div className="container mx-auto px-4" data-oid="ewd5bw6">
-        {/* Header */}
+    <div className="min-h-screen py-8 md:py-16 relative" ref={topRef}>
+      <PageDecorations variant="catalog" />
+
+      <div className="container mx-auto px-4 max-w-7xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8 pt-8"
+          className="mb-12 text-center"
         >
+          {/* Use CSS class to apply font and animation - simple and robust */}
           <div className="flex justify-center mb-6">
-            <div className="font-arctic-3d">
+            <div className="font-arctic-twotone-italic">
               <TrueFocus
-                sentence="CATALOG"
+                sentence="THE TRUMP FILES"
                 manualMode={false}
-                blurAmount={3}
+                blurAmount={5}
                 borderColor="#FF6500"
                 glowColor="rgba(255, 101, 0, 0.6)"
                 animationDuration={0.8}
@@ -188,200 +231,285 @@ export default function CatalogPage() {
               />
             </div>
           </div>
-          <p className="text-foreground/70 text-center" data-oid="irkfd3r">
-            Explore <span className="text-orange-400 font-semibold">{entries.length}</span> documented entries with comprehensive data
-            and analysis{filteredEntries.length !== entries.length && (
-              <span className="text-orange-400 ml-2">
-                ({filteredEntries.length} filtered)
-              </span>
-            )}
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-orange-500 via-orange-400 to-red-500 bg-clip-text text-transparent font-arctic-3d leading-tight mt-4">
+            CATALOG
+          </h1>
+
+          <p className="text-xl text-foreground/70 max-w-2xl mx-auto mt-6 font-sans">
+            A comprehensive, searchable database of {entries.length > 0 ? entries.length : "500+"} documented incidents.
+            Filter, sort, and explore the evidence.
           </p>
         </motion.div>
 
-        {/* Filters */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="glass-card border-white/10 p-6 mb-8 space-y-4"
-          data-oid="noy-k0g"
-        >
-          <div className="relative" data-oid="_uivfn0">
-            <Search
-              className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-foreground/50"
-              data-oid="37yrd:a"
-            />
-            <Input
-              placeholder="Search entries by title, synopsis, or keywords..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 bg-white/5 border-white/10"
-              data-oid="b2114pn"
-            />
-          </div>
-
-          {/* Toggle Filters Button */}
-          <div className="flex justify-between items-center">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => setShowFilters(!showFilters)}
-              className="bg-linear-to-r from-orange-500/20 to-red-500/20 border-orange-500/30 text-orange-400 hover:from-orange-500/30 hover:to-red-500/30 font-heading"
-            >
-              {showFilters ? 'Hide Filters' : 'Show Category Filters'}
-              {selectedCategories.length > 0 && (
-                <Badge className="ml-2 bg-orange-500 text-white border-none">
-                  {selectedCategories.length}
-                </Badge>
-              )}
-            </Button>
-            {selectedCategories.length > 0 && (
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setSelectedCategories([])}
-                className="bg-linear-to-r from-orange-500/10 to-red-500/10 text-orange-400 hover:from-orange-500/20 hover:to-red-500/20 font-heading"
-              >
-                Clear Category Filters
-              </Button>
-            )}
-          </div>
-
-          {/* Category Filter Buttons - Collapsible */}
-          {showFilters && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="space-y-2"
-            >
-              <div className="flex flex-wrap gap-2">
-                {categories.map((cat) => (
-                  <Button
-                    key={cat}
-                    variant="outline"
-                    size="sm"
-                    onClick={() => toggleCategory(cat)}
-                    className={`transition-all ${selectedCategories.includes(cat)
-                      ? getCategoryColor(cat)
-                      : 'bg-white/5 border-white/20 text-foreground/70 hover:bg-white/10'
-                      }`}
-                  >
-                    {cat}
-                  </Button>
-                ))}
+        {/* Filters Section */}
+        <div className="glass-card p-6 mb-12 rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/5 backdrop-blur-xl bg-black/40">
+          <div className="flex flex-col gap-6">
+            {/* Top Row: Search & Basic Filters */}
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="relative flex-1">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-orange-400" />
+                <Input
+                  placeholder="Search entries, keywords, descriptions..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="pl-10 h-10 bg-black/30 border-orange-500/20 focus:border-orange-500 focus:ring-orange-500/20"
+                />
               </div>
-            </motion.div>
-          )}
 
-          {/* Phase Filter */}
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Filter by Phase</label>
-            <Select
-              value={phaseFilter}
-              onValueChange={setPhaseFilter}
-            >
-              <SelectTrigger className="bg-white/5 border-white/10">
-                <SelectValue placeholder="Filter by phase" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">
-                  All Phases
-                </SelectItem>
-                {phases.map((phase) => (
-                  <SelectItem key={phase} value={phase}>
-                    {phase}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
+              <div className="flex gap-2 flex-wrap sm:flex-nowrap">
+                <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                  <SelectTrigger className="w-[180px] h-10 bg-black/30 border-orange-500/20">
+                    <SelectValue placeholder="Category" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All Categories</SelectItem>
+                    {categories.map((cat) => (
+                      <SelectItem key={cat} value={cat}>
+                        {cat}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
 
-          <div className="flex items-center justify-between">
-            <p className="text-sm text-foreground/70">
-              Showing {filteredEntries.length} of {entries.length} entries
-              {selectedCategories.length > 0 && (
-                <span className="ml-2 text-orange-400">({selectedCategories.length} categor{selectedCategories.length === 1 ? 'y' : 'ies'} selected)</span>
+                <Select value={phaseFilter} onValueChange={setPhaseFilter}>
+                  <SelectTrigger className="w-[180px] h-10 bg-black/30 border-orange-500/20">
+                    <SelectValue placeholder="Phase" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All Phases</SelectItem>
+                    {phases.map((phase) => (
+                      <SelectItem key={phase} value={phase}>
+                        {phase}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+
+                <Select value={sortBy} onValueChange={(v) => setSortBy(v as SortOption)}>
+                  <SelectTrigger className="w-[200px] h-10 bg-black/30 border-orange-500/20">
+                    <ArrowUpDown className="w-4 h-4 mr-2 text-orange-400" />
+                    <SelectValue placeholder="Sort By" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {SORT_OPTIONS.map((option) => (
+                      <SelectItem key={option.value} value={option.value}>
+                        {option.label}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+
+                <Button
+                  variant="outline"
+                  onClick={() => setShowAdvancedFilters(!showAdvancedFilters)}
+                  className={`h-10 px-4 border-orange-500/20 hover:bg-orange-500/10 ${showAdvancedFilters ? 'bg-orange-500/10 border-orange-500' : ''}`}
+                >
+                  <SlidersHorizontal className="w-4 h-4 mr-2" />
+                  Filters
+                </Button>
+              </div>
+            </div>
+
+            {/* Collapsible Advanced Filters Panel */}
+            <AnimatePresence>
+              {showAdvancedFilters && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  className="overflow-hidden"
+                >
+                  <div className="pt-6 border-t border-white/10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    {/* Danger Slider */}
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center">
+                        <Label className="text-white flex items-center gap-2">
+                          <Flame className="w-4 h-4 text-red-500" />
+                          Min Danger
+                        </Label>
+                        <span className="text-sm font-mono text-orange-400">{minDanger[0]}/10</span>
+                      </div>
+                      <Slider
+                        value={minDanger}
+                        onValueChange={setMinDanger}
+                        min={0}
+                        max={10}
+                        step={1}
+                        className="py-2"
+                      />
+                    </div>
+
+                    {/* Absurdity Slider */}
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center">
+                        <Label className="text-white flex items-center gap-2">
+                          <Brain className="w-4 h-4 text-yellow-500" />
+                          Min Absurdity
+                        </Label>
+                        <span className="text-sm font-mono text-orange-400">{minAbsurdity[0]}/10</span>
+                      </div>
+                      <Slider
+                        value={minAbsurdity}
+                        onValueChange={setMinAbsurdity}
+                        min={0}
+                        max={10}
+                        step={1}
+                        className="py-2"
+                      />
+                    </div>
+
+                    {/* Lawlessness Slider */}
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center">
+                        <Label className="text-white flex items-center gap-2">
+                          <Gavel className="w-4 h-4 text-orange-500" />
+                          Min Lawlessness
+                        </Label>
+                        <span className="text-sm font-mono text-orange-400">{minLawlessness[0]}/10</span>
+                      </div>
+                      <Slider
+                        value={minLawlessness}
+                        onValueChange={setMinLawlessness}
+                        min={0}
+                        max={10}
+                        step={1}
+                        className="py-2"
+                      />
+                    </div>
+
+                    {/* Total Score Slider */}
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center">
+                        <Label className="text-white flex items-center gap-2">
+                          <Zap className="w-4 h-4 text-purple-500" />
+                          Min Total Score
+                        </Label>
+                        <span className="text-sm font-mono text-orange-400">{minTotalScore[0]}/100</span>
+                      </div>
+                      <Slider
+                        value={minTotalScore}
+                        onValueChange={setMinTotalScore}
+                        min={0}
+                        max={100}
+                        step={5}
+                        className="py-2"
+                      />
+                    </div>
+
+                  </div>
+
+                  <div className="flex justify-end mt-6">
+                    <Button
+                      variant="ghost"
+                      onClick={resetFilters}
+                      className="text-sm text-foreground/50 hover:text-white"
+                    >
+                      Reset All Filters
+                      <X className="w-3 h-3 ml-2" />
+                    </Button>
+                  </div>
+                </motion.div>
               )}
-            </p>
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => {
-                setSearchTerm("");
-                setSelectedCategories([]);
-                setPhaseFilter("all");
-              }}
-              className="text-foreground/70"
+            </AnimatePresence>
+
+            {/* Results Count & Tags */}
+            <div className="flex flex-wrap items-center justify-between gap-4 py-2">
+              <div className="flex items-center gap-2">
+                <Badge variant="outline" className="bg-orange-500/10 border-orange-500/30 text-orange-400">
+                  {filteredAndSortedEntries.length} entries found
+                </Badge>
+                {(searchTerm || selectedCategory !== "all" || phaseFilter !== "all" || minDanger[0] > 0) && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={resetFilters}
+                    className="h-6 text-xs text-foreground/50 hover:text-white px-2"
+                  >
+                    Clear Filters <X className="w-3 h-3 ml-1" />
+                  </Button>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Entries Grid */}
+        {loading ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {Array.from({ length: 12 }).map((_, i) => (
+              <div key={i} className="space-y-4">
+                <Skeleton className="h-[400px] w-full rounded-xl bg-orange-900/10" />
+              </div>
+            ))}
+          </div>
+        ) : filteredAndSortedEntries.length > 0 ? (
+          <>
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12"
+              layout
             >
+              <AnimatePresence mode="popLayout">
+                {paginatedEntries.map((entry) => (
+                  <motion.div
+                    key={entry.entry_number}
+                    layout
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <FlippableEntryCard entry={entry} index={entry.entry_number} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </motion.div>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="mt-16 flex justify-center items-center gap-2 flex-wrap">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
+                  disabled={currentPage === 1}
+                  className="border-orange-500/20 hover:bg-orange-500/20"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                </Button>
+
+                <span className="mx-4 text-sm font-mono">
+                  Page <span className="text-orange-400">{currentPage}</span> of {totalPages}
+                </span>
+
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+                  disabled={currentPage === totalPages}
+                  className="border-orange-500/20 hover:bg-orange-500/20"
+                >
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="text-center py-24 glass-card border-orange-500/10 rounded-xl">
+            <div className="inline-block p-4 rounded-full bg-orange-500/10 mb-4">
+              <Search className="w-8 h-8 text-orange-500" />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">No entries found</h3>
+            <p className="text-foreground/60 mb-6">
+              Try adjusting your filters or search term to find what you're looking for.
+            </p>
+            <Button onClick={resetFilters} variant="default" className="bg-orange-500 hover:bg-orange-600">
               Clear All Filters
             </Button>
           </div>
-        </motion.div>
-
-        {/* Pagination Controls Top */}
-        <div className="flex justify-between items-center mb-6">
-          <div className="flex gap-2 items-center">
-            <span className="text-sm text-foreground/70">Showing {((currentPage - 1) * itemsPerPage) + 1}-{Math.min(currentPage * itemsPerPage, filteredEntries.length)} of {filteredEntries.length}</span>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => handleItemsPerPageChange(50)}
-              className="text-xs"
-            >
-              +50 per page
-            </Button>
-            {itemsPerPage > 50 && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => handleItemsPerPageChange(-50)}
-                className="text-xs"
-              >
-                -50 per page
-              </Button>
-            )}
-            <span className="text-xs text-foreground/60">({itemsPerPage}/page)</span>
-          </div>
-          <div className="flex gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-            >
-              <ArrowLeft className="h-4 w-4" />
-            </Button>
-            <span className="text-sm text-foreground/70 px-4 py-2">
-              Page {currentPage} of {totalPages}
-            </span>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-            >
-              <ArrowRight className="h-4 w-4" />
-            </Button>
-          </div>
-        </div>
-
-        {/* Multi-row Grid with FlippableEntryCard */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {paginatedEntries.map((entry, index) => (
-            <FlippableEntryCard key={entry.entry_number} entry={entry} index={index} />
-          ))}
-        </div>
-
-        {filteredEntries.length === 0 && (
-          <div className="text-center py-12" data-oid="fbjp:24">
-            <p className="text-xl text-foreground/50" data-oid="-f2mpwv">
-              No entries found matching your filters
-            </p>
-          </div>
         )}
       </div>
-    </div>
+    </div >
   );
 }

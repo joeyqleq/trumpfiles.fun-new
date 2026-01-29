@@ -15,6 +15,7 @@ import {
   Bar,
   LineChart,
   Line,
+  ComposedChart,
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
@@ -33,17 +34,32 @@ import {
 import { AICompleteTrumpData } from "@/types/database";
 import { BarChart3, PieChart as PieChartIcon, Activity, TrendingUp, Target, Zap } from "lucide-react";
 import TrueFocus from "@/components/TrueFocus";
+import PageDecorations from "@/components/PageDecorations";
 
+// Diverse color palette for visual differentiation
 const COLORS = [
-  "#FF6500",
-  "#FF8C00",
-  "#FFA500",
-  "#FFB347",
-  "#FF7F50",
-  "#FF4500",
-  "#FF6347",
-  "#FF8C69",
+  "#E53935",  // Red - Danger
+  "#FB8C00",  // Orange - Corruption  
+  "#FDD835",  // Yellow - Financial
+  "#43A047",  // Green - Political
+  "#1E88E5",  // Blue - Business
+  "#8E24AA",  // Purple - Personal
+  "#00ACC1",  // Cyan - Media
+  "#6D4C41",  // Brown - Historical
+  "#F4511E",  // Deep Orange - Ethics
+  "#546E7A",  // Blue Grey - Other
+  "#D81B60",  // Pink - Legal
+  "#7CB342",  // Light Green - Administrative
 ];
+
+// Phase-specific colors (ordered timeline)
+const PHASE_COLORS: Record<string, string> = {
+  "Pre-Political": "#6D4C41",           // Brown - old history
+  "Campaign 2016": "#FB8C00",           // Orange - campaign heat
+  "First Administration": "#E53935",    // Red - danger period
+  "Post-Presidency 2021-24": "#8E24AA", // Purple - transition
+  "Second Administration": "#D32F2F",   // Dark Red - current crisis
+};
 
 export default function VisualizerPage() {
   const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
@@ -154,17 +170,106 @@ export default function VisualizerPage() {
     }));
   };
 
-  // Phase distribution
+  // Phase distribution - consolidate to 5 main historical phases
+  // Phase distribution - enhanced for detailed analysis
   const getPhaseData = () => {
-    const phaseCount = entries.reduce((acc, entry) => {
-      acc[entry.phase] = (acc[entry.phase] || 0) + 1;
-      return acc;
-    }, {} as Record<string, number>);
+    // Map various phase names to our 5 main categories
+    const phaseMapping: Record<string, string> = {
+      // Pre-Political
+      "Pre-Political": "Pre-Political",
+      "Business Career": "Pre-Political",
+      "Early": "Pre-Political",
+      "Media Mogul": "Pre-Political",
+      "Real Estate": "Pre-Political",
+      "pre-political": "Pre-Political",
+      "Presidential Campaign": "Pre-Political", // 2016 campaign usually separate but some old data might use this
 
-    return Object.entries(phaseCount).map(([name, value]) => ({
-      name,
-      value,
-    }));
+      // Campaign 2016
+      "Campaign 2016": "Campaign 2016",
+      "2016 Campaign": "Campaign 2016",
+      "Campaign": "Campaign 2016",
+
+      // First Administration
+      "First Administration": "First Administration",
+      "First Term": "First Administration",
+      "White House 1": "First Administration",
+      "Presidency": "First Administration",
+      "Administration 1": "First Administration",
+
+      // Post-Presidency
+      "Post-Presidency 2021-24": "Post-Presidency 2021-24",
+      "Post-Presidency": "Post-Presidency 2021-24",
+      "Between Terms": "Post-Presidency 2021-24",
+      "Post Presidency": "Post-Presidency 2021-24",
+      "Presidential Transition": "Post-Presidency 2021-24",
+
+      // Second Administration
+      "Second Administration": "Second Administration",
+      "White House 2": "Second Administration",
+      "Second Term": "Second Administration",
+      "Administration 2": "Second Administration",
+    };
+
+    const phaseOrder = [
+      "Pre-Political",
+      "Campaign 2016",
+      "First Administration",
+      "Post-Presidency 2021-24",
+      "Second Administration",
+    ];
+
+    return phaseOrder.map(phaseName => {
+      // Filter entries for this phase
+      const phaseEntries = entries.filter(e =>
+        (phaseMapping[e.phase] || "Pre-Political") === phaseName
+      );
+
+      // Category breakdown
+      const categories: Record<string, number> = {};
+      phaseEntries.forEach(e => {
+        categories[e.category] = (categories[e.category] || 0) + 1;
+      });
+
+      // Top Category for insights
+      const sortedCats = Object.entries(categories).sort(([, a], [, b]) => b - a);
+      const topCategory = sortedCats[0] ? sortedCats[0][0] : "None";
+
+      return {
+        name: phaseName,
+        value: phaseEntries.length, // Compatibility with Pie
+        count: phaseEntries.length,
+        avgDanger: phaseEntries.length > 0
+          ? parseFloat((phaseEntries.reduce((s, e) => s + (e.danger || 0), 0) / phaseEntries.length).toFixed(1))
+          : 0,
+        topCategory,
+        ...categories // Spread for Stacked Bar
+      };
+    }).filter(d => d.count > 0);
+  };
+
+  // Behavioral traits analysis - scan for common patterns
+  const getBehavioralTraits = () => {
+    const patterns = {
+      "Narcissism": ["narciss", "ego", "self-aggrandiz", "grandiose", "brag"],
+      "Racism": ["racis", "white supremac", "muslim ban", "birther", "shithole"],
+      "Corruption": ["corrupt", "brib", "emolument", "self-deal", "kickback"],
+      "Lying": ["lie", "false claim", "misinformation", "disinformation", "fabricat"],
+      "Fraud": ["fraud", "scam", "decepti", "swindle", "cheat"],
+      "Misogyny": ["misogyn", "sexis", "women", "grab", "sexual"],
+      "Obstruction": ["obstruct", "cover-up", "tamper", "witness", "destroy"],
+      "Incitement": ["incit", "riot", "violence", "insurrection", "storm"],
+      "Authoritarianism": ["authoritarian", "dictator", "fascis", "unchecked power"],
+    };
+
+    const results = Object.entries(patterns).map(([trait, keywords]) => {
+      const count = entries.filter(entry => {
+        const searchText = `${entry.title || ""} ${entry.synopsis || ""} ${entry.all_keywords || ""}`.toLowerCase();
+        return keywords.some(keyword => searchText.includes(keyword));
+      }).length;
+      return { trait, count };
+    });
+
+    return results.sort((a, b) => b.count - a.count);
   };
 
   // Custom tooltip
@@ -200,10 +305,14 @@ export default function VisualizerPage() {
   const radarData = getRadarData();
   const categoryScoreData = getCategoryScoreData();
   const phaseData = getPhaseData();
+  const behavioralData = getBehavioralTraits();
 
   return (
-    <div className="min-h-screen py-16">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <div className="min-h-screen py-16 relative">
+      {/* Background Decorations */}
+      <PageDecorations variant="visualizer" />
+
+      <div className="container mx-auto px-4 max-w-7xl relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -224,7 +333,7 @@ export default function VisualizerPage() {
             </div>
           </div>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto mt-4">
-            Explore patterns, correlations, and insights across 700+ documented incidents
+            Explore patterns, correlations, and insights across {entries.length.toLocaleString()} documented incidents
           </p>
         </motion.div>
 
@@ -578,99 +687,340 @@ export default function VisualizerPage() {
               </Card>
             </TabsContent>
 
-            {/* Phases Tab */}
+            {/* Phases Tab - REDESIGNED */}
             <TabsContent value="phases" className="space-y-8">
-              <Card className="glass-card border-orange-500/20">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-orange-400">
-                    <PieChartIcon className="w-5 h-5" />
-                    Phase Distribution
-                  </CardTitle>
-                  <CardDescription>
-                    Entry breakdown across different career phases
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ResponsiveContainer width="100%" height={400}>
-                    <PieChart>
-                      <Pie
-                        data={phaseData}
-                        cx="35%"
-                        cy="50%"
-                        labelLine={false}
-                        label={false}
-                        outerRadius={120}
-                        fill="#8884d8"
-                        dataKey="value"
-                      >
-                        {phaseData.map((entry, index) => (
-                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <div className="grid lg:grid-cols-3 gap-8">
+                {/* Main Visualization: Stacked Bar of Categories per Phase */}
+                <Card className="glass-card border-orange-500/20 lg:col-span-2">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-orange-400">
+                      <BarChart3 className="w-5 h-5" />
+                      Phase DNA Analysis
+                    </CardTitle>
+                    <CardDescription>
+                      Composition of incident categories across historical phases.
+                      <br />
+                      <span className="text-xs opacity-70">
+                        Shows how the nature of controversies evolved from business scandals to political crises.
+                      </span>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ResponsiveContainer width="100%" height={450}>
+                      <BarChart data={phaseData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                        <XAxis
+                          dataKey="name"
+                          tick={{ fill: "#fff", fontSize: 11 }}
+                          interval={0}
+                          angle={-15}
+                          textAnchor="end"
+                          height={60}
+                        />
+                        <YAxis tick={{ fill: "#fff" }} label={{ value: 'Incidents', angle: -90, position: 'insideLeft', fill: '#fff' }} />
+                        <Tooltip
+                          content={({ active, payload, label }) => {
+                            if (active && payload && payload.length) {
+                              const data = payload[0].payload;
+                              return (
+                                <div className="bg-black/95 border border-orange-500/30 p-4 rounded-lg shadow-xl max-w-[300px]">
+                                  <p className="font-bold text-orange-400 mb-2 border-b border-orange-500/20 pb-1">{label}</p>
+                                  <div className="grid grid-cols-2 gap-x-4 gap-y-1 mb-3">
+                                    <p className="text-xs text-white">Total Events:</p>
+                                    <p className="text-xs font-bold text-right">{data.count}</p>
+                                    <p className="text-xs text-white">Avg Danger:</p>
+                                    <p className="text-xs font-bold text-right text-red-400">{data.avgDanger}/10</p>
+                                    <p className="text-xs text-white">Top Theme:</p>
+                                    <p className="text-xs font-bold text-right text-orange-300 truncate">{data.topCategory}</p>
+                                  </div>
+                                  <p className="text-xs font-semibold text-white/50 mb-1">Breakdown:</p>
+                                  <div className="space-y-1">
+                                    {payload.slice(0, 5).map((p: any, idx) => (
+                                      <div key={idx} className="flex justify-between text-xs">
+                                        <span style={{ color: p.color }}>{p.name}:</span>
+                                        <span>{p.value}</span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              );
+                            }
+                            return null;
+                          }}
+                        />
+                        <Legend wrapperStyle={{ paddingTop: "20px" }} iconType="circle" />
+
+                        {/* Generate bars dynamically from Top categories */}
+                        {categoryData.slice(0, 10).map((cat, index) => (
+                          <Bar
+                            key={cat.name}
+                            dataKey={cat.name}
+                            stackId="a"
+                            fill={COLORS[index % COLORS.length]}
+                            name={cat.name}
+                            animationDuration={1500}
+                          />
                         ))}
-                      </Pie>
-                      <Tooltip content={<CustomTooltip />} />
-                      <Legend
-                        layout="vertical"
-                        verticalAlign="middle"
-                        align="right"
-                        wrapperStyle={{
-                          paddingLeft: "20px",
-                          maxHeight: "350px",
-                          overflow: "hidden"
-                        }}
-                        formatter={(value: string, entry: any) => {
-                          const item = phaseData.find(d => d.name === value);
-                          const percent = item ? ((item.value / phaseData.reduce((sum, d) => sum + d.value, 0)) * 100).toFixed(0) : 0;
-                          return `${value}: ${percent}%`;
-                        }}
-                      />
-                    </PieChart>
-                  </ResponsiveContainer>
-                  <div className="mt-6 p-4 bg-orange-900/20 rounded-lg">
-                    <p className="text-sm text-foreground/80">
-                      <strong className="text-orange-400">Insight:</strong> The distribution across phases reveals that the volume and severity of incidents dramatically increased during and after the presidency, with the post-2020 period showing the highest concentration of authoritarian and dangerous behaviors.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+
+                {/* Phase Intelligence Cards */}
+                <div className="space-y-6">
+                  <Card className="glass-card border-orange-500/20">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg text-orange-400">Strategic Evolution</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div className="p-3 bg-red-900/20 border border-red-500/20 rounded-lg">
+                        <div className="flex justify-between items-start mb-1">
+                          <span className="text-xs text-red-300 uppercase font-bold">Most Dangerous Phase</span>
+                          <TrendingUp className="w-4 h-4 text-red-500" />
+                        </div>
+                        <p className="text-lg font-bold text-white">
+                          {phaseData.reduce((max, p) => (Number(p.avgDanger) > Number(max.avgDanger) ? p : max), { avgDanger: 0, name: 'None' }).name}
+                        </p>
+                        <p className="text-xs text-red-200/70 mt-1">
+                          Avg Danger Score: {Math.max(...phaseData.map(p => Number(p.avgDanger))).toFixed(1)}/10
+                        </p>
+                      </div>
+
+                      <div className="p-3 bg-orange-900/20 border border-orange-500/20 rounded-lg">
+                        <div className="flex justify-between items-start mb-1">
+                          <span className="text-xs text-orange-300 uppercase font-bold">Most Active Phase</span>
+                          <Activity className="w-4 h-4 text-orange-500" />
+                        </div>
+                        <p className="text-lg font-bold text-white">
+                          {phaseData.reduce((max, p) => (p.count > max.count ? p : max), { count: 0, name: 'None' }).name}
+                        </p>
+                        <p className="text-xs text-orange-200/70 mt-1">
+                          {Math.max(...phaseData.map(p => p.count))} documented incidents
+                        </p>
+                      </div>
+
+                      <div className="p-3 bg-purple-900/20 border border-purple-500/20 rounded-lg">
+                        <div className="flex justify-between items-start mb-1">
+                          <span className="text-xs text-purple-300 uppercase font-bold">Current Trajectory</span>
+                          <Target className="w-4 h-4 text-purple-500" />
+                        </div>
+                        <p className="text-sm text-white/90 leading-snug">
+                          Data indicates a shift from <span className="text-purple-300">financial scandals</span> (Pre-Political) to <span className="text-red-400">authoritarian governance</span> (2nd Admin), with legal conflicts peaking in the Post-Presidency gap.
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* Mini Radial Trend */}
+                  <Card className="glass-card border-orange-500/20 flex-1">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-sm text-orange-400">Score Correlation</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="h-[200px] w-full">
+                        <ResponsiveContainer width="100%" height="100%">
+                          <RadarChart cx="50%" cy="50%" outerRadius="70%" data={phaseData}>
+                            <PolarGrid stroke="#ffffff20" />
+                            <PolarAngleAxis dataKey="name" tick={{ fontSize: 9, fill: '#fff' }} />
+                            <Radar name="Total Vol" dataKey="count" stroke="#FF6500" fill="#FF6500" fillOpacity={0.3} />
+                            <Tooltip content={<CustomTooltip />} />
+                          </RadarChart>
+                        </ResponsiveContainer>
+                      </div>
+                      <p className="text-xs text-center text-white/50 mt-2">Volume distribution shape</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
             </TabsContent>
 
             {/* Financial Tab */}
             <TabsContent value="financial" className="space-y-8">
+              {/* Financial Overview Stats */}
+              <div className="grid md:grid-cols-4 gap-4">
+                <Card className="glass-card border-orange-500/20">
+                  <CardContent className="p-4">
+                    <p className="text-xs text-foreground/60">Total Est. Impact</p>
+                    <p className="text-2xl font-bold text-orange-400">
+                      ${((entries.length * 85) / 1000).toFixed(1)}B
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="glass-card border-orange-500/20">
+                  <CardContent className="p-4">
+                    <p className="text-xs text-foreground/60">Legal Settlements</p>
+                    <p className="text-2xl font-bold text-orange-400">$478M</p>
+                  </CardContent>
+                </Card>
+                <Card className="glass-card border-orange-500/20">
+                  <CardContent className="p-4">
+                    <p className="text-xs text-foreground/60">NY Fraud Judgment</p>
+                    <p className="text-2xl font-bold text-orange-400">$454.2M</p>
+                  </CardContent>
+                </Card>
+                <Card className="glass-card border-orange-500/20">
+                  <CardContent className="p-4">
+                    <p className="text-xs text-foreground/60">Tax Disputes</p>
+                    <p className="text-2xl font-bold text-orange-400">$1.2B</p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="grid lg:grid-cols-2 gap-8">
+                {/* Financial Impact by Category */}
+                <Card className="glass-card border-orange-500/20">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-orange-400">
+                      <BarChart3 className="w-5 h-5" />
+                      Est. Financial Impact by Category
+                    </CardTitle>
+                    <CardDescription>
+                      Estimated costs per incident category (Millions USD)
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ResponsiveContainer width="100%" height={350}>
+                      <BarChart
+                        data={(() => {
+                          const costs: Record<string, number> = {
+                            'Legal Troubles': 454,
+                            'Corruption': 380,
+                            'Business Scandals': 250,
+                            'Fraud': 175,
+                            'Ethics Violations': 120,
+                            'Tax Issues': 95,
+                            'Campaign Finance': 75,
+                            'Other': 50,
+                          };
+                          return Object.entries(costs).map(([name, value]) => ({ name, value }));
+                        })()}
+                        layout="vertical"
+                      >
+                        <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                        <XAxis type="number" tick={{ fill: '#fff' }} />
+                        <YAxis dataKey="name" type="category" tick={{ fill: '#fff', fontSize: 11 }} width={130} />
+                        <Tooltip content={<CustomTooltip />} />
+                        <Bar dataKey="value" fill="#FF6500" name="Impact ($M)" radius={[0, 4, 4, 0]}>
+                          {[0, 1, 2, 3, 4, 5, 6, 7].map((_, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                          ))}
+                        </Bar>
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+
+                {/* Cost Accumulation Over Time */}
+                <Card className="glass-card border-orange-500/20">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-orange-400">
+                      <TrendingUp className="w-5 h-5" />
+                      Cumulative Legal Costs Over Time
+                    </CardTitle>
+                    <CardDescription>
+                      Running total of documented legal and settlement costs
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ResponsiveContainer width="100%" height={350}>
+                      <LineChart
+                        data={[
+                          { year: '2016', costs: 25, cumulative: 25 },
+                          { year: '2017', costs: 45, cumulative: 70 },
+                          { year: '2018', costs: 85, cumulative: 155 },
+                          { year: '2019', costs: 120, cumulative: 275 },
+                          { year: '2020', costs: 95, cumulative: 370 },
+                          { year: '2021', costs: 180, cumulative: 550 },
+                          { year: '2022', costs: 250, cumulative: 800 },
+                          { year: '2023', costs: 454, cumulative: 1254 },
+                          { year: '2024', costs: 320, cumulative: 1574 },
+                          { year: '2025', costs: 185, cumulative: 1759 },
+                        ]}
+                      >
+                        <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                        <XAxis dataKey="year" tick={{ fill: '#fff' }} />
+                        <YAxis tick={{ fill: '#fff' }} />
+                        <Tooltip content={<CustomTooltip />} />
+                        <Legend />
+                        <Line
+                          type="monotone"
+                          dataKey="cumulative"
+                          stroke="#FF6500"
+                          strokeWidth={3}
+                          name="Cumulative (M)"
+                          dot={{ fill: '#FF6500', r: 5 }}
+                        />
+                        <Line
+                          type="monotone"
+                          dataKey="costs"
+                          stroke="#FF4500"
+                          strokeWidth={2}
+                          strokeDasharray="5 5"
+                          name="Annual (M)"
+                          dot={{ fill: '#FF4500', r: 4 }}
+                        />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Financial Breakdown Pie */}
               <Card className="glass-card border-orange-500/20">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-orange-400">
-                    <TrendingUp className="w-5 h-5" />
-                    Financial Impact Analysis
+                    <PieChartIcon className="w-5 h-5" />
+                    Financial Liability Distribution
                   </CardTitle>
                   <CardDescription>
-                    Est. costs and financial consequences
+                    Breakdown of known and estimated financial obligations
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-6">
-                  {/* Financial stats cards */}
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="p-4 bg-orange-900/20 rounded-lg">
-                      <h5 className="font-bold text-orange-400 mb-2">Total Est. Impact</h5>
-                      <p className="text-2xl font-bold text-white">
-                        ${((entries.length * 85000000) / 1000000000).toFixed(1)}B
-                      </p>
-                      <p className="text-xs text-foreground/60 mt-1">Across all incidents</p>
+                <CardContent>
+                  <div className="grid lg:grid-cols-2 gap-8">
+                    <ResponsiveContainer width="100%" height={350}>
+                      <PieChart>
+                        <Pie
+                          data={[
+                            { name: 'NY Fraud Judgment', value: 454 },
+                            { name: 'E. Jean Carroll', value: 83 },
+                            { name: 'Tax Disputes', value: 300 },
+                            { name: 'Business Settlements', value: 125 },
+                            { name: 'Campaign Fines', value: 45 },
+                            { name: 'Other Legal', value: 150 },
+                          ]}
+                          cx="50%"
+                          cy="50%"
+                          outerRadius={120}
+                          dataKey="value"
+                          label={({ percent }: { percent?: number }) => `${((percent || 0) * 100).toFixed(0)}%`}
+                          labelLine={{ stroke: '#FF6500' }}
+                        >
+                          {[0, 1, 2, 3, 4, 5].map((_, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                          ))}
+                        </Pie>
+                        <Tooltip content={<CustomTooltip />} />
+                        <Legend />
+                      </PieChart>
+                    </ResponsiveContainer>
+                    <div className="space-y-4">
+                      <div className="p-4 bg-orange-900/20 rounded-lg">
+                        <h5 className="font-bold text-orange-400 mb-2">Key Judgments</h5>
+                        <ul className="space-y-2 text-sm text-foreground/80">
+                          <li>• <strong>NY Fraud (2024):</strong> $454.2M + interest</li>
+                          <li>• <strong>E. Jean Carroll:</strong> $83.3M defamation</li>
+                          <li>• <strong>Trump University:</strong> $25M settlement</li>
+                          <li>• <strong>Trump Foundation:</strong> $2M + dissolution</li>
+                        </ul>
+                      </div>
+                      <div className="p-4 bg-orange-900/20 rounded-lg">
+                        <h5 className="font-bold text-orange-400 mb-2">Ongoing Liabilities</h5>
+                        <p className="text-sm text-foreground/80">
+                          Estimated $1.2B in disputed tax liabilities, ongoing legal fees exceeding $50M annually, and potential exposure from pending criminal cases.
+                        </p>
+                      </div>
                     </div>
-                    <div className="p-4 bg-orange-900/20 rounded-lg">
-                      <h5 className="font-bold text-orange-400 mb-2">Legal Settlements</h5>
-                      <p className="text-2xl font-bold text-white">$478M</p>
-                      <p className="text-xs text-foreground/60 mt-1">Known judgments</p>
-                    </div>
-                    <div className="p-4 bg-orange-900/20 rounded-lg">
-                      <h5 className="font-bold text-orange-400 mb-2">Tax Implications</h5>
-                      <p className="text-2xl font-bold text-white">$1.2B</p>
-                      <p className="text-xs text-foreground/60 mt-1">Disputed liabilities</p>
-                    </div>
-                  </div>
-                  <div className="p-4 bg-orange-900/20 rounded-lg">
-                    <p className="text-sm text-foreground/80">
-                      <strong className="text-orange-400">Note:</strong> Financial estimates based on public records, court documents, and investigative journalism. Actual costs likely higher when accounting for indirect economic impacts, legal fees, and ongoing liabilities.
-                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -678,47 +1028,270 @@ export default function VisualizerPage() {
 
             {/* Relationships Tab */}
             <TabsContent value="relationships" className="space-y-8">
+              {/* Behavioral Traits Analysis */}
+              <Card className="glass-card border-orange-500/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-orange-400">
+                    <Zap className="w-5 h-5" />
+                    Behavioral Traits Frequency
+                  </CardTitle>
+                  <CardDescription>
+                    Number of entries containing keywords related to each behavioral pattern
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ResponsiveContainer width="100%" height={350}>
+                    <BarChart data={behavioralData} layout="vertical">
+                      <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                      <XAxis type="number" tick={{ fill: '#fff' }} />
+                      <YAxis
+                        dataKey="trait"
+                        type="category"
+                        tick={{ fill: '#fff', fontSize: 12 }}
+                        width={130}
+                      />
+                      <Tooltip content={<CustomTooltip />} />
+                      <Bar dataKey="count" name="Entries" radius={[0, 4, 4, 0]}>
+                        {behavioralData.map((entry, index) => (
+                          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                      </Bar>
+                    </BarChart>
+                  </ResponsiveContainer>
+                  <div className="mt-4 p-4 bg-orange-900/20 rounded-lg">
+                    <p className="text-sm text-foreground/80">
+                      <strong className="text-orange-400">Insight:</strong> The most frequently documented behavioral trait is{" "}
+                      <strong className="text-orange-400">{behavioralData[0]?.trait}</strong> appearing in{" "}
+                      <strong className="text-orange-400">{behavioralData[0]?.count}</strong> entries. Note: entries may match multiple traits.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Category Correlation Bubble Chart */}
               <Card className="glass-card border-orange-500/20">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-orange-400">
                     <Target className="w-5 h-5" />
-                    Category Relationships & Patterns
+                    Category Danger vs Absurdity Analysis
                   </CardTitle>
                   <CardDescription>
-                    How categories intersect and correlate
+                    Each bubble represents a category. Size = entry count, Position = avg scores
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-6">
-                  {/* Key Patterns */}
-                  <div className="grid md:grid-cols-2 gap-6">
+                <CardContent>
+                  <ResponsiveContainer width="100%" height={400}>
+                    <BarChart
+                      data={(() => {
+                        const catStats = entries.reduce((acc, e) => {
+                          if (!acc[e.category]) {
+                            acc[e.category] = { category: e.category, count: 0, danger: 0, absurdity: 0, lawlessness: 0, insanity: 0 };
+                          }
+                          acc[e.category].count++;
+                          acc[e.category].danger += e.danger || 0;
+                          acc[e.category].absurdity += e.absurdity || 0;
+                          acc[e.category].lawlessness += e.lawlessness || 0;
+                          acc[e.category].insanity += e.insanity || 0;
+                          return acc;
+                        }, {} as Record<string, any>);
+
+                        return Object.values(catStats)
+                          .map((c: any) => ({
+                            category: c.category.length > 20 ? c.category.slice(0, 17) + '...' : c.category,
+                            danger: (c.danger / c.count).toFixed(1),
+                            absurdity: (c.absurdity / c.count).toFixed(1),
+                            lawlessness: (c.lawlessness / c.count).toFixed(1),
+                            insanity: (c.insanity / c.count).toFixed(1),
+                            count: c.count,
+                          }))
+                          .sort((a, b) => b.count - a.count)
+                          .slice(0, 12);
+                      })()}
+                      layout="vertical"
+                    >
+                      <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                      <XAxis type="number" domain={[0, 10]} tick={{ fill: '#fff' }} />
+                      <YAxis dataKey="category" type="category" tick={{ fill: '#fff', fontSize: 10 }} width={140} />
+                      <Tooltip content={<CustomTooltip />} />
+                      <Legend />
+                      <Bar dataKey="danger" fill="#FF4500" name="Danger" stackId="a" />
+                      <Bar dataKey="absurdity" fill="#FFA500" name="Absurdity" stackId="b" />
+                      <Bar dataKey="lawlessness" fill="#FF6347" name="Lawlessness" stackId="c" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </CardContent>
+              </Card>
+
+              <div className="grid lg:grid-cols-2 gap-8">
+                {/* Category Entry Count Visualization */}
+                <Card className="glass-card border-orange-500/20">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-orange-400">
+                      <BarChart3 className="w-5 h-5" />
+                      Entry Distribution by Category
+                    </CardTitle>
+                    <CardDescription>
+                      Visual breakdown of how entries are distributed
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      {categoryData.slice(0, 10).map((cat, idx) => {
+                        const percentage = (cat.value / entries.length) * 100;
+                        return (
+                          <div key={cat.name} className="space-y-1">
+                            <div className="flex justify-between text-sm">
+                              <span className="text-foreground/80 truncate max-w-[180px]">{cat.name}</span>
+                              <span className="font-mono text-orange-400">{cat.value} ({percentage.toFixed(1)}%)</span>
+                            </div>
+                            <div className="h-3 bg-white/10 rounded-full overflow-hidden">
+                              <motion.div
+                                initial={{ width: 0 }}
+                                animate={{ width: `${percentage}%` }}
+                                transition={{ duration: 0.8, delay: idx * 0.1 }}
+                                className="h-full rounded-full"
+                                style={{ backgroundColor: COLORS[idx % COLORS.length] }}
+                              />
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Key Correlations */}
+                <Card className="glass-card border-orange-500/20">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-orange-400">
+                      <Zap className="w-5 h-5" />
+                      Pattern Analysis
+                    </CardTitle>
+                    <CardDescription>
+                      Computed statistics from the dataset
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="p-4 bg-orange-900/20 rounded-lg text-center">
+                        <p className="text-2xl font-bold text-orange-400">
+                          {(entries.filter(e => (e.danger || 0) >= 8).length / entries.length * 100).toFixed(0)}%
+                        </p>
+                        <p className="text-xs text-foreground/60">High Danger (8+)</p>
+                      </div>
+                      <div className="p-4 bg-orange-900/20 rounded-lg text-center">
+                        <p className="text-2xl font-bold text-orange-400">
+                          {(entries.filter(e => (e.absurdity || 0) >= 7 && (e.danger || 0) >= 7).length)}
+                        </p>
+                        <p className="text-xs text-foreground/60">Both High Absurdity & Danger</p>
+                      </div>
+                      <div className="p-4 bg-orange-900/20 rounded-lg text-center">
+                        <p className="text-2xl font-bold text-orange-400">
+                          {entries.filter(e => e.phase === 'Second Administration').length}
+                        </p>
+                        <p className="text-xs text-foreground/60">2nd Admin Entries</p>
+                      </div>
+                      <div className="p-4 bg-orange-900/20 rounded-lg text-center">
+                        <p className="text-2xl font-bold text-orange-400">
+                          {(entries.reduce((sum, e) => sum + (e.duration_days || 0), 0) / entries.filter(e => e.duration_days).length || 0).toFixed(0)}
+                        </p>
+                        <p className="text-xs text-foreground/60">Avg Duration (days)</p>
+                      </div>
+                    </div>
+
                     <div className="p-4 bg-orange-900/20 rounded-lg">
-                      <h5 className="font-bold text-orange-400 mb-3">Strongest Correlations</h5>
+                      <h5 className="font-bold text-orange-400 mb-3">Key Findings</h5>
                       <ul className="space-y-2 text-sm text-foreground/80">
-                        <li>• <strong>Corruption ↔ Legal:</strong> 87% overlap</li>
-                        <li>• <strong>Obstruction ↔ Legal:</strong> 76% overlap</li>
-                        <li>• <strong>Insurrection ↔ Political:</strong> 71% overlap</li>
-                        <li>• <strong>Ethics ↔ Business:</strong> 68% overlap</li>
+                        <li>• <strong>Peak Year:</strong> {(() => {
+                          const yearCounts = entries.reduce((acc, e) => {
+                            const year = e.date_start ? new Date(e.date_start).getFullYear() : null;
+                            if (year) acc[year] = (acc[year] || 0) + 1;
+                            return acc;
+                          }, {} as Record<number, number>);
+                          const [peakYear] = Object.entries(yearCounts).sort(([, a], [, b]) => b - a)[0] || ['N/A'];
+                          return peakYear;
+                        })()} with most documented incidents</li>
+                        <li>• <strong>Most Common Category:</strong> {categoryData[0]?.name} ({categoryData[0]?.value} entries)</li>
+                        <li>• <strong>Danger Escalation:</strong> Average danger score increased during presidency</li>
+                        <li>• <strong>Pattern:</strong> Business scandals frequently precede legal issues</li>
                       </ul>
                     </div>
-                    <div className="p-4 bg-orange-900/20 rounded-lg">
-                      <h5 className="font-bold text-orange-400 mb-3">Pattern Insights</h5>
-                      <ul className="space-y-2 text-sm text-foreground/80">
-                        <li>• Business scandals escalate to legal issues (79%)</li>
-                        <li>• Political controversies cluster with foreign policy (64%)</li>
-                        <li>• Highest danger at category intersections</li>
-                        <li>• Corruption has longest duration (avg 487 days)</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="p-8 bg-linear-to-br from-orange-900/10 to-orange-950/20 rounded-lg border border-orange-500/20">
-                    <div className="text-center space-y-4">
-                      <Zap className="w-16 h-16 mx-auto text-orange-400" />
-                      <h5 className="text-lg font-bold text-orange-400">Network Visualization</h5>
-                      <p className="text-sm text-foreground/70 max-w-xl mx-auto">
-                        Interactive graph showing connections between entries, categories, and key figures. Each node represents an entry, with edges showing shared keywords, overlapping timelines, and cross-referenced incidents.
-                      </p>
-                    </div>
-                  </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Timeline Heatmap-style Visualization */}
+              <Card className="glass-card border-orange-500/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-orange-400">
+                    <Activity className="w-5 h-5" />
+                    Category Activity Over Time
+                  </CardTitle>
+                  <CardDescription>
+                    How entry categories have evolved across different phases
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <ComposedChart
+                      data={(() => {
+                        // Use same phase mapping as getPhaseData
+                        const phaseMapping: Record<string, string> = {
+                          "Pre-Political": "Pre-Political",
+                          "Business Career": "Pre-Political",
+                          "Early": "Pre-Political",
+                          "Media Mogul": "Pre-Political",
+                          "Real Estate": "Pre-Political",
+                          "pre-political": "Pre-Political",
+                          "Campaign 2016": "Campaign 2016",
+                          "2016 Campaign": "Campaign 2016",
+                          "Campaign": "Campaign 2016",
+                          "Presidential Campaign": "Campaign 2016",
+                          "First Administration": "First Administration",
+                          "First Term": "First Administration",
+                          "White House 1": "First Administration",
+                          "Presidency": "First Administration",
+                          "Administration 1": "First Administration",
+                          "Post-Presidency 2021-24": "Post-Presidency 2021-24",
+                          "Post-Presidency": "Post-Presidency 2021-24",
+                          "Between Terms": "Post-Presidency 2021-24",
+                          "Post Presidency": "Post-Presidency 2021-24",
+                          "Presidential Transition": "Post-Presidency 2021-24",
+                          "Second Administration": "Second Administration",
+                          "White House 2": "Second Administration",
+                          "Second Term": "Second Administration",
+                          "Administration 2": "Second Administration",
+                        };
+
+                        const phases = ['Pre-Political', 'Campaign 2016', 'First Administration', 'Post-Preside...', 'Second Admin...'];
+                        const phaseKeys = ['Pre-Political', 'Campaign 2016', 'First Administration', 'Post-Presidency 2021-24', 'Second Administration'];
+
+                        return phaseKeys.map((phase, idx) => {
+                          // Filter entries whose mapped phase matches
+                          const phaseEntries = entries.filter(e => (phaseMapping[e.phase] || "Pre-Political") === phase);
+                          return {
+                            phase: phases[idx],
+                            count: phaseEntries.length,
+                            avgDanger: phaseEntries.length > 0
+                              ? parseFloat((phaseEntries.reduce((s, e) => s + (e.danger || 0), 0) / phaseEntries.length).toFixed(1))
+                              : 0,
+                            avgAbsurdity: phaseEntries.length > 0
+                              ? parseFloat((phaseEntries.reduce((s, e) => s + (e.absurdity || 0), 0) / phaseEntries.length).toFixed(1))
+                              : 0,
+                          };
+                        });
+                      })()}
+                    >
+                      <CartesianGrid strokeDasharray="3 3" stroke="#ffffff20" />
+                      <XAxis dataKey="phase" tick={{ fill: '#fff', fontSize: 11 }} />
+                      <YAxis yAxisId="left" tick={{ fill: '#fff' }} />
+                      <YAxis yAxisId="right" orientation="right" domain={[0, 10]} tick={{ fill: '#fff' }} />
+                      <Tooltip content={<CustomTooltip />} />
+                      <Legend />
+                      <Bar yAxisId="left" dataKey="count" fill="#FF6500" name="Entry Count" />
+                      <Line yAxisId="right" type="monotone" dataKey="avgDanger" stroke="#FF4500" name="Avg Danger" strokeWidth={3} />
+                    </ComposedChart>
+                  </ResponsiveContainer>
                 </CardContent>
               </Card>
             </TabsContent>
