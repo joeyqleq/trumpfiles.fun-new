@@ -332,7 +332,7 @@ export default function Home() {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="relative w-full flex-1 flex items-center justify-center -ml-8 lg:-ml-4 xl:ml-0 my-4"
                 >
-                  <div className="w-full max-w-[650px] aspect-square relative transform scale-110 lg:scale-115">
+                  <div className="w-full max-w-[650px] aspect-square relative transform scale-90 lg:scale-115 pointer-events-none lg:pointer-events-auto">
                     <OrangeHero />
                   </div>
                 </motion.div>

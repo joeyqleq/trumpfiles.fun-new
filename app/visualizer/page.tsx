@@ -403,26 +403,26 @@ export default function VisualizerPage() {
           transition={{ delay: 0.3 }}
         >
           <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-8">
-            <TabsList className="grid w-full grid-cols-7 bg-white/5 p-1">
-              <TabsTrigger value="overview" className="data-[state=active]:bg-orange-500/20">
+            <TabsList className="flex w-full overflow-x-auto justify-start bg-white/5 p-1 no-scrollbar space-x-2">
+              <TabsTrigger value="overview" className="flex-shrink-0 data-[state=active]:bg-orange-500/20">
                 Overview
               </TabsTrigger>
-              <TabsTrigger value="categories" className="data-[state=active]:bg-orange-500/20">
+              <TabsTrigger value="categories" className="flex-shrink-0 data-[state=active]:bg-orange-500/20">
                 Categories
               </TabsTrigger>
-              <TabsTrigger value="timeline" className="data-[state=active]:bg-orange-500/20">
+              <TabsTrigger value="timeline" className="flex-shrink-0 data-[state=active]:bg-orange-500/20">
                 Timeline
               </TabsTrigger>
-              <TabsTrigger value="dimensions" className="data-[state=active]:bg-orange-500/20">
+              <TabsTrigger value="dimensions" className="flex-shrink-0 data-[state=active]:bg-orange-500/20">
                 Dimensions
               </TabsTrigger>
-              <TabsTrigger value="phases" className="data-[state=active]:bg-orange-500/20">
+              <TabsTrigger value="phases" className="flex-shrink-0 data-[state=active]:bg-orange-500/20">
                 Phases
               </TabsTrigger>
-              <TabsTrigger value="financial" className="data-[state=active]:bg-orange-500/20">
+              <TabsTrigger value="financial" className="flex-shrink-0 data-[state=active]:bg-orange-500/20">
                 Financial
               </TabsTrigger>
-              <TabsTrigger value="relationships" className="data-[state=active]:bg-orange-500/20">
+              <TabsTrigger value="relationships" className="flex-shrink-0 data-[state=active]:bg-orange-500/20">
                 Relations
               </TabsTrigger>
             </TabsList>
@@ -446,8 +446,8 @@ export default function VisualizerPage() {
                       <PieChart>
                         <Pie
                           data={categoryData}
-                          cx="35%"
-                          cy="50%"
+                          cx="50%"
+                          cy="45%"
                           labelLine={false}
                           label={false}
                           outerRadius={90}
@@ -460,13 +460,12 @@ export default function VisualizerPage() {
                         </Pie>
                         <Tooltip content={<CustomTooltip />} />
                         <Legend
-                          layout="vertical"
-                          verticalAlign="middle"
-                          align="right"
+                          layout="horizontal"
+                          verticalAlign="bottom"
+                          align="center"
                           wrapperStyle={{
-                            paddingLeft: "20px",
-                            maxHeight: "300px",
-                            overflow: "hidden"
+                            paddingTop: "20px",
+                            fontSize: "12px"
                           }}
                         />
                       </PieChart>
