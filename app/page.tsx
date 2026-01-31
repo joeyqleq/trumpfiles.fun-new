@@ -44,32 +44,7 @@ const OrangeHero = dynamic(() => import("@/components/OrangeHero"), {
   ),
 });
 
-const features = [
-  {
-    icon: Database,
-    title: "900+ Documented Entries",
-    description:
-      "Meticulously structured data with sources, scores, and fact-checks.",
-  },
-  {
-    icon: BarChart3,
-    title: "Interactive Visualizations",
-    description:
-      "Discover patterns and relationships with D3.js-powered charts.",
-  },
-  {
-    icon: Shield,
-    title: "Fact-Checked",
-    description:
-      "Every entry includes rigorous fact-checking and source verification.",
-  },
-  {
-    icon: Zap,
-    title: "Real-time Analysis",
-    description:
-      "Thermal scoring system for danger, lawlessness, and absurdity metrics.",
-  },
-];
+
 
 // Category color mapping
 const getCategoryColor = (category: string) => {
@@ -149,6 +124,33 @@ const MarqueeCard = ({ entry }: { entry: AICompleteTrumpData }) => {
 export default function Home() {
   const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
   const { count: entryCount, loading: entryLoading } = useEntryCount();
+
+  const features = [
+    {
+      icon: Database,
+      title: `${entryCount}+ Documented Entries`,
+      description:
+        "Meticulously structured data with sources, scores, and fact-checks.",
+    },
+    {
+      icon: BarChart3,
+      title: "Interactive Visualizations",
+      description:
+        "Discover patterns and relationships with D3.js-powered charts.",
+    },
+    {
+      icon: Shield,
+      title: "Fact-Checked",
+      description:
+        "Every entry includes rigorous fact-checking and source verification.",
+    },
+    {
+      icon: Zap,
+      title: "Real-time Analysis",
+      description:
+        "Thermal scoring system for danger, lawlessness, and absurdity metrics.",
+    },
+  ];
 
   useEffect(() => {
     const fetchEntries = async () => {
@@ -487,7 +489,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-linear-to-br from-orange-500/20 to-red-500/10" />
                 }
                 Icon={Database}
-                description="Browse 900+ meticulously documented entries with advanced filtering, scoring, and real-time updates."
+                description={`Browse ${entryCount}+ meticulously documented entries with advanced filtering, scoring, and real-time updates.`}
                 href="/catalog"
                 cta="Explore Catalog"
               />

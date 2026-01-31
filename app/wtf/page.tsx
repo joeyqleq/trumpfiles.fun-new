@@ -9,7 +9,11 @@ import GradientBlinds from "@/components/GradientBlinds";
 import PixelCard from "@/components/PixelCard";
 import PageDecorations from "@/components/PageDecorations";
 
+import { useEntryCount } from "@/hooks/useEntryCount";
+
 export default function WTFPage() {
+  const { count: entryCount } = useEntryCount();
+
   return (
     <div className="min-h-screen w-full relative">
       {/* Page Decorations with ASCII Trump images */}
@@ -117,7 +121,7 @@ export default function WTFPage() {
                 Why?
               </p>
               <p>
-                Because each new week brings so much chaos, we'd forget the coup attempt by Wednesday if we didn't keep historical receipts! This archive exists to say: <strong className="text-orange-400">YES, it was that bad</strong>—and here's 778 cited, timestamped, tagged, AI-rated records to prove it.
+                Because each new week brings so much chaos, we'd forget the coup attempt by Wednesday if we didn't keep historical receipts! This archive exists to say: <strong className="text-orange-400">YES, it was that bad</strong>—and here's {entryCount}+ cited, timestamped, tagged, AI-rated records to prove it.
               </p>
             </div>
           </div>

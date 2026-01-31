@@ -14,8 +14,8 @@ interface EntryCountData {
  */
 export function useEntryCount(): EntryCountData {
     const [data, setData] = useState<EntryCountData>({
-        count: 514, // Fallback
-        formatted: "514",
+        count: 1100, // Fallback
+        formatted: "1100",
         loading: true,
     });
 
@@ -48,6 +48,6 @@ export async function getEntryCount(): Promise<{ count: number; formatted: strin
         });
         return res.json();
     } catch {
-        return { count: 514, formatted: "514" };
+        return { count: 1100, formatted: "1100" };
     }
 }

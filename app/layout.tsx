@@ -12,9 +12,9 @@ import { sql } from "@/lib/neonClient";
 async function getEntryCount(): Promise<number> {
   try {
     const result = await sql`SELECT COUNT(*) as count FROM ai_complete_trump_data`;
-    return parseInt(result[0]?.count || "940", 10);
+    return parseInt(result[0]?.count || "1100", 10);
   } catch {
-    return 940; // Fallback
+    return 1100; // Fallback
   }
 }
 

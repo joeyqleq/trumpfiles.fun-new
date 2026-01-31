@@ -32,6 +32,7 @@ import {
 import { FlippableEntryCard } from "@/components/FlippableEntryCard";
 import TrueFocus from "@/components/TrueFocus";
 import PageDecorations from "@/components/PageDecorations";
+import { useEntryCount } from "@/hooks/useEntryCount";
 
 type SortOption =
   | "entry_asc"
@@ -47,24 +48,27 @@ type SortOption =
   | "title_asc"
   | "title_desc";
 
-const SORT_OPTIONS: { value: SortOption; label: string }[] = [
-  { value: "entry_asc", label: "Entry # (1 → 500+)" },
-  { value: "entry_desc", label: "Entry # (500+ → 1)" },
-  { value: "score_desc", label: "Total Score (High → Low)" },
-  { value: "score_asc", label: "Total Score (Low → High)" },
-  { value: "danger_desc", label: "Danger Level (Highest)" },
-  { value: "lawlessness_desc", label: "Lawlessness (Highest)" },
-  { value: "insanity_desc", label: "Insanity (Highest)" },
-  { value: "absurdity_desc", label: "Absurdity (Highest)" },
-  { value: "date_desc", label: "Most Recent First" },
-  { value: "date_asc", label: "Oldest First" },
-  { value: "title_asc", label: "Title (A → Z)" },
-  { value: "title_desc", label: "Title (Z → A)" },
-];
+
 
 export default function CatalogPage() {
   const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
   const [loading, setLoading] = useState(true);
+  const { count: maxEntry } = useEntryCount();
+
+  const sortOptions = useMemo(() => [
+    { value: "entry_asc", label: `Entry # (1 → ${maxEntry})` },
+    { value: "entry_desc", label: `Entry # (${maxEntry} → 1)` },
+    { value: "score_desc", label: "Total Score (High → Low)" },
+    { value: "score_asc", label: "Total Score (Low → High)" },
+    { value: "danger_desc", label: "Danger Level (Highest)" },
+    { value: "lawlessness_desc", label: "Lawlessness (Highest)" },
+    { value: "insanity_desc", label: "Insanity (Highest)" },
+    { value: "absurdity_desc", label: "Absurdity (Highest)" },
+    { value: "date_desc", label: "Most Recent First" },
+    { value: "date_asc", label: "Oldest First" },
+    { value: "title_asc", label: "Title (A → Z)" },
+    { value: "title_desc", label: "Title (Z → A)" },
+  ], [maxEntry]);
 
   // Basic Filters
   const [searchTerm, setSearchTerm] = useState("");
@@ -237,7 +241,7 @@ export default function CatalogPage() {
           </h1>
 
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto mt-6 font-sans">
-            A comprehensive, searchable database of {entries.length > 0 ? entries.length : "500+"} documented incidents.
+            A comprehensive, searchable database of {entries.length > 0 ? entries.length : maxEntry} documented incidents.
             Filter, sort, and explore the evidence.
           </p>
         </motion.div>
@@ -292,7 +296,7 @@ export default function CatalogPage() {
                     <SelectValue placeholder="Sort By" />
                   </SelectTrigger>
                   <SelectContent>
-                    {SORT_OPTIONS.map((option) => (
+                    {sortOptions.map((option) => (
                       <SelectItem key={option.value} value={option.value}>
                         {option.label}
                       </SelectItem>
