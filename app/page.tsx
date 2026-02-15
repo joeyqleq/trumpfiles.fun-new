@@ -20,7 +20,7 @@ import { MagicCard } from "@/components/ui/magic-card";
 import GradientBlinds from "@/components/GradientBlinds";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Marquee } from "@/components/ui/marquee";
-import { Sparkles, TrendingUp, Users, Zap as ZapIcon, AlertTriangle, Brain, Flame } from "lucide-react";
+import { Sparkles, TrendingUp, Users, Zap as ZapIcon, AlertTriangle, Brain, Flame, Heart } from "lucide-react";
 import { AICompleteTrumpData } from "@/types/database";
 import ShinyText from "@/components/ShinyText";
 import ElectricBorder from "@/components/ElectricBorder";
@@ -312,6 +312,34 @@ export default function Home() {
                     </PulsatingButton>
                   </Link>
                 </div>
+
+                {/* Creator Note */}
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.0 }}
+                  className="mt-8 max-w-lg lg:max-w-md"
+                >
+                  <Link href="/donate">
+                    <div className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-950/40 to-slate-900/40 border border-blue-500/30 p-4 hover:border-blue-400/50 hover:bg-blue-900/20 transition-all cursor-pointer shadow-lg shadow-blue-900/10">
+                      <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 group-hover:bg-blue-400 transition-colors" />
+                      <div className="flex items-start gap-3">
+                        <div className="p-2 bg-blue-500/20 rounded-lg group-hover:scale-110 transition-transform">
+                          <Heart className="w-5 h-5 text-blue-400" />
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-1 flex items-center gap-2">
+                            Message from the Creator
+                            <span className="text-[10px] bg-blue-500/20 px-1.5 py-0.5 rounded text-blue-300 border border-blue-500/30">Read</span>
+                          </h4>
+                          <p className="text-xs text-blue-100/70 leading-relaxed font-sans">
+                            Building this archive from Lebanon comes with unique challenges. If you value this work, please read this note.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </motion.div>
               </div>
 
               {/* Right Content Column */}

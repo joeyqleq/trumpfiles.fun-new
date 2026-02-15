@@ -23,6 +23,7 @@ import {
   Brain,
   Fingerprint,
   Mail,
+  Heart,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -40,6 +41,7 @@ export default function Navigation() {
     { name: "Visualizer", href: "/visualizer", icon: <Activity size={16} /> },
     { name: "WTF?", href: "/wtf", icon: <Brain size={16} /> },
     { name: "Enigma", href: "/enigma", icon: <Fingerprint size={16} /> },
+    { name: "Donate", href: "/donate", icon: <Heart size={16} /> },
   ];
 
   const handleContactSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
