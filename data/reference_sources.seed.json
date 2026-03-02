@@ -1,0 +1,306 @@
+[
+  {
+    "id": "nara_constitution_transcript",
+    "title": "United States Constitution (Transcript)",
+    "publisher": "National Archives",
+    "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+    "category": "constitutional",
+    "trust_tier": "official"
+  },
+  {
+    "id": "nara_bill_of_rights_transcript",
+    "title": "Bill of Rights (Transcript)",
+    "publisher": "National Archives",
+    "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+    "category": "constitutional",
+    "trust_tier": "official"
+  },
+  {
+    "id": "nara_declaration_transcript",
+    "title": "Declaration of Independence (Transcript)",
+    "publisher": "National Archives",
+    "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+    "category": "constitutional",
+    "trust_tier": "official"
+  },
+  {
+    "id": "nara_archived_white_house_index",
+    "title": "Archived White House Websites",
+    "publisher": "National Archives",
+    "url": "https://www.archives.gov/presidential-records/research/archived-white-house-websites",
+    "category": "presidential",
+    "trust_tier": "official"
+  },
+  {
+    "id": "nara_pra_trump_admin",
+    "title": "Presidential Records Act FOIA Trump Administration",
+    "publisher": "National Archives",
+    "url": "https://www.archives.gov/foia/pra-trump-admin",
+    "category": "presidential",
+    "trust_tier": "official"
+  },
+  {
+    "id": "trump_white_house_archive_home",
+    "title": "Trump White House Archive Home",
+    "publisher": "NARA Archived White House",
+    "url": "https://trumpwhitehouse.archives.gov/",
+    "category": "presidential",
+    "trust_tier": "official_archive"
+  },
+  {
+    "id": "trump_white_house_archive_briefings",
+    "title": "Trump White House Archive Briefings and Statements",
+    "publisher": "NARA Archived White House",
+    "url": "https://trumpwhitehouse.archives.gov/briefings-statements/",
+    "category": "presidential",
+    "trust_tier": "official_archive"
+  },
+  {
+    "id": "trump_white_house_archive_remarks",
+    "title": "Trump White House Archive Remarks",
+    "publisher": "NARA Archived White House",
+    "url": "https://trumpwhitehouse.archives.gov/remarks/",
+    "category": "presidential",
+    "trust_tier": "official_archive"
+  },
+  {
+    "id": "american_presidency_project_home",
+    "title": "American Presidency Project",
+    "publisher": "University of California, Santa Barbara",
+    "url": "https://www.presidency.ucsb.edu/",
+    "category": "presidential",
+    "trust_tier": "academic"
+  },
+  {
+    "id": "american_presidency_project_donald_trump",
+    "title": "American Presidency Project Donald Trump Collection",
+    "publisher": "University of California, Santa Barbara",
+    "url": "https://www.presidency.ucsb.edu/people/president/donald-j-trump",
+    "category": "presidential",
+    "trust_tier": "academic"
+  },
+  {
+    "id": "miller_center_trump_profile",
+    "title": "Miller Center Donald Trump Profile",
+    "publisher": "Miller Center",
+    "url": "https://millercenter.org/president/trump",
+    "category": "biography",
+    "trust_tier": "academic"
+  },
+  {
+    "id": "nara_trump_white_house_biography",
+    "title": "Donald J. Trump Biography (Archived White House)",
+    "publisher": "NARA Archived White House",
+    "url": "https://trumpwhitehouse.archives.gov/people/donald-j-trump/",
+    "category": "biography",
+    "trust_tier": "official_archive"
+  },
+  {
+    "id": "wikipedia_donald_trump_biography",
+    "title": "Donald Trump - Wikipedia",
+    "publisher": "Wikipedia (CC BY-SA)",
+    "url": "https://en.wikipedia.org/wiki/Donald_Trump",
+    "category": "biography",
+    "trust_tier": "community"
+  },
+  {
+    "id": "wikidata_donald_trump_entity",
+    "title": "Donald Trump - Wikidata Entity",
+    "publisher": "Wikidata (CC0)",
+    "url": "https://www.wikidata.org/wiki/Q22686",
+    "category": "entity_linking",
+    "trust_tier": "community"
+  },
+  {
+    "id": "miller_center_presidential_biographies",
+    "title": "Miller Center Presidential Biographies",
+    "publisher": "Miller Center",
+    "url": "https://millercenter.org/president",
+    "category": "presidential",
+    "trust_tier": "academic"
+  },
+  {
+    "id": "congress_api_docs",
+    "title": "Congress API Documentation",
+    "publisher": "Library of Congress",
+    "url": "https://github.com/LibraryOfCongress/api.congress.gov",
+    "category": "legal",
+    "trust_tier": "official"
+  },
+  {
+    "id": "congress_api_portal",
+    "title": "Congress API Portal",
+    "publisher": "Library of Congress",
+    "url": "https://api.congress.gov/",
+    "category": "legal",
+    "trust_tier": "official"
+  },
+  {
+    "id": "govinfo_api_features",
+    "title": "GovInfo API Features",
+    "publisher": "GovInfo",
+    "url": "https://www.govinfo.gov/features/api",
+    "category": "legal",
+    "trust_tier": "official"
+  },
+  {
+    "id": "govinfo_bulk_billstatus",
+    "title": "GovInfo BILLSTATUS Bulk Data",
+    "publisher": "GovInfo",
+    "url": "https://www.govinfo.gov/bulkdata/BILLSTATUS",
+    "category": "legal",
+    "trust_tier": "official"
+  },
+  {
+    "id": "federal_register_api_docs",
+    "title": "Federal Register API Documentation",
+    "publisher": "Federal Register",
+    "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+    "category": "legal",
+    "trust_tier": "official"
+  },
+  {
+    "id": "federal_register_api_datagov_listing",
+    "title": "Federal Register API Data.gov Listing",
+    "publisher": "Data.gov",
+    "url": "https://catalog.data.gov/dataset/federalregister-gov-and-api",
+    "category": "legal",
+    "trust_tier": "official"
+  },
+  {
+    "id": "uscode_downloads",
+    "title": "United States Code Download",
+    "publisher": "Office of the Law Revision Counsel",
+    "url": "https://uscode.house.gov/download/download.shtml",
+    "category": "legal",
+    "trust_tier": "official"
+  },
+  {
+    "id": "constitution_annotated_about",
+    "title": "Constitution Annotated About",
+    "publisher": "Congress.gov",
+    "url": "https://constitution.congress.gov/about/constitution-annotated/",
+    "category": "constitutional",
+    "trust_tier": "official"
+  },
+  {
+    "id": "courtlistener_api",
+    "title": "CourtListener API",
+    "publisher": "Free Law Project",
+    "url": "https://www.courtlistener.com/help/api/",
+    "category": "legal",
+    "trust_tier": "civic"
+  },
+  {
+    "id": "courtlistener_recap_api",
+    "title": "CourtListener RECAP API",
+    "publisher": "Free Law Project",
+    "url": "https://www.courtlistener.com/help/api/rest/recap/",
+    "category": "legal",
+    "trust_tier": "civic"
+  },
+  {
+    "id": "ecfr_api_docs",
+    "title": "eCFR API v1 Documentation",
+    "publisher": "eCFR",
+    "url": "https://www.ecfr.gov/developers/documentation/api/v1",
+    "category": "legal",
+    "trust_tier": "official"
+  },
+  {
+    "id": "fec_data_portal",
+    "title": "Federal Election Commission Data",
+    "publisher": "FEC",
+    "url": "https://www.fec.gov/data/",
+    "category": "elections",
+    "trust_tier": "official"
+  },
+  {
+    "id": "openfec_developers",
+    "title": "OpenFEC Developers",
+    "publisher": "FEC",
+    "url": "https://api.open.fec.gov/developers/",
+    "category": "elections",
+    "trust_tier": "official"
+  },
+  {
+    "id": "sec_edgar_apis",
+    "title": "SEC EDGAR Application Programming Interfaces",
+    "publisher": "SEC",
+    "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+    "category": "finance",
+    "trust_tier": "official"
+  },
+  {
+    "id": "mit_election_data",
+    "title": "MIT Election Lab Data",
+    "publisher": "MIT Election Data and Science Lab",
+    "url": "https://electionlab.mit.edu/data",
+    "category": "elections",
+    "trust_tier": "academic"
+  },
+  {
+    "id": "census_developers",
+    "title": "US Census Developers",
+    "publisher": "US Census Bureau",
+    "url": "https://www.census.gov/data/developers.html",
+    "category": "demographics",
+    "trust_tier": "official"
+  },
+  {
+    "id": "fred_api_docs",
+    "title": "FRED API Documentation",
+    "publisher": "Federal Reserve Bank of St. Louis",
+    "url": "https://fred.stlouisfed.org/docs/api/fred/",
+    "category": "economy",
+    "trust_tier": "official"
+  },
+  {
+    "id": "bls_developers",
+    "title": "BLS Developers",
+    "publisher": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/developers/",
+    "category": "economy",
+    "trust_tier": "official"
+  },
+  {
+    "id": "bea_api_signup",
+    "title": "BEA API Signup",
+    "publisher": "Bureau of Economic Analysis",
+    "url": "https://apps.bea.gov/api/signup/",
+    "category": "economy",
+    "trust_tier": "official"
+  },
+  {
+    "id": "wikidata_entity_dumps",
+    "title": "Wikidata Entity Dumps",
+    "publisher": "Wikimedia Foundation",
+    "url": "https://dumps.wikimedia.org/wikidatawiki/entities/",
+    "category": "entity_linking",
+    "trust_tier": "community"
+  },
+  {
+    "id": "gdelt_home",
+    "title": "GDELT Project",
+    "publisher": "GDELT",
+    "url": "https://www.gdeltproject.org/",
+    "category": "news_events",
+    "trust_tier": "research"
+  },
+  {
+    "id": "common_crawl_home",
+    "title": "Common Crawl",
+    "publisher": "Common Crawl Foundation",
+    "url": "https://commoncrawl.org/",
+    "category": "web_archive",
+    "trust_tier": "community"
+  },
+  {
+    "id": "loc_apis",
+    "title": "Library of Congress APIs",
+    "publisher": "Library of Congress",
+    "url": "https://www.loc.gov/apis/",
+    "category": "historical",
+    "trust_tier": "official"
+  }
+]
