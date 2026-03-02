@@ -42,3 +42,14 @@ next-env.d.ts
 
 # clerk configuration (can include secrets)
 /.clerk/
+
+# local artifacts and in-progress chatbot (keep out of deploy/push)
+/.vscode/
+/logs/*
+!/logs/dev.log
+!/logs/entries_snapshot.json
+/tmp/
+/app/api/chat/
+/components/chat/
+/lib/chat/
+/types/chat.ts
