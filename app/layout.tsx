@@ -4,7 +4,7 @@ import AsciiFooter from "@/components/AsciiFooter";
 import "./globals.css";
 import Script from "next/script";
 import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, neuething } from "./fonts";
-// import BlobCursor from "@/components/ui/BlobCursor";
+import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { sql } from "@/lib/neonClient";
 
@@ -222,7 +222,7 @@ export default function RootLayout({
           font-sans antialiased min-h-screen bg-background
         `}>
         <AnimatedBackground>
-          {/* <BlobCursor /> */}
+          <BlobCursor />
           <Navigation />
           <main className="pt-16">
             {children}
