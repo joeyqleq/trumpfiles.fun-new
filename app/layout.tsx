@@ -7,6 +7,7 @@ import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGra
 // import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { sql } from "@/lib/neonClient";
+import { Analytics } from '@vercel/analytics/next';
 
 // Fetch entry count for dynamic metadata
 async function getEntryCount(): Promise<number> {
@@ -229,6 +230,7 @@ export default function RootLayout({
           </main>
           <AsciiFooter />
         </AnimatedBackground>
+        <Analytics />
       </body>
     </html>
   );
