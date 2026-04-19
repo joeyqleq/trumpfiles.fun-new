@@ -41,7 +41,27 @@ export default function Navigation() {
     { name: "Visualizer", href: "/visualizer", icon: <Activity size={16} /> },
     { name: "WTF?", href: "/wtf", icon: <Brain size={16} /> },
     { name: "Enigma", href: "/enigma", icon: <Fingerprint size={16} /> },
-    { name: "Donate", href: "/donate", icon: <Heart size={16} /> },
+    {
+      name: "WHOAMI?", href: "/donate", icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" />
+          <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
+          <path d="m2 15 6 6" />
+          <path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.83 2.83 0 0 0 16 3a2.8 2.8 0 0 0-2 1l-1.4 1.4" />
+          <path d="m9.7 8.2-2.9-2.9a2.83 2.83 0 0 0-4 0 2.83 2.83 0 0 0 0 4l2.8 2.8" />
+        </svg>
+      )
+    },
   ];
 
   const handleContactSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

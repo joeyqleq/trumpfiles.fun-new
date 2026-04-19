@@ -32,7 +32,9 @@ import {
 import { FlippableEntryCard } from "@/components/FlippableEntryCard";
 import TrueFocus from "@/components/TrueFocus";
 import PageDecorations from "@/components/PageDecorations";
+import GlitchText from "@/components/GlitchText";
 import { useEntryCount } from "@/hooks/useEntryCount";
+import Image from "next/image";
 
 type SortOption =
   | "entry_asc"
@@ -56,8 +58,8 @@ export default function CatalogPage() {
   const { count: maxEntry } = useEntryCount();
 
   const sortOptions = useMemo(() => [
-    { value: "entry_asc", label: `Entry # (1 → ${maxEntry})` },
-    { value: "entry_desc", label: `Entry # (${maxEntry} → 1)` },
+    { value: "entry_desc", label: `Entry # (Newest to Oldest)` },
+    { value: "entry_asc", label: `Entry # (Oldest to Newest)` },
     { value: "score_desc", label: "Total Score (High → Low)" },
     { value: "score_asc", label: "Total Score (Low → High)" },
     { value: "danger_desc", label: "Danger Level (Highest)" },
@@ -74,16 +76,20 @@ export default function CatalogPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [phaseFilter, setPhaseFilter] = useState("all");
-  const [sortBy, setSortBy] = useState<SortOption>("entry_asc");
+  const [sortBy, setSortBy] = useState<SortOption>("entry_desc");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(50);
 
   // Advanced Filters
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
   const [minDanger, setMinDanger] = useState([0]);
+  const [localMinDanger, setLocalMinDanger] = useState([0]);
   const [minAbsurdity, setMinAbsurdity] = useState([0]);
+  const [localMinAbsurdity, setLocalMinAbsurdity] = useState([0]);
   const [minLawlessness, setMinLawlessness] = useState([0]);
+  const [localMinLawlessness, setLocalMinLawlessness] = useState([0]);
   const [minTotalScore, setMinTotalScore] = useState([0]);
+  const [localMinTotalScore, setLocalMinTotalScore] = useState([0]);
 
   // Scroll to top ref
   const topRef = useRef<HTMLDivElement>(null);
@@ -156,9 +162,9 @@ export default function CatalogPage() {
 
       switch (sortBy) {
         case "entry_asc":
-          return a.entry_number - b.entry_number;
+          return (a.entry_number || 0) - (b.entry_number || 0);
         case "entry_desc":
-          return b.entry_number - a.entry_number;
+          return (b.entry_number || 0) - (a.entry_number || 0);
         case "score_desc":
           return parseFloat(b.fucked_up_score) - parseFloat(a.fucked_up_score);
         case "score_asc":
@@ -198,11 +204,15 @@ export default function CatalogPage() {
     setSearchTerm("");
     setSelectedCategory("all");
     setPhaseFilter("all");
-    setSortBy("entry_asc");
+    setSortBy("entry_desc");
     setMinDanger([0]);
+    setLocalMinDanger([0]);
     setMinAbsurdity([0]);
+    setLocalMinAbsurdity([0]);
     setMinLawlessness([0]);
+    setLocalMinLawlessness([0]);
     setMinTotalScore([0]);
+    setLocalMinTotalScore([0]);
     setCurrentPage(1);
   };
 
@@ -246,9 +256,26 @@ export default function CatalogPage() {
           </p>
         </motion.div>
 
+        {/* Satirical float */}
+        <div className="flex justify-end mb-4 -mt-2 pr-4 md:pr-0">
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+            className="relative group"
+          >
+            <Image src="/images/art/pdf_pepperoni.png" alt="Pepperoni Trump" width={130} height={160} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:rotate-2" />
+          </motion.div>
+        </div>
+
         {/* Filters Section */}
-        <div className="glass-card p-6 mb-12 rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/5 backdrop-blur-xl bg-black/40">
-          <div className="flex flex-col gap-6">
+        <div className="glass-card p-6 md:p-8 mb-12 rounded-2xl border border-orange-500/30 shadow-[0_0_30px_rgba(255,101,0,0.15)] backdrop-blur-2xl bg-black/60 relative overflow-hidden transition-all duration-300">
+          <div className="flex flex-col gap-6 relative z-10">
+            <div className="mb-2">
+              <GlitchText speed={1.5} enableShadows={true} className="text-xl md:text-2xl font-bold tracking-wider text-orange-400 inline-block">
+                ARCHIVE SEARCH & FILTERS
+              </GlitchText>
+            </div>
             {/* Top Row: Search & Basic Filters */}
             <div className="flex flex-col md:flex-row gap-4">
               <div className="relative flex-1">
@@ -333,11 +360,12 @@ export default function CatalogPage() {
                           <Flame className="w-4 h-4 text-red-500" />
                           Min Danger
                         </Label>
-                        <span className="text-sm font-mono text-orange-400">{minDanger[0]}/10</span>
+                        <span className="text-sm font-mono text-orange-400">{localMinDanger[0]}/10</span>
                       </div>
                       <Slider
-                        value={minDanger}
-                        onValueChange={setMinDanger}
+                        value={localMinDanger}
+                        onValueChange={setLocalMinDanger}
+                        onValueCommit={setMinDanger}
                         min={0}
                         max={10}
                         step={1}
@@ -352,11 +380,12 @@ export default function CatalogPage() {
                           <Brain className="w-4 h-4 text-yellow-500" />
                           Min Absurdity
                         </Label>
-                        <span className="text-sm font-mono text-orange-400">{minAbsurdity[0]}/10</span>
+                        <span className="text-sm font-mono text-orange-400">{localMinAbsurdity[0]}/10</span>
                       </div>
                       <Slider
-                        value={minAbsurdity}
-                        onValueChange={setMinAbsurdity}
+                        value={localMinAbsurdity}
+                        onValueChange={setLocalMinAbsurdity}
+                        onValueCommit={setMinAbsurdity}
                         min={0}
                         max={10}
                         step={1}
@@ -371,11 +400,12 @@ export default function CatalogPage() {
                           <Gavel className="w-4 h-4 text-orange-500" />
                           Min Lawlessness
                         </Label>
-                        <span className="text-sm font-mono text-orange-400">{minLawlessness[0]}/10</span>
+                        <span className="text-sm font-mono text-orange-400">{localMinLawlessness[0]}/10</span>
                       </div>
                       <Slider
-                        value={minLawlessness}
-                        onValueChange={setMinLawlessness}
+                        value={localMinLawlessness}
+                        onValueChange={setLocalMinLawlessness}
+                        onValueCommit={setMinLawlessness}
                         min={0}
                         max={10}
                         step={1}
@@ -390,11 +420,12 @@ export default function CatalogPage() {
                           <Zap className="w-4 h-4 text-purple-500" />
                           Min Total Score
                         </Label>
-                        <span className="text-sm font-mono text-orange-400">{minTotalScore[0]}/100</span>
+                        <span className="text-sm font-mono text-orange-400">{localMinTotalScore[0]}/100</span>
                       </div>
                       <Slider
-                        value={minTotalScore}
-                        onValueChange={setMinTotalScore}
+                        value={localMinTotalScore}
+                        onValueChange={setLocalMinTotalScore}
+                        onValueCommit={setMinTotalScore}
                         min={0}
                         max={100}
                         step={5}
@@ -513,6 +544,18 @@ export default function CatalogPage() {
             </Button>
           </div>
         )}
+
+        {/* Catalog footer art */}
+        <div className="mt-16 flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative group"
+          >
+            <Image src="/images/art/pdf_mushroom.png" alt="Mushroom Trump Art" width={200} height={200} className="rounded-xl border border-orange-500/20 shadow-[0_0_24px_rgba(255,101,0,0.12)] group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105" />
+          </motion.div>
+        </div>
       </div>
     </div >
   );

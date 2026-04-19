@@ -220,6 +220,21 @@ export default function EnigmaPage() {
           </motion.div>
         </motion.div>
 
+        {/* Satirical interlude */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="mb-12 flex flex-col md:flex-row gap-6 items-center justify-center"
+        >
+          <div className="relative group">
+            <Image src="/images/art/pdf_tiny_hat.png" alt="Trump Tiny Hat" width={200} height={250} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:rotate-1" />
+          </div>
+          <div className="relative group">
+            <Image src="/images/art/pdf_iwatch.png" alt="Trump iWatch" width={200} height={250} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1" />
+          </div>
+        </motion.div>
+
         {/* Timeline Section */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -306,6 +321,11 @@ export default function EnigmaPage() {
               <h3 className="text-3xl font-bold mb-4 text-orange-400">
                 The Enigma Continues...
               </h3>
+              <div className="flex justify-center mb-6">
+                <motion.div whileHover={{ scale: 1.05 }} className="relative">
+                  <Image src="/images/art/pdf_foreskin.png" alt="Trump Satirical Art" width={220} height={160} className="rounded-xl border border-orange-500/20 shadow-[0_0_20px_rgba(255,101,0,0.15)]" />
+                </motion.div>
+              </div>
               <p className="text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
                 From humble beginnings as a millionaire's son to reality TV icon to the most controversial
                 president in modern history, Donald Trump has left an indelible mark on America.

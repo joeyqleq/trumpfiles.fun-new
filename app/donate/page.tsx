@@ -1,176 +1,276 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
-import { Heart, Coins, Server, Globe, ShieldAlert } from "lucide-react";
-import GradientBlinds from "@/components/GradientBlinds";
+import { Link as LinkIcon, Heart, Copy, Check, Globe, Wallet, Bitcoin, CreditCard } from "lucide-react";
 import PageDecorations from "@/components/PageDecorations";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { AnimatedProfileCard, ProfileCardContent } from "@/components/ui/animated-profile-card";
+import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import PixelCard from "@/components/PixelCard";
 
-export default function DonatePage() {
+const CopyButton = ({ text }: { text: string }) => {
+    const [copied, setCopied] = useState(false);
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+    };
+
     return (
-        <div className="min-h-screen w-full relative">
-            {/* Page Decorations */}
+        <Button
+            variant="outline"
+            size="sm"
+            onClick={handleCopy}
+            className="border-orange-500/30 text-orange-400 hover:bg-orange-500/20"
+        >
+            {copied ? <Check className="w-4 h-4 mr-2" /> : <Copy className="w-4 h-4 mr-2" />}
+            {copied ? "Copied!" : "Copy"}
+        </Button>
+    );
+};
+
+export default function WhoAmIPage() {
+    return (
+        <div className="min-h-screen w-full relative bg-background overflow-x-hidden pb-24">
             <PageDecorations variant="wtf" />
 
-            {/* Background */}
-            <div className="fixed inset-0 w-full h-full z-0 opacity-30 pointer-events-none">
-                <GradientBlinds
-                    gradientColors={[
-                        "#FF6B00",
-                        "#FF8C00",
-                        "#FFA500",
-                        "#FFB733",
-                        "#FF8C00",
-                        "#FF6B00"
-                    ]}
-                    angle={45}
-                    blindCount={24}
-                    blindMinWidth={50}
-                    noise={0.15}
-                    mouseDampening={0.2}
-                    spotlightRadius={0.6}
-                    spotlightOpacity={0.8}
-                    distortAmount={0.5}
-                    mirrorGradient={true}
-                    mixBlendMode="screen"
-                />
-            </div>
+            {/* Background Gradient */}
+            <div className="fixed inset-0 w-full h-full z-0 opacity-20 pointer-events-none" style={{
+                background: "radial-gradient(ellipse at top right, rgba(255, 101, 0, 0.4), transparent 50%), radial-gradient(ellipse at bottom left, rgba(255, 101, 0, 0.2), transparent 50%)"
+            }} />
 
-            <div className="container mx-auto px-4 max-w-4xl py-16 relative z-10">
-
-                {/* Header */}
+            <div className="container mx-auto px-4 max-w-5xl pt-24 relative z-10">
+                {/* Hero - Who Am I */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="mb-12 text-center"
+                    className="mb-16 text-center lg:text-left flex flex-col lg:flex-row gap-8 items-center lg:items-start"
                 >
-                    <h1 className="text-5xl lg:text-7xl font-bold mb-6">
-                        <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent font-[family-name:var(--font-arctic-guardian-semi)]">
-                            Support The
-                        </span>{" "}
-                        <TrumpFilesBrand size="2xl" className="inline-flex" />
-                    </h1>
-                    <p className="text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
-                        Fighting the fog of war, amnesia, and misinformation—one database entry at a time.
-                    </p>
-                </motion.div>
+                    <div className="flex-1 space-y-6">
+                        <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-orange-500 via-orange-400 to-red-500 bg-clip-text text-transparent font-arctic-3d leading-tight">
+                            WHOAMI?
+                        </h1>
+                        <div className="text-2xl text-foreground/80 font-arctic-laser italic text-white/50">
+                            Creator of <TrumpFilesBrand size="lg" className="inline-flex ml-2" />
+                        </div>
 
-                {/* The Costs / Mission */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.2 }}
-                    className="mb-10"
-                >
-                    <Card className="glass-card border-orange-500/20 shadow-lg shadow-orange-500/10">
-                        <CardContent className="p-8 space-y-6">
-                            <div className="flex items-center gap-4 mb-4">
-                                <Server className="w-8 h-8 text-orange-400" />
-                                <h2 className="text-2xl font-bold text-orange-400">Why Donate? The Reality of Running This Archive</h2>
-                            </div>
-                            <p className="text-lg text-foreground/80 leading-relaxed">
-                                <strong className="text-orange-300">This is a non-commercial project.</strong> I do not sell ads. I do not sell data. There is no paywall. This archive exists for the public record, accessible to everyone for free.
+                        <div className="prose prose-invert max-w-none text-lg text-foreground/80 leading-relaxed font-sans space-y-4">
+                            <p>
+                                I am <strong className="text-orange-400 font-bold">Joe Maari (aka joeyq)</strong>, a Mid-aged technologist from Lebanon and anti-kind of a big deal. Part music producer, part cybersecurity script-kiddie, and former digital marketing consultant and growth hacker based out of Dubai and Beirut.
                             </p>
-                            <p className="text-lg text-foreground/80 leading-relaxed">
-                                However, keeping <strong className="text-orange-400">The Trump Files</strong> alive is expensive. I pay out of pocket for:
+                            <p>
+                                I bridge the gap between heavy technical logic and high-level artistic creativity. Currently architecting better ways to survive the frontier.
                             </p>
-                            <ul className="list-disc list-inside space-y-2 text-foreground/80 pl-4">
-                                <li><strong className="text-orange-300">AI Processing:</strong> Analyzing thousands of documents with LLMs to detect danger, absurdity, and lies.</li>
-                                <li><strong className="text-orange-300">Server Costs:</strong> Hosting the database and the high-performance visualization engine.</li>
-                                <li><strong className="text-orange-300">Scraping Infrastructure:</strong> Tools to continuously monitor news, social media, and government filings in real-time.</li>
-                            </ul>
-                        </CardContent>
-                    </Card>
+                        </div>
+                    </div>
+
+                    {/* Profile Card - fixed dimensions to prevent overflow */}
+                    <div className="flex-shrink-0 w-[280px] h-[340px] overflow-hidden rounded-3xl">
+                        <div className="relative w-full h-full overflow-hidden rounded-3xl border-2 border-orange-500/40">
+                            {/* Base card */}
+                            <div className="absolute inset-0 w-full h-full">
+                                <ProfileCardContent
+                                    name="joeyq"
+                                    location="Beirut, Lebanon"
+                                    bio="Creative Technologist // The Nexus. Bridging the gap between heavy technical logic and high-level artistic creativity."
+                                    avatarSrc="/images/jq_avatar.png"
+                                    avatarFallback="JQ"
+                                    showAvatar={true}
+                                    className="bg-black/60 border-0 rounded-3xl h-full"
+                                />
+                            </div>
+                            {/* Orange glow overlay on hover */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-600/0 hover:from-orange-500/10 hover:to-orange-600/20 transition-all duration-500 rounded-3xl pointer-events-none" />
+                            {/* Flickering grid accent on top edge */}
+                            <div className="absolute top-0 left-0 right-0 h-24 opacity-30 pointer-events-none overflow-hidden rounded-t-3xl">
+                                <FlickeringGrid
+                                    squareSize={3}
+                                    gridGap={2}
+                                    color="#FF6500"
+                                    maxOpacity={0.6}
+                                    flickerChance={0.3}
+                                    className="w-full h-full"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </motion.div>
 
-                {/* The Personal Context (Lebanon) */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    className="mb-10"
-                >
-                    <Card className="glass-card border-orange-500/20 bg-gradient-to-br from-orange-950/30 to-black/30">
-                        <CardContent className="p-8 space-y-6">
-                            <div className="flex items-center gap-4 mb-4">
-                                <Globe className="w-8 h-8 text-orange-400" />
-                                <h2 className="text-2xl font-bold text-orange-400">A Message from the Creator</h2>
-                            </div>
-
-                            <div className="prose prose-invert max-w-none text-lg text-foreground/80 leading-relaxed space-y-4">
-                                <p>
-                                    I currently live in <strong className="text-orange-300">Lebanon</strong>. To put it mildly, it is not the easiest place to be right now. The region has been crippled by conflict and policy decisions that often trace back to U.S. foreign policy—specifically the chaotic, transactional, and destructive approach of the Trump administration and its allies.
-                                </p>
-                                <p>
-                                    Living here gives me a unique perspective. I see the <strong className="text-orange-400">real-world consequences</strong> of the rhetoric and policies cataloged in this database. It’s what gives me the drive to build this—to ensure that the actions of powerful men are recorded, analyzed, and never forgotten.
-                                </p>
-                                <p>
-                                    This website is my resistance. It allows me the freedom to fight back against the normalization of chaos, even from a place where daily life is often a struggle.
-                                </p>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </motion.div>
-
-                {/* The Ask / PayPal */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.4 }}
-                    className="mb-12"
-                >
-                    <Card className="glass-card border-orange-500/40 shadow-[0_0_30px_rgba(249,115,22,0.15)] bg-gradient-to-r from-orange-950/40 via-black/40 to-orange-950/40">
-                        <CardContent className="p-8 text-center space-y-8">
-                            <div className="flex flex-col items-center gap-4">
-                                <div className="p-4 rounded-full bg-orange-500/20 border border-orange-500/40">
-                                    <Heart className="w-10 h-10 text-orange-500 fill-orange-500/20 animate-pulse" />
+                <div className="space-y-12">
+                    {/* The Project & Support Story */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}
+                    >
+                        <Card className="glass-card border-orange-500/20 backdrop-blur-xl bg-black/50 shadow-lg shadow-orange-500/5 overflow-hidden relative">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl" />
+                            <CardContent className="p-8 space-y-8 relative z-10">
+                                <div>
+                                    <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">Fighting the Fog: Why This Costs Money</h2>
+                                    <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
+                                        <p>
+                                            The Trump Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public record, accessible to everyone for free. However, keeping a high-performance, AI-driven encyclopedia alive is an expensive technical operation. I pay out of pocket for:
+                                        </p>
+                                        <ul className="list-none space-y-4 pt-4">
+                                            <li className="flex gap-4">
+                                                <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Globe className="w-5 h-5" /></div>
+                                                <div><strong className="text-orange-300">AI Processing:</strong> Using LLMs to analyze thousands of documents for danger, absurdity, and deception metrics.</div>
+                                            </li>
+                                            <li className="flex gap-4">
+                                                <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Check className="w-5 h-5" /></div>
+                                                <div><strong className="text-orange-300">Scraping Infrastructure:</strong> Continuous, real-time monitoring of news, social media, and legal filings.</div>
+                                            </li>
+                                            <li className="flex gap-4">
+                                                <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Globe className="w-5 h-5" /></div>
+                                                <div><strong className="text-orange-300">Server Architecture:</strong> Hosting the database and the D3.js-powered visualization engine that makes the data move.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <h2 className="text-3xl font-bold text-white">Help Keep This Project Alive</h2>
-                            </div>
 
-                            <div className="text-left bg-black/40 p-6 rounded-xl border border-white/10 space-y-4">
-                                <div className="flex gap-3 items-start">
-                                    <ShieldAlert className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" />
-                                    <p className="text-foreground/80 text-sm italic">
-                                        <strong>Note:</strong> Because of the financial situation in Lebanon, receiving international payments is incredibly difficult. PayPal does not operate directly here. I have to use trusted intermediaries to cash out any support. It is a hurdle, but currently, it represents the only viable way for me to sustain this work.
-                                    </p>
+                                <div className="pt-8 border-t border-orange-500/20">
+                                    <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">A Message from the Frontier</h2>
+                                    <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
+                                        <p>
+                                            This project is the culmination of 15 years as a digital strategist and growth hacker in Dubai, mixed with a lifetime of "breaking things to learn them." I moved back to Lebanon a few years ago, and since then, I've lived through an economic collapse, a port explosion, two failed revolutions, and I am currently navigating my third war.
+                                        </p>
+                                        <p>
+                                            Living here gives me a unique perspective on the real-world consequences of the transactional and destructive rhetoric cataloged in this database. The Trump Files is my resistance. It is the height of my experience as a self-taught coder and my philosophy that technology and creativity must merge to make something out of nothing. I built this because he "floods the zone" so hard that people literally forget the scale of the damage. This archive ensures the world doesn't forget.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
+                            </CardContent>
+                        </Card>
+                    </motion.div>
 
-                            <p className="text-xl text-foreground/90 font-medium max-w-2xl mx-auto">
-                                If you value this archive and want to see it continue to grow, please consider donating. Even a small amount helps cover hosting costs and keeps the lights on.
-                            </p>
+                    {/* How to support */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-400 mb-8 font-arctic-3d text-center">
+                            How to Support (and How to Hire Me)
+                        </h2>
 
-                            <div className="pt-4">
-                                <Link href="https://paypal.me/joeyleq" target="_blank">
-                                    <Button className="w-full sm:w-auto px-12 py-6 text-xl font-bold rounded-full bg-gradient-to-r from-[#00457C] to-[#0079C1] hover:from-[#003a68] hover:to-[#006099] text-white shadow-lg shadow-blue-500/20 border border-blue-400/30 transition-all hover:scale-105">
-                                        <Coins className="w-6 h-6 mr-3" />
-                                        Donate via PayPal
-                                    </Button>
-                                </Link>
-                                <p className="mt-4 text-sm text-foreground/50">
-                                    Secure transaction via PayPal.me/joeyleq
-                                </p>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </motion.div>
+                        <div className="text-center text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
+                            I'm not a fan of "corporate speak" or begging for handouts. I'm currently growing my portfolio and looking for the next "Head-Scratcher." If you have a project that feels like a dead end—something that needs to be faster, smarter, or requires an equal dose of tech and art—reach out. Whether it's Agentic Automation, Fine-Tuning LLMs, or AI-Assisted Development, I specialize in finding the "Better Way."
+                            <br /><br />
+                            If you value this archive, here is how you can help keep the lights on:
+                        </div>
 
-                {/* Footer Note */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="text-center text-foreground/50 text-sm max-w-xl mx-auto"
-                >
-                    <p>
-                        Whatever you can give allows me to spend more time scraping data and less time worrying about how to keep the servers running. Thank you for your solidarity.
-                    </p>
-                </motion.div>
+                        <div className="grid md:grid-cols-2 gap-8">
+                            {/* PayPal */}
+                            <Card className="glass-card border-orange-500/30 bg-black/60 shadow-[0_0_20px_rgba(255,101,0,0.1)] hover:shadow-[0_0_30px_rgba(255,101,0,0.2)] transition-shadow">
+                                <CardContent className="p-8 text-center flex flex-col h-full justify-between items-center space-y-6">
+                                    <div className="space-y-4 flex flex-col items-center">
+                                        <div className="w-16 h-16 rounded-full bg-[#00457C]/20 flex items-center justify-center border border-[#0079C1]/50">
+                                            <CreditCard className="w-8 h-8 text-[#0079C1]" />
+                                        </div>
+                                        <h3 className="text-2xl font-bold font-arctic-guardian">1. PayPal</h3>
+                                        <p className="text-foreground/70 text-sm">Every contribution goes directly toward hosting and the AI-processing power required to scrape new data.</p>
+                                    </div>
+                                    <Link href="https://www.paypal.me/joeyq2" target="_blank" className="w-full group">
+                                        <motion.div
+                                            whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(0, 121, 193, 0.4)" }}
+                                            whileTap={{ scale: 0.98 }}
+                                            className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-[#00457C] to-[#0079C1] text-white flex items-center justify-center gap-3 cursor-pointer transition-all"
+                                        >
+                                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.93A.77.77 0 0 1 5.703 2.3h6.181c2.052 0 3.587.472 4.564 1.402.976.93 1.296 2.275 1.032 3.88-.026.158-.058.317-.098.48-.36 1.79-1.078 3.108-2.148 3.926-1.06.812-2.514 1.224-4.323 1.224h-1.56a.77.77 0 0 0-.76.638l-.827 5.23a.641.641 0 0 1-.633.548H7.076zm13.55-15.48c-.022.132-.048.267-.08.407-.94 4.817-4.158 6.481-8.27 6.481H10.57a.946.946 0 0 0-.934.785l-1.12 7.09a.49.49 0 0 0 .484.568h3.392a.77.77 0 0 0 .76-.638l.032-.161.604-3.826.039-.212a.77.77 0 0 1 .76-.638h.48c3.1 0 5.524-1.259 6.234-4.9.297-1.522.143-2.793-.641-3.686a3.07 3.07 0 0 0-.882-.671z"/></svg>
+                                            Donate via PayPal
+                                        </motion.div>
+                                    </Link>
+                                </CardContent>
+                            </Card>
 
+                            {/* Ko-Fi */}
+                            <Card className="glass-card border-orange-500/30 bg-black/60 shadow-[0_0_20px_rgba(255,101,0,0.1)] hover:shadow-[0_0_30px_rgba(255,101,0,0.2)] transition-shadow">
+                                <CardContent className="p-8 text-center flex flex-col h-full justify-between items-center space-y-6">
+                                    <div className="space-y-4 flex flex-col items-center">
+                                        <div className="w-16 h-16 rounded-full bg-[#29ABE0]/20 flex items-center justify-center border border-[#29ABE0]/50">
+                                            <Heart className="w-8 h-8 text-[#29ABE0]" />
+                                        </div>
+                                        <h3 className="text-2xl font-bold font-arctic-guardian">2. Ko-Fi</h3>
+                                        <p className="text-foreground/70 text-sm">Buy me a coffee on Ko-Fi. Quick, easy, no account required.</p>
+                                    </div>
+                                    <Link href="https://ko-fi.com/poi5on" target="_blank" className="w-full group">
+                                        <motion.div
+                                            whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(41, 171, 224, 0.4)" }}
+                                            whileTap={{ scale: 0.98 }}
+                                            className="w-full overflow-hidden rounded-xl cursor-pointer"
+                                        >
+                                            <Image
+                                                src="/images/support_me_on_kofi_blue.png"
+                                                alt="Support Me on Ko-Fi"
+                                                width={400}
+                                                height={60}
+                                                className="w-full h-14 object-contain bg-[#29ABE0] rounded-xl hover:brightness-110 transition-all"
+                                            />
+                                        </motion.div>
+                                    </Link>
+                                </CardContent>
+                            </Card>
+                        </div>
+
+                        {/* Crypto Wallet */}
+                        <div className="mt-8">
+                            <Card className="glass-card border-orange-500/30 bg-black/60">
+                                <CardContent className="p-8">
+                                    <div className="flex flex-col md:flex-row gap-6 items-center mb-8">
+                                        <div className="w-16 h-16 rounded-full bg-orange-500/20 flex items-center justify-center border border-orange-500/50 flex-shrink-0">
+                                            <Bitcoin className="w-8 h-8 text-orange-500" />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-2xl font-bold font-arctic-guardian text-orange-400">3. Crypto (The Survival Standard)</h3>
+                                            <p className="text-foreground/70 text-sm">In a collapsed banking system, this is the most direct way to support.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="grid md:grid-cols-2 gap-8">
+                                        {/* TRON */}
+                                        <div className="bg-gradient-to-br from-red-950/40 to-black rounded-2xl border border-red-500/30 p-6 flex items-center gap-6 shadow-inner">
+                                            <div className="bg-white p-2 rounded-xl flex-shrink-0">
+                                                <Image src="/images/qr_tron.png" alt="Tron QR" width={80} height={80} className="rounded-lg" />
+                                            </div>
+                                            <div className="flex-1 w-full overflow-hidden">
+                                                <h4 className="text-red-400 font-bold mb-2 flex items-center gap-2"><CreditCard className="w-4 h-4" /> USDT (TRON/TRC-20)</h4>
+                                                <div className="bg-black/50 p-3 rounded border border-white/10 font-mono text-xs text-foreground/60 mb-3 truncate w-full">
+                                                    TLQro76v2tA1kGst5V3R1811H2m8wk1ho
+                                                </div>
+                                                <CopyButton text="TLQro76v2tA1kGst5V3R1811H2m8wk1ho" />
+                                            </div>
+                                        </div>
+
+                                        {/* POLYGON */}
+                                        <div className="bg-gradient-to-br from-purple-950/40 to-black rounded-2xl border border-purple-500/30 p-6 flex items-center gap-6 shadow-inner">
+                                            <div className="bg-white p-2 rounded-xl flex-shrink-0">
+                                                <Image src="/images/qr_polygon.png" alt="Polygon QR" width={80} height={80} className="rounded-lg" />
+                                            </div>
+                                            <div className="flex-1 w-full overflow-hidden">
+                                                <h4 className="text-purple-400 font-bold mb-2 flex items-center gap-2"><CreditCard className="w-4 h-4" /> USDT (Polygon)</h4>
+                                                <div className="bg-black/50 p-3 rounded border border-white/10 font-mono text-xs text-foreground/60 mb-3 truncate w-full">
+                                                    0x120818228122329381726eE678
+                                                </div>
+                                                <CopyButton text="0x120818228122329381726eE678" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </motion.div>
+
+                    <div className="mt-16 text-center text-foreground/50 text-base max-w-2xl mx-auto italic border-t border-orange-500/20 pt-8">
+                        "I'm looking forward to the conversation—and to the day I see Donald Trump finally held accountable for his crimes. I hope this project plays even the slightest part in that fate. But to be honest... I'm just getting started."
+                    </div>
+                </div>
             </div>
         </div>
     );

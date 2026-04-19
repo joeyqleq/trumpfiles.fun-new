@@ -1,0 +1,22 @@
+{
+  "plugins": {
+    "figma": {
+      "enabled": true
+    },
+    "vercel": {
+      "enabled": true
+    },
+    "neon-postgres": {
+      "enabled": true
+    },
+    "cloudflare": {
+      "enabled": true
+    },
+    "functions": {
+      "enabled": true
+    },
+    "1password": {
+      "enabled": true
+    }
+  }
+}

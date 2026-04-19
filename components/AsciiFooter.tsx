@@ -30,7 +30,7 @@ const ASCII_ART = `
 ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝`;
 
 export default function AsciiFooter() {
-  const { formatted: entryCount } = useEntryCount();
+  const { formatted: entryCount, lastScrapedFormatted } = useEntryCount();
   return (
     <footer className="relative border-t border-white/10 bg-black/50 backdrop-blur-sm overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -63,6 +63,11 @@ export default function AsciiFooter() {
             <p className="text-sm text-foreground/60 mt-6">
               A comprehensive, data-driven archive documenting {entryCount}+ incidents across 40+ years.
             </p>
+            {lastScrapedFormatted && (
+              <p className="text-xs text-orange-500/50 mt-2 font-mono tracking-wider">
+                LAST UPDATED: {lastScrapedFormatted}
+              </p>
+            )}
           </div>
 
           {/* Trump Bathtub Image - Center Column (Centered Both Horizontally & Vertically) */}
@@ -103,6 +108,16 @@ export default function AsciiFooter() {
                 <li>
                   <Link href="/wtf" className="text-foreground/70 hover:text-orange-400 transition-colors">
                     What The Fuck?
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/enigma" className="text-foreground/70 hover:text-orange-400 transition-colors">
+                    Enigma
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/donate" className="text-foreground/70 hover:text-orange-400 transition-colors">
+                    WHOAMI?
                   </Link>
                 </li>
               </ul>

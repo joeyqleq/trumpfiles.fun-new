@@ -123,7 +123,7 @@ const MarqueeCard = ({ entry }: { entry: AICompleteTrumpData }) => {
 
 export default function Home() {
   const [entries, setEntries] = useState<AICompleteTrumpData[]>([]);
-  const { count: entryCount, loading: entryLoading } = useEntryCount();
+  const { count: entryCount, loading: entryLoading, lastScrapedFormatted } = useEntryCount();
 
   const features = [
     {
@@ -280,7 +280,7 @@ export default function Home() {
                       chaos={0.08}
                       borderRadius={16}
                     >
-                      <div className="px-6 py-2.5 bg-black/60 backdrop-blur-sm rounded-2xl">
+                      <div className="px-6 py-3 bg-gradient-to-r from-orange-950/80 via-black/70 to-orange-950/80 backdrop-blur-sm rounded-2xl border border-orange-500/10 flex flex-col items-center gap-1">
                         <ShinyText
                           text={entryLoading ? "Loading..." : `${entryCount}+ ENTRIES DOCUMENTED`}
                           speed={2.9}
@@ -294,6 +294,11 @@ export default function Home() {
                           disabled={false}
                           className="text-sm md:text-base font-bold tracking-wide"
                         />
+                        {lastScrapedFormatted && (
+                          <span className="text-[10px] md:text-xs text-orange-500/60 tracking-widest uppercase font-mono">
+                            Last updated {lastScrapedFormatted}
+                          </span>
+                        )}
                       </div>
                     </ElectricBorder>
                   </div>
@@ -398,12 +403,12 @@ export default function Home() {
                       />
                     </div>
 
-                    {/* Actual Image - White Inverted to look good on dark - No background box */}
+                    {/* Actual signature image */}
                     <div className="relative z-10 w-full h-full">
                       <img
                         src="/images/trump_signature_2.svg"
                         alt="Signature"
-                        className="w-full h-full object-contain filter invert brightness-0"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                   </div>
@@ -621,13 +626,16 @@ export default function Home() {
 
                   <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
                     <p>
-                      <strong className="text-orange-400">The Trump Files</strong> is a scientific and entertainment exercise leveraging AI to scrape, catalogue, and analyze everything written about Trump's crimes, racism, narcissism, and compulsive lying.
+                      <strong className="text-orange-400">The Trump Files</strong> is a half-scientific, half-satirical counter-archive leveraging AI to scrape, catalogue, and analyze the most fucked-up things Trump has ever said or done.
                     </p>
                     <p>
-                      This archive serves to <strong className="text-orange-400">understand what makes him tick</strong>, provide evidence for potential prosecution, chronicle the worst of the worst for the historical record, and offer data-driven insights into his mind and methods.
+                      We track not just headline scandals, but also the lies, insults, racist riffs, vanity spirals, corrupt little schemes, deranged policy theatrics, and primary-source Trump quotes that would get him laughed out of any hypothetical court of morality, ethics, manners, or basic human decency.
                     </p>
                     <p>
-                      Our goal? <strong className="text-orange-400">Jail or bar from heaven</strong>—whichever comes first.
+                      This archive exists to <strong className="text-orange-400">beat flood-the-zone amnesia</strong>, preserve receipts for the historical record, support accountability, and give people a way to remember the pattern instead of drowning in the churn.
+                    </p>
+                    <p>
+                      Our goal? <strong className="text-orange-400">Jail, ridicule, or bar from heaven</strong>—whichever hits first.
                     </p>
                     <div className="pt-6 flex gap-4 justify-center">
                       <Link href="/catalog">

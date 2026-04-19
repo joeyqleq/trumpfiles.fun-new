@@ -4,7 +4,7 @@ import AsciiFooter from "@/components/AsciiFooter";
 import "./globals.css";
 import Script from "next/script";
 import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, neuething } from "./fonts";
-import BlobCursor from "@/components/ui/BlobCursor";
+// import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { sql } from "@/lib/neonClient";
 
@@ -138,7 +138,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
         <meta name="theme-color" content="#FF6500" />
@@ -207,7 +207,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`
+      <body suppressHydrationWarning className={`
           ${arcticGuardian.variable} 
           ${arcticGuardian3D.variable}
           ${arcticGuardianGrad.variable}
@@ -222,7 +222,7 @@ export default function RootLayout({
           font-sans antialiased min-h-screen bg-background
         `}>
         <AnimatedBackground>
-          <BlobCursor />
+          {/* <BlobCursor /> */}
           <Navigation />
           <main className="pt-16">
             {children}

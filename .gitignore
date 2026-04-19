@@ -53,3 +53,10 @@ next-env.d.ts
 /components/chat/
 /lib/chat/
 /types/chat.ts
+
+/net-commander
+
+# OpenMemory - IDE/Assistant specific rules
+.cursor/rules/openmemory.mdc
+AGENTS.md
+AGENTS.md

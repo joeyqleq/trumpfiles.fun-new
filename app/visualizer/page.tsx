@@ -35,6 +35,7 @@ import { AICompleteTrumpData } from "@/types/database";
 import { BarChart3, PieChart as PieChartIcon, Activity, TrendingUp, Target, Zap } from "lucide-react";
 import TrueFocus from "@/components/TrueFocus";
 import PageDecorations from "@/components/PageDecorations";
+import Image from "next/image";
 
 // Diverse color palette for visual differentiation
 const COLORS = [
@@ -336,6 +337,18 @@ export default function VisualizerPage() {
             Explore patterns, correlations, and insights across {entries.length.toLocaleString()} documented incidents
           </p>
         </motion.div>
+
+        {/* Satirical sidebar float */}
+        <div className="flex justify-start mb-6 pl-2">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.15 }}
+            className="relative group"
+          >
+            <Image src="/images/art/pdf_diddler.png" alt="Trump Diddler Satire" width={140} height={170} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:-rotate-2" />
+          </motion.div>
+        </div>
 
         {/* Key Stats Overview */}
         <motion.div

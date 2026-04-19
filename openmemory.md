@@ -1,0 +1,136 @@
+## Overview
+- Next.js 15 app with Neon Postgres backend.
+- Core dataset tables: `trump_entries`, `trump_individual_scores`, `trump_sources`, `trump_keywords`.
+- Read model uses views like `ai_complete_trump_data` that join entries + scores + keywords.
+- Current live cutoff after the April 18, 2026 follow-up batches: max `entry_number = 2313`, max SQL `date_start = 2026-04-18`, `trump_entries = 2284`, `trump_individual_scores = 2284`, `trump_sources = 2618`, `trump_keywords = 8973`.
+- Project mission: `The Trump Files` is a half-scientific, half-satirical counter-archive of the most fucked-up things Trump has said or done.
+- Editorial purpose: fight flood-the-zone amnesia, preserve receipts, support accountability, and document the conduct that would fail a hypothetical court of morality, ethics, manners, and public memory even when formal law does not capture it.
+- Tone target: factual, anti-amnesia, openly judgmental, darkly funny when warranted, and never neutralized into bland both-sides language.
+
+## Architecture
+- Frontend (Next.js `app/` routes) reads from Neon via `@/lib/neonClient`.
+- Data integrity relies on:
+  - One `trump_individual_scores` row per `entry_number`
+  - `trump_keywords` rows for keyword aggregation in `ai_complete_trump_data`
+  - `trump_sources` rows for source attribution
+- UI field behavior matters for ingestion:
+  - Card front clamps `title` + `synopsis`.
+  - Card back shows truncated `synopsis`, `rationale_short`, and source chips.
+  - Entry detail page renders the full `synopsis`, keywords, and score breakdown.
+- Date nuance: Postgres `date` fields surface through JS as timestamp-looking strings; use SQL-date semantics when determining cutoffs to avoid off-by-one recency windows.
+
+## User Defined Namespaces
+- [Leave blank - user populates]
+
+## Components
+- `lib/neonClient.ts`: Neon connection wrapper using `DATABASE_URL`.
+- `app/api/entries/route.ts`: Reads from `ai_complete_trump_data` view.
+- `app/api/catalog-data/route.ts`: Aggregates sources per entry for catalog output.
+- `components/FlippableEntryCard.tsx`: Source-logo alias map and card-size constraints future ingestion must respect.
+- `app/page.tsx`: Homepage mission statement.
+- `app/wtf/page.tsx`: Explicit public explanation of the site's satire/data ethos and anti-amnesia purpose.
+- `docs/trumpfiles-ingestion-playbook.md`: Canonical future-agent briefing for mission, sourcing, tone, logos, and batch workflow.
+- DB Views:
+  - `ai_complete_trump_data`: joins entries + scores + keywords and adds `fucked_up_rank`.
+
+## Patterns
+- Entry ingestion scripts in `scripts/_tmp_add_entries_*.mjs` insert into:
+  - `trump_entries` with `scores` jsonb + `age` + `keywords`.
+  - `trump_sources` for at least one source per entry.
+- Score JSON pattern (stored in `trump_entries.scores`): includes all eight dimensions + rationale fields.
+- Homepage hero visual rule: the signature asset at `public/images/trump_signature_2.svg` should render in its native artwork colors; do not apply `invert`/forced whitening filters in `app/page.tsx`.
+- Keyword aggregation relies on `trump_keywords` table (not only `trump_entries.keywords` array).
+- Brand logos naming: domains mapped to `/public/brand_logos/<domain-with-dashes>.png` (see `LOGO_MAPPING.json`).
+- If Clearbit logo downloads fail, generate local 128x128 placeholder PNGs with ImageMagick and domain labels.
+- Batch ingestion is usually done in 25-30 entry increments using a generated SQL bundle that inserts into `trump_entries`, `trump_individual_scores`, `trump_sources`, and `trump_keywords` in one transaction.
+- Use a metrics rubric (impressions, reach_estimate, financial_cost_usd, public_reaction) keyed by category/subcategory to keep estimates consistent across entries.
+- New catalog quality rule: titles should remain explicitly Trump-centered (agent/action framing), not generic macro framing.
+- New content rule for front-end flow: write substantially longer `synopsis` text (~400+ chars) so card back can truncate and entry detail page functions as full discussion.
+- New ingestion guardrail: pre-validate all distinct source URLs with `curl -I -L` and only ship batch inserts when every URL returns `200` to avoid broken source cards.
+- SQL generation guardrail: always escape apostrophes in `trump_sources.title` with `sql_escape(...)` (raw apostrophes caused `syntax error at or near \"s\"` during batch insert).
+- Neon execution guardrail: run batch insert and verification sequentially (not in parallel) because parallel checks can read pre-commit state and produce false negatives on `max_entry`/counts.
+- Source-pool expansion pattern: pre-check candidate URLs with `curl -I -L --max-time 20` and keep only reliably reachable links (`200` or known-acceptable publisher behavior) before batch generation.
+- DB-write fallback pattern: when MCP transaction handoff is unavailable or impractical for very large SQL arrays, execute the 4-statement batch JSON through local `pg` client in a single `BEGIN/COMMIT` transaction using `.env.local` `DATABASE_URL`, then run explicit post-commit count checks.
+- Reusable transaction helper: `scripts/apply-sql-batch.mjs --file <batch.json>` applies a generated JSON array of SQL statements sequentially through `pg` inside one `BEGIN/COMMIT` block and rolls back on failure.
+- Repetition guardrail: before drafting a new 25-entry batch, query the latest inserted `entry_number/title/category/subcategory` window and rotate source clusters/topic framing to avoid near-duplicate title patterns while keeping Trump-centered naming.
+- Throughput pattern: run ingestion in paired 25-entry cycles (50 entries total), with source pre-validation + recent-title scan before each cycle, then immediate post-cycle verification on all four tables plus global null-metric check.
+- Source-validation fallback: if `HEAD` checks return non-standard publisher responses (e.g., `405`/`402`), run a `GET` status probe with `curl -L -o /dev/null -w '%{http_code}'` before deciding whether a source is usable.
+- Slow-source validation fallback (2026-03-23): if a reputable source times out at `--max-time 20` during direct `GET` validation, retry the exact article URL once at `--max-time 45` before dropping it; several Guardian and LA Times URLs in the `2134–2163` batch cleared on the longer retry and were valid production sources.
+- Pooler-safe dedupe check (2026-04-02): very large inline `psql` URL-array queries can make the Neon pooler drop the connection before returning results; for pre-insert duplicate checks, prefer smaller point checks or a driver-backed array parameter (`psycopg2`/`pg`) over giant shell SQL literals.
+- Shell-safe DB access rule (2026-04-02): for one-off `node`/`psql` checks, do not rely on `source .env.local`; extract `DATABASE_URL` directly from the file (`grep '^DATABASE_URL=' .env.local | cut -d= -f2-`) because other env lines can keep the variable from exporting cleanly in shell sessions.
+- Binary-path guardrail (2026-04-18): in this desktop environment, non-interactive shells may not have `node` or `psql` on `PATH`; use full paths (`/opt/homebrew/bin/node`, `/opt/homebrew/bin/psql`) for batch apply and verification work.
+- OpenMemory MCP runtime note: when `openmemory` tool handshake times out, continue the ingestion workflow and record operational learnings directly in `openmemory.md` until MCP becomes reachable again.
+- High-volume batch mode: when asked to increase entries per batch, generate a single 50-entry SQL bundle (`entry range = +50`) and execute the same 4-statement transaction once, then verify all 4 tables and global null-metric integrity.
+- Dedupe cleanup pattern (2026-03-04): keep a canonical `entry_number` per duplicate cluster, remap child rows (`trump_sources`, `trump_keywords`) to canonical IDs, remove duplicate `trump_individual_scores` for dropped IDs, then delete duplicate `trump_entries`.
+- Safety pattern for dedupe: snapshot all rows that will be removed into `public.trump_dedupe_backup_log` with `run_tag='dedupe_2026_03_04_v1'` before writes; this run stored 204 backup rows.
+- Anti-recycle ingestion guardrail: enforce `1 source URL = 1 concrete event entry` for news batches unless there is a clearly distinct, independently verifiable sub-event with a different date/actor/action.
+- Quote-ingestion pattern: when user provides raw quote lists from compilations, only create entries for quotes that can be tied to a reachable source URL and a concrete event date; skip unverifiable lines instead of forcing low-confidence inserts.
+- High-volume source harvesting pattern (2026-03-04): combine Guardian Open API (`content.guardianapis.com/search` with `api-key=test`) and major RSS feeds (NPR/PBS/CBS/ABC/LA Times/NYT/AP) into a candidate pool, then remove URLs already present in `trump_sources` before SQL generation.
+- Topic-quality guardrail for bulk runs: filter out non-event/live/opinion digest patterns (`/live/`, `as it happened`, `at a glance`, newsletter/mail formats) before batch generation to reduce recycled narrative variants.
+- 200-entry sprint pattern: generate four validated 50-entry bundles from one cleaned pool (`1831–1880`, `1881–1930`, `1931–1980`, `1981–2030`) and apply via one `BEGIN/COMMIT` transaction per bundle, followed by parity checks across entries/scores/sources/keywords and null-metric checks.
+- Recency-first ingestion pattern (2026-03-05): for “today/yesterday” requests, collect with tight date windows (`from-date = yesterday`, `to-date = today`) and keep only entries whose `date_published` matches those exact dates before SQL generation.
+- Real-time quality guardrail: split recency ingestion into two passes: (1) URL-validated pass for guaranteed reachable links, then (2) small follow-up pass for reputable paywalled sources if needed to cover same-day major events while preserving one-URL-per-event dedupe.
+- Recency expansion fallback: when strict today/yesterday windows produce too few concrete URLs, widen only to the immediately previous day (`today-2`) and continue filtering out low-signal formats (`/live/`, `watch:`, “as it happened”, opinion/editorial digests, callouts like “tell us”) before inserting.
+- Duplicate-avoidance upgrade (2026-03-05): for recency batches, enforce two dedupe layers before insert:
+- URL dedupe against `trump_sources` (hard blocker).
+- Semantic title dedupe against recent entries (token-set similarity threshold, stricter on same-date stories) plus intra-batch similarity checks to avoid cross-publisher retellings of the same event.
+- Behavior-focus sourcing pattern (2026-03-05): for “senility/incoherence” requests, prioritize mainstream coverage that documents observable behavior (contradictory messaging, shifting rationale, fact-check conflicts, public concern polling) and avoid unverified medical diagnosis claims.
+- Editorial expansion rule (2026-03-22): do not limit ingestion to headline news events. Also hunt for primary-source Trump quotes, rally lines, interviews, Truth Social posts, official statements, transcripts, and clipped moments that are blatant lies, cruelty, racism, misogyny, humiliating incompetence, vulgar absurdity, grift, vanity, or moral rot even when no mainstream outlet elevates them into a full scandal article.
+- Moral-court filter (2026-03-22): if a sourced Trump action or quote would materially worsen his standing in a hypothetical court of morality, ethics, manners, religion, public decency, or historical memory, it is in scope if it is concrete and verifiable.
+- Humor rule (2026-03-22): the site is allowed to mock, sneer, and laugh at Trump, but entries must not invent facts. Satire lives in phrasing and framing, not fabrication.
+- Source hierarchy rule (2026-03-22): acceptable evidence includes primary-source transcripts/videos/posts/archived statements, mainstream reporting, fact-checks, court/government docs, and reputable NGO documentation. A mainstream article is not mandatory if the primary-source evidence is solid and reachable.
+- Anti-trivia rule (2026-03-22): “funny” alone is not enough. A quirky item still needs at least one of these properties: moral indictment value, pattern value, public-impact relevance, symbolic value, or unusually revealing absurdity.
+- War coverage rule (2026-03-22): for war or mass-harm topics, entries should identify agency and responsibility from sourced facts instead of flattening all actors into neutral chaos language; avoid euphemistic framing when sources establish aggression, civilian harm, deceit, or disproportionate conduct.
+- Logo workflow rule (2026-03-22): every new source domain used in production should have a working local PNG under `public/brand_logos/`; if the domain needs aliasing or does not map cleanly, update `components/FlippableEntryCard.tsx` `DOMAIN_LOGO_MAP` and keep `public/brand_logos/LOGO_MAPPING.json` in sync when practical.
+- URL hygiene rule (2026-03-22): every source URL shipped in a batch must be reachable and must match the actual entry it supports; do not rely on a publisher homepage, topic hub, or generic profile if a direct article/transcript/post URL is available.
+- Future-agent quick start (2026-03-22):
+  - Read `openmemory.md`, then `docs/trumpfiles-ingestion-playbook.md`, then inspect the latest DB cutoff.
+  - Determine the uncovered SQL-date window before searching.
+  - Harvest, dedupe, validate URLs, ensure logos, generate the 4-statement SQL batch, apply sequentially, and verify counts.
+  - Preserve the site's factual-but-vicious tone; never sanitize the mission into generic neutrality.
+- Applied batch record (2026-03-22):
+  - Inserted `2095–2108` as a 14-entry Iran-war batch.
+  - Source domains used: `apnews.com`, `pbs.org`.
+  - All 14 source URLs were GET-validated to `200` before insert.
+  - Post-commit parity checks passed for entries, scores, sources, and keywords; no missing child rows inside `2095–2108`.
+- Applied batch record (2026-03-23):
+  - Inserted `2109–2133` as a broader 25-entry batch covering war escalation, economic fallout, immigration crackdowns, academic pressure, press intimidation, health disinformation, and quote-level moral-depravity items.
+  - Source domains used: `theguardian.com`, `cbsnews.com`, `latimes.com`, `pbs.org`.
+  - All shipped source URLs were GET-validated to `200` before insert.
+  - `nytimes.com` candidates were intentionally dropped from the live batch after direct GET checks returned `403`; avoid shipping those URLs unless the front-end/source policy changes.
+  - Post-commit parity checks passed for entries, scores, sources, and keywords; no missing child rows inside `2109–2133`.
+- Applied batch record (2026-03-23):
+  - Inserted `2134–2163` as a broader 30-entry batch covering war responsibility, MAGA backlash, food-supply fallout, climate rollback, deportation cruelty, voting restrictions, imperial threats, press intimidation, vanity/grift, and public-opinion blowback.
+  - Source domains used: `theguardian.com`, `npr.org`, `pbs.org`, `latimes.com`, `cbsnews.com`.
+  - All 30 shipped source URLs were direct-GET validated to `200`; four reputable pages initially timed out at 20 seconds and cleared on a 45-second retry.
+  - Post-commit parity checks passed for entries, scores, sources, and keywords; no missing child rows inside `2134–2163`.
+- Applied batch record (2026-04-02):
+  - Inserted `2164–2193` as a 30-entry batch spanning March 25, 2026 through April 1, 2026, with the missing-window assumption anchored to the real post-`2163` cutoff rather than the user's aborted March 31 search attempt.
+  - Coverage mix: Iran-war escalation, alliance rupture, extractive motives, birthright citizenship, public-media retaliation, anti-DEI civil-rights rollback, immigration cruelty, welfare sabotage, environmental destruction, vanity/cult-of-personality, and Jan. 6 accountability.
+  - Source domains used: `theguardian.com`, `pbs.org`, `cbsnews.com`, `npr.org`, `latimes.com`.
+  - All 30 shipped source URLs were direct-GET validated to `200` before insert.
+  - Post-commit parity checks passed for entries, scores, sources, and keywords; no missing child rows inside `2164–2193`.
+- Applied batch record (2026-04-02):
+  - Inserted `2194–2213` as a deeper 20-entry follow-up batch drawn from the same March 22 to April 2 window, but with a broader storytelling mix than the previous run.
+  - Coverage mix: White House war propaganda, Iran-war contradiction management, Supreme Court intimidation theater, immigrant warehousing, ideological rewiring of the Foreign Service, Venezuela sanctions hypocrisy, anti-science agency hollowing, clean-energy sabotage, Cuba sanctions whiplash, FBI smear politics, election hypocrisy, vanity/cult-of-personality stunts, absurd patronage, false peace branding, intelligence gaps, public-health vacancy sabotage, alliance humiliation, and Lebanon escalation.
+  - Source domains used: `whitehouse.gov`, `npr.org`, `pbs.org`, `cbsnews.com`, `theguardian.com`, `latimes.com`.
+  - All 20 shipped source URLs were direct-GET validated to `200`, and hard URL dedupe against `trump_sources` returned zero collisions before insert.
+  - Post-commit parity checks passed for entries, scores, sources, and keywords; no missing child rows inside `2194–2213`.
+- Applied batch record (2026-04-18):
+  - Inserted `2214–2263` as a 50-entry April 2 to April 18 batch built from a cleaned recency pool plus four hand-added AP items that the stock collector missed.
+  - Coverage mix: USAID / DOGE devastation, Iran-war diplomatic chaos, White House ballroom vanity, DACA deportations, pope feud, Hormuz re-closure and negotiation stalls, FISA extension, Cuba pressure hypocrisy, campus targeting, DOJ voter-data failure, ICE leadership turmoil, aid destruction, public-health staffing, Fed pressure, climate denial, judicial intimidation, AI-Jesus spectacle, alliance humiliation, NASA gutting, migrant dumping, inflation fallout, and federal-workforce ruin.
+  - Source domains used: `theguardian.com`, `apnews.com`, `npr.org`, `pbs.org`, `cbsnews.com`, `latimes.com`.
+  - All 50 shipped source URLs were direct-GET validated to `200`, and hard URL dedupe against `trump_sources` returned zero collisions before insert.
+  - Post-commit parity checks passed for entries, scores, sources, and keywords; no missing child rows inside `2214–2263`.
+- Applied batch record (2026-04-18):
+  - Inserted `2264–2293` as a 30-entry April 2 to April 8 backfill batch so the April window was not front-loaded only toward the latest dates.
+  - Coverage mix: provisional ceasefire branding, Lebanon mass-killing fallout, NASA lie-by-self-congratulation, civilization-scale threats, journalist intimidation, civil-rights rollback, Alcatraz punishment spectacle, MilitaryTok blowback, defense-budget cruelty, Starmer mockery, anti-mail-voting lawsuits, tariff threats, Bondi/Gabbard turbulence, NATO rupture, and market shock.
+  - Source domains used: `theguardian.com`, `latimes.com`.
+  - All 30 shipped source URLs were direct-GET validated to `200`, and hard URL dedupe against `trump_sources` returned zero collisions before insert.
+  - Post-commit parity checks passed for entries, scores, sources, and keywords; no missing child rows inside `2264–2293`.
+- Applied batch record (2026-04-18):
+  - Inserted `2294–2313` as a 20-entry deeper April 12 to April 18 follow-up batch focused on pope-feud fallout, rally-level moral rot, Pakistan backchannel diplomacy, FEMA patronage, Iran-deal spin, anti-mail-voting backlash, DOJ politicization, student-debt retaliation, migrant-death backlash, climate blackout at finance talks, alliance rebuff, and Trump Media legal retreat.
+  - Source domains used: `theguardian.com`, `cbsnews.com`, `npr.org`, `latimes.com`, `abcnews.com`.
+  - All 20 shipped source URLs were direct-GET validated to `200`, and hard URL dedupe against `trump_sources` returned zero collisions before insert.
+  - Existing local logo coverage already handled all domains used in this batch (`theguardian.com`, `npr.org`, `abcnews.go.com` fallback for `abcnews.com`, `cbsnews.com`, `latimes.com`), so no logo-file changes were required.
+  - Post-commit parity checks passed for entries, scores, sources, and keywords; no missing child rows inside `2294–2313`.

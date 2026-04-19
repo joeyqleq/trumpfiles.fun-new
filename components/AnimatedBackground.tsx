@@ -24,35 +24,30 @@ interface AnimatedBackgroundProps {
 
 export default function AnimatedBackground({ children }: AnimatedBackgroundProps) {
     return (
-        <>
-            {/* Fixed background layer with GradientBlinds */}
+        <div className="relative min-h-screen">
+            {/* Extremely lightweight subtle gradient animation */}
             <div
-                className="fixed inset-0 z-0 pointer-events-none"
+                className="fixed inset-0 z-0 pointer-events-none opacity-20"
+                style={{
+                    background: "radial-gradient(circle at 50% 50%, #FF6500 0%, #1a1a1a 100%)",
+                    backgroundSize: "200% 200%",
+                    animation: "pulse-subtle 15s ease infinite alternate",
+                }}
                 aria-hidden="true"
-            >
-                <GradientBlinds
-                    gradientColors={ORANGE_COLORS}
-                    angle={75}
-                    noise={0.25}
-                    blindCount={12}
-                    blindMinWidth={80}
-                    mouseDampening={0.12}
-                    scrollDampening={0.08}
-                    mirrorGradient={true}
-                    spotlightRadius={0.6}
-                    spotlightSoftness={1.2}
-                    spotlightOpacity={0.8}
-                    distortAmount={0.3}
-                    shineDirection="left"
-                    mixBlendMode="normal"
-                    className="opacity-30"
-                />
-            </div>
+            ></div>
+
+            <style jsx global>{`
+                @keyframes pulse-subtle {
+                    0% { background-position: 0% 0%; opacity: 0.15; }
+                    50% { opacity: 0.25; }
+                    100% { background-position: 100% 100%; opacity: 0.15; }
+                }
+            `}</style>
 
             {/* Content layer */}
-            <div className="relative z-10">
+            <div className="relative z-10 w-full h-full">
                 {children}
             </div>
-        </>
+        </div>
     );
 }
