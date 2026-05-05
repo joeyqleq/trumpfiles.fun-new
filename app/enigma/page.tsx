@@ -205,6 +205,7 @@ export default function EnigmaPage() {
                   height={480}
                   className="absolute inset-0 m-auto object-contain z-10 pointer-events-none drop-shadow-[0_0_15px_rgba(255,107,0,0.4)]"
                   priority
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </PixelCard>
               <div className="mt-4 text-center">
@@ -228,10 +229,10 @@ export default function EnigmaPage() {
           className="mb-12 flex flex-col md:flex-row gap-6 items-center justify-center"
         >
           <div className="relative group">
-            <Image src="/images/art/pdf_tiny_hat.png" alt="Trump Tiny Hat" width={200} height={250} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:rotate-1" />
+            <Image src="/images/art/pdf_tiny_hat.png" alt="Trump Tiny Hat" width={200} height={250} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:rotate-1" style={{ width: 'auto', height: 'auto' }} />
           </div>
           <div className="relative group">
-            <Image src="/images/art/pdf_iwatch.png" alt="Trump iWatch" width={200} height={250} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1" />
+            <Image src="/images/art/pdf_iwatch.png" alt="Trump iWatch" width={200} height={250} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1" style={{ width: 'auto', height: 'auto' }} />
           </div>
         </motion.div>
 
@@ -323,7 +324,7 @@ export default function EnigmaPage() {
               </h3>
               <div className="flex justify-center mb-6">
                 <motion.div whileHover={{ scale: 1.05 }} className="relative">
-                  <Image src="/images/art/pdf_foreskin.png" alt="Trump Satirical Art" width={220} height={160} className="rounded-xl border border-orange-500/20 shadow-[0_0_20px_rgba(255,101,0,0.15)]" />
+                  <Image src="/images/art/pdf_foreskin.png" alt="Trump Satirical Art" width={220} height={160} className="rounded-xl border border-orange-500/20 shadow-[0_0_20px_rgba(255,101,0,0.15)]" style={{ width: 'auto', height: 'auto' }} />
                 </motion.div>
               </div>
               <p className="text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">

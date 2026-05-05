@@ -212,6 +212,7 @@ export default function WhoAmIPage() {
                                                 width={400}
                                                 height={60}
                                                 className="w-full h-14 object-contain bg-[#29ABE0] rounded-xl hover:brightness-110 transition-all"
+                                                style={{ width: 'auto', height: 'auto' }}
                                             />
                                         </motion.div>
                                     </Link>
@@ -237,7 +238,7 @@ export default function WhoAmIPage() {
                                         {/* TRON */}
                                         <div className="bg-gradient-to-br from-red-950/40 to-black rounded-2xl border border-red-500/30 p-6 flex items-center gap-6 shadow-inner">
                                             <div className="bg-white p-2 rounded-xl flex-shrink-0">
-                                                <Image src="/images/qr_tron.png" alt="Tron QR" width={80} height={80} className="rounded-lg" />
+                                                <Image src="/images/qr_tron.png" alt="Tron QR" width={80} height={80} className="rounded-lg" style={{ width: 'auto', height: 'auto' }} />
                                             </div>
                                             <div className="flex-1 w-full overflow-hidden">
                                                 <h4 className="text-red-400 font-bold mb-2 flex items-center gap-2"><CreditCard className="w-4 h-4" /> USDT (TRON/TRC-20)</h4>
@@ -251,7 +252,7 @@ export default function WhoAmIPage() {
                                         {/* POLYGON */}
                                         <div className="bg-gradient-to-br from-purple-950/40 to-black rounded-2xl border border-purple-500/30 p-6 flex items-center gap-6 shadow-inner">
                                             <div className="bg-white p-2 rounded-xl flex-shrink-0">
-                                                <Image src="/images/qr_polygon.png" alt="Polygon QR" width={80} height={80} className="rounded-lg" />
+                                                <Image src="/images/qr_polygon.png" alt="Polygon QR" width={80} height={80} className="rounded-lg" style={{ width: 'auto', height: 'auto' }} />
                                             </div>
                                             <div className="flex-1 w-full overflow-hidden">
                                                 <h4 className="text-purple-400 font-bold mb-2 flex items-center gap-2"><CreditCard className="w-4 h-4" /> USDT (Polygon)</h4>

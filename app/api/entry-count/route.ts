@@ -2,6 +2,14 @@ import { NextResponse } from "next/server";
 import { sql } from "@/lib/neonClient";
 
 export async function GET() {
+    if (process.env.NODE_ENV === "development") {
+        return NextResponse.json({
+            count: 1100,
+            formatted: "1,100",
+            lastScraped: new Date().toISOString(),
+        });
+    }
+
     try {
         const result = await sql`
       SELECT COUNT(*) as count, MAX(date_start) as last_date FROM trump_entries

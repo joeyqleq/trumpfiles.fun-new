@@ -153,6 +153,7 @@ export default function Navigation() {
                 width={34}
                 height={34}
                 className="drop-shadow-[0_0_8px_rgba(249,115,22,0.6)]"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </motion.div>
             <TrumpFilesBrand size="sm" static className="hidden sm:flex" />

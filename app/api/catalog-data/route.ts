@@ -4,6 +4,9 @@ import { sql } from '@/lib/neonClient';
 export async function GET() {
   try {
     // Get entries with their sources aggregated
+    const isDev = process.env.NODE_ENV === 'development';
+    const limit = isDev ? 50 : 10000; // Limit for dev speed
+
     const rows = await sql`
       SELECT 
         ranked.*,
@@ -32,6 +35,7 @@ export async function GET() {
         category_rank ASC,
         md5(coalesce(category, '') || 'catalog_v1') ASC,
         md5(entry_number::text || 'catalog_v1') ASC
+      LIMIT ${limit}
     `;
     return NextResponse.json(rows);
   } catch (error) {

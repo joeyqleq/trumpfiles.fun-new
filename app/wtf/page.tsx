@@ -89,7 +89,7 @@ export default function WTFPage() {
                   width={200}
                   height={140}
                   className="object-contain drop-shadow-[0_8px_16px_rgba(255,107,0,0.25)] hover:scale-105 transition-transform duration-500"
-                  style={{ filter: "drop-shadow(0 0 12px rgba(255,107,0,0.2))" }}
+                  style={{ filter: "drop-shadow(0 0 12px rgba(255,107,0,0.2))", width: 'auto', height: 'auto' }}
                 />
               </div>
               <p className="text-lg text-foreground/80 leading-relaxed mb-4">
@@ -132,6 +132,7 @@ export default function WTFPage() {
                   width={200}
                   height={260}
                   className="absolute inset-0 m-auto object-contain z-10 pointer-events-none"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </PixelCard>
             </div>
@@ -214,6 +215,7 @@ export default function WTFPage() {
                     width={140}
                     height={170}
                     className="object-contain drop-shadow-[0_0_20px_rgba(255,107,0,0.2)] group-hover:scale-105 transition-transform duration-500"
+                    style={{ width: 'auto', height: 'auto' }}
                   />
                 </div>
               </div>
@@ -266,6 +268,7 @@ export default function WTFPage() {
                 width={400}
                 height={400}
                 className="rounded-lg"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
             <Card className="glass-card border-orange-500/20">
@@ -326,7 +329,7 @@ export default function WTFPage() {
                     width={160}
                     height={200}
                     className="object-contain group-hover:scale-105 transition-all duration-500"
-                    style={{ filter: "drop-shadow(0 4px 16px rgba(255,101,0,0.18))" }}
+                    style={{ filter: "drop-shadow(0 4px 16px rgba(255,101,0,0.18))", width: 'auto', height: 'auto' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
@@ -364,7 +367,7 @@ export default function WTFPage() {
                 width={140}
                 height={100}
                 className="object-contain rotate-[-15deg]"
-                style={{ filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.4))" }}
+                style={{ filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.4))", width: 'auto', height: 'auto' }}
               />
             </div>
 
@@ -406,7 +409,7 @@ export default function WTFPage() {
                 width={130}
                 height={95}
                 className="object-contain rotate-[8deg]"
-                style={{ filter: "drop-shadow(0 6px 14px rgba(0,0,0,0.35))" }}
+                style={{ filter: "drop-shadow(0 6px 14px rgba(0,0,0,0.35))", width: 'auto', height: 'auto' }}
               />
             </div>
 
@@ -418,7 +421,7 @@ export default function WTFPage() {
                 width={280}
                 height={220}
                 className="object-contain"
-                style={{ filter: "drop-shadow(0 8px 20px rgba(255,107,0,0.2))" }}
+                style={{ filter: "drop-shadow(0 8px 20px rgba(255,107,0,0.2))", width: 'auto', height: 'auto' }}
               />
             </div>
 
@@ -430,7 +433,7 @@ export default function WTFPage() {
                 width={130}
                 height={95}
                 className="object-contain rotate-[-8deg]"
-                style={{ filter: "drop-shadow(0 6px 14px rgba(0,0,0,0.35))" }}
+                style={{ filter: "drop-shadow(0 6px 14px rgba(0,0,0,0.35))", width: 'auto', height: 'auto' }}
               />
             </div>
           </div>
@@ -503,6 +506,7 @@ export default function WTFPage() {
                   width={280}
                   height={196}
                   className="rounded-xl w-full h-auto object-contain shadow-[0_0_30px_rgba(255,101,0,0.15)]"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </motion.div>
 
@@ -517,6 +521,7 @@ export default function WTFPage() {
                   width={280}
                   height={210}
                   className="rounded-xl w-full h-auto object-contain shadow-[0_0_30px_rgba(255,101,0,0.15)]"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
               </motion.div>
 
@@ -531,7 +536,7 @@ export default function WTFPage() {
                   width={160}
                   height={200}
                   className="object-contain"
-                  style={{ filter: "drop-shadow(0 4px 16px rgba(147,51,234,0.25))" }}
+                  style={{ filter: "drop-shadow(0 4px 16px rgba(147,51,234,0.25))", width: 'auto', height: 'auto' }}
                 />
               </motion.div>
             </div>

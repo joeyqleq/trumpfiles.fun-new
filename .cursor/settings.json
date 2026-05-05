@@ -17,6 +17,12 @@
     },
     "1password": {
       "enabled": true
+    },
+    "firecrawl": {
+      "enabled": true
+    },
+    "azure": {
+      "enabled": true
     }
   }
 }

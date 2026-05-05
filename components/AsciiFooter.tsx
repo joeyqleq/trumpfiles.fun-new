@@ -79,6 +79,7 @@ export default function AsciiFooter() {
                 width={280}
                 height={280}
                 className="w-auto h-auto max-w-[280px] object-contain drop-shadow-[0_0_20px_rgba(249,115,22,0.4)] transition-all duration-500 group-hover:drop-shadow-[0_0_30px_rgba(249,115,22,0.6)] group-hover:scale-105"
+                style={{ width: 'auto', height: 'auto' }}
               />
               {/* Animated border glow */}
               <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-500/20 via-transparent to-orange-500/20 animate-pulse opacity-50 pointer-events-none" />

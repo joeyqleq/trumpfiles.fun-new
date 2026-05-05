@@ -9,6 +9,7 @@
 
 ## Architecture
 - Frontend (Next.js `app/` routes) reads from Neon via `@/lib/neonClient`.
+- Supabase migration target exists for this project: project `trump-files`, ref `kqyxyayytczltdqaengv`, Postgres 17, region `us-east-1`.
 - Data integrity relies on:
   - One `trump_individual_scores` row per `entry_number`
   - `trump_keywords` rows for keyword aggregation in `ai_complete_trump_data`
@@ -52,6 +53,9 @@
 - Source-pool expansion pattern: pre-check candidate URLs with `curl -I -L --max-time 20` and keep only reliably reachable links (`200` or known-acceptable publisher behavior) before batch generation.
 - DB-write fallback pattern: when MCP transaction handoff is unavailable or impractical for very large SQL arrays, execute the 4-statement batch JSON through local `pg` client in a single `BEGIN/COMMIT` transaction using `.env.local` `DATABASE_URL`, then run explicit post-commit count checks.
 - Reusable transaction helper: `scripts/apply-sql-batch.mjs --file <batch.json>` applies a generated JSON array of SQL statements sequentially through `pg` inside one `BEGIN/COMMIT` block and rolls back on failure.
+- Neon-to-Supabase clone pattern (2026-05-01): for this small Postgres 17 database, use Postgres 17 `pg_dump --schema=public --schema-only --no-owner --no-privileges --quote-all-identifiers` to capture schema, strip pg_dump client meta commands plus `CREATE SCHEMA public`, apply schema via Supabase MCP, then use a transient Supabase `dblink` extension call to pull public table data from Neon with SELECT-only statements. Drop `dblink` after import and run `ANALYZE` on core tables. Do not persist source or target secrets in repo files or memory.
+- Supabase clone verification record (2026-05-01): project `kqyxyayytczltdqaengv` matched Neon public counts after import: `trump_entries=2284`, `trump_individual_scores=2284`, `trump_keywords=8973`, `trump_sources=2618`, `trump_sources_repair_audit=1922`, `trump_dedupe_backup_log=204`, source backup tables `1384/1164/1291/1260/1294/1303`, empty user/link/error/viral/public-response tables remained empty, `ai_complete_trump_data=2284`, `max_entry=2313`, `max_date_start=2026-04-18`.
+- Supabase post-clone security note (2026-05-01): the clone intentionally preserved Neon-style public schema semantics, so Supabase advisors report RLS disabled on public tables, security-definer-style views for the three public views, GraphQL exposure for public objects, and a mutable `search_path` on `show_db_tree`. Address RLS/view exposure before using Supabase Data API/GraphQL publicly.
 - Repetition guardrail: before drafting a new 25-entry batch, query the latest inserted `entry_number/title/category/subcategory` window and rotate source clusters/topic framing to avoid near-duplicate title patterns while keeping Trump-centered naming.
 - Throughput pattern: run ingestion in paired 25-entry cycles (50 entries total), with source pre-validation + recent-title scan before each cycle, then immediate post-cycle verification on all four tables plus global null-metric check.
 - Source-validation fallback: if `HEAD` checks return non-standard publisher responses (e.g., `405`/`402`), run a `GET` status probe with `curl -L -o /dev/null -w '%{http_code}'` before deciding whether a source is usable.

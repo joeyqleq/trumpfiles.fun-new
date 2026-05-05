@@ -25,6 +25,7 @@ export const AsciiJack1 = ({ className = "", opacity = 0.25, size = 150 }: Decor
             width={size}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
@@ -42,6 +43,7 @@ export const AsciiJack2 = ({ className = "", opacity = 0.25, size = 150 }: Decor
             width={size}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
@@ -59,6 +61,7 @@ export const AsciiJack3 = ({ className = "", opacity = 0.25, size = 150 }: Decor
             width={size}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
@@ -76,6 +79,7 @@ export const AsciiJack4Red = ({ className = "", opacity = 0.25, size = 150 }: De
             width={size}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
@@ -94,6 +98,7 @@ export const AsciiBox = ({ className = "", opacity = 0.2, size = 150 }: Decorati
             width={size}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
@@ -112,6 +117,7 @@ export const OrangeX = ({ className = "", opacity = 0.35, size = 60 }: Decoratio
             width={size}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
@@ -130,6 +136,7 @@ export const GreyX = ({ className = "", opacity = 0.2, size = 50 }: DecorationPr
             width={size}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
@@ -159,6 +166,7 @@ export const TwinkleStar = ({
             width={size}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
@@ -177,6 +185,7 @@ export const VerticalInitials = ({ className = "", opacity = 0.35, size = 300 }:
             width={size * 0.3}
             height={size}
             className="object-contain"
+            style={{ width: 'auto', height: 'auto' }}
         />
     </motion.div>
 );
