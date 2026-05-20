@@ -69,7 +69,8 @@ export default function VisualizerClient({
 
     const getCategoryData = () => {
         const categoryCount = entries.reduce((acc, entry) => {
-            acc[entry.category] = (acc[entry.category] || 0) + 1;
+            const cat = entry.category || "Uncategorized";
+            acc[cat] = (acc[cat] || 0) + 1;
             return acc;
         }, {} as Record<string, number>);
         const sorted = Object.entries(categoryCount).sort(([, a], [, b]) => b - a);
@@ -109,7 +110,7 @@ export default function VisualizerClient({
 
     const getCategoryScoreData = () => {
         const categoryScores = entries.reduce((acc, entry) => {
-            const cat = entry.category;
+            const cat = entry.category || "Uncategorized";
             if (!acc[cat]) acc[cat] = { category: cat, danger: 0, absurdity: 0, count: 0 };
             acc[cat].danger += entry.danger || 0;
             acc[cat].absurdity += entry.absurdity || 0;
@@ -133,7 +134,7 @@ export default function VisualizerClient({
         return phaseOrder.map(phaseName => {
             const phaseEntries = entries.filter(e => (phaseMapping[e.phase] || "Pre-Political") === phaseName);
             const categories: Record<string, number> = {};
-            phaseEntries.forEach(e => { categories[e.category] = (categories[e.category] || 0) + 1; });
+            phaseEntries.forEach(e => { const c = e.category || "Uncategorized"; categories[c] = (categories[c] || 0) + 1; });
             const sortedCats = Object.entries(categories).sort(([, a], [, b]) => b - a);
             return {
                 name: phaseName, value: phaseEntries.length, count: phaseEntries.length,
@@ -151,7 +152,7 @@ export default function VisualizerClient({
         };
         return Object.entries(patterns).map(([trait, keywords]) => {
             const count = entries.filter(entry => {
-                const searchText = `${entry.title || ""} ${entry.synopsis || ""} ${entry.all_keywords || ""}`.toLowerCase();
+                const searchText = `${entry.title || ""} ${entry.synopsis || ""} ${(entry.all_keywords || []).join(" ")}`.toLowerCase();
                 return keywords.some(keyword => searchText.includes(keyword));
             }).length;
             return { trait, count };
@@ -160,7 +161,7 @@ export default function VisualizerClient({
 
     const getFinancialImpactData = () => {
         const categoryImpact = entries.reduce((acc, entry) => {
-            const cat = entry.category;
+            const cat = entry.category || "Uncategorized";
             if (!acc[cat]) acc[cat] = { category: cat, totalScore: 0, count: 0, avgImpactScope: 0, totalImpact: 0 };
             acc[cat].totalScore += parseFloat(entry.fucked_up_score || "0");
             acc[cat].totalImpact += entry.impact_scope || 0;
@@ -196,6 +197,7 @@ export default function VisualizerClient({
         const keywordCounts: Record<string, { keyword: string; count: number; avgDanger: number; avgAbsurdity: number; totalDanger: number; totalAbsurdity: number }> = {};
         entries.forEach(entry => {
             (entry.all_keywords || []).forEach(kw => {
+                if (!kw) return;
                 const keyword = kw.toLowerCase().trim();
                 if (!keyword || keyword.length < 3) return;
                 if (!keywordCounts[keyword]) keywordCounts[keyword] = { keyword, count: 0, avgDanger: 0, avgAbsurdity: 0, totalDanger: 0, totalAbsurdity: 0 };
