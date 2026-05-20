@@ -125,21 +125,40 @@ export default function VisualizerClient({
     };
 
     const getPhaseData = () => {
+        // Map actual DB phase values to display groups
         const phaseMapping: Record<string, string> = {
-            "Pre-Political": "Pre-Political", "Business Career": "Pre-Political", "Campaign 2016": "Campaign 2016",
-            "First Administration": "First Administration", "Post-Presidency 2021-24": "Post-Presidency 2021-24",
-            "Second Administration": "Second Administration"
+            "Early Life": "Pre-Political Era",
+            "Real Estate": "Pre-Political Era",
+            "Early Business Career": "Pre-Political Era",
+            "Business Empire": "Pre-Political Era",
+            "Trump Organization CEO": "Pre-Political Era",
+            "Media Mogul": "Pre-Political Era",
+            "Pre-Presidential Campaign": "Campaign Trail",
+            "Presidential Campaign": "Campaign Trail",
+            "Campaign Trail": "Campaign Trail",
+            "Candidate": "Campaign Trail",
+            "Presidential Transition": "First Term (2017-2021)",
+            "White House 1": "First Term (2017-2021)",
+            "First Term": "First Term (2017-2021)",
+            "President": "First Term (2017-2021)",
+            "Post-Presidency": "Post-Presidency (2021-2024)",
+            "Between Terms": "Post-Presidency (2021-2024)",
+            "White House 2": "Second Term (2025+)",
         };
-        const phaseOrder = ["Pre-Political", "Campaign 2016", "First Administration", "Post-Presidency 2021-24", "Second Administration"];
+        const phaseOrder = ["Pre-Political Era", "Campaign Trail", "First Term (2017-2021)", "Post-Presidency (2021-2024)", "Second Term (2025+)"];
         return phaseOrder.map(phaseName => {
-            const phaseEntries = entries.filter(e => (phaseMapping[e.phase] || "Pre-Political") === phaseName);
+            const phaseEntries = entries.filter(e => {
+                const mapped = phaseMapping[e.phase] || "Pre-Political Era";
+                return mapped === phaseName;
+            });
             const categories: Record<string, number> = {};
             phaseEntries.forEach(e => { const c = e.category || "Uncategorized"; categories[c] = (categories[c] || 0) + 1; });
             const sortedCats = Object.entries(categories).sort(([, a], [, b]) => b - a);
             return {
                 name: phaseName, value: phaseEntries.length, count: phaseEntries.length,
                 avgDanger: phaseEntries.length > 0 ? parseFloat((phaseEntries.reduce((s, e) => s + (e.danger || 0), 0) / phaseEntries.length).toFixed(1)) : 0,
-                topCategory: sortedCats[0] ? sortedCats[0][0] : "None", ...categories
+                avgAbsurdity: phaseEntries.length > 0 ? parseFloat((phaseEntries.reduce((s, e) => s + (e.absurdity || 0), 0) / phaseEntries.length).toFixed(1)) : 0,
+                topCategory: sortedCats[0] ? sortedCats[0][0] : "None",
             };
         }).filter(d => d.count > 0);
     };
@@ -219,13 +238,18 @@ export default function VisualizerClient({
     };
 
     const getDimensionCorrelation = () => {
-        return entries.slice(0, 500).map(e => ({
-            danger: e.danger || 0,
-            absurdity: e.absurdity || 0,
-            lawlessness: e.lawlessness || 0,
-            authoritarianism: e.authoritarianism || 0,
-            score: parseFloat(e.fucked_up_score || "0"),
-        }));
+        // Create a heatmap-style grid: how many entries at each danger x absurdity combo
+        const grid: Record<string, number> = {};
+        entries.forEach(e => {
+            const d = e.danger || 0;
+            const a = e.absurdity || 0;
+            const key = `${d}-${a}`;
+            grid[key] = (grid[key] || 0) + 1;
+        });
+        return Object.entries(grid).map(([key, count]) => {
+            const [d, a] = key.split("-").map(Number);
+            return { danger: d, absurdity: a, count };
+        });
     };
 
     const CustomTooltip = ({ active, payload, label }: any) => {
@@ -354,15 +378,31 @@ export default function VisualizerClient({
                                 </Card>
                             </div>
                             <Card className="glass-card border-orange-500/20">
-                                <CardHeader><CardTitle className="text-orange-400">Danger vs Absurdity Scatter (sample)</CardTitle></CardHeader>
+                                <CardHeader><CardTitle className="text-orange-400">Danger vs Absurdity Density</CardTitle></CardHeader>
                                 <CardContent>
-                                    <ResponsiveContainer width="100%" height={350}>
+                                    <p className="text-xs text-foreground/50 mb-4">Bubble size = number of entries at that danger/absurdity combination. Based on all {entries.length.toLocaleString()} entries.</p>
+                                    <ResponsiveContainer width="100%" height={400}>
                                         <ScatterChart>
                                             <CartesianGrid strokeOpacity={0.1} />
-                                            <XAxis type="number" dataKey="danger" name="Danger" domain={[0, 10]} />
-                                            <YAxis type="number" dataKey="absurdity" name="Absurdity" domain={[0, 10]} />
-                                            <Tooltip cursor={{ strokeDasharray: '3 3' }} content={<CustomTooltip />} />
-                                            <Scatter data={dimensionCorrelation} fill="#FF6500" fillOpacity={0.4} />
+                                            <XAxis type="number" dataKey="danger" name="Danger" domain={[0, 10]} label={{ value: "Danger Score", position: "insideBottom", offset: -5, fill: "#aaa" }} />
+                                            <YAxis type="number" dataKey="absurdity" name="Absurdity" domain={[0, 10]} label={{ value: "Absurdity Score", angle: -90, position: "insideLeft", fill: "#aaa" }} />
+                                            <Tooltip content={({ active, payload }: any) => {
+                                                if (active && payload && payload.length) {
+                                                    const d = payload[0].payload;
+                                                    return (
+                                                        <div className="bg-black/90 border border-orange-500/30 p-3 rounded-lg shadow-lg">
+                                                            <p className="text-orange-400 font-bold">Danger: {d.danger} / Absurdity: {d.absurdity}</p>
+                                                            <p className="text-white text-sm">{d.count} entries</p>
+                                                        </div>
+                                                    );
+                                                }
+                                                return null;
+                                            }} />
+                                            <Scatter data={dimensionCorrelation} fill="#FF6500" fillOpacity={0.7}>
+                                                {dimensionCorrelation.map((entry, i) => (
+                                                    <Cell key={i} fill={entry.count > 50 ? "#FF0000" : entry.count > 20 ? "#FF4500" : entry.count > 5 ? "#FF6500" : "#FFA500"} r={Math.max(4, Math.min(Math.sqrt(entry.count) * 3, 30))} />
+                                                ))}
+                                            </Scatter>
                                         </ScatterChart>
                                     </ResponsiveContainer>
                                 </CardContent>
@@ -377,11 +417,10 @@ export default function VisualizerClient({
                                         <ResponsiveContainer width="100%" height={350}>
                                             <BarChart data={phaseData}>
                                                 <CartesianGrid strokeOpacity={0.1} />
-                                                <XAxis dataKey="name" angle={-20} textAnchor="end" height={80} />
+                                                <XAxis dataKey="name" angle={-15} textAnchor="end" height={80} interval={0} tick={{ fontSize: 11 }} />
                                                 <YAxis />
                                                 <Tooltip content={<CustomTooltip />} />
-                                                <Legend />
-                                                <Bar dataKey="count" fill="#FF6500" name="Incident Count">
+                                                <Bar dataKey="count" name="Incident Count">
                                                     {phaseData.map((_, i) => (
                                                         <Cell key={i} fill={COLORS[i % COLORS.length]} />
                                                     ))}
@@ -391,15 +430,17 @@ export default function VisualizerClient({
                                     </CardContent>
                                 </Card>
                                 <Card className="glass-card border-orange-500/20">
-                                    <CardHeader><CardTitle className="text-orange-400">Avg Danger by Phase</CardTitle></CardHeader>
+                                    <CardHeader><CardTitle className="text-orange-400">Avg Scores by Phase</CardTitle></CardHeader>
                                     <CardContent>
                                         <ResponsiveContainer width="100%" height={350}>
                                             <BarChart data={phaseData}>
                                                 <CartesianGrid strokeOpacity={0.1} />
-                                                <XAxis dataKey="name" angle={-20} textAnchor="end" height={80} />
+                                                <XAxis dataKey="name" angle={-15} textAnchor="end" height={80} interval={0} tick={{ fontSize: 11 }} />
                                                 <YAxis domain={[0, 10]} />
                                                 <Tooltip content={<CustomTooltip />} />
+                                                <Legend />
                                                 <Bar dataKey="avgDanger" fill="#FF4500" name="Avg Danger" />
+                                                <Bar dataKey="avgAbsurdity" fill="#FFA500" name="Avg Absurdity" />
                                             </BarChart>
                                         </ResponsiveContainer>
                                     </CardContent>
@@ -413,8 +454,9 @@ export default function VisualizerClient({
                                             <div key={phase.name} className="p-4 rounded-lg bg-white/5 border border-white/10">
                                                 <h4 className="font-bold text-orange-400 mb-2">{phase.name}</h4>
                                                 <div className="space-y-1 text-sm text-foreground/70">
-                                                    <p>Entries: <span className="text-white font-mono">{phase.count}</span></p>
-                                                    <p>Avg Danger: <span className="text-red-400 font-mono">{phase.avgDanger}</span></p>
+                                                    <p>Entries: <span className="text-white font-mono">{phase.count.toLocaleString()}</span></p>
+                                                    <p>Avg Danger: <span className="text-red-400 font-mono">{phase.avgDanger}/10</span></p>
+                                                    <p>Avg Absurdity: <span className="text-yellow-400 font-mono">{phase.avgAbsurdity}/10</span></p>
                                                     <p>Top Category: <span className="text-orange-300">{phase.topCategory}</span></p>
                                                 </div>
                                             </div>
