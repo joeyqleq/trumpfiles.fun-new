@@ -1,17 +1,13 @@
-import { getAllEntries, getEntryStats } from "@/lib/entries";
+import { getEntryStats } from "@/lib/entries";
 import CatalogClient from "./CatalogClient";
 
 export default async function CatalogPage() {
-    // Parallel fetch on server
-    const [entries, stats] = await Promise.all([
-        getAllEntries(),
-        getEntryStats()
-    ]);
+    // Fetch only stats on server; entries are fetched client-side with pagination
+    const stats = await getEntryStats();
 
     return (
         <CatalogClient 
-            initialEntries={entries} 
-            maxEntry={stats.count} 
+            totalCount={stats.count} 
         />
     );
 }

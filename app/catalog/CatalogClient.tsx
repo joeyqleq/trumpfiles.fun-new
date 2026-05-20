@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AICompleteTrumpData } from "@/types/database";
 import { Input } from "@/components/ui/input";
@@ -25,12 +25,12 @@ import {
     Flame,
     Zap,
     Gavel,
-    Brain
+    Brain,
+    Loader2
 } from "lucide-react";
 import { FlippableEntryCard } from "@/components/FlippableEntryCard";
 import TrueFocus from "@/components/TrueFocus";
 import PageDecorations from "@/components/PageDecorations";
-import GlitchText from "@/components/GlitchText";
 import Image from "next/image";
 
 type SortOption =
@@ -48,11 +48,9 @@ type SortOption =
     | "title_desc";
 
 export default function CatalogClient({
-    initialEntries,
-    maxEntry
+    totalCount
 }: {
-    initialEntries: AICompleteTrumpData[];
-    maxEntry: number;
+    totalCount: number;
 }) {
     const sortOptions = useMemo(() => [
         { value: "entry_desc", label: `Entry # (Newest to Oldest)` },
@@ -67,8 +65,10 @@ export default function CatalogClient({
         { value: "date_asc", label: "Oldest First" },
         { value: "title_asc", label: "Title (A → Z)" },
         { value: "title_desc", label: "Title (Z → A)" },
-    ], [maxEntry]);
+    ], []);
 
+    const [allEntries, setAllEntries] = useState<AICompleteTrumpData[]>([]);
+    const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("all");
     const [phaseFilter, setPhaseFilter] = useState("all");
@@ -88,18 +88,32 @@ export default function CatalogClient({
 
     const topRef = useRef<HTMLDivElement>(null);
 
+    // Fetch all entries from API (no hard limit)
+    useEffect(() => {
+        setLoading(true);
+        fetch("/api/catalog-data")
+            .then((res) => res.json())
+            .then((data) => {
+                if (Array.isArray(data)) {
+                    setAllEntries(data);
+                }
+            })
+            .catch((err) => console.error("Failed to fetch catalog data:", err))
+            .finally(() => setLoading(false));
+    }, []);
+
     const categories = useMemo(() => {
-        const cats = new Set(initialEntries.map((e) => e.category));
+        const cats = new Set(allEntries.map((e) => e.category));
         return Array.from(cats).sort();
-    }, [initialEntries]);
+    }, [allEntries]);
 
     const phases = useMemo(() => {
-        const phs = new Set(initialEntries.map((e) => e.phase));
+        const phs = new Set(allEntries.map((e) => e.phase));
         return Array.from(phs).sort();
-    }, [initialEntries]);
+    }, [allEntries]);
 
     const filteredAndSortedEntries = useMemo(() => {
-        const filtered = initialEntries.filter((entry) => {
+        const filtered = allEntries.filter((entry) => {
             const matchesSearch = searchTerm === "" ||
                 entry.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 entry.synopsis.toLowerCase().includes(searchTerm.toLowerCase());
@@ -131,7 +145,7 @@ export default function CatalogClient({
             }
         });
         return filtered;
-    }, [initialEntries, searchTerm, selectedCategory, phaseFilter, sortBy, minDanger, minAbsurdity, minLawlessness, minTotalScore]);
+    }, [allEntries, searchTerm, selectedCategory, phaseFilter, sortBy, minDanger, minAbsurdity, minLawlessness, minTotalScore]);
 
     const totalPages = Math.ceil(filteredAndSortedEntries.length / itemsPerPage);
     const paginatedEntries = filteredAndSortedEntries.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -148,6 +162,14 @@ export default function CatalogClient({
         topRef.current?.scrollIntoView({ behavior: "smooth" });
     };
 
+    // Reset to page 1 whenever filters change
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [searchTerm, selectedCategory, phaseFilter, sortBy, minDanger, minAbsurdity, minLawlessness, minTotalScore]);
+
+    // Dynamic display count: show real DB count in subtitle, but filtered count in badge
+    const displayTotalCount = loading ? totalCount : allEntries.length;
+
     return (
         <div className="min-h-screen py-8 md:py-16 relative" ref={topRef}>
             <PageDecorations variant="catalog" />
@@ -159,7 +181,7 @@ export default function CatalogClient({
                         </div>
                     </div>
                     <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-orange-500 via-orange-400 to-red-500 bg-clip-text text-transparent font-arctic-3d leading-tight mt-4">CATALOG</h1>
-                    <p className="text-xl text-foreground/70 max-w-2xl mx-auto mt-6 font-sans">A comprehensive, searchable database of {initialEntries.length} documented incidents.</p>
+                    <p className="text-xl text-foreground/70 max-w-2xl mx-auto mt-6 font-sans" data-testid="catalog-subtitle">A comprehensive, searchable database of {displayTotalCount.toLocaleString()} documented incidents.</p>
                 </motion.div>
 
                 <div className="flex justify-end mb-4 -mt-2 pr-4 md:pr-0">
@@ -170,17 +192,16 @@ export default function CatalogClient({
 
                 <div className="glass-card p-6 md:p-8 mb-12 rounded-2xl border border-orange-500/30 shadow-[0_0_30px_rgba(255,101,0,0.15)] backdrop-blur-2xl bg-black/60 relative overflow-hidden">
                     <div className="flex flex-col gap-6 relative z-10">
-                        <GlitchText speed={1.5} enableShadows={true} className="text-xl md:text-2xl font-bold tracking-wider text-orange-400 inline-block">ARCHIVE SEARCH & FILTERS</GlitchText>
                         <div className="flex flex-col md:flex-row gap-4">
                             <div className="relative flex-1">
                                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-orange-400" />
-                                <Input placeholder="Search entries..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="pl-10 h-10 bg-black/30 border-orange-500/20" />
+                                <Input placeholder="Search entries..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="pl-10 h-10 bg-black/30 border-orange-500/20" data-testid="catalog-search-input" />
                             </div>
                             <div className="flex gap-2 flex-wrap sm:flex-nowrap">
-                                <Select value={selectedCategory} onValueChange={setSelectedCategory}><SelectTrigger className="w-[180px] h-10 bg-black/30 border-orange-500/20"><SelectValue placeholder="Category" /></SelectTrigger><SelectContent><SelectItem value="all">All Categories</SelectItem>{categories.map((cat) => (<SelectItem key={cat} value={cat}>{cat}</SelectItem>))}</SelectContent></Select>
-                                <Select value={phaseFilter} onValueChange={setPhaseFilter}><SelectTrigger className="w-[180px] h-10 bg-black/30 border-orange-500/20"><SelectValue placeholder="Phase" /></SelectTrigger><SelectContent><SelectItem value="all">All Phases</SelectItem>{phases.map((phase) => (<SelectItem key={phase} value={phase}>{phase}</SelectItem>))}</SelectContent></Select>
-                                <Select value={sortBy} onValueChange={(v) => setSortBy(v as SortOption)}><SelectTrigger className="w-[200px] h-10 bg-black/30 border-orange-500/20"><ArrowUpDown className="w-4 h-4 mr-2 text-orange-400" /><SelectValue placeholder="Sort By" /></SelectTrigger><SelectContent>{sortOptions.map((option) => (<SelectItem key={option.value} value={option.value}>{option.label}</SelectItem>))}</SelectContent></Select>
-                                <Button variant="outline" onClick={() => setShowAdvancedFilters(!showAdvancedFilters)} className={`h-10 px-4 ${showAdvancedFilters ? 'bg-orange-500/10 border-orange-500' : ''}`}><SlidersHorizontal className="w-4 h-4 mr-2" />Filters</Button>
+                                <Select value={selectedCategory} onValueChange={setSelectedCategory}><SelectTrigger className="w-[180px] h-10 bg-black/30 border-orange-500/20" data-testid="catalog-category-filter"><SelectValue placeholder="Category" /></SelectTrigger><SelectContent><SelectItem value="all">All Categories</SelectItem>{categories.map((cat) => (<SelectItem key={cat} value={cat}>{cat}</SelectItem>))}</SelectContent></Select>
+                                <Select value={phaseFilter} onValueChange={setPhaseFilter}><SelectTrigger className="w-[180px] h-10 bg-black/30 border-orange-500/20" data-testid="catalog-phase-filter"><SelectValue placeholder="Phase" /></SelectTrigger><SelectContent><SelectItem value="all">All Phases</SelectItem>{phases.map((phase) => (<SelectItem key={phase} value={phase}>{phase}</SelectItem>))}</SelectContent></Select>
+                                <Select value={sortBy} onValueChange={(v) => setSortBy(v as SortOption)}><SelectTrigger className="w-[200px] h-10 bg-black/30 border-orange-500/20" data-testid="catalog-sort-select"><ArrowUpDown className="w-4 h-4 mr-2 text-orange-400" /><SelectValue placeholder="Sort By" /></SelectTrigger><SelectContent>{sortOptions.map((option) => (<SelectItem key={option.value} value={option.value}>{option.label}</SelectItem>))}</SelectContent></Select>
+                                <Button variant="outline" onClick={() => setShowAdvancedFilters(!showAdvancedFilters)} className={`h-10 px-4 ${showAdvancedFilters ? 'bg-orange-500/10 border-orange-500' : ''}`} data-testid="catalog-advanced-filters-btn"><SlidersHorizontal className="w-4 h-4 mr-2" />Filters</Button>
                             </div>
                         </div>
 
@@ -205,33 +226,44 @@ export default function CatalogClient({
                                             <Slider value={localMinTotalScore} onValueChange={setLocalMinTotalScore} onValueCommit={setMinTotalScore} min={0} max={100} step={5} />
                                         </div>
                                     </div>
-                                    <div className="flex justify-end mt-6"><Button variant="ghost" onClick={resetFilters} className="text-sm text-foreground/50">Reset All Filters <X className="w-3 h-3 ml-2" /></Button></div>
+                                    <div className="flex justify-end mt-6"><Button variant="ghost" onClick={resetFilters} className="text-sm text-foreground/50" data-testid="catalog-reset-filters-btn">Reset All Filters <X className="w-3 h-3 ml-2" /></Button></div>
                                 </motion.div>
                             )}
                         </AnimatePresence>
 
                         <div className="flex flex-wrap items-center justify-between gap-4 py-2">
-                            <Badge variant="outline" className="bg-orange-500/10 border-orange-500/30 text-orange-400">{filteredAndSortedEntries.length} entries found</Badge>
+                            <Badge variant="outline" className="bg-orange-500/10 border-orange-500/30 text-orange-400" data-testid="catalog-entries-found-badge">
+                                {loading ? "Loading..." : `${filteredAndSortedEntries.length} entries found`}
+                            </Badge>
                         </div>
                     </div>
                 </div>
 
-                <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12" layout>
-                    <AnimatePresence mode="popLayout">
-                        {paginatedEntries.map((entry) => (
-                            <motion.div key={entry.entry_number} layout initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }} transition={{ duration: 0.2 }}>
-                                <FlippableEntryCard entry={entry} index={entry.entry_number} />
-                            </motion.div>
-                        ))}
-                    </AnimatePresence>
-                </motion.div>
-
-                {totalPages > 1 && (
-                    <div className="mt-16 flex justify-center items-center gap-2 flex-wrap">
-                        <Button variant="outline" size="icon" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="border-orange-500/20"><ArrowLeft className="w-4 h-4" /></Button>
-                        <span className="mx-4 text-sm font-mono">Page <span className="text-orange-400">{currentPage}</span> of {totalPages}</span>
-                        <Button variant="outline" size="icon" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="border-orange-500/20"><ArrowRight className="w-4 h-4" /></Button>
+                {loading ? (
+                    <div className="flex flex-col items-center justify-center py-24 gap-4">
+                        <Loader2 className="w-10 h-10 text-orange-400 animate-spin" />
+                        <p className="text-foreground/60 text-lg">Loading entries...</p>
                     </div>
+                ) : (
+                    <>
+                        <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12" layout>
+                            <AnimatePresence mode="popLayout">
+                                {paginatedEntries.map((entry) => (
+                                    <motion.div key={entry.entry_number} layout initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }} transition={{ duration: 0.2 }}>
+                                        <FlippableEntryCard entry={entry} index={entry.entry_number} />
+                                    </motion.div>
+                                ))}
+                            </AnimatePresence>
+                        </motion.div>
+
+                        {totalPages > 1 && (
+                            <div className="mt-16 flex justify-center items-center gap-2 flex-wrap" data-testid="catalog-pagination">
+                                <Button variant="outline" size="icon" onClick={() => handlePageChange(Math.max(1, currentPage - 1))} disabled={currentPage === 1} className="border-orange-500/20" data-testid="catalog-prev-page-btn"><ArrowLeft className="w-4 h-4" /></Button>
+                                <span className="mx-4 text-sm font-mono">Page <span className="text-orange-400">{currentPage}</span> of {totalPages}</span>
+                                <Button variant="outline" size="icon" onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))} disabled={currentPage === totalPages} className="border-orange-500/20" data-testid="catalog-next-page-btn"><ArrowRight className="w-4 h-4" /></Button>
+                            </div>
+                        )}
+                    </>
                 )}
             </div>
         </div>

@@ -1,11 +1,11 @@
-import { getAllEntries } from "@/lib/entries";
+import { getEntryStats } from "@/lib/entries";
 import VisualizerClient from "./VisualizerClient";
 
 export default async function VisualizerPage() {
-    // Parallel fetch on server
-    const entries = await getAllEntries();
+    // Only fetch the real count on server; entries loaded client-side
+    const stats = await getEntryStats();
 
     return (
-        <VisualizerClient entries={entries} />
+        <VisualizerClient totalCount={stats.count} />
     );
 }

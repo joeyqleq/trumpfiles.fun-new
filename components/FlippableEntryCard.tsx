@@ -234,7 +234,7 @@ export function FlippableEntryCard({ entry, index, onEmailClick }: FlippableEntr
 
                   {/* Title & Category - Fixed height */}
                   <div className="flex-shrink-0 mb-3">
-                    <h3 className="text-lg font-arctic-grad line-clamp-4 mb-1 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-600 bg-clip-text text-transparent">
+                    <h3 className="text-lg font-bold line-clamp-4 mb-1 text-orange-300/90 leading-snug" style={{ fontFamily: 'var(--font-neuething)', fontWeight: 700 }}>
                       {entry.title}
                     </h3>
                     <p className="text-xs text-primary font-arctic-left">{entry.category}</p>
