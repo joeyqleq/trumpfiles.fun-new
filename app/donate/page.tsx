@@ -62,7 +62,7 @@ export default function WhoAmIPage() {
 
                         <div className="prose prose-invert max-w-none text-lg text-foreground/80 leading-relaxed font-sans space-y-4">
                             <p>
-                                I am <strong className="text-orange-400 font-bold">Joe (aka joeyq)</strong>, a Mid-aged technologist from Lebanon and anti-kind of a big deal. Part music producer[...]
+                                I am <strong className="text-orange-400 font-bold">Joe (aka joeyq)</strong>, a Mid-aged technologist from Lebanon and anti-kind of a big deal. Part music producer, part artist, part technologist, and part confused human trying to navigate this chaotic world.
                             </p>
                             <p>
                                 I bridge the gap between heavy technical logic and high-level artistic creativity. Currently architecting better ways to survive the frontier.
@@ -116,20 +116,20 @@ export default function WhoAmIPage() {
                                     <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">Fighting the Fog: Why This Costs Money</h2>
                                     <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
                                         <p>
-                                            The Trump Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public record, a[...]
+                                            The Trump Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public record, a comprehensive historical database of every lie, every contradiction, and every atrocity documented in the official record.
                                         </p>
                                         <ul className="list-none space-y-4 pt-4">
                                             <li className="flex gap-4">
                                                 <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Globe className="w-5 h-5" /></div>
-                                                <div><strong className="text-orange-300">AI Processing:</strong> Using LLMs to analyze thousands of documents for danger, absurdity, and deception metri[...]
+                                                <div><strong className="text-orange-300">AI Processing:</strong> Using LLMs to analyze thousands of documents for danger, absurdity, and deception metrics that help contextualize the archive.</div>
                                             </li>
                                             <li className="flex gap-4">
                                                 <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Check className="w-5 h-5" /></div>
-                                                <div><strong className="text-orange-300">Scraping Infrastructure:</strong> Continuous, real-time monitoring of news, social media, and legal filings.</d[...]
+                                                <div><strong className="text-orange-300">Scraping Infrastructure:</strong> Continuous, real-time monitoring of news, social media, and legal filings.</div>
                                             </li>
                                             <li className="flex gap-4">
                                                 <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Globe className="w-5 h-5" /></div>
-                                                <div><strong className="text-orange-300">Server Architecture:</strong> Hosting the database and the D3.js-powered visualization engine that makes the da[...]
+                                                <div><strong className="text-orange-300">Server Architecture:</strong> Hosting the database and the D3.js-powered visualization engine that makes the data accessible and meaningful.</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -139,10 +139,10 @@ export default function WhoAmIPage() {
                                     <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">A Message from the Frontier</h2>
                                     <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
                                         <p>
-                                            This project is the culmination of 15 years as a digital strategist and growth hacker in Dubai, mixed with a lifetime of "breaking things to learn them." I [...]
+                                            This project is the culmination of 15 years as a digital strategist and growth hacker in Dubai, mixed with a lifetime of "breaking things to learn them." I built this because the world needs to see the pattern—the systemic corruption, the calculated lies, and the devastating consequences of unchecked power.
                                         </p>
                                         <p>
-                                            Living here gives me a unique perspective on the real-world consequences of the transactional and destructive rhetoric cataloged in this database. The Trump[...]
+                                            Living here gives me a unique perspective on the real-world consequences of the transactional and destructive rhetoric cataloged in this database. The Trump Files exists to document and contextualize the most dangerous man in modern history.
                                         </p>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@ export default function WhoAmIPage() {
                         </h2>
 
                         <div className="text-center text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
-                            I'm not a fan of "corporate speak" or begging for handouts. I'm currently growing my portfolio and looking for the next "Head-Scratcher." If you have a project that feels l[...]
+                            I'm not a fan of "corporate speak" or begging for handouts. I'm currently growing my portfolio and looking for the next "Head-Scratcher." If you have a project that feels like it could change the world, let's talk.
                             <br /><br />
                             If you value this archive, here is how you can help keep the lights on:
                         </div>
@@ -181,9 +181,9 @@ export default function WhoAmIPage() {
                                         <motion.div
                                             whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(0, 121, 193, 0.4)" }}
                                             whileTap={{ scale: 0.98 }}
-                                            className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-[#00457C] to-[#0079C1] text-white flex items-center justify-center gap-3 cursor-po[...]
+                                            className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-[#00457C] to-[#0079C1] text-white flex items-center justify-center gap-3 cursor-pointer"
                                         >
-                                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.93A.77.77 0 0 1 5.703 2.3h6.181c2.052 [...]
+                                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.93A.77.77 0 0 1 5.703 2.3h6.181c2.052 0 3.748 1.644 3.748 3.696V13.88c0 2.052-1.696 3.697-3.748 3.697h-1.053l-.245 1.77a.61.61 0 0 1-.604.512h-1.999a.61.61 0 0 1-.604-.512l-.245-1.77H7.076Z"></path></svg>
                                             Donate via PayPal
                                         </motion.div>
                                     </Link>
@@ -269,7 +269,7 @@ export default function WhoAmIPage() {
                     </motion.div>
 
                     <div className="mt-16 text-center text-foreground/50 text-base max-w-2xl mx-auto italic border-t border-orange-500/20 pt-8">
-                        "I'm looking forward to the conversation—and to the day I see Donald Trump finally held accountable for his crimes. I hope this project plays even the slightest part in that [...]
+                        "I'm looking forward to the conversation—and to the day I see Donald Trump finally held accountable for his crimes. I hope this project plays even the slightest part in that future."
                     </div>
                 </div>
             </div>
