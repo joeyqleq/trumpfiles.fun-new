@@ -86,7 +86,7 @@ export default function WhoAmIPage() {
                                 />
                             </div>
                             {/* Orange glow overlay on hover */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-600/0 hover:from-orange-500/10 hover:to-orange-600/20 transition-all duration-500 rounded-3xl[...]
+                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-600/0 hover:from-orange-500/10 hover:to-orange-600/20 transition-all duration-500 rounded-3xl" />
                             {/* Flickering grid accent on top edge */}
                             <div className="absolute top-0 left-0 right-0 h-24 opacity-30 pointer-events-none overflow-hidden rounded-t-3xl">
                                 <FlickeringGrid
@@ -116,7 +116,7 @@ export default function WhoAmIPage() {
                                     <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">Fighting the Fog: Why This Costs Money</h2>
                                     <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
                                         <p>
-                                            The Trump Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public reco[...]
+                                            The Trump Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public record, a[...]
                                         </p>
                                         <ul className="list-none space-y-4 pt-4">
                                             <li className="flex gap-4">
