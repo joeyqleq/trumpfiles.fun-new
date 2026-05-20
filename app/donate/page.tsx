@@ -62,7 +62,7 @@ export default function WhoAmIPage() {
 
                         <div className="prose prose-invert max-w-none text-lg text-foreground/80 leading-relaxed font-sans space-y-4">
                             <p>
-                                I am <strong className="text-orange-400 font-bold">Joe Maari (aka joeyq)</strong>, a Mid-aged technologist from Lebanon and anti-kind of a big deal. Part music producer, part cybersecurity script-kiddie, and former digital marketing consultant and growth hacker based out of Dubai and Beirut.
+                                I am <strong className="text-orange-400 font-bold">Joe (aka joeyq)</strong>, a Mid-aged technologist from Lebanon and anti-kind of a big deal. Part music producer[...]
                             </p>
                             <p>
                                 I bridge the gap between heavy technical logic and high-level artistic creativity. Currently architecting better ways to survive the frontier.
@@ -86,7 +86,7 @@ export default function WhoAmIPage() {
                                 />
                             </div>
                             {/* Orange glow overlay on hover */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-600/0 hover:from-orange-500/10 hover:to-orange-600/20 transition-all duration-500 rounded-3xl pointer-events-none" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-600/0 hover:from-orange-500/10 hover:to-orange-600/20 transition-all duration-500 rounded-3xl[...]
                             {/* Flickering grid accent on top edge */}
                             <div className="absolute top-0 left-0 right-0 h-24 opacity-30 pointer-events-none overflow-hidden rounded-t-3xl">
                                 <FlickeringGrid
@@ -116,20 +116,20 @@ export default function WhoAmIPage() {
                                     <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">Fighting the Fog: Why This Costs Money</h2>
                                     <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
                                         <p>
-                                            The Trump Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public record, accessible to everyone for free. However, keeping a high-performance, AI-driven encyclopedia alive is an expensive technical operation. I pay out of pocket for:
+                                            The Trump Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public reco[...]
                                         </p>
                                         <ul className="list-none space-y-4 pt-4">
                                             <li className="flex gap-4">
                                                 <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Globe className="w-5 h-5" /></div>
-                                                <div><strong className="text-orange-300">AI Processing:</strong> Using LLMs to analyze thousands of documents for danger, absurdity, and deception metrics.</div>
+                                                <div><strong className="text-orange-300">AI Processing:</strong> Using LLMs to analyze thousands of documents for danger, absurdity, and deception metri[...]
                                             </li>
                                             <li className="flex gap-4">
                                                 <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Check className="w-5 h-5" /></div>
-                                                <div><strong className="text-orange-300">Scraping Infrastructure:</strong> Continuous, real-time monitoring of news, social media, and legal filings.</div>
+                                                <div><strong className="text-orange-300">Scraping Infrastructure:</strong> Continuous, real-time monitoring of news, social media, and legal filings.</d[...]
                                             </li>
                                             <li className="flex gap-4">
                                                 <div className="p-2 bg-orange-500/10 rounded-lg text-orange-400 h-fit"><Globe className="w-5 h-5" /></div>
-                                                <div><strong className="text-orange-300">Server Architecture:</strong> Hosting the database and the D3.js-powered visualization engine that makes the data move.</div>
+                                                <div><strong className="text-orange-300">Server Architecture:</strong> Hosting the database and the D3.js-powered visualization engine that makes the da[...]
                                             </li>
                                         </ul>
                                     </div>
@@ -139,10 +139,10 @@ export default function WhoAmIPage() {
                                     <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">A Message from the Frontier</h2>
                                     <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
                                         <p>
-                                            This project is the culmination of 15 years as a digital strategist and growth hacker in Dubai, mixed with a lifetime of "breaking things to learn them." I moved back to Lebanon a few years ago, and since then, I've lived through an economic collapse, a port explosion, two failed revolutions, and I am currently navigating my third war.
+                                            This project is the culmination of 15 years as a digital strategist and growth hacker in Dubai, mixed with a lifetime of "breaking things to learn them." I [...]
                                         </p>
                                         <p>
-                                            Living here gives me a unique perspective on the real-world consequences of the transactional and destructive rhetoric cataloged in this database. The Trump Files is my resistance. It is the height of my experience as a self-taught coder and my philosophy that technology and creativity must merge to make something out of nothing. I built this because he "floods the zone" so hard that people literally forget the scale of the damage. This archive ensures the world doesn't forget.
+                                            Living here gives me a unique perspective on the real-world consequences of the transactional and destructive rhetoric cataloged in this database. The Trump[...]
                                         </p>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@ export default function WhoAmIPage() {
                         </h2>
 
                         <div className="text-center text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
-                            I'm not a fan of "corporate speak" or begging for handouts. I'm currently growing my portfolio and looking for the next "Head-Scratcher." If you have a project that feels like a dead end—something that needs to be faster, smarter, or requires an equal dose of tech and art—reach out. Whether it's Agentic Automation, Fine-Tuning LLMs, or AI-Assisted Development, I specialize in finding the "Better Way."
+                            I'm not a fan of "corporate speak" or begging for handouts. I'm currently growing my portfolio and looking for the next "Head-Scratcher." If you have a project that feels l[...]
                             <br /><br />
                             If you value this archive, here is how you can help keep the lights on:
                         </div>
@@ -181,9 +181,9 @@ export default function WhoAmIPage() {
                                         <motion.div
                                             whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(0, 121, 193, 0.4)" }}
                                             whileTap={{ scale: 0.98 }}
-                                            className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-[#00457C] to-[#0079C1] text-white flex items-center justify-center gap-3 cursor-pointer transition-all"
+                                            className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-[#00457C] to-[#0079C1] text-white flex items-center justify-center gap-3 cursor-po[...]
                                         >
-                                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.93A.77.77 0 0 1 5.703 2.3h6.181c2.052 0 3.587.472 4.564 1.402.976.93 1.296 2.275 1.032 3.88-.026.158-.058.317-.098.48-.36 1.79-1.078 3.108-2.148 3.926-1.06.812-2.514 1.224-4.323 1.224h-1.56a.77.77 0 0 0-.76.638l-.827 5.23a.641.641 0 0 1-.633.548H7.076zm13.55-15.48c-.022.132-.048.267-.08.407-.94 4.817-4.158 6.481-8.27 6.481H10.57a.946.946 0 0 0-.934.785l-1.12 7.09a.49.49 0 0 0 .484.568h3.392a.77.77 0 0 0 .76-.638l.032-.161.604-3.826.039-.212a.77.77 0 0 1 .76-.638h.48c3.1 0 5.524-1.259 6.234-4.9.297-1.522.143-2.793-.641-3.686a3.07 3.07 0 0 0-.882-.671z"/></svg>
+                                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.93A.77.77 0 0 1 5.703 2.3h6.181c2.052 [...]
                                             Donate via PayPal
                                         </motion.div>
                                     </Link>
@@ -269,7 +269,7 @@ export default function WhoAmIPage() {
                     </motion.div>
 
                     <div className="mt-16 text-center text-foreground/50 text-base max-w-2xl mx-auto italic border-t border-orange-500/20 pt-8">
-                        "I'm looking forward to the conversation—and to the day I see Donald Trump finally held accountable for his crimes. I hope this project plays even the slightest part in that fate. But to be honest... I'm just getting started."
+                        "I'm looking forward to the conversation—and to the day I see Donald Trump finally held accountable for his crimes. I hope this project plays even the slightest part in that [...]
                     </div>
                 </div>
             </div>
