@@ -69,15 +69,15 @@ export const getEntryStats = unstable_cache(
 
 /**
  * Fetch all entries for catalog/visualizer.
- * In dev, we still limit this for speed, but in prod it fetches the full set.
- * NOTE: Reduced from 10000 to 1000 to prevent payload/cache overflow.
+ * NOTE: Catalog and Visualizer pages now use client-side API fetching
+ * from /api/catalog-data and /api/visualizer-data respectively.
+ * This function is kept for backward compatibility but no longer used.
  */
 export const getAllEntries = unstable_cache(
     async (): Promise<AICompleteTrumpData[]> => {
         try {
             const isDev = process.env.NODE_ENV === 'development';
-            // Limit to 1000 in prod to prevent "items over 2MB can not be cached" error
-            const limit = isDev ? 500 : 1000;
+            const limit = isDev ? 500 : 10000;
 
             const rows = await sql`
                 SELECT * FROM ai_complete_trump_data 
