@@ -60,3 +60,12 @@ next-env.d.ts
 .cursor/rules/openmemory.mdc
 AGENTS.md
 AGENTS.md
+-e 
+# Environment and credential files
+.env
+.env.*
+*.env
+credentials.json
+*.pem
+*.key
+.credentials

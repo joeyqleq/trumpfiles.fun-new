@@ -12,13 +12,21 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
     BarChart,
     Bar,
+    LineChart,
+    Line,
+    ComposedChart,
+    Area,
+    AreaChart,
     RadarChart,
     PolarGrid,
     PolarAngleAxis,
+    PolarRadiusAxis,
     Radar,
     PieChart,
     Pie,
     Cell,
+    ScatterChart,
+    Scatter,
     XAxis,
     YAxis,
     CartesianGrid,
@@ -150,6 +158,74 @@ export default function VisualizerClient({
         }).sort((a, b) => b.count - a.count);
     };
 
+    const getFinancialImpactData = () => {
+        const categoryImpact = entries.reduce((acc, entry) => {
+            const cat = entry.category;
+            if (!acc[cat]) acc[cat] = { category: cat, totalScore: 0, count: 0, avgImpactScope: 0, totalImpact: 0 };
+            acc[cat].totalScore += parseFloat(entry.fucked_up_score || "0");
+            acc[cat].totalImpact += entry.impact_scope || 0;
+            acc[cat].count++;
+            return acc;
+        }, {} as Record<string, any>);
+        return Object.values(categoryImpact)
+            .map((d: any) => ({
+                category: d.category,
+                avgScore: parseFloat((d.totalScore / d.count).toFixed(1)),
+                avgImpact: parseFloat((d.totalImpact / d.count).toFixed(1)),
+                count: d.count,
+            }))
+            .sort((a, b) => b.avgScore - a.avgScore)
+            .slice(0, 12);
+    };
+
+    const getScoreDistribution = () => {
+        const buckets = Array.from({ length: 10 }, (_, i) => ({
+            range: `${i * 10}-${(i + 1) * 10}`,
+            count: 0,
+        }));
+        entries.forEach(entry => {
+            const score = parseFloat(entry.fucked_up_score || "0");
+            const idx = Math.min(Math.floor(score / 10), 9);
+            buckets[idx].count++;
+        });
+        return buckets;
+    };
+
+    const getRelationshipData = () => {
+        // Cross-dimension correlation: entries grouped by top keywords
+        const keywordCounts: Record<string, { keyword: string; count: number; avgDanger: number; avgAbsurdity: number; totalDanger: number; totalAbsurdity: number }> = {};
+        entries.forEach(entry => {
+            (entry.all_keywords || []).forEach(kw => {
+                const keyword = kw.toLowerCase().trim();
+                if (!keyword || keyword.length < 3) return;
+                if (!keywordCounts[keyword]) keywordCounts[keyword] = { keyword, count: 0, avgDanger: 0, avgAbsurdity: 0, totalDanger: 0, totalAbsurdity: 0 };
+                keywordCounts[keyword].count++;
+                keywordCounts[keyword].totalDanger += entry.danger || 0;
+                keywordCounts[keyword].totalAbsurdity += entry.absurdity || 0;
+            });
+        });
+        return Object.values(keywordCounts)
+            .filter(d => d.count >= 5)
+            .map(d => ({
+                keyword: d.keyword,
+                count: d.count,
+                avgDanger: parseFloat((d.totalDanger / d.count).toFixed(1)),
+                avgAbsurdity: parseFloat((d.totalAbsurdity / d.count).toFixed(1)),
+            }))
+            .sort((a, b) => b.count - a.count)
+            .slice(0, 15);
+    };
+
+    const getDimensionCorrelation = () => {
+        return entries.slice(0, 500).map(e => ({
+            danger: e.danger || 0,
+            absurdity: e.absurdity || 0,
+            lawlessness: e.lawlessness || 0,
+            authoritarianism: e.authoritarianism || 0,
+            score: parseFloat(e.fucked_up_score || "0"),
+        }));
+    };
+
     const CustomTooltip = ({ active, payload, label }: any) => {
         if (active && payload && payload.length) {
             return (
@@ -170,6 +246,10 @@ export default function VisualizerClient({
     const categoryScoreData = getCategoryScoreData();
     const phaseData = getPhaseData();
     const behavioralData = getBehavioralTraits();
+    const financialData = getFinancialImpactData();
+    const scoreDistribution = getScoreDistribution();
+    const relationshipData = getRelationshipData();
+    const dimensionCorrelation = getDimensionCorrelation();
 
     return (
         <div className="min-h-screen py-16 relative">
@@ -211,8 +291,209 @@ export default function VisualizerClient({
                             </div>
                         </TabsContent>
 
-                        <TabsContent value="categories"><Card className="glass-card border-orange-500/20"><CardContent className="pt-6"><ResponsiveContainer width="100%" height={400}><BarChart data={categoryScoreData}><CartesianGrid strokeOpacity={0.1} /><XAxis dataKey="category" angle={-45} textAnchor="end" height={100} /><YAxis /><Tooltip content={<CustomTooltip />} /><Legend /><Bar dataKey="danger" fill="#FF4500" /><Bar dataKey="absurdity" fill="#FFA500" /></BarChart></ResponsiveContainer></CardContent></Card></TabsContent>
-                        {/* Simplified for brevity - actual content remains similar */}
+                        <TabsContent value="categories"><Card className="glass-card border-orange-500/20"><CardHeader><CardTitle className="text-orange-400">Danger vs Absurdity by Category</CardTitle></CardHeader><CardContent><ResponsiveContainer width="100%" height={400}><BarChart data={categoryScoreData}><CartesianGrid strokeOpacity={0.1} /><XAxis dataKey="category" angle={-45} textAnchor="end" height={100} /><YAxis /><Tooltip content={<CustomTooltip />} /><Legend /><Bar dataKey="danger" fill="#FF4500" /><Bar dataKey="absurdity" fill="#FFA500" /></BarChart></ResponsiveContainer></CardContent></Card></TabsContent>
+
+                        <TabsContent value="timeline" className="space-y-8">
+                            <div className="grid lg:grid-cols-1 gap-8">
+                                <Card className="glass-card border-orange-500/20">
+                                    <CardHeader><CardTitle className="text-orange-400">Incidents Over Time</CardTitle></CardHeader>
+                                    <CardContent>
+                                        <ResponsiveContainer width="100%" height={400}>
+                                            <ComposedChart data={timelineData}>
+                                                <CartesianGrid strokeOpacity={0.1} />
+                                                <XAxis dataKey="year" />
+                                                <YAxis yAxisId="left" />
+                                                <YAxis yAxisId="right" orientation="right" />
+                                                <Tooltip content={<CustomTooltip />} />
+                                                <Legend />
+                                                <Bar yAxisId="left" dataKey="count" fill="#FF6500" name="Incident Count" />
+                                                <Line yAxisId="right" type="monotone" dataKey="avgDanger" stroke="#FF4500" strokeWidth={2} name="Avg Danger" dot={{ fill: '#FF4500' }} />
+                                                <Line yAxisId="right" type="monotone" dataKey="avgAbsurdity" stroke="#FFA500" strokeWidth={2} name="Avg Absurdity" dot={{ fill: '#FFA500' }} />
+                                            </ComposedChart>
+                                        </ResponsiveContainer>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        </TabsContent>
+
+                        <TabsContent value="dimensions" className="space-y-8">
+                            <div className="grid lg:grid-cols-2 gap-8">
+                                <Card className="glass-card border-orange-500/20">
+                                    <CardHeader><CardTitle className="text-orange-400">Average Scoring Dimensions</CardTitle></CardHeader>
+                                    <CardContent>
+                                        <ResponsiveContainer width="100%" height={350}>
+                                            <RadarChart data={radarData}>
+                                                <PolarGrid />
+                                                <PolarAngleAxis dataKey="dimension" />
+                                                <PolarRadiusAxis angle={30} domain={[0, 10]} />
+                                                <Radar dataKey="value" stroke="#FF6500" fill="#FF6500" fillOpacity={0.6} />
+                                                <Tooltip content={<CustomTooltip />} />
+                                            </RadarChart>
+                                        </ResponsiveContainer>
+                                    </CardContent>
+                                </Card>
+                                <Card className="glass-card border-orange-500/20">
+                                    <CardHeader><CardTitle className="text-orange-400">Behavioral Pattern Detection</CardTitle></CardHeader>
+                                    <CardContent>
+                                        <ResponsiveContainer width="100%" height={350}>
+                                            <BarChart data={behavioralData} layout="vertical">
+                                                <CartesianGrid strokeOpacity={0.1} />
+                                                <XAxis type="number" />
+                                                <YAxis type="category" dataKey="trait" width={120} />
+                                                <Tooltip content={<CustomTooltip />} />
+                                                <Bar dataKey="count" fill="#FF6500" name="Mentions">
+                                                    {behavioralData.map((_, i) => (
+                                                        <Cell key={i} fill={COLORS[i % COLORS.length]} />
+                                                    ))}
+                                                </Bar>
+                                            </BarChart>
+                                        </ResponsiveContainer>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                            <Card className="glass-card border-orange-500/20">
+                                <CardHeader><CardTitle className="text-orange-400">Danger vs Absurdity Scatter (sample)</CardTitle></CardHeader>
+                                <CardContent>
+                                    <ResponsiveContainer width="100%" height={350}>
+                                        <ScatterChart>
+                                            <CartesianGrid strokeOpacity={0.1} />
+                                            <XAxis type="number" dataKey="danger" name="Danger" domain={[0, 10]} />
+                                            <YAxis type="number" dataKey="absurdity" name="Absurdity" domain={[0, 10]} />
+                                            <Tooltip cursor={{ strokeDasharray: '3 3' }} content={<CustomTooltip />} />
+                                            <Scatter data={dimensionCorrelation} fill="#FF6500" fillOpacity={0.4} />
+                                        </ScatterChart>
+                                    </ResponsiveContainer>
+                                </CardContent>
+                            </Card>
+                        </TabsContent>
+
+                        <TabsContent value="phases" className="space-y-8">
+                            <div className="grid lg:grid-cols-2 gap-8">
+                                <Card className="glass-card border-orange-500/20">
+                                    <CardHeader><CardTitle className="text-orange-400">Entries by Phase</CardTitle></CardHeader>
+                                    <CardContent>
+                                        <ResponsiveContainer width="100%" height={350}>
+                                            <BarChart data={phaseData}>
+                                                <CartesianGrid strokeOpacity={0.1} />
+                                                <XAxis dataKey="name" angle={-20} textAnchor="end" height={80} />
+                                                <YAxis />
+                                                <Tooltip content={<CustomTooltip />} />
+                                                <Legend />
+                                                <Bar dataKey="count" fill="#FF6500" name="Incident Count">
+                                                    {phaseData.map((_, i) => (
+                                                        <Cell key={i} fill={COLORS[i % COLORS.length]} />
+                                                    ))}
+                                                </Bar>
+                                            </BarChart>
+                                        </ResponsiveContainer>
+                                    </CardContent>
+                                </Card>
+                                <Card className="glass-card border-orange-500/20">
+                                    <CardHeader><CardTitle className="text-orange-400">Avg Danger by Phase</CardTitle></CardHeader>
+                                    <CardContent>
+                                        <ResponsiveContainer width="100%" height={350}>
+                                            <BarChart data={phaseData}>
+                                                <CartesianGrid strokeOpacity={0.1} />
+                                                <XAxis dataKey="name" angle={-20} textAnchor="end" height={80} />
+                                                <YAxis domain={[0, 10]} />
+                                                <Tooltip content={<CustomTooltip />} />
+                                                <Bar dataKey="avgDanger" fill="#FF4500" name="Avg Danger" />
+                                            </BarChart>
+                                        </ResponsiveContainer>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                            <Card className="glass-card border-orange-500/20">
+                                <CardHeader><CardTitle className="text-orange-400">Phase Summary</CardTitle></CardHeader>
+                                <CardContent>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                        {phaseData.map((phase, i) => (
+                                            <div key={phase.name} className="p-4 rounded-lg bg-white/5 border border-white/10">
+                                                <h4 className="font-bold text-orange-400 mb-2">{phase.name}</h4>
+                                                <div className="space-y-1 text-sm text-foreground/70">
+                                                    <p>Entries: <span className="text-white font-mono">{phase.count}</span></p>
+                                                    <p>Avg Danger: <span className="text-red-400 font-mono">{phase.avgDanger}</span></p>
+                                                    <p>Top Category: <span className="text-orange-300">{phase.topCategory}</span></p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </TabsContent>
+
+                        <TabsContent value="financial" className="space-y-8">
+                            <div className="grid lg:grid-cols-2 gap-8">
+                                <Card className="glass-card border-orange-500/20">
+                                    <CardHeader><CardTitle className="text-orange-400">Impact Score by Category</CardTitle></CardHeader>
+                                    <CardContent>
+                                        <ResponsiveContainer width="100%" height={400}>
+                                            <BarChart data={financialData} layout="vertical">
+                                                <CartesianGrid strokeOpacity={0.1} />
+                                                <XAxis type="number" />
+                                                <YAxis type="category" dataKey="category" width={140} />
+                                                <Tooltip content={<CustomTooltip />} />
+                                                <Legend />
+                                                <Bar dataKey="avgScore" fill="#FF6500" name="Avg F*cked-Up Score" />
+                                                <Bar dataKey="avgImpact" fill="#FFA500" name="Avg Impact Scope" />
+                                            </BarChart>
+                                        </ResponsiveContainer>
+                                    </CardContent>
+                                </Card>
+                                <Card className="glass-card border-orange-500/20">
+                                    <CardHeader><CardTitle className="text-orange-400">Score Distribution</CardTitle></CardHeader>
+                                    <CardContent>
+                                        <ResponsiveContainer width="100%" height={400}>
+                                            <AreaChart data={scoreDistribution}>
+                                                <CartesianGrid strokeOpacity={0.1} />
+                                                <XAxis dataKey="range" />
+                                                <YAxis />
+                                                <Tooltip content={<CustomTooltip />} />
+                                                <Area type="monotone" dataKey="count" stroke="#FF6500" fill="#FF6500" fillOpacity={0.3} name="Entries" />
+                                            </AreaChart>
+                                        </ResponsiveContainer>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        </TabsContent>
+
+                        <TabsContent value="relationships" className="space-y-8">
+                            <Card className="glass-card border-orange-500/20">
+                                <CardHeader><CardTitle className="text-orange-400">Top Keywords by Frequency</CardTitle></CardHeader>
+                                <CardContent>
+                                    <ResponsiveContainer width="100%" height={450}>
+                                        <BarChart data={relationshipData} layout="vertical">
+                                            <CartesianGrid strokeOpacity={0.1} />
+                                            <XAxis type="number" />
+                                            <YAxis type="category" dataKey="keyword" width={140} />
+                                            <Tooltip content={<CustomTooltip />} />
+                                            <Legend />
+                                            <Bar dataKey="count" fill="#FF6500" name="Frequency">
+                                                {relationshipData.map((_, i) => (
+                                                    <Cell key={i} fill={COLORS[i % COLORS.length]} />
+                                                ))}
+                                            </Bar>
+                                        </BarChart>
+                                    </ResponsiveContainer>
+                                </CardContent>
+                            </Card>
+                            <Card className="glass-card border-orange-500/20">
+                                <CardHeader><CardTitle className="text-orange-400">Keyword Danger vs Absurdity</CardTitle></CardHeader>
+                                <CardContent>
+                                    <ResponsiveContainer width="100%" height={400}>
+                                        <BarChart data={relationshipData}>
+                                            <CartesianGrid strokeOpacity={0.1} />
+                                            <XAxis dataKey="keyword" angle={-45} textAnchor="end" height={100} />
+                                            <YAxis domain={[0, 10]} />
+                                            <Tooltip content={<CustomTooltip />} />
+                                            <Legend />
+                                            <Bar dataKey="avgDanger" fill="#FF4500" name="Avg Danger" />
+                                            <Bar dataKey="avgAbsurdity" fill="#FFA500" name="Avg Absurdity" />
+                                        </BarChart>
+                                    </ResponsiveContainer>
+                                </CardContent>
+                            </Card>
+                        </TabsContent>
                     </Tabs>
                 )}
             </div>
