@@ -44,7 +44,8 @@ export default function AsciiFooter() {
         />
       </div>
       <div className="container mx-auto px-4 py-12 relative z-10">
-        <div className="grid md:grid-cols-3 gap-8 items-center">
+        {/* ── DESKTOP FOOTER (md+) ── */}
+        <div className="hidden md:grid md:grid-cols-3 gap-8 items-center">
           {/* ASCII Art Brand Title - Left Column */}
           <div className="flex flex-col justify-center">
             <pre
@@ -70,7 +71,7 @@ export default function AsciiFooter() {
             )}
           </div>
 
-          {/* Trump Bathtub Image - Center Column (Centered Both Horizontally & Vertically) */}
+          {/* Trump Bathtub Image - Center Column */}
           <div className="flex items-center justify-center self-center">
             <div className="relative group">
               <Image
@@ -81,7 +82,6 @@ export default function AsciiFooter() {
                 className="w-auto h-auto max-w-[280px] object-contain drop-shadow-[0_0_20px_rgba(249,115,22,0.4)] transition-all duration-500 group-hover:drop-shadow-[0_0_30px_rgba(249,115,22,0.6)] group-hover:scale-105"
                 style={{ width: 'auto', height: 'auto' }}
               />
-              {/* Animated border glow */}
               <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-500/20 via-transparent to-orange-500/20 animate-pulse opacity-50 pointer-events-none" />
             </div>
           </div>
@@ -91,65 +91,78 @@ export default function AsciiFooter() {
             <div>
               <h3 className="text-lg font-bold mb-4 text-orange-400">Quick Links</h3>
               <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/" className="text-foreground/70 hover:text-orange-400 transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/catalog" className="text-foreground/70 hover:text-orange-400 transition-colors">
-                    Catalog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/visualizer" className="text-foreground/70 hover:text-orange-400 transition-colors">
-                    Data Visualizer
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/wtf" className="text-foreground/70 hover:text-orange-400 transition-colors">
-                    What The Fuck?
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/enigma" className="text-foreground/70 hover:text-orange-400 transition-colors">
-                    Enigma
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/donate" className="text-foreground/70 hover:text-orange-400 transition-colors">
-                    WHOAMI?
-                  </Link>
-                </li>
+                <li><Link href="/" className="text-foreground/70 hover:text-orange-400 transition-colors">Home</Link></li>
+                <li><Link href="/catalog" className="text-foreground/70 hover:text-orange-400 transition-colors">Catalog</Link></li>
+                <li><Link href="/visualizer" className="text-foreground/70 hover:text-orange-400 transition-colors">Data Visualizer</Link></li>
+                <li><Link href="/wtf" className="text-foreground/70 hover:text-orange-400 transition-colors">What The Fuck?</Link></li>
+                <li><Link href="/enigma" className="text-foreground/70 hover:text-orange-400 transition-colors">Enigma</Link></li>
+                <li><Link href="/donate" className="text-foreground/70 hover:text-orange-400 transition-colors">WHOAMI?</Link></li>
               </ul>
             </div>
-
             <div>
               <h3 className="text-lg font-bold mb-4 text-orange-400">Connect</h3>
               <div className="flex gap-4 justify-end">
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground/70 hover:text-orange-400 transition-colors"
-                >
-                  <Github className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground/70 hover:text-orange-400 transition-colors"
-                >
-                  <Twitter className="w-5 h-5" />
-                </a>
-                <a
-                  href="mailto:contact@trumpfiles.fun"
-                  className="text-foreground/70 hover:text-orange-400 transition-colors"
-                >
-                  <Mail className="w-5 h-5" />
-                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-orange-400 transition-colors"><Github className="w-5 h-5" /></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-orange-400 transition-colors"><Twitter className="w-5 h-5" /></a>
+                <a href="mailto:contact@trumpfiles.fun" className="text-foreground/70 hover:text-orange-400 transition-colors"><Mail className="w-5 h-5" /></a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ── MOBILE FOOTER (below md) ── */}
+        <div className="md:hidden space-y-6">
+          {/* Bathtub image centered */}
+          <div className="flex justify-center">
+            <Image
+              src="/images/trump_bathtub.png"
+              alt="Trump in Bathtub"
+              width={200}
+              height={200}
+              className="w-auto h-auto max-w-[200px] object-contain drop-shadow-[0_0_20px_rgba(249,115,22,0.4)]"
+              style={{ width: 'auto', height: 'auto' }}
+            />
+          </div>
+
+          {/* Info text centered */}
+          <div className="text-center">
+            <p className="text-sm text-foreground/60">
+              A comprehensive, data-driven archive documenting {entryCount}+ incidents across 40+ years.
+            </p>
+            {lastScrapedFormatted && (
+              <p className="text-xs text-orange-500/50 mt-1 font-mono tracking-wider">
+                LAST UPDATED: {lastScrapedFormatted}
+              </p>
+            )}
+          </div>
+
+          {/* Quick Links in 2-column grid + Connect side by side */}
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <h3 className="text-sm font-bold mb-2 text-orange-400">Quick Links</h3>
+              <ul className="space-y-1.5 text-xs">
+                <li><Link href="/" className="text-foreground/70 hover:text-orange-400 transition-colors">Home</Link></li>
+                <li><Link href="/catalog" className="text-foreground/70 hover:text-orange-400 transition-colors">Catalog</Link></li>
+                <li><Link href="/visualizer" className="text-foreground/70 hover:text-orange-400 transition-colors">Data Visualizer</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-sm font-bold mb-2 text-orange-400">&nbsp;</h3>
+              <ul className="space-y-1.5 text-xs">
+                <li><Link href="/wtf" className="text-foreground/70 hover:text-orange-400 transition-colors">What The Fuck?</Link></li>
+                <li><Link href="/enigma" className="text-foreground/70 hover:text-orange-400 transition-colors">Enigma</Link></li>
+                <li><Link href="/donate" className="text-foreground/70 hover:text-orange-400 transition-colors">WHOAMI?</Link></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Connect centered */}
+          <div className="text-center">
+            <h3 className="text-sm font-bold mb-2 text-orange-400">Connect</h3>
+            <div className="flex gap-5 justify-center">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-orange-400 transition-colors"><Github className="w-5 h-5" /></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-orange-400 transition-colors"><Twitter className="w-5 h-5" /></a>
+              <a href="mailto:contact@trumpfiles.fun" className="text-foreground/70 hover:text-orange-400 transition-colors"><Mail className="w-5 h-5" /></a>
             </div>
           </div>
         </div>

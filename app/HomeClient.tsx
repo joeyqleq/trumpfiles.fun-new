@@ -118,51 +118,52 @@ export default function HomeClient({
             </div>
 
             <div className="relative z-10">
-                <section className="relative overflow-hidden min-h-[calc(100vh-80px)] flex items-stretch py-4">
-                    <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-[625px] h-[625px] opacity-20 pointer-events-none hidden md:block">
+                {/* ── DESKTOP HERO (hidden on mobile) ── */}
+                <section className="relative overflow-hidden h-[calc(100vh-64px)] hidden md:flex items-stretch py-2">
+                    <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-[625px] h-[625px] opacity-20 pointer-events-none hidden lg:block">
                         <img src="/images/bg-decor_wireframe_donut.svg" alt="" className="absolute inset-0 w-full h-full object-contain" />
                         <div className="absolute inset-0 w-full h-full animate-beam-pulse" style={{ background: 'radial-gradient(ellipse at center, rgba(255,165,0,0.3) 0%, transparent 60%)', mixBlendMode: 'overlay' }} />
                     </div>
-                    <div className="absolute -right-24 top-1/3 w-[440px] h-[440px] opacity-15 pointer-events-none hidden md:block">
+                    <div className="absolute -right-24 top-1/3 w-[440px] h-[440px] opacity-15 pointer-events-none hidden lg:block">
                         <img src="/images/bg-decor_hula-hoops.svg" alt="" className="absolute inset-0 w-full h-full object-contain" />
                         <div className="absolute inset-0 w-full h-full rounded-full animate-beam-rotate" style={{ background: 'conic-gradient(from 0deg, transparent, rgba(255,100,0,0.4), transparent, rgba(255,165,0,0.4), transparent)', mixBlendMode: 'overlay' }} />
                     </div>
 
                     <div className="container mx-auto px-4 lg:px-12 relative z-10 w-full flex-grow">
-                        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 h-full items-stretch max-w-7xl mx-auto">
-                            <div className="flex flex-col justify-between order-2 lg:order-1 h-full py-2">
-                                <div className="flex justify-center lg:justify-start">
-                                    <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-500 border-orange-500/30 px-4 py-1.5 text-sm">The Definitive Data-Driven Encyclopedia of Political Absurdity</Badge>
+                        <div className="grid lg:grid-cols-2 gap-4 lg:gap-12 h-full items-stretch max-w-7xl mx-auto">
+                            <div className="flex flex-col justify-between h-full py-1">
+                                <div className="flex justify-start">
+                                    <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-500 border-orange-500/30 px-4 py-1 text-sm">The Definitive Data-Driven Encyclopedia of Political Absurdity</Badge>
                                 </div>
-                                <div className="flex-1 flex flex-col justify-center my-4 text-center lg:text-left">
-                                    <div className="py-2">
-                                        <TrumpFilesBrand size="hero" className="justify-center lg:justify-start whitespace-nowrap" />
+                                <div className="flex-1 flex flex-col justify-center my-2 text-left">
+                                    <div className="py-1">
+                                        <TrumpFilesBrand size="hero" className="justify-start whitespace-nowrap" />
                                     </div>
-                                    <p className="text-lg lg:text-xl text-foreground/80 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium mt-4" style={{ fontFamily: 'var(--font-neuething)' }}>
+                                    <p className="text-base lg:text-lg text-foreground/80 max-w-xl leading-relaxed font-medium mt-3" style={{ fontFamily: 'var(--font-neuething)' }}>
                                         A comprehensive, data-driven archive of the 45th U.S. President&apos;s most controversial and impactful moments. Explore, analyze, and understand the data behind the headlines.
                                     </p>
-                                    <div className="flex justify-center lg:justify-start pt-6">
+                                    <div className="flex justify-start pt-4">
                                         <ElectricBorder color="#9eff2a" speed={1.5} chaos={0.08} borderRadius={16}>
-                                            <div className="px-6 py-3 bg-gradient-to-r from-orange-950/80 via-black/70 to-orange-950/80 backdrop-blur-sm rounded-2xl border border-orange-500/10 flex flex-col items-center gap-1">
-                                                <ShinyText text={`${entryCount}+ ENTRIES DOCUMENTED`} speed={2.9} delay={0.7} color="#ffb347" shineColor="#ffffff" spread={110} direction="left" yoyo pauseOnHover={false} disabled={false} className="text-sm md:text-base font-bold tracking-wide" />
-                                                {lastScrapedFormatted && <span className="text-[10px] md:text-xs text-orange-500/60 tracking-widest uppercase font-mono">Last updated {lastScrapedFormatted}</span>}
+                                            <div className="px-5 py-2 bg-gradient-to-r from-orange-950/80 via-black/70 to-orange-950/80 backdrop-blur-sm rounded-2xl border border-orange-500/10 flex flex-col items-center gap-0.5">
+                                                <ShinyText text={`${entryCount}+ ENTRIES DOCUMENTED`} speed={2.9} delay={0.7} color="#ffb347" shineColor="#ffffff" spread={110} direction="left" yoyo pauseOnHover={false} disabled={false} className="text-sm font-bold tracking-wide" />
+                                                {lastScrapedFormatted && <span className="text-[10px] text-orange-500/60 tracking-widest uppercase font-mono">Last updated {lastScrapedFormatted}</span>}
                                             </div>
                                         </ElectricBorder>
                                     </div>
                                 </div>
-                                <div className="flex flex-wrap gap-6 justify-center lg:justify-start pt-2">
-                                    <Link href="/catalog"><ShinyButton className="text-base px-6 py-3 bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/50">Explore The Files</ShinyButton></Link>
-                                    <Link href="/visualizer"><PulsatingButton className="text-base px-6 py-3 bg-orange-600 hover:bg-orange-700">Visualize The Data</PulsatingButton></Link>
+                                <div className="flex flex-wrap gap-4 justify-start pt-1">
+                                    <Link href="/catalog"><ShinyButton className="text-sm px-5 py-2.5 bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/50">Explore The Files</ShinyButton></Link>
+                                    <Link href="/visualizer"><PulsatingButton className="text-sm px-5 py-2.5 bg-orange-600 hover:bg-orange-700">Visualize The Data</PulsatingButton></Link>
                                 </div>
-                                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }} className="mt-8 max-w-lg lg:max-w-md">
+                                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }} className="mt-4 max-w-md">
                                     <Link href="/donate">
-                                        <div className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-950/40 to-slate-900/40 border border-blue-500/30 p-4 hover:border-blue-400/50 hover:bg-blue-900/20 transition-all cursor-pointer shadow-lg shadow-blue-900/10">
+                                        <div className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-950/40 to-slate-900/40 border border-blue-500/30 p-3 hover:border-blue-400/50 hover:bg-blue-900/20 transition-all cursor-pointer shadow-lg shadow-blue-900/10">
                                             <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 group-hover:bg-blue-400 transition-colors" />
                                             <div className="flex items-start gap-3">
-                                                <div className="p-2 bg-blue-500/20 rounded-lg group-hover:scale-110 transition-transform"><Heart className="w-5 h-5 text-blue-400" /></div>
+                                                <div className="p-1.5 bg-blue-500/20 rounded-lg group-hover:scale-110 transition-transform"><Heart className="w-4 h-4 text-blue-400" /></div>
                                                 <div>
-                                                    <h4 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-1 flex items-center gap-2">Message from the Creator <span className="text-[10px] bg-blue-500/20 px-1.5 py-0.5 rounded text-blue-300 border border-blue-500/30">Read</span></h4>
-                                                    <p className="text-xs text-blue-100/70 leading-relaxed font-sans">Building this archive from Lebanon comes with unique challenges. If you value this work, please read this note.</p>
+                                                    <h4 className="text-xs font-bold text-blue-300 uppercase tracking-wider mb-1 flex items-center gap-2">Message from the Creator <span className="text-[9px] bg-blue-500/20 px-1.5 py-0.5 rounded text-blue-300 border border-blue-500/30">Read</span></h4>
+                                                    <p className="text-[11px] text-blue-100/70 leading-relaxed font-sans">Building this archive from Lebanon comes with unique challenges. If you value this work, please read this note.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -170,24 +171,79 @@ export default function HomeClient({
                                 </motion.div>
                             </div>
 
-                            <div className="flex flex-col justify-between order-1 lg:order-2 h-full py-2 relative z-20 pl-8 lg:pl-16">
-                                <div className="hidden lg:flex justify-start items-center h-[32px] overflow-visible -mt-1">
-                                    <img src="/images/bg-decor_repeating_front-slash.svg" alt="" className="w-[300px] h-auto object-left opacity-60" />
+                            <div className="flex flex-col justify-between h-full py-1 relative z-20 pl-8 lg:pl-12">
+                                <div className="hidden lg:flex justify-start items-center h-[24px] overflow-visible">
+                                    <img src="/images/bg-decor_repeating_front-slash.svg" alt="" className="w-[250px] h-auto object-left opacity-60" />
                                 </div>
-                                <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative w-full flex-1 flex items-center justify-center -ml-8 lg:-ml-4 xl:ml-0 my-4">
-                                    <div className="w-full max-w-[650px] aspect-square relative transform scale-90 lg:scale-115 pointer-events-none lg:pointer-events-auto"><OrangeHero /></div>
+                                <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative w-full flex-1 flex items-center justify-center my-2">
+                                    <div className="w-full max-w-[500px] aspect-square relative transform lg:scale-110 pointer-events-auto"><OrangeHero /></div>
                                 </motion.div>
-                                <div className="flex items-end gap-x-6 relative w-full justify-center lg:justify-start lg:pl-12 pt-2 mt-auto">
+                                <div className="flex items-end gap-x-4 relative w-full justify-start lg:pl-8 pt-1 mt-auto">
                                     <div className="relative leading-none">
-                                        <SparklesText className="text-7xl lg:text-9xl font-black tracking-tighter !leading-none block p-0 m-0" colors={{ first: '#FFA500', second: '#FF4500' }} style={{ fontFamily: 'var(--font-arctic-guardian-grad)', fontWeight: 900, background: 'linear-gradient(to bottom, #FFA500, #FF4500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>DJT</SparklesText>
+                                        <SparklesText className="text-6xl lg:text-8xl font-black tracking-tighter !leading-none block p-0 m-0" colors={{ first: '#FFA500', second: '#FF4500' }} style={{ fontFamily: 'var(--font-arctic-guardian-grad)', fontWeight: 900, background: 'linear-gradient(to bottom, #FFA500, #FF4500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>DJT</SparklesText>
                                     </div>
-                                    <div className="relative h-24 w-56 mb-2">
+                                    <div className="relative h-20 w-48 mb-1">
                                         <div className="absolute inset-0 z-20 pointer-events-none rounded-lg overflow-hidden"><ShineBorder shineColor={["#FFA500", "#FF4500", "#FFD700"]} borderWidth={2} duration={4} className="w-full h-full" /></div>
                                         <div className="relative z-10 w-full h-full"><img src="/images/trump_signature_2.svg" alt="Signature" className="w-full h-full object-contain" /></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                {/* ── MOBILE HERO (hidden on desktop) ── */}
+                <section className="md:hidden relative overflow-hidden px-4 pt-4 pb-6">
+                    <div className="flex flex-col items-center text-center gap-3">
+                        {/* 1. Pill badge */}
+                        <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-500 border-orange-500/30 px-3 py-1 text-[11px] max-w-[90vw] text-center">The Definitive Data-Driven Encyclopedia of Political Absurdity</Badge>
+
+                        {/* 2. Title */}
+                        <div className="py-1 w-full overflow-hidden">
+                            <TrumpFilesBrand size="hero" className="justify-center !text-3xl scale-[0.85]" />
+                        </div>
+
+                        {/* 3. 3D Model */}
+                        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="w-[70vw] max-w-[300px] aspect-square pointer-events-none">
+                            <OrangeHero />
+                        </motion.div>
+
+                        {/* 4. Description text */}
+                        <p className="text-sm text-foreground/80 max-w-[85vw] leading-relaxed font-medium" style={{ fontFamily: 'var(--font-neuething)' }}>
+                            A comprehensive, data-driven archive of the 45th U.S. President&apos;s most controversial and impactful moments.
+                        </p>
+
+                        {/* 5. Entry counter */}
+                        <div className="flex justify-center">
+                            <ElectricBorder color="#9eff2a" speed={1.5} chaos={0.08} borderRadius={16}>
+                                <div className="px-4 py-2 bg-gradient-to-r from-orange-950/80 via-black/70 to-orange-950/80 backdrop-blur-sm rounded-2xl border border-orange-500/10 flex flex-col items-center gap-0.5">
+                                    <ShinyText text={`${entryCount}+ ENTRIES DOCUMENTED`} speed={2.9} delay={0.7} color="#ffb347" shineColor="#ffffff" spread={110} direction="left" yoyo pauseOnHover={false} disabled={false} className="text-xs font-bold tracking-wide" />
+                                    {lastScrapedFormatted && <span className="text-[9px] text-orange-500/60 tracking-widest uppercase font-mono">Last updated {lastScrapedFormatted}</span>}
+                                </div>
+                            </ElectricBorder>
+                        </div>
+
+                        {/* 6. Buttons */}
+                        <div className="flex gap-3 justify-center w-full max-w-[85vw]">
+                            <Link href="/catalog" className="flex-1"><ShinyButton className="w-full text-xs px-3 py-2.5 bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/50">Explore The Files</ShinyButton></Link>
+                            <Link href="/visualizer" className="flex-1"><PulsatingButton className="w-full text-xs px-3 py-2.5 bg-orange-600 hover:bg-orange-700">Visualize The Data</PulsatingButton></Link>
+                        </div>
+
+                        {/* 7. Blue box */}
+                        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }} className="w-full max-w-[85vw]">
+                            <Link href="/donate">
+                                <div className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-950/40 to-slate-900/40 border border-blue-500/30 p-3 hover:border-blue-400/50 hover:bg-blue-900/20 transition-all cursor-pointer shadow-lg shadow-blue-900/10">
+                                    <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 group-hover:bg-blue-400 transition-colors" />
+                                    <div className="flex items-start gap-2">
+                                        <div className="p-1.5 bg-blue-500/20 rounded-lg flex-shrink-0"><Heart className="w-4 h-4 text-blue-400" /></div>
+                                        <div>
+                                            <h4 className="text-[11px] font-bold text-blue-300 uppercase tracking-wider mb-0.5 flex items-center gap-1">Message from the Creator <span className="text-[8px] bg-blue-500/20 px-1 py-0.5 rounded text-blue-300 border border-blue-500/30">Read</span></h4>
+                                            <p className="text-[10px] text-blue-100/70 leading-relaxed font-sans">Building this archive from Lebanon comes with unique challenges. If you value this work, please read this note.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </motion.div>
                     </div>
                 </section>
 
