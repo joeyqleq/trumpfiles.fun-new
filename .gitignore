@@ -48,7 +48,7 @@ next-env.d.ts
 /logs/*
 !/logs/dev.log
 !/logs/entries_snapshot.json
-/tmp/
+#/tmp/
 /app/api/chat/
 /components/chat/
 /lib/chat/
