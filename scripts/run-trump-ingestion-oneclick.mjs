@@ -3,6 +3,48 @@ import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
+/**
+ * Minimal .env parser so this script works without extra deps.
+ * Supports lines like:
+ *   KEY=value
+ *   KEY="value"
+ *   KEY='value'
+ */
+function loadDotEnvFile(filePath) {
+  if (!fs.existsSync(filePath)) return;
+
+  const raw = fs.readFileSync(filePath, "utf8");
+  const lines = raw.split(/\r?\n/);
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+
+    const eq = trimmed.indexOf("=");
+    if (eq <= 0) continue;
+
+    const key = trimmed.slice(0, eq).trim();
+    let value = trimmed.slice(eq + 1).trim();
+
+    // Strip surrounding quotes
+    if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
+
+    // Do not overwrite already-set env vars
+    if (!process.env[key]) {
+      process.env[key] = value;
+    }
+  }
+}
+
+// Load env files in precedence order (existing env wins)
+loadDotEnvFile(path.resolve(process.cwd(), ".env.local"));
+loadDotEnvFile(path.resolve(process.cwd(), ".env"));
+
 const mode = process.env.MODE || "recency_update";
 const batchSize = Number(process.env.BATCH_SIZE || 50);
 const fromDate = process.env.FROM_DATE || "";
