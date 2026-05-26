@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import AsciiFooter from "@/components/AsciiFooter";
 import "./globals.css";
 import Script from "next/script";
-import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, neuething } from "./fonts";
+import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, neuething } from "@/lib/fonts";
 // import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { sql } from "@/lib/neonClient";
@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const entryCount = await getEntryCount();
 
   const title = "The Trump Files | Encyclopedia Orange";
-  const description = `An interactive thermal encyclopedia cataloging ${entryCount}+ documented incidents, scandals, and absurd moments from Donald J. Trump. AI-analyzed, timestamped, and scored for danger, insanity, and lawlessness. Never forget. Never normalize.`;
+  const description = `An interactive thermal encyclopedia cataloging ${entryCount}+ documented incidents, scandals, and absurd moments from Donald J. Trump. AI-analyzed, timestamped, and scored for accuracy and impact.`;
   const siteUrl = "https://trumpfiles.fun";
 
   return {
@@ -150,7 +150,7 @@ export default function RootLayout({
         <Script
           async
           defer
-          src="https://tianji.p5n.lol/tracker.js"
+          src="https://tianji.myhayat.app/tracker.js"
           data-website-id="cmkknj04j0001fiaeb33fvmi7"
           strategy="afterInteractive"
         />
@@ -160,12 +160,11 @@ export default function RootLayout({
           {`
             var _paq = window._paq = window._paq || [];
             _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-            _paq.push(["setDomains", ["*.trumpfiles.fun","*.www.trumpfiles.fun"]]);
-            _paq.push(["enableCrossDomainLinking"]);
+            _paq.push(["setCookieDomain", "*.myhayat.app"]);
             _paq.push(['trackPageView']);
             _paq.push(['enableLinkTracking']);
             (function() {
-              var u="//matomo.p5n.lol/";
+              var u="//matomo.myhayat.app/";
               _paq.push(['setTrackerUrl', u+'matomo.php']);
               _paq.push(['setSiteId', '7']);
               var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
@@ -178,7 +177,7 @@ export default function RootLayout({
         <noscript>
           <img
             referrerPolicy="no-referrer-when-downgrade"
-            src="//matomo.p5n.lol/matomo.php?idsite=7&rec=1"
+            src="//matomo.myhayat.app/matomo.php?idsite=7&rec=1"
             style={{ border: 0 }}
             alt=""
           />
