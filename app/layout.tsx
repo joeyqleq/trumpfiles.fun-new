@@ -76,6 +76,7 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(siteUrl),
 
     // OpenGraph for Facebook, LinkedIn, etc.
+    // og:image is served dynamically by app/opengraph-image.tsx
     openGraph: {
       type: "website",
       locale: "en_US",
@@ -83,15 +84,6 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: "The Trump Files",
       title,
       description,
-      images: [
-        {
-          url: "/images/og-image-2.png",
-          width: 1200,
-          height: 630,
-          alt: `The Trump Files - ${entryCount}+ Documented Incidents`,
-          type: "image/png",
-        },
-      ],
     },
 
     // Twitter Card
@@ -99,7 +91,6 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      images: ["/images/og-image-2.png"],
       creator: "@thetrumpfiles",
       site: "@thetrumpfiles",
     },
@@ -159,8 +150,14 @@ export default function RootLayout({
         <Script id="matomo-analytics" strategy="afterInteractive">
           {`
             var _paq = window._paq = window._paq || [];
+            var hostname = window.location.hostname;
+            var cookieDomain = hostname === "trumpfiles.fun" || hostname.endsWith(".trumpfiles.fun")
+              ? ".trumpfiles.fun"
+              : null;
             _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-            _paq.push(["setCookieDomain", "*.myhayat.app"]);
+            if (cookieDomain) {
+              _paq.push(["setCookieDomain", cookieDomain]);
+            }
             _paq.push(['trackPageView']);
             _paq.push(['enableLinkTracking']);
             (function() {
