@@ -137,48 +137,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
-        {/* Tianji Analytics */}
+        {/* Tianji Analytics — tracks trumpfiles.fun + trumpstein.me */}
         <Script
-          async
-          defer
-          src="https://tianji.myhayat.app/tracker.js"
-          data-website-id="cmkknj04j0001fiaeb33fvmi7"
+          src="https://numbers.trumpstein.me/tracker.js"
+          data-website-id="cmrimayfs000glftpxjbjo4he"
           strategy="afterInteractive"
         />
-
-        {/* Matomo Analytics */}
-        <Script id="matomo-analytics" strategy="afterInteractive">
-          {`
-            var _paq = window._paq = window._paq || [];
-            var hostname = window.location.hostname;
-            var cookieDomain = hostname === "trumpfiles.fun" || hostname.endsWith(".trumpfiles.fun")
-              ? ".trumpfiles.fun"
-              : null;
-            _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-            if (cookieDomain) {
-              _paq.push(["setCookieDomain", cookieDomain]);
-            }
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-              var u="//matomo.myhayat.app/";
-              _paq.push(['setTrackerUrl', u+'matomo.php']);
-              _paq.push(['setSiteId', '7']);
-              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-              g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-            })();
-          `}
-        </Script>
-
-        {/* Matomo noscript fallback */}
-        <noscript>
-          <img
-            referrerPolicy="no-referrer-when-downgrade"
-            src="//matomo.myhayat.app/matomo.php?idsite=7&rec=1"
-            style={{ border: 0 }}
-            alt=""
-          />
-        </noscript>
 
         {/* JSON-LD Structured Data */}
         <Script
