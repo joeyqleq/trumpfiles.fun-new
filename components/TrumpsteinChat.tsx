@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const WORKER_URL =
   process.env.NEXT_PUBLIC_TRUMPSTEIN_WORKER_URL ??
-  "https://trumpstein.trumpfiles.workers.dev";
+  "https://trumpstein.trumpstein.workers.dev";
 
 interface Message {
   id: string;
