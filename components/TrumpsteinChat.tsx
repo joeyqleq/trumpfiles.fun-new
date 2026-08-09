@@ -122,8 +122,10 @@ export default function TrumpsteinChat({
             if (line.startsWith("data: ") && !line.includes("[DONE]")) {
               try {
                 const json = JSON.parse(line.slice(6));
-                if (json.response) {
-                  accumulated += json.response;
+                // Support both Workers AI formats: {response: "..."} and OpenAI-style {choices: [{delta: {content: "..."}}]}
+                const token = json.response ?? json.choices?.[0]?.delta?.content ?? "";
+                if (token) {
+                  accumulated += token;
                   setMessages((prev) =>
                     prev.map((m) =>
                       m.id === assistantId

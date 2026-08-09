@@ -176,7 +176,8 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
         if (line.startsWith("data: ") && !line.includes("[DONE]")) {
           try {
             const json = JSON.parse(line.slice(6));
-            fullText += json.response ?? "";
+            // Support both Workers AI formats: {response: "..."} and OpenAI-style {choices: [{delta: {content: "..."}}]}
+            fullText += json.response ?? json.choices?.[0]?.delta?.content ?? "";
           } catch {
             // ignore parse errors on malformed chunks
           }
