@@ -1,0 +1,24 @@
+name = "trumpstein"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "8ef64a0491a1d7f0000de52892b33533"
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "trumpstein-chat"
+database_id = "088a21f7-6834-466e-8408-83e0238338c2"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "trumpstein-rag"
+
+[vars]
+NEON_API_URL = "https://trumpfiles.fun/api"
+ALLOWED_ORIGINS = "https://trumpfiles.fun,http://localhost:3000"
+
+# Secrets (set via wrangler secret put):
+# NEON_DATABASE_URL — Neon pooler connection string for ingest script

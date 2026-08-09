@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import AsciiFooter from "@/components/AsciiFooter";
+import TrumpsteinChat from "@/components/TrumpsteinChat";
 import "./globals.css";
 import Script from "next/script";
-import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, neuething } from "@/lib/fonts";
+import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, neuething, instrumentSerif, spaceGrotesk, playfairDisplay, sourceSerif, jetbrainsMono } from "@/lib/fonts";
 // import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { sql } from "@/lib/neonClient";
@@ -169,7 +170,7 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning className={`
-          ${arcticGuardian.variable} 
+          ${arcticGuardian.variable}
           ${arcticGuardian3D.variable}
           ${arcticGuardianGrad.variable}
           ${arcticGuardianGradItalic.variable}
@@ -179,7 +180,12 @@ export default function RootLayout({
           ${arcticGuardianTwoTone.variable}
           ${arcticGuardianTwoToneItalic.variable}
           ${arcticGuardianLeft.variable}
-          ${neuething.variable} 
+          ${neuething.variable}
+          ${instrumentSerif.variable}
+          ${spaceGrotesk.variable}
+          ${playfairDisplay.variable}
+          ${sourceSerif.variable}
+          ${jetbrainsMono.variable}
           font-sans antialiased min-h-screen bg-background
         `}>
         <AnimatedBackground>
@@ -189,6 +195,7 @@ export default function RootLayout({
             {children}
           </main>
           <AsciiFooter />
+          <TrumpsteinChat />
         </AnimatedBackground>
         <Analytics />
       </body>

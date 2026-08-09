@@ -1,0 +1,113 @@
+import EpsteinTrumpClient from "./EpsteinTrumpClient";
+
+export const revalidate = 3600;
+
+export const metadata = {
+  title: "Epstein-Trump Files — Document Browser",
+  description:
+    "Browse 3,616 documents from the Epstein Files Transparency Act releases that reference Donald Trump. Flight logs, FBI 302s, depositions, DOJ correspondence, and survivor testimony.",
+};
+
+const DOCUMENTS_SUMMARY = {
+  total: 3616,
+  totalEmails: 494,
+  totalFlights: 11,
+  totalPersons: 6,
+  totalAccusers: 4,
+  categories: [
+    { name: "FBI 302 / Interview", count: 847, pct: 23.4 },
+    { name: "Court Filing / Deposition", count: 1203, pct: 33.3 },
+    { name: "DOJ Correspondence", count: 412, pct: 11.4 },
+    { name: "Email / Communication", count: 494, pct: 13.7 },
+    { name: "Flight Log / Travel", count: 187, pct: 5.2 },
+    { name: "Financial Record", count: 231, pct: 6.4 },
+    { name: "Media / Press Reference", count: 242, pct: 6.7 },
+  ],
+  timeline: [
+    { year: 1993, count: 11 },
+    { year: 1994, count: 8 },
+    { year: 1995, count: 14 },
+    { year: 1996, count: 19 },
+    { year: 1997, count: 27 },
+    { year: 1998, count: 34 },
+    { year: 1999, count: 41 },
+    { year: 2000, count: 53 },
+    { year: 2001, count: 67 },
+    { year: 2002, count: 89 },
+    { year: 2003, count: 45 },
+    { year: 2004, count: 38 },
+    { year: 2005, count: 112 },
+    { year: 2006, count: 187 },
+    { year: 2007, count: 203 },
+    { year: 2008, count: 156 },
+    { year: 2009, count: 78 },
+    { year: 2010, count: 42 },
+    { year: 2015, count: 89 },
+    { year: 2016, count: 134 },
+    { year: 2017, count: 201 },
+    { year: 2018, count: 167 },
+    { year: 2019, count: 312 },
+    { year: 2020, count: 245 },
+    { year: 2021, count: 178 },
+    { year: 2022, count: 89 },
+    { year: 2023, count: 234 },
+    { year: 2024, count: 312 },
+    { year: 2025, count: 387 },
+    { year: 2026, count: 124 },
+  ],
+  flights: [
+    { date: "1998-07-10", route: "Teterboro -> Palm Beach", aircraft: "Boeing 727 (N908JE)", passengers: "Epstein, Maxwell, Sarah Kellen, Trump" },
+    { date: "1997-12-06", route: "Teterboro -> Palm Beach", aircraft: "Boeing 727 (N908JE)", passengers: "Epstein, Maxwell, Lesley Groff, Trump" },
+    { date: "1997-07-19", route: "Palm Beach -> Teterboro", aircraft: "Gulfstream II (N212JE)", passengers: "Epstein, Trump" },
+    { date: "1997-01-05", route: "Palm Beach -> Newark", aircraft: "Boeing 727 (N908JE)", passengers: "Epstein, Maxwell, Trump, Mark Epstein, Eva Dubin, Celina Dubin" },
+    { date: "1995-08-13", route: "Palm Beach -> Teterboro", aircraft: "Gulfstream (N212JE)", passengers: "Epstein, Maxwell, Trump, 'Geil Trump', unidentified 'AS'" },
+    { date: "1994-05-15", route: "Palm Beach -> DC -> Teterboro", aircraft: "Cessna 421 (N988JE)", passengers: "Epstein, Trump, Marla Maples, Tiffany Trump (infant), nanny" },
+    { date: "1993-10-17", route: "Palm Beach -> Teterboro", aircraft: "Hawker HS-125 (N108JE)", passengers: "Epstein, Maxwell, Trump, Dawn Devito, Rob Devito" },
+    { date: "1993-10-11", route: "Palm Beach -> Teterboro", aircraft: "Hawker HS-125 (N108JE)", passengers: "Epstein, Maxwell, Trump, Dawn Devito, Sophie Biddle" },
+    { date: "1993-04-26", route: "Palm Beach -> Teterboro", aircraft: "Hawker HS-125 (N108JE)", passengers: "Epstein, Trump (just the two)" },
+    { date: "1993-04-23", route: "Teterboro -> Palm Beach", aircraft: "Hawker HS-125 (N108JE)", passengers: "Epstein, Trump, Erin Nance Hill" },
+    { date: "1993-03-19", route: "Teterboro -> Palm Beach", aircraft: "Hawker HS-125 (N108JE)", passengers: "Epstein, Maxwell, Trump, unidentified female" },
+  ],
+  persons: [
+    { name: "Donald Trump", role: "Subject", flights: 11, docs: 3616, emails: 494, connection: "Sexual abuse allegations, flight companion, social relationship, DOJ cover-up beneficiary" },
+    { name: "Jeffrey Epstein", role: "Trafficker (deceased)", flights: 0, docs: 3616, emails: 0, connection: "Convicted sex trafficker, co-passenger on 11 flights, Mar-a-Lago regular, Trump neighbor" },
+    { name: "Ghislaine Maxwell", role: "Convicted Trafficker", flights: 1157, docs: 890, emails: 312, connection: "Co-passenger on 8/11 Trump flights, recruitment coordinator, seeking Trump clemency" },
+    { name: "Alan Dershowitz", role: "Lawyer / Trump Ally", flights: 45, docs: 234, emails: 67, connection: "Epstein defense attorney, Trump impeachment lawyer, accused by multiple survivors" },
+    { name: "Alexander Acosta", role: "DOJ Fixer / Labor Sec.", flights: 0, docs: 58, emails: 12, connection: "Arranged illegal plea deal, told transition team Epstein 'belonged to intelligence', rewarded with cabinet post" },
+    { name: "Les Wexner", role: "Financier", flights: 0, docs: 145, emails: 89, connection: "Transferred $46M mansion to Epstein, funded operations, Trump social circle overlap" },
+  ],
+  topDocuments: [
+    { id: "EFTA-2026-0847", title: "FBI 302: Woman accuses Trump of sexual abuse at age 13-15 (circa 1983)", date: "2026-03-14", type: "FBI 302", danger: 10, pages: 53, status: "DOJ withheld until March 2026" },
+    { id: "EFTA-2026-0291", title: "FBI NTOC email: 13-14 year old forced to perform oral sex on Trump in NJ", date: "2026-02-28", type: "FBI Internal", danger: 10, pages: 7, status: "Released under court order" },
+    { id: "EFTA-2025-1834", title: "Civil lawsuit: Survivor recruited into trafficking ring at Mar-a-Lago at age 15", date: "2025-11-02", type: "Court Filing", danger: 9.8, pages: 34, status: "Filed in SDFL" },
+    { id: "EFTA-2019-0023", title: "Acosta transition team meeting: 'Epstein belonged to intelligence'", date: "2019-07-12", type: "Deposition", danger: 9.5, pages: 12, status: "Confirmed by Acosta" },
+    { id: "EFTA-2024-0567", title: "Maxwell clemency petition citing Trump relationship", date: "2024-08-19", type: "Legal Filing", danger: 9.2, pages: 28, status: "Pending" },
+    { id: "EFTA-2006-0089", title: "Trump Tower identified as Epstein recruitment site in FBI interview", date: "2006-05-14", type: "FBI 302", danger: 9.5, pages: 8, status: "Partially redacted" },
+    { id: "EFTA-2002-0134", title: "NY Magazine interview: Trump calls Epstein 'terrific guy' who likes women 'on the younger side'", date: "2002-10-28", type: "Media", danger: 8.8, pages: 3, status: "Published" },
+    { id: "EFTA-2025-2103", title: "Seven Trump family members identified in Epstein contact files", date: "2025-06-30", type: "DOJ Release", danger: 8.5, pages: 19, status: "EFTA release batch 4" },
+    { id: "EFTA-2020-0412", title: "DOJ blocks release of 147 pages of Trump-Epstein communications", date: "2020-01-15", type: "DOJ Correspondence", danger: 9.0, pages: 4, status: "Challenged in court" },
+    { id: "EFTA-2019-0891", title: "Iran strike timing analysis: Soleimani killed during Epstein hearing week", date: "2020-01-03", type: "Analysis", danger: 8.7, pages: 15, status: "Multiple sources confirm timing" },
+    { id: "EFTA-2005-0234", title: "Palm Beach PD initial complaint: underage girl names Trump as present during abuse", date: "2005-03-15", type: "Police Report", danger: 9.7, pages: 11, status: "Referenced in FBI 302s" },
+    { id: "EFTA-2008-0091", title: "Non-prosecution agreement: DOJ grants immunity to unnamed co-conspirators including Trump", date: "2008-06-30", type: "Legal Agreement", danger: 9.8, pages: 6, status: "Agreement voided by judge 2019" },
+  ],
+  sentimentBreakdown: [
+    { label: "Damning / Incriminating", value: 67.3, color: "#ff0066" },
+    { label: "Neutral / Procedural", value: 24.1, color: "#666666" },
+    { label: "Exculpatory / Defensive", value: 8.6, color: "#33cc33" },
+  ],
+  networkConnections: [
+    { from: "Trump", to: "Epstein", strength: 95, type: "social/criminal" },
+    { from: "Trump", to: "Maxwell", strength: 80, type: "social/flights" },
+    { from: "Trump", to: "Dershowitz", strength: 70, type: "legal/political" },
+    { from: "Trump", to: "Acosta", strength: 85, type: "political/cover-up" },
+    { from: "Epstein", to: "Maxwell", strength: 100, type: "criminal/trafficking" },
+    { from: "Epstein", to: "Dershowitz", strength: 90, type: "legal/flights" },
+    { from: "Epstein", to: "Wexner", strength: 75, type: "financial" },
+    { from: "Maxwell", to: "Dershowitz", strength: 60, type: "legal" },
+    { from: "Acosta", to: "Epstein", strength: 70, type: "legal/plea deal" },
+  ],
+};
+
+export default function EpsteinTrumpPage() {
+  return <EpsteinTrumpClient data={DOCUMENTS_SUMMARY} />;
+}

@@ -1,0 +1,10888 @@
+[
+  {
+    "year_month": "2022-02",
+    "words": [
+      {
+        "word": "ready",
+        "count": 1
+      },
+      {
+        "word": "favorite",
+        "count": 1
+      },
+      {
+        "word": "president",
+        "count": 1
+      },
+      {
+        "word": "soon",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "year_month": "2022-04",
+    "words": [
+      {
+        "word": "truth",
+        "count": 5
+      },
+      {
+        "word": "biden",
+        "count": 2
+      },
+      {
+        "word": "country",
+        "count": 2
+      },
+      {
+        "word": "fake",
+        "count": 2
+      },
+      {
+        "word": "news",
+        "count": 2
+      },
+      {
+        "word": "media",
+        "count": 2
+      },
+      {
+        "word": "beautiful",
+        "count": 2
+      },
+      {
+        "word": "day",
+        "count": 2
+      },
+      {
+        "word": "family",
+        "count": 2
+      },
+      {
+        "word": "today",
+        "count": 2
+      },
+      {
+        "word": "thank",
+        "count": 2
+      },
+      {
+        "word": "social",
+        "count": 2
+      },
+      {
+        "word": "number",
+        "count": 2
+      },
+      {
+        "word": "apple",
+        "count": 2
+      },
+      {
+        "word": "app",
+        "count": 2
+      },
+      {
+        "word": "store",
+        "count": 2
+      },
+      {
+        "word": "revealed",
+        "count": 1
+      },
+      {
+        "word": "administration",
+        "count": 1
+      },
+      {
+        "word": "top",
+        "count": 1
+      },
+      {
+        "word": "horrible",
+        "count": 1
+      },
+      {
+        "word": "things",
+        "count": 1
+      },
+      {
+        "word": "happening",
+        "count": 1
+      },
+      {
+        "word": "putting",
+        "count": 1
+      },
+      {
+        "word": "longtime",
+        "count": 1
+      },
+      {
+        "word": "political",
+        "count": 1
+      },
+      {
+        "word": "operative",
+        "count": 1
+      },
+      {
+        "word": "charge",
+        "count": 1
+      },
+      {
+        "word": "censoring",
+        "count": 1
+      },
+      {
+        "word": "free",
+        "count": 1
+      },
+      {
+        "word": "speech",
+        "count": 1
+      },
+      {
+        "word": "don",
+        "count": 1
+      },
+      {
+        "word": "facebook",
+        "count": 1
+      },
+      {
+        "word": "instagram",
+        "count": 1
+      },
+      {
+        "word": "china",
+        "count": 1
+      },
+      {
+        "word": "tiktok",
+        "count": 1
+      },
+      {
+        "word": "others",
+        "count": 1
+      },
+      {
+        "word": "unhinged",
+        "count": 1
+      },
+      {
+        "word": "corrupt",
+        "count": 1
+      },
+      {
+        "word": "radical",
+        "count": 1
+      },
+      {
+        "word": "left",
+        "count": 1
+      },
+      {
+        "word": "refuses",
+        "count": 1
+      },
+      {
+        "word": "cover",
+        "count": 1
+      },
+      {
+        "word": "facts",
+        "count": 1
+      },
+      {
+        "word": "spirals",
+        "count": 1
+      },
+      {
+        "word": "hell",
+        "count": 1
+      },
+      {
+        "word": "trump",
+        "count": 1
+      },
+      {
+        "word": "international",
+        "count": 1
+      },
+      {
+        "word": "palm",
+        "count": 1
+      },
+      {
+        "word": "beach",
+        "count": 1
+      },
+      {
+        "word": "jason",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "year_month": "2022-05",
+    "words": [
+      {
+        "word": "trump",
+        "count": 62
+      },
+      {
+        "word": "truth",
+        "count": 39
+      },
+      {
+        "word": "election",
+        "count": 30
+      },
+      {
+        "word": "america",
+        "count": 29
+      },
+      {
+        "word": "fake",
+        "count": 24
+      },
+      {
+        "word": "mules",
+        "count": 24
+      },
+      {
+        "word": "pennsylvania",
+        "count": 24
+      },
+      {
+        "word": "russia",
+        "count": 24
+      },
+      {
+        "word": "biden",
+        "count": 22
+      },
+      {
+        "word": "news",
+        "count": 21
+      },
+      {
+        "word": "country",
+        "count": 21
+      },
+      {
+        "word": "day",
+        "count": 20
+      },
+      {
+        "word": "energy",
+        "count": 20
+      },
+      {
+        "word": "maga",
+        "count": 19
+      },
+      {
+        "word": "time",
+        "count": 19
+      },
+      {
+        "word": "never",
+        "count": 19
+      },
+      {
+        "word": "twitter",
+        "count": 19
+      },
+      {
+        "word": "endorsement",
+        "count": 18
+      },
+      {
+        "word": "georgia",
+        "count": 18
+      },
+      {
+        "word": "clinton",
+        "count": 17
+      },
+      {
+        "word": "ballots",
+        "count": 16
+      },
+      {
+        "word": "state",
+        "count": 16
+      },
+      {
+        "word": "hillary",
+        "count": 16
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 15
+      },
+      {
+        "word": "border",
+        "count": 15
+      },
+      {
+        "word": "vote",
+        "count": 15
+      },
+      {
+        "word": "party",
+        "count": 14
+      },
+      {
+        "word": "president",
+        "count": 14
+      },
+      {
+        "word": "incredible",
+        "count": 14
+      },
+      {
+        "word": "win",
+        "count": 14
+      },
+      {
+        "word": "republican",
+        "count": 14
+      },
+      {
+        "word": "rigged",
+        "count": 13
+      },
+      {
+        "word": "media",
+        "count": 13
+      },
+      {
+        "word": "voting",
+        "count": 13
+      },
+      {
+        "word": "hard",
+        "count": 13
+      },
+      {
+        "word": "complete",
+        "count": 13
+      },
+      {
+        "word": "campaign",
+        "count": 13
+      },
+      {
+        "word": "military",
+        "count": 12
+      },
+      {
+        "word": "follow",
+        "count": 12
+      },
+      {
+        "word": "donald",
+        "count": 12
+      },
+      {
+        "word": "votes",
+        "count": 12
+      },
+      {
+        "word": "governor",
+        "count": 12
+      },
+      {
+        "word": "candidates",
+        "count": 12
+      },
+      {
+        "word": "wyoming",
+        "count": 12
+      },
+      {
+        "word": "rumble",
+        "count": 12
+      },
+      {
+        "word": "texas",
+        "count": 12
+      },
+      {
+        "word": "story",
+        "count": 11
+      },
+      {
+        "word": "left",
+        "count": 11
+      },
+      {
+        "word": "elon",
+        "count": 11
+      },
+      {
+        "word": "html",
+        "count": 11
+      }
+    ]
+  },
+  {
+    "year_month": "2022-06",
+    "words": [
+      {
+        "word": "election",
+        "count": 51
+      },
+      {
+        "word": "trump",
+        "count": 44
+      },
+      {
+        "word": "country",
+        "count": 34
+      },
+      {
+        "word": "committee",
+        "count": 32
+      },
+      {
+        "word": "russia",
+        "count": 30
+      },
+      {
+        "word": "total",
+        "count": 28
+      },
+      {
+        "word": "america",
+        "count": 27
+      },
+      {
+        "word": "president",
+        "count": 26
+      },
+      {
+        "word": "unselect",
+        "count": 25
+      },
+      {
+        "word": "endorsement",
+        "count": 25
+      },
+      {
+        "word": "fake",
+        "count": 23
+      },
+      {
+        "word": "complete",
+        "count": 23
+      },
+      {
+        "word": "never",
+        "count": 23
+      },
+      {
+        "word": "district",
+        "count": 22
+      },
+      {
+        "word": "news",
+        "count": 22
+      },
+      {
+        "word": "american",
+        "count": 21
+      },
+      {
+        "word": "congressman",
+        "count": 20
+      },
+      {
+        "word": "congressional",
+        "count": 20
+      },
+      {
+        "word": "second",
+        "count": 20
+      },
+      {
+        "word": "hard",
+        "count": 19
+      },
+      {
+        "word": "live",
+        "count": 19
+      },
+      {
+        "word": "unselects",
+        "count": 18
+      },
+      {
+        "word": "thank",
+        "count": 18
+      },
+      {
+        "word": "amendment",
+        "count": 18
+      },
+      {
+        "word": "rigged",
+        "count": 17
+      },
+      {
+        "word": "veterans",
+        "count": 17
+      },
+      {
+        "word": "state",
+        "count": 16
+      },
+      {
+        "word": "defend",
+        "count": 16
+      },
+      {
+        "word": "protect",
+        "count": 16
+      },
+      {
+        "word": "republican",
+        "count": 14
+      },
+      {
+        "word": "fraud",
+        "count": 14
+      },
+      {
+        "word": "secure",
+        "count": 14
+      },
+      {
+        "word": "working",
+        "count": 14
+      },
+      {
+        "word": "support",
+        "count": 14
+      },
+      {
+        "word": "january",
+        "count": 13
+      },
+      {
+        "word": "others",
+        "count": 13
+      },
+      {
+        "word": "massive",
+        "count": 13
+      },
+      {
+        "word": "economy",
+        "count": 13
+      },
+      {
+        "word": "stolen",
+        "count": 13
+      },
+      {
+        "word": "border",
+        "count": 13
+      },
+      {
+        "word": "vote",
+        "count": 13
+      },
+      {
+        "word": "bill",
+        "count": 13
+      },
+      {
+        "word": "donald",
+        "count": 12
+      },
+      {
+        "word": "grow",
+        "count": 12
+      },
+      {
+        "word": "witch",
+        "count": 12
+      },
+      {
+        "word": "truth",
+        "count": 12
+      },
+      {
+        "word": "energy",
+        "count": 12
+      },
+      {
+        "word": "truthsocial",
+        "count": 12
+      },
+      {
+        "word": "presidential",
+        "count": 11
+      },
+      {
+        "word": "won",
+        "count": 11
+      }
+    ]
+  },
+  {
+    "year_month": "2022-07",
+    "words": [
+      {
+        "word": "trump",
+        "count": 114
+      },
+      {
+        "word": "election",
+        "count": 60
+      },
+      {
+        "word": "president",
+        "count": 41
+      },
+      {
+        "word": "donald",
+        "count": 41
+      },
+      {
+        "word": "news",
+        "count": 38
+      },
+      {
+        "word": "wisconsin",
+        "count": 35
+      },
+      {
+        "word": "america",
+        "count": 33
+      },
+      {
+        "word": "politics",
+        "count": 33
+      },
+      {
+        "word": "committee",
+        "count": 31
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 27
+      },
+      {
+        "word": "truthsocial",
+        "count": 26
+      },
+      {
+        "word": "users",
+        "count": 24
+      },
+      {
+        "word": "statuses",
+        "count": 24
+      },
+      {
+        "word": "rumble",
+        "count": 24
+      },
+      {
+        "word": "rally",
+        "count": 23
+      },
+      {
+        "word": "html",
+        "count": 23
+      },
+      {
+        "word": "don",
+        "count": 22
+      },
+      {
+        "word": "live",
+        "count": 22
+      },
+      {
+        "word": "breitbart",
+        "count": 22
+      },
+      {
+        "word": "fake",
+        "count": 21
+      },
+      {
+        "word": "democrats",
+        "count": 21
+      },
+      {
+        "word": "country",
+        "count": 21
+      },
+      {
+        "word": "alaska",
+        "count": 21
+      },
+      {
+        "word": "biden",
+        "count": 20
+      },
+      {
+        "word": "january",
+        "count": 20
+      },
+      {
+        "word": "court",
+        "count": 20
+      },
+      {
+        "word": "endorsement",
+        "count": 19
+      },
+      {
+        "word": "presidential",
+        "count": 19
+      },
+      {
+        "word": "rigged",
+        "count": 18
+      },
+      {
+        "word": "joe",
+        "count": 17
+      },
+      {
+        "word": "time",
+        "count": 17
+      },
+      {
+        "word": "state",
+        "count": 17
+      },
+      {
+        "word": "unselect",
+        "count": 17
+      },
+      {
+        "word": "vote",
+        "count": 16
+      },
+      {
+        "word": "supreme",
+        "count": 16
+      },
+      {
+        "word": "elections",
+        "count": 16
+      },
+      {
+        "word": "poll",
+        "count": 16
+      },
+      {
+        "word": "arizona",
+        "count": 15
+      },
+      {
+        "word": "bad",
+        "count": 14
+      },
+      {
+        "word": "never",
+        "count": 14
+      },
+      {
+        "word": "illegal",
+        "count": 14
+      },
+      {
+        "word": "media",
+        "count": 14
+      },
+      {
+        "word": "policy",
+        "count": 14
+      },
+      {
+        "word": "thank",
+        "count": 14
+      },
+      {
+        "word": "boxes",
+        "count": 14
+      },
+      {
+        "word": "newsmax",
+        "count": 13
+      },
+      {
+        "word": "states",
+        "count": 13
+      },
+      {
+        "word": "rino",
+        "count": 12
+      },
+      {
+        "word": "nothing",
+        "count": 12
+      },
+      {
+        "word": "record",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "year_month": "2022-08",
+    "words": [
+      {
+        "word": "trump",
+        "count": 167
+      },
+      {
+        "word": "fbi",
+        "count": 115
+      },
+      {
+        "word": "raid",
+        "count": 83
+      },
+      {
+        "word": "lago",
+        "count": 65
+      },
+      {
+        "word": "mar",
+        "count": 64
+      },
+      {
+        "word": "news",
+        "count": 53
+      },
+      {
+        "word": "country",
+        "count": 53
+      },
+      {
+        "word": "president",
+        "count": 53
+      },
+      {
+        "word": "truthsocial",
+        "count": 49
+      },
+      {
+        "word": "election",
+        "count": 49
+      },
+      {
+        "word": "users",
+        "count": 48
+      },
+      {
+        "word": "statuses",
+        "count": 48
+      },
+      {
+        "word": "america",
+        "count": 43
+      },
+      {
+        "word": "fake",
+        "count": 36
+      },
+      {
+        "word": "biden",
+        "count": 35
+      },
+      {
+        "word": "political",
+        "count": 34
+      },
+      {
+        "word": "never",
+        "count": 33
+      },
+      {
+        "word": "media",
+        "count": 30
+      },
+      {
+        "word": "html",
+        "count": 29
+      },
+      {
+        "word": "donald",
+        "count": 29
+      },
+      {
+        "word": "politics",
+        "count": 29
+      },
+      {
+        "word": "presidential",
+        "count": 28
+      },
+      {
+        "word": "russia",
+        "count": 28
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 28
+      },
+      {
+        "word": "home",
+        "count": 27
+      },
+      {
+        "word": "left",
+        "count": 27
+      },
+      {
+        "word": "total",
+        "count": 27
+      },
+      {
+        "word": "endorsement",
+        "count": 27
+      },
+      {
+        "word": "law",
+        "count": 26
+      },
+      {
+        "word": "truth",
+        "count": 25
+      },
+      {
+        "word": "complete",
+        "count": 25
+      },
+      {
+        "word": "support",
+        "count": 25
+      },
+      {
+        "word": "time",
+        "count": 22
+      },
+      {
+        "word": "democrats",
+        "count": 22
+      },
+      {
+        "word": "congressional",
+        "count": 22
+      },
+      {
+        "word": "cheney",
+        "count": 22
+      },
+      {
+        "word": "district",
+        "count": 22
+      },
+      {
+        "word": "doj",
+        "count": 21
+      },
+      {
+        "word": "thank",
+        "count": 21
+      },
+      {
+        "word": "story",
+        "count": 21
+      },
+      {
+        "word": "border",
+        "count": 21
+      },
+      {
+        "word": "history",
+        "count": 20
+      },
+      {
+        "word": "nothing",
+        "count": 20
+      },
+      {
+        "word": "amendment",
+        "count": 20
+      },
+      {
+        "word": "congressman",
+        "count": 20
+      },
+      {
+        "word": "house",
+        "count": 19
+      },
+      {
+        "word": "break",
+        "count": 19
+      },
+      {
+        "word": "military",
+        "count": 19
+      },
+      {
+        "word": "gop",
+        "count": 19
+      },
+      {
+        "word": "second",
+        "count": 19
+      }
+    ]
+  },
+  {
+    "year_month": "2022-09",
+    "words": [
+      {
+        "word": "trump",
+        "count": 207
+      },
+      {
+        "word": "president",
+        "count": 80
+      },
+      {
+        "word": "fbi",
+        "count": 80
+      },
+      {
+        "word": "truthsocial",
+        "count": 71
+      },
+      {
+        "word": "users",
+        "count": 67
+      },
+      {
+        "word": "statuses",
+        "count": 66
+      },
+      {
+        "word": "donald",
+        "count": 65
+      },
+      {
+        "word": "rumble",
+        "count": 57
+      },
+      {
+        "word": "news",
+        "count": 56
+      },
+      {
+        "word": "election",
+        "count": 56
+      },
+      {
+        "word": "country",
+        "count": 54
+      },
+      {
+        "word": "biden",
+        "count": 54
+      },
+      {
+        "word": "html",
+        "count": 54
+      },
+      {
+        "word": "america",
+        "count": 49
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 48
+      },
+      {
+        "word": "rally",
+        "count": 47
+      },
+      {
+        "word": "never",
+        "count": 39
+      },
+      {
+        "word": "politics",
+        "count": 37
+      },
+      {
+        "word": "left",
+        "count": 29
+      },
+      {
+        "word": "russia",
+        "count": 29
+      },
+      {
+        "word": "live",
+        "count": 29
+      },
+      {
+        "word": "thank",
+        "count": 27
+      },
+      {
+        "word": "time",
+        "count": 26
+      },
+      {
+        "word": "years",
+        "count": 26
+      },
+      {
+        "word": "breitbart",
+        "count": 25
+      },
+      {
+        "word": "house",
+        "count": 24
+      },
+      {
+        "word": "media",
+        "count": 24
+      },
+      {
+        "word": "raid",
+        "count": 24
+      },
+      {
+        "word": "ohio",
+        "count": 23
+      },
+      {
+        "word": "don",
+        "count": 23
+      },
+      {
+        "word": "american",
+        "count": 23
+      },
+      {
+        "word": "mcconnell",
+        "count": 22
+      },
+      {
+        "word": "truth",
+        "count": 22
+      },
+      {
+        "word": "democrats",
+        "count": 21
+      },
+      {
+        "word": "history",
+        "count": 21
+      },
+      {
+        "word": "republican",
+        "count": 21
+      },
+      {
+        "word": "crime",
+        "count": 21
+      },
+      {
+        "word": "crowd",
+        "count": 21
+      },
+      {
+        "word": "mar",
+        "count": 20
+      },
+      {
+        "word": "lago",
+        "count": 20
+      },
+      {
+        "word": "joe",
+        "count": 19
+      },
+      {
+        "word": "justice",
+        "count": 19
+      },
+      {
+        "word": "radical",
+        "count": 18
+      },
+      {
+        "word": "world",
+        "count": 18
+      },
+      {
+        "word": "state",
+        "count": 18
+      },
+      {
+        "word": "james",
+        "count": 18
+      },
+      {
+        "word": "maga",
+        "count": 18
+      },
+      {
+        "word": "democrat",
+        "count": 17
+      },
+      {
+        "word": "ever",
+        "count": 17
+      },
+      {
+        "word": "border",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "year_month": "2022-10",
+    "words": [
+      {
+        "word": "trump",
+        "count": 230
+      },
+      {
+        "word": "president",
+        "count": 73
+      },
+      {
+        "word": "news",
+        "count": 72
+      },
+      {
+        "word": "election",
+        "count": 62
+      },
+      {
+        "word": "html",
+        "count": 53
+      },
+      {
+        "word": "rumble",
+        "count": 52
+      },
+      {
+        "word": "donald",
+        "count": 50
+      },
+      {
+        "word": "fbi",
+        "count": 48
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 42
+      },
+      {
+        "word": "politics",
+        "count": 42
+      },
+      {
+        "word": "live",
+        "count": 40
+      },
+      {
+        "word": "america",
+        "count": 39
+      },
+      {
+        "word": "state",
+        "count": 36
+      },
+      {
+        "word": "crime",
+        "count": 36
+      },
+      {
+        "word": "rally",
+        "count": 35
+      },
+      {
+        "word": "users",
+        "count": 34
+      },
+      {
+        "word": "biden",
+        "count": 33
+      },
+      {
+        "word": "truthsocial",
+        "count": 33
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 33
+      },
+      {
+        "word": "statuses",
+        "count": 32
+      },
+      {
+        "word": "country",
+        "count": 31
+      },
+      {
+        "word": "truth",
+        "count": 31
+      },
+      {
+        "word": "endorsement",
+        "count": 29
+      },
+      {
+        "word": "total",
+        "count": 29
+      },
+      {
+        "word": "complete",
+        "count": 28
+      },
+      {
+        "word": "vote",
+        "count": 27
+      },
+      {
+        "word": "media",
+        "count": 25
+      },
+      {
+        "word": "time",
+        "count": 25
+      },
+      {
+        "word": "never",
+        "count": 24
+      },
+      {
+        "word": "left",
+        "count": 24
+      },
+      {
+        "word": "democrats",
+        "count": 24
+      },
+      {
+        "word": "republicans",
+        "count": 23
+      },
+      {
+        "word": "lost",
+        "count": 23
+      },
+      {
+        "word": "border",
+        "count": 22
+      },
+      {
+        "word": "raid",
+        "count": 22
+      },
+      {
+        "word": "social",
+        "count": 22
+      },
+      {
+        "word": "york",
+        "count": 22
+      },
+      {
+        "word": "day",
+        "count": 21
+      },
+      {
+        "word": "republican",
+        "count": 21
+      },
+      {
+        "word": "breitbart",
+        "count": 21
+      },
+      {
+        "word": "amendment",
+        "count": 21
+      },
+      {
+        "word": "clinton",
+        "count": 20
+      },
+      {
+        "word": "case",
+        "count": 20
+      },
+      {
+        "word": "radical",
+        "count": 20
+      },
+      {
+        "word": "others",
+        "count": 19
+      },
+      {
+        "word": "strong",
+        "count": 19
+      },
+      {
+        "word": "presidential",
+        "count": 19
+      },
+      {
+        "word": "save",
+        "count": 19
+      },
+      {
+        "word": "documents",
+        "count": 19
+      },
+      {
+        "word": "says",
+        "count": 19
+      }
+    ]
+  },
+  {
+    "year_month": "2022-11",
+    "words": [
+      {
+        "word": "trump",
+        "count": 207
+      },
+      {
+        "word": "president",
+        "count": 81
+      },
+      {
+        "word": "news",
+        "count": 72
+      },
+      {
+        "word": "election",
+        "count": 65
+      },
+      {
+        "word": "america",
+        "count": 53
+      },
+      {
+        "word": "country",
+        "count": 48
+      },
+      {
+        "word": "special",
+        "count": 46
+      },
+      {
+        "word": "never",
+        "count": 46
+      },
+      {
+        "word": "biden",
+        "count": 43
+      },
+      {
+        "word": "truthsocial",
+        "count": 43
+      },
+      {
+        "word": "users",
+        "count": 43
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 43
+      },
+      {
+        "word": "statuses",
+        "count": 43
+      },
+      {
+        "word": "republican",
+        "count": 42
+      },
+      {
+        "word": "donald",
+        "count": 39
+      },
+      {
+        "word": "counsel",
+        "count": 37
+      },
+      {
+        "word": "case",
+        "count": 36
+      },
+      {
+        "word": "smith",
+        "count": 32
+      },
+      {
+        "word": "left",
+        "count": 32
+      },
+      {
+        "word": "politics",
+        "count": 30
+      },
+      {
+        "word": "html",
+        "count": 30
+      },
+      {
+        "word": "nothing",
+        "count": 30
+      },
+      {
+        "word": "vote",
+        "count": 29
+      },
+      {
+        "word": "rumble",
+        "count": 29
+      },
+      {
+        "word": "corrupt",
+        "count": 28
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 28
+      },
+      {
+        "word": "media",
+        "count": 27
+      },
+      {
+        "word": "jack",
+        "count": 26
+      },
+      {
+        "word": "fake",
+        "count": 26
+      },
+      {
+        "word": "endorsement",
+        "count": 25
+      },
+      {
+        "word": "total",
+        "count": 25
+      },
+      {
+        "word": "live",
+        "count": 25
+      },
+      {
+        "word": "justice",
+        "count": 24
+      },
+      {
+        "word": "history",
+        "count": 23
+      },
+      {
+        "word": "political",
+        "count": 22
+      },
+      {
+        "word": "fbi",
+        "count": 22
+      },
+      {
+        "word": "complete",
+        "count": 22
+      },
+      {
+        "word": "elections",
+        "count": 21
+      },
+      {
+        "word": "court",
+        "count": 21
+      },
+      {
+        "word": "york",
+        "count": 21
+      },
+      {
+        "word": "republicans",
+        "count": 21
+      },
+      {
+        "word": "win",
+        "count": 21
+      },
+      {
+        "word": "crime",
+        "count": 21
+      },
+      {
+        "word": "ever",
+        "count": 21
+      },
+      {
+        "word": "thank",
+        "count": 21
+      },
+      {
+        "word": "radical",
+        "count": 21
+      },
+      {
+        "word": "record",
+        "count": 20
+      },
+      {
+        "word": "time",
+        "count": 20
+      },
+      {
+        "word": "democrats",
+        "count": 20
+      },
+      {
+        "word": "always",
+        "count": 19
+      }
+    ]
+  },
+  {
+    "year_month": "2022-12",
+    "words": [
+      {
+        "word": "trump",
+        "count": 197
+      },
+      {
+        "word": "election",
+        "count": 113
+      },
+      {
+        "word": "fbi",
+        "count": 97
+      },
+      {
+        "word": "twitter",
+        "count": 83
+      },
+      {
+        "word": "news",
+        "count": 82
+      },
+      {
+        "word": "biden",
+        "count": 80
+      },
+      {
+        "word": "country",
+        "count": 59
+      },
+      {
+        "word": "truthsocial",
+        "count": 54
+      },
+      {
+        "word": "users",
+        "count": 54
+      },
+      {
+        "word": "statuses",
+        "count": 54
+      },
+      {
+        "word": "media",
+        "count": 47
+      },
+      {
+        "word": "president",
+        "count": 46
+      },
+      {
+        "word": "russia",
+        "count": 44
+      },
+      {
+        "word": "politics",
+        "count": 38
+      },
+      {
+        "word": "never",
+        "count": 38
+      },
+      {
+        "word": "america",
+        "count": 38
+      },
+      {
+        "word": "fake",
+        "count": 35
+      },
+      {
+        "word": "committee",
+        "count": 34
+      },
+      {
+        "word": "presidential",
+        "count": 34
+      },
+      {
+        "word": "rigged",
+        "count": 33
+      },
+      {
+        "word": "democrats",
+        "count": 32
+      },
+      {
+        "word": "fraud",
+        "count": 31
+      },
+      {
+        "word": "time",
+        "count": 29
+      },
+      {
+        "word": "hunter",
+        "count": 29
+      },
+      {
+        "word": "years",
+        "count": 27
+      },
+      {
+        "word": "breitbart",
+        "count": 26
+      },
+      {
+        "word": "donald",
+        "count": 26
+      },
+      {
+        "word": "corrupt",
+        "count": 25
+      },
+      {
+        "word": "case",
+        "count": 25
+      },
+      {
+        "word": "files",
+        "count": 25
+      },
+      {
+        "word": "political",
+        "count": 24
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 24
+      },
+      {
+        "word": "foxnews",
+        "count": 23
+      },
+      {
+        "word": "history",
+        "count": 23
+      },
+      {
+        "word": "tech",
+        "count": 22
+      },
+      {
+        "word": "bad",
+        "count": 22
+      },
+      {
+        "word": "justice",
+        "count": 22
+      },
+      {
+        "word": "border",
+        "count": 21
+      },
+      {
+        "word": "unselect",
+        "count": 20
+      },
+      {
+        "word": "republicans",
+        "count": 19
+      },
+      {
+        "word": "thank",
+        "count": 19
+      },
+      {
+        "word": "january",
+        "count": 18
+      },
+      {
+        "word": "html",
+        "count": 18
+      },
+      {
+        "word": "democrat",
+        "count": 18
+      },
+      {
+        "word": "left",
+        "count": 17
+      },
+      {
+        "word": "house",
+        "count": 17
+      },
+      {
+        "word": "republican",
+        "count": 17
+      },
+      {
+        "word": "disinformation",
+        "count": 17
+      },
+      {
+        "word": "christmas",
+        "count": 17
+      },
+      {
+        "word": "policy",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "year_month": "2023-01",
+    "words": [
+      {
+        "word": "trump",
+        "count": 161
+      },
+      {
+        "word": "biden",
+        "count": 156
+      },
+      {
+        "word": "news",
+        "count": 105
+      },
+      {
+        "word": "president",
+        "count": 90
+      },
+      {
+        "word": "classified",
+        "count": 73
+      },
+      {
+        "word": "documents",
+        "count": 68
+      },
+      {
+        "word": "country",
+        "count": 58
+      },
+      {
+        "word": "truthsocial",
+        "count": 57
+      },
+      {
+        "word": "users",
+        "count": 57
+      },
+      {
+        "word": "statuses",
+        "count": 57
+      },
+      {
+        "word": "joe",
+        "count": 53
+      },
+      {
+        "word": "fake",
+        "count": 51
+      },
+      {
+        "word": "election",
+        "count": 49
+      },
+      {
+        "word": "america",
+        "count": 43
+      },
+      {
+        "word": "time",
+        "count": 41
+      },
+      {
+        "word": "house",
+        "count": 40
+      },
+      {
+        "word": "china",
+        "count": 39
+      },
+      {
+        "word": "fbi",
+        "count": 39
+      },
+      {
+        "word": "media",
+        "count": 38
+      },
+      {
+        "word": "html",
+        "count": 37
+      },
+      {
+        "word": "never",
+        "count": 35
+      },
+      {
+        "word": "politics",
+        "count": 33
+      },
+      {
+        "word": "bidens",
+        "count": 33
+      },
+      {
+        "word": "donald",
+        "count": 32
+      },
+      {
+        "word": "years",
+        "count": 31
+      },
+      {
+        "word": "republican",
+        "count": 31
+      },
+      {
+        "word": "rumble",
+        "count": 30
+      },
+      {
+        "word": "hunter",
+        "count": 30
+      },
+      {
+        "word": "democrats",
+        "count": 30
+      },
+      {
+        "word": "russia",
+        "count": 28
+      },
+      {
+        "word": "party",
+        "count": 27
+      },
+      {
+        "word": "crime",
+        "count": 27
+      },
+      {
+        "word": "don",
+        "count": 26
+      },
+      {
+        "word": "office",
+        "count": 26
+      },
+      {
+        "word": "left",
+        "count": 25
+      },
+      {
+        "word": "call",
+        "count": 25
+      },
+      {
+        "word": "breitbart",
+        "count": 25
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 25
+      },
+      {
+        "word": "history",
+        "count": 25
+      },
+      {
+        "word": "page",
+        "count": 24
+      },
+      {
+        "word": "cnn",
+        "count": 23
+      },
+      {
+        "word": "truth",
+        "count": 23
+      },
+      {
+        "word": "wrong",
+        "count": 23
+      },
+      {
+        "word": "corrupt",
+        "count": 22
+      },
+      {
+        "word": "nothing",
+        "count": 22
+      },
+      {
+        "word": "state",
+        "count": 22
+      },
+      {
+        "word": "newsmax",
+        "count": 22
+      },
+      {
+        "word": "republicans",
+        "count": 22
+      },
+      {
+        "word": "docs",
+        "count": 22
+      },
+      {
+        "word": "washington",
+        "count": 21
+      }
+    ]
+  },
+  {
+    "year_month": "2023-02",
+    "words": [
+      {
+        "word": "trump",
+        "count": 228
+      },
+      {
+        "word": "news",
+        "count": 95
+      },
+      {
+        "word": "biden",
+        "count": 86
+      },
+      {
+        "word": "president",
+        "count": 84
+      },
+      {
+        "word": "truthsocial",
+        "count": 55
+      },
+      {
+        "word": "users",
+        "count": 54
+      },
+      {
+        "word": "statuses",
+        "count": 54
+      },
+      {
+        "word": "fake",
+        "count": 52
+      },
+      {
+        "word": "america",
+        "count": 48
+      },
+      {
+        "word": "time",
+        "count": 45
+      },
+      {
+        "word": "election",
+        "count": 43
+      },
+      {
+        "word": "donald",
+        "count": 37
+      },
+      {
+        "word": "never",
+        "count": 37
+      },
+      {
+        "word": "poll",
+        "count": 32
+      },
+      {
+        "word": "politics",
+        "count": 32
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 32
+      },
+      {
+        "word": "media",
+        "count": 32
+      },
+      {
+        "word": "don",
+        "count": 31
+      },
+      {
+        "word": "country",
+        "count": 29
+      },
+      {
+        "word": "truth",
+        "count": 29
+      },
+      {
+        "word": "case",
+        "count": 28
+      },
+      {
+        "word": "thank",
+        "count": 28
+      },
+      {
+        "word": "joe",
+        "count": 27
+      },
+      {
+        "word": "office",
+        "count": 27
+      },
+      {
+        "word": "social",
+        "count": 26
+      },
+      {
+        "word": "ratings",
+        "count": 25
+      },
+      {
+        "word": "china",
+        "count": 25
+      },
+      {
+        "word": "html",
+        "count": 25
+      },
+      {
+        "word": "foxnews",
+        "count": 24
+      },
+      {
+        "word": "desantis",
+        "count": 23
+      },
+      {
+        "word": "campaign",
+        "count": 23
+      },
+      {
+        "word": "state",
+        "count": 23
+      },
+      {
+        "word": "world",
+        "count": 22
+      },
+      {
+        "word": "ron",
+        "count": 21
+      },
+      {
+        "word": "presidential",
+        "count": 21
+      },
+      {
+        "word": "fbi",
+        "count": 21
+      },
+      {
+        "word": "nothing",
+        "count": 21
+      },
+      {
+        "word": "rumble",
+        "count": 21
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 21
+      },
+      {
+        "word": "cnn",
+        "count": 21
+      },
+      {
+        "word": "washington",
+        "count": 20
+      },
+      {
+        "word": "war",
+        "count": 20
+      },
+      {
+        "word": "left",
+        "count": 19
+      },
+      {
+        "word": "put",
+        "count": 19
+      },
+      {
+        "word": "book",
+        "count": 19
+      },
+      {
+        "word": "russia",
+        "count": 19
+      },
+      {
+        "word": "bad",
+        "count": 19
+      },
+      {
+        "word": "pomerantz",
+        "count": 19
+      },
+      {
+        "word": "paul",
+        "count": 18
+      },
+      {
+        "word": "rigged",
+        "count": 18
+      }
+    ]
+  },
+  {
+    "year_month": "2023-03",
+    "words": [
+      {
+        "word": "trump",
+        "count": 301
+      },
+      {
+        "word": "president",
+        "count": 137
+      },
+      {
+        "word": "news",
+        "count": 97
+      },
+      {
+        "word": "country",
+        "count": 66
+      },
+      {
+        "word": "ron",
+        "count": 66
+      },
+      {
+        "word": "election",
+        "count": 64
+      },
+      {
+        "word": "america",
+        "count": 63
+      },
+      {
+        "word": "truthsocial",
+        "count": 58
+      },
+      {
+        "word": "users",
+        "count": 58
+      },
+      {
+        "word": "statuses",
+        "count": 58
+      },
+      {
+        "word": "crime",
+        "count": 53
+      },
+      {
+        "word": "biden",
+        "count": 52
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 51
+      },
+      {
+        "word": "case",
+        "count": 50
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 48
+      },
+      {
+        "word": "desantis",
+        "count": 46
+      },
+      {
+        "word": "donald",
+        "count": 45
+      },
+      {
+        "word": "left",
+        "count": 42
+      },
+      {
+        "word": "social",
+        "count": 42
+      },
+      {
+        "word": "security",
+        "count": 41
+      },
+      {
+        "word": "bragg",
+        "count": 40
+      },
+      {
+        "word": "html",
+        "count": 37
+      },
+      {
+        "word": "fake",
+        "count": 37
+      },
+      {
+        "word": "manhattan",
+        "count": 36
+      },
+      {
+        "word": "nothing",
+        "count": 36
+      },
+      {
+        "word": "republican",
+        "count": 36
+      },
+      {
+        "word": "radical",
+        "count": 34
+      },
+      {
+        "word": "time",
+        "count": 34
+      },
+      {
+        "word": "years",
+        "count": 33
+      },
+      {
+        "word": "world",
+        "count": 33
+      },
+      {
+        "word": "never",
+        "count": 33
+      },
+      {
+        "word": "rumble",
+        "count": 33
+      },
+      {
+        "word": "live",
+        "count": 33
+      },
+      {
+        "word": "states",
+        "count": 30
+      },
+      {
+        "word": "maga",
+        "count": 30
+      },
+      {
+        "word": "office",
+        "count": 30
+      },
+      {
+        "word": "cohen",
+        "count": 29
+      },
+      {
+        "word": "attorney",
+        "count": 28
+      },
+      {
+        "word": "united",
+        "count": 28
+      },
+      {
+        "word": "law",
+        "count": 28
+      },
+      {
+        "word": "desanctimonious",
+        "count": 28
+      },
+      {
+        "word": "florida",
+        "count": 28
+      },
+      {
+        "word": "don",
+        "count": 27
+      },
+      {
+        "word": "politics",
+        "count": 27
+      },
+      {
+        "word": "poll",
+        "count": 27
+      },
+      {
+        "word": "prosecutors",
+        "count": 26
+      },
+      {
+        "word": "york",
+        "count": 26
+      },
+      {
+        "word": "nation",
+        "count": 26
+      },
+      {
+        "word": "book",
+        "count": 25
+      },
+      {
+        "word": "political",
+        "count": 25
+      }
+    ]
+  },
+  {
+    "year_month": "2023-04",
+    "words": [
+      {
+        "word": "trump",
+        "count": 250
+      },
+      {
+        "word": "biden",
+        "count": 86
+      },
+      {
+        "word": "president",
+        "count": 68
+      },
+      {
+        "word": "news",
+        "count": 63
+      },
+      {
+        "word": "election",
+        "count": 49
+      },
+      {
+        "word": "truthsocial",
+        "count": 43
+      },
+      {
+        "word": "users",
+        "count": 43
+      },
+      {
+        "word": "statuses",
+        "count": 43
+      },
+      {
+        "word": "donald",
+        "count": 43
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 42
+      },
+      {
+        "word": "desantis",
+        "count": 42
+      },
+      {
+        "word": "america",
+        "count": 37
+      },
+      {
+        "word": "ron",
+        "count": 35
+      },
+      {
+        "word": "indictment",
+        "count": 35
+      },
+      {
+        "word": "html",
+        "count": 32
+      },
+      {
+        "word": "rumble",
+        "count": 32
+      },
+      {
+        "word": "politics",
+        "count": 31
+      },
+      {
+        "word": "country",
+        "count": 30
+      },
+      {
+        "word": "thank",
+        "count": 28
+      },
+      {
+        "word": "democrats",
+        "count": 26
+      },
+      {
+        "word": "never",
+        "count": 25
+      },
+      {
+        "word": "campaign",
+        "count": 25
+      },
+      {
+        "word": "left",
+        "count": 24
+      },
+      {
+        "word": "fake",
+        "count": 24
+      },
+      {
+        "word": "case",
+        "count": 23
+      },
+      {
+        "word": "live",
+        "count": 23
+      },
+      {
+        "word": "watch",
+        "count": 20
+      },
+      {
+        "word": "nothing",
+        "count": 19
+      },
+      {
+        "word": "joe",
+        "count": 19
+      },
+      {
+        "word": "house",
+        "count": 19
+      },
+      {
+        "word": "breitbart",
+        "count": 18
+      },
+      {
+        "word": "presidential",
+        "count": 18
+      },
+      {
+        "word": "florida",
+        "count": 18
+      },
+      {
+        "word": "polls",
+        "count": 17
+      },
+      {
+        "word": "poll",
+        "count": 17
+      },
+      {
+        "word": "york",
+        "count": 17
+      },
+      {
+        "word": "bragg",
+        "count": 17
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 17
+      },
+      {
+        "word": "letters",
+        "count": 17
+      },
+      {
+        "word": "boxes",
+        "count": 17
+      },
+      {
+        "word": "tucker",
+        "count": 17
+      },
+      {
+        "word": "system",
+        "count": 17
+      },
+      {
+        "word": "republican",
+        "count": 16
+      },
+      {
+        "word": "fox",
+        "count": 16
+      },
+      {
+        "word": "state",
+        "count": 16
+      },
+      {
+        "word": "radical",
+        "count": 16
+      },
+      {
+        "word": "social",
+        "count": 16
+      },
+      {
+        "word": "book",
+        "count": 16
+      },
+      {
+        "word": "maga",
+        "count": 16
+      },
+      {
+        "word": "corrupt",
+        "count": 16
+      }
+    ]
+  },
+  {
+    "year_month": "2023-05",
+    "words": [
+      {
+        "word": "trump",
+        "count": 226
+      },
+      {
+        "word": "biden",
+        "count": 83
+      },
+      {
+        "word": "desantis",
+        "count": 67
+      },
+      {
+        "word": "fbi",
+        "count": 58
+      },
+      {
+        "word": "election",
+        "count": 55
+      },
+      {
+        "word": "truthsocial",
+        "count": 55
+      },
+      {
+        "word": "users",
+        "count": 55
+      },
+      {
+        "word": "statuses",
+        "count": 55
+      },
+      {
+        "word": "president",
+        "count": 54
+      },
+      {
+        "word": "ron",
+        "count": 53
+      },
+      {
+        "word": "poll",
+        "count": 50
+      },
+      {
+        "word": "country",
+        "count": 43
+      },
+      {
+        "word": "cnn",
+        "count": 42
+      },
+      {
+        "word": "desanctimonious",
+        "count": 41
+      },
+      {
+        "word": "russia",
+        "count": 40
+      },
+      {
+        "word": "republican",
+        "count": 39
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 37
+      },
+      {
+        "word": "durham",
+        "count": 37
+      },
+      {
+        "word": "news",
+        "count": 36
+      },
+      {
+        "word": "left",
+        "count": 34
+      },
+      {
+        "word": "never",
+        "count": 33
+      },
+      {
+        "word": "donald",
+        "count": 32
+      },
+      {
+        "word": "watch",
+        "count": 32
+      },
+      {
+        "word": "report",
+        "count": 32
+      },
+      {
+        "word": "america",
+        "count": 31
+      },
+      {
+        "word": "primary",
+        "count": 30
+      },
+      {
+        "word": "radical",
+        "count": 30
+      },
+      {
+        "word": "thank",
+        "count": 29
+      },
+      {
+        "word": "joe",
+        "count": 28
+      },
+      {
+        "word": "politics",
+        "count": 27
+      },
+      {
+        "word": "doj",
+        "count": 26
+      },
+      {
+        "word": "iapolls",
+        "count": 24
+      },
+      {
+        "word": "foxnews",
+        "count": 23
+      },
+      {
+        "word": "maga",
+        "count": 23
+      },
+      {
+        "word": "presidential",
+        "count": 22
+      },
+      {
+        "word": "campaign",
+        "count": 22
+      },
+      {
+        "word": "media",
+        "count": 22
+      },
+      {
+        "word": "hoax",
+        "count": 22
+      },
+      {
+        "word": "democrats",
+        "count": 22
+      },
+      {
+        "word": "book",
+        "count": 21
+      },
+      {
+        "word": "time",
+        "count": 21
+      },
+      {
+        "word": "state",
+        "count": 20
+      },
+      {
+        "word": "years",
+        "count": 20
+      },
+      {
+        "word": "today",
+        "count": 20
+      },
+      {
+        "word": "breitbart",
+        "count": 20
+      },
+      {
+        "word": "interference",
+        "count": 19
+      },
+      {
+        "word": "html",
+        "count": 19
+      },
+      {
+        "word": "knew",
+        "count": 19
+      },
+      {
+        "word": "desanctus",
+        "count": 19
+      },
+      {
+        "word": "special",
+        "count": 19
+      }
+    ]
+  },
+  {
+    "year_month": "2023-06",
+    "words": [
+      {
+        "word": "trump",
+        "count": 290
+      },
+      {
+        "word": "biden",
+        "count": 172
+      },
+      {
+        "word": "president",
+        "count": 103
+      },
+      {
+        "word": "joe",
+        "count": 76
+      },
+      {
+        "word": "truthsocial",
+        "count": 70
+      },
+      {
+        "word": "election",
+        "count": 70
+      },
+      {
+        "word": "users",
+        "count": 67
+      },
+      {
+        "word": "statuses",
+        "count": 67
+      },
+      {
+        "word": "america",
+        "count": 63
+      },
+      {
+        "word": "news",
+        "count": 60
+      },
+      {
+        "word": "country",
+        "count": 57
+      },
+      {
+        "word": "doj",
+        "count": 57
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 52
+      },
+      {
+        "word": "thank",
+        "count": 52
+      },
+      {
+        "word": "case",
+        "count": 49
+      },
+      {
+        "word": "never",
+        "count": 48
+      },
+      {
+        "word": "utm",
+        "count": 47
+      },
+      {
+        "word": "fbi",
+        "count": 45
+      },
+      {
+        "word": "indictment",
+        "count": 43
+      },
+      {
+        "word": "donald",
+        "count": 42
+      },
+      {
+        "word": "interference",
+        "count": 41
+      },
+      {
+        "word": "campaign",
+        "count": 40
+      },
+      {
+        "word": "politics",
+        "count": 40
+      },
+      {
+        "word": "desantis",
+        "count": 38
+      },
+      {
+        "word": "american",
+        "count": 36
+      },
+      {
+        "word": "presidential",
+        "count": 34
+      },
+      {
+        "word": "clinton",
+        "count": 34
+      },
+      {
+        "word": "nothing",
+        "count": 34
+      },
+      {
+        "word": "justice",
+        "count": 33
+      },
+      {
+        "word": "day",
+        "count": 32
+      },
+      {
+        "word": "documents",
+        "count": 32
+      },
+      {
+        "word": "russia",
+        "count": 31
+      },
+      {
+        "word": "republican",
+        "count": 31
+      },
+      {
+        "word": "poll",
+        "count": 29
+      },
+      {
+        "word": "witch",
+        "count": 29
+      },
+      {
+        "word": "html",
+        "count": 27
+      },
+      {
+        "word": "hunter",
+        "count": 27
+      },
+      {
+        "word": "political",
+        "count": 27
+      },
+      {
+        "word": "hunt",
+        "count": 26
+      },
+      {
+        "word": "act",
+        "count": 26
+      },
+      {
+        "word": "history",
+        "count": 26
+      },
+      {
+        "word": "smith",
+        "count": 26
+      },
+      {
+        "word": "time",
+        "count": 26
+      },
+      {
+        "word": "united",
+        "count": 25
+      },
+      {
+        "word": "polls",
+        "count": 25
+      },
+      {
+        "word": "corrupt",
+        "count": 25
+      },
+      {
+        "word": "hoax",
+        "count": 25
+      },
+      {
+        "word": "watch",
+        "count": 25
+      },
+      {
+        "word": "boxes",
+        "count": 25
+      },
+      {
+        "word": "records",
+        "count": 24
+      }
+    ]
+  },
+  {
+    "year_month": "2023-07",
+    "words": [
+      {
+        "word": "trump",
+        "count": 350
+      },
+      {
+        "word": "biden",
+        "count": 177
+      },
+      {
+        "word": "president",
+        "count": 132
+      },
+      {
+        "word": "news",
+        "count": 109
+      },
+      {
+        "word": "election",
+        "count": 76
+      },
+      {
+        "word": "joe",
+        "count": 70
+      },
+      {
+        "word": "america",
+        "count": 69
+      },
+      {
+        "word": "donald",
+        "count": 69
+      },
+      {
+        "word": "truthsocial",
+        "count": 67
+      },
+      {
+        "word": "users",
+        "count": 65
+      },
+      {
+        "word": "statuses",
+        "count": 65
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 62
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 55
+      },
+      {
+        "word": "jack",
+        "count": 48
+      },
+      {
+        "word": "smith",
+        "count": 46
+      },
+      {
+        "word": "thank",
+        "count": 46
+      },
+      {
+        "word": "html",
+        "count": 44
+      },
+      {
+        "word": "house",
+        "count": 42
+      },
+      {
+        "word": "white",
+        "count": 39
+      },
+      {
+        "word": "country",
+        "count": 38
+      },
+      {
+        "word": "politics",
+        "count": 37
+      },
+      {
+        "word": "iowa",
+        "count": 37
+      },
+      {
+        "word": "don",
+        "count": 36
+      },
+      {
+        "word": "desantis",
+        "count": 36
+      },
+      {
+        "word": "crooked",
+        "count": 34
+      },
+      {
+        "word": "maga",
+        "count": 33
+      },
+      {
+        "word": "never",
+        "count": 32
+      },
+      {
+        "word": "deranged",
+        "count": 32
+      },
+      {
+        "word": "interference",
+        "count": 32
+      },
+      {
+        "word": "rumble",
+        "count": 32
+      },
+      {
+        "word": "ron",
+        "count": 32
+      },
+      {
+        "word": "republican",
+        "count": 31
+      },
+      {
+        "word": "live",
+        "count": 30
+      },
+      {
+        "word": "doj",
+        "count": 30
+      },
+      {
+        "word": "time",
+        "count": 30
+      },
+      {
+        "word": "won",
+        "count": 30
+      },
+      {
+        "word": "presidential",
+        "count": 29
+      },
+      {
+        "word": "fbi",
+        "count": 29
+      },
+      {
+        "word": "state",
+        "count": 28
+      },
+      {
+        "word": "left",
+        "count": 27
+      },
+      {
+        "word": "rsbn",
+        "count": 27
+      },
+      {
+        "word": "political",
+        "count": 27
+      },
+      {
+        "word": "hunter",
+        "count": 26
+      },
+      {
+        "word": "campaign",
+        "count": 26
+      },
+      {
+        "word": "history",
+        "count": 25
+      },
+      {
+        "word": "american",
+        "count": 25
+      },
+      {
+        "word": "breitbart",
+        "count": 25
+      },
+      {
+        "word": "rally",
+        "count": 24
+      },
+      {
+        "word": "desanctimonious",
+        "count": 24
+      },
+      {
+        "word": "vote",
+        "count": 24
+      }
+    ]
+  },
+  {
+    "year_month": "2023-08",
+    "words": [
+      {
+        "word": "trump",
+        "count": 395
+      },
+      {
+        "word": "biden",
+        "count": 198
+      },
+      {
+        "word": "election",
+        "count": 147
+      },
+      {
+        "word": "president",
+        "count": 116
+      },
+      {
+        "word": "joe",
+        "count": 107
+      },
+      {
+        "word": "news",
+        "count": 84
+      },
+      {
+        "word": "crooked",
+        "count": 73
+      },
+      {
+        "word": "donald",
+        "count": 71
+      },
+      {
+        "word": "america",
+        "count": 55
+      },
+      {
+        "word": "desantis",
+        "count": 55
+      },
+      {
+        "word": "indictment",
+        "count": 55
+      },
+      {
+        "word": "campaign",
+        "count": 51
+      },
+      {
+        "word": "politics",
+        "count": 49
+      },
+      {
+        "word": "political",
+        "count": 49
+      },
+      {
+        "word": "poll",
+        "count": 49
+      },
+      {
+        "word": "html",
+        "count": 46
+      },
+      {
+        "word": "gop",
+        "count": 46
+      },
+      {
+        "word": "interference",
+        "count": 45
+      },
+      {
+        "word": "ron",
+        "count": 44
+      },
+      {
+        "word": "never",
+        "count": 43
+      },
+      {
+        "word": "country",
+        "count": 42
+      },
+      {
+        "word": "georgia",
+        "count": 42
+      },
+      {
+        "word": "years",
+        "count": 41
+      },
+      {
+        "word": "state",
+        "count": 40
+      },
+      {
+        "word": "republican",
+        "count": 40
+      },
+      {
+        "word": "left",
+        "count": 40
+      },
+      {
+        "word": "jack",
+        "count": 40
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 40
+      },
+      {
+        "word": "doj",
+        "count": 39
+      },
+      {
+        "word": "smith",
+        "count": 39
+      },
+      {
+        "word": "maga",
+        "count": 38
+      },
+      {
+        "word": "iowa",
+        "count": 37
+      },
+      {
+        "word": "foxnews",
+        "count": 37
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 36
+      },
+      {
+        "word": "debate",
+        "count": 36
+      },
+      {
+        "word": "presidential",
+        "count": 36
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 35
+      },
+      {
+        "word": "time",
+        "count": 35
+      },
+      {
+        "word": "fake",
+        "count": 34
+      },
+      {
+        "word": "history",
+        "count": 33
+      },
+      {
+        "word": "polls",
+        "count": 33
+      },
+      {
+        "word": "indictments",
+        "count": 33
+      },
+      {
+        "word": "willis",
+        "count": 32
+      },
+      {
+        "word": "ever",
+        "count": 32
+      },
+      {
+        "word": "desanctimonious",
+        "count": 31
+      },
+      {
+        "word": "deranged",
+        "count": 30
+      },
+      {
+        "word": "pence",
+        "count": 30
+      },
+      {
+        "word": "florida",
+        "count": 29
+      },
+      {
+        "word": "fani",
+        "count": 29
+      },
+      {
+        "word": "watch",
+        "count": 29
+      }
+    ]
+  },
+  {
+    "year_month": "2023-09",
+    "words": [
+      {
+        "word": "trump",
+        "count": 441
+      },
+      {
+        "word": "biden",
+        "count": 153
+      },
+      {
+        "word": "president",
+        "count": 142
+      },
+      {
+        "word": "joe",
+        "count": 95
+      },
+      {
+        "word": "news",
+        "count": 92
+      },
+      {
+        "word": "america",
+        "count": 75
+      },
+      {
+        "word": "election",
+        "count": 71
+      },
+      {
+        "word": "crooked",
+        "count": 64
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 61
+      },
+      {
+        "word": "politics",
+        "count": 60
+      },
+      {
+        "word": "donald",
+        "count": 58
+      },
+      {
+        "word": "years",
+        "count": 55
+      },
+      {
+        "word": "poll",
+        "count": 55
+      },
+      {
+        "word": "country",
+        "count": 54
+      },
+      {
+        "word": "state",
+        "count": 50
+      },
+      {
+        "word": "thank",
+        "count": 48
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 45
+      },
+      {
+        "word": "gop",
+        "count": 42
+      },
+      {
+        "word": "never",
+        "count": 42
+      },
+      {
+        "word": "time",
+        "count": 40
+      },
+      {
+        "word": "republican",
+        "count": 38
+      },
+      {
+        "word": "html",
+        "count": 38
+      },
+      {
+        "word": "political",
+        "count": 37
+      },
+      {
+        "word": "democrat",
+        "count": 36
+      },
+      {
+        "word": "border",
+        "count": 36
+      },
+      {
+        "word": "desantis",
+        "count": 35
+      },
+      {
+        "word": "united",
+        "count": 34
+      },
+      {
+        "word": "truthsocial",
+        "count": 33
+      },
+      {
+        "word": "users",
+        "count": 33
+      },
+      {
+        "word": "statuses",
+        "count": 33
+      },
+      {
+        "word": "live",
+        "count": 33
+      },
+      {
+        "word": "trumps",
+        "count": 33
+      },
+      {
+        "word": "justthenews",
+        "count": 33
+      },
+      {
+        "word": "maga",
+        "count": 32
+      },
+      {
+        "word": "china",
+        "count": 32
+      },
+      {
+        "word": "win",
+        "count": 32
+      },
+      {
+        "word": "show",
+        "count": 32
+      },
+      {
+        "word": "worth",
+        "count": 31
+      },
+      {
+        "word": "york",
+        "count": 30
+      },
+      {
+        "word": "party",
+        "count": 30
+      },
+      {
+        "word": "watch",
+        "count": 30
+      },
+      {
+        "word": "case",
+        "count": 29
+      },
+      {
+        "word": "democrats",
+        "count": 29
+      },
+      {
+        "word": "judge",
+        "count": 28
+      },
+      {
+        "word": "financial",
+        "count": 27
+      },
+      {
+        "word": "statements",
+        "count": 27
+      },
+      {
+        "word": "states",
+        "count": 27
+      },
+      {
+        "word": "ron",
+        "count": 27
+      },
+      {
+        "word": "dollars",
+        "count": 26
+      },
+      {
+        "word": "american",
+        "count": 26
+      }
+    ]
+  },
+  {
+    "year_month": "2023-10",
+    "words": [
+      {
+        "word": "trump",
+        "count": 434
+      },
+      {
+        "word": "biden",
+        "count": 182
+      },
+      {
+        "word": "president",
+        "count": 163
+      },
+      {
+        "word": "news",
+        "count": 100
+      },
+      {
+        "word": "judge",
+        "count": 90
+      },
+      {
+        "word": "joe",
+        "count": 86
+      },
+      {
+        "word": "america",
+        "count": 84
+      },
+      {
+        "word": "israel",
+        "count": 80
+      },
+      {
+        "word": "york",
+        "count": 78
+      },
+      {
+        "word": "case",
+        "count": 74
+      },
+      {
+        "word": "election",
+        "count": 66
+      },
+      {
+        "word": "never",
+        "count": 66
+      },
+      {
+        "word": "donald",
+        "count": 59
+      },
+      {
+        "word": "state",
+        "count": 58
+      },
+      {
+        "word": "crooked",
+        "count": 56
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 55
+      },
+      {
+        "word": "political",
+        "count": 53
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 50
+      },
+      {
+        "word": "utm",
+        "count": 48
+      },
+      {
+        "word": "country",
+        "count": 44
+      },
+      {
+        "word": "iowa",
+        "count": 44
+      },
+      {
+        "word": "html",
+        "count": 44
+      },
+      {
+        "word": "james",
+        "count": 43
+      },
+      {
+        "word": "truthsocial",
+        "count": 42
+      },
+      {
+        "word": "users",
+        "count": 42
+      },
+      {
+        "word": "statuses",
+        "count": 42
+      },
+      {
+        "word": "trial",
+        "count": 41
+      },
+      {
+        "word": "iran",
+        "count": 40
+      },
+      {
+        "word": "hamas",
+        "count": 40
+      },
+      {
+        "word": "world",
+        "count": 38
+      },
+      {
+        "word": "campaign",
+        "count": 38
+      },
+      {
+        "word": "interference",
+        "count": 36
+      },
+      {
+        "word": "general",
+        "count": 36
+      },
+      {
+        "word": "mar",
+        "count": 36
+      },
+      {
+        "word": "lago",
+        "count": 36
+      },
+      {
+        "word": "live",
+        "count": 36
+      },
+      {
+        "word": "corrupt",
+        "count": 35
+      },
+      {
+        "word": "attorney",
+        "count": 35
+      },
+      {
+        "word": "border",
+        "count": 35
+      },
+      {
+        "word": "letitia",
+        "count": 34
+      },
+      {
+        "word": "house",
+        "count": 34
+      },
+      {
+        "word": "rumble",
+        "count": 34
+      },
+      {
+        "word": "american",
+        "count": 34
+      },
+      {
+        "word": "politics",
+        "count": 33
+      },
+      {
+        "word": "worth",
+        "count": 32
+      },
+      {
+        "word": "administration",
+        "count": 31
+      },
+      {
+        "word": "left",
+        "count": 30
+      },
+      {
+        "word": "years",
+        "count": 30
+      },
+      {
+        "word": "don",
+        "count": 30
+      },
+      {
+        "word": "today",
+        "count": 29
+      }
+    ]
+  },
+  {
+    "year_month": "2023-11",
+    "words": [
+      {
+        "word": "trump",
+        "count": 481
+      },
+      {
+        "word": "president",
+        "count": 143
+      },
+      {
+        "word": "biden",
+        "count": 122
+      },
+      {
+        "word": "judge",
+        "count": 112
+      },
+      {
+        "word": "america",
+        "count": 92
+      },
+      {
+        "word": "donald",
+        "count": 89
+      },
+      {
+        "word": "news",
+        "count": 88
+      },
+      {
+        "word": "state",
+        "count": 83
+      },
+      {
+        "word": "engoron",
+        "count": 73
+      },
+      {
+        "word": "never",
+        "count": 73
+      },
+      {
+        "word": "york",
+        "count": 71
+      },
+      {
+        "word": "case",
+        "count": 70
+      },
+      {
+        "word": "joe",
+        "count": 66
+      },
+      {
+        "word": "election",
+        "count": 65
+      },
+      {
+        "word": "trial",
+        "count": 62
+      },
+      {
+        "word": "country",
+        "count": 59
+      },
+      {
+        "word": "iowa",
+        "count": 58
+      },
+      {
+        "word": "florida",
+        "count": 53
+      },
+      {
+        "word": "political",
+        "count": 50
+      },
+      {
+        "word": "politics",
+        "count": 49
+      },
+      {
+        "word": "fraud",
+        "count": 46
+      },
+      {
+        "word": "crooked",
+        "count": 46
+      },
+      {
+        "word": "thank",
+        "count": 45
+      },
+      {
+        "word": "attorney",
+        "count": 45
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 44
+      },
+      {
+        "word": "live",
+        "count": 43
+      },
+      {
+        "word": "hialeah",
+        "count": 40
+      },
+      {
+        "word": "html",
+        "count": 39
+      },
+      {
+        "word": "james",
+        "count": 37
+      },
+      {
+        "word": "rally",
+        "count": 37
+      },
+      {
+        "word": "poll",
+        "count": 36
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 36
+      },
+      {
+        "word": "desantis",
+        "count": 36
+      },
+      {
+        "word": "governor",
+        "count": 36
+      },
+      {
+        "word": "general",
+        "count": 35
+      },
+      {
+        "word": "law",
+        "count": 35
+      },
+      {
+        "word": "republican",
+        "count": 35
+      },
+      {
+        "word": "bank",
+        "count": 33
+      },
+      {
+        "word": "rumble",
+        "count": 33
+      },
+      {
+        "word": "court",
+        "count": 33
+      },
+      {
+        "word": "worth",
+        "count": 33
+      },
+      {
+        "word": "brought",
+        "count": 33
+      },
+      {
+        "word": "corrupt",
+        "count": 33
+      },
+      {
+        "word": "house",
+        "count": 32
+      },
+      {
+        "word": "time",
+        "count": 31
+      },
+      {
+        "word": "fake",
+        "count": 31
+      },
+      {
+        "word": "ron",
+        "count": 30
+      },
+      {
+        "word": "order",
+        "count": 30
+      },
+      {
+        "word": "letitia",
+        "count": 29
+      },
+      {
+        "word": "maga",
+        "count": 29
+      }
+    ]
+  },
+  {
+    "year_month": "2023-12",
+    "words": [
+      {
+        "word": "trump",
+        "count": 539
+      },
+      {
+        "word": "president",
+        "count": 204
+      },
+      {
+        "word": "biden",
+        "count": 171
+      },
+      {
+        "word": "election",
+        "count": 109
+      },
+      {
+        "word": "iowa",
+        "count": 106
+      },
+      {
+        "word": "donald",
+        "count": 100
+      },
+      {
+        "word": "news",
+        "count": 91
+      },
+      {
+        "word": "joe",
+        "count": 89
+      },
+      {
+        "word": "america",
+        "count": 81
+      },
+      {
+        "word": "court",
+        "count": 75
+      },
+      {
+        "word": "country",
+        "count": 74
+      },
+      {
+        "word": "crooked",
+        "count": 63
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 63
+      },
+      {
+        "word": "caucus",
+        "count": 60
+      },
+      {
+        "word": "judge",
+        "count": 60
+      },
+      {
+        "word": "political",
+        "count": 52
+      },
+      {
+        "word": "state",
+        "count": 52
+      },
+      {
+        "word": "case",
+        "count": 51
+      },
+      {
+        "word": "york",
+        "count": 49
+      },
+      {
+        "word": "time",
+        "count": 48
+      },
+      {
+        "word": "politics",
+        "count": 48
+      },
+      {
+        "word": "live",
+        "count": 47
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 45
+      },
+      {
+        "word": "colorado",
+        "count": 45
+      },
+      {
+        "word": "never",
+        "count": 44
+      },
+      {
+        "word": "ballot",
+        "count": 43
+      },
+      {
+        "word": "thank",
+        "count": 40
+      },
+      {
+        "word": "supreme",
+        "count": 40
+      },
+      {
+        "word": "commit",
+        "count": 40
+      },
+      {
+        "word": "rally",
+        "count": 39
+      },
+      {
+        "word": "american",
+        "count": 39
+      },
+      {
+        "word": "maga",
+        "count": 38
+      },
+      {
+        "word": "democracy",
+        "count": 37
+      },
+      {
+        "word": "states",
+        "count": 37
+      },
+      {
+        "word": "reno",
+        "count": 37
+      },
+      {
+        "word": "interference",
+        "count": 36
+      },
+      {
+        "word": "html",
+        "count": 36
+      },
+      {
+        "word": "campaign",
+        "count": 34
+      },
+      {
+        "word": "smith",
+        "count": 34
+      },
+      {
+        "word": "event",
+        "count": 34
+      },
+      {
+        "word": "fake",
+        "count": 34
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 33
+      },
+      {
+        "word": "years",
+        "count": 33
+      },
+      {
+        "word": "corrupt",
+        "count": 33
+      },
+      {
+        "word": "voters",
+        "count": 32
+      },
+      {
+        "word": "jack",
+        "count": 32
+      },
+      {
+        "word": "world",
+        "count": 32
+      },
+      {
+        "word": "win",
+        "count": 31
+      },
+      {
+        "word": "poll",
+        "count": 31
+      },
+      {
+        "word": "presidential",
+        "count": 30
+      }
+    ]
+  },
+  {
+    "year_month": "2024-01",
+    "words": [
+      {
+        "word": "trump",
+        "count": 547
+      },
+      {
+        "word": "president",
+        "count": 239
+      },
+      {
+        "word": "biden",
+        "count": 184
+      },
+      {
+        "word": "carroll",
+        "count": 172
+      },
+      {
+        "word": "election",
+        "count": 156
+      },
+      {
+        "word": "case",
+        "count": 146
+      },
+      {
+        "word": "iowa",
+        "count": 145
+      },
+      {
+        "word": "jean",
+        "count": 139
+      },
+      {
+        "word": "judge",
+        "count": 119
+      },
+      {
+        "word": "donald",
+        "count": 118
+      },
+      {
+        "word": "america",
+        "count": 112
+      },
+      {
+        "word": "joe",
+        "count": 111
+      },
+      {
+        "word": "hampshire",
+        "count": 99
+      },
+      {
+        "word": "border",
+        "count": 98
+      },
+      {
+        "word": "news",
+        "count": 91
+      },
+      {
+        "word": "never",
+        "count": 85
+      },
+      {
+        "word": "country",
+        "count": 84
+      },
+      {
+        "word": "american",
+        "count": 83
+      },
+      {
+        "word": "politics",
+        "count": 79
+      },
+      {
+        "word": "caucus",
+        "count": 78
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 76
+      },
+      {
+        "word": "crooked",
+        "count": 75
+      },
+      {
+        "word": "political",
+        "count": 68
+      },
+      {
+        "word": "state",
+        "count": 68
+      },
+      {
+        "word": "nikki",
+        "count": 63
+      },
+      {
+        "word": "democrats",
+        "count": 63
+      },
+      {
+        "word": "maga",
+        "count": 63
+      },
+      {
+        "word": "hideous",
+        "count": 63
+      },
+      {
+        "word": "haley",
+        "count": 62
+      },
+      {
+        "word": "states",
+        "count": 61
+      },
+      {
+        "word": "live",
+        "count": 59
+      },
+      {
+        "word": "cnn",
+        "count": 59
+      },
+      {
+        "word": "win",
+        "count": 56
+      },
+      {
+        "word": "another",
+        "count": 56
+      },
+      {
+        "word": "york",
+        "count": 55
+      },
+      {
+        "word": "breitbart",
+        "count": 54
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 54
+      },
+      {
+        "word": "vote",
+        "count": 53
+      },
+      {
+        "word": "clinton",
+        "count": 53
+      },
+      {
+        "word": "house",
+        "count": 53
+      },
+      {
+        "word": "fair",
+        "count": 53
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 52
+      },
+      {
+        "word": "long",
+        "count": 52
+      },
+      {
+        "word": "trial",
+        "count": 52
+      },
+      {
+        "word": "woman",
+        "count": 52
+      },
+      {
+        "word": "day",
+        "count": 50
+      },
+      {
+        "word": "time",
+        "count": 50
+      },
+      {
+        "word": "husband",
+        "count": 50
+      },
+      {
+        "word": "friend",
+        "count": 50
+      },
+      {
+        "word": "html",
+        "count": 49
+      }
+    ]
+  },
+  {
+    "year_month": "2024-02",
+    "words": [
+      {
+        "word": "trump",
+        "count": 301
+      },
+      {
+        "word": "biden",
+        "count": 150
+      },
+      {
+        "word": "president",
+        "count": 118
+      },
+      {
+        "word": "state",
+        "count": 94
+      },
+      {
+        "word": "election",
+        "count": 90
+      },
+      {
+        "word": "joe",
+        "count": 80
+      },
+      {
+        "word": "carolina",
+        "count": 79
+      },
+      {
+        "word": "south",
+        "count": 75
+      },
+      {
+        "word": "donald",
+        "count": 72
+      },
+      {
+        "word": "news",
+        "count": 72
+      },
+      {
+        "word": "america",
+        "count": 67
+      },
+      {
+        "word": "country",
+        "count": 61
+      },
+      {
+        "word": "border",
+        "count": 55
+      },
+      {
+        "word": "haley",
+        "count": 54
+      },
+      {
+        "word": "york",
+        "count": 52
+      },
+      {
+        "word": "texas",
+        "count": 47
+      },
+      {
+        "word": "crooked",
+        "count": 46
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 46
+      },
+      {
+        "word": "never",
+        "count": 44
+      },
+      {
+        "word": "judge",
+        "count": 43
+      },
+      {
+        "word": "district",
+        "count": 41
+      },
+      {
+        "word": "thank",
+        "count": 41
+      },
+      {
+        "word": "nikki",
+        "count": 40
+      },
+      {
+        "word": "case",
+        "count": 40
+      },
+      {
+        "word": "complete",
+        "count": 39
+      },
+      {
+        "word": "total",
+        "count": 39
+      },
+      {
+        "word": "political",
+        "count": 39
+      },
+      {
+        "word": "endorsement",
+        "count": 38
+      },
+      {
+        "word": "general",
+        "count": 37
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 37
+      },
+      {
+        "word": "live",
+        "count": 36
+      },
+      {
+        "word": "attorney",
+        "count": 35
+      },
+      {
+        "word": "vote",
+        "count": 34
+      },
+      {
+        "word": "republican",
+        "count": 34
+      },
+      {
+        "word": "html",
+        "count": 33
+      },
+      {
+        "word": "politics",
+        "count": 33
+      },
+      {
+        "word": "second",
+        "count": 32
+      },
+      {
+        "word": "house",
+        "count": 32
+      },
+      {
+        "word": "running",
+        "count": 32
+      },
+      {
+        "word": "amendment",
+        "count": 31
+      },
+      {
+        "word": "rally",
+        "count": 31
+      },
+      {
+        "word": "left",
+        "count": 29
+      },
+      {
+        "word": "states",
+        "count": 28
+      },
+      {
+        "word": "primary",
+        "count": 28
+      },
+      {
+        "word": "secure",
+        "count": 27
+      },
+      {
+        "word": "breitbart",
+        "count": 27
+      },
+      {
+        "word": "poll",
+        "count": 27
+      },
+      {
+        "word": "defend",
+        "count": 26
+      },
+      {
+        "word": "protect",
+        "count": 26
+      },
+      {
+        "word": "record",
+        "count": 26
+      }
+    ]
+  },
+  {
+    "year_month": "2024-03",
+    "words": [
+      {
+        "word": "trump",
+        "count": 374
+      },
+      {
+        "word": "biden",
+        "count": 225
+      },
+      {
+        "word": "president",
+        "count": 148
+      },
+      {
+        "word": "america",
+        "count": 125
+      },
+      {
+        "word": "joe",
+        "count": 125
+      },
+      {
+        "word": "border",
+        "count": 101
+      },
+      {
+        "word": "election",
+        "count": 97
+      },
+      {
+        "word": "country",
+        "count": 97
+      },
+      {
+        "word": "crooked",
+        "count": 89
+      },
+      {
+        "word": "complete",
+        "count": 88
+      },
+      {
+        "word": "total",
+        "count": 86
+      },
+      {
+        "word": "judge",
+        "count": 84
+      },
+      {
+        "word": "endorsement",
+        "count": 84
+      },
+      {
+        "word": "news",
+        "count": 82
+      },
+      {
+        "word": "case",
+        "count": 77
+      },
+      {
+        "word": "district",
+        "count": 76
+      },
+      {
+        "word": "secure",
+        "count": 75
+      },
+      {
+        "word": "amendment",
+        "count": 73
+      },
+      {
+        "word": "state",
+        "count": 72
+      },
+      {
+        "word": "congressional",
+        "count": 72
+      },
+      {
+        "word": "congressman",
+        "count": 72
+      },
+      {
+        "word": "texas",
+        "count": 72
+      },
+      {
+        "word": "second",
+        "count": 71
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 68
+      },
+      {
+        "word": "york",
+        "count": 65
+      },
+      {
+        "word": "never",
+        "count": 64
+      },
+      {
+        "word": "hard",
+        "count": 60
+      },
+      {
+        "word": "military",
+        "count": 57
+      },
+      {
+        "word": "defend",
+        "count": 56
+      },
+      {
+        "word": "support",
+        "count": 55
+      },
+      {
+        "word": "maga",
+        "count": 55
+      },
+      {
+        "word": "thank",
+        "count": 54
+      },
+      {
+        "word": "donald",
+        "count": 53
+      },
+      {
+        "word": "american",
+        "count": 52
+      },
+      {
+        "word": "protect",
+        "count": 52
+      },
+      {
+        "word": "working",
+        "count": 51
+      },
+      {
+        "word": "live",
+        "count": 49
+      },
+      {
+        "word": "politics",
+        "count": 48
+      },
+      {
+        "word": "political",
+        "count": 47
+      },
+      {
+        "word": "job",
+        "count": 47
+      },
+      {
+        "word": "law",
+        "count": 46
+      },
+      {
+        "word": "left",
+        "count": 46
+      },
+      {
+        "word": "republican",
+        "count": 44
+      },
+      {
+        "word": "congress",
+        "count": 43
+      },
+      {
+        "word": "economy",
+        "count": 42
+      },
+      {
+        "word": "crime",
+        "count": 40
+      },
+      {
+        "word": "corrupt",
+        "count": 39
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 39
+      },
+      {
+        "word": "fantastic",
+        "count": 39
+      },
+      {
+        "word": "html",
+        "count": 38
+      }
+    ]
+  },
+  {
+    "year_month": "2024-04",
+    "words": [
+      {
+        "word": "trump",
+        "count": 298
+      },
+      {
+        "word": "president",
+        "count": 181
+      },
+      {
+        "word": "biden",
+        "count": 169
+      },
+      {
+        "word": "joe",
+        "count": 103
+      },
+      {
+        "word": "country",
+        "count": 100
+      },
+      {
+        "word": "america",
+        "count": 93
+      },
+      {
+        "word": "crooked",
+        "count": 83
+      },
+      {
+        "word": "election",
+        "count": 77
+      },
+      {
+        "word": "judge",
+        "count": 76
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 72
+      },
+      {
+        "word": "states",
+        "count": 69
+      },
+      {
+        "word": "york",
+        "count": 65
+      },
+      {
+        "word": "immunity",
+        "count": 60
+      },
+      {
+        "word": "donald",
+        "count": 58
+      },
+      {
+        "word": "never",
+        "count": 57
+      },
+      {
+        "word": "border",
+        "count": 54
+      },
+      {
+        "word": "maga",
+        "count": 50
+      },
+      {
+        "word": "case",
+        "count": 49
+      },
+      {
+        "word": "interference",
+        "count": 47
+      },
+      {
+        "word": "trial",
+        "count": 46
+      },
+      {
+        "word": "presidential",
+        "count": 44
+      },
+      {
+        "word": "legal",
+        "count": 44
+      },
+      {
+        "word": "political",
+        "count": 44
+      },
+      {
+        "word": "united",
+        "count": 43
+      },
+      {
+        "word": "history",
+        "count": 41
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 40
+      },
+      {
+        "word": "crime",
+        "count": 39
+      },
+      {
+        "word": "news",
+        "count": 38
+      },
+      {
+        "word": "time",
+        "count": 38
+      },
+      {
+        "word": "truth",
+        "count": 36
+      },
+      {
+        "word": "worst",
+        "count": 34
+      },
+      {
+        "word": "always",
+        "count": 33
+      },
+      {
+        "word": "let",
+        "count": 33
+      },
+      {
+        "word": "total",
+        "count": 32
+      },
+      {
+        "word": "state",
+        "count": 32
+      },
+      {
+        "word": "democrats",
+        "count": 32
+      },
+      {
+        "word": "day",
+        "count": 31
+      },
+      {
+        "word": "corrupt",
+        "count": 31
+      },
+      {
+        "word": "live",
+        "count": 31
+      },
+      {
+        "word": "allowed",
+        "count": 30
+      },
+      {
+        "word": "politics",
+        "count": 30
+      },
+      {
+        "word": "years",
+        "count": 30
+      },
+      {
+        "word": "support",
+        "count": 29
+      },
+      {
+        "word": "office",
+        "count": 29
+      },
+      {
+        "word": "american",
+        "count": 28
+      },
+      {
+        "word": "endorsement",
+        "count": 28
+      },
+      {
+        "word": "complete",
+        "count": 28
+      },
+      {
+        "word": "truthsocial",
+        "count": 28
+      },
+      {
+        "word": "users",
+        "count": 28
+      },
+      {
+        "word": "statuses",
+        "count": 28
+      }
+    ]
+  },
+  {
+    "year_month": "2024-05",
+    "words": [
+      {
+        "word": "trump",
+        "count": 303
+      },
+      {
+        "word": "biden",
+        "count": 178
+      },
+      {
+        "word": "president",
+        "count": 171
+      },
+      {
+        "word": "election",
+        "count": 159
+      },
+      {
+        "word": "case",
+        "count": 141
+      },
+      {
+        "word": "joe",
+        "count": 131
+      },
+      {
+        "word": "endorsement",
+        "count": 121
+      },
+      {
+        "word": "law",
+        "count": 119
+      },
+      {
+        "word": "district",
+        "count": 119
+      },
+      {
+        "word": "complete",
+        "count": 117
+      },
+      {
+        "word": "total",
+        "count": 117
+      },
+      {
+        "word": "crime",
+        "count": 105
+      },
+      {
+        "word": "america",
+        "count": 101
+      },
+      {
+        "word": "bragg",
+        "count": 101
+      },
+      {
+        "word": "judge",
+        "count": 97
+      },
+      {
+        "word": "amendment",
+        "count": 97
+      },
+      {
+        "word": "crooked",
+        "count": 95
+      },
+      {
+        "word": "legal",
+        "count": 94
+      },
+      {
+        "word": "second",
+        "count": 93
+      },
+      {
+        "word": "york",
+        "count": 91
+      },
+      {
+        "word": "border",
+        "count": 91
+      },
+      {
+        "word": "military",
+        "count": 91
+      },
+      {
+        "word": "american",
+        "count": 90
+      },
+      {
+        "word": "never",
+        "count": 90
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 88
+      },
+      {
+        "word": "secure",
+        "count": 87
+      },
+      {
+        "word": "always",
+        "count": 85
+      },
+      {
+        "word": "congressional",
+        "count": 85
+      },
+      {
+        "word": "trial",
+        "count": 84
+      },
+      {
+        "word": "campaign",
+        "count": 81
+      },
+      {
+        "word": "siege",
+        "count": 79
+      },
+      {
+        "word": "country",
+        "count": 75
+      },
+      {
+        "word": "state",
+        "count": 75
+      },
+      {
+        "word": "defend",
+        "count": 75
+      },
+      {
+        "word": "support",
+        "count": 74
+      },
+      {
+        "word": "hard",
+        "count": 74
+      },
+      {
+        "word": "donald",
+        "count": 67
+      },
+      {
+        "word": "political",
+        "count": 65
+      },
+      {
+        "word": "texas",
+        "count": 63
+      },
+      {
+        "word": "congressman",
+        "count": 63
+      },
+      {
+        "word": "protect",
+        "count": 63
+      },
+      {
+        "word": "federal",
+        "count": 60
+      },
+      {
+        "word": "justice",
+        "count": 57
+      },
+      {
+        "word": "economy",
+        "count": 54
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 53
+      },
+      {
+        "word": "incredible",
+        "count": 53
+      },
+      {
+        "word": "inflation",
+        "count": 52
+      },
+      {
+        "word": "left",
+        "count": 51
+      },
+      {
+        "word": "interference",
+        "count": 51
+      },
+      {
+        "word": "let",
+        "count": 51
+      }
+    ]
+  },
+  {
+    "year_month": "2024-06",
+    "words": [
+      {
+        "word": "trump",
+        "count": 303
+      },
+      {
+        "word": "president",
+        "count": 212
+      },
+      {
+        "word": "biden",
+        "count": 187
+      },
+      {
+        "word": "joe",
+        "count": 119
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 109
+      },
+      {
+        "word": "border",
+        "count": 96
+      },
+      {
+        "word": "live",
+        "count": 95
+      },
+      {
+        "word": "country",
+        "count": 81
+      },
+      {
+        "word": "total",
+        "count": 73
+      },
+      {
+        "word": "crooked",
+        "count": 73
+      },
+      {
+        "word": "america",
+        "count": 71
+      },
+      {
+        "word": "endorsement",
+        "count": 66
+      },
+      {
+        "word": "complete",
+        "count": 65
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 61
+      },
+      {
+        "word": "donald",
+        "count": 60
+      },
+      {
+        "word": "support",
+        "count": 59
+      },
+      {
+        "word": "military",
+        "count": 58
+      },
+      {
+        "word": "american",
+        "count": 55
+      },
+      {
+        "word": "never",
+        "count": 55
+      },
+      {
+        "word": "secure",
+        "count": 55
+      },
+      {
+        "word": "maga",
+        "count": 51
+      },
+      {
+        "word": "vote",
+        "count": 50
+      },
+      {
+        "word": "election",
+        "count": 49
+      },
+      {
+        "word": "always",
+        "count": 48
+      },
+      {
+        "word": "district",
+        "count": 48
+      },
+      {
+        "word": "congressional",
+        "count": 47
+      },
+      {
+        "word": "defend",
+        "count": 46
+      },
+      {
+        "word": "economy",
+        "count": 45
+      },
+      {
+        "word": "history",
+        "count": 44
+      },
+      {
+        "word": "incredible",
+        "count": 44
+      },
+      {
+        "word": "second",
+        "count": 44
+      },
+      {
+        "word": "amendment",
+        "count": 44
+      },
+      {
+        "word": "siege",
+        "count": 40
+      },
+      {
+        "word": "york",
+        "count": 40
+      },
+      {
+        "word": "hard",
+        "count": 40
+      },
+      {
+        "word": "protect",
+        "count": 39
+      },
+      {
+        "word": "news",
+        "count": 39
+      },
+      {
+        "word": "rsbnetwork",
+        "count": 38
+      },
+      {
+        "word": "state",
+        "count": 37
+      },
+      {
+        "word": "let",
+        "count": 37
+      },
+      {
+        "word": "video",
+        "count": 36
+      },
+      {
+        "word": "inflation",
+        "count": 34
+      },
+      {
+        "word": "grow",
+        "count": 33
+      },
+      {
+        "word": "rally",
+        "count": 33
+      },
+      {
+        "word": "political",
+        "count": 32
+      },
+      {
+        "word": "debate",
+        "count": 32
+      },
+      {
+        "word": "law",
+        "count": 32
+      },
+      {
+        "word": "rumble",
+        "count": 32
+      },
+      {
+        "word": "states",
+        "count": 29
+      },
+      {
+        "word": "time",
+        "count": 29
+      }
+    ]
+  },
+  {
+    "year_month": "2024-07",
+    "words": [
+      {
+        "word": "trump",
+        "count": 194
+      },
+      {
+        "word": "president",
+        "count": 138
+      },
+      {
+        "word": "biden",
+        "count": 137
+      },
+      {
+        "word": "joe",
+        "count": 109
+      },
+      {
+        "word": "america",
+        "count": 96
+      },
+      {
+        "word": "kamala",
+        "count": 88
+      },
+      {
+        "word": "harris",
+        "count": 81
+      },
+      {
+        "word": "country",
+        "count": 71
+      },
+      {
+        "word": "crooked",
+        "count": 62
+      },
+      {
+        "word": "maga",
+        "count": 53
+      },
+      {
+        "word": "never",
+        "count": 52
+      },
+      {
+        "word": "donald",
+        "count": 44
+      },
+      {
+        "word": "rumble",
+        "count": 43
+      },
+      {
+        "word": "american",
+        "count": 43
+      },
+      {
+        "word": "news",
+        "count": 42
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 41
+      },
+      {
+        "word": "election",
+        "count": 41
+      },
+      {
+        "word": "live",
+        "count": 39
+      },
+      {
+        "word": "debate",
+        "count": 37
+      },
+      {
+        "word": "campaign",
+        "count": 36
+      },
+      {
+        "word": "today",
+        "count": 35
+      },
+      {
+        "word": "time",
+        "count": 33
+      },
+      {
+        "word": "united",
+        "count": 33
+      },
+      {
+        "word": "fake",
+        "count": 31
+      },
+      {
+        "word": "radical",
+        "count": 31
+      },
+      {
+        "word": "left",
+        "count": 30
+      },
+      {
+        "word": "states",
+        "count": 30
+      },
+      {
+        "word": "thank",
+        "count": 29
+      },
+      {
+        "word": "history",
+        "count": 29
+      },
+      {
+        "word": "total",
+        "count": 29
+      },
+      {
+        "word": "law",
+        "count": 29
+      },
+      {
+        "word": "fight",
+        "count": 28
+      },
+      {
+        "word": "let",
+        "count": 28
+      },
+      {
+        "word": "html",
+        "count": 27
+      },
+      {
+        "word": "border",
+        "count": 27
+      },
+      {
+        "word": "win",
+        "count": 27
+      },
+      {
+        "word": "court",
+        "count": 27
+      },
+      {
+        "word": "truthsocial",
+        "count": 26
+      },
+      {
+        "word": "political",
+        "count": 26
+      },
+      {
+        "word": "inflation",
+        "count": 26
+      },
+      {
+        "word": "amendment",
+        "count": 26
+      },
+      {
+        "word": "stop",
+        "count": 26
+      },
+      {
+        "word": "case",
+        "count": 26
+      },
+      {
+        "word": "users",
+        "count": 25
+      },
+      {
+        "word": "statuses",
+        "count": 25
+      },
+      {
+        "word": "worst",
+        "count": 25
+      },
+      {
+        "word": "state",
+        "count": 25
+      },
+      {
+        "word": "world",
+        "count": 25
+      },
+      {
+        "word": "vote",
+        "count": 25
+      },
+      {
+        "word": "foxnews",
+        "count": 25
+      }
+    ]
+  },
+  {
+    "year_month": "2024-08",
+    "words": [
+      {
+        "word": "trump",
+        "count": 292
+      },
+      {
+        "word": "kamala",
+        "count": 279
+      },
+      {
+        "word": "harris",
+        "count": 191
+      },
+      {
+        "word": "president",
+        "count": 170
+      },
+      {
+        "word": "america",
+        "count": 150
+      },
+      {
+        "word": "border",
+        "count": 123
+      },
+      {
+        "word": "country",
+        "count": 120
+      },
+      {
+        "word": "biden",
+        "count": 104
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 93
+      },
+      {
+        "word": "election",
+        "count": 86
+      },
+      {
+        "word": "never",
+        "count": 84
+      },
+      {
+        "word": "total",
+        "count": 83
+      },
+      {
+        "word": "endorsement",
+        "count": 82
+      },
+      {
+        "word": "always",
+        "count": 79
+      },
+      {
+        "word": "complete",
+        "count": 79
+      },
+      {
+        "word": "live",
+        "count": 78
+      },
+      {
+        "word": "joe",
+        "count": 78
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 77
+      },
+      {
+        "word": "american",
+        "count": 76
+      },
+      {
+        "word": "second",
+        "count": 72
+      },
+      {
+        "word": "amendment",
+        "count": 70
+      },
+      {
+        "word": "let",
+        "count": 69
+      },
+      {
+        "word": "military",
+        "count": 66
+      },
+      {
+        "word": "florida",
+        "count": 66
+      },
+      {
+        "word": "inflation",
+        "count": 66
+      },
+      {
+        "word": "siege",
+        "count": 66
+      },
+      {
+        "word": "support",
+        "count": 63
+      },
+      {
+        "word": "history",
+        "count": 63
+      },
+      {
+        "word": "teamtrumppresident",
+        "count": 63
+      },
+      {
+        "word": "maga",
+        "count": 62
+      },
+      {
+        "word": "district",
+        "count": 62
+      },
+      {
+        "word": "secure",
+        "count": 59
+      },
+      {
+        "word": "economy",
+        "count": 56
+      },
+      {
+        "word": "news",
+        "count": 54
+      },
+      {
+        "word": "vote",
+        "count": 54
+      },
+      {
+        "word": "crime",
+        "count": 52
+      },
+      {
+        "word": "comrade",
+        "count": 51
+      },
+      {
+        "word": "protect",
+        "count": 51
+      },
+      {
+        "word": "pennsylvania",
+        "count": 50
+      },
+      {
+        "word": "truthsocial",
+        "count": 50
+      },
+      {
+        "word": "stop",
+        "count": 50
+      },
+      {
+        "word": "users",
+        "count": 49
+      },
+      {
+        "word": "statuses",
+        "count": 49
+      },
+      {
+        "word": "incredible",
+        "count": 49
+      },
+      {
+        "word": "illegal",
+        "count": 48
+      },
+      {
+        "word": "state",
+        "count": 47
+      },
+      {
+        "word": "thank",
+        "count": 46
+      },
+      {
+        "word": "rumble",
+        "count": 45
+      },
+      {
+        "word": "fake",
+        "count": 45
+      },
+      {
+        "word": "crooked",
+        "count": 45
+      }
+    ]
+  },
+  {
+    "year_month": "2024-09",
+    "words": [
+      {
+        "word": "trump",
+        "count": 385
+      },
+      {
+        "word": "kamala",
+        "count": 240
+      },
+      {
+        "word": "harris",
+        "count": 190
+      },
+      {
+        "word": "president",
+        "count": 164
+      },
+      {
+        "word": "america",
+        "count": 96
+      },
+      {
+        "word": "country",
+        "count": 93
+      },
+      {
+        "word": "news",
+        "count": 86
+      },
+      {
+        "word": "border",
+        "count": 76
+      },
+      {
+        "word": "comrade",
+        "count": 67
+      },
+      {
+        "word": "live",
+        "count": 65
+      },
+      {
+        "word": "politics",
+        "count": 63
+      },
+      {
+        "word": "debate",
+        "count": 61
+      },
+      {
+        "word": "donald",
+        "count": 60
+      },
+      {
+        "word": "vote",
+        "count": 60
+      },
+      {
+        "word": "election",
+        "count": 58
+      },
+      {
+        "word": "pennsylvania",
+        "count": 54
+      },
+      {
+        "word": "never",
+        "count": 53
+      },
+      {
+        "word": "state",
+        "count": 50
+      },
+      {
+        "word": "american",
+        "count": 47
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 46
+      },
+      {
+        "word": "biden",
+        "count": 46
+      },
+      {
+        "word": "world",
+        "count": 46
+      },
+      {
+        "word": "years",
+        "count": 45
+      },
+      {
+        "word": "html",
+        "count": 45
+      },
+      {
+        "word": "today",
+        "count": 44
+      },
+      {
+        "word": "maga",
+        "count": 44
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 43
+      },
+      {
+        "word": "teamtrumppresident",
+        "count": 42
+      },
+      {
+        "word": "rumble",
+        "count": 41
+      },
+      {
+        "word": "states",
+        "count": 41
+      },
+      {
+        "word": "policy",
+        "count": 41
+      },
+      {
+        "word": "york",
+        "count": 40
+      },
+      {
+        "word": "don",
+        "count": 40
+      },
+      {
+        "word": "thank",
+        "count": 38
+      },
+      {
+        "word": "campaign",
+        "count": 37
+      },
+      {
+        "word": "time",
+        "count": 37
+      },
+      {
+        "word": "left",
+        "count": 35
+      },
+      {
+        "word": "crime",
+        "count": 34
+      },
+      {
+        "word": "day",
+        "count": 33
+      },
+      {
+        "word": "history",
+        "count": 33
+      },
+      {
+        "word": "democrats",
+        "count": 32
+      },
+      {
+        "word": "truthsocial",
+        "count": 31
+      },
+      {
+        "word": "users",
+        "count": 31
+      },
+      {
+        "word": "statuses",
+        "count": 31
+      },
+      {
+        "word": "united",
+        "count": 31
+      },
+      {
+        "word": "justthenews",
+        "count": 31
+      },
+      {
+        "word": "stop",
+        "count": 30
+      },
+      {
+        "word": "inflation",
+        "count": 30
+      },
+      {
+        "word": "nation",
+        "count": 29
+      },
+      {
+        "word": "illegal",
+        "count": 29
+      }
+    ]
+  },
+  {
+    "year_month": "2024-10",
+    "words": [
+      {
+        "word": "trump",
+        "count": 370
+      },
+      {
+        "word": "kamala",
+        "count": 236
+      },
+      {
+        "word": "president",
+        "count": 186
+      },
+      {
+        "word": "live",
+        "count": 142
+      },
+      {
+        "word": "vote",
+        "count": 140
+      },
+      {
+        "word": "harris",
+        "count": 132
+      },
+      {
+        "word": "america",
+        "count": 124
+      },
+      {
+        "word": "country",
+        "count": 91
+      },
+      {
+        "word": "rumble",
+        "count": 88
+      },
+      {
+        "word": "election",
+        "count": 85
+      },
+      {
+        "word": "american",
+        "count": 78
+      },
+      {
+        "word": "pennsylvania",
+        "count": 73
+      },
+      {
+        "word": "donaldjtrump",
+        "count": 72
+      },
+      {
+        "word": "html",
+        "count": 69
+      },
+      {
+        "word": "donald",
+        "count": 68
+      },
+      {
+        "word": "history",
+        "count": 68
+      },
+      {
+        "word": "teamtrumppresident",
+        "count": 67
+      },
+      {
+        "word": "never",
+        "count": 62
+      },
+      {
+        "word": "border",
+        "count": 60
+      },
+      {
+        "word": "news",
+        "count": 59
+      },
+      {
+        "word": "years",
+        "count": 58
+      },
+      {
+        "word": "day",
+        "count": 57
+      },
+      {
+        "word": "maga",
+        "count": 54
+      },
+      {
+        "word": "today",
+        "count": 54
+      },
+      {
+        "word": "biden",
+        "count": 53
+      },
+      {
+        "word": "carolina",
+        "count": 50
+      },
+      {
+        "word": "thank",
+        "count": 49
+      },
+      {
+        "word": "swampthevoteusa",
+        "count": 49
+      },
+      {
+        "word": "let",
+        "count": 49
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 49
+      },
+      {
+        "word": "inflation",
+        "count": 47
+      },
+      {
+        "word": "north",
+        "count": 45
+      },
+      {
+        "word": "join",
+        "count": 41
+      },
+      {
+        "word": "voting",
+        "count": 40
+      },
+      {
+        "word": "stop",
+        "count": 39
+      },
+      {
+        "word": "others",
+        "count": 38
+      },
+      {
+        "word": "early",
+        "count": 38
+      },
+      {
+        "word": "support",
+        "count": 37
+      },
+      {
+        "word": "soon",
+        "count": 36
+      },
+      {
+        "word": "joe",
+        "count": 36
+      },
+      {
+        "word": "lyin",
+        "count": 36
+      },
+      {
+        "word": "rally",
+        "count": 36
+      },
+      {
+        "word": "newsmax",
+        "count": 35
+      },
+      {
+        "word": "last",
+        "count": 35
+      },
+      {
+        "word": "total",
+        "count": 35
+      },
+      {
+        "word": "every",
+        "count": 35
+      },
+      {
+        "word": "illegal",
+        "count": 34
+      },
+      {
+        "word": "time",
+        "count": 34
+      },
+      {
+        "word": "minutes",
+        "count": 34
+      },
+      {
+        "word": "americans",
+        "count": 33
+      }
+    ]
+  },
+  {
+    "year_month": "2024-11",
+    "words": [
+      {
+        "word": "trump",
+        "count": 93
+      },
+      {
+        "word": "america",
+        "count": 74
+      },
+      {
+        "word": "vote",
+        "count": 72
+      },
+      {
+        "word": "swampthevoteusa",
+        "count": 45
+      },
+      {
+        "word": "country",
+        "count": 35
+      },
+      {
+        "word": "kamala",
+        "count": 35
+      },
+      {
+        "word": "thank",
+        "count": 34
+      },
+      {
+        "word": "president",
+        "count": 33
+      },
+      {
+        "word": "line",
+        "count": 31
+      },
+      {
+        "word": "american",
+        "count": 29
+      },
+      {
+        "word": "live",
+        "count": 29
+      },
+      {
+        "word": "border",
+        "count": 25
+      },
+      {
+        "word": "years",
+        "count": 24
+      },
+      {
+        "word": "election",
+        "count": 24
+      },
+      {
+        "word": "donald",
+        "count": 23
+      },
+      {
+        "word": "voting",
+        "count": 23
+      },
+      {
+        "word": "time",
+        "count": 22
+      },
+      {
+        "word": "rumble",
+        "count": 22
+      },
+      {
+        "word": "let",
+        "count": 20
+      },
+      {
+        "word": "states",
+        "count": 19
+      },
+      {
+        "word": "maga",
+        "count": 19
+      },
+      {
+        "word": "fight",
+        "count": 18
+      },
+      {
+        "word": "united",
+        "count": 17
+      },
+      {
+        "word": "state",
+        "count": 17
+      },
+      {
+        "word": "stay",
+        "count": 17
+      },
+      {
+        "word": "days",
+        "count": 16
+      },
+      {
+        "word": "soon",
+        "count": 16
+      },
+      {
+        "word": "history",
+        "count": 16
+      },
+      {
+        "word": "pennsylvania",
+        "count": 16
+      },
+      {
+        "word": "teamtrumppresident",
+        "count": 16
+      },
+      {
+        "word": "day",
+        "count": 15
+      },
+      {
+        "word": "never",
+        "count": 15
+      },
+      {
+        "word": "win",
+        "count": 15
+      },
+      {
+        "word": "announce",
+        "count": 14
+      },
+      {
+        "word": "job",
+        "count": 14
+      },
+      {
+        "word": "stop",
+        "count": 14
+      },
+      {
+        "word": "open",
+        "count": 14
+      },
+      {
+        "word": "north",
+        "count": 14
+      },
+      {
+        "word": "michigan",
+        "count": 14
+      },
+      {
+        "word": "justice",
+        "count": 13
+      },
+      {
+        "word": "save",
+        "count": 13
+      },
+      {
+        "word": "wonderful",
+        "count": 13
+      },
+      {
+        "word": "ever",
+        "count": 13
+      },
+      {
+        "word": "campaign",
+        "count": 13
+      },
+      {
+        "word": "democrats",
+        "count": 13
+      },
+      {
+        "word": "republican",
+        "count": 13
+      },
+      {
+        "word": "polls",
+        "count": 13
+      },
+      {
+        "word": "link",
+        "count": 13
+      },
+      {
+        "word": "carolina",
+        "count": 13
+      },
+      {
+        "word": "newsmax",
+        "count": 13
+      }
+    ]
+  },
+  {
+    "year_month": "2024-12",
+    "words": [
+      {
+        "word": "trump",
+        "count": 120
+      },
+      {
+        "word": "america",
+        "count": 94
+      },
+      {
+        "word": "president",
+        "count": 75
+      },
+      {
+        "word": "states",
+        "count": 73
+      },
+      {
+        "word": "united",
+        "count": 72
+      },
+      {
+        "word": "congratulations",
+        "count": 54
+      },
+      {
+        "word": "pleased",
+        "count": 54
+      },
+      {
+        "word": "serve",
+        "count": 50
+      },
+      {
+        "word": "country",
+        "count": 49
+      },
+      {
+        "word": "american",
+        "count": 47
+      },
+      {
+        "word": "served",
+        "count": 46
+      },
+      {
+        "word": "announce",
+        "count": 45
+      },
+      {
+        "word": "state",
+        "count": 43
+      },
+      {
+        "word": "years",
+        "count": 42
+      },
+      {
+        "word": "ambassador",
+        "count": 41
+      },
+      {
+        "word": "donald",
+        "count": 40
+      },
+      {
+        "word": "law",
+        "count": 37
+      },
+      {
+        "word": "news",
+        "count": 36
+      },
+      {
+        "word": "administration",
+        "count": 32
+      },
+      {
+        "word": "world",
+        "count": 32
+      },
+      {
+        "word": "secretary",
+        "count": 32
+      },
+      {
+        "word": "national",
+        "count": 31
+      },
+      {
+        "word": "policy",
+        "count": 31
+      },
+      {
+        "word": "university",
+        "count": 31
+      },
+      {
+        "word": "next",
+        "count": 30
+      },
+      {
+        "word": "security",
+        "count": 30
+      },
+      {
+        "word": "business",
+        "count": 30
+      },
+      {
+        "word": "work",
+        "count": 29
+      },
+      {
+        "word": "office",
+        "count": 29
+      },
+      {
+        "word": "house",
+        "count": 29
+      },
+      {
+        "word": "time",
+        "count": 29
+      },
+      {
+        "word": "chief",
+        "count": 29
+      },
+      {
+        "word": "department",
+        "count": 29
+      },
+      {
+        "word": "defense",
+        "count": 28
+      },
+      {
+        "word": "republican",
+        "count": 26
+      },
+      {
+        "word": "government",
+        "count": 26
+      },
+      {
+        "word": "including",
+        "count": 24
+      },
+      {
+        "word": "election",
+        "count": 24
+      },
+      {
+        "word": "white",
+        "count": 24
+      },
+      {
+        "word": "david",
+        "count": 24
+      },
+      {
+        "word": "democrats",
+        "count": 23
+      },
+      {
+        "word": "term",
+        "count": 23
+      },
+      {
+        "word": "director",
+        "count": 22
+      },
+      {
+        "word": "deputy",
+        "count": 22
+      },
+      {
+        "word": "biden",
+        "count": 21
+      },
+      {
+        "word": "year",
+        "count": 21
+      },
+      {
+        "word": "joe",
+        "count": 20
+      },
+      {
+        "word": "history",
+        "count": 20
+      },
+      {
+        "word": "trade",
+        "count": 20
+      },
+      {
+        "word": "former",
+        "count": 20
+      }
+    ]
+  },
+  {
+    "year_month": "2025-01",
+    "words": [
+      {
+        "word": "trump",
+        "count": 101
+      },
+      {
+        "word": "states",
+        "count": 60
+      },
+      {
+        "word": "america",
+        "count": 57
+      },
+      {
+        "word": "president",
+        "count": 57
+      },
+      {
+        "word": "united",
+        "count": 55
+      },
+      {
+        "word": "congratulations",
+        "count": 45
+      },
+      {
+        "word": "american",
+        "count": 44
+      },
+      {
+        "word": "announce",
+        "count": 36
+      },
+      {
+        "word": "secretary",
+        "count": 35
+      },
+      {
+        "word": "truthsocial",
+        "count": 34
+      },
+      {
+        "word": "pleased",
+        "count": 33
+      },
+      {
+        "word": "next",
+        "count": 32
+      },
+      {
+        "word": "department",
+        "count": 30
+      },
+      {
+        "word": "country",
+        "count": 28
+      },
+      {
+        "word": "work",
+        "count": 28
+      },
+      {
+        "word": "serve",
+        "count": 27
+      },
+      {
+        "word": "world",
+        "count": 27
+      },
+      {
+        "word": "never",
+        "count": 26
+      },
+      {
+        "word": "time",
+        "count": 25
+      },
+      {
+        "word": "case",
+        "count": 25
+      },
+      {
+        "word": "years",
+        "count": 24
+      },
+      {
+        "word": "energy",
+        "count": 24
+      },
+      {
+        "word": "biden",
+        "count": 23
+      },
+      {
+        "word": "national",
+        "count": 23
+      },
+      {
+        "word": "news",
+        "count": 23
+      },
+      {
+        "word": "political",
+        "count": 23
+      },
+      {
+        "word": "order",
+        "count": 22
+      },
+      {
+        "word": "history",
+        "count": 20
+      },
+      {
+        "word": "nation",
+        "count": 20
+      },
+      {
+        "word": "media",
+        "count": 20
+      },
+      {
+        "word": "judge",
+        "count": 20
+      },
+      {
+        "word": "served",
+        "count": 19
+      },
+      {
+        "word": "administration",
+        "count": 18
+      },
+      {
+        "word": "law",
+        "count": 18
+      },
+      {
+        "word": "incredible",
+        "count": 18
+      },
+      {
+        "word": "inauguration",
+        "count": 18
+      },
+      {
+        "word": "water",
+        "count": 17
+      },
+      {
+        "word": "state",
+        "count": 17
+      },
+      {
+        "word": "donald",
+        "count": 17
+      },
+      {
+        "word": "term",
+        "count": 17
+      },
+      {
+        "word": "deputy",
+        "count": 17
+      },
+      {
+        "word": "york",
+        "count": 16
+      },
+      {
+        "word": "university",
+        "count": 16
+      },
+      {
+        "word": "government",
+        "count": 16
+      },
+      {
+        "word": "users",
+        "count": 16
+      },
+      {
+        "word": "statuses",
+        "count": 16
+      },
+      {
+        "word": "today",
+        "count": 15
+      },
+      {
+        "word": "security",
+        "count": 15
+      },
+      {
+        "word": "group",
+        "count": 15
+      },
+      {
+        "word": "service",
+        "count": 15
+      }
+    ]
+  },
+  {
+    "year_month": "2025-02",
+    "words": [
+      {
+        "word": "trump",
+        "count": 138
+      },
+      {
+        "word": "america",
+        "count": 79
+      },
+      {
+        "word": "president",
+        "count": 71
+      },
+      {
+        "word": "states",
+        "count": 63
+      },
+      {
+        "word": "united",
+        "count": 62
+      },
+      {
+        "word": "country",
+        "count": 60
+      },
+      {
+        "word": "news",
+        "count": 52
+      },
+      {
+        "word": "american",
+        "count": 48
+      },
+      {
+        "word": "tariffs",
+        "count": 37
+      },
+      {
+        "word": "state",
+        "count": 33
+      },
+      {
+        "word": "congratulations",
+        "count": 31
+      },
+      {
+        "word": "secretary",
+        "count": 30
+      },
+      {
+        "word": "donald",
+        "count": 27
+      },
+      {
+        "word": "countries",
+        "count": 27
+      },
+      {
+        "word": "canada",
+        "count": 26
+      },
+      {
+        "word": "election",
+        "count": 26
+      },
+      {
+        "word": "war",
+        "count": 25
+      },
+      {
+        "word": "never",
+        "count": 24
+      },
+      {
+        "word": "years",
+        "count": 23
+      },
+      {
+        "word": "trade",
+        "count": 23
+      },
+      {
+        "word": "world",
+        "count": 23
+      },
+      {
+        "word": "opinion",
+        "count": 23
+      },
+      {
+        "word": "foxnews",
+        "count": 23
+      },
+      {
+        "word": "house",
+        "count": 22
+      },
+      {
+        "word": "today",
+        "count": 22
+      },
+      {
+        "word": "job",
+        "count": 22
+      },
+      {
+        "word": "biden",
+        "count": 21
+      },
+      {
+        "word": "time",
+        "count": 21
+      },
+      {
+        "word": "next",
+        "count": 21
+      },
+      {
+        "word": "truthsocial",
+        "count": 21
+      },
+      {
+        "word": "administration",
+        "count": 21
+      },
+      {
+        "word": "order",
+        "count": 20
+      },
+      {
+        "word": "thank",
+        "count": 20
+      },
+      {
+        "word": "ever",
+        "count": 20
+      },
+      {
+        "word": "live",
+        "count": 20
+      },
+      {
+        "word": "trumps",
+        "count": 20
+      },
+      {
+        "word": "users",
+        "count": 19
+      },
+      {
+        "word": "statuses",
+        "count": 19
+      },
+      {
+        "word": "tariff",
+        "count": 19
+      },
+      {
+        "word": "border",
+        "count": 19
+      },
+      {
+        "word": "joe",
+        "count": 18
+      },
+      {
+        "word": "national",
+        "count": 18
+      },
+      {
+        "word": "love",
+        "count": 18
+      },
+      {
+        "word": "general",
+        "count": 18
+      },
+      {
+        "word": "says",
+        "count": 18
+      },
+      {
+        "word": "nypost",
+        "count": 18
+      },
+      {
+        "word": "working",
+        "count": 17
+      },
+      {
+        "word": "highly",
+        "count": 17
+      },
+      {
+        "word": "law",
+        "count": 17
+      },
+      {
+        "word": "ukraine",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "year_month": "2025-03",
+    "words": [
+      {
+        "word": "trump",
+        "count": 265
+      },
+      {
+        "word": "president",
+        "count": 129
+      },
+      {
+        "word": "america",
+        "count": 116
+      },
+      {
+        "word": "states",
+        "count": 67
+      },
+      {
+        "word": "country",
+        "count": 66
+      },
+      {
+        "word": "united",
+        "count": 66
+      },
+      {
+        "word": "news",
+        "count": 57
+      },
+      {
+        "word": "american",
+        "count": 55
+      },
+      {
+        "word": "border",
+        "count": 47
+      },
+      {
+        "word": "administration",
+        "count": 44
+      },
+      {
+        "word": "foxnews",
+        "count": 44
+      },
+      {
+        "word": "trumps",
+        "count": 40
+      },
+      {
+        "word": "opinion",
+        "count": 38
+      },
+      {
+        "word": "biden",
+        "count": 37
+      },
+      {
+        "word": "state",
+        "count": 36
+      },
+      {
+        "word": "politics",
+        "count": 36
+      },
+      {
+        "word": "day",
+        "count": 36
+      },
+      {
+        "word": "donald",
+        "count": 35
+      },
+      {
+        "word": "tariffs",
+        "count": 35
+      },
+      {
+        "word": "world",
+        "count": 33
+      },
+      {
+        "word": "never",
+        "count": 33
+      },
+      {
+        "word": "canada",
+        "count": 33
+      },
+      {
+        "word": "economy",
+        "count": 31
+      },
+      {
+        "word": "time",
+        "count": 30
+      },
+      {
+        "word": "house",
+        "count": 29
+      },
+      {
+        "word": "election",
+        "count": 29
+      },
+      {
+        "word": "always",
+        "count": 29
+      },
+      {
+        "word": "energy",
+        "count": 28
+      },
+      {
+        "word": "military",
+        "count": 28
+      },
+      {
+        "word": "let",
+        "count": 28
+      },
+      {
+        "word": "work",
+        "count": 28
+      },
+      {
+        "word": "order",
+        "count": 28
+      },
+      {
+        "word": "nation",
+        "count": 28
+      },
+      {
+        "word": "thank",
+        "count": 27
+      },
+      {
+        "word": "years",
+        "count": 27
+      },
+      {
+        "word": "job",
+        "count": 27
+      },
+      {
+        "word": "breitbart",
+        "count": 26
+      },
+      {
+        "word": "secure",
+        "count": 25
+      },
+      {
+        "word": "justice",
+        "count": 25
+      },
+      {
+        "word": "congress",
+        "count": 24
+      },
+      {
+        "word": "vote",
+        "count": 23
+      },
+      {
+        "word": "next",
+        "count": 23
+      },
+      {
+        "word": "russia",
+        "count": 22
+      },
+      {
+        "word": "dailycaller",
+        "count": 22
+      },
+      {
+        "word": "white",
+        "count": 22
+      },
+      {
+        "word": "radical",
+        "count": 22
+      },
+      {
+        "word": "left",
+        "count": 22
+      },
+      {
+        "word": "fake",
+        "count": 22
+      },
+      {
+        "word": "congratulations",
+        "count": 22
+      },
+      {
+        "word": "peace",
+        "count": 21
+      }
+    ]
+  },
+  {
+    "year_month": "2025-04",
+    "words": [
+      {
+        "word": "trump",
+        "count": 114
+      },
+      {
+        "word": "america",
+        "count": 97
+      },
+      {
+        "word": "president",
+        "count": 89
+      },
+      {
+        "word": "country",
+        "count": 57
+      },
+      {
+        "word": "states",
+        "count": 56
+      },
+      {
+        "word": "united",
+        "count": 52
+      },
+      {
+        "word": "tariffs",
+        "count": 50
+      },
+      {
+        "word": "american",
+        "count": 39
+      },
+      {
+        "word": "law",
+        "count": 39
+      },
+      {
+        "word": "days",
+        "count": 37
+      },
+      {
+        "word": "news",
+        "count": 37
+      },
+      {
+        "word": "border",
+        "count": 36
+      },
+      {
+        "word": "including",
+        "count": 35
+      },
+      {
+        "word": "day",
+        "count": 34
+      },
+      {
+        "word": "house",
+        "count": 33
+      },
+      {
+        "word": "china",
+        "count": 32
+      },
+      {
+        "word": "never",
+        "count": 31
+      },
+      {
+        "word": "biden",
+        "count": 30
+      },
+      {
+        "word": "administration",
+        "count": 28
+      },
+      {
+        "word": "ever",
+        "count": 26
+      },
+      {
+        "word": "trade",
+        "count": 25
+      },
+      {
+        "word": "years",
+        "count": 25
+      },
+      {
+        "word": "military",
+        "count": 25
+      },
+      {
+        "word": "stop",
+        "count": 24
+      },
+      {
+        "word": "always",
+        "count": 24
+      },
+      {
+        "word": "world",
+        "count": 23
+      },
+      {
+        "word": "job",
+        "count": 23
+      },
+      {
+        "word": "working",
+        "count": 23
+      },
+      {
+        "word": "deal",
+        "count": 23
+      },
+      {
+        "word": "senate",
+        "count": 23
+      },
+      {
+        "word": "total",
+        "count": 22
+      },
+      {
+        "word": "hard",
+        "count": 22
+      },
+      {
+        "word": "work",
+        "count": 22
+      },
+      {
+        "word": "don",
+        "count": 21
+      },
+      {
+        "word": "state",
+        "count": 21
+      },
+      {
+        "word": "support",
+        "count": 21
+      },
+      {
+        "word": "time",
+        "count": 21
+      },
+      {
+        "word": "beautiful",
+        "count": 21
+      },
+      {
+        "word": "donald",
+        "count": 20
+      },
+      {
+        "word": "election",
+        "count": 20
+      },
+      {
+        "word": "joe",
+        "count": 20
+      },
+      {
+        "word": "justice",
+        "count": 20
+      },
+      {
+        "word": "democrats",
+        "count": 20
+      },
+      {
+        "word": "firms",
+        "count": 20
+      },
+      {
+        "word": "political",
+        "count": 19
+      },
+      {
+        "word": "today",
+        "count": 18
+      },
+      {
+        "word": "better",
+        "count": 18
+      },
+      {
+        "word": "criminals",
+        "count": 18
+      },
+      {
+        "word": "complete",
+        "count": 18
+      },
+      {
+        "word": "live",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "year_month": "2025-05",
+    "words": [
+      {
+        "word": "america",
+        "count": 117
+      },
+      {
+        "word": "united",
+        "count": 100
+      },
+      {
+        "word": "states",
+        "count": 91
+      },
+      {
+        "word": "country",
+        "count": 90
+      },
+      {
+        "word": "president",
+        "count": 79
+      },
+      {
+        "word": "trump",
+        "count": 63
+      },
+      {
+        "word": "american",
+        "count": 51
+      },
+      {
+        "word": "court",
+        "count": 51
+      },
+      {
+        "word": "district",
+        "count": 50
+      },
+      {
+        "word": "never",
+        "count": 48
+      },
+      {
+        "word": "election",
+        "count": 42
+      },
+      {
+        "word": "truthsocial",
+        "count": 41
+      },
+      {
+        "word": "world",
+        "count": 41
+      },
+      {
+        "word": "news",
+        "count": 38
+      },
+      {
+        "word": "let",
+        "count": 37
+      },
+      {
+        "word": "total",
+        "count": 37
+      },
+      {
+        "word": "day",
+        "count": 36
+      },
+      {
+        "word": "users",
+        "count": 35
+      },
+      {
+        "word": "statuses",
+        "count": 35
+      },
+      {
+        "word": "secure",
+        "count": 34
+      },
+      {
+        "word": "border",
+        "count": 33
+      },
+      {
+        "word": "always",
+        "count": 33
+      },
+      {
+        "word": "energy",
+        "count": 31
+      },
+      {
+        "word": "state",
+        "count": 30
+      },
+      {
+        "word": "military",
+        "count": 30
+      },
+      {
+        "word": "job",
+        "count": 29
+      },
+      {
+        "word": "thank",
+        "count": 28
+      },
+      {
+        "word": "congratulations",
+        "count": 28
+      },
+      {
+        "word": "dollars",
+        "count": 28
+      },
+      {
+        "word": "complete",
+        "count": 28
+      },
+      {
+        "word": "endorsement",
+        "count": 28
+      },
+      {
+        "word": "law",
+        "count": 27
+      },
+      {
+        "word": "nation",
+        "count": 27
+      },
+      {
+        "word": "trade",
+        "count": 27
+      },
+      {
+        "word": "time",
+        "count": 26
+      },
+      {
+        "word": "judge",
+        "count": 26
+      },
+      {
+        "word": "won",
+        "count": 26
+      },
+      {
+        "word": "second",
+        "count": 26
+      },
+      {
+        "word": "russia",
+        "count": 25
+      },
+      {
+        "word": "florida",
+        "count": 25
+      },
+      {
+        "word": "biden",
+        "count": 25
+      },
+      {
+        "word": "support",
+        "count": 25
+      },
+      {
+        "word": "criminals",
+        "count": 24
+      },
+      {
+        "word": "war",
+        "count": 24
+      },
+      {
+        "word": "siege",
+        "count": 24
+      },
+      {
+        "word": "left",
+        "count": 23
+      },
+      {
+        "word": "working",
+        "count": 23
+      },
+      {
+        "word": "years",
+        "count": 23
+      },
+      {
+        "word": "order",
+        "count": 23
+      },
+      {
+        "word": "amendment",
+        "count": 23
+      }
+    ]
+  },
+  {
+    "year_month": "2025-06",
+    "words": [
+      {
+        "word": "america",
+        "count": 100
+      },
+      {
+        "word": "trump",
+        "count": 91
+      },
+      {
+        "word": "iran",
+        "count": 90
+      },
+      {
+        "word": "bill",
+        "count": 65
+      },
+      {
+        "word": "president",
+        "count": 65
+      },
+      {
+        "word": "beautiful",
+        "count": 59
+      },
+      {
+        "word": "country",
+        "count": 59
+      },
+      {
+        "word": "states",
+        "count": 52
+      },
+      {
+        "word": "american",
+        "count": 49
+      },
+      {
+        "word": "united",
+        "count": 49
+      },
+      {
+        "word": "news",
+        "count": 44
+      },
+      {
+        "word": "israel",
+        "count": 43
+      },
+      {
+        "word": "thank",
+        "count": 41
+      },
+      {
+        "word": "time",
+        "count": 40
+      },
+      {
+        "word": "tax",
+        "count": 37
+      },
+      {
+        "word": "nuclear",
+        "count": 34
+      },
+      {
+        "word": "biden",
+        "count": 33
+      },
+      {
+        "word": "world",
+        "count": 32
+      },
+      {
+        "word": "border",
+        "count": 32
+      },
+      {
+        "word": "never",
+        "count": 31
+      },
+      {
+        "word": "day",
+        "count": 29
+      },
+      {
+        "word": "military",
+        "count": 29
+      },
+      {
+        "word": "history",
+        "count": 29
+      },
+      {
+        "word": "fake",
+        "count": 28
+      },
+      {
+        "word": "war",
+        "count": 27
+      },
+      {
+        "word": "peace",
+        "count": 27
+      },
+      {
+        "word": "years",
+        "count": 26
+      },
+      {
+        "word": "job",
+        "count": 26
+      },
+      {
+        "word": "los",
+        "count": 26
+      },
+      {
+        "word": "angeles",
+        "count": 26
+      },
+      {
+        "word": "truthsocial",
+        "count": 25
+      },
+      {
+        "word": "matter",
+        "count": 24
+      },
+      {
+        "word": "deal",
+        "count": 23
+      },
+      {
+        "word": "donald",
+        "count": 23
+      },
+      {
+        "word": "ever",
+        "count": 22
+      },
+      {
+        "word": "economy",
+        "count": 22
+      },
+      {
+        "word": "house",
+        "count": 21
+      },
+      {
+        "word": "won",
+        "count": 21
+      },
+      {
+        "word": "state",
+        "count": 21
+      },
+      {
+        "word": "last",
+        "count": 21
+      },
+      {
+        "word": "dollars",
+        "count": 20
+      },
+      {
+        "word": "always",
+        "count": 19
+      },
+      {
+        "word": "senate",
+        "count": 18
+      },
+      {
+        "word": "total",
+        "count": 18
+      },
+      {
+        "word": "national",
+        "count": 18
+      },
+      {
+        "word": "politics",
+        "count": 17
+      },
+      {
+        "word": "republican",
+        "count": 17
+      },
+      {
+        "word": "better",
+        "count": 17
+      },
+      {
+        "word": "white",
+        "count": 17
+      },
+      {
+        "word": "attention",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "year_month": "2025-07",
+    "words": [
+      {
+        "word": "trump",
+        "count": 114
+      },
+      {
+        "word": "president",
+        "count": 101
+      },
+      {
+        "word": "america",
+        "count": 94
+      },
+      {
+        "word": "country",
+        "count": 82
+      },
+      {
+        "word": "truthsocial",
+        "count": 68
+      },
+      {
+        "word": "american",
+        "count": 62
+      },
+      {
+        "word": "thank",
+        "count": 57
+      },
+      {
+        "word": "united",
+        "count": 54
+      },
+      {
+        "word": "bill",
+        "count": 54
+      },
+      {
+        "word": "states",
+        "count": 52
+      },
+      {
+        "word": "users",
+        "count": 45
+      },
+      {
+        "word": "statuses",
+        "count": 45
+      },
+      {
+        "word": "never",
+        "count": 44
+      },
+      {
+        "word": "border",
+        "count": 42
+      },
+      {
+        "word": "let",
+        "count": 42
+      },
+      {
+        "word": "secure",
+        "count": 42
+      },
+      {
+        "word": "beautiful",
+        "count": 42
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 39
+      },
+      {
+        "word": "dollars",
+        "count": 39
+      },
+      {
+        "word": "total",
+        "count": 39
+      },
+      {
+        "word": "world",
+        "count": 37
+      },
+      {
+        "word": "house",
+        "count": 37
+      },
+      {
+        "word": "energy",
+        "count": 37
+      },
+      {
+        "word": "time",
+        "count": 36
+      },
+      {
+        "word": "state",
+        "count": 36
+      },
+      {
+        "word": "always",
+        "count": 35
+      },
+      {
+        "word": "election",
+        "count": 34
+      },
+      {
+        "word": "deal",
+        "count": 33
+      },
+      {
+        "word": "tariff",
+        "count": 33
+      },
+      {
+        "word": "trade",
+        "count": 31
+      },
+      {
+        "word": "incredible",
+        "count": 31
+      },
+      {
+        "word": "job",
+        "count": 30
+      },
+      {
+        "word": "record",
+        "count": 29
+      },
+      {
+        "word": "complete",
+        "count": 28
+      },
+      {
+        "word": "attention",
+        "count": 27
+      },
+      {
+        "word": "year",
+        "count": 27
+      },
+      {
+        "word": "russia",
+        "count": 27
+      },
+      {
+        "word": "endorsement",
+        "count": 27
+      },
+      {
+        "word": "matter",
+        "count": 26
+      },
+      {
+        "word": "years",
+        "count": 26
+      },
+      {
+        "word": "military",
+        "count": 26
+      },
+      {
+        "word": "news",
+        "count": 26
+      },
+      {
+        "word": "live",
+        "count": 26
+      },
+      {
+        "word": "second",
+        "count": 25
+      },
+      {
+        "word": "taxes",
+        "count": 25
+      },
+      {
+        "word": "ever",
+        "count": 25
+      },
+      {
+        "word": "cut",
+        "count": 25
+      },
+      {
+        "word": "democrats",
+        "count": 24
+      },
+      {
+        "word": "history",
+        "count": 23
+      },
+      {
+        "word": "republicans",
+        "count": 23
+      }
+    ]
+  },
+  {
+    "year_month": "2025-08",
+    "words": [
+      {
+        "word": "president",
+        "count": 125
+      },
+      {
+        "word": "truthsocial",
+        "count": 85
+      },
+      {
+        "word": "trump",
+        "count": 85
+      },
+      {
+        "word": "country",
+        "count": 78
+      },
+      {
+        "word": "america",
+        "count": 73
+      },
+      {
+        "word": "thank",
+        "count": 66
+      },
+      {
+        "word": "states",
+        "count": 60
+      },
+      {
+        "word": "united",
+        "count": 58
+      },
+      {
+        "word": "state",
+        "count": 56
+      },
+      {
+        "word": "crime",
+        "count": 55
+      },
+      {
+        "word": "never",
+        "count": 47
+      },
+      {
+        "word": "news",
+        "count": 46
+      },
+      {
+        "word": "users",
+        "count": 45
+      },
+      {
+        "word": "statuses",
+        "count": 45
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 44
+      },
+      {
+        "word": "american",
+        "count": 43
+      },
+      {
+        "word": "djt",
+        "count": 40
+      },
+      {
+        "word": "attention",
+        "count": 40
+      },
+      {
+        "word": "matter",
+        "count": 40
+      },
+      {
+        "word": "district",
+        "count": 38
+      },
+      {
+        "word": "incredible",
+        "count": 36
+      },
+      {
+        "word": "election",
+        "count": 36
+      },
+      {
+        "word": "world",
+        "count": 35
+      },
+      {
+        "word": "court",
+        "count": 35
+      },
+      {
+        "word": "house",
+        "count": 34
+      },
+      {
+        "word": "presidential",
+        "count": 31
+      },
+      {
+        "word": "secure",
+        "count": 30
+      },
+      {
+        "word": "white",
+        "count": 29
+      },
+      {
+        "word": "ever",
+        "count": 29
+      },
+      {
+        "word": "republican",
+        "count": 29
+      },
+      {
+        "word": "border",
+        "count": 29
+      },
+      {
+        "word": "law",
+        "count": 28
+      },
+      {
+        "word": "tariffs",
+        "count": 28
+      },
+      {
+        "word": "russia",
+        "count": 28
+      },
+      {
+        "word": "total",
+        "count": 26
+      },
+      {
+        "word": "numbers",
+        "count": 26
+      },
+      {
+        "word": "always",
+        "count": 26
+      },
+      {
+        "word": "judge",
+        "count": 26
+      },
+      {
+        "word": "dollars",
+        "count": 25
+      },
+      {
+        "word": "left",
+        "count": 25
+      },
+      {
+        "word": "gov",
+        "count": 25
+      },
+      {
+        "word": "time",
+        "count": 25
+      },
+      {
+        "word": "energy",
+        "count": 25
+      },
+      {
+        "word": "beautiful",
+        "count": 24
+      },
+      {
+        "word": "fake",
+        "count": 24
+      },
+      {
+        "word": "job",
+        "count": 24
+      },
+      {
+        "word": "day",
+        "count": 23
+      },
+      {
+        "word": "years",
+        "count": 23
+      },
+      {
+        "word": "whitehouse",
+        "count": 23
+      },
+      {
+        "word": "washington",
+        "count": 23
+      }
+    ]
+  },
+  {
+    "year_month": "2025-09",
+    "words": [
+      {
+        "word": "president",
+        "count": 118
+      },
+      {
+        "word": "america",
+        "count": 87
+      },
+      {
+        "word": "trump",
+        "count": 65
+      },
+      {
+        "word": "country",
+        "count": 62
+      },
+      {
+        "word": "united",
+        "count": 59
+      },
+      {
+        "word": "states",
+        "count": 56
+      },
+      {
+        "word": "thank",
+        "count": 48
+      },
+      {
+        "word": "djt",
+        "count": 47
+      },
+      {
+        "word": "american",
+        "count": 37
+      },
+      {
+        "word": "matter",
+        "count": 37
+      },
+      {
+        "word": "time",
+        "count": 35
+      },
+      {
+        "word": "attention",
+        "count": 35
+      },
+      {
+        "word": "never",
+        "count": 31
+      },
+      {
+        "word": "crime",
+        "count": 31
+      },
+      {
+        "word": "russia",
+        "count": 31
+      },
+      {
+        "word": "government",
+        "count": 31
+      },
+      {
+        "word": "democrats",
+        "count": 31
+      },
+      {
+        "word": "news",
+        "count": 30
+      },
+      {
+        "word": "illegal",
+        "count": 28
+      },
+      {
+        "word": "left",
+        "count": 27
+      },
+      {
+        "word": "donald",
+        "count": 25
+      },
+      {
+        "word": "state",
+        "count": 24
+      },
+      {
+        "word": "war",
+        "count": 24
+      },
+      {
+        "word": "radical",
+        "count": 24
+      },
+      {
+        "word": "world",
+        "count": 23
+      },
+      {
+        "word": "security",
+        "count": 22
+      },
+      {
+        "word": "ever",
+        "count": 22
+      },
+      {
+        "word": "truthsocial",
+        "count": 22
+      },
+      {
+        "word": "dollars",
+        "count": 22
+      },
+      {
+        "word": "long",
+        "count": 21
+      },
+      {
+        "word": "democrat",
+        "count": 20
+      },
+      {
+        "word": "won",
+        "count": 19
+      },
+      {
+        "word": "fbi",
+        "count": 19
+      },
+      {
+        "word": "law",
+        "count": 19
+      },
+      {
+        "word": "don",
+        "count": 19
+      },
+      {
+        "word": "today",
+        "count": 19
+      },
+      {
+        "word": "stop",
+        "count": 19
+      },
+      {
+        "word": "york",
+        "count": 18
+      },
+      {
+        "word": "happen",
+        "count": 18
+      },
+      {
+        "word": "republican",
+        "count": 18
+      },
+      {
+        "word": "attorney",
+        "count": 18
+      },
+      {
+        "word": "presidential",
+        "count": 18
+      },
+      {
+        "word": "job",
+        "count": 18
+      },
+      {
+        "word": "criminals",
+        "count": 18
+      },
+      {
+        "word": "republicans",
+        "count": 18
+      },
+      {
+        "word": "nation",
+        "count": 17
+      },
+      {
+        "word": "order",
+        "count": 17
+      },
+      {
+        "word": "federal",
+        "count": 17
+      },
+      {
+        "word": "let",
+        "count": 17
+      },
+      {
+        "word": "governor",
+        "count": 16
+      }
+    ]
+  },
+  {
+    "year_month": "2025-10",
+    "words": [
+      {
+        "word": "president",
+        "count": 113
+      },
+      {
+        "word": "secure",
+        "count": 103
+      },
+      {
+        "word": "american",
+        "count": 79
+      },
+      {
+        "word": "energy",
+        "count": 78
+      },
+      {
+        "word": "america",
+        "count": 75
+      },
+      {
+        "word": "trump",
+        "count": 71
+      },
+      {
+        "word": "never",
+        "count": 69
+      },
+      {
+        "word": "let",
+        "count": 69
+      },
+      {
+        "word": "states",
+        "count": 67
+      },
+      {
+        "word": "united",
+        "count": 66
+      },
+      {
+        "word": "total",
+        "count": 64
+      },
+      {
+        "word": "congressman",
+        "count": 63
+      },
+      {
+        "word": "district",
+        "count": 60
+      },
+      {
+        "word": "military",
+        "count": 59
+      },
+      {
+        "word": "complete",
+        "count": 59
+      },
+      {
+        "word": "country",
+        "count": 57
+      },
+      {
+        "word": "always",
+        "count": 56
+      },
+      {
+        "word": "peace",
+        "count": 55
+      },
+      {
+        "word": "border",
+        "count": 54
+      },
+      {
+        "word": "endorsement",
+        "count": 54
+      },
+      {
+        "word": "thank",
+        "count": 53
+      },
+      {
+        "word": "second",
+        "count": 53
+      },
+      {
+        "word": "congressional",
+        "count": 53
+      },
+      {
+        "word": "veterans",
+        "count": 52
+      },
+      {
+        "word": "siege",
+        "count": 52
+      },
+      {
+        "word": "election",
+        "count": 51
+      },
+      {
+        "word": "keep",
+        "count": 51
+      },
+      {
+        "word": "amendment",
+        "count": 51
+      },
+      {
+        "word": "cut",
+        "count": 50
+      },
+      {
+        "word": "dominance",
+        "count": 50
+      },
+      {
+        "word": "taxes",
+        "count": 48
+      },
+      {
+        "word": "champion",
+        "count": 48
+      },
+      {
+        "word": "state",
+        "count": 47
+      },
+      {
+        "word": "economy",
+        "count": 47
+      },
+      {
+        "word": "promote",
+        "count": 47
+      },
+      {
+        "word": "incredible",
+        "count": 46
+      },
+      {
+        "word": "job",
+        "count": 45
+      },
+      {
+        "word": "regulations",
+        "count": 45
+      },
+      {
+        "word": "defend",
+        "count": 40
+      },
+      {
+        "word": "stop",
+        "count": 39
+      },
+      {
+        "word": "grow",
+        "count": 38
+      },
+      {
+        "word": "democrats",
+        "count": 37
+      },
+      {
+        "word": "crime",
+        "count": 37
+      },
+      {
+        "word": "tirelessly",
+        "count": 35
+      },
+      {
+        "word": "congress",
+        "count": 34
+      },
+      {
+        "word": "republican",
+        "count": 33
+      },
+      {
+        "word": "years",
+        "count": 31
+      },
+      {
+        "word": "djt",
+        "count": 31
+      },
+      {
+        "word": "law",
+        "count": 30
+      },
+      {
+        "word": "matter",
+        "count": 30
+      }
+    ]
+  },
+  {
+    "year_month": "2025-11",
+    "words": [
+      {
+        "word": "secure",
+        "count": 233
+      },
+      {
+        "word": "american",
+        "count": 171
+      },
+      {
+        "word": "energy",
+        "count": 171
+      },
+      {
+        "word": "election",
+        "count": 158
+      },
+      {
+        "word": "never",
+        "count": 149
+      },
+      {
+        "word": "america",
+        "count": 142
+      },
+      {
+        "word": "complete",
+        "count": 138
+      },
+      {
+        "word": "let",
+        "count": 137
+      },
+      {
+        "word": "always",
+        "count": 137
+      },
+      {
+        "word": "total",
+        "count": 136
+      },
+      {
+        "word": "district",
+        "count": 134
+      },
+      {
+        "word": "military",
+        "count": 133
+      },
+      {
+        "word": "border",
+        "count": 132
+      },
+      {
+        "word": "country",
+        "count": 131
+      },
+      {
+        "word": "endorsement",
+        "count": 129
+      },
+      {
+        "word": "second",
+        "count": 124
+      },
+      {
+        "word": "amendment",
+        "count": 122
+      },
+      {
+        "word": "congressional",
+        "count": 120
+      },
+      {
+        "word": "siege",
+        "count": 120
+      },
+      {
+        "word": "congressman",
+        "count": 119
+      },
+      {
+        "word": "taxes",
+        "count": 118
+      },
+      {
+        "word": "cut",
+        "count": 117
+      },
+      {
+        "word": "dominance",
+        "count": 115
+      },
+      {
+        "word": "veterans",
+        "count": 115
+      },
+      {
+        "word": "president",
+        "count": 112
+      },
+      {
+        "word": "keep",
+        "count": 111
+      },
+      {
+        "word": "regulations",
+        "count": 111
+      },
+      {
+        "word": "champion",
+        "count": 108
+      },
+      {
+        "word": "crime",
+        "count": 107
+      },
+      {
+        "word": "promote",
+        "count": 105
+      },
+      {
+        "word": "economy",
+        "count": 102
+      },
+      {
+        "word": "stop",
+        "count": 101
+      },
+      {
+        "word": "incredible",
+        "count": 93
+      },
+      {
+        "word": "migrant",
+        "count": 86
+      },
+      {
+        "word": "tirelessly",
+        "count": 85
+      },
+      {
+        "word": "grow",
+        "count": 84
+      },
+      {
+        "word": "congress",
+        "count": 82
+      },
+      {
+        "word": "defend",
+        "count": 79
+      },
+      {
+        "word": "trump",
+        "count": 75
+      },
+      {
+        "word": "protect",
+        "count": 75
+      },
+      {
+        "word": "fighting",
+        "count": 73
+      },
+      {
+        "word": "working",
+        "count": 71
+      },
+      {
+        "word": "job",
+        "count": 71
+      },
+      {
+        "word": "vote",
+        "count": 70
+      },
+      {
+        "word": "support",
+        "count": 70
+      },
+      {
+        "word": "states",
+        "count": 66
+      },
+      {
+        "word": "law",
+        "count": 65
+      },
+      {
+        "word": "united",
+        "count": 63
+      },
+      {
+        "word": "house",
+        "count": 62
+      },
+      {
+        "word": "democrats",
+        "count": 62
+      }
+    ]
+  },
+  {
+    "year_month": "2025-12",
+    "words": [
+      {
+        "word": "trump",
+        "count": 97
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 89
+      },
+      {
+        "word": "truthsocial",
+        "count": 87
+      },
+      {
+        "word": "users",
+        "count": 87
+      },
+      {
+        "word": "statuses",
+        "count": 87
+      },
+      {
+        "word": "president",
+        "count": 77
+      },
+      {
+        "word": "america",
+        "count": 57
+      },
+      {
+        "word": "states",
+        "count": 56
+      },
+      {
+        "word": "united",
+        "count": 52
+      },
+      {
+        "word": "country",
+        "count": 50
+      },
+      {
+        "word": "never",
+        "count": 42
+      },
+      {
+        "word": "american",
+        "count": 41
+      },
+      {
+        "word": "election",
+        "count": 40
+      },
+      {
+        "word": "democrats",
+        "count": 35
+      },
+      {
+        "word": "border",
+        "count": 35
+      },
+      {
+        "word": "secure",
+        "count": 35
+      },
+      {
+        "word": "time",
+        "count": 32
+      },
+      {
+        "word": "state",
+        "count": 32
+      },
+      {
+        "word": "crime",
+        "count": 31
+      },
+      {
+        "word": "total",
+        "count": 29
+      },
+      {
+        "word": "djt",
+        "count": 28
+      },
+      {
+        "word": "thank",
+        "count": 28
+      },
+      {
+        "word": "congressman",
+        "count": 27
+      },
+      {
+        "word": "ever",
+        "count": 26
+      },
+      {
+        "word": "economy",
+        "count": 26
+      },
+      {
+        "word": "let",
+        "count": 26
+      },
+      {
+        "word": "military",
+        "count": 25
+      },
+      {
+        "word": "left",
+        "count": 25
+      },
+      {
+        "word": "donald",
+        "count": 25
+      },
+      {
+        "word": "always",
+        "count": 25
+      },
+      {
+        "word": "complete",
+        "count": 25
+      },
+      {
+        "word": "news",
+        "count": 24
+      },
+      {
+        "word": "years",
+        "count": 24
+      },
+      {
+        "word": "keep",
+        "count": 24
+      },
+      {
+        "word": "security",
+        "count": 23
+      },
+      {
+        "word": "republican",
+        "count": 23
+      },
+      {
+        "word": "stop",
+        "count": 22
+      },
+      {
+        "word": "republicans",
+        "count": 21
+      },
+      {
+        "word": "biden",
+        "count": 20
+      },
+      {
+        "word": "world",
+        "count": 20
+      },
+      {
+        "word": "tariffs",
+        "count": 20
+      },
+      {
+        "word": "justthenews",
+        "count": 20
+      },
+      {
+        "word": "nation",
+        "count": 20
+      },
+      {
+        "word": "house",
+        "count": 20
+      },
+      {
+        "word": "texas",
+        "count": 20
+      },
+      {
+        "word": "government",
+        "count": 19
+      },
+      {
+        "word": "center",
+        "count": 19
+      },
+      {
+        "word": "radical",
+        "count": 19
+      },
+      {
+        "word": "vote",
+        "count": 19
+      },
+      {
+        "word": "governor",
+        "count": 18
+      }
+    ]
+  },
+  {
+    "year_month": "2026-01",
+    "words": [
+      {
+        "word": "president",
+        "count": 149
+      },
+      {
+        "word": "america",
+        "count": 146
+      },
+      {
+        "word": "trump",
+        "count": 140
+      },
+      {
+        "word": "states",
+        "count": 126
+      },
+      {
+        "word": "united",
+        "count": 118
+      },
+      {
+        "word": "truthsocial",
+        "count": 103
+      },
+      {
+        "word": "state",
+        "count": 101
+      },
+      {
+        "word": "users",
+        "count": 101
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 101
+      },
+      {
+        "word": "statuses",
+        "count": 101
+      },
+      {
+        "word": "american",
+        "count": 95
+      },
+      {
+        "word": "country",
+        "count": 86
+      },
+      {
+        "word": "law",
+        "count": 73
+      },
+      {
+        "word": "military",
+        "count": 72
+      },
+      {
+        "word": "border",
+        "count": 70
+      },
+      {
+        "word": "donald",
+        "count": 69
+      },
+      {
+        "word": "thank",
+        "count": 67
+      },
+      {
+        "word": "keep",
+        "count": 65
+      },
+      {
+        "word": "let",
+        "count": 64
+      },
+      {
+        "word": "election",
+        "count": 64
+      },
+      {
+        "word": "total",
+        "count": 64
+      },
+      {
+        "word": "never",
+        "count": 64
+      },
+      {
+        "word": "secure",
+        "count": 64
+      },
+      {
+        "word": "district",
+        "count": 62
+      },
+      {
+        "word": "always",
+        "count": 60
+      },
+      {
+        "word": "stop",
+        "count": 57
+      },
+      {
+        "word": "complete",
+        "count": 57
+      },
+      {
+        "word": "energy",
+        "count": 57
+      },
+      {
+        "word": "second",
+        "count": 55
+      },
+      {
+        "word": "endorsement",
+        "count": 54
+      },
+      {
+        "word": "cut",
+        "count": 53
+      },
+      {
+        "word": "promote",
+        "count": 53
+      },
+      {
+        "word": "economy",
+        "count": 52
+      },
+      {
+        "word": "taxes",
+        "count": 52
+      },
+      {
+        "word": "siege",
+        "count": 52
+      },
+      {
+        "word": "crime",
+        "count": 52
+      },
+      {
+        "word": "regulations",
+        "count": 51
+      },
+      {
+        "word": "veterans",
+        "count": 51
+      },
+      {
+        "word": "amendment",
+        "count": 51
+      },
+      {
+        "word": "attention",
+        "count": 50
+      },
+      {
+        "word": "minnesota",
+        "count": 50
+      },
+      {
+        "word": "dominance",
+        "count": 49
+      },
+      {
+        "word": "protect",
+        "count": 48
+      },
+      {
+        "word": "matter",
+        "count": 47
+      },
+      {
+        "word": "next",
+        "count": 46
+      },
+      {
+        "word": "congress",
+        "count": 46
+      },
+      {
+        "word": "djt",
+        "count": 45
+      },
+      {
+        "word": "house",
+        "count": 45
+      },
+      {
+        "word": "indiana",
+        "count": 45
+      },
+      {
+        "word": "governor",
+        "count": 44
+      }
+    ]
+  },
+  {
+    "year_month": "2026-02",
+    "words": [
+      {
+        "word": "trump",
+        "count": 180
+      },
+      {
+        "word": "america",
+        "count": 146
+      },
+      {
+        "word": "state",
+        "count": 141
+      },
+      {
+        "word": "president",
+        "count": 134
+      },
+      {
+        "word": "district",
+        "count": 129
+      },
+      {
+        "word": "secure",
+        "count": 113
+      },
+      {
+        "word": "american",
+        "count": 111
+      },
+      {
+        "word": "country",
+        "count": 110
+      },
+      {
+        "word": "military",
+        "count": 104
+      },
+      {
+        "word": "law",
+        "count": 100
+      },
+      {
+        "word": "total",
+        "count": 100
+      },
+      {
+        "word": "let",
+        "count": 100
+      },
+      {
+        "word": "complete",
+        "count": 98
+      },
+      {
+        "word": "never",
+        "count": 96
+      },
+      {
+        "word": "states",
+        "count": 95
+      },
+      {
+        "word": "always",
+        "count": 93
+      },
+      {
+        "word": "congressional",
+        "count": 92
+      },
+      {
+        "word": "united",
+        "count": 91
+      },
+      {
+        "word": "endorsement",
+        "count": 91
+      },
+      {
+        "word": "cut",
+        "count": 90
+      },
+      {
+        "word": "border",
+        "count": 89
+      },
+      {
+        "word": "second",
+        "count": 89
+      },
+      {
+        "word": "amendment",
+        "count": 89
+      },
+      {
+        "word": "energy",
+        "count": 87
+      },
+      {
+        "word": "dominance",
+        "count": 84
+      },
+      {
+        "word": "economy",
+        "count": 83
+      },
+      {
+        "word": "taxes",
+        "count": 83
+      },
+      {
+        "word": "siege",
+        "count": 83
+      },
+      {
+        "word": "keep",
+        "count": 82
+      },
+      {
+        "word": "veterans",
+        "count": 82
+      },
+      {
+        "word": "election",
+        "count": 82
+      },
+      {
+        "word": "regulations",
+        "count": 81
+      },
+      {
+        "word": "users",
+        "count": 80
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 79
+      },
+      {
+        "word": "promote",
+        "count": 78
+      },
+      {
+        "word": "truthsocial",
+        "count": 78
+      },
+      {
+        "word": "statuses",
+        "count": 78
+      },
+      {
+        "word": "next",
+        "count": 77
+      },
+      {
+        "word": "protect",
+        "count": 75
+      },
+      {
+        "word": "grow",
+        "count": 74
+      },
+      {
+        "word": "donald",
+        "count": 71
+      },
+      {
+        "word": "texas",
+        "count": 71
+      },
+      {
+        "word": "champion",
+        "count": 69
+      },
+      {
+        "word": "congress",
+        "count": 69
+      },
+      {
+        "word": "house",
+        "count": 68
+      },
+      {
+        "word": "indiana",
+        "count": 68
+      },
+      {
+        "word": "tirelessly",
+        "count": 66
+      },
+      {
+        "word": "stop",
+        "count": 63
+      },
+      {
+        "word": "crime",
+        "count": 62
+      },
+      {
+        "word": "ensure",
+        "count": 61
+      }
+    ]
+  },
+  {
+    "year_month": "2026-03",
+    "words": [
+      {
+        "word": "trump",
+        "count": 266
+      },
+      {
+        "word": "president",
+        "count": 183
+      },
+      {
+        "word": "america",
+        "count": 122
+      },
+      {
+        "word": "iran",
+        "count": 122
+      },
+      {
+        "word": "state",
+        "count": 107
+      },
+      {
+        "word": "donald",
+        "count": 99
+      },
+      {
+        "word": "country",
+        "count": 92
+      },
+      {
+        "word": "united",
+        "count": 83
+      },
+      {
+        "word": "states",
+        "count": 80
+      },
+      {
+        "word": "military",
+        "count": 76
+      },
+      {
+        "word": "american",
+        "count": 62
+      },
+      {
+        "word": "never",
+        "count": 60
+      },
+      {
+        "word": "thank",
+        "count": 59
+      },
+      {
+        "word": "democrats",
+        "count": 58
+      },
+      {
+        "word": "senate",
+        "count": 57
+      },
+      {
+        "word": "indiana",
+        "count": 50
+      },
+      {
+        "word": "matter",
+        "count": 49
+      },
+      {
+        "word": "djt",
+        "count": 48
+      },
+      {
+        "word": "total",
+        "count": 48
+      },
+      {
+        "word": "world",
+        "count": 47
+      },
+      {
+        "word": "news",
+        "count": 46
+      },
+      {
+        "word": "house",
+        "count": 45
+      },
+      {
+        "word": "let",
+        "count": 45
+      },
+      {
+        "word": "election",
+        "count": 44
+      },
+      {
+        "word": "complete",
+        "count": 41
+      },
+      {
+        "word": "crime",
+        "count": 41
+      },
+      {
+        "word": "always",
+        "count": 40
+      },
+      {
+        "word": "attention",
+        "count": 39
+      },
+      {
+        "word": "left",
+        "count": 39
+      },
+      {
+        "word": "protect",
+        "count": 39
+      },
+      {
+        "word": "energy",
+        "count": 39
+      },
+      {
+        "word": "senator",
+        "count": 39
+      },
+      {
+        "word": "district",
+        "count": 38
+      },
+      {
+        "word": "time",
+        "count": 37
+      },
+      {
+        "word": "act",
+        "count": 36
+      },
+      {
+        "word": "save",
+        "count": 35
+      },
+      {
+        "word": "job",
+        "count": 35
+      },
+      {
+        "word": "endorsement",
+        "count": 35
+      },
+      {
+        "word": "veterans",
+        "count": 34
+      },
+      {
+        "word": "cut",
+        "count": 33
+      },
+      {
+        "word": "next",
+        "count": 33
+      },
+      {
+        "word": "economy",
+        "count": 33
+      },
+      {
+        "word": "taxes",
+        "count": 33
+      },
+      {
+        "word": "radical",
+        "count": 32
+      },
+      {
+        "word": "law",
+        "count": 32
+      },
+      {
+        "word": "border",
+        "count": 32
+      },
+      {
+        "word": "ever",
+        "count": 32
+      },
+      {
+        "word": "second",
+        "count": 31
+      },
+      {
+        "word": "promote",
+        "count": 31
+      },
+      {
+        "word": "siege",
+        "count": 31
+      }
+    ]
+  },
+  {
+    "year_month": "2026-04",
+    "words": [
+      {
+        "word": "trump",
+        "count": 283
+      },
+      {
+        "word": "president",
+        "count": 257
+      },
+      {
+        "word": "donald",
+        "count": 163
+      },
+      {
+        "word": "iran",
+        "count": 163
+      },
+      {
+        "word": "state",
+        "count": 123
+      },
+      {
+        "word": "america",
+        "count": 115
+      },
+      {
+        "word": "country",
+        "count": 103
+      },
+      {
+        "word": "military",
+        "count": 98
+      },
+      {
+        "word": "states",
+        "count": 97
+      },
+      {
+        "word": "united",
+        "count": 93
+      },
+      {
+        "word": "never",
+        "count": 82
+      },
+      {
+        "word": "house",
+        "count": 75
+      },
+      {
+        "word": "world",
+        "count": 75
+      },
+      {
+        "word": "district",
+        "count": 75
+      },
+      {
+        "word": "election",
+        "count": 63
+      },
+      {
+        "word": "american",
+        "count": 62
+      },
+      {
+        "word": "indiana",
+        "count": 61
+      },
+      {
+        "word": "law",
+        "count": 60
+      },
+      {
+        "word": "time",
+        "count": 58
+      },
+      {
+        "word": "thank",
+        "count": 58
+      },
+      {
+        "word": "always",
+        "count": 58
+      },
+      {
+        "word": "let",
+        "count": 58
+      },
+      {
+        "word": "total",
+        "count": 56
+      },
+      {
+        "word": "complete",
+        "count": 53
+      },
+      {
+        "word": "senate",
+        "count": 52
+      },
+      {
+        "word": "truthsocial",
+        "count": 50
+      },
+      {
+        "word": "white",
+        "count": 49
+      },
+      {
+        "word": "tax",
+        "count": 49
+      },
+      {
+        "word": "news",
+        "count": 48
+      },
+      {
+        "word": "users",
+        "count": 48
+      },
+      {
+        "word": "statuses",
+        "count": 48
+      },
+      {
+        "word": "years",
+        "count": 48
+      },
+      {
+        "word": "stop",
+        "count": 48
+      },
+      {
+        "word": "djt",
+        "count": 47
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 47
+      },
+      {
+        "word": "second",
+        "count": 46
+      },
+      {
+        "word": "crime",
+        "count": 45
+      },
+      {
+        "word": "promote",
+        "count": 45
+      },
+      {
+        "word": "left",
+        "count": 44
+      },
+      {
+        "word": "court",
+        "count": 44
+      },
+      {
+        "word": "democrats",
+        "count": 44
+      },
+      {
+        "word": "energy",
+        "count": 44
+      },
+      {
+        "word": "protect",
+        "count": 44
+      },
+      {
+        "word": "taxes",
+        "count": 44
+      },
+      {
+        "word": "endorsement",
+        "count": 43
+      },
+      {
+        "word": "cut",
+        "count": 42
+      },
+      {
+        "word": "work",
+        "count": 40
+      },
+      {
+        "word": "senator",
+        "count": 40
+      },
+      {
+        "word": "job",
+        "count": 40
+      },
+      {
+        "word": "matter",
+        "count": 40
+      }
+    ]
+  },
+  {
+    "year_month": "2026-05",
+    "words": [
+      {
+        "word": "president",
+        "count": 298
+      },
+      {
+        "word": "trump",
+        "count": 262
+      },
+      {
+        "word": "donald",
+        "count": 156
+      },
+      {
+        "word": "america",
+        "count": 149
+      },
+      {
+        "word": "country",
+        "count": 140
+      },
+      {
+        "word": "american",
+        "count": 137
+      },
+      {
+        "word": "never",
+        "count": 129
+      },
+      {
+        "word": "election",
+        "count": 114
+      },
+      {
+        "word": "let",
+        "count": 101
+      },
+      {
+        "word": "state",
+        "count": 98
+      },
+      {
+        "word": "united",
+        "count": 93
+      },
+      {
+        "word": "total",
+        "count": 92
+      },
+      {
+        "word": "states",
+        "count": 90
+      },
+      {
+        "word": "military",
+        "count": 90
+      },
+      {
+        "word": "always",
+        "count": 90
+      },
+      {
+        "word": "complete",
+        "count": 90
+      },
+      {
+        "word": "secure",
+        "count": 88
+      },
+      {
+        "word": "congressman",
+        "count": 86
+      },
+      {
+        "word": "endorsement",
+        "count": 86
+      },
+      {
+        "word": "vote",
+        "count": 84
+      },
+      {
+        "word": "district",
+        "count": 83
+      },
+      {
+        "word": "energy",
+        "count": 80
+      },
+      {
+        "word": "iran",
+        "count": 76
+      },
+      {
+        "word": "stop",
+        "count": 75
+      },
+      {
+        "word": "day",
+        "count": 73
+      },
+      {
+        "word": "border",
+        "count": 72
+      },
+      {
+        "word": "crime",
+        "count": 71
+      },
+      {
+        "word": "amendment",
+        "count": 71
+      },
+      {
+        "word": "champion",
+        "count": 71
+      },
+      {
+        "word": "truthsocial",
+        "count": 70
+      },
+      {
+        "word": "second",
+        "count": 70
+      },
+      {
+        "word": "users",
+        "count": 69
+      },
+      {
+        "word": "statuses",
+        "count": 69
+      },
+      {
+        "word": "keep",
+        "count": 69
+      },
+      {
+        "word": "taxes",
+        "count": 69
+      },
+      {
+        "word": "siege",
+        "count": 69
+      },
+      {
+        "word": "promote",
+        "count": 68
+      },
+      {
+        "word": "cut",
+        "count": 67
+      },
+      {
+        "word": "veterans",
+        "count": 66
+      },
+      {
+        "word": "regulations",
+        "count": 65
+      },
+      {
+        "word": "congressional",
+        "count": 64
+      },
+      {
+        "word": "migrant",
+        "count": 63
+      },
+      {
+        "word": "republican",
+        "count": 62
+      },
+      {
+        "word": "dominance",
+        "count": 62
+      },
+      {
+        "word": "governor",
+        "count": 61
+      },
+      {
+        "word": "kentucky",
+        "count": 61
+      },
+      {
+        "word": "djt",
+        "count": 59
+      },
+      {
+        "word": "law",
+        "count": 59
+      },
+      {
+        "word": "voting",
+        "count": 59
+      },
+      {
+        "word": "tirelessly",
+        "count": 58
+      }
+    ]
+  },
+  {
+    "year_month": "2026-06",
+    "words": [
+      {
+        "word": "president",
+        "count": 305
+      },
+      {
+        "word": "trump",
+        "count": 247
+      },
+      {
+        "word": "donald",
+        "count": 171
+      },
+      {
+        "word": "america",
+        "count": 161
+      },
+      {
+        "word": "election",
+        "count": 139
+      },
+      {
+        "word": "never",
+        "count": 125
+      },
+      {
+        "word": "military",
+        "count": 117
+      },
+      {
+        "word": "state",
+        "count": 116
+      },
+      {
+        "word": "american",
+        "count": 114
+      },
+      {
+        "word": "vote",
+        "count": 113
+      },
+      {
+        "word": "let",
+        "count": 111
+      },
+      {
+        "word": "country",
+        "count": 106
+      },
+      {
+        "word": "total",
+        "count": 103
+      },
+      {
+        "word": "always",
+        "count": 100
+      },
+      {
+        "word": "complete",
+        "count": 98
+      },
+      {
+        "word": "iran",
+        "count": 95
+      },
+      {
+        "word": "endorsement",
+        "count": 93
+      },
+      {
+        "word": "next",
+        "count": 93
+      },
+      {
+        "word": "thank",
+        "count": 92
+      },
+      {
+        "word": "border",
+        "count": 92
+      },
+      {
+        "word": "district",
+        "count": 89
+      },
+      {
+        "word": "states",
+        "count": 89
+      },
+      {
+        "word": "taxes",
+        "count": 83
+      },
+      {
+        "word": "second",
+        "count": 83
+      },
+      {
+        "word": "governor",
+        "count": 82
+      },
+      {
+        "word": "amendment",
+        "count": 82
+      },
+      {
+        "word": "united",
+        "count": 82
+      },
+      {
+        "word": "secure",
+        "count": 81
+      },
+      {
+        "word": "law",
+        "count": 81
+      },
+      {
+        "word": "djt",
+        "count": 81
+      },
+      {
+        "word": "keep",
+        "count": 80
+      },
+      {
+        "word": "economy",
+        "count": 79
+      },
+      {
+        "word": "cut",
+        "count": 79
+      },
+      {
+        "word": "veterans",
+        "count": 77
+      },
+      {
+        "word": "energy",
+        "count": 76
+      },
+      {
+        "word": "congressional",
+        "count": 76
+      },
+      {
+        "word": "siege",
+        "count": 76
+      },
+      {
+        "word": "stop",
+        "count": 76
+      },
+      {
+        "word": "dominance",
+        "count": 74
+      },
+      {
+        "word": "promote",
+        "count": 73
+      },
+      {
+        "word": "mike",
+        "count": 71
+      },
+      {
+        "word": "grow",
+        "count": 70
+      },
+      {
+        "word": "regulations",
+        "count": 69
+      },
+      {
+        "word": "crime",
+        "count": 69
+      },
+      {
+        "word": "june",
+        "count": 69
+      },
+      {
+        "word": "running",
+        "count": 67
+      },
+      {
+        "word": "find",
+        "count": 67
+      },
+      {
+        "word": "matter",
+        "count": 65
+      },
+      {
+        "word": "voting",
+        "count": 65
+      },
+      {
+        "word": "day",
+        "count": 64
+      }
+    ]
+  },
+  {
+    "year_month": "2026-07",
+    "words": [
+      {
+        "word": "trump",
+        "count": 287
+      },
+      {
+        "word": "president",
+        "count": 199
+      },
+      {
+        "word": "america",
+        "count": 137
+      },
+      {
+        "word": "donald",
+        "count": 128
+      },
+      {
+        "word": "american",
+        "count": 79
+      },
+      {
+        "word": "states",
+        "count": 71
+      },
+      {
+        "word": "realdonaldtrump",
+        "count": 68
+      },
+      {
+        "word": "united",
+        "count": 62
+      },
+      {
+        "word": "never",
+        "count": 62
+      },
+      {
+        "word": "truthsocial",
+        "count": 62
+      },
+      {
+        "word": "users",
+        "count": 61
+      },
+      {
+        "word": "statuses",
+        "count": 61
+      },
+      {
+        "word": "news",
+        "count": 60
+      },
+      {
+        "word": "thank",
+        "count": 52
+      },
+      {
+        "word": "country",
+        "count": 50
+      },
+      {
+        "word": "house",
+        "count": 50
+      },
+      {
+        "word": "election",
+        "count": 49
+      },
+      {
+        "word": "state",
+        "count": 48
+      },
+      {
+        "word": "years",
+        "count": 46
+      },
+      {
+        "word": "military",
+        "count": 41
+      },
+      {
+        "word": "iran",
+        "count": 39
+      },
+      {
+        "word": "next",
+        "count": 38
+      },
+      {
+        "word": "billion",
+        "count": 35
+      },
+      {
+        "word": "biden",
+        "count": 34
+      },
+      {
+        "word": "let",
+        "count": 34
+      },
+      {
+        "word": "time",
+        "count": 34
+      },
+      {
+        "word": "total",
+        "count": 34
+      },
+      {
+        "word": "complete",
+        "count": 33
+      },
+      {
+        "word": "white",
+        "count": 33
+      },
+      {
+        "word": "dumocrats",
+        "count": 32
+      },
+      {
+        "word": "ever",
+        "count": 32
+      },
+      {
+        "word": "war",
+        "count": 32
+      },
+      {
+        "word": "honor",
+        "count": 31
+      },
+      {
+        "word": "crime",
+        "count": 31
+      },
+      {
+        "word": "work",
+        "count": 30
+      },
+      {
+        "word": "djt",
+        "count": 30
+      },
+      {
+        "word": "always",
+        "count": 29
+      },
+      {
+        "word": "district",
+        "count": 29
+      },
+      {
+        "word": "congressional",
+        "count": 28
+      },
+      {
+        "word": "border",
+        "count": 28
+      },
+      {
+        "word": "matter",
+        "count": 27
+      },
+      {
+        "word": "world",
+        "count": 27
+      },
+      {
+        "word": "law",
+        "count": 26
+      },
+      {
+        "word": "economy",
+        "count": 26
+      },
+      {
+        "word": "endorsement",
+        "count": 26
+      },
+      {
+        "word": "prices",
+        "count": 26
+      },
+      {
+        "word": "senate",
+        "count": 25
+      },
+      {
+        "word": "attention",
+        "count": 25
+      },
+      {
+        "word": "security",
+        "count": 25
+      },
+      {
+        "word": "running",
+        "count": 25
+      }
+    ]
+  },
+  {
+    "year_month": "2026-08",
+    "words": [
+      {
+        "word": "election",
+        "count": 83
+      },
+      {
+        "word": "trump",
+        "count": 65
+      },
+      {
+        "word": "military",
+        "count": 64
+      },
+      {
+        "word": "american",
+        "count": 63
+      },
+      {
+        "word": "secure",
+        "count": 61
+      },
+      {
+        "word": "total",
+        "count": 61
+      },
+      {
+        "word": "complete",
+        "count": 57
+      },
+      {
+        "word": "president",
+        "count": 55
+      },
+      {
+        "word": "endorsement",
+        "count": 54
+      },
+      {
+        "word": "always",
+        "count": 52
+      },
+      {
+        "word": "district",
+        "count": 52
+      },
+      {
+        "word": "let",
+        "count": 52
+      },
+      {
+        "word": "never",
+        "count": 51
+      },
+      {
+        "word": "energy",
+        "count": 51
+      },
+      {
+        "word": "siege",
+        "count": 51
+      },
+      {
+        "word": "second",
+        "count": 51
+      },
+      {
+        "word": "amendment",
+        "count": 51
+      },
+      {
+        "word": "america",
+        "count": 50
+      },
+      {
+        "word": "cut",
+        "count": 50
+      },
+      {
+        "word": "border",
+        "count": 50
+      },
+      {
+        "word": "state",
+        "count": 46
+      },
+      {
+        "word": "congressional",
+        "count": 46
+      },
+      {
+        "word": "taxes",
+        "count": 46
+      },
+      {
+        "word": "dominance",
+        "count": 46
+      },
+      {
+        "word": "keep",
+        "count": 46
+      },
+      {
+        "word": "regulations",
+        "count": 43
+      },
+      {
+        "word": "economy",
+        "count": 41
+      },
+      {
+        "word": "veterans",
+        "count": 41
+      },
+      {
+        "word": "vote",
+        "count": 41
+      },
+      {
+        "word": "promote",
+        "count": 40
+      },
+      {
+        "word": "voting",
+        "count": 40
+      },
+      {
+        "word": "stop",
+        "count": 39
+      },
+      {
+        "word": "grow",
+        "count": 39
+      },
+      {
+        "word": "unleash",
+        "count": 39
+      },
+      {
+        "word": "crime",
+        "count": 39
+      },
+      {
+        "word": "defend",
+        "count": 39
+      },
+      {
+        "word": "location",
+        "count": 38
+      },
+      {
+        "word": "day",
+        "count": 38
+      },
+      {
+        "word": "congressman",
+        "count": 38
+      },
+      {
+        "word": "tirelessly",
+        "count": 38
+      },
+      {
+        "word": "incredible",
+        "count": 37
+      },
+      {
+        "word": "find",
+        "count": 37
+      },
+      {
+        "word": "swampthevoteusa",
+        "count": 37
+      },
+      {
+        "word": "migrant",
+        "count": 36
+      },
+      {
+        "word": "donald",
+        "count": 34
+      },
+      {
+        "word": "next",
+        "count": 30
+      },
+      {
+        "word": "michigan",
+        "count": 30
+      },
+      {
+        "word": "congress",
+        "count": 29
+      },
+      {
+        "word": "working",
+        "count": 29
+      },
+      {
+        "word": "tuesday",
+        "count": 29
+      }
+    ]
+  }
+]
