@@ -22,24 +22,24 @@ interface ChatRequest {
   history?: ChatMessage[];
 }
 
-const D1_INIT_SQL = `
-CREATE TABLE IF NOT EXISTS sessions (
-  id TEXT PRIMARY KEY,
-  created_at INTEGER NOT NULL,
-  last_active INTEGER NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS messages (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  session_id TEXT NOT NULL,
-  role TEXT NOT NULL CHECK(role IN ('user', 'assistant')),
-  content TEXT NOT NULL,
-  created_at INTEGER NOT NULL,
-  FOREIGN KEY (session_id) REFERENCES sessions(id)
-);
-
-CREATE INDEX IF NOT EXISTS idx_messages_session ON messages(session_id, created_at);
-`;
+async function initDb(db: D1Database): Promise<void> {
+  await db.batch([
+    db.prepare(`CREATE TABLE IF NOT EXISTS sessions (
+      id TEXT PRIMARY KEY,
+      created_at INTEGER NOT NULL,
+      last_active INTEGER NOT NULL
+    )`),
+    db.prepare(`CREATE TABLE IF NOT EXISTS messages (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      session_id TEXT NOT NULL,
+      role TEXT NOT NULL CHECK(role IN ('user', 'assistant')),
+      content TEXT NOT NULL,
+      created_at INTEGER NOT NULL,
+      FOREIGN KEY (session_id) REFERENCES sessions(id)
+    )`),
+    db.prepare(`CREATE INDEX IF NOT EXISTS idx_messages_session ON messages(session_id, created_at)`),
+  ]);
+}
 
 function corsHeaders(request: Request, allowedOrigins: string): HeadersInit {
   const origin = request.headers.get("Origin") ?? "";
@@ -114,8 +114,7 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
   const sid = sessionId ?? crypto.randomUUID();
   const trimmedMessage = message.trim().slice(0, 2000);
 
-  // Initialize tables if needed (idempotent)
-  await env.DB.exec(D1_INIT_SQL);
+  await initDb(env.DB);
   await ensureSession(env.DB, sid);
 
   // Load history from D1 (prefer server-side, fall back to client-sent)
@@ -146,7 +145,7 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
 
   // Call Workers AI — stream response
   const aiResponse = await env.AI.run(
-    "@cf/meta/llama-3.1-8b-instruct" as Parameters<typeof env.AI.run>[0],
+    "@cf/meta/llama-3.3-70b-instruct-fp8-fast" as Parameters<typeof env.AI.run>[0],
     {
       messages,
       stream: true,
@@ -211,7 +210,7 @@ async function handleHistory(request: Request, env: Env): Promise<Response> {
     );
   }
 
-  await env.DB.exec(D1_INIT_SQL);
+  await initDb(env.DB);
   const history = await getRecentHistory(env.DB, sessionId, 50);
 
   return new Response(JSON.stringify({ sessionId, history }), {
