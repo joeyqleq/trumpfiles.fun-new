@@ -56,6 +56,17 @@ next-env.d.ts
 
 /net-commander
 
+# Worker large data files + build artifacts
+/workers/trumpstein/data/
+/workers/trumpstein/node_modules/
+/workers/**/package-lock.json
+/output/
+/mass_rewrite.js
+/optimized_mass_rewrite.js
+/settings-bk.json
+/public/screenshots/
+/.superpowers/
+
 # OpenMemory - IDE/Assistant specific rules
 .cursor/rules/openmemory.mdc
 AGENTS.md
