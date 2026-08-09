@@ -300,7 +300,7 @@ export default function VisualizerClient({
                     </div>
                 ) : (
                     <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-8">
-                        <TabsList className="flex w-full overflow-x-auto justify-start bg-white/5 p-1 no-scrollbar space-x-2">
+                        <TabsList className="flex w-full overflow-x-auto justify-start bg-white/5 p-1 space-x-1 md:space-x-2 scrollbar-thin scrollbar-thumb-orange-500/30 scrollbar-track-transparent pb-1">
                             <TabsTrigger value="overview" className="flex-shrink-0" data-testid="visualizer-tab-overview">Overview</TabsTrigger>
                             <TabsTrigger value="categories" className="flex-shrink-0" data-testid="visualizer-tab-categories">Categories</TabsTrigger>
                             <TabsTrigger value="timeline" className="flex-shrink-0" data-testid="visualizer-tab-timeline">Timeline</TabsTrigger>

@@ -6,8 +6,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-neuething);
+  --font-sans: var(--font-space-grotesk), var(--font-neuething);
   --font-heading: var(--font-arctic-guardian);
+  --font-body: var(--font-source-serif);
+  --font-editorial: var(--font-instrument-serif);
+  --font-display: var(--font-playfair);
+  --font-ui: var(--font-neuething);
   --font-arctic-3d: var(--font-arctic-guardian-3d);
   --font-arctic-grad: var(--font-arctic-guardian-grad);
   --font-arctic-grad-italic: var(--font-arctic-guardian-grad-italic);
@@ -16,7 +20,7 @@
   --font-arctic-twotone: var(--font-arctic-guardian-twotone);
   --font-arctic-twotone-italic: var(--font-arctic-guardian-twotone-italic);
   --font-arctic-left: var(--font-arctic-guardian-left);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-jetbrains), var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -262,26 +266,72 @@ html {
   color-scheme: dark;
 }
 
-/* Typography System */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Typography System — layered, editorial, bespoke */
+h1, h2, h3 {
   font-family: var(--font-arctic-guardian);
   font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-playfair), var(--font-arctic-guardian);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 body {
-  font-family: var(--font-neuething);
+  font-family: var(--font-space-grotesk), var(--font-neuething), system-ui;
+  font-feature-settings: "ss01", "ss02";
 }
 
-/* Paragraph text - Epilogue */
-p,
-.text-body {
-  font-family: var(--font-neuething);
+/* Paragraph / body text — elegant editorial serif */
+p, .text-body {
+  font-family: var(--font-source-serif), Georgia, serif;
   font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.005em;
+  font-feature-settings: "onum", "liga";
+}
+
+/* Pull quotes and featured text */
+blockquote, .text-editorial {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+
+/* Labels, badges, small UI text */
+.text-label, label, figcaption, .badge-text {
+  font-family: var(--font-space-grotesk), var(--font-neuething), system-ui;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Card titles and subheadings */
+.text-card-title {
+  font-family: var(--font-playfair), var(--font-arctic-guardian);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Monospace / data */
+code, pre, .text-data, .text-mono {
+  font-family: var(--font-jetbrains), 'JetBrains Mono', monospace;
+  font-feature-settings: "liga", "calt";
+  letter-spacing: -0.02em;
+}
+
+/* Display numbers — large stats/counters */
+.text-stat {
+  font-family: var(--font-space-grotesk), var(--font-neuething);
+  font-weight: 700;
+  font-feature-settings: "tnum";
+  letter-spacing: -0.03em;
 }
 
 /* Arctic Guardian Variant Utilities */
@@ -329,7 +379,29 @@ p,
 }
 
 @utility font-sans {
-  font-family: var(--font-neuething);
+  font-family: var(--font-space-grotesk), var(--font-neuething), system-ui;
+}
+
+@utility font-body {
+  font-family: var(--font-source-serif), Georgia, serif;
+}
+
+@utility font-editorial {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  font-style: italic;
+}
+
+@utility font-display {
+  font-family: var(--font-playfair), var(--font-arctic-guardian);
+}
+
+@utility font-ui {
+  font-family: var(--font-neuething), system-ui;
+}
+
+@utility font-data {
+  font-family: var(--font-jetbrains), monospace;
+  font-feature-settings: "liga", "calt";
 }
 
 /* Custom styles */

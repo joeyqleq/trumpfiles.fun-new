@@ -68,27 +68,27 @@ const MarqueeCard = ({ entry }: { entry: AICompleteTrumpData }) => {
                 {entry.category}
             </div>
             <Link href={`/entry/${entry.entry_number}`} target="_blank" className="block">
-                <h4 className="text-base font-bold text-white/90 line-clamp-1 mb-2 group-hover:text-orange-400 transition-colors cursor-pointer underline-offset-2 hover:underline" style={{ fontFamily: 'var(--font-neuething)' }}>
+                <h4 className="text-base font-bold text-white/90 line-clamp-1 mb-2 group-hover:text-orange-400 transition-colors cursor-pointer underline-offset-2 hover:underline font-display">
                     #{entry.entry_number}: {entry.title}
                 </h4>
             </Link>
-            <p className="text-sm text-foreground/70 line-clamp-3 mb-4 leading-relaxed" style={{ fontFamily: 'var(--font-neuething)', fontWeight: 400 }}>
+            <p className="text-sm text-foreground/70 line-clamp-3 mb-4 leading-relaxed">
                 {entry.synopsis}
             </p>
             <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                    <span className="text-xs text-red-400 w-16 flex items-center gap-1 font-medium"><Flame className="w-3.5 h-3.5" /> Danger</span>
+                    <span className="text-xs text-red-400 w-16 flex items-center gap-1 font-ui"><Flame className="w-3.5 h-3.5" /> Danger</span>
                     <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden">
                         <div className="h-full bg-gradient-to-r from-red-500 to-orange-500 rounded-full" style={{ width: `${dangerPercent}%` }} />
                     </div>
-                    <span className="text-xs text-white/80 w-10 text-right font-mono">{entry.danger?.toFixed(1)}/10</span>
+                    <span className="text-xs text-white/80 w-10 text-right font-data">{entry.danger?.toFixed(1)}/10</span>
                 </div>
                 <div className="flex items-center gap-3">
-                    <span className="text-xs text-yellow-400 w-16 flex items-center gap-1 font-medium"><Brain className="w-3.5 h-3.5" /> Absurd</span>
+                    <span className="text-xs text-yellow-400 w-16 flex items-center gap-1 font-ui"><Brain className="w-3.5 h-3.5" /> Absurd</span>
                     <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden">
                         <div className="h-full bg-gradient-to-r from-yellow-500 to-orange-400 rounded-full" style={{ width: `${absurdityPercent}%` }} />
                     </div>
-                    <span className="text-xs text-white/80 w-10 text-right font-mono">{entry.absurdity?.toFixed(1)}/10</span>
+                    <span className="text-xs text-white/80 w-10 text-right font-data">{entry.absurdity?.toFixed(1)}/10</span>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@ export default function HomeClient({
 
             <div className="relative z-10">
                 {/* ── DESKTOP HERO (hidden on mobile) ── */}
-                <section className="relative overflow-hidden h-[calc(100vh-64px)] hidden md:flex items-stretch py-2">
+                <section className="relative overflow-hidden h-[calc(100dvh-64px)] hidden md:flex items-stretch py-2">
                     <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-[625px] h-[625px] opacity-20 pointer-events-none hidden lg:block">
                         <img src="/images/bg-decor_wireframe_donut.svg" alt="" className="absolute inset-0 w-full h-full object-contain" />
                         <div className="absolute inset-0 w-full h-full animate-beam-pulse" style={{ background: 'radial-gradient(ellipse at center, rgba(255,165,0,0.3) 0%, transparent 60%)', mixBlendMode: 'overlay' }} />
@@ -139,7 +139,7 @@ export default function HomeClient({
                                     <div className="py-1">
                                         <TrumpFilesBrand size="hero" className="justify-start whitespace-nowrap" />
                                     </div>
-                                    <p className="text-base lg:text-lg text-foreground/80 max-w-xl leading-relaxed font-medium mt-3" style={{ fontFamily: 'var(--font-neuething)' }}>
+                                    <p className="text-base lg:text-lg text-foreground/80 max-w-xl leading-relaxed font-medium mt-3 font-editorial">
                                         A comprehensive, data-driven archive of the 45th U.S. President&apos;s most controversial and impactful moments. Explore, analyze, and understand the data behind the headlines.
                                     </p>
                                     <div className="flex justify-start pt-4">
@@ -209,7 +209,7 @@ export default function HomeClient({
                         </motion.div>
 
                         {/* 4. Description text */}
-                        <p className="text-sm text-foreground/80 max-w-[85vw] leading-relaxed font-medium" style={{ fontFamily: 'var(--font-neuething)' }}>
+                        <p className="text-sm text-foreground/80 max-w-[85vw] leading-relaxed font-medium font-editorial">
                             A comprehensive, data-driven archive of the 45th U.S. President&apos;s most controversial and impactful moments.
                         </p>
 

@@ -1,4 +1,37 @@
 import localFont from 'next/font/local';
+import { Instrument_Serif, Space_Grotesk, Playfair_Display, Source_Serif_4, JetBrains_Mono } from 'next/font/google';
+
+// Google Fonts — editorial body and accent fonts
+export const instrumentSerif = Instrument_Serif({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-instrument-serif',
+  display: 'swap',
+});
+
+export const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+  display: 'swap',
+});
+
+export const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+});
+
+export const sourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  variable: '--font-source-serif',
+  display: 'swap',
+});
+
+export const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
+  display: 'swap',
+});
 
 // Arctic Guardian Font Family - All variants
 export const arcticGuardian = localFont({

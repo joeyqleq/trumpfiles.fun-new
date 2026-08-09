@@ -75,11 +75,20 @@ const GradientBlinds: React.FC<GradientBlindsProps> = ({
     const container = containerRef.current;
     if (!container) return;
 
-    const renderer = new Renderer({
-      dpr: dpr ?? (typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1),
-      alpha: true,
-      antialias: true
-    });
+    const testCanvas = document.createElement('canvas');
+    const hasWebGL = !!(testCanvas.getContext('webgl2') || testCanvas.getContext('webgl'));
+    if (!hasWebGL) return;
+
+    let renderer: Renderer;
+    try {
+      renderer = new Renderer({
+        dpr: dpr ?? (typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1),
+        alpha: true,
+        antialias: true
+      });
+    } catch {
+      return;
+    }
     rendererRef.current = renderer;
     const gl = renderer.gl;
     const canvas = gl.canvas as HTMLCanvasElement;

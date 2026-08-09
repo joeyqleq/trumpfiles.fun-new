@@ -24,6 +24,7 @@ import {
   Fingerprint,
   Mail,
   Heart,
+  FileSearch,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -39,6 +40,7 @@ export default function Navigation() {
     { name: "Home", href: "/", icon: <Home size={16} /> },
     { name: "Catalog", href: "/catalog", icon: <Library size={16} /> },
     { name: "Visualizer", href: "/visualizer", icon: <Activity size={16} /> },
+    { name: "Insights", href: "/insights", icon: <FileSearch size={16} /> },
     { name: "WTF?", href: "/wtf", icon: <Brain size={16} /> },
     { name: "Enigma", href: "/enigma", icon: <Fingerprint size={16} /> },
     {
