@@ -240,6 +240,90 @@ async function getInsightsData() {
     ORDER BY mentions DESC
   `;
 
+  // ── NEW EXHIBITS ─────────────────────────────────────────────────────────────
+
+  const peopleTagFrequency = await sql`
+    SELECT
+      person,
+      COUNT(*)::int AS count
+    FROM trump_entries,
+      LATERAL UNNEST(people_tags) AS person
+    WHERE person IS NOT NULL AND person <> ''
+    GROUP BY person
+    ORDER BY count DESC
+    LIMIT 30
+  `;
+
+  const categoryYearMatrix = await sql`
+    SELECT
+      te.category,
+      EXTRACT(YEAR FROM te.date_start)::int AS year,
+      COUNT(*)::int AS count,
+      ROUND(AVG(tis.danger)::numeric, 2) AS avg_danger
+    FROM trump_entries te
+    JOIN trump_individual_scores tis ON te.entry_number = tis.entry_number
+    WHERE EXTRACT(YEAR FROM te.date_start) BETWEEN 2015 AND 2026
+      AND te.category IS NOT NULL
+      AND te.date_start IS NOT NULL
+    GROUP BY te.category, EXTRACT(YEAR FROM te.date_start)
+    ORDER BY te.category, year
+  `;
+
+  const scoreDistribution = await sql`
+    SELECT
+      tis.danger::int AS score,
+      COUNT(*)::int AS count,
+      CONCAT('Danger ', tis.danger) AS label
+    FROM trump_entries te
+    JOIN trump_individual_scores tis ON te.entry_number = tis.entry_number
+    WHERE tis.danger BETWEEN 1 AND 10
+    GROUP BY tis.danger
+    ORDER BY tis.danger
+  `;
+
+  const familyOrbitEntries = await sql`
+    SELECT
+      te.entry_number,
+      te.title,
+      te.date_start,
+      tis.danger,
+      te.category,
+      te.people_tags
+    FROM trump_entries te
+    JOIN trump_individual_scores tis ON te.entry_number = tis.entry_number
+    WHERE te.people_tags && ARRAY[
+      'Ivanka Trump', 'Jared Kushner', 'Donald Trump Jr.', 'Eric Trump',
+      'Melania Trump', 'Barron Trump', 'Kash Patel', 'Pete Hegseth', 'Elon Musk'
+    ]::text[]
+    ORDER BY tis.danger DESC
+    LIMIT 25
+  `;
+
+  const topCooccurrences = await sql`
+    SELECT
+      a.person AS person_a,
+      b.person AS person_b,
+      COUNT(*)::int AS co_count
+    FROM trump_entries te,
+      LATERAL UNNEST(te.people_tags) AS a(person),
+      LATERAL UNNEST(te.people_tags) AS b(person)
+    WHERE a.person < b.person
+      AND a.person IS NOT NULL AND b.person IS NOT NULL
+      AND a.person <> '' AND b.person <> ''
+      AND array_length(te.people_tags, 1) > 1
+    GROUP BY a.person, b.person
+    ORDER BY co_count DESC
+    LIMIT 20
+  `;
+
+  const recentEntries = await sql`
+    SELECT entry_number, title, date_start, danger, category
+    FROM ai_complete_trump_data
+    WHERE date_start IS NOT NULL
+    ORDER BY date_start DESC
+    LIMIT 10
+  `;
+
   return {
     totals: {
       total: parseInt(totals.total),
@@ -262,6 +346,12 @@ async function getInsightsData() {
     legalBattles,
     pardons,
     epsteinConnection,
+    peopleTagFrequency: peopleTagFrequency as Array<{ person: string; count: number }>,
+    categoryYearMatrix: categoryYearMatrix as Array<{ category: string; year: number; count: number; avg_danger: string }>,
+    scoreDistribution: scoreDistribution as Array<{ score: number; count: number; label: string }>,
+    familyOrbitEntries,
+    topCooccurrences: topCooccurrences as Array<{ person_a: string; person_b: string; co_count: number }>,
+    recentEntries,
   };
 }
 
