@@ -1,0 +1,52 @@
+name: Trump Files — Auto Update Entries
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (research only, no DB insert)'
+        required: false
+        default: 'false'
+      max_entries:
+        description: 'Max new entries to insert per run'
+        required: false
+        default: '10'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Run update cycle
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+          INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SITE_URL: https://trumpfiles-fun-new.vercel.app
+          WORKER_URL: https://trumpstein.trumpstein.workers.dev
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          MAX_ENTRIES: ${{ github.event.inputs.max_entries || '10' }}
+        run: node scripts/auto-update.mjs
+
+      - name: Trigger Vectorize ingest
+        if: success()
+        env:
+          INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
+          WORKER_URL: https://trumpstein.trumpstein.workers.dev
+        run: node scripts/trigger-vectorize.mjs

@@ -18,7 +18,7 @@ index_name = "trumpstein-rag"
 
 [vars]
 NEON_API_URL = "https://trumpfiles.fun/api"
-ALLOWED_ORIGINS = "https://trumpfiles.fun,http://localhost:3000,https://trumpfiles-fun-new.vercel.app,https://trumpfiles-fun-new-git-main-joeyqleqs-projects.vercel.app"
+ALLOWED_ORIGINS = "https://trumpfiles.fun,https://trumpstein.me,http://localhost:3000,https://trumpfiles-fun-new.vercel.app,https://trumpfiles-fun-new-git-main-joeyqleqs-projects.vercel.app"
 
 # Secrets (set via wrangler secret put):
 # NEON_DATABASE_URL — Neon pooler connection string for ingest script
