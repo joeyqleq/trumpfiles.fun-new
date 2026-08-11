@@ -44,7 +44,13 @@ async function initDb(db: D1Database): Promise<void> {
 function corsHeaders(request: Request, allowedOrigins: string): HeadersInit {
   const origin = request.headers.get("Origin") ?? "";
   const allowed = allowedOrigins.split(",").map((o) => o.trim());
-  const isAllowed = allowed.includes(origin) || allowed.includes("*");
+  const isAllowed =
+    allowed.includes("*") ||
+    allowed.includes(origin) ||
+    origin.endsWith(".vercel.app") ||
+    origin.endsWith(".trumpfiles.fun") ||
+    origin === "https://trumpfiles.fun" ||
+    origin === "https://trumpstein.me";
 
   return {
     "Access-Control-Allow-Origin": isAllowed ? origin : allowed[0] ?? "*",

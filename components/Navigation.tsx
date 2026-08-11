@@ -41,6 +41,7 @@ export default function Navigation() {
     { name: "Catalog", href: "/catalog", icon: <Library size={16} /> },
     { name: "Visualizer", href: "/visualizer", icon: <Activity size={16} /> },
     { name: "Insights", href: "/insights", icon: <FileSearch size={16} /> },
+    { name: "Trumpstein", href: "/trumpstein", icon: <Brain size={16} /> },
     { name: "WTF?", href: "/wtf", icon: <Brain size={16} /> },
     { name: "Enigma", href: "/enigma", icon: <Fingerprint size={16} /> },
     {

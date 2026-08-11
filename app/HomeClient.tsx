@@ -119,7 +119,7 @@ export default function HomeClient({
 
             <div className="relative z-10">
                 {/* ── DESKTOP HERO (hidden on mobile) ── */}
-                <section className="relative overflow-hidden h-[calc(100dvh-64px)] hidden md:flex items-stretch py-2">
+                <section className="relative overflow-clip h-[calc(100dvh-64px)] hidden md:flex items-stretch py-2">
                     <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-[625px] h-[625px] opacity-20 pointer-events-none hidden lg:block">
                         <img src="/images/bg-decor_wireframe_donut.svg" alt="" className="absolute inset-0 w-full h-full object-contain" />
                         <div className="absolute inset-0 w-full h-full animate-beam-pulse" style={{ background: 'radial-gradient(ellipse at center, rgba(255,165,0,0.3) 0%, transparent 60%)', mixBlendMode: 'overlay' }} />
@@ -131,18 +131,25 @@ export default function HomeClient({
 
                     <div className="container mx-auto px-4 lg:px-12 relative z-10 w-full flex-grow">
                         <div className="grid lg:grid-cols-2 gap-4 lg:gap-12 h-full items-stretch max-w-7xl mx-auto">
-                            <div className="flex flex-col justify-between h-full py-1">
+                            <div className="flex flex-col h-full py-1 gap-3">
                                 <div className="flex justify-start">
                                     <Badge className="bg-gradient-to-r from-orange-500/20 to-red-500/20 text-orange-500 border-orange-500/30 px-4 py-1 text-sm">The Definitive Data-Driven Encyclopedia of Political Absurdity</Badge>
                                 </div>
-                                <div className="flex-1 flex flex-col justify-center my-2 text-left">
+                                <div className="flex-1 flex flex-col justify-center text-left">
                                     <div className="py-1">
                                         <TrumpFilesBrand size="hero" className="justify-start whitespace-nowrap" />
                                     </div>
-                                    <p className="text-base lg:text-lg text-foreground/80 max-w-xl leading-relaxed font-medium mt-3 font-editorial">
-                                        A comprehensive, data-driven archive of the 45th U.S. President&apos;s most controversial and impactful moments. Explore, analyze, and understand the data behind the headlines.
-                                    </p>
-                                    <div className="flex justify-start pt-4">
+                                    {/* Creative mixed-typography description */}
+                                    <div className="mt-3 max-w-xl space-y-1">
+                                        <p className="text-[11px] font-mono text-orange-500/60 tracking-[0.2em] uppercase">// classified: public record</p>
+                                        <p className="text-lg lg:text-xl font-black tracking-tight text-white/95 leading-tight" style={{ fontFamily: 'var(--font-neuething)' }}>
+                                            Every scandal. Every lie. Every <span className="text-orange-400 italic" style={{ fontFamily: 'var(--font-arctic-guardian-grad-italic)' }}>abuse of power.</span>
+                                        </p>
+                                        <p className="text-sm text-foreground/65 leading-relaxed max-w-sm" style={{ fontFamily: 'var(--font-neuething)', fontWeight: 400 }}>
+                                            <span className="text-orange-300/80 font-semibold">5,900+</span> documented entries — scored, sourced, and archived so the record <span className="font-mono text-[12px] bg-white/5 px-1 rounded border border-white/10">survives</span> the churn.
+                                        </p>
+                                    </div>
+                                    <div className="flex justify-start pt-3">
                                         <ElectricBorder color="#9eff2a" speed={1.5} chaos={0.08} borderRadius={16}>
                                             <div className="px-5 py-2 bg-gradient-to-r from-orange-950/80 via-black/70 to-orange-950/80 backdrop-blur-sm rounded-2xl border border-orange-500/10 flex flex-col items-center gap-0.5">
                                                 <ShinyText text={`${entryCount}+ ENTRIES DOCUMENTED`} speed={2.9} delay={0.7} color="#ffb347" shineColor="#ffffff" spread={110} direction="left" yoyo pauseOnHover={false} disabled={false} className="text-sm font-bold tracking-wide" />
@@ -151,38 +158,43 @@ export default function HomeClient({
                                         </ElectricBorder>
                                     </div>
                                 </div>
-                                <div className="flex flex-wrap gap-4 justify-start pt-1">
-                                    <Link href="/catalog"><ShinyButton className="text-sm px-5 py-2.5 bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/50">Explore The Files</ShinyButton></Link>
-                                    <Link href="/visualizer"><PulsatingButton className="text-sm px-5 py-2.5 bg-orange-600 hover:bg-orange-700">Visualize The Data</PulsatingButton></Link>
-                                </div>
-                                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }} className="mt-4 max-w-md">
-                                    <Link href="/donate">
-                                        <div className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-950/40 to-slate-900/40 border border-blue-500/30 p-3 hover:border-blue-400/50 hover:bg-blue-900/20 transition-all cursor-pointer shadow-lg shadow-blue-900/10">
-                                            <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 group-hover:bg-blue-400 transition-colors" />
-                                            <div className="flex items-start gap-3">
-                                                <div className="p-1.5 bg-blue-500/20 rounded-lg group-hover:scale-110 transition-transform"><Heart className="w-4 h-4 text-blue-400" /></div>
-                                                <div>
-                                                    <h4 className="text-xs font-bold text-blue-300 uppercase tracking-wider mb-1 flex items-center gap-2">Message from the Creator <span className="text-[9px] bg-blue-500/20 px-1.5 py-0.5 rounded text-blue-300 border border-blue-500/30">Read</span></h4>
-                                                    <p className="text-[11px] text-blue-100/70 leading-relaxed font-sans">Building this archive from Lebanon comes with unique challenges. If you value this work, please read this note.</p>
+                                {/* Buttons + blue box grouped so overflow-hidden can't clip the box */}
+                                <div className="flex flex-col gap-3">
+                                    <div className="flex flex-wrap gap-4 justify-start">
+                                        <Link href="/catalog"><ShinyButton className="text-sm px-5 py-2.5 bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/50">Explore The Files</ShinyButton></Link>
+                                        <Link href="/visualizer"><PulsatingButton className="text-sm px-5 py-2.5 bg-orange-600 hover:bg-orange-700">Visualize The Data</PulsatingButton></Link>
+                                    </div>
+                                    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }} className="max-w-md">
+                                        <Link href="/donate">
+                                            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-950/40 to-slate-900/40 border border-blue-500/30 p-3 hover:border-blue-400/50 hover:bg-blue-900/20 transition-all cursor-pointer shadow-lg shadow-blue-900/10">
+                                                <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 group-hover:bg-blue-400 transition-colors" />
+                                                <div className="flex items-start gap-3">
+                                                    <div className="p-1.5 bg-blue-500/20 rounded-lg group-hover:scale-110 transition-transform"><Heart className="w-4 h-4 text-blue-400" /></div>
+                                                    <div>
+                                                        <h4 className="text-xs font-bold text-blue-300 uppercase tracking-wider mb-1 flex items-center gap-2">Message from the Creator <span className="text-[9px] bg-blue-500/20 px-1.5 py-0.5 rounded text-blue-300 border border-blue-500/30">Read</span></h4>
+                                                        <p className="text-[11px] text-blue-100/70 leading-relaxed" style={{ fontFamily: 'var(--font-neuething)' }}>Building this archive from Lebanon comes with unique challenges. If you value this work, please read this note.</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </Link>
-                                </motion.div>
+                                        </Link>
+                                    </motion.div>
+                                </div>
                             </div>
 
-                            <div className="flex flex-col justify-between h-full py-1 relative z-20 pl-8 lg:pl-12">
-                                <div className="hidden lg:flex justify-start items-center h-[24px] overflow-visible">
+                            <div className="flex flex-col h-full py-1 relative z-20 pl-8 lg:pl-12 gap-2">
+                                <div className="hidden lg:flex justify-start items-center h-[24px] overflow-visible shrink-0">
                                     <img src="/images/bg-decor_repeating_front-slash.svg" alt="" className="w-[250px] h-auto object-left opacity-60" />
                                 </div>
-                                <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative w-full flex-1 flex items-center justify-center my-2">
-                                    <div className="w-full max-w-[500px] aspect-square relative transform lg:scale-110 pointer-events-auto"><OrangeHero /></div>
-                                </motion.div>
-                                <div className="flex items-end gap-x-4 relative w-full justify-start lg:pl-8 pt-1 mt-auto">
-                                    <div className="relative leading-none">
-                                        <SparklesText className="text-6xl lg:text-8xl font-black tracking-tighter !leading-none block p-0 m-0" colors={{ first: '#FFA500', second: '#FF4500' }} style={{ fontFamily: 'var(--font-arctic-guardian-grad)', fontWeight: 900, background: 'linear-gradient(to bottom, #FFA500, #FF4500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>DJT</SparklesText>
+                                <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }} className="relative w-full flex-1 min-h-0 flex items-center justify-center">
+                                    <div className="w-full max-w-[420px] lg:max-w-[500px]" style={{ aspectRatio: '1', maxHeight: 'calc(100dvh - 64px - 180px)' }}>
+                                        <OrangeHero />
                                     </div>
-                                    <div className="relative h-20 w-48 mb-1">
+                                </motion.div>
+                                <div className="flex items-end gap-x-4 w-full justify-start lg:pl-8 shrink-0 pb-1">
+                                    <div className="relative leading-none">
+                                        <SparklesText className="text-5xl lg:text-7xl font-black tracking-tighter !leading-none block p-0 m-0" colors={{ first: '#FFA500', second: '#FF4500' }} style={{ fontFamily: 'var(--font-arctic-guardian-grad)', fontWeight: 900, background: 'linear-gradient(to bottom, #FFA500, #FF4500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>DJT</SparklesText>
+                                    </div>
+                                    <div className="relative h-16 lg:h-20 w-40 lg:w-48 mb-0.5">
                                         <div className="absolute inset-0 z-20 pointer-events-none rounded-lg overflow-hidden"><ShineBorder shineColor={["#FFA500", "#FF4500", "#FFD700"]} borderWidth={2} duration={4} className="w-full h-full" /></div>
                                         <div className="relative z-10 w-full h-full"><img src="/images/trump_signature_2.svg" alt="Signature" className="w-full h-full object-contain" /></div>
                                     </div>

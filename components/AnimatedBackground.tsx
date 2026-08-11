@@ -3,6 +3,8 @@
 import dynamic from 'next/dynamic';
 import { ReactNode } from 'react';
 
+const GlobalBackground = dynamic(() => import('@/components/GlobalBackground'), { ssr: false });
+
 // Import GradientBlinds dynamically to avoid SSR issues with OGL
 const GradientBlinds = dynamic(() => import('@/components/GradientBlinds'), {
     ssr: false,
@@ -43,6 +45,9 @@ export default function AnimatedBackground({ children }: AnimatedBackgroundProps
                     100% { background-position: 100% 100%; opacity: 0.15; }
                 }
             `}</style>
+
+            {/* Global decorators + missile animations */}
+            <GlobalBackground />
 
             {/* Content layer */}
             <div className="relative z-10 w-full h-full">

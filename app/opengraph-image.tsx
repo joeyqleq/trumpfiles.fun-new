@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 import { sql } from "@/lib/neonClient";
+import { readFile } from "fs/promises";
+import { join } from "path";
 
 export const runtime = "nodejs";
 export const alt = "The Trump Files — Encyclopedia Orange";
@@ -9,14 +11,24 @@ export const contentType = "image/png";
 async function getEntryCount(): Promise<number> {
   try {
     const result = await sql`SELECT COUNT(*) as count FROM ai_complete_trump_data`;
-    return parseInt(result[0]?.count || "1100", 10);
+    return parseInt(result[0]?.count || "6000", 10);
   } catch {
-    return 1100;
+    return 6000;
+  }
+}
+
+async function getLogoData(): Promise<string> {
+  try {
+    const logoPath = join(process.cwd(), "public", "logos", "trumpfiles_orange_logo.png");
+    const data = await readFile(logoPath);
+    return `data:image/png;base64,${data.toString("base64")}`;
+  } catch {
+    return "";
   }
 }
 
 export default async function Image() {
-  const count = await getEntryCount();
+  const [count, logoSrc] = await Promise.all([getEntryCount(), getLogoData()]);
 
   return new ImageResponse(
     (
@@ -24,11 +36,11 @@ export default async function Image() {
         style={{
           width: "1200px",
           height: "630px",
-          background: "#0a0a0a",
+          background: "#060608",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
-          padding: "60px 72px",
+          alignItems: "center",
+          justifyContent: "center",
           fontFamily: "sans-serif",
           position: "relative",
           overflow: "hidden",
@@ -40,46 +52,113 @@ export default async function Image() {
             position: "absolute",
             inset: 0,
             backgroundImage:
-              "linear-gradient(rgba(255,101,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,101,0,0.06) 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
+              "linear-gradient(rgba(255,101,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,101,0,0.05) 1px, transparent 1px)",
+            backgroundSize: "50px 50px",
           }}
         />
 
-        {/* Orange glow blob */}
+        {/* Orange radial glow — bottom left */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "-120px",
+            left: "-120px",
+            width: "600px",
+            height: "600px",
+            borderRadius: "50%",
+            background: "radial-gradient(circle, rgba(255,101,0,0.18) 0%, transparent 65%)",
+          }}
+        />
+
+        {/* Mint glow — top right */}
         <div
           style={{
             position: "absolute",
             top: "-80px",
             right: "-80px",
-            width: "480px",
-            height: "480px",
+            width: "400px",
+            height: "400px",
             borderRadius: "50%",
-            background:
-              "radial-gradient(circle, rgba(255,101,0,0.25) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(62,230,193,0.08) 0%, transparent 65%)",
           }}
         />
 
-        {/* Top: logo + label */}
-        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+        {/* Content column */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "28px",
+            zIndex: 10,
+          }}
+        >
+          {/* Logo */}
+          {logoSrc && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={logoSrc}
+              alt="The Trump Files"
+              width={220}
+              height={220}
+              style={{ objectFit: "contain", filter: "drop-shadow(0 0 32px rgba(255,101,0,0.5))" }}
+            />
+          )}
+
+          {/* Entry count */}
           <div
             style={{
-              background: "#FF6500",
-              color: "#fff",
-              fontWeight: 900,
-              fontSize: "14px",
-              letterSpacing: "0.15em",
-              padding: "6px 14px",
-              borderRadius: "4px",
-              textTransform: "uppercase",
+              display: "flex",
+              alignItems: "baseline",
+              gap: "10px",
             }}
           >
-            🗂 The Trump Files
+            <span
+              style={{
+                fontSize: "96px",
+                fontWeight: 900,
+                color: "#FF6500",
+                lineHeight: 1,
+                letterSpacing: "-0.04em",
+              }}
+            >
+              {count.toLocaleString()}+
+            </span>
+            <span
+              style={{
+                fontSize: "24px",
+                fontWeight: 700,
+                color: "rgba(255,255,255,0.45)",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                marginBottom: "8px",
+              }}
+            >
+              documented
+            </span>
           </div>
+
+          {/* Tagline */}
           <div
             style={{
+              fontSize: "22px",
+              fontWeight: 700,
+              color: "rgba(255,255,255,0.80)",
+              letterSpacing: "0.06em",
+              textAlign: "center",
+              textTransform: "uppercase",
+              maxWidth: "700px",
+            }}
+          >
+            Beat the flood. Keep the receipts.
+          </div>
+
+          {/* Sub-tagline */}
+          <div
+            style={{
+              fontSize: "15px",
               color: "rgba(255,255,255,0.35)",
-              fontSize: "13px",
-              letterSpacing: "0.12em",
+              letterSpacing: "0.08em",
               textTransform: "uppercase",
             }}
           >
@@ -87,95 +166,43 @@ export default async function Image() {
           </div>
         </div>
 
-        {/* Center: big count + headline */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "baseline",
-              gap: "12px",
-            }}
-          >
-            <span
+        {/* Bottom score pills */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "32px",
+            display: "flex",
+            gap: "16px",
+          }}
+        >
+          {["Danger", "Lawlessness", "Insanity", "Absurdity", "Authoritarianism"].map((label) => (
+            <div
+              key={label}
               style={{
-                fontSize: "120px",
-                fontWeight: 900,
-                color: "#FF6500",
-                lineHeight: 1,
-                letterSpacing: "-0.03em",
+                display: "flex",
+                alignItems: "center",
+                gap: "5px",
+                color: "rgba(255,255,255,0.3)",
+                fontSize: "12px",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
               }}
             >
-              {count.toLocaleString()}
-            </span>
-            <span
-              style={{
-                fontSize: "28px",
-                fontWeight: 700,
-                color: "rgba(255,255,255,0.5)",
-                marginBottom: "12px",
-              }}
-            >
-              documented incidents
-            </span>
-          </div>
-
-          <div
-            style={{
-              fontSize: "36px",
-              fontWeight: 800,
-              color: "#fff",
-              lineHeight: 1.2,
-              maxWidth: "720px",
-            }}
-          >
-            Encyclopedia Orange
-          </div>
-          <div
-            style={{
-              fontSize: "20px",
-              color: "rgba(255,255,255,0.55)",
-              maxWidth: "680px",
-              lineHeight: 1.5,
-            }}
-          >
-            AI-scored, source-linked, and timestamped. The internet's most
-            comprehensive catalog of Trump-era misconduct.
-          </div>
-        </div>
-
-        {/* Bottom: score labels */}
-        <div style={{ display: "flex", gap: "24px" }}>
-          {["Danger", "Lawlessness", "Insanity", "Absurdity", "Authoritarianism"].map(
-            (label) => (
               <div
-                key={label}
                 style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  color: "rgba(255,255,255,0.4)",
-                  fontSize: "13px",
-                  letterSpacing: "0.08em",
+                  width: "5px",
+                  height: "5px",
+                  borderRadius: "50%",
+                  background: "#FF6500",
+                  opacity: 0.6,
                 }}
-              >
-                <div
-                  style={{
-                    width: "6px",
-                    height: "6px",
-                    borderRadius: "50%",
-                    background: "#FF6500",
-                    opacity: 0.7,
-                  }}
-                />
-                {label}
-              </div>
-            )
-          )}
+              />
+              {label}
+            </div>
+          ))}
         </div>
       </div>
     ),
-    {
-      ...size,
-    }
+    { ...size }
   );
 }

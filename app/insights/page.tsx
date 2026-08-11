@@ -355,7 +355,23 @@ async function getInsightsData() {
   };
 }
 
+import { Suspense } from "react";
+
+function InsightsLoading() {
+  return (
+    <div className="flex items-center justify-center h-[calc(100dvh-64px)]">
+      <div className="font-mono text-sm animate-pulse" style={{ color: "#3ee6c1" }}>
+        // loading corpus...
+      </div>
+    </div>
+  );
+}
+
 export default async function InsightsPage() {
   const data = await getInsightsData();
-  return <InsightsClient data={data} />;
+  return (
+    <Suspense fallback={<InsightsLoading />}>
+      <InsightsClient data={data} />
+    </Suspense>
+  );
 }

@@ -1,11 +1,5 @@
-import { getEntryStats } from "@/lib/entries";
-import VisualizerClient from "./VisualizerClient";
+import { redirect } from 'next/navigation';
 
-export default async function VisualizerPage() {
-    // Only fetch the real count on server; entries loaded client-side
-    const stats = await getEntryStats();
-
-    return (
-        <VisualizerClient totalCount={stats.count} />
-    );
+export default function Page() {
+    redirect('/insights');
 }
