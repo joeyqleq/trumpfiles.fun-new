@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: ['/api/', '/admin/'],
         },
-        sitemap: 'https://trumpfiles.fun/sitemap.xml',
+        sitemap: 'https://trumpstein.me/sitemap.xml',
     }
 }

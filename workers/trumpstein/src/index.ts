@@ -50,6 +50,7 @@ function corsHeaders(request: Request, allowedOrigins: string): HeadersInit {
     origin.endsWith(".vercel.app") ||
     origin.endsWith(".trumpfiles.fun") ||
     origin === "https://trumpfiles.fun" ||
+    origin === "https://trumpstein.me" ||
     origin === "https://trumpstein.me";
 
   return {

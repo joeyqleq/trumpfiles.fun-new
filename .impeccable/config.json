@@ -3,7 +3,9 @@
     "ignoreRules": [
       "gradient-text"
     ],
-    "ignoreFiles": [],
+    "ignoreFiles": [
+      "app/api/send-email/route.ts"
+    ],
     "ignoreValues": []
   }
 }

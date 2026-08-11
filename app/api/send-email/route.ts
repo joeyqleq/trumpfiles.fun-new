@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
     }
 
     const data = await resend.emails.send({
-      from: 'Trump Files <djt@trumpfiles.fun>',
+      from: 'Trump Files <djt@trumpstein.me>',
       to: ['eojiraam@gmail.com'],
       subject: `Contact Form: ${name}`,
       html: `

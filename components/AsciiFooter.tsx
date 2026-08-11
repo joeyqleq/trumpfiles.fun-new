@@ -104,7 +104,7 @@ export default function AsciiFooter() {
               <div className="flex gap-4 justify-end">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-orange-400 transition-colors"><Github className="w-5 h-5" /></a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-orange-400 transition-colors"><Twitter className="w-5 h-5" /></a>
-                <a href="mailto:contact@trumpfiles.fun" className="text-foreground/70 hover:text-orange-400 transition-colors"><Mail className="w-5 h-5" /></a>
+                <a href="mailto:contact@trumpstein.me" className="text-foreground/70 hover:text-orange-400 transition-colors"><Mail className="w-5 h-5" /></a>
               </div>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function AsciiFooter() {
             <div className="flex gap-5 justify-center">
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-orange-400 transition-colors"><Github className="w-5 h-5" /></a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-orange-400 transition-colors"><Twitter className="w-5 h-5" /></a>
-              <a href="mailto:contact@trumpfiles.fun" className="text-foreground/70 hover:text-orange-400 transition-colors"><Mail className="w-5 h-5" /></a>
+              <a href="mailto:contact@trumpstein.me" className="text-foreground/70 hover:text-orange-400 transition-colors"><Mail className="w-5 h-5" /></a>
             </div>
           </div>
         </div>

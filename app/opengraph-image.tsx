@@ -162,7 +162,7 @@ export default async function Image() {
               textTransform: "uppercase",
             }}
           >
-            trumpfiles.fun
+            trumpstein.me
           </div>
         </div>
 

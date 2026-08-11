@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   const title = "The Trump Files | Encyclopedia Orange";
   const description = `An interactive thermal encyclopedia cataloging ${entryCount}+ documented incidents, scandals, and absurd moments from Donald J. Trump. AI-analyzed, timestamped, and scored for accuracy and impact.`;
-  const siteUrl = "https://trumpfiles.fun";
+  const siteUrl = "https://trumpstein.me";
 
   return {
     title: {
@@ -155,13 +155,13 @@ export default function RootLayout({
               "@type": "WebSite",
               "name": "The Trump Files",
               "alternateName": "Encyclopedia Orange",
-              "url": "https://trumpfiles.fun",
+              "url": "https://trumpstein.me",
               "description": "An interactive thermal encyclopedia cataloging documented incidents, scandals, and absurd moments from Donald J. Trump.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {
                   "@type": "EntryPoint",
-                  "urlTemplate": "https://trumpfiles.fun/catalog?search={search_term_string}"
+                  "urlTemplate": "https://trumpstein.me/catalog?search={search_term_string}"
                 },
                 "query-input": "required name=search_term_string"
               }
