@@ -2,6 +2,64 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { cn } from "@/lib/utils";
+import Kippah from "@/components/Kippah";
+
+// Scramble animation for the header text
+function ScrambleText({ text, className }: { text: string; className?: string }) {
+  const [display, setDisplay] = useState(text);
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789█▓░";
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(() => {
+    let step = 0;
+    const totalSteps = 18;
+    intervalRef.current = setInterval(() => {
+      step++;
+      setDisplay(
+        text
+          .split("")
+          .map((char, i) => {
+            if (char === " ") return " ";
+            if (step / totalSteps > i / text.length) return char;
+            return chars[Math.floor(Math.random() * chars.length)];
+          })
+          .join("")
+      );
+      if (step >= totalSteps) {
+        setDisplay(text);
+        if (intervalRef.current) clearInterval(intervalRef.current);
+      }
+    }, 40);
+    return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text]);
+
+  // Re-scramble periodically
+  useEffect(() => {
+    const t = setInterval(() => {
+      let step = 0;
+      const totalSteps = 14;
+      const inner = setInterval(() => {
+        step++;
+        setDisplay(
+          text.split("").map((char, i) => {
+            if (char === " ") return " ";
+            if (step / totalSteps > i / text.length) return char;
+            return chars[Math.floor(Math.random() * chars.length)];
+          }).join("")
+        );
+        if (step >= totalSteps) {
+          setDisplay(text);
+          clearInterval(inner);
+        }
+      }, 35);
+    }, 8000);
+    return () => clearInterval(t);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text]);
+
+  return <span className={className}>{display}</span>;
+}
 
 const WORKER_URL =
   process.env.NEXT_PUBLIC_TRUMPSTEIN_WORKER_URL ??
@@ -198,19 +256,29 @@ export default function TrumpsteinChat({
             "bg-zinc-950 overflow-hidden"
           )}
         >
-          {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-orange-600 to-orange-500 shrink-0">
-            <div className="flex items-center gap-2">
-              <span className="text-lg font-black text-white tracking-tight">
-                TRUMPSTEIN
-              </span>
-              <span className="text-xs bg-white/20 text-white px-2 py-0.5 rounded-full font-medium">
+          {/* Header — orange bar with kippah on top + ASCII scramble */}
+          <div className="relative flex items-center justify-between px-4 py-3 shrink-0 overflow-hidden"
+               style={{ background: "linear-gradient(135deg, #c94600 0%, #FF6500 50%, #e85200 100%)" }}>
+            {/* Subtle scanline texture */}
+            <div className="absolute inset-0 opacity-10 pointer-events-none"
+                 style={{ backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.4) 2px, rgba(0,0,0,0.4) 3px)", backgroundSize: "100% 3px" }} />
+            {/* Kippah sitting on top of the header bar */}
+            <div className="absolute -top-5 left-1/2 -translate-x-1/2 z-20">
+              <Kippah size="lg" />
+            </div>
+            <div className="flex items-center gap-2 z-10">
+              <ScrambleText
+                text="TRUMPSTEIN"
+                className="text-lg font-black text-white tracking-widest"
+                style={{ fontFamily: "var(--font-jetbrains)" } as React.CSSProperties}
+              />
+              <span className="text-[10px] bg-white/15 backdrop-blur-sm text-white/90 px-2 py-0.5 rounded-full font-mono border border-white/20">
                 CHIP ACTIVE
               </span>
             </div>
             <button
               onClick={handleClose}
-              className="text-white/80 hover:text-white transition-colors text-xl leading-none"
+              className="z-10 w-7 h-7 flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/25 transition-all text-white/80 hover:text-white text-lg leading-none border border-white/20"
               aria-label="Close chat"
             >
               ×
@@ -313,27 +381,38 @@ export default function TrumpsteinChat({
         </div>
       )}
 
-      {/* Toggle button */}
-      <button
-        onClick={() => setOpen((v) => !v)}
-        className={cn(
-          "relative w-14 h-14 rounded-full shadow-lg shadow-orange-900/50",
-          "bg-gradient-to-br from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500",
-          "flex items-center justify-center transition-all duration-200",
-          "border-2 border-orange-400/50",
-          open && "rotate-180"
-        )}
-        aria-label={open ? "Close Trumpstein chat" : "Open Trumpstein chat"}
-      >
-        {open ? (
-          <span className="text-white text-2xl font-black rotate-180">×</span>
-        ) : (
-          <TrumpsteinIcon />
-        )}
+      {/* Toggle button with small kippah on top */}
+      <div className="relative">
+        {/* Kippah on toggle button */}
         {!open && (
-          <span className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-zinc-950 animate-pulse" />
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 pointer-events-none">
+            <Kippah size="sm" />
+          </div>
         )}
-      </button>
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className={cn(
+            "relative w-14 h-14 rounded-full shadow-lg shadow-orange-900/50",
+            "flex items-center justify-center transition-all duration-200",
+            "border-2 border-orange-400/50 hover:border-orange-300/70",
+            "hover:shadow-orange-500/40 hover:shadow-xl",
+            open ? "bg-zinc-800 border-zinc-600" : "bg-gradient-to-br from-orange-500 to-orange-700"
+          )}
+          style={!open ? {
+            boxShadow: "0 0 20px rgba(255,101,0,0.35), 0 4px 12px rgba(0,0,0,0.4)",
+          } : {}}
+          aria-label={open ? "Close Trumpstein chat" : "Open Trumpstein chat"}
+        >
+          {open ? (
+            <span className="text-white text-2xl font-black">×</span>
+          ) : (
+            <TrumpsteinIcon />
+          )}
+          {!open && (
+            <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 bg-green-400 rounded-full border-2 border-zinc-950 animate-pulse" />
+          )}
+        </button>
+      </div>
     </div>
   );
 }
