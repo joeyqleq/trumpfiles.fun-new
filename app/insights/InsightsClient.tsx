@@ -299,6 +299,19 @@ function OverviewTotals({ data }: { data: InsightsData }) {
 
   return (
     <div className="space-y-6">
+      {/* Narrative intro */}
+      <div className="rounded-xl p-5 border" style={{ borderColor: `${MINT}15`, background: "rgba(62,230,193,0.03)" }}>
+        <p className="font-mono text-[10px] tracking-[0.25em] uppercase mb-3" style={{ color: `${MINT}50` }}>
+          // what this corpus represents
+        </p>
+        <p className="text-sm leading-relaxed text-white/75 mb-3" style={{ fontFamily: "var(--font-neuething)" }}>
+          This database contains <span className="font-bold text-white">{data.totals.total.toLocaleString()}</span> documented incidents of misconduct, corruption, and abuse of power by Donald J. Trump — spanning 50+ years from the 1973 DOJ housing discrimination lawsuit to the 2025 second-term authoritarian consolidation.
+        </p>
+        <p className="text-xs text-white/50 leading-relaxed">
+          For context: all other U.S. presidents in 248 years of American history have accumulated <span style={{ color: MINT }}>zero</span> criminal indictments combined. Trump alone has faced <span style={{ color: THREAT }}>91 criminal charges</span> across 4 separate cases. This is not a political opposition archive — it is a documentary record of a presidency without historical parallel.
+        </p>
+      </div>
+
       {/* Stat row */}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <StatBlock value={data.totals.total.toLocaleString()} label="Documented Entries" accent={MINT} />
@@ -310,7 +323,7 @@ function OverviewTotals({ data }: { data: InsightsData }) {
 
       {/* Radar */}
       <ChartFrame title="Threat Dimensions — Corpus Average" exhibit="TF-01"
-        commentary="Across 6,000+ documented entries, authoritarianism and lawlessness consistently score highest. The corpus reveals a presidency defined not by policy disagreement but by systematic erosion of institutional constraints.">
+        commentary="The radar reveals a consistent pattern: authoritarianism and lawlessness are the defining traits, not insanity or absurdity. This is not an incompetent presidency — it is a calculated one. The high 'danger' axis reflects entries that directly threatened constitutional order, human life, or national security (490 entries scored maximum 10/10).">
         <ResponsiveContainer width="100%" height={320}>
           <RadarChart data={radarData} outerRadius="75%">
             <PolarGrid stroke={`${MINT}20`} />
@@ -320,6 +333,31 @@ function OverviewTotals({ data }: { data: InsightsData }) {
           </RadarChart>
         </ResponsiveContainer>
       </ChartFrame>
+
+      {/* Legend: dimension definitions */}
+      <div className="rounded-xl p-4 border" style={{ borderColor: `${MINT}10`, background: "rgba(0,0,0,0.3)" }}>
+        <p className="font-mono text-[9px] tracking-[0.2em] uppercase mb-3" style={{ color: `${MINT}40` }}>
+          // scoring dimensions — 1 to 10 scale
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          {[
+            { color: THREAT, name: "Danger", def: "Direct threat to human life, constitutional order, or national security. 10 = existential." },
+            { color: AMBER, name: "Authoritarianism", def: "Concentration of power, erosion of checks/balances, suppression of opposition." },
+            { color: VIOLET, name: "Lawlessness", def: "Violation of existing law, obstruction, norm destruction, contempt of court." },
+            { color: "#ff9060", name: "Insanity", def: "Departure from reality, delusional claims, incoherent or unhinged behavior." },
+            { color: "#ffcc44", name: "Absurdity", def: "Actions so bizarre they'd be rejected as fiction. Covfefe-to-bleach range." },
+            { color: BLUE, name: "Impact Scope", def: "Number of people affected. 10 = entire nation or global population." },
+          ].map(d => (
+            <div key={d.name} className="flex items-start gap-2 p-2 rounded-lg hover:bg-white/3 transition-colors">
+              <div className="w-2 h-2 rounded-full mt-1.5 shrink-0" style={{ background: d.color }} />
+              <div>
+                <span className="text-[11px] font-semibold text-white/80">{d.name}</span>
+                <p className="text-[10px] text-white/40 leading-relaxed">{d.def}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

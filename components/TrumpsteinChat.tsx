@@ -91,15 +91,18 @@ export default function TrumpsteinChat({
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const abortRef = useRef<AbortController | null>(null);
+  const greetedRef = useRef(false);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   useEffect(() => {
-    if (open && messages.length === 0) {
-      // Auto-send greeting trigger on first open
-      sendMessage("Introduce yourself, Trumpstein!");
+    if (open && !greetedRef.current && messages.length === 0) {
+      greetedRef.current = true;
+      // Small delay to ensure sendMessage callback is stable
+      const t = setTimeout(() => sendMessage("Introduce yourself, Trumpstein!"), 200);
+      return () => clearTimeout(t);
     }
     if (open) {
       setTimeout(() => inputRef.current?.focus(), 100);

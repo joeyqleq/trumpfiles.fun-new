@@ -10,7 +10,6 @@ import PixelCard from "@/components/PixelCard";
 import PageDecorations from "@/components/PageDecorations";
 import dynamic from "next/dynamic";
 
-const Lanyard = dynamic(() => import("@/components/Lanyard"), { ssr: false });
 const ChangelogDiagram = dynamic(() => import("@/components/ChangelogDiagram"), { ssr: false });
 
 import { useEntryCount } from "@/hooks/useEntryCount";
@@ -23,12 +22,6 @@ export default function WTFPage() {
       {/* Page Decorations with ASCII Trump images */}
       <PageDecorations variant="wtf" />
 
-      {/* Animated Lanyard Component */}
-      <div className="absolute top-[-50px] right-2 lg:right-10 w-[300px] lg:w-[450px] h-[750px] pointer-events-none z-[100] hidden md:block">
-        <div className="w-full h-full pointer-events-auto origin-top">
-          <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} transparent={true} />
-        </div>
-      </div>
 
       {/* Animated Gradient Blinds Background */}
       <div className="fixed inset-0 w-full h-full z-0 opacity-30 pointer-events-none">

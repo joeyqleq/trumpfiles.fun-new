@@ -19,7 +19,6 @@ import {
   X,
   Home,
   Library,
-  Activity,
   Brain,
   Fingerprint,
   Mail,
@@ -39,7 +38,6 @@ export default function Navigation() {
   const navItems = [
     { name: "Home", href: "/", icon: <Home size={16} /> },
     { name: "Catalog", href: "/catalog", icon: <Library size={16} /> },
-    { name: "Visualizer", href: "/visualizer", icon: <Activity size={16} /> },
     { name: "Insights", href: "/insights", icon: <FileSearch size={16} /> },
     { name: "Trumpstein", href: "/trumpstein", icon: <Brain size={16} /> },
     { name: "WTF?", href: "/wtf", icon: <Brain size={16} /> },
