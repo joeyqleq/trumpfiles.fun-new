@@ -1,17 +1,38 @@
 import localFont from 'next/font/local';
-import { Instrument_Serif, Space_Grotesk, Playfair_Display, Source_Serif_4, JetBrains_Mono } from 'next/font/google';
+import { Outfit, Syne, JetBrains_Mono, Space_Grotesk, Instrument_Serif, Playfair_Display, Source_Serif_4 } from 'next/font/google';
 
-// Google Fonts — editorial body and accent fonts
+// ── Primary body/UI — Outfit: geometric, sharp, variable ──
+export const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+  display: 'swap',
+});
+
+// ── Editorial/analysis — Syne: angular, futuristic, matches Arctic Guardian DNA ──
+export const syne = Syne({
+  subsets: ['latin'],
+  variable: '--font-syne',
+  display: 'swap',
+});
+
+// ── Data/code — JetBrains Mono ──
+export const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
+  display: 'swap',
+});
+
+// ── Legacy (kept for backward compat, can remove later) ──
+export const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+  display: 'swap',
+});
+
 export const instrumentSerif = Instrument_Serif({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-instrument-serif',
-  display: 'swap',
-});
-
-export const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk',
   display: 'swap',
 });
 
@@ -24,12 +45,6 @@ export const playfairDisplay = Playfair_Display({
 export const sourceSerif = Source_Serif_4({
   subsets: ['latin'],
   variable: '--font-source-serif',
-  display: 'swap',
-});
-
-export const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-jetbrains',
   display: 'swap',
 });
 
@@ -94,40 +109,6 @@ export const arcticGuardianLeft = localFont({
   display: 'swap',
 });
 
-// Neuething Font Family
-export const neuething = localFont({
-  src: [
-    {
-      path: '../public/fonts/neue_thing/NeuethingVariableTest-Regular-BF64bf225f65f7c.otf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/neue_thing/NeuethingVariableTest-Meduim-BF64bf225f5cde9.otf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/neue_thing/NeuethingVariableTest-SemiBold-BF64bf225f8bf7a.otf',
-      weight: '600',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/neue_thing/NeuethingVariableTest-Bold-BF64bf225e66873.otf',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/neue_thing/NeuethingVariableTest-ExtraBold-BF64bf225ed523f.otf',
-      weight: '800',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/neue_thing/NeuethingVariableTest-Black-BF64bf225e2ece3.otf',
-      weight: '900',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-neuething',
-  display: 'swap',
-});
+// Neuething removed — replaced by Outfit + Syne
+// Keep export so layout.tsx import doesn't break until cleaned up
+export const neuething = outfit;

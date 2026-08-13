@@ -6,12 +6,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-space-grotesk), var(--font-neuething);
+  --font-sans: var(--font-outfit), system-ui;
   --font-heading: var(--font-arctic-guardian);
-  --font-body: var(--font-source-serif);
-  --font-editorial: var(--font-instrument-serif);
-  --font-display: var(--font-playfair);
-  --font-ui: var(--font-neuething);
+  --font-body: var(--font-outfit), system-ui;
+  --font-editorial: var(--font-syne), system-ui;
+  --font-display: var(--font-arctic-guardian);
+  --font-ui: var(--font-outfit), system-ui;
   --font-arctic-3d: var(--font-arctic-guardian-3d);
   --font-arctic-grad: var(--font-arctic-guardian-grad);
   --font-arctic-grad-italic: var(--font-arctic-guardian-grad-italic);
@@ -280,7 +280,7 @@ h4, h5, h6 {
 }
 
 body {
-  font-family: var(--font-space-grotesk), var(--font-neuething), system-ui;
+  font-family: var(--font-outfit), var(--font-outfit), system-ui;
   font-feature-settings: "ss01", "ss02";
 }
 
@@ -304,7 +304,7 @@ blockquote, .text-editorial {
 
 /* Labels, badges, small UI text */
 .text-label, label, figcaption, .badge-text {
-  font-family: var(--font-space-grotesk), var(--font-neuething), system-ui;
+  font-family: var(--font-outfit), var(--font-outfit), system-ui;
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -328,7 +328,7 @@ code, pre, .text-data, .text-mono {
 
 /* Display numbers — large stats/counters */
 .text-stat {
-  font-family: var(--font-space-grotesk), var(--font-neuething);
+  font-family: var(--font-outfit), var(--font-outfit);
   font-weight: 700;
   font-feature-settings: "tnum";
   letter-spacing: -0.03em;
@@ -379,7 +379,7 @@ code, pre, .text-data, .text-mono {
 }
 
 @utility font-sans {
-  font-family: var(--font-space-grotesk), var(--font-neuething), system-ui;
+  font-family: var(--font-outfit), var(--font-outfit), system-ui;
 }
 
 @utility font-body {
@@ -396,7 +396,7 @@ code, pre, .text-data, .text-mono {
 }
 
 @utility font-ui {
-  font-family: var(--font-neuething), system-ui;
+  font-family: var(--font-outfit), system-ui;
 }
 
 @utility font-data {

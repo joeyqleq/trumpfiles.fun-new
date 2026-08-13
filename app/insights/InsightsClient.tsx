@@ -304,7 +304,7 @@ function OverviewTotals({ data }: { data: InsightsData }) {
         <p className="font-mono text-[10px] tracking-[0.25em] uppercase mb-3" style={{ color: `${MINT}50` }}>
           // what this corpus represents
         </p>
-        <p className="text-sm leading-relaxed text-white/75 mb-3" style={{ fontFamily: "var(--font-neuething)" }}>
+        <p className="text-sm leading-relaxed text-white/75 mb-3" style={{ fontFamily: "var(--font-outfit)" }}>
           This database contains <span className="font-bold text-white">{data.totals.total.toLocaleString()}</span> documented incidents of misconduct, corruption, and abuse of power by Donald J. Trump — spanning 50+ years from the 1973 DOJ housing discrimination lawsuit to the 2025 second-term authoritarian consolidation.
         </p>
         <p className="text-xs text-white/50 leading-relaxed">

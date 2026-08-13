@@ -66,7 +66,7 @@ export default function TrumpsteinPage() {
   const [chatOpen, setChatOpen] = useState(false);
 
   return (
-    <div className="min-h-screen text-white" style={{ fontFamily: "var(--font-neuething)" }}>
+    <div className="min-h-screen text-white" style={{ fontFamily: "var(--font-outfit)" }}>
 
       {/* ── HERO ── */}
       <section className="relative min-h-[80vh] flex flex-col items-center justify-center px-4 py-20 text-center overflow-hidden">

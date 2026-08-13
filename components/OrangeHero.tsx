@@ -144,7 +144,7 @@ export default function OrangeHero() {
       {/* Loading message - shows until model is loaded */}
       {!isModelLoaded && (
         <div className="absolute inset-0 flex flex-col items-center justify-end pb-4 z-10 pointer-events-none">
-          <p className="text-base text-orange-400/80 animate-pulse" style={{ fontFamily: 'var(--font-neuething)' }}>
+          <p className="text-base text-orange-400/80 animate-pulse" style={{ fontFamily: 'var(--font-outfit)' }}>
             Loading Mr. Trump&apos;s 3D model...
           </p>
         </div>

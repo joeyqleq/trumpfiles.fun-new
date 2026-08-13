@@ -142,10 +142,10 @@ export default function HomeClient({
                                     {/* Creative mixed-typography description */}
                                     <div className="mt-3 max-w-xl space-y-1">
                                         <p className="text-[11px] font-mono text-orange-500/60 tracking-[0.2em] uppercase">// classified: public record</p>
-                                        <p className="text-lg lg:text-xl font-black tracking-tight text-white/95 leading-tight" style={{ fontFamily: 'var(--font-neuething)' }}>
+                                        <p className="text-lg lg:text-xl font-black tracking-tight text-white/95 leading-tight" style={{ fontFamily: 'var(--font-outfit)' }}>
                                             Every scandal. Every lie. Every <span className="text-orange-400 italic" style={{ fontFamily: 'var(--font-arctic-guardian-grad-italic)' }}>abuse of power.</span>
                                         </p>
-                                        <p className="text-sm text-foreground/65 leading-relaxed max-w-sm" style={{ fontFamily: 'var(--font-neuething)', fontWeight: 400 }}>
+                                        <p className="text-sm text-foreground/65 leading-relaxed max-w-sm" style={{ fontFamily: 'var(--font-outfit)', fontWeight: 400 }}>
                                             <span className="text-orange-300/80 font-semibold">5,900+</span> documented entries — scored, sourced, and archived so the record <span className="font-mono text-[12px] bg-white/5 px-1 rounded border border-white/10">survives</span> the churn.
                                         </p>
                                     </div>
@@ -172,7 +172,7 @@ export default function HomeClient({
                                                     <div className="p-1.5 bg-blue-500/20 rounded-lg group-hover:scale-110 transition-transform"><Heart className="w-4 h-4 text-blue-400" /></div>
                                                     <div>
                                                         <h4 className="text-xs font-bold text-blue-300 uppercase tracking-wider mb-1 flex items-center gap-2">Message from the Creator <span className="text-[9px] bg-blue-500/20 px-1.5 py-0.5 rounded text-blue-300 border border-blue-500/30">Read</span></h4>
-                                                        <p className="text-[11px] text-blue-100/70 leading-relaxed" style={{ fontFamily: 'var(--font-neuething)' }}>Building this archive from Lebanon comes with unique challenges. If you value this work, please read this note.</p>
+                                                        <p className="text-[11px] text-blue-100/70 leading-relaxed" style={{ fontFamily: 'var(--font-outfit)' }}>Building this archive from Lebanon comes with unique challenges. If you value this work, please read this note.</p>
                                                     </div>
                                                 </div>
                                             </div>

@@ -4,7 +4,7 @@ import AsciiFooter from "@/components/AsciiFooter";
 import TrumpsteinChat from "@/components/TrumpsteinChat";
 import "./globals.css";
 import Script from "next/script";
-import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, neuething, instrumentSerif, spaceGrotesk, playfairDisplay, sourceSerif, jetbrainsMono } from "@/lib/fonts";
+import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, outfit, syne, neuething, instrumentSerif, spaceGrotesk, playfairDisplay, sourceSerif, jetbrainsMono } from "@/lib/fonts";
 // import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { sql } from "@/lib/neonClient";
@@ -180,6 +180,8 @@ export default function RootLayout({
           ${arcticGuardianTwoTone.variable}
           ${arcticGuardianTwoToneItalic.variable}
           ${arcticGuardianLeft.variable}
+          ${outfit.variable}
+          ${syne.variable}
           ${neuething.variable}
           ${instrumentSerif.variable}
           ${spaceGrotesk.variable}
