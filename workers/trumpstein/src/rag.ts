@@ -32,7 +32,7 @@ export async function ragQuery(
   const contextChunks: string[] = [];
 
   for (const match of matches.matches) {
-    if (match.score < 0.5) continue;
+    if (match.score < 0.45) continue;
 
     const meta = match.metadata as Record<string, unknown> | undefined;
     if (!meta) continue;
