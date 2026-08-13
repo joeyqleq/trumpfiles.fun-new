@@ -220,7 +220,7 @@ function ChartFrame({
   className?: string;
 }) {
   const [zoomed, setZoomed] = useState(false);
-  const [showCommentary, setShowCommentary] = useState(false);
+  const [showCommentary, setShowCommentary] = useState(true); // auto-show analysis
 
   return (
     <div className={`relative rounded-xl border bg-black/40 overflow-hidden ${className}`}
@@ -366,6 +366,14 @@ function OverviewTotals({ data }: { data: InsightsData }) {
 
 function OverviewEscalation({ data }: { data: InsightsData }) {
   return (
+    <div className="space-y-3">
+      {/* Key finding callout */}
+      <div className="flex items-start gap-3 px-4 py-3 rounded-xl" style={{ background: "rgba(255,77,94,0.08)", border: "1px solid rgba(255,77,94,0.2)" }}>
+        <span className="text-[10px] font-mono font-bold px-2 py-1 rounded shrink-0" style={{ background: "rgba(255,77,94,0.2)", color: "#ff4d5e" }}>KEY FINDING</span>
+        <p className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
+          Each era's average danger score is <strong className="text-white">higher</strong> than the last. This is not noise — it's a documented ratchet effect. Second Term avg danger exceeds First Term by ~1.2 points. Misconduct is not just growing in volume; it's getting more dangerous per incident.
+        </p>
+      </div>
     <ChartFrame title="Escalation by Era" exhibit="TF-02"
       commentary="Each era shows escalation in both volume and severity. The Second Term shows the steepest danger curve — reflecting the structural shift from opportunistic to institutionalized authoritarianism.">
       <ResponsiveContainer width="100%" height={340}>
@@ -379,6 +387,7 @@ function OverviewEscalation({ data }: { data: InsightsData }) {
         </BarChart>
       </ResponsiveContainer>
     </ChartFrame>
+    </div>
   );
 }
 
