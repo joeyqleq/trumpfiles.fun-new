@@ -184,11 +184,6 @@ export default function CatalogClient({
                     <p className="text-xl text-foreground/70 max-w-2xl mx-auto mt-6 font-sans" data-testid="catalog-subtitle">A comprehensive, searchable database of {displayTotalCount.toLocaleString()} documented incidents.</p>
                 </motion.div>
 
-                <div className="flex justify-end mb-4 -mt-2 pr-4 md:pr-0">
-                    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }} className="relative group">
-                        <Image src="/images/art/pdf_pepperoni.png" alt="Pepperoni Trump" width={130} height={160} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:rotate-2 w-auto h-auto" style={{ width: 'auto', height: 'auto' }} />
-                    </motion.div>
-                </div>
 
                 <div className="glass-card p-6 md:p-8 mb-12 rounded-2xl border border-orange-500/30 shadow-[0_0_30px_rgba(255,101,0,0.15)] backdrop-blur-2xl bg-black/60 relative overflow-hidden">
                     <div className="flex flex-col gap-6 relative z-10">

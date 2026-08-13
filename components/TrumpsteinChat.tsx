@@ -414,7 +414,14 @@ export default function TrumpsteinChat({
           {open ? (
             <span className="text-white text-2xl font-black">×</span>
           ) : (
-            <TrumpsteinIcon />
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src="/logos/trumpfiles_orange_logo.png"
+              alt="Trumpstein"
+              width={38}
+              height={38}
+              style={{ objectFit: "contain", filter: "drop-shadow(0 0 4px rgba(255,150,0,0.6))" }}
+            />
           )}
           {!open && (
             <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 bg-green-400 rounded-full border-2 border-zinc-950 animate-pulse" />
