@@ -224,14 +224,15 @@ function ChartFrame({
 
   return (
     <div className={`relative rounded-xl border bg-black/40 overflow-hidden ${className}`}
-         style={{ borderColor: `${MINT}18` }}>
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-2.5 border-b" style={{ borderColor: `${MINT}12` }}>
+         style={{ borderColor: "rgba(255,101,0,0.22)", boxShadow: "0 0 0 1px rgba(255,101,0,0.06)" }}>
+      {/* Header — Trump orange accent line */}
+      <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ background: "linear-gradient(90deg, #FF6500 0%, transparent 80%)" }} />
+      <div className="flex items-center justify-between px-4 py-2.5 border-b" style={{ borderColor: "rgba(255,101,0,0.10)" }}>
         <div className="flex items-center gap-2">
           {exhibit && (
-            <span className="font-mono text-[9px] tracking-widest" style={{ color: `${MINT}50` }}>{exhibit}</span>
+            <span className="font-mono text-[9px] tracking-widest" style={{ color: "rgba(255,101,0,0.6)" }}>{exhibit}</span>
           )}
-          <span className="font-mono text-xs font-bold text-white/70">{title}</span>
+          <span className="font-mono text-xs font-bold text-white/80">{title}</span>
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -1142,9 +1143,9 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
                     ? "text-white"
                     : "text-white/50 hover:text-white/75"
                 }`}
-                style={isActive ? { background: `${MINT}12`, color: MINT } : {}}
+                style={isActive ? { background: "rgba(255,101,0,0.12)", color: "#FF6500" } : {}}
               >
-                <Icon size={13} style={{ color: isActive ? MINT : undefined }} />
+                <Icon size={13} style={{ color: isActive ? "#FF6500" : undefined }} />
                 <span className="flex-1">{item.label}</span>
                 {isExpanded
                   ? <ChevronDown size={10} className="text-white/30" />
@@ -1297,7 +1298,7 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
               key={item.id}
               onClick={() => navigate(item.id, item.views[0].id)}
               className="flex-1 flex flex-col items-center py-2 gap-0.5 text-[9px] font-mono transition-colors"
-              style={{ color: isActive ? MINT : "rgba(255,255,255,0.3)" }}
+              style={{ color: isActive ? "#FF6500" : "rgba(255,255,255,0.3)" }}
             >
               <Icon size={16} />
               <span className="truncate w-full text-center px-0.5">{item.label.split(" ")[0]}</span>
