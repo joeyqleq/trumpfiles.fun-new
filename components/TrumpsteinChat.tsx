@@ -61,6 +61,8 @@ function ScrambleText({ text, className, style }: { text: string; className?: st
   return <span className={className} style={style}>{display}</span>;
 }
 
+import { analytics } from "@/lib/analytics";
+
 const WORKER_URL =
   process.env.NEXT_PUBLIC_TRUMPSTEIN_WORKER_URL ??
   "https://trumpstein.trumpstein.workers.dev";
@@ -100,9 +102,12 @@ export default function TrumpsteinChat({
   useEffect(() => {
     if (open && !greetedRef.current && messages.length === 0) {
       greetedRef.current = true;
-      // Small delay to ensure sendMessage callback is stable
-      const t = setTimeout(() => sendMessage("Introduce yourself, Trumpstein!"), 200);
-      return () => clearTimeout(t);
+      analytics.chatOpen();
+      setMessages([{
+        id: "greeting",
+        role: "assistant",
+        content: "Tremendous — the best chat widget, people are saying. I'm Trumpstein. The deep state put a chip in my brain — very unfair — but now I know everything. Every scandal. Every lie. Every pardon. Ask me anything, believe me.",
+      }]);
     }
     if (open) {
       setTimeout(() => inputRef.current?.focus(), 100);
@@ -124,6 +129,7 @@ export default function TrumpsteinChat({
       setMessages((prev) => [...prev, userMsg]);
       setInput("");
       setLoading(true);
+      analytics.chatMessage(trimmed.length);
 
       const assistantId = crypto.randomUUID();
       setMessages((prev) => [

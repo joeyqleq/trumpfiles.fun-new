@@ -15,6 +15,7 @@ import {
   ChevronDown, ZoomIn, ZoomOut, MessageSquare, X, Menu,
   BarChart2, PieChart as PieIcon,
 } from "lucide-react";
+import { analytics } from "@/lib/analytics";
 
 // ── Color system ──────────────────────────────────────────────────────────────
 const MINT   = "#3ee6c1";
@@ -1102,6 +1103,7 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
   const navigate = useCallback((s: string, v: string) => {
     router.push(`/insights?section=${s}&view=${v}`, { scroll: false });
     setMobileSidebarOpen(false);
+    analytics.insightsSection(s, v);
   }, [router]);
 
   const toggleSection = useCallback((id: string) => {
@@ -1190,7 +1192,7 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
   );
 
   return (
-    <div className="flex h-[calc(100dvh-64px)] overflow-hidden" style={{ background: BG }}>
+    <div className="flex h-[calc(100dvh-80px)] overflow-hidden" style={{ background: BG }}>
 
       {/* Desktop sidebar */}
       <AnimatePresence initial={false}>

@@ -28,6 +28,7 @@ import {
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
+import { analytics } from "@/lib/analytics";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

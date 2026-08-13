@@ -99,20 +99,15 @@ export default function TrumpsteinPage() {
             {" "}— scraped, scored, vectorized, and wired into a chip implanted somewhere between his ear and his ego.
           </p>
 
-          <ElectricBorder color="#FF6500" speed={1.2} chaos={0.1} borderRadius={14}>
-            <button
-              onClick={() => {
-                // Trigger the TrumpsteinChat widget in the corner
-                const btn = document.querySelector('[aria-label="Open Trumpstein chat"]') as HTMLButtonElement;
-                btn?.click();
-              }}
-              className="px-8 py-4 bg-gradient-to-r from-orange-600/30 to-orange-500/20 rounded-[14px] border border-orange-500/20 flex items-center gap-3 text-orange-300 font-bold tracking-wide hover:text-white transition-colors"
-            >
-              <Brain className="w-5 h-5" />
-              <span>ACTIVATE CHIP</span>
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          </ElectricBorder>
+          {/* Animated arrow pointing to widget */}
+          <div className="fixed bottom-24 right-20 z-40 hidden md:flex items-center gap-2" style={{ animation: "float-point 2.5s ease-in-out infinite" }}>
+            <span className="text-sm font-bold text-orange-400 whitespace-nowrap" style={{ fontFamily: "var(--font-syne)" }}>
+              &ldquo;Click me — it&apos;ll be tremendous, believe me&rdquo;
+            </span>
+            <svg width="32" height="32" viewBox="0 0 32 32" className="text-orange-400 rotate-[135deg]">
+              <path d="M8 16h12M16 10l6 6-6 6" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
         </motion.div>
       </section>
 
@@ -250,6 +245,12 @@ export default function TrumpsteinPage() {
         </p>
       </section>
 
+      <style>{`
+        @keyframes float-point {
+          0%, 100% { transform: translateY(0) translateX(0); opacity: 0.9; }
+          50% { transform: translateY(-6px) translateX(-3px); opacity: 1; }
+        }
+      `}</style>
     </div>
   );
 }
