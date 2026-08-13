@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { cn } from "@/lib/utils";
 import Kippah from "@/components/Kippah";
+import { analytics } from "@/lib/analytics";
 
 // Scramble animation for the header text
 function ScrambleText({ text, className, style }: { text: string; className?: string; style?: React.CSSProperties }) {
@@ -60,8 +61,6 @@ function ScrambleText({ text, className, style }: { text: string; className?: st
 
   return <span className={className} style={style}>{display}</span>;
 }
-
-import { analytics } from "@/lib/analytics";
 
 const WORKER_URL =
   process.env.NEXT_PUBLIC_TRUMPSTEIN_WORKER_URL ??

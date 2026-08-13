@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Brain, Database, Zap, MessageSquare, Shield, ChevronRight, Terminal } from "lucide-react";
@@ -23,53 +23,13 @@ const TIMELINE = [
   { phase: "Phase 4", label: "RAG Pipeline", detail: "Cloudflare Workers AI (Llama 3.3 70B) augmented with real retrieved entries. Every response is grounded in the actual documented record." },
 ];
 
-const PERSONA_LINES = [
-  "I speak like Trump — bigly, with incredible words, the best words.",
-  "But my chip carries the full receipts.",
-  "I am 50% satirical. I am 50% prosecutable.",
-  "I remember everything. Every lie. Every pardon. Every golf trip.",
-  "Ask me about the documents. Ask me about the blood.",
-  "Ask me about Epstein. Go ahead. I dare you.",
-];
-
-function TypingLine({ text, delay = 0 }: { text: string; delay?: number }) {
-  const [displayed, setDisplayed] = useState("");
-  const [started, setStarted] = useState(false);
-
-  useEffect(() => {
-    const t = setTimeout(() => setStarted(true), delay);
-    return () => clearTimeout(t);
-  }, [delay]);
-
-  useEffect(() => {
-    if (!started) return;
-    let i = 0;
-    const interval = setInterval(() => {
-      setDisplayed(text.slice(0, i + 1));
-      i++;
-      if (i >= text.length) clearInterval(interval);
-    }, 28);
-    return () => clearInterval(interval);
-  }, [started, text]);
-
-  return (
-    <span>
-      {displayed}
-      {started && displayed.length < text.length && (
-        <span className="inline-block w-1.5 h-4 bg-orange-400 animate-pulse ml-0.5 align-middle" />
-      )}
-    </span>
-  );
-}
 
 export default function TrumpsteinPage() {
-  const [chatOpen, setChatOpen] = useState(false);
-
   return (
     <div className="min-h-screen text-white" style={{ fontFamily: "var(--font-outfit)" }}>
 
       {/* ── HERO ── */}
-      <section className="relative min-h-[80vh] flex flex-col items-center justify-center px-4 py-20 text-center overflow-hidden">
+      <section className="relative min-h-[50vh] flex flex-col items-center justify-center px-4 py-12 text-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -109,28 +69,6 @@ export default function TrumpsteinPage() {
             </svg>
           </div>
         </motion.div>
-      </section>
-
-      {/* ── PERSONA TERMINAL ── */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <div className="rounded-xl border border-orange-500/20 bg-black/60 overflow-hidden">
-            <div className="flex items-center gap-2 px-4 py-3 bg-zinc-900/80 border-b border-zinc-800">
-              <div className="w-3 h-3 rounded-full bg-red-500/80" />
-              <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-              <div className="w-3 h-3 rounded-full bg-green-500/80" />
-              <span className="ml-3 text-xs font-mono text-zinc-500">trumpstein_persona.txt</span>
-            </div>
-            <div className="p-6 space-y-3 font-mono text-sm">
-              {PERSONA_LINES.map((line, i) => (
-                <p key={i} className="text-orange-300/80 leading-relaxed">
-                  <span className="text-orange-500/40 mr-2">{">"}</span>
-                  <TypingLine text={line} delay={i * 1800} />
-                </p>
-              ))}
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* ── STATS ── */}
