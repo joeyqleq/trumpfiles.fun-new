@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import Kippah from "@/components/Kippah";
 
 // Scramble animation for the header text
-function ScrambleText({ text, className }: { text: string; className?: string }) {
+function ScrambleText({ text, className, style }: { text: string; className?: string; style?: React.CSSProperties }) {
   const [display, setDisplay] = useState(text);
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789█▓░";
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -58,7 +58,7 @@ function ScrambleText({ text, className }: { text: string; className?: string })
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text]);
 
-  return <span className={className}>{display}</span>;
+  return <span className={className} style={style}>{display}</span>;
 }
 
 const WORKER_URL =
