@@ -49,9 +49,11 @@ function corsHeaders(request: Request, allowedOrigins: string): HeadersInit {
     allowed.includes(origin) ||
     origin.endsWith(".vercel.app") ||
     origin.endsWith(".trumpfiles.fun") ||
+    origin.endsWith(".trumpstein.me") ||
     origin === "https://trumpfiles.fun" ||
+    origin === "https://www.trumpfiles.fun" ||
     origin === "https://trumpstein.me" ||
-    origin === "https://trumpstein.me";
+    origin === "https://www.trumpstein.me";
 
   return {
     "Access-Control-Allow-Origin": isAllowed ? origin : allowed[0] ?? "*",
