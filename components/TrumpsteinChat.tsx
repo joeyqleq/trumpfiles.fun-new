@@ -88,6 +88,10 @@ export default function TrumpsteinChat({
   const [input, setInput] = useState("");
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [showEmailModal, setShowEmailModal] = useState(false);
+  const [emailAddr, setEmailAddr] = useState("");
+  const [emailSending, setEmailSending] = useState(false);
+  const [emailSent, setEmailSent] = useState(false);
 
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -253,6 +257,40 @@ export default function TrumpsteinChat({
     setOpen(false);
   };
 
+  const handleRate = useCallback(async (rating: 1 | -1, assistantContent: string) => {
+    if (!sessionId) return;
+    try {
+      await fetch(`${WORKER_URL}/feedback`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId, rating, assistantContent }),
+      });
+    } catch { /* silent */ }
+  }, [sessionId]);
+
+  const sendEmailTranscript = useCallback(async () => {
+    if (!emailAddr.trim()) return;
+    setEmailSending(true);
+    const transcript = messages
+      .map(m => `${m.role === "user" ? "You" : "Trumpstein"}: ${m.content}`)
+      .join("\n\n");
+    try {
+      await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: emailAddr,
+          subject: "Your Trumpstein Chat Transcript",
+          message: `Here's your chat with Trumpstein:\n\n${transcript}\n\n— The Trump Files`,
+        }),
+      });
+      setEmailSent(true);
+      setTimeout(() => { setShowEmailModal(false); setEmailSent(false); }, 2000);
+    } catch { /* silent */ } finally {
+      setEmailSending(false);
+    }
+  }, [emailAddr, messages]);
+
   return (
     <div className={cn("fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3", className)}>
       {/* Chat panel */}
@@ -284,13 +322,22 @@ export default function TrumpsteinChat({
                 CHIP ACTIVE
               </span>
             </div>
-            <button
-              onClick={handleClose}
-              className="z-10 w-7 h-7 flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/25 transition-all text-white/80 hover:text-white text-lg leading-none border border-white/20"
-              aria-label="Close chat"
-            >
-              ×
-            </button>
+            <div className="z-10 flex items-center gap-1.5">
+              <button
+                onClick={() => setShowEmailModal(true)}
+                className="w-7 h-7 flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/25 transition-all text-white/70 hover:text-white border border-white/20"
+                title="Email transcript"
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </button>
+              <button
+                onClick={handleClose}
+                className="w-7 h-7 flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/25 transition-all text-white/80 hover:text-white text-lg leading-none border border-white/20"
+                aria-label="Close chat"
+              >
+                ×
+              </button>
+            </div>
           </div>
 
           {/* Messages */}
@@ -313,28 +360,32 @@ export default function TrumpsteinChat({
               >
                 <div
                   className={cn(
-                    "max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed",
+                    "max-w-[88%] rounded-2xl px-3 py-2",
                     msg.role === "user"
                       ? "bg-orange-600 text-white rounded-br-sm"
                       : "bg-zinc-800 text-zinc-100 rounded-bl-sm border border-zinc-700/50"
                   )}
                 >
-                  {/* Render chip overrides with special styling */}
-                  <MessageContent content={msg.content} />
+                  <MessageContent
+                    content={msg.content}
+                    sessionId={sessionId}
+                    msgId={msg.id}
+                    onRate={msg.role === "assistant" && !msg.streaming ? handleRate : undefined}
+                  />
 
                   {msg.streaming && (
-                    <span className="inline-block w-1.5 h-4 bg-orange-400 animate-pulse ml-0.5 align-middle" />
+                    <span className="inline-block w-1.5 h-3.5 bg-orange-400 animate-pulse ml-0.5 align-middle" />
                   )}
 
                   {msg.entryNumbers && msg.entryNumbers.length > 0 && !msg.streaming && (
-                    <div className="mt-2 pt-2 border-t border-zinc-700/50 flex flex-wrap gap-1">
+                    <div className="mt-1.5 pt-1.5 border-t border-zinc-700/50 flex flex-wrap gap-1">
                       {msg.entryNumbers.map((n) => (
                         <a
                           key={n}
                           href={`/entry/${n}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-xs text-orange-400 hover:text-orange-300 underline"
+                          className="text-[10px] text-orange-400 hover:text-orange-300 underline font-mono"
                         >
                           #{n}
                         </a>
@@ -428,32 +479,181 @@ export default function TrumpsteinChat({
           )}
         </button>
       </div>
+
+      {/* Email transcript modal */}
+      {showEmailModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60" onClick={() => setShowEmailModal(false)}>
+          <div className="rounded-2xl border border-orange-500/30 bg-zinc-950 p-5 w-72 shadow-2xl" onClick={e => e.stopPropagation()}>
+            <p className="font-bold text-white text-sm mb-3">Email this chat transcript</p>
+            {emailSent ? (
+              <p className="text-green-400 text-sm">Sent! Believe me, tremendous email.</p>
+            ) : (
+              <>
+                <input
+                  type="email"
+                  value={emailAddr}
+                  onChange={e => setEmailAddr(e.target.value)}
+                  placeholder="your@email.com"
+                  className="w-full rounded-lg bg-zinc-800 border border-zinc-700 px-3 py-2 text-sm text-white placeholder-zinc-500 outline-none focus:border-orange-500 mb-3"
+                />
+                <div className="flex gap-2">
+                  <button onClick={sendEmailTranscript} disabled={emailSending || !emailAddr.trim()}
+                    className="flex-1 rounded-lg bg-orange-600 hover:bg-orange-500 disabled:opacity-40 text-white text-sm py-2 transition-colors">
+                    {emailSending ? "Sending…" : "Send"}
+                  </button>
+                  <button onClick={() => setShowEmailModal(false)} className="px-3 rounded-lg bg-zinc-700 hover:bg-zinc-600 text-white/70 text-sm py-2">
+                    Cancel
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
 
-function MessageContent({ content }: { content: string }) {
-  if (!content) return null;
+// Animated chip component with hover tooltip fetching entry data
+function ChipOverride({ text }: { text: string }) {
+  const [tooltip, setTooltip] = useState<{ title: string; synopsis: string; danger: number } | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [showTooltip, setShowTooltip] = useState(false);
 
-  // Split on [CHIP OVERRIDE: ...] patterns for special styling
-  const parts = content.split(/(\[CHIP OVERRIDE:[\s\S]*?\])/g);
+  // Extract entry number from text like "Entry #4930 — Title..."
+  const entryMatch = text.match(/Entry #(\d+)/);
+  const entryNum = entryMatch ? entryMatch[1] : null;
+
+  const handleMouseEnter = async (e: React.MouseEvent) => {
+    setShowTooltip(true);
+    setMousePos({ x: e.clientX, y: e.clientY });
+    if (entryNum && !tooltip && !loading) {
+      setLoading(true);
+      try {
+        const res = await fetch(`/api/entry/${entryNum}`);
+        if (res.ok) {
+          const data = await res.json();
+          setTooltip({ title: data.title, synopsis: data.synopsis?.slice(0, 200), danger: data.danger });
+        }
+      } catch { /* silent */ } finally {
+        setLoading(false);
+      }
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    setMousePos({ x: e.clientX, y: e.clientY });
+  };
 
   return (
-    <>
-      {parts.map((part, i) => {
-        if (part.startsWith("[CHIP OVERRIDE:")) {
-          return (
-            <span
-              key={i}
-              className="inline-block bg-green-900/40 border border-green-500/30 text-green-300 text-xs px-1.5 py-0.5 rounded font-mono mx-0.5 my-0.5"
-            >
-              {part}
-            </span>
-          );
+    <span className="relative inline-block">
+      <span
+        className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md font-mono text-[10px] cursor-pointer select-none mx-0.5 my-0.5"
+        style={{
+          background: "linear-gradient(135deg, rgba(0,180,80,0.2) 0%, rgba(0,220,100,0.12) 100%)",
+          border: "1px solid rgba(0,220,100,0.4)",
+          color: "#00e664",
+          boxShadow: "0 0 6px rgba(0,220,100,0.2), inset 0 0 6px rgba(0,220,100,0.05)",
+          animation: "chip-pulse 2s ease-in-out infinite",
+        }}
+        onMouseEnter={handleMouseEnter}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={() => setShowTooltip(false)}
+      >
+        <span style={{ fontSize: "8px", opacity: 0.7 }}>⚡</span>
+        {text.replace(/^\[CHIP OVERRIDE:\s*/, "").replace(/\]$/, "").slice(0, 60)}
+        {text.length > 75 ? "…" : ""}
+      </span>
+
+      {showTooltip && (tooltip || loading) && typeof window !== "undefined" && (
+        <span
+          className="fixed z-[9999] pointer-events-none"
+          style={{
+            left: Math.min(mousePos.x + 12, window.innerWidth - 280),
+            top: mousePos.y - 10,
+            width: 260,
+          }}
+        >
+          <span className="block rounded-xl p-3 text-[11px] leading-relaxed"
+               style={{ background: "#0a1a0a", border: "1px solid rgba(0,220,100,0.35)", boxShadow: "0 4px 20px rgba(0,0,0,0.7)" }}>
+            {loading ? (
+              <span style={{ color: "rgba(0,220,100,0.6)" }}>Loading chip data…</span>
+            ) : tooltip ? (
+              <>
+                <span className="block font-bold mb-1" style={{ color: "#00e664", fontSize: "11px" }}>{tooltip.title}</span>
+                <span className="block" style={{ color: "rgba(255,255,255,0.65)" }}>{tooltip.synopsis}…</span>
+                <span className="block mt-1.5 font-mono" style={{ color: "#ff4d5e", fontSize: "10px" }}>Danger: {tooltip.danger}/10</span>
+              </>
+            ) : null}
+          </span>
+        </span>
+      )}
+
+      <style>{`
+        @keyframes chip-pulse {
+          0%, 100% { box-shadow: 0 0 4px rgba(0,220,100,0.2), inset 0 0 4px rgba(0,220,100,0.05); }
+          50% { box-shadow: 0 0 10px rgba(0,220,100,0.4), inset 0 0 8px rgba(0,220,100,0.1); }
         }
-        return <span key={i}>{part}</span>;
-      })}
-    </>
+      `}</style>
+    </span>
+  );
+}
+
+function MessageContent({ content, sessionId, msgId, onRate }: {
+  content: string;
+  sessionId?: string | null;
+  msgId?: string;
+  onRate?: (rating: 1 | -1, content: string) => void;
+}) {
+  const [copied, setCopied] = useState(false);
+
+  if (!content) return null;
+
+  const parts = content.split(/(\[CHIP OVERRIDE:[\s\S]*?\])/g);
+
+  const copyText = () => {
+    navigator.clipboard.writeText(content).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    });
+  };
+
+  return (
+    <div className="relative group/msg">
+      <div className="text-[12px] leading-[1.55]">
+        {parts.map((part, i) => {
+          if (part.startsWith("[CHIP OVERRIDE:")) {
+            return <ChipOverride key={i} text={part} />;
+          }
+          return <span key={i}>{part}</span>;
+        })}
+      </div>
+      {/* Action buttons — appear on hover */}
+      <div className="absolute -top-2 right-0 opacity-0 group-hover/msg:opacity-100 transition-opacity flex gap-1">
+        <button
+          onClick={copyText}
+          className="p-1 rounded bg-zinc-700/80 hover:bg-zinc-600 text-zinc-400 hover:text-white transition-colors"
+          title="Copy"
+        >
+          {copied ? (
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+          ) : (
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="9" y="9" width="13" height="13" rx="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></svg>
+          )}
+        </button>
+        {onRate && (
+          <>
+            <button onClick={() => onRate(1, content)} className="p-1 rounded bg-zinc-700/80 hover:bg-green-700 text-white/70 hover:text-white transition-colors" title="Good response">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z" /><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" /></svg>
+            </button>
+            <button onClick={() => onRate(-1, content)} className="p-1 rounded bg-zinc-700/80 hover:bg-red-800 text-white/70 hover:text-white transition-colors" title="Bad response">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3H10z" /><path d="M17 2h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17" /></svg>
+            </button>
+          </>
+        )}
+      </div>
+    </div>
   );
 }
 

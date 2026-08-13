@@ -46,8 +46,18 @@ async function initDb(db: D1Database): Promise<void> {
       summary TEXT NOT NULL,
       created_at INTEGER NOT NULL
     )`),
+    db.prepare(`CREATE TABLE IF NOT EXISTS feedback (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      session_id TEXT NOT NULL,
+      message_id INTEGER,
+      rating INTEGER NOT NULL CHECK(rating IN (1, -1)),
+      assistant_content TEXT,
+      user_content TEXT,
+      created_at INTEGER NOT NULL
+    )`),
     db.prepare(`CREATE INDEX IF NOT EXISTS idx_messages_session ON messages(session_id, created_at)`),
     db.prepare(`CREATE INDEX IF NOT EXISTS idx_memories_session ON memories(session_id, created_at)`),
+    db.prepare(`CREATE INDEX IF NOT EXISTS idx_feedback_rating ON feedback(rating, created_at)`),
   ]);
 }
 
@@ -270,14 +280,14 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
 
   await saveMessage(env.DB, sid, "user", trimmedMessage);
 
-  // Full-precision 70B — better reasoning than fp8-fast quantized
+  // QwQ-32B reasoning model — outperforms 70B on complex multi-turn reasoning
   const aiResponse = await env.AI.run(
-    "@cf/meta/llama-3.1-70b-instruct" as Parameters<typeof env.AI.run>[0],
+    "@cf/qwen/qwq-32b" as Parameters<typeof env.AI.run>[0],
     {
       messages,
       stream: true,
-      max_tokens: 1000,
-      temperature: 0.75,
+      max_tokens: 1200,
+      temperature: 0.8,
     }
   );
 
@@ -319,6 +329,26 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
   });
 }
 
+async function handleFeedback(request: Request, env: Env): Promise<Response> {
+  const { sessionId, rating, assistantContent, userContent } = await request.json() as {
+    sessionId: string;
+    rating: 1 | -1;
+    assistantContent?: string;
+    userContent?: string;
+  };
+
+  if (!sessionId || (rating !== 1 && rating !== -1)) {
+    return new Response(JSON.stringify({ error: "sessionId and rating (1 or -1) required" }), { status: 400, headers: { "Content-Type": "application/json" } });
+  }
+
+  await initDb(env.DB);
+  await env.DB.prepare(`INSERT INTO feedback (session_id, rating, assistant_content, user_content, created_at) VALUES (?, ?, ?, ?, ?)`)
+    .bind(sessionId, rating, assistantContent ?? null, userContent ?? null, Date.now())
+    .run();
+
+  return new Response(JSON.stringify({ ok: true }), { headers: { "Content-Type": "application/json" } });
+}
+
 async function handleHistory(request: Request, env: Env): Promise<Response> {
   const url = new URL(request.url);
   const sessionId = url.searchParams.get("sessionId");
@@ -344,6 +374,8 @@ export default {
     try {
       if (url.pathname === "/chat" && request.method === "POST") {
         response = await handleChat(request, env);
+      } else if (url.pathname === "/feedback" && request.method === "POST") {
+        response = await handleFeedback(request, env);
       } else if (url.pathname === "/history" && request.method === "GET") {
         response = await handleHistory(request, env);
       } else if (url.pathname === "/ingest" && request.method === "POST") {
