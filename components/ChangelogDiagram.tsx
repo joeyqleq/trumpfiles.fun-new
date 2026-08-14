@@ -23,26 +23,26 @@ interface Connection {
 }
 
 const MILESTONES: MilestoneNode[] = [
-  { id: "n0", label: "Genesis", date: "Jan 2026", count: 0, detail: "Project conceived. First schema designed.", type: "genesis", x: 60, y: 60 },
-  { id: "n1", label: "Seed Batch", date: "Feb 1, 2026", count: 514, detail: "Initial 514 entries hand-curated and AI-scored.", type: "batch", x: 240, y: 130 },
-  { id: "n2", label: "First Sprint", date: "Feb 15, 2026", count: 800, detail: "Automated scraping pipeline activated.", type: "batch", x: 440, y: 60 },
-  { id: "n3", label: "1K Milestone", date: "Feb 22, 2026", count: 1100, detail: "Crossed 1,000 documented entries.", type: "milestone", x: 640, y: 150 },
-  { id: "n4", label: "200-Entry Sprint", date: "Mar 4, 2026", count: 1830, detail: "Bulk ingestion: 4 validated 50-entry bundles.", type: "batch", x: 220, y: 280 },
-  { id: "n5", label: "Dedupe Cleanup", date: "Mar 4, 2026", count: 1830, detail: "204 duplicate rows identified and purged.", type: "milestone", x: 440, y: 320 },
-  { id: "n6", label: "Iran War Batch", date: "Mar 22, 2026", count: 2108, detail: "14-entry Iran-war focused batch.", type: "batch", x: 640, y: 280 },
-  { id: "n7", label: "Broad Batch", date: "Mar 23, 2026", count: 2133, detail: "25 entries: war, economy, immigration, press.", type: "batch", x: 160, y: 420 },
-  { id: "n8", label: "Current Edge", date: "Mar 23, 2026", count: 2163, detail: "30-entry batch. Max entry_number = 2163.", type: "current", x: 440, y: 440 },
+  { id: "n0", label: "Genesis", date: "Jan 2026", count: 0, detail: "Project conceived. Schema designed. First 514 entries hand-curated and AI-scored.", type: "genesis", x: 60, y: 60 },
+  { id: "n1", label: "1K Milestone", date: "Feb 22, 2026", count: 1100, detail: "Crossed 1,000 documented entries. Automated scraping pipeline activated.", type: "milestone", x: 260, y: 130 },
+  { id: "n2", label: "2K Sprint", date: "Mar 23, 2026", count: 2163, detail: "Iran war, economy, immigration, press freedom batches. 204 duplicates purged.", type: "batch", x: 460, y: 60 },
+  { id: "n3", label: "RAG Chatbot", date: "May 10, 2026", count: 4213, detail: "Trumpstein RAG chatbot launched. Cloudflare D1 + Vectorize + Workers AI infrastructure.", type: "milestone", x: 660, y: 150 },
+  { id: "n4", label: "Visualizer", date: "Aug 7, 2026", count: 4213, detail: "17-exhibit visualizer shipped. Epstein MCP integrated (3,616 docs, 11 flights). WebGL crashes fixed.", type: "milestone", x: 200, y: 290 },
+  { id: "n5", label: "5K Corpus", date: "Aug 10, 2026", count: 5350, detail: "Parallel 12-agent ingest pipeline. 2022-2025 coverage. All 4 Trump indictments documented.", type: "batch", x: 420, y: 330 },
+  { id: "n6", label: "Neo4j Graph", date: "Aug 11, 2026", count: 6004, detail: "Neo4j import: 5,952 events, 422 persons, 1,704 relationships. Domain migrated to trumpstein.me.", type: "milestone", x: 630, y: 280 },
+  { id: "n7", label: "7K Corpus", date: "Aug 13, 2026", count: 6912, detail: "Pre-political, family/associates, Iran war, WH2 second term fully documented. Sources: 2,559 Exa-verified URLs.", type: "batch", x: 180, y: 430 },
+  { id: "n8", label: "Trumpstein v2", date: "Aug 13, 2026", count: 6912, detail: "QwQ-32b reasoning model. 45 real Trump quotes. Full insult vocabulary. Web search via Exa. Cross-session memory. Network graph page.", type: "current", x: 450, y: 460 },
 ];
 
 const CONNECTIONS: Connection[] = [
-  { from: "n0", to: "n1", growth: "+514" },
-  { from: "n1", to: "n2", growth: "+286" },
-  { from: "n2", to: "n3", growth: "+300" },
-  { from: "n3", to: "n4", growth: "+730" },
-  { from: "n4", to: "n5" },
-  { from: "n5", to: "n6", growth: "+278" },
-  { from: "n6", to: "n7", growth: "+25" },
-  { from: "n7", to: "n8", growth: "+30" },
+  { from: "n0", to: "n1", growth: "+1,100" },
+  { from: "n1", to: "n2", growth: "+1,063" },
+  { from: "n2", to: "n3", growth: "+2,050" },
+  { from: "n3", to: "n4" },
+  { from: "n4", to: "n5", growth: "+1,137" },
+  { from: "n5", to: "n6", growth: "+654" },
+  { from: "n6", to: "n7", growth: "+908" },
+  { from: "n7", to: "n8" },
 ];
 
 const TECH_STACK = [
