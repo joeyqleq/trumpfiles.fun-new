@@ -156,9 +156,11 @@ Return ONLY valid JSON array, no markdown, no explanation.`;
     }
   }
 
-  // Then: ask Gemini to format findings as structured entries
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
+  // Then: ask Gemini to format findings as structured entries (with retries)
+  let res;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -170,11 +172,15 @@ Return ONLY valid JSON array, no markdown, no explanation.`;
           responseMimeType: 'application/json',
         },
       }),
+    );
+    if (res.ok) break;
+    const errText = await res.text();
+    if (res.status === 503 && attempt < 3) {
+      console.log(`Gemini 503, retry ${attempt}/3 in 5s...`);
+      await new Promise(r => setTimeout(r, 5000));
+    } else {
+      throw new Error(`Gemini error ${res.status}: ${errText}`);
     }
-  );
-
-  if (!res.ok) {
-    throw new Error(`Gemini error ${res.status}: ${await res.text()}`);
   }
 
   const data = await res.json();
