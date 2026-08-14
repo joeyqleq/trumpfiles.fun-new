@@ -31,6 +31,15 @@ const WORKER_URL = process.env.WORKER_URL || 'https://trumpstein.trumpstein.work
 const DRY_RUN = process.env.DRY_RUN === 'true';
 const MAX_ENTRIES = parseInt(process.env.MAX_ENTRIES || '10', 10);
 
+// Exa key rotation — cycle through available keys to distribute load
+const EXA_KEYS = [
+  process.env.EXA_API_KEY,
+  process.env.EXA_API_KEY_2,
+  process.env.EXA_API_KEY_3,
+].filter(Boolean);
+let exaKeyIndex = 0;
+const getExaKey = () => EXA_KEYS[exaKeyIndex++ % EXA_KEYS.length];
+
 if (!DATABASE_URL) { console.error('DATABASE_URL required'); process.exit(1); }
 if (!GEMINI_API_KEY) { console.error('GEMINI_API_KEY required'); process.exit(1); }
 
@@ -118,7 +127,7 @@ Return a JSON array of objects. Each object MUST have these exact fields:
 Return ONLY valid JSON array, no markdown, no explanation.`;
 
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

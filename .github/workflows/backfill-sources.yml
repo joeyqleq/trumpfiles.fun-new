@@ -35,6 +35,8 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+          EXA_API_KEY_2: ${{ secrets.EXA_API_KEY_2 }}
+          EXA_API_KEY_3: ${{ secrets.EXA_API_KEY_3 }}
           BATCH_SIZE: ${{ github.event.inputs.batch_size || '200' }}
           START_ENTRY: ${{ github.event.inputs.start_entry || '0' }}
           END_ENTRY: ${{ github.event.inputs.end_entry || '9999' }}

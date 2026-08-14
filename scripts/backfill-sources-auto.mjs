@@ -15,7 +15,11 @@
 import { neon } from '@neondatabase/serverless';
 
 const DATABASE_URL = process.env.DATABASE_URL;
-const EXA_API_KEY = process.env.EXA_API_KEY;
+// Rotate through up to 3 Exa keys to distribute 1000 req/month limit
+const EXA_KEYS = [process.env.EXA_API_KEY, process.env.EXA_API_KEY_2, process.env.EXA_API_KEY_3].filter(Boolean);
+if (!EXA_KEYS.length) { console.error('At least one EXA_API_KEY required'); process.exit(1); }
+let _exaIdx = 0;
+const EXA_API_KEY = () => EXA_KEYS[_exaIdx++ % EXA_KEYS.length];
 const BATCH_SIZE = parseInt(process.env.BATCH_SIZE ?? '100', 10);
 const START_ENTRY = parseInt(process.env.START_ENTRY ?? '0', 10);
 const END_ENTRY = parseInt(process.env.END_ENTRY ?? '9999', 10);
@@ -46,7 +50,7 @@ function isAccepted(url) {
 async function searchExa(query) {
   const res = await fetch('https://api.exa.ai/search', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-api-key': EXA_API_KEY },
+    headers: { 'Content-Type': 'application/json', 'x-api-key': EXA_API_KEY() },
     body: JSON.stringify({ query, numResults: 3, useAutoprompt: false }),
   });
   if (!res.ok) return null;
