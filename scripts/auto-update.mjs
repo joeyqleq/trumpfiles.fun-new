@@ -126,19 +126,49 @@ Return a JSON array of objects. Each object MUST have these exact fields:
 
 Return ONLY valid JSON array, no markdown, no explanation.`;
 
+  // First: use Exa to search for recent Trump news to give Gemini real context
+  let newsContext = '';
+  if (EXA_KEYS.length > 0) {
+    try {
+      const exaKey = EXA_KEYS[0];
+      const exaRes = await fetch('https://api.exa.ai/search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-api-key': exaKey },
+        body: JSON.stringify({
+          query: `Trump scandal corruption news since ${lastDate}`,
+          numResults: 8,
+          contents: { text: { maxCharacters: 400 } },
+          useAutoprompt: true,
+          startPublishedDate: lastDate,
+        }),
+      });
+      if (exaRes.ok) {
+        const exaData = await exaRes.json();
+        const articles = (exaData.results ?? [])
+          .map(r => `HEADLINE: ${r.title}\nSOURCE: ${r.url}\nDATE: ${r.publishedDate ?? ''}\nSUMMARY: ${r.text ?? ''}`)
+          .join('\n\n---\n\n');
+        if (articles) {
+          newsContext = `\n\nRECENT NEWS FROM THE WEB (use these as source material):\n${articles}\n\nFor each entry you generate, use the matching article URL as the source.`;
+        }
+      }
+    } catch (e) {
+      console.log('Exa search failed, continuing without live news:', e.message);
+    }
+  }
+
+  // Then: ask Gemini to format findings as structured entries
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
+        contents: [{ parts: [{ text: prompt + newsContext }] }],
         generationConfig: {
           temperature: 0.7,
           maxOutputTokens: 8192,
           responseMimeType: 'application/json',
         },
-        tools: [{ googleSearch: {} }],
       }),
     }
   );
