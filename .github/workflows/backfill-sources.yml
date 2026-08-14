@@ -1,0 +1,41 @@
+name: Backfill Entry Sources (Exa)
+
+on:
+  schedule:
+    # Run every night at 2am UTC — zero agent tokens, uses Exa REST directly
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      start_entry:
+        description: 'Start entry number (0 = auto-detect lowest unsourced)'
+        default: '0'
+      end_entry:
+        description: 'End entry number'
+        default: '9999'
+      batch_size:
+        description: 'Entries to process per run'
+        default: '200'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci --legacy-peer-deps
+
+      - name: Run source backfill
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '200' }}
+          START_ENTRY: ${{ github.event.inputs.start_entry || '0' }}
+          END_ENTRY: ${{ github.event.inputs.end_entry || '9999' }}
+        run: node scripts/backfill-sources-auto.mjs
