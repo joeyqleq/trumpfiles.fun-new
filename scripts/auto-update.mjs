@@ -82,41 +82,73 @@ async function getState() {
   };
 }
 
-// ── Gemini research call ──────────────────────────────────────────────────────
+// ── Research using Exa + CF Workers AI (replaces Gemini) ─────────────────────
 
 async function researchWithGemini(lastDate, maxEntry) {
   const today = new Date().toISOString().split('T')[0];
 
-  const prompt = `You are a researcher for TrumpFiles, a political accountability archive covering Trump and his orbit.
+  // Step 1: Fetch real recent Trump news via Exa
+  let articles = [];
+  if (EXA_KEYS.length > 0) {
+    try {
+      const exaKey = EXA_KEYS[_exaIdx++ % EXA_KEYS.length];
+      const exaRes = await fetch('https://api.exa.ai/search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-api-key': exaKey },
+        body: JSON.stringify({
+          query: `Trump scandal corruption abuse power news ${lastDate}`,
+          numResults: 10,
+          contents: { text: { maxCharacters: 500 } },
+          useAutoprompt: true,
+          startPublishedDate: lastDate,
+        }),
+      });
+      if (exaRes.ok) {
+        const d = await exaRes.json();
+        articles = d.results ?? [];
+        console.log(`Exa found ${articles.length} articles since ${lastDate}`);
+      }
+    } catch (e) {
+      console.log('Exa search failed:', e.message);
+    }
+  }
 
-Today is ${today}. The database currently has ${maxEntry} entries, most recently dated ${lastDate}.
+  const newsContext = articles.length > 0
+    ? articles.map(r =>
+        `HEADLINE: ${r.title}\nURL: ${r.url}\nDATE: ${r.publishedDate ?? ''}\nSUMMARY: ${r.text ?? ''}`
+      ).join('\n\n---\n\n')
+    : '';
 
-Research and produce up to ${MAX_ENTRIES} NEW entries about events from roughly ${lastDate} onwards.
+  // Step 2: Use CF Workers AI (Llama 70B) to format as structured entries
+  // Calls the Trumpstein worker's /research endpoint
+  const systemPrompt = `You are a data curator for TrumpFiles, a political accountability archive. Your job is to convert news articles into structured JSON entries.
 
-NARRATIVE FOCUS — entries must fit this lens:
-- Authoritarianism, institutional destruction, abuse of power
-- Financial corruption, self-dealing, grift
-- Human rights violations, cruelty
-- Election interference, democratic backsliding
-- Foreign policy disasters, foreign entanglements for personal gain
-- Environmental destruction
-- Disinformation, conspiracy theories weaponized for political gain
-- Suppression of press, judiciary, civil society
+VALID CATEGORIES (use EXACTLY): "Authoritarianism" | "Government Corruption" | "Human Rights Violations" | "Grift / Financial Exploitation" | "National Security Violations" | "Foreign Policy" | "Election Interference" | "Press Freedom" | "Environmental Destruction" | "Conspiracy Theories / Disinformation"
 
-INCLUDE: Trump, his family (Ivanka, Don Jr., Eric, Barron, Melania, Jared Kushner), his key appointments (Kash Patel, Pete Hegseth, Doug Burgum, Marco Rubio, JD Vance, Elon Musk/DOGE), and his broader orbit.
+VALID PHASES (use EXACTLY): "Pre-Political" | "Campaign 2016" | "White House 1" | "White House 2:2"
 
-INCLUDE EVEN IF UNVERIFIED: Reddit rumors, gossip, speculation — just mark absurdity higher and credibility_risk lower. The archive values completeness.
+SCORING GUIDE:
+- danger: 1-10 (10 = threatens constitutional order or human life)
+- authoritarianism: 1-10 (concentration of power, suppression of dissent)
+- lawlessness: 1-10 (violation of law, obstruction, norm destruction)
+- insanity: 1-10 (departure from reality, delusional behavior)
+- absurdity: 1-10 (so bizarre it would be rejected as fiction)
 
-EXCLUDE: Routine political disagreements, policy debates without a scandal angle.
+Return ONLY a valid JSON array. No markdown, no explanation.`;
 
-Return a JSON array of objects. Each object MUST have these exact fields:
+  const userPrompt = `Today is ${today}. The archive has ${maxEntry} entries, most recently dated ${lastDate}.
+
+${newsContext ? `NEWS ARTICLES TO PROCESS:\n\n${newsContext}\n\nConvert each article above into an entry. Use the article URL as the source.` : `Generate ${MAX_ENTRIES} realistic entries about Trump scandals from ${lastDate} to ${today}. Cover: authoritarianism, corruption, foreign policy, grift, human rights.`}
+
+For each article/event return:
 {
-  "title": "Specific punchy headline (not vague)",
-  "synopsis": "3-5 sentences. Specific facts, dates, people, dollar amounts. NO vague language.",
-  "category": one of exactly: "Authoritarianism" | "Government Corruption" | "Human Rights Violations" | "Grift / Financial Exploitation" | "National Security Violations" | "Foreign Policy" | "Election Interference" | "Press Freedom" | "Environmental Destruction" | "Conspiracy Theories / Disinformation",
-  "phase": one of exactly: "Pre-Political" | "Campaign 2016" | "White House 1" | "White House 2:2",
+  "title": "punchy specific headline",
+  "synopsis": "3-5 sentences with specific facts, dates, names, amounts",
+  "category": "<one of the valid categories>",
+  "phase": "White House 2:2",
   "date_start": "YYYY-MM-DD",
-  "people_tags": ["Person Name", "Org Name", ...],
+  "people_tags": ["Full Name", ...],
+  "source_url": "<article URL if available>",
   "danger": 1-10,
   "authoritarianism": 1-10,
   "lawlessness": 1-10,
@@ -124,75 +156,44 @@ Return a JSON array of objects. Each object MUST have these exact fields:
   "absurdity": 1-10
 }
 
-Return ONLY valid JSON array, no markdown, no explanation.`;
+Return ONLY valid JSON array.`;
 
-  // First: use Exa to search for recent Trump news to give Gemini real context
-  let newsContext = '';
-  if (EXA_KEYS.length > 0) {
-    try {
-      const exaKey = EXA_KEYS[0];
-      const exaRes = await fetch('https://api.exa.ai/search', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-api-key': exaKey },
-        body: JSON.stringify({
-          query: `Trump scandal corruption news since ${lastDate}`,
-          numResults: 8,
-          contents: { text: { maxCharacters: 400 } },
-          useAutoprompt: true,
-          startPublishedDate: lastDate,
-        }),
-      });
-      if (exaRes.ok) {
-        const exaData = await exaRes.json();
-        const articles = (exaData.results ?? [])
-          .map(r => `HEADLINE: ${r.title}\nSOURCE: ${r.url}\nDATE: ${r.publishedDate ?? ''}\nSUMMARY: ${r.text ?? ''}`)
-          .join('\n\n---\n\n');
-        if (articles) {
-          newsContext = `\n\nRECENT NEWS FROM THE WEB (use these as source material):\n${articles}\n\nFor each entry you generate, use the matching article URL as the source.`;
-        }
-      }
-    } catch (e) {
-      console.log('Exa search failed, continuing without live news:', e.message);
-    }
+  // Call CF Workers AI via the worker's public /generate endpoint
+  const workerUrl = WORKER_URL || 'https://trumpstein.trumpstein.workers.dev';
+  const cfRes = await fetch(`${workerUrl}/generate`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${INGEST_SECRET}`,
+    },
+    body: JSON.stringify({ system: systemPrompt, user: userPrompt, max_tokens: 4096 }),
+  });
+
+  if (!cfRes.ok) {
+    const err = await cfRes.text();
+    throw new Error(`CF Workers AI error ${cfRes.status}: ${err}`);
   }
 
-  // Then: ask Gemini to format findings as structured entries (with retries)
-  let res;
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt + newsContext }] }],
-        generationConfig: {
-          temperature: 0.7,
-          maxOutputTokens: 8192,
-          responseMimeType: 'application/json',
-        },
-      }),
-    );
-    if (res.ok) break;
-    const errText = await res.text();
-    if (res.status === 503 && attempt < 3) {
-      console.log(`Gemini 503, retry ${attempt}/3 in 5s...`);
-      await new Promise(r => setTimeout(r, 5000));
-    } else {
-      throw new Error(`Gemini error ${res.status}: ${errText}`);
-    }
-  }
-
-  const data = await res.json();
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '[]';
+  const cfData = await cfRes.json();
+  const text = cfData.response ?? cfData.text ?? '[]';
 
   let entries;
   try {
     entries = JSON.parse(text);
   } catch {
-    // strip markdown fences if present
-    const clean = text.replace(/^```json\n?/, '').replace(/\n?```$/, '');
-    entries = JSON.parse(clean);
+    const clean = text.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();
+    try { entries = JSON.parse(clean); } catch { entries = []; }
+  }
+
+  // Attach source URLs from Exa results
+  if (Array.isArray(entries)) {
+    entries = entries.map((e, i) => {
+      const src = articles[i]?.url ?? e.source_url;
+      if (src) {
+        return { ...e, sources: [{ url: src, title: articles[i]?.title ?? e.title, source_type: 'news' }] };
+      }
+      return e;
+    });
   }
 
   return Array.isArray(entries) ? entries : [];
@@ -215,8 +216,10 @@ function validate(entry) {
 async function insertEntry(entry, entryNumber) {
   const tags = Array.isArray(entry.people_tags) ? entry.people_tags : ['Donald Trump'];
 
+  const sourcesJson = entry.sources ? JSON.stringify(entry.sources) : null;
+
   await sql`
-    INSERT INTO trump_entries (entry_number, title, synopsis, category, phase, date_start, people_tags)
+    INSERT INTO trump_entries (entry_number, title, synopsis, category, phase, date_start, people_tags, sources)
     VALUES (
       ${entryNumber},
       ${entry.title},
@@ -224,7 +227,8 @@ async function insertEntry(entry, entryNumber) {
       ${entry.category},
       ${entry.phase},
       ${entry.date_start},
-      ${tags}
+      ${tags},
+      ${sourcesJson ? sql`${sourcesJson}::jsonb` : null}
     )
     ON CONFLICT (entry_number) DO NOTHING
   `;

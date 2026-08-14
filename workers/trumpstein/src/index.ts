@@ -223,6 +223,35 @@ async function webSearch(query: string, apiKey: string): Promise<string> {
   }
 }
 
+// ── /generate endpoint — for auto-update script ──────────────────────────────
+
+async function handleGenerate(request: Request, env: Env): Promise<Response> {
+  const secret = request.headers.get("Authorization")?.replace("Bearer ", "");
+  if (secret !== env.INGEST_SECRET) {
+    return new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401, headers: { "Content-Type": "application/json" } });
+  }
+
+  const { system, user, max_tokens = 4096 } = await request.json() as { system: string; user: string; max_tokens?: number };
+
+  const result = await env.AI.run(
+    "@cf/qwen/qwq-32b" as Parameters<typeof env.AI.run>[0],
+    {
+      messages: [
+        { role: "system", content: system },
+        { role: "user", content: user },
+      ],
+      max_tokens,
+      temperature: 0.6,
+      stream: false,
+    }
+  ) as { response?: string };
+
+  return new Response(
+    JSON.stringify({ response: result?.response ?? "" }),
+    { headers: { "Content-Type": "application/json" } }
+  );
+}
+
 // ── Main chat handler ─────────────────────────────────────────────────────────
 
 async function handleChat(request: Request, env: Env): Promise<Response> {
@@ -374,6 +403,8 @@ export default {
     try {
       if (url.pathname === "/chat" && request.method === "POST") {
         response = await handleChat(request, env);
+      } else if (url.pathname === "/generate" && request.method === "POST") {
+        response = await handleGenerate(request, env);
       } else if (url.pathname === "/feedback" && request.method === "POST") {
         response = await handleFeedback(request, env);
       } else if (url.pathname === "/history" && request.method === "GET") {
