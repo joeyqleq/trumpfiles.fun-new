@@ -179,10 +179,16 @@ Return ONLY valid JSON array.`;
 
   let entries;
   try {
-    entries = JSON.parse(text);
+    // Strip <think>...</think> reasoning from QwQ-32b output
+    const stripped = text.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+    // Find JSON array in the output
+    const jsonMatch = stripped.match(/\[[\s\S]*\]/);
+    const jsonStr = jsonMatch ? jsonMatch[0] : stripped;
+    entries = JSON.parse(jsonStr);
   } catch {
-    const clean = text.replace(/^```json\n?/, '').replace(/\n?```$/, '').trim();
-    try { entries = JSON.parse(clean); } catch { entries = []; }
+    const clean = text.replace(/^```json\n?/, '').replace(/\n?```$/, '').replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+    const jsonMatch = clean.match(/\[[\s\S]*\]/);
+    try { entries = JSON.parse(jsonMatch ? jsonMatch[0] : clean); } catch { entries = []; }
   }
 
   // Attach source URLs from Exa results

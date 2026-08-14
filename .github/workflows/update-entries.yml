@@ -47,6 +47,7 @@ jobs:
       - name: Trigger Vectorize ingest
         if: success()
         env:
+          DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
           INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
           WORKER_URL: https://trumpstein.trumpstein.workers.dev
         run: node scripts/trigger-vectorize.mjs
