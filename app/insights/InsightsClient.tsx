@@ -1,8 +1,9 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
 import {
   AreaChart, Area, BarChart, Bar, RadarChart, Radar, PolarGrid,
   PolarAngleAxis, PolarRadiusAxis, ComposedChart, Line, XAxis, YAxis,
@@ -93,13 +94,13 @@ interface InsightsData {
   pardons: Array<Record<string, any>>;
   epsteinConnection: Array<Record<string, any>>;
   peopleTagFrequency: Array<{ person: string; count: number }>;
-  categoryYearMatrix: Array<{ category: string; year: number; count: number; avg_danger: string }>;
+  categoryYearMatrix: Array<{ category: string; year: number; count: number; avg_danger: number }>;
   scoreDistribution: Array<{ score: number; count: number; label: string }>;
   familyOrbitEntries: Array<Record<string, any>>;
   topCooccurrences: Array<{ person_a: string; person_b: string; co_count: number }>;
-  recentEntries: Array<Record<string, any>>;
+  recentEntries: Array<{ entry_number: number; title: string; date_start: string | null; danger: number | null; category: string }>;
   wordCloudByEra?: Array<Record<string, any>>;
-  pressureMatrix?: Array<Record<string, any>>;
+  pressureMatrix?: Array<{ category: string; era: "First Term" | "Second Term"; count: number; avg_danger: number | null }>;
   networkEdges?: Array<Record<string, any>>;
   legalBattlesData?: Array<Record<string, any>>;
 }
@@ -176,7 +177,20 @@ const NAV = [
       { id: "overview",   label: "Overview" },
     ],
   },
-];
+] as const;
+
+type InsightsRoute = {
+  section: (typeof NAV)[number]["id"];
+  view: string;
+};
+
+function resolveInsightsRoute(rawSection: string | null, rawView: string | null): InsightsRoute {
+  const requestedSection = NAV.find((item) => item.id === rawSection);
+  if (!requestedSection) return { section: NAV[0].id, view: NAV[0].views[0].id };
+  const requestedView = requestedSection.views.find((item) => item.id === rawView) ?? requestedSection.views[0];
+
+  return { section: requestedSection.id, view: requestedView.id };
+}
 
 // ── Shared primitives ─────────────────────────────────────────────────────────
 
@@ -397,7 +411,7 @@ function OverviewRecent({ data }: { data: InsightsData }) {
       <p className="font-mono text-[10px] tracking-widest uppercase mb-3" style={{ color: `${MINT}50` }}>
         // latest entries in corpus
       </p>
-      {data.recentEntries.map((e: any) => (
+      {data.recentEntries.map((e) => (
         <a
           key={e.entry_number}
           href={`/entry/${e.entry_number}`}
@@ -405,7 +419,7 @@ function OverviewRecent({ data }: { data: InsightsData }) {
           style={{ borderColor: `${MINT}12`, background: "rgba(0,0,0,0.3)" }}
         >
           <span className="font-mono text-[10px] shrink-0 mt-0.5" style={{ color: THREAT }}>
-            {e.danger?.toFixed(1) ?? "?"}/10
+            {e.danger == null ? "—" : Number(e.danger).toFixed(1)}/10
           </span>
           <div className="min-w-0">
             <p className="text-xs text-white/80 font-semibold group-hover:text-white transition-colors line-clamp-1">
@@ -518,13 +532,88 @@ function CategoriesBreakdown({ data }: { data: InsightsData }) {
   );
 }
 
+function CategoriesPressure({ data }: { data: InsightsData }) {
+  const comparison = useMemo(() => {
+    const grouped = new Map<string, {
+      category: string;
+      firstTerm: number;
+      secondTerm: number;
+      firstDanger: number;
+      secondDanger: number;
+    }>();
+
+    for (const row of data.pressureMatrix ?? []) {
+      const current = grouped.get(row.category) ?? {
+        category: row.category,
+        firstTerm: 0,
+        secondTerm: 0,
+        firstDanger: 0,
+        secondDanger: 0,
+      };
+      if (row.era === "First Term") {
+        current.firstTerm = Number(row.count ?? 0);
+        current.firstDanger = Number(row.avg_danger ?? 0);
+      } else if (row.era === "Second Term") {
+        current.secondTerm = Number(row.count ?? 0);
+        current.secondDanger = Number(row.avg_danger ?? 0);
+      }
+      grouped.set(row.category, current);
+    }
+
+    return Array.from(grouped.values())
+      .sort((a, b) => (b.firstTerm + b.secondTerm) - (a.firstTerm + a.secondTerm))
+      .slice(0, 12);
+  }, [data.pressureMatrix]);
+
+  if (comparison.length === 0) {
+    return <div className="rounded-xl border border-white/10 bg-black/40 p-8 text-center text-sm text-white/50">No term-comparison rows are available.</div>;
+  }
+
+  return (
+    <div className="grid gap-4 xl:grid-cols-2">
+      <ChartFrame
+        title="Category Volume — First vs Second Term"
+        exhibit="TF-08"
+        commentary="A matched category comparison across the archived 2017–2020 and 2025–2026 periods. Counts describe corpus coverage, not population prevalence."
+      >
+        <ResponsiveContainer width="100%" height={390}>
+          <BarChart data={comparison} layout="vertical" margin={{ top: 5, right: 20, left: 145, bottom: 5 }}>
+            <CartesianGrid stroke={`${MINT}12`} horizontal={false} />
+            <XAxis type="number" tick={{ fill: DIM, fontSize: 9 }} />
+            <YAxis type="category" dataKey="category" width={140} tick={{ fill: MUTED, fontSize: 9 }} />
+            <Tooltip content={<Tooltip_ />} />
+            <Bar dataKey="firstTerm" name="First Term" fill={BLUE} fillOpacity={0.72} radius={[0, 2, 2, 0]} />
+            <Bar dataKey="secondTerm" name="Second Term" fill={THREAT} fillOpacity={0.76} radius={[0, 2, 2, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+      </ChartFrame>
+      <ChartFrame
+        title="Average Danger — First vs Second Term"
+        exhibit="TF-09"
+        commentary="Average danger scores compare like-for-like archive categories. Sparse categories are excluded by the data query; the chart does not claim causation."
+      >
+        <ResponsiveContainer width="100%" height={390}>
+          <BarChart data={comparison} layout="vertical" margin={{ top: 5, right: 20, left: 145, bottom: 5 }}>
+            <CartesianGrid stroke={`${MINT}12`} horizontal={false} />
+            <XAxis type="number" domain={[0, 10]} tick={{ fill: DIM, fontSize: 9 }} />
+            <YAxis type="category" dataKey="category" width={140} tick={{ fill: MUTED, fontSize: 9 }} />
+            <Tooltip content={<Tooltip_ />} />
+            <Bar dataKey="firstDanger" name="First Term" fill={BLUE} fillOpacity={0.72} radius={[0, 2, 2, 0]} />
+            <Bar dataKey="secondDanger" name="Second Term" fill={AMBER} fillOpacity={0.8} radius={[0, 2, 2, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+      </ChartFrame>
+    </div>
+  );
+}
+
 function CategoriesHeatmap({ data }: { data: InsightsData }) {
   const years = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
   const matrix = useMemo(() => {
     const m: Record<string, Record<number, { count: number; avg_danger: number }>> = {};
     for (const row of data.categoryYearMatrix) {
       if (!m[row.category]) m[row.category] = {};
-      m[row.category][row.year] = { count: row.count, avg_danger: parseFloat(row.avg_danger) };
+      m[row.category][row.year] = { count: row.count, avg_danger: row.avg_danger };
     }
     return m;
   }, [data.categoryYearMatrix]);
@@ -1063,7 +1152,7 @@ function PanelContent({ section, view, data }: { section: string; view: string; 
   if (section === "categories") {
     if (view === "breakdown")  return <CategoriesBreakdown data={data} />;
     if (view === "heatmap")    return <CategoriesHeatmap data={data} />;
-    if (view === "pressure")   return <CategoriesBreakdown data={data} />;
+    if (view === "pressure")   return <CategoriesPressure data={data} />;
   }
   if (section === "people") {
     if (view === "frequency")  return <PeopleFrequency data={data} />;
@@ -1101,8 +1190,12 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  const section = searchParams.get("section") ?? "overview";
-  const view    = searchParams.get("view")    ?? "totals";
+  const rawSection = searchParams.get("section");
+  const rawView = searchParams.get("view");
+  const { section, view } = useMemo(
+    () => resolveInsightsRoute(rawSection, rawView),
+    [rawSection, rawView],
+  );
 
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>(
@@ -1110,17 +1203,26 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
   );
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
-  const navigate = useCallback((s: string, v: string) => {
-    router.push(`/insights?section=${s}&view=${v}`, { scroll: false });
+  useEffect(() => {
+    if (rawSection !== section || rawView !== view) {
+      router.replace(`/insights?section=${section}&view=${view}`, { scroll: false });
+    }
+
+    setExpandedSections((previous) => (
+      previous[section] ? previous : { ...previous, [section]: true }
+    ));
+  }, [rawSection, rawView, router, section, view]);
+
+  const recordNavigation = useCallback((s: string, v: string) => {
     setMobileSidebarOpen(false);
     analytics.insightsSection(s, v);
-  }, [router]);
+  }, []);
 
   const toggleSection = useCallback((id: string) => {
     setExpandedSections(prev => ({ ...prev, [id]: !prev[id] }));
   }, []);
 
-  const activeNav = NAV.find(n => n.id === section);
+  const activeNav = NAV.find(n => n.id === section) ?? NAV[0];
   const activeView = activeNav?.views.find(v2 => v2.id === view);
 
   const SidebarContent = () => (
@@ -1142,12 +1244,15 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
 
           return (
             <div key={item.id}>
-              <button
+              <Link
+                href={`/insights?section=${item.id}&view=${item.views[0].id}`}
+                scroll={false}
+                aria-current={isActive ? "page" : undefined}
                 onClick={() => {
                   toggleSection(item.id);
-                  navigate(item.id, item.views[0].id);
+                  recordNavigation(item.id, item.views[0].id);
                 }}
-                className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-left transition-all text-xs font-semibold ${
+                className={`flex min-h-11 w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left text-xs font-semibold transition-all ${
                   isActive
                     ? "text-white"
                     : "text-white/50 hover:text-white/75"
@@ -1160,7 +1265,7 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
                   ? <ChevronDown size={10} className="text-white/30" />
                   : <ChevronRight size={10} className="text-white/30" />
                 }
-              </button>
+              </Link>
 
               <AnimatePresence initial={false}>
                 {isExpanded && (
@@ -1172,10 +1277,13 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
                     className="overflow-hidden pl-8"
                   >
                     {item.views.map(v2 => (
-                      <button
+                      <Link
                         key={v2.id}
-                        onClick={() => navigate(item.id, v2.id)}
-                        className={`w-full text-left text-[11px] px-2 py-1.5 rounded transition-colors ${
+                        href={`/insights?section=${item.id}&view=${v2.id}`}
+                        scroll={false}
+                        aria-current={section === item.id && view === v2.id ? "page" : undefined}
+                        onClick={() => recordNavigation(item.id, v2.id)}
+                        className={`flex min-h-11 w-full items-center rounded px-2 py-2 text-left text-[11px] transition-colors ${
                           section === item.id && view === v2.id
                             ? "font-semibold"
                             : "text-white/35 hover:text-white/60"
@@ -1183,7 +1291,7 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
                         style={section === item.id && view === v2.id ? { color: MINT } : {}}
                       >
                         {v2.label}
-                      </button>
+                      </Link>
                     ))}
                   </motion.div>
                 )}
@@ -1303,15 +1411,18 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
           const Icon = item.icon;
           const isActive = section === item.id;
           return (
-            <button
+            <Link
               key={item.id}
-              onClick={() => navigate(item.id, item.views[0].id)}
+              href={`/insights?section=${item.id}&view=${item.views[0].id}`}
+              scroll={false}
+              aria-current={isActive ? "page" : undefined}
+              onClick={() => recordNavigation(item.id, item.views[0].id)}
               className="flex-1 flex flex-col items-center py-2 gap-0.5 text-[9px] font-mono transition-colors"
               style={{ color: isActive ? "#FF6500" : "rgba(255,255,255,0.3)" }}
             >
               <Icon size={16} />
               <span className="truncate w-full text-center px-0.5">{item.label.split(" ")[0]}</span>
-            </button>
+            </Link>
           );
         })}
       </div>

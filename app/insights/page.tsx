@@ -11,10 +11,10 @@ export const metadata = {
 async function getInsightsData() {
   const [totals] = await sql`
     SELECT COUNT(*) as total,
-      AVG(danger) as avg_danger,
-      AVG(authoritarianism) as avg_auth,
-      AVG(lawlessness) as avg_lawless,
-      MAX(danger) as peak_danger
+      AVG(danger)::float8 as avg_danger,
+      AVG(authoritarianism)::float8 as avg_auth,
+      AVG(lawlessness)::float8 as avg_lawless,
+      MAX(danger)::float8 as peak_danger
     FROM ai_complete_trump_data
   `;
 
@@ -22,9 +22,9 @@ async function getInsightsData() {
     SELECT
       EXTRACT(YEAR FROM date_start::date)::int as year,
       COUNT(*)::int as count,
-      AVG(danger)::numeric(4,2) as avg_danger,
-      AVG(authoritarianism)::numeric(4,2) as avg_auth,
-      AVG(absurdity)::numeric(4,2) as avg_absurdity
+      AVG(danger)::float8 as avg_danger,
+      AVG(authoritarianism)::float8 as avg_auth,
+      AVG(absurdity)::float8 as avg_absurdity
     FROM ai_complete_trump_data
     WHERE date_start IS NOT NULL AND EXTRACT(YEAR FROM date_start::date) >= 1970
     GROUP BY EXTRACT(YEAR FROM date_start::date)
@@ -33,8 +33,8 @@ async function getInsightsData() {
 
   const categories = await sql`
     SELECT category, COUNT(*)::int as count,
-      AVG(danger)::numeric(4,2) as avg_danger,
-      AVG(impact_scope)::numeric(4,2) as avg_impact
+      AVG(danger)::float8 as avg_danger,
+      AVG(impact_scope)::float8 as avg_impact
     FROM ai_complete_trump_data
     GROUP BY category
     ORDER BY count DESC
@@ -51,9 +51,9 @@ async function getInsightsData() {
         ELSE 'Second Term'
       END as era,
       COUNT(*)::int as count,
-      AVG(danger)::numeric(4,2) as avg_danger,
-      AVG(authoritarianism)::numeric(4,2) as avg_auth,
-      AVG(lawlessness)::numeric(4,2) as avg_lawless
+      AVG(danger)::float8 as avg_danger,
+      AVG(authoritarianism)::float8 as avg_auth,
+      AVG(lawlessness)::float8 as avg_lawless
     FROM ai_complete_trump_data
     WHERE date_start IS NOT NULL
     GROUP BY era
@@ -61,7 +61,8 @@ async function getInsightsData() {
   `;
 
   const humanRights = await sql`
-    SELECT entry_number, title, danger, date_start
+    SELECT entry_number, title, danger::float8 AS danger,
+      TO_CHAR(date_start::date, 'YYYY-MM-DD') AS date_start
     FROM ai_complete_trump_data
     WHERE category = 'Human Rights Violations' AND danger >= 8
     ORDER BY danger DESC, date_start DESC
@@ -69,7 +70,8 @@ async function getInsightsData() {
   `;
 
   const violentRhetoric = await sql`
-    SELECT entry_number, title, danger, insanity, date_start
+    SELECT entry_number, title, danger::float8 AS danger, insanity::float8 AS insanity,
+      TO_CHAR(date_start::date, 'YYYY-MM-DD') AS date_start
     FROM ai_complete_trump_data
     WHERE category IN ('Violent Rhetoric / Threats', 'Insurrection / Coup Attempts')
     ORDER BY danger DESC
@@ -98,13 +100,13 @@ async function getInsightsData() {
 
   const radarDimensions = await sql`
     SELECT
-      AVG(danger)::numeric(4,2) as danger,
-      AVG(authoritarianism)::numeric(4,2) as authoritarianism,
-      AVG(lawlessness)::numeric(4,2) as lawlessness,
-      AVG(insanity)::numeric(4,2) as insanity,
-      AVG(absurdity)::numeric(4,2) as absurdity,
-      AVG(credibility_risk)::numeric(4,2) as credibility_risk,
-      AVG(impact_scope)::numeric(4,2) as impact_scope
+      AVG(danger)::float8 as danger,
+      AVG(authoritarianism)::float8 as authoritarianism,
+      AVG(lawlessness)::float8 as lawlessness,
+      AVG(insanity)::float8 as insanity,
+      AVG(absurdity)::float8 as absurdity,
+      AVG(credibility_risk)::float8 as credibility_risk,
+      AVG(impact_scope)::float8 as impact_scope
     FROM ai_complete_trump_data
   `;
 
@@ -116,7 +118,7 @@ async function getInsightsData() {
         ELSE 'Between Terms'
       END as era,
       COUNT(*)::int as count,
-      AVG(danger)::numeric(4,2) as avg_danger
+      AVG(danger)::float8 as avg_danger
     FROM ai_complete_trump_data
     WHERE (LOWER(title) LIKE '%iran%' OR LOWER(synopsis) LIKE '%iran%'
       OR EXISTS (SELECT 1 FROM UNNEST(all_keywords) k WHERE LOWER(k) LIKE '%iran%'))
@@ -126,7 +128,8 @@ async function getInsightsData() {
   `;
 
   const israelDedication = await sql`
-    SELECT entry_number, title, danger, date_start, category
+    SELECT entry_number, title, danger::float8 AS danger,
+      TO_CHAR(date_start::date, 'YYYY-MM-DD') AS date_start, category
     FROM ai_complete_trump_data
     WHERE (LOWER(title) LIKE '%israel%' OR LOWER(synopsis) LIKE '%israel%'
       OR LOWER(synopsis) LIKE '%netanyahu%' OR LOWER(synopsis) LIKE '%adelson%')
@@ -148,7 +151,8 @@ async function getInsightsData() {
   `;
 
   const pardons = await sql`
-    SELECT entry_number, title, date_start, danger, category
+    SELECT entry_number, title, TO_CHAR(date_start::date, 'YYYY-MM-DD') AS date_start,
+      danger::float8 AS danger, category
     FROM ai_complete_trump_data
     WHERE (LOWER(title) LIKE '%pardon%' OR LOWER(title) LIKE '%commut%')
       AND date_start IS NOT NULL
@@ -158,7 +162,8 @@ async function getInsightsData() {
   `;
 
   const epsteinConnection = await sql`
-    SELECT entry_number, title, date_start, danger, category
+    SELECT entry_number, title, TO_CHAR(date_start::date, 'YYYY-MM-DD') AS date_start,
+      danger::float8 AS danger, category
     FROM ai_complete_trump_data
     WHERE (LOWER(title) LIKE '%epstein%' OR LOWER(synopsis) LIKE '%epstein%')
       AND date_start IS NOT NULL
@@ -213,7 +218,7 @@ async function getInsightsData() {
         ELSE NULL
       END as era,
       COUNT(*)::int as count,
-      AVG(danger)::numeric(4,2) as avg_danger
+      AVG(danger)::float8 as avg_danger
     FROM ai_complete_trump_data
     WHERE date_start IS NOT NULL
       AND EXTRACT(YEAR FROM date_start::date) IN (2017,2018,2019,2020,2025,2026)
@@ -227,7 +232,7 @@ async function getInsightsData() {
       kw as person,
       category,
       COUNT(*)::int as mentions,
-      AVG(danger)::numeric(4,2) as avg_danger
+      AVG(danger)::float8 as avg_danger
     FROM ai_complete_trump_data, UNNEST(all_keywords) AS kw
     WHERE kw IN (
       'epstein', 'maxwell', 'netanyahu', 'putin', 'bannon', 'musk',
@@ -259,7 +264,7 @@ async function getInsightsData() {
       te.category,
       EXTRACT(YEAR FROM te.date_start)::int AS year,
       COUNT(*)::int AS count,
-      ROUND(AVG(tis.danger)::numeric, 2) AS avg_danger
+      AVG(tis.danger)::float8 AS avg_danger
     FROM trump_entries te
     JOIN trump_individual_scores tis ON te.entry_number = tis.entry_number
     WHERE EXTRACT(YEAR FROM te.date_start) BETWEEN 2015 AND 2026
@@ -271,7 +276,7 @@ async function getInsightsData() {
 
   const scoreDistribution = await sql`
     SELECT
-      tis.danger::int AS score,
+      tis.danger::float8 AS score,
       COUNT(*)::int AS count,
       CONCAT('Danger ', tis.danger) AS label
     FROM trump_entries te
@@ -285,8 +290,8 @@ async function getInsightsData() {
     SELECT
       te.entry_number,
       te.title,
-      te.date_start,
-      tis.danger,
+      TO_CHAR(te.date_start::date, 'YYYY-MM-DD') AS date_start,
+      tis.danger::float8 AS danger,
       te.category,
       te.people_tags
     FROM trump_entries te
@@ -317,7 +322,8 @@ async function getInsightsData() {
   `;
 
   const recentEntries = await sql`
-    SELECT entry_number, title, date_start, danger, category
+    SELECT entry_number, title, TO_CHAR(date_start::date, 'YYYY-MM-DD') AS date_start,
+      danger::float8 AS danger, category
     FROM ai_complete_trump_data
     WHERE date_start IS NOT NULL
     ORDER BY date_start DESC
@@ -347,11 +353,12 @@ async function getInsightsData() {
     pardons,
     epsteinConnection,
     peopleTagFrequency: peopleTagFrequency as Array<{ person: string; count: number }>,
-    categoryYearMatrix: categoryYearMatrix as Array<{ category: string; year: number; count: number; avg_danger: string }>,
+    categoryYearMatrix: categoryYearMatrix as Array<{ category: string; year: number; count: number; avg_danger: number }>,
     scoreDistribution: scoreDistribution as Array<{ score: number; count: number; label: string }>,
     familyOrbitEntries,
     topCooccurrences: topCooccurrences as Array<{ person_a: string; person_b: string; co_count: number }>,
-    recentEntries,
+    recentEntries: recentEntries as Array<{ entry_number: number; title: string; date_start: string | null; danger: number | null; category: string }>,
+    pressureMatrix: pressureMatrix as Array<{ category: string; era: "First Term" | "Second Term"; count: number; avg_danger: number | null }>,
   };
 }
 

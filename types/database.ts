@@ -125,16 +125,34 @@ export interface AICompleteTrumpData {
   date_start: string | null
   date_end: string | null
   duration_days: number | null
-  fucked_up_score: string
-  fucked_up_rank: string
-  danger: number
-  authoritarianism: number
-  lawlessness: number
-  insanity: number
-  absurdity: number
-  credibility_risk: number
-  recency_intensity: number
-  impact_scope: number
-  rationale_short: string
+  fucked_up_score: string | null
+  fucked_up_rank: string | null
+  danger: number | null
+  authoritarianism: number | null
+  lawlessness: number | null
+  insanity: number | null
+  absurdity: number | null
+  credibility_risk: number | null
+  recency_intensity: number | null
+  impact_scope: number | null
+  rationale_short: string | null
   all_keywords: string[]
+  sources?: CatalogSource[]
+}
+
+export interface CatalogSource {
+  url: string
+  title: string | null
+  publisher: string | null
+  source_type: string | null
+}
+
+export interface EntryNavigation {
+  previous: number | null
+  next: number | null
+}
+
+export interface EntryDossier extends AICompleteTrumpData {
+  sources: CatalogSource[]
+  navigation: EntryNavigation
 }

@@ -25,6 +25,13 @@ interface GraphNode {
   vy?: number;
 }
 
+interface TopPersonSummary {
+  name: string;
+  events: number;
+  avg_danger?: number;
+  categories?: string[];
+}
+
 interface GraphEdge {
   source: string;
   target: string;
@@ -35,7 +42,7 @@ interface GraphEdge {
 interface GraphData {
   nodes: GraphNode[];
   edges: GraphEdge[];
-  topPeople?: GraphNode[];
+  topPeople?: TopPersonSummary[];
 }
 
 // ── Constants ─────────────────────────────────────────────────────────────────

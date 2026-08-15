@@ -9,9 +9,9 @@ export async function GET(
 ) {
   try {
     const { entry_number } = await params;
-    const entryNum = parseInt(entry_number);
+    const entryNum = Number(entry_number);
 
-    if (isNaN(entryNum)) {
+    if (!/^\d+$/.test(entry_number) || !Number.isInteger(entryNum) || entryNum <= 0) {
       return NextResponse.json(
         { error: "Invalid entry number" },
         { status: 400 }
@@ -32,7 +32,55 @@ export async function GET(
       );
     }
 
-    return NextResponse.json(entry[0]);
+    const [sources, navigationRows] = await Promise.all([
+      sql`
+        SELECT DISTINCT ON (url)
+          url,
+          title,
+          publisher,
+          source_type
+        FROM trump_sources
+        WHERE entry_number = ${entryNum}
+          AND url IS NOT NULL
+          AND btrim(url) <> ''
+        ORDER BY url, source_id
+      `,
+      sql`
+        SELECT
+          (
+            SELECT entry_number
+            FROM ai_complete_trump_data
+            WHERE entry_number < ${entryNum}
+            ORDER BY entry_number DESC
+            LIMIT 1
+          ) AS previous,
+          (
+            SELECT entry_number
+            FROM ai_complete_trump_data
+            WHERE entry_number > ${entryNum}
+            ORDER BY entry_number ASC
+            LIMIT 1
+          ) AS next
+      `,
+    ]);
+
+    // Keep entry fields at the top level: Trumpstein's inline citation preview
+    // consumes title/synopsis/danger from this public endpoint.
+    return NextResponse.json(
+      {
+        ...entry[0],
+        sources,
+        navigation: {
+          previous: navigationRows[0]?.previous ? Number(navigationRows[0].previous) : null,
+          next: navigationRows[0]?.next ? Number(navigationRows[0].next) : null,
+        },
+      },
+      {
+        headers: {
+          'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=900',
+        },
+      },
+    );
   } catch (error) {
     console.error("Error fetching entry:", error);
     return NextResponse.json(
