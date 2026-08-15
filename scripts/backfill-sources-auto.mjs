@@ -1,123 +1,242 @@
 #!/usr/bin/env node
 /**
- * Automated source backfill using Exa REST API (no MCP, no Claude tokens)
- * Run by GitHub Actions cron or manually:
- *   EXA_API_KEY=... DATABASE_URL=... node scripts/backfill-sources-auto.mjs
+ * Automated source backfill using Exa REST API.
+ * Writes to BOTH trump_entries.sources (JSONB) AND trump_sources (canonical table).
+ * Uses semantic matching to verify the Exa result actually covers the same event.
+ * Marks permanently-unresolvable entries with sources = '[]' so they don't stall the cursor.
  *
  * Env vars:
- *   DATABASE_URL   — Neon connection string
- *   EXA_API_KEY    — Exa API key (free tier: 1000 req/month)
- *   BATCH_SIZE     — entries per run (default 100)
- *   START_ENTRY    — start of range (default: auto-detect lowest unsourced)
- *   END_ENTRY      — end of range (default: 9999)
+ *   DATABASE_URL      — Neon connection string
+ *   EXA_API_KEY       — primary Exa key
+ *   EXA_API_KEY_2     — optional second key
+ *   EXA_API_KEY_3     — optional third key
+ *   BATCH_SIZE        — entries per run (default 200)
+ *   START_ENTRY       — floor entry number (default 1)
+ *   END_ENTRY         — ceiling entry number (default 9999)
  */
 
 import { neon } from '@neondatabase/serverless';
 
 const DATABASE_URL = process.env.DATABASE_URL;
-// Rotate through up to 3 Exa keys to distribute 1000 req/month limit
-const EXA_KEYS = [process.env.EXA_API_KEY, process.env.EXA_API_KEY_2, process.env.EXA_API_KEY_3].filter(Boolean);
-if (!EXA_KEYS.length) { console.error('At least one EXA_API_KEY required'); process.exit(1); }
-let _exaIdx = 0;
-const EXA_API_KEY = () => EXA_KEYS[_exaIdx++ % EXA_KEYS.length];
-const BATCH_SIZE = parseInt(process.env.BATCH_SIZE ?? '100', 10);
-const START_ENTRY = parseInt(process.env.START_ENTRY ?? '0', 10);
-const END_ENTRY = parseInt(process.env.END_ENTRY ?? '9999', 10);
+const EXA_KEYS = [
+  process.env.EXA_API_KEY,
+  process.env.EXA_API_KEY_2,
+  process.env.EXA_API_KEY_3,
+].filter(Boolean);
 
 if (!DATABASE_URL) { console.error('DATABASE_URL required'); process.exit(1); }
-if (!EXA_API_KEY) { console.error('EXA_API_KEY required'); process.exit(1); }
+if (!EXA_KEYS.length) { console.error('At least one EXA_API_KEY required'); process.exit(1); }
+
+const BATCH_SIZE = parseInt(process.env.BATCH_SIZE ?? '200', 10);
+const START_ENTRY = parseInt(process.env.START_ENTRY ?? '1', 10);
+const END_ENTRY = parseInt(process.env.END_ENTRY ?? '9999', 10);
 
 const sql = neon(DATABASE_URL);
+let _exaIdx = 0;
+const getExaKey = () => EXA_KEYS[_exaIdx++ % EXA_KEYS.length];
 
-// Accepted reputable outlets
-const ACCEPTED_DOMAINS = [
+// ── Accepted reputable outlets ────────────────────────────────────────────────
+
+const ACCEPTED_DOMAINS = new Set([
   'reuters.com', 'apnews.com', 'nytimes.com', 'washingtonpost.com',
   'cnn.com', 'bbc.com', 'bbc.co.uk', 'politico.com', 'theguardian.com',
   'nbcnews.com', 'npr.org', 'cnbc.com', 'theatlantic.com', 'axios.com',
   'propublica.org', 'cbsnews.com', 'abcnews.go.com', 'pbs.org',
   'vox.com', 'newyorker.com', 'texastribune.org', 'thehill.com',
-  'nbcnews.com', 'dailybeast.com', 'politifact.com', 'time.com',
-  'bloomberg.com', 'ft.com', 'wsj.com', 'usatoday.com',
-];
+  'dailybeast.com', 'politifact.com', 'time.com', 'bloomberg.com',
+  'ft.com', 'wsj.com', 'usatoday.com', 'motherjones.com',
+]);
 
-function isAccepted(url) {
+function isAcceptedDomain(url) {
   try {
     const host = new URL(url).hostname.replace(/^www\./, '');
-    return ACCEPTED_DOMAINS.some(d => host === d || host.endsWith('.' + d));
+    return [...ACCEPTED_DOMAINS].some(d => host === d || host.endsWith('.' + d));
   } catch { return false; }
 }
+
+// ── Semantic match scoring ────────────────────────────────────────────────────
+// Returns 0-1 confidence that the Exa result covers the same event as the entry.
+
+function semanticMatchScore(entry, exaResult) {
+  if (!exaResult) return 0;
+
+  const entryText = `${entry.title} ${entry.synopsis ?? ''}`.toLowerCase();
+  const resultText = `${exaResult.title ?? ''} ${exaResult.text ?? ''}`.toLowerCase();
+
+  // Year check: dates must be compatible (within 1 year)
+  let dateScore = 0;
+  if (entry.date_start && exaResult.publishedDate) {
+    const entryYear = new Date(entry.date_start).getFullYear();
+    const exaYear = new Date(exaResult.publishedDate).getFullYear();
+    if (Math.abs(entryYear - exaYear) === 0) dateScore = 1;
+    else if (Math.abs(entryYear - exaYear) === 1) dateScore = 0.4;
+    else dateScore = 0; // too far apart
+  } else {
+    dateScore = 0.3; // unknown dates get partial credit
+  }
+
+  // Extract meaningful words from entry title (3+ chars, not stop words)
+  const stopWords = new Set(['the','and','for','are','but','not','with','from','that','this','was','had','has','have','its','been','they','will','when','what','who','how','can','did','does','said','after','into']);
+  const entryKeywords = entryText
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length >= 4 && !stopWords.has(w));
+
+  if (entryKeywords.length === 0) return 0;
+
+  // Count how many entry keywords appear in the Exa result text
+  const matchedKeywords = entryKeywords.filter(kw => resultText.includes(kw));
+  const keywordScore = matchedKeywords.length / entryKeywords.length;
+
+  // Combined score: keyword overlap matters most, date compatibility matters
+  const combined = keywordScore * 0.7 + dateScore * 0.3;
+  return combined;
+}
+
+// Minimum match confidence to accept a source
+const MIN_MATCH_SCORE = 0.25;
+
+// ── Exa search ────────────────────────────────────────────────────────────────
 
 async function searchExa(query) {
   const res = await fetch('https://api.exa.ai/search', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-api-key': EXA_API_KEY() },
-    body: JSON.stringify({ query, numResults: 3, useAutoprompt: false }),
+    headers: { 'Content-Type': 'application/json', 'x-api-key': getExaKey() },
+    body: JSON.stringify({
+      query,
+      numResults: 3,
+      useAutoprompt: false,
+      contents: { text: { maxCharacters: 300 } },
+    }),
   });
-  if (!res.ok) return null;
+  if (!res.ok) {
+    console.warn(`Exa ${res.status} for query: ${query.slice(0, 60)}`);
+    return [];
+  }
   const data = await res.json();
-  const results = data.results ?? [];
-  return results.find(r => isAccepted(r.url)) ?? null;
+  return (data.results ?? []).filter(r => isAcceptedDomain(r.url));
 }
 
-async function run() {
-  console.log(`Starting backfill: entries ${START_ENTRY}–${END_ENTRY}, batch ${BATCH_SIZE}`);
+// ── Write source to both places ───────────────────────────────────────────────
 
-  // Find entries missing sources
+async function persistSource(entry, result) {
+  const sourceObj = { url: result.url, title: result.title ?? entry.title, source_type: 'news' };
+
+  // 1. Update trump_entries.sources JSONB (denormalized cache for fast reads)
+  await sql`
+    UPDATE trump_entries
+    SET sources = ${JSON.stringify([sourceObj])}::jsonb
+    WHERE entry_number = ${entry.entry_number}
+  `;
+
+  // 2. Upsert into trump_sources (canonical normalized table)
+  const publisherHost = new URL(result.url).hostname.replace(/^www\./, '');
+  let publishedDate = null;
+  if (result.publishedDate) {
+    try { publishedDate = new Date(result.publishedDate).toISOString().slice(0, 10); } catch { /* skip */ }
+  }
+
+  await sql`
+    INSERT INTO trump_sources (entry_number, url, title, publisher, date_published, source_type)
+    VALUES (
+      ${entry.entry_number},
+      ${result.url},
+      ${result.title ?? entry.title},
+      ${publisherHost},
+      ${publishedDate},
+      'news'
+    )
+    ON CONFLICT (entry_number, url) DO NOTHING
+  `;
+}
+
+// ── Mark entry as permanently skipped (empty array = "tried, nothing found") ──
+
+async function markSkipped(entry_number) {
+  await sql`
+    UPDATE trump_entries
+    SET sources = '[]'::jsonb
+    WHERE entry_number = ${entry_number}
+      AND (sources IS NULL OR sources::text = 'null')
+  `;
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────────
+
+async function run() {
+  console.log(`Backfill: entries ${START_ENTRY}–${END_ENTRY}, batch=${BATCH_SIZE}`);
+
+  // Fetch unsourced entries.
+  // sources IS NULL = never tried
+  // sources::text = 'null' = legacy null
+  // sources::text = '[]' = tried and found nothing (permanently skipped, excluded)
   const rows = await sql`
-    SELECT entry_number, title, date_start
+    SELECT entry_number, title, synopsis, date_start
     FROM trump_entries
-    WHERE entry_number BETWEEN ${START_ENTRY || 1} AND ${END_ENTRY}
-      AND (sources IS NULL OR sources::text = 'null' OR sources::text = '[]')
+    WHERE entry_number BETWEEN ${START_ENTRY} AND ${END_ENTRY}
+      AND (sources IS NULL OR sources::text = 'null')
     ORDER BY entry_number
     LIMIT ${BATCH_SIZE}
   `;
 
-  console.log(`Found ${rows.length} entries without sources`);
-  if (rows.length === 0) { console.log('All entries sourced in this range!'); return; }
+  console.log(`Found ${rows.length} unsourced entries (NULL only, skipping already-attempted [])`);
+  if (rows.length === 0) {
+    console.log('All entries in range have been attempted. Done.');
+    return;
+  }
 
-  let updated = 0;
-  let skipped = 0;
+  let updated = 0, skipped = 0;
 
   for (const row of rows) {
     const year = row.date_start ? new Date(row.date_start).getFullYear() : '';
-    const query = `${row.title} ${year}`.trim();
 
-    let result = await searchExa(query);
+    // Query 1: full title + year
+    const q1 = `${row.title} ${year}`.trim();
+    let candidates = await searchExa(q1);
 
-    // Retry with simplified query
-    if (!result) {
+    // Query 2: simplified title if q1 returns nothing
+    if (candidates.length === 0) {
       const simplified = row.title
-        .replace(/^Trump['']s?\s+/i, '')
+        .replace(/^Trump['']?s?\s+/i, '')
         .replace(/^Donald Trump\s+/i, '')
         .slice(0, 80);
-      result = await searchExa(`${simplified} ${year}`);
+      candidates = await searchExa(`${simplified} ${year}`);
     }
 
-    if (result) {
-      await sql`
-        UPDATE trump_entries
-        SET sources = ${JSON.stringify([{ url: result.url, title: result.title ?? row.title, source_type: 'news' }])}::jsonb
-        WHERE entry_number = ${row.entry_number}
-      `;
+    // Score all candidates and pick the best match
+    let best = null, bestScore = 0;
+    for (const c of candidates) {
+      const score = semanticMatchScore(row, c);
+      if (score > bestScore) { bestScore = score; best = c; }
+    }
+
+    if (best && bestScore >= MIN_MATCH_SCORE) {
+      await persistSource(row, best);
+      console.log(`  #${row.entry_number} ✓ (score=${bestScore.toFixed(2)}) ${best.url.slice(0, 70)}`);
       updated++;
-      if (updated % 10 === 0) console.log(`  ${updated} updated...`);
     } else {
+      // Mark as permanently tried so cursor advances
+      await markSkipped(row.entry_number);
+      if (best) {
+        console.log(`  #${row.entry_number} ✗ best score too low (${bestScore.toFixed(2)}): ${best.url.slice(0, 60)}`);
+      } else {
+        console.log(`  #${row.entry_number} ✗ no accepted-domain results`);
+      }
       skipped++;
     }
 
-    // Rate limit: ~1 req/sec to stay within free tier
+    // ~250ms between requests to stay within free tier rate limit
     await new Promise(r => setTimeout(r, 250));
   }
 
   console.log(`\nDone. Updated: ${updated}, Skipped: ${skipped}`);
 
-  // Report remaining
-  const [remaining] = await sql`
+  const [rem] = await sql`
     SELECT COUNT(*) as c FROM trump_entries
-    WHERE entry_number BETWEEN ${START_ENTRY || 1} AND ${END_ENTRY}
-      AND (sources IS NULL OR sources::text = 'null' OR sources::text = '[]')
+    WHERE entry_number BETWEEN ${START_ENTRY} AND ${END_ENTRY}
+      AND (sources IS NULL OR sources::text = 'null')
   `;
-  console.log(`Remaining unsourced in range: ${remaining.c}`);
+  console.log(`Remaining untried in range: ${rem.c}`);
 }
 
 run().catch(err => { console.error('Fatal:', err); process.exit(1); });

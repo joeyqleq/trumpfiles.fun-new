@@ -37,17 +37,12 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
           INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          SITE_URL: https://trumpfiles-fun-new.vercel.app
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+          EXA_API_KEY_2: ${{ secrets.EXA_API_KEY_2 }}
+          EXA_API_KEY_3: ${{ secrets.EXA_API_KEY_3 }}
           WORKER_URL: https://trumpstein.trumpstein.workers.dev
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
           MAX_ENTRIES: ${{ github.event.inputs.max_entries || '10' }}
         run: node scripts/auto-update.mjs
-
-      - name: Trigger Vectorize ingest
-        if: success()
-        env:
-          DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
-          INGEST_SECRET: ${{ secrets.INGEST_SECRET }}
-          WORKER_URL: https://trumpstein.trumpstein.workers.dev
-        run: node scripts/trigger-vectorize.mjs
+      # NOTE: Vectorize is handled INSIDE auto-update.mjs (incremental, new entries only).
+      # Full reindex is in .github/workflows/reindex-vectorize.yml (manual only).
