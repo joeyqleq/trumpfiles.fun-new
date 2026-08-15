@@ -122,47 +122,43 @@ async function researchAndStructure(lastDate, maxEntry) {
   // Step 2: Build article map keyed by URL for reliable source attachment
   const articleByUrl = new Map(articles.map(a => [a.url, a]));
 
-  // Step 3: Ask CF Workers AI to structure articles — ONLY articles provided, no invention
-  const systemPrompt = `You are a data curator for TrumpFiles. Convert the provided news articles into structured JSON entries.
+  // Step 3: Ask CF Workers AI to cluster articles by event, then produce ONE entry per event
+  const systemPrompt = `You are a data curator for TrumpFiles. Your job is to:
+1. GROUP the provided articles by the REAL-WORLD EVENT they describe (multiple articles can cover the same event)
+2. For each DISTINCT event, produce ONE entry with ALL article URLs for that event as sources
+3. NEVER invent any facts — every claim must come directly from the articles
 
 STRICT RULES:
-- ONLY create entries for the articles explicitly provided below
-- NEVER invent events, quotes, dollar amounts, names, or crimes
-- NEVER generate placeholder or example.com URLs
-- Each entry's source_url MUST exactly match one of the article URLs provided
-- If an article is not about Trump misconduct/scandal, skip it
+- One entry per unique event, not one entry per article
+- source_urls array must list the EXACT URLs of every article about that event
+- NEVER invent events, quotes, dollar amounts, names, URLs
+- Skip articles not about Trump misconduct/scandal
 
-VALID CATEGORIES (use EXACTLY one): "Authoritarianism" | "Government Corruption" | "Human Rights Violations" | "Grift / Financial Exploitation" | "National Security Violations" | "Foreign Policy" | "Election Interference" | "Press Freedom" | "Environmental Destruction" | "Conspiracy Theories / Disinformation"
+VALID CATEGORIES: "Authoritarianism" | "Government Corruption" | "Human Rights Violations" | "Grift / Financial Exploitation" | "National Security Violations" | "Foreign Policy" | "Election Interference" | "Press Freedom" | "Environmental Destruction" | "Conspiracy Theories / Disinformation"
+VALID PHASES: "Pre-Political" | "Campaign 2016" | "White House 1" | "White House 2:2"
 
-VALID PHASES (use EXACTLY one): "Pre-Political" | "Campaign 2016" | "White House 1" | "White House 2:2"
+Return ONLY a valid JSON array. No markdown, no explanation.`;
 
-Return ONLY a valid JSON array. No markdown, no explanation, no invented content.`;
-
-  const newsContext = articles.map(r =>
-    `ARTICLE_URL: ${r.url}\nHEADLINE: ${r.title}\nDATE: ${r.publishedDate ?? ''}\nSUMMARY: ${r.text ?? ''}`
+  const newsContext = articles.map((r, i) =>
+    `[${i+1}] ARTICLE_URL: ${r.url}\nHEADLINE: ${r.title}\nDATE: ${r.publishedDate ?? ''}\nSUMMARY: ${r.text ?? ''}`
   ).join('\n\n---\n\n');
 
-  const userPrompt = `Structure the following ${articles.length} real news articles as TrumpFiles entries.
-For each relevant article return ONE JSON object:
+  const userPrompt = `Group these ${articles.length} articles by real-world event. For each DISTINCT event return ONE object:
 {
-  "title": "punchy specific headline based on the article",
-  "synopsis": "3-5 sentences with specific facts from the article",
+  "title": "punchy headline from article facts only",
+  "synopsis": "3-5 sentences with specific facts from the articles",
   "category": "<valid category>",
   "phase": "White House 2:2",
-  "date_start": "YYYY-MM-DD (from article date)",
+  "date_start": "YYYY-MM-DD",
   "people_tags": ["Full Name"],
-  "source_url": "<EXACT article URL from ARTICLE_URL field above>",
-  "danger": 1-10,
-  "authoritarianism": 1-10,
-  "lawlessness": 1-10,
-  "insanity": 1-10,
-  "absurdity": 1-10
+  "source_urls": ["<URL1>", "<URL2>"],
+  "danger": 1-10, "authoritarianism": 1-10, "lawlessness": 1-10, "insanity": 1-10, "absurdity": 1-10
 }
 
 ARTICLES:
 ${newsContext}
 
-Return ONLY valid JSON array. Skip articles unrelated to Trump misconduct.`;
+Return ONLY valid JSON array. Group same-event articles together.`;
 
   const workerUrl = WORKER_URL || 'https://trumpstein.trumpstein.workers.dev';
   const cfRes = await fetch(`${workerUrl}/generate`, {
@@ -189,23 +185,27 @@ Return ONLY valid JSON array. Skip articles unrelated to Trump misconduct.`;
 
   if (!Array.isArray(entries)) return [];
 
-  // Step 4: Attach ONLY Exa-verified source URLs — reject any LLM-invented URLs
+  // Step 4: Validate all source_urls against Exa results — reject any invented URLs
   const verified = entries
     .map(e => {
-      const url = e.source_url;
-      if (!url) return null; // no source = skip
-      if (url.includes('example.com') || url.includes('placeholder')) return null; // fabricated
-      const exaArticle = articleByUrl.get(url);
-      if (!exaArticle) {
-        // Try partial match (model may have slightly mangled URL)
-        const partialMatch = articles.find(a => a.url.includes(new URL(url).pathname.slice(0, 20)));
-        if (!partialMatch) {
-          console.warn(`SKIP (URL not from Exa): ${url}`);
+      const rawUrls = Array.isArray(e.source_urls) ? e.source_urls : (e.source_url ? [e.source_url] : []);
+      const verifiedSources = rawUrls
+        .map(url => {
+          if (!url || url.includes('example.com') || url.includes('placeholder')) return null;
+          const exaArticle = articleByUrl.get(url);
+          if (exaArticle) return { url: exaArticle.url, title: exaArticle.title, source_type: 'news' };
+          // Fuzzy match: model may have slightly mangled URL
+          try {
+            const path = new URL(url).pathname.slice(0, 30);
+            const match = articles.find(a => a.url.includes(path));
+            if (match) return { url: match.url, title: match.title, source_type: 'news' };
+          } catch { /* invalid URL */ }
+          console.warn(`SKIP URL not from Exa: ${url.slice(0, 60)}`);
           return null;
-        }
-        return { ...e, sources: [{ url: partialMatch.url, title: partialMatch.title, source_type: 'news' }] };
-      }
-      return { ...e, sources: [{ url: exaArticle.url, title: exaArticle.title, source_type: 'news' }] };
+        })
+        .filter(Boolean);
+      if (verifiedSources.length === 0) return null; // no real source = skip entry
+      return { ...e, sources: verifiedSources };
     })
     .filter(Boolean);
 
@@ -232,7 +232,6 @@ function validate(entry) {
 
 async function insertEntry(entry, entryNumber) {
   const tags = Array.isArray(entry.people_tags) ? entry.people_tags : ['Donald Trump'];
-
   const sourcesJson = entry.sources ? JSON.stringify(entry.sources) : null;
 
   await sql`
@@ -249,6 +248,22 @@ async function insertEntry(entry, entryNumber) {
     )
     ON CONFLICT (entry_number) DO NOTHING
   `;
+
+  // Write ALL sources to trump_sources canonical table
+  if (Array.isArray(entry.sources)) {
+    for (const s of entry.sources) {
+      if (!s?.url) continue;
+      let publisher = 'unknown';
+      try { publisher = new URL(s.url).hostname.replace(/^www\./, ''); } catch { /* skip */ }
+      let pubDate = null;
+      // Try to extract date from source if available
+      await sql`
+        INSERT INTO trump_sources (entry_number, url, title, publisher, source_type)
+        VALUES (${entryNumber}, ${s.url}, ${s.title ?? entry.title}, ${publisher}, 'news')
+        ON CONFLICT (entry_number, url) DO NOTHING
+      `;
+    }
+  }
 
   await sql`
     INSERT INTO trump_individual_scores

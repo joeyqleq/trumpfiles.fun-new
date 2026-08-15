@@ -88,13 +88,18 @@ function semanticMatchScore(entry, exaResult) {
   const matchedKeywords = entryKeywords.filter(kw => resultText.includes(kw));
   const keywordScore = matchedKeywords.length / entryKeywords.length;
 
-  // Combined score: keyword overlap matters most, date compatibility matters
+  // HARD FLOOR: keyword overlap must pass independently of date
+  // This prevents a same-year but totally unrelated article from passing
+  if (keywordScore < MIN_KEYWORD_SCORE) return 0;
+
+  // Combined score: keyword overlap matters most, date is supporting signal only
   const combined = keywordScore * 0.7 + dateScore * 0.3;
   return combined;
 }
 
-// Minimum match confidence to accept a source
-const MIN_MATCH_SCORE = 0.25;
+// Match thresholds — keyword overlap is REQUIRED independently of date
+const MIN_KEYWORD_SCORE = 0.15; // hard floor: at least 15% of title keywords must appear in result
+const MIN_COMBINED_SCORE = 0.30; // final combined threshold
 
 // ── Exa search ────────────────────────────────────────────────────────────────
 
@@ -150,12 +155,17 @@ async function persistSource(entry, result) {
   `;
 }
 
-// ── Mark entry as permanently skipped (empty array = "tried, nothing found") ──
+// ── Mark entry as skip-for-now (dated sentinel, NOT permanent — retryable after ~30 days) ──
+// Uses {"searched": "YYYY-MM-DD"} rather than [] so:
+//   - cursor advances past it today
+//   - future runs can re-try old entries by clearing this marker
+//   - catalog card shows nothing (no url field)
 
 async function markSkipped(entry_number) {
+  const today = new Date().toISOString().slice(0, 10);
   await sql`
     UPDATE trump_entries
-    SET sources = '[]'::jsonb
+    SET sources = ${JSON.stringify([{ searched: today }])}::jsonb
     WHERE entry_number = ${entry_number}
       AND (sources IS NULL OR sources::text = 'null')
   `;
@@ -166,15 +176,31 @@ async function markSkipped(entry_number) {
 async function run() {
   console.log(`Backfill: entries ${START_ENTRY}–${END_ENTRY}, batch=${BATCH_SIZE}`);
 
-  // Fetch unsourced entries.
-  // sources IS NULL = never tried
-  // sources::text = 'null' = legacy null
-  // sources::text = '[]' = tried and found nothing (permanently skipped, excluded)
+  // Fetch entries that genuinely lack a real source.
+  // Excluded:
+  //   - sources with a real URL (sources @> '[{"url":"..."}]' pattern — has url key)
+  //   - dated skip markers: [{"searched":"..."}] — already attempted this cycle
+  // Included:
+  //   - sources IS NULL or 'null' = never tried
+  //   - old [] sentinel (pre-fix legacy)
+  //   - skip markers older than 30 days (retry)
+  const RETRY_DAYS = 30;
   const rows = await sql`
     SELECT entry_number, title, synopsis, date_start
     FROM trump_entries
     WHERE entry_number BETWEEN ${START_ENTRY} AND ${END_ENTRY}
-      AND (sources IS NULL OR sources::text = 'null')
+      AND (
+        sources IS NULL
+        OR sources::text = 'null'
+        OR sources::text = '[]'
+        OR (
+          -- dated skip with no real url: retry after RETRY_DAYS
+          jsonb_array_length(sources) = 1
+          AND (sources->0->>'url') IS NULL
+          AND (sources->0->>'searched') IS NOT NULL
+          AND (sources->0->>'searched')::date < CURRENT_DATE - INTERVAL '30 days'
+        )
+      )
     ORDER BY entry_number
     LIMIT ${BATCH_SIZE}
   `;
@@ -210,7 +236,7 @@ async function run() {
       if (score > bestScore) { bestScore = score; best = c; }
     }
 
-    if (best && bestScore >= MIN_MATCH_SCORE) {
+    if (best && bestScore >= MIN_COMBINED_SCORE) {
       await persistSource(row, best);
       console.log(`  #${row.entry_number} ✓ (score=${bestScore.toFixed(2)}) ${best.url.slice(0, 70)}`);
       updated++;
