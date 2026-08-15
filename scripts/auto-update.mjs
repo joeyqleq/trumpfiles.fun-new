@@ -82,73 +82,76 @@ async function getState() {
   };
 }
 
-// ── Research using Exa + CF Workers AI (replaces Gemini) ─────────────────────
+// ── Research: Exa (mandatory) + CF Workers AI to structure ───────────────────
 
-async function researchWithGemini(lastDate, maxEntry) {
-  const today = new Date().toISOString().split('T')[0];
-
-  // Step 1: Fetch real recent Trump news via Exa
-  let articles = [];
-  if (EXA_KEYS.length > 0) {
-    try {
-      const exaKey = getExaKey();
-      const exaRes = await fetch('https://api.exa.ai/search', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-api-key': exaKey },
-        body: JSON.stringify({
-          query: `Trump scandal corruption abuse power news ${lastDate}`,
-          numResults: 10,
-          contents: { text: { maxCharacters: 500 } },
-          useAutoprompt: true,
-          startPublishedDate: lastDate,
-        }),
-      });
-      if (exaRes.ok) {
-        const d = await exaRes.json();
-        articles = d.results ?? [];
-        console.log(`Exa found ${articles.length} articles since ${lastDate}`);
-      }
-    } catch (e) {
-      console.log('Exa search failed:', e.message);
-    }
+async function researchAndStructure(lastDate, maxEntry) {
+  // FAIL CLOSED: no Exa keys = no run
+  if (EXA_KEYS.length === 0) {
+    throw new Error('No EXA_API_KEY configured. Cannot research without real sources.');
   }
 
-  const newsContext = articles.length > 0
-    ? articles.map(r =>
-        `HEADLINE: ${r.title}\nURL: ${r.url}\nDATE: ${r.publishedDate ?? ''}\nSUMMARY: ${r.text ?? ''}`
-      ).join('\n\n---\n\n')
-    : '';
+  // Step 1: Fetch real recent Trump news via Exa (MANDATORY)
+  let articles = [];
+  const exaKey = getExaKey();
+  const exaRes = await fetch('https://api.exa.ai/search', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-api-key': exaKey },
+    body: JSON.stringify({
+      query: `Trump scandal corruption abuse power news`,
+      numResults: MAX_ENTRIES + 2, // fetch a few extra in case some fail validation
+      contents: { text: { maxCharacters: 600 } },
+      useAutoprompt: true,
+      startPublishedDate: lastDate, // ISO date string e.g. "2026-08-09"
+    }),
+  });
 
-  // Step 2: Use CF Workers AI (Llama 70B) to format as structured entries
-  // Calls the Trumpstein worker's /research endpoint
-  const systemPrompt = `You are a data curator for TrumpFiles, a political accountability archive. Your job is to convert news articles into structured JSON entries.
+  if (!exaRes.ok) {
+    const errText = await exaRes.text();
+    throw new Error(`Exa search failed ${exaRes.status}: ${errText}`);
+  }
 
-VALID CATEGORIES (use EXACTLY): "Authoritarianism" | "Government Corruption" | "Human Rights Violations" | "Grift / Financial Exploitation" | "National Security Violations" | "Foreign Policy" | "Election Interference" | "Press Freedom" | "Environmental Destruction" | "Conspiracy Theories / Disinformation"
+  const exaData = await exaRes.json();
+  articles = (exaData.results ?? []).filter(r => r.url && !r.url.includes('example.com'));
 
-VALID PHASES (use EXACTLY): "Pre-Political" | "Campaign 2016" | "White House 1" | "White House 2:2"
+  if (articles.length === 0) {
+    throw new Error(`Exa returned 0 real articles since ${lastDate}. Aborting — no fabrication allowed.`);
+  }
 
-SCORING GUIDE:
-- danger: 1-10 (10 = threatens constitutional order or human life)
-- authoritarianism: 1-10 (concentration of power, suppression of dissent)
-- lawlessness: 1-10 (violation of law, obstruction, norm destruction)
-- insanity: 1-10 (departure from reality, delusional behavior)
-- absurdity: 1-10 (so bizarre it would be rejected as fiction)
+  console.log(`Exa found ${articles.length} real articles since ${lastDate}`);
 
-Return ONLY a valid JSON array. No markdown, no explanation.`;
+  // Step 2: Build article map keyed by URL for reliable source attachment
+  const articleByUrl = new Map(articles.map(a => [a.url, a]));
 
-  const userPrompt = `Today is ${today}. The archive has ${maxEntry} entries, most recently dated ${lastDate}.
+  // Step 3: Ask CF Workers AI to structure articles — ONLY articles provided, no invention
+  const systemPrompt = `You are a data curator for TrumpFiles. Convert the provided news articles into structured JSON entries.
 
-${newsContext ? `NEWS ARTICLES TO PROCESS:\n\n${newsContext}\n\nConvert each article above into an entry. Use the article URL as the source.` : `Generate ${MAX_ENTRIES} realistic entries about Trump scandals from ${lastDate} to ${today}. Cover: authoritarianism, corruption, foreign policy, grift, human rights.`}
+STRICT RULES:
+- ONLY create entries for the articles explicitly provided below
+- NEVER invent events, quotes, dollar amounts, names, or crimes
+- NEVER generate placeholder or example.com URLs
+- Each entry's source_url MUST exactly match one of the article URLs provided
+- If an article is not about Trump misconduct/scandal, skip it
 
-For each article/event return:
+VALID CATEGORIES (use EXACTLY one): "Authoritarianism" | "Government Corruption" | "Human Rights Violations" | "Grift / Financial Exploitation" | "National Security Violations" | "Foreign Policy" | "Election Interference" | "Press Freedom" | "Environmental Destruction" | "Conspiracy Theories / Disinformation"
+
+VALID PHASES (use EXACTLY one): "Pre-Political" | "Campaign 2016" | "White House 1" | "White House 2:2"
+
+Return ONLY a valid JSON array. No markdown, no explanation, no invented content.`;
+
+  const newsContext = articles.map(r =>
+    `ARTICLE_URL: ${r.url}\nHEADLINE: ${r.title}\nDATE: ${r.publishedDate ?? ''}\nSUMMARY: ${r.text ?? ''}`
+  ).join('\n\n---\n\n');
+
+  const userPrompt = `Structure the following ${articles.length} real news articles as TrumpFiles entries.
+For each relevant article return ONE JSON object:
 {
-  "title": "punchy specific headline",
-  "synopsis": "3-5 sentences with specific facts, dates, names, amounts",
-  "category": "<one of the valid categories>",
+  "title": "punchy specific headline based on the article",
+  "synopsis": "3-5 sentences with specific facts from the article",
+  "category": "<valid category>",
   "phase": "White House 2:2",
-  "date_start": "YYYY-MM-DD",
-  "people_tags": ["Full Name", ...],
-  "source_url": "<article URL if available>",
+  "date_start": "YYYY-MM-DD (from article date)",
+  "people_tags": ["Full Name"],
+  "source_url": "<EXACT article URL from ARTICLE_URL field above>",
   "danger": 1-10,
   "authoritarianism": 1-10,
   "lawlessness": 1-10,
@@ -156,53 +159,57 @@ For each article/event return:
   "absurdity": 1-10
 }
 
-Return ONLY valid JSON array.`;
+ARTICLES:
+${newsContext}
 
-  // Call CF Workers AI via the worker's public /generate endpoint
+Return ONLY valid JSON array. Skip articles unrelated to Trump misconduct.`;
+
   const workerUrl = WORKER_URL || 'https://trumpstein.trumpstein.workers.dev';
   const cfRes = await fetch(`${workerUrl}/generate`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${INGEST_SECRET}`,
-    },
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${INGEST_SECRET}` },
     body: JSON.stringify({ system: systemPrompt, user: userPrompt, max_tokens: 4096 }),
   });
 
-  if (!cfRes.ok) {
-    const err = await cfRes.text();
-    throw new Error(`CF Workers AI error ${cfRes.status}: ${err}`);
-  }
+  if (!cfRes.ok) throw new Error(`CF Workers AI error ${cfRes.status}: ${await cfRes.text()}`);
 
   const cfData = await cfRes.json();
-  const text = cfData.response ?? cfData.text ?? '[]';
+  const rawText = cfData.response ?? cfData.text ?? '[]';
 
-  let entries;
+  // Parse, stripping QwQ <think> tokens
+  let entries = [];
   try {
-    // Strip <think>...</think> reasoning from QwQ-32b output
-    const stripped = text.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
-    // Find JSON array in the output
+    const stripped = rawText.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
     const jsonMatch = stripped.match(/\[[\s\S]*\]/);
-    const jsonStr = jsonMatch ? jsonMatch[0] : stripped;
-    entries = JSON.parse(jsonStr);
+    entries = JSON.parse(jsonMatch ? jsonMatch[0] : stripped);
   } catch {
-    const clean = text.replace(/^```json\n?/, '').replace(/\n?```$/, '').replace(/<think>[\s\S]*?<\/think>/g, '').trim();
-    const jsonMatch = clean.match(/\[[\s\S]*\]/);
-    try { entries = JSON.parse(jsonMatch ? jsonMatch[0] : clean); } catch { entries = []; }
+    console.warn('JSON parse failed, returning empty');
+    return [];
   }
 
-  // Attach source URLs from Exa results
-  if (Array.isArray(entries)) {
-    entries = entries.map((e, i) => {
-      const src = articles[i]?.url ?? e.source_url;
-      if (src) {
-        return { ...e, sources: [{ url: src, title: articles[i]?.title ?? e.title, source_type: 'news' }] };
+  if (!Array.isArray(entries)) return [];
+
+  // Step 4: Attach ONLY Exa-verified source URLs — reject any LLM-invented URLs
+  const verified = entries
+    .map(e => {
+      const url = e.source_url;
+      if (!url) return null; // no source = skip
+      if (url.includes('example.com') || url.includes('placeholder')) return null; // fabricated
+      const exaArticle = articleByUrl.get(url);
+      if (!exaArticle) {
+        // Try partial match (model may have slightly mangled URL)
+        const partialMatch = articles.find(a => a.url.includes(new URL(url).pathname.slice(0, 20)));
+        if (!partialMatch) {
+          console.warn(`SKIP (URL not from Exa): ${url}`);
+          return null;
+        }
+        return { ...e, sources: [{ url: partialMatch.url, title: partialMatch.title, source_type: 'news' }] };
       }
-      return e;
-    });
-  }
+      return { ...e, sources: [{ url: exaArticle.url, title: exaArticle.title, source_type: 'news' }] };
+    })
+    .filter(Boolean);
 
-  return Array.isArray(entries) ? entries : [];
+  return verified;
 }
 
 // ── Validation ────────────────────────────────────────────────────────────────
@@ -214,6 +221,10 @@ function validate(entry) {
   if (!VALID_CATEGORIES.includes(entry.category)) errors.push(`invalid category: ${entry.category}`);
   if (!VALID_PHASES.includes(entry.phase)) errors.push(`invalid phase: ${entry.phase}`);
   if (!entry.date_start || !/^\d{4}-\d{2}-\d{2}$/.test(entry.date_start)) errors.push('invalid date_start');
+  // HARD REQUIREMENT: must have a real Exa-sourced URL
+  const sourceUrl = entry.sources?.[0]?.url;
+  if (!sourceUrl) errors.push('no verified source URL');
+  if (sourceUrl?.includes('example.com') || sourceUrl?.includes('placeholder')) errors.push('placeholder URL rejected');
   return errors;
 }
 
@@ -285,15 +296,15 @@ async function run() {
   const { maxEntry, lastDate } = await getState();
   console.log(`DB state: max entry #${maxEntry}, last date ${lastDate}`);
 
-  console.log('\nResearching with Gemini...');
+  console.log('\nResearching via Exa + CF Workers AI (fail-closed)...');
   let candidates;
   try {
-    candidates = await researchWithGemini(lastDate, maxEntry);
+    candidates = await researchAndStructure(lastDate, maxEntry);
   } catch (err) {
-    console.error('Gemini research failed:', err.message);
+    console.error('Research failed:', err.message);
     process.exit(1);
   }
-  console.log(`Got ${candidates.length} candidate entries from Gemini`);
+  console.log(`Got ${candidates.length} Exa-sourced candidate entries`);
 
   const valid = [];
   for (const entry of candidates) {
@@ -333,8 +344,13 @@ async function run() {
   console.log(`\nInserted ${inserted} entries (#${maxEntry + 1}–#${maxEntry + inserted})`);
 
   if (inserted > 0) {
-    console.log('\nTriggering vectorize...');
-    await triggerVectorize(maxEntry, inserted);
+    // Vectorize using ROW COUNT offset, not entry number
+    // Query the actual row count before the new entries to get correct offset
+    const [countRow] = await sql`SELECT COUNT(*) as c FROM trump_entries`;
+    const totalRows = parseInt(countRow.c, 10);
+    const vectorizeOffset = totalRows - inserted; // rows before the new batch
+    console.log(`\nTriggering vectorize for ${inserted} new rows (offset=${vectorizeOffset})...`);
+    await triggerVectorize(vectorizeOffset, inserted);
   }
 
   console.log('\n=== Done ===');
