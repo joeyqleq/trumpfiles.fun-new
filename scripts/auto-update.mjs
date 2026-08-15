@@ -25,7 +25,7 @@
 import { neon } from '@neondatabase/serverless';
 
 const DATABASE_URL = process.env.DATABASE_URL;
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY; // no longer required — kept for backward compat
 const INGEST_SECRET = process.env.INGEST_SECRET;
 const WORKER_URL = process.env.WORKER_URL || 'https://trumpstein.trumpstein.workers.dev';
 const DRY_RUN = process.env.DRY_RUN === 'true';
@@ -41,7 +41,7 @@ let exaKeyIndex = 0;
 const getExaKey = () => EXA_KEYS[exaKeyIndex++ % EXA_KEYS.length];
 
 if (!DATABASE_URL) { console.error('DATABASE_URL required'); process.exit(1); }
-if (!GEMINI_API_KEY) { console.error('GEMINI_API_KEY required'); process.exit(1); }
+if (!INGEST_SECRET) { console.error('INGEST_SECRET required'); process.exit(1); }
 
 const sql = neon(DATABASE_URL);
 
@@ -91,7 +91,7 @@ async function researchWithGemini(lastDate, maxEntry) {
   let articles = [];
   if (EXA_KEYS.length > 0) {
     try {
-      const exaKey = EXA_KEYS[_exaIdx++ % EXA_KEYS.length];
+      const exaKey = getExaKey();
       const exaRes = await fetch('https://api.exa.ai/search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-api-key': exaKey },
