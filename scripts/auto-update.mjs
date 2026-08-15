@@ -172,14 +172,18 @@ Return ONLY valid JSON array. Group same-event articles together.`;
   const cfData = await cfRes.json();
   const rawText = cfData.response ?? cfData.text ?? '[]';
 
-  // Parse, stripping QwQ <think> tokens
+  // Parse — strip QwQ <think> tokens AND markdown fences (llama wraps in ```json)
   let entries = [];
   try {
-    const stripped = rawText.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+    const stripped = rawText
+      .replace(/<think>[\s\S]*?<\/think>/g, '')
+      .replace(/^```(?:json)?\s*/m, '')
+      .replace(/\s*```\s*$/m, '')
+      .trim();
     const jsonMatch = stripped.match(/\[[\s\S]*\]/);
     entries = JSON.parse(jsonMatch ? jsonMatch[0] : stripped);
   } catch {
-    console.warn('JSON parse failed, returning empty');
+    console.warn('JSON parse failed, rawText snippet:', rawText.slice(0, 200));
     return [];
   }
 
