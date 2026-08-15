@@ -182,8 +182,9 @@ Return ONLY valid JSON array. Group same-event articles together.`;
       .trim();
     const jsonMatch = stripped.match(/\[[\s\S]*\]/);
     entries = JSON.parse(jsonMatch ? jsonMatch[0] : stripped);
-  } catch {
-    console.warn('JSON parse failed, rawText snippet:', rawText.slice(0, 200));
+  } catch (parseErr) {
+    console.warn('JSON parse failed:', parseErr.message?.slice(0, 80));
+    console.warn('rawText length:', rawText.length, 'snippet:', rawText.slice(0, 300));
     return [];
   }
 
