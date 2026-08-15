@@ -234,14 +234,16 @@ async function handleGenerate(request: Request, env: Env): Promise<Response> {
   const { system, user, max_tokens = 4096 } = await request.json() as { system: string; user: string; max_tokens?: number };
 
   const result = await env.AI.run(
-    "@cf/qwen/qwq-32b" as Parameters<typeof env.AI.run>[0],
+    // Use fast model for /generate endpoint (auto-update structuring task)
+    // QwQ-32b times out at 120s in GH Actions; fp8-fast is 5-10x faster
+    "@cf/meta/llama-3.3-70b-instruct-fp8-fast" as Parameters<typeof env.AI.run>[0],
     {
       messages: [
         { role: "system", content: system },
         { role: "user", content: user },
       ],
       max_tokens,
-      temperature: 0.6,
+      temperature: 0.5,
       stream: false,
     }
   ) as { response?: string };
