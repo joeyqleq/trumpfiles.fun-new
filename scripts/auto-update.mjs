@@ -170,21 +170,28 @@ Return ONLY valid JSON array. Group same-event articles together.`;
   if (!cfRes.ok) throw new Error(`CF Workers AI error ${cfRes.status}: ${await cfRes.text()}`);
 
   const cfData = await cfRes.json();
-  const rawText = cfData.response ?? cfData.text ?? '[]';
+  const rawResponse = cfData.response ?? cfData.text ?? '[]';
 
-  // Parse — strip QwQ <think> tokens AND markdown fences (llama wraps in ```json)
+  // llama fp8-fast returns response as parsed JSON array/object directly
+  // QwQ-32b returns response as a string (may have <think> tokens or ```json fences)
   let entries = [];
   try {
-    const stripped = rawText
-      .replace(/<think>[\s\S]*?<\/think>/g, '')
-      .replace(/^```(?:json)?\s*/m, '')
-      .replace(/\s*```\s*$/m, '')
-      .trim();
-    const jsonMatch = stripped.match(/\[[\s\S]*\]/);
-    entries = JSON.parse(jsonMatch ? jsonMatch[0] : stripped);
+    if (Array.isArray(rawResponse)) {
+      // Already parsed by the worker
+      entries = rawResponse;
+    } else {
+      const rawText = String(rawResponse);
+      const stripped = rawText
+        .replace(/<think>[\s\S]*?<\/think>/g, '')
+        .replace(/^```(?:json)?\s*/m, '')
+        .replace(/\s*```\s*$/m, '')
+        .trim();
+      const jsonMatch = stripped.match(/\[[\s\S]*\]/);
+      entries = JSON.parse(jsonMatch ? jsonMatch[0] : stripped);
+    }
   } catch (parseErr) {
     console.warn('JSON parse failed:', parseErr.message?.slice(0, 80));
-    console.warn('rawText length:', rawText.length, 'snippet:', rawText.slice(0, 300));
+    console.warn('rawResponse type:', typeof rawResponse, 'snippet:', String(rawResponse).slice(0, 200));
     return [];
   }
 
