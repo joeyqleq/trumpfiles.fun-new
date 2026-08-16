@@ -254,9 +254,81 @@ async function handleGenerate(request: Request, env: Env): Promise<Response> {
   );
 }
 
+// ── Chat model (no reasoning model — avoids think-token leakage) ─────────────
+
+const CHAT_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
+
+// ── Think-block sanitizer (stateful across stream chunks) ────────────────────
+// Strips <think>...</think> blocks even when split across multiple chunks/lines.
+// Uses a state machine rather than per-chunk regex to handle arbitrary splits.
+
+class ThinkSanitizer {
+  private buf = "";         // pending incomplete tag fragment
+  private inThink = false;  // currently inside a think block
+
+  push(token: string): string {
+    if (!token) return "";
+
+    let out = "";
+    let s = this.buf + token;
+    this.buf = "";
+
+    while (s.length > 0) {
+      if (this.inThink) {
+        // Looking for </think>
+        const end = s.indexOf("</think>");
+        if (end !== -1) {
+          this.inThink = false;
+          s = s.slice(end + "</think>".length);
+        } else {
+          // Might be a split close-tag — buffer the tail
+          const partial = "</think>";
+          let keep = 0;
+          for (let i = 1; i < partial.length; i++) {
+            if (s.endsWith(partial.slice(0, i))) { keep = i; }
+          }
+          this.buf = s.slice(s.length - keep);
+          s = "";
+        }
+      } else {
+        // Looking for <think>
+        const start = s.indexOf("<think>");
+        if (start !== -1) {
+          out += s.slice(0, start);
+          this.inThink = true;
+          s = s.slice(start + "<think>".length);
+        } else {
+          // Buffer tail that could be start of <think>
+          const partial = "<think>";
+          let keep = 0;
+          for (let i = 1; i < partial.length; i++) {
+            if (s.endsWith(partial.slice(0, i))) { keep = i; }
+          }
+          out += s.slice(0, s.length - keep);
+          this.buf = s.slice(s.length - keep);
+          s = "";
+        }
+      }
+    }
+    return out;
+  }
+
+  // Flush any buffered content at end-of-stream (if it never completed a tag)
+  flush(): string {
+    const out = this.inThink ? "" : this.buf;
+    this.buf = "";
+    return out;
+  }
+}
+
 // ── Main chat handler ─────────────────────────────────────────────────────────
 
-async function handleChat(request: Request, env: Env): Promise<Response> {
+export interface FetchEnv extends Env {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  executionCtx?: ExecutionContext;
+}
+
+async function handleChat(request: Request, env: Env, ctx?: ExecutionContext): Promise<Response> {
   const body = (await request.json()) as ChatRequest;
   const { message, sessionId, history: clientHistory } = body;
 
@@ -273,18 +345,16 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
   await initDb(env.DB);
   await ensureSession(env.DB, sid);
 
-  // Load history (up to 20 exchanges for context)
   let history: ChatMessage[] = await getRecentHistory(env.DB, sid, 20);
   if (history.length === 0 && clientHistory) {
     history = clientHistory.slice(-20);
   }
 
-  // Load long-term memories
   const memories = await getMemories(env.DB, sid);
 
-  // Run RAG and optional web search in parallel
+  // RAG top-K 5 — evidence, not a dump
   const [ragResult, webResult] = await Promise.all([
-    ragQuery(trimmedMessage, env.AI, env.VECTORIZE, 10),
+    ragQuery(trimmedMessage, env.AI, env.VECTORIZE, 5),
     env.EXA_API_KEY && needsWebSearch(trimmedMessage)
       ? webSearch(trimmedMessage, env.EXA_API_KEY)
       : Promise.resolve(""),
@@ -292,16 +362,9 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
 
   const { context, entryNumbers } = ragResult;
 
-  // Build system prompt with corpus context + web context + memories
   let systemPrompt = buildAugmentedPrompt(TRUMPSTEIN_SYSTEM_PROMPT, context);
-
-  if (webResult) {
-    systemPrompt += `\n\nLIVE WEB CONTEXT (current events — use this for up-to-date info):\n${webResult}`;
-  }
-
-  if (memories) {
-    systemPrompt += `\n\nWHAT I REMEMBER ABOUT THIS USER:\n${memories}`;
-  }
+  if (webResult) systemPrompt += `\n\nLIVE WEB CONTEXT:\n${webResult}`;
+  if (memories) systemPrompt += `\n\nWHAT I REMEMBER ABOUT THIS USER:\n${memories}`;
 
   const messages: ChatMessage[] = [
     { role: "system", content: systemPrompt },
@@ -311,45 +374,107 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
 
   await saveMessage(env.DB, sid, "user", trimmedMessage);
 
-  // QwQ-32B reasoning model — outperforms 70B on complex multi-turn reasoning
   const aiResponse = await env.AI.run(
-    "@cf/qwen/qwq-32b" as Parameters<typeof env.AI.run>[0],
-    {
-      messages,
-      stream: true,
-      max_tokens: 1200,
-      temperature: 0.8,
-    }
+    CHAT_MODEL as Parameters<typeof env.AI.run>[0],
+    { messages, stream: true, max_tokens: 800, temperature: 0.75 }
   );
 
-  const stream = aiResponse as unknown as ReadableStream;
-  const [streamForClient, streamForSave] = stream.tee();
+  const rawStream = aiResponse as unknown as ReadableStream<Uint8Array>;
 
-  // Save reply + maybe create memory (fire-and-forget)
-  (async () => {
-    const reader = streamForSave.getReader();
-    const decoder = new TextDecoder();
-    let fullText = "";
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      const chunk = decoder.decode(value, { stream: true });
-      for (const line of chunk.split("\n")) {
-        if (line.startsWith("data: ") && !line.includes("[DONE]")) {
-          try {
-            const json = JSON.parse(line.slice(6));
-            fullText += json.response ?? json.choices?.[0]?.delta?.content ?? "";
-          } catch { /* ignore */ }
+  // ── Build a sanitized client stream + capture sanitized text for D1 ─────────
+  const encoder = new TextEncoder();
+  const decoder = new TextDecoder();
+  let capturedAssistant = "";
+
+  // We need to both forward sanitized SSE to client AND capture the full text.
+  // We transform the raw stream: buffer incomplete SSE lines across chunks,
+  // sanitize think tokens, and re-emit clean SSE events.
+
+  const sanitizer = new ThinkSanitizer();
+  let sseLineBuffer = "";
+
+  // streamDone resolves when the transform finishes, carrying sanitized text
+  let resolveStreamDone!: (text: string) => void;
+  const streamDonePromise = new Promise<string>(r => { resolveStreamDone = r; });
+
+  const clientStream = new ReadableStream<Uint8Array>({
+    async start(controller) {
+      const reader = rawStream.getReader();
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) {
+            // Flush sanitizer and any buffered SSE line
+            const tail = sanitizer.flush();
+            if (tail) capturedAssistant += tail;
+            if (sseLineBuffer.trim() && sseLineBuffer.startsWith("data: ") && !sseLineBuffer.includes("[DONE]")) {
+              try {
+                const j = JSON.parse(sseLineBuffer.slice(6));
+                const tok = j.response ?? j.choices?.[0]?.delta?.content ?? "";
+                const clean = sanitizer.push(tok) + sanitizer.flush();
+                if (clean) {
+                  capturedAssistant += clean;
+                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ ...j, response: clean })}\n\n`));
+                }
+              } catch { /* ignore */ }
+            }
+            controller.close();
+            resolveStreamDone(capturedAssistant.trim());
+            break;
+          }
+
+          const chunk = decoder.decode(value, { stream: true });
+          sseLineBuffer += chunk;
+
+          const lines = sseLineBuffer.split("\n");
+          sseLineBuffer = lines.pop() ?? "";
+
+          for (const line of lines) {
+            if (!line.startsWith("data: ") || line.includes("[DONE]")) {
+              controller.enqueue(encoder.encode(line + "\n"));
+              continue;
+            }
+            try {
+              const json = JSON.parse(line.slice(6));
+              const rawToken = json.response ?? json.choices?.[0]?.delta?.content ?? "";
+              const cleanToken = sanitizer.push(rawToken);
+              capturedAssistant += cleanToken;
+              const patched = JSON.stringify({
+                ...json,
+                response: cleanToken,
+                ...(json.choices ? {
+                  choices: json.choices.map((c: Record<string, unknown>, i: number) =>
+                    i === 0 ? { ...c, delta: { ...(c.delta as Record<string, unknown>), content: cleanToken } } : c
+                  )
+                } : {})
+              });
+              controller.enqueue(encoder.encode(`data: ${patched}\n\n`));
+            } catch {
+              controller.enqueue(encoder.encode(line + "\n"));
+            }
+          }
         }
+      } catch (err) {
+        resolveStreamDone(capturedAssistant.trim());
+        controller.error(err);
       }
     }
-    if (fullText) {
-      await saveMessage(env.DB, sid, "assistant", fullText);
+  });
+
+  // ── Persist sanitized text using waitUntil so CF doesn't terminate early ────
+  const persistWork = streamDonePromise.then(async (sanitizedText) => {
+    if (sanitizedText) {
+      await saveMessage(env.DB, sid, "assistant", sanitizedText);
       await maybeCreateMemory(env.DB, sid, env.AI).catch(() => {});
     }
-  })();
+  });
 
-  return new Response(streamForClient, {
+  if (ctx?.waitUntil) {
+    ctx.waitUntil(persistWork);
+  }
+  persistWork.catch(() => {});
+
+  return new Response(clientStream, {
     headers: {
       "Content-Type": "text/event-stream",
       "Cache-Control": "no-cache",
@@ -392,7 +517,7 @@ async function handleHistory(request: Request, env: Env): Promise<Response> {
 }
 
 export default {
-  async fetch(request: Request, env: Env): Promise<Response> {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
     const allowedOrigins = env.ALLOWED_ORIGINS ?? "*";
     const cors = corsHeaders(request, allowedOrigins);
@@ -404,7 +529,7 @@ export default {
     let response: Response;
     try {
       if (url.pathname === "/chat" && request.method === "POST") {
-        response = await handleChat(request, env);
+        response = await handleChat(request, env, ctx);
       } else if (url.pathname === "/generate" && request.method === "POST") {
         response = await handleGenerate(request, env);
       } else if (url.pathname === "/feedback" && request.method === "POST") {
@@ -414,7 +539,10 @@ export default {
       } else if (url.pathname === "/ingest" && request.method === "POST") {
         response = await handleIngest(request, env);
       } else if (url.pathname === "/health") {
-        response = new Response(JSON.stringify({ status: "ok", name: "trumpstein", model: "llama-3.1-70b-instruct" }), { headers: { "Content-Type": "application/json" } });
+        response = new Response(
+          JSON.stringify({ status: "ok", name: "trumpstein", model: CHAT_MODEL }),
+          { headers: { "Content-Type": "application/json" } }
+        );
       } else {
         response = new Response("Not Found", { status: 404 });
       }

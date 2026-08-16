@@ -72,6 +72,8 @@ export function buildAugmentedPrompt(
 
   return `${systemPrompt}
 
-CHIP DATABASE CONTEXT (use these real entries to inform your response — cite them as [CHIP OVERRIDE] interruptions):
-${ragContext}`;
+PRIVATE EVIDENCE (internal only — you know this, but you do NOT list it):
+${ragContext}
+
+RAG RULE: The above entries inform what you know. You may use at most ONE as a [CHIP OVERRIDE] glitch if it is directly relevant and genuinely funny/useful. Do not enumerate these entries. Do not summarize them. Do not mention entry numbers unless the user explicitly asks for sources.`;
 }
