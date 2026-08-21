@@ -23,6 +23,7 @@
  */
 
 import { neon } from '@neondatabase/serverless';
+import { normalizeEnrichment, toLegacyEntry, validateEnrichment } from './enrichment-contract.mjs';
 
 const DATABASE_URL = process.env.DATABASE_URL;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY; // no longer required — kept for backward compat
@@ -44,28 +45,6 @@ if (!DATABASE_URL) { console.error('DATABASE_URL required'); process.exit(1); }
 if (!INGEST_SECRET) { console.error('INGEST_SECRET required'); process.exit(1); }
 
 const sql = neon(DATABASE_URL);
-
-// ── Schema constants ──────────────────────────────────────────────────────────
-
-const VALID_CATEGORIES = [
-  'Authoritarianism',
-  'Government Corruption',
-  'Human Rights Violations',
-  'Grift / Financial Exploitation',
-  'National Security Violations',
-  'Foreign Policy',
-  'Election Interference',
-  'Press Freedom',
-  'Environmental Destruction',
-  'Conspiracy Theories / Disinformation',
-];
-
-const VALID_PHASES = [
-  'Pre-Political',
-  'Campaign 2016',
-  'White House 1',
-  'White House 2:2',
-];
 
 // ── DB helpers ────────────────────────────────────────────────────────────────
 
@@ -146,7 +125,9 @@ Return ONLY a valid JSON array. No markdown, no explanation.`;
   const userPrompt = `Group these ${articles.length} articles by real-world event. For each DISTINCT event return ONE object:
 {
   "title": "punchy headline from article facts only",
-  "synopsis": "3-5 sentences with specific facts from the articles",
+  "short_summary": "1-2 concise sentences for a catalogue card, naming the core who/what/when",
+  "medium_summary": "3-5 factual sentences for a dossier, adding evidence-supported context",
+  "long_summary": "6-10 factual sentences with who, what, when, sequence, context, and clearly attributed allegations",
   "category": "<valid category>",
   "phase": "White House 2:2",
   "date_start": "YYYY-MM-DD",
@@ -205,12 +186,12 @@ Return ONLY valid JSON array. Group same-event articles together.`;
         .map(url => {
           if (!url || url.includes('example.com') || url.includes('placeholder')) return null;
           const exaArticle = articleByUrl.get(url);
-          if (exaArticle) return { url: exaArticle.url, title: exaArticle.title, source_type: 'news' };
+          if (exaArticle) return { url: exaArticle.url, title: exaArticle.title, source_type: 'news', status: 'verified', confidence: 1 };
           // Fuzzy match: model may have slightly mangled URL
           try {
             const path = new URL(url).pathname.slice(0, 30);
             const match = articles.find(a => a.url.includes(path));
-            if (match) return { url: match.url, title: match.title, source_type: 'news' };
+            if (match) return { url: match.url, title: match.title, source_type: 'news', status: 'verified', confidence: 1 };
           } catch { /* invalid URL */ }
           console.warn(`SKIP URL not from Exa: ${url.slice(0, 60)}`);
           return null;
@@ -221,40 +202,43 @@ Return ONLY valid JSON array. Group same-event articles together.`;
     })
     .filter(Boolean);
 
-  return verified;
+  // This is the single contract boundary for new entries. The database still
+  // stores legacy columns below; no unvalidated model field reaches persistence.
+  return verified.flatMap(entry => {
+    const normalized = normalizeEnrichment(entry, {
+      source: 'auto-update', model: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
+    });
+    const result = validateEnrichment(normalized, entry);
+    if (!result.ok) {
+      console.warn(`SKIP invalid enrichment: ${result.errors.join('; ')}`);
+      return [];
+    }
+    return [result.value];
+  });
 }
 
 // ── Validation ────────────────────────────────────────────────────────────────
 
 function validate(entry) {
-  const errors = [];
-  if (!entry.title || entry.title.length < 10) errors.push('title too short');
-  if (!entry.synopsis || entry.synopsis.length < 50) errors.push('synopsis too short');
-  if (!VALID_CATEGORIES.includes(entry.category)) errors.push(`invalid category: ${entry.category}`);
-  if (!VALID_PHASES.includes(entry.phase)) errors.push(`invalid phase: ${entry.phase}`);
-  if (!entry.date_start || !/^\d{4}-\d{2}-\d{2}$/.test(entry.date_start)) errors.push('invalid date_start');
-  // HARD REQUIREMENT: must have a real Exa-sourced URL
-  const sourceUrl = entry.sources?.[0]?.url;
-  if (!sourceUrl) errors.push('no verified source URL');
-  if (sourceUrl?.includes('example.com') || sourceUrl?.includes('placeholder')) errors.push('placeholder URL rejected');
-  return errors;
+  return validateEnrichment(entry).errors;
 }
 
 // ── DB insert ─────────────────────────────────────────────────────────────────
 
 async function insertEntry(entry, entryNumber) {
-  const tags = Array.isArray(entry.people_tags) ? entry.people_tags : ['Donald Trump'];
-  const sourcesJson = entry.sources ? JSON.stringify(entry.sources) : null;
+  const legacy = toLegacyEntry(entry);
+  const tags = legacy.people_tags;
+  const sourcesJson = legacy.sources ? JSON.stringify(legacy.sources) : null;
 
   await sql`
     INSERT INTO trump_entries (entry_number, title, synopsis, category, phase, date_start, people_tags, sources)
     VALUES (
       ${entryNumber},
-      ${entry.title},
-      ${entry.synopsis},
-      ${entry.category},
-      ${entry.phase},
-      ${entry.date_start},
+      ${legacy.title},
+      ${legacy.synopsis},
+      ${legacy.category},
+      ${legacy.phase},
+      ${legacy.date_start},
       ${tags},
       ${sourcesJson ? sql`${sourcesJson}::jsonb` : null}
     )
@@ -262,8 +246,8 @@ async function insertEntry(entry, entryNumber) {
   `;
 
   // Write ALL sources to trump_sources canonical table
-  if (Array.isArray(entry.sources)) {
-    for (const s of entry.sources) {
+  if (Array.isArray(legacy.sources)) {
+    for (const s of legacy.sources) {
       if (!s?.url) continue;
       let publisher = 'unknown';
       try { publisher = new URL(s.url).hostname.replace(/^www\./, ''); } catch { /* skip */ }
@@ -271,7 +255,7 @@ async function insertEntry(entry, entryNumber) {
       // Try to extract date from source if available
       await sql`
         INSERT INTO trump_sources (entry_number, url, title, publisher, source_type)
-        VALUES (${entryNumber}, ${s.url}, ${s.title ?? entry.title}, ${publisher}, 'news')
+        VALUES (${entryNumber}, ${s.url}, ${s.title ?? legacy.title}, ${publisher}, 'news')
         ON CONFLICT (entry_number, url) DO NOTHING
       `;
     }
@@ -282,14 +266,14 @@ async function insertEntry(entry, entryNumber) {
       (entry_number, danger, authoritarianism, lawlessness, insanity, absurdity, credibility_risk, recency_intensity, impact_scope)
     VALUES (
       ${entryNumber},
-      ${entry.danger || 5},
-      ${entry.authoritarianism || 5},
-      ${entry.lawlessness || 5},
-      ${entry.insanity || 5},
-      ${entry.absurdity || 5},
-      5,
-      5,
-      5
+      ${legacy.danger},
+      ${legacy.authoritarianism},
+      ${legacy.lawlessness},
+      ${legacy.insanity},
+      ${legacy.absurdity},
+      ${legacy.credibility_risk ?? 5},
+      ${legacy.recency_intensity ?? 5},
+      ${legacy.impact_scope ?? 5}
     )
     ON CONFLICT (entry_number) DO NOTHING
   `;

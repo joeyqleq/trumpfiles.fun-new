@@ -3,7 +3,7 @@
  * Automated source backfill using Exa REST API.
  * Writes to BOTH trump_entries.sources (JSONB) AND trump_sources (canonical table).
  * Uses semantic matching to verify the Exa result actually covers the same event.
- * Marks permanently-unresolvable entries with sources = '[]' so they don't stall the cursor.
+ * Marks rejected entries with a dated retry sentinel so they do not stall the cursor.
  *
  * Env vars:
  *   DATABASE_URL      — Neon connection string
@@ -16,6 +16,9 @@
  */
 
 import { neon } from '@neondatabase/serverless';
+import { RETRY_DAYS } from './backfill-sources-state.mjs';
+
+const VALID_SOURCE_URL_PATTERN = '^https?://[^\\s/?#]+(?:[/?#]|$)';
 
 const DATABASE_URL = process.env.DATABASE_URL;
 const EXA_KEYS = [
@@ -167,7 +170,30 @@ async function markSkipped(entry_number) {
     UPDATE trump_entries
     SET sources = ${JSON.stringify([{ searched: today }])}::jsonb
     WHERE entry_number = ${entry_number}
-      AND (sources IS NULL OR sources::text = 'null')
+      AND (
+        sources IS NULL
+        OR sources::text = 'null'
+        OR sources::text = '[]'
+        OR (
+          CASE WHEN jsonb_typeof(sources) = 'array' THEN jsonb_array_length(sources) ELSE 0 END = 1
+          AND COALESCE(sources->0->>'url', '') = ''
+          AND CASE
+            WHEN COALESCE(sources->0->>'searched', '') ~ '^\\d{4}-\\d{2}-\\d{2}$'
+            THEN (sources->0->>'searched')::date
+            ELSE NULL
+          END < CURRENT_DATE - (${RETRY_DAYS} * INTERVAL '1 day')
+        )
+        OR (
+          EXISTS (
+            SELECT 1 FROM jsonb_array_elements(CASE WHEN jsonb_typeof(sources) = 'array' THEN sources ELSE '[]'::jsonb END) AS item
+            WHERE COALESCE(item->>'url', '') <> ''
+          )
+          AND NOT EXISTS (
+            SELECT 1 FROM jsonb_array_elements(CASE WHEN jsonb_typeof(sources) = 'array' THEN sources ELSE '[]'::jsonb END) AS item
+            WHERE COALESCE(item->>'url', '') ~* ${VALID_SOURCE_URL_PATTERN}
+          )
+        )
+      )
   `;
 }
 
@@ -184,7 +210,6 @@ async function run() {
   //   - sources IS NULL or 'null' = never tried
   //   - old [] sentinel (pre-fix legacy)
   //   - skip markers older than 30 days (retry)
-  const RETRY_DAYS = 30;
   const rows = await sql`
     SELECT entry_number, title, synopsis, date_start
     FROM trump_entries
@@ -195,17 +220,31 @@ async function run() {
         OR sources::text = '[]'
         OR (
           -- dated skip with no real url: retry after RETRY_DAYS
-          jsonb_array_length(sources) = 1
-          AND (sources->0->>'url') IS NULL
-          AND (sources->0->>'searched') IS NOT NULL
-          AND (sources->0->>'searched')::date < CURRENT_DATE - INTERVAL '30 days'
+          CASE WHEN jsonb_typeof(sources) = 'array' THEN jsonb_array_length(sources) ELSE 0 END = 1
+          AND COALESCE(sources->0->>'url', '') = ''
+          AND CASE
+            WHEN COALESCE(sources->0->>'searched', '') ~ '^\\d{4}-\\d{2}-\\d{2}$'
+            THEN (sources->0->>'searched')::date
+            ELSE NULL
+          END < CURRENT_DATE - (${RETRY_DAYS} * INTERVAL '1 day')
+        )
+        OR (
+          -- malformed URL arrays are eligible for repair, but valid URLs are never overwritten here
+          EXISTS (
+            SELECT 1 FROM jsonb_array_elements(CASE WHEN jsonb_typeof(sources) = 'array' THEN sources ELSE '[]'::jsonb END) AS item
+            WHERE COALESCE(item->>'url', '') <> ''
+          )
+          AND NOT EXISTS (
+            SELECT 1 FROM jsonb_array_elements(CASE WHEN jsonb_typeof(sources) = 'array' THEN sources ELSE '[]'::jsonb END) AS item
+            WHERE COALESCE(item->>'url', '') ~* ${VALID_SOURCE_URL_PATTERN}
+          )
         )
       )
     ORDER BY entry_number
     LIMIT ${BATCH_SIZE}
   `;
 
-  console.log(`Found ${rows.length} unsourced entries (NULL only, skipping already-attempted [])`);
+  console.log(`Found ${rows.length} eligible entries (missing, legacy empty, or expired skip)`);
   if (rows.length === 0) {
     console.log('All entries in range have been attempted. Done.');
     return;
@@ -241,7 +280,7 @@ async function run() {
       console.log(`  #${row.entry_number} ✓ (score=${bestScore.toFixed(2)}) ${best.url.slice(0, 70)}`);
       updated++;
     } else {
-      // Mark as permanently tried so cursor advances
+      // Refresh the dated retry marker so this row leaves the next ordered batch.
       await markSkipped(row.entry_number);
       if (best) {
         console.log(`  #${row.entry_number} ✗ best score too low (${bestScore.toFixed(2)}): ${best.url.slice(0, 60)}`);
