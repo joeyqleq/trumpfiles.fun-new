@@ -12,6 +12,13 @@
 
 # testing
 /coverage
+/.playwright-cli/
+/workers/trumpstein/.tmp-rag-check/
+/workers/trumpstein/.tmp-rathbone-continuity/
+/workers/trumpstein/.tmp-routing-check/
+/workers/trumpstein/.tmp-ingest-check/
+/workers/trumpstein/.tmp-model-routing-check/
+/workers/trumpstein/.tmp-conversation-matrix-check/
 
 # next.js
 /.next/

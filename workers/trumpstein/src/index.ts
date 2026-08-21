@@ -1,7 +1,27 @@
 import type { Ai, Vectorize, D1Database } from "@cloudflare/workers-types";
 import { TRUMPSTEIN_SYSTEM_PROMPT } from "./persona";
-import { ragQuery, buildAugmentedPrompt } from "./rag";
+import { executeRagPlan, buildAugmentedPrompt } from "./rag";
 import { handleIngest, type IngestEnv } from "./ingest";
+import {
+  applyUserTurnConversationState,
+  buildConversationStatePrompt,
+  type ConversationState,
+  Layer0TurnRouter,
+  finalizeAssistantConversationState,
+  type TurnRoute,
+} from "./routing";
+import {
+  loadSessionState,
+  serializeSessionState,
+} from "./session-state";
+import {
+  absorbRathboneAssistantCanon,
+  shouldCreateGeneralMemory,
+  shouldUseFactualRetrievalForRathbone,
+  updateRathboneWorldState,
+  type RathboneWorldState,
+} from "./rathbone";
+import { DEFAULT_CHAT_MODEL, runSelectedStreamingChatModel, selectChatModel } from "./model-routing";
 
 export interface Env extends IngestEnv {
   AI: Ai;
@@ -10,6 +30,8 @@ export interface Env extends IngestEnv {
   ALLOWED_ORIGINS?: string;
   INGEST_SECRET?: string;
   EXA_API_KEY?: string;  // optional web search
+  CHAT_MODEL?: string;
+  GLM_MODEL?: string;
 }
 
 interface ChatMessage {
@@ -45,6 +67,11 @@ async function initDb(db: D1Database): Promise<void> {
       session_id TEXT NOT NULL,
       summary TEXT NOT NULL,
       created_at INTEGER NOT NULL
+    )`),
+    db.prepare(`CREATE TABLE IF NOT EXISTS session_state (
+      session_id TEXT PRIMARY KEY,
+      rathbone_state TEXT NOT NULL,
+      updated_at INTEGER NOT NULL
     )`),
     db.prepare(`CREATE TABLE IF NOT EXISTS feedback (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -131,6 +158,31 @@ async function saveMessage(
     .run();
 }
 
+async function getSessionState(db: D1Database, sessionId: string): Promise<{ rathbone: RathboneWorldState; conversation: ConversationState }> {
+  const row = await db
+    .prepare(`SELECT rathbone_state FROM session_state WHERE session_id = ?`)
+    .bind(sessionId)
+    .first<{ rathbone_state: string }>();
+  return loadSessionState(row?.rathbone_state);
+}
+
+async function saveSessionStateRow(
+  db: D1Database,
+  sessionId: string,
+  state: { rathbone: RathboneWorldState; conversation: ConversationState }
+): Promise<void> {
+  await db
+    .prepare(
+      `INSERT INTO session_state (session_id, rathbone_state, updated_at)
+       VALUES (?, ?, ?)
+       ON CONFLICT(session_id) DO UPDATE SET
+         rathbone_state = excluded.rathbone_state,
+         updated_at = excluded.updated_at`
+    )
+    .bind(sessionId, serializeSessionState(state), Date.now())
+    .run();
+}
+
 // ── Long-term memory ─────────────────────────────────────────────────────────
 
 async function getMemories(db: D1Database, sessionId: string): Promise<string> {
@@ -152,8 +204,11 @@ async function saveMemory(db: D1Database, sessionId: string, summary: string): P
 async function maybeCreateMemory(
   db: D1Database,
   sessionId: string,
-  ai: Ai
+  ai: Ai,
+  allowGeneralMemory: boolean
 ): Promise<void> {
+  if (!allowGeneralMemory) return;
+
   const countRow = await db
     .prepare(`SELECT COUNT(*) as c FROM messages WHERE session_id = ?`)
     .bind(sessionId)
@@ -186,19 +241,38 @@ async function maybeCreateMemory(
   }
 }
 
-// ── Web search via Exa ────────────────────────────────────────────────────────
-
-function needsWebSearch(query: string): boolean {
-  const webTriggers = [
-    /\b(today|tonight|this week|this month|this year|yesterday|2025|2026)\b/i,
-    /\b(latest|recent|current|now|breaking|news|just|happened|announced|said)\b/i,
-    /\b(stock|market|price|poll|approval|shooting|attack|killed|arrested|elected|indicted)\b/i,
-    /\b(who won|what happened|what did|when did|where did|is it true that)\b/i,
-  ];
-  return webTriggers.some(r => r.test(query));
+interface WebSearchResult {
+  title?: string;
+  text?: string;
+  url?: string;
 }
 
-async function webSearch(query: string, apiKey: string): Promise<string> {
+export function formatWebSearchResults(results: WebSearchResult[] = [], options: { requireUrl?: boolean } = {}): string {
+  const seen = new Set<string>();
+  return results
+    .filter((result) => {
+      const validUrl = typeof result.url === "string" && /^https?:\/\//i.test(result.url) ? result.url : "";
+      if (options.requireUrl && !validUrl) return false;
+      const key = validUrl || `${result.title ?? ""}:${result.text ?? ""}`.slice(0, 120);
+      if (!key.trim() || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, 5)
+    .map((result) => {
+      const title = cleanWebField(result.title, 120) || "Untitled result";
+      const url = typeof result.url === "string" && /^https?:\/\//i.test(result.url) ? result.url : "URL unavailable";
+      const text = cleanWebField(result.text, 500);
+      return [`[WEB] ${title}`, `URL: ${url}`, text ? `Excerpt: ${text}` : null].filter(Boolean).join(" | ");
+    })
+    .join("\n\n");
+}
+
+function cleanWebField(value: string | undefined, maxLength: number): string {
+  return typeof value === "string" ? value.replace(/\s+/g, " ").trim().slice(0, maxLength) : "";
+}
+
+async function webSearch(query: string, apiKey: string, requireUrl = false): Promise<string> {
   try {
     const res = await fetch("https://api.exa.ai/search", {
       method: "POST",
@@ -208,16 +282,14 @@ async function webSearch(query: string, apiKey: string): Promise<string> {
       },
       body: JSON.stringify({
         query: `Trump ${query}`,
-        numResults: 3,
-        contents: { text: { maxCharacters: 400 } },
+        numResults: 5,
+        contents: { text: { maxCharacters: 500 } },
         useAutoprompt: true,
       }),
     });
     if (!res.ok) return "";
-    const data = await res.json() as { results?: Array<{ title?: string; text?: string; url?: string }> };
-    return (data.results ?? [])
-      .map(r => `[WEB] ${r.title ?? ""}: ${r.text ?? ""}`.trim())
-      .join("\n\n");
+    const data = await res.json() as { results?: WebSearchResult[] };
+    return formatWebSearchResults(data.results ?? [], { requireUrl });
   } catch {
     return "";
   }
@@ -227,7 +299,7 @@ async function webSearch(query: string, apiKey: string): Promise<string> {
 
 async function handleGenerate(request: Request, env: Env): Promise<Response> {
   const secret = request.headers.get("Authorization")?.replace("Bearer ", "");
-  if (secret !== env.INGEST_SECRET) {
+  if (!env.INGEST_SECRET || !secret || secret !== env.INGEST_SECRET) {
     return new Response(JSON.stringify({ error: "Unauthorized" }), { status: 401, headers: { "Content-Type": "application/json" } });
   }
 
@@ -254,15 +326,32 @@ async function handleGenerate(request: Request, env: Env): Promise<Response> {
   );
 }
 
-// ── Chat model (no reasoning model — avoids think-token leakage) ─────────────
+export function rathbonePromptForTurn(
+  route: Pick<TurnRoute, "intent" | "rathboneThread">,
+  useFactualRetrieval: boolean,
+  promptAugmentation: string
+): string {
+  return route.intent === "rathbone" && !useFactualRetrieval && route.rathboneThread ? promptAugmentation : "";
+}
 
-const CHAT_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
+export function factFictionBoundaryForTurn(
+  route: Pick<TurnRoute, "intent" | "rathboneThread" | "sourceRequest">,
+  useFactualRetrieval: boolean
+): string {
+  if (!route.rathboneThread || (!route.sourceRequest && route.intent === "rathbone" && !useFactualRetrieval)) return "";
+  return [
+    "FACT/FICTION BOUNDARY (internal only):",
+    "The Rathbone world is fictional Trumpstein canon, not historical evidence.",
+    "If the user asks for sources, proof, or real-world facts, say clearly that Rathbone canon is fictional and use only factual archive/live evidence for real claims.",
+    "Do not cite, search for, index, or present fictional Rathbone events as real-world records.",
+  ].join("\n");
+}
 
 // ── Think-block sanitizer (stateful across stream chunks) ────────────────────
 // Strips <think>...</think> blocks even when split across multiple chunks/lines.
 // Uses a state machine rather than per-chunk regex to handle arbitrary splits.
 
-class ThinkSanitizer {
+export class ThinkSanitizer {
   private buf = "";         // pending incomplete tag fragment
   private inThink = false;  // currently inside a think block
 
@@ -321,10 +410,25 @@ class ThinkSanitizer {
   }
 }
 
+export function patchSsePayload(json: Record<string, unknown>, cleanToken: string): string {
+  const choices = Array.isArray(json.choices) ? json.choices : null;
+  return JSON.stringify({
+    ...json,
+    response: cleanToken,
+    ...(choices ? {
+      choices: choices.map((choice, index) => {
+        if (index !== 0 || !choice || typeof choice !== "object") return choice;
+        const record = choice as Record<string, unknown>;
+        const delta = record.delta && typeof record.delta === "object" ? record.delta as Record<string, unknown> : {};
+        return { ...record, delta: { ...delta, content: cleanToken } };
+      }),
+    } : {}),
+  });
+}
+
 // ── Main chat handler ─────────────────────────────────────────────────────────
 
 export interface FetchEnv extends Env {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   executionCtx?: ExecutionContext;
 }
 
@@ -350,36 +454,82 @@ async function handleChat(request: Request, env: Env, ctx?: ExecutionContext): P
     history = clientHistory.slice(-20);
   }
 
-  const memories = await getMemories(env.DB, sid);
+  const currentTurn = history.filter((msg) => msg.role === "user").length + 1;
+  const sessionState = await getSessionState(env.DB, sid);
+  const router = new Layer0TurnRouter();
+  const route = router.routeTurn(trimmedMessage, history, sessionState.conversation, sessionState.rathbone);
+  const priorRathboneState = sessionState.rathbone;
+  const rathboneResult = updateRathboneWorldState(priorRathboneState, {
+    message: trimmedMessage,
+    history,
+    currentTurn,
+  });
+  const rathboneState = rathboneResult.state;
+  const userConversationState = applyUserTurnConversationState(
+    sessionState.conversation,
+    route,
+    history,
+    trimmedMessage,
+    currentTurn
+  );
+  await saveSessionStateRow(env.DB, sid, {
+    rathbone: rathboneState,
+    conversation: userConversationState,
+  });
 
-  // RAG top-K 5 — evidence, not a dump
+  const canReadGeneralMemory = route.intent !== "rathbone" && !route.rathboneThread;
+  const canWriteGeneralMemory = shouldCreateGeneralMemory(priorRathboneState, trimmedMessage)
+    && shouldCreateGeneralMemory(rathboneState, trimmedMessage);
+  const memories = canReadGeneralMemory ? await getMemories(env.DB, sid) : "";
+
+  const useFactualRetrieval = route.retrievalPlan.mode !== "none" && shouldUseFactualRetrievalForRathbone(rathboneState, trimmedMessage);
+  const modelHistory = useFactualRetrieval && priorRathboneState.stage > 0 ? [] : history;
+
   const [ragResult, webResult] = await Promise.all([
-    ragQuery(trimmedMessage, env.AI, env.VECTORIZE, 5),
-    env.EXA_API_KEY && needsWebSearch(trimmedMessage)
-      ? webSearch(trimmedMessage, env.EXA_API_KEY)
+    useFactualRetrieval ? executeRagPlan(route.retrievalPlan, env.AI, env.VECTORIZE) : Promise.resolve({ context: "", entryNumbers: [] }),
+    env.EXA_API_KEY && route.shouldUseExa && useFactualRetrieval && !route.rathboneThread
+      ? webSearch(trimmedMessage, env.EXA_API_KEY, route.sourceRequest)
       : Promise.resolve(""),
   ]);
 
   const { context, entryNumbers } = ragResult;
 
-  let systemPrompt = buildAugmentedPrompt(TRUMPSTEIN_SYSTEM_PROMPT, context);
+  let systemPrompt = buildAugmentedPrompt(
+    TRUMPSTEIN_SYSTEM_PROMPT,
+    context,
+    rathbonePromptForTurn(route, useFactualRetrieval, rathboneResult.promptAugmentation),
+    useFactualRetrieval && priorRathboneState.stage > 0 ? "" : buildConversationStatePrompt(userConversationState)
+  );
+  const factFictionBoundary = factFictionBoundaryForTurn(route, useFactualRetrieval);
+  if (factFictionBoundary) systemPrompt += `\n\n${factFictionBoundary}`;
   if (webResult) systemPrompt += `\n\nLIVE WEB CONTEXT:\n${webResult}`;
   if (memories) systemPrompt += `\n\nWHAT I REMEMBER ABOUT THIS USER:\n${memories}`;
 
   const messages: ChatMessage[] = [
     { role: "system", content: systemPrompt },
-    ...history,
+    ...modelHistory,
     { role: "user", content: trimmedMessage },
   ];
 
   await saveMessage(env.DB, sid, "user", trimmedMessage);
 
-  const aiResponse = await env.AI.run(
-    CHAT_MODEL as Parameters<typeof env.AI.run>[0],
-    { messages, stream: true, max_tokens: 800, temperature: 0.75 }
-  );
+  const selectedModel = selectChatModel(route, {
+    fastModel: env.CHAT_MODEL,
+    glmModel: env.GLM_MODEL,
+  });
+  const modelRun = await runSelectedStreamingChatModel(selectedModel, async (model) => {
+    const response = await env.AI.run(
+      model as Parameters<typeof env.AI.run>[0],
+      { messages, stream: true, max_tokens: 800, temperature: 0.75 }
+    );
+    return response as unknown as ReadableStream<Uint8Array>;
+  });
+  if (modelRun.usedFallback) {
+    console.warn("Configured deep model unavailable; used the established chat-model fallback.");
+  }
+  const aiResponse = modelRun.response;
 
-  const rawStream = aiResponse as unknown as ReadableStream<Uint8Array>;
+  const rawStream = aiResponse;
 
   // ── Build a sanitized client stream + capture sanitized text for D1 ─────────
   const encoder = new TextEncoder();
@@ -395,28 +545,39 @@ async function handleChat(request: Request, env: Env, ctx?: ExecutionContext): P
 
   // streamDone resolves when the transform finishes, carrying sanitized text
   let resolveStreamDone!: (text: string) => void;
-  const streamDonePromise = new Promise<string>(r => { resolveStreamDone = r; });
+  let rejectStreamDone!: (error: unknown) => void;
+  const streamDonePromise = new Promise<string>((resolve, reject) => {
+    resolveStreamDone = resolve;
+    rejectStreamDone = reject;
+  });
+  let rawReader: ReadableStreamDefaultReader<Uint8Array> | null = null;
 
   const clientStream = new ReadableStream<Uint8Array>({
     async start(controller) {
       const reader = rawStream.getReader();
+      rawReader = reader;
       try {
         while (true) {
           const { done, value } = await reader.read();
           if (done) {
-            // Flush sanitizer and any buffered SSE line
-            const tail = sanitizer.flush();
-            if (tail) capturedAssistant += tail;
+            sseLineBuffer += decoder.decode();
+            // Feed the final unterminated SSE frame before flushing so a
+            // <think> tag split across frame boundaries cannot leak.
             if (sseLineBuffer.trim() && sseLineBuffer.startsWith("data: ") && !sseLineBuffer.includes("[DONE]")) {
               try {
                 const j = JSON.parse(sseLineBuffer.slice(6));
                 const tok = j.response ?? j.choices?.[0]?.delta?.content ?? "";
-                const clean = sanitizer.push(tok) + sanitizer.flush();
+                const clean = sanitizer.push(tok);
                 if (clean) {
                   capturedAssistant += clean;
-                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ ...j, response: clean })}\n\n`));
+                  controller.enqueue(encoder.encode(`data: ${patchSsePayload(j, clean)}\n\n`));
                 }
               } catch { /* ignore */ }
+            }
+            const tail = sanitizer.flush();
+            if (tail) {
+              capturedAssistant += tail;
+              controller.enqueue(encoder.encode(`data: ${patchSsePayload({}, tail)}\n\n`));
             }
             controller.close();
             resolveStreamDone(capturedAssistant.trim());
@@ -439,38 +600,38 @@ async function handleChat(request: Request, env: Env, ctx?: ExecutionContext): P
               const rawToken = json.response ?? json.choices?.[0]?.delta?.content ?? "";
               const cleanToken = sanitizer.push(rawToken);
               capturedAssistant += cleanToken;
-              const patched = JSON.stringify({
-                ...json,
-                response: cleanToken,
-                ...(json.choices ? {
-                  choices: json.choices.map((c: Record<string, unknown>, i: number) =>
-                    i === 0 ? { ...c, delta: { ...(c.delta as Record<string, unknown>), content: cleanToken } } : c
-                  )
-                } : {})
-              });
+              const patched = patchSsePayload(json, cleanToken);
               controller.enqueue(encoder.encode(`data: ${patched}\n\n`));
-            } catch {
-              controller.enqueue(encoder.encode(line + "\n"));
-            }
+            } catch { /* drop malformed data frames rather than bypassing sanitization */ }
           }
         }
       } catch (err) {
-        resolveStreamDone(capturedAssistant.trim());
+        rejectStreamDone(err);
         controller.error(err);
       }
-    }
+    },
+    cancel(reason) {
+      rejectStreamDone(reason ?? new Error("client cancelled response stream"));
+      return rawReader?.cancel(reason);
+    },
   });
 
   // ── Persist sanitized text using waitUntil so CF doesn't terminate early ────
   const persistWork = streamDonePromise.then(async (sanitizedText) => {
     if (sanitizedText) {
       await saveMessage(env.DB, sid, "assistant", sanitizedText);
-      await maybeCreateMemory(env.DB, sid, env.AI).catch(() => {});
+      const assistantRathboneState = absorbRathboneAssistantCanon(rathboneState, sanitizedText);
+      const finalizedConversationState = finalizeAssistantConversationState(userConversationState, sanitizedText);
+      await saveSessionStateRow(env.DB, sid, {
+        rathbone: assistantRathboneState,
+        conversation: finalizedConversationState,
+      });
+      await maybeCreateMemory(env.DB, sid, env.AI, canWriteGeneralMemory).catch(() => {});
     }
   });
 
   if (ctx?.waitUntil) {
-    ctx.waitUntil(persistWork);
+    ctx.waitUntil(persistWork.catch(() => {}));
   }
   persistWork.catch(() => {});
 
@@ -540,7 +701,12 @@ export default {
         response = await handleIngest(request, env);
       } else if (url.pathname === "/health") {
         response = new Response(
-          JSON.stringify({ status: "ok", name: "trumpstein", model: CHAT_MODEL }),
+          JSON.stringify({
+            status: "ok",
+            name: "trumpstein",
+            model: env.CHAT_MODEL ?? DEFAULT_CHAT_MODEL,
+            glm_configured: Boolean(env.GLM_MODEL),
+          }),
           { headers: { "Content-Type": "application/json" } }
         );
       } else {

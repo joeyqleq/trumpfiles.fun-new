@@ -4,7 +4,14 @@
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev"
+    "dev": "wrangler dev",
+    "verify:rathbone": "node scripts/verify-rathbone.mjs",
+    "verify:rathbone-continuity": "tsc --target ES2022 --module CommonJS --moduleResolution Node --lib ES2022,DOM --types @cloudflare/workers-types --strict --noUnusedLocals --noUnusedParameters --noImplicitReturns --skipLibCheck --outDir .tmp-rathbone-continuity src/verify-rathbone-continuity.ts && node .tmp-rathbone-continuity/verify-rathbone-continuity.js",
+    "verify:routing": "tsc --target ES2022 --module CommonJS --moduleResolution Node --lib ES2022,DOM --types @cloudflare/workers-types --strict --noUnusedLocals --noUnusedParameters --noImplicitReturns --skipLibCheck --outDir .tmp-routing-check src/verify-routing.ts && node .tmp-routing-check/verify-routing.js",
+    "verify:rag": "tsc --target ES2022 --module CommonJS --moduleResolution Node --lib ES2022,DOM --types @cloudflare/workers-types --strict --noUnusedLocals --noUnusedParameters --noImplicitReturns --skipLibCheck --outDir .tmp-rag-check src/verify-rag.ts && node .tmp-rag-check/verify-rag.js",
+    "verify:ingest": "tsc --target ES2022 --module CommonJS --moduleResolution Node --lib ES2022,DOM --types @cloudflare/workers-types --strict --noUnusedLocals --noUnusedParameters --noImplicitReturns --skipLibCheck --outDir .tmp-ingest-check src/verify-ingest.ts && node .tmp-ingest-check/verify-ingest.js",
+    "verify:model-routing": "tsc --target ES2022 --module CommonJS --moduleResolution Node --lib ES2022,DOM --types @cloudflare/workers-types --strict --noUnusedLocals --noUnusedParameters --noImplicitReturns --skipLibCheck --outDir .tmp-model-routing-check src/verify-model-routing.ts && node .tmp-model-routing-check/verify-model-routing.js",
+    "verify:conversation-matrix": "tsc --target ES2022 --module CommonJS --moduleResolution Node --lib ES2022,DOM --types @cloudflare/workers-types --strict --noUnusedLocals --noUnusedParameters --noImplicitReturns --skipLibCheck --outDir .tmp-conversation-matrix-check src/verify-conversation-matrix.ts && node .tmp-conversation-matrix-check/verify-conversation-matrix.js"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240924.0",
