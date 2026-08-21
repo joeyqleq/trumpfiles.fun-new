@@ -1,34 +1,36 @@
 import { ImageResponse } from "next/og";
-import { sql } from "@/lib/neonClient";
 import { readFile } from "fs/promises";
 import { join } from "path";
 
 export const runtime = "nodejs";
-export const alt = "The Trump Files — Encyclopedia Orange";
+export const alt = "Trumpstein: Encyclopedia Orange — The Trump Files heritage archive";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-async function getEntryCount(): Promise<number> {
+async function publicAssetData(path: string, mimeType: string): Promise<string> {
   try {
-    const result = await sql`SELECT COUNT(*) as count FROM ai_complete_trump_data`;
-    return parseInt(result[0]?.count || "6000", 10);
-  } catch {
-    return 6000;
-  }
-}
-
-async function getLogoData(): Promise<string> {
-  try {
-    const logoPath = join(process.cwd(), "public", "logos", "trumpfiles_orange_logo.png");
-    const data = await readFile(logoPath);
-    return `data:image/png;base64,${data.toString("base64")}`;
+    const data = await readFile(join(process.cwd(), "public", path));
+    return `data:${mimeType};base64,${data.toString("base64")}`;
   } catch {
     return "";
   }
 }
 
+async function displayFontData(): Promise<ArrayBuffer | undefined> {
+  try {
+    const font = await readFile(join(process.cwd(), "public", "fonts", "Arctic_Guardian", "arcticguardiangrad.ttf"));
+    return font.buffer.slice(font.byteOffset, font.byteOffset + font.byteLength) as ArrayBuffer;
+  } catch {
+    return undefined;
+  }
+}
+
 export default async function Image() {
-  const [count, logoSrc] = await Promise.all([getEntryCount(), getLogoData()]);
+  const [legacyLogo, kippah, displayFont] = await Promise.all([
+    publicAssetData("logos/trumpfiles_orange_logo.png", "image/png"),
+    publicAssetData("trumpstein_kippah.svg", "image/svg+xml"),
+    displayFontData(),
+  ]);
 
   return new ImageResponse(
     (
@@ -36,173 +38,39 @@ export default async function Image() {
         style={{
           width: "1200px",
           height: "630px",
-          background: "#060608",
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          fontFamily: "sans-serif",
           position: "relative",
           overflow: "hidden",
+          backgroundColor: "#080706",
+          color: "#fff7ed",
+          fontFamily: "sans-serif",
         }}
       >
-        {/* Background grid */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage:
-              "linear-gradient(rgba(255,101,0,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,101,0,0.05) 1px, transparent 1px)",
-            backgroundSize: "50px 50px",
-          }}
-        />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(circle at 10% 20%, rgba(255,101,0,0.3), transparent 31%), radial-gradient(circle at 88% 90%, rgba(212,60,0,0.22), transparent 30%)" }} />
 
-        {/* Orange radial glow — bottom left */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: "-120px",
-            left: "-120px",
-            width: "600px",
-            height: "600px",
-            borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(255,101,0,0.18) 0%, transparent 65%)",
-          }}
-        />
-
-        {/* Mint glow — top right */}
-        <div
-          style={{
-            position: "absolute",
-            top: "-80px",
-            right: "-80px",
-            width: "400px",
-            height: "400px",
-            borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(62,230,193,0.08) 0%, transparent 65%)",
-          }}
-        />
-
-        {/* Content column */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "28px",
-            zIndex: 10,
-          }}
-        >
-          {/* Logo */}
-          {logoSrc && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={logoSrc}
-              alt="The Trump Files"
-              width={220}
-              height={220}
-              style={{ objectFit: "contain", filter: "drop-shadow(0 0 32px rgba(255,101,0,0.5))" }}
-            />
-          )}
-
-          {/* Entry count */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "baseline",
-              gap: "10px",
-            }}
-          >
-            <span
-              style={{
-                fontSize: "96px",
-                fontWeight: 900,
-                color: "#FF6500",
-                lineHeight: 1,
-                letterSpacing: "-0.04em",
-              }}
-            >
-              {count.toLocaleString()}+
-            </span>
-            <span
-              style={{
-                fontSize: "24px",
-                fontWeight: 700,
-                color: "rgba(255,255,255,0.45)",
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                marginBottom: "8px",
-              }}
-            >
-              documented
-            </span>
+        <div style={{ display: "flex", alignItems: "center", width: "100%", padding: "68px 88px", gap: "70px" }}>
+          <div style={{ display: "flex", position: "relative", width: "330px", height: "390px", alignItems: "center", justifyContent: "center" }}>
+            {legacyLogo ? <img src={legacyLogo} width={310} height={310} alt="The Trump Files legacy logo" style={{ objectFit: "contain" }} /> : null}
+            {kippah ? <img src={kippah} width={190} height={111} alt="Trumpstein kippah" style={{ position: "absolute", top: "17px", left: "70px", objectFit: "contain", transform: "rotate(-4deg)" }} /> : null}
           </div>
 
-          {/* Tagline */}
-          <div
-            style={{
-              fontSize: "22px",
-              fontWeight: 700,
-              color: "rgba(255,255,255,0.80)",
-              letterSpacing: "0.06em",
-              textAlign: "center",
-              textTransform: "uppercase",
-              maxWidth: "700px",
-            }}
-          >
-            Beat the flood. Keep the receipts.
-          </div>
-
-          {/* Sub-tagline */}
-          <div
-            style={{
-              fontSize: "15px",
-              color: "rgba(255,255,255,0.35)",
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-            }}
-          >
-            trumpstein.me
-          </div>
-        </div>
-
-        {/* Bottom score pills */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: "32px",
-            display: "flex",
-            gap: "16px",
-          }}
-        >
-          {["Danger", "Lawlessness", "Insanity", "Absurdity", "Authoritarianism"].map((label) => (
-            <div
-              key={label}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "5px",
-                color: "rgba(255,255,255,0.3)",
-                fontSize: "12px",
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-              }}
-            >
-              <div
-                style={{
-                  width: "5px",
-                  height: "5px",
-                  borderRadius: "50%",
-                  background: "#FF6500",
-                  opacity: 0.6,
-                }}
-              />
-              {label}
+          <div style={{ display: "flex", flexDirection: "column", flex: 1, gap: "18px" }}>
+            <div style={{ display: "flex", fontSize: "17px", fontWeight: 700, letterSpacing: "0.18em", color: "#ffbd7a", textTransform: "uppercase" }}>The Trump Files heritage archive</div>
+            <div style={{ display: "flex", fontFamily: "Arctic Guardian", fontSize: "82px", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 0.94 }}><span style={{ display: "flex", color: "#ffd08a" }}>TRUMP</span><span style={{ display: "flex", color: "#ff5000" }}>STEIN</span></div>
+            <div style={{ display: "flex", fontSize: "32px", fontWeight: 700, letterSpacing: "0.18em", color: "#ffc28d", textTransform: "uppercase" }}>Encyclopedia Orange</div>
+            <div style={{ display: "flex", maxWidth: "570px", fontSize: "24px", lineHeight: 1.35, color: "rgba(255,247,237,0.82)" }}>A source-aware archive of documented incidents, statements, relationships, and consequences.</div>
+            <div style={{ display: "flex", alignItems: "center", marginTop: "12px", gap: "14px" }}>
+              <span style={{ display: "flex", padding: "11px 20px", borderRadius: "999px", backgroundColor: "#ff6500", color: "#170b04", fontSize: "26px", fontWeight: 900, letterSpacing: "0.02em" }}>7K+</span>
+              <span style={{ display: "flex", fontSize: "16px", fontWeight: 700, letterSpacing: "0.13em", color: "rgba(255,247,237,0.56)", textTransform: "uppercase" }}>archive records</span>
             </div>
-          ))}
+            <div style={{ display: "flex", marginTop: "8px", fontSize: "15px", fontWeight: 700, letterSpacing: "0.2em", color: "rgba(255,247,237,0.4)", textTransform: "uppercase" }}>trumpstein.me</div>
+          </div>
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: displayFont ? [{ name: "Arctic Guardian", data: displayFont, weight: 400, style: "normal" }] : [],
+    },
   );
 }

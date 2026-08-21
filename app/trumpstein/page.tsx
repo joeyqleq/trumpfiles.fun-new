@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Brain, Database, Zap, MessageSquare, Shield, ChevronRight, Terminal } from "lucide-react";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { HyperText } from "@/components/ui/hyper-text";
@@ -10,17 +11,17 @@ import ElectricBorder from "@/components/ElectricBorder";
 import ShinyText from "@/components/ShinyText";
 
 const STATS = [
-  { value: "6,200+", label: "Documented Entries", sub: "scrapes, scandals, absurdities" },
-  { value: "5,900+", label: "Vectorized in CF", sub: "semantic search-ready" },
-  { value: "422", label: "People Tagged", sub: "in the Neo4j graph" },
-  { value: "1,704", label: "Relationships Mapped", sub: "co-occurrence network" },
+  { value: "7K+", label: "Archive Records", sub: "catalogued incidents" },
+  { value: "Layered", label: "Retrieval Stack", sub: "archive plus live context" },
+  { value: "Public", label: "No Login Gate", sub: "chat and catalogue" },
+  { value: "Labeled", label: "Evidence Boundaries", sub: "fact, inference, fiction" },
 ];
 
 const TIMELINE = [
-  { phase: "Phase 1", label: "Corpus Build", detail: "Weeks of scraping, structuring, and fact-checking 6,200+ Trump incidents spanning 50 years — 1973 housing discrimination to 2025 tariff meltdown." },
-  { phase: "Phase 2", label: "AI Scoring", detail: "Every entry scored across 8 dimensions: danger, authoritarianism, lawlessness, insanity, absurdity, credibility risk, recency intensity, and impact scope — all 1–10." },
-  { phase: "Phase 3", label: "Vector Ingest", detail: "All entries embedded and pushed into Cloudflare Vectorize. Trumpstein performs semantic similarity search at query time — no keyword matching." },
-  { phase: "Phase 4", label: "RAG Pipeline", detail: "Cloudflare Workers AI (Llama 3.3 70B) augmented with real retrieved entries. Every response is grounded in the actual documented record." },
+  { phase: "Phase 1", label: "Corpus Build", detail: "The archive structures thousands of Trump-era incidents across decades, with catalogue records kept separate from satire and fictional session canon." },
+  { phase: "Phase 2", label: "AI Scoring", detail: "Entries carry score dimensions such as danger, authoritarianism, lawlessness, insanity, absurdity, credibility risk, recency intensity, and impact scope where the data supports them." },
+  { phase: "Phase 3", label: "Retrieval Layer", detail: "Vector retrieval and source-aware context help Trumpstein pull relevant archive material without turning every conversation into a keyword dump." },
+  { phase: "Phase 4", label: "Public Chat", detail: "The Worker keeps fast persona chat available while routing factual, current, and source-seeking turns through the appropriate archive or live-context path." },
 ];
 
 
@@ -54,17 +55,20 @@ export default function TrumpsteinPage() {
             The AI That Knows Every Scandal.
           </p>
           <p className="text-base text-white/60 max-w-2xl mx-auto leading-relaxed mb-8">
-            A satirical RAG chatbot trained on{" "}
-            <span className="text-orange-400 font-semibold">6,200+ documented Trump entries</span>
-            {" "}— scraped, scored, vectorized, and wired into a chip implanted somewhere between his ear and his ego.
+            A satirical RAG chatbot wired into{" "}
+            <span className="text-orange-400 font-semibold">The Trump Files archive</span>
+            {" "}— scored, source-aware, and glitching somewhere between his ear and his ego.
           </p>
 
-          {/* Animated arrow pointing to widget */}
-          <div className="fixed bottom-24 right-20 z-40 hidden md:flex items-center gap-2" style={{ animation: "float-point 2.5s ease-in-out infinite" }}>
-            <span className="text-sm font-bold text-orange-400 whitespace-nowrap" style={{ fontFamily: "var(--font-syne)" }}>
-              &ldquo;Click me — it&apos;ll be tremendous, believe me&rdquo;
+          {/* Animated callout pointing to the actual bottom-right widget */}
+          <div
+            className="fixed bottom-20 right-20 z-40 hidden flex-col items-end gap-1 md:flex pointer-events-none"
+            style={{ animation: "float-point 2.5s ease-in-out infinite" }}
+          >
+            <span className="max-w-[12rem] text-right text-sm font-bold text-orange-400 whitespace-normal" style={{ fontFamily: "var(--font-syne)" }}>
+              &ldquo;Click the chip. It&apos;s down there — bottom right — tremendous.&rdquo;
             </span>
-            <svg width="32" height="32" viewBox="0 0 32 32" className="text-orange-400 rotate-[135deg]">
+            <svg width="36" height="36" viewBox="0 0 32 32" className="text-orange-400 rotate-[45deg] drop-shadow-[0_0_8px_rgba(255,165,0,0.35)]">
               <path d="M8 16h12M16 10l6 6-6 6" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
@@ -94,8 +98,21 @@ export default function TrumpsteinPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative overflow-hidden py-16 px-4">
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(255,145,0,0.16),transparent_58%),linear-gradient(180deg,rgba(7,4,3,0.1)_0%,rgba(7,4,3,0.76)_34%,rgba(7,4,3,0.9)_100%)]" />
+          <div className="absolute inset-0 opacity-60">
+            <Image
+              src="/images/art/pdf_jeff-bikini.png"
+              alt=""
+              fill
+              sizes="100vw"
+              className="object-contain object-center scale-[1.03] saturate-[0.88] contrast-[0.92]"
+            />
+          </div>
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,4,3,0.6)_0%,rgba(7,4,3,0.36)_22%,rgba(7,4,3,0.24)_70%,rgba(7,4,3,0.76)_100%)]" />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto">
           <HyperText
             className="text-3xl md:text-4xl font-black text-white mb-3 text-center block"
             startOnView
@@ -113,8 +130,8 @@ export default function TrumpsteinPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.12 }}
-                className="flex gap-5 items-start p-5 rounded-xl border border-white/8 bg-black/30 hover:border-orange-500/25 transition-colors"
-              >
+              className="flex gap-5 items-start p-5 rounded-xl border border-white/8 bg-black/48 backdrop-blur-[2px] hover:border-orange-500/25 transition-colors"
+            >
                 <div className="shrink-0 w-10 h-10 rounded-lg bg-orange-500/15 border border-orange-500/30 flex items-center justify-center">
                   <span className="text-xs font-mono text-orange-400 font-bold">{String(i + 1).padStart(2, "0")}</span>
                 </div>
@@ -138,14 +155,14 @@ export default function TrumpsteinPage() {
           </h2>
           <div className="space-y-4 text-white/65 text-base leading-relaxed text-left max-w-2xl mx-auto">
             <p>
-              Trumpstein is not a hallucinating chatbot making things up. Every claim it makes is grounded in actual retrieved entries from{" "}
-              <span className="text-orange-400">The Trump Files</span> — the same corpus you can browse in the catalog.
+              Trumpstein is designed to ground factual claims in retrieved archive material from{" "}
+              <span className="text-orange-400">The Trump Files</span> — the same corpus you can browse in the catalog — while keeping satire and Rathbone-style fictional canon out of the evidence layer.
             </p>
             <p>
               It speaks in Trump's voice — the superlatives, the self-congratulation, the "many people are saying" — because the humor cuts deeper that way. But underneath the character is a system that cannot deny what it knows.
             </p>
             <p>
-              Ask it about the classified documents. The indictments. The pardons. The emoluments. The 91 criminal charges. The mugshot. The Carroll verdict. The $464 million fraud judgment. It remembers all of it.
+              Ask it about the classified documents, indictments, pardons, emoluments, Jan 6, the mugshot, the Carroll verdict, and the civil fraud judgment. It has the archive context to work from.
             </p>
             <p className="text-orange-300/70 font-semibold">
               This was built from Lebanon. Weeks of work. Hundreds of thousands of tokens. Every scandal indexed, scored, and retrievable — because flood-the-zone amnesia is the strategy, and this is the antidote.

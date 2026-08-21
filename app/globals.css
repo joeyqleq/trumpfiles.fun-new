@@ -7,8 +7,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-outfit), system-ui;
-  --font-heading: var(--font-arctic-guardian);
-  --font-body: var(--font-outfit), system-ui;
+  --font-heading: var(--font-hilsfiger), system-ui;
+  --font-body: var(--font-adhesian-serif), Georgia, serif;
   --font-editorial: var(--font-syne), system-ui;
   --font-display: var(--font-arctic-guardian);
   --font-ui: var(--font-outfit), system-ui;
@@ -269,28 +269,28 @@ html {
 }
 
 /* Typography System — layered, editorial, bespoke */
-h1, h2, h3 {
+h1 {
   font-family: var(--font-arctic-guardian);
   font-weight: 400;
   letter-spacing: 0.02em;
 }
 
-h4, h5, h6 {
-  font-family: var(--font-playfair), var(--font-arctic-guardian);
-  font-weight: 600;
-  letter-spacing: -0.01em;
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-hilsfiger), var(--font-outfit), system-ui;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 body {
-  font-family: var(--font-outfit), var(--font-outfit), system-ui;
-  font-feature-settings: "ss01", "ss02";
+  font-family: var(--font-adhesian-serif), Georgia, serif;
+  font-feature-settings: "onum", "liga";
   max-width: 100%;
   overflow-x: clip;
 }
 
 /* Paragraph / body text — elegant editorial serif */
 p, .text-body {
-  font-family: var(--font-source-serif), Georgia, serif;
+  font-family: var(--font-adhesian-serif), Georgia, serif;
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.005em;
@@ -317,9 +317,9 @@ blockquote, .text-editorial {
 
 /* Card titles and subheadings */
 .text-card-title {
-  font-family: var(--font-playfair), var(--font-arctic-guardian);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-family: var(--font-hilsfiger), var(--font-outfit), system-ui;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   line-height: 1.2;
 }
 
@@ -379,7 +379,7 @@ code, pre, .text-data, .text-mono {
 }
 
 @utility font-heading {
-  font-family: var(--font-arctic-guardian);
+  font-family: var(--font-hilsfiger), var(--font-outfit), system-ui;
 }
 
 @utility font-sans {
@@ -387,7 +387,7 @@ code, pre, .text-data, .text-mono {
 }
 
 @utility font-body {
-  font-family: var(--font-source-serif), Georgia, serif;
+  font-family: var(--font-adhesian-serif), Georgia, serif;
 }
 
 @utility font-editorial {
@@ -396,7 +396,7 @@ code, pre, .text-data, .text-mono {
 }
 
 @utility font-display {
-  font-family: var(--font-playfair), var(--font-arctic-guardian);
+  font-family: var(--font-arctic-guardian);
 }
 
 @utility font-ui {
@@ -806,6 +806,79 @@ code, pre, .text-data, .text-mono {
   outline-offset: 2px;
 }
 
+.evidence-liquid-button,
+.evidence-flip-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid rgba(255, 187, 123, 0.72);
+  color: #1b0903;
+  background:
+    linear-gradient(120deg, #ffedc8 0 8%, #ff8a2b 19%, #ff5500 43%, #ffb452 58%, #e33b0b 78%, #fff0c9 100%);
+  background-size: 220% 100%;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.65), inset 0 -2px 5px rgba(112,26,0,.34), 0 6px 18px rgba(255,101,0,.18);
+  transition: transform 180ms ease, box-shadow 180ms ease, background-position 260ms steps(6, end);
+}
+
+.evidence-liquid-button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: .7rem;
+  padding: .65rem 1rem;
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.evidence-flip-button {
+  display: inline-flex;
+  min-width: 72px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem;
+  padding: 0 .8rem;
+  border-radius: 999px;
+  font-size: .65rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.evidence-liquid-button::after,
+.evidence-flip-button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: .42;
+  background-image: linear-gradient(90deg, transparent 0 40%, rgba(73,16,0,.55) 40% 44%, transparent 44% 52%, rgba(255,246,216,.75) 52% 56%, transparent 56%);
+  background-size: 14px 100%;
+  mix-blend-mode: overlay;
+  transition: transform 260ms steps(7, end);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .evidence-liquid-button:hover,
+  .evidence-flip-button:hover {
+    transform: translateY(-1px);
+    background-position: 100% 0;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.85), inset 0 -2px 5px rgba(112,26,0,.3), 0 10px 24px rgba(255,101,0,.34);
+  }
+  .evidence-liquid-button:hover::after,
+  .evidence-flip-button:hover::after { transform: translateX(18px); }
+}
+
+.evidence-liquid-button:focus-visible,
+.evidence-flip-button:focus-visible {
+  outline: 2px solid #fff7ed;
+  outline-offset: 3px;
+}
+
 @keyframes evidence-beam-trace {
   to { --evidence-beam-angle: 360deg; }
 }
@@ -820,7 +893,11 @@ code, pre, .text-data, .text-mono {
   }
 
   .evidence-card-face,
-  .evidence-icon-button {
+  .evidence-icon-button,
+  .evidence-liquid-button,
+  .evidence-flip-button,
+  .evidence-liquid-button::after,
+  .evidence-flip-button::after {
     transition-duration: 0.01ms;
   }
 }

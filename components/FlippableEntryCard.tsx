@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { AICompleteTrumpData, CatalogSource } from "@/types/database";
 import { SourceBrand } from "@/components/SourceBrand";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface FlippableEntryCardProps {
   entry: AICompleteTrumpData;
@@ -38,6 +39,17 @@ const secondaryScores = [
   ["Impact scope", "impact_scope"],
 ] as const;
 
+const scoreExplanations: Record<string, string> = {
+  Danger: "Overall severity of the documented harm or threat, on a 0–10 scale.",
+  Authoritarian: "Extent to which the record concentrates power or weakens democratic constraints.",
+  Lawlessness: "Extent to which the conduct disregards laws, due process, or official rules.",
+  Insanity: "Degree of reckless, irrational, or destabilizing conduct reflected in the record.",
+  Absurdity: "Degree of extraordinary or plainly implausible conduct documented in the record.",
+  "Credibility risk": "Risk that claims or actions undermine public trust and reliable information.",
+  "Recency intensity": "How immediate and sustained the documented issue is in its time period.",
+  "Impact scope": "Breadth of people, institutions, or systems affected by the documented conduct.",
+};
+
 function scoreNumber(value: number | string | null | undefined): number {
   const parsed = Number(value ?? 0);
   return Number.isFinite(parsed) ? Math.max(0, Math.min(10, parsed)) : 0;
@@ -59,10 +71,18 @@ function ScoreStrip({ label, value }: { label: string; value: number | string | 
   const activeSegments = Math.round(score);
 
   return (
-    <div className="grid grid-cols-[7.1rem_1fr_2rem] items-center gap-2" aria-label={`${label}: ${score} out of 10`}>
-      <span className="truncate text-[11px] font-semibold uppercase tracking-[0.12em] text-zinc-400">
-        {label}
-      </span>
+    <div className="grid grid-cols-[6.45rem_1fr_2rem] items-center gap-2" aria-label={`${label}: ${score} out of 10`}>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <button type="button" className="min-h-11 truncate text-left text-[10px] font-semibold uppercase tracking-[0.1em] text-zinc-400 underline decoration-orange-400/35 underline-offset-4 transition hover:text-orange-100 focus-visible:outline-none focus-visible:text-orange-100 focus-visible:ring-2 focus-visible:ring-orange-400" aria-label={`${label}: ${score} out of 10. ${scoreExplanations[label]}`}>
+            {label}
+          </button>
+        </TooltipTrigger>
+        <TooltipContent side="top" sideOffset={7} className="max-w-60 border border-orange-400/35 bg-zinc-950 px-3 py-2 leading-5 text-zinc-100 shadow-xl">
+          <p className="font-bold text-orange-200">{label}</p>
+          <p>{scoreExplanations[label]}</p>
+        </TooltipContent>
+      </Tooltip>
       <span className="grid grid-cols-10 gap-0.5" aria-hidden="true">
         {Array.from({ length: 10 }, (_, segment) => (
           <span
@@ -157,7 +177,7 @@ export function FlippableEntryCard({ entry, index, catalogQuery = "", onEmailCli
       whileInView={reduceMotion ? undefined : { opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ delay: reduceMotion ? 0 : Math.min(index * 0.035, 0.28), duration: 0.4 }}
-      className="evidence-card-shell relative h-[680px] [perspective:1400px]"
+      className="evidence-card-shell relative h-[590px] [perspective:1400px] sm:h-[610px]"
       aria-label={`Dossier ${entry.entry_number}: ${entry.title}`}
     >
       <motion.div
@@ -173,10 +193,10 @@ export function FlippableEntryCard({ entry, index, catalogQuery = "", onEmailCli
           aria-hidden={isFlipped}
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-[radial-gradient(circle_at_20%_0%,rgba(255,101,0,.23),transparent_68%)]" />
-          <header className="relative flex items-start justify-between gap-3 border-b border-orange-300/15 pb-4">
+          <header className="relative flex items-start justify-between gap-3 border-b border-orange-300/15 pb-3">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-orange-300/70">Evidence record</p>
-              <p className="mt-1 font-arctic-3d text-2xl text-orange-300">TF-{String(entry.entry_number).padStart(4, "0")}</p>
+              <p className="mt-1 font-arctic-3d text-xl text-orange-300">TF-{String(entry.entry_number).padStart(4, "0")}</p>
             </div>
             <div className="text-right">
               <p className="text-[10px] uppercase tracking-[0.18em] text-zinc-500">Fucked-up rank</p>
@@ -184,64 +204,48 @@ export function FlippableEntryCard({ entry, index, catalogQuery = "", onEmailCli
             </div>
           </header>
 
-          <div className="relative mt-4 flex flex-wrap gap-2 text-[10px] font-semibold uppercase tracking-[0.14em]">
-            <span className="rounded-full border border-orange-400/30 bg-orange-500/10 px-3 py-1.5 text-orange-200">{entry.category}</span>
-            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-zinc-300">{entry.phase}</span>
-          </div>
-
-          <h2 className="relative mt-4 line-clamp-4 text-xl font-bold leading-tight text-zinc-50 sm:text-[1.35rem]">
-            {entry.title}
-          </h2>
-
-          <div className="mt-3 flex min-h-6 flex-wrap items-center gap-x-4 gap-y-2 text-xs text-zinc-400">
-            {formattedDate && (
-              <span className="inline-flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5 text-orange-400" />{formattedDate}</span>
+          <div tabIndex={0} role="region" aria-label={`Scrollable front of dossier ${entry.entry_number}`} className="evidence-card-scroll relative mt-3 min-h-0 flex-1 space-y-3 overflow-y-auto pr-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/80">
+            <div className="flex flex-wrap gap-1.5 text-[10px] font-semibold uppercase tracking-[0.12em]">
+              <span className="rounded-full border border-orange-400/30 bg-orange-500/10 px-2.5 py-1 text-orange-200">{entry.category}</span>
+              <span className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-zinc-300">{entry.phase}</span>
+            </div>
+            <h2 className="text-lg font-bold leading-tight text-zinc-50 sm:text-xl">{entry.title}</h2>
+            <div className="flex min-h-5 flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-400">
+              {formattedDate && <span className="inline-flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5 text-orange-400" />{formattedDate}</span>}
+              {entry.subcategory && <span>{entry.subcategory}</span>}
+            </div>
+            <p className="text-sm leading-5 text-zinc-300/85">{entry.synopsis}</p>
+            <div className="grid grid-cols-[1fr_auto] items-end gap-3 rounded-xl border border-orange-500/20 bg-orange-500/[0.07] px-3 py-2.5">
+              <div>
+                <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-orange-200/65">Composite severity</p>
+                <p className="mt-1 font-mono text-3xl font-black leading-none text-orange-300">{Number.isFinite(score) ? score.toFixed(2) : "—"}</p>
+              </div>
+              <ShieldAlert className="h-7 w-7 text-red-400/75" aria-hidden="true" />
+            </div>
+            <div className="space-y-1.5">
+              {primaryScores.map(([label, key]) => <ScoreStrip key={key} label={label} value={entry[key]} />)}
+            </div>
+            {entry.all_keywords?.length > 0 && (
+              <div className="flex min-h-6 flex-wrap gap-1.5" aria-label="Keywords">
+                {entry.all_keywords.slice(0, 3).map((keyword) => <span key={keyword} className="max-w-[9rem] truncate rounded-md border border-white/10 bg-white/[0.035] px-2 py-1 text-[10px] uppercase tracking-wide text-zinc-400">{keyword}</span>)}
+              </div>
             )}
-            {entry.subcategory && <span className="truncate">{entry.subcategory}</span>}
           </div>
 
-          <p className="mt-4 line-clamp-4 text-sm leading-6 text-zinc-300/85">{entry.synopsis}</p>
-
-          <div className="my-4 grid grid-cols-[1fr_auto] items-end gap-4 rounded-2xl border border-orange-500/20 bg-orange-500/[0.07] p-4">
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.23em] text-orange-200/65">Composite severity</p>
-              <p className="mt-1 font-mono text-4xl font-black leading-none text-orange-300">
-                {Number.isFinite(score) ? score.toFixed(2) : "—"}
-              </p>
-            </div>
-            <ShieldAlert className="h-9 w-9 text-red-400/75" aria-hidden="true" />
-          </div>
-
-          <div className="space-y-2.5">
-            {primaryScores.map(([label, key]) => (
-              <ScoreStrip key={key} label={label} value={entry[key]} />
-            ))}
-          </div>
-
-          {entry.all_keywords?.length > 0 && (
-            <div className="mt-4 flex min-h-7 flex-wrap gap-1.5 overflow-hidden" aria-label="Keywords">
-              {entry.all_keywords.slice(0, 3).map((keyword) => (
-                <span key={keyword} className="max-w-[9rem] truncate rounded-md border border-white/10 bg-white/[0.035] px-2 py-1 text-[10px] uppercase tracking-wide text-zinc-400">
-                  {keyword}
-                </span>
-              ))}
-            </div>
-          )}
-
-          <div className="mt-auto grid grid-cols-[1fr_auto] gap-2 pt-4">
+          <div className="mt-auto grid grid-cols-[1fr_auto] gap-2 pt-3">
             <Link
               href={entryHref}
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-orange-500 px-4 text-xs font-black uppercase tracking-[0.13em] text-black transition hover:bg-orange-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              className="evidence-liquid-button"
             >
               <FileSearch className="h-4 w-4" /> Open dossier
             </Link>
             <button
               type="button"
               onClick={() => flipCard(true)}
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-orange-400/40 bg-black/30 px-4 text-xs font-bold uppercase tracking-[0.12em] text-orange-200 transition hover:bg-orange-500/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
+              className="evidence-flip-button"
               aria-label={`Flip dossier ${entry.entry_number} to the back`}
             >
-              <RotateCw className="h-4 w-4" /> <span>Flip</span>
+              <RotateCw className="h-4 w-4" /><span>Flip</span>
             </button>
           </div>
         </section>
@@ -261,7 +265,7 @@ export function FlippableEntryCard({ entry, index, catalogQuery = "", onEmailCli
             <span className="rounded-lg border border-white/10 bg-white/[0.04] px-2.5 py-1 font-mono text-xs text-zinc-400">#{entry.entry_number}</span>
           </header>
 
-          <div className="evidence-card-scroll mt-4 min-h-0 flex-1 space-y-5 overflow-y-auto pr-1">
+          <div tabIndex={0} role="region" aria-label={`Scrollable back of dossier ${entry.entry_number}`} className="evidence-card-scroll mt-3 min-h-0 flex-1 space-y-4 overflow-y-auto pr-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/80">
             <section>
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-orange-300/70">Synopsis</p>
               <p className="mt-2 text-sm leading-6 text-zinc-300">{entry.synopsis}</p>
@@ -308,20 +312,20 @@ export function FlippableEntryCard({ entry, index, catalogQuery = "", onEmailCli
             </section>
           </div>
 
-          <div className="grid grid-cols-[1fr_auto] gap-2 border-t border-white/10 pt-4">
+          <div className="grid grid-cols-[1fr_auto] gap-2 border-t border-white/10 pt-3">
             <Link
               href={entryHref}
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-orange-500 px-4 text-xs font-black uppercase tracking-[0.13em] text-black transition hover:bg-orange-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              className="evidence-liquid-button"
             >
               <FileSearch className="h-4 w-4" /> Open dossier
             </Link>
             <button
               type="button"
               onClick={() => flipCard(false)}
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-orange-400/40 bg-black/30 px-4 text-xs font-bold uppercase tracking-[0.12em] text-orange-200 transition hover:bg-orange-500/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"
+              className="evidence-flip-button"
               aria-label={`Flip dossier ${entry.entry_number} to the front`}
             >
-              <RotateCw className="h-4 w-4 -scale-x-100" /> <span>Front</span>
+              <RotateCw className="h-4 w-4 -scale-x-100" /><span>Front</span>
             </button>
           </div>
         </section>

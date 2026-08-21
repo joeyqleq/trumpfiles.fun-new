@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
@@ -43,7 +43,13 @@ const CAT_COLORS: Record<string, string> = {
 
 const VALID_CATS = Object.keys(CAT_COLORS);
 
-// ── Hardcoded data ────────────────────────────────────────────────────────────
+const FALLBACK_INSIGHTS_ROUTE = {
+  section: "overview",
+  view: "totals",
+} as const;
+
+// ── Cited external baselines and editorial exhibits ────────────────────────────
+// These rows are intentionally kept separate from the archive query data below.
 const FLIGHT_LOGS = [
   { date: "1998-07-10", route: "Teterboro → Palm Beach",       aircraft: "Boeing 727",    passengers: "Epstein, Maxwell, Sarah Kellen, Trump" },
   { date: "1997-12-06", route: "Teterboro → Palm Beach",       aircraft: "Boeing 727",    passengers: "Epstein, Maxwell, Lesley Groff, Trump" },
@@ -59,25 +65,40 @@ const FLIGHT_LOGS = [
 ];
 
 const TARIFF_COST = [
-  { period: "Aug 2019", cost: 500 },
-  { period: "Sep 2019", cost: 2000 },
-  { period: "Feb 2025", cost: 830 },
-  { period: "Apr 2025", cost: 2100 },
-  { period: "Dec 2025", cost: 1200 },
-  { period: "Feb 2026", cost: 1000 },
+  { period: "Apr 2, 2025 scenario", cost: 2100 },
+  { period: "All 2025 tariffs", cost: 3800 },
 ];
 
 const APPROVAL_DATA = [
-  { date: "Oct 2025", approval: 40 },
-  { date: "Nov 2025", approval: 37 },
-  { date: "Jan 2026", approval: 36 },
-  { date: "Mar 2026", approval: 34 },
-  { date: "May 2026", approval: 32 },
-  { date: "Jun 2026", approval: 31 },
+  { date: "Oct 1–16, 2025", approval: 41 },
+  { date: "Nov 3–25, 2025", approval: 36 },
+  { date: "Dec 1–15, 2025", approval: 36 },
+];
+
+const ENVIRONMENT_BASELINES = [
+  {
+    label: "Executive Order 14192: 10-for-1 directive",
+    note: "Jan 31, 2025 · agency rule-reduction instruction; not a count of completed rollbacks",
+    sourceLabel: "EPA executive-order record",
+    sourceUrl: "https://www.epa.gov/laws-regulations/executive-order-14192-unleashing-prosperity-through-deregulation",
+  },
+  {
+    label: "EPA greenhouse-gas action",
+    note: "Feb 12, 2026 · EPA announcement; agency-reported action, not an independent audit",
+    sourceLabel: "EPA release",
+    sourceUrl: "https://www.epa.gov/newsreleases/president-trump-and-administrator-zeldin-deliver-single-largest-deregulatory-action-us",
+  },
+  {
+    label: "EPA first-year accomplishment tally",
+    note: "Jan 20, 2026 · EPA reports 500 accomplishments; not equivalent to rules rolled back",
+    sourceLabel: "EPA release",
+    sourceUrl: "https://www.epa.gov/newsreleases/epa-delivers-500-environmental-wins-during-president-trumps-first-year-back-white",
+  },
 ];
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 interface InsightsData {
+  loadError?: boolean;
   totals: { total: number; avg_danger: number; avg_auth: number; avg_lawless: number; peak_danger: number };
   timeline: Array<Record<string, any>>;
   categories: Array<Record<string, any>>;
@@ -186,7 +207,7 @@ type InsightsRoute = {
 
 function resolveInsightsRoute(rawSection: string | null, rawView: string | null): InsightsRoute {
   const requestedSection = NAV.find((item) => item.id === rawSection);
-  if (!requestedSection) return { section: NAV[0].id, view: NAV[0].views[0].id };
+  if (!requestedSection) return FALLBACK_INSIGHTS_ROUTE;
   const requestedView = requestedSection.views.find((item) => item.id === rawView) ?? requestedSection.views[0];
 
   return { section: requestedSection.id, view: requestedView.id };
@@ -219,16 +240,37 @@ function StatBlock({ value, label, accent = MINT }: { value: string; label: stri
   );
 }
 
+function SourceNote({
+  sourceUrl,
+  sourceLabel,
+  children,
+}: {
+  sourceUrl: string;
+  sourceLabel: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <p className="mt-3 text-[10px] leading-5 text-white/45">
+      {children} {" "}
+      <a href={sourceUrl} target="_blank" rel="noreferrer" className="text-blue-200 underline underline-offset-4 hover:text-white">
+        {sourceLabel} ↗
+      </a>
+    </p>
+  );
+}
+
 // Chart container with zoom + commentary beacon
 function ChartFrame({
   title,
   exhibit,
+  scope = "DERIVED / FILTERED",
   commentary,
   children,
   className = "",
 }: {
   title: string;
   exhibit?: string;
+  scope?: "FULL CORPUS" | "TOP N EXHIBIT" | "DERIVED / FILTERED" | "EXTERNAL BASELINE";
   commentary?: string;
   children: React.ReactNode;
   className?: string;
@@ -247,6 +289,7 @@ function ChartFrame({
             <span className="font-mono text-[9px] tracking-widest" style={{ color: "rgba(255,101,0,0.6)" }}>{exhibit}</span>
           )}
           <span className="font-mono text-xs font-bold text-white/80">{title}</span>
+          <span className="hidden rounded border border-white/10 px-1.5 py-0.5 font-mono text-[8px] tracking-wide text-white/45 sm:inline">{scope}</span>
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -300,6 +343,20 @@ function ChartFrame({
   );
 }
 
+function EvidenceScopeGuide() {
+  return (
+    <aside className="mb-5 rounded-xl border p-4" aria-label="Insights methodology and evidence scope" style={{ borderColor: "rgba(255,101,0,0.24)", background: "rgba(255,101,0,0.045)" }}>
+      <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-orange-200">Method & scope</p>
+      <div className="mt-3 grid gap-3 text-xs leading-5 text-white/65 md:grid-cols-3">
+        <p><strong className="text-white">FULL CORPUS</strong> aggregates every qualifying row returned by the archive query.</p>
+        <p><strong className="text-white">TOP N EXHIBIT</strong> is a ranked or capped selection; it is not a prevalence estimate.</p>
+        <p><strong className="text-white">EXTERNAL BASELINE</strong> uses a cited public source and is kept separate from archive scoring.</p>
+      </div>
+      <p className="mt-3 text-[11px] leading-5 text-white/45">Derived labels describe filters, comparisons, or editorial interpretation. They do not turn correlation, allegations, or estimates into proven causation or literal individual payments.</p>
+    </aside>
+  );
+}
+
 // ── Section panels ─────────────────────────────────────────────────────────────
 
 function OverviewTotals({ data }: { data: InsightsData }) {
@@ -324,7 +381,7 @@ function OverviewTotals({ data }: { data: InsightsData }) {
           This database contains <span className="font-bold text-white">{data.totals.total.toLocaleString()}</span> documented incidents of misconduct, corruption, and abuse of power by Donald J. Trump — spanning 50+ years from the 1973 DOJ housing discrimination lawsuit to the 2025 second-term authoritarian consolidation.
         </p>
         <p className="text-xs text-white/50 leading-relaxed">
-          For context: all other U.S. presidents in 248 years of American history have accumulated <span style={{ color: MINT }}>zero</span> criminal indictments combined. Trump alone has faced <span style={{ color: THREAT }}>91 criminal charges</span> across 4 separate cases. This is not a political opposition archive — it is a documentary record of a presidency without historical parallel.
+          This is an editorial archive frame, not a complete cross-president criminal-indictment comparison. Case counts, legal status, and historical comparisons are not computed by this dashboard and require case-level source review.
         </p>
       </div>
 
@@ -338,8 +395,8 @@ function OverviewTotals({ data }: { data: InsightsData }) {
       </div>
 
       {/* Radar */}
-      <ChartFrame title="Threat Dimensions — Corpus Average" exhibit="TF-01"
-        commentary="The radar reveals a consistent pattern: authoritarianism and lawlessness are the defining traits, not insanity or absurdity. This is not an incompetent presidency — it is a calculated one. The high 'danger' axis reflects entries that directly threatened constitutional order, human life, or national security (490 entries scored maximum 10/10).">
+      <ChartFrame title="Threat Dimensions — Corpus Average" exhibit="TF-01" scope="FULL CORPUS"
+        commentary="The radar is a FULL CORPUS scoring summary. Authoritarianism and lawlessness are elevated in this archive’s scoring model; that pattern is an editorial interpretation, not a causal or psychological finding. The danger axis reflects entries scored maximum 10/10 in the current corpus query.">
         <ResponsiveContainer width="100%" height={320}>
           <RadarChart data={radarData} outerRadius="75%">
             <PolarGrid stroke={`${MINT}20`} />
@@ -385,11 +442,11 @@ function OverviewEscalation({ data }: { data: InsightsData }) {
       <div className="flex items-start gap-3 px-4 py-3 rounded-xl" style={{ background: "rgba(255,77,94,0.08)", border: "1px solid rgba(255,77,94,0.2)" }}>
         <span className="text-[10px] font-mono font-bold px-2 py-1 rounded shrink-0" style={{ background: "rgba(255,77,94,0.2)", color: "#ff4d5e" }}>KEY FINDING</span>
         <p className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
-          Each era's average danger score is <strong className="text-white">higher</strong> than the last. This is not noise — it's a documented ratchet effect. Second Term avg danger exceeds First Term by ~1.2 points. Misconduct is not just growing in volume; it's getting more dangerous per incident.
+          This exhibit compares archive volume and average danger scores across the configured eras. Read the bars as a corpus comparison; they do not establish causation or prove a universal escalation pattern outside this archive.
         </p>
       </div>
-    <ChartFrame title="Escalation by Era" exhibit="TF-02"
-      commentary="Each era shows escalation in both volume and severity. The Second Term shows the steepest danger curve — reflecting the structural shift from opportunistic to institutionalized authoritarianism.">
+    <ChartFrame title="Escalation by Era" exhibit="TF-02" scope="FULL CORPUS"
+      commentary="The bars compare volume and average danger within each archive era. Differences reflect this corpus and scoring model; they do not by themselves prove causation or a universal historical trend.">
       <ResponsiveContainer width="100%" height={340}>
         <BarChart data={data.escalation} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
@@ -438,7 +495,7 @@ function OverviewRecent({ data }: { data: InsightsData }) {
 function TimelineYearly({ data }: { data: InsightsData }) {
   return (
     <ChartFrame title="Annual Volume & Danger Score" exhibit="TF-03"
-      commentary="Volume spikes correlate with political inflection points: 2016 campaign launch, 2017 first term, 2020 COVID/election, 2025 second term. The danger line diverges sharply upward post-2024.">
+      commentary="Within this archive, volume rises around the 2016 campaign, first term, 2020, and the 2025 second term, while the danger line rises post-2024. This is a corpus pattern; it does not establish political causation.">
       <ResponsiveContainer width="100%" height={360}>
         <ComposedChart data={data.timeline} margin={{ top: 5, right: 30, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
@@ -458,7 +515,7 @@ function TimelineYearly({ data }: { data: InsightsData }) {
 function TimelineLieMeter({ data }: { data: InsightsData }) {
   return (
     <ChartFrame title="Disinformation Volume by Year" exhibit="TF-04"
-      commentary="Entries classified as conspiracy/disinformation or containing keywords like 'lie', 'false', 'claim' spike dramatically in election years. 2020 and 2024 represent historic highs — the Big Lie machine peaks.">
+      commentary="This FULL CORPUS filter counts entries classified as conspiracy/disinformation or containing selected keywords such as ‘lie’, ‘false’, or ‘claim’. Peaks are archive counts, not a truth-rate or prevalence estimate.">
       <ResponsiveContainer width="100%" height={320}>
         <BarChart data={data.lieMeter} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
@@ -478,8 +535,8 @@ function TimelineLieMeter({ data }: { data: InsightsData }) {
 
 function TimelineApproval({ data }: { data: InsightsData }) {
   return (
-    <ChartFrame title="Approval Rating Trend (2025–2026)" exhibit="TF-05"
-      commentary="Presidential approval in freefall throughout second term. Historical note: no modern president has maintained declining approval across both first and second terms simultaneously with this trajectory.">
+    <ChartFrame title="Gallup Approval Snapshots (2025)" exhibit="TF-05" scope="EXTERNAL BASELINE"
+      commentary="These are three dated Gallup national snapshots, not a continuous trend or a forecast. The panel does not support the older 2026 points that were previously displayed.">
       <ResponsiveContainer width="100%" height={280}>
         <AreaChart data={APPROVAL_DATA} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
@@ -489,6 +546,9 @@ function TimelineApproval({ data }: { data: InsightsData }) {
           <Area dataKey="approval" name="Approval %" stroke={THREAT} fill={THREAT} fillOpacity={0.15} strokeWidth={2} />
         </AreaChart>
       </ResponsiveContainer>
+      <SourceNote sourceUrl="https://news.gallup.com/poll/203207/trump-job-approvalweekly.aspx" sourceLabel="Gallup trend archive">
+        Basis: Gallup field periods shown in each x-axis label; percentages are approval responses, not archive scores.
+      </SourceNote>
     </ChartFrame>
   );
 }
@@ -497,7 +557,7 @@ function CategoriesBreakdown({ data }: { data: InsightsData }) {
   return (
     <div className="grid md:grid-cols-2 gap-4">
       <ChartFrame title="Entry Count by Category" exhibit="TF-06"
-        commentary="Authoritarianism and Government Corruption dominate. Election Interference has exploded since 2020 with 4 separate indictments and the Jan 6 insurrection complex.">
+        commentary="Authoritarianism and Government Corruption dominate this FULL CORPUS. Election Interference entries rise after 2020 in the archive; legal case counts and the Jan 6 record are not independently adjudicated by this chart.">
         <ResponsiveContainer width="100%" height={340}>
           <BarChart data={data.categories} layout="vertical" margin={{ top: 5, right: 20, left: 150, bottom: 5 }}>
             <CartesianGrid stroke={`${MINT}12`} horizontal={false} />
@@ -770,7 +830,7 @@ function PeopleFamily({ data }: { data: InsightsData }) {
 function ScoresHistogram({ data }: { data: InsightsData }) {
   return (
     <ChartFrame title="Danger Score Distribution" exhibit="TF-22"
-      commentary="The distribution skews right — over 40% of all entries score 7 or higher on the danger scale. This is not a normal distribution of political events; it is a record of systematic, high-intensity misconduct.">
+      commentary="The distribution skews right in this FULL CORPUS, with many entries at the high end of the archive’s danger scale. This is a scoring-model pattern, not a population estimate or an independently measured distribution of political events.">
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data.scoreDistribution} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
@@ -865,7 +925,7 @@ function ScoresTopEntries({ data }: { data: InsightsData }) {
 function LegalBattles({ data }: { data: InsightsData }) {
   return (
     <ChartFrame title="Legal Battles by Era" exhibit="TF-10"
-      commentary="Legal scrutiny intensified in each era. Between Terms saw 91 criminal charges across 4 indictments — unprecedented in American history. The Second Term has added systematic weaponization of the DOJ against political enemies.">
+      commentary="Legal-related entries increase across the archive’s eras. This FULL CORPUS chart does not independently verify criminal-charge totals, case status, historical uniqueness, or claims about DOJ motive.">
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data.legalBattles} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
@@ -939,7 +999,7 @@ function EpsteinFlights({ data }: { data: InsightsData }) {
   return (
     <div className="space-y-3">
       <p className="font-mono text-[10px] tracking-widest uppercase" style={{ color: `${MINT}50` }}>
-        // trump-epstein flight log — sourced from federal court filings
+        // trump-epstein flight log — illustrative transcription sample
       </p>
       <div className="overflow-x-auto">
         <table className="w-full text-xs border-collapse min-w-[500px]">
@@ -963,6 +1023,9 @@ function EpsteinFlights({ data }: { data: InsightsData }) {
           </tbody>
         </table>
       </div>
+      <SourceNote sourceUrl="https://www.justice.gov/opa/pr/attorney-general-pamela-bondi-releases-first-phase-declassified-epstein-files" sourceLabel="DOJ release and flight-log files">
+        Basis: 11 displayed rows are an editorial transcription sample from the DOJ’s released files, not a complete flight-log database or row-level adjudication. Passenger names and travel records do not by themselves establish wrongdoing.
+      </SourceNote>
     </div>
   );
 }
@@ -978,8 +1041,8 @@ function EpsteinNetwork({ data }: { data: InsightsData }) {
     { name: "Prince",     x: 60, y: 80, r: 12, color: DIM },
   ];
   return (
-    <ChartFrame title="Epstein Network — Key Connections" exhibit="TF-14"
-      commentary="Trump flew on Epstein's planes 11 documented times (1991-1998). He appeared in Epstein's black book, was photographed with Epstein at Mar-a-Lago, and Jeffrey Epstein was a member of Mar-a-Lago. Trump later claimed he 'wasn't a fan.'">
+    <ChartFrame title="Epstein Network — Illustrative Connections" exhibit="TF-14" scope="EXTERNAL BASELINE"
+      commentary="Illustrative relationship diagram anchored to the DOJ flight-log release. It is not a graph query, does not enumerate verified relationship edges, and does not establish wrongdoing, knowledge, or causation.">
       <div className="relative w-full" style={{ paddingBottom: "60%" }}>
         <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
           {/* Edges */}
@@ -999,6 +1062,9 @@ function EpsteinNetwork({ data }: { data: InsightsData }) {
           ))}
         </svg>
       </div>
+      <SourceNote sourceUrl="https://www.justice.gov/opa/pr/attorney-general-pamela-bondi-releases-first-phase-declassified-epstein-files" sourceLabel="DOJ released files">
+        The diagram is an editorial exhibit; only the linked public release is a cited external source. Other edges require separate source-level review.
+      </SourceNote>
     </ChartFrame>
   );
 }
@@ -1030,7 +1096,7 @@ function EpsteinEntries({ data }: { data: InsightsData }) {
 function IranTimeline({ data }: { data: InsightsData }) {
   return (
     <ChartFrame title="Iran War Escalation by Era" exhibit="TF-15"
-      commentary="First Term set the stage: JCPOA withdrawal and Soleimani assassination. Second Term executed the full escalation — US airstrikes on nuclear facilities June 2025 represent the culmination of a decade of maximum pressure that eliminated diplomatic off-ramps.">
+      commentary="This is a FULL CORPUS comparison of archive entries tagged to Iran by era. The counts do not independently verify military events or establish that one administration caused the other era’s pattern.">
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data.iranWar} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
@@ -1055,33 +1121,62 @@ function IranTimeline({ data }: { data: InsightsData }) {
 
 function IranIsrael({ data }: { data: InsightsData }) {
   return (
-    <div className="space-y-2 max-h-[500px] overflow-y-auto">
-      <p className="font-mono text-[10px] tracking-widest uppercase mb-3" style={{ color: `${MINT}50` }}>
-        // israel · netanyahu · adelson — {data.israelDedication.length} entries
-      </p>
-      {data.israelDedication.map((e: any) => (
-        <a key={e.entry_number} href={`/entry/${e.entry_number}`}
-           className="flex items-start gap-3 p-3 rounded-lg border hover:border-orange-500/30 transition-colors group"
-           style={{ borderColor: `${MINT}12`, background: "rgba(0,0,0,0.3)" }}>
-          <span className="font-mono text-[10px] shrink-0 mt-0.5 w-8" style={{ color: BLUE }}>
-            {e.danger?.toFixed?.(1) ?? "?"}/10
-          </span>
-          <div>
-            <p className="text-xs text-white/75 group-hover:text-white line-clamp-1">
-              #{e.entry_number}: {e.title}
-            </p>
-            <p className="text-[10px] mt-0.5" style={{ color: DIM }}>{e.date_start}</p>
-          </div>
-        </a>
-      ))}
+    <div className="space-y-5">
+      <header className="rounded-xl border p-5" style={{ borderColor: "rgba(91,155,255,.28)", background: "rgba(91,155,255,.055)" }}>
+        <p className="font-mono text-[10px] font-bold uppercase tracking-[.18em]" style={{ color: BLUE }}>Israel / Netanyahu investigation</p>
+        <h2 className="mt-2 text-xl font-bold text-white">Evidence, archive signals, and clearly separated editorial claims</h2>
+        <p className="mt-2 max-w-3xl text-sm leading-6 text-white/70">This panel separates public aid baselines from a capped archive search. It does not establish that a donor, meeting, or policy decision caused another event.</p>
+      </header>
+
+      <section className="rounded-xl border p-4" style={{ borderColor: "rgba(62,230,193,.2)", background: "rgba(62,230,193,.03)" }}>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div><p className="font-mono text-[10px] uppercase tracking-[.16em]" style={{ color: MINT }}>Documented public baseline</p><h3 className="mt-1 text-sm font-bold text-white">U.S. assistance to Israel</h3></div>
+          <a href="https://www.congress.gov/crs-product/RL33222" target="_blank" rel="noreferrer" className="min-h-11 rounded-lg border border-blue-300/35 px-3 py-2 text-xs font-semibold text-blue-100 underline underline-offset-4 hover:bg-blue-300/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">CRS RL33222 ↗</a>
+        </div>
+        <div className="mt-4 grid gap-3 md:grid-cols-2">
+          <div className="rounded-lg bg-black/30 p-3"><p className="font-mono text-2xl font-black text-white">$174.965B</p><p className="mt-1 text-xs leading-5 text-white/60">Nominal bilateral assistance plus missile-defense funding, through FY2025, as reported by CRS.</p><div className="mt-3 h-2 rounded bg-white/10"><div className="h-2 w-[59%] rounded bg-blue-400" /></div></div>
+          <div className="rounded-lg bg-black/30 p-3"><p className="font-mono text-2xl font-black text-white">≈$298B</p><p className="mt-1 text-xs leading-5 text-white/60">Constant 2024 dollars through 2024, as reported by CRS. Different end date and price basis: not directly comparable to the nominal total.</p><div className="mt-3 h-2 rounded bg-white/10"><div className="h-2 w-full rounded bg-blue-300" /></div></div>
+        </div>
+        <div className="mt-3 rounded-lg border border-white/10 p-3 text-xs leading-5 text-white/60">
+          <p><strong className="text-white">FY2019–FY2028 MOU framework:</strong> $3.3B annual Foreign Military Financing plus $500M annual missile defense. This is an assistance framework, not a measure of any individual’s influence.</p>
+          <p className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+            <a href="https://2009-2017.state.gov/r/pa/prs/ps/2016/09/261829.htm" target="_blank" rel="noreferrer" className="text-blue-200 underline underline-offset-4 hover:text-white">2016 State announcement ↗</a>
+            <a href="https://2017-2021.state.gov/ten-year-memorandum-of-understanding-between-the-united-states-and-israel/" target="_blank" rel="noreferrer" className="text-blue-200 underline underline-offset-4 hover:text-white">2018 State MOU summary ↗</a>
+          </p>
+        </div>
+      </section>
+
+      <section className="grid gap-3 md:grid-cols-2">
+        <div className="rounded-xl border p-4" style={{ borderColor: "rgba(255,180,76,.24)", background: "rgba(255,180,76,.035)" }}><p className="font-mono text-[10px] uppercase tracking-[.16em]" style={{ color: AMBER }}>Taxpayer visualization: limitation</p><p className="mt-2 text-sm leading-6 text-white/70">No per-capita, household, or taxpayer-equivalent estimate is shown: this dataset does not carry a stated denominator or appropriation-year allocation. Dividing the CRS total here would be an estimate, not any person’s literal tax payment.</p></div>
+        <div className="rounded-xl border p-4" style={{ borderColor: "rgba(255,180,76,.24)", background: "rgba(255,180,76,.035)" }}><p className="font-mono text-[10px] uppercase tracking-[.16em]" style={{ color: AMBER }}>Donor visualization: limitation</p><p className="mt-2 text-sm leading-6 text-white/70">No donor relationship, count, or spending series is plotted. The current panel has no auditable FEC extract or linked donor-to-policy dataset; campaign-finance claims require a separate sourced dataset.</p></div>
+      </section>
+
+      <section className="rounded-xl border p-4" style={{ borderColor: "rgba(255,77,94,.24)", background: "rgba(255,77,94,.035)" }}>
+        <p className="font-mono text-[10px] uppercase tracking-[.16em]" style={{ color: THREAT }}>Editorial analysis / hypothesis boundary</p>
+        <p className="mt-2 text-sm leading-6 text-white/75">The archive can surface proximity in language, timing, and policy coverage. That is an editorial signal for further reporting, not proof that a donor relationship caused a policy outcome. This panel has no direct evidence that establishes blackmail as a legal fact, so it does not assign a probability or make that claim.</p>
+        <p className="mt-2 text-xs leading-5 text-white/50"><strong className="text-white/70">Counterarguments and limits:</strong> long-running U.S. assistance is institutional and bipartisan; the aid baseline alone cannot identify an individual cause. The handoff notes reporting of Trump–Netanyahu tensions, but this panel does not load an auditable Reuters dataset to enumerate or weigh those episodes.</p>
+      </section>
+
+      <section>
+        <div className="mb-3 flex flex-wrap items-end justify-between gap-2"><div><p className="font-mono text-[10px] uppercase tracking-[.16em]" style={{ color: MINT }}>TOP N EXHIBIT · corpus search</p><h3 className="mt-1 text-sm font-bold text-white">Archive records matching Israel, Netanyahu, or Adelson terms</h3></div><span className="font-mono text-xs text-white/50">Capped at {data.israelDedication.length} returned records</span></div>
+        <p className="mb-3 text-xs leading-5 text-white/55">Query scope: title/synopsis text match for Israel, Netanyahu, or Adelson; sorted by date descending. It is a discoverability list, not a full count, source adjudication, or causal network.</p>
+        <div className="max-h-[430px] space-y-2 overflow-y-auto pr-1">
+          {data.israelDedication.length ? data.israelDedication.map((e: any) => (
+            <a key={e.entry_number} href={`/entry/${e.entry_number}`} className="flex items-start gap-3 rounded-lg border p-3 transition-colors hover:border-orange-500/30" style={{ borderColor: `${MINT}12`, background: "rgba(0,0,0,0.3)" }}>
+              <span className="mt-0.5 w-9 shrink-0 font-mono text-[10px]" style={{ color: BLUE }}>{e.danger?.toFixed?.(1) ?? "?"}/10</span>
+              <div className="min-w-0"><p className="text-xs font-semibold text-white/75">#{e.entry_number}: {e.title}</p><p className="mt-0.5 text-[10px]" style={{ color: DIM }}>{e.date_start ?? "Undated"} · {e.category}</p></div>
+            </a>
+          )) : <p className="rounded-lg border border-dashed border-white/15 p-4 text-sm text-white/55">The current corpus query returned no matching records. No trend is inferred from an empty result.</p>}
+        </div>
+      </section>
     </div>
   );
 }
 
 function IranTariffs({ data }: { data: InsightsData }) {
   return (
-    <ChartFrame title="Tariff Cost per American Household ($/yr)" exhibit="TF-16"
-      commentary="The Liberation Day tariff shock of April 2025 cost the average US household an estimated $2,100/year — the largest regressive tax increase since the 1930s Smoot-Hawley Act. Markets fell 10% in two days.">
+    <ChartFrame title="Modeled Tariff Purchasing-Power Loss ($/household)" exhibit="TF-16" scope="EXTERNAL BASELINE"
+      commentary="These are Yale Budget Lab modeled purchasing-power losses in 2024 dollars: $2,100 for the April 2 tariff scenario and $3,800 for all 2025 tariffs in the cited analysis. They are scenario estimates, not literal bills paid by every household, and not archive scores.">
       <ResponsiveContainer width="100%" height={280}>
         <BarChart data={TARIFF_COST} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
@@ -1095,6 +1190,9 @@ function IranTariffs({ data }: { data: InsightsData }) {
           </Bar>
         </BarChart>
       </ResponsiveContainer>
+      <SourceNote sourceUrl="https://budgetlab.yale.edu/sites/default/files/page_to_pdf/472/publication_472.pdf" sourceLabel="Yale Budget Lab analysis">
+        Basis: modeled short-run purchasing-power loss, 2024 dollars; the two bars use different tariff scopes and must not be summed.
+      </SourceNote>
     </ChartFrame>
   );
 }
@@ -1104,30 +1202,23 @@ function EnvironmentOverview({ data }: { data: InsightsData }) {
   return (
     <div className="space-y-4">
       {envEntries && (
-        <div className="grid grid-cols-3 gap-4">
-          <StatBlock value={envEntries.count?.toString()} label="Documented Rollbacks" accent="#52e07c" />
+        <div className="grid grid-cols-2 gap-4">
+          <StatBlock value={envEntries.count?.toString()} label="Corpus Entries" accent="#52e07c" />
           <StatBlock value={envEntries.avg_danger?.toFixed?.(1)} label="Avg Danger" accent={THREAT} />
-          <StatBlock value="85+" label="Rules Rolled Back WH1" accent={AMBER} />
         </div>
       )}
-      <ChartFrame title="Environmental Category Danger" exhibit="TF-17"
-        commentary="Trump's EPA rollbacks represent the most comprehensive dismantling of environmental protections in US history. The second term accelerated every metric: Paris Agreement exited again on Day 1, all offshore wind cancelled, clean energy subsidies revoked.">
+      <ChartFrame title="Environmental Category & Cited Actions" exhibit="TF-17" scope="EXTERNAL BASELINE"
+        commentary="The corpus stats above are FULL CORPUS values. The actions below are external baseline records from EPA pages and retain the agency’s own framing; they are not a verified count of all rollbacks or a complete environmental impact assessment.">
         <div className="space-y-3 p-2">
-          {[
-            { label: "Paris Agreement: Withdrew TWICE", note: "2017 + Jan 20 2025" },
-            { label: "EPA rules rolled back", note: "85+ in first term, accelerating in second" },
-            { label: "Offshore wind: ALL leases cancelled", note: "$50B+ investment evaporated Jan 2025" },
-            { label: "Clean Power Plan reversed", note: "Obama-era backbone of US climate policy" },
-            { label: "Clean water rules gutted", note: "60% of US waterways lost protection" },
-            { label: "Endangered Species Act weakened", note: "Economic costs now override species survival" },
-            { label: "ANWR drilling opened", note: "Arctic National Wildlife Refuge — 1.6M acres" },
-            { label: "NOAA climate division dismantled", note: "National weather + hurricane prediction at risk" },
-          ].map((item, i) => (
+          {ENVIRONMENT_BASELINES.map((item, i) => (
             <div key={i} className="flex items-start gap-3 p-2.5 rounded-lg"
                  style={{ background: "rgba(82,224,124,0.04)", borderLeft: `2px solid rgba(82,224,124,0.3)` }}>
               <div>
                 <p className="text-xs font-semibold text-white/80">{item.label}</p>
                 <p className="text-[10px] mt-0.5" style={{ color: DIM }}>{item.note}</p>
+                <a href={item.sourceUrl} target="_blank" rel="noreferrer" className="mt-1 inline-block text-[10px] text-blue-200 underline underline-offset-4 hover:text-white">
+                  {item.sourceLabel} ↗
+                </a>
               </div>
             </div>
           ))}
@@ -1202,6 +1293,22 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
     Object.fromEntries(NAV.map(n => [n.id, n.id === section]))
   );
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+  const reduceMotion = useReducedMotion();
+  const mobileMenuButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileSidebarRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!mobileSidebarOpen) return;
+    mobileSidebarRef.current?.focus();
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMobileSidebarOpen(false);
+        mobileMenuButtonRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [mobileSidebarOpen]);
 
   useEffect(() => {
     if (rawSection !== section || rawView !== view) {
@@ -1303,7 +1410,7 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
 
       <div className="px-4 py-3 shrink-0 border-t" style={{ borderColor: `${MINT}10` }}>
         <p className="font-mono text-[8px]" style={{ color: DIM }}>
-          {data.totals.total.toLocaleString()} entries · {new Date().getFullYear()}
+          {data.loadError ? "Archive data unavailable" : `${data.totals.total.toLocaleString()} entries · ${new Date().getFullYear()}`}
         </p>
       </div>
     </nav>
@@ -1333,18 +1440,24 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
         {mobileSidebarOpen && (
           <>
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={reduceMotion ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="fixed inset-0 z-40 bg-black/60 md:hidden"
               onClick={() => setMobileSidebarOpen(false)}
             />
             <motion.aside
-              initial={{ x: -240 }}
+              ref={mobileSidebarRef}
+              role="dialog"
+              aria-modal="true"
+              aria-label="Insights navigation"
+              id="insights-mobile-navigation"
+              tabIndex={-1}
+              initial={reduceMotion ? false : { x: -240 }}
               animate={{ x: 0 }}
               exit={{ x: -240 }}
-              transition={{ type: "tween", duration: 0.22 }}
-              className="fixed left-0 top-16 bottom-0 z-50 w-60 border-r md:hidden"
+              transition={{ type: "tween", duration: reduceMotion ? 0 : 0.22 }}
+              className="fixed bottom-0 left-0 top-16 z-50 w-60 border-r outline-none md:hidden"
               style={{ borderColor: `${MINT}12`, background: "#060608" }}
             >
               <SidebarContent />
@@ -1366,7 +1479,12 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
           </button>
           <button
             onClick={() => setMobileSidebarOpen(v => !v)}
-            className="p-1.5 rounded hover:bg-white/5 transition-colors md:hidden"
+            ref={mobileMenuButtonRef}
+            type="button"
+            aria-label={mobileSidebarOpen ? "Close Insights navigation" : "Open Insights navigation"}
+            aria-expanded={mobileSidebarOpen}
+            aria-controls="insights-mobile-navigation"
+            className="flex h-11 w-11 items-center justify-center rounded transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 md:hidden"
           >
             <Menu size={14} className="text-white/40" />
           </button>
@@ -1383,29 +1501,44 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
           </div>
           <div className="ml-auto flex items-center gap-2 shrink-0">
             <span className="font-mono text-[9px] hidden sm:block" style={{ color: `${MINT}40` }}>
-              {data.totals.total.toLocaleString()} entries
+              {data.loadError ? "data unavailable" : `${data.totals.total.toLocaleString()} entries`}
             </span>
           </div>
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto p-4 md:p-6">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`${section}-${view}`}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.18 }}
-            >
-              <PanelContent section={section} view={view} data={data} />
-            </motion.div>
-          </AnimatePresence>
+        <div className="flex-1 overflow-y-auto p-4 pb-24 md:p-6 md:pb-6">
+          <header className="mb-5 border-b pb-4" style={{ borderColor: `${MINT}12` }}>
+            <p className="font-mono text-[10px] uppercase tracking-[.2em]" style={{ color: "rgba(255,101,0,.7)" }}>Trumpstein: Encyclopedia Orange</p>
+            <h1 className="mt-1 text-2xl font-black text-white md:text-3xl">Forensic archive insights</h1>
+            <p className="mt-1 max-w-3xl text-sm leading-6 text-white/60">An evidence-labelled reading layer for archive aggregates, ranked exhibits, and external public baselines.</p>
+          </header>
+          {data.loadError ? (
+            <section role="alert" className="rounded-xl border border-amber-400/35 bg-amber-400/[0.06] p-5">
+              <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-amber-200">Archive data temporarily unavailable</p>
+              <p className="mt-2 max-w-2xl text-sm leading-6 text-white/65">The Insights query did not complete, so this page is withholding charts and counts rather than presenting an empty archive. Refresh to retry.</p>
+            </section>
+          ) : (
+            <>
+              <EvidenceScopeGuide />
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`${section}-${view}`}
+                  initial={reduceMotion ? false : { opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: reduceMotion ? 0 : 0.18 }}
+                >
+                  <PanelContent section={section} view={view} data={data} />
+                </motion.div>
+              </AnimatePresence>
+            </>
+          )}
         </div>
       </div>
 
       {/* Mobile bottom nav */}
-      <div className="fixed bottom-0 left-0 right-0 border-t md:hidden flex z-30"
+      <nav aria-label="Primary Insights sections" className="fixed bottom-0 left-0 right-0 z-30 flex border-t md:hidden"
            style={{ borderColor: `${MINT}12`, background: "#060608" }}>
         {NAV.slice(0, 5).map(item => {
           const Icon = item.icon;
@@ -1417,7 +1550,7 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
               scroll={false}
               aria-current={isActive ? "page" : undefined}
               onClick={() => recordNavigation(item.id, item.views[0].id)}
-              className="flex-1 flex flex-col items-center py-2 gap-0.5 text-[9px] font-mono transition-colors"
+              className="flex min-h-14 flex-1 flex-col items-center justify-center gap-0.5 py-2 text-[9px] font-mono transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-orange-400"
               style={{ color: isActive ? "#FF6500" : "rgba(255,255,255,0.3)" }}
             >
               <Icon size={16} />
@@ -1425,7 +1558,7 @@ export default function InsightsClient({ data }: { data: InsightsData }) {
             </Link>
           );
         })}
-      </div>
+      </nav>
     </div>
   );
 }

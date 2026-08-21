@@ -8,8 +8,38 @@ export const metadata = {
   description: "A narrative data investigation into 60+ years of documented Trump misconduct, told through forensic visualizations.",
 };
 
+const EMPTY_INSIGHTS_DATA = {
+  loadError: true,
+  totals: { total: 0, avg_danger: 0, avg_auth: 0, avg_lawless: 0, peak_danger: 0 },
+  timeline: [],
+  categories: [],
+  escalation: [],
+  humanRights: [],
+  violentRhetoric: [],
+  yearlyAcceleration: [],
+  topKeywords: [],
+  radarDimensions: {},
+  iranWar: [],
+  israelDedication: [],
+  lieMeter: [],
+  legalBattles: [],
+  pardons: [],
+  epsteinConnection: [],
+  peopleTagFrequency: [],
+  categoryYearMatrix: [],
+  scoreDistribution: [],
+  familyOrbitEntries: [],
+  topCooccurrences: [],
+  recentEntries: [],
+  wordCloudByEra: [],
+  networkEdges: [],
+  legalBattlesData: [],
+  pressureMatrix: [],
+};
+
 async function getInsightsData() {
-  const [totals] = await sql`
+  try {
+    const [totals] = await sql`
     SELECT COUNT(*) as total,
       AVG(danger)::float8 as avg_danger,
       AVG(authoritarianism)::float8 as avg_auth,
@@ -360,6 +390,10 @@ async function getInsightsData() {
     recentEntries: recentEntries as Array<{ entry_number: number; title: string; date_start: string | null; danger: number | null; category: string }>,
     pressureMatrix: pressureMatrix as Array<{ category: string; era: "First Term" | "Second Term"; count: number; avg_danger: number | null }>,
   };
+  } catch (error) {
+    console.error("Insights data load failed:", error);
+    return EMPTY_INSIGHTS_DATA;
+  }
 }
 
 import { Suspense } from "react";

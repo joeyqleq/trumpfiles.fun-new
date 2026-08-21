@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import TrueFocus from "@/components/TrueFocus";
@@ -10,9 +10,10 @@ import { OrangeX, TwinkleStar as TwinkleStarDecor } from "@/components/PageDecor
 import PixelCard from "@/components/PixelCard";
 
 export default function EnigmaPage() {
+  const reduceMotion = useReducedMotion();
   const bioData = [
     { label: "Full Name", value: "Donald John Trump", icon: Users },
-    { label: "Born", value: "June 14, 1946 (Age: 78)", icon: Calendar },
+    { label: "Born", value: "June 14, 1946", icon: Calendar },
     { label: "Where From", value: "Queens, New York, USA", icon: MapPin },
     { label: "Family", value: "5 Children, 10 Grandchildren", icon: Users },
     { label: "Marriages", value: "3 (and counting?)", icon: Heart },
@@ -69,7 +70,7 @@ export default function EnigmaPage() {
     {
       year: "2015",
       title: "The Escalator Descent",
-      description: "Announces presidential campaign calling Mexicans 'rapists and criminals'. Political career begins.",
+      description: "Announces presidential campaign with inflammatory claims about Mexican immigrants. Political career begins.",
       impact: "Democracy's worst nightmare becomes real.",
       color: "from-orange-600 to-red-700"
     },
@@ -83,14 +84,14 @@ export default function EnigmaPage() {
     {
       year: "2017-2021",
       title: "The Presidential Years",
-      description: "2 impeachments, 30k+ lies, pandemic mismanagement, family separation, Jan 6 insurrection.",
-      impact: "Democracy shaken to its core. 400k+ COVID deaths.",
+      description: "2 impeachments, documented falsehoods, pandemic crisis, family separation, and the road to Jan 6.",
+      impact: "Democracy shaken; US COVID deaths crossed 400k before he left office.",
       color: "from-red-700 to-red-900"
     },
     {
       year: "2021",
       title: "January 6th: The Attempted Coup",
-      description: "Incites mob to storm Capitol. Refuses to accept election results. Democracy attacked.",
+      description: "A mob storms the Capitol after his rally speech; he refuses to accept the election results.",
       impact: "First president to refuse peaceful transfer of power.",
       color: "from-red-900 to-black"
     },
@@ -103,17 +104,24 @@ export default function EnigmaPage() {
     },
     {
       year: "2024",
-      title: "The Return Attempt",
-      description: "Runs for president again despite legal troubles. Cult of personality stronger than ever.",
-      impact: "Democracy's stress test continues.",
+      title: "Conviction and Election",
+      description: "A New York jury convicts Trump on 34 felony counts in May; he wins the November presidential election.",
+      impact: "The legal and electoral record move on parallel tracks.",
       color: "from-orange-600 to-red-700"
     },
     {
-      year: "2025+",
-      title: "Future Roadmap: TBD",
-      description: "Will it be prison? Mar-a-Lago exile? Another run? The grift continues either way.",
-      impact: "History will not be kind. Neither will we.",
-      color: "from-red-600 to-purple-600"
+      year: "2025",
+      title: "Second Presidency Begins",
+      description: "Trump is inaugurated for a second, nonconsecutive term on January 20, 2025.",
+      impact: "The archive enters a new live-record phase.",
+      color: "from-red-600 to-orange-700"
+    },
+    {
+      year: "2026",
+      title: "The Record Gets a Brain",
+      description: "The repository pairs its canonical archive with Trumpstein, a Cloudflare Worker chat surface using D1 and Vectorize retrieval.",
+      impact: "Receipts become searchable conversation and connected exploration.",
+      color: "from-orange-600 to-purple-600"
     }
   ];
 
@@ -125,13 +133,13 @@ export default function EnigmaPage() {
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
+          initial={reduceMotion ? false : { opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="mb-16 text-center"
         >
           <div className="flex justify-center mb-6">
             <div className="font-arctic-3d">
-              <TrueFocus
+              {reduceMotion ? <h1 className="text-5xl text-orange-400">THE ENIGMA</h1> : <TrueFocus
                 sentence="THE ENIGMA"
                 manualMode={false}
                 blurAmount={3}
@@ -139,17 +147,20 @@ export default function EnigmaPage() {
                 glowColor="rgba(255, 101, 0, 0.6)"
                 animationDuration={0.8}
                 pauseBetweenAnimations={2}
-              />
+              />}
             </div>
           </div>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto italic">
             "The Enigma" - The nickname given by Trump to Jeffrey Epstein and himself in that controversial birthday card
           </p>
+          <p className="mt-4 text-xs uppercase tracking-[0.2em] text-orange-300/60">
+            Satirical biography layer. Use the source-linked catalogue for evidence records.
+          </p>
         </motion.div>
 
         {/* Bio Section with ProfileCard */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={reduceMotion ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-16"
@@ -164,7 +175,7 @@ export default function EnigmaPage() {
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, x: -20 }}
+                  initial={reduceMotion ? false : { opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.3 + index * 0.05 }}
                 >
@@ -184,7 +195,7 @@ export default function EnigmaPage() {
 
           {/* Right: ProfileCard with Birthday Drawing - PixelCard Effect */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={reduceMotion ? false : { opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
             className="flex items-start justify-center order-first lg:order-last"
@@ -223,22 +234,18 @@ export default function EnigmaPage() {
 
         {/* Satirical interlude */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={reduceMotion ? false : { opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           className="mb-12 flex flex-col md:flex-row gap-6 items-center justify-center"
         >
-          <div className="relative group">
-            <Image src="/images/art/pdf_tiny_hat.png" alt="Trump Tiny Hat" width={200} height={250} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:rotate-1" style={{ width: 'auto', height: 'auto' }} />
-          </div>
-          <div className="relative group">
-            <Image src="/images/art/pdf_iwatch.png" alt="Trump iWatch" width={200} height={250} className="rounded-xl border border-orange-500/20 shadow-lg shadow-orange-500/10 group-hover:shadow-orange-500/30 transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1" style={{ width: 'auto', height: 'auto' }} />
-          </div>
+          <Image src="/images/art/pdf_trump_pam_melania.png" alt="Satirical Trump, Pam, and Melania artwork" width={250} height={190} className="h-auto w-auto max-w-[46%] object-contain" />
+          <Image src="/images/art/pdf_flag.png" alt="Flag artwork" width={150} height={270} className="h-auto w-auto max-h-[260px] max-w-[32%] object-contain" />
         </motion.div>
 
         {/* Timeline Section */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={reduceMotion ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           className="mb-16"
@@ -260,10 +267,10 @@ export default function EnigmaPage() {
               {timelineEvents.map((event, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 50 }}
+                  initial={reduceMotion ? false : { opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
-                  transition={{ delay: index * 0.1 }}
+                  transition={reduceMotion ? { duration: 0 } : { delay: index * 0.1 }}
                   className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center gap-8`}
                 >
                   {/* Content Card with Decorator */}
@@ -312,7 +319,7 @@ export default function EnigmaPage() {
 
         {/* Closing Card */}
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={reduceMotion ? false : { opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="mt-16"
@@ -323,9 +330,7 @@ export default function EnigmaPage() {
                 The Enigma Continues...
               </h3>
               <div className="flex justify-center mb-6">
-                <motion.div whileHover={{ scale: 1.05 }} className="relative">
-                  <Image src="/images/art/pdf_foreskin.png" alt="Trump Satirical Art" width={220} height={160} className="rounded-xl border border-orange-500/20 shadow-[0_0_20px_rgba(255,101,0,0.15)]" style={{ width: 'auto', height: 'auto' }} />
-                </motion.div>
+                <Image src="/images/art/pdf_foreskin.png" alt="Trump satirical artwork" width={220} height={160} className="h-auto w-auto object-contain" />
               </div>
               <p className="text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
                 From humble beginnings as a millionaire's son to reality TV icon to the most controversial

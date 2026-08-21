@@ -4,33 +4,20 @@ import AsciiFooter from "@/components/AsciiFooter";
 import TrumpsteinChat from "@/components/TrumpsteinChat";
 import "./globals.css";
 import Script from "next/script";
-import { arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, outfit, syne, neuething, instrumentSerif, spaceGrotesk, playfairDisplay, sourceSerif, jetbrainsMono } from "@/lib/fonts";
+import { adhesianSerif, arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, hilsfiger, outfit, syne, instrumentSerif, spaceGrotesk, playfairDisplay, sourceSerif, jetbrainsMono } from "@/lib/fonts";
 // import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
-import { sql } from "@/lib/neonClient";
 import { Analytics } from '@vercel/analytics/next';
 
-// Fetch entry count for dynamic metadata
-async function getEntryCount(): Promise<number> {
-  try {
-    const result = await sql`SELECT COUNT(*) as count FROM ai_complete_trump_data`;
-    return parseInt(result[0]?.count || "1100", 10);
-  } catch {
-    return 1100; // Fallback
-  }
-}
-
 export async function generateMetadata(): Promise<Metadata> {
-  const entryCount = await getEntryCount();
-
-  const title = "The Trump Files | Encyclopedia Orange";
-  const description = `An interactive thermal encyclopedia cataloging ${entryCount}+ documented incidents, scandals, and absurd moments from Donald J. Trump. AI-analyzed, timestamped, and scored for accuracy and impact.`;
+  const title = "Trumpstein: Encyclopedia Orange";
+  const description = "A source-aware, satirical public archive of documented Trump incidents, statements, relationships, and political consequences. The Trump Files lives on here as the archive's heritage collection.";
   const siteUrl = "https://trumpstein.me";
 
   return {
     title: {
       default: title,
-      template: "%s | The Trump Files"
+      template: "%s | Trumpstein"
     },
     description,
     keywords: [
@@ -48,9 +35,9 @@ export async function generateMetadata(): Promise<Metadata> {
       "Trump incidents",
       "Trump catalog"
     ],
-    authors: [{ name: "The Trump Files Team" }],
-    creator: "The Trump Files",
-    publisher: "The Trump Files",
+    authors: [{ name: "Trumpstein / The Trump Files Archive" }],
+    creator: "Trumpstein",
+    publisher: "Trumpstein: Encyclopedia Orange",
     formatDetection: {
       email: false,
       address: false,
@@ -82,7 +69,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       locale: "en_US",
       url: siteUrl,
-      siteName: "The Trump Files",
+      siteName: "Trumpstein: Encyclopedia Orange",
       title,
       description,
     },
@@ -153,10 +140,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "The Trump Files",
-              "alternateName": "Encyclopedia Orange",
+              "name": "Trumpstein: Encyclopedia Orange",
+              "alternateName": ["The Trump Files", "Encyclopedia Orange"],
               "url": "https://trumpstein.me",
-              "description": "An interactive thermal encyclopedia cataloging documented incidents, scandals, and absurd moments from Donald J. Trump.",
+              "description": "A source-aware, satirical public archive of documented Trump incidents, statements, relationships, and political consequences.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {
@@ -182,7 +169,8 @@ export default function RootLayout({
           ${arcticGuardianLeft.variable}
           ${outfit.variable}
           ${syne.variable}
-          ${neuething.variable}
+          ${hilsfiger.variable}
+          ${adhesianSerif.variable}
           ${instrumentSerif.variable}
           ${spaceGrotesk.variable}
           ${playfairDisplay.variable}

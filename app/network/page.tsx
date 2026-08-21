@@ -2,13 +2,15 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, ZoomIn, ZoomOut, RefreshCw, Users, Network, AlertTriangle } from "lucide-react";
+import { Search, ZoomIn, ZoomOut, RefreshCw, AlertTriangle } from "lucide-react";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 interface GraphNode {
   id: string;
   type: "person" | "event";
+  name?: string;
+  label?: string;
   events?: number;
   avg_danger?: number;
   size?: number;
@@ -43,6 +45,10 @@ interface GraphData {
   nodes: GraphNode[];
   edges: GraphEdge[];
   topPeople?: TopPersonSummary[];
+  source?: "neo4j" | "neon-fallback";
+  degraded?: boolean;
+  message?: string;
+  path_supported?: boolean;
 }
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -55,14 +61,16 @@ const VIOLET  = "#a78bfa";
 const BG      = "#060608";
 
 const ANALYSES: Record<string, string> = {
-  community: `Co-occurrence network reveals **structural clusters** — tight groups who appear together repeatedly in documented scandals. Dense connections between nodes indicate systematic coordination, not coincidence. Red-weighted edges signal high-danger co-appearances.`,
-  top: `Force graph of Trump's inner orbit. Node **size** = volume of documented scandals. **Color intensity** = average danger score. Hover any node to see their full scandal profile. Edges show direct documented co-involvement in the same events.`,
-  person: `Ego network showing all events connected to this individual and their co-conspirators within those events. Sorted by danger score. This maps one person's full documented footprint in the Trump scandal universe.`,
+  community: "Co-occurrence shows people tagged together in documented archive entries. Dense links indicate repeated shared documentation, not proof of coordination or causation. Edge color reflects average danger of the shared entries.",
+  top: "Force graph of the archive's most connected people. Node size reflects tagged event volume; color reflects average danger. Edges show co-appearance in the same documented entries, not proof of a relationship.",
+  person: "Ego network shows one person's tagged entries and other people tagged in those same dossiers. It is a documentation map, not a finding of coordination or guilt.",
+  path: "Path exploration looks for a relationship route between named people. Archive fallback mode reports when that relationship service is unavailable instead of inventing a path.",
 };
 
 // ── Force-directed layout (simple physics sim, no D3 dep) ────────────────────
 
 function runForceLayout(nodes: GraphNode[], edges: GraphEdge[], width: number, height: number) {
+  if (nodes.length === 0) return [];
   const nodeMap = new Map(nodes.map(n => [n.id, { ...n, x: Math.random() * width, y: Math.random() * height, vx: 0, vy: 0 }]));
   const iterations = 200;
   const k = Math.sqrt((width * height) / nodes.length) * 0.8;
@@ -131,8 +139,13 @@ function dangerColor(d?: number) {
 
 export default function NetworkPage() {
   const svgRef = useRef<SVGSVGElement>(null);
-  const [mode, setMode] = useState<"top" | "community" | "person">("community");
+  const initialParam = (name: string) => typeof window === "undefined" ? "" : new URLSearchParams(window.location.search).get(name) ?? "";
+  const [mode, setMode] = useState<"top" | "community" | "person" | "path">("community");
   const [searchPerson, setSearchPerson] = useState("");
+  const [phase, setPhase] = useState(() => initialParam("phase"));
+  const [category, setCategory] = useState(() => initialParam("category"));
+  const [minDanger, setMinDanger] = useState(() => initialParam("minDanger"));
+  const [appliedFilters, setAppliedFilters] = useState(() => ({ phase: initialParam("phase"), category: initialParam("category"), minDanger: initialParam("minDanger") }));
   const [graphData, setGraphData] = useState<GraphData | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -142,42 +155,71 @@ export default function NetworkPage() {
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const dragStart = useRef({ x: 0, y: 0, panX: 0, panY: 0 });
+  const initialFetch = useRef(false);
   const [layoutNodes, setLayoutNodes] = useState<GraphNode[]>([]);
 
   const W = 900, H = 600;
 
-  const fetchGraph = useCallback(async (m: string, person?: string) => {
+  const fetchGraph = useCallback(async (m: string, person?: string, filterOverride?: { phase: string; category: string; minDanger: string }) => {
     setLoading(true);
     setError("");
     setSelected(null);
     try {
-      const url = `/api/network?mode=${m}${person ? `&person=${encodeURIComponent(person)}` : ""}`;
+      const params = new URLSearchParams({ mode: m });
+      if (person) params.set("person", person);
+      const filters = filterOverride ?? appliedFilters;
+      if (filters.phase.trim()) params.set("phase", filters.phase.trim());
+      if (filters.category.trim()) params.set("category", filters.category.trim());
+      if (filters.minDanger && Number(filters.minDanger) > 0) params.set("minDanger", String(Math.min(10, Math.max(0, Number(filters.minDanger)))));
+      const url = `/api/network?${params.toString()}`;
       const res = await fetch(url);
-      if (!res.ok) throw new Error(await res.text());
-      const data: GraphData = await res.json();
+      if (!res.ok) throw new Error("The graph service could not return data.");
+      const payload = await res.json() as Partial<GraphData>;
+      const data: GraphData = {
+        nodes: Array.isArray(payload.nodes) ? payload.nodes : [],
+        edges: Array.isArray(payload.edges) ? payload.edges : [],
+        topPeople: Array.isArray(payload.topPeople) ? payload.topPeople : [],
+        source: payload.source,
+        degraded: payload.degraded === true,
+        message: typeof payload.message === "string" ? payload.message : undefined,
+        path_supported: payload.path_supported,
+      };
       setGraphData(data);
       // Run force layout
       const laid = runForceLayout(data.nodes, data.edges, W, H);
       setLayoutNodes(laid);
-    } catch (e) {
-      setError(String(e));
+    } catch {
+      setError("The graph could not be loaded. Retry to check the archive-backed fallback.");
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [appliedFilters]);
 
-  useEffect(() => { fetchGraph("community"); }, [fetchGraph]);
+  useEffect(() => {
+    if (initialFetch.current) return;
+    initialFetch.current = true;
+    fetchGraph("community");
+  }, [fetchGraph]);
 
-  const handleModeChange = (m: "top" | "community" | "person") => {
+  const applyUrl = (filters: { phase: string; category: string; minDanger: string }) => {
+    const params = new URLSearchParams();
+    if (filters.phase.trim()) params.set("phase", filters.phase.trim());
+    if (filters.category.trim()) params.set("category", filters.category.trim());
+    if (filters.minDanger && Number(filters.minDanger) > 0) params.set("minDanger", String(Math.min(10, Math.max(0, Number(filters.minDanger)))));
+    window.history.replaceState(null, "", params.toString() ? `/network?${params}` : "/network");
+  };
+
+  const handleModeChange = (m: "top" | "community" | "person" | "path") => {
     setMode(m);
-    if (m !== "person") fetchGraph(m);
+    if (m !== "person") fetchGraph(m, m === "path" ? searchPerson : undefined);
   };
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchPerson.trim()) {
-      setMode("person");
-      fetchGraph("person", searchPerson.trim());
+      const searchMode = mode === "path" ? "path" : "person";
+      setMode(searchMode);
+      fetchGraph(searchMode, searchPerson.trim());
     }
   };
 
@@ -206,21 +248,23 @@ export default function NetworkPage() {
               CONSPIRACY NETWORK
             </h1>
             <p className="text-xs text-white/40 mt-0.5">
-              {graphData?.nodes.length ?? 0} nodes · {graphData?.edges.length ?? 0} edges · from Neo4j relationship graph
+              {graphData?.nodes.length ?? 0} nodes · {graphData?.edges.length ?? 0} edges · {graphData?.source === "neon-fallback" ? "archive-tag fallback" : "relationship graph"}
             </p>
           </div>
 
           {/* Mode tabs */}
-          <div className="flex gap-2">
-            {(["community", "top", "person"] as const).map(m => (
+          <div className="flex flex-wrap gap-2">
+            {(["community", "top", "person", "path"] as const).map(m => (
               <button key={m} onClick={() => handleModeChange(m)}
-                className="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
+                disabled={m === "path" && graphData?.path_supported === false}
+                title={m === "path" && graphData?.path_supported === false ? "Path exploration is unavailable in archive fallback mode" : undefined}
+                className="min-h-11 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all disabled:cursor-not-allowed disabled:opacity-45 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                 style={{
                   background: mode === m ? `${ORANGE}25` : "rgba(255,255,255,0.05)",
                   border: `1px solid ${mode === m ? ORANGE : "rgba(255,255,255,0.1)"}`,
                   color: mode === m ? ORANGE : "rgba(255,255,255,0.5)",
                 }}>
-                {m === "community" ? "Co-Conspirators" : m === "top" ? "Power Network" : "Person Ego"}
+                {m === "community" ? "Co-appearance" : m === "top" ? "Power Network" : m === "person" ? "Person Ego" : "Path"}
               </button>
             ))}
           </div>
@@ -230,20 +274,20 @@ export default function NetworkPage() {
             <input
               value={searchPerson}
               onChange={e => setSearchPerson(e.target.value)}
-              placeholder="Search person…"
+              placeholder={mode === "path" ? "Target or From__To" : "Search person…"}
               className="rounded-lg px-3 py-1.5 text-xs bg-white/5 border border-white/10 text-white placeholder-white/30 outline-none focus:border-orange-500 w-36"
             />
-            <button type="submit" className="px-3 py-1.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs transition-colors">
+            <button type="submit" aria-label={mode === "path" ? "Find relationship path" : "Search person"} className="min-h-11 min-w-11 px-3 py-1.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
               <Search size={12} />
             </button>
           </form>
 
           {/* Controls */}
           <div className="flex gap-1.5">
-            <button onClick={() => setZoom(z => Math.min(3, z + 0.2))} className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white/50 transition-colors"><ZoomIn size={14} /></button>
-            <button onClick={() => setZoom(z => Math.max(0.3, z - 0.2))} className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white/50 transition-colors"><ZoomOut size={14} /></button>
-            <button onClick={() => { setZoom(1); setPan({ x: 0, y: 0 }); fetchGraph(mode, mode === "person" ? searchPerson : undefined); }}
-              className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white/50 transition-colors"><RefreshCw size={14} /></button>
+            <button type="button" aria-label="Zoom network in" onClick={() => setZoom(z => Math.min(3, z + 0.2))} className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/5 text-white/50 transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"><ZoomIn size={16} /></button>
+            <button type="button" aria-label="Zoom network out" onClick={() => setZoom(z => Math.max(0.3, z - 0.2))} className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/5 text-white/50 transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"><ZoomOut size={16} /></button>
+            <button onClick={() => { setZoom(1); setPan({ x: 0, y: 0 }); fetchGraph(mode, mode === "person" || mode === "path" ? searchPerson : undefined); }}
+              type="button" aria-label="Reset and refresh network" className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/5 text-white/50 transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400"><RefreshCw size={16} /></button>
           </div>
         </div>
       </div>
@@ -251,13 +295,28 @@ export default function NetworkPage() {
       <div className="max-w-7xl mx-auto px-4 py-4 grid grid-cols-1 lg:grid-cols-4 gap-4">
         {/* Graph */}
         <div className="lg:col-span-3">
+          {graphData?.degraded && (
+            <div className="mb-3 flex flex-col gap-3 rounded-xl border p-4 text-sm sm:flex-row sm:items-center sm:justify-between" role="status" style={{ borderColor: `${AMBER}55`, background: `${AMBER}12`, color: "rgba(255,255,255,.78)" }}>
+              <div className="flex items-start gap-2"><AlertTriangle size={17} className="mt-0.5 shrink-0" style={{ color: AMBER }} /><p><strong className="text-white">Archive-backed fallback is active.</strong> {graphData.message ?? "This view is derived from tagged dossier records and is bounded for reliability."}</p></div>
+              <button type="button" onClick={() => fetchGraph(mode, mode === "person" || mode === "path" ? searchPerson : undefined)} className="min-h-11 shrink-0 rounded-lg border px-3 text-xs font-semibold text-amber-100 hover:bg-amber-300/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white" style={{ borderColor: `${AMBER}66` }}>Retry relationship graph</button>
+            </div>
+          )}
           {/* Analysis banner */}
           <div className="mb-3 px-4 py-3 rounded-xl text-xs leading-relaxed" style={{ background: `${ORANGE}08`, border: `1px solid ${ORANGE}20`, color: "rgba(255,255,255,0.6)" }}>
             <span className="font-mono text-[10px] mr-2" style={{ color: `${ORANGE}70` }}>ANALYSIS //</span>
             {ANALYSES[mode]}
           </div>
 
-          <div className="rounded-xl overflow-hidden border relative" style={{ borderColor: `${ORANGE}20`, background: "rgba(0,0,0,0.4)" }}>
+          <form onSubmit={(event) => { event.preventDefault(); const next = { phase, category, minDanger }; setAppliedFilters(next); applyUrl(next); fetchGraph(mode, mode === "person" || mode === "path" ? searchPerson : undefined, next); }} className="mb-3 grid gap-2 rounded-xl border p-3 sm:grid-cols-4" style={{ borderColor: `${ORANGE}20`, background: "rgba(0,0,0,.28)" }} aria-label="Network filters">
+            <input value={phase} onChange={(event) => setPhase(event.target.value)} maxLength={96} placeholder="Exact archive phase" className="min-h-11 rounded-lg border border-white/10 bg-black/30 px-3 text-xs text-white placeholder:text-white/35 focus:border-orange-400 focus:outline-none" />
+            <input value={category} onChange={(event) => setCategory(event.target.value)} maxLength={96} placeholder="Exact archive category" className="min-h-11 rounded-lg border border-white/10 bg-black/30 px-3 text-xs text-white placeholder:text-white/35 focus:border-orange-400 focus:outline-none" />
+            <label className="flex min-h-11 items-center gap-2 rounded-lg border border-white/10 bg-black/30 px-3 text-xs text-white/65">Min danger <input type="number" value={minDanger} onChange={(event) => setMinDanger(event.target.value)} min="0" max="10" step="1" className="min-w-0 flex-1 bg-transparent text-right text-white outline-none" /></label>
+            <div className="flex gap-2"><button type="submit" className="min-h-11 flex-1 rounded-lg bg-orange-600 px-3 text-xs font-semibold text-white hover:bg-orange-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">Apply</button><button type="button" onClick={() => { const next = { phase: "", category: "", minDanger: "" }; setPhase(""); setCategory(""); setMinDanger(""); setAppliedFilters(next); applyUrl(next); fetchGraph(mode, mode === "person" || mode === "path" ? searchPerson : undefined, next); }} className="min-h-11 rounded-lg border border-white/15 px-3 text-xs text-white/65 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">Clear</button></div>
+          </form>
+          {(appliedFilters.phase || appliedFilters.category || appliedFilters.minDanger) && <p className="mb-3 text-xs text-white/50" aria-live="polite">Active filters: {[appliedFilters.phase && `phase: ${appliedFilters.phase}`, appliedFilters.category && `category: ${appliedFilters.category}`, appliedFilters.minDanger && `danger ≥ ${appliedFilters.minDanger}`].filter(Boolean).join(" · ")}</p>}
+
+          <p className="mb-2 text-[11px] text-white/45 sm:hidden">Scroll the graph horizontally, use the zoom controls, then tap a node for its dossier context.</p>
+          <div className="relative overflow-x-auto overscroll-contain rounded-xl border" style={{ borderColor: `${ORANGE}20`, background: "rgba(0,0,0,0.4)" }}>
             {loading && (
               <div className="absolute inset-0 flex items-center justify-center z-10 bg-black/60">
                 <div className="flex items-center gap-3 text-sm" style={{ color: ORANGE }}>
@@ -272,14 +331,16 @@ export default function NetworkPage() {
                 <div className="text-center p-6">
                   <AlertTriangle size={24} className="mx-auto mb-2" style={{ color: THREAT }} />
                   <p className="text-xs text-white/50">{error}</p>
+                  <button type="button" onClick={() => fetchGraph(mode, mode === "person" || mode === "path" ? searchPerson : undefined)} className="mt-3 min-h-11 rounded-lg border px-3 text-xs text-orange-100 hover:bg-orange-500/10" style={{ borderColor: `${ORANGE}55` }}>Retry graph</button>
                 </div>
               </div>
             )}
 
             <svg
               ref={svgRef}
-              width="100%"
+              className="h-auto min-h-[430px] w-[760px] max-w-none sm:min-h-0 sm:w-full"
               viewBox={`0 0 ${W} ${H}`}
+              aria-label="Interactive archive co-occurrence network"
               style={{ cursor: isDragging ? "grabbing" : "grab" }}
               onMouseDown={onMouseDown}
               onMouseMove={onMouseMove}
@@ -319,7 +380,7 @@ export default function NetworkPage() {
                 {graphData?.edges.map((edge, i) => {
                   const s = nodeMap.get(edge.source);
                   const t = nodeMap.get(edge.target);
-                  if (!s?.x || !t?.x) return null;
+                  if (!s?.x || !s?.y || !t?.x || !t?.y) return null;
                   const w = edge.weight ?? 1;
                   const color = dangerColor(edge.avg_danger);
                   const isHovered = hoveredEdge === edge;
@@ -342,10 +403,28 @@ export default function NetworkPage() {
                   const r = node.size ?? 8;
                   const color = node.type === "event" ? dangerColor(node.danger) : dangerColor(node.avg_danger);
                   const isSelected = selected?.id === node.id;
-                  const label = node.id.length > 18 ? node.id.slice(0, 16) + "…" : node.id;
+                  const displayName = node.label ?? node.name ?? node.id;
+                  const label = displayName.length > 18 ? displayName.slice(0, 16) + "…" : displayName;
 
                   return (
-                    <g key={node.id} className="node" onClick={() => setSelected(isSelected ? null : node)} style={{ cursor: "pointer" }}>
+                    <g
+                      key={node.id}
+                      className="node group"
+                      role="button"
+                      tabIndex={0}
+                      aria-pressed={isSelected}
+                      aria-label={`${displayName}, ${node.type} node${node.events ? `, ${node.events} documented entries` : ""}`}
+                      onClick={() => setSelected(isSelected ? null : node)}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                          event.preventDefault();
+                          setSelected(isSelected ? null : node);
+                        }
+                      }}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <circle cx={node.x} cy={node.y} r={Math.max(22, r + 8)} fill="transparent" />
+                      <circle className="opacity-0 group-focus:opacity-100" cx={node.x} cy={node.y} r={Math.max(24, r + 10)} fill="none" stroke="white" strokeWidth={2} />
                       {/* Outer glow ring on hover/select */}
                       {isSelected && (
                         <circle cx={node.x} cy={node.y} r={r + 6} fill="none" stroke={ORANGE} strokeWidth={1.5} strokeOpacity={0.5} filter="url(#glow)" />
@@ -413,7 +492,7 @@ export default function NetworkPage() {
                 style={{ background: "rgba(0,0,0,0.5)", borderColor: `${ORANGE}30` }}
               >
                 <div className="flex items-start justify-between mb-2">
-                  <p className="font-bold text-sm" style={{ color: ORANGE }}>{selected.id}</p>
+                  <p className="font-bold text-sm" style={{ color: ORANGE }}>{selected.label ?? selected.name ?? selected.id}</p>
                   <button onClick={() => setSelected(null)} className="text-white/30 hover:text-white text-lg leading-none">×</button>
                 </div>
 
@@ -440,13 +519,13 @@ export default function NetworkPage() {
                       </div>
                     )}
                     <button
-                      onClick={() => { setMode("person"); fetchGraph("person", selected.id); setSearchPerson(selected.id); }}
+                      onClick={() => { const name = selected.name ?? selected.label ?? selected.id; setMode("person"); fetchGraph("person", name); setSearchPerson(name); }}
                       className="w-full rounded-lg py-1.5 text-xs font-semibold transition-colors"
                       style={{ background: `${ORANGE}20`, border: `1px solid ${ORANGE}30`, color: ORANGE }}
                     >
                       Explore ego network →
                     </button>
-                    <a href={`/catalog?search=${encodeURIComponent(selected.id)}`} target="_blank"
+                    <a href={`/catalog?search=${encodeURIComponent(selected.name ?? selected.label ?? selected.id)}`} target="_blank"
                       className="block w-full mt-1.5 text-center rounded-lg py-1.5 text-xs text-white/40 hover:text-white/70 transition-colors"
                       style={{ border: "1px solid rgba(255,255,255,0.08)" }}>
                       View all entries →
@@ -530,7 +609,7 @@ export default function NetworkPage() {
               <div>
                 <p className="text-[11px] font-semibold mb-1" style={{ color: THREAT }}>Graph Anomaly</p>
                 <p className="text-[10px] leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
-                  Nodes with disproportionately high danger scores relative to event count indicate concentrated, high-severity misconduct — not just prolific involvement. These are the most dangerous nodes in the network.
+                  This heuristic highlights tags whose linked entries have high danger scores relative to volume. It is a review signal from archive scoring, not a finding of guilt, causation, or coordination.
                 </p>
               </div>
             </div>

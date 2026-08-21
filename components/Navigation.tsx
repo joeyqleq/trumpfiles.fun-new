@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -31,10 +31,30 @@ import Image from "next/image";
 import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
 import { analytics } from "@/lib/analytics";
 
+function PixelNavLabel({ label }: { label: string }) {
+  return (
+    <span className="relative z-10 inline-flex items-center" aria-label={label}>
+      {Array.from(label).map((letter, index) => (
+        <motion.span
+          key={`${letter}-${index}`}
+          variants={{ rest: { y: 0, color: "inherit" }, hover: { y: index % 2 === 0 ? -2 : 1, color: "#ffb36b" } }}
+          transition={{ duration: 0.14, delay: index * 0.018 }}
+          className="inline-block"
+          aria-hidden="true"
+        >
+          {letter}
+        </motion.span>
+      ))}
+      <motion.span variants={{ rest: { opacity: 0, scaleX: 0.4 }, hover: { opacity: 1, scaleX: 1 } }} transition={{ duration: 0.16 }} className="absolute -bottom-1 left-0 h-px w-full origin-left bg-orange-400" aria-hidden="true" />
+    </span>
+  );
+}
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [showContact, setShowContact] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const reduceMotion = useReducedMotion();
   const pathname = usePathname();
 
   const navItems = [
@@ -101,9 +121,9 @@ export default function Navigation() {
     <>
       {/* Compact Horizontal Navigation */}
       <motion.nav
-        initial={{ y: -100, opacity: 0 }}
+        initial={reduceMotion ? false : { y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={reduceMotion ? { duration: 0 } : { duration: 0.5, ease: "easeOut" }}
         className="fixed top-3 left-1/2 -translate-x-1/2 z-50"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -116,14 +136,14 @@ export default function Navigation() {
             backgroundSize: "200% 100%",
           }}
           animate={{
-            backgroundPosition: isHovered ? ["0% 50%", "100% 50%", "0% 50%"] : "0% 50%",
-            scale: isHovered ? 1.05 : 1,
-            opacity: isHovered ? 0.5 : 0.25,
+            backgroundPosition: !reduceMotion && isHovered ? ["0% 50%", "100% 50%", "0% 50%"] : "0% 50%",
+            scale: !reduceMotion && isHovered ? 1.05 : 1,
+            opacity: !reduceMotion && isHovered ? 0.5 : 0.25,
           }}
           transition={{
-            backgroundPosition: { duration: 3, repeat: Infinity, ease: "linear" },
-            scale: { duration: 0.3 },
-            opacity: { duration: 0.3 },
+            backgroundPosition: reduceMotion ? { duration: 0 } : { duration: 3, repeat: Infinity, ease: "linear" },
+            scale: { duration: reduceMotion ? 0 : 0.3 },
+            opacity: { duration: reduceMotion ? 0 : 0.3 },
           }}
         />
 
@@ -147,8 +167,8 @@ export default function Navigation() {
             className="flex items-center gap-2.5 px-2.5 py-1.5 rounded-full hover:bg-orange-500/10 transition-all duration-300 group"
           >
             <motion.div
-              whileHover={{ rotate: 360, scale: 1.1 }}
-              transition={{ duration: 0.5 }}
+              whileHover={reduceMotion ? undefined : { rotate: 360, scale: 1.1 }}
+              transition={{ duration: reduceMotion ? 0 : 0.5 }}
               className="flex-shrink-0"
             >
               <Image
@@ -171,21 +191,23 @@ export default function Navigation() {
             {navItems.map((item, index) => (
               <motion.div
                 key={item.name}
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 + 0.2 }}
+                initial="rest"
+                animate="rest"
+                whileHover={reduceMotion ? undefined : "hover"}
+                whileFocus={reduceMotion ? undefined : "hover"}
+                whileTap={reduceMotion ? undefined : { scale: 0.97 }}
               >
                 <Link
                   href={item.href}
-                  className={`relative group px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-1.5 ${pathname === item.href
+                  className={`relative flex min-h-11 items-center gap-1.5 rounded-md px-3 text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${pathname === item.href
                     ? "text-orange-300"
-                    : "text-foreground/70 hover:text-orange-300"
+                    : "text-foreground/70 hover:text-orange-200"
                     }`}
                 >
                   {/* Active background */}
                   {pathname === item.href && (
                     <motion.span
-                      className="absolute inset-0 rounded-full bg-orange-500/15"
+                      className="absolute inset-1 rounded-sm bg-orange-500/15"
                       layoutId="activeNavBg"
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />
@@ -196,48 +218,54 @@ export default function Navigation() {
                     {item.icon}
                   </span>
 
-                  <span className="relative z-10 text-[13px]" style={{ fontFamily: 'var(--font-arctic-guardian-regular)' }}>{item.name}</span>
+                  <PixelNavLabel label={item.name} />
                 </Link>
               </motion.div>
             ))}
 
             {/* Contact Button */}
+            <motion.div initial="rest" whileHover={reduceMotion ? undefined : "hover"} whileFocus={reduceMotion ? undefined : "hover"} whileTap={reduceMotion ? undefined : { scale: 0.97 }}>
             <Button
               variant="ghost"
               onClick={() => setShowContact(true)}
-              className="px-3 py-1.5 h-auto rounded-full text-[13px] font-medium text-foreground/70 hover:text-orange-300 transition-all duration-200 flex items-center gap-1.5 hover:bg-orange-500/10"
+              className="min-h-11 rounded-md px-3 text-[13px] font-medium text-foreground/70 transition-colors duration-200 hover:bg-transparent hover:text-orange-200 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               <Mail size={16} className="text-orange-400/50" />
-              <span style={{ fontFamily: 'var(--font-arctic-guardian-regular)' }}>Contact</span>
+              <PixelNavLabel label="Contact" />
             </Button>
+            </motion.div>
           </div>
 
 
 
           {/* Mobile menu button */}
           <motion.button
-            className="md:hidden p-1.5 rounded-full hover:bg-orange-500/10 transition-colors text-orange-400 ml-1"
+            className="ml-1 min-h-11 min-w-11 rounded-md p-2 text-orange-400 transition-colors hover:bg-orange-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300"
             onClick={() => setIsOpen(!isOpen)}
-            whileTap={{ scale: 0.9 }}
+            whileTap={reduceMotion ? undefined : { scale: 0.9 }}
+            type="button"
+            aria-label={isOpen ? "Close site navigation" : "Open site navigation"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-site-navigation"
           >
             <AnimatePresence mode="wait">
               {isOpen ? (
                 <motion.div
                   key="close"
-                  initial={{ rotate: -90, opacity: 0 }}
+                  initial={reduceMotion ? false : { rotate: -90, opacity: 0 }}
                   animate={{ rotate: 0, opacity: 1 }}
-                  exit={{ rotate: 90, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
+                  exit={reduceMotion ? { opacity: 0 } : { rotate: 90, opacity: 0 }}
+                  transition={{ duration: reduceMotion ? 0 : 0.2 }}
                 >
                   <X size={20} />
                 </motion.div>
               ) : (
                 <motion.div
                   key="menu"
-                  initial={{ rotate: 90, opacity: 0 }}
+                  initial={reduceMotion ? false : { rotate: 90, opacity: 0 }}
                   animate={{ rotate: 0, opacity: 1 }}
-                  exit={{ rotate: -90, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
+                  exit={reduceMotion ? { opacity: 0 } : { rotate: -90, opacity: 0 }}
+                  transition={{ duration: reduceMotion ? 0 : 0.2 }}
                 >
                   <Menu size={20} />
                 </motion.div>
@@ -250,10 +278,11 @@ export default function Navigation() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ opacity: 0, y: -10, scale: 0.95 }}
+              id="mobile-site-navigation"
+              initial={reduceMotion ? false : { opacity: 0, y: -10, scale: 0.95 }}
               animate={{ opacity: 1, y: 8, scale: 1 }}
-              exit={{ opacity: 0, y: -10, scale: 0.95 }}
-              transition={{ duration: 0.2 }}
+              exit={reduceMotion ? { opacity: 0 } : { opacity: 0, y: -10, scale: 0.95 }}
+              transition={{ duration: reduceMotion ? 0 : 0.2 }}
               className="absolute top-full left-1/2 -translate-x-1/2 w-56 rounded-xl overflow-hidden"
               style={{
                 background: "linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(20,8,0,0.95) 100%)",
@@ -265,9 +294,9 @@ export default function Navigation() {
                 {navItems.map((item, index) => (
                   <motion.div
                     key={item.name}
-                    initial={{ opacity: 0, x: -20 }}
+                    initial={reduceMotion ? false : { opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.05 }}
+                    transition={{ delay: reduceMotion ? 0 : index * 0.05, duration: reduceMotion ? 0 : undefined }}
                   >
                     <Link
                       href={item.href}

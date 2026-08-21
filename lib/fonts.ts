@@ -48,6 +48,19 @@ export const sourceSerif = Source_Serif_4({
   display: 'swap',
 });
 
+// ── Trumpstein editorial system — local assets, no additional network request ──
+export const hilsfiger = localFont({
+  src: '../public/fonts/Hilsfiger/Hilsfiger Regular.ttf',
+  variable: '--font-hilsfiger',
+  display: 'swap',
+});
+
+export const adhesianSerif = localFont({
+  src: '../public/fonts/adhesian_serif/Adhesian-VF.ttf',
+  variable: '--font-adhesian-serif',
+  display: 'swap',
+});
+
 // Arctic Guardian Font Family - All variants
 export const arcticGuardian = localFont({
   src: '../public/fonts/Arctic_Guardian/arcticguardianleft.ttf',
@@ -108,7 +121,3 @@ export const arcticGuardianLeft = localFont({
   variable: '--font-arctic-guardian-left',
   display: 'swap',
 });
-
-// Neuething removed — replaced by Outfit + Syne
-// Keep export so layout.tsx import doesn't break until cleaned up
-export const neuething = outfit;
