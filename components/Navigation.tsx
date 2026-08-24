@@ -33,13 +33,13 @@ import { analytics } from "@/lib/analytics";
 
 function PixelNavLabel({ label }: { label: string }) {
   return (
-    <span className="relative z-10 inline-flex items-center" aria-label={label}>
+    <span className="relative z-10 inline-flex items-center leading-none" aria-label={label} style={{ letterSpacing: 0 }}>
       {Array.from(label).map((letter, index) => (
         <motion.span
           key={`${letter}-${index}`}
           variants={{ rest: { y: 0, color: "inherit" }, hover: { y: index % 2 === 0 ? -2 : 1, color: "#ffb36b" } }}
           transition={{ duration: 0.14, delay: index * 0.018 }}
-          className="inline-block"
+          style={{ display: "inline", letterSpacing: "inherit" }}
           aria-hidden="true"
         >
           {letter}

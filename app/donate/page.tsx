@@ -136,13 +136,13 @@ export default function WhoAmIPage() {
                                 </div>
 
                                 <div className="pt-8 border-t border-orange-500/20">
-                                    <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">A Message from the Frontier</h2>
+                                    <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">Why This is Personal to Me</h2>
                                     <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
                                         <p>
-                                            This project is the culmination of 15 years as a digital strategist and growth hacker in Dubai, mixed with a lifetime of "breaking things to learn them." I built this because the world needs to see the pattern—the systemic corruption, the calculated lies, and the devastating consequences of unchecked power.
+                                            I am building this as an act of resistance. This work is not about money — it is about the fight against Zionist propaganda and American complicity in genocide. Israel has killed journalists at a rate unprecedented in modern warfare: over <strong className="text-orange-300">200 journalists killed</strong> in Gaza since October 2023, along with more than <strong className="text-orange-300">700 healthcare workers</strong> — numbers confirmed by CPJ, RSF, and WHO. These are not collateral damage. They are deliberate.
                                         </p>
                                         <p>
-                                            Living here gives me a unique perspective on the real-world consequences of the transactional and destructive rhetoric cataloged in this database. The Trump Files exists to document and contextualize the most dangerous man in modern history.
+                                            Documenting and contextualizing Trump's record — his unconditional support for Netanyahu, his ICC sanctions against investigators of Israeli war crimes, his green light to the ethnic cleansing of Gaza — is part of that fight. This archive is AI resistance built from Lebanon, pointed at the machine.
                                         </p>
                                     </div>
                                 </div>
@@ -157,71 +157,17 @@ export default function WhoAmIPage() {
                         transition={{ delay: 0.3 }}
                     >
                         <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-400 mb-8 font-arctic-3d text-center">
-                            How to Support (and How to Hire Me)
+                            How to Support This Work
                         </h2>
 
                         <div className="text-center text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
-                            I'm not a fan of "corporate speak" or begging for handouts. I'm currently growing my portfolio and looking for the next "Head-Scratcher." If you have a project that feels like it could change the world, let's talk.
+                            I genuinely appreciate any kind of support. Running this archive — the AI compute, the servers, the database, the scraping infrastructure — costs real money out of pocket. I don't do this for money. I do it for the fight.
                             <br /><br />
-                            If you value this archive, here is how you can help keep the lights on:
-                        </div>
-
-                        <div className="grid md:grid-cols-2 gap-8">
-                            {/* PayPal */}
-                            <Card className="glass-card border-orange-500/30 bg-black/60 shadow-[0_0_20px_rgba(255,101,0,0.1)] hover:shadow-[0_0_30px_rgba(255,101,0,0.2)] transition-shadow">
-                                <CardContent className="p-8 text-center flex flex-col h-full justify-between items-center space-y-6">
-                                    <div className="space-y-4 flex flex-col items-center">
-                                        <div className="w-16 h-16 rounded-full bg-[#00457C]/20 flex items-center justify-center border border-[#0079C1]/50">
-                                            <CreditCard className="w-8 h-8 text-[#0079C1]" />
-                                        </div>
-                                        <h3 className="text-2xl font-bold font-arctic-guardian">1. PayPal</h3>
-                                        <p className="text-foreground/70 text-sm">Every contribution goes directly toward hosting and the AI-processing power required to scrape new data.</p>
-                                    </div>
-                                    <Link href="https://www.paypal.me/joeyq2" target="_blank" className="w-full group">
-                                        <motion.div
-                                            whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(0, 121, 193, 0.4)" }}
-                                            whileTap={{ scale: 0.98 }}
-                                            className="w-full h-14 text-lg font-bold rounded-xl bg-gradient-to-r from-[#00457C] to-[#0079C1] text-white flex items-center justify-center gap-3 cursor-pointer"
-                                        >
-                                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.93A.77.77 0 0 1 5.703 2.3h6.181c2.052 0 3.748 1.644 3.748 3.696V13.88c0 2.052-1.696 3.697-3.748 3.697h-1.053l-.245 1.77a.61.61 0 0 1-.604.512h-1.999a.61.61 0 0 1-.604-.512l-.245-1.77H7.076Z"></path></svg>
-                                            Donate via PayPal
-                                        </motion.div>
-                                    </Link>
-                                </CardContent>
-                            </Card>
-
-                            {/* Ko-Fi */}
-                            <Card className="glass-card border-orange-500/30 bg-black/60 shadow-[0_0_20px_rgba(255,101,0,0.1)] hover:shadow-[0_0_30px_rgba(255,101,0,0.2)] transition-shadow">
-                                <CardContent className="p-8 text-center flex flex-col h-full justify-between items-center space-y-6">
-                                    <div className="space-y-4 flex flex-col items-center">
-                                        <div className="w-16 h-16 rounded-full bg-[#29ABE0]/20 flex items-center justify-center border border-[#29ABE0]/50">
-                                            <Heart className="w-8 h-8 text-[#29ABE0]" />
-                                        </div>
-                                        <h3 className="text-2xl font-bold font-arctic-guardian">2. Ko-Fi</h3>
-                                        <p className="text-foreground/70 text-sm">Buy me a coffee on Ko-Fi. Quick, easy, no account required.</p>
-                                    </div>
-                                    <Link href="https://ko-fi.com/poi5on" target="_blank" className="w-full group">
-                                        <motion.div
-                                            whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(41, 171, 224, 0.4)" }}
-                                            whileTap={{ scale: 0.98 }}
-                                            className="w-full overflow-hidden rounded-xl cursor-pointer"
-                                        >
-                                            <Image
-                                                src="/images/support_me_on_kofi_blue.png"
-                                                alt="Support Me on Ko-Fi"
-                                                width={400}
-                                                height={60}
-                                                className="w-full h-14 object-contain bg-[#29ABE0] rounded-xl hover:brightness-110 transition-all"
-                                                style={{ width: 'auto', height: 'auto' }}
-                                            />
-                                        </motion.div>
-                                    </Link>
-                                </CardContent>
-                            </Card>
+                            For OpSec reasons I cannot link conventional payment platforms like PayPal to this project. If you want to support the continuation of this work, the best options are <strong className="text-orange-300">crypto</strong> (anonymous, direct) or reaching me through the <strong className="text-orange-300">encrypted contact form below</strong>.
                         </div>
 
                         {/* Crypto Wallet */}
-                        <div className="mt-8">
+                        <div className="mt-0">
                             <Card className="glass-card border-orange-500/30 bg-black/60">
                                 <CardContent className="p-8">
                                     <div className="flex flex-col md:flex-row gap-6 items-center mb-8">
@@ -229,8 +175,8 @@ export default function WhoAmIPage() {
                                             <Bitcoin className="w-8 h-8 text-orange-500" />
                                         </div>
                                         <div>
-                                            <h3 className="text-2xl font-bold font-arctic-guardian text-orange-400">3. Crypto (The Survival Standard)</h3>
-                                            <p className="text-foreground/70 text-sm">In a collapsed banking system, this is the most direct way to support.</p>
+                                            <h3 className="text-2xl font-bold font-arctic-guardian text-orange-400">1. Crypto — The Direct Route</h3>
+                                            <p className="text-foreground/70 text-sm">Fully anonymous. No intermediary. Every satoshi goes toward AI compute, infrastructure, and keeping this resistance alive.</p>
                                         </div>
                                     </div>
 
@@ -268,8 +214,33 @@ export default function WhoAmIPage() {
                         </div>
                     </motion.div>
 
+                    {/* Contact option */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.4 }}
+                        className="mt-8"
+                    >
+                        <Card className="glass-card border-orange-500/20 bg-black/50">
+                            <CardContent className="p-8 flex flex-col md:flex-row gap-6 items-start">
+                                <div className="w-14 h-14 rounded-full bg-orange-500/15 flex items-center justify-center border border-orange-500/30 flex-shrink-0">
+                                    <LinkIcon className="w-6 h-6 text-orange-400" />
+                                </div>
+                                <div className="space-y-3">
+                                    <h3 className="text-2xl font-bold font-arctic-guardian text-orange-400">2. Drop Me a Message</h3>
+                                    <p className="text-foreground/70 leading-relaxed">
+                                        If crypto isn&apos;t your thing, reach out through the contact form. The connection is end-to-end encrypted and I don&apos;t log IPs. We can figure out something from there — whether that&apos;s support, collaboration, or just a conversation about the work.
+                                    </p>
+                                    <p className="text-foreground/50 text-sm">
+                                        Use the <strong className="text-orange-300/80">Contact</strong> button in the navigation above.
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </motion.div>
+
                     <div className="mt-16 text-center text-foreground/50 text-base max-w-2xl mx-auto italic border-t border-orange-500/20 pt-8">
-                        "I'm looking forward to the conversation—and to the day I see Donald Trump finally held accountable for his crimes. I hope this project plays even the slightest part in that future."
+                        "I want to continue building AI resistance against the system that enables mass atrocity. This archive exists because I believe documentation is a form of defiance. Thank you for being here."
                     </div>
                 </div>
             </div>
