@@ -31,7 +31,36 @@ jobs:
 
       - run: npm ci --legacy-peer-deps
 
+      - name: Check DB health (skip silently if quota exhausted)
+        id: db_health
+        env:
+          DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+        run: |
+          node -e "
+          const { neon } = require('@neondatabase/serverless');
+          const sql = neon(process.env.DATABASE_URL);
+          sql\`SELECT 1\`
+            .then(() => { console.log('DB: OK'); process.exit(0); })
+            .catch(e => {
+              if (e.message && e.message.includes('402')) {
+                console.log('DB: QUOTA_EXHAUSTED — skipping run silently');
+                process.exit(2);
+              }
+              console.log('DB: ERROR', e.message?.slice(0,80));
+              process.exit(1);
+            });
+          " && echo "db_ok=true" >> $GITHUB_OUTPUT || (
+            code=$?
+            if [ $code -eq 2 ]; then
+              echo "db_ok=false" >> $GITHUB_OUTPUT
+              echo "Neon quota exhausted — skipping silently"
+              exit 0
+            fi
+            exit $code
+          )
+
       - name: Run source backfill
+        if: steps.db_health.outputs.db_ok == 'true'
         env:
           DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
           EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
