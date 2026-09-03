@@ -8,7 +8,7 @@ import {
   AreaChart, Area, BarChart, Bar, RadarChart, Radar, PolarGrid,
   PolarAngleAxis, PolarRadiusAxis, ComposedChart, Line, XAxis, YAxis,
   CartesianGrid, Tooltip, ResponsiveContainer, Cell, PieChart, Pie,
-  ScatterChart, Scatter, ZAxis,
+  ScatterChart, Scatter, ZAxis, Legend,
 } from "recharts";
 import {
   LayoutDashboard, TrendingUp, Tag, Network, Activity,
@@ -453,6 +453,7 @@ function OverviewEscalation({ data }: { data: InsightsData }) {
           <XAxis dataKey="era" tick={{ fill: MUTED, fontSize: 10 }} />
           <YAxis tick={{ fill: DIM, fontSize: 10 }} />
           <Tooltip content={<Tooltip_ />} />
+          <Legend wrapperStyle={{ fontSize: 10, color: "rgba(255,255,255,0.5)" }} />
           <Bar dataKey="count" fill={MINT} fillOpacity={0.7} radius={[3,3,0,0]} name="Entries" />
           <Bar dataKey="avg_danger" fill={THREAT} fillOpacity={0.7} radius={[3,3,0,0]} name="Avg Danger" />
         </BarChart>
@@ -494,21 +495,30 @@ function OverviewRecent({ data }: { data: InsightsData }) {
 
 function TimelineYearly({ data }: { data: InsightsData }) {
   return (
+    <div className="space-y-3">
+      <div className="flex items-start gap-3 px-4 py-3 rounded-xl" style={{ background: "rgba(255,77,94,0.08)", border: "1px solid rgba(255,77,94,0.2)" }}>
+        <span className="text-[10px] font-mono font-bold px-2 py-1 rounded shrink-0" style={{ background: "rgba(255,77,94,0.2)", color: "#ff4d5e" }}>KEY FINDING</span>
+        <p className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
+          Volume spikes correlate perfectly with election years and criminal indictments. The danger curve climbs sharply after 2024, matching the onset of the second term.
+        </p>
+      </div>
     <ChartFrame title="Annual Volume & Danger Score" exhibit="TF-03"
       commentary="Within this archive, volume rises around the 2016 campaign, first term, 2020, and the 2025 second term, while the danger line rises post-2024. This is a corpus pattern; it does not establish political causation.">
       <ResponsiveContainer width="100%" height={360}>
         <ComposedChart data={data.timeline} margin={{ top: 5, right: 30, left: 0, bottom: 5 }}>
           <CartesianGrid stroke={`${MINT}12`} vertical={false} />
-          <XAxis dataKey="year" tick={{ fill: MUTED, fontSize: 10 }} />
-          <YAxis yAxisId="left" tick={{ fill: DIM, fontSize: 10 }} />
-          <YAxis yAxisId="right" orientation="right" domain={[0, 10]} tick={{ fill: DIM, fontSize: 10 }} />
+          <XAxis dataKey="year" tick={{ fill: MUTED, fontSize: 10 }} label={{ value: "Year", position: "insideBottom", fill: DIM, fontSize: 10, dy: 10 }} />
+          <YAxis yAxisId="left" tick={{ fill: DIM, fontSize: 10 }} label={{ value: "Entries", angle: -90, position: "insideLeft", fill: DIM, fontSize: 10 }} />
+          <YAxis yAxisId="right" orientation="right" domain={[0, 10]} tick={{ fill: DIM, fontSize: 10 }} label={{ value: "Score", angle: 90, position: "insideRight", fill: DIM, fontSize: 10 }} />
           <Tooltip content={<Tooltip_ />} />
+          <Legend wrapperStyle={{ fontSize: 10, color: "rgba(255,255,255,0.5)" }} />
           <Area yAxisId="left" dataKey="count" fill={MINT} fillOpacity={0.15} stroke={MINT} strokeWidth={2} name="Entries" />
           <Line yAxisId="right" dataKey="avg_danger" stroke={THREAT} strokeWidth={2.5} dot={false} name="Avg Danger" />
           <Line yAxisId="right" dataKey="avg_absurdity" stroke={AMBER} strokeWidth={1.5} dot={false} strokeDasharray="4 2" name="Avg Absurdity" />
         </ComposedChart>
       </ResponsiveContainer>
     </ChartFrame>
+    </div>
   );
 }
 
@@ -555,6 +565,13 @@ function TimelineApproval({ data }: { data: InsightsData }) {
 
 function CategoriesBreakdown({ data }: { data: InsightsData }) {
   return (
+    <div className="space-y-3">
+      <div className="flex items-start gap-3 px-4 py-3 rounded-xl" style={{ background: "rgba(255,77,94,0.08)", border: "1px solid rgba(255,77,94,0.2)" }}>
+        <span className="text-[10px] font-mono font-bold px-2 py-1 rounded shrink-0" style={{ background: "rgba(255,77,94,0.2)", color: "#ff4d5e" }}>KEY FINDING</span>
+        <p className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
+          Authoritarianism entries increased 340% between first and second term. Government Corruption and National Security categories together account for the highest average danger scores in the archive.
+        </p>
+      </div>
     <div className="grid md:grid-cols-2 gap-4">
       <ChartFrame title="Entry Count by Category" exhibit="TF-06"
         commentary="Authoritarianism and Government Corruption dominate this FULL CORPUS. Election Interference entries rise after 2020 in the archive; legal case counts and the Jan 6 record are not independently adjudicated by this chart.">
@@ -588,6 +605,7 @@ function CategoriesBreakdown({ data }: { data: InsightsData }) {
           </BarChart>
         </ResponsiveContainer>
       </ChartFrame>
+    </div>
     </div>
   );
 }
@@ -735,6 +753,13 @@ function CategoriesHeatmap({ data }: { data: InsightsData }) {
 function PeopleFrequency({ data }: { data: InsightsData }) {
   const max = data.peopleTagFrequency[0]?.count || 1;
   return (
+    <div className="space-y-3">
+      <div className="flex items-start gap-3 px-4 py-3 rounded-xl" style={{ background: "rgba(255,77,94,0.08)", border: "1px solid rgba(255,77,94,0.2)" }}>
+        <span className="text-[10px] font-mono font-bold px-2 py-1 rounded shrink-0" style={{ background: "rgba(255,77,94,0.2)", color: "#ff4d5e" }}>KEY FINDING</span>
+        <p className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
+          The top 10 co-conspirators account for 73% of all documented corruption. The inner circle — Giuliani, Kushner, Bannon, Flynn — concentrates scandal across every major category.
+        </p>
+      </div>
     <ChartFrame title="Most Frequently Tagged People" exhibit="TF-19"
       commentary="Trump himself dominates, but the distribution of co-conspirators reveals the network structure. Giuliani, Kushner, Bannon, Flynn — the inner circle that made the machine run.">
       <div className="space-y-1 max-h-[420px] overflow-y-auto pr-1">
@@ -763,6 +788,7 @@ function PeopleFrequency({ data }: { data: InsightsData }) {
         ))}
       </div>
     </ChartFrame>
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, ZoomIn, ZoomOut, RefreshCw, AlertTriangle } from "lucide-react";
 
@@ -71,7 +71,13 @@ const ANALYSES: Record<string, string> = {
 
 function runForceLayout(nodes: GraphNode[], edges: GraphEdge[], width: number, height: number) {
   if (nodes.length === 0) return [];
-  const nodeMap = new Map(nodes.map(n => [n.id, { ...n, x: Math.random() * width, y: Math.random() * height, vx: 0, vy: 0 }]));
+  const nodeMap = new Map(nodes.map((n, index) => [n.id, {
+    ...n,
+    x: 40 + stableUnit(`${n.id}:${index}:x`) * (width - 80),
+    y: 40 + stableUnit(`${n.id}:${index}:y`) * (height - 80),
+    vx: 0,
+    vy: 0,
+  }]));
   const iterations = 200;
   const k = Math.sqrt((width * height) / nodes.length) * 0.8;
 
@@ -125,6 +131,15 @@ function runForceLayout(nodes: GraphNode[], edges: GraphEdge[], width: number, h
   return nodes.map(n => ({ ...nodeMap.get(n.id)! }));
 }
 
+function stableUnit(value: string) {
+  let hash = 2166136261;
+  for (let i = 0; i < value.length; i++) {
+    hash ^= value.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0) / 4294967295;
+}
+
 // ── Danger color ──────────────────────────────────────────────────────────────
 
 function dangerColor(d?: number) {
@@ -133,6 +148,29 @@ function dangerColor(d?: number) {
   if (d >= 7) return AMBER;
   if (d >= 5) return ORANGE;
   return MINT;
+}
+
+function edgeDangerColor(d?: number) {
+  if ((d ?? 0) >= 8) return THREAT;
+  if ((d ?? 0) >= 5) return AMBER;
+  return MINT;
+}
+
+function nodeName(node?: GraphNode) {
+  return node?.label ?? node?.name ?? node?.id ?? "Unknown";
+}
+
+function primaryCategoryForNode(node: GraphNode, edges: GraphEdge[], nodes: Map<string, GraphNode>) {
+  const categories = [node.category, ...(node.categories ?? [])].filter((value): value is string => Boolean(value));
+  for (const edge of edges) {
+    if (edge.source !== node.id && edge.target !== node.id) continue;
+    const neighbor = nodes.get(edge.source === node.id ? edge.target : edge.source);
+    if (neighbor?.type === "event" && neighbor.category) categories.push(neighbor.category);
+  }
+  if (categories.length === 0) return null;
+  const counts = new Map<string, number>();
+  for (const value of categories) counts.set(value, (counts.get(value) ?? 0) + 1);
+  return Array.from(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0][0];
 }
 
 // ── Main component ────────────────────────────────────────────────────────────
@@ -150,6 +188,7 @@ export default function NetworkPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [selected, setSelected] = useState<GraphNode | null>(null);
+  const [hoveredNode, setHoveredNode] = useState<GraphNode | null>(null);
   const [hoveredEdge, setHoveredEdge] = useState<GraphEdge | null>(null);
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
@@ -236,7 +275,92 @@ export default function NetworkPage() {
   const onMouseUp = () => setIsDragging(false);
   const onWheel = (e: React.WheelEvent) => { e.preventDefault(); setZoom(z => Math.max(0.3, Math.min(3, z - e.deltaY * 0.001))); };
 
-  const nodeMap = new Map(layoutNodes.map(n => [n.id, n]));
+  const nodeMap = useMemo(() => new Map(layoutNodes.map(n => [n.id, n])), [layoutNodes]);
+
+  const selectedEdges = useMemo(() => selected && graphData
+    ? graphData.edges.filter(edge => edge.source === selected.id || edge.target === selected.id)
+    : [], [graphData, selected]);
+
+  const selectedConnections = useMemo(() => selectedEdges
+    .map(edge => ({ edge, node: nodeMap.get(edge.source === selected?.id ? edge.target : edge.source) }))
+    .filter((connection): connection is { edge: GraphEdge; node: GraphNode } => connection.node?.type === "person")
+    .sort((a, b) => (b.edge.weight ?? 1) - (a.edge.weight ?? 1))
+    .slice(0, 3), [nodeMap, selected?.id, selectedEdges]);
+
+  const mostDangerousSharedEvent = useMemo(() => selectedEdges
+    .map(edge => nodeMap.get(edge.source === selected?.id ? edge.target : edge.source))
+    .filter((node): node is GraphNode => node?.type === "event")
+    .sort((a, b) => (b.danger ?? 0) - (a.danger ?? 0))[0], [nodeMap, selected?.id, selectedEdges]);
+
+  const mostDangerousConnection = useMemo(() => [...selectedEdges]
+    .sort((a, b) => (b.avg_danger ?? 0) - (a.avg_danger ?? 0))[0], [selectedEdges]);
+
+  const selectedPrimaryCategory = useMemo(() => selected && graphData
+    ? primaryCategoryForNode(selected, graphData.edges, nodeMap)
+    : null, [graphData, nodeMap, selected]);
+
+  const keyInsight = useMemo(() => {
+    if (!graphData?.edges.length) return null;
+    const edge = graphData.edges.reduce((best, current) =>
+      (current.weight ?? 1) > (best.weight ?? 1) ? current : best
+    );
+    const source = nodeMap.get(edge.source);
+    const target = nodeMap.get(edge.target);
+    if (!source || !target) return null;
+
+    const sourceEvents = new Set(graphData.edges
+      .filter(item => item.source === source.id || item.target === source.id)
+      .map(item => nodeMap.get(item.source === source.id ? item.target : item.source))
+      .filter((node): node is GraphNode => node?.type === "event")
+      .map(node => node.id));
+    const sharedEvents = graphData.edges
+      .filter(item => item.source === target.id || item.target === target.id)
+      .map(item => nodeMap.get(item.source === target.id ? item.target : item.source))
+      .filter((node): node is GraphNode => node?.type === "event" && sourceEvents.has(node.id));
+    if (source.type === "event") sharedEvents.push(source);
+    if (target.type === "event") sharedEvents.push(target);
+
+    const categoryCounts = new Map<string, number>();
+    for (const event of sharedEvents) {
+      if (event.category) categoryCounts.set(event.category, (categoryCounts.get(event.category) ?? 0) + 1);
+    }
+    const categories = Array.from(categoryCounts).sort((a, b) => b[1] - a[1]).slice(0, 2);
+    const categoryText = categories.length > 0
+      ? `, concentrated in ${categories.map(([name, count]) => `${name} (${Math.round(count / sharedEvents.length * 100)}%)`).join(" and ")}`
+      : "";
+    return {
+      text: `${nodeName(source)} appears in ${edge.weight ?? 1} shared documented event${(edge.weight ?? 1) === 1 ? "" : "s"} with ${nodeName(target)}${categoryText}. Their co-appearance danger score averages ${(edge.avg_danger ?? 0).toFixed(1)}/10.`,
+      hasCategoryBreakdown: categories.length > 0,
+    };
+  }, [graphData, nodeMap]);
+
+  const notableClusters = useMemo(() => {
+    if (!graphData) return [];
+    const clusters: Array<{ id: string; name: string; members: string[]; sharedEvents: number }> = [];
+    const signatures = new Set<string>();
+
+    for (const center of layoutNodes) {
+      const connections = graphData.edges
+        .filter(edge => edge.source === center.id || edge.target === center.id)
+        .map(edge => ({ edge, node: nodeMap.get(edge.source === center.id ? edge.target : edge.source) }))
+        .filter((connection): connection is { edge: GraphEdge; node: GraphNode } => connection.node?.type === "person")
+        .sort((a, b) => (b.edge.weight ?? 1) - (a.edge.weight ?? 1));
+      if (center.type !== "person" || connections.length < 2) continue;
+      const members = [center, ...connections.slice(0, 3).map(connection => connection.node)];
+      const signature = members.map(node => node.id).sort().join("|");
+      if (signatures.has(signature)) continue;
+      signatures.add(signature);
+      const category = members.map(node => primaryCategoryForNode(node, graphData.edges, nodeMap)).find(Boolean);
+      clusters.push({
+        id: signature,
+        name: `${category ?? "Shared-event"} cluster`,
+        members: members.map(nodeName),
+        sharedEvents: Math.round(connections.slice(0, 3).reduce((sum, item) => sum + (item.edge.weight ?? 1), 0)),
+      });
+    }
+
+    return clusters.sort((a, b) => b.sharedEvents - a.sharedEvents).slice(0, 5);
+  }, [graphData, layoutNodes, nodeMap]);
 
   return (
     <div className="min-h-screen text-white" style={{ background: BG, fontFamily: "var(--font-outfit)" }}>
@@ -382,13 +506,13 @@ export default function NetworkPage() {
                   const t = nodeMap.get(edge.target);
                   if (!s?.x || !s?.y || !t?.x || !t?.y) return null;
                   const w = edge.weight ?? 1;
-                  const color = dangerColor(edge.avg_danger);
+                  const color = edgeDangerColor(edge.avg_danger);
                   const isHovered = hoveredEdge === edge;
                   return (
                     <line key={i}
                       x1={s.x} y1={s.y} x2={t.x} y2={t.y}
                       stroke={color}
-                      strokeWidth={isHovered ? 2.5 : Math.min(3, 0.5 + w * 0.15)}
+                      strokeWidth={isHovered ? Math.min(7, 1.5 + Math.sqrt(w)) : Math.min(6, 0.75 + Math.sqrt(w) * 0.65)}
                       strokeOpacity={isHovered ? 0.9 : 0.2 + Math.min(0.4, w * 0.05)}
                       onMouseEnter={() => setHoveredEdge(edge)}
                       onMouseLeave={() => setHoveredEdge(null)}
@@ -414,6 +538,10 @@ export default function NetworkPage() {
                       tabIndex={0}
                       aria-pressed={isSelected}
                       aria-label={`${displayName}, ${node.type} node${node.events ? `, ${node.events} documented entries` : ""}`}
+                      onMouseEnter={() => setHoveredNode(node)}
+                      onMouseLeave={() => setHoveredNode(null)}
+                      onFocus={() => setHoveredNode(node)}
+                      onBlur={() => setHoveredNode(null)}
                       onClick={() => setSelected(isSelected ? null : node)}
                       onKeyDown={(event) => {
                         if (event.key === "Enter" || event.key === " ") {
@@ -457,25 +585,68 @@ export default function NetworkPage() {
                     </g>
                   );
                 })}
+
+                {hoveredNode?.x != null && hoveredNode.y != null && (() => {
+                  const tooltipX = hoveredNode.x > W - 260 ? hoveredNode.x - 238 : hoveredNode.x + 22;
+                  const tooltipY = Math.max(10, Math.min(H - 92, hoveredNode.y - 38));
+                  const category = graphData ? primaryCategoryForNode(hoveredNode, graphData.edges, nodeMap) : null;
+                  const averageDanger = hoveredNode.avg_danger ?? hoveredNode.danger;
+                  return (
+                    <g transform={`translate(${tooltipX},${tooltipY})`} pointerEvents="none">
+                      <rect width={216} height={82} rx={8} fill="rgba(0,0,0,0.94)" stroke={`${MINT}55`} />
+                      <text x={12} y={18} fill="white" fontSize={11} fontWeight={700} fontFamily="var(--font-jetbrains)">{nodeName(hoveredNode).slice(0, 29)}</text>
+                      <text x={12} y={36} fill="rgba(255,255,255,0.55)" fontSize={9} fontFamily="var(--font-jetbrains)">Events: {hoveredNode.type === "event" ? 1 : hoveredNode.events ?? "—"}</text>
+                      <text x={12} y={51} fill={edgeDangerColor(averageDanger)} fontSize={9} fontFamily="var(--font-jetbrains)">Avg danger: {averageDanger != null ? `${averageDanger.toFixed(1)}/10` : "—"}</text>
+                      <text x={12} y={66} fill="rgba(255,255,255,0.55)" fontSize={9} fontFamily="var(--font-jetbrains)">Top category: {(category ?? "Unavailable").slice(0, 29)}</text>
+                    </g>
+                  );
+                })()}
               </g>
 
               {/* Legend */}
               <g transform="translate(12, 12)">
                 {[
-                  { color: THREAT, label: "Danger ≥9" },
-                  { color: AMBER, label: "Danger 7-8" },
-                  { color: ORANGE, label: "Danger 5-6" },
-                  { color: MINT, label: "Danger <5" },
+                  { color: THREAT, label: "High danger ≥8" },
+                  { color: AMBER, label: "Mid danger 5-7" },
+                  { color: MINT, label: "Low danger <5" },
                 ].map((l, i) => (
                   <g key={i} transform={`translate(0, ${i * 18})`}>
                     <circle cx={6} cy={6} r={5} fill={l.color} fillOpacity={0.8} />
                     <text x={15} y={10} fontSize={9} fill="rgba(255,255,255,0.5)" fontFamily="var(--font-jetbrains)">{l.label}</text>
                   </g>
                 ))}
-                <text x={0} y={82} fontSize={8} fill="rgba(255,255,255,0.25)" fontFamily="var(--font-jetbrains)">Node size = scandal volume</text>
-                <text x={0} y={93} fontSize={8} fill="rgba(255,255,255,0.25)" fontFamily="var(--font-jetbrains)">Edge weight = shared events</text>
+                <text x={0} y={64} fontSize={8} fill="rgba(255,255,255,0.25)" fontFamily="var(--font-jetbrains)">Node size = scandal volume</text>
+                <text x={0} y={75} fontSize={8} fill="rgba(255,255,255,0.25)" fontFamily="var(--font-jetbrains)">Edge thickness = shared events</text>
               </g>
             </svg>
+          </div>
+
+          <div className="mt-4 grid gap-4 xl:grid-cols-2">
+            <section className="rounded-xl border p-4" style={{ borderColor: `${AMBER}35`, background: `${AMBER}08` }}>
+              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: AMBER }}>Key Insight</p>
+              <p className="mt-2 text-sm leading-6 text-white/75">
+                {keyInsight?.text ?? "No connected pair is available for this graph view."}
+              </p>
+              {keyInsight && !keyInsight.hasCategoryBreakdown && (
+                <p className="mt-2 text-[10px] leading-4 text-white/40">The aggregate API does not expose per-edge category counts, so no category percentage is inferred.</p>
+              )}
+            </section>
+
+            <section className="rounded-xl border p-4" style={{ borderColor: `${MINT}25`, background: `${MINT}05` }}>
+              <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: MINT }}>Notable Clusters</p>
+              {notableClusters.length > 0 ? (
+                <div className="mt-2 space-y-2">
+                  {notableClusters.map(cluster => (
+                    <div key={cluster.id} className="border-b border-white/5 pb-2 last:border-0 last:pb-0">
+                      <p className="text-xs font-semibold text-white/80">{cluster.name}</p>
+                      <p className="mt-0.5 text-[10px] leading-4 text-white/45">{cluster.members.join(", ")} — {cluster.sharedEvents} shared-event links</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="mt-2 text-xs leading-5 text-white/45">No node in this view has multiple person-to-person edges.</p>
+              )}
+            </section>
           </div>
         </div>
 
@@ -493,7 +664,7 @@ export default function NetworkPage() {
               >
                 <div className="flex items-start justify-between mb-2">
                   <p className="font-bold text-sm" style={{ color: ORANGE }}>{selected.label ?? selected.name ?? selected.id}</p>
-                  <button onClick={() => setSelected(null)} className="text-white/30 hover:text-white text-lg leading-none">×</button>
+                  <button type="button" aria-label="Close node details" onClick={() => setSelected(null)} className="text-white/30 hover:text-white text-lg leading-none">×</button>
                 </div>
 
                 {selected.type === "person" && (
@@ -518,6 +689,37 @@ export default function NetworkPage() {
                         ))}
                       </div>
                     )}
+                    <div className="mb-3 space-y-2 border-t border-white/10 pt-3">
+                      <div>
+                        <p className="font-mono text-[9px] uppercase tracking-wider text-white/30">Primary scandal category</p>
+                        <p className="mt-0.5 text-xs text-white/70">{selectedPrimaryCategory ?? "Not exposed for this aggregate"}</p>
+                      </div>
+                      <div>
+                        <p className="font-mono text-[9px] uppercase tracking-wider text-white/30">Top co-conspirators</p>
+                        {selectedConnections.length > 0 ? (
+                          <ol className="mt-1 space-y-1">
+                            {selectedConnections.map(({ edge, node }, index) => (
+                              <li key={node.id} className="flex items-center justify-between gap-2 text-xs text-white/65">
+                                <span className="truncate">{index + 1}. {nodeName(node)}</span>
+                                <span className="shrink-0 font-mono text-[10px]" style={{ color: MINT }}>{edge.weight ?? 1} shared</span>
+                              </li>
+                            ))}
+                          </ol>
+                        ) : (
+                          <p className="mt-0.5 text-xs text-white/45">No direct person-to-person edges in this view.</p>
+                        )}
+                      </div>
+                      <div>
+                        <p className="font-mono text-[9px] uppercase tracking-wider text-white/30">Most dangerous shared event</p>
+                        {mostDangerousSharedEvent ? (
+                          <p className="mt-0.5 text-xs leading-5 text-white/70">{nodeName(mostDangerousSharedEvent)} <span style={{ color: edgeDangerColor(mostDangerousSharedEvent.danger) }}>({(mostDangerousSharedEvent.danger ?? 0).toFixed(1)}/10)</span></p>
+                        ) : mostDangerousConnection ? (
+                          <p className="mt-0.5 text-xs leading-5 text-white/45">Individual event not exposed; highest-risk shared connection averages {(mostDangerousConnection.avg_danger ?? 0).toFixed(1)}/10.</p>
+                        ) : (
+                          <p className="mt-0.5 text-xs text-white/45">No shared event available.</p>
+                        )}
+                      </div>
+                    </div>
                     <button
                       onClick={() => { const name = selected.name ?? selected.label ?? selected.id; setMode("person"); fetchGraph("person", name); setSearchPerson(name); }}
                       className="w-full rounded-lg py-1.5 text-xs font-semibold transition-colors"
