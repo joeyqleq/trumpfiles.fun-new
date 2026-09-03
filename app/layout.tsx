@@ -4,14 +4,14 @@ import AsciiFooter from "@/components/AsciiFooter";
 import TrumpsteinChat from "@/components/TrumpsteinChat";
 import "./globals.css";
 import Script from "next/script";
-import { adhesianSerif, arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, hilsfiger, outfit, syne, instrumentSerif, spaceGrotesk, playfairDisplay, sourceSerif, jetbrainsMono } from "@/lib/fonts";
+import { adhesianSerif, arcticGuardian, arcticGuardian3D, arcticGuardianGrad, arcticGuardianGradItalic, arcticGuardianLaser, arcticGuardianLaserItalic, arcticGuardianHalf, arcticGuardianHalfItalic, arcticGuardianTwoTone, arcticGuardianTwoToneItalic, arcticGuardianLeft, hilsfiger, outfit, syne, instrumentSerif, spaceGrotesk, playfairDisplay, sourceSerif, jetbrainsMono } from "@/lib/fonts";
 // import BlobCursor from "@/components/ui/BlobCursor";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { Analytics } from '@vercel/analytics/next';
 
 export async function generateMetadata(): Promise<Metadata> {
   const title = "Trumpstein: Encyclopedia Orange";
-  const description = "A source-aware, satirical public archive of documented Trump incidents, statements, relationships, and political consequences. The Trump Files lives on here as the archive's heritage collection.";
+  const description = "A source-aware, satirical public archive of documented Trump incidents, statements, relationships, and political consequences. Trumpstein Files lives on here as the archive's heritage collection.";
   const siteUrl = "https://trumpstein.me";
 
   return {
@@ -35,7 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "Trump incidents",
       "Trump catalog"
     ],
-    authors: [{ name: "Trumpstein / The Trump Files Archive" }],
+    authors: [{ name: "Trumpstein / Trumpstein Files Archive" }],
     creator: "Trumpstein",
     publisher: "Trumpstein: Encyclopedia Orange",
     formatDetection: {
@@ -141,7 +141,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Trumpstein: Encyclopedia Orange",
-              "alternateName": ["The Trump Files", "Encyclopedia Orange"],
+              "alternateName": ["Trumpstein Files", "Encyclopedia Orange"],
               "url": "https://trumpstein.me",
               "description": "A source-aware, satirical public archive of documented Trump incidents, statements, relationships, and political consequences.",
               "potentialAction": {
@@ -164,6 +164,7 @@ export default function RootLayout({
           ${arcticGuardianLaser.variable}
           ${arcticGuardianLaserItalic.variable}
           ${arcticGuardianHalf.variable}
+          ${arcticGuardianHalfItalic.variable}
           ${arcticGuardianTwoTone.variable}
           ${arcticGuardianTwoToneItalic.variable}
           ${arcticGuardianLeft.variable}

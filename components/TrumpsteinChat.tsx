@@ -289,7 +289,7 @@ export default function TrumpsteinChat({
         body: JSON.stringify({
           to: emailAddr,
           subject: "Your Trumpstein Chat Transcript",
-          message: `Here's your chat with Trumpstein:\n\n${transcript}\n\n— The Trump Files`,
+          message: `Here's your chat with Trumpstein:\n\n${transcript}\n\n— Trumpstein Files`,
         }),
       });
       setEmailSent(true);
@@ -303,6 +303,11 @@ export default function TrumpsteinChat({
     <div className={cn("fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3", className)}>
       {/* Chat panel */}
       {open && (
+        <div className="relative">
+          {/* Kippah sits on top of the widget — centered, overlapping the top edge */}
+          <div className="pointer-events-none absolute -top-7 left-1/2 -translate-x-1/2 z-20">
+            <Kippah size="lg" variant="open" />
+          </div>
         <div
           className={cn(
             "flex h-[min(600px,calc(100dvh-7rem))] w-[420px] max-w-[calc(100vw-2rem)] flex-col",
@@ -310,26 +315,22 @@ export default function TrumpsteinChat({
             "bg-zinc-950"
           )}
         >
-          {/* Header — three-part Trumpstein lockup + existing controls */}
+          {/* Header */}
           <div className="relative flex min-h-16 shrink-0 items-center justify-between gap-2 overflow-hidden px-2.5 sm:px-3"
                style={{ background: "linear-gradient(135deg, #a93600 0%, #f45b00 48%, #be3100 100%)" }}>
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_-30%,rgba(255,220,175,0.42),transparent_55%)]" />
-            {/* Decorative kippah watermark; kept behind the functional lockup. */}
-            <div className="pointer-events-none absolute -top-5 right-20 z-0 hidden opacity-30 sm:block">
-              <Kippah size="lg" variant="open" />
-            </div>
-            <div className="relative z-10 flex min-w-0 flex-1 items-center justify-center gap-1.5 sm:gap-2" aria-label="Trumpstein AI">
+            <div className="relative z-10 flex min-w-0 flex-1 items-center justify-center gap-2" aria-label="Trumpstein AI">
               <Image
                 src="/trumpstein_ai_logo.png"
                 alt="Trumpstein AI logo"
                 width={656}
                 height={523}
-                className="h-6 w-auto shrink-0 object-contain sm:h-8"
-                sizes="32px"
+                className="h-7 w-auto shrink-0 object-contain"
+                sizes="28px"
               />
               <ScrambleText
-                text="TRUMPSTEIN"
-                className="flex h-6 min-w-0 items-center whitespace-nowrap text-[10px] font-black tracking-[0.07em] text-white min-[370px]:text-[12px] sm:h-8 sm:text-[14px] sm:tracking-[0.12em]"
+                text="TRUMPSTEIN AI"
+                className="shrink-0 whitespace-nowrap text-[13px] font-black tracking-[0.1em] text-white sm:text-[15px]"
                 style={{ fontFamily: "var(--font-jetbrains)" } as React.CSSProperties}
               />
               <span className="relative shrink-0" title="Trumpstein chip active">
@@ -338,8 +339,8 @@ export default function TrumpsteinChat({
                   alt="Trumpstein AI chip"
                   width={688}
                   height={701}
-                  className="h-6 w-auto object-contain sm:h-8"
-                  sizes="32px"
+                  className="h-7 w-auto object-contain"
+                  sizes="28px"
                 />
                 <span className="motion-reduce:animate-none absolute -right-0.5 -top-0.5 h-2 w-2 animate-pulse rounded-full border border-orange-900 bg-emerald-300" />
               </span>
@@ -489,6 +490,7 @@ export default function TrumpsteinChat({
               Satirical AI · Not affiliated with any real chip implants
             </p>
           </div>
+        </div>
         </div>
       )}
 

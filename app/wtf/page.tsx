@@ -86,7 +86,7 @@ export default function WTFPage() {
                 />
               </div>
               <p className="text-lg text-foreground/80 leading-relaxed mb-4">
-                Welcome to <strong className="text-orange-400 text-xl">The Trump Files</strong>, a database for everyone who suspects the recent history of American democracy feels less like a <span className="text-orange-300 font-bold">government</span> and more like an <span className="text-orange-400 text-lg">absurdist reality show</span>, an open-mic <span className="font-bold text-orange-300">comedy roast</span>, and a <span className="text-orange-400 text-xl font-bold">four-alarm crime blotter</span> all at once.
+                Welcome to <strong className="text-orange-400 text-xl">Trumpstein Files</strong>, a database for everyone who suspects the recent history of American democracy feels less like a <span className="text-orange-300 font-bold">government</span> and more like an <span className="text-orange-400 text-lg">absurdist reality show</span>, an open-mic <span className="font-bold text-orange-300">comedy roast</span>, and a <span className="text-orange-400 text-xl font-bold">four-alarm crime blotter</span> all at once.
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed mb-4">
                 From the infamous <strong className="text-orange-400">Epstein flight logs</strong> and redacted connections, to the catastrophic geopolitical brinkmanship of <strong className="text-orange-400">"Operation Epic Fury"</strong> against Iran, tracking the chaos is a full-time job. We do it so you don't lose your mind trying to remember what happened three crises ago.
@@ -131,7 +131,7 @@ export default function WTFPage() {
             </div>
             <div className="text-lg text-foreground/80 leading-relaxed space-y-4">
               <p>
-                The Trump Files is the internet's most <span className="text-orange-400 font-bold">comprehensive</span>, <span className="text-lg text-orange-300">absurd</span>, darkly <span className="font-bold">hilarious</span>, and [<span className="text-orange-400">painfully</span>] accurate attempt to document the nearly <span className="text-xl font-bold text-orange-400">unfathomable era</span> that is "life with Donald Trump."
+                Trumpstein Files is the internet's most <span className="text-orange-400 font-bold">comprehensive</span>, <span className="text-lg text-orange-300">absurd</span>, darkly <span className="font-bold">hilarious</span>, and [<span className="text-orange-400">painfully</span>] accurate attempt to document the nearly <span className="text-xl font-bold text-orange-400">unfathomable era</span> that is "life with Donald Trump."
               </p>
               <p>
                 Over <span className="text-orange-400 font-bold text-xl">40 years</span>, this walking <span className="text-orange-300 font-bold">SNL sketch</span> (with <span className="text-orange-400 text-lg">nuclear codes!</span>) has stunned, trolled, and conned society while amassing scandals at a pace that would make <span className="font-bold text-orange-300">Machiavelli sweat</span>.
@@ -445,7 +445,7 @@ export default function WTFPage() {
           <Card className="glass-card border-orange-500/20">
             <CardContent className="p-8">
               <p className="text-xl text-foreground/80 leading-relaxed">
-                Democracy dies in darkness—but fascism thrives in mass amnesia and "lol nothing matters" culture. The Trump Files exists so when the grandkids ask "what happened, were you all high?" you can actually show them, with a chart, a meme, a source link, and a moral rap sheet long enough to make God ask for pagination.
+                Democracy dies in darkness—but fascism thrives in mass amnesia and "lol nothing matters" culture. Trumpstein Files exists so when the grandkids ask "what happened, were you all high?" you can actually show them, with a chart, a meme, a source link, and a moral rap sheet long enough to make God ask for pagination.
               </p>
             </CardContent>
           </Card>

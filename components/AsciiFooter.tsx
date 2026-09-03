@@ -169,7 +169,7 @@ export default function AsciiFooter() {
 
         <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm text-foreground/50">
           <p>
-            © {new Date().getFullYear()} The Trump Files. All rights reserved. | Built with spite and data.
+            © {new Date().getFullYear()} Trumpstein Files. All rights reserved. | Built with spite and data.
           </p>
           <p className="mt-2 text-xs">
             <strong className="text-orange-400">Disclaimer:</strong> This website is a satirical archive and analytical tool. All entries are sourced and fact-checked. No endorsement of any political party or candidate implied.

@@ -3,7 +3,7 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 
 export const runtime = "nodejs";
-export const alt = "Trumpstein: Encyclopedia Orange — The Trump Files heritage archive";
+export const alt = "Trumpstein: Encyclopedia Orange — Trumpstein Files heritage archive";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -50,12 +50,12 @@ export default async function Image() {
 
         <div style={{ display: "flex", alignItems: "center", width: "100%", padding: "68px 88px", gap: "70px" }}>
           <div style={{ display: "flex", position: "relative", width: "330px", height: "390px", alignItems: "center", justifyContent: "center" }}>
-            {legacyLogo ? <img src={legacyLogo} width={310} height={310} alt="The Trump Files legacy logo" style={{ objectFit: "contain" }} /> : null}
+            {legacyLogo ? <img src={legacyLogo} width={310} height={310} alt="Trumpstein Files legacy logo" style={{ objectFit: "contain" }} /> : null}
             {kippah ? <img src={kippah} width={190} height={111} alt="Trumpstein kippah" style={{ position: "absolute", top: "17px", left: "70px", objectFit: "contain", transform: "rotate(-4deg)" }} /> : null}
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", flex: 1, gap: "18px" }}>
-            <div style={{ display: "flex", fontSize: "17px", fontWeight: 700, letterSpacing: "0.18em", color: "#ffbd7a", textTransform: "uppercase" }}>The Trump Files heritage archive</div>
+            <div style={{ display: "flex", fontSize: "17px", fontWeight: 700, letterSpacing: "0.18em", color: "#ffbd7a", textTransform: "uppercase" }}>Trumpstein Files heritage archive</div>
             <div style={{ display: "flex", fontFamily: "Arctic Guardian", fontSize: "82px", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 0.94 }}><span style={{ display: "flex", color: "#ffd08a" }}>TRUMP</span><span style={{ display: "flex", color: "#ff5000" }}>STEIN</span></div>
             <div style={{ display: "flex", fontSize: "32px", fontWeight: 700, letterSpacing: "0.18em", color: "#ffc28d", textTransform: "uppercase" }}>Encyclopedia Orange</div>
             <div style={{ display: "flex", maxWidth: "570px", fontSize: "24px", lineHeight: 1.35, color: "rgba(255,247,237,0.82)" }}>A source-aware archive of documented incidents, statements, relationships, and consequences.</div>

@@ -56,7 +56,7 @@ export default function TrumpsteinPage() {
           </p>
           <p className="text-base text-white/60 max-w-2xl mx-auto leading-relaxed mb-8">
             A satirical RAG chatbot wired into{" "}
-            <span className="text-orange-400 font-semibold">The Trump Files archive</span>
+            <span className="text-orange-400 font-semibold">Trumpstein Files archive</span>
             {" "}— scored, source-aware, and glitching somewhere between his ear and his ego.
           </p>
 
@@ -156,7 +156,7 @@ export default function TrumpsteinPage() {
           <div className="space-y-4 text-white/65 text-base leading-relaxed text-left max-w-2xl mx-auto">
             <p>
               Trumpstein is designed to ground factual claims in retrieved archive material from{" "}
-              <span className="text-orange-400">The Trump Files</span> — the same corpus you can browse in the catalog — while keeping satire and Rathbone-style fictional canon out of the evidence layer.
+              <span className="text-orange-400">Trumpstein Files</span> — the same corpus you can browse in the catalog — while keeping satire and Rathbone-style fictional canon out of the evidence layer.
             </p>
             <p>
               It speaks in Trump's voice — the superlatives, the self-congratulation, the "many people are saying" — because the humor cuts deeper that way. But underneath the character is a system that cannot deny what it knows.
@@ -196,7 +196,7 @@ export default function TrumpsteinPage() {
       {/* ── FOOTER NOTE ── */}
       <section className="py-12 px-4 text-center">
         <p className="text-[11px] font-mono text-white/20 max-w-lg mx-auto">
-          Trumpstein is a satirical AI character. It does not represent any real person&apos;s views. All factual claims are sourced from The Trump Files corpus. Built with Cloudflare Workers AI, Vectorize, D1, and more coffee than is medically advisable.
+          Trumpstein is a satirical AI character. It does not represent any real person&apos;s views. All factual claims are sourced from the Trumpstein Files corpus. Built with Cloudflare Workers AI, Vectorize, D1, and more coffee than is medically advisable.
         </p>
       </section>
 

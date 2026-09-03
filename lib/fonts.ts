@@ -104,6 +104,12 @@ export const arcticGuardianHalf = localFont({
   display: 'swap',
 });
 
+export const arcticGuardianHalfItalic = localFont({
+  src: '../public/fonts/Arctic_Guardian/arcticguardianhalfital.ttf',
+  variable: '--font-arctic-guardian-half-italic',
+  display: 'swap',
+});
+
 export const arcticGuardianTwoTone = localFont({
   src: '../public/fonts/Arctic_Guardian/arcticguardiantwotone.ttf',
   variable: '--font-arctic-guardian-twotone',

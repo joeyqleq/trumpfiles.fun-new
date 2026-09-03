@@ -116,7 +116,7 @@ export default function WhoAmIPage() {
                                     <h2 className="text-3xl font-bold text-orange-400 mb-6 font-arctic-twotone">Fighting the Fog: Why This Costs Money</h2>
                                     <div className="space-y-4 text-lg text-foreground/80 leading-relaxed font-sans">
                                         <p>
-                                            The Trump Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public record, a comprehensive historical database of every lie, every contradiction, and every atrocity documented in the official record.
+                                            Trumpstein Files is a non-commercial project. I don't sell ads, I don't sell your data, and there is no paywall. This archive exists for the public record, a comprehensive historical database of every lie, every contradiction, and every atrocity documented in the official record.
                                         </p>
                                         <ul className="list-none space-y-4 pt-4">
                                             <li className="flex gap-4">

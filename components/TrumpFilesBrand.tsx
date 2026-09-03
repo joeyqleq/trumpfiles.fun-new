@@ -7,19 +7,16 @@ interface TrumpFilesBrandProps {
   className?: string;
   size?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "hero";
   inline?: boolean;
-  static?: boolean; // Disable glitch animation for static display (e.g., nav)
+  static?: boolean;
 }
 
-// Orange gradient with glass effect
 const ORANGE_GRADIENT = "bg-gradient-to-r from-orange-500 via-amber-400 to-red-500 bg-clip-text text-transparent";
 
-// Glowing glass effect styles
 const GLASS_EFFECT = `
   drop-shadow-[0_0_8px_rgba(255,100,0,0.4)]
   drop-shadow-[0_0_20px_rgba(255,100,0,0.2)]
 `;
 
-// Subtle blur/glow glitch effect for the hollow "FILES" word
 const FilesGlitchEffect = ({
   children,
   className
@@ -31,7 +28,6 @@ const FilesGlitchEffect = ({
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    // Subtle glitch on random intervals (3-7 seconds)
     const runGlitch = () => {
       setGlitchActive(true);
       setTimeout(() => setGlitchActive(false), 100);
@@ -80,15 +76,15 @@ export const TrumpFilesBrand = ({
   static: isStatic = false,
 }: TrumpFilesBrandProps) => {
   const sizeClasses = {
-    sm: { text: "text-base", gap: "gap-1" },
-    md: { text: "text-lg", gap: "gap-1.5" },
-    lg: { text: "text-2xl", gap: "gap-2" },
+    sm: { text: "text-base", gap: "gap-0.5" },
+    md: { text: "text-lg", gap: "gap-1" },
+    lg: { text: "text-2xl", gap: "gap-1.5" },
     xl: { text: "text-3xl", gap: "gap-2" },
-    "2xl": { text: "text-4xl", gap: "gap-2.5" },
-    "3xl": { text: "text-5xl", gap: "gap-3" },
+    "2xl": { text: "text-4xl", gap: "gap-2" },
+    "3xl": { text: "text-5xl", gap: "gap-2.5" },
     "4xl": { text: "text-6xl", gap: "gap-3" },
-    "5xl": { text: "text-7xl", gap: "gap-4" },
-    hero: { text: "text-4xl sm:text-5xl md:text-6xl lg:text-7xl", gap: "gap-2 sm:gap-3 md:gap-4" },
+    "5xl": { text: "text-7xl", gap: "gap-3.5" },
+    hero: { text: "text-4xl sm:text-5xl md:text-6xl lg:text-7xl", gap: "gap-1.5 sm:gap-2 md:gap-3" },
   };
 
   const { text: textSize, gap: gapSize } = sizeClasses[size];
@@ -102,67 +98,52 @@ export const TrumpFilesBrand = ({
         className
       )}
     >
-      {/* THE - Arctic Guardian Gradient Italic */}
+      {/* TRUMP — Arctic Guardian Laser */}
       <span
-        className={cn(
-          "tracking-wide",
-          textSize
-        )}
+        className={cn("tracking-tight", textSize)}
         style={{
-          fontFamily: 'var(--font-arctic-guardian-grad-italic)',
-          fontStyle: 'italic',
-          // Brighter gradient for small sizes to improve visibility
+          fontFamily: 'var(--font-arctic-guardian-laser)',
           background: size === 'sm'
-            ? 'linear-gradient(to right, #ff8c00, #ffc107, #ff6b00)'
-            : 'linear-gradient(to right, #f97316, #fbbf24, #ef4444)',
+            ? 'linear-gradient(180deg, #ffffff 0%, #ffffff 45%, #ff8c00 65%, #ff6b00 100%)'
+            : 'linear-gradient(180deg, #ffffff 0%, #ffffff 40%, #f97316 60%, #ef4444 100%)',
           WebkitBackgroundClip: 'text',
           backgroundClip: 'text',
-          color: 'transparent'
-        }}
-      >
-        THE
-      </span>
-
-      {/* TRUMP - Arctic Guardian Laser Italic */}
-      <span
-        className={cn(
-          "tracking-tight",
-          textSize,
-          ORANGE_GRADIENT
-        )}
-        style={{
-          fontFamily: 'var(--font-arctic-guardian-laser-italic)',
-          fontStyle: 'italic'
+          color: 'transparent',
         }}
       >
         TRUMP
       </span>
 
-      {/* FILES - Arctic Guardian 3D (hollow) with optional shimmer effect */}
+      {/* STEIN — Arctic Guardian Two Tone Italic */}
+      <span
+        className={cn("tracking-tight", textSize)}
+        style={{
+          fontFamily: 'var(--font-arctic-guardian-twotone-italic)',
+          fontStyle: 'italic',
+          background: size === 'sm'
+            ? 'linear-gradient(180deg, #ffffff 0%, #ffffff 45%, #ff8c00 65%, #ff6b00 100%)'
+            : 'linear-gradient(180deg, #ffffff 0%, #ffffff 40%, #f97316 60%, #ef4444 100%)',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          color: 'transparent',
+        }}
+      >
+        STEIN
+      </span>
+
+      {/* FILES — Arctic Guardian 3D with glitch */}
       {isStatic ? (
         <span
-          className={cn(
-            "tracking-wider",
-            textSize,
-            ORANGE_GRADIENT
-          )}
-          style={{
-            fontFamily: 'var(--font-arctic-guardian-3d)'
-          }}
+          className={cn("tracking-wider", textSize, ORANGE_GRADIENT)}
+          style={{ fontFamily: 'var(--font-arctic-guardian-3d)' }}
         >
           FILES
         </span>
       ) : (
         <FilesGlitchEffect>
           <span
-            className={cn(
-              "tracking-wider",
-              textSize,
-              ORANGE_GRADIENT
-            )}
-            style={{
-              fontFamily: 'var(--font-arctic-guardian-3d)'
-            }}
+            className={cn("tracking-wider", textSize, ORANGE_GRADIENT)}
+            style={{ fontFamily: 'var(--font-arctic-guardian-3d)' }}
           >
             FILES
           </span>
@@ -172,7 +153,6 @@ export const TrumpFilesBrand = ({
   );
 };
 
-// Heading component for other uses
 export const TrumpFilesHeading = ({
   className,
   ...props
@@ -189,3 +169,33 @@ export const TrumpFilesHeading = ({
     />
   );
 };
+
+export function TrumpsteinInline({ className }: { className?: string }) {
+  return (
+    <span className={cn("inline-flex items-baseline gap-0", className)}>
+      <span
+        style={{
+          fontFamily: 'var(--font-arctic-guardian-laser)',
+          background: 'linear-gradient(180deg, #ffffff 0%, #ffffff 45%, #ff8c00 65%, #ff6b00 100%)',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          color: 'transparent',
+        }}
+      >
+        Trump
+      </span>
+      <span
+        style={{
+          fontFamily: 'var(--font-arctic-guardian-half-italic)',
+          fontStyle: 'italic',
+          background: 'linear-gradient(180deg, #ff8c00 0%, #ff6b00 50%, #ffffff 100%)',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          color: 'transparent',
+        }}
+      >
+        stein
+      </span>
+    </span>
+  );
+}

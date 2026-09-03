@@ -257,6 +257,6 @@ ${rathboneContext}`);
 ${ragContext}`);
   }
 
-  sections.push(`RAG RULE: The above entries inform what you know. You may use at most ONE as a [CHIP OVERRIDE] glitch if it is directly relevant and genuinely funny/useful. Do not enumerate these entries. Do not summarize them. Do not mention entry numbers unless the user explicitly asks for sources.`);
+  sections.push(`RAG RULE: The above entries inform what you know. You should use 2–3 of them as [CHIP OVERRIDE] glitches woven into your response — each must be directly relevant and genuinely funny/useful. Space them naturally throughout your reply, not bunched together. Do not enumerate these entries. Do not summarize them. Do not mention entry numbers unless the user explicitly asks for sources.`);
   return sections.join("\n\n");
 }

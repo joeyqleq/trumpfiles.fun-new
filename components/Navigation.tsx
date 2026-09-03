@@ -31,21 +31,49 @@ import Image from "next/image";
 import { TrumpFilesBrand } from "@/components/TrumpFilesBrand";
 import { analytics } from "@/lib/analytics";
 
-function PixelNavLabel({ label }: { label: string }) {
+function ArcticNavLabel({ label }: { label: string }) {
   return (
-    <span className="relative z-10 inline-flex items-center leading-none" aria-label={label} style={{ letterSpacing: 0 }}>
+    <span className="relative z-10 inline-flex items-baseline leading-none" aria-label={label} style={{ letterSpacing: "0.03em" }}>
       {Array.from(label).map((letter, index) => (
         <motion.span
           key={`${letter}-${index}`}
-          variants={{ rest: { y: 0, color: "inherit" }, hover: { y: index % 2 === 0 ? -2 : 1, color: "#ffb36b" } }}
-          transition={{ duration: 0.14, delay: index * 0.018 }}
-          style={{ display: "inline", letterSpacing: "inherit" }}
+          className="inline-block"
+          style={{
+            fontFamily: "var(--font-arctic-guardian-half)",
+            fontSize: "13px",
+          }}
+          variants={{
+            rest: {
+              y: 0,
+              background: "linear-gradient(180deg, #ffffff 0%, #ffffff 50%, #ff8c00 80%, #ff6b00 100%)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+            },
+            hover: {
+              y: index % 2 === 0 ? -3 : 2,
+              background: "linear-gradient(180deg, #ff6b00 0%, #ff8c00 40%, #ffffff 70%, #ffffff 100%)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+            },
+          }}
+          transition={{ duration: 0.18, delay: index * 0.022, ease: "easeOut" }}
           aria-hidden="true"
         >
-          {letter}
+          {letter === " " ? " " : letter}
         </motion.span>
       ))}
-      <motion.span variants={{ rest: { opacity: 0, scaleX: 0.4 }, hover: { opacity: 1, scaleX: 1 } }} transition={{ duration: 0.16 }} className="absolute -bottom-1 left-0 h-px w-full origin-left bg-orange-400" aria-hidden="true" />
+      <motion.span
+        variants={{
+          rest: { opacity: 0, scaleX: 0.3 },
+          hover: { opacity: 1, scaleX: 1 },
+        }}
+        transition={{ duration: 0.2 }}
+        className="absolute -bottom-1 left-0 h-[1.5px] w-full origin-left"
+        style={{ background: "linear-gradient(90deg, #ff6b00, #fbbf24, #ff6b00)" }}
+        aria-hidden="true"
+      />
     </span>
   );
 }
@@ -161,7 +189,7 @@ export default function Navigation() {
           }}
           transition={{ duration: 0.3 }}
         >
-          {/* Logo + Brand - 3-Font Style (Static) */}
+          {/* Logo + Brand */}
           <Link
             href="/"
             className="flex items-center gap-2.5 px-2.5 py-1.5 rounded-full hover:bg-orange-500/10 transition-all duration-300 group"
@@ -173,7 +201,7 @@ export default function Navigation() {
             >
               <Image
                 src="/logos/trumpfiles_orange_logo.png"
-                alt="Trump Files"
+                alt="Trumpstein Files"
                 width={34}
                 height={34}
                 className="drop-shadow-[0_0_8px_rgba(249,115,22,0.6)]"
@@ -186,7 +214,7 @@ export default function Navigation() {
           {/* Divider */}
           <div className="hidden md:block w-px h-6 bg-gradient-to-b from-transparent via-orange-500/50 to-transparent mx-3" />
 
-          {/* Desktop Navigation - Compact */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-0.5">
             {navItems.map((item, index) => (
               <motion.div
@@ -199,12 +227,11 @@ export default function Navigation() {
               >
                 <Link
                   href={item.href}
-                  className={`relative flex min-h-11 items-center gap-1.5 rounded-md px-3 text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${pathname === item.href
+                  className={`relative flex min-h-11 items-center gap-1.5 rounded-md px-3 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${pathname === item.href
                     ? "text-orange-300"
                     : "text-foreground/70 hover:text-orange-200"
                     }`}
                 >
-                  {/* Active background */}
                   {pathname === item.href && (
                     <motion.span
                       className="absolute inset-1 rounded-sm bg-orange-500/15"
@@ -213,12 +240,11 @@ export default function Navigation() {
                     />
                   )}
 
-                  {/* Icon */}
                   <span className={`relative z-10 ${pathname === item.href ? "text-orange-400" : "text-orange-400/50 group-hover:text-orange-400"}`}>
                     {item.icon}
                   </span>
 
-                  <PixelNavLabel label={item.name} />
+                  <ArcticNavLabel label={item.name} />
                 </Link>
               </motion.div>
             ))}
@@ -231,7 +257,7 @@ export default function Navigation() {
               className="min-h-11 rounded-md px-3 text-[13px] font-medium text-foreground/70 transition-colors duration-200 hover:bg-transparent hover:text-orange-200 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               <Mail size={16} className="text-orange-400/50" />
-              <PixelNavLabel label="Contact" />
+              <ArcticNavLabel label="Contact" />
             </Button>
             </motion.div>
           </div>
@@ -309,7 +335,7 @@ export default function Navigation() {
                       <span className={pathname === item.href ? "text-orange-400" : "text-orange-400/50"}>
                         {item.icon}
                       </span>
-                      <span className="text-sm font-medium">{item.name}</span>
+                      <span className="text-sm" style={{ fontFamily: "var(--font-arctic-guardian-half)" }}>{item.name}</span>
                     </Link>
                   </motion.div>
                 ))}
@@ -328,7 +354,7 @@ export default function Navigation() {
                     className="flex items-center gap-3 px-3 py-2 rounded-lg text-foreground/70 hover:bg-orange-500/10 hover:text-orange-300 transition-all duration-200 w-full"
                   >
                     <Mail size={16} className="text-orange-400/50" />
-                    <span className="text-sm font-medium">Contact</span>
+                    <span className="text-sm" style={{ fontFamily: "var(--font-arctic-guardian-half)" }}>Contact</span>
                   </button>
                 </motion.div>
 
