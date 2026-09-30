@@ -326,7 +326,25 @@
     "entry-3074",
     "entry-3103",
     "entry-3126",
-    "entry-3144"
+    "entry-3144",
+    "entry-2953",
+    "entry-2975",
+    "entry-2991",
+    "entry-3010",
+    "entry-3032",
+    "entry-3057",
+    "entry-3093",
+    "entry-3101",
+    "entry-3127",
+    "entry-3143",
+    "entry-3166",
+    "entry-3207",
+    "entry-3231",
+    "entry-3266",
+    "entry-3279",
+    "entry-3295",
+    "entry-3314",
+    "entry-3388"
   ],
   "needs_context_record_ids": [
     "entry-5661",
@@ -369,9 +387,11 @@
     "entry-4048",
     "entry-4552",
     "entry-2834",
-    "entry-2902"
+    "entry-2902",
+    "entry-3071",
+    "entry-3193"
   ],
-  "completed_count": 104,
-  "needs_context_count": 41,
-  "remaining_count": 60
+  "completed_count": 122,
+  "needs_context_count": 43,
+  "remaining_count": 40
 }
