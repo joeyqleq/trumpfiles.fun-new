@@ -135,7 +135,17 @@
     "entry-2970",
     "entry-3278",
     "entry-4819",
-    "entry-6083"
+    "entry-6083",
+    "entry-6563",
+    "entry-4720",
+    "entry-4791",
+    "entry-4947",
+    "entry-4800",
+    "entry-5148",
+    "entry-56",
+    "entry-5113",
+    "entry-319",
+    "entry-285"
   ],
   "needs_context_ids": [
     "entry-4876",
@@ -148,16 +158,6 @@
     "entry-6215"
   ],
   "remaining_ids": [
-    "entry-6563",
-    "entry-4720",
-    "entry-4791",
-    "entry-4947",
-    "entry-4800",
-    "entry-5148",
-    "entry-56",
-    "entry-5113",
-    "entry-319",
-    "entry-285",
     "entry-3080",
     "entry-3627",
     "entry-6386",
@@ -189,8 +189,8 @@
     "entry-309",
     "entry-221"
   ],
-  "completed": 42,
+  "completed": 52,
   "needs_context": 8,
-  "remaining": 40,
-  "updated_at": "2026-09-30T10:07:20.894942+00:00"
+  "remaining": 30,
+  "updated_at": "2026-09-30T10:09:12.875662+00:00"
 }
