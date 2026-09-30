@@ -1,11 +1,11 @@
 {
   "assigned": 6944,
-  "current_rows": 5605,
-  "missing": 1339,
+  "current_rows": 5664,
+  "missing": 1280,
   "duplicate_ids": [],
   "statuses": {
-    "needs_context": 1592,
-    "complete": 4013
+    "needs_context": 1591,
+    "complete": 4073
   },
   "errors": [],
   "scope": "structural and preservation validation; not a claim-level fact check or publication approval"
