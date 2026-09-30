@@ -2,8 +2,8 @@
   "worker": "cloud-02",
   "input_commit": "5cba74e191342f29a77fc999412c99be747a742",
   "status": "complete",
-  "completed": 191,
-  "needs_context": 29,
+  "completed": 188,
+  "needs_context": 32,
   "remaining": 0,
   "remaining_assigned_batches": [
     57,
@@ -245,5 +245,9 @@
     "entry-5084",
     "entry-5140",
     "entry-5170"
+  ],
+  "revision_file": "outputs/cloud-02-revision-r2.jsonl",
+  "revised_batches": [
+    49
   ]
 }
