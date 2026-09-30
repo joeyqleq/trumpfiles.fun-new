@@ -78,17 +78,22 @@
     "entry-528",
     "entry-5424",
     "entry-5505",
-    "entry-5647"
+    "entry-5647",
+    "entry-574",
+    "entry-6294",
+    "entry-658",
+    "entry-688"
   ],
   "needs_context_ids": [
     "entry-1363",
     "entry-1696",
     "entry-2466",
-    "entry-352"
+    "entry-352",
+    "entry-6104"
   ],
   "assigned_count": 45,
-  "completed_count": 31,
-  "needs_context_count": 4,
-  "remaining_count": 10,
-  "last_output": "cloud-20-rescue-007.jsonl"
+  "completed_count": 35,
+  "needs_context_count": 5,
+  "remaining_count": 5,
+  "last_output": "cloud-20-rescue-008.jsonl"
 }
