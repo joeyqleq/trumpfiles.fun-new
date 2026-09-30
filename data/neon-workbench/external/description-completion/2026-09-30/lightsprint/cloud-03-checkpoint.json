@@ -1,0 +1,47 @@
+{
+  "worker": "cloud-03",
+  "source_commit": "5cba74e191342f29a77fc999412c99be747a7421",
+  "assigned_batches": [
+    2,
+    10,
+    18,
+    26,
+    34,
+    42,
+    50,
+    58,
+    66,
+    74,
+    82
+  ],
+  "completed_batches": [
+    2
+  ],
+  "completed_record_ids": [
+    "entry-979",
+    "entry-992",
+    "entry-1001",
+    "entry-1013",
+    "entry-1020",
+    "entry-1024",
+    "entry-1029",
+    "entry-1035",
+    "entry-1040",
+    "entry-1044",
+    "entry-1117",
+    "entry-1167",
+    "entry-620",
+    "entry-689",
+    "entry-704",
+    "entry-724",
+    "entry-733",
+    "entry-755",
+    "entry-779",
+    "entry-815"
+  ],
+  "completed_count": 20,
+  "needs_context_count": 0,
+  "remaining_count": 200,
+  "status": "in_progress",
+  "last_output": "outputs/cloud-03-batch-002.jsonl"
+}
