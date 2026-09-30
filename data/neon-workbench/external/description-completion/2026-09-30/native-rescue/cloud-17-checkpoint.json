@@ -60,16 +60,12 @@
     "entry-1381",
     "entry-1432",
     "entry-1519",
+    "entry-1549",
     "entry-1580",
     "entry-1647",
     "entry-1748",
     "entry-1892",
-    "entry-1955"
-  ],
-  "needs_context_ids": [
-    "entry-1549"
-  ],
-  "remaining_ids": [
+    "entry-1955",
     "entry-2007",
     "entry-2053",
     "entry-2119",
@@ -77,7 +73,10 @@
     "entry-2195",
     "entry-2272",
     "entry-2561",
-    "entry-3557",
+    "entry-3557"
+  ],
+  "needs_context_ids": [],
+  "remaining_ids": [
     "entry-3825",
     "entry-4096",
     "entry-4164",
@@ -101,7 +100,7 @@
     "entry-757",
     "entry-802"
   ],
-  "completed": 15,
-  "needs_context": 1,
-  "remaining": 30
+  "completed": 24,
+  "needs_context": 0,
+  "remaining": 22
 }
