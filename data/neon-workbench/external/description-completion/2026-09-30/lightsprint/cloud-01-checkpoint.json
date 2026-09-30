@@ -288,7 +288,25 @@
     "entry-4177",
     "entry-5104",
     "entry-5717",
-    "entry-6325"
+    "entry-6325",
+    "entry-4027",
+    "entry-5811",
+    "entry-6249",
+    "entry-6490",
+    "entry-2340",
+    "entry-2415",
+    "entry-2433",
+    "entry-2461",
+    "entry-2500",
+    "entry-2532",
+    "entry-2554",
+    "entry-2633",
+    "entry-2653",
+    "entry-2755",
+    "entry-2775",
+    "entry-2986",
+    "entry-3031",
+    "entry-3121"
   ],
   "needs_context_record_ids": [
     "entry-5661",
@@ -329,9 +347,11 @@
     "entry-6127",
     "entry-2325",
     "entry-4048",
-    "entry-4552"
+    "entry-4552",
+    "entry-2834",
+    "entry-2902"
   ],
-  "completed_count": 66,
-  "needs_context_count": 39,
-  "remaining_count": 100
+  "completed_count": 84,
+  "needs_context_count": 41,
+  "remaining_count": 80
 }
