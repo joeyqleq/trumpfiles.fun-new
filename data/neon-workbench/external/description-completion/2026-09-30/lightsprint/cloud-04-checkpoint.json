@@ -15,11 +15,12 @@
     "083"
   ],
   "processed_batches": [
-    "003"
+    "003",
+    "011"
   ],
-  "completed": 11,
-  "needs_context": 9,
-  "remaining": 200,
+  "completed": 24,
+  "needs_context": 16,
+  "remaining": 180,
   "record_ids": {
     "completed": [
       "entry-829",
@@ -32,7 +33,20 @@
       "entry-1132",
       "entry-430",
       "entry-583",
-      "entry-646"
+      "entry-646",
+      "entry-441",
+      "entry-5434",
+      "entry-6995",
+      "entry-1083",
+      "entry-4297",
+      "entry-5420",
+      "entry-5431",
+      "entry-584",
+      "entry-1618",
+      "entry-403",
+      "entry-561",
+      "entry-7114",
+      "entry-1082"
     ],
     "needs_context": [
       "entry-852",
@@ -43,29 +57,16 @@
       "entry-994",
       "entry-20",
       "entry-674",
-      "entry-683"
-    ],
-    "remaining": [
-      "entry-441",
-      "entry-5434",
-      "entry-6995",
-      "entry-1083",
+      "entry-683",
       "entry-1642",
       "entry-1675",
       "entry-1716",
-      "entry-4297",
-      "entry-5420",
-      "entry-5431",
-      "entry-584",
       "entry-7034",
       "entry-1577",
-      "entry-1618",
       "entry-1680",
-      "entry-403",
-      "entry-561",
-      "entry-7000",
-      "entry-7114",
-      "entry-1082",
+      "entry-7000"
+    ],
+    "remaining": [
       "entry-1347",
       "entry-1403",
       "entry-1456",
