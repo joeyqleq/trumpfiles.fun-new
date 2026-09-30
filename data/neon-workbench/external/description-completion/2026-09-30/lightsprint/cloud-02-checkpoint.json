@@ -2,11 +2,10 @@
   "worker": "cloud-02",
   "input_commit": "5cba74e191342f29a77fc999412c99be747a742",
   "status": "in_progress",
-  "completed": 34,
-  "needs_context": 6,
-  "remaining": 180,
+  "completed": 48,
+  "needs_context": 12,
+  "remaining": 160,
   "remaining_assigned_batches": [
-    17,
     25,
     33,
     41,
@@ -18,7 +17,8 @@
   ],
   "processed_batches": [
     1,
-    9
+    9,
+    17
   ],
   "processed_record_ids": [
     "entry-764",
@@ -60,6 +60,26 @@
     "entry-4308",
     "entry-460",
     "entry-577",
-    "entry-6982"
+    "entry-6982",
+    "expanded-20260925-public-citizen-first-ad-complaint",
+    "entry-1314",
+    "entry-1359",
+    "entry-1419",
+    "entry-1445",
+    "entry-1518",
+    "entry-1546",
+    "entry-2250",
+    "entry-2293",
+    "entry-5693",
+    "entry-5709",
+    "entry-7009",
+    "entry-7165",
+    "expanded-20260903-smithsonian-signs-letter",
+    "expanded-20260922-solar-harris-order",
+    "entry-1280",
+    "entry-1315",
+    "entry-1377",
+    "entry-1425",
+    "entry-1507"
   ]
 }
