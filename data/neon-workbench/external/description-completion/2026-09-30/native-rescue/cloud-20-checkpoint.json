@@ -65,15 +65,20 @@
     "entry-2025",
     "entry-2085",
     "entry-2172",
-    "entry-2193"
+    "entry-2193",
+    "entry-2249",
+    "entry-378",
+    "entry-4085"
   ],
   "needs_context_ids": [
     "entry-1363",
-    "entry-1696"
+    "entry-1696",
+    "entry-2466",
+    "entry-352"
   ],
   "assigned_count": 45,
-  "completed_count": 18,
-  "needs_context_count": 2,
-  "remaining_count": 25,
-  "last_output": "cloud-20-rescue-004.jsonl"
+  "completed_count": 21,
+  "needs_context_count": 4,
+  "remaining_count": 20,
+  "last_output": "cloud-20-rescue-005.jsonl"
 }
