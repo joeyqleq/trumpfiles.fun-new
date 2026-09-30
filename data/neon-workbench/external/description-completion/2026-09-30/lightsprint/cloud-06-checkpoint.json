@@ -17,7 +17,8 @@
   "assigned_count": 220,
   "finished_batches": [
     "005",
-    "013"
+    "013",
+    "021"
   ],
   "completed_record_ids": [
     "entry-922",
@@ -45,7 +46,23 @@
     "entry-394",
     "expanded-20260908-save-sc-request",
     "entry-1555",
-    "entry-2280"
+    "entry-2280",
+    "entry-7135",
+    "entry-1353",
+    "entry-1410",
+    "entry-2241",
+    "entry-2297",
+    "entry-551",
+    "entry-5678",
+    "entry-5764",
+    "entry-6783",
+    "entry-7105",
+    "expanded-20260928-iran-sanctions-denial",
+    "entry-1260",
+    "entry-1335",
+    "entry-2260",
+    "entry-2301",
+    "entry-536"
   ],
   "needs_context_record_ids": [
     "entry-655",
@@ -61,10 +78,14 @@
     "entry-7044",
     "entry-1463",
     "entry-1585",
-    "entry-1605"
+    "entry-1605",
+    "entry-1269",
+    "entry-1308",
+    "entry-1490",
+    "entry-1474"
   ],
-  "completed_count": 26,
-  "needs_context_count": 14,
-  "remaining_count": 180,
+  "completed_count": 42,
+  "needs_context_count": 18,
+  "remaining_count": 160,
   "status": "in_progress"
 }
