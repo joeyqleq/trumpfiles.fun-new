@@ -17,11 +17,12 @@
   "processed_batches": [
     "003",
     "011",
-    "019"
+    "019",
+    "027"
   ],
-  "completed": 34,
-  "needs_context": 26,
-  "remaining": 160,
+  "completed": 48,
+  "needs_context": 32,
+  "remaining": 140,
   "record_ids": {
     "completed": [
       "entry-829",
@@ -57,7 +58,21 @@
       "expanded-20260928-lee-memorial-bill-objection",
       "fresh-20260915-tbilisi-launch",
       "entry-1360",
-      "entry-2240"
+      "entry-2240",
+      "entry-6416",
+      "entry-2100",
+      "entry-2160",
+      "entry-2303",
+      "entry-5866",
+      "entry-6610",
+      "entry-2150",
+      "entry-2205",
+      "entry-5501",
+      "entry-6630",
+      "entry-1827",
+      "entry-2196",
+      "entry-4546",
+      "entry-5487"
     ],
     "needs_context": [
       "entry-852",
@@ -85,29 +100,15 @@
       "entry-1307",
       "entry-1340",
       "entry-1389",
-      "entry-1420"
-    ],
-    "remaining": [
-      "entry-6416",
+      "entry-1420",
       "entry-1296",
-      "entry-2100",
-      "entry-2160",
-      "entry-2303",
       "entry-4201",
-      "entry-5866",
-      "entry-6610",
       "entry-1181",
       "entry-1298",
       "entry-2121",
-      "entry-2150",
-      "entry-2205",
-      "entry-5501",
-      "entry-6630",
-      "entry-1189",
-      "entry-1827",
-      "entry-2196",
-      "entry-4546",
-      "entry-5487",
+      "entry-1189"
+    ],
+    "remaining": [
       "entry-1866",
       "entry-1950",
       "entry-2049",
