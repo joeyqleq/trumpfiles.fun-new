@@ -27,8 +27,8 @@
     "075",
     "083"
   ],
-  "completed": 143,
-  "needs_context": 77,
+  "completed": 146,
+  "needs_context": 74,
   "remaining": 0,
   "record_ids": {
     "completed": [
@@ -40,7 +40,10 @@
       "entry-1101",
       "entry-1132",
       "entry-116",
+      "entry-1189",
       "entry-124",
+      "entry-1262",
+      "entry-1340",
       "entry-1347",
       "entry-1360",
       "entry-1403",
@@ -178,12 +181,9 @@
     ],
     "needs_context": [
       "entry-1181",
-      "entry-1189",
-      "entry-1262",
       "entry-1296",
       "entry-1298",
       "entry-1307",
-      "entry-1340",
       "entry-1389",
       "entry-1420",
       "entry-1456",
