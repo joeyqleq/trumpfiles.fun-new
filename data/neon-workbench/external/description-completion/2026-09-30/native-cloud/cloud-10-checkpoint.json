@@ -3,12 +3,13 @@
   "input_file": "worker-10-input.jsonl",
   "output_files": [
     "outputs/cloud-10-001.jsonl",
-    "outputs/cloud-10-002.jsonl"
+    "outputs/cloud-10-002.jsonl",
+    "outputs/cloud-10-003.jsonl"
   ],
   "assigned_count": 90,
-  "completed_count": 20,
+  "completed_count": 30,
   "needs_context_count": 0,
-  "remaining_count": 70,
+  "remaining_count": 60,
   "completed_ids": [
     "entry-2708",
     "entry-3395",
@@ -29,10 +30,7 @@
     "entry-5904",
     "entry-4776",
     "entry-5261",
-    "entry-4825"
-  ],
-  "needs_context_ids": [],
-  "remaining_ids": [
+    "entry-4825",
     "entry-4763",
     "entry-6543",
     "entry-4769",
@@ -42,7 +40,10 @@
     "entry-5158",
     "entry-30",
     "entry-265",
-    "entry-197",
+    "entry-197"
+  ],
+  "needs_context_ids": [],
+  "remaining_ids": [
     "entry-2642",
     "entry-3343",
     "entry-3834",
