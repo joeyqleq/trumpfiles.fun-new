@@ -65,17 +65,7 @@
     "entry-2524",
     "entry-3044",
     "entry-3622",
-    "entry-2539"
-  ],
-  "needs_context": [
-    "entry-316",
-    "entry-6013",
-    "entry-2514",
-    "entry-5366",
-    "entry-185",
-    "entry-6029"
-  ],
-  "remaining": [
+    "entry-2539",
     "entry-3107",
     "entry-6260",
     "entry-3335",
@@ -84,8 +74,18 @@
     "entry-4024",
     "entry-5911",
     "entry-6183",
-    "entry-5374",
-    "entry-4898",
+    "entry-4898"
+  ],
+  "needs_context": [
+    "entry-316",
+    "entry-6013",
+    "entry-2514",
+    "entry-5366",
+    "entry-185",
+    "entry-6029",
+    "entry-5374"
+  ],
+  "remaining": [
     "entry-4773",
     "entry-6885",
     "entry-5313",
@@ -98,8 +98,8 @@
     "entry-327"
   ],
   "counts": {
-    "completed": 64,
-    "needs_context": 6,
-    "remaining": 20
+    "completed": 73,
+    "needs_context": 7,
+    "remaining": 10
   }
 }
