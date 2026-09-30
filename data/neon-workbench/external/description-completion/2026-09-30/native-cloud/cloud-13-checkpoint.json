@@ -94,8 +94,8 @@
     "entry-178",
     "entry-321"
   ],
-  "completed_count": 77,
-  "needs_context_count": 13,
+  "completed_count": 78,
+  "needs_context_count": 12,
   "remaining_count": 0,
   "completed_record_ids": [
     "entry-2974",
@@ -144,6 +144,7 @@
     "entry-4264",
     "entry-6081",
     "entry-5258",
+    "entry-4631",
     "entry-5270",
     "entry-4786",
     "entry-128",
@@ -182,7 +183,6 @@
     "entry-5110",
     "entry-283",
     "entry-6049",
-    "entry-4631",
     "entry-5005",
     "entry-184",
     "entry-6394",
@@ -196,8 +196,18 @@
     "outputs/cloud-13-revision-01.jsonl",
     "outputs/cloud-13-revision-02.jsonl",
     "outputs/cloud-13-revision-03.jsonl",
-    "outputs/cloud-13-revision-04.jsonl"
+    "outputs/cloud-13-revision-04.jsonl",
+    "outputs/cloud-13-followup-01.jsonl"
   ],
-  "revision_count": 154,
-  "revised_record_count": 88
+  "revision_count": 160,
+  "revised_record_count": 88,
+  "followup_revision_count": 6,
+  "followup_record_ids": [
+    "entry-178",
+    "entry-184",
+    "entry-283",
+    "entry-3722",
+    "entry-4622",
+    "entry-4631"
+  ]
 }
