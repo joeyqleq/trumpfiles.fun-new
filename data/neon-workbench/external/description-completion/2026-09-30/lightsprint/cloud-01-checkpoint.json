@@ -1,6 +1,6 @@
 {
   "worker": "cloud-01",
-  "status": "in_progress",
+  "status": "complete",
   "assigned_batches": [
     "000",
     "008",
@@ -363,7 +363,27 @@
     "entry-6173",
     "entry-6267",
     "entry-4250",
-    "entry-4663"
+    "entry-4663",
+    "entry-1797",
+    "entry-5049",
+    "entry-4943",
+    "entry-5012",
+    "entry-4797",
+    "entry-1799",
+    "entry-1813",
+    "entry-4984",
+    "entry-5346",
+    "entry-4980",
+    "entry-4799",
+    "entry-5052",
+    "entry-1807",
+    "entry-4950",
+    "entry-1798",
+    "entry-4940",
+    "entry-4985",
+    "entry-4999",
+    "entry-5003",
+    "entry-4798"
   ],
   "needs_context_record_ids": [
     "entry-5661",
@@ -411,7 +431,7 @@
     "entry-3193",
     "entry-6319"
   ],
-  "completed_count": 141,
+  "completed_count": 161,
   "needs_context_count": 44,
-  "remaining_count": 20
+  "remaining_count": 0
 }
