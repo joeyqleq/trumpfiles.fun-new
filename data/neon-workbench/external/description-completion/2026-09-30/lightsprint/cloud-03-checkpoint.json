@@ -249,8 +249,8 @@
     "entry-5167",
     "entry-141"
   ],
-  "completed_count": 165,
-  "needs_context_count": 55,
+  "completed_count": 166,
+  "needs_context_count": 54,
   "remaining_count": 0,
   "status": "in_progress",
   "last_output": "outputs/cloud-03-batch-082.jsonl",
