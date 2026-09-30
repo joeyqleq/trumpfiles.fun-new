@@ -94,8 +94,8 @@
     "entry-178",
     "entry-321"
   ],
-  "completed_count": 75,
-  "needs_context_count": 15,
+  "completed_count": 77,
+  "needs_context_count": 13,
   "remaining_count": 0,
   "completed_record_ids": [
     "entry-2974",
@@ -123,6 +123,7 @@
     "entry-4802",
     "entry-5038",
     "entry-5197",
+    "entry-331",
     "entry-2890",
     "entry-3495",
     "entry-4668",
@@ -158,6 +159,7 @@
     "entry-2437",
     "entry-2969",
     "entry-3536",
+    "entry-2470",
     "entry-3060",
     "entry-5932",
     "entry-3248",
@@ -178,18 +180,24 @@
     "entry-3722",
     "entry-4622",
     "entry-5110",
-    "entry-331",
     "entry-283",
     "entry-6049",
     "entry-4631",
     "entry-5005",
     "entry-184",
-    "entry-2470",
     "entry-6394",
     "entry-4759",
     "entry-5312",
     "entry-7",
     "entry-178"
   ],
-  "status": "complete"
+  "status": "complete",
+  "revision_files": [
+    "outputs/cloud-13-revision-01.jsonl",
+    "outputs/cloud-13-revision-02.jsonl",
+    "outputs/cloud-13-revision-03.jsonl",
+    "outputs/cloud-13-revision-04.jsonl"
+  ],
+  "revision_count": 154,
+  "revised_record_count": 88
 }
