@@ -1,0 +1,46 @@
+{
+  "worker": "cloud-08",
+  "assigned_batches": [
+    7,
+    15,
+    23,
+    31,
+    39,
+    47,
+    55,
+    63,
+    71,
+    79,
+    87
+  ],
+  "processed_batches": [
+    7
+  ],
+  "completed": 18,
+  "needs_context": 2,
+  "remaining": 192,
+  "completed_ids": [
+    "entry-616",
+    "entry-640",
+    "entry-721",
+    "entry-771",
+    "entry-887",
+    "entry-1076",
+    "entry-1142",
+    "entry-1165",
+    "entry-376",
+    "entry-435",
+    "entry-488",
+    "entry-598",
+    "entry-656",
+    "entry-697",
+    "entry-786",
+    "entry-1123",
+    "entry-369",
+    "entry-406"
+  ],
+  "needs_context_ids": [
+    "entry-673",
+    "entry-96"
+  ]
+}
