@@ -16,7 +16,8 @@
   ],
   "assigned_count": 220,
   "finished_batches": [
-    "005"
+    "005",
+    "013"
   ],
   "completed_record_ids": [
     "entry-922",
@@ -34,16 +35,36 @@
     "entry-1164",
     "entry-404",
     "entry-626",
-    "entry-777"
+    "entry-777",
+    "entry-7068",
+    "entry-1553",
+    "entry-474",
+    "entry-7005",
+    "entry-7072",
+    "entry-7152",
+    "entry-394",
+    "expanded-20260908-save-sc-request",
+    "entry-1555",
+    "entry-2280"
   ],
   "needs_context_record_ids": [
     "entry-655",
     "entry-692",
     "entry-728",
-    "entry-756"
+    "entry-756",
+    "entry-7190",
+    "entry-1575",
+    "entry-1648",
+    "entry-1464",
+    "entry-1590",
+    "entry-1624",
+    "entry-7044",
+    "entry-1463",
+    "entry-1585",
+    "entry-1605"
   ],
-  "completed_count": 16,
-  "needs_context_count": 4,
-  "remaining_count": 200,
+  "completed_count": 26,
+  "needs_context_count": 14,
+  "remaining_count": 180,
   "status": "in_progress"
 }
