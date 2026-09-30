@@ -14,11 +14,12 @@
     87
   ],
   "processed_batches": [
-    7
+    7,
+    15
   ],
-  "completed": 18,
-  "needs_context": 2,
-  "remaining": 192,
+  "completed": 31,
+  "needs_context": 9,
+  "remaining": 172,
   "completed_ids": [
     "entry-616",
     "entry-640",
@@ -37,10 +38,30 @@
     "entry-786",
     "entry-1123",
     "entry-369",
-    "entry-406"
+    "entry-406",
+    "entry-7082",
+    "expanded-20260902-doj-welfare-reporting",
+    "expanded-20260925-whitehouse-ads-psa-defense",
+    "entry-1358",
+    "entry-1529",
+    "entry-1556",
+    "entry-2292",
+    "entry-5650",
+    "entry-7078",
+    "entry-1349",
+    "entry-1504",
+    "entry-1545",
+    "entry-2216"
   ],
   "needs_context_ids": [
     "entry-673",
-    "entry-96"
+    "entry-96",
+    "entry-1412",
+    "entry-1447",
+    "entry-1595",
+    "entry-7189",
+    "entry-1392",
+    "entry-1415",
+    "entry-1461"
   ]
 }
