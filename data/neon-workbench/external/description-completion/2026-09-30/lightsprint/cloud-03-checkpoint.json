@@ -257,8 +257,8 @@
   "accounted_count": 220,
   "followup_status": "in_progress",
   "followup_allowlist_count": 152,
-  "followup_handled_count": 120,
-  "followup_remaining_count": 32,
+  "followup_handled_count": 130,
+  "followup_remaining_count": 22,
   "followup_handled_ids": [
     "entry-1200",
     "entry-1249",
@@ -379,7 +379,17 @@
     "entry-580",
     "entry-5843",
     "entry-5917",
-    "entry-5945"
+    "entry-5945",
+    "entry-5960",
+    "entry-5980",
+    "entry-5991",
+    "entry-5995",
+    "entry-6160",
+    "entry-6168",
+    "entry-6199",
+    "entry-6210",
+    "entry-6225",
+    "entry-6231"
   ],
   "followup_revision_files": [
     "revisions/cloud-03-followup-001.jsonl",
@@ -399,7 +409,8 @@
     "revisions/cloud-03-followup-015.jsonl",
     "revisions/cloud-03-followup-016.jsonl",
     "revisions/cloud-03-followup-017.jsonl",
-    "revisions/cloud-03-followup-018.jsonl"
+    "revisions/cloud-03-followup-018.jsonl",
+    "revisions/cloud-03-followup-019.jsonl"
   ],
-  "followup_last_output": "revisions/cloud-03-followup-018.jsonl"
+  "followup_last_output": "revisions/cloud-03-followup-019.jsonl"
 }
