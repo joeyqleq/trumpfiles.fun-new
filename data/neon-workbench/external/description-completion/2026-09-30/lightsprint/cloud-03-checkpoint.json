@@ -15,7 +15,8 @@
     82
   ],
   "completed_batches": [
-    2
+    2,
+    10
   ],
   "completed_record_ids": [
     "entry-979",
@@ -37,11 +38,32 @@
     "entry-733",
     "entry-755",
     "entry-779",
-    "entry-815"
+    "entry-815",
+    "entry-1612",
+    "entry-1663",
+    "entry-1693",
+    "entry-1713",
+    "entry-1725",
+    "entry-386",
+    "entry-425",
+    "entry-475",
+    "entry-580",
+    "entry-612",
+    "entry-7055",
+    "entry-1635",
+    "entry-1685",
+    "entry-1744",
+    "entry-5410",
+    "entry-6980",
+    "entry-1615",
+    "entry-1643",
+    "entry-1672",
+    "entry-1706"
   ],
   "completed_count": 20,
-  "needs_context_count": 0,
-  "remaining_count": 200,
+  "needs_context_count": 20,
+  "remaining_count": 160,
   "status": "in_progress",
-  "last_output": "outputs/cloud-03-batch-002.jsonl"
+  "last_output": "outputs/cloud-03-batch-010.jsonl",
+  "accounted_count": 40
 }
