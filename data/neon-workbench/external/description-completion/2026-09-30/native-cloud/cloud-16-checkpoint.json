@@ -2,9 +2,9 @@
   "worker": 16,
   "input_file": "worker-16-input.jsonl",
   "assigned_count": 90,
-  "completed_count": 24,
-  "needs_context_count": 6,
-  "remaining_count": 60,
+  "completed_count": 33,
+  "needs_context_count": 7,
+  "remaining_count": 50,
   "completed_record_ids": [
     "entry-3213",
     "entry-3731",
@@ -29,17 +29,7 @@
     "entry-5053",
     "entry-5050",
     "entry-5171",
-    "entry-9"
-  ],
-  "needs_context_record_ids": [
-    "entry-2863",
-    "entry-2730",
-    "entry-143",
-    "entry-264",
-    "entry-205",
-    "entry-273"
-  ],
-  "remaining_record_ids": [
+    "entry-9",
     "entry-3156",
     "entry-3671",
     "entry-6860",
@@ -48,8 +38,18 @@
     "entry-3933",
     "entry-2649",
     "entry-3146",
-    "entry-3831",
-    "entry-2701",
+    "entry-3831"
+  ],
+  "needs_context_record_ids": [
+    "entry-2863",
+    "entry-2730",
+    "entry-143",
+    "entry-264",
+    "entry-205",
+    "entry-273",
+    "entry-2701"
+  ],
+  "remaining_record_ids": [
     "entry-3208",
     "entry-2596",
     "entry-3766",
@@ -101,5 +101,5 @@
     "entry-78",
     "entry-248"
   ],
-  "updated_batch": "cloud-16-021-030.jsonl"
+  "updated_batch": "cloud-16-031-040.jsonl"
 }
