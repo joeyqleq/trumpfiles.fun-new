@@ -149,17 +149,7 @@
     "entry-4046",
     "entry-5080",
     "entry-5042",
-    "entry-5182"
-  ],
-  "needs_context_ids": [
-    "entry-255",
-    "entry-257",
-    "entry-298"
-  ],
-  "completed": 57,
-  "needs_context": 3,
-  "remaining": 30,
-  "remaining_ids": [
+    "entry-5182",
     "entry-2551",
     "entry-3284",
     "entry-3789",
@@ -169,7 +159,17 @@
     "entry-4654",
     "entry-2732",
     "entry-3220",
-    "entry-4022",
+    "entry-4022"
+  ],
+  "needs_context_ids": [
+    "entry-255",
+    "entry-257",
+    "entry-298"
+  ],
+  "completed": 67,
+  "needs_context": 3,
+  "remaining": 20,
+  "remaining_ids": [
     "entry-2808",
     "entry-3304",
     "entry-2725",
@@ -197,6 +197,7 @@
     "cloud-09-batch-03.jsonl",
     "cloud-09-batch-04.jsonl",
     "cloud-09-batch-05.jsonl",
-    "cloud-09-batch-06.jsonl"
+    "cloud-09-batch-06.jsonl",
+    "cloud-09-batch-07.jsonl"
   ]
 }
