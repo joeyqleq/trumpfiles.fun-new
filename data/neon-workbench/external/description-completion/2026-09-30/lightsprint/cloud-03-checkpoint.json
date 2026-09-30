@@ -255,10 +255,10 @@
   "status": "completed",
   "last_output": "revisions/cloud-03-revisions-2026-09-30-editorial.jsonl",
   "accounted_count": 220,
-  "followup_status": "in_progress",
+  "followup_status": "completed",
   "followup_allowlist_count": 152,
-  "followup_handled_count": 150,
-  "followup_remaining_count": 2,
+  "followup_handled_count": 152,
+  "followup_remaining_count": 0,
   "followup_handled_ids": [
     "entry-1200",
     "entry-1249",
@@ -409,7 +409,9 @@
     "entry-7043",
     "entry-7174",
     "entry-7187",
-    "expanded-20260830-kharg-ai-post"
+    "expanded-20260830-kharg-ai-post",
+    "expanded-20260928-nathan-birthright-lawsuit",
+    "fresh-20260914-oge-trump-ptr"
   ],
   "followup_revision_files": [
     "revisions/cloud-03-followup-001.jsonl",
@@ -432,7 +434,8 @@
     "revisions/cloud-03-followup-018.jsonl",
     "revisions/cloud-03-followup-019.jsonl",
     "revisions/cloud-03-followup-020.jsonl",
-    "revisions/cloud-03-followup-021.jsonl"
+    "revisions/cloud-03-followup-021.jsonl",
+    "revisions/cloud-03-followup-022.jsonl"
   ],
-  "followup_last_output": "revisions/cloud-03-followup-021.jsonl"
+  "followup_last_output": "revisions/cloud-03-followup-022.jsonl"
 }
