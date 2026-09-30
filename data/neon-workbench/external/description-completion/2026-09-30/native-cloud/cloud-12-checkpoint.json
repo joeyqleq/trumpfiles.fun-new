@@ -2,8 +2,8 @@
   "worker": 12,
   "input_file": "worker-12-input.jsonl",
   "assigned_count": 90,
-  "completed_count": 71,
-  "needs_context_count": 19,
+  "completed_count": 72,
+  "needs_context_count": 18,
   "remaining_count": 0,
   "completed_ids": [
     "entry-2870",
@@ -76,7 +76,8 @@
     "entry-6698",
     "entry-6359",
     "entry-4823",
-    "entry-4714"
+    "entry-4714",
+    "entry-4256"
   ],
   "needs_context_ids": [
     "entry-295",
@@ -89,7 +90,6 @@
     "entry-2363",
     "entry-3997",
     "entry-6877",
-    "entry-4256",
     "entry-4603",
     "entry-1819",
     "entry-5151",
