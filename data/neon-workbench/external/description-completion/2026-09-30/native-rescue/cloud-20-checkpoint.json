@@ -52,12 +52,18 @@
     "entry-1147",
     "entry-1194",
     "entry-1256",
-    "entry-1317"
+    "entry-1317",
+    "entry-1378",
+    "entry-1407",
+    "entry-1487",
+    "entry-1541"
   ],
-  "needs_context_ids": [],
+  "needs_context_ids": [
+    "entry-1363"
+  ],
   "assigned_count": 45,
-  "completed_count": 5,
-  "needs_context_count": 0,
-  "remaining_count": 40,
-  "last_output": "cloud-20-rescue-001.jsonl"
+  "completed_count": 9,
+  "needs_context_count": 1,
+  "remaining_count": 35,
+  "last_output": "cloud-20-rescue-002.jsonl"
 }
