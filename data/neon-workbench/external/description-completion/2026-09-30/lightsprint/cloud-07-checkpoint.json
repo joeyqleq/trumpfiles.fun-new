@@ -1,6 +1,6 @@
 {
   "worker": "cloud-07",
-  "status": "in_progress",
+  "status": "complete",
   "assigned_count": 220,
   "assigned_record_ids": [
     "entry-796",
