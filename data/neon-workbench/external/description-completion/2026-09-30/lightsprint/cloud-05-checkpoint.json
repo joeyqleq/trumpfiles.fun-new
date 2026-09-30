@@ -24,11 +24,12 @@
     "036",
     "044",
     "052",
-    "060"
+    "060",
+    "068"
   ],
-  "completed_count": 119,
-  "needs_context_count": 41,
-  "remaining_count": 60,
+  "completed_count": 133,
+  "needs_context_count": 47,
+  "remaining_count": 40,
   "completed_record_ids": [
     "entry-723",
     "entry-781",
@@ -148,7 +149,21 @@
     "entry-3017",
     "entry-3030",
     "entry-3081",
-    "entry-3097"
+    "entry-3097",
+    "entry-2963",
+    "entry-3015",
+    "entry-3059",
+    "entry-3116",
+    "entry-3230",
+    "entry-3303",
+    "entry-3475",
+    "entry-3628",
+    "entry-4013",
+    "entry-4808",
+    "entry-6091",
+    "entry-6301",
+    "entry-6321",
+    "entry-6404"
   ],
   "needs_context_record_ids": [
     "entry-694",
@@ -191,29 +206,15 @@
     "entry-2880",
     "entry-2934",
     "entry-2945",
-    "entry-3117"
-  ],
-  "remaining_record_ids": [
+    "entry-3117",
     "entry-2794",
     "entry-2903",
-    "entry-2963",
-    "entry-3015",
-    "entry-3059",
-    "entry-3116",
-    "entry-3230",
-    "entry-3303",
-    "entry-3475",
-    "entry-3628",
     "entry-3976",
-    "entry-4013",
     "entry-4269",
-    "entry-4808",
     "entry-5471",
-    "entry-6091",
-    "entry-6273",
-    "entry-6301",
-    "entry-6321",
-    "entry-6404",
+    "entry-6273"
+  ],
+  "remaining_record_ids": [
     "entry-6171",
     "entry-6449",
     "entry-4037",
@@ -255,7 +256,7 @@
     "entry-46",
     "entry-258"
   ],
-  "terminal_record_count": 160,
+  "terminal_record_count": 180,
   "requested_model": "GPT-6 Luna low reasoning",
   "actual_model": "GPT-6 (model available in this session)"
 }
