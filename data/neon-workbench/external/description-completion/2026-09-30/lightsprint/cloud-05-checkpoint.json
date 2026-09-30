@@ -29,8 +29,8 @@
     "076",
     "084"
   ],
-  "completed_count": 145,
-  "needs_context_count": 75,
+  "completed_count": 148,
+  "needs_context_count": 72,
   "remaining_count": 0,
   "completed_record_ids": [
     "entry-781",
@@ -177,7 +177,10 @@
     "entry-17",
     "entry-5183",
     "entry-163",
-    "entry-46"
+    "entry-46",
+    "entry-4118",
+    "entry-4142",
+    "entry-4168"
   ],
   "needs_context_record_ids": [
     "entry-694",
@@ -214,17 +217,14 @@
     "entry-1374",
     "entry-1483",
     "entry-521",
-    "entry-4118",
     "entry-4442",
     "entry-1975",
     "entry-2045",
     "entry-2606",
     "entry-4049",
-    "entry-4168",
     "entry-2057",
     "entry-4044",
     "entry-4087",
-    "entry-4142",
     "entry-5571",
     "entry-1868",
     "entry-4116",
