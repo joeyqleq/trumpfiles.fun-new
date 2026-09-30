@@ -18,11 +18,12 @@
   "assigned_count": 220,
   "processed_batches": [
     "004",
-    "012"
+    "012",
+    "020"
   ],
-  "completed_count": 31,
-  "needs_context_count": 9,
-  "remaining_count": 180,
+  "completed_count": 47,
+  "needs_context_count": 13,
+  "remaining_count": 160,
   "completed_record_ids": [
     "entry-723",
     "entry-781",
@@ -54,7 +55,23 @@
     "entry-7161",
     "entry-1645",
     "entry-400",
-    "entry-562"
+    "entry-562",
+    "entry-2286",
+    "entry-523",
+    "entry-555",
+    "entry-567",
+    "entry-6509",
+    "entry-6800",
+    "fresh-20260929-irs-sanctions-stay",
+    "entry-1261",
+    "entry-2235",
+    "entry-2274",
+    "entry-2322",
+    "entry-521",
+    "entry-5646",
+    "entry-5686",
+    "entry-6731",
+    "entry-7022"
   ],
   "needs_context_record_ids": [
     "entry-694",
@@ -65,29 +82,13 @@
     "entry-1593",
     "entry-468",
     "entry-1578",
-    "entry-1588"
-  ],
-  "remaining_record_ids": [
-    "entry-2286",
-    "entry-523",
-    "entry-555",
-    "entry-567",
-    "entry-6509",
-    "entry-6800",
+    "entry-1588",
     "entry-7059",
-    "fresh-20260929-irs-sanctions-stay",
-    "entry-1261",
     "entry-1286",
     "entry-1374",
-    "entry-1483",
-    "entry-2235",
-    "entry-2274",
-    "entry-2322",
-    "entry-521",
-    "entry-5646",
-    "entry-5686",
-    "entry-6731",
-    "entry-7022",
+    "entry-1483"
+  ],
+  "remaining_record_ids": [
     "entry-5861",
     "entry-1184",
     "entry-1226",
@@ -249,7 +250,7 @@
     "entry-46",
     "entry-258"
   ],
-  "terminal_record_count": 40,
+  "terminal_record_count": 60,
   "requested_model": "GPT-6 Luna low reasoning",
   "actual_model": "GPT-6 (model available in this session)"
 }
