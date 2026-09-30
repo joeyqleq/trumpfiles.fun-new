@@ -4,9 +4,9 @@
   "input_file": "native-rescue/worker-19-input.jsonl",
   "total_assigned": 46,
   "counts": {
-    "completed": 38,
-    "needs_context": 1,
-    "remaining": 7
+    "completed": 44,
+    "needs_context": 2,
+    "remaining": 0
   },
   "completed_ids": [
     "entry-1102",
@@ -46,18 +46,17 @@
     "entry-5739",
     "entry-6021",
     "entry-629",
-    "entry-650"
-  ],
-  "needs_context_ids": [
-    "entry-1550"
-  ],
-  "remaining_ids": [
+    "entry-650",
     "entry-676",
     "entry-705",
     "entry-7090",
     "entry-7150",
     "entry-7191",
-    "entry-793",
+    "entry-793"
+  ],
+  "needs_context_ids": [
+    "entry-1550",
     "entry-843"
-  ]
+  ],
+  "remaining_ids": []
 }
