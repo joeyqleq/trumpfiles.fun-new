@@ -1,10 +1,10 @@
 {
   "assigned": 6944,
-  "saved_current_rows": 5664,
-  "missing": 1280,
+  "saved_current_rows": 6083,
+  "missing": 861,
   "draft_statuses": {
-    "complete": 4396,
-    "needs_context": 1268
+    "complete": 4558,
+    "needs_context": 1525
   },
   "published_to_neon": false,
   "scope": "Draft staging snapshot only. Status complete is a writing-worker result, not publication approval. Needs-context and editorial repairs remain."
