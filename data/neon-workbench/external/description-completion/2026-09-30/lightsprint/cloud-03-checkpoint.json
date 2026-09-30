@@ -257,8 +257,8 @@
   "accounted_count": 220,
   "followup_status": "in_progress",
   "followup_allowlist_count": 152,
-  "followup_handled_count": 140,
-  "followup_remaining_count": 12,
+  "followup_handled_count": 150,
+  "followup_remaining_count": 2,
   "followup_handled_ids": [
     "entry-1200",
     "entry-1249",
@@ -399,7 +399,17 @@
     "entry-6489",
     "entry-6532",
     "entry-6581",
-    "entry-6608"
+    "entry-6608",
+    "entry-6620",
+    "entry-6728",
+    "entry-6746",
+    "entry-6838",
+    "entry-6891",
+    "entry-6902",
+    "entry-7043",
+    "entry-7174",
+    "entry-7187",
+    "expanded-20260830-kharg-ai-post"
   ],
   "followup_revision_files": [
     "revisions/cloud-03-followup-001.jsonl",
@@ -421,7 +431,8 @@
     "revisions/cloud-03-followup-017.jsonl",
     "revisions/cloud-03-followup-018.jsonl",
     "revisions/cloud-03-followup-019.jsonl",
-    "revisions/cloud-03-followup-020.jsonl"
+    "revisions/cloud-03-followup-020.jsonl",
+    "revisions/cloud-03-followup-021.jsonl"
   ],
-  "followup_last_output": "revisions/cloud-03-followup-020.jsonl"
+  "followup_last_output": "revisions/cloud-03-followup-021.jsonl"
 }
