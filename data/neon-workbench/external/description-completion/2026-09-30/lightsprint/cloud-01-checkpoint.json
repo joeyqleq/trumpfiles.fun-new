@@ -235,7 +235,20 @@
     "entry-1078",
     "entry-1104",
     "entry-362",
-    "entry-424"
+    "entry-424",
+    "entry-2304",
+    "entry-5701",
+    "entry-7008",
+    "entry-7077",
+    "expanded-20260908-gsa-canada-exclusion",
+    "expanded-20260926-iran-proposal-rejection",
+    "entry-1313",
+    "entry-1422",
+    "entry-1430",
+    "entry-1531",
+    "entry-2282",
+    "entry-472",
+    "entry-7016"
   ],
   "needs_context_record_ids": [
     "entry-5661",
@@ -249,9 +262,16 @@
     "entry-1098",
     "entry-1133",
     "entry-1688",
-    "entry-4303"
+    "entry-4303",
+    "entry-444",
+    "entry-1365",
+    "entry-1462",
+    "entry-5430",
+    "entry-5699",
+    "entry-7193",
+    "expanded-20260916-cassidy-measles-hearing"
   ],
-  "completed_count": 13,
-  "needs_context_count": 12,
-  "remaining_count": 180
+  "completed_count": 26,
+  "needs_context_count": 19,
+  "remaining_count": 160
 }
