@@ -17,7 +17,8 @@
   "completed_batches": [
     2,
     10,
-    18
+    18,
+    26
   ],
   "completed_record_ids": [
     "entry-979",
@@ -79,12 +80,32 @@
     "entry-6746",
     "entry-7043",
     "expanded-20260830-kharg-ai-post",
-    "expanded-20260928-nathan-birthright-lawsuit"
+    "expanded-20260928-nathan-birthright-lawsuit",
+    "entry-5879",
+    "entry-6728",
+    "entry-1200",
+    "entry-1249",
+    "entry-2146",
+    "entry-2546",
+    "entry-5497",
+    "entry-6651",
+    "entry-7187",
+    "entry-1297",
+    "entry-2117",
+    "entry-2169",
+    "entry-494",
+    "entry-5836",
+    "entry-6620",
+    "entry-1321",
+    "entry-2148",
+    "entry-2177",
+    "entry-2496",
+    "entry-4435"
   ],
-  "completed_count": 22,
-  "needs_context_count": 38,
-  "remaining_count": 140,
+  "completed_count": 31,
+  "needs_context_count": 49,
+  "remaining_count": 120,
   "status": "in_progress",
-  "last_output": "outputs/cloud-03-batch-018.jsonl",
-  "accounted_count": 60
+  "last_output": "outputs/cloud-03-batch-026.jsonl",
+  "accounted_count": 80
 }
