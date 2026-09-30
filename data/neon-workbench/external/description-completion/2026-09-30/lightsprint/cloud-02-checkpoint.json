@@ -1,10 +1,10 @@
 {
   "worker": "cloud-02",
   "input_commit": "5cba74e191342f29a77fc999412c99be747a742",
-  "status": "in_progress",
-  "completed": 171,
+  "status": "complete",
+  "completed": 191,
   "needs_context": 29,
-  "remaining": 20,
+  "remaining": 0,
   "remaining_assigned_batches": [
     57,
     65,
@@ -21,7 +21,8 @@
     49,
     57,
     65,
-    73
+    73,
+    81
   ],
   "processed_record_ids": [
     "entry-764",
@@ -223,6 +224,26 @@
     "entry-6904",
     "entry-4585",
     "entry-4744",
-    "entry-4826"
+    "entry-4826",
+    "entry-5002",
+    "entry-4993",
+    "entry-5320",
+    "entry-5056",
+    "entry-5031",
+    "entry-4928",
+    "entry-2070",
+    "entry-5169",
+    "entry-5152",
+    "entry-5231",
+    "entry-5060",
+    "entry-5162",
+    "entry-4935",
+    "entry-5036",
+    "entry-4991",
+    "entry-5078",
+    "entry-4996",
+    "entry-5084",
+    "entry-5140",
+    "entry-5170"
   ]
 }
