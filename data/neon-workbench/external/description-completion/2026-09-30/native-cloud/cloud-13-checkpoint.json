@@ -94,9 +94,9 @@
     "entry-178",
     "entry-321"
   ],
-  "completed_count": 44,
-  "needs_context_count": 6,
-  "remaining_count": 40,
+  "completed_count": 51,
+  "needs_context_count": 9,
+  "remaining_count": 30,
   "completed_record_ids": [
     "entry-2974",
     "entry-3531",
@@ -141,7 +141,14 @@
     "entry-4655",
     "entry-4629",
     "entry-4264",
-    "entry-6081"
+    "entry-6081",
+    "entry-5258",
+    "entry-5270",
+    "entry-4786",
+    "entry-128",
+    "entry-157",
+    "entry-29",
+    "entry-247"
   ],
   "needs_context_record_ids": [
     "entry-3722",
@@ -149,7 +156,10 @@
     "entry-5110",
     "entry-331",
     "entry-283",
-    "entry-6049"
+    "entry-6049",
+    "entry-4631",
+    "entry-5005",
+    "entry-184"
   ],
   "status": "in_progress"
 }
