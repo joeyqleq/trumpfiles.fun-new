@@ -29,8 +29,8 @@
     "076",
     "084"
   ],
-  "completed_count": 146,
-  "needs_context_count": 74,
+  "completed_count": 145,
+  "needs_context_count": 75,
   "remaining_count": 0,
   "completed_record_ids": [
     "entry-781",
@@ -108,7 +108,6 @@
     "entry-2853",
     "entry-2878",
     "entry-2919",
-    "entry-2988",
     "entry-3005",
     "entry-3035",
     "entry-3076",
@@ -233,6 +232,7 @@
     "entry-2810",
     "entry-2868",
     "entry-2971",
+    "entry-2988",
     "entry-3041",
     "entry-3212",
     "entry-3336",
