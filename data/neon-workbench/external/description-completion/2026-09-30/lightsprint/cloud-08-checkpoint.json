@@ -16,11 +16,12 @@
   "processed_batches": [
     7,
     15,
-    23
+    23,
+    31
   ],
-  "completed": 43,
-  "needs_context": 17,
-  "remaining": 152,
+  "completed": 62,
+  "needs_context": 18,
+  "remaining": 132,
   "completed_ids": [
     "entry-616",
     "entry-640",
@@ -64,7 +65,26 @@
     "expanded-20260916-gastonia-rally-iran-claims",
     "entry-1326",
     "entry-1791",
-    "entry-502"
+    "entry-502",
+    "entry-4179",
+    "entry-4410",
+    "entry-4466",
+    "entry-5741",
+    "entry-6474",
+    "entry-6826",
+    "entry-1842",
+    "entry-1878",
+    "entry-1924",
+    "entry-1947",
+    "entry-2075",
+    "entry-2091",
+    "entry-2219",
+    "entry-4125",
+    "entry-4212",
+    "entry-4384",
+    "entry-6762",
+    "entry-1873",
+    "entry-1939"
   ],
   "needs_context_ids": [
     "entry-673",
@@ -83,6 +103,7 @@
     "entry-1236",
     "entry-1751",
     "entry-1766",
-    "entry-2231"
+    "entry-2231",
+    "entry-5574"
   ]
 }
