@@ -248,7 +248,20 @@
     "entry-1531",
     "entry-2282",
     "entry-472",
-    "entry-7016"
+    "entry-7016",
+    "entry-5671",
+    "entry-6462",
+    "entry-6772",
+    "entry-1270",
+    "entry-1759",
+    "entry-1792",
+    "entry-2182",
+    "entry-2222",
+    "entry-5498",
+    "entry-6617",
+    "entry-1758",
+    "entry-1794",
+    "entry-2178"
   ],
   "needs_context_record_ids": [
     "entry-5661",
@@ -269,9 +282,16 @@
     "entry-5430",
     "entry-5699",
     "entry-7193",
-    "expanded-20260916-cassidy-measles-hearing"
+    "expanded-20260916-cassidy-measles-hearing",
+    "entry-1747",
+    "entry-1770",
+    "entry-1780",
+    "entry-5726",
+    "entry-1205",
+    "entry-1243",
+    "entry-1779"
   ],
-  "completed_count": 26,
-  "needs_context_count": 19,
-  "remaining_count": 160
+  "completed_count": 39,
+  "needs_context_count": 26,
+  "remaining_count": 140
 }
