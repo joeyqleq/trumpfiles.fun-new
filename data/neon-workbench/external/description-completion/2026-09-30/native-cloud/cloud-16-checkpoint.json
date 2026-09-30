@@ -2,8 +2,8 @@
   "worker": 16,
   "input_file": "worker-16-input.jsonl",
   "assigned_count": 90,
-  "completed_count": 68,
-  "needs_context_count": 22,
+  "completed_count": 67,
+  "needs_context_count": 23,
   "remaining_count": 0,
   "completed_record_ids": [
     "entry-3213",
@@ -100,5 +100,5 @@
     "entry-248"
   ],
   "remaining_record_ids": [],
-  "updated_batch": "cloud-16-revision-007.jsonl"
+  "updated_batch": "cloud-16-revision-008.jsonl"
 }
