@@ -1,0 +1,49 @@
+{
+  "worker_id": "cloud-06",
+  "input_commit": "5cba74e191342f29a77fc999412c99be747a7421",
+  "assigned_batches": [
+    "005",
+    "013",
+    "021",
+    "029",
+    "037",
+    "045",
+    "053",
+    "061",
+    "069",
+    "077",
+    "085"
+  ],
+  "assigned_count": 220,
+  "finished_batches": [
+    "005"
+  ],
+  "completed_record_ids": [
+    "entry-922",
+    "entry-926",
+    "entry-930",
+    "entry-938",
+    "entry-943",
+    "entry-950",
+    "entry-960",
+    "entry-964",
+    "entry-971",
+    "entry-983",
+    "entry-1056",
+    "entry-1134",
+    "entry-1164",
+    "entry-404",
+    "entry-626",
+    "entry-777"
+  ],
+  "needs_context_record_ids": [
+    "entry-655",
+    "entry-692",
+    "entry-728",
+    "entry-756"
+  ],
+  "completed_count": 16,
+  "needs_context_count": 4,
+  "remaining_count": 200,
+  "status": "in_progress"
+}
