@@ -94,9 +94,9 @@
     "entry-178",
     "entry-321"
   ],
-  "completed_count": 25,
+  "completed_count": 35,
   "needs_context_count": 5,
-  "remaining_count": 60,
+  "remaining_count": 50,
   "completed_record_ids": [
     "entry-2974",
     "entry-3531",
@@ -122,7 +122,17 @@
     "entry-5007",
     "entry-4802",
     "entry-5038",
-    "entry-5197"
+    "entry-5197",
+    "entry-2890",
+    "entry-3495",
+    "entry-4668",
+    "entry-2646",
+    "entry-3185",
+    "entry-3695",
+    "entry-2407",
+    "entry-2961",
+    "entry-3496",
+    "entry-2430"
   ],
   "needs_context_record_ids": [
     "entry-3722",
