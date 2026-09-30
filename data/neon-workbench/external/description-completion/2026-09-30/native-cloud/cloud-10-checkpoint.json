@@ -111,8 +111,8 @@
   ],
   "needs_context_ids": [],
   "remaining_ids": [],
-  "reviewed_count": 30,
-  "revision_count": 30,
+  "reviewed_count": 40,
+  "revision_count": 40,
   "revision_file": "outputs/cloud-10-revision-001.jsonl",
   "revision_ids": [
     "entry-2708",
@@ -144,6 +144,16 @@
     "entry-5158",
     "entry-30",
     "entry-265",
-    "entry-197"
+    "entry-197",
+    "entry-2642",
+    "entry-3343",
+    "entry-3834",
+    "entry-2434",
+    "entry-2956",
+    "entry-3508",
+    "entry-5981",
+    "entry-2761",
+    "entry-3265",
+    "entry-4841"
   ]
 }
