@@ -10,7 +10,8 @@
     "outputs/cloud-10-006.jsonl",
     "outputs/cloud-10-007.jsonl",
     "outputs/cloud-10-008.jsonl",
-    "outputs/cloud-10-009.jsonl"
+    "outputs/cloud-10-009.jsonl",
+    "outputs/cloud-10-revision-001.jsonl"
   ],
   "assigned_count": 90,
   "completed_count": 90,
@@ -109,5 +110,20 @@
     "entry-218"
   ],
   "needs_context_ids": [],
-  "remaining_ids": []
+  "remaining_ids": [],
+  "reviewed_count": 10,
+  "revision_count": 10,
+  "revision_file": "outputs/cloud-10-revision-001.jsonl",
+  "revision_ids": [
+    "entry-2708",
+    "entry-3395",
+    "entry-3858",
+    "entry-2474",
+    "entry-2994",
+    "entry-3567",
+    "entry-6253",
+    "entry-2817",
+    "entry-3324",
+    "entry-5834"
+  ]
 }
