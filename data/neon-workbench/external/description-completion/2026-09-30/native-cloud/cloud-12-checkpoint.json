@@ -2,9 +2,9 @@
   "worker": 12,
   "input_file": "worker-12-input.jsonl",
   "assigned_count": 90,
-  "completed_count": 62,
-  "needs_context_count": 8,
-  "remaining_count": 20,
+  "completed_count": 70,
+  "needs_context_count": 10,
+  "remaining_count": 10,
   "completed_ids": [
     "entry-2870",
     "entry-3476",
@@ -67,7 +67,15 @@
     "entry-3663",
     "entry-2361",
     "entry-2915",
-    "entry-3426"
+    "entry-3426",
+    "entry-2998",
+    "entry-3064",
+    "entry-6496",
+    "entry-6361",
+    "entry-5331",
+    "entry-6698",
+    "entry-6359",
+    "entry-4823"
   ],
   "needs_context_ids": [
     "entry-295",
@@ -77,19 +85,11 @@
     "entry-34",
     "entry-333",
     "entry-2864",
-    "entry-2363"
+    "entry-2363",
+    "entry-3997",
+    "entry-6877"
   ],
   "remaining_ids": [
-    "entry-2998",
-    "entry-3997",
-    "entry-3064",
-    "entry-6496",
-    "entry-6361",
-    "entry-5331",
-    "entry-6877",
-    "entry-6698",
-    "entry-6359",
-    "entry-4823",
     "entry-4256",
     "entry-4714",
     "entry-4603",
