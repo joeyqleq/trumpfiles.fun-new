@@ -11,10 +11,7 @@
     "entry-2553",
     "entry-3086",
     "entry-3648",
-    "entry-2581"
-  ],
-  "needs_context": [],
-  "remaining": [
+    "entry-2581",
     "entry-3133",
     "entry-6461",
     "entry-3402",
@@ -24,7 +21,10 @@
     "entry-6112",
     "entry-6403",
     "entry-6044",
-    "entry-6066",
+    "entry-6066"
+  ],
+  "needs_context": [],
+  "remaining": [
     "entry-5901",
     "entry-4606",
     "entry-4617",
@@ -97,8 +97,8 @@
     "entry-327"
   ],
   "counts": {
-    "completed": 10,
+    "completed": 20,
     "needs_context": 0,
-    "remaining": 80
+    "remaining": 70
   }
 }
