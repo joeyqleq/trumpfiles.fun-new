@@ -17,11 +17,12 @@
     7,
     15,
     23,
-    31
+    31,
+    39
   ],
-  "completed": 62,
-  "needs_context": 18,
-  "remaining": 132,
+  "completed": 78,
+  "needs_context": 22,
+  "remaining": 112,
   "completed_ids": [
     "entry-616",
     "entry-640",
@@ -84,7 +85,23 @@
     "entry-4384",
     "entry-6762",
     "entry-1873",
-    "entry-1939"
+    "entry-1939",
+    "entry-4553",
+    "entry-5624",
+    "entry-6634",
+    "entry-1837",
+    "entry-5339",
+    "entry-5551",
+    "entry-5774",
+    "entry-6777",
+    "entry-4081",
+    "entry-4231",
+    "entry-4483",
+    "entry-4558",
+    "entry-5745",
+    "entry-3177",
+    "entry-4389",
+    "entry-4550"
   ],
   "needs_context_ids": [
     "entry-673",
@@ -104,6 +121,10 @@
     "entry-1751",
     "entry-1766",
     "entry-2231",
-    "entry-5574"
+    "entry-5574",
+    "entry-4149",
+    "entry-5541",
+    "entry-4204",
+    "entry-5605"
   ]
 }
