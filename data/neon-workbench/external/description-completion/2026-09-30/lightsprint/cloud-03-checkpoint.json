@@ -16,7 +16,8 @@
   ],
   "completed_batches": [
     2,
-    10
+    10,
+    18
   ],
   "completed_record_ids": [
     "entry-979",
@@ -58,12 +59,32 @@
     "entry-1615",
     "entry-1643",
     "entry-1672",
-    "entry-1706"
+    "entry-1706",
+    "entry-1536",
+    "entry-2251",
+    "entry-2308",
+    "entry-4325",
+    "entry-5658",
+    "entry-6838",
+    "entry-7174",
+    "fresh-20260914-oge-trump-ptr",
+    "entry-1288",
+    "entry-1355",
+    "entry-1397",
+    "entry-1501",
+    "entry-1520",
+    "entry-2259",
+    "entry-457",
+    "entry-527",
+    "entry-6746",
+    "entry-7043",
+    "expanded-20260830-kharg-ai-post",
+    "expanded-20260928-nathan-birthright-lawsuit"
   ],
-  "completed_count": 20,
-  "needs_context_count": 20,
-  "remaining_count": 160,
+  "completed_count": 22,
+  "needs_context_count": 38,
+  "remaining_count": 140,
   "status": "in_progress",
-  "last_output": "outputs/cloud-03-batch-010.jsonl",
-  "accounted_count": 40
+  "last_output": "outputs/cloud-03-batch-018.jsonl",
+  "accounted_count": 60
 }
