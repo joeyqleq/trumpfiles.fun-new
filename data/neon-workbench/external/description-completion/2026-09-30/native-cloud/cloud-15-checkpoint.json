@@ -191,5 +191,20 @@
   "completed": 80,
   "needs_context": 10,
   "remaining": 0,
-  "updated_at": "2026-09-30T10:13:08.481495+00:00"
+  "updated_at": "2026-09-30T10:31:14+00:00",
+  "revision_count": 90,
+  "revision_files": [
+    "cloud-15-revision-001-010.jsonl",
+    "cloud-15-revision-011-020.jsonl",
+    "cloud-15-revision-021-030.jsonl",
+    "cloud-15-revision-031-040.jsonl",
+    "cloud-15-revision-041-050.jsonl",
+    "cloud-15-revision-051-060.jsonl",
+    "cloud-15-revision-061-070.jsonl",
+    "cloud-15-revision-071-080.jsonl",
+    "cloud-15-revision-081-090.jsonl",
+    "cloud-15-revision-editorial-corrections.jsonl",
+    "cloud-15-revision-final-audit.jsonl",
+    "cloud-15-revision-z-final.jsonl"
+  ]
 }
