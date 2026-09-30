@@ -2,10 +2,11 @@
   "worker_number": 11,
   "input_file": "worker-11-input.jsonl",
   "assigned_count": 90,
-  "completed_count": 80,
-  "needs_context_count": 10,
+  "completed_count": 79,
+  "needs_context_count": 11,
   "remaining_count": 0,
   "completed_ids": [
+    "entry-70",
     "entry-109",
     "entry-111",
     "entry-2487",
@@ -46,7 +47,6 @@
     "entry-4650",
     "entry-4723",
     "entry-4755",
-    "entry-4765",
     "entry-4782",
     "entry-4941",
     "entry-4986",
@@ -84,10 +84,10 @@
     "entry-6390",
     "entry-6453",
     "entry-6491",
-    "entry-6590",
-    "entry-70"
+    "entry-6590"
   ],
   "needs_context_ids": [
+    "entry-5",
     "entry-130",
     "entry-177",
     "entry-229",
@@ -96,9 +96,9 @@
     "entry-253",
     "entry-279",
     "entry-4586",
-    "entry-4801",
-    "entry-5"
+    "entry-4765",
+    "entry-4801"
   ],
   "remaining_ids": [],
-  "last_batch_file": "cloud-11-batch-09.jsonl"
+  "last_batch_file": "cloud-11-revision-12.jsonl"
 }
