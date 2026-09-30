@@ -1,0 +1,46 @@
+{
+  "frozen_entries": 7143,
+  "new_candidates": 84,
+  "ready_without_writing": 0,
+  "held": 283,
+  "writing_or_tags_needed": 6944,
+  "lanes": {
+    "native": 1735,
+    "opencodex": 1736,
+    "chatgpt-web": 1736,
+    "lightsprint": 1737
+  },
+  "preserved_fields": {
+    "preserved_title": 6926,
+    "preserved_description_short": 6926,
+    "preserved_description_medium": 1732,
+    "preserved_description_long": 807
+  },
+  "limits": {
+    "short_characters": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ]
+  },
+  "native_model": "gpt-6-luna",
+  "native_reasoning": "low",
+  "native_workers": 3,
+  "notes": [
+    "The title supplies the short card layer unless a usable existing teaser exists; do not add an extra writing task.",
+    "Long existing text is retained in context even when it needs a shorter display variant.",
+    "Recovered rationale is context, not automatically an approved long description.",
+    "Held records preserve prior correction decisions; no contradictory rewrites.",
+    "AI scoring is a separate later task."
+  ],
+  "hold_reasons": {
+    "split_required": 32,
+    "soft_hide_candidate": 111,
+    "approved duplicate": 59,
+    "still_unresolved": 81
+  }
+}
