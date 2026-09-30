@@ -1,0 +1,3 @@
+# Context rescue after completed native worker 2
+
+Workers17–20 own only their explicit JSONL IDs, disjoint subsets of the183 current blocked native worker2 records. Native worker2 source pass has stopped; these are no longer assigned to an active local worker. Write native/outputs/cloud-NN-rescue-*.jsonl append-only revisions. Original native/input.jsonl remains authoritative; do not alter it or another worker. Root imports revisions into the original native lane. Read INSTRUCTIONS.md. Seek one usable credible source or retrieve blocked linked-source text to write missing useful context. Do not redo broad research, invent citations, pad prose, alter original populated fields, or publish production data.
