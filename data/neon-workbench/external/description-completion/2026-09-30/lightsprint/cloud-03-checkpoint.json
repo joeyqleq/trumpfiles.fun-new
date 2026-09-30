@@ -23,7 +23,8 @@
     42,
     50,
     58,
-    66
+    66,
+    74
   ],
   "completed_record_ids": [
     "entry-979",
@@ -205,12 +206,32 @@
     "entry-3322",
     "entry-3371",
     "entry-3481",
-    "entry-3555"
+    "entry-3555",
+    "entry-5273",
+    "entry-5917",
+    "entry-6199",
+    "entry-6225",
+    "entry-6532",
+    "entry-6902",
+    "entry-4602",
+    "entry-4704",
+    "entry-4828",
+    "entry-5276",
+    "entry-6231",
+    "entry-4609",
+    "entry-4703",
+    "entry-4824",
+    "entry-5960",
+    "entry-6168",
+    "entry-6265",
+    "entry-6891",
+    "entry-4813",
+    "entry-5263"
   ],
-  "completed_count": 119,
-  "needs_context_count": 61,
-  "remaining_count": 40,
+  "completed_count": 133,
+  "needs_context_count": 67,
+  "remaining_count": 20,
   "status": "in_progress",
-  "last_output": "outputs/cloud-03-batch-066.jsonl",
-  "accounted_count": 180
+  "last_output": "outputs/cloud-03-batch-074.jsonl",
+  "accounted_count": 200
 }
