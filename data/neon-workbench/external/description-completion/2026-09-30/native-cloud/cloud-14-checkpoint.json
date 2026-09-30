@@ -38,24 +38,24 @@
     "entry-3753",
     "entry-2513",
     "entry-3025",
-    "entry-3594"
-  ],
-  "needs_context": [
-    "entry-316",
-    "entry-6013",
-    "entry-2514"
-  ],
-  "remaining": [
+    "entry-3594",
     "entry-3095",
     "entry-6118",
     "entry-3301",
     "entry-2663",
     "entry-2747",
     "entry-6732",
-    "entry-5366",
     "entry-5955",
     "entry-4830",
-    "entry-4745",
+    "entry-4745"
+  ],
+  "needs_context": [
+    "entry-316",
+    "entry-6013",
+    "entry-2514",
+    "entry-5366"
+  ],
+  "remaining": [
     "entry-4672",
     "entry-4760",
     "entry-5268",
@@ -98,8 +98,8 @@
     "entry-327"
   ],
   "counts": {
-    "completed": 37,
-    "needs_context": 3,
-    "remaining": 50
+    "completed": 46,
+    "needs_context": 4,
+    "remaining": 40
   }
 }
