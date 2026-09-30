@@ -191,7 +191,7 @@
   "completed": 80,
   "needs_context": 10,
   "remaining": 0,
-  "updated_at": "2026-09-30T15:12:30+00:00",
+  "updated_at": "2026-09-30T15:12:55+00:00",
   "revision_count": 90,
   "revision_files": [
     "cloud-15-revision-001-010.jsonl",
@@ -207,6 +207,7 @@
     "cloud-15-revision-final-audit.jsonl",
     "cloud-15-revision-z-final.jsonl",
     "cloud-15-followup-001-005.jsonl",
-    "cloud-15-followup-001-005-revision2.jsonl"
+    "cloud-15-followup-001-005-revision2.jsonl",
+    "cloud-15-followup-006-010.jsonl"
   ]
 }
