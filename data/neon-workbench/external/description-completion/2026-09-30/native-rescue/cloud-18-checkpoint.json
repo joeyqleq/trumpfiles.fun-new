@@ -2,9 +2,9 @@
   "worker_id": 18,
   "source_branch": "codex/description-inputs-2026-09-30",
   "assigned_count": 46,
-  "completed_count": 31,
-  "needs_context_count": 9,
-  "remaining_count": 6,
+  "completed_count": 36,
+  "needs_context_count": 10,
+  "remaining_count": 0,
   "completed_ids": [
     "entry-1049",
     "entry-1125",
@@ -36,7 +36,12 @@
     "entry-5539",
     "entry-5725",
     "entry-592",
-    "entry-668"
+    "entry-668",
+    "entry-7027",
+    "entry-7088",
+    "entry-7145",
+    "entry-7185",
+    "entry-782"
   ],
   "needs_context_ids": [
     "entry-1213",
@@ -47,16 +52,10 @@
     "entry-5403",
     "entry-5433",
     "entry-6163",
-    "entry-6356"
-  ],
-  "remaining_ids": [
-    "entry-7027",
-    "entry-7088",
-    "entry-7145",
-    "entry-7185",
-    "entry-782",
+    "entry-6356",
     "entry-803"
   ],
+  "remaining_ids": [],
   "output_files": [
     "cloud-18-rescue-001.jsonl",
     "cloud-18-rescue-002.jsonl",
@@ -65,6 +64,7 @@
     "cloud-18-rescue-005.jsonl",
     "cloud-18-rescue-006.jsonl",
     "cloud-18-rescue-007.jsonl",
-    "cloud-18-rescue-008.jsonl"
+    "cloud-18-rescue-008.jsonl",
+    "cloud-18-rescue-009.jsonl"
   ]
 }
