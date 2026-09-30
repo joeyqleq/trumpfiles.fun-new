@@ -16,11 +16,12 @@
   ],
   "processed_batches": [
     "003",
-    "011"
+    "011",
+    "019"
   ],
-  "completed": 24,
-  "needs_context": 16,
-  "remaining": 180,
+  "completed": 34,
+  "needs_context": 26,
+  "remaining": 160,
   "record_ids": {
     "completed": [
       "entry-829",
@@ -46,7 +47,17 @@
       "entry-403",
       "entry-561",
       "entry-7114",
-      "entry-1082"
+      "entry-1082",
+      "entry-1347",
+      "entry-1403",
+      "entry-2246",
+      "entry-513",
+      "entry-5657",
+      "entry-6514",
+      "expanded-20260928-lee-memorial-bill-objection",
+      "fresh-20260915-tbilisi-launch",
+      "entry-1360",
+      "entry-2240"
     ],
     "needs_context": [
       "entry-852",
@@ -64,29 +75,19 @@
       "entry-7034",
       "entry-1577",
       "entry-1680",
-      "entry-7000"
-    ],
-    "remaining": [
-      "entry-1347",
-      "entry-1403",
+      "entry-7000",
       "entry-1456",
       "entry-1523",
-      "entry-2246",
       "entry-2310",
       "entry-4324",
-      "entry-513",
-      "entry-5657",
-      "entry-6514",
       "entry-7146",
-      "expanded-20260928-lee-memorial-bill-objection",
-      "fresh-20260915-tbilisi-launch",
       "entry-1262",
       "entry-1307",
       "entry-1340",
-      "entry-1360",
       "entry-1389",
-      "entry-1420",
-      "entry-2240",
+      "entry-1420"
+    ],
+    "remaining": [
       "entry-6416",
       "entry-1296",
       "entry-2100",
