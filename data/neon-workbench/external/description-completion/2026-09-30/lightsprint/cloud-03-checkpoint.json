@@ -249,10 +249,10 @@
     "entry-5167",
     "entry-141"
   ],
-  "completed_count": 173,
-  "needs_context_count": 47,
+  "completed_count": 128,
+  "needs_context_count": 92,
   "remaining_count": 0,
-  "status": "in_progress",
-  "last_output": "outputs/cloud-03-batch-082.jsonl",
+  "status": "completed",
+  "last_output": "revisions/cloud-03-revisions-2026-09-30-editorial.jsonl",
   "accounted_count": 220
 }
