@@ -18,11 +18,12 @@
     "003",
     "011",
     "019",
-    "027"
+    "027",
+    "035"
   ],
-  "completed": 48,
-  "needs_context": 32,
-  "remaining": 140,
+  "completed": 62,
+  "needs_context": 38,
+  "remaining": 120,
   "record_ids": {
     "completed": [
       "entry-829",
@@ -72,7 +73,21 @@
       "entry-1827",
       "entry-2196",
       "entry-4546",
-      "entry-5487"
+      "entry-5487",
+      "entry-1866",
+      "entry-1950",
+      "entry-4062",
+      "entry-4175",
+      "entry-4520",
+      "entry-5168",
+      "entry-5577",
+      "entry-5716",
+      "entry-1832",
+      "entry-4413",
+      "entry-4533",
+      "entry-5453",
+      "entry-5722",
+      "entry-6537"
     ],
     "needs_context": [
       "entry-852",
@@ -106,29 +121,15 @@
       "entry-1181",
       "entry-1298",
       "entry-2121",
-      "entry-1189"
-    ],
-    "remaining": [
-      "entry-1866",
-      "entry-1950",
+      "entry-1189",
       "entry-2049",
       "entry-2557",
-      "entry-4062",
-      "entry-4175",
-      "entry-4520",
-      "entry-5168",
       "entry-5402",
-      "entry-5577",
-      "entry-5716",
-      "entry-1832",
       "entry-2040",
       "entry-4057",
-      "entry-4089",
-      "entry-4413",
-      "entry-4533",
-      "entry-5453",
-      "entry-5722",
-      "entry-6537",
+      "entry-4089"
+    ],
+    "remaining": [
       "entry-5977",
       "entry-6138",
       "entry-6848",
