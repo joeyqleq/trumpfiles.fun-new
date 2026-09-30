@@ -2,8 +2,8 @@
   "worker": "cloud-02",
   "input_commit": "5cba74e191342f29a77fc999412c99be747a742",
   "status": "complete",
-  "completed": 188,
-  "needs_context": 32,
+  "completed": 191,
+  "needs_context": 29,
   "remaining": 0,
   "remaining_assigned_batches": [],
   "processed_batches": [
@@ -241,7 +241,7 @@
     "entry-5140",
     "entry-5170"
   ],
-  "revision_file": "outputs/cloud-02-revision-r2.jsonl",
+  "revision_file": "outputs/cloud-02-followup-04.jsonl",
   "revised_batches": [
     1,
     9,
@@ -254,5 +254,45 @@
     65,
     73,
     81
+  ],
+  "followup_files": [
+    "outputs/cloud-02-followup-01.jsonl",
+    "outputs/cloud-02-followup-02.jsonl",
+    "outputs/cloud-02-followup-03.jsonl",
+    "outputs/cloud-02-followup-04.jsonl"
+  ],
+  "followup_reviewed_record_ids": [
+    "entry-1183",
+    "entry-1359",
+    "entry-1371",
+    "entry-1377",
+    "entry-1419",
+    "entry-1445",
+    "entry-1518",
+    "entry-1546",
+    "entry-1676",
+    "entry-1728",
+    "entry-1768",
+    "entry-1788",
+    "entry-2441",
+    "entry-2586",
+    "entry-3440",
+    "entry-3596",
+    "entry-3617",
+    "entry-3664",
+    "entry-3985",
+    "entry-4045",
+    "entry-408",
+    "entry-4308",
+    "entry-456",
+    "entry-4781",
+    "entry-5516",
+    "entry-5521",
+    "entry-5593",
+    "entry-6139",
+    "entry-6164",
+    "entry-653",
+    "entry-6623",
+    "entry-804"
   ]
 }
