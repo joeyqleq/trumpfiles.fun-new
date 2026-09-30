@@ -74,18 +74,7 @@
     "entry-4024",
     "entry-5911",
     "entry-6183",
-    "entry-4898"
-  ],
-  "needs_context": [
-    "entry-316",
-    "entry-6013",
-    "entry-2514",
-    "entry-5366",
-    "entry-185",
-    "entry-6029",
-    "entry-5374"
-  ],
-  "remaining": [
+    "entry-4898",
     "entry-4773",
     "entry-6885",
     "entry-5313",
@@ -97,9 +86,19 @@
     "entry-305",
     "entry-327"
   ],
+  "needs_context": [
+    "entry-316",
+    "entry-6013",
+    "entry-2514",
+    "entry-5366",
+    "entry-185",
+    "entry-6029",
+    "entry-5374"
+  ],
+  "remaining": [],
   "counts": {
-    "completed": 73,
+    "completed": 83,
     "needs_context": 7,
-    "remaining": 10
+    "remaining": 0
   }
 }
