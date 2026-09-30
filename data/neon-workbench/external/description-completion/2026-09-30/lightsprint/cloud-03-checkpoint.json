@@ -436,7 +436,8 @@
     "revisions/cloud-03-followup-020.jsonl",
     "revisions/cloud-03-followup-021.jsonl",
     "revisions/cloud-03-followup-022.jsonl",
-    "revisions/cloud-03-followup-023.jsonl"
+    "revisions/cloud-03-followup-023.jsonl",
+    "revisions/cloud-03-followup-024.jsonl"
   ],
-  "followup_last_output": "revisions/cloud-03-followup-023.jsonl"
+  "followup_last_output": "revisions/cloud-03-followup-024.jsonl"
 }
