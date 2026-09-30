@@ -27,8 +27,8 @@
     "075",
     "083"
   ],
-  "completed": 170,
-  "needs_context": 50,
+  "completed": 174,
+  "needs_context": 46,
   "remaining": 0,
   "record_ids": {
     "completed": [
@@ -192,13 +192,17 @@
       "entry-6879",
       "entry-6921",
       "entry-6995",
+      "entry-7000",
+      "entry-7034",
       "entry-7114",
       "entry-829",
+      "entry-874",
       "entry-901",
       "entry-918",
       "entry-94",
       "entry-955",
       "entry-976",
+      "entry-986",
       "entry-999",
       "expanded-20260928-lee-memorial-bill-objection",
       "fresh-20260915-tbilisi-launch"
@@ -245,14 +249,10 @@
       "entry-6351",
       "entry-674",
       "entry-683",
-      "entry-7000",
-      "entry-7034",
       "entry-7146",
       "entry-852",
       "entry-867",
-      "entry-874",
       "entry-939",
-      "entry-986",
       "entry-994"
     ],
     "remaining": []
