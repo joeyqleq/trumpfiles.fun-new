@@ -1,0 +1,227 @@
+{
+  "parents": 32,
+  "unique_parent_ids": 32,
+  "children": 34,
+  "status_counts": {
+    "split_drafted": 14,
+    "unresolved": 18
+  },
+  "errors": [],
+  "word_counts": [
+    {
+      "child_record_id": "entry-5190-split-01",
+      "medium_words": 45,
+      "long_words": 156
+    },
+    {
+      "child_record_id": "entry-5190-split-02",
+      "medium_words": 47,
+      "long_words": 163
+    },
+    {
+      "child_record_id": "entry-5190-split-03",
+      "medium_words": 46,
+      "long_words": 160
+    },
+    {
+      "child_record_id": "entry-5191-split-01",
+      "medium_words": 52,
+      "long_words": 161
+    },
+    {
+      "child_record_id": "entry-5191-split-02",
+      "medium_words": 52,
+      "long_words": 156
+    },
+    {
+      "child_record_id": "entry-5207-split-01",
+      "medium_words": 51,
+      "long_words": 163
+    },
+    {
+      "child_record_id": "entry-5207-split-02",
+      "medium_words": 47,
+      "long_words": 158
+    },
+    {
+      "child_record_id": "entry-5213-split-01",
+      "medium_words": 47,
+      "long_words": 165
+    },
+    {
+      "child_record_id": "entry-5213-split-02",
+      "medium_words": 51,
+      "long_words": 168
+    },
+    {
+      "child_record_id": "entry-5224-split-01",
+      "medium_words": 58,
+      "long_words": 175
+    },
+    {
+      "child_record_id": "entry-5224-split-02",
+      "medium_words": 45,
+      "long_words": 167
+    },
+    {
+      "child_record_id": "entry-5237-split-01",
+      "medium_words": 56,
+      "long_words": 173
+    },
+    {
+      "child_record_id": "entry-5237-split-02",
+      "medium_words": 57,
+      "long_words": 155
+    },
+    {
+      "child_record_id": "entry-5237-split-03",
+      "medium_words": 54,
+      "long_words": 161
+    },
+    {
+      "child_record_id": "entry-5344-split-01",
+      "medium_words": 58,
+      "long_words": 161
+    },
+    {
+      "child_record_id": "entry-5344-split-02",
+      "medium_words": 59,
+      "long_words": 158
+    },
+    {
+      "child_record_id": "entry-5344-split-03",
+      "medium_words": 55,
+      "long_words": 155
+    },
+    {
+      "child_record_id": "entry-5512-split-01",
+      "medium_words": 54,
+      "long_words": 152
+    },
+    {
+      "child_record_id": "entry-5512-split-02",
+      "medium_words": 56,
+      "long_words": 155
+    },
+    {
+      "child_record_id": "entry-5752-split-01",
+      "medium_words": 50,
+      "long_words": 149
+    },
+    {
+      "child_record_id": "entry-5752-split-02",
+      "medium_words": 52,
+      "long_words": 167
+    },
+    {
+      "child_record_id": "entry-5754-split-01",
+      "medium_words": 45,
+      "long_words": 165
+    },
+    {
+      "child_record_id": "entry-5754-split-02",
+      "medium_words": 51,
+      "long_words": 166
+    },
+    {
+      "child_record_id": "entry-5754-split-03",
+      "medium_words": 53,
+      "long_words": 164
+    },
+    {
+      "child_record_id": "entry-5814-split-01",
+      "medium_words": 51,
+      "long_words": 151
+    },
+    {
+      "child_record_id": "entry-5814-split-02",
+      "medium_words": 48,
+      "long_words": 140
+    },
+    {
+      "child_record_id": "entry-5816-split-01",
+      "medium_words": 58,
+      "long_words": 150
+    },
+    {
+      "child_record_id": "entry-5816-split-02",
+      "medium_words": 51,
+      "long_words": 145
+    },
+    {
+      "child_record_id": "entry-5832-split-01",
+      "medium_words": 56,
+      "long_words": 156
+    },
+    {
+      "child_record_id": "entry-5832-split-02",
+      "medium_words": 64,
+      "long_words": 147
+    },
+    {
+      "child_record_id": "entry-6414-split-01",
+      "medium_words": 54,
+      "long_words": 156
+    },
+    {
+      "child_record_id": "entry-6414-split-02",
+      "medium_words": 51,
+      "long_words": 152
+    },
+    {
+      "child_record_id": "entry-6424-split-01",
+      "medium_words": 64,
+      "long_words": 167
+    },
+    {
+      "child_record_id": "entry-6428-split-01",
+      "medium_words": 48,
+      "long_words": 154
+    }
+  ],
+  "assigned_parent_ids": [
+    "entry-4239",
+    "entry-4240",
+    "entry-4407",
+    "entry-4457",
+    "entry-4577",
+    "entry-4696",
+    "entry-4708",
+    "entry-4739",
+    "entry-4753",
+    "entry-4906",
+    "entry-5161",
+    "entry-5189",
+    "entry-5190",
+    "entry-5191",
+    "entry-5207",
+    "entry-5213",
+    "entry-5224",
+    "entry-5237",
+    "entry-5344",
+    "entry-5512",
+    "entry-5752",
+    "entry-5754",
+    "entry-5814",
+    "entry-5816",
+    "entry-5832",
+    "entry-6414",
+    "entry-6424",
+    "entry-6428",
+    "entry-6443",
+    "entry-6456",
+    "entry-6479",
+    "entry-6749"
+  ],
+  "remaining_parent_ids": [],
+  "missing_parent_ids": [],
+  "duplicate_terminal_parent_ids": [],
+  "final_blob_sha": "86b49715e97a4b11052f05440445202ebbe737bc",
+  "source_held_blob_sha": "e4a4a9d27f9a031bf5b8b25304bb23de1c8f0379",
+  "source_held_unchanged": true,
+  "final_stream": "final-terminal-results.jsonl",
+  "draft_status": "provisional, not canonical; child IDs not allocated",
+  "method": "Read back final GitHub blob; exact parent coverage, original numbers, provisional child IDs, all required child fields, whitespace word counts, date formats, source URL subset and checkpoints validated against original held packets.",
+  "provenance_notes": "Worker-05 original children plus additive review mappings; root corrected a Reuters-title rally attribution and repetitive medium endings; removed later July attribution to March URL.",
+  "superseded_history": "All per-batch original/review files are history; final stream is the only current 32-parent set. Batch04 initial execution-error fallback is excluded."
+}
