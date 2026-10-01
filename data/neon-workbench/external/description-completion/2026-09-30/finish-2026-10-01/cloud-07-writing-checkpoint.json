@@ -2,10 +2,10 @@
   "worker": "07",
   "phase": "writing",
   "assigned_count": 158,
-  "processed_count": 155,
-  "complete_count": 42,
-  "needs_context_count": 113,
-  "remaining_count": 3,
+  "processed_count": 158,
+  "complete_count": 44,
+  "needs_context_count": 114,
+  "remaining_count": 0,
   "completed_ids": [
     "entry-1012",
     "entry-1036",
@@ -48,7 +48,9 @@
     "entry-861",
     "entry-897",
     "entry-914",
-    "entry-935"
+    "entry-935",
+    "entry-958",
+    "expanded-20260830-kharg-ai-post"
   ],
   "needs_context_ids": [
     "entry-1073",
@@ -163,6 +165,7 @@
     "entry-738",
     "entry-819",
     "entry-835",
-    "entry-879"
+    "entry-879",
+    "entry-980"
   ]
 }
