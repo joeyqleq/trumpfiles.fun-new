@@ -3,8 +3,8 @@
   "phase": "writing",
   "assigned_total": 158,
   "saved_total": 85,
-  "completed": 13,
-  "needs_context": 72,
+  "completed": 14,
+  "needs_context": 71,
   "remaining": 73,
   "saved_record_ids": [
     "entry-1008",
@@ -93,7 +93,7 @@
     "entry-4166",
     "entry-4204"
   ],
-  "last_output": "cloud-05-finish-019.jsonl",
+  "last_output": "cloud-05-finish-020.jsonl",
   "supersedes": {
     "entry-1233": "cloud-05-finish-002.jsonl"
   },
