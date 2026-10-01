@@ -303,15 +303,26 @@
     "entry-4223",
     "entry-4234",
     "entry-4247",
-    "entry-4258"
+    "entry-4258",
+    "entry-4269",
+    "entry-428",
+    "entry-4291",
+    "entry-4301",
+    "entry-4312",
+    "entry-433",
+    "entry-4340",
+    "entry-4351",
+    "entry-4363",
+    "entry-4374"
   ],
-  "corrections_appended": 5,
+  "corrections_appended": 6,
   "correction_record_ids": [
     "entry-2399",
     "entry-3132",
     "entry-3424",
     "entry-3770",
-    "entry-417"
+    "entry-417",
+    "entry-428"
   ],
-  "next_unchecked_index": 300
+  "next_unchecked_index": 310
 }
