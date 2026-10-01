@@ -3,8 +3,8 @@
   "assignment_file": "worker-08-score-input.jsonl",
   "version": "impact-v2-consistency-review",
   "assigned_count": 579,
-  "checked_count": 120,
-  "remaining_count": 459,
+  "checked_count": 130,
+  "remaining_count": 449,
   "checked_ids": [
     "entry-1004",
     "entry-1015",
@@ -125,16 +125,27 @@
     "entry-2280",
     "entry-2291",
     "entry-2301",
-    "entry-2312"
+    "entry-2312",
+    "entry-2323",
+    "entry-2334",
+    "entry-2345",
+    "entry-2356",
+    "entry-2367",
+    "entry-2378",
+    "entry-2389",
+    "entry-24",
+    "entry-241",
+    "entry-2420"
   ],
-  "correction_count": 21,
+  "correction_count": 24,
   "correction_files": [
     "score-outputs/cloud-08-impact-review-001.jsonl",
     "score-outputs/cloud-08-impact-review-002.jsonl",
     "score-outputs/cloud-08-impact-review-003.jsonl",
     "score-outputs/cloud-08-impact-review-004.jsonl",
     "score-outputs/cloud-08-impact-review-005.jsonl",
-    "score-outputs/cloud-08-impact-review-006.jsonl"
+    "score-outputs/cloud-08-impact-review-006.jsonl",
+    "score-outputs/cloud-08-impact-review-007.jsonl"
   ],
   "checked_batches": [
     1,
@@ -160,6 +171,8 @@
     21,
     22,
     23,
-    24
+    24,
+    25,
+    26
   ]
 }
