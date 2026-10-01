@@ -1100,7 +1100,14 @@
     "entry-923",
     "entry-945",
     "entry-956",
-    "entry-967"
+    "entry-967",
+    "expanded-20260820-bessent-regime-collapse",
+    "expanded-20260831-ballroom-sc-stay",
+    "expanded-20260910-h1b-grace-proposal",
+    "expanded-20260917-trump-axios-annihilate",
+    "expanded-20260924-press-arrival-exclusion",
+    "expanded-20260928-lee-memorial-bill-objection",
+    "fresh-20260903-golf-retreat-offer"
   ],
   "deferred_ids": [
     "entry-1364",
@@ -1152,21 +1159,13 @@
     "entry-859",
     "entry-880",
     "entry-934",
-    "entry-978"
+    "entry-978",
+    "entry-989"
   ],
-  "remaining_ids": [
-    "entry-989",
-    "expanded-20260820-bessent-regime-collapse",
-    "expanded-20260831-ballroom-sc-stay",
-    "expanded-20260910-h1b-grace-proposal",
-    "expanded-20260917-trump-axios-annihilate",
-    "expanded-20260924-press-arrival-exclusion",
-    "expanded-20260928-lee-memorial-bill-objection",
-    "fresh-20260903-golf-retreat-offer"
-  ],
-  "scored": 520,
-  "deferred": 50,
-  "remaining": 8,
+  "remaining_ids": [],
+  "scored": 527,
+  "deferred": 51,
+  "remaining": 0,
   "batch_files": [
     "cloud-09-impact-01.jsonl",
     "cloud-09-impact-02.jsonl",
@@ -1225,6 +1224,7 @@
     "cloud-09-impact-55.jsonl",
     "cloud-09-impact-56.jsonl",
     "cloud-09-impact-57.jsonl",
-    "cloud-09-impact-58.jsonl"
+    "cloud-09-impact-58.jsonl",
+    "cloud-09-impact-59.jsonl"
   ]
 }
