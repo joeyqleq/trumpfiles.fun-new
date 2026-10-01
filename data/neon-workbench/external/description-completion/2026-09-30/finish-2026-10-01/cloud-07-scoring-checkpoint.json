@@ -3,10 +3,10 @@
   "phase": "scoring",
   "version": "impact-v2",
   "assigned_count": 579,
-  "processed_count": 411,
-  "scored_count": 379,
-  "deferred_count": 32,
-  "remaining_count": 168,
+  "processed_count": 419,
+  "scored_count": 386,
+  "deferred_count": 33,
+  "remaining_count": 160,
   "completed_ids": [
     "entry-1003",
     "entry-1014",
@@ -386,7 +386,14 @@
     "entry-5470",
     "entry-5482",
     "entry-5493",
-    "entry-5503"
+    "entry-5503",
+    "entry-5515",
+    "entry-5526",
+    "entry-5537",
+    "entry-5548",
+    "entry-557",
+    "entry-5580",
+    "entry-5591"
   ],
   "deferred_ids": [
     "entry-1179",
@@ -420,6 +427,7 @@
     "entry-4312",
     "entry-433",
     "entry-4529",
-    "entry-5449"
+    "entry-5449",
+    "entry-5559"
   ]
 }
