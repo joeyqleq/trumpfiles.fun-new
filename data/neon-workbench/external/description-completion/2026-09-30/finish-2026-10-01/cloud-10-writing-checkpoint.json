@@ -22,6 +22,22 @@
         "entry-1131",
         "entry-1166"
       ]
+    },
+    {
+      "file": "outputs/cloud-10-finish-002.jsonl",
+      "record_count": 2,
+      "record_ids": [
+        "entry-1080",
+        "entry-1166"
+      ],
+      "supersedes": "outputs/cloud-10-finish-001.jsonl for these IDs"
     }
-  ]
+  ],
+  "latest_versions": {
+    "entry-1019": "outputs/cloud-10-finish-001.jsonl",
+    "entry-1042": "outputs/cloud-10-finish-001.jsonl",
+    "entry-1080": "outputs/cloud-10-finish-002.jsonl",
+    "entry-1131": "outputs/cloud-10-finish-001.jsonl",
+    "entry-1166": "outputs/cloud-10-finish-002.jsonl"
+  }
 }
