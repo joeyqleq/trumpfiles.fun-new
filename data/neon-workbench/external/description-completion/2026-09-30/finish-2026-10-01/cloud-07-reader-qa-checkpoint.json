@@ -71,10 +71,20 @@
     "entry-1736",
     "entry-1750",
     "entry-1761",
-    "entry-1772"
+    "entry-1772",
+    "entry-1783",
+    "entry-1794",
+    "entry-1804",
+    "entry-1815",
+    "entry-1826",
+    "entry-1837",
+    "entry-1848",
+    "entry-1859",
+    "entry-187",
+    "entry-1880"
   ],
-  "checked_count": 70,
-  "pass_count": 17,
-  "finding_count": 53,
-  "next_input_index": 70
+  "checked_count": 80,
+  "pass_count": 21,
+  "finding_count": 59,
+  "next_input_index": 80
 }
