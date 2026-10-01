@@ -4,7 +4,7 @@
   "assigned_count": 578,
   "checked_count": 550,
   "remaining_count": 28,
-  "correction_count": 131,
+  "correction_count": 132,
   "checked_ids": [
     "entry-1008",
     "entry-1019",
@@ -603,6 +603,7 @@
     "score-outputs/cloud-12-impact-review-044.jsonl",
     "score-outputs/cloud-12-impact-review-045.jsonl",
     "score-outputs/cloud-12-impact-review-046.jsonl",
-    "score-outputs/cloud-12-impact-review-047.jsonl"
+    "score-outputs/cloud-12-impact-review-047.jsonl",
+    "score-outputs/cloud-12-impact-review-048.jsonl"
   ]
 }
