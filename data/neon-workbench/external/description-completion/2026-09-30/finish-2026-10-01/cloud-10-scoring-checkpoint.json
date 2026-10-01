@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 94,
+  "scored_count": 104,
   "deferred_count": 16,
-  "remaining_count": 468,
+  "remaining_count": 458,
   "processed_ids": [
     "entry-1006",
     "entry-1017",
@@ -114,7 +114,17 @@
     "entry-2174",
     "entry-2185",
     "entry-2196",
-    "entry-2206"
+    "entry-2206",
+    "entry-2217",
+    "entry-2228",
+    "entry-2239",
+    "entry-225",
+    "entry-2260",
+    "entry-2271",
+    "entry-2282",
+    "entry-2293",
+    "entry-2303",
+    "entry-2314"
   ],
   "batches": [
     {
@@ -310,6 +320,22 @@
         "entry-2196",
         "entry-2206"
       ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-015.jsonl",
+      "record_count": 10,
+      "record_ids": [
+        "entry-2217",
+        "entry-2228",
+        "entry-2239",
+        "entry-225",
+        "entry-2260",
+        "entry-2271",
+        "entry-2282",
+        "entry-2293",
+        "entry-2303",
+        "entry-2314"
+      ]
     }
   ],
   "latest_versions": {
@@ -422,7 +448,17 @@
     "entry-2174": "score-outputs/cloud-10-impact-014.jsonl",
     "entry-2185": "score-outputs/cloud-10-impact-014.jsonl",
     "entry-2196": "score-outputs/cloud-10-impact-014.jsonl",
-    "entry-2206": "score-outputs/cloud-10-impact-014.jsonl"
+    "entry-2206": "score-outputs/cloud-10-impact-014.jsonl",
+    "entry-2217": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2228": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2239": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-225": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2260": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2271": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2282": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2293": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2303": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2314": "score-outputs/cloud-10-impact-015.jsonl"
   },
   "status_by_id": {
     "entry-1006": "scored",
@@ -534,6 +570,16 @@
     "entry-2174": "scored",
     "entry-2185": "scored",
     "entry-2196": "scored",
-    "entry-2206": "scored"
+    "entry-2206": "scored",
+    "entry-2217": "scored",
+    "entry-2228": "scored",
+    "entry-2239": "scored",
+    "entry-225": "scored",
+    "entry-2260": "scored",
+    "entry-2271": "scored",
+    "entry-2282": "scored",
+    "entry-2293": "scored",
+    "entry-2303": "scored",
+    "entry-2314": "scored"
   }
 }
