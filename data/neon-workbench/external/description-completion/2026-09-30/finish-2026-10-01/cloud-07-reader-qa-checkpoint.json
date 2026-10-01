@@ -461,10 +461,20 @@
     "entry-6026",
     "entry-6037",
     "entry-6048",
-    "entry-6059"
+    "entry-6059",
+    "entry-607",
+    "entry-6080",
+    "entry-6091",
+    "entry-6101",
+    "entry-6112",
+    "entry-6123",
+    "entry-6135",
+    "entry-6147",
+    "entry-6158",
+    "entry-6169"
   ],
-  "checked_count": 460,
-  "pass_count": 159,
-  "finding_count": 301,
-  "next_input_index": 460
+  "checked_count": 470,
+  "pass_count": 163,
+  "finding_count": 307,
+  "next_input_index": 470
 }
