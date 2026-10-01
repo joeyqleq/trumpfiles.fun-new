@@ -2,10 +2,10 @@
   "worker": 12,
   "assignment": "repair",
   "assigned_count": 158,
-  "processed_count": 114,
-  "complete_count": 40,
-  "needs_context_count": 74,
-  "remaining_count": 44,
+  "processed_count": 122,
+  "complete_count": 44,
+  "needs_context_count": 78,
+  "remaining_count": 36,
   "completed_ids": [
     "entry-1022",
     "entry-1048",
@@ -46,7 +46,11 @@
     "entry-4289",
     "entry-451",
     "entry-477",
-    "entry-495"
+    "entry-495",
+    "entry-5656",
+    "entry-5697",
+    "entry-5843",
+    "entry-5937"
   ],
   "needs_context_ids": [
     "entry-1174",
@@ -122,17 +126,13 @@
     "entry-5429",
     "entry-5462",
     "entry-5507",
-    "entry-5531"
-  ],
-  "remaining_ids": [
+    "entry-5531",
     "entry-5565",
     "entry-5599",
-    "entry-5656",
-    "entry-5697",
     "entry-5772",
-    "entry-5843",
-    "entry-5937",
-    "entry-5985",
+    "entry-5985"
+  ],
+  "remaining_ids": [
     "entry-6043",
     "entry-6127",
     "entry-6155",
@@ -186,6 +186,7 @@
     "outputs/cloud-12-finish-013.jsonl",
     "outputs/cloud-12-finish-014.jsonl",
     "outputs/cloud-12-finish-015.jsonl",
-    "outputs/cloud-12-finish-016.jsonl"
+    "outputs/cloud-12-finish-016.jsonl",
+    "outputs/cloud-12-finish-017.jsonl"
   ]
 }
