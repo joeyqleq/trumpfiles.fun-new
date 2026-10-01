@@ -1,0 +1,39 @@
+{
+  "assigned": 120,
+  "completed": 120,
+  "unique_record_ids": 120,
+  "missing": 0,
+  "duplicates": 0,
+  "worker_counts": {
+    "worker-01-03": 30,
+    "worker-04-06": 30,
+    "worker-07-09": 30,
+    "worker-10-12": 30
+  },
+  "authoritative_qa_files": [
+    "worker-01-03/reviewed-results.jsonl",
+    "worker-04-06/reviewed-results.jsonl",
+    "worker-07-09/reviewed-results.jsonl",
+    "worker-10-12/reviewed-results.jsonl"
+  ],
+  "historical_files": "root results.jsonl and worker results.jsonl are superseded audit history; excluded from final coverage and totals",
+  "statuses": {
+    "scored": 120
+  },
+  "confidence_counts": {
+    "medium": 101,
+    "low": 19
+  },
+  "weights": {
+    "harm": "0.30",
+    "reach": "0.20",
+    "institutions": "0.15",
+    "procedural_abuse": "0.15",
+    "self_dealing": "0.10",
+    "persistence": "0.10"
+  },
+  "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+  "rounding": "Decimal ROUND_HALF_UP to two decimals; deferred total null",
+  "input_hashes_match": true,
+  "noncanonical": true
+}
