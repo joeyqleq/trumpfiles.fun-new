@@ -1164,9 +1164,9 @@
     "expanded-20260928-lee-memorial-bill-objection",
     "fresh-20260903-golf-retreat-offer"
   ],
-  "scored": 54,
-  "deferred": 16,
-  "remaining": 508,
+  "scored": 231,
+  "deferred": 29,
+  "remaining": 318,
   "batch_files": [
     "cloud-09-impact-01.jsonl",
     "cloud-09-impact-02.jsonl",
@@ -1175,6 +1175,25 @@
     "cloud-09-impact-05.jsonl",
     "cloud-09-impact-06.jsonl",
     "cloud-09-impact-07.jsonl",
-    "cloud-09-impact-08.jsonl"
+    "cloud-09-impact-08.jsonl",
+    "cloud-09-impact-09.jsonl",
+    "cloud-09-impact-10.jsonl",
+    "cloud-09-impact-11.jsonl",
+    "cloud-09-impact-12.jsonl",
+    "cloud-09-impact-13.jsonl",
+    "cloud-09-impact-14.jsonl",
+    "cloud-09-impact-15.jsonl",
+    "cloud-09-impact-16.jsonl",
+    "cloud-09-impact-17.jsonl",
+    "cloud-09-impact-18.jsonl",
+    "cloud-09-impact-19.jsonl",
+    "cloud-09-impact-20.jsonl",
+    "cloud-09-impact-21.jsonl",
+    "cloud-09-impact-22.jsonl",
+    "cloud-09-impact-23.jsonl",
+    "cloud-09-impact-24.jsonl",
+    "cloud-09-impact-25.jsonl",
+    "cloud-09-impact-26.jsonl",
+    "cloud-09-impact-27.jsonl"
   ]
 }
