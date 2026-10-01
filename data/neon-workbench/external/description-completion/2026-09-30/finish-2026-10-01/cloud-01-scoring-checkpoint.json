@@ -4,9 +4,9 @@
   "rubric": "RUBRIC.md",
   "version": "impact-v2",
   "assigned_count": 579,
-  "scored_count": 499,
+  "scored_count": 508,
   "deferred_count": 71,
-  "remaining_count": 9,
+  "remaining_count": 0,
   "batch_files": [
     "score-outputs/cloud-01-impact-001.jsonl",
     "score-outputs/cloud-01-impact-002.jsonl",
@@ -78,7 +78,8 @@
     "score-outputs/cloud-01-impact-068.jsonl",
     "score-outputs/cloud-01-impact-069.jsonl",
     "score-outputs/cloud-01-impact-070.jsonl",
-    "score-outputs/cloud-01-impact-071.jsonl"
+    "score-outputs/cloud-01-impact-071.jsonl",
+    "score-outputs/cloud-01-impact-072.jsonl"
   ],
   "scored_record_ids": [
     "entry-1",
@@ -579,7 +580,16 @@
     "entry-862",
     "entry-873",
     "entry-884",
-    "entry-96"
+    "entry-96",
+    "entry-981",
+    "entry-992",
+    "expanded-20260824-economic-outcast",
+    "expanded-20260902-doj-welfare-reporting",
+    "expanded-20260914-epa-power-repeal",
+    "expanded-20260921-garces-detention-conference",
+    "expanded-20260925-public-citizen-first-ad-complaint",
+    "expanded-20260929-murray-murphy-ad-letter",
+    "fresh-20260915-tbilisi-launch"
   ],
   "deferred_record_ids": [
     "entry-1009",
@@ -654,15 +664,5 @@
     "entry-949",
     "entry-970"
   ],
-  "remaining_record_ids": [
-    "entry-981",
-    "entry-992",
-    "expanded-20260824-economic-outcast",
-    "expanded-20260902-doj-welfare-reporting",
-    "expanded-20260914-epa-power-repeal",
-    "expanded-20260921-garces-detention-conference",
-    "expanded-20260925-public-citizen-first-ad-complaint",
-    "expanded-20260929-murray-murphy-ad-letter",
-    "fresh-20260915-tbilisi-launch"
-  ]
+  "remaining_record_ids": []
 }
