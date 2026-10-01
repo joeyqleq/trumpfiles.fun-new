@@ -1,0 +1,16 @@
+{
+  "worker": "07",
+  "phase": "writing",
+  "assigned_count": 158,
+  "processed_count": 5,
+  "complete_count": 4,
+  "needs_context_count": 1,
+  "remaining_count": 153,
+  "completed_ids": [
+    "entry-1012",
+    "entry-1036",
+    "entry-1073",
+    "entry-1120",
+    "entry-1156"
+  ]
+}
