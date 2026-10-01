@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 29,
+  "scored_count": 39,
   "deferred_count": 1,
-  "remaining_count": 548,
+  "remaining_count": 538,
   "processed_ids": [
     "entry-1006",
     "entry-1017",
@@ -34,7 +34,17 @@
     "entry-129",
     "entry-130",
     "entry-1310",
-    "entry-1321"
+    "entry-1321",
+    "entry-1332",
+    "entry-1343",
+    "entry-1354",
+    "entry-1365",
+    "entry-1376",
+    "entry-1387",
+    "entry-1398",
+    "entry-1408",
+    "entry-1419",
+    "entry-143"
   ],
   "batches": [
     {
@@ -84,6 +94,22 @@
         "entry-1310",
         "entry-1321"
       ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-004.jsonl",
+      "record_count": 10,
+      "record_ids": [
+        "entry-1332",
+        "entry-1343",
+        "entry-1354",
+        "entry-1365",
+        "entry-1376",
+        "entry-1387",
+        "entry-1398",
+        "entry-1408",
+        "entry-1419",
+        "entry-143"
+      ]
     }
   ],
   "latest_versions": {
@@ -116,7 +142,17 @@
     "entry-129": "score-outputs/cloud-10-impact-003.jsonl",
     "entry-130": "score-outputs/cloud-10-impact-003.jsonl",
     "entry-1310": "score-outputs/cloud-10-impact-003.jsonl",
-    "entry-1321": "score-outputs/cloud-10-impact-003.jsonl"
+    "entry-1321": "score-outputs/cloud-10-impact-003.jsonl",
+    "entry-1332": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-1343": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-1354": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-1365": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-1376": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-1387": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-1398": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-1408": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-1419": "score-outputs/cloud-10-impact-004.jsonl",
+    "entry-143": "score-outputs/cloud-10-impact-004.jsonl"
   },
   "status_by_id": {
     "entry-1006": "scored",
@@ -148,6 +184,16 @@
     "entry-129": "scored",
     "entry-130": "deferred",
     "entry-1310": "scored",
-    "entry-1321": "scored"
+    "entry-1321": "scored",
+    "entry-1332": "scored",
+    "entry-1343": "scored",
+    "entry-1354": "scored",
+    "entry-1365": "scored",
+    "entry-1376": "scored",
+    "entry-1387": "scored",
+    "entry-1398": "scored",
+    "entry-1408": "scored",
+    "entry-1419": "scored",
+    "entry-143": "scored"
   }
 }
