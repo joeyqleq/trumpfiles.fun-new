@@ -1,8 +1,8 @@
 {
   "worker": 11,
   "assigned_total": 158,
-  "completed": 42,
-  "needs_context": 116,
+  "completed": 43,
+  "needs_context": 115,
   "remaining": 0,
   "processed_ids": [
     "entry-1021",
@@ -164,5 +164,5 @@
     "entry-99",
     "expanded-20260917-un-iran-war-crimes-report"
   ],
-  "last_output": "cloud-11-finish-025.jsonl"
+  "last_output": "cloud-11-finish-026.jsonl"
 }
