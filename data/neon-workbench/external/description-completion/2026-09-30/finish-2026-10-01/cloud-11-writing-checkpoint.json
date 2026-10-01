@@ -1,0 +1,15 @@
+{
+  "worker": 11,
+  "assigned_total": 158,
+  "completed": 3,
+  "needs_context": 2,
+  "remaining": 153,
+  "processed_ids": [
+    "entry-1021",
+    "entry-1043",
+    "entry-1081",
+    "entry-1137",
+    "entry-1170"
+  ],
+  "last_output": "cloud-11-finish-001.jsonl"
+}
