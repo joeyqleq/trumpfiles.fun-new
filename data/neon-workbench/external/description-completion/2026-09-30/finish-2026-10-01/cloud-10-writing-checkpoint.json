@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 158,
-  "completed_count": 52,
-  "needs_context_count": 103,
-  "remaining_count": 3,
+  "completed_count": 53,
+  "needs_context_count": 105,
+  "remaining_count": 0,
   "processed_ids": [
     "entry-1019",
     "entry-1042",
@@ -159,7 +159,10 @@
     "entry-882",
     "entry-903",
     "entry-919",
-    "entry-939"
+    "entry-939",
+    "entry-962",
+    "entry-989",
+    "expanded-20260917-trump-axios-annihilate"
   ],
   "batches": [
     {
@@ -497,6 +500,15 @@
         "entry-919",
         "entry-939"
       ]
+    },
+    {
+      "file": "outputs/cloud-10-finish-030.jsonl",
+      "record_count": 3,
+      "record_ids": [
+        "entry-962",
+        "entry-989",
+        "expanded-20260917-trump-axios-annihilate"
+      ]
     }
   ],
   "latest_versions": {
@@ -654,7 +666,10 @@
     "entry-882": "outputs/cloud-10-finish-029.jsonl",
     "entry-903": "outputs/cloud-10-finish-029.jsonl",
     "entry-919": "outputs/cloud-10-finish-029.jsonl",
-    "entry-939": "outputs/cloud-10-finish-029.jsonl"
+    "entry-939": "outputs/cloud-10-finish-029.jsonl",
+    "entry-962": "outputs/cloud-10-finish-030.jsonl",
+    "entry-989": "outputs/cloud-10-finish-030.jsonl",
+    "expanded-20260917-trump-axios-annihilate": "outputs/cloud-10-finish-030.jsonl"
   },
   "status_by_id": {
     "entry-1213": "needs_context",
@@ -811,6 +826,9 @@
     "entry-882": "needs_context",
     "entry-903": "needs_context",
     "entry-919": "needs_context",
-    "entry-939": "needs_context"
+    "entry-939": "needs_context",
+    "entry-962": "needs_context",
+    "entry-989": "needs_context",
+    "expanded-20260917-trump-axios-annihilate": "complete"
   }
 }
