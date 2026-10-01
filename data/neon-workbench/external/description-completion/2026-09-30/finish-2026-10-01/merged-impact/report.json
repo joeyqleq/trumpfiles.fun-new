@@ -1,10 +1,10 @@
 {
   "assigned_score_ids": 6944,
-  "saved_score_ids": 4065,
-  "missing_score_ids": 2879,
+  "saved_score_ids": 4105,
+  "missing_score_ids": 2839,
   "statuses": {
-    "scored": 3687,
-    "deferred": 378
+    "scored": 3717,
+    "deferred": 388
   },
   "held_not_ranked": 283,
   "rejected_rows": [],
