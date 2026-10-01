@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 474,
+  "scored_count": 484,
   "deferred_count": 36,
-  "remaining_count": 68,
+  "remaining_count": 58,
   "processed_ids": [
     "entry-40",
     "entry-45",
@@ -514,7 +514,17 @@
     "entry-6639",
     "entry-6650",
     "entry-6663",
-    "entry-6677"
+    "entry-6677",
+    "entry-6689",
+    "entry-6701",
+    "entry-6712",
+    "entry-6723",
+    "entry-6737",
+    "entry-6753",
+    "entry-6767",
+    "entry-679",
+    "entry-681",
+    "entry-6831"
   ],
   "batches": [
     {
@@ -1350,6 +1360,22 @@
         "entry-6663",
         "entry-6677"
       ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-056.jsonl",
+      "record_count": 10,
+      "record_ids": [
+        "entry-6689",
+        "entry-6701",
+        "entry-6712",
+        "entry-6723",
+        "entry-6737",
+        "entry-6753",
+        "entry-6767",
+        "entry-679",
+        "entry-681",
+        "entry-6831"
+      ]
     }
   ],
   "latest_versions": {
@@ -1692,7 +1718,17 @@
     "entry-6639": "score-outputs/cloud-10-impact-055.jsonl",
     "entry-6650": "score-outputs/cloud-10-impact-055.jsonl",
     "entry-6663": "score-outputs/cloud-10-impact-055.jsonl",
-    "entry-6677": "score-outputs/cloud-10-impact-055.jsonl"
+    "entry-6677": "score-outputs/cloud-10-impact-055.jsonl",
+    "entry-6689": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-6701": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-6712": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-6723": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-6737": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-6753": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-6767": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-679": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-681": "score-outputs/cloud-10-impact-056.jsonl",
+    "entry-6831": "score-outputs/cloud-10-impact-056.jsonl"
   },
   "status_by_id": {
     "entry-1006": "scored",
@@ -2204,7 +2240,17 @@
     "entry-6639": "scored",
     "entry-6650": "scored",
     "entry-6663": "scored",
-    "entry-6677": "scored"
+    "entry-6677": "scored",
+    "entry-6689": "scored",
+    "entry-6701": "scored",
+    "entry-6712": "scored",
+    "entry-6723": "scored",
+    "entry-6737": "scored",
+    "entry-6753": "scored",
+    "entry-6767": "scored",
+    "entry-679": "scored",
+    "entry-681": "scored",
+    "entry-6831": "scored"
   },
   "file_by_id": {
     "entry-4053": "score-outputs/cloud-10-impact-033.jsonl",
