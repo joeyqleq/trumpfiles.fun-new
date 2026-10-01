@@ -2,7 +2,7 @@
   "worker": "cloud-03",
   "assignment": "worker-03-score-input.jsonl",
   "assigned_count": 579,
-  "terminal_saved_count": 418,
+  "terminal_saved_count": 428,
   "terminal_saved_ids": [
     "entry-100",
     "entry-1010",
@@ -421,11 +421,21 @@
     "entry-5544",
     "entry-5555",
     "entry-5566",
-    "entry-5577"
+    "entry-5577",
+    "entry-5588",
+    "entry-5599",
+    "entry-5609",
+    "entry-562",
+    "entry-5630",
+    "entry-5641",
+    "entry-5652",
+    "entry-5663",
+    "entry-5674",
+    "entry-5685"
   ],
-  "scored_count": 363,
+  "scored_count": 373,
   "deferred_count": 55,
-  "remaining_count": 161,
-  "last_output": "score-outputs/cloud-03-impact-042.jsonl",
+  "remaining_count": 151,
+  "last_output": "score-outputs/cloud-03-impact-043.jsonl",
   "status": "in_progress"
 }
