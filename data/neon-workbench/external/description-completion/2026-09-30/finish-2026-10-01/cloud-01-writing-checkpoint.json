@@ -2,9 +2,9 @@
   "worker": "cloud-01",
   "input": "worker-01-repair-input.jsonl",
   "assigned_count": 159,
-  "completed_count": 34,
-  "needs_context_count": 76,
-  "remaining_count": 49,
+  "completed_count": 35,
+  "needs_context_count": 80,
+  "remaining_count": 44,
   "batch_files": [
     "outputs/cloud-01-finish-001.jsonl",
     "outputs/cloud-01-finish-002.jsonl",
@@ -29,7 +29,8 @@
     "outputs/cloud-01-finish-021.jsonl",
     "outputs/cloud-01-finish-022.jsonl",
     "outputs/cloud-01-finish-023.jsonl",
-    "outputs/cloud-01-finish-024.jsonl"
+    "outputs/cloud-01-finish-024.jsonl",
+    "outputs/cloud-01-finish-025.jsonl"
   ],
   "completed_record_ids": [
     "entry-10",
@@ -65,7 +66,8 @@
     "entry-4703",
     "entry-484",
     "entry-498",
-    "entry-5312"
+    "entry-5312",
+    "entry-5508"
   ],
   "needs_context_record_ids": [
     "entry-1181",
@@ -143,14 +145,13 @@
     "entry-5109",
     "entry-5192",
     "entry-5273",
-    "entry-5382"
-  ],
-  "remaining_record_ids": [
+    "entry-5382",
     "entry-5407",
     "entry-5430",
     "entry-5464",
-    "entry-5508",
-    "entry-5533",
+    "entry-5533"
+  ],
+  "remaining_record_ids": [
     "entry-5566",
     "entry-560",
     "entry-5658",
