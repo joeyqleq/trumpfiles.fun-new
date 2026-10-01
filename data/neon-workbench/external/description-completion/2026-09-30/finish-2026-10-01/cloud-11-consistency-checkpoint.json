@@ -2,7 +2,7 @@
   "worker": 11,
   "assignment": "worker-11-score-input.jsonl",
   "review_type": "impact-v2-consistency",
-  "checked_count": 90,
+  "checked_count": 100,
   "checked_ids": [
     "entry-1007",
     "entry-1018",
@@ -93,9 +93,19 @@
     "entry-196",
     "entry-1970",
     "entry-1981",
-    "entry-1992"
+    "entry-1992",
+    "entry-2001",
+    "entry-2012",
+    "entry-2023",
+    "entry-2034",
+    "entry-2045",
+    "entry-2056",
+    "entry-2067",
+    "entry-2078",
+    "entry-2089",
+    "entry-21"
   ],
-  "correction_count": 67,
+  "correction_count": 77,
   "correction_ids": [
     "entry-1018",
     "entry-1029",
@@ -163,13 +173,7 @@
     "entry-1938",
     "entry-1949",
     "entry-1970",
-    "entry-1992"
-  ],
-  "original_scored": 529,
-  "original_deferred": 49,
-  "original_score_remaining": 0,
-  "unreviewed_count": 488,
-  "unreviewed_ids": [
+    "entry-1992",
     "entry-2001",
     "entry-2012",
     "entry-2023",
@@ -179,7 +183,13 @@
     "entry-2067",
     "entry-2078",
     "entry-2089",
-    "entry-21",
+    "entry-21"
+  ],
+  "original_scored": 529,
+  "original_deferred": 49,
+  "original_score_remaining": 0,
+  "unreviewed_count": 478,
+  "unreviewed_ids": [
     "entry-211",
     "entry-2120",
     "entry-2131",
