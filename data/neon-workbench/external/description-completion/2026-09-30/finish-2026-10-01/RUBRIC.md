@@ -1,0 +1,15 @@
+# Editorial impact v2 — offline logical assessment
+
+Score the event described in the supplied packet, not Trump as a person, the category label, popularity, vivid wording, or an old score. No web research. This is an editorial comparative index, NOT a scientifically measured real-world impact or criminal verdict. Do not invent casualties, monetary amounts, motives or outcomes. Identify actual vs proposed/threatened action. State uncertainty separately; thin text does not automatically mean low seriousness.
+
+Six dimensions, 0–10 in increments of 0.1:
+- harm (30%): 0 no stated harm; 2 minor disruption; 5 substantial bounded harm or credible serious threat; 8 grave harm to rights/safety/livelihood; 10 catastrophic/widespread grave harm explicitly described.
+- reach (20%): 0 no identifiable affected party; 2 individual/small group; 5 significant organization/region; 8 national major-policy scope; 10 multiple national/core systems or cross-border systemic reach. Attention is not affected population.
+- institutions (15%): 0 no meaningful damage to checks/accountability; 2 limited pressure; 5 material weakening/retaliation in one institution; 8 severe impairment of checks; 10 broad durable capture/disabling of accountability.
+- procedural_abuse (15%): 0 none stated; 2 limited norm departure; 5 serious identified bypass/concealment/conflict; 8 repeated/coercive defeat of oversight/due process; 10 systemic defeat of lawful controls. A court ruling or unpopular policy is NOT itself misconduct by the subject.
+- self_dealing (10%): 0 no identified private/network benefit through misuse; 2 bounded conflict; 5 material favoritism/misuse/private benefit; 8 large/systematic extraction; 10 extreme systematic capture for private gain. Ordinary commerce/family wealth alone is not corruption.
+- persistence (10%): 0 no lasting effect; 2 short-lived/reversible; 5 lasting effect requiring meaningful remediation; 8 entrenched/repeated effects; 10 effectively irreversible or enduring destruction. Do not duplicate scope here.
+
+Use decimal interpolation only when entry-specific facts justify intermediate severity. Do not add jitter to distinguish otherwise equal events. Return dimensions and concise rationale; root computes weighted total to two decimals. Legitimate ties remain, sorted deterministically by harm, reach, institutions, persistence, then stable ID; ID is a tie-breaker, never severity.
+
+Required output: record_id, entry_number, version="impact-v2", status="scored" or "deferred", dimensions (six named numbers), event_state (realized/proposed/threatened/unclear), confidence (high/medium/low), confidence_reason, rationale (2–4 entry-specific sentences), basis (short supplied facts), notes. No worker-computed composite required. Deferred records have dimensions=null and a precise reason. A core unsupported/contradictory claim with no defensible proposition is deferred, not severity zero. Without new claim-level verification, confidence high must not be claimed merely from source count; default medium or low. Scores remain provisional until consistency/formula QA. No existing score replacement or live database writes.
