@@ -2,10 +2,10 @@
   "worker": 12,
   "assignment": "repair",
   "assigned_count": 158,
-  "processed_count": 122,
+  "processed_count": 130,
   "complete_count": 44,
-  "needs_context_count": 78,
-  "remaining_count": 36,
+  "needs_context_count": 86,
+  "remaining_count": 28,
   "completed_ids": [
     "entry-1022",
     "entry-1048",
@@ -130,9 +130,7 @@
     "entry-5565",
     "entry-5599",
     "entry-5772",
-    "entry-5985"
-  ],
-  "remaining_ids": [
+    "entry-5985",
     "entry-6043",
     "entry-6127",
     "entry-6155",
@@ -140,7 +138,9 @@
     "entry-6235",
     "entry-6279",
     "entry-6320",
-    "entry-6358",
+    "entry-6358"
+  ],
+  "remaining_ids": [
     "entry-6412",
     "entry-6532",
     "entry-6620",
@@ -187,6 +187,7 @@
     "outputs/cloud-12-finish-014.jsonl",
     "outputs/cloud-12-finish-015.jsonl",
     "outputs/cloud-12-finish-016.jsonl",
-    "outputs/cloud-12-finish-017.jsonl"
+    "outputs/cloud-12-finish-017.jsonl",
+    "outputs/cloud-12-finish-018.jsonl"
   ]
 }
