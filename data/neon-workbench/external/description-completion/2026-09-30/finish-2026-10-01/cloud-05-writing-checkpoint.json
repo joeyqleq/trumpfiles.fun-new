@@ -2,10 +2,10 @@
   "worker": "05",
   "phase": "writing",
   "assigned_total": 158,
-  "saved_total": 45,
-  "completed": 9,
-  "needs_context": 36,
-  "remaining": 113,
+  "saved_total": 50,
+  "completed": 10,
+  "needs_context": 40,
+  "remaining": 108,
   "saved_record_ids": [
     "entry-1008",
     "entry-1033",
@@ -51,9 +51,14 @@
     "entry-2270",
     "entry-2302",
     "entry-2332",
-    "entry-2363"
+    "entry-2363",
+    "entry-2390",
+    "entry-242",
+    "entry-2460",
+    "entry-2497",
+    "entry-2518"
   ],
-  "last_output": "cloud-05-finish-010.jsonl",
+  "last_output": "cloud-05-finish-011.jsonl",
   "supersedes": {
     "entry-1233": "cloud-05-finish-002.jsonl"
   },
