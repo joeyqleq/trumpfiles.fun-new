@@ -3,10 +3,10 @@
   "phase": "scoring",
   "version": "impact-v2",
   "assigned_total": 579,
-  "saved_total": 569,
-  "scored": 528,
+  "saved_total": 574,
+  "scored": 533,
   "deferred": 41,
-  "remaining": 10,
+  "remaining": 5,
   "saved_record_ids": [
     "entry-1001",
     "entry-1012",
@@ -576,9 +576,14 @@
     "entry-930",
     "entry-941",
     "entry-952",
-    "entry-963"
+    "entry-963",
+    "entry-974",
+    "entry-985",
+    "entry-996",
+    "expanded-20260828-hush-money-removal",
+    "expanded-20260909-census-exclusion-proposal"
   ],
-  "last_output": "cloud-05-impact-064.jsonl",
+  "last_output": "cloud-05-impact-065.jsonl",
   "model": "GPT-6 (available session model; requested GPT-6 Luna low unavailable)",
   "updated_at": "2026-10-01"
 }
