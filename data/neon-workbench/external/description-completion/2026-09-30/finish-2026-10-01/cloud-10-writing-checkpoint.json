@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 158,
-  "completed_count": 39,
-  "needs_context_count": 76,
-  "remaining_count": 43,
+  "completed_count": 43,
+  "needs_context_count": 82,
+  "remaining_count": 33,
   "processed_ids": [
     "entry-1019",
     "entry-1042",
@@ -119,7 +119,17 @@
     "entry-5459",
     "entry-5497",
     "entry-5525",
-    "entry-556"
+    "entry-556",
+    "entry-5593",
+    "entry-5647",
+    "entry-569",
+    "entry-5757",
+    "entry-582",
+    "entry-5934",
+    "entry-5983",
+    "entry-6029",
+    "entry-6112",
+    "entry-6151"
   ],
   "batches": [
     {
@@ -393,6 +403,22 @@
         "entry-5178"
       ],
       "supersedes": "outputs/cloud-10-finish-024.jsonl for this ID"
+    },
+    {
+      "file": "outputs/cloud-10-finish-026.jsonl",
+      "record_count": 10,
+      "record_ids": [
+        "entry-5593",
+        "entry-5647",
+        "entry-569",
+        "entry-5757",
+        "entry-582",
+        "entry-5934",
+        "entry-5983",
+        "entry-6029",
+        "entry-6112",
+        "entry-6151"
+      ]
     }
   ],
   "latest_versions": {
@@ -510,7 +536,17 @@
     "entry-5459": "outputs/cloud-10-finish-024.jsonl",
     "entry-5497": "outputs/cloud-10-finish-024.jsonl",
     "entry-5525": "outputs/cloud-10-finish-024.jsonl",
-    "entry-556": "outputs/cloud-10-finish-024.jsonl"
+    "entry-556": "outputs/cloud-10-finish-024.jsonl",
+    "entry-5593": "outputs/cloud-10-finish-026.jsonl",
+    "entry-5647": "outputs/cloud-10-finish-026.jsonl",
+    "entry-569": "outputs/cloud-10-finish-026.jsonl",
+    "entry-5757": "outputs/cloud-10-finish-026.jsonl",
+    "entry-582": "outputs/cloud-10-finish-026.jsonl",
+    "entry-5934": "outputs/cloud-10-finish-026.jsonl",
+    "entry-5983": "outputs/cloud-10-finish-026.jsonl",
+    "entry-6029": "outputs/cloud-10-finish-026.jsonl",
+    "entry-6112": "outputs/cloud-10-finish-026.jsonl",
+    "entry-6151": "outputs/cloud-10-finish-026.jsonl"
   },
   "status_by_id": {
     "entry-1213": "needs_context",
@@ -627,6 +663,16 @@
     "entry-5459": "needs_context",
     "entry-5497": "complete",
     "entry-5525": "needs_context",
-    "entry-556": "complete"
+    "entry-556": "complete",
+    "entry-5593": "needs_context",
+    "entry-5647": "complete",
+    "entry-569": "complete",
+    "entry-5757": "complete",
+    "entry-582": "complete",
+    "entry-5934": "needs_context",
+    "entry-5983": "needs_context",
+    "entry-6029": "needs_context",
+    "entry-6112": "needs_context",
+    "entry-6151": "needs_context"
   }
 }
