@@ -503,9 +503,19 @@
     "entry-6497",
     "entry-651",
     "entry-6524",
-    "entry-6535"
+    "entry-6535",
+    "entry-6546",
+    "entry-6557",
+    "entry-657",
+    "entry-6586",
+    "entry-660",
+    "entry-6620",
+    "entry-6634",
+    "entry-6648",
+    "entry-666",
+    "entry-6674"
   ],
-  "corrections_appended": 8,
+  "corrections_appended": 10,
   "correction_record_ids": [
     "entry-2399",
     "entry-3132",
@@ -514,7 +524,9 @@
     "entry-417",
     "entry-428",
     "entry-4540",
-    "entry-6269"
+    "entry-6269",
+    "entry-6648",
+    "entry-6674"
   ],
-  "next_unchecked_index": 500
+  "next_unchecked_index": 510
 }
