@@ -571,10 +571,19 @@
     "entry-943",
     "entry-954",
     "entry-965",
-    "entry-976"
+    "entry-976",
+    "entry-987",
+    "entry-998",
+    "expanded-20260830-kharg-ai-post",
+    "expanded-20260909-rnc-dividend-pledge",
+    "expanded-20260916-nih-censorship-lawsuit",
+    "expanded-20260924-ice-federal-plaza-injunction",
+    "expanded-20260928-garces-criminal-complaint",
+    "fresh-20260831-polymarket-round",
+    "fresh-20260928-draganfly-financing"
   ],
-  "checked_count": 570,
-  "pass_count": 202,
-  "finding_count": 368,
-  "next_input_index": 570
+  "checked_count": 579,
+  "pass_count": 206,
+  "finding_count": 373,
+  "next_input_index": 579
 }
