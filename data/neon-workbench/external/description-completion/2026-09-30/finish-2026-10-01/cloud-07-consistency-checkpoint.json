@@ -273,7 +273,17 @@
     "entry-390",
     "entry-3910",
     "entry-3921",
-    "entry-3932"
+    "entry-3932",
+    "entry-3943",
+    "entry-3954",
+    "entry-3965",
+    "entry-3976",
+    "entry-3987",
+    "entry-3998",
+    "entry-4007",
+    "entry-4018",
+    "entry-4029",
+    "entry-404"
   ],
   "corrections_appended": 4,
   "correction_record_ids": [
@@ -282,5 +292,5 @@
     "entry-3424",
     "entry-3770"
   ],
-  "next_unchecked_index": 270
+  "next_unchecked_index": 280
 }
