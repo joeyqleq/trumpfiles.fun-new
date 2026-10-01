@@ -8,6 +8,7 @@ Read `INSTRUCTIONS.md` in this directory, then only your lane's `input.jsonl` or
 - ChatGPT Web owns `chatgpt-web/`: 1,736 records. Output branch: `codex/descriptions-chatgpt-web-2026-09-30`.
 - LightSprint owns `lightsprint/`: 1,737 records. Output branch: `codex/descriptions-lightsprint-2026-09-30`.
 - Local native/OpenCodex workers own separate assignments. Remote workers must not touch their records.
+- Eight additional cloud workers own `native-cloud/worker-09-input.jsonl` through `worker-16-input.jsonl`, 90 entries each. These 720 unwritten entries were explicitly removed from local native inputs. Each writes only `native-cloud/outputs/cloud-NN-*.jsonl` and its own checkpoint; the local workers retain the other 1,015 assigned entries.
 
 Execute in the service's cloud environment. Do not use loopback or any laptop process. Save new output JSONL files under your lane's `outputs/`. Keep original input files intact. Update only your lane's checkpoint and progress. Each lane is divided into small numbered batches; process one at a time and save frequently. If parallel cloud agents are available, split explicit batch numbers into up to four disjoint workers; each writes a uniquely named output file and a separate worker checkpoint. One coordinator updates the shared lane checkpoint.
 
