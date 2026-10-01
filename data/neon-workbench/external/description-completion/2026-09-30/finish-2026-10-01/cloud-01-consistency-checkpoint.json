@@ -4,15 +4,25 @@
   "rubric": "RUBRIC.md",
   "version": "impact-v2",
   "assigned_count": 579,
-  "checked_count": 5,
-  "remaining_count": 574,
+  "checked_count": 15,
+  "remaining_count": 564,
   "corrections_count": 0,
   "checked_record_ids": [
     "entry-1",
     "entry-1009",
     "entry-102",
     "entry-1030",
-    "entry-1041"
+    "entry-1041",
+    "entry-1052",
+    "entry-1065",
+    "entry-1076",
+    "entry-1087",
+    "entry-1098",
+    "entry-1108",
+    "entry-1119",
+    "entry-113",
+    "entry-1140",
+    "entry-1151"
   ],
   "correction_files": []
 }
