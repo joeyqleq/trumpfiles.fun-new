@@ -171,10 +171,20 @@
     "entry-282",
     "entry-2830",
     "entry-2841",
-    "entry-2852"
+    "entry-2852",
+    "entry-2863",
+    "entry-2874",
+    "entry-2885",
+    "entry-2896",
+    "entry-2906",
+    "entry-2917",
+    "entry-2928",
+    "entry-2939",
+    "entry-295",
+    "entry-2960"
   ],
-  "checked_count": 170,
-  "pass_count": 33,
-  "finding_count": 137,
-  "next_input_index": 170
+  "checked_count": 180,
+  "pass_count": 37,
+  "finding_count": 143,
+  "next_input_index": 180
 }
