@@ -303,10 +303,20 @@
     "entry-4222",
     "entry-4233",
     "entry-4246",
-    "entry-4257"
+    "entry-4257",
+    "entry-4268",
+    "entry-4279",
+    "entry-4290",
+    "entry-4300",
+    "entry-4311",
+    "entry-4329",
+    "entry-434",
+    "entry-4350",
+    "entry-4362",
+    "entry-4373"
   ],
-  "pass_count": 103,
-  "finding_count": 197,
+  "pass_count": 107,
+  "finding_count": 203,
   "batches": [
     "quality-outputs/cloud-06-reader-qa-001.jsonl",
     "quality-outputs/cloud-06-reader-qa-002.jsonl",
@@ -338,6 +348,7 @@
     "quality-outputs/cloud-06-reader-qa-028.jsonl",
     "quality-outputs/cloud-06-reader-qa-029.jsonl",
     "quality-outputs/cloud-06-reader-qa-030.jsonl",
-    "quality-outputs/cloud-06-reader-qa-031.jsonl"
+    "quality-outputs/cloud-06-reader-qa-031.jsonl",
+    "quality-outputs/cloud-06-reader-qa-032.jsonl"
   ]
 }
