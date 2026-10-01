@@ -473,9 +473,19 @@
     "entry-6135",
     "entry-6147",
     "entry-6158",
-    "entry-6169"
+    "entry-6169",
+    "entry-618",
+    "entry-6190",
+    "entry-6200",
+    "entry-6214",
+    "entry-6225",
+    "entry-6236",
+    "entry-6247",
+    "entry-6258",
+    "entry-6269",
+    "entry-628"
   ],
-  "corrections_appended": 7,
+  "corrections_appended": 8,
   "correction_record_ids": [
     "entry-2399",
     "entry-3132",
@@ -483,7 +493,8 @@
     "entry-3770",
     "entry-417",
     "entry-428",
-    "entry-4540"
+    "entry-4540",
+    "entry-6269"
   ],
-  "next_unchecked_index": 470
+  "next_unchecked_index": 480
 }
