@@ -1,0 +1,18 @@
+{
+  "scope": "New web-b-description-rescue output history only; no pre-existing canonical history was edited.",
+  "deviations": [
+    {
+      "file": "worker-04/batch-002.jsonl",
+      "issue": "Four accidental non-JSON word-count debug lines precede the proposal rows.",
+      "resolution": "Preserved original; clean append-only batch-002-superseding.jsonl explicitly replaces all five proposals."
+    },
+    {
+      "file": "worker-02/checkpoint-batch-004.json",
+      "issue": "Original file incorrectly contained a local cat command's missing-file error. Worker then updated that same new checkpoint path, contrary to the append-only requirement.",
+      "creation_commit": "5ff323d77be3685f8c7b5ac55e332e78eb997bb6",
+      "update_commit": "210139cf555c375959fe1c3caedb1ca175dc8cda",
+      "resolution": "A new checkpoint-batch-004-recovery.json was subsequently appended, commit4486c9d016ff58fd483008488d62f8f9f9a07a91. Original erroneous content remains in Git history; no further updates authorized."
+    }
+  ],
+  "effective_reading": "Use effective index and labelled replacement locations, not raw concatenation of all historical files."
+}
