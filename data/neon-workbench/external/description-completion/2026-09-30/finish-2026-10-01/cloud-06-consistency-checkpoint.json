@@ -663,7 +663,15 @@
     "entry-1847",
     "entry-1858",
     "entry-1869",
-    "entry-188"
+    "entry-188",
+    "entry-1890",
+    "entry-1900",
+    "entry-1911",
+    "entry-1922",
+    "entry-1933",
+    "entry-1944",
+    "entry-1955",
+    "entry-1966"
   ],
   "correction_record_ids": [
     "entry-1080",
@@ -682,11 +690,16 @@
     "entry-1803",
     "entry-1814",
     "entry-1847",
-    "entry-1869"
+    "entry-1869",
+    "entry-1890",
+    "entry-1911",
+    "entry-1933",
+    "entry-1966",
+    "entry-1955"
   ],
-  "checked_count": 80,
-  "remaining_count": 499,
-  "last_output_file": "cloud-06-impact-review-09.jsonl",
+  "checked_count": 88,
+  "remaining_count": 491,
+  "last_output_file": "cloud-06-impact-review-10.jsonl",
   "status": "review_in_progress",
-  "last_batch_reviewed": 10
+  "last_batch_reviewed": 11
 }
