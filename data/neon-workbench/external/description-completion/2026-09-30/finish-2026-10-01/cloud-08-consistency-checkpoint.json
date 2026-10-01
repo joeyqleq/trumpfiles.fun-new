@@ -3,8 +3,8 @@
   "assignment_file": "worker-08-score-input.jsonl",
   "version": "impact-v2-consistency-review",
   "assigned_count": 579,
-  "checked_count": 570,
-  "remaining_count": 9,
+  "checked_count": 579,
+  "remaining_count": 0,
   "checked_ids": [
     "entry-1004",
     "entry-1015",
@@ -575,7 +575,16 @@
     "entry-944",
     "entry-955",
     "entry-966",
-    "entry-977"
+    "entry-977",
+    "entry-988",
+    "entry-999",
+    "expanded-20260830-welker-fcc-threat",
+    "expanded-20260909-rnc-trump-first-falsehoods",
+    "expanded-20260917-kennedy-chd-keynote",
+    "expanded-20260924-media-ban-tro",
+    "expanded-20260928-iran-sanctions-denial",
+    "fresh-20260902-stone-haiti-contract",
+    "fresh-20260929-irs-sanctions-stay"
   ],
   "correction_count": 124,
   "correction_files": [
@@ -715,6 +724,7 @@
     95,
     96,
     97,
-    98
+    98,
+    99
   ]
 }
