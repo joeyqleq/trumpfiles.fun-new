@@ -1,0 +1,802 @@
+{
+  "purpose": "independent noncanonical consistency check",
+  "base_commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
+  "worker_model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "files": [
+    {
+      "file": "worker-01-score-input.jsonl",
+      "sha256": "430c83adb7ba113297cc0c2e79135f7211d18d58dba347a4ea8e63597620c2b9",
+      "total_records": 579,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-02-score-input.jsonl",
+      "sha256": "6a3ba5259ca995f914b81046c0559822d7d31f392ac693f4f8ca1fd3baee6a5e",
+      "total_records": 579,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-03-score-input.jsonl",
+      "sha256": "d2a88afc9407198b780ebf64f931349a514b0deb83ca20fd1172332af05c33ac",
+      "total_records": 579,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-04-score-input.jsonl",
+      "sha256": "607495813eabe7a591df77effb7e03ce69960c4266adbc0a2771eee0abe302fb",
+      "total_records": 579,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-05-score-input.jsonl",
+      "sha256": "86430da0b4b443bfc123563e6d9db89ad387897c2cd23288681849a310813baa",
+      "total_records": 579,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-06-score-input.jsonl",
+      "sha256": "77933c6dec1fc86c8982c4dac4ef00179d78f42b3cd5e35a9f49390cffc98179",
+      "total_records": 579,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-07-score-input.jsonl",
+      "sha256": "c0381bab89189dcb6b3f1e03fcb014273b35a3abfa225c07586c03ed6be487a1",
+      "total_records": 579,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-08-score-input.jsonl",
+      "sha256": "c545d5cf84786c8bc53de64509688ef669d4ae7a0920f8c76795152d599bb68e",
+      "total_records": 579,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-09-score-input.jsonl",
+      "sha256": "d2f879a5dcbcdf353993ec1c929e0ce844cfb21c7756eacffbb57a905168a094",
+      "total_records": 578,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-10-score-input.jsonl",
+      "sha256": "838def10885801c423468f385550dbb87eb1ee4722395a60d9d9565388eff131",
+      "total_records": 578,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-11-score-input.jsonl",
+      "sha256": "13046f977cc12e213a3516853ae0fe8e03d25bb649018beb1d0375013351585c",
+      "total_records": 578,
+      "selected_last": 10
+    },
+    {
+      "file": "worker-12-score-input.jsonl",
+      "sha256": "e91fced952f78ba902c22a7761dfe06dda38547e92ca28ef25b8dad54f006085",
+      "total_records": 578,
+      "selected_last": 10
+    }
+  ],
+  "assigned_records": [
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-970",
+      "entry_number": 970
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-981",
+      "entry_number": 981
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "entry-992",
+      "entry_number": 992
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260824-economic-outcast",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260902-doj-welfare-reporting",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260914-epa-power-repeal",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260921-garces-detention-conference",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260925-public-citizen-first-ad-complaint",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "expanded-20260929-murray-murphy-ad-letter",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-01-score-input.jsonl",
+      "line_record_position": 579,
+      "record_id": "fresh-20260915-tbilisi-launch",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-971",
+      "entry_number": 971
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-982",
+      "entry_number": 982
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "entry-993",
+      "entry_number": 993
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260825-usps-injunction-violation",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260903-smithsonian-signs-letter",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260914-un-civilian-airstrike-rebuke",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260921-media-ban-lawsuit",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260925-save-sc-stay",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "expanded-20260929-public-citizen-broadcaster-complaint",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-02-score-input.jsonl",
+      "line_record_position": 579,
+      "record_id": "fresh-20260916-eric-dominari-13g",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-972",
+      "entry_number": 972
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-983",
+      "entry_number": 983
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "entry-994",
+      "entry_number": 994
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260827-anthropic-blacklist-order",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260908-gsa-canada-exclusion",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260914-usps-sc-denial",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260922-doj-media-security-defense",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260925-whitehouse-ads-psa-defense",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "expanded-20260929-smith-senate-accusations",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-03-score-input.jsonl",
+      "line_record_position": 579,
+      "record_id": "fresh-20260918-trump-repayment-statement",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-973",
+      "entry_number": 973
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-984",
+      "entry_number": 984
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "entry-995",
+      "entry_number": 995
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260827-usps-new-tro",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260908-save-sc-request",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260915-ice-locator-exclusion",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260922-solar-harris-order",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260926-iran-proposal-rejection",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "expanded-20260929-third-country-sc-stay",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-04-score-input.jsonl",
+      "line_record_position": 579,
+      "record_id": "fresh-20260922-curtis-probe-request",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-974",
+      "entry_number": 974
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-985",
+      "entry_number": 985
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "entry-996",
+      "entry_number": 996
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260828-hush-money-removal",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260909-census-exclusion-proposal",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260916-cassidy-measles-hearing",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260922-un-address-misleading-claims",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260927-kennedy-ad-criticism",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "fresh-20260824-mcgurn-api-update",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-05-score-input.jsonl",
+      "line_record_position": 579,
+      "record_id": "fresh-20260923-melania-series-update",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-975",
+      "entry_number": 975
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-986",
+      "entry_number": 986
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "entry-997",
+      "entry_number": 997
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260828-smithsonian-pressure-letter",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260909-kimmel-talarico-broadcast",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260916-gastonia-rally-iran-claims",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260923-iowa-poll-suit-dismissal",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260928-china-arms-denial",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "fresh-20260826-raskin-1789",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-06-score-input.jsonl",
+      "line_record_position": 579,
+      "record_id": "fresh-20260924-trump-tv-trademark",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-976",
+      "entry_number": 976
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-987",
+      "entry_number": 987
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "entry-998",
+      "entry_number": 998
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260830-kharg-ai-post",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260909-rnc-dividend-pledge",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260916-nih-censorship-lawsuit",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260924-ice-federal-plaza-injunction",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260928-garces-criminal-complaint",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "fresh-20260831-polymarket-round",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-07-score-input.jsonl",
+      "line_record_position": 579,
+      "record_id": "fresh-20260928-draganfly-financing",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-977",
+      "entry_number": 977
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-988",
+      "entry_number": 988
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "entry-999",
+      "entry_number": 999
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260830-welker-fcc-threat",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260909-rnc-trump-first-falsehoods",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260917-kennedy-chd-keynote",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260924-media-ban-tro",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260928-iran-sanctions-denial",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "fresh-20260902-stone-haiti-contract",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-08-score-input.jsonl",
+      "line_record_position": 579,
+      "record_id": "fresh-20260929-irs-sanctions-stay",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 569,
+      "record_id": "entry-967",
+      "entry_number": 967
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-978",
+      "entry_number": 978
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-989",
+      "entry_number": 989
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "expanded-20260820-bessent-regime-collapse",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260831-ballroom-sc-stay",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260910-h1b-grace-proposal",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260917-trump-axios-annihilate",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260924-press-arrival-exclusion",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260928-lee-memorial-bill-objection",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-09-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "fresh-20260903-golf-retreat-offer",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 569,
+      "record_id": "entry-968",
+      "entry_number": 968
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-979",
+      "entry_number": 979
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-99",
+      "entry_number": 99
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "expanded-20260821-james-subpoenas-appeal",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260831-vance-kharg-defense",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260910-rnc-kennedy-falsehoods",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260917-un-iran-war-crimes-report",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260924-senate-oil-donors-report",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260928-media-preliminary-injunction-request",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-10-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "fresh-20260910-trump-phone-price",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 569,
+      "record_id": "entry-969",
+      "entry_number": 969
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-98",
+      "entry_number": 98
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-990",
+      "entry_number": 990
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "expanded-20260821-usps-final-rule",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260902-birthright-new-injunction",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260910-rnc-trump-wall-bail",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260918-press-ban-announcement",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260924-third-country-emergency-request",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260928-nathan-birthright-lawsuit",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-11-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "fresh-20260914-garcia-kremlev",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 569,
+      "record_id": "entry-97",
+      "entry_number": 97
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 570,
+      "record_id": "entry-980",
+      "entry_number": 980
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 571,
+      "record_id": "entry-991",
+      "entry_number": 991
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 572,
+      "record_id": "expanded-20260821-visa75-court",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 573,
+      "record_id": "expanded-20260902-california-waivers-order",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 574,
+      "record_id": "expanded-20260910-vance-rnc-misleading-claims",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 575,
+      "record_id": "expanded-20260918-trump-five-vaccine-doses",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 576,
+      "record_id": "expanded-20260925-pocket-rescission-announcement",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 577,
+      "record_id": "expanded-20260929-irgc-us-voter-letter",
+      "entry_number": null
+    },
+    {
+      "source_file": "worker-12-score-input.jsonl",
+      "line_record_position": 578,
+      "record_id": "fresh-20260914-oge-trump-ptr",
+      "entry_number": null
+    }
+  ]
+}
