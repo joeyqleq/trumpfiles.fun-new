@@ -4,9 +4,9 @@
   "rubric": "RUBRIC.md",
   "version": "impact-v2",
   "assigned_count": 579,
-  "scored_count": 86,
+  "scored_count": 94,
   "deferred_count": 26,
-  "remaining_count": 467,
+  "remaining_count": 459,
   "batch_files": [
     "score-outputs/cloud-01-impact-001.jsonl",
     "score-outputs/cloud-01-impact-002.jsonl",
@@ -21,7 +21,8 @@
     "score-outputs/cloud-01-impact-011.jsonl",
     "score-outputs/cloud-01-impact-012.jsonl",
     "score-outputs/cloud-01-impact-013.jsonl",
-    "score-outputs/cloud-01-impact-014.jsonl"
+    "score-outputs/cloud-01-impact-014.jsonl",
+    "score-outputs/cloud-01-impact-015.jsonl"
   ],
   "scored_record_ids": [
     "entry-1",
@@ -109,7 +110,15 @@
     "entry-2177",
     "entry-2188",
     "entry-2199",
-    "entry-2209"
+    "entry-2209",
+    "entry-2230",
+    "entry-2241",
+    "entry-2252",
+    "entry-2263",
+    "entry-2274",
+    "entry-2285",
+    "entry-2296",
+    "entry-2306"
   ],
   "deferred_record_ids": [
     "entry-1009",
@@ -140,14 +149,6 @@
     "entry-222"
   ],
   "remaining_record_ids": [
-    "entry-2230",
-    "entry-2241",
-    "entry-2252",
-    "entry-2263",
-    "entry-2274",
-    "entry-2285",
-    "entry-2296",
-    "entry-2306",
     "entry-2317",
     "entry-2328",
     "entry-2339",
