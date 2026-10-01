@@ -3,8 +3,8 @@
   "assignment_file": "worker-08-score-input.jsonl",
   "version": "impact-v2-consistency-review",
   "assigned_count": 579,
-  "checked_count": 80,
-  "remaining_count": 499,
+  "checked_count": 90,
+  "remaining_count": 489,
   "checked_ids": [
     "entry-1004",
     "entry-1015",
@@ -85,7 +85,17 @@
     "entry-1849",
     "entry-186",
     "entry-1870",
-    "entry-1881"
+    "entry-1881",
+    "entry-1892",
+    "entry-1902",
+    "entry-1913",
+    "entry-1924",
+    "entry-1935",
+    "entry-1946",
+    "entry-1957",
+    "entry-1968",
+    "entry-1979",
+    "entry-199"
   ],
   "correction_count": 9,
   "correction_files": [
@@ -109,6 +119,8 @@
     13,
     14,
     15,
-    16
+    16,
+    17,
+    18
   ]
 }
