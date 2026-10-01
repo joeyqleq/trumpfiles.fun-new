@@ -3,9 +3,9 @@
   "assignment": "finish-2026-10-01 writing pass",
   "input_commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
   "total_assigned": 159,
-  "completed": 6,
-  "needs_context": 2,
-  "remaining": 151,
+  "completed": 11,
+  "needs_context": 7,
+  "remaining": 141,
   "processed_record_ids": [
     "entry-1000",
     "entry-1027",
@@ -14,11 +14,22 @@
     "entry-1147",
     "entry-1183",
     "entry-1227",
-    "entry-1258"
+    "entry-1258",
+    "entry-1295",
+    "entry-1317",
+    "entry-1350",
+    "entry-1378",
+    "entry-1411",
+    "entry-1434",
+    "entry-1458",
+    "entry-1479",
+    "entry-1508",
+    "entry-1533"
   ],
   "output_files": [
     "outputs/cloud-02-finish-001.jsonl",
-    "outputs/cloud-02-finish-002.jsonl"
+    "outputs/cloud-02-finish-002.jsonl",
+    "outputs/cloud-02-finish-003.jsonl"
   ],
-  "notes": "cloud-02-finish-001 contained malformed blank fields for seven records; cloud-02-finish-002 supplies their corrected dispositions. entry-1183 is retained from finish-001 as a validated terminal needs_context disposition."
+  "notes": "Counts reflect unique terminal dispositions validated against worker-02-repair-input.jsonl. finish-001 malformed authored fields were superseded by finish-002; entry-1183 is terminal needs_context in finish-001."
 }
