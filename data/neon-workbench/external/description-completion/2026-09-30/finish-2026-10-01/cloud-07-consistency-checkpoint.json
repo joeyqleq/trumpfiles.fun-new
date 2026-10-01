@@ -193,11 +193,22 @@
     "entry-3035",
     "entry-3046",
     "entry-3057",
-    "entry-3068"
+    "entry-3068",
+    "entry-3079",
+    "entry-309",
+    "entry-310",
+    "entry-3110",
+    "entry-3121",
+    "entry-3132",
+    "entry-3143",
+    "entry-3154",
+    "entry-3165",
+    "entry-3176"
   ],
-  "corrections_appended": 1,
+  "corrections_appended": 2,
   "correction_record_ids": [
-    "entry-2399"
+    "entry-2399",
+    "entry-3132"
   ],
-  "next_unchecked_index": 190
+  "next_unchecked_index": 200
 }
