@@ -1054,7 +1054,17 @@
     "entry-6748",
     "entry-6762",
     "entry-6775",
-    "entry-6806"
+    "entry-6806",
+    "entry-6820",
+    "entry-6845",
+    "entry-6856",
+    "entry-6870",
+    "entry-6882",
+    "entry-6896",
+    "entry-6907",
+    "entry-6919",
+    "entry-6942",
+    "entry-6965"
   ],
   "deferred_record_ids": [
     "entry-1220",
@@ -1107,16 +1117,6 @@
     "entry-6633"
   ],
   "remaining_record_ids": [
-    "entry-6820",
-    "entry-6845",
-    "entry-6856",
-    "entry-6870",
-    "entry-6882",
-    "entry-6896",
-    "entry-6907",
-    "entry-6919",
-    "entry-6942",
-    "entry-6965",
     "entry-6982",
     "entry-6993",
     "entry-7002",
@@ -1168,9 +1168,9 @@
     "fresh-20260826-raskin-1789",
     "fresh-20260924-trump-tv-trademark"
   ],
-  "scored_count": 471,
+  "scored_count": 481,
   "deferred_count": 48,
-  "remaining_count": 60,
-  "last_output_file": "cloud-06-impact-52.jsonl",
+  "remaining_count": 50,
+  "last_output_file": "cloud-06-impact-53.jsonl",
   "status": "scoring_in_progress"
 }
