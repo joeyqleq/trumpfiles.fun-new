@@ -231,10 +231,20 @@
     "entry-3468",
     "entry-3479",
     "entry-349",
-    "entry-350"
+    "entry-350",
+    "entry-3510",
+    "entry-3521",
+    "entry-3532",
+    "entry-3543",
+    "entry-3554",
+    "entry-3565",
+    "entry-3576",
+    "entry-3587",
+    "entry-3598",
+    "entry-3608"
   ],
-  "checked_count": 230,
-  "pass_count": 50,
-  "finding_count": 180,
-  "next_input_index": 230
+  "checked_count": 240,
+  "pass_count": 52,
+  "finding_count": 188,
+  "next_input_index": 240
 }
