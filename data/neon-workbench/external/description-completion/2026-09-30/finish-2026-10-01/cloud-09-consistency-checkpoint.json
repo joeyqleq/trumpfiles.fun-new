@@ -411,10 +411,20 @@
     "entry-544",
     "entry-5450",
     "entry-5461",
-    "entry-5472"
+    "entry-5472",
+    "entry-5484",
+    "entry-5495",
+    "entry-5505",
+    "entry-5517",
+    "entry-5528",
+    "entry-5539",
+    "entry-555",
+    "entry-5560",
+    "entry-5571",
+    "entry-5582"
   ],
-  "checked_count": 408,
-  "remaining_count": 170,
+  "checked_count": 418,
+  "remaining_count": 160,
   "correction_ids": [
     "entry-1005",
     "entry-1016",
@@ -522,16 +532,16 @@
     "cloud-09-impact-review-17.jsonl"
   ],
   "last_batch_ids": [
-    "entry-5375",
-    "entry-5386",
-    "entry-5397",
-    "entry-5407",
-    "entry-5418",
-    "entry-5429",
-    "entry-544",
-    "entry-5450",
-    "entry-5461",
-    "entry-5472"
+    "entry-5484",
+    "entry-5495",
+    "entry-5505",
+    "entry-5517",
+    "entry-5528",
+    "entry-5539",
+    "entry-555",
+    "entry-5560",
+    "entry-5571",
+    "entry-5582"
   ],
   "last_batch_corrections": []
 }
