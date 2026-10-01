@@ -2,8 +2,8 @@
   "worker": 11,
   "assigned_total": 158,
   "completed": 40,
-  "needs_context": 110,
-  "remaining": 8,
+  "needs_context": 118,
+  "remaining": 0,
   "processed_ids": [
     "entry-1021",
     "entry-1043",
@@ -154,7 +154,15 @@
     "entry-807",
     "entry-823",
     "entry-839",
-    "entry-853"
+    "entry-853",
+    "entry-867",
+    "entry-884",
+    "entry-905",
+    "entry-920",
+    "entry-941",
+    "entry-963",
+    "entry-99",
+    "expanded-20260917-un-iran-war-crimes-report"
   ],
-  "last_output": "cloud-11-finish-020.jsonl"
+  "last_output": "cloud-11-finish-021.jsonl"
 }
