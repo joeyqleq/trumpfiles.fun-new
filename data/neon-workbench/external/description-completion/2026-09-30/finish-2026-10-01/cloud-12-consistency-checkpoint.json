@@ -2,8 +2,8 @@
   "worker": 12,
   "assignment": "impact-v2-consistency-review",
   "assigned_count": 578,
-  "checked_count": 380,
-  "remaining_count": 198,
+  "checked_count": 390,
+  "remaining_count": 188,
   "correction_count": 77,
   "checked_ids": [
     "entry-1008",
@@ -385,7 +385,17 @@
     "entry-5128",
     "entry-5139",
     "entry-515",
-    "entry-5160"
+    "entry-5160",
+    "entry-5172",
+    "entry-5183",
+    "entry-5197",
+    "entry-5208",
+    "entry-522",
+    "entry-5231",
+    "entry-5243",
+    "entry-5254",
+    "entry-5265",
+    "entry-5276"
   ],
   "correction_files": [
     "score-outputs/cloud-12-impact-review-001.jsonl",
