@@ -21,10 +21,20 @@
     "entry-1179",
     "entry-119",
     "entry-120",
-    "entry-1210"
+    "entry-1210",
+    "entry-1221",
+    "entry-1232",
+    "entry-1243",
+    "entry-1254",
+    "entry-1265",
+    "entry-1276",
+    "entry-1287",
+    "entry-1298",
+    "entry-1308",
+    "entry-1319"
   ],
-  "checked_count": 20,
-  "pass_count": 6,
-  "finding_count": 14,
-  "next_input_index": 20
+  "checked_count": 30,
+  "pass_count": 8,
+  "finding_count": 22,
+  "next_input_index": 30
 }
