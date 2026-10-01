@@ -3,10 +3,10 @@
   "phase": "scoring",
   "version": "impact-v2",
   "assigned_count": 579,
-  "processed_count": 569,
-  "scored_count": 526,
+  "processed_count": 579,
+  "scored_count": 536,
   "deferred_count": 43,
-  "remaining_count": 10,
+  "remaining_count": 0,
   "completed_ids": [
     "entry-1003",
     "entry-1014",
@@ -533,7 +533,17 @@
     "entry-932",
     "entry-943",
     "entry-954",
-    "entry-965"
+    "entry-965",
+    "entry-976",
+    "entry-987",
+    "entry-998",
+    "expanded-20260830-kharg-ai-post",
+    "expanded-20260909-rnc-dividend-pledge",
+    "expanded-20260916-nih-censorship-lawsuit",
+    "expanded-20260924-ice-federal-plaza-injunction",
+    "expanded-20260928-garces-criminal-complaint",
+    "fresh-20260831-polymarket-round",
+    "fresh-20260928-draganfly-financing"
   ],
   "deferred_ids": [
     "entry-1179",
