@@ -2,10 +2,10 @@
   "worker": "05",
   "phase": "writing",
   "assigned_total": 158,
-  "saved_total": 140,
-  "completed": 28,
-  "needs_context": 112,
-  "remaining": 18,
+  "saved_total": 144,
+  "completed": 30,
+  "needs_context": 114,
+  "remaining": 14,
   "saved_record_ids": [
     "entry-1008",
     "entry-1033",
@@ -146,11 +146,16 @@
     "entry-6915",
     "entry-6997",
     "entry-7026",
-    "entry-7045"
+    "entry-7045",
+    "entry-7080",
+    "entry-7129",
+    "entry-7173",
+    "entry-7200"
   ],
-  "last_output": "cloud-05-finish-031.jsonl",
+  "last_output": "cloud-05-finish-032.jsonl",
   "supersedes": {
-    "entry-1233": "cloud-05-finish-002.jsonl"
+    "entry-1233": "cloud-05-finish-002.jsonl",
+    "entry-2630": "cloud-05-finish-031.jsonl"
   },
   "model": "GPT-6 (available session model; requested Luna unavailable)",
   "updated_at": "2026-10-01"
