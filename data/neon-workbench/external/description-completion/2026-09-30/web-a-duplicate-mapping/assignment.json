@@ -1,0 +1,98 @@
+{
+  "scope": "approved duplicate only; proposals only",
+  "source_branch": "codex/description-results-2026-09-30",
+  "workers": 6,
+  "model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "batches": [
+    {
+      "worker": "worker-1",
+      "ids": [
+        "entry-4871",
+        "entry-6007",
+        "entry-6125",
+        "entry-6136",
+        "entry-6208",
+        "entry-6212",
+        "entry-6368",
+        "entry-6393",
+        "entry-6419",
+        "entry-6691"
+      ]
+    },
+    {
+      "worker": "worker-2",
+      "ids": [
+        "entry-6693",
+        "entry-6696",
+        "entry-6867",
+        "entry-6871",
+        "entry-7047",
+        "entry-7048",
+        "entry-7050",
+        "entry-7051",
+        "entry-7057",
+        "entry-7066"
+      ]
+    },
+    {
+      "worker": "worker-3",
+      "ids": [
+        "entry-7075",
+        "entry-7085",
+        "entry-7086",
+        "entry-7087",
+        "entry-7089",
+        "entry-7094",
+        "entry-7095",
+        "entry-7101",
+        "entry-7110",
+        "entry-7111"
+      ]
+    },
+    {
+      "worker": "worker-4",
+      "ids": [
+        "entry-7113",
+        "entry-7115",
+        "entry-7117",
+        "entry-7120",
+        "entry-7121",
+        "entry-7123",
+        "entry-7125",
+        "entry-7126",
+        "entry-7130",
+        "entry-7131"
+      ]
+    },
+    {
+      "worker": "worker-5",
+      "ids": [
+        "entry-7132",
+        "entry-7133",
+        "entry-7137",
+        "entry-7138",
+        "entry-7147",
+        "entry-7153",
+        "entry-7154",
+        "entry-7156",
+        "entry-7158",
+        "entry-7159"
+      ]
+    },
+    {
+      "worker": "worker-6",
+      "ids": [
+        "entry-7166",
+        "entry-7168",
+        "entry-7176",
+        "entry-7177",
+        "entry-7178",
+        "entry-7179",
+        "entry-7186",
+        "entry-7188",
+        "entry-7195"
+      ]
+    }
+  ]
+}
