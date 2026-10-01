@@ -1,9 +1,9 @@
 {
   "worker": 11,
   "assigned_total": 578,
-  "scored": 358,
+  "scored": 368,
   "deferred": 31,
-  "remaining": 189,
+  "remaining": 179,
   "processed_ids": [
     "entry-1007",
     "entry-1018",
