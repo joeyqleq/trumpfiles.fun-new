@@ -1,0 +1,26 @@
+{
+  "worker": "cloud-08",
+  "assignment_file": "worker-08-score-input.jsonl",
+  "version": "impact-v2",
+  "assigned_count": 579,
+  "processed_count": 8,
+  "scored_count": 8,
+  "deferred_count": 0,
+  "remaining_count": 571,
+  "processed_batches": [
+    1
+  ],
+  "output_files": [
+    "score-outputs/cloud-08-impact-001.jsonl"
+  ],
+  "processed_ids": [
+    "entry-1004",
+    "entry-1015",
+    "entry-1026",
+    "entry-1037",
+    "entry-1048",
+    "entry-1059",
+    "entry-1071",
+    "entry-1082"
+  ]
+}
