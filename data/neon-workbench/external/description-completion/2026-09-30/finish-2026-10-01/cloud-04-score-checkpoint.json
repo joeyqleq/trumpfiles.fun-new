@@ -2,9 +2,9 @@
   "worker": "04",
   "assignment": "worker-04-score-input.jsonl",
   "assigned_count": 579,
-  "scored_count": 246,
-  "deferred_count": 49,
-  "remaining_count": 284,
+  "scored_count": 255,
+  "deferred_count": 50,
+  "remaining_count": 274,
   "terminal_record_ids": [
     "entry-1000",
     "entry-1011",
@@ -300,9 +300,7 @@
     "entry-4167",
     "entry-4178",
     "entry-4189",
-    "entry-42"
-  ],
-  "remaining_record_ids": [
+    "entry-42",
     "entry-421",
     "entry-4220",
     "entry-4231",
@@ -312,7 +310,9 @@
     "entry-4277",
     "entry-4289",
     "entry-43",
-    "entry-431",
+    "entry-431"
+  ],
+  "remaining_record_ids": [
     "entry-4327",
     "entry-4338",
     "entry-4349",
@@ -588,5 +588,5 @@
     "expanded-20260929-third-country-sc-stay",
     "fresh-20260922-curtis-probe-request"
   ],
-  "latest_output": "cloud-04-impact-030.jsonl"
+  "latest_output": "cloud-04-impact-031.jsonl"
 }
