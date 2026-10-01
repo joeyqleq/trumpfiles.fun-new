@@ -3,9 +3,9 @@
   "assignment": "finish-2026-10-01 writing pass",
   "input_commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
   "total_assigned": 159,
-  "completed": 11,
-  "needs_context": 17,
-  "remaining": 131,
+  "completed": 12,
+  "needs_context": 26,
+  "remaining": 121,
   "processed_record_ids": [
     "entry-1000",
     "entry-1027",
@@ -34,13 +34,24 @@
     "entry-1677",
     "entry-1703",
     "entry-1728",
-    "entry-1751"
+    "entry-1751",
+    "entry-177",
+    "entry-1788",
+    "entry-184",
+    "entry-1871",
+    "entry-1904",
+    "entry-195",
+    "entry-199",
+    "entry-2026",
+    "entry-208",
+    "entry-2117"
   ],
   "output_files": [
     "outputs/cloud-02-finish-001.jsonl",
     "outputs/cloud-02-finish-002.jsonl",
     "outputs/cloud-02-finish-003.jsonl",
-    "outputs/cloud-02-finish-004.jsonl"
+    "outputs/cloud-02-finish-004.jsonl",
+    "outputs/cloud-02-finish-005.jsonl"
   ],
-  "notes": "Counts reflect unique terminal dispositions validated against worker-02-repair-input.jsonl. Malformed finish-001 rows were superseded by finish-002; entry-1183 remains terminal needs_context. finish-004 includes source/date mismatches and precise source-reading gaps as needs_context."
+  "notes": "Counts are unique latest dispositions reconciled against worker-02-repair-input.jsonl. Existing populated fields are preserved; unsupported claims and source mismatches remain needs_context with precise correction requests."
 }
