@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 173,
+  "scored_count": 183,
   "deferred_count": 27,
-  "remaining_count": 378,
+  "remaining_count": 368,
   "processed_ids": [
     "entry-1006",
     "entry-1017",
@@ -204,7 +204,17 @@
     "entry-3146",
     "entry-3157",
     "entry-3168",
-    "entry-3179"
+    "entry-3179",
+    "entry-319",
+    "entry-320",
+    "entry-3210",
+    "entry-3221",
+    "entry-3232",
+    "entry-3243",
+    "entry-3254",
+    "entry-3265",
+    "entry-3276",
+    "entry-3287"
   ],
   "batches": [
     {
@@ -544,6 +554,22 @@
         "entry-3168",
         "entry-3179"
       ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-024.jsonl",
+      "record_count": 10,
+      "record_ids": [
+        "entry-319",
+        "entry-320",
+        "entry-3210",
+        "entry-3221",
+        "entry-3232",
+        "entry-3243",
+        "entry-3254",
+        "entry-3265",
+        "entry-3276",
+        "entry-3287"
+      ]
     }
   ],
   "latest_versions": {
@@ -746,7 +772,17 @@
     "entry-3146": "score-outputs/cloud-10-impact-023.jsonl",
     "entry-3157": "score-outputs/cloud-10-impact-023.jsonl",
     "entry-3168": "score-outputs/cloud-10-impact-023.jsonl",
-    "entry-3179": "score-outputs/cloud-10-impact-023.jsonl"
+    "entry-3179": "score-outputs/cloud-10-impact-023.jsonl",
+    "entry-319": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-320": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-3210": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-3221": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-3232": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-3243": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-3254": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-3265": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-3276": "score-outputs/cloud-10-impact-024.jsonl",
+    "entry-3287": "score-outputs/cloud-10-impact-024.jsonl"
   },
   "status_by_id": {
     "entry-1006": "scored",
@@ -948,6 +984,16 @@
     "entry-3146": "scored",
     "entry-3157": "scored",
     "entry-3168": "scored",
-    "entry-3179": "scored"
+    "entry-3179": "scored",
+    "entry-319": "scored",
+    "entry-320": "scored",
+    "entry-3210": "scored",
+    "entry-3221": "scored",
+    "entry-3232": "scored",
+    "entry-3243": "scored",
+    "entry-3254": "scored",
+    "entry-3265": "scored",
+    "entry-3276": "scored",
+    "entry-3287": "scored"
   }
 }
