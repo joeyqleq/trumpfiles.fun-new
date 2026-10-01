@@ -2,10 +2,10 @@
   "worker": "07",
   "phase": "writing",
   "assigned_count": 158,
-  "processed_count": 20,
+  "processed_count": 30,
   "complete_count": 7,
-  "needs_context_count": 13,
-  "remaining_count": 138,
+  "needs_context_count": 23,
+  "remaining_count": 128,
   "completed_ids": [
     "entry-1012",
     "entry-1036",
@@ -28,6 +28,16 @@
     "entry-1491",
     "entry-1513",
     "entry-1565",
-    "entry-1592"
+    "entry-1592",
+    "entry-1612",
+    "entry-1629",
+    "entry-1649",
+    "entry-1667",
+    "entry-169",
+    "entry-1716",
+    "entry-1735",
+    "entry-1761",
+    "entry-1779",
+    "entry-180"
   ]
 }
