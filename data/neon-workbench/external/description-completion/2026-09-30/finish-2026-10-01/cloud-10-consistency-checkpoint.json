@@ -2,7 +2,7 @@
   "worker": 10,
   "input_file": "worker-10-score-input.jsonl",
   "assigned_record_count": 578,
-  "checked_count": 570,
+  "checked_count": 578,
   "checked_ids": [
     "entry-1006",
     "entry-1017",
@@ -573,9 +573,17 @@
     "entry-946",
     "entry-957",
     "entry-968",
-    "entry-979"
+    "entry-979",
+    "entry-99",
+    "expanded-20260821-james-subpoenas-appeal",
+    "expanded-20260831-vance-kharg-defense",
+    "expanded-20260910-rnc-kennedy-falsehoods",
+    "expanded-20260917-un-iran-war-crimes-report",
+    "expanded-20260924-senate-oil-donors-report",
+    "expanded-20260928-media-preliminary-injunction-request",
+    "fresh-20260910-trump-phone-price"
   ],
-  "correction_count": 151,
+  "correction_count": 153,
   "correction_ids": [
     "entry-1006",
     "entry-1017",
@@ -727,9 +735,11 @@
     "entry-7185",
     "entry-749",
     "entry-816",
-    "entry-827"
+    "entry-827",
+    "expanded-20260821-james-subpoenas-appeal",
+    "expanded-20260910-rnc-kennedy-falsehoods"
   ],
-  "remaining_count": 8,
+  "remaining_count": 0,
   "batches": [
     {
       "batch": 1,
@@ -1706,6 +1716,21 @@
       ],
       "correction_file": null,
       "correction_count": 0
+    },
+    {
+      "batch": 59,
+      "record_ids": [
+        "entry-99",
+        "expanded-20260821-james-subpoenas-appeal",
+        "expanded-20260831-vance-kharg-defense",
+        "expanded-20260910-rnc-kennedy-falsehoods",
+        "expanded-20260917-un-iran-war-crimes-report",
+        "expanded-20260924-senate-oil-donors-report",
+        "expanded-20260928-media-preliminary-injunction-request",
+        "fresh-20260910-trump-phone-price"
+      ],
+      "correction_file": "score-outputs/cloud-10-impact-review-059.jsonl",
+      "correction_count": 2
     }
   ]
 }
