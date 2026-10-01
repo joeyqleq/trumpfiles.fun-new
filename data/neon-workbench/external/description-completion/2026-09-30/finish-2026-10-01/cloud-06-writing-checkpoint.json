@@ -174,8 +174,6 @@
     "entry-2163",
     "entry-2197",
     "entry-2275",
-    "entry-2335",
-    "entry-2364",
     "entry-2422",
     "entry-2634",
     "entry-2907",
@@ -231,6 +229,8 @@
     "entry-213",
     "entry-2231",
     "entry-2308",
+    "entry-2335",
+    "entry-2364",
     "entry-2391",
     "entry-2462",
     "entry-2498",
@@ -326,9 +326,9 @@
     "entry-978",
     "expanded-20260821-visa75-court"
   ],
-  "completed_count": 34,
-  "needs_context_count": 59,
+  "completed_count": 32,
+  "needs_context_count": 61,
   "remaining_count": 65,
-  "last_output_file": "cloud-06-finish-20.jsonl",
+  "last_output_file": "cloud-06-finish-21.jsonl",
   "status": "in_progress"
 }
