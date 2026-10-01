@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 66,
+  "scored_count": 67,
   "deferred_count": 14,
-  "remaining_count": 498,
+  "remaining_count": 497,
   "processed_ids": [
     "entry-1006",
     "entry-1017",
@@ -84,7 +84,8 @@
     "entry-1850",
     "entry-1861",
     "entry-1872",
-    "entry-1883"
+    "entry-1883",
+    "entry-1937"
   ],
   "batches": [
     {
@@ -214,6 +215,17 @@
         "entry-1872",
         "entry-1883"
       ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-009.jsonl",
+      "record_count": 5,
+      "record_ids": [
+        "entry-1894",
+        "entry-1904",
+        "entry-1915",
+        "entry-1926",
+        "entry-1937"
+      ]
     }
   ],
   "latest_versions": {
@@ -296,7 +308,8 @@
     "entry-1850": "score-outputs/cloud-10-impact-008.jsonl",
     "entry-1861": "score-outputs/cloud-10-impact-008.jsonl",
     "entry-1872": "score-outputs/cloud-10-impact-008.jsonl",
-    "entry-1883": "score-outputs/cloud-10-impact-008.jsonl"
+    "entry-1883": "score-outputs/cloud-10-impact-008.jsonl",
+    "entry-1937": "score-outputs/cloud-10-impact-009.jsonl"
   },
   "status_by_id": {
     "entry-1006": "scored",
@@ -378,6 +391,7 @@
     "entry-1850": "scored",
     "entry-1861": "scored",
     "entry-1872": "scored",
-    "entry-1883": "scored"
+    "entry-1883": "scored",
+    "entry-1937": "scored"
   }
 }
