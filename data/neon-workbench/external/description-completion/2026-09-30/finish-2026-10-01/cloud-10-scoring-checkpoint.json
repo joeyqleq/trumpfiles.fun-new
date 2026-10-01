@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 345,
+  "scored_count": 355,
   "deferred_count": 35,
-  "remaining_count": 198,
+  "remaining_count": 188,
   "processed_ids": [
     "entry-40",
     "entry-45",
@@ -44,6 +44,7 @@
     "entry-483",
     "entry-494",
     "entry-505",
+    "entry-523",
     "entry-1006",
     "entry-1017",
     "entry-1028",
@@ -384,7 +385,16 @@
     "entry-5126",
     "entry-5137",
     "entry-5148",
-    "entry-5159"
+    "entry-5159",
+    "entry-5170",
+    "entry-5181",
+    "entry-5195",
+    "entry-5205",
+    "entry-5218",
+    "entry-5241",
+    "entry-5252",
+    "entry-5263",
+    "entry-5274"
   ],
   "batches": [
     {
@@ -1011,6 +1021,22 @@
         "entry-5137",
         "entry-5148",
         "entry-5159"
+      ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-043.jsonl",
+      "record_count": 10,
+      "record_ids": [
+        "entry-5170",
+        "entry-5181",
+        "entry-5195",
+        "entry-5205",
+        "entry-5218",
+        "entry-523",
+        "entry-5241",
+        "entry-5252",
+        "entry-5263",
+        "entry-5274"
       ]
     }
   ],
@@ -1676,7 +1702,17 @@
     "entry-5126": "scored",
     "entry-5137": "scored",
     "entry-5148": "scored",
-    "entry-5159": "scored"
+    "entry-5159": "scored",
+    "entry-5170": "scored",
+    "entry-5181": "scored",
+    "entry-5195": "scored",
+    "entry-5205": "scored",
+    "entry-5218": "scored",
+    "entry-523": "scored",
+    "entry-5241": "scored",
+    "entry-5252": "scored",
+    "entry-5263": "scored",
+    "entry-5274": "scored"
   },
   "file_by_id": {
     "entry-4053": "score-outputs/cloud-10-impact-033.jsonl",
@@ -1778,6 +1814,16 @@
     "entry-5126": "score-outputs/cloud-10-impact-042.jsonl",
     "entry-5137": "score-outputs/cloud-10-impact-042.jsonl",
     "entry-5148": "score-outputs/cloud-10-impact-042.jsonl",
-    "entry-5159": "score-outputs/cloud-10-impact-042.jsonl"
+    "entry-5159": "score-outputs/cloud-10-impact-042.jsonl",
+    "entry-5170": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-5181": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-5195": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-5205": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-5218": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-523": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-5241": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-5252": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-5263": "score-outputs/cloud-10-impact-043.jsonl",
+    "entry-5274": "score-outputs/cloud-10-impact-043.jsonl"
   }
 }
