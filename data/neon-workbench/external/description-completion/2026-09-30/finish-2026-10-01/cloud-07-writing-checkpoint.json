@@ -2,10 +2,10 @@
   "worker": "07",
   "phase": "writing",
   "assigned_count": 158,
-  "processed_count": 80,
-  "complete_count": 21,
-  "needs_context_count": 59,
-  "remaining_count": 78,
+  "processed_count": 85,
+  "complete_count": 23,
+  "needs_context_count": 62,
+  "remaining_count": 73,
   "completed_ids": [
     "entry-1012",
     "entry-1036",
@@ -27,7 +27,9 @@
     "entry-3499",
     "entry-3548",
     "entry-3632",
-    "entry-3745"
+    "entry-3745",
+    "entry-3879",
+    "entry-3945"
   ],
   "needs_context_ids": [
     "entry-1073",
@@ -88,6 +90,9 @@
     "entry-3712",
     "entry-378",
     "entry-3809",
-    "entry-3840"
+    "entry-3840",
+    "entry-3903",
+    "entry-3978",
+    "entry-4004"
   ]
 }
