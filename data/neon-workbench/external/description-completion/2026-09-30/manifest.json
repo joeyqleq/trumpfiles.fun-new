@@ -5,10 +5,11 @@
   "held": 283,
   "writing_or_tags_needed": 6944,
   "lanes": {
-    "native": 1735,
+    "native": 1015,
     "opencodex": 1736,
     "chatgpt-web": 1736,
-    "lightsprint": 1737
+    "lightsprint": 1737,
+    "native-cloud": 720
   },
   "preserved_fields": {
     "preserved_title": 6926,
@@ -42,5 +43,6 @@
     "soft_hide_candidate": 111,
     "approved duplicate": 59,
     "still_unresolved": 81
-  }
+  },
+  "cloud_workers": 16
 }
