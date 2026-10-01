@@ -1,0 +1,157 @@
+{
+  "stage": "review_in_progress",
+  "completed_parent_ids": [
+    "entry-4239",
+    "entry-4240",
+    "entry-4407",
+    "entry-4457",
+    "entry-4577",
+    "entry-4696",
+    "entry-4708",
+    "entry-4739",
+    "entry-4753",
+    "entry-4906",
+    "entry-5161",
+    "entry-5189",
+    "entry-5190",
+    "entry-5191",
+    "entry-5207",
+    "entry-5213",
+    "entry-5224",
+    "entry-5814",
+    "entry-5816",
+    "entry-5832",
+    "entry-6414",
+    "entry-6424",
+    "entry-6428",
+    "entry-6443",
+    "entry-6456",
+    "entry-6479",
+    "entry-6749"
+  ],
+  "remaining_parent_ids": [
+    "entry-5237",
+    "entry-5344",
+    "entry-5512",
+    "entry-5752",
+    "entry-5754"
+  ],
+  "counts": {
+    "parents": 27,
+    "unique_parent_ids": 27,
+    "children": 21,
+    "status_counts": {
+      "split_drafted": 9,
+      "unresolved": 18
+    },
+    "errors": [],
+    "word_counts": [
+      {
+        "child_record_id": "entry-5190-split-01",
+        "medium_words": 45,
+        "long_words": 156
+      },
+      {
+        "child_record_id": "entry-5190-split-02",
+        "medium_words": 47,
+        "long_words": 163
+      },
+      {
+        "child_record_id": "entry-5190-split-03",
+        "medium_words": 46,
+        "long_words": 160
+      },
+      {
+        "child_record_id": "entry-5191-split-01",
+        "medium_words": 52,
+        "long_words": 161
+      },
+      {
+        "child_record_id": "entry-5191-split-02",
+        "medium_words": 52,
+        "long_words": 156
+      },
+      {
+        "child_record_id": "entry-5207-split-01",
+        "medium_words": 51,
+        "long_words": 163
+      },
+      {
+        "child_record_id": "entry-5207-split-02",
+        "medium_words": 47,
+        "long_words": 158
+      },
+      {
+        "child_record_id": "entry-5213-split-01",
+        "medium_words": 47,
+        "long_words": 165
+      },
+      {
+        "child_record_id": "entry-5213-split-02",
+        "medium_words": 51,
+        "long_words": 168
+      },
+      {
+        "child_record_id": "entry-5224-split-01",
+        "medium_words": 58,
+        "long_words": 175
+      },
+      {
+        "child_record_id": "entry-5224-split-02",
+        "medium_words": 45,
+        "long_words": 167
+      },
+      {
+        "child_record_id": "entry-5814-split-01",
+        "medium_words": 51,
+        "long_words": 151
+      },
+      {
+        "child_record_id": "entry-5814-split-02",
+        "medium_words": 48,
+        "long_words": 140
+      },
+      {
+        "child_record_id": "entry-5816-split-01",
+        "medium_words": 58,
+        "long_words": 150
+      },
+      {
+        "child_record_id": "entry-5816-split-02",
+        "medium_words": 51,
+        "long_words": 145
+      },
+      {
+        "child_record_id": "entry-5832-split-01",
+        "medium_words": 56,
+        "long_words": 156
+      },
+      {
+        "child_record_id": "entry-5832-split-02",
+        "medium_words": 64,
+        "long_words": 147
+      },
+      {
+        "child_record_id": "entry-6414-split-01",
+        "medium_words": 54,
+        "long_words": 156
+      },
+      {
+        "child_record_id": "entry-6414-split-02",
+        "medium_words": 51,
+        "long_words": 152
+      },
+      {
+        "child_record_id": "entry-6424-split-01",
+        "medium_words": 64,
+        "long_words": 167
+      },
+      {
+        "child_record_id": "entry-6428-split-01",
+        "medium_words": 48,
+        "long_words": 154
+      }
+    ]
+  },
+  "notes": "32 initial outcomes have been pushed. Five batch04 execution-error fallbacks are excluded pending corrective source-based outcomes. Other saved histories remain immutable; final consolidated set will apply documented provenance/attribution corrections."
+}
