@@ -1,0 +1,18 @@
+{
+  "worker": "cloud-01",
+  "input": "worker-01-score-input.jsonl",
+  "rubric": "RUBRIC.md",
+  "version": "impact-v2",
+  "assigned_count": 579,
+  "checked_count": 5,
+  "remaining_count": 574,
+  "corrections_count": 0,
+  "checked_record_ids": [
+    "entry-1",
+    "entry-1009",
+    "entry-102",
+    "entry-1030",
+    "entry-1041"
+  ],
+  "correction_files": []
+}
