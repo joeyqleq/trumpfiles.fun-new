@@ -3,10 +3,10 @@
   "phase": "scoring",
   "version": "impact-v2",
   "assigned_total": 579,
-  "saved_total": 564,
-  "scored": 523,
+  "saved_total": 569,
+  "scored": 528,
   "deferred": 41,
-  "remaining": 15,
+  "remaining": 10,
   "saved_record_ids": [
     "entry-1001",
     "entry-1012",
@@ -571,9 +571,14 @@
     "entry-877",
     "entry-888",
     "entry-899",
-    "entry-909"
+    "entry-909",
+    "entry-92",
+    "entry-930",
+    "entry-941",
+    "entry-952",
+    "entry-963"
   ],
-  "last_output": "cloud-05-impact-063.jsonl",
+  "last_output": "cloud-05-impact-064.jsonl",
   "model": "GPT-6 (available session model; requested GPT-6 Luna low unavailable)",
   "updated_at": "2026-10-01"
 }
