@@ -2,7 +2,7 @@
   "worker": 10,
   "input_file": "worker-10-score-input.jsonl",
   "assigned_record_count": 578,
-  "checked_count": 520,
+  "checked_count": 530,
   "checked_ids": [
     "entry-1006",
     "entry-1017",
@@ -523,7 +523,17 @@
     "entry-6767",
     "entry-679",
     "entry-681",
-    "entry-6831"
+    "entry-6831",
+    "entry-6849",
+    "entry-6860",
+    "entry-6875",
+    "entry-6887",
+    "entry-69",
+    "entry-6910",
+    "entry-6923",
+    "entry-695",
+    "entry-697",
+    "entry-6986"
   ],
   "correction_count": 142,
   "correction_ids": [
@@ -670,7 +680,7 @@
     "entry-6623",
     "entry-6677"
   ],
-  "remaining_count": 58,
+  "remaining_count": 48,
   "batches": [
     {
       "batch": 1,
@@ -1559,6 +1569,23 @@
         "entry-679",
         "entry-681",
         "entry-6831"
+      ],
+      "correction_file": null,
+      "correction_count": 0
+    },
+    {
+      "batch": 54,
+      "record_ids": [
+        "entry-6849",
+        "entry-6860",
+        "entry-6875",
+        "entry-6887",
+        "entry-69",
+        "entry-6910",
+        "entry-6923",
+        "entry-695",
+        "entry-697",
+        "entry-6986"
       ],
       "correction_file": null,
       "correction_count": 0
