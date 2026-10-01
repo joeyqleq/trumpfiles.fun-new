@@ -16,7 +16,7 @@
     "entry-7043",
     "fresh-20260914-oge-trump-ptr"
   ],
-  "terminal_saved_count": 119,
+  "terminal_saved_count": 127,
   "terminal_saved_ids": [
     "entry-1321",
     "entry-1355",
@@ -136,11 +136,19 @@
     "entry-5436",
     "entry-5470",
     "entry-5513",
-    "entry-5540"
+    "entry-5540",
+    "entry-557",
+    "entry-5605",
+    "entry-566",
+    "entry-57",
+    "entry-5783",
+    "entry-5897",
+    "entry-596",
+    "entry-6049"
   ],
-  "complete_count": 29,
-  "needs_context_count": 90,
-  "remaining_count": 40,
-  "last_output": "outputs/cloud-03-finish-020.jsonl",
+  "complete_count": 33,
+  "needs_context_count": 94,
+  "remaining_count": 32,
+  "last_output": "outputs/cloud-03-finish-021.jsonl",
   "status": "in_progress"
 }
