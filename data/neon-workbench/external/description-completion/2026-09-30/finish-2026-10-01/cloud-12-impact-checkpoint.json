@@ -2,10 +2,10 @@
   "worker": 12,
   "assignment": "impact-v2",
   "assigned_count": 578,
-  "processed_count": 571,
-  "scored_count": 512,
+  "processed_count": 578,
+  "scored_count": 519,
   "deferred_count": 59,
-  "remaining_count": 7,
+  "remaining_count": 0,
   "processed_ids": [
     "entry-1008",
     "entry-1019",
@@ -577,7 +577,14 @@
     "entry-959",
     "entry-97",
     "entry-980",
-    "entry-991"
+    "entry-991",
+    "expanded-20260821-visa75-court",
+    "expanded-20260902-california-waivers-order",
+    "expanded-20260910-vance-rnc-misleading-claims",
+    "expanded-20260918-trump-five-vaccine-doses",
+    "expanded-20260925-pocket-rescission-announcement",
+    "expanded-20260929-irgc-us-voter-letter",
+    "fresh-20260914-oge-trump-ptr"
   ],
   "output_files": [
     "score-outputs/cloud-12-impact-001.jsonl",
@@ -637,6 +644,7 @@
     "score-outputs/cloud-12-impact-055.jsonl",
     "score-outputs/cloud-12-impact-056.jsonl",
     "score-outputs/cloud-12-impact-057.jsonl",
-    "score-outputs/cloud-12-impact-058.jsonl"
+    "score-outputs/cloud-12-impact-058.jsonl",
+    "score-outputs/cloud-12-impact-059.jsonl"
   ]
 }
