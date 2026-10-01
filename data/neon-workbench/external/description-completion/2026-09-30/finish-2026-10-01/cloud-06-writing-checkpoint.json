@@ -196,7 +196,9 @@
     "entry-3776",
     "entry-3806",
     "entry-384",
-    "entry-3941"
+    "entry-3941",
+    "entry-4048",
+    "entry-4123"
   ],
   "needs_context_record_ids": [
     "entry-1072",
@@ -249,17 +251,15 @@
     "entry-3876",
     "entry-3901",
     "entry-3976",
-    "entry-3998"
-  ],
-  "remaining_record_ids": [
-    "entry-4048",
+    "entry-3998",
     "entry-4085",
-    "entry-4123",
     "entry-4169",
     "entry-4205",
     "entry-4260",
     "entry-4298",
-    "entry-4320",
+    "entry-4320"
+  ],
+  "remaining_record_ids": [
     "entry-4349",
     "entry-440",
     "entry-4477",
@@ -326,9 +326,9 @@
     "entry-978",
     "expanded-20260821-visa75-court"
   ],
-  "completed_count": 34,
-  "needs_context_count": 51,
-  "remaining_count": 73,
-  "last_output_file": "cloud-06-finish-11.jsonl",
+  "completed_count": 36,
+  "needs_context_count": 57,
+  "remaining_count": 65,
+  "last_output_file": "cloud-06-finish-12.jsonl",
   "status": "in_progress"
 }
