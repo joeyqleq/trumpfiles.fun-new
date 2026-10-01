@@ -1,0 +1,20 @@
+{
+  "amendments": [
+    {
+      "file": "worker-01/batch-006.jsonl",
+      "supersedes_file": "worker-01/batch-004.jsonl",
+      "record_ids": [
+        "entry-1194"
+      ],
+      "reason": "Worker confirmed appended Reuters-supported context to fix139-word earlierlong."
+    },
+    {
+      "file": "worker-04/batch-001-amendment.jsonl",
+      "supersedes_file": "worker-04/batch-001.jsonl",
+      "record_ids": [
+        "entry-3972"
+      ],
+      "reason": "Worker confirmed factual hepatitis-B schedule correction and readerprose revision."
+    }
+  ]
+}
