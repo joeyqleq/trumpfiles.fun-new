@@ -253,13 +253,24 @@
     "entry-3684",
     "entry-3695",
     "entry-3705",
-    "entry-3716"
+    "entry-3716",
+    "entry-3727",
+    "entry-3738",
+    "entry-3749",
+    "entry-376",
+    "entry-3770",
+    "entry-3781",
+    "entry-3792",
+    "entry-3802",
+    "entry-3813",
+    "entry-3824"
   ],
-  "corrections_appended": 3,
+  "corrections_appended": 4,
   "correction_record_ids": [
     "entry-2399",
     "entry-3132",
-    "entry-3424"
+    "entry-3424",
+    "entry-3770"
   ],
-  "next_unchecked_index": 250
+  "next_unchecked_index": 260
 }
