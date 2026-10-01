@@ -1,0 +1,13 @@
+{
+  "worker": 12,
+  "assignment": "repair",
+  "assigned_count": 158,
+  "processed_count": 8,
+  "complete_count": 7,
+  "needs_context_count": 1,
+  "remaining_count": 150,
+  "completed_ids": ["entry-1022", "entry-1048", "entry-1090", "entry-1138", "entry-1220", "entry-1253", "entry-1289"],
+  "needs_context_ids": ["entry-1174"],
+  "remaining_count_only": true,
+  "output_files": ["outputs/cloud-12-finish-001.jsonl"]
+}
