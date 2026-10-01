@@ -81,10 +81,20 @@
     "entry-1848",
     "entry-1859",
     "entry-187",
-    "entry-1880"
+    "entry-1880",
+    "entry-1891",
+    "entry-1901",
+    "entry-1912",
+    "entry-1923",
+    "entry-1934",
+    "entry-1945",
+    "entry-1956",
+    "entry-1967",
+    "entry-1978",
+    "entry-1989"
   ],
-  "checked_count": 80,
+  "checked_count": 90,
   "pass_count": 21,
-  "finding_count": 59,
-  "next_input_index": 80
+  "finding_count": 69,
+  "next_input_index": 90
 }
