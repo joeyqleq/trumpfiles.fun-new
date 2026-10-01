@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 80,
+  "scored_count": 85,
   "deferred_count": 15,
-  "remaining_count": 483,
+  "remaining_count": 478,
   "processed_ids": [
     "entry-1006",
     "entry-1017",
@@ -99,7 +99,12 @@
     "entry-2011",
     "entry-2022",
     "entry-2033",
-    "entry-2044"
+    "entry-2044",
+    "entry-2055",
+    "entry-2066",
+    "entry-2077",
+    "entry-2088",
+    "entry-2099"
   ],
   "batches": [
     {
@@ -262,6 +267,17 @@
         "entry-2033",
         "entry-2044"
       ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-012.jsonl",
+      "record_count": 5,
+      "record_ids": [
+        "entry-2055",
+        "entry-2066",
+        "entry-2077",
+        "entry-2088",
+        "entry-2099"
+      ]
     }
   ],
   "latest_versions": {
@@ -359,7 +375,12 @@
     "entry-2011": "score-outputs/cloud-10-impact-011.jsonl",
     "entry-2022": "score-outputs/cloud-10-impact-011.jsonl",
     "entry-2033": "score-outputs/cloud-10-impact-011.jsonl",
-    "entry-2044": "score-outputs/cloud-10-impact-011.jsonl"
+    "entry-2044": "score-outputs/cloud-10-impact-011.jsonl",
+    "entry-2055": "score-outputs/cloud-10-impact-012.jsonl",
+    "entry-2066": "score-outputs/cloud-10-impact-012.jsonl",
+    "entry-2077": "score-outputs/cloud-10-impact-012.jsonl",
+    "entry-2088": "score-outputs/cloud-10-impact-012.jsonl",
+    "entry-2099": "score-outputs/cloud-10-impact-012.jsonl"
   },
   "status_by_id": {
     "entry-1006": "scored",
@@ -456,6 +477,11 @@
     "entry-2011": "scored",
     "entry-2022": "scored",
     "entry-2033": "scored",
-    "entry-2044": "scored"
+    "entry-2044": "scored",
+    "entry-2055": "scored",
+    "entry-2066": "scored",
+    "entry-2077": "scored",
+    "entry-2088": "scored",
+    "entry-2099": "scored"
   }
 }
