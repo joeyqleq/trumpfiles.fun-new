@@ -1,0 +1,33 @@
+{
+  "worker": "rescue-1-extra",
+  "batch": 2,
+  "terminal_record_ids": [
+    "entry-2554",
+    "entry-2556",
+    "entry-256",
+    "entry-2562",
+    "entry-2564",
+    "entry-257",
+    "entry-2573",
+    "entry-2575",
+    "entry-2578",
+    "entry-2583"
+  ],
+  "terminal_count": 10,
+  "repaired_count": 7,
+  "supported_partial_count": 3,
+  "unresolved_count": 0,
+  "remaining_record_ids": [],
+  "positions": [
+    468,
+    470,
+    472,
+    474,
+    476,
+    478,
+    480,
+    482,
+    484,
+    486
+  ]
+}
