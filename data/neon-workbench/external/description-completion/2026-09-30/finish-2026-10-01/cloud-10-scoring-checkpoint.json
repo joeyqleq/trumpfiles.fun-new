@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 530,
+  "scored_count": 538,
   "deferred_count": 40,
-  "remaining_count": 8,
+  "remaining_count": 0,
   "processed_ids": [
     "entry-40",
     "entry-45",
@@ -574,7 +574,15 @@
     "entry-946",
     "entry-957",
     "entry-968",
-    "entry-979"
+    "entry-979",
+    "entry-99",
+    "expanded-20260821-james-subpoenas-appeal",
+    "expanded-20260831-vance-kharg-defense",
+    "expanded-20260910-rnc-kennedy-falsehoods",
+    "expanded-20260917-un-iran-war-crimes-report",
+    "expanded-20260924-senate-oil-donors-report",
+    "expanded-20260928-media-preliminary-injunction-request",
+    "fresh-20260910-trump-phone-price"
   ],
   "batches": [
     {
@@ -1506,6 +1514,20 @@
         "entry-968",
         "entry-979"
       ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-062.jsonl",
+      "record_count": 8,
+      "record_ids": [
+        "entry-99",
+        "expanded-20260821-james-subpoenas-appeal",
+        "expanded-20260831-vance-kharg-defense",
+        "expanded-20260910-rnc-kennedy-falsehoods",
+        "expanded-20260917-un-iran-war-crimes-report",
+        "expanded-20260924-senate-oil-donors-report",
+        "expanded-20260928-media-preliminary-injunction-request",
+        "fresh-20260910-trump-phone-price"
+      ]
     }
   ],
   "latest_versions": {
@@ -1908,7 +1930,15 @@
     "entry-946": "score-outputs/cloud-10-impact-061.jsonl",
     "entry-957": "score-outputs/cloud-10-impact-061.jsonl",
     "entry-968": "score-outputs/cloud-10-impact-061.jsonl",
-    "entry-979": "score-outputs/cloud-10-impact-061.jsonl"
+    "entry-979": "score-outputs/cloud-10-impact-061.jsonl",
+    "entry-99": "score-outputs/cloud-10-impact-062.jsonl",
+    "expanded-20260821-james-subpoenas-appeal": "score-outputs/cloud-10-impact-062.jsonl",
+    "expanded-20260831-vance-kharg-defense": "score-outputs/cloud-10-impact-062.jsonl",
+    "expanded-20260910-rnc-kennedy-falsehoods": "score-outputs/cloud-10-impact-062.jsonl",
+    "expanded-20260917-un-iran-war-crimes-report": "score-outputs/cloud-10-impact-062.jsonl",
+    "expanded-20260924-senate-oil-donors-report": "score-outputs/cloud-10-impact-062.jsonl",
+    "expanded-20260928-media-preliminary-injunction-request": "score-outputs/cloud-10-impact-062.jsonl",
+    "fresh-20260910-trump-phone-price": "score-outputs/cloud-10-impact-062.jsonl"
   },
   "status_by_id": {
     "entry-1006": "scored",
@@ -2480,7 +2510,15 @@
     "entry-946": "scored",
     "entry-957": "scored",
     "entry-968": "scored",
-    "entry-979": "scored"
+    "entry-979": "scored",
+    "entry-99": "scored",
+    "expanded-20260821-james-subpoenas-appeal": "scored",
+    "expanded-20260831-vance-kharg-defense": "scored",
+    "expanded-20260910-rnc-kennedy-falsehoods": "scored",
+    "expanded-20260917-un-iran-war-crimes-report": "scored",
+    "expanded-20260924-senate-oil-donors-report": "scored",
+    "expanded-20260928-media-preliminary-injunction-request": "scored",
+    "fresh-20260910-trump-phone-price": "scored"
   },
   "file_by_id": {
     "entry-4053": "score-outputs/cloud-10-impact-033.jsonl",
