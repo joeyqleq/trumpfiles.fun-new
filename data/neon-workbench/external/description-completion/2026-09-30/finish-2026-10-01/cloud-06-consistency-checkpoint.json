@@ -607,15 +607,24 @@
     "entry-1220",
     "entry-1231",
     "entry-1242",
-    "entry-1253"
+    "entry-1253",
+    "entry-1264",
+    "entry-1275",
+    "entry-1286",
+    "entry-1297",
+    "entry-1307",
+    "entry-1318",
+    "entry-1329",
+    "entry-134"
   ],
   "correction_record_ids": [
     "entry-1080",
     "entry-1145",
     "entry-1231"
   ],
-  "checked_count": 24,
-  "remaining_count": 555,
+  "checked_count": 32,
+  "remaining_count": 547,
   "last_output_file": "cloud-06-impact-review-03.jsonl",
-  "status": "review_in_progress"
+  "status": "review_in_progress",
+  "last_batch_reviewed": 4
 }
