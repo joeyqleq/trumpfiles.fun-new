@@ -383,7 +383,17 @@
     "entry-5123",
     "entry-5134",
     "entry-5145",
-    "entry-5156"
+    "entry-5156",
+    "entry-5168",
+    "entry-5179",
+    "entry-5192",
+    "entry-5202",
+    "entry-5215",
+    "entry-5227",
+    "entry-5239",
+    "entry-525",
+    "entry-5260",
+    "entry-5271"
   ],
   "corrections_appended": 7,
   "correction_record_ids": [
@@ -395,5 +405,5 @@
     "entry-428",
     "entry-4540"
   ],
-  "next_unchecked_index": 380
+  "next_unchecked_index": 390
 }
