@@ -591,13 +591,22 @@
     "entry-1046",
     "entry-1057",
     "entry-107",
-    "entry-1080"
+    "entry-1080",
+    "entry-1091",
+    "entry-1101",
+    "entry-1112",
+    "entry-1123",
+    "entry-1134",
+    "entry-1145",
+    "entry-1156",
+    "entry-1167"
   ],
   "correction_record_ids": [
-    "entry-1080"
+    "entry-1080",
+    "entry-1145"
   ],
-  "checked_count": 8,
-  "remaining_count": 571,
-  "last_output_file": "cloud-06-impact-review-01.jsonl",
+  "checked_count": 16,
+  "remaining_count": 563,
+  "last_output_file": "cloud-06-impact-review-02.jsonl",
   "status": "review_in_progress"
 }
