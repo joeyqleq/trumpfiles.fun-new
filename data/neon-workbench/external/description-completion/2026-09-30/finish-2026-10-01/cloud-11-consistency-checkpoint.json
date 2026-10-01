@@ -2,7 +2,7 @@
   "worker": 11,
   "assignment": "worker-11-score-input.jsonl",
   "review_type": "impact-v2-consistency",
-  "checked_count": 570,
+  "checked_count": 578,
   "checked_ids": [
     "entry-1007",
     "entry-1018",
@@ -544,6 +544,7 @@
     "entry-7079",
     "entry-7093",
     "entry-7106",
+    "entry-7124",
     "entry-7142",
     "entry-7157",
     "entry-7171",
@@ -573,9 +574,16 @@
     "entry-958",
     "entry-969",
     "entry-98",
-    "entry-990"
+    "entry-990",
+    "expanded-20260821-usps-final-rule",
+    "expanded-20260902-birthright-new-injunction",
+    "expanded-20260910-rnc-trump-wall-bail",
+    "expanded-20260918-press-ban-announcement",
+    "expanded-20260924-third-country-emergency-request",
+    "expanded-20260928-nathan-birthright-lawsuit",
+    "fresh-20260914-garcia-kremlev"
   ],
-  "correction_count": 199,
+  "correction_count": 203,
   "correction_ids": [
     "entry-1018",
     "entry-1029",
@@ -769,26 +777,21 @@
     "entry-7067",
     "entry-7079",
     "entry-7106",
+    "entry-7124",
     "entry-7171",
     "entry-7187",
     "entry-72",
     "entry-805",
     "entry-817",
     "entry-828",
-    "entry-98"
+    "entry-98",
+    "expanded-20260902-birthright-new-injunction",
+    "expanded-20260910-rnc-trump-wall-bail",
+    "expanded-20260924-third-country-emergency-request"
   ],
   "original_scored": 529,
   "original_deferred": 49,
   "original_score_remaining": 0,
-  "unreviewed_count": 8,
-  "unreviewed_ids": [
-    "entry-7124",
-    "expanded-20260821-usps-final-rule",
-    "expanded-20260902-birthright-new-injunction",
-    "expanded-20260910-rnc-trump-wall-bail",
-    "expanded-20260918-press-ban-announcement",
-    "expanded-20260924-third-country-emergency-request",
-    "expanded-20260928-nathan-birthright-lawsuit",
-    "fresh-20260914-garcia-kremlev"
-  ]
+  "unreviewed_count": 0,
+  "unreviewed_ids": []
 }
