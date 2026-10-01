@@ -431,10 +431,20 @@
     "entry-5678",
     "entry-5689",
     "entry-57",
-    "entry-571"
+    "entry-571",
+    "entry-5720",
+    "entry-5734",
+    "entry-575",
+    "entry-5766",
+    "entry-5777",
+    "entry-5788",
+    "entry-5799",
+    "entry-581",
+    "entry-5823",
+    "entry-5836"
   ],
-  "checked_count": 430,
-  "pass_count": 146,
-  "finding_count": 284,
-  "next_input_index": 430
+  "checked_count": 440,
+  "pass_count": 150,
+  "finding_count": 290,
+  "next_input_index": 440
 }
