@@ -167,7 +167,8 @@
     "entry-1163",
     "entry-1242",
     "entry-1396",
-    "entry-172"
+    "entry-172",
+    "entry-1860"
   ],
   "needs_context_ids": [
     "entry-113",
@@ -188,14 +189,13 @@
     "entry-1634",
     "entry-1652",
     "entry-1670",
-    "entry-1696"
-  ],
-  "remaining_ids": [
+    "entry-1696",
     "entry-1738",
     "entry-1763",
     "entry-1780",
-    "entry-1810",
-    "entry-1860",
+    "entry-1810"
+  ],
+  "remaining_ids": [
     "entry-1894",
     "entry-1934",
     "entry-1977",
@@ -324,14 +324,15 @@
     "entry-988",
     "expanded-20260916-cassidy-measles-hearing"
   ],
-  "completed": 7,
-  "needs_context": 19,
-  "remaining": 132,
+  "completed": 8,
+  "needs_context": 23,
+  "remaining": 127,
   "batch_files": [
     "cloud-09-finish-01.jsonl",
     "cloud-09-finish-02.jsonl",
     "cloud-09-finish-03.jsonl",
     "cloud-09-finish-04.jsonl",
-    "cloud-09-finish-05.jsonl"
+    "cloud-09-finish-05.jsonl",
+    "cloud-09-finish-06.jsonl"
   ]
 }
