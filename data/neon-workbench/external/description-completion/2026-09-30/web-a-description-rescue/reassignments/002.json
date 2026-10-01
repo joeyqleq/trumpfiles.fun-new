@@ -1,0 +1,69 @@
+{
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "from_worker": "rescue-3",
+  "to_worker": "rescue-5-extra",
+  "records": [
+    {
+      "position": 704,
+      "record_id": "entry-3804"
+    },
+    {
+      "position": 706,
+      "record_id": "entry-3812"
+    },
+    {
+      "position": 708,
+      "record_id": "entry-3829"
+    },
+    {
+      "position": 710,
+      "record_id": "entry-3838"
+    },
+    {
+      "position": 712,
+      "record_id": "entry-3840"
+    },
+    {
+      "position": 714,
+      "record_id": "entry-3847"
+    },
+    {
+      "position": 716,
+      "record_id": "entry-3860"
+    },
+    {
+      "position": 718,
+      "record_id": "entry-3871"
+    },
+    {
+      "position": 720,
+      "record_id": "entry-3875"
+    },
+    {
+      "position": 722,
+      "record_id": "entry-388"
+    },
+    {
+      "position": 724,
+      "record_id": "entry-389"
+    },
+    {
+      "position": 726,
+      "record_id": "entry-390"
+    },
+    {
+      "position": 728,
+      "record_id": "entry-3901"
+    },
+    {
+      "position": 730,
+      "record_id": "entry-3910"
+    }
+  ],
+  "source_packet_rows": {
+    "start": 108,
+    "end": 121
+  },
+  "revised_rescue_3_ownership": "Original packet rows0–107 only",
+  "dispatch_condition": "Rescue-5 has completed all original122 records"
+}
