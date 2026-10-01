@@ -1,0 +1,23 @@
+{
+  "worker": "worker-2",
+  "assigned_ids": [
+    "entry-6693",
+    "entry-6696",
+    "entry-6867",
+    "entry-6871",
+    "entry-7047",
+    "entry-7048",
+    "entry-7050",
+    "entry-7051",
+    "entry-7057",
+    "entry-7066"
+  ],
+  "completed": 0,
+  "needs_context": 0,
+  "blocked": 10,
+  "remaining": 0,
+  "terminal": true,
+  "checkpoint_note": "All assigned IDs have explicit evidence-based blockers: held.jsonl contains classification metadata only; every assigned ID is absent from the complete merged snapshot and the three stored description-lane inputs; no canonical entry export or duplicate map in the repository tree supplies the missing counterpart.",
+  "evidence_branch": "codex/description-results-2026-09-30",
+  "output_file": "worker-2-proposals.jsonl"
+}
