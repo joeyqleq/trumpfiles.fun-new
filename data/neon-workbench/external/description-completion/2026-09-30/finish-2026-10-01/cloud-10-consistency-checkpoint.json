@@ -2,7 +2,7 @@
   "worker": 10,
   "input_file": "worker-10-score-input.jsonl",
   "assigned_record_count": 578,
-  "checked_count": 260,
+  "checked_count": 270,
   "checked_ids": [
     "entry-1006",
     "entry-1017",
@@ -263,9 +263,19 @@
     "entry-3795",
     "entry-3805",
     "entry-3816",
-    "entry-3827"
+    "entry-3827",
+    "entry-3838",
+    "entry-3849",
+    "entry-386",
+    "entry-3870",
+    "entry-3881",
+    "entry-3892",
+    "entry-3902",
+    "entry-3913",
+    "entry-3924",
+    "entry-3935"
   ],
-  "correction_count": 97,
+  "correction_count": 98,
   "correction_ids": [
     "entry-1006",
     "entry-1017",
@@ -363,9 +373,10 @@
     "entry-3719",
     "entry-373",
     "entry-3816",
-    "entry-3827"
+    "entry-3827",
+    "entry-3924"
   ],
-  "remaining_count": 318,
+  "remaining_count": 308,
   "batches": [
     {
       "batch": 1,
@@ -808,6 +819,23 @@
       ],
       "correction_file": "score-outputs/cloud-10-impact-review-026.jsonl",
       "correction_count": 3
+    },
+    {
+      "batch": 27,
+      "record_ids": [
+        "entry-3838",
+        "entry-3849",
+        "entry-386",
+        "entry-3870",
+        "entry-3881",
+        "entry-3892",
+        "entry-3902",
+        "entry-3913",
+        "entry-3924",
+        "entry-3935"
+      ],
+      "correction_file": "score-outputs/cloud-10-impact-review-027.jsonl",
+      "correction_count": 1
     }
   ]
 }
