@@ -3740,6 +3740,27 @@
     "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/closing-luna6-001.jsonl",
     "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/closing-luna6-002.jsonl",
     "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/closing-luna6-003.jsonl",
-    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/oct1-sol0-enriched-006.jsonl"
+    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/oct1-sol0-enriched-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/closing-luna3-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/closing-luna3-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/closing-luna3-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/oct1-reader-finish-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/oct1-reader-finish-002.jsonl"
+  ],
+  "closing_review_status": "complete_with_context_holds",
+  "reviewed_assigned_count": 1736,
+  "validation": {
+    "effective_ids_match_assignment": true,
+    "populated_original_fields_preserved": true,
+    "complete_description_lengths_valid": true,
+    "canonical_categories_valid": true,
+    "original_tags_retained": true,
+    "supplied_source_urls_retained": true,
+    "generated_writer_tracking_residuals": 0
+  },
+  "remaining_blocker_types": [
+    "Unsupported claims in preserved titles or descriptions",
+    "Mismatched or inaccessible linked sources",
+    "Insufficient named actions, chronology or outcomes for substantive detailed prose"
   ]
 }
