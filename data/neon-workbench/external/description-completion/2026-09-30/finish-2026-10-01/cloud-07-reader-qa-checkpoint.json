@@ -561,10 +561,20 @@
     "entry-835",
     "entry-846",
     "entry-857",
-    "entry-868"
+    "entry-868",
+    "entry-879",
+    "entry-89",
+    "entry-90",
+    "entry-910",
+    "entry-921",
+    "entry-932",
+    "entry-943",
+    "entry-954",
+    "entry-965",
+    "entry-976"
   ],
-  "checked_count": 560,
-  "pass_count": 200,
-  "finding_count": 360,
-  "next_input_index": 560
+  "checked_count": 570,
+  "pass_count": 202,
+  "finding_count": 368,
+  "next_input_index": 570
 }
