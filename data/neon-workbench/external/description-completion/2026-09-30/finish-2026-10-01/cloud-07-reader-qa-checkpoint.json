@@ -51,10 +51,20 @@
     "entry-1502",
     "entry-1513",
     "entry-1524",
-    "entry-1535"
+    "entry-1535",
+    "entry-1546",
+    "entry-1557",
+    "entry-1568",
+    "entry-1579",
+    "entry-159",
+    "entry-160",
+    "entry-1610",
+    "entry-1623",
+    "entry-1634",
+    "entry-1645"
   ],
-  "checked_count": 50,
-  "pass_count": 13,
-  "finding_count": 37,
-  "next_input_index": 50
+  "checked_count": 60,
+  "pass_count": 15,
+  "finding_count": 45,
+  "next_input_index": 60
 }
