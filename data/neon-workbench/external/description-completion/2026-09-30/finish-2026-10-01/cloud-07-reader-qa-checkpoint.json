@@ -301,10 +301,20 @@
     "entry-4223",
     "entry-4234",
     "entry-4247",
-    "entry-4258"
+    "entry-4258",
+    "entry-4269",
+    "entry-428",
+    "entry-4291",
+    "entry-4301",
+    "entry-4312",
+    "entry-433",
+    "entry-4340",
+    "entry-4351",
+    "entry-4363",
+    "entry-4374"
   ],
-  "checked_count": 300,
-  "pass_count": 77,
-  "finding_count": 223,
-  "next_input_index": 300
+  "checked_count": 310,
+  "pass_count": 79,
+  "finding_count": 231,
+  "next_input_index": 310
 }
