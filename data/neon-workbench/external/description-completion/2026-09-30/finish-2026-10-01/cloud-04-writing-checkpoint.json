@@ -2,9 +2,9 @@
   "worker": "04",
   "assignment": "worker-04-repair-input.jsonl",
   "assigned_count": 159,
-  "complete_count": 23,
-  "needs_context_count": 47,
-  "remaining_count": 89,
+  "complete_count": 25,
+  "needs_context_count": 50,
+  "remaining_count": 84,
   "terminal_record_ids": [
     "entry-1003",
     "entry-1032",
@@ -75,14 +75,14 @@
     "entry-3271",
     "entry-3359",
     "entry-3394",
-    "entry-3436"
-  ],
-  "remaining_record_ids": [
+    "entry-3436",
     "entry-3488",
     "entry-353",
     "entry-3575",
     "entry-3617",
-    "entry-366",
+    "entry-366"
+  ],
+  "remaining_record_ids": [
     "entry-3707",
     "entry-374",
     "entry-3768",
@@ -168,5 +168,5 @@
     "entry-996",
     "fresh-20260924-trump-tv-trademark"
   ],
-  "latest_output": "cloud-04-finish-014.jsonl"
+  "latest_output": "cloud-04-finish-015.jsonl"
 }
