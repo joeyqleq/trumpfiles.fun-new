@@ -1,0 +1,28 @@
+{
+  "worker": "cloud-08",
+  "assignment_file": "worker-08-score-input.jsonl",
+  "version": "impact-v2-consistency-review",
+  "assigned_count": 579,
+  "checked_count": 10,
+  "remaining_count": 569,
+  "checked_ids": [
+    "entry-1004",
+    "entry-1015",
+    "entry-1026",
+    "entry-1037",
+    "entry-1048",
+    "entry-1059",
+    "entry-1071",
+    "entry-1082",
+    "entry-1093",
+    "entry-1103"
+  ],
+  "correction_count": 4,
+  "correction_files": [
+    "score-outputs/cloud-08-impact-review-001.jsonl"
+  ],
+  "checked_batches": [
+    1,
+    2
+  ]
+}
