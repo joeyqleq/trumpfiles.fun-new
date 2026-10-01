@@ -1,0 +1,24 @@
+{
+  "worker": "worker-1",
+  "assigned_ids": [
+    "entry-4871",
+    "entry-6007",
+    "entry-6125",
+    "entry-6136",
+    "entry-6208",
+    "entry-6212",
+    "entry-6368",
+    "entry-6393",
+    "entry-6419",
+    "entry-6691"
+  ],
+  "terminal_proposals": 0,
+  "explicit_blockers": 10,
+  "remaining_ids": [],
+  "status": "complete",
+  "note": "All ten assigned IDs have explicit terminal blockers because the held file has no record details and the merged descriptions file cannot be retrieved through the GitHub fetch interface.",
+  "evidence_paths": [
+    "data/neon-workbench/external/description-completion/2026-09-30/held.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions.jsonl"
+  ]
+}
