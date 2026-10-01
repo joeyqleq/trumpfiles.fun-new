@@ -1,9 +1,9 @@
 {
   "worker": 11,
   "assigned_total": 578,
-  "scored": 149,
+  "scored": 159,
   "deferred": 25,
-  "remaining": 404,
+  "remaining": 394,
   "processed_ids": [
     "entry-1007",
     "entry-1018",
@@ -178,7 +178,17 @@
     "entry-2867",
     "entry-2878",
     "entry-2889",
-    "entry-29"
+    "entry-29",
+    "entry-291",
+    "entry-2920",
+    "entry-2931",
+    "entry-2942",
+    "entry-2953",
+    "entry-2964",
+    "entry-2975",
+    "entry-2986",
+    "entry-2997",
+    "entry-3006"
   ],
-  "last_output": "cloud-11-impact-018.jsonl"
+  "last_output": "cloud-11-impact-019.jsonl"
 }
