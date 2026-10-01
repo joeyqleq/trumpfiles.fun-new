@@ -3,12 +3,13 @@
   "input": "worker-01-repair-input.jsonl",
   "assigned_count": 159,
   "completed_count": 8,
-  "needs_context_count": 7,
-  "remaining_count": 144,
+  "needs_context_count": 12,
+  "remaining_count": 139,
   "batch_files": [
     "outputs/cloud-01-finish-001.jsonl",
     "outputs/cloud-01-finish-002.jsonl",
-    "outputs/cloud-01-finish-003.jsonl"
+    "outputs/cloud-01-finish-003.jsonl",
+    "outputs/cloud-01-finish-004.jsonl"
   ],
   "completed_record_ids": [
     "entry-10",
@@ -27,6 +28,11 @@
     "entry-1377",
     "entry-1407",
     "entry-143",
-    "entry-1457"
+    "entry-1457",
+    "entry-1478",
+    "entry-1503",
+    "entry-1526",
+    "entry-1550",
+    "entry-1584"
   ]
 }
