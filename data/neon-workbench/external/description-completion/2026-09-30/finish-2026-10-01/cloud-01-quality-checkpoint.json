@@ -3,10 +3,10 @@
   "input": "worker-01-score-input.jsonl",
   "repair_input": "worker-01-repair-input.jsonl",
   "assigned_count": 579,
-  "checked_count": 228,
-  "remaining_count": 351,
-  "finding_record_count": 156,
-  "finding_count": 204,
+  "checked_count": 238,
+  "remaining_count": 341,
+  "finding_record_count": 164,
+  "finding_count": 212,
   "checked_record_ids": [
     "entry-1",
     "entry-1009",
@@ -235,7 +235,17 @@
     "entry-3440",
     "entry-3451",
     "entry-3462",
-    "entry-3473"
+    "entry-3473",
+    "entry-3484",
+    "entry-3495",
+    "entry-3505",
+    "entry-3516",
+    "entry-3527",
+    "entry-3538",
+    "entry-3549",
+    "entry-356",
+    "entry-3570",
+    "entry-3581"
   ],
   "batch_files": [
     "quality-outputs/cloud-01-reader-qa-001.jsonl",
@@ -260,6 +270,7 @@
     "quality-outputs/cloud-01-reader-qa-020.jsonl",
     "quality-outputs/cloud-01-reader-qa-021.jsonl",
     "quality-outputs/cloud-01-reader-qa-022.jsonl",
-    "quality-outputs/cloud-01-reader-qa-023.jsonl"
+    "quality-outputs/cloud-01-reader-qa-023.jsonl",
+    "quality-outputs/cloud-01-reader-qa-024.jsonl"
   ]
 }
