@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 158,
-  "completed_count": 43,
-  "needs_context_count": 82,
-  "remaining_count": 33,
+  "completed_count": 45,
+  "needs_context_count": 90,
+  "remaining_count": 23,
   "processed_ids": [
     "entry-1019",
     "entry-1042",
@@ -129,7 +129,17 @@
     "entry-5983",
     "entry-6029",
     "entry-6112",
-    "entry-6151"
+    "entry-6151",
+    "entry-6174",
+    "entry-6230",
+    "entry-6273",
+    "entry-6318",
+    "entry-6355",
+    "entry-641",
+    "entry-653",
+    "entry-6608",
+    "entry-667",
+    "entry-679"
   ],
   "batches": [
     {
@@ -419,6 +429,22 @@
         "entry-6112",
         "entry-6151"
       ]
+    },
+    {
+      "file": "outputs/cloud-10-finish-027.jsonl",
+      "record_count": 10,
+      "record_ids": [
+        "entry-6174",
+        "entry-6230",
+        "entry-6273",
+        "entry-6318",
+        "entry-6355",
+        "entry-641",
+        "entry-653",
+        "entry-6608",
+        "entry-667",
+        "entry-679"
+      ]
     }
   ],
   "latest_versions": {
@@ -546,7 +572,17 @@
     "entry-5983": "outputs/cloud-10-finish-026.jsonl",
     "entry-6029": "outputs/cloud-10-finish-026.jsonl",
     "entry-6112": "outputs/cloud-10-finish-026.jsonl",
-    "entry-6151": "outputs/cloud-10-finish-026.jsonl"
+    "entry-6151": "outputs/cloud-10-finish-026.jsonl",
+    "entry-6174": "outputs/cloud-10-finish-027.jsonl",
+    "entry-6230": "outputs/cloud-10-finish-027.jsonl",
+    "entry-6273": "outputs/cloud-10-finish-027.jsonl",
+    "entry-6318": "outputs/cloud-10-finish-027.jsonl",
+    "entry-6355": "outputs/cloud-10-finish-027.jsonl",
+    "entry-641": "outputs/cloud-10-finish-027.jsonl",
+    "entry-653": "outputs/cloud-10-finish-027.jsonl",
+    "entry-6608": "outputs/cloud-10-finish-027.jsonl",
+    "entry-667": "outputs/cloud-10-finish-027.jsonl",
+    "entry-679": "outputs/cloud-10-finish-027.jsonl"
   },
   "status_by_id": {
     "entry-1213": "needs_context",
@@ -673,6 +709,16 @@
     "entry-5983": "needs_context",
     "entry-6029": "needs_context",
     "entry-6112": "needs_context",
-    "entry-6151": "needs_context"
+    "entry-6151": "needs_context",
+    "entry-6174": "complete",
+    "entry-6230": "needs_context",
+    "entry-6273": "needs_context",
+    "entry-6318": "needs_context",
+    "entry-6355": "needs_context",
+    "entry-641": "complete",
+    "entry-653": "needs_context",
+    "entry-6608": "needs_context",
+    "entry-667": "needs_context",
+    "entry-679": "needs_context"
   }
 }
