@@ -1,0 +1,12 @@
+{
+  "worker": "07",
+  "phase": "scoring",
+  "version": "impact-v2",
+  "assigned_count": 579,
+  "processed_count": 6,
+  "scored_count": 6,
+  "deferred_count": 0,
+  "remaining_count": 573,
+  "completed_ids": ["entry-1003", "entry-1014", "entry-1025", "entry-1036", "entry-1047", "entry-1058"],
+  "deferred_ids": []
+}
