@@ -3,10 +3,10 @@
   "phase": "scoring",
   "version": "impact-v2",
   "assigned_total": 579,
-  "saved_total": 574,
-  "scored": 533,
+  "saved_total": 579,
+  "scored": 538,
   "deferred": 41,
-  "remaining": 5,
+  "remaining": 0,
   "saved_record_ids": [
     "entry-1001",
     "entry-1012",
@@ -581,9 +581,14 @@
     "entry-985",
     "entry-996",
     "expanded-20260828-hush-money-removal",
-    "expanded-20260909-census-exclusion-proposal"
+    "expanded-20260909-census-exclusion-proposal",
+    "expanded-20260916-cassidy-measles-hearing",
+    "expanded-20260922-un-address-misleading-claims",
+    "expanded-20260927-kennedy-ad-criticism",
+    "fresh-20260824-mcgurn-api-update",
+    "fresh-20260923-melania-series-update"
   ],
-  "last_output": "cloud-05-impact-065.jsonl",
+  "last_output": "cloud-05-impact-066.jsonl",
   "model": "GPT-6 (available session model; requested GPT-6 Luna low unavailable)",
   "updated_at": "2026-10-01"
 }
