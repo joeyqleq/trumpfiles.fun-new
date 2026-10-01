@@ -12,7 +12,8 @@
     3,
     4,
     5,
-    6
+    6,
+    7
   ],
   "output_files": [
     "outputs/cloud-08-finish-001.jsonl",
@@ -20,7 +21,8 @@
     "outputs/cloud-08-finish-003.jsonl",
     "outputs/cloud-08-finish-004.jsonl",
     "outputs/cloud-08-finish-005.jsonl",
-    "outputs/cloud-08-finish-006.jsonl"
+    "outputs/cloud-08-finish-006.jsonl",
+    "outputs/cloud-08-finish-007.jsonl"
   ],
   "completed_ids": [
     "entry-1127",
@@ -185,5 +187,12 @@
     "entry-959",
     "entry-985",
     "expanded-20260910-h1b-grace-proposal"
+  ],
+  "revised_ids": [
+    "entry-1205",
+    "entry-1241",
+    "entry-1281",
+    "entry-1300",
+    "entry-1762"
   ]
 }
