@@ -1119,7 +1119,17 @@
     "entry-7013",
     "entry-7024",
     "entry-7035",
-    "entry-7046"
+    "entry-7046",
+    "entry-7061",
+    "entry-7073",
+    "entry-7088",
+    "entry-7100",
+    "entry-7116",
+    "entry-7136",
+    "entry-715",
+    "entry-7165",
+    "entry-7181",
+    "entry-7194"
   ],
   "correction_record_ids": [
     "entry-1080",
@@ -1235,11 +1245,13 @@
     "entry-6545",
     "entry-6845",
     "entry-6856",
-    "entry-6882"
+    "entry-6882",
+    "entry-7116",
+    "entry-7136"
   ],
-  "checked_count": 536,
-  "remaining_count": 43,
-  "last_output_file": "cloud-06-impact-review-48.jsonl",
+  "checked_count": 546,
+  "remaining_count": 33,
+  "last_output_file": "cloud-06-impact-review-49.jsonl",
   "status": "review_in_progress",
-  "last_batch_reviewed": 59
+  "last_batch_reviewed": 60
 }
