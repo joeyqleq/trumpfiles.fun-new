@@ -2,7 +2,7 @@
   "worker": "cloud-03",
   "assignment": "worker-03-score-input.jsonl",
   "assigned_count": 579,
-  "terminal_saved_count": 572,
+  "terminal_saved_count": 579,
   "terminal_saved_ids": [
     "entry-100",
     "entry-1010",
@@ -575,11 +575,18 @@
     "entry-961",
     "entry-972",
     "entry-983",
-    "entry-994"
+    "entry-994",
+    "expanded-20260827-anthropic-blacklist-order",
+    "expanded-20260908-gsa-canada-exclusion",
+    "expanded-20260914-usps-sc-denial",
+    "expanded-20260922-doj-media-security-defense",
+    "expanded-20260925-whitehouse-ads-psa-defense",
+    "expanded-20260929-smith-senate-accusations",
+    "fresh-20260918-trump-repayment-statement"
   ],
-  "scored_count": 504,
+  "scored_count": 511,
   "deferred_count": 68,
-  "remaining_count": 7,
-  "last_output": "score-outputs/cloud-03-impact-059.jsonl",
-  "status": "in_progress"
+  "remaining_count": 0,
+  "last_output": "score-outputs/cloud-03-impact-060.jsonl",
+  "status": "complete"
 }
