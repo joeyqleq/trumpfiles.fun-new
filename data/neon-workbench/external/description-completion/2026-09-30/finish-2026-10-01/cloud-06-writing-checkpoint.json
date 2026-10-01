@@ -165,21 +165,21 @@
   "completed_record_ids": [
     "entry-1009",
     "entry-1034",
-    "entry-1155"
+    "entry-1155",
+    "entry-1239"
   ],
   "needs_context_record_ids": [
     "entry-1072",
-    "entry-112"
-  ],
-  "remaining_record_ids": [
+    "entry-112",
     "entry-1200",
-    "entry-1239",
     "entry-1272",
     "entry-1299",
     "entry-1325",
     "entry-136",
     "entry-1392",
-    "entry-1417",
+    "entry-1417"
+  ],
+  "remaining_record_ids": [
     "entry-1444",
     "entry-1462",
     "entry-1487",
@@ -326,9 +326,9 @@
     "entry-978",
     "expanded-20260821-visa75-court"
   ],
-  "completed_count": 3,
-  "needs_context_count": 2,
-  "remaining_count": 153,
-  "last_output_file": "cloud-06-finish-01.jsonl",
+  "completed_count": 4,
+  "needs_context_count": 9,
+  "remaining_count": 145,
+  "last_output_file": "cloud-06-finish-02.jsonl",
   "status": "in_progress"
 }
