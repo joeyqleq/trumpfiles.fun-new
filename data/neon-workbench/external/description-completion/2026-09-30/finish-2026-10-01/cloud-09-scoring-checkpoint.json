@@ -878,7 +878,17 @@
     "entry-4673",
     "entry-4684",
     "entry-4695",
-    "entry-4706"
+    "entry-4706",
+    "entry-4718",
+    "entry-4729",
+    "entry-4740",
+    "entry-4751",
+    "entry-4763",
+    "entry-4774",
+    "entry-4785",
+    "entry-4796",
+    "entry-4806",
+    "entry-4817"
   ],
   "deferred_ids": [
     "entry-1364",
@@ -925,16 +935,6 @@
     "entry-1969",
     "entry-198",
     "entry-1990",
-    "entry-4718",
-    "entry-4729",
-    "entry-4740",
-    "entry-4751",
-    "entry-4763",
-    "entry-4774",
-    "entry-4785",
-    "entry-4796",
-    "entry-4806",
-    "entry-4817",
     "entry-4829",
     "entry-484",
     "entry-4850",
@@ -1164,9 +1164,9 @@
     "expanded-20260928-lee-memorial-bill-objection",
     "fresh-20260903-golf-retreat-offer"
   ],
-  "scored": 298,
+  "scored": 308,
   "deferred": 32,
-  "remaining": 248,
+  "remaining": 238,
   "batch_files": [
     "cloud-09-impact-01.jsonl",
     "cloud-09-impact-02.jsonl",
@@ -1201,6 +1201,7 @@
     "cloud-09-impact-31.jsonl",
     "cloud-09-impact-32.jsonl",
     "cloud-09-impact-33.jsonl",
-    "cloud-09-impact-34.jsonl"
+    "cloud-09-impact-34.jsonl",
+    "cloud-09-impact-35.jsonl"
   ]
 }
