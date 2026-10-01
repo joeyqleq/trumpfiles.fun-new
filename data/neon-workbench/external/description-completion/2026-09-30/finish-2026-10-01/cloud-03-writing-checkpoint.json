@@ -1,0 +1,43 @@
+{
+  "worker": "cloud-03",
+  "assignment": "worker-03-repair-input.jsonl",
+  "assigned_count": 159,
+  "preexisting_terminal_count": 11,
+  "preexisting_terminal_ids": [
+    "entry-1321",
+    "entry-1355",
+    "entry-1643",
+    "entry-2710",
+    "entry-3616",
+    "entry-425",
+    "entry-5276",
+    "entry-5995",
+    "entry-6728",
+    "entry-7043",
+    "fresh-20260914-oge-trump-ptr"
+  ],
+  "terminal_saved_count": 16,
+  "terminal_saved_ids": [
+    "entry-1321",
+    "entry-1355",
+    "entry-1643",
+    "entry-2710",
+    "entry-3616",
+    "entry-425",
+    "entry-5276",
+    "entry-5995",
+    "entry-6728",
+    "entry-7043",
+    "fresh-20260914-oge-trump-ptr",
+    "entry-1002",
+    "entry-1028",
+    "entry-1065",
+    "entry-1112",
+    "entry-1150"
+  ],
+  "complete_count": 10,
+  "needs_context_count": 6,
+  "remaining_count": 143,
+  "last_output": "outputs/cloud-03-finish-001.jsonl",
+  "status": "in_progress"
+}
