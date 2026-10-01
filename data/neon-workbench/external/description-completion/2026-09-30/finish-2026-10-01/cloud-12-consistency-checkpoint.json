@@ -2,9 +2,9 @@
   "worker": 12,
   "assignment": "impact-v2-consistency-review",
   "assigned_count": 578,
-  "checked_count": 570,
-  "remaining_count": 8,
-  "correction_count": 143,
+  "checked_count": 578,
+  "remaining_count": 0,
+  "correction_count": 147,
   "checked_ids": [
     "entry-1008",
     "entry-1019",
@@ -575,7 +575,15 @@
     "entry-948",
     "entry-959",
     "entry-97",
-    "entry-980"
+    "entry-980",
+    "entry-991",
+    "expanded-20260821-visa75-court",
+    "expanded-20260902-california-waivers-order",
+    "expanded-20260910-vance-rnc-misleading-claims",
+    "expanded-20260918-trump-five-vaccine-doses",
+    "expanded-20260925-pocket-rescission-announcement",
+    "expanded-20260929-irgc-us-voter-letter",
+    "fresh-20260914-oge-trump-ptr"
   ],
   "correction_files": [
     "score-outputs/cloud-12-impact-review-001.jsonl",
@@ -626,6 +634,7 @@
     "score-outputs/cloud-12-impact-review-047.jsonl",
     "score-outputs/cloud-12-impact-review-048.jsonl",
     "score-outputs/cloud-12-impact-review-049.jsonl",
-    "score-outputs/cloud-12-impact-review-050.jsonl"
+    "score-outputs/cloud-12-impact-review-050.jsonl",
+    "score-outputs/cloud-12-impact-review-051.jsonl"
   ]
 }
