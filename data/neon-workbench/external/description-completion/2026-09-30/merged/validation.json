@@ -4,8 +4,8 @@
   "missing": 0,
   "duplicate_ids": [],
   "statuses": {
-    "complete": 5503,
-    "needs_context": 1441
+    "complete": 5514,
+    "needs_context": 1430
   },
   "errors": [],
   "scope": "structural and preservation validation; not a claim-level fact check or publication approval"

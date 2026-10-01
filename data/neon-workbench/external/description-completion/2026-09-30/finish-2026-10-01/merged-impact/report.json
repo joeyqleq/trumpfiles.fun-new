@@ -1,15 +1,15 @@
 {
   "assigned_score_ids": 6944,
-  "saved_score_ids": 4105,
-  "missing_score_ids": 2839,
+  "saved_score_ids": 4452,
+  "missing_score_ids": 2492,
   "statuses": {
-    "scored": 3717,
-    "deferred": 388
+    "scored": 4014,
+    "deferred": 438
   },
   "held_not_ranked": 283,
   "rejected_rows": [],
   "unique_scores": 458,
-  "largest_equal_score_group": 35,
+  "largest_equal_score_group": 45,
   "rank_positions_unique": true,
   "publication": "provisional offline; no live or legacy score overwrite"
 }
