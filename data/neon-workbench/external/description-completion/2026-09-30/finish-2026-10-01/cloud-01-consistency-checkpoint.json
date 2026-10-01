@@ -4,9 +4,9 @@
   "rubric": "RUBRIC.md",
   "version": "impact-v2",
   "assigned_count": 579,
-  "checked_count": 575,
-  "remaining_count": 4,
-  "corrections_count": 52,
+  "checked_count": 579,
+  "remaining_count": 0,
+  "corrections_count": 54,
   "checked_record_ids": [
     "entry-1",
     "entry-5",
@@ -582,7 +582,11 @@
     "entry-992",
     "expanded-20260824-economic-outcast",
     "expanded-20260902-doj-welfare-reporting",
-    "expanded-20260914-epa-power-repeal"
+    "expanded-20260914-epa-power-repeal",
+    "expanded-20260921-garces-detention-conference",
+    "expanded-20260925-public-citizen-first-ad-complaint",
+    "expanded-20260929-murray-murphy-ad-letter",
+    "fresh-20260915-tbilisi-launch"
   ],
   "correction_files": [
     "score-outputs/cloud-01-impact-review-001.jsonl",
@@ -613,6 +617,7 @@
     "score-outputs/cloud-01-impact-review-026.jsonl",
     "score-outputs/cloud-01-impact-review-027.jsonl",
     "score-outputs/cloud-01-impact-review-028.jsonl",
-    "score-outputs/cloud-01-impact-review-029.jsonl"
+    "score-outputs/cloud-01-impact-review-029.jsonl",
+    "score-outputs/cloud-01-impact-review-030.jsonl"
   ]
 }
