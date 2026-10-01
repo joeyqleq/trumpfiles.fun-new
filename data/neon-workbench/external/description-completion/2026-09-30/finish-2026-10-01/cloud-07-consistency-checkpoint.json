@@ -483,7 +483,17 @@
     "entry-6247",
     "entry-6258",
     "entry-6269",
-    "entry-628"
+    "entry-628",
+    "entry-6291",
+    "entry-6301",
+    "entry-6312",
+    "entry-6326",
+    "entry-6337",
+    "entry-6348",
+    "entry-6359",
+    "entry-6370",
+    "entry-6382",
+    "entry-6394"
   ],
   "corrections_appended": 8,
   "correction_record_ids": [
@@ -496,5 +506,5 @@
     "entry-4540",
     "entry-6269"
   ],
-  "next_unchecked_index": 480
+  "next_unchecked_index": 490
 }
