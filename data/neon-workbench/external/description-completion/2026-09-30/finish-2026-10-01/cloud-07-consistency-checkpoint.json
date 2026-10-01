@@ -123,9 +123,21 @@
     "entry-228",
     "entry-2290",
     "entry-2300",
-    "entry-2311"
+    "entry-2311",
+    "entry-2322",
+    "entry-2333",
+    "entry-2344",
+    "entry-2355",
+    "entry-2366",
+    "entry-2377",
+    "entry-2388",
+    "entry-2399",
+    "entry-2409",
+    "entry-242"
   ],
-  "corrections_appended": 0,
-  "correction_record_ids": [],
-  "next_unchecked_index": 120
+  "corrections_appended": 1,
+  "correction_record_ids": [
+    "entry-2399"
+  ],
+  "next_unchecked_index": 130
 }
