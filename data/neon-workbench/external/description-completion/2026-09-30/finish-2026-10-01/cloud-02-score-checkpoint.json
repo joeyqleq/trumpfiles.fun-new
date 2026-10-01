@@ -3,9 +3,9 @@
   "assignment": "finish-2026-10-01 impact-v2 scoring pass",
   "input_commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
   "total_assigned": 579,
-  "scored": 151,
+  "scored": 159,
   "deferred": 28,
-  "remaining": 400,
+  "remaining": 392,
   "processed_record_ids": [
     "entry-10",
     "entry-101",
@@ -185,7 +185,15 @@
     "entry-2912",
     "entry-2923",
     "entry-2934",
-    "entry-2945"
+    "entry-2945",
+    "entry-2956",
+    "entry-2967",
+    "entry-2978",
+    "entry-2989",
+    "entry-3",
+    "entry-3009",
+    "entry-302",
+    "entry-3030"
   ],
   "output_files": [
     "score-outputs/cloud-02-impact-001.jsonl",
@@ -207,7 +215,8 @@
     "score-outputs/cloud-02-impact-017.jsonl",
     "score-outputs/cloud-02-impact-018.jsonl",
     "score-outputs/cloud-02-impact-019.jsonl",
-    "score-outputs/cloud-02-impact-020.jsonl"
+    "score-outputs/cloud-02-impact-020.jsonl",
+    "score-outputs/cloud-02-impact-021.jsonl"
   ],
   "notes": "Counts reconciled from unique IDs across all append-only score outputs and the worker-02 score input."
 }
