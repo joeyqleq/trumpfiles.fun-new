@@ -1,0 +1,23 @@
+{
+  "worker": "cloud-01",
+  "input": "worker-01-score-input.jsonl",
+  "repair_input": "worker-01-repair-input.jsonl",
+  "assigned_count": 579,
+  "checked_count": 8,
+  "remaining_count": 571,
+  "finding_record_count": 7,
+  "finding_count": 9,
+  "checked_record_ids": [
+    "entry-1",
+    "entry-1009",
+    "entry-102",
+    "entry-1030",
+    "entry-1041",
+    "entry-1052",
+    "entry-1065",
+    "entry-1076"
+  ],
+  "batch_files": [
+    "quality-outputs/cloud-01-reader-qa-001.jsonl"
+  ]
+}
