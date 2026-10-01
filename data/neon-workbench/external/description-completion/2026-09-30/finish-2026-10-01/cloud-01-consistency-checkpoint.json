@@ -4,9 +4,9 @@
   "rubric": "RUBRIC.md",
   "version": "impact-v2",
   "assigned_count": 579,
-  "checked_count": 425,
-  "remaining_count": 154,
-  "corrections_count": 22,
+  "checked_count": 435,
+  "remaining_count": 144,
+  "corrections_count": 23,
   "checked_record_ids": [
     "entry-1",
     "entry-5",
@@ -432,7 +432,17 @@
     "entry-5607",
     "entry-5618",
     "entry-5629",
-    "entry-5650"
+    "entry-5650",
+    "entry-5661",
+    "entry-5672",
+    "entry-5683",
+    "entry-5694",
+    "entry-5704",
+    "entry-5715",
+    "entry-5726",
+    "entry-5741",
+    "entry-5759",
+    "entry-5771"
   ],
   "correction_files": [
     "score-outputs/cloud-01-impact-review-001.jsonl",
@@ -451,6 +461,7 @@
     "score-outputs/cloud-01-impact-review-014.jsonl",
     "score-outputs/cloud-01-impact-review-015.jsonl",
     "score-outputs/cloud-01-impact-review-016.jsonl",
-    "score-outputs/cloud-01-impact-review-017.jsonl"
+    "score-outputs/cloud-01-impact-review-017.jsonl",
+    "score-outputs/cloud-01-impact-review-018.jsonl"
   ]
 }
