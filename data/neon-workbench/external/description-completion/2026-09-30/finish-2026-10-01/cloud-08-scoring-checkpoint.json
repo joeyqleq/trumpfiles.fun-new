@@ -3,10 +3,10 @@
   "assignment_file": "worker-08-score-input.jsonl",
   "version": "impact-v2",
   "assigned_count": 579,
-  "processed_count": 541,
-  "scored_count": 482,
-  "deferred_count": 59,
-  "remaining_count": 38,
+  "processed_count": 549,
+  "scored_count": 487,
+  "deferred_count": 62,
+  "remaining_count": 30,
   "processed_batches": [
     1,
     2,
@@ -77,7 +77,8 @@
     67,
     68,
     69,
-    70
+    70,
+    71
   ],
   "output_files": [
     "score-outputs/cloud-08-impact-001.jsonl",
@@ -149,7 +150,8 @@
     "score-outputs/cloud-08-impact-067.jsonl",
     "score-outputs/cloud-08-impact-068.jsonl",
     "score-outputs/cloud-08-impact-069.jsonl",
-    "score-outputs/cloud-08-impact-070.jsonl"
+    "score-outputs/cloud-08-impact-070.jsonl",
+    "score-outputs/cloud-08-impact-071.jsonl"
   ],
   "processed_ids": [
     "entry-1004",
@@ -692,6 +694,14 @@
     "entry-7076",
     "entry-7090",
     "entry-7103",
-    "entry-7119"
+    "entry-7119",
+    "entry-714",
+    "entry-7151",
+    "entry-7169",
+    "entry-7183",
+    "entry-7197",
+    "entry-725",
+    "entry-736",
+    "entry-747"
   ]
 }
