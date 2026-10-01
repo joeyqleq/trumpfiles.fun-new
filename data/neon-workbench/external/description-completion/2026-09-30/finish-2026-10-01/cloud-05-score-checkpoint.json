@@ -1,0 +1,20 @@
+{
+  "worker": "05",
+  "phase": "scoring",
+  "version": "impact-v2",
+  "assigned_total": 579,
+  "saved_total": 5,
+  "scored": 5,
+  "deferred": 0,
+  "remaining": 574,
+  "saved_record_ids": [
+    "entry-1001",
+    "entry-1012",
+    "entry-1023",
+    "entry-1034",
+    "entry-1045"
+  ],
+  "last_output": "cloud-05-impact-001.jsonl",
+  "model": "GPT-6 (available session model; requested GPT-6 Luna low unavailable)",
+  "updated_at": "2026-10-01"
+}
