@@ -1,9 +1,9 @@
 {
   "worker": 11,
   "assigned_total": 158,
-  "completed": 39,
-  "needs_context": 105,
-  "remaining": 14,
+  "completed": 40,
+  "needs_context": 110,
+  "remaining": 8,
   "processed_ids": [
     "entry-1021",
     "entry-1043",
@@ -148,7 +148,13 @@
     "entry-7104",
     "entry-7149",
     "entry-719",
-    "entry-727"
+    "entry-727",
+    "entry-750",
+    "entry-775",
+    "entry-807",
+    "entry-823",
+    "entry-839",
+    "entry-853"
   ],
-  "last_output": "cloud-11-finish-019.jsonl"
+  "last_output": "cloud-11-finish-020.jsonl"
 }
