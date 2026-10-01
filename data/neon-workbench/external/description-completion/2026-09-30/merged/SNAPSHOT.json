@@ -3,8 +3,8 @@
   "saved_current_rows": 6944,
   "missing": 0,
   "draft_statuses": {
-    "complete": 5329,
-    "needs_context": 1615
+    "complete": 5393,
+    "needs_context": 1551
   },
   "published_to_neon": false,
   "scope": "Draft staging snapshot only. Status complete is a writing-worker result, not publication approval. Needs-context and editorial repairs remain."
