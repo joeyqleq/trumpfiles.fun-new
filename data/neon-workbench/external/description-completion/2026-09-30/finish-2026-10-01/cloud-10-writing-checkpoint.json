@@ -1,0 +1,27 @@
+{
+  "worker": 10,
+  "assigned_record_count": 158,
+  "completed_count": 5,
+  "needs_context_count": 0,
+  "remaining_count": 153,
+  "processed_ids": [
+    "entry-1019",
+    "entry-1042",
+    "entry-1080",
+    "entry-1131",
+    "entry-1166"
+  ],
+  "batches": [
+    {
+      "file": "outputs/cloud-10-finish-001.jsonl",
+      "record_count": 5,
+      "record_ids": [
+        "entry-1019",
+        "entry-1042",
+        "entry-1080",
+        "entry-1131",
+        "entry-1166"
+      ]
+    }
+  ]
+}
