@@ -2,9 +2,9 @@
   "worker": 12,
   "assignment": "impact-v2-consistency-review",
   "assigned_count": 578,
-  "checked_count": 60,
-  "remaining_count": 518,
-  "correction_count": 24,
+  "checked_count": 70,
+  "remaining_count": 508,
+  "correction_count": 25,
   "checked_ids": [
     "entry-1008",
     "entry-1019",
@@ -65,7 +65,17 @@
     "entry-1615",
     "entry-1628",
     "entry-1639",
-    "entry-165"
+    "entry-165",
+    "entry-1661",
+    "entry-1672",
+    "entry-1687",
+    "entry-17",
+    "entry-1713",
+    "entry-1728",
+    "entry-1743",
+    "entry-1755",
+    "entry-1766",
+    "entry-1777"
   ],
   "correction_files": [
     "score-outputs/cloud-12-impact-review-001.jsonl",
@@ -73,6 +83,7 @@
     "score-outputs/cloud-12-impact-review-003.jsonl",
     "score-outputs/cloud-12-impact-review-004.jsonl",
     "score-outputs/cloud-12-impact-review-005.jsonl",
-    "score-outputs/cloud-12-impact-review-006.jsonl"
+    "score-outputs/cloud-12-impact-review-006.jsonl",
+    "score-outputs/cloud-12-impact-review-007.jsonl"
   ]
 }
