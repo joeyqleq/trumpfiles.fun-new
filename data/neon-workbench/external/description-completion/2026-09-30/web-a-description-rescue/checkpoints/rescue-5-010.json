@@ -1,0 +1,42 @@
+{
+  "worker": "rescue-5",
+  "batch": 10,
+  "terminal_ids": [
+    "entry-6215",
+    "entry-6230",
+    "entry-6237",
+    "entry-6241",
+    "entry-6259",
+    "entry-6270",
+    "entry-6277",
+    "entry-628",
+    "entry-6292",
+    "entry-6294"
+  ],
+  "terminal_count_after_batch": 100,
+  "assigned_count": 122,
+  "remaining_ids": [
+    "entry-631",
+    "entry-6312",
+    "entry-6319",
+    "entry-6330",
+    "entry-6341",
+    "entry-6344",
+    "entry-6348",
+    "entry-6355",
+    "entry-6358",
+    "entry-638",
+    "entry-6395",
+    "entry-6402",
+    "entry-6411",
+    "entry-648",
+    "entry-6489",
+    "entry-6509",
+    "entry-652",
+    "entry-6531",
+    "entry-6544",
+    "entry-6552",
+    "entry-658",
+    "entry-66"
+  ]
+}
