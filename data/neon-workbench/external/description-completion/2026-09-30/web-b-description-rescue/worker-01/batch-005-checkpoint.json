@@ -1,0 +1,498 @@
+{
+  "batch": 5,
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "completed_count": 25,
+  "completed_ids": [
+    {
+      "assignment_position": 1,
+      "record_id": "entry-1002"
+    },
+    {
+      "assignment_position": 3,
+      "record_id": "entry-1015"
+    },
+    {
+      "assignment_position": 5,
+      "record_id": "entry-1027"
+    },
+    {
+      "assignment_position": 7,
+      "record_id": "entry-1032"
+    },
+    {
+      "assignment_position": 9,
+      "record_id": "entry-1039"
+    },
+    {
+      "assignment_position": 11,
+      "record_id": "entry-1065"
+    },
+    {
+      "assignment_position": 13,
+      "record_id": "entry-1072"
+    },
+    {
+      "assignment_position": 15,
+      "record_id": "entry-1074"
+    },
+    {
+      "assignment_position": 17,
+      "record_id": "entry-1081"
+    },
+    {
+      "assignment_position": 19,
+      "record_id": "entry-1112"
+    },
+    {
+      "assignment_position": 21,
+      "record_id": "entry-113"
+    },
+    {
+      "assignment_position": 23,
+      "record_id": "entry-1150"
+    },
+    {
+      "assignment_position": 25,
+      "record_id": "entry-1163"
+    },
+    {
+      "assignment_position": 27,
+      "record_id": "entry-1174"
+    },
+    {
+      "assignment_position": 29,
+      "record_id": "entry-1183"
+    },
+    {
+      "assignment_position": 31,
+      "record_id": "entry-1194"
+    },
+    {
+      "assignment_position": 33,
+      "record_id": "entry-1200"
+    },
+    {
+      "assignment_position": 35,
+      "record_id": "entry-1205"
+    },
+    {
+      "assignment_position": 37,
+      "record_id": "entry-1213"
+    },
+    {
+      "assignment_position": 39,
+      "record_id": "entry-1227"
+    },
+    {
+      "assignment_position": 41,
+      "record_id": "entry-1233"
+    },
+    {
+      "assignment_position": 43,
+      "record_id": "entry-1243"
+    },
+    {
+      "assignment_position": 45,
+      "record_id": "entry-1265"
+    },
+    {
+      "assignment_position": 47,
+      "record_id": "entry-127"
+    },
+    {
+      "assignment_position": 49,
+      "record_id": "entry-1284"
+    }
+  ],
+  "remaining_count": 97,
+  "remaining_ids": [
+    {
+      "assignment_position": 51,
+      "record_id": "entry-1290"
+    },
+    {
+      "assignment_position": 53,
+      "record_id": "entry-1296"
+    },
+    {
+      "assignment_position": 55,
+      "record_id": "entry-1298"
+    },
+    {
+      "assignment_position": 57,
+      "record_id": "entry-130"
+    },
+    {
+      "assignment_position": 59,
+      "record_id": "entry-1303"
+    },
+    {
+      "assignment_position": 61,
+      "record_id": "entry-1306"
+    },
+    {
+      "assignment_position": 63,
+      "record_id": "entry-1322"
+    },
+    {
+      "assignment_position": 65,
+      "record_id": "entry-1325"
+    },
+    {
+      "assignment_position": 67,
+      "record_id": "entry-1334"
+    },
+    {
+      "assignment_position": 69,
+      "record_id": "entry-1341"
+    },
+    {
+      "assignment_position": 71,
+      "record_id": "entry-1348"
+    },
+    {
+      "assignment_position": 73,
+      "record_id": "entry-1355"
+    },
+    {
+      "assignment_position": 75,
+      "record_id": "entry-1359"
+    },
+    {
+      "assignment_position": 77,
+      "record_id": "entry-1363"
+    },
+    {
+      "assignment_position": 79,
+      "record_id": "entry-1365"
+    },
+    {
+      "assignment_position": 81,
+      "record_id": "entry-1371"
+    },
+    {
+      "assignment_position": 83,
+      "record_id": "entry-1377"
+    },
+    {
+      "assignment_position": 85,
+      "record_id": "entry-1385"
+    },
+    {
+      "assignment_position": 87,
+      "record_id": "entry-1389"
+    },
+    {
+      "assignment_position": 89,
+      "record_id": "entry-1394"
+    },
+    {
+      "assignment_position": 91,
+      "record_id": "entry-1396"
+    },
+    {
+      "assignment_position": 93,
+      "record_id": "entry-1400"
+    },
+    {
+      "assignment_position": 95,
+      "record_id": "entry-1407"
+    },
+    {
+      "assignment_position": 97,
+      "record_id": "entry-1412"
+    },
+    {
+      "assignment_position": 99,
+      "record_id": "entry-1415"
+    },
+    {
+      "assignment_position": 101,
+      "record_id": "entry-1418"
+    },
+    {
+      "assignment_position": 103,
+      "record_id": "entry-1420"
+    },
+    {
+      "assignment_position": 105,
+      "record_id": "entry-1428"
+    },
+    {
+      "assignment_position": 107,
+      "record_id": "entry-1435"
+    },
+    {
+      "assignment_position": 109,
+      "record_id": "entry-1443"
+    },
+    {
+      "assignment_position": 111,
+      "record_id": "entry-1445"
+    },
+    {
+      "assignment_position": 113,
+      "record_id": "entry-1448"
+    },
+    {
+      "assignment_position": 115,
+      "record_id": "entry-1452"
+    },
+    {
+      "assignment_position": 117,
+      "record_id": "entry-1457"
+    },
+    {
+      "assignment_position": 119,
+      "record_id": "entry-1459"
+    },
+    {
+      "assignment_position": 121,
+      "record_id": "entry-1461"
+    },
+    {
+      "assignment_position": 123,
+      "record_id": "entry-1467"
+    },
+    {
+      "assignment_position": 125,
+      "record_id": "entry-1471"
+    },
+    {
+      "assignment_position": 127,
+      "record_id": "entry-1473"
+    },
+    {
+      "assignment_position": 129,
+      "record_id": "entry-1478"
+    },
+    {
+      "assignment_position": 131,
+      "record_id": "entry-1483"
+    },
+    {
+      "assignment_position": 133,
+      "record_id": "entry-1486"
+    },
+    {
+      "assignment_position": 135,
+      "record_id": "entry-1491"
+    },
+    {
+      "assignment_position": 137,
+      "record_id": "entry-1495"
+    },
+    {
+      "assignment_position": 139,
+      "record_id": "entry-1502"
+    },
+    {
+      "assignment_position": 141,
+      "record_id": "entry-1509"
+    },
+    {
+      "assignment_position": 143,
+      "record_id": "entry-1512"
+    },
+    {
+      "assignment_position": 145,
+      "record_id": "entry-1517"
+    },
+    {
+      "assignment_position": 147,
+      "record_id": "entry-1521"
+    },
+    {
+      "assignment_position": 149,
+      "record_id": "entry-1523"
+    },
+    {
+      "assignment_position": 151,
+      "record_id": "entry-1534"
+    },
+    {
+      "assignment_position": 153,
+      "record_id": "entry-1537"
+    },
+    {
+      "assignment_position": 155,
+      "record_id": "entry-1544"
+    },
+    {
+      "assignment_position": 157,
+      "record_id": "entry-1548"
+    },
+    {
+      "assignment_position": 159,
+      "record_id": "entry-1550"
+    },
+    {
+      "assignment_position": 161,
+      "record_id": "entry-1557"
+    },
+    {
+      "assignment_position": 163,
+      "record_id": "entry-1560"
+    },
+    {
+      "assignment_position": 165,
+      "record_id": "entry-1565"
+    },
+    {
+      "assignment_position": 167,
+      "record_id": "entry-1572"
+    },
+    {
+      "assignment_position": 169,
+      "record_id": "entry-1578"
+    },
+    {
+      "assignment_position": 171,
+      "record_id": "entry-1584"
+    },
+    {
+      "assignment_position": 173,
+      "record_id": "entry-1589"
+    },
+    {
+      "assignment_position": 175,
+      "record_id": "entry-1590"
+    },
+    {
+      "assignment_position": 177,
+      "record_id": "entry-1592"
+    },
+    {
+      "assignment_position": 179,
+      "record_id": "entry-1594"
+    },
+    {
+      "assignment_position": 181,
+      "record_id": "entry-160"
+    },
+    {
+      "assignment_position": 183,
+      "record_id": "entry-1603"
+    },
+    {
+      "assignment_position": 185,
+      "record_id": "entry-1605"
+    },
+    {
+      "assignment_position": 187,
+      "record_id": "entry-1611"
+    },
+    {
+      "assignment_position": 189,
+      "record_id": "entry-1614"
+    },
+    {
+      "assignment_position": 191,
+      "record_id": "entry-1619"
+    },
+    {
+      "assignment_position": 193,
+      "record_id": "entry-1621"
+    },
+    {
+      "assignment_position": 195,
+      "record_id": "entry-1624"
+    },
+    {
+      "assignment_position": 197,
+      "record_id": "entry-1626"
+    },
+    {
+      "assignment_position": 199,
+      "record_id": "entry-1628"
+    },
+    {
+      "assignment_position": 201,
+      "record_id": "entry-1632"
+    },
+    {
+      "assignment_position": 203,
+      "record_id": "entry-1636"
+    },
+    {
+      "assignment_position": 205,
+      "record_id": "entry-1639"
+    },
+    {
+      "assignment_position": 207,
+      "record_id": "entry-1640"
+    },
+    {
+      "assignment_position": 209,
+      "record_id": "entry-1644"
+    },
+    {
+      "assignment_position": 211,
+      "record_id": "entry-1648"
+    },
+    {
+      "assignment_position": 213,
+      "record_id": "entry-1650"
+    },
+    {
+      "assignment_position": 215,
+      "record_id": "entry-1654"
+    },
+    {
+      "assignment_position": 217,
+      "record_id": "entry-1657"
+    },
+    {
+      "assignment_position": 219,
+      "record_id": "entry-1660"
+    },
+    {
+      "assignment_position": 221,
+      "record_id": "entry-1662"
+    },
+    {
+      "assignment_position": 223,
+      "record_id": "entry-1666"
+    },
+    {
+      "assignment_position": 225,
+      "record_id": "entry-1668"
+    },
+    {
+      "assignment_position": 227,
+      "record_id": "entry-1671"
+    },
+    {
+      "assignment_position": 229,
+      "record_id": "entry-1673"
+    },
+    {
+      "assignment_position": 231,
+      "record_id": "entry-1677"
+    },
+    {
+      "assignment_position": 233,
+      "record_id": "entry-1687"
+    },
+    {
+      "assignment_position": 235,
+      "record_id": "entry-1696"
+    },
+    {
+      "assignment_position": 237,
+      "record_id": "entry-1698"
+    },
+    {
+      "assignment_position": 239,
+      "record_id": "entry-1703"
+    },
+    {
+      "assignment_position": 241,
+      "record_id": "entry-1708"
+    },
+    {
+      "assignment_position": 243,
+      "record_id": "entry-1714"
+    }
+  ]
+}
