@@ -166,15 +166,15 @@
     "entry-974",
     "entry-998"
   ],
-  "last_output": "cloud-05-finish-036.jsonl",
+  "last_output": "cloud-05-finish-037.jsonl",
   "supersedes": {
     "entry-1233": "cloud-05-finish-002.jsonl",
     "entry-2630": "cloud-05-finish-031.jsonl",
     "entry-736": "cloud-05-finish-035.jsonl",
     "entry-877": "cloud-05-finish-034.jsonl",
     "entry-933": "cloud-05-finish-035.jsonl",
-    "entry-954": "cloud-05-finish-035.jsonl",
-    "entry-974": "cloud-05-finish-035.jsonl"
+    "entry-954": "cloud-05-finish-036.jsonl",
+    "entry-974": "cloud-05-finish-036.jsonl"
   },
   "model": "GPT-6 (available session model; requested Luna unavailable)",
   "updated_at": "2026-10-01"
