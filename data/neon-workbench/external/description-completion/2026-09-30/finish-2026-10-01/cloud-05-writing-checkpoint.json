@@ -28,7 +28,10 @@
     "entry-1560",
     "entry-1590"
   ],
-  "last_output": "cloud-05-finish-004.jsonl",
+  "last_output": "cloud-05-finish-005.jsonl",
+  "supersedes": {
+    "entry-1233": "cloud-05-finish-002.jsonl"
+  },
   "model": "GPT-6 (available session model; requested Luna unavailable)",
   "updated_at": "2026-10-01"
 }
