@@ -1,9 +1,9 @@
 {
   "worker": 11,
   "assigned_total": 578,
-  "scored": 520,
+  "scored": 529,
   "deferred": 49,
-  "remaining": 9,
+  "remaining": 0,
   "processed_ids": [
     "entry-1007",
     "entry-1018",
@@ -573,7 +573,16 @@
     "entry-936",
     "entry-947",
     "entry-958",
-    "entry-969"
+    "entry-969",
+    "entry-98",
+    "entry-990",
+    "expanded-20260821-usps-final-rule",
+    "expanded-20260902-birthright-new-injunction",
+    "expanded-20260910-rnc-trump-wall-bail",
+    "expanded-20260918-press-ban-announcement",
+    "expanded-20260924-third-country-emergency-request",
+    "expanded-20260928-nathan-birthright-lawsuit",
+    "fresh-20260914-garcia-kremlev"
   ],
-  "last_output": "cloud-11-impact-058.jsonl"
+  "last_output": "cloud-11-impact-059.jsonl"
 }
