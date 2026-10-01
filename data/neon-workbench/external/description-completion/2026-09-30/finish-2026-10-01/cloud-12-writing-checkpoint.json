@@ -2,10 +2,10 @@
   "worker": 12,
   "assignment": "repair",
   "assigned_count": 158,
-  "processed_count": 148,
-  "complete_count": 58,
-  "needs_context_count": 90,
-  "remaining_count": 10,
+  "processed_count": 158,
+  "complete_count": 63,
+  "needs_context_count": 95,
+  "remaining_count": 0,
   "completed_ids": [
     "entry-1022",
     "entry-1048",
@@ -64,7 +64,12 @@
     "entry-7157",
     "entry-7190",
     "entry-753",
-    "entry-809"
+    "entry-809",
+    "entry-841",
+    "entry-885",
+    "entry-907",
+    "entry-924",
+    "entry-942"
   ],
   "needs_context_ids": [
     "entry-1174",
@@ -156,20 +161,14 @@
     "entry-707",
     "entry-730",
     "entry-776",
-    "entry-824"
-  ],
-  "remaining_ids": [
-    "entry-841",
+    "entry-824",
     "entry-854",
     "entry-868",
-    "entry-885",
-    "entry-907",
-    "entry-924",
-    "entry-942",
     "entry-965",
     "entry-990",
     "expanded-20260921-garces-detention-conference"
   ],
+  "remaining_ids": [],
   "output_files": [
     "outputs/cloud-12-finish-001.jsonl",
     "outputs/cloud-12-finish-002.jsonl",
@@ -190,6 +189,7 @@
     "outputs/cloud-12-finish-017.jsonl",
     "outputs/cloud-12-finish-018.jsonl",
     "outputs/cloud-12-finish-019.jsonl",
-    "outputs/cloud-12-finish-020.jsonl"
+    "outputs/cloud-12-finish-020.jsonl",
+    "outputs/cloud-12-finish-021.jsonl"
   ]
 }
