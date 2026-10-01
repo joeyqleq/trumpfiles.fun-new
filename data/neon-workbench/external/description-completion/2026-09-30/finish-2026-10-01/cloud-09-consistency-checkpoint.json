@@ -331,10 +331,20 @@
     "entry-4542",
     "entry-4553",
     "entry-4564",
-    "entry-4575"
+    "entry-4575",
+    "entry-4587",
+    "entry-4598",
+    "entry-4608",
+    "entry-4619",
+    "entry-463",
+    "entry-4640",
+    "entry-4651",
+    "entry-4662",
+    "entry-4673",
+    "entry-4684"
   ],
-  "checked_count": 328,
-  "remaining_count": 250,
+  "checked_count": 338,
+  "remaining_count": 240,
   "correction_ids": [
     "entry-1005",
     "entry-1016",
@@ -418,9 +428,10 @@
     "entry-2465",
     "entry-2487",
     "entry-3567",
-    "entry-3653"
+    "entry-3653",
+    "entry-4684"
   ],
-  "correction_count": 83,
+  "correction_count": 84,
   "batch_files": [
     "cloud-09-impact-review-01.jsonl",
     "cloud-09-impact-review-02.jsonl",
@@ -437,19 +448,22 @@
     "cloud-09-impact-review-13.jsonl",
     "cloud-09-impact-review-14.jsonl",
     "cloud-09-impact-review-15.jsonl",
-    "cloud-09-impact-review-16.jsonl"
+    "cloud-09-impact-review-16.jsonl",
+    "cloud-09-impact-review-17.jsonl"
   ],
   "last_batch_ids": [
-    "entry-4477",
-    "entry-4488",
-    "entry-4499",
-    "entry-4509",
-    "entry-452",
-    "entry-4530",
-    "entry-4542",
-    "entry-4553",
-    "entry-4564",
-    "entry-4575"
+    "entry-4587",
+    "entry-4598",
+    "entry-4608",
+    "entry-4619",
+    "entry-463",
+    "entry-4640",
+    "entry-4651",
+    "entry-4662",
+    "entry-4673",
+    "entry-4684"
   ],
-  "last_batch_corrections": []
+  "last_batch_corrections": [
+    "entry-4684"
+  ]
 }
