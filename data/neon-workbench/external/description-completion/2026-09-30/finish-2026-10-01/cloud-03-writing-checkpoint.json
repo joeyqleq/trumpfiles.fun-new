@@ -29,15 +29,15 @@
     "entry-6728",
     "entry-7043",
     "fresh-20260914-oge-trump-ptr",
-    "entry-1002",
-    "entry-1028",
-    "entry-1065",
-    "entry-1112",
-    "entry-1150"
+    "entry-1187",
+    "entry-1230",
+    "entry-1265",
+    "entry-1296",
+    "entry-1385"
   ],
-  "complete_count": 10,
-  "needs_context_count": 6,
-  "remaining_count": 143,
-  "last_output": "outputs/cloud-03-finish-001.jsonl",
+  "complete_count": 12,
+  "needs_context_count": 9,
+  "remaining_count": 138,
+  "last_output": "outputs/cloud-03-finish-002.jsonl",
   "status": "in_progress"
 }
