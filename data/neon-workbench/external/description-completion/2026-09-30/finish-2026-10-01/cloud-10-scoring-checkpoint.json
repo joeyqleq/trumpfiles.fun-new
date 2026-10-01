@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 578,
-  "scored_count": 104,
-  "deferred_count": 16,
-  "remaining_count": 458,
+  "scored_count": 111,
+  "deferred_count": 19,
+  "remaining_count": 448,
   "processed_ids": [
     "entry-1006",
     "entry-1017",
@@ -124,7 +124,17 @@
     "entry-2282",
     "entry-2293",
     "entry-2303",
-    "entry-2314"
+    "entry-2314",
+    "entry-2325",
+    "entry-2336",
+    "entry-2347",
+    "entry-2358",
+    "entry-2369",
+    "entry-238",
+    "entry-2390",
+    "entry-2400",
+    "entry-2411",
+    "entry-2422"
   ],
   "batches": [
     {
@@ -336,6 +346,22 @@
         "entry-2303",
         "entry-2314"
       ]
+    },
+    {
+      "file": "score-outputs/cloud-10-impact-016.jsonl",
+      "record_count": 10,
+      "record_ids": [
+        "entry-2325",
+        "entry-2336",
+        "entry-2347",
+        "entry-2358",
+        "entry-2369",
+        "entry-238",
+        "entry-2390",
+        "entry-2400",
+        "entry-2411",
+        "entry-2422"
+      ]
     }
   ],
   "latest_versions": {
@@ -458,7 +484,17 @@
     "entry-2282": "score-outputs/cloud-10-impact-015.jsonl",
     "entry-2293": "score-outputs/cloud-10-impact-015.jsonl",
     "entry-2303": "score-outputs/cloud-10-impact-015.jsonl",
-    "entry-2314": "score-outputs/cloud-10-impact-015.jsonl"
+    "entry-2314": "score-outputs/cloud-10-impact-015.jsonl",
+    "entry-2325": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-2336": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-2347": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-2358": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-2369": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-238": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-2390": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-2400": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-2411": "score-outputs/cloud-10-impact-016.jsonl",
+    "entry-2422": "score-outputs/cloud-10-impact-016.jsonl"
   },
   "status_by_id": {
     "entry-1006": "scored",
@@ -580,6 +616,16 @@
     "entry-2282": "scored",
     "entry-2293": "scored",
     "entry-2303": "scored",
-    "entry-2314": "scored"
+    "entry-2314": "scored",
+    "entry-2325": "deferred",
+    "entry-2336": "scored",
+    "entry-2347": "scored",
+    "entry-2358": "deferred",
+    "entry-2369": "scored",
+    "entry-238": "scored",
+    "entry-2390": "scored",
+    "entry-2400": "scored",
+    "entry-2411": "scored",
+    "entry-2422": "deferred"
   }
 }
