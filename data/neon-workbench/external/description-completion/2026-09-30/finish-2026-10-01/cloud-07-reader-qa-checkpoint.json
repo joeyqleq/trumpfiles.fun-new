@@ -271,10 +271,20 @@
     "entry-390",
     "entry-3910",
     "entry-3921",
-    "entry-3932"
+    "entry-3932",
+    "entry-3943",
+    "entry-3954",
+    "entry-3965",
+    "entry-3976",
+    "entry-3987",
+    "entry-3998",
+    "entry-4007",
+    "entry-4018",
+    "entry-4029",
+    "entry-404"
   ],
-  "checked_count": 270,
-  "pass_count": 61,
-  "finding_count": 209,
-  "next_input_index": 270
+  "checked_count": 280,
+  "pass_count": 68,
+  "finding_count": 212,
+  "next_input_index": 280
 }
