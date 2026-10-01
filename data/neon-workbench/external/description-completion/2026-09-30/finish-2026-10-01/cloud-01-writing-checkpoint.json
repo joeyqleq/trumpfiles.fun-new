@@ -2,9 +2,9 @@
   "worker": "cloud-01",
   "input": "worker-01-repair-input.jsonl",
   "assigned_count": 159,
-  "completed_count": 44,
-  "needs_context_count": 107,
-  "remaining_count": 8,
+  "completed_count": 45,
+  "needs_context_count": 114,
+  "remaining_count": 0,
   "batch_files": [
     "outputs/cloud-01-finish-001.jsonl",
     "outputs/cloud-01-finish-002.jsonl",
@@ -35,7 +35,8 @@
     "outputs/cloud-01-finish-028.jsonl",
     "outputs/cloud-01-finish-029.jsonl",
     "outputs/cloud-01-finish-030.jsonl",
-    "outputs/cloud-01-finish-031.jsonl"
+    "outputs/cloud-01-finish-031.jsonl",
+    "outputs/cloud-01-finish-032.jsonl"
   ],
   "completed_record_ids": [
     "entry-10",
@@ -81,7 +82,8 @@
     "entry-7039",
     "entry-7070",
     "entry-7160",
-    "entry-78"
+    "entry-78",
+    "expanded-20260928-nathan-birthright-lawsuit"
   ],
   "needs_context_record_ids": [
     "entry-1181",
@@ -190,16 +192,14 @@
     "entry-811",
     "entry-825",
     "entry-842",
-    "entry-855"
-  ],
-  "remaining_record_ids": [
+    "entry-855",
     "entry-869",
     "entry-888",
     "entry-908",
     "entry-925",
     "entry-945",
     "entry-968",
-    "entry-991",
-    "expanded-20260928-nathan-birthright-lawsuit"
-  ]
+    "entry-991"
+  ],
+  "remaining_record_ids": []
 }
