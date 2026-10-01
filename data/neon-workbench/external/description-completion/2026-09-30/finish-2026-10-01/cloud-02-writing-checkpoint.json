@@ -3,9 +3,9 @@
   "assignment": "finish-2026-10-01 writing pass",
   "input_commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
   "total_assigned": 159,
-  "completed": 43,
-  "needs_context": 105,
-  "remaining": 11,
+  "completed": 49,
+  "needs_context": 109,
+  "remaining": 1,
   "processed_record_ids": [
     "entry-1000",
     "entry-1027",
@@ -154,7 +154,17 @@
     "entry-732",
     "entry-759",
     "entry-783",
-    "entry-812"
+    "entry-812",
+    "entry-826",
+    "entry-843",
+    "entry-856",
+    "entry-871",
+    "entry-889",
+    "entry-909",
+    "entry-927",
+    "entry-947",
+    "entry-969",
+    "entry-993"
   ],
   "output_files": [
     "outputs/cloud-02-finish-001.jsonl",
@@ -172,7 +182,8 @@
     "outputs/cloud-02-finish-013.jsonl",
     "outputs/cloud-02-finish-014.jsonl",
     "outputs/cloud-02-finish-015.jsonl",
-    "outputs/cloud-02-finish-016.jsonl"
+    "outputs/cloud-02-finish-016.jsonl",
+    "outputs/cloud-02-finish-017.jsonl"
   ],
   "notes": "Counts reconciled against unique assigned IDs and latest appended dispositions in each output file."
 }
