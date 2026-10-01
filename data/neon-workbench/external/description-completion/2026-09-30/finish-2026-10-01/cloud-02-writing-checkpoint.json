@@ -3,9 +3,9 @@
   "assignment": "finish-2026-10-01 writing pass",
   "input_commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
   "total_assigned": 159,
-  "completed": 24,
-  "needs_context": 54,
-  "remaining": 81,
+  "completed": 28,
+  "needs_context": 60,
+  "remaining": 71,
   "processed_record_ids": [
     "entry-1000",
     "entry-1027",
@@ -84,7 +84,17 @@
     "entry-3656",
     "entry-3697",
     "entry-373",
-    "entry-3765"
+    "entry-3765",
+    "entry-3799",
+    "entry-3829",
+    "entry-3870",
+    "entry-3896",
+    "entry-3919",
+    "entry-3960",
+    "entry-3988",
+    "entry-4034",
+    "entry-4068",
+    "entry-4106"
   ],
   "output_files": [
     "outputs/cloud-02-finish-001.jsonl",
@@ -95,7 +105,8 @@
     "outputs/cloud-02-finish-006.jsonl",
     "outputs/cloud-02-finish-007.jsonl",
     "outputs/cloud-02-finish-008.jsonl",
-    "outputs/cloud-02-finish-009.jsonl"
+    "outputs/cloud-02-finish-009.jsonl",
+    "outputs/cloud-02-finish-010.jsonl"
   ],
   "notes": "Counts reflect unique latest dispositions reconciled against the assigned input. Existing populated original text is preserved; unresolved claims and source mismatches are recorded with specific gaps and proposed corrections."
 }
