@@ -292,14 +292,14 @@
     "entry-6141",
     "entry-6163",
     "entry-6210",
-    "entry-6264"
-  ],
-  "remaining_record_ids": [
+    "entry-6264",
     "entry-6298",
     "entry-6344",
     "entry-64",
     "entry-6500",
-    "entry-658",
+    "entry-658"
+  ],
+  "remaining_record_ids": [
     "entry-664",
     "entry-6746",
     "entry-684",
@@ -327,8 +327,8 @@
     "expanded-20260821-visa75-court"
   ],
   "completed_count": 41,
-  "needs_context_count": 87,
-  "remaining_count": 30,
-  "last_output_file": "cloud-06-finish-33.jsonl",
+  "needs_context_count": 92,
+  "remaining_count": 25,
+  "last_output_file": "cloud-06-finish-34.jsonl",
   "status": "in_progress"
 }
