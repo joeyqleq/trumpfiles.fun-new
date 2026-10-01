@@ -2,15 +2,22 @@
   "worker": "07",
   "phase": "writing",
   "assigned_count": 158,
-  "processed_count": 5,
-  "complete_count": 4,
-  "needs_context_count": 1,
-  "remaining_count": 153,
+  "processed_count": 10,
+  "complete_count": 6,
+  "needs_context_count": 4,
+  "remaining_count": 148,
   "completed_ids": [
     "entry-1012",
     "entry-1036",
-    "entry-1073",
     "entry-1120",
-    "entry-1156"
+    "entry-1156",
+    "entry-1240",
+    "entry-1279"
+  ],
+  "needs_context_ids": [
+    "entry-1073",
+    "entry-1203",
+    "entry-130",
+    "entry-1330"
   ]
 }
