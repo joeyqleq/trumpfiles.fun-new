@@ -1,0 +1,4 @@
+{"parent_ids":["entry-5512","entry-6443"],"event":"2025-01-20 southern-border national emergency","disposition":"Potential duplicate child across two parents; retain provenance and require coordinator deduplication before real ID allocation."}
+{"parent_ids":["entry-5752","entry-6749"],"event":"2025-03-07 Columbia grants/contracts cancellation","disposition":"Potential duplicate child across two parents; separate March13 funding conditions only where adequately supported."}
+{"parent_ids":["entry-4708","entry-5344"],"event":"2025-01-31 DOJ/FBI January6 personnel review","disposition":"Potential duplicate child; distinguish pre-Patel DOJ orders from later Patel-era actions."}
+{"parent_ids":["entry-5224","entry-5237"],"event":"2025 intelligence personnel changes","disposition":"Compare event dates/personnel carefully; do not merge omnibus purge narrative or assume identical events."}
