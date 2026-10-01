@@ -1,9 +1,9 @@
 {
   "worker": 10,
   "assigned_record_count": 158,
-  "completed_count": 21,
-  "needs_context_count": 44,
-  "remaining_count": 93,
+  "completed_count": 24,
+  "needs_context_count": 46,
+  "remaining_count": 88,
   "processed_ids": [
     "entry-1019",
     "entry-1042",
@@ -69,7 +69,12 @@
     "entry-2971",
     "entry-3033",
     "entry-3109",
-    "entry-3191"
+    "entry-3191",
+    "entry-324",
+    "entry-3327",
+    "entry-3378",
+    "entry-3415",
+    "entry-3449"
   ],
   "batches": [
     {
@@ -223,6 +228,17 @@
         "entry-3109",
         "entry-3191"
       ]
+    },
+    {
+      "file": "outputs/cloud-10-finish-015.jsonl",
+      "record_count": 5,
+      "record_ids": [
+        "entry-324",
+        "entry-3327",
+        "entry-3378",
+        "entry-3415",
+        "entry-3449"
+      ]
     }
   ],
   "latest_versions": {
@@ -290,7 +306,12 @@
     "entry-2971": "outputs/cloud-10-finish-014.jsonl",
     "entry-3033": "outputs/cloud-10-finish-014.jsonl",
     "entry-3109": "outputs/cloud-10-finish-014.jsonl",
-    "entry-3191": "outputs/cloud-10-finish-014.jsonl"
+    "entry-3191": "outputs/cloud-10-finish-014.jsonl",
+    "entry-324": "outputs/cloud-10-finish-015.jsonl",
+    "entry-3327": "outputs/cloud-10-finish-015.jsonl",
+    "entry-3378": "outputs/cloud-10-finish-015.jsonl",
+    "entry-3415": "outputs/cloud-10-finish-015.jsonl",
+    "entry-3449": "outputs/cloud-10-finish-015.jsonl"
   },
   "status_by_id": {
     "entry-1213": "needs_context",
@@ -357,6 +378,11 @@
     "entry-2971": "needs_context",
     "entry-3033": "complete",
     "entry-3109": "needs_context",
-    "entry-3191": "needs_context"
+    "entry-3191": "needs_context",
+    "entry-324": "needs_context",
+    "entry-3327": "complete",
+    "entry-3378": "complete",
+    "entry-3415": "needs_context",
+    "entry-3449": "complete"
   }
 }
