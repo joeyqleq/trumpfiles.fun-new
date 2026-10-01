@@ -2,10 +2,10 @@
   "worker": "cloud-08",
   "assignment_file": "worker-08-repair-input.jsonl",
   "assigned_count": 158,
-  "processed_count": 110,
+  "processed_count": 115,
   "complete_count": 42,
-  "needs_context_count": 68,
-  "remaining_count": 48,
+  "needs_context_count": 73,
+  "remaining_count": 43,
   "processed_batches": [
     1,
     2,
@@ -29,7 +29,8 @@
     20,
     21,
     22,
-    23
+    23,
+    24
   ],
   "output_files": [
     "outputs/cloud-08-finish-001.jsonl",
@@ -54,7 +55,8 @@
     "outputs/cloud-08-finish-020.jsonl",
     "outputs/cloud-08-finish-021.jsonl",
     "outputs/cloud-08-finish-022.jsonl",
-    "outputs/cloud-08-finish-023.jsonl"
+    "outputs/cloud-08-finish-023.jsonl",
+    "outputs/cloud-08-finish-024.jsonl"
   ],
   "completed_ids": [
     "entry-1127",
@@ -168,14 +170,14 @@
     "entry-507",
     "entry-517",
     "entry-5285",
-    "entry-537"
-  ],
-  "remaining_ids": [
+    "entry-537",
     "entry-5419",
     "entry-5454",
     "entry-5491",
     "entry-5521",
-    "entry-5558",
+    "entry-5558"
+  ],
+  "remaining_ids": [
     "entry-5587",
     "entry-5631",
     "entry-568",
