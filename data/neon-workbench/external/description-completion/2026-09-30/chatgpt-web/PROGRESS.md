@@ -1,6 +1,6 @@
 # ChatGPT Web description completion
 
-Assigned: 1736. Committed terminal results: 1458. Complete descriptions: 653. Needs context: 805. Remaining unprocessed: 278.
+Assigned: 1736. Committed terminal results: 1736. Complete descriptions: 823. Needs context: 913. Remaining unprocessed: 0.
 
 Only missing fields were written; populated titles and descriptions were preserved. Specific evidence gaps, source mismatches, and preservation conflicts appear in each needs_context record. Needs-context records may contain useful new partial descriptions, but are not claimed as completed descriptions.
 
