@@ -3,10 +3,10 @@
   "input": "worker-01-score-input.jsonl",
   "repair_input": "worker-01-repair-input.jsonl",
   "assigned_count": 579,
-  "checked_count": 568,
-  "remaining_count": 11,
-  "finding_record_count": 364,
-  "finding_count": 432,
+  "checked_count": 574,
+  "remaining_count": 5,
+  "finding_record_count": 366,
+  "finding_count": 435,
   "checked_record_ids": [
     "entry-1",
     "entry-1009",
@@ -575,7 +575,13 @@
     "entry-916",
     "entry-927",
     "entry-938",
-    "entry-949"
+    "entry-949",
+    "entry-96",
+    "entry-970",
+    "entry-981",
+    "entry-992",
+    "expanded-20260824-economic-outcast",
+    "expanded-20260902-doj-welfare-reporting"
   ],
   "batch_files": [
     "quality-outputs/cloud-01-reader-qa-001.jsonl",
@@ -634,6 +640,7 @@
     "quality-outputs/cloud-01-reader-qa-054.jsonl",
     "quality-outputs/cloud-01-reader-qa-055.jsonl",
     "quality-outputs/cloud-01-reader-qa-056.jsonl",
-    "quality-outputs/cloud-01-reader-qa-057.jsonl"
+    "quality-outputs/cloud-01-reader-qa-057.jsonl",
+    "quality-outputs/cloud-01-reader-qa-058.jsonl"
   ]
 }
