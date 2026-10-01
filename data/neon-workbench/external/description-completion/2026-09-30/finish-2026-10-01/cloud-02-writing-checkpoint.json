@@ -3,9 +3,9 @@
   "assignment": "finish-2026-10-01 writing pass",
   "input_commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
   "total_assigned": 159,
-  "completed": 13,
-  "needs_context": 35,
-  "remaining": 111,
+  "completed": 14,
+  "needs_context": 44,
+  "remaining": 101,
   "processed_record_ids": [
     "entry-1000",
     "entry-1027",
@@ -54,7 +54,17 @@
     "entry-2355",
     "entry-2380",
     "entry-2415",
-    "entry-2456"
+    "entry-2456",
+    "entry-2494",
+    "entry-251",
+    "entry-253",
+    "entry-2548",
+    "entry-2569",
+    "entry-2594",
+    "entry-2624",
+    "entry-266",
+    "entry-2706",
+    "entry-2743"
   ],
   "output_files": [
     "outputs/cloud-02-finish-001.jsonl",
@@ -62,7 +72,8 @@
     "outputs/cloud-02-finish-003.jsonl",
     "outputs/cloud-02-finish-004.jsonl",
     "outputs/cloud-02-finish-005.jsonl",
-    "outputs/cloud-02-finish-006.jsonl"
+    "outputs/cloud-02-finish-006.jsonl",
+    "outputs/cloud-02-finish-007.jsonl"
   ],
-  "notes": "Counts reflect unique latest dispositions reconciled against the assigned input. All populated fields remain unchanged. Accessible sources were read only where needed; source mismatches and unsupported existing claims remain needs_context with proposed corrections."
+  "notes": "Counts reflect unique latest dispositions reconciled against the assigned input. Existing populated fields remain verbatim; evidence-supported text is added in missing fields, with unresolved claims and source mismatches flagged separately."
 }
