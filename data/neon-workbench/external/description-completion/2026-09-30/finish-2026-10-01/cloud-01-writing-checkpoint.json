@@ -1,0 +1,19 @@
+{
+  "worker": "cloud-01",
+  "input": "worker-01-repair-input.jsonl",
+  "assigned_count": 159,
+  "completed_count": 5,
+  "needs_context_count": 0,
+  "remaining_count": 154,
+  "batch_files": [
+    "outputs/cloud-01-finish-001.jsonl"
+  ],
+  "completed_record_ids": [
+    "entry-10",
+    "entry-1023",
+    "entry-1055",
+    "entry-1095",
+    "entry-1140"
+  ],
+  "needs_context_record_ids": []
+}
