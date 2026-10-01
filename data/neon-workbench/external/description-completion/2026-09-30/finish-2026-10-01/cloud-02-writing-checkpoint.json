@@ -3,9 +3,9 @@
   "assignment": "finish-2026-10-01 writing pass",
   "input_commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
   "total_assigned": 159,
-  "completed": 12,
-  "needs_context": 26,
-  "remaining": 121,
+  "completed": 13,
+  "needs_context": 35,
+  "remaining": 111,
   "processed_record_ids": [
     "entry-1000",
     "entry-1027",
@@ -44,14 +44,25 @@
     "entry-199",
     "entry-2026",
     "entry-208",
-    "entry-2117"
+    "entry-2117",
+    "entry-2151",
+    "entry-2183",
+    "entry-222",
+    "entry-2259",
+    "entry-2295",
+    "entry-233",
+    "entry-2355",
+    "entry-2380",
+    "entry-2415",
+    "entry-2456"
   ],
   "output_files": [
     "outputs/cloud-02-finish-001.jsonl",
     "outputs/cloud-02-finish-002.jsonl",
     "outputs/cloud-02-finish-003.jsonl",
     "outputs/cloud-02-finish-004.jsonl",
-    "outputs/cloud-02-finish-005.jsonl"
+    "outputs/cloud-02-finish-005.jsonl",
+    "outputs/cloud-02-finish-006.jsonl"
   ],
-  "notes": "Counts are unique latest dispositions reconciled against worker-02-repair-input.jsonl. Existing populated fields are preserved; unsupported claims and source mismatches remain needs_context with precise correction requests."
+  "notes": "Counts reflect unique latest dispositions reconciled against the assigned input. All populated fields remain unchanged. Accessible sources were read only where needed; source mismatches and unsupported existing claims remain needs_context with proposed corrections."
 }
