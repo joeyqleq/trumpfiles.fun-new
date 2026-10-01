@@ -433,7 +433,17 @@
     "entry-5678",
     "entry-5689",
     "entry-57",
-    "entry-571"
+    "entry-571",
+    "entry-5720",
+    "entry-5734",
+    "entry-575",
+    "entry-5766",
+    "entry-5777",
+    "entry-5788",
+    "entry-5799",
+    "entry-581",
+    "entry-5823",
+    "entry-5836"
   ],
   "corrections_appended": 7,
   "correction_record_ids": [
@@ -445,5 +455,5 @@
     "entry-428",
     "entry-4540"
   ],
-  "next_unchecked_index": 430
+  "next_unchecked_index": 440
 }
