@@ -165,7 +165,6 @@
   "completed_record_ids": [
     "entry-1009",
     "entry-1034",
-    "entry-1155",
     "entry-1239",
     "entry-1272",
     "entry-1854",
@@ -216,6 +215,7 @@
   "needs_context_record_ids": [
     "entry-1072",
     "entry-112",
+    "entry-1155",
     "entry-1200",
     "entry-1299",
     "entry-1325",
@@ -325,9 +325,9 @@
     "expanded-20260821-visa75-court"
   ],
   "remaining_record_ids": [],
-  "completed_count": 49,
-  "needs_context_count": 109,
+  "completed_count": 48,
+  "needs_context_count": 110,
   "remaining_count": 0,
-  "last_output_file": "cloud-06-finish-66.jsonl",
+  "last_output_file": "cloud-06-finish-67.jsonl",
   "status": "writing_review_in_progress"
 }
