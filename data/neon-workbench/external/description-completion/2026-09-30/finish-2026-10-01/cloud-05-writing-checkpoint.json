@@ -1,0 +1,19 @@
+{
+  "worker": "05",
+  "phase": "writing",
+  "assigned_total": 158,
+  "saved_total": 5,
+  "completed": 4,
+  "needs_context": 1,
+  "remaining": 153,
+  "saved_record_ids": [
+    "entry-1008",
+    "entry-1033",
+    "entry-1071",
+    "entry-1119",
+    "entry-1154"
+  ],
+  "last_output": "cloud-05-finish-001.jsonl",
+  "model": "GPT-6 (available session model; requested Luna unavailable)",
+  "updated_at": "2026-10-01"
+}
