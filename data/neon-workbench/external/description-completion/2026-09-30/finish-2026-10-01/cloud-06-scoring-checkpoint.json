@@ -1098,7 +1098,13 @@
     "entry-9",
     "entry-91",
     "entry-931",
-    "entry-953"
+    "entry-953",
+    "entry-964",
+    "entry-975",
+    "entry-986",
+    "entry-997",
+    "expanded-20260828-smithsonian-pressure-letter",
+    "expanded-20260909-kimmel-talarico-broadcast"
   ],
   "deferred_record_ids": [
     "entry-1220",
@@ -1156,21 +1162,15 @@
     "entry-942"
   ],
   "remaining_record_ids": [
-    "entry-964",
-    "entry-975",
-    "entry-986",
-    "entry-997",
-    "expanded-20260828-smithsonian-pressure-letter",
-    "expanded-20260909-kimmel-talarico-broadcast",
     "expanded-20260916-gastonia-rally-iran-claims",
     "expanded-20260923-iowa-poll-suit-dismissal",
     "expanded-20260928-china-arms-denial",
     "fresh-20260826-raskin-1789",
     "fresh-20260924-trump-tv-trademark"
   ],
-  "scored_count": 515,
+  "scored_count": 521,
   "deferred_count": 53,
-  "remaining_count": 11,
-  "last_output_file": "cloud-06-impact-57.jsonl",
+  "remaining_count": 5,
+  "last_output_file": "cloud-06-impact-58.jsonl",
   "status": "scoring_in_progress"
 }
