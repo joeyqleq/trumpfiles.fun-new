@@ -4,9 +4,9 @@
   "rubric": "RUBRIC.md",
   "version": "impact-v2",
   "assigned_count": 579,
-  "scored_count": 498,
-  "deferred_count": 64,
-  "remaining_count": 17,
+  "scored_count": 499,
+  "deferred_count": 71,
+  "remaining_count": 9,
   "batch_files": [
     "score-outputs/cloud-01-impact-001.jsonl",
     "score-outputs/cloud-01-impact-002.jsonl",
@@ -77,7 +77,8 @@
     "score-outputs/cloud-01-impact-067.jsonl",
     "score-outputs/cloud-01-impact-068.jsonl",
     "score-outputs/cloud-01-impact-069.jsonl",
-    "score-outputs/cloud-01-impact-070.jsonl"
+    "score-outputs/cloud-01-impact-070.jsonl",
+    "score-outputs/cloud-01-impact-071.jsonl"
   ],
   "scored_record_ids": [
     "entry-1",
@@ -577,7 +578,8 @@
     "entry-851",
     "entry-862",
     "entry-873",
-    "entry-884"
+    "entry-884",
+    "entry-96"
   ],
   "deferred_record_ids": [
     "entry-1009",
@@ -643,17 +645,16 @@
     "entry-7097",
     "entry-7108",
     "entry-7128",
-    "entry-7200"
-  ],
-  "remaining_record_ids": [
+    "entry-7200",
     "entry-895",
     "entry-905",
     "entry-916",
     "entry-927",
     "entry-938",
     "entry-949",
-    "entry-96",
-    "entry-970",
+    "entry-970"
+  ],
+  "remaining_record_ids": [
     "entry-981",
     "entry-992",
     "expanded-20260824-economic-outcast",
