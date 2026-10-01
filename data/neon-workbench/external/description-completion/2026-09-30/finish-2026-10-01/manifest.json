@@ -1,0 +1,71 @@
+{
+  "writing_snapshot_sha256": "9c0f4013b6030c63ba125fcb51eb3cff016d5427ffd8054b4373ab631f1d6923",
+  "repair_ids": 1900,
+  "score_ids": 6944,
+  "held_score_ids": 283,
+  "workers": [
+    {
+      "worker": 1,
+      "repairs": 159,
+      "scores": 579
+    },
+    {
+      "worker": 2,
+      "repairs": 159,
+      "scores": 579
+    },
+    {
+      "worker": 3,
+      "repairs": 159,
+      "scores": 579
+    },
+    {
+      "worker": 4,
+      "repairs": 159,
+      "scores": 579
+    },
+    {
+      "worker": 5,
+      "repairs": 158,
+      "scores": 579
+    },
+    {
+      "worker": 6,
+      "repairs": 158,
+      "scores": 579
+    },
+    {
+      "worker": 7,
+      "repairs": 158,
+      "scores": 579
+    },
+    {
+      "worker": 8,
+      "repairs": 158,
+      "scores": 579
+    },
+    {
+      "worker": 9,
+      "repairs": 158,
+      "scores": 578
+    },
+    {
+      "worker": 10,
+      "repairs": 158,
+      "scores": 578
+    },
+    {
+      "worker": 11,
+      "repairs": 158,
+      "scores": 578
+    },
+    {
+      "worker": 12,
+      "repairs": 158,
+      "scores": 578
+    }
+  ],
+  "version": "impact-v2",
+  "publication": "offline provisional only",
+  "rubric_sha256": "1ac7e1f208a8fe8fde1db5accda6d5b587c79f7780baafa0baa1053909d28d27"
+}
