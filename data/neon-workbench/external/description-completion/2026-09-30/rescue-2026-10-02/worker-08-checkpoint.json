@@ -47,15 +47,24 @@
     "entry-6155",
     "entry-6211",
     "entry-6293",
-    "entry-6351"
+    "entry-6351",
+    "entry-652",
+    "entry-6759",
+    "entry-754",
+    "entry-817",
+    "entry-846",
+    "entry-884",
+    "entry-954",
+    "fresh-20260914-oge-trump-ptr"
   ],
   "assigned_count": 53,
-  "completed_count": 31,
-  "needs_context_count": 14,
-  "remaining_count": 8,
+  "completed_count": 34,
+  "needs_context_count": 19,
+  "remaining_count": 0,
   "output_files": [
     "worker-08-batch-001.jsonl",
     "worker-08-batch-002.jsonl",
-    "worker-08-batch-003.jsonl"
+    "worker-08-batch-003.jsonl",
+    "worker-08-batch-004.jsonl"
   ]
 }
