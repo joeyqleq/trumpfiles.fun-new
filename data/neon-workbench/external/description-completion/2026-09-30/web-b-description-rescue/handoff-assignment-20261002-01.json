@@ -1,0 +1,110 @@
+{
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "handoff_id": "20261002-worker05-tail20-to-worker02",
+  "from_worker": "resume_05",
+  "to_worker": "resume_02",
+  "reason": "Keep completed worker useful; source worker confirmed these IDs are not being researched or published.",
+  "output_directory": "worker-05-handoff-02",
+  "records": [
+    {
+      "record_id": "entry-6320",
+      "position": 1181,
+      "entry_number": 6320
+    },
+    {
+      "record_id": "entry-6340",
+      "position": 1183,
+      "entry_number": 6340
+    },
+    {
+      "record_id": "entry-6343",
+      "position": 1185,
+      "entry_number": 6343
+    },
+    {
+      "record_id": "entry-6346",
+      "position": 1187,
+      "entry_number": 6346
+    },
+    {
+      "record_id": "entry-6351",
+      "position": 1189,
+      "entry_number": 6351
+    },
+    {
+      "record_id": "entry-6356",
+      "position": 1191,
+      "entry_number": 6356
+    },
+    {
+      "record_id": "entry-6360",
+      "position": 1193,
+      "entry_number": 6360
+    },
+    {
+      "record_id": "entry-6389",
+      "position": 1195,
+      "entry_number": 6389
+    },
+    {
+      "record_id": "entry-64",
+      "position": 1197,
+      "entry_number": 64
+    },
+    {
+      "record_id": "entry-6408",
+      "position": 1199,
+      "entry_number": 6408
+    },
+    {
+      "record_id": "entry-643",
+      "position": 1201,
+      "entry_number": 643
+    },
+    {
+      "record_id": "entry-6486",
+      "position": 1203,
+      "entry_number": 6486
+    },
+    {
+      "record_id": "entry-6500",
+      "position": 1205,
+      "entry_number": 6500
+    },
+    {
+      "record_id": "entry-651",
+      "position": 1207,
+      "entry_number": 651
+    },
+    {
+      "record_id": "entry-653",
+      "position": 1209,
+      "entry_number": 653
+    },
+    {
+      "record_id": "entry-654",
+      "position": 1211,
+      "entry_number": 654
+    },
+    {
+      "record_id": "entry-655",
+      "position": 1213,
+      "entry_number": 655
+    },
+    {
+      "record_id": "entry-6561",
+      "position": 1215,
+      "entry_number": 6561
+    },
+    {
+      "record_id": "entry-6581",
+      "position": 1217,
+      "entry_number": 6581
+    },
+    {
+      "record_id": "entry-660",
+      "position": 1219,
+      "entry_number": 660
+    }
+  ]
+}
