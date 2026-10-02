@@ -1,0 +1,112 @@
+[
+  {
+    "record_id": "entry-1298",
+    "entry_number": 1298,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "The earlier outcome had not verified the TIME essay. TIME's official article page confirms the exact title, coauthors and June 22, 2026 publication time, and its text discusses the Iran ceasefire/deal and the authors' argument about Trump's victory claims. It does not establish the specific three-part 'deny, flood, redirect' playbook or the title's claim about a legal-crisis strategy.",
+    "supported_facts": [
+      "TIME published 'Trump, Iran and the Denial of Defeat' by Jeffrey Sonnenfeld and Steven Tian on June 22, 2026.",
+      "The authors argued that Trump had not achieved the promised unconditional Iranian surrender and criticized the initial agreement for leaving Iran's missile arsenal, enriched uranium and regional proxy relationships unresolved.",
+      "The authors cited costs and casualties and framed Trump's public responses as a pattern of denying setbacks; this is their opinion and characterization."
+    ],
+    "remaining_uncertainties": [
+      "The essay is opinion writing; its policy assessment, casualty/cost figures and characterization of Trump's motives are the authors' claims and are not independently established by this source.",
+      "The article does not substantiate a coordinated 'deny, flood, redirect' media operation or a comparison specifically to legal-crisis communications."
+    ],
+    "source_urls": [
+      "https://time.com/article/2026/06/22/trump-iran-war-denial-of-defeat/"
+    ],
+    "search_attempts": [
+      {
+        "query_or_url": "TIME Trump Iran Denial of Defeat Jeffrey Sonnenfeld Steven Tian June 22 2026",
+        "provider": "search_service_web_run",
+        "result": "Official TIME search result verified title, authors and date; opened the article page and read its body. The retrieved URL exactly matches https://time.com/article/2026/06/22/trump-iran-war-denial-of-defeat/. The text discusses the Iran agreement, stated costs and casualties, remaining missile/nuclear/proxy issues, criticism from U.S. and Israeli leaders, and the authors' interpretation of Trump's victory claims."
+      }
+    ],
+    "proposed_title": "Sonnenfeld and Tian Criticized Trump’s Iran Deal in TIME Essay",
+    "description_medium": "In a June 22, 2026 TIME essay, Jeffrey Sonnenfeld and Steven Tian argued that Trump’s initial agreement with Iran left key questions unresolved, including Iran’s missile arsenal, enriched uranium and support for regional armed groups. They cited the war’s casualties and cost and described Trump’s public response as a pattern of denying setbacks. This is the authors’ opinion and assessment.",
+    "description_long": "TIME published Jeffrey Sonnenfeld and Steven Tian’s essay “Trump, Iran and the Denial of Defeat” on June 22, 2026. The authors assessed the initial agreement between Washington and Tehran after months of war, arguing that it left Iran with missile launchers and enriched uranium and did not end Iranian support for Hamas, the Houthis and Hezbollah. They also criticized provisions they said could provide Iran with sanctions relief, reconstruction funding and toll revenue from the Strait of Hormuz.\n\nThe essay cited 13 U.S. military deaths, 3,375 Iranian deaths and an estimated $132 billion cost, and described criticism of the agreement from members of Congress and Israeli political leaders, including opposition leader Yair Lapid. Sonnenfeld and Tian used Roy Cohn’s advice to “claim victory and never admit defeat” to frame Trump’s response as a recurring rhetorical pattern. Those are the essayists’ claims and interpretation. Their article supports an account of their critique of the Iran deal and Trump’s victory rhetoric; it does not document the separate three-step “deny, flood, redirect” strategy or establish a legal-crisis communications operation."
+  },
+  {
+    "record_id": "entry-1304",
+    "entry_number": 1304,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "The original sources do not document an 'escalation week' linking March 3 reporting with August Hormuz talks. The AP article itself provides a concrete account of the conflict's fifth day, including strikes on missile launchers and a nuclear research site, Iranian drone/missile retaliation, embassy attacks and evacuations.",
+    "supported_facts": [
+      "The AP article reported the war had entered its fifth day and described explosions in Tehran as of its March 3 story date/update.",
+      "AP reported Israeli strikes on missile launchers and a nuclear research site, Iranian retaliation across the Gulf, drone attacks on U.S. diplomatic facilities in Riyadh and Dubai, and U.S. evacuation orders for personnel in several countries.",
+      "AP reported that Adm. Brad Cooper said U.S. forces had struck nearly 2,000 targets, while the administration described several different objectives.",
+      "The linked CNBC article was an August 11 report on later Hormuz negotiations and does not belong in this March event description."
+    ],
+    "remaining_uncertainties": [
+      "The AP story describes regional energy and travel disruption but does not quantify shipping-insurance changes or establish that Trump's posture kept allied planners on emergency footing.",
+      "The AP article's displayed date and body chronology are not perfectly aligned; the body describes events through the war's fifth day and labels the reported attacks as occurring Tuesday/Wednesday. The correction therefore uses the source's account of the fifth-day developments without calling them an 'escalation week.'"
+    ],
+    "source_urls": [
+      "https://apnews.com/article/iran-israel-us-03-03-2026-8755877b603e46ed3df8107689c1ee23"
+    ],
+    "search_attempts": [
+      {
+        "query_or_url": "iran-israel-us-03-03-2026-8755877b603e46ed3df8107689c1ee23",
+        "provider": "search_service_web_run",
+        "result": "Exact-URL query surfaced the AP article 'Explosions sound in the Iranian capital as war with US and Israel enters a fifth day'; opened the official AP page. It reports attacks on missile launchers and a nuclear research site, retaliation, diplomatic-site drone strikes, casualty counts and evacuation orders."
+      },
+      {
+        "query_or_url": "https://apnews.com/article/iran-israel-us-03-03-2026-8755877b603e46ed3df8107689c1ee23",
+        "provider": "search_service_web_run",
+        "result": "Opened AP article and inspected the main report and photo captions. The AP text says four U.S. Army Reserve soldiers and two other service members were killed in a Kuwait drone strike; it also reports at least 787 deaths in Iran according to the Red Crescent, 50 deaths in Lebanon according to its health ministry, and evacuation actions by the U.S. State Department."
+      }
+    ],
+    "proposed_title": "AP Reported Tehran Explosions and Retaliatory Strikes as Iran War Entered Fifth Day",
+    "description_medium": "The Associated Press reported that the Iran war had entered its fifth day, with explosions around Tehran and Israeli air defenses responding to incoming Iranian missiles. AP said Israel struck Iranian missile launchers and a nuclear research site, while Iran retaliated across the Gulf, including drone attacks on U.S. diplomatic facilities in Riyadh and Dubai. The report also covered regional deaths, disrupted travel and U.S. evacuation orders.",
+    "description_long": "An Associated Press report on the Iran war’s fifth day described explosions around Tehran and a widening exchange of attacks. Iranian state television reported blasts near the capital; Israel said its air defenses had activated in response to incoming Iranian missiles. AP reported that Israel had struck Iranian missile launchers and a nuclear research site, while Iran fired missiles toward Israel and carried out drone attacks on the U.S. Embassy in Riyadh and the U.S. consulate in Dubai. The attacks disrupted travel and energy supplies across the Gulf.\n\nThe report said the U.S. State Department ordered non-emergency personnel and family members to leave Kuwait, Bahrain, Iraq, Qatar, Jordan and the United Arab Emirates, while many other travelers faced airspace closures. It reported the Pentagon’s identification of four Army Reserve soldiers killed in a drone strike on a command center in Kuwait, along with two other U.S. service members. Adm. Brad Cooper said U.S. forces had struck nearly 2,000 targets in Iran. AP also noted that administration officials had described multiple objectives, including degrading missiles and preventing Iran from obtaining a nuclear weapon. These events are the concrete March conflict account; the separate August Hormuz negotiations are not combined with it."
+  },
+  {
+    "record_id": "entry-1325",
+    "entry_number": 1325,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "The March AP reporting supports a specific U.S.-Spain dispute over use of jointly operated bases and Trump's threatened trade cutoff, but not the original broad claim that summit optics exposed deep Europe-wide divisions. The separate June G7 story reports leaders welcoming a tentative Iran deal and describes notable unity, rather than supporting the original title.",
+    "supported_facts": [
+      "On March 2, 2026, Spanish Foreign Minister José Manuel Albares said Spain would not permit U.S. use of jointly operated bases in southern Spain for strikes outside the UN Charter.",
+      "On March 3, Trump threatened to end trade with Spain during an Oval Office meeting with German Chancellor Friedrich Merz, citing Iran-war support and NATO spending.",
+      "Albares said the bases had not been used in the weekend attack; Trump said the U.S. could use them if it wanted.",
+      "The EU negotiates trade for its 27 members, and a Sánchez spokesperson said any review should respect EU-U.S. agreements; the European Commission said it would protect EU interests.",
+      "The later AP G7 takeaways article says Macron, Meloni, Merz and Starmer had criticized Trump for launching the war without consulting allies, but leaders then welcomed the tentative Iran deal and showed notable unity at the summit."
+    ],
+    "remaining_uncertainties": [
+      "The available reporting does not establish that meeting optics exposed a continent-wide split over Iran strategy; the June G7 takeaways instead describe agreement around a tentative deal.",
+      "The March source describes a bilateral dispute and trade threat; it does not assess any effect on deterrence."
+    ],
+    "source_urls": [
+      "https://www.seattlepi.com/business/trump-threatens-to-cut-off-trade-with-spain-after-a21953062",
+      "https://wtop.com/news/2026/03/spains-sanchez-stands-firm-on-opposition-to-war-in-iran-despite-trumps-trade-threat/",
+      "https://apnews.com/article/g7-summit-trump-macron-takeaways-versailles-0b3127724dbbf16dd36353247290568e"
+    ],
+    "search_attempts": [
+      {
+        "query_or_url": "Trump Spain joint bases Iran war AP March 3 2026 trade details Sánchez",
+        "provider": "search_service_web_run",
+        "result": "Search found the AP dispatch and opened its SeattlePI syndication, which provides the complete March 3 report: Albares's base-use statement, Trump's trade threat at a meeting with Friedrich Merz, EU trade authority, the EU response, and Sánchez's position."
+      },
+      {
+        "query_or_url": "https://wtop.com/news/2026/03/spains-sanchez-stands-firm-on-opposition-to-war-in-iran-despite-trumps-trade-threat/",
+        "provider": "search_service_web_run",
+        "result": "Opened AP syndication from March 4: Sánchez called the attacks unjustifiable and dangerous, said Spain would not be complicit, described the risk of a costly quagmire, and said 'No to the war.' It records White House and Spanish statements that contradicted each other about cooperation."
+      },
+      {
+        "query_or_url": "https://apnews.com/article/g7-summit-trump-macron-takeaways-versailles-0b3127724dbbf16dd36353247290568e",
+        "provider": "search_service_web_run",
+        "result": "Opened official AP G7 takeaways story dated June 17, 2026. It says Macron, Meloni, Merz and Starmer had criticized the initial war decision, but a joint statement welcomed a tentative Iran deal, praised Trump's leadership and called for support for Ukraine; AP describes notable unity at the summit."
+      }
+    ],
+    "proposed_title": "Spain Rejected Some U.S. Base Use for Iran Strikes; Trump Threatened Trade Cutoff",
+    "description_medium": "Spanish Foreign Minister José Manuel Albares said Spain would not allow U.S. use of jointly operated bases in southern Spain for Iran strikes outside the U.N. Charter. The next day, President Donald Trump threatened to end trade with Spain during a meeting with German Chancellor Friedrich Merz. Spain said the bases were not used in the weekend attack; the EU noted that it negotiates trade for its 27 members.",
+    "description_long": "The Associated Press reported a dispute between Washington and Madrid over U.S. access to jointly operated bases in southern Spain. On March 2, Spanish Foreign Minister José Manuel Albares said Spain would not allow the United States to use the bases for strikes that were not covered by the U.N. Charter. He said the bases had not been used in the weekend attack on Iran. The following day, President Donald Trump threatened to end trade with Spain during an Oval Office meeting with German Chancellor Friedrich Merz, citing Spain’s lack of support for the U.S.-Israeli attacks and its resistance to NATO’s proposed 5% defense-spending target.\n\nTrump said the United States could use the bases if it wanted. A spokesperson for Spanish Prime Minister Pedro Sánchez said any review of trade arrangements should respect EU-U.S. agreements and international law; the European Commission said it would protect the EU’s interests because trade policy is handled for all 27 member states at the bloc level. Sánchez publicly called the military action unjustifiable and dangerous and said Spain would not be complicit. A separate AP account of the June G7 summit describes earlier allied criticism but says leaders later welcomed a tentative Iran agreement and demonstrated notable unity. The sourced event here is the specific Spain dispute, not proof of a continent-wide split revealed by summit optics."
+  }
+]

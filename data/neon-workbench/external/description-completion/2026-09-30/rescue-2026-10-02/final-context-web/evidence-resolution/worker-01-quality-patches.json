@@ -1,0 +1,53 @@
+[
+  {
+    "record_id": "entry-113",
+    "proposed_title": "NPR Names Jan. 6 Clemency Recipients with Rape and Domestic-Violence Records",
+    "description_medium": "NPR identified specific Jan. 6 clemency recipients with serious prior records. Kasey Hopkins had a 2002 forcible-rape conviction; Peter Schwartz had 38 prior convictions, including assaulting his wife, and Trump’s pardon freed him from a 14-year Jan. 6 sentence. Theodore Middendorf had pleaded guilty to sexual assault of a 7-year-old, but remained in custody on that separate case. The evidence does not support calling all recipients child predators or saying those separate cases were erased.",
+    "description_long": "NPR’s January 30, 2025 investigation named people whose criminal histories differed from the offenses covered by Trump’s January 6 clemency. Kasey Hopkins, who pleaded guilty to a Capitol offense, had a 2002 forcible-rape conviction and received a four-month sentence in his January 6 case before Trump’s pardon. Peter Schwartz had 38 prior convictions, including domestic-violence and assault cases. A federal judge sentenced him to more than 14 years for assaulting police with pepper spray on January 6; NPR reported that Trump’s pardon freed him from that prison sentence. Theodore Middendorf had separately pleaded guilty in Illinois to sexual assault of a 7-year-old and was sentenced to 19 years in that case. Although Trump’s clemency covered Middendorf’s Capitol property-destruction case, NPR reported he remained in custody on the separate child-sexual-assault sentence. The account documents serious histories among named recipients, but it does not show every recipient had such a record or that unrelated convictions disappeared. In particular, “child predators freed” misstates Middendorf’s custody status and conflates his separate conviction with the pardon for his Capitol offense.",
+    "source_urls": [
+      "https://www.npr.org/2025/01/30/nx-s1-5276336/donald-trump-jan-6-rape-assault-pardons-rioters",
+      "https://www.northcountrypublicradio.org/news/npr/nx-s1-5276336/criminal-records-of-jan-6-rioters-pardoned-by-trump-include-rape-domestic-violence"
+    ],
+    "remaining_uncertainties": [
+      "The NPR story reports the facts summarized here; it does not make a group-wide claim that all recipients had violent histories.",
+      "Do not characterize separate conviction or pending charges as erased by Jan. 6 clemency."
+    ],
+    "editorial_notes": "NPR’s full syndication text identifies Hopkins, Schwartz and Middendorf and clarifies which clemency case was affected versus which separate sentence remained in force. Corrected title and account name people rather than generalize the group.",
+    "evidence_notes": "Opened NCPR’s full NPR syndication text. Lines 145–147 report Theodore Middendorf’s 2024 guilty plea and 19-year sentence for predatory sexual assault of a child; the story says he remained in custody on that case while DOJ dismissed his separate Jan. 6 property case. Lines 185–189 report Kasey Hopkins’s prior forcible-rape conviction, Jan. 6 plea and four-month sentence. Lines 148–156 report Peter Schwartz’s 38 prior convictions, 14+ year Jan. 6 sentence and release by pardon; lines 151–152 specify domestic violence history. Search attempt: direct open of NCPR NPR syndication URL succeeded and provided the named case records; direct NPR open is available in original source list but full readable detailed text was from NCPR."
+  },
+  {
+    "record_id": "entry-1174",
+    "proposed_title": "Two Drones Strike U.S. Embassy in Riyadh, Causing Fire and Material Damage",
+    "description_medium": "Two drones struck the U.S. Embassy in Riyadh early March 3, 2026, causing a limited fire and material damage, according to Saudi Arabia’s Defense Ministry as reported by Reuters. No injuries were reported; the building was empty at the time. The embassy told U.S. citizens in Riyadh, Jeddah and Dhahran to shelter in place and avoid the compound. The attack occurred amid Iranian strikes after U.S.-Israeli strikes on Iran.",
+    "description_long": "Saudi Arabia’s Defense Ministry said two drones hit the U.S. Embassy compound in Riyadh early on March 3, 2026, causing a limited fire and material damage. Reuters reported a loud blast and flames at the compound in the Diplomatic Quarter. The building was empty in the early morning, and sources cited by Reuters said there were no reported injuries. The embassy issued a shelter-in-place notice for U.S. citizens in Riyadh, Jeddah and Dhahran and recommended avoiding the embassy. The strike took place amid Iranian missile and drone attacks on Gulf states hosting U.S. bases, following U.S. and Israeli strikes on Iran. AP’s same-day coverage also reported that Iran struck the embassy and described attacks elsewhere in the region, including a drone at the U.S. consulate in Dubai. These details establish the incident, its immediate effect and the reported regional context. They do not show that a particular Trump decision caused the Riyadh attack. The revised title therefore reports the documented strike and damage, while the conflict context remains part of the account without asserting an unsupported causal link.",
+    "source_urls": [
+      "https://www.reuters.com/world/fire-us-embassy-complex-riyadh-after-blast-heard-sources-say-2026-03-03/",
+      "https://apnews.com/article/iran-israel-us-03-03-2026-8755877b603e46ed3df8107689c1ee23",
+      "https://apnews.com/article/embassies-iran-state-department-strikes-travel-1ce7865cb17bf201025aab98a17afb74"
+    ],
+    "remaining_uncertainties": [
+      "Neither supplied report attributes this specific strike to a particular Trump decision.",
+      "Reuters described the Saudi ministry’s damage description as an initial assessment."
+    ],
+    "editorial_notes": "Adds incident-specific consequences absent from prior draft: two drones, limited fire, material damage, no reported injuries, and advisories for three cities. Keeps the title focused on the event rather than unsupported policy causation.",
+    "evidence_notes": "Opened Reuters source directly. The March 3 report states two drones, limited fire and material damage per Saudi Defense Ministry; no reported injuries because the building was empty; shelter-in-place and avoid-compound notices covered Riyadh, Jeddah and Dhahran; it places attack amid Iranian strikes following U.S.-Israeli strikes. AP result for the supplied URL independently states Iran hit the embassy early Tuesday, with limited fire, during U.S.-Israeli airstrikes. Search attempt: direct Reuters open/find succeeded; targeted AP system1 search returned the exact March 3 report."
+  },
+  {
+    "record_id": "entry-1200",
+    "proposed_title": "UK Charter Flight From Muscat Delayed by Technical Issues During Middle East Evacuation",
+    "description_medium": "The UK arranged a charter flight from Muscat, Oman, for British nationals affected by the regional crisis. The first flight was due to leave Wednesday night, March 4, 2026, but the Foreign Office said technical issues at the airport delayed it; the plane departed Thursday afternoon. Prime Minister Keir Starmer said about 138,000 people had registered with the UK for assistance, including 112,000 in the UAE, while about 1,000 had already returned on commercial flights.",
+    "description_long": "The UK government arranged charter flights from Muscat, Oman, for British nationals seeking to leave the Middle East during the regional crisis. The first flight was scheduled to depart Wednesday night, March 4, 2026, but the Foreign Office said technical issues at the airport prevented it from leaving as planned. Prime Minister Keir Starmer said on Thursday that the flight had taken off from Muscat. In Parliament, Foreign Office minister Hamish Falconer said the first flight had been delayed by technical issues and that more UK-supported charter flights were planned. Starmer reported that 138,000 people had registered with the government for assistance, 112,000 of them in the United Arab Emirates, and that about 1,000 had returned on commercial flights. The BBC’s report and later UK coverage document the charter plan, delay and departure as an evacuation response amid conflict-related travel disruption. The evidence does not establish that a particular Trump decision caused the UK to charter the flight. The corrected description keeps the concrete response, timing and scale of consular demand while avoiding that unsupported causal claim.",
+    "source_urls": [
+      "https://www.bbc.co.uk/news/articles/cy4wwd2jlypo",
+      "https://hansard.parliament.uk/Commons/2026-03-05/debates/7248F667-4795-47C8-AF34-9CC900DA4032/details",
+      "https://www.theguardian.com/uk-news/2026/mar/05/delayed-uk-rescue-flight-due-to-leave-middle-east-on-thursday-says-minister",
+      "https://news.sky.com/story/stranded-britons-in-middle-east-what-you-need-to-know-as-first-charter-flight-takes-off-13514536"
+    ],
+    "remaining_uncertainties": [
+      "Available reporting does not link the UK’s charter decision to a specific Trump decision.",
+      "Registration figures are a snapshot reported by UK officials on March 5, 2026."
+    ],
+    "editorial_notes": "Adds concrete operational facts: Muscat origin, March 4 technical delay, Thursday departure, assistance registrations and commercial returns. Causal attribution to Trump is unsupported and removed from title.",
+    "evidence_notes": "Direct BBC page open returned internal error. A targeted search for the exact BBC URL surfaced a syndicated/reader-accessible BBC story confirming March 4 scheduled departure and technical issues. UK Parliament Hansard, “Consular Assistance,” March 5 states first Muscat charter delayed the previous evening by airport technical issues, was due to depart imminently, and more flights were planned; it reports more than 4,000 arrived from five countries the previous day. Guardian March 5 search result reports 138,000 registrations, 112,000 UAE, and 1,000 returned commercially; Sky News result reports Starmer said flight took off Thursday afternoon and about 140,000 registered. Search attempts: exact-URL system2 query found BBC syndicated text; targeted query found Hansard, Guardian and Sky details. No source found a Trump-specific causal link."
+  }
+]

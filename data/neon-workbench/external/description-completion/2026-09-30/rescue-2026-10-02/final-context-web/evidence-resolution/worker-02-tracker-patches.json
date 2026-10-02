@@ -1,0 +1,41 @@
+[
+  {
+    "record_id": "entry-1295",
+    "entry_number": 1295,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "The previous outcome used PolitiFact's separate promise tracker instead of resolving the entry against the linked AP dashboard. AP's retrieved 25-row dataset carries a declared last-modified date of December 3, 2025, and its six immigration/tariff rows were all labeled In progress or It's complicated. That supports the basic unresolved-status observation for those rows, but does not establish a category-level comparative clustering claim beyond this snapshot.",
+    "supported_facts": [
+      "The AP tracker dataset at https://interactives.ap.org/trump-promise-tracker/promises.json contains 25 promise records and declares lastModified as Wed, 03 Dec 2025 21:51:19 GMT.",
+      "The retrieved 25 rows are labeled 5 Kept, 9 In progress and 11 It's complicated.",
+      "The five Immigration rows are rated two In progress and three It's complicated.",
+      "The one Tariffs row is rated It's complicated.",
+      "Thus all six Immigration/Tariffs rows in this particular AP snapshot are not labeled Kept; the retrieval is not a February 2026 snapshot and does not establish why the ratings were assigned."
+    ],
+    "remaining_uncertainties": [
+      "The dataset is a present retrieval of a file whose declared last-modified timestamp is December 3, 2025, not an independently archived snapshot captured on that date.",
+      "The six rows support a dated category description but do not by themselves prove disproportionate clustering compared with all other categories or substantiate an interpretation about structural execution drag."
+    ],
+    "source_urls": [
+      "https://apnews.com/projects/trump-campaign-promise-tracker/",
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js"
+    ],
+    "search_attempts": [
+      {
+        "query_or_url": "https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js",
+        "provider": "direct source retrieval (see sources/ap-tracker-retrieval.json)",
+        "result": "Inspected AP tracker visualization JavaScript; it loads https://interactives.ap.org/trump-promise-tracker/promises.json."
+      },
+      {
+        "query_or_url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "provider": "direct source retrieval (see sources/ap-promises-retrieved.json and sources/ap-tracker-retrieval.json)",
+        "result": "Retrieved 25 records. Metadata records retrieval timestamp 2026-10-02, declared lastModified Wed, 03 Dec 2025 21:51:19 GMT and status counts of 5 Kept, 9 In progress, 11 It's complicated. Filtering category values produced five Immigration rows (2 In progress, 3 It's complicated) and one Tariffs row (It's complicated)."
+      }
+    ],
+    "proposed_title": "AP’s December 2025 Tracker Listed Six Immigration and Tariff Promises as Unresolved",
+    "description_medium": "AP’s retrieved promise-tracker data declares a December 3, 2025 last-modified date and contains 25 records. Its five Immigration promises were rated two “In progress” and three “It’s complicated”; its one Tariffs promise was rated “It’s complicated.” All six were therefore listed in non-kept statuses in that dataset. The snapshot does not establish comparative category clustering or explain the ratings.",
+    "description_long": "The Associated Press’s campaign-promise tracker loads a JSON dataset containing 25 promise records. Retrieval metadata for that file reports a declared last-modified timestamp of December 3, 2025. Across all 25 rows, five are labeled “Kept,” nine “In progress” and 11 “It’s complicated.” The dataset includes five promises under Immigration: two are rated “In progress” and three “It’s complicated.” Its single promise under Tariffs is rated “It’s complicated.” Thus all six immigration and tariff promises present in this particular dataset are listed in statuses other than “Kept.”\n\nThe records name specific pledges, including a deportation program, birthright citizenship, Gaza refugees, student visas, ideological screening and a tariff pledge. This provides direct item-level support for saying that the listed immigration and tariff promises remained unresolved according to AP’s tracker labels. The file was retrieved on October 2, 2026, and its last-modified field points to December 2025; it is not a verified February 2026 snapshot. The data support a dated description of the six records, but they do not prove that those categories were more unresolved than others, explain the causes of each rating or establish a broader pattern of execution drag."
+  }
+]
