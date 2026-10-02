@@ -1,0 +1,31 @@
+{
+  "phase": "final-context-lightsprint",
+  "worker": 12,
+  "assignment_commit": "73a2e5144ad19aea9f7a779cc87d113a5a09b9d2",
+  "assigned_ids": [
+    "entry-1727",
+    "entry-1770",
+    "entry-184",
+    "entry-203",
+    "entry-219",
+    "entry-2330",
+    "entry-2373",
+    "entry-2458"
+  ],
+  "complete_ids": [
+    "entry-203",
+    "entry-219"
+  ],
+  "needs_context_ids": [
+    "entry-1727",
+    "entry-1770",
+    "entry-184",
+    "entry-2330",
+    "entry-2373",
+    "entry-2458"
+  ],
+  "remaining_ids": [],
+  "complete": 2,
+  "needs_context": 6,
+  "remaining": 0
+}
