@@ -5,11 +5,16 @@
   "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
   "pr32_accepted_index_commit": "5acf025ac7262eba67a93031339c5874ba22f045",
   "pr31_effective_index_commit": "8682e01ae2ec49cf0c06f6f304a75588b4a05283",
-  "complete_count": 1,
-  "needs_context_count": 17,
-  "remaining_count": 35,
+  "complete_count": 6,
+  "needs_context_count": 30,
+  "remaining_count": 17,
   "completed_ids": [
-    "entry-2125"
+    "entry-2125",
+    "entry-3193",
+    "entry-389",
+    "entry-4324",
+    "entry-4510",
+    "entry-4801"
   ],
   "needs_context_ids": [
     "entry-112",
@@ -28,27 +33,22 @@
     "entry-2342",
     "entry-2374",
     "entry-244",
-    "entry-2483"
-  ],
-  "remaining_ids": [
+    "entry-2483",
     "entry-2518",
     "entry-2555",
     "entry-261",
     "entry-2710",
     "entry-2864",
-    "entry-3193",
     "entry-339",
     "entry-35",
     "entry-3616",
     "entry-3735",
     "entry-3838",
-    "entry-389",
     "entry-4097",
-    "entry-4324",
-    "entry-4510",
     "entry-4622",
-    "entry-4801",
-    "entry-5",
+    "entry-5"
+  ],
+  "remaining_ids": [
     "entry-521",
     "entry-5353",
     "entry-5559",
@@ -67,5 +67,5 @@
     "entry-939",
     "entry-996"
   ],
-  "latest_batch": "batch-001.jsonl"
+  "latest_batch": "batch-002.jsonl"
 }
