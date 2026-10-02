@@ -8,13 +8,14 @@
   "batches": [
     "outputs/worker-06-batch-001.jsonl",
     "outputs/worker-06-batch-002.jsonl",
-    "outputs/worker-06-batch-003.jsonl"
+    "outputs/worker-06-batch-003.jsonl",
+    "outputs/worker-06-batch-004.jsonl"
   ],
   "assigned": 53,
-  "processed": 45,
-  "complete": 10,
-  "needs_context": 35,
-  "remaining": 8,
+  "processed": 53,
+  "complete": 12,
+  "needs_context": 41,
+  "remaining": 0,
   "processed_record_ids": [
     "entry-1203",
     "entry-1349",
@@ -60,6 +61,14 @@
     "entry-6148",
     "entry-6206",
     "entry-6279",
-    "entry-6344"
+    "entry-6344",
+    "entry-6500",
+    "entry-6728",
+    "entry-735",
+    "entry-811",
+    "entry-842",
+    "entry-878",
+    "entry-945",
+    "expanded-20260821-visa75-court"
   ]
 }
