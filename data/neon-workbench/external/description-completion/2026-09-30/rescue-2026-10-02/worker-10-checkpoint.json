@@ -3,9 +3,9 @@
   "assignment_commit": "e95178ad5ca0de630c007c46523c19e40d37d54f",
   "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
   "assignment_count": 52,
-  "completed_count": 27,
-  "needs_context_count": 12,
-  "remaining_count": 13,
+  "completed_count": 34,
+  "needs_context_count": 18,
+  "remaining_count": 0,
   "completed_ids": [
     "entry-143",
     "entry-1517",
@@ -33,7 +33,14 @@
     "entry-4679",
     "entry-4873",
     "entry-5109",
-    "entry-5668"
+    "entry-5668",
+    "entry-5934",
+    "entry-6047",
+    "entry-6158",
+    "entry-6298",
+    "entry-6838",
+    "entry-852",
+    "entry-903"
   ],
   "needs_context_ids": [
     "entry-1286",
@@ -47,26 +54,19 @@
     "entry-263",
     "entry-367",
     "entry-528",
-    "entry-5433"
-  ],
-  "remaining_ids": [
-    "entry-5934",
-    "entry-6047",
-    "entry-6158",
+    "entry-5433",
     "entry-6235",
-    "entry-6298",
     "entry-6356",
     "entry-6531",
-    "entry-6838",
     "entry-766",
     "entry-822",
-    "entry-852",
-    "entry-903",
     "entry-962"
   ],
+  "remaining_ids": [],
   "batches": [
     "worker-10-batch-001.jsonl",
     "worker-10-batch-002.jsonl",
-    "worker-10-batch-003.jsonl"
+    "worker-10-batch-003.jsonl",
+    "worker-10-batch-004.jsonl"
   ]
 }
