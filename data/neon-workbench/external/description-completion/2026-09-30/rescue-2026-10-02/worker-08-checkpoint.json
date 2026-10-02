@@ -32,14 +32,30 @@
     "entry-3654",
     "entry-378",
     "entry-3846",
-    "entry-3900"
+    "entry-3900",
+    "entry-4149",
+    "entry-4340",
+    "entry-4549",
+    "entry-4662",
+    "entry-4854",
+    "entry-5094",
+    "entry-5274",
+    "entry-5427",
+    "entry-5600",
+    "entry-5912",
+    "entry-6013",
+    "entry-6155",
+    "entry-6211",
+    "entry-6293",
+    "entry-6351"
   ],
   "assigned_count": 53,
-  "completed_count": 21,
-  "needs_context_count": 9,
-  "remaining_count": 23,
+  "completed_count": 31,
+  "needs_context_count": 14,
+  "remaining_count": 8,
   "output_files": [
     "worker-08-batch-001.jsonl",
-    "worker-08-batch-002.jsonl"
+    "worker-08-batch-002.jsonl",
+    "worker-08-batch-003.jsonl"
   ]
 }
