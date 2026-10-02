@@ -81,7 +81,20 @@
     "entry-3009",
     "entry-3273",
     "entry-344",
-    "entry-357"
+    "entry-357",
+    "entry-3678",
+    "entry-380",
+    "entry-3863",
+    "entry-3911",
+    "entry-4198",
+    "entry-4377",
+    "entry-4568",
+    "entry-4687",
+    "entry-4881",
+    "entry-5125",
+    "entry-5282",
+    "entry-5441",
+    "entry-568"
   ],
   "completed_ids": [
     "entry-1295",
@@ -95,7 +108,13 @@
     "entry-2406",
     "entry-2458",
     "entry-3273",
-    "entry-344"
+    "entry-344",
+    "entry-3863",
+    "entry-3911",
+    "entry-4377",
+    "entry-4568",
+    "entry-5125",
+    "entry-568"
   ],
   "needs_context_ids": [
     "entry-1392",
@@ -111,9 +130,16 @@
     "entry-2636",
     "entry-2783",
     "entry-3009",
-    "entry-357"
+    "entry-357",
+    "entry-4198",
+    "entry-3678",
+    "entry-380",
+    "entry-4687",
+    "entry-4881",
+    "entry-5282",
+    "entry-5441"
   ],
-  "completed_count": 12,
-  "needs_context_count": 14,
-  "remaining_count": 26
+  "completed_count": 18,
+  "needs_context_count": 21,
+  "remaining_count": 13
 }
