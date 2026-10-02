@@ -11,12 +11,7 @@
     "entry-1593",
     "entry-1625",
     "entry-1657",
-    "entry-1698"
-  ],
-  "complete_count": 2,
-  "needs_context_count": 8,
-  "remaining_count": 43,
-  "remaining_record_ids": [
+    "entry-1698",
     "entry-1768",
     "entry-196",
     "entry-214",
@@ -26,7 +21,12 @@
     "entry-2442",
     "entry-2494",
     "entry-2523",
-    "entry-2560",
+    "entry-2560"
+  ],
+  "complete_count": 2,
+  "needs_context_count": 18,
+  "remaining_count": 33,
+  "remaining_record_ids": [
     "entry-2620",
     "entry-2723",
     "entry-293",
