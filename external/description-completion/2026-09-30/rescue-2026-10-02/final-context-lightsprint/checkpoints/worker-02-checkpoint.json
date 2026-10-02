@@ -12,12 +12,19 @@
     "entry-2332",
     "entry-2375",
     "entry-2462",
-    "entry-2515"
+    "entry-2515",
+    "entry-2557",
+    "entry-2624",
+    "entry-2731",
+    "entry-290",
+    "entry-3273"
   ],
   "complete_ids": [
     "entry-1857",
     "entry-2200",
-    "entry-2515"
+    "entry-2515",
+    "entry-2557",
+    "entry-290"
   ],
   "needs_context_ids": [
     "entry-1667",
@@ -26,7 +33,10 @@
     "entry-2061",
     "entry-2332",
     "entry-2375",
-    "entry-2462"
+    "entry-2462",
+    "entry-2624",
+    "entry-2731",
+    "entry-3273"
   ],
   "batches": [
     {
@@ -47,6 +57,16 @@
         "entry-2375",
         "entry-2462",
         "entry-2515"
+      ]
+    },
+    {
+      "file": "worker-02-batch-003.jsonl",
+      "ids": [
+        "entry-2557",
+        "entry-2624",
+        "entry-2731",
+        "entry-290",
+        "entry-3273"
       ]
     }
   ]
