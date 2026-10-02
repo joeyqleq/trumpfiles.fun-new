@@ -1,0 +1,19 @@
+{
+  "worker": "rescue-5",
+  "batch": 13,
+  "terminal_ids": [
+    "entry-5929",
+    "entry-5936",
+    "entry-5945",
+    "entry-5960",
+    "entry-5966",
+    "entry-5983",
+    "entry-5985",
+    "entry-5995",
+    "entry-6010",
+    "entry-6022"
+  ],
+  "terminal_count_after_batch": 122,
+  "assigned_count": 122,
+  "remaining_ids": []
+}

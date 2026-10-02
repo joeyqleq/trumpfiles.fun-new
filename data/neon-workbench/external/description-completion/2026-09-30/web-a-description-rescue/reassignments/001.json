@@ -1,0 +1,93 @@
+{
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "from_worker": "rescue-2",
+  "to_worker": "rescue-1-extra",
+  "reason": "Keep all available useful workers active after rescue-1 completed its initial122",
+  "records": [
+    {
+      "position": 448,
+      "record_id": "entry-2519"
+    },
+    {
+      "position": 450,
+      "record_id": "entry-2521"
+    },
+    {
+      "position": 452,
+      "record_id": "entry-2525"
+    },
+    {
+      "position": 454,
+      "record_id": "entry-2529"
+    },
+    {
+      "position": 456,
+      "record_id": "entry-2530"
+    },
+    {
+      "position": 458,
+      "record_id": "entry-2533"
+    },
+    {
+      "position": 460,
+      "record_id": "entry-254"
+    },
+    {
+      "position": 462,
+      "record_id": "entry-2545"
+    },
+    {
+      "position": 464,
+      "record_id": "entry-2547"
+    },
+    {
+      "position": 466,
+      "record_id": "entry-2549"
+    },
+    {
+      "position": 468,
+      "record_id": "entry-2554"
+    },
+    {
+      "position": 470,
+      "record_id": "entry-2556"
+    },
+    {
+      "position": 472,
+      "record_id": "entry-256"
+    },
+    {
+      "position": 474,
+      "record_id": "entry-2562"
+    },
+    {
+      "position": 476,
+      "record_id": "entry-2564"
+    },
+    {
+      "position": 478,
+      "record_id": "entry-257"
+    },
+    {
+      "position": 480,
+      "record_id": "entry-2573"
+    },
+    {
+      "position": 482,
+      "record_id": "entry-2575"
+    },
+    {
+      "position": 484,
+      "record_id": "entry-2578"
+    },
+    {
+      "position": 486,
+      "record_id": "entry-2583"
+    }
+  ],
+  "source_packet_rows": {
+    "start": 102,
+    "end": 121
+  },
+  "revised_rescue_2_ownership": "Original packet rows0–101 only"
+}

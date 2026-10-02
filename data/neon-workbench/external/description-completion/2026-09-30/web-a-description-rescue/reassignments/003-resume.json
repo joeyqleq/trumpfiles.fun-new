@@ -1,0 +1,134 @@
+{
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "resume_input_commit": "26023613b8d3052e79fd00e86fd73399191f0884",
+  "reason": "Resume after interrupted workers; exact pushed-file reconciliation. No terminal proposal repeated.",
+  "assignments": [
+    {
+      "worker": "finish_remaining_1",
+      "ids": [
+        {
+          "position": 680,
+          "record_id": "entry-3689"
+        },
+        {
+          "position": 682,
+          "record_id": "entry-3707"
+        },
+        {
+          "position": 684,
+          "record_id": "entry-3712"
+        },
+        {
+          "position": 686,
+          "record_id": "entry-372"
+        },
+        {
+          "position": 688,
+          "record_id": "entry-3724"
+        },
+        {
+          "position": 690,
+          "record_id": "entry-3742"
+        },
+        {
+          "position": 692,
+          "record_id": "entry-3757"
+        },
+        {
+          "position": 694,
+          "record_id": "entry-3762"
+        },
+        {
+          "position": 696,
+          "record_id": "entry-3772"
+        },
+        {
+          "position": 698,
+          "record_id": "entry-3783"
+        },
+        {
+          "position": 700,
+          "record_id": "entry-3792"
+        },
+        {
+          "position": 702,
+          "record_id": "entry-38"
+        }
+      ]
+    },
+    {
+      "worker": "finish_remaining_2",
+      "ids": [
+        {
+          "position": 704,
+          "record_id": "entry-3804"
+        },
+        {
+          "position": 706,
+          "record_id": "entry-3812"
+        },
+        {
+          "position": 708,
+          "record_id": "entry-3829"
+        },
+        {
+          "position": 710,
+          "record_id": "entry-3838"
+        },
+        {
+          "position": 712,
+          "record_id": "entry-3840"
+        },
+        {
+          "position": 714,
+          "record_id": "entry-3847"
+        },
+        {
+          "position": 716,
+          "record_id": "entry-3860"
+        },
+        {
+          "position": 718,
+          "record_id": "entry-3871"
+        },
+        {
+          "position": 720,
+          "record_id": "entry-3875"
+        },
+        {
+          "position": 722,
+          "record_id": "entry-388"
+        },
+        {
+          "position": 724,
+          "record_id": "entry-389"
+        },
+        {
+          "position": 726,
+          "record_id": "entry-390"
+        },
+        {
+          "position": 728,
+          "record_id": "entry-3901"
+        },
+        {
+          "position": 730,
+          "record_id": "entry-3910"
+        }
+      ]
+    },
+    {
+      "worker": "finish_remaining_3",
+      "ids": [
+        {
+          "position": 444,
+          "record_id": "entry-251"
+        },
+        {
+          "position": 446,
+          "record_id": "entry-2515"
+        }
+      ]
+    }
+  ]
+}

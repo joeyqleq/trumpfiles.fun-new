@@ -1,0 +1,19 @@
+{
+  "target_record_id": "entry-879",
+  "proposal_file": "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-011.jsonl",
+  "patch": {
+    "status": "repaired",
+    "title": "Trump Pardons Former WellCare Executive Thaddeus M. S. Bereday",
+    "description_medium": "President Donald Trump granted a full pardon to Thaddeus M. S. Bereday on January 13, 2021. The Justice Department identifies Bereday as a former executive of a health maintenance organization and lists his conviction for making false statements relating to health care matters. He received six months in prison, three years of supervised release including 12 months of home detention, and a $50,000 fine. Trump pardoned him alongside four other former WellCare executives.",
+    "description_long": "On January 13, 2021, President Donald Trump granted a full pardon to Thaddeus M. S. Bereday, a former executive of a health maintenance organization. The Justice Department lists Bereday’s Middle District of Florida conviction as making false statements relating to health care matters. His 2017 sentence was six months in prison, three years of supervised release conditioned on 12 months of home detention, and a $50,000 fine.\n\nThe White House announced Bereday’s pardon together with those of Todd Farha, William Kale, Paul Behrens and Peter Clay, describing them as former executives of a healthcare maintenance organization. It said the group’s prosecutions had been cited as an example of overcriminalization and noted support from the Cato Institute, Reason Foundation, the National Association of Criminal Defense Lawyers and legal scholars. The DOJ summary does not specify the exact false statement attributable to Bereday, so the description does not assign him conduct reported about a different executive or make assumptions about his individual role. The pardon forgave the conviction but did not erase the case record.",
+    "source_urls": [
+      "https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021",
+      "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-012021/",
+      "https://www.justice.gov/archives/opa/pr/four-former-wellcare-executives-found-guilty-florida"
+    ],
+    "evidence_notes": "Corrects prior unresolved blocker: DOJ index includes exact recipient name “Thaddeus M. S. Bereday”; spacing of initials caused the prior exact-name search to miss the row. DOJ listing establishes court, offense and sentence. White House identifies him as part of the five former health-plan executives pardoned Jan. 13, 2021.",
+    "corrected_wording": "Replace the previous unresolved status with the supported DOJ match and this reader-facing summary.",
+    "exact_blocker": null
+  },
+  "reason": "A targeted lookup of the official DOJ pardon index found Thaddeus M. S. Bereday with spaced middle initials; the index and White House announcement establish the pardon, case, sentence and group context."
+}

@@ -1,0 +1,32 @@
+{
+  "worker": "resume-remaining-2",
+  "batch": 2,
+  "assigned_ids": [
+    "entry-3871",
+    "entry-3875",
+    "entry-388",
+    "entry-389",
+    "entry-390",
+    "entry-3901",
+    "entry-3910"
+  ],
+  "terminal_ids": [
+    "entry-3871",
+    "entry-3875",
+    "entry-388",
+    "entry-389",
+    "entry-390",
+    "entry-3901",
+    "entry-3910"
+  ],
+  "remaining_ids": [],
+  "counts": {
+    "assigned": 7,
+    "terminal": 7,
+    "remaining": 0,
+    "repaired": 0,
+    "supported_partial": 6,
+    "unresolved": 1
+  },
+  "proposal_path": "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/resume-remaining-2-batch-002.jsonl"
+}

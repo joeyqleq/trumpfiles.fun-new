@@ -1,0 +1,22 @@
+{
+  "note": "Two interrupted worker batches were written outside the dated directory before resume. Their original files remain preserved because automatic review rejected removing an original proposal after copying. The recovered source-supported fields are applied in editorial-review/zz-recovered-worker-3.jsonl; the authoritative proposal index counts each assigned ID once. Historical duplicate copies are not independent assignments.",
+  "historical_paths": [
+    "data/neon-workbench/external/description-completion/web-a-description-rescue/outputs/rescue-3-batch-013.jsonl",
+    "data/neon-workbench/external/description-completion/web-a-description-rescue/outputs/rescue-3-batch-014.jsonl"
+  ],
+  "historical_records": [
+    "entry-3689",
+    "entry-3707",
+    "entry-3712",
+    "entry-372",
+    "entry-3724",
+    "entry-3742",
+    "entry-3757",
+    "entry-3762",
+    "entry-3772",
+    "entry-3783",
+    "entry-3792",
+    "entry-38"
+  ],
+  "history_id_repetitions": 12
+}

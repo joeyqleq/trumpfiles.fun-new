@@ -1,0 +1,23 @@
+{
+  "worker": "resume-polish-6",
+  "target_ids": [
+    "entry-7116",
+    "entry-7173",
+    "entry-837",
+    "entry-851",
+    "entry-859",
+    "entry-925",
+    "entry-957",
+    "expanded-20260916-cassidy-measles-hearing"
+  ],
+  "proposal_count": 8,
+  "proposal_path": "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/resume-polish-6.jsonl",
+  "proposal_commit": "0db27ee803a6dac0541fd3abe9f86eb8a71ebbb4",
+  "scope": "append-only editorial patches to description_medium and description_long; no canonical records or scores/database changed",
+  "validated": {
+    "medium_words": "45-90",
+    "long_words": "140-300",
+    "all_targets_present": true
+  },
+  "related_note": "entry-879 was already patched in prior editorial work and was not changed"
+}

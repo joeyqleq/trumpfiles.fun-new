@@ -1,0 +1,341 @@
+{
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "validated_proposal_commit": "e5d10a7934825b9513956ef814aa773921ec115c",
+  "assigned": 732,
+  "attempted": 732,
+  "counts": {
+    "supported_partial": 141,
+    "repaired": 571,
+    "unresolved": 20
+  },
+  "missing_ids": [],
+  "duplicate_ids": [],
+  "output_files": [
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-004.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-005.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-007.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-008.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-009.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-010.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-011.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-012.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-013.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-014.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-015.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-batch-016.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-extra-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-1-extra-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-004.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-005.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-007.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-008.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-009.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-010.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-011.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-012.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-013.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-014.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-015.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-016.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-017.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-018.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-019.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-2-batch-020.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-004.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-005.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-007.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-008.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-009.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-010.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-011.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-3-batch-012.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-004.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-005.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-007.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-008.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-009.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-010.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-011.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-012.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-013.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-4-batch-014.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-004.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-005.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-007.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-008.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-009.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-010.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-011.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-012.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-5-batch-013.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-004.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-005.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-007.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-008.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-009.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-010.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-011.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-012.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-013.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/rescue-6-batch-014.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/resume-remaining-1-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/resume-remaining-1-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/resume-remaining-2-batch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/resume-remaining-2-batch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/outputs/resume-remaining-3-batch-001.jsonl"
+  ],
+  "patch_order": [
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/patch-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/patch-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/patch-003.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/patch-004.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/patch-005.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/patch-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/patch-007.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/patch-008.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/rescue-1-extra-001-patches.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/rescue-1-extra-001-polish.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/rescue-4-reader-facing-patches-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/rescue-4-reader-facing-patches-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/resume-polish-1.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/resume-polish-2-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/resume-polish-2.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/resume-polish-35-001.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/resume-polish-35-002.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/resume-polish-6.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/worker-6-entry-879-bereday.json",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/zz-reader-final.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/zz-recovered-worker-3.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/web-a-description-rescue/editorial-review/zzz-final-specificity.jsonl"
+  ],
+  "patch_errors": [],
+  "errors": [],
+  "partial_length_exceptions": [
+    {
+      "id": "entry-1000",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1003",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1017",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1028",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1037",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1071",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-112",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1716",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1726",
+      "field": "description_medium",
+      "words": 0
+    },
+    {
+      "id": "entry-1726",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1728",
+      "field": "description_medium",
+      "words": 0
+    },
+    {
+      "id": "entry-1728",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1730",
+      "field": "description_medium",
+      "words": 0
+    },
+    {
+      "id": "entry-1730",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1766",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1768",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1770",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1779",
+      "field": "description_medium",
+      "words": 0
+    },
+    {
+      "id": "entry-1779",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-1780",
+      "field": "description_medium",
+      "words": 0
+    },
+    {
+      "id": "entry-1780",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-2331",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-4040",
+      "field": "description_medium",
+      "words": 0
+    },
+    {
+      "id": "entry-4040",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-4144",
+      "field": "description_medium",
+      "words": 0
+    },
+    {
+      "id": "entry-4144",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-4198",
+      "field": "description_medium",
+      "words": 0
+    },
+    {
+      "id": "entry-4198",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-6270",
+      "field": "description_medium",
+      "words": 91
+    },
+    {
+      "id": "entry-6795",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-6915",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-6991",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-7044",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-835",
+      "field": "description_long",
+      "words": 0
+    },
+    {
+      "id": "entry-853",
+      "field": "description_long",
+      "words": 0
+    }
+  ],
+  "reader_prose_flags": [],
+  "assignment_matches_frozen_input": true,
+  "change_scope": {
+    "canonical_changes": 0,
+    "all_changes_added": true,
+    "path_exceptions": [
+      "data/neon-workbench/external/description-completion/web-a-description-rescue/outputs/rescue-3-batch-013.jsonl",
+      "data/neon-workbench/external/description-completion/web-a-description-rescue/outputs/rescue-3-batch-014.jsonl"
+    ],
+    "reason": "Two interrupted worker batches were written outside the dated directory before resume. Their original files remain preserved because automatic review rejected removing an original proposal after copying. The recovered source-supported fields are applied in editorial-review/zz-recovered-worker-3.jsonl; the authoritative proposal index counts each assigned ID once. Historical duplicate copies are not independent assignments."
+  },
+  "duplicate_id_scope": "Authoritative outputs directory only; historical copies separately recorded in recovered-history/NOTICE.json.",
+  "historical_repeated_ids": [
+    "entry-3689",
+    "entry-3707",
+    "entry-3712",
+    "entry-372",
+    "entry-3724",
+    "entry-3742",
+    "entry-3757",
+    "entry-3762",
+    "entry-3772",
+    "entry-3783",
+    "entry-3792",
+    "entry-38"
+  ],
+  "validation_limits": "Structural validation checks assignment, schema fields, title and description lengths, blocker presence, source URL syntax and patch references. Source accuracy was reviewed during drafting; this report is not a fresh broad fact-check or a guarantee all linked pages remain accessible."
+}
