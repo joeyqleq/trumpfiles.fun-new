@@ -142,5 +142,29 @@
       "description_long"
     ],
     "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-465": {
+    "fields": [
+      "description_medium"
+    ],
+    "reason": "User-authorized final reader-QC repair of an unfinished medium description; replace only this field using the frozen assigned NPR context, preserving all other populated originals."
+  },
+  "entry-485": {
+    "fields": [
+      "description_medium"
+    ],
+    "reason": "User-authorized final reader-QC repair of an unfinished medium description; replace only this field using frozen assigned packet context, preserving all other populated originals."
+  },
+  "entry-5569": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "User-authorized final reader-QC removal of internal process boilerplate from the current long draft; original long field was empty, preserve all other fields."
+  },
+  "entry-5642": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "User-authorized final reader-QC removal of internal process boilerplate from the current long draft; original long field was empty, preserve all other fields."
   }
 }
