@@ -6,12 +6,13 @@
   "input_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/worker-06-score-input.jsonl",
   "input_sha256": "83487324d438c77396262f6893dacf3ab452dbda4eb0b1b9b89f446585a7ae6d",
   "assigned": 55,
-  "processed": 18,
-  "scored": 7,
-  "deferred": 11,
-  "remaining": 37,
+  "processed": 36,
+  "scored": 8,
+  "deferred": 28,
+  "remaining": 19,
   "batches": [
-    "score-outputs/worker-06-batch-001.jsonl"
+    "score-outputs/worker-06-batch-001.jsonl",
+    "score-outputs/worker-06-batch-002.jsonl"
   ],
   "processed_record_ids": [
     "entry-1033",
@@ -31,7 +32,25 @@
     "entry-1672",
     "entry-1701",
     "entry-1728",
-    "entry-1755"
+    "entry-1755",
+    "entry-1770",
+    "entry-199",
+    "entry-210",
+    "entry-2226",
+    "entry-2330",
+    "entry-2373",
+    "entry-2442",
+    "entry-2494",
+    "entry-2560",
+    "entry-263",
+    "entry-2788",
+    "entry-2903",
+    "entry-3205",
+    "entry-343",
+    "entry-3659",
+    "entry-3875",
+    "entry-4088",
+    "entry-4173"
   ],
   "status_by_record_id": {
     "entry-1033": "scored",
@@ -51,6 +70,24 @@
     "entry-1672": "deferred",
     "entry-1701": "scored",
     "entry-1728": "deferred",
-    "entry-1755": "scored"
+    "entry-1755": "scored",
+    "entry-1770": "deferred",
+    "entry-199": "deferred",
+    "entry-210": "deferred",
+    "entry-2226": "deferred",
+    "entry-2330": "deferred",
+    "entry-2373": "deferred",
+    "entry-2442": "deferred",
+    "entry-2494": "deferred",
+    "entry-2560": "deferred",
+    "entry-263": "deferred",
+    "entry-2788": "deferred",
+    "entry-2903": "deferred",
+    "entry-3205": "deferred",
+    "entry-343": "scored",
+    "entry-3659": "deferred",
+    "entry-3875": "deferred",
+    "entry-4088": "deferred",
+    "entry-4173": "deferred"
   }
 }
