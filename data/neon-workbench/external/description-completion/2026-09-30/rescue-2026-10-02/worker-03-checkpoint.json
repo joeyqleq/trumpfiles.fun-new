@@ -4,8 +4,8 @@
   "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
   "assignment_file": "worker-03-input.jsonl",
   "assigned_count": 53,
-  "completed_count": 22,
-  "needs_context_count": 14,
+  "completed_count": 30,
+  "needs_context_count": 6,
   "remaining_count": 17,
   "completed_ids": [
     "entry-1304",
@@ -22,13 +22,21 @@
     "entry-237",
     "entry-2419",
     "entry-2514",
+    "entry-255",
+    "entry-258",
+    "entry-270",
     "entry-2847",
     "entry-3153",
+    "entry-3380",
+    "entry-3468",
     "entry-36",
     "entry-3718",
     "entry-3829",
     "entry-3876",
+    "entry-4054",
     "entry-4473",
+    "entry-4603",
+    "entry-4741",
     "entry-4942"
   ],
   "needs_context_ids": [
@@ -37,15 +45,7 @@
     "entry-1729",
     "entry-2332",
     "entry-2479",
-    "entry-255",
-    "entry-258",
-    "entry-270",
-    "entry-3380",
-    "entry-3468",
-    "entry-4054",
-    "entry-4261",
-    "entry-4603",
-    "entry-4741"
+    "entry-4261"
   ],
   "remaining_ids": [
     "entry-519",
@@ -68,6 +68,7 @@
   ],
   "last_batch": "worker-03-batch-002.jsonl",
   "amendment_files": [
-    "worker-03/amendments/amendment-001.jsonl"
+    "worker-03/amendments/amendment-001.jsonl",
+    "worker-03/amendments/amendment-002.jsonl"
   ]
 }
