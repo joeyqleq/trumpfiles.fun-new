@@ -1,0 +1,20 @@
+{
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "validated_proposal_commit": "e5d10a7934825b9513956ef814aa773921ec115c",
+  "assigned": 732,
+  "attempted": 732,
+  "counts": {
+    "supported_partial": 141,
+    "repaired": 571,
+    "unresolved": 20
+  },
+  "remaining_ids": [],
+  "missing_ids": [],
+  "duplicate_ids": [],
+  "validation_errors": [],
+  "historical_path_exceptions": [
+    "data/neon-workbench/external/description-completion/web-a-description-rescue/outputs/rescue-3-batch-013.jsonl",
+    "data/neon-workbench/external/description-completion/web-a-description-rescue/outputs/rescue-3-batch-014.jsonl"
+  ],
+  "status": "queue_exhausted"
+}
