@@ -9,7 +9,8 @@
     "score-outputs/worker-09-batch-003.jsonl",
     "score-outputs/worker-09-batch-004.jsonl",
     "score-outputs/worker-09-batch-005.jsonl",
-    "score-outputs/worker-09-batch-006.jsonl"
+    "score-outputs/worker-09-batch-006.jsonl",
+    "score-outputs/worker-09-batch-007.jsonl"
   ],
   "assigned_ids": [
     "entry-1074",
@@ -66,7 +67,8 @@
     "entry-832",
     "entry-879",
     "entry-920",
-    "entry-971"
+    "entry-971",
+    "entry-1303"
   ],
   "scored_ids": [
     "entry-1074",
@@ -101,7 +103,8 @@
     "entry-832",
     "entry-879",
     "entry-920",
-    "entry-971"
+    "entry-971",
+    "entry-1303"
   ],
   "deferred_ids": [
     "entry-1568",
@@ -129,9 +132,9 @@
   ],
   "remaining_ids": [],
   "counts": {
-    "assigned": 55,
-    "processed": 55,
-    "scored": 33,
+    "assigned": 56,
+    "processed": 56,
+    "scored": 34,
     "deferred": 22,
     "remaining": 0
   }
