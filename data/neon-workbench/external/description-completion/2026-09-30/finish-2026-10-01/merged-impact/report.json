@@ -1,15 +1,27 @@
 {
   "assigned_score_ids": 6944,
-  "saved_score_ids": 4810,
-  "missing_score_ids": 2134,
+  "saved_score_ids": 6944,
+  "missing_score_ids": 0,
   "statuses": {
-    "scored": 4346,
-    "deferred": 464
+    "scored": 6267,
+    "deferred": 677
   },
   "held_not_ranked": 283,
-  "rejected_rows": [],
-  "unique_scores": 466,
-  "largest_equal_score_group": 65,
+  "rejected_rows": [
+    {
+      "record_id": "entry-7189",
+      "file": "import-cloud-12-83df44d43c2baeb9.jsonl",
+      "error": "bad version/status",
+      "superseded_by_valid_output": true
+    }
+  ],
+  "historical_rejected_rows": 1,
+  "superseded_historical_rejected_rows": 1,
+  "authoritative_rejected_rows": 0,
+  "authoritative_rejects": [],
+  "unique_scores": 556,
+  "largest_equal_score_group": 127,
   "rank_positions_unique": true,
+  "publication_status": "provisional_offline",
   "publication": "provisional offline; no live or legacy score overwrite"
 }
