@@ -41,7 +41,8 @@
   ],
   "batches": [
     "outputs/worker-03-final-context-lightsprint-batch-001.jsonl",
-    "outputs/worker-03-final-context-lightsprint-batch-002.jsonl"
+    "outputs/worker-03-final-context-lightsprint-batch-002.jsonl",
+    "outputs/worker-03-final-context-lightsprint-batch-003.jsonl"
   ],
   "complete_ids": [],
   "needs_context_ids": [
@@ -54,9 +55,14 @@
     "entry-2340",
     "entry-2380",
     "entry-2466",
-    "entry-2518"
+    "entry-2518",
+    "entry-2560",
+    "entry-263",
+    "entry-275",
+    "entry-2903",
+    "entry-3369"
   ],
   "complete": 0,
-  "needs_context": 10,
-  "remaining": 25
+  "needs_context": 15,
+  "remaining": 20
 }
