@@ -1,0 +1,37 @@
+{
+  "worker": 9,
+  "assignment_file": "worker-09-input.jsonl",
+  "input_commit": "6d8c7badd5b1e482574949eab1af6260a1b732b2",
+  "batches": [
+    "outputs/worker-09-batch-001.jsonl"
+  ],
+  "assigned_ids": [
+    "entry-130",
+    "entry-1788",
+    "entry-202",
+    "entry-279",
+    "entry-3947",
+    "entry-4207",
+    "entry-5406",
+    "entry-5605"
+  ],
+  "completed_ids": [],
+  "needs_context_ids": [
+    "entry-130",
+    "entry-1788",
+    "entry-202",
+    "entry-279"
+  ],
+  "remaining_ids": [
+    "entry-3947",
+    "entry-4207",
+    "entry-5406",
+    "entry-5605"
+  ],
+  "counts": {
+    "assigned": 8,
+    "complete": 0,
+    "needs_context": 4,
+    "remaining": 4
+  }
+}
