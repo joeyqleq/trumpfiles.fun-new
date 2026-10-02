@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-02",
+  "issue": "Worker04 initially created two new resume artifacts outside requested directory.",
+  "baseline_check": "Both paths were absent at frozen commit0089ae722b39edb5180b2496b1f35e2f8fe1ca92.",
+  "resolution": "Exact original content archived under scope-recovery; erroneous new outside additions undone. Corrected reader proposals/checkpoint were appended under web-b-description-rescue/worker-04. No existing baseline writing or other canonical file changed.",
+  "original_files": [
+    {
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/worker-04/resume-20261002-batch-001.jsonl",
+      "blob_sha": "168d0dabd80a55f18733d5496e2deb877f292626"
+    },
+    {
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/worker-04/resume-20261002-checkpoint-001.json",
+      "blob_sha": "ba10f518b27e65190815b8c429f3e0e2eba1ed94"
+    }
+  ]
+}
