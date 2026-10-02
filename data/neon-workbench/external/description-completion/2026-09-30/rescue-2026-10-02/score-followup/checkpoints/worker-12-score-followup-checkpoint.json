@@ -79,7 +79,13 @@
     "entry-5569",
     "entry-6103",
     "entry-6163",
-    "entry-6292"
+    "entry-6292",
+    "entry-7040",
+    "entry-7122",
+    "entry-7197",
+    "entry-841",
+    "entry-889",
+    "entry-934"
   ],
   "deferred_ids": [
     "entry-1264",
@@ -109,19 +115,12 @@
     "entry-5897",
     "entry-654",
     "entry-6915",
-    "entry-6997"
-  ],
-  "remaining_ids": [
-    "entry-7040",
+    "entry-6997",
     "entry-7072",
-    "entry-7122",
-    "entry-7197",
-    "entry-841",
-    "entry-889",
-    "entry-934",
     "entry-980"
   ],
-  "scored": 20,
-  "deferred": 28,
-  "remaining": 8
+  "remaining_ids": [],
+  "scored": 26,
+  "deferred": 30,
+  "remaining": 0
 }
