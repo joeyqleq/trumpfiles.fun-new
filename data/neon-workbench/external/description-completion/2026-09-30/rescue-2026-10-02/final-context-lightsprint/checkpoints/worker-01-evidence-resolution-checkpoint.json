@@ -3,7 +3,7 @@
   "worker": 1,
   "branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
   "packet_commit": "b746cabf167043cd52896163368baea52af66c07",
-  "latest_batch": "worker-01-evidence-resolution-batch-002.jsonl",
+  "latest_batch": "worker-01-evidence-resolution-batch-003.jsonl",
   "assigned_ids": [
     "entry-1666",
     "entry-1728",
@@ -43,11 +43,18 @@
     "entry-5094",
     "entry-5413",
     "entry-5541",
-    "entry-57"
+    "entry-57",
+    "entry-6131",
+    "entry-6230",
+    "entry-6319",
+    "entry-754",
+    "entry-822",
+    "entry-860",
+    "entry-945"
   ],
   "assigned_count": 22,
-  "processed_count": 15,
+  "processed_count": 22,
   "complete_count": 2,
-  "needs_context_count": 13,
-  "remaining_count": 7
+  "needs_context_count": 20,
+  "remaining_count": 0
 }
