@@ -1,0 +1,429 @@
+{
+  "assignment_phase": "second-writing-wave",
+  "created_at": "2026-10-02T14:25:50.734902+00:00",
+  "source_snapshot_sha256": "b674af34335e854e3bec4d039671cc81efb124ff3a3a0ea224a43f7a1425af20",
+  "source_snapshot_path": "merged/descriptions.jsonl",
+  "eligible_count": 103,
+  "assigned_count": 103,
+  "partition_count": 12,
+  "partition_rule": "sorted record_id ordinal modulo 12",
+  "active_wave_ids_excluded": 632,
+  "worker_counts": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "worker_input_sha256": [
+    "c5f034c14b546742308c36437bd2be7be3f23d5a54a3a9652dd023da7e5a51a5",
+    "a9cc85a2735e0b3c0fbc3379c29d298e10243369029102c72d9389cbe5a0d8db",
+    "69918930b0e716c6f95d74407c420c8fb327a7428555389ae7f31fa87752b576",
+    "d5b3df12c2217d655749130f880bbb9e03fcfdc64858fd3a64bd8fed3ed179b0",
+    "cbd1237ada154688fd26c0f691518ecad16626393200dbd4f6391fa8528f1cc7",
+    "5193231bea74ad8671d849fc78185b5a3d3e40b0b66a6c411528fc2fa555c3ca",
+    "8cb8393d809852fd1e5f867211053e900cad5e4ac614eca1659c432a7f7d5ff9",
+    "fb1818ad155b5bab809bc9a38a1e9e55873d797b7f4d5eccb1f56e19963e066f",
+    "f41daf395ea88312e077f07e61def4217b1ecbdb2a92d80c8ede92da0d876803",
+    "5e20fb9186dbf7009e235d43be8eca855a4b5d0420d15261603065c43062eba0",
+    "675febf32b2ca88dca65994be08fa4bb624e8e83c62ea7236245a50653dd0f9e",
+    "e0f82383e037a14b4cf041af7d61aaf10b0ecd77e0735d143f43cd6cbd796525"
+  ],
+  "owners": [
+    {
+      "worker": 1,
+      "record_ids": [
+        "entry-1015",
+        "entry-1389",
+        "entry-183",
+        "entry-2247",
+        "entry-2871",
+        "entry-3997",
+        "entry-4300",
+        "entry-5469",
+        "entry-6966"
+      ],
+      "record_count": 9,
+      "sha256": "c5f034c14b546742308c36437bd2be7be3f23d5a54a3a9652dd023da7e5a51a5"
+    },
+    {
+      "worker": 2,
+      "record_ids": [
+        "entry-113",
+        "entry-1736",
+        "entry-185",
+        "entry-2607",
+        "entry-290",
+        "entry-4004",
+        "entry-4304",
+        "entry-5471",
+        "entry-6988"
+      ],
+      "record_count": 9,
+      "sha256": "a9cc85a2735e0b3c0fbc3379c29d298e10243369029102c72d9389cbe5a0d8db"
+    },
+    {
+      "worker": 3,
+      "record_ids": [
+        "entry-1174",
+        "entry-1740",
+        "entry-1884",
+        "entry-2619",
+        "entry-2929",
+        "entry-4009",
+        "entry-4308",
+        "entry-5491",
+        "entry-7"
+      ],
+      "record_count": 9,
+      "sha256": "69918930b0e716c6f95d74407c420c8fb327a7428555389ae7f31fa87752b576"
+    },
+    {
+      "worker": 4,
+      "record_ids": [
+        "entry-1200",
+        "entry-176",
+        "entry-1904",
+        "entry-264",
+        "entry-2930",
+        "entry-4017",
+        "entry-4320",
+        "entry-5505",
+        "entry-7010"
+      ],
+      "record_count": 9,
+      "sha256": "d5b3df12c2217d655749130f880bbb9e03fcfdc64858fd3a64bd8fed3ed179b0"
+    },
+    {
+      "worker": 5,
+      "record_ids": [
+        "entry-1233",
+        "entry-1762",
+        "entry-1915",
+        "entry-268",
+        "entry-2971",
+        "entry-4044",
+        "entry-4329",
+        "entry-5517",
+        "entry-7074"
+      ],
+      "record_count": 9,
+      "sha256": "cbd1237ada154688fd26c0f691518ecad16626393200dbd4f6391fa8528f1cc7"
+    },
+    {
+      "worker": 6,
+      "record_ids": [
+        "entry-127",
+        "entry-177",
+        "entry-194",
+        "entry-2731",
+        "entry-3109",
+        "entry-405",
+        "entry-4353",
+        "entry-5565",
+        "entry-7170"
+      ],
+      "record_count": 9,
+      "sha256": "5193231bea74ad8671d849fc78185b5a3d3e40b0b66a6c411528fc2fa555c3ca"
+    },
+    {
+      "worker": 7,
+      "record_ids": [
+        "entry-1296",
+        "entry-1771",
+        "entry-199",
+        "entry-275",
+        "entry-3139",
+        "entry-4075",
+        "entry-5374",
+        "entry-5572",
+        "entry-720"
+      ],
+      "record_count": 9,
+      "sha256": "8cb8393d809852fd1e5f867211053e900cad5e4ac614eca1659c432a7f7d5ff9"
+    },
+    {
+      "worker": 8,
+      "record_ids": [
+        "entry-1298",
+        "entry-178",
+        "entry-200",
+        "entry-278",
+        "entry-3919",
+        "entry-4150",
+        "entry-5403",
+        "entry-5576"
+      ],
+      "record_count": 8,
+      "sha256": "fb1818ad155b5bab809bc9a38a1e9e55873d797b7f4d5eccb1f56e19963e066f"
+    },
+    {
+      "worker": 9,
+      "record_ids": [
+        "entry-130",
+        "entry-1788",
+        "entry-202",
+        "entry-279",
+        "entry-3947",
+        "entry-4207",
+        "entry-5406",
+        "entry-5605"
+      ],
+      "record_count": 8,
+      "sha256": "f41daf395ea88312e077f07e61def4217b1ecbdb2a92d80c8ede92da0d876803"
+    },
+    {
+      "worker": 10,
+      "record_ids": [
+        "entry-1303",
+        "entry-1790",
+        "entry-203",
+        "entry-2824",
+        "entry-3972",
+        "entry-4236",
+        "entry-5413",
+        "entry-5631"
+      ],
+      "record_count": 8,
+      "sha256": "5e20fb9186dbf7009e235d43be8eca855a4b5d0420d15261603065c43062eba0"
+    },
+    {
+      "worker": 11,
+      "record_ids": [
+        "entry-1325",
+        "entry-1795",
+        "entry-219",
+        "entry-2843",
+        "entry-3976",
+        "entry-426",
+        "entry-5459",
+        "entry-5659"
+      ],
+      "record_count": 8,
+      "sha256": "675febf32b2ca88dca65994be08fa4bb624e8e83c62ea7236245a50653dd0f9e"
+    },
+    {
+      "worker": 12,
+      "record_ids": [
+        "entry-1334",
+        "entry-181",
+        "entry-22",
+        "entry-2861",
+        "entry-3979",
+        "entry-4296",
+        "entry-5462",
+        "entry-6652"
+      ],
+      "record_count": 8,
+      "sha256": "e0f82383e037a14b4cf041af7d61aaf10b0ecd77e0735d143f43cd6cbd796525"
+    }
+  ],
+  "workers": [
+    {
+      "worker": 1,
+      "file": "worker-01-input.jsonl",
+      "record_ids": [
+        "entry-1015",
+        "entry-1389",
+        "entry-183",
+        "entry-2247",
+        "entry-2871",
+        "entry-3997",
+        "entry-4300",
+        "entry-5469",
+        "entry-6966"
+      ],
+      "sha256": "c5f034c14b546742308c36437bd2be7be3f23d5a54a3a9652dd023da7e5a51a5",
+      "record_count": 9
+    },
+    {
+      "worker": 2,
+      "file": "worker-02-input.jsonl",
+      "record_ids": [
+        "entry-113",
+        "entry-1736",
+        "entry-185",
+        "entry-2607",
+        "entry-290",
+        "entry-4004",
+        "entry-4304",
+        "entry-5471",
+        "entry-6988"
+      ],
+      "sha256": "a9cc85a2735e0b3c0fbc3379c29d298e10243369029102c72d9389cbe5a0d8db",
+      "record_count": 9
+    },
+    {
+      "worker": 3,
+      "file": "worker-03-input.jsonl",
+      "record_ids": [
+        "entry-1174",
+        "entry-1740",
+        "entry-1884",
+        "entry-2619",
+        "entry-2929",
+        "entry-4009",
+        "entry-4308",
+        "entry-5491",
+        "entry-7"
+      ],
+      "sha256": "69918930b0e716c6f95d74407c420c8fb327a7428555389ae7f31fa87752b576",
+      "record_count": 9
+    },
+    {
+      "worker": 4,
+      "file": "worker-04-input.jsonl",
+      "record_ids": [
+        "entry-1200",
+        "entry-176",
+        "entry-1904",
+        "entry-264",
+        "entry-2930",
+        "entry-4017",
+        "entry-4320",
+        "entry-5505",
+        "entry-7010"
+      ],
+      "sha256": "d5b3df12c2217d655749130f880bbb9e03fcfdc64858fd3a64bd8fed3ed179b0",
+      "record_count": 9
+    },
+    {
+      "worker": 5,
+      "file": "worker-05-input.jsonl",
+      "record_ids": [
+        "entry-1233",
+        "entry-1762",
+        "entry-1915",
+        "entry-268",
+        "entry-2971",
+        "entry-4044",
+        "entry-4329",
+        "entry-5517",
+        "entry-7074"
+      ],
+      "sha256": "cbd1237ada154688fd26c0f691518ecad16626393200dbd4f6391fa8528f1cc7",
+      "record_count": 9
+    },
+    {
+      "worker": 6,
+      "file": "worker-06-input.jsonl",
+      "record_ids": [
+        "entry-127",
+        "entry-177",
+        "entry-194",
+        "entry-2731",
+        "entry-3109",
+        "entry-405",
+        "entry-4353",
+        "entry-5565",
+        "entry-7170"
+      ],
+      "sha256": "5193231bea74ad8671d849fc78185b5a3d3e40b0b66a6c411528fc2fa555c3ca",
+      "record_count": 9
+    },
+    {
+      "worker": 7,
+      "file": "worker-07-input.jsonl",
+      "record_ids": [
+        "entry-1296",
+        "entry-1771",
+        "entry-199",
+        "entry-275",
+        "entry-3139",
+        "entry-4075",
+        "entry-5374",
+        "entry-5572",
+        "entry-720"
+      ],
+      "sha256": "8cb8393d809852fd1e5f867211053e900cad5e4ac614eca1659c432a7f7d5ff9",
+      "record_count": 9
+    },
+    {
+      "worker": 8,
+      "file": "worker-08-input.jsonl",
+      "record_ids": [
+        "entry-1298",
+        "entry-178",
+        "entry-200",
+        "entry-278",
+        "entry-3919",
+        "entry-4150",
+        "entry-5403",
+        "entry-5576"
+      ],
+      "sha256": "fb1818ad155b5bab809bc9a38a1e9e55873d797b7f4d5eccb1f56e19963e066f",
+      "record_count": 8
+    },
+    {
+      "worker": 9,
+      "file": "worker-09-input.jsonl",
+      "record_ids": [
+        "entry-130",
+        "entry-1788",
+        "entry-202",
+        "entry-279",
+        "entry-3947",
+        "entry-4207",
+        "entry-5406",
+        "entry-5605"
+      ],
+      "sha256": "f41daf395ea88312e077f07e61def4217b1ecbdb2a92d80c8ede92da0d876803",
+      "record_count": 8
+    },
+    {
+      "worker": 10,
+      "file": "worker-10-input.jsonl",
+      "record_ids": [
+        "entry-1303",
+        "entry-1790",
+        "entry-203",
+        "entry-2824",
+        "entry-3972",
+        "entry-4236",
+        "entry-5413",
+        "entry-5631"
+      ],
+      "sha256": "5e20fb9186dbf7009e235d43be8eca855a4b5d0420d15261603065c43062eba0",
+      "record_count": 8
+    },
+    {
+      "worker": 11,
+      "file": "worker-11-input.jsonl",
+      "record_ids": [
+        "entry-1325",
+        "entry-1795",
+        "entry-219",
+        "entry-2843",
+        "entry-3976",
+        "entry-426",
+        "entry-5459",
+        "entry-5659"
+      ],
+      "sha256": "675febf32b2ca88dca65994be08fa4bb624e8e83c62ea7236245a50653dd0f9e",
+      "record_count": 8
+    },
+    {
+      "worker": 12,
+      "file": "worker-12-input.jsonl",
+      "record_ids": [
+        "entry-1334",
+        "entry-181",
+        "entry-22",
+        "entry-2861",
+        "entry-3979",
+        "entry-4296",
+        "entry-5462",
+        "entry-6652"
+      ],
+      "sha256": "e0f82383e037a14b4cf041af7d61aaf10b0ecd77e0735d143f43cd6cbd796525",
+      "record_count": 8
+    }
+  ]
+}
