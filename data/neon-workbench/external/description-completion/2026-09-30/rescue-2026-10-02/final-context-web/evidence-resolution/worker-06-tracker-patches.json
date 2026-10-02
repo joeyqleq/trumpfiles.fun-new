@@ -1,0 +1,190 @@
+[
+  {
+    "record_id": "entry-1595",
+    "entry_number": 1595,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "The supplied entry omitted a specific promise, a dated AP tracker status, or a verifiable later comparison; the new evidence supports the bounded event stated below.",
+    "supported_facts": [
+      "Trump made the quoted statement to a Detroit audience in January 2026.",
+      "PolitiFact published its review on February 23, 2026 and said about 19% of the 75 promises in its MAGA-Meter were rated Promise Kept.",
+      "PolitiFact separately reported about 45% In the Works and 31% Stalled; its methodology uses outcome-based ratings.",
+      "AP's retrieved tracker snapshot was last modified December 3, 2025, before the January statement, and is a separate tracker."
+    ],
+    "remaining_uncertainties": [
+      "Neither source demonstrates an ongoing change in Trump’s messaging or a trend in audience response.",
+      "The AP and PolitiFact trackers cover different sets and use separate rating systems; their percentages should not be combined."
+    ],
+    "source_urls": [
+      "https://api.politifact.com/article/2026/feb/23/Trump-promises-tariffs-taxes-immigration-deport/",
+      "https://interactives.ap.org/trump-promise-tracker/promises.json"
+    ],
+    "search_attempts": [
+      {
+        "provider": "web search (system2)",
+        "query": "Trump \"fulfilled every promise\" January press conference 2025 PolitiFact PBS; Trump says fulfilled every promise January press conference 2026 promise tracker",
+        "result": "Found PolitiFact Feb. 23, 2026 article concerning January Detroit claim “I’ve kept all my promises, and much more.”"
+      },
+      {
+        "provider": "open",
+        "url": "https://api.politifact.com/article/2026/feb/23/Trump-promises-tariffs-taxes-immigration-deport/",
+        "result": "Readable; lines 115-139 identify claim, date and method; lines 143-176 report rating distribution."
+      },
+      {
+        "provider": "web search (system2)",
+        "query": "AP JS promise dataset, https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Retrieved AP tracker JSON is local evidence from parent; 25 entries, lastModified 2025-12-03."
+      }
+    ],
+    "proposed_title": "PolitiFact Examined Trump’s Claim That He Had Kept All Campaign Promises",
+    "description_medium": "In January 2026, Trump told a Detroit audience, “I’ve kept all my promises, and much more.” PolitiFact’s February 23 review reported that its MAGA-Meter rated about 19% of his tracked promises as kept. This addresses the boast without establishing a continuing messaging trend. It offers a dated assessment rather than proof of a continuing trend.",
+    "description_long": "At a Detroit audience in January 2026, Donald Trump said, “I’ve kept all my promises, and much more,” and cited no tax on tips, no tax on Social Security, tariffs on foreign cars and environmental regulation reversals. PolitiFact examined the claim in a February 23, 2026 article reviewing its MAGA-Meter, which tracks 75 second-term promises. The outlet said about 19% were rated Promise Kept before the State of the Union address. Its review also described promises in other categories: about 45% were In the Works and about 31% Stalled, with some rated Compromise or Broken. PolitiFact’s ratings rely on measurable outcomes and are distinct from AP’s separate 25-promise tracker, whose retrieved data file was last modified December 3, 2025. The evidence supports a dated fact-check of Trump’s January boast. It does not show that his messaging “continued to lose ground” over time or establish a trend in public response.",
+    "missing_context": null,
+    "evidence_notes": "New evidence pass: inspected the retrieved AP promises dataset (25 rows; declared lastModified 2025-12-03), followed relevant status_link pages, and separately checked PolitiFact’s February 23, 2026 review where appropriate. The tracker snapshot is not a verified February/March 2026 state."
+  },
+  {
+    "record_id": "entry-1621",
+    "entry_number": 1621,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "The supplied entry omitted a specific promise, a dated AP tracker status, or a verifiable later comparison; the new evidence supports the bounded event stated below.",
+    "supported_facts": [
+      "The tracker contains 25 promises and reports 5 Kept, 9 In progress, and 11 It’s complicated.",
+      "The Jan. 6 promise is Kept; closing the Education Department is In progress; school funding for vaccine/mask mandates is It’s complicated."
+    ],
+    "remaining_uncertainties": [
+      "AP’s page does not itself establish that tracker publication caused pressure, transparency effects, or changed rhetoric.",
+      "The local data declares its last modification as December 3, 2025; later status should not be inferred."
+    ],
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/article/capitol-jan-6-pardons-trump-justice-department-8ce8b2a8f8cb602d5eaf85ac7b96960",
+      "https://apnews.com/hub/us-department-of-education"
+    ],
+    "search_attempts": [
+      {
+        "provider": "web search (system2)",
+        "query": "AP promise tracker \"last updated\" \"December 3, 2025\" Trump 25 promises",
+        "result": "Search did not index tracker JSON; used retrieved AP JSON source file and its declared lastModified metadata."
+      },
+      {
+        "provider": "direct source inspection",
+        "url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Inspected saved retrieved AP JSON; 25 promises, status counts Kept 5 / In progress 9 / It’s complicated 11; lastModified Wed, 03 Dec 2025 21:51:19 GMT."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/article/capitol-jan-6-pardons-trump-justice-department-8ce8b2a8f8cb602d5eaf85ac7b96960",
+        "result": "Listed as the Jan. 6 tracker row status_link; source was included to expose the row’s linked explanation."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/hub/us-department-of-education",
+        "result": "Listed as the Education Department tracker status_link; general AP hub, not an archived tracker status."
+      }
+    ],
+    "proposed_title": "AP’s December 2025 Tracker Published Mixed Ratings for 25 Trump Promises",
+    "description_medium": "AP’s campaign-promise tracker listed 25 promises in a data file last modified December 3, 2025. It rated 5 Kept, 9 In progress and 11 It’s complicated. That dated snapshot documents the tracker’s public status labels, not proof that it pressured Trump or constrained his rhetoric.",
+    "description_long": "The Associated Press tracker’s retrieved data file contains 25 campaign promises and declares a last-modified date of December 3, 2025. Its labels divide the list into five promises rated Kept, nine rated In progress and eleven rated It’s complicated. Individual examples include the Jan. 6 pardons promise, marked Kept with a fulfillment date of January 6, 2025; closing the Education Department, marked In progress; and cutting money to schools with vaccine or mask mandates, marked It’s complicated. The tracker records AP’s assessment and links to coverage or source documents for individual promises. The saved dataset is a dated snapshot and does not verify a later February or March 2026 status. Its mixed ratings support a factual account of AP’s public tracking, but do not show that the ledger exerted continuing pressure on Trump, made his statements more transparent, or constrained rhetorical change.",
+    "missing_context": null,
+    "evidence_notes": "New evidence pass: inspected the retrieved AP promises dataset (25 rows; declared lastModified 2025-12-03), followed relevant status_link pages, and separately checked PolitiFact’s February 23, 2026 review where appropriate. The tracker snapshot is not a verified February/March 2026 state."
+  },
+  {
+    "record_id": "entry-1623",
+    "entry_number": 1623,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "The supplied entry omitted a specific promise, a dated AP tracker status, or a verifiable later comparison; the new evidence supports the bounded event stated below.",
+    "supported_facts": [
+      "The tracker assigns different ratings across Jan. 6 clemency, education and school vaccine/mask policy promises.",
+      "The dataset’s lastModified field is December 3, 2025."
+    ],
+    "remaining_uncertainties": [
+      "The supplied title does not identify a particular uniform-success statement or date.",
+      "Tracker statuses reflect AP’s assessments and must not be represented as proof of causal pressure or as March 2026 data."
+    ],
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+      "https://apnews.com/article/covid-vaccine-mandate-ee3bcd198dec8e6cf61546f2bbe688bf",
+      "https://apnews.com/hub/us-department-of-education"
+    ],
+    "search_attempts": [
+      {
+        "provider": "direct source inspection",
+        "url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Inspected tracker rows in retrieved data: Jan. 6 pardons = Kept (fulfilled Jan. 6, 2025); close Education Department = In progress; vaccine/mask mandate school-funding pledge = It’s complicated."
+      },
+      {
+        "provider": "open",
+        "url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+        "result": "Official White House action cited by AP tracker as the method for the Jan. 6 promise."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/article/covid-vaccine-mandate-ee3bcd198dec8e6cf61546f2bbe688bf",
+        "result": "AP report on Trump’s school-funding/vaccine-mandate announcement, linked by relevant tracker row; article headline confirmed."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/hub/us-department-of-education",
+        "result": "The Education Department status link resolves to an AP topic hub, not a dated rating history."
+      }
+    ],
+    "proposed_title": "AP’s December 2025 Tracker Listed Different Statuses Across Trump Promises",
+    "description_medium": "AP’s tracker did not give every listed promise the same status: it marked the Jan. 6 pardons promise Kept, closing the Education Department In progress, and withholding money from schools with vaccine or mask mandates It’s complicated. The data snapshot is dated December 3, 2025 and does not assess a separate “uniform-success” statement.",
+    "description_long": "AP’s campaign-promise tracker organized pledges across policy areas and assigned status labels to individual items. In the retrieved file, last modified December 3, 2025, the promise to pardon some people convicted or charged in the Jan. 6 attack was marked Kept, with a fulfillment date of January 6, 2025. The promise to close the Department of Education was marked In progress. A separate pledge to cut money to schools with vaccine or mask mandates was marked It’s complicated. The examples show the tracker’s use of different ratings across policy topics, rather than a single overall verdict. AP links the entries to related reporting or source documents, including the presidential action on pardons and its coverage of Trump’s call to withhold school funding. The dataset is not a verified snapshot for March 2026, and these separate AP ratings do not alone prove or disprove a distinct claim that Trump made about uniform success. They support a description of the tracker’s cross-topic status view, while the original title’s claim about a particular fragile success assertion remains unspecified.",
+    "missing_context": null,
+    "evidence_notes": "New evidence pass: inspected the retrieved AP promises dataset (25 rows; declared lastModified 2025-12-03), followed relevant status_link pages, and separately checked PolitiFact’s February 23, 2026 review where appropriate. The tracker snapshot is not a verified February/March 2026 state."
+  },
+  {
+    "record_id": "entry-1625",
+    "entry_number": 1625,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "The supplied entry omitted a specific promise, a dated AP tracker status, or a verifiable later comparison; the new evidence supports the bounded event stated below.",
+    "supported_facts": [
+      "The tracker row reproduces the pledge to cut money to any schools with vaccine or mask mandates and assigns status “It’s complicated.”",
+      "AP’s linked coverage reports Trump calling for federal funding to be withheld from schools and colleges requiring COVID vaccines."
+    ],
+    "remaining_uncertainties": [
+      "The linked AP report documents the call but does not itself explain the tracker’s full assessment criteria.",
+      "No before-and-after status history or verified post-Dec. 3, 2025 rating is available in the retrieved data."
+    ],
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/article/covid-vaccine-mandate-ee3bcd198dec8e6cf61546f2bbe688bf"
+    ],
+    "search_attempts": [
+      {
+        "provider": "web search (system2)",
+        "query": "AP tracker \"vaccine or mask mandate\" schools It’s complicated Trump promise",
+        "result": "No indexed search result exposed the underlying tracker rating; this query prompted direct inspection of the locally retrieved AP dataset."
+      },
+      {
+        "provider": "direct source inspection",
+        "url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Located pledge text and status “It’s complicated”; AP dataset lastModified is Dec. 3, 2025."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/article/covid-vaccine-mandate-ee3bcd198dec8e6cf61546f2bbe688bf",
+        "result": "Readable AP report headline confirms Trump called for withholding federal money from schools and colleges that require COVID vaccines; it is the tracker’s status_link."
+      },
+      {
+        "provider": "web search (system2)",
+        "query": "AP Trump campaign promise tracker promise messaging delivery story AP status transparency",
+        "result": "No additional dated record was found that demonstrated a continuing delivery trend."
+      }
+    ],
+    "proposed_title": "AP Rated Trump’s School Funding Pledge ‘It’s Complicated’ in December 2025",
+    "description_medium": "AP’s tracker marked Trump’s pledge to cut money to any schools with vaccine or mask mandates “It’s complicated” in data last modified December 3, 2025. AP separately reported his call to withhold federal funds from schools and colleges requiring COVID vaccines. The tracker rating is not evidence of a continuing delivery trend.",
+    "description_long": "During the 2024 campaign, Trump promised not to give federal money to any school with a vaccine or mask mandate. The Associated Press tracker preserved that pledge and rated it “It’s complicated” in data last modified December 3, 2025. AP linked the rating to its coverage of Trump’s call for withholding federal money from schools and colleges requiring COVID vaccines. The news report describes the call itself; the tracker’s label is AP’s assessment of the promise’s status, not a formal government determination. The AP dataset does not provide a dated history showing when the rating changed or how it related to later public statements. This supports a bounded description of one promise and its listed status. It does not substantiate the original title’s suggestion that an overall delivery narrative continued to lose ground, nor does it establish a trend after the tracker data’s stated modification date.",
+    "missing_context": null,
+    "evidence_notes": "New evidence pass: inspected the retrieved AP promises dataset (25 rows; declared lastModified 2025-12-03), followed relevant status_link pages, and separately checked PolitiFact’s February 23, 2026 review where appropriate. The tracker snapshot is not a verified February/March 2026 state."
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "record_id": "entry-1646",
+    "entry_number": 1646,
+    "resolution_kind": "narrowed_correction",
+    "event_date": "2019-01-14",
+    "proposed_title": "The Atlantic’s “Unthinkable” Reviewed 50 Moments From Trump’s First Two Years",
+    "description_medium": "The Atlantic’s January 14, 2019 “Unthinkable” feature surveyed Trump’s first two years through 50 selected incidents. Editor Adrienne LaFrance said a research team reviewed every day of the period and narrowed hundreds of candidate moments to 50, emphasizing breaks with norms in communication and institutions.",
+    "description_long": "The Atlantic introduced “Unthinkable” on January 14, 2019, two years into Donald Trump’s first term. In a contemporaneous Atlantic newsletter, the magazine described it as a catalog of 50 improbable incidents that it considered outlandish or destructive; one featured episode was Trump’s May 9, 2017, firing of FBI Director James Comey. In an interview that day with WBUR’s On Point, series developer and co-editor Adrienne LaFrance explained how the package was assembled. A research team examined every day of Trump’s first two years and initially identified hundreds of moments before editors narrowed the selection to 50. LaFrance said the episodes ranged from small to large and were hard to weigh individually as they happened. Looking back across the period, she saw recurring challenges to norms in Trump’s communications with the press and his treatment of institutions. The project was an editorial review of selected events and their cumulative pattern, not a quantitative measure of how readers perceived democratic risk.",
+    "supported_facts": [
+      "Atlantic newsletter dated January 14, 2019 described “Unthinkable” as a 50-incident retrospective and named Comey’s May 9, 2017 firing at number five.",
+      "Series co-editor Adrienne LaFrance told WBUR a research team examined every day of the first two years and narrowed hundreds of possible moments to 50.",
+      "LaFrance described norms around presidential communication and institutions as recurring themes."
+    ],
+    "remaining_uncertainties": [
+      "No public-opinion measure in these sources quantifies an increase in democratic-risk perceptions."
+    ],
+    "source_urls": [
+      "https://www.theatlantic.com/politics/archive/2019/01/russia-probes-and-putin-meetings-politics-policy-daily/580258/",
+      "https://www.wbur.org/onpoint/2019/01/14/trump-presidency-unthinkable-the-atlantic"
+    ],
+    "search_attempts": [
+      {
+        "provider": "open",
+        "url": "https://www.theatlantic.com/politics/archive/2019/01/russia-probes-and-putin-meetings-politics-policy-daily/580258/",
+        "result": "Readable; lines 85-91 describe the project as 50 selected incidents and identify the Comey firing as number five."
+      },
+      {
+        "provider": "open",
+        "url": "https://www.wbur.org/onpoint/2019/01/14/trump-presidency-unthinkable-the-atlantic",
+        "result": "Readable; lines 80-98 include the series editors’ interview and LaFrance’s account of reviewing every day and reducing hundreds of moments to 50."
+      }
+    ],
+    "evidence_notes": "Correct the assigned item’s date to January 14, 2019 and describe the documented Atlantic feature and its editorial method. This replaces its unsupported asserted effect on public perception with the feature’s actual subject and process."
+  },
+  {
+    "record_id": "entry-1648",
+    "entry_number": 1648,
+    "resolution_kind": "narrowed_correction",
+    "event_date": "2019-01-14",
+    "proposed_title": "Atlantic Editors Said Trump’s Accumulated Episodes Could Normalize Norm-Breaking",
+    "description_medium": "In a January 14, 2019 WBUR interview about The Atlantic’s “Unthinkable,” editor Adrienne LaFrance described a two-year review of norm-breaking episodes, while writer McKay Coppins argued that repeated controversies had desensitized Washington and some of the public. These were the journalists’ interpretations, not a measured survey.",
+    "description_long": "The Atlantic’s “Unthinkable” series marked the second anniversary of Donald Trump’s inauguration with 50 essays on selected events from his first two years. In a January 14, 2019 WBUR interview, editor Adrienne LaFrance said the magazine’s team reviewed each day of that period and cut hundreds of candidate moments to a final 50. She described the package’s framing as a pattern of norm-breaking in the president’s communication with the press and his view of institutions. Atlantic writer McKay Coppins discussed a related interpretation: that repeated unprecedented episodes could desensitize political observers. He said Trump’s party in Washington had become desensitized to major news, and suggested that some people across the country had too. Coppins also acknowledged that Trump’s critics could sometimes portray events negatively without sufficient context, while maintaining that the underlying conduct included unprecedented actions. This interview documents how the journalists who worked on the package understood its central theme in 2019. Their comments are editorial analysis rather than a survey or direct measurement of changing public standards.",
+    "supported_facts": [
+      "WBUR published an interview with Atlantic editor Adrienne LaFrance and writers Yara Bayoumy and McKay Coppins on January 14, 2019.",
+      "LaFrance described the series’ research process and norm-breaking frame.",
+      "Coppins argued that repeated controversies had desensitized Trump’s party in Washington and, to some extent, people nationally; he also acknowledged criticism about media framing."
+    ],
+    "remaining_uncertainties": [
+      "Coppins’ account is an attributed interpretation; the interview does not provide a population survey quantifying normalization or changed tolerance."
+    ],
+    "source_urls": [
+      "https://www.wbur.org/onpoint/2019/01/14/trump-presidency-unthinkable-the-atlantic",
+      "https://www.theatlantic.com/politics/archive/2019/01/russia-probes-and-putin-meetings-politics-policy-daily/580258/"
+    ],
+    "search_attempts": [
+      {
+        "provider": "open",
+        "url": "https://www.wbur.org/onpoint/2019/01/14/trump-presidency-unthinkable-the-atlantic",
+        "result": "Readable; lines 84-99 describe LaFrance and Coppins’ framing and attributed view of desensitization."
+      },
+      {
+        "provider": "open",
+        "url": "https://www.theatlantic.com/politics/archive/2019/01/russia-probes-and-putin-meetings-politics-policy-daily/580258/",
+        "result": "Readable; lines 85-91 confirm date, project and selected-incident framing."
+      }
+    ],
+    "evidence_notes": "Reframe as a dated, attributed account of what the Atlantic editors and writers said about cumulative norm-breaking. Their analysis directly supports reporting their interpretation; do not convert it into a measured public effect."
+  },
+  {
+    "record_id": "entry-1650",
+    "entry_number": 1650,
+    "resolution_kind": "narrowed_correction",
+    "event_date": "2019-01-14",
+    "proposed_title": "The Atlantic’s “Unthinkable” Reviewed Presidential Norms and Allies’ Reactions",
+    "description_medium": "The Atlantic’s January 2019 “Unthinkable” package reviewed 50 selected episodes from Trump’s first two years. In a WBUR interview, editor Adrienne LaFrance described the selection process, and national security editor Yara Bayoumy discussed how U.S. allies adapted to Trump’s decisions. Their interview explored institutional norms and foreign-policy consequences.",
+    "description_long": "The Atlantic published “Unthinkable” on January 14, 2019, assembling 50 essays about selected moments from Donald Trump’s first two years in office. Editor Adrienne LaFrance told WBUR that the research team reviewed every day of that period, starting with hundreds of candidate moments before reducing the list to 50. The project treated presidential communication and the use of institutions as recurring themes. In the same interview, Atlantic national security editor Yara Bayoumy discussed how reactions to Trump’s foreign-policy announcements had evolved. She said allied leaders were initially stunned by some pronouncements, while later becoming more proactive in responding to what they viewed as damage to U.S. relationships. As an example, she pointed to foreign leaders’ reaction to Trump’s September address to the United Nations General Assembly and European allies’ efforts to take greater responsibility for their own security. The interview presents the editors’ contemporary reading of political and allied responses. It documents no specific democratic-guardrail proposal; its substantive focus is the retrospective selection and interpretation of episodes from Trump’s first two years.",
+    "supported_facts": [
+      "The Atlantic project was published January 14, 2019 and contained 50 selected essays about Trump’s first two years.",
+      "LaFrance described a research process that narrowed hundreds of possible episodes to 50.",
+      "Yara Bayoumy discussed allied adaptation, including reactions to the September UN General Assembly address and European security planning."
+    ],
+    "remaining_uncertainties": [
+      "The interview does not identify a specific guardrail proposal resulting from the project.",
+      "Bayoumy’s observations are attributed analysis, not a systematic survey of allied governments."
+    ],
+    "source_urls": [
+      "https://www.theatlantic.com/politics/archive/2019/01/russia-probes-and-putin-meetings-politics-policy-daily/580258/",
+      "https://www.wbur.org/onpoint/2019/01/14/trump-presidency-unthinkable-the-atlantic"
+    ],
+    "search_attempts": [
+      {
+        "provider": "open",
+        "url": "https://www.theatlantic.com/politics/archive/2019/01/russia-probes-and-putin-meetings-politics-policy-daily/580258/",
+        "result": "Readable; lines 85-91 detail the Atlantic feature’s date and scope."
+      },
+      {
+        "provider": "open",
+        "url": "https://www.wbur.org/onpoint/2019/01/14/trump-presidency-unthinkable-the-atlantic",
+        "result": "Readable; lines 80-86 describe series and selection; lines 103-107 contain Bayoumy’s discussion of allied responses."
+      }
+    ],
+    "evidence_notes": "Correct event date to January 14, 2019. Center the entry on the documented project and interview discussion of allied reactions, not on an unverified claim that the series reinforced calls for guardrails."
+  },
+  {
+    "record_id": "entry-1662",
+    "entry_number": 1662,
+    "resolution_kind": "narrowed_correction",
+    "proposed_title": "NPR Found 53 Pages Apparently Missing From Epstein Database for Trump Accuser",
+    "description_medium": "NPR’s February 24 investigation compared DOJ database serial numbers with FBI case logs and Maxwell discovery records. It found 53 pages of interview materials apparently missing for one woman who accused Trump; only one of four FBI interviews was then public, and that interview did not mention him.",
+    "description_long": "NPR’s February 24, 2026 investigation traced gaps in the public release of Epstein-related records by comparing document serial numbers in the Justice Department database with FBI case-file logs and discovery materials turned over in Ghislaine Maxwell’s criminal case. For one woman who accused Donald Trump, NPR found that only seven of 15 documents listed in a Maxwell discovery log were available in the public database. By comparing three sets of serial numbers, NPR estimated that 53 pages of interview documents and notes appeared to be missing. The woman had been interviewed by the FBI four times. Only the first interview, dated July 24, 2019, was public at the time; it described her abuse by Epstein but did not mention Trump. NPR said the specific allegation appeared in an FBI list of claims and a Justice Department slideshow, and that FBI agents interviewed the woman in connection with the allegation. The outlet also reported that DOJ said records not published were privileged, duplicates or related to an ongoing investigation. The White House told NPR that Trump had been exonerated. NPR stressed that the allegation was unverified; its reporting established a document-release discrepancy, not proof of wrongdoing or a dated contradiction in Trump’s defense.",
+    "supported_facts": [
+      "NPR compared unique serial numbers across the public database, FBI records and Maxwell discovery logs.",
+      "For one accuser, 7 of 15 documents on a discovery list were publicly available; NPR estimated 53 pages of interview documents and notes were missing.",
+      "The woman was interviewed four times; only her July 24, 2019 first interview was public at the time, and it did not mention Trump.",
+      "DOJ gave NPR broad categories for unpublished files; the White House said Trump had been exonerated. The allegation remains unverified."
+    ],
+    "remaining_uncertainties": [
+      "NPR could not establish the contents of every missing page or the reason each item was unavailable.",
+      "The reporting does not establish that Trump committed wrongdoing or show a contradiction in a particular defense statement."
+    ],
+    "source_urls": [
+      "https://www.vpm.org/npr-news/2026-02-24/justice-department-withheld-and-removed-some-epstein-files-related-to-trump/"
+    ],
+    "search_attempts": [
+      {
+        "provider": "open",
+        "url": "https://www.vpm.org/npr-news/2026-02-24/justice-department-withheld-and-removed-some-epstein-files-related-to-trump/",
+        "result": "Readable NPR syndication; lines 71-87 give methodology, DOJ/White House response; lines 95-110 provide interview counts and 53-page estimate."
+      }
+    ],
+    "evidence_notes": "Revised long description to foreground NPR’s document comparison, specific counts, interview chronology and attributed responses. Reduced generic editorial caveats; kept the allegation’s unverified status and did not repeat the unsupported “consistency pressure” theory."
+  }
+]

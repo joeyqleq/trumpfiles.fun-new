@@ -1,0 +1,174 @@
+[
+  {
+    "record_id": "entry-1546",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "proposed_title": "AP Tracker Data Listed 25 Promises in Three Progress Statuses",
+    "description_medium": "AP’s promise-tracker data, last modified December 3, 2025, listed 25 pledges: five “Kept,” nine “In progress” and 11 “It’s complicated.” The entries included withdrawal from the Paris Agreement as “Kept” and cutting energy prices in half as “It’s complicated.” The data confirms a mixed-status tracker view, but does not establish a March 4, 2026 update or growing exposure.",
+    "description_long": "The Associated Press promise-tracker data retrieved for this review carries a last-modified timestamp of December 3, 2025, and contains 25 promise rows. Five are labeled “Kept,” nine “In progress” and 11 “It’s complicated.” The rows include Trump’s promise to withdraw from the Paris Agreement, listed as kept with a January 20, 2025 fulfillment date, and his promise to cut energy prices in half, listed as “It’s complicated.” AP’s linked reporting says Trump signed the Paris withdrawal order on January 20 and later reported rising household utility bills and past-due balances. This dated dataset shows that AP displayed differing statuses across specific pledges. It does not verify a March 4, 2026 tracker update, a trend of growing exposure, or a measured effect on Trump’s public image. In AP’s November 2025 report, past-due utility balances were up 9.7% year over year to $789, and average monthly energy bills were up 12% over the same comparison period.",
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/",
+      "https://apnews.com/video/which-promises-has-trump-actually-kept-7c1801a12dbc49909768e6c9ec66bbc8",
+      "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+      "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d"
+    ],
+    "evidence_notes": "The retrieved AP JSON identifies lastModified as Wed, 03 Dec 2025 21:51:19 GMT; it is not a February or March 2026 snapshot. AP JSON: 25 rows; 5 Kept, 9 In progress, 11 It’s complicated. Its Paris Agreement row gives Jan. 20, 2025 as fulfillment; the energy-price row is marked It’s complicated. AP’s linked coverage documents the Paris order and later consumer utility-bill pressures.",
+    "editorial_notes": "Removes the unsupported March 4, 2026 update and “exposure grew” claims. Narrowed to the dated AP dataset and its recorded status counts/examples.",
+    "search_attempts": [
+      {
+        "provider": "Exa web search",
+        "query": "AP Trump campaign promise tracker 25 promises 5 kept 9 in progress 11 complicated last updated December 2025 Paris agreement energy prices Social Security",
+        "result": "Found AP tracker landing page, its Dec. 23 video, an archive.ph capture of tracker text last updated July 7, AP stories on energy prices and Paris withdrawal, and unrelated trackers. The landing page alone did not expose the rows."
+      },
+      {
+        "provider": "Exa web search",
+        "query": "site:apnews.com/article \"Tracking Trump's presidential promises\" \"Cut energy prices in half\" \"Paris Agreement\" AP tracker",
+        "result": "Found AP stories documenting the Jan. 20, 2025 Paris withdrawal order and Nov. 2025 utility-bill/energy-price analysis; search did not return March 2026 tracker snapshot."
+      },
+      {
+        "provider": "Exa web fetch",
+        "urls": [
+          "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+          "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d",
+          "https://apnews.com/article/refugees-flights-trump-immigration-border-resettlement-33ebaa34bc4d0c069a22ee7aa5f8ff6d",
+          "https://apnews.com/article/retirement-social-security-trump-bessent-0be15d5f1285cd1b774a8f5c59167b90"
+        ],
+        "result": "Fetched AP status-linked coverage for Paris withdrawal, energy prices, Gaza/refugee admissions and Social Security. AP Paris story confirms order signed Jan. 20; energy article reports rising past-due utility balances and bills. Other pages were truncated to headlines/opening text."
+      }
+    ],
+    "remaining_uncertainties": [
+      "The JSON timestamp does not substantiate a March 2026 update or the growth of public exposure.",
+      "AP’s status labels are its assessments; they do not independently prove policy outcomes or reputational effects."
+    ]
+  },
+  {
+    "record_id": "entry-1550",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "proposed_title": "AP’s December 2025 Tracker Marked Five of 25 Promises Kept",
+    "description_medium": "AP’s tracker data last modified December 3, 2025, listed 25 promises with five marked “Kept,” nine “In progress” and 11 “It’s complicated.” For example, AP marked the Paris Agreement withdrawal promise “Kept” and the promise to halve energy prices “It’s complicated.” These statuses document AP’s assessment at that time; the sources do not measure ongoing damage to Trump’s delivery image.",
+    "description_long": "The AP tracker’s retrieved promises.json file reports a last-modified time of December 3, 2025. It lists 25 Trump campaign promises, with five rated “Kept,” nine “In progress” and 11 “It’s complicated.” Among the examples, AP lists withdrawal from the Paris Agreement as kept and records January 20, 2025, as its fulfillment date; it marks the pledge to halve energy prices as “It’s complicated.” AP’s status-linked stories report that Trump signed the Paris withdrawal order on January 20 and that utility balances and energy bills were rising in 2025. Those entries make the tracker’s differing assessments concrete. They do not establish that the tracker caused ongoing damage to Trump’s delivery image, and the tracker metadata does not support a March 2026 date. The event account is therefore limited to AP’s dated status display and cited examples. AP reported the underlying utility-cost context in November 2025: past-due balances rose 9.7% year over year to $789, alongside a 12% increase in monthly energy bills.",
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/",
+      "https://apnews.com/video/which-promises-has-trump-actually-kept-7c1801a12dbc49909768e6c9ec66bbc8",
+      "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+      "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d"
+    ],
+    "evidence_notes": "The retrieved AP JSON identifies lastModified as Wed, 03 Dec 2025 21:51:19 GMT; it is not a February or March 2026 snapshot. The dataset’s 25 rows have 5/9/11 status counts. Paris withdrawal is listed Kept; energy-price-halving is listed It’s complicated. AP’s linked Paris and energy-price stories were fetched.",
+    "editorial_notes": "Removes the unmeasured “ongoing damage” reputational effect. Reframes as AP’s December 2025 status assessment with two identifiable examples.",
+    "search_attempts": [
+      {
+        "provider": "Exa web search",
+        "query": "AP Trump campaign promise tracker 25 promises 5 kept 9 in progress 11 complicated last updated December 2025 Paris agreement energy prices Social Security",
+        "result": "Found AP tracker landing page, its Dec. 23 video, an archive.ph capture of tracker text last updated July 7, AP stories on energy prices and Paris withdrawal, and unrelated trackers. The landing page alone did not expose the rows."
+      },
+      {
+        "provider": "Exa web search",
+        "query": "site:apnews.com/article \"Tracking Trump's presidential promises\" \"Cut energy prices in half\" \"Paris Agreement\" AP tracker",
+        "result": "Found AP stories documenting the Jan. 20, 2025 Paris withdrawal order and Nov. 2025 utility-bill/energy-price analysis; search did not return March 2026 tracker snapshot."
+      },
+      {
+        "provider": "Exa web fetch",
+        "urls": [
+          "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+          "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d",
+          "https://apnews.com/article/refugees-flights-trump-immigration-border-resettlement-33ebaa34bc4d0c069a22ee7aa5f8ff6d",
+          "https://apnews.com/article/retirement-social-security-trump-bessent-0be15d5f1285cd1b774a8f5c59167b90"
+        ],
+        "result": "Fetched AP status-linked coverage for Paris withdrawal, energy prices, Gaza/refugee admissions and Social Security. AP Paris story confirms order signed Jan. 20; energy article reports rising past-due utility balances and bills. Other pages were truncated to headlines/opening text."
+      }
+    ],
+    "remaining_uncertainties": [
+      "No polling or other measure links the tracker to a change in Trump’s delivery image.",
+      "The tracker data does not establish its status on March 4, 2026."
+    ]
+  },
+  {
+    "record_id": "entry-1591",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "proposed_title": "AP’s Promise Dataset Listed 25 Pledges Across Three Status Labels",
+    "description_medium": "AP’s promise-tracker data was last modified December 3, 2025. It listed 25 pledges under three outcomes: five “Kept,” nine “In progress” and 11 “It’s complicated.” The rows included the January 6 pardons promise as “Kept” and closing the Education Department as “In progress.” This documents a public status view for that date, but not a March 4, 2026 snapshot or any constraint on Trump’s messaging.",
+    "description_long": "A retrieved Associated Press promise-tracker data file lists 25 campaign promises and carries a last-modified timestamp of December 3, 2025. Its status counts are five “Kept,” nine “In progress” and 11 “It’s complicated.” The specific entries include the promise to grant pardons related to the January 6, 2021, Capitol attack, listed as kept with a January 6, 2025 fulfillment date, and the promise to close the Education Department, listed as in progress. AP’s related video explains that the project tracks what has been kept, stalled or remains in progress; the data itself also uses an “It’s complicated” label. This is a dated and countable record of how the AP tracker organized selected promises. It does not show a March 4, 2026 view, demonstrate continuing exposure after December 2025, or document a statement that the tracker constrained. The January 6 row quotes Trump’s campaign promise to issue pardons on Day 1 and gives January 6, 2025, as its fulfillment date; the file identifies executive action as the method.",
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/",
+      "https://apnews.com/video/which-promises-has-trump-actually-kept-7c1801a12dbc49909768e6c9ec66bbc8",
+      "https://apnews.com/article/capitol-jan-6-pardons-trump-justice-department-8ce8b2a8f8cb602d5eaf85ac7b96960",
+      "https://apnews.com/hub/us-department-of-education"
+    ],
+    "evidence_notes": "The retrieved AP JSON identifies lastModified as Wed, 03 Dec 2025 21:51:19 GMT; it is not a February or March 2026 snapshot. The dataset provides exact count and listed examples. AP video search result describes the project; the January 6 AP linked status story fetch failed (CRAWL_NOT_FOUND), so the row’s label and fulfillment date rely on the official AP JSON. Education link is AP’s topic hub.",
+    "editorial_notes": "Removes the unsupported persistence/March 4 snapshot and claim that the tracker constrained messaging. Narrows to AP’s specific December 2025 status display.",
+    "search_attempts": [
+      {
+        "provider": "Exa web search",
+        "query": "AP Trump campaign promise tracker 25 promises 5 kept 9 in progress 11 complicated last updated December 2025 Paris agreement energy prices Social Security",
+        "result": "Found AP tracker landing page, its Dec. 23 video, an archive.ph capture of tracker text last updated July 7, AP stories on energy prices and Paris withdrawal, and unrelated trackers. The landing page alone did not expose the rows."
+      },
+      {
+        "provider": "Exa web search",
+        "query": "site:apnews.com/article \"Tracking Trump's presidential promises\" \"Cut energy prices in half\" \"Paris Agreement\" AP tracker",
+        "result": "Found AP stories documenting the Jan. 20, 2025 Paris withdrawal order and Nov. 2025 utility-bill/energy-price analysis; search did not return March 2026 tracker snapshot."
+      },
+      {
+        "provider": "Exa web fetch",
+        "urls": [
+          "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+          "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d",
+          "https://apnews.com/article/refugees-flights-trump-immigration-border-resettlement-33ebaa34bc4d0c069a22ee7aa5f8ff6d",
+          "https://apnews.com/article/retirement-social-security-trump-bessent-0be15d5f1285cd1b774a8f5c59167b90"
+        ],
+        "result": "Fetched AP status-linked coverage for Paris withdrawal, energy prices, Gaza/refugee admissions and Social Security. AP Paris story confirms order signed Jan. 20; energy article reports rising past-due utility balances and bills. Other pages were truncated to headlines/opening text."
+      }
+    ],
+    "remaining_uncertainties": [
+      "The data does not verify a March 4, 2026 dashboard view or continued exposure at that date.",
+      "The claim that tracker visibility constrained messaging remains unsupported."
+    ]
+  },
+  {
+    "record_id": "entry-1593",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "proposed_title": "AP Tracker Assigned Different Statuses to Paris, Energy and Education Promises",
+    "description_medium": "AP’s tracker data last modified December 3, 2025, assigns differing statuses across topics: the Paris Agreement withdrawal promise is “Kept,” halving energy prices is “It’s complicated,” and closing the Education Department is “In progress.” Across 25 listed promises, AP counts five kept, nine in progress and 11 complicated. This shows status variation across policy areas, but does not prove a contradiction with any uniform-success claim.",
+    "description_long": "The AP promise-tracker data retrieved for this review was last modified December 3, 2025, and contains 25 entries. It records five promises as “Kept,” nine as “In progress” and 11 as “It’s complicated.” The entries span policy areas: AP marks withdrawal from the Paris Agreement as kept, the pledge to halve energy prices as complicated, and closing the Education Department as in progress. AP’s linked reporting confirms Trump signed the Paris withdrawal order on January 20, 2025; the linked energy story reports higher utility bills and past-due balances during 2025. The tracker therefore provides concrete examples of differing AP status assessments across topics. It does not identify a uniform-success statement by Trump for comparison, nor does it establish that cross-topic variation made a broader narrative fragile. The corrected account reports the status comparison and removes that unsupported inference. AP’s November 2025 utility report quantified the pressure: past-due balances rose 9.7% year over year to $789, while monthly energy bills rose 12% over the same period.",
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/",
+      "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+      "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d",
+      "https://apnews.com/hub/us-department-of-education"
+    ],
+    "evidence_notes": "The retrieved AP JSON identifies lastModified as Wed, 03 Dec 2025 21:51:19 GMT; it is not a February or March 2026 snapshot. The AP dataset directly associates those three named promises with the quoted status labels. Linked AP Paris and energy reports fetched; the tracker links to the Education Department AP hub for the closure row.",
+    "editorial_notes": "Removes claim that cross-topic statuses made Trump’s follow-through narrative fragile; no specific uniform-success statement or audience effect was documented.",
+    "search_attempts": [
+      {
+        "provider": "Exa web search",
+        "query": "AP Trump campaign promise tracker 25 promises 5 kept 9 in progress 11 complicated last updated December 2025 Paris agreement energy prices Social Security",
+        "result": "Found AP tracker landing page, its Dec. 23 video, an archive.ph capture of tracker text last updated July 7, AP stories on energy prices and Paris withdrawal, and unrelated trackers. The landing page alone did not expose the rows."
+      },
+      {
+        "provider": "Exa web search",
+        "query": "site:apnews.com/article \"Tracking Trump's presidential promises\" \"Cut energy prices in half\" \"Paris Agreement\" AP tracker",
+        "result": "Found AP stories documenting the Jan. 20, 2025 Paris withdrawal order and Nov. 2025 utility-bill/energy-price analysis; search did not return March 2026 tracker snapshot."
+      },
+      {
+        "provider": "Exa web fetch",
+        "urls": [
+          "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+          "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d",
+          "https://apnews.com/article/refugees-flights-trump-immigration-border-resettlement-33ebaa34bc4d0c069a22ee7aa5f8ff6d",
+          "https://apnews.com/article/retirement-social-security-trump-bessent-0be15d5f1285cd1b774a8f5c59167b90"
+        ],
+        "result": "Fetched AP status-linked coverage for Paris withdrawal, energy prices, Gaza/refugee admissions and Social Security. AP Paris story confirms order signed Jan. 20; energy article reports rising past-due utility balances and bills. Other pages were truncated to headlines/opening text."
+      }
+    ],
+    "remaining_uncertainties": [
+      "No quoted or dated uniform-success claim is identified for comparison.",
+      "The Dec. 3 dataset is not an archived March 2026 snapshot; statuses may have changed later."
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "record_id": "entry-1523",
+    "entry_number": 1523,
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "Whether promise volume caused a manageability problem in office; the AP dataset contains no staffing, legal-workload, or administrative-capacity measure.",
+    "supported_facts": [
+      "The AP tracker dataset contains 25 selected promises and records a lastModified date of December 3, 2025.",
+      "At that timestamp, AP labeled five promises Kept, nine In progress, and eleven It’s complicated.",
+      "The records include promise text and related reporting/action links, supporting a description of AP’s tracked set and status distribution."
+    ],
+    "remaining_uncertainties": [
+      "The dataset is not a verified February/March 2026 archived snapshot and does not establish status changes after December 3, 2025.",
+      "No evidence connects promise volume to administrative manageability, staffing constraints, legal bandwidth, or execution capacity."
+    ],
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/"
+    ],
+    "search_attempts": [
+      "Read supplied evidence-resolution/sources/ap-tracker-retrieval.json and ap-promises-retrieved.json; provider: repository evidence supplied for this pass; result: metadata and 25-record AP dataset agree on 5 Kept, 9 In progress, 11 It’s complicated; SHA-256 734639f80c3d35a7f2e6f472a14d4130cc73553975793ad814f68f5f6957ee0f.",
+      "web open URL https://interactives.ap.org/trump-promise-tracker/promises.json; provider: search_service; result: failed as inaccessible via search tool (turn59view0); verified facts from the supplied retrieved source and metadata."
+    ],
+    "proposed_title": "AP Tracker Lists 25 Promises, With Five Marked Kept as of December 2025",
+    "description_medium": "The AP promise-tracker dataset, last modified December 3, 2025, listed 25 selected Trump promises: five marked “Kept,” nine “In progress,” and eleven “It’s complicated.” This is a dated distribution of AP’s status labels for that tracked set, not an assessment of every campaign pledge. The snapshot does not establish that promise volume created a manageability problem or exceeded administrative capacity.",
+    "description_long": "An AP tracker dataset retrieved from the interactive project lists 25 selected Trump campaign promises and gives each an AP status. Its recorded last-modified date is December 3, 2025. In that snapshot, five promises were labeled “Kept,” nine “In progress,” and eleven “It’s complicated.” The records include pledge text, promise dates and links to AP reporting or related actions, allowing readers to see what the tracker counts and how AP categorized the selected commitments. The snapshot supports a specific account of AP’s tracker and its dated status distribution. It is not a complete audit of all campaign promises, and the labels are AP’s assessments at that time. The dataset does not measure staffing, legal workload, administrative capacity, or the effect of making many promises. It therefore cannot substantiate the original claim that high promise volume produced a manageability problem in office. The title is narrowed to the observable tracker snapshot, while that causal claim remains unsupported.",
+    "missing_context": "AP’s December 3, 2025 tracker snapshot supports a narrowed account of 25 selected promises and their status distribution. It does not establish the original causal claim that promise volume produced a manageability problem."
+  }
+]
