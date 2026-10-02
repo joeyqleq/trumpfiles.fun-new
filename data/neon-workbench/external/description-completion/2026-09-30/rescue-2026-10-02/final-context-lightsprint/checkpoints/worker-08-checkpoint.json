@@ -55,7 +55,8 @@
     "entry-5334",
     "entry-6160",
     "entry-6358",
-    "entry-6652"
+    "entry-6652",
+    "entry-7074"
   ],
   "needs_context_ids": [
     "entry-196",
@@ -69,19 +70,17 @@
     "entry-5488",
     "entry-5605",
     "entry-5966",
-    "entry-6279"
-  ],
-  "remaining_ids": [
-    "entry-7074",
+    "entry-6279",
     "entry-801",
     "entry-842",
     "entry-908",
     "entry-990"
   ],
+  "remaining_ids": [],
   "counts": {
     "assigned": 35,
-    "completed": 18,
-    "needs_context": 12,
-    "remaining": 5
+    "completed": 19,
+    "needs_context": 16,
+    "remaining": 0
   }
 }
