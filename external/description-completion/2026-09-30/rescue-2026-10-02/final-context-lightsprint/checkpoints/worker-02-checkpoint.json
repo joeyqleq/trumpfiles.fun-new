@@ -148,6 +148,21 @@
         "entry-868",
         "entry-954"
       ]
+    },
+    {
+      "file": "worker-02-batch-008.jsonl",
+      "ids": [
+        "entry-6320"
+      ],
+      "revision": true
+    }
+  ],
+  "revisions": [
+    {
+      "record_id": "entry-6320",
+      "supersedes": "worker-02-batch-006.jsonl",
+      "file": "worker-02-batch-008.jsonl",
+      "reason": "append-only correction: add specific absent search records to the long description without changing its factual scope"
     }
   ]
 }
