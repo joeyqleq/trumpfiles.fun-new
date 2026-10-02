@@ -1,5 +1,5 @@
 {
-  "status": "in_progress",
+  "status": "complete",
   "assigned_count": 52,
   "assigned_record_ids": [
     "entry-1295",
@@ -94,7 +94,20 @@
     "entry-5125",
     "entry-5282",
     "entry-5441",
-    "entry-568"
+    "entry-568",
+    "entry-5936",
+    "entry-6072",
+    "entry-6159",
+    "entry-6237",
+    "entry-6311",
+    "entry-6358",
+    "entry-654",
+    "entry-6915",
+    "entry-769",
+    "entry-824",
+    "entry-853",
+    "entry-908",
+    "entry-965"
   ],
   "completed_ids": [
     "entry-1295",
@@ -114,7 +127,11 @@
     "entry-4377",
     "entry-4568",
     "entry-5125",
-    "entry-568"
+    "entry-568",
+    "entry-5936",
+    "entry-6072",
+    "entry-6358",
+    "entry-908"
   ],
   "needs_context_ids": [
     "entry-1392",
@@ -131,15 +148,24 @@
     "entry-2783",
     "entry-3009",
     "entry-357",
-    "entry-4198",
     "entry-3678",
     "entry-380",
+    "entry-4198",
     "entry-4687",
     "entry-4881",
     "entry-5282",
-    "entry-5441"
+    "entry-5441",
+    "entry-6159",
+    "entry-6237",
+    "entry-6311",
+    "entry-654",
+    "entry-6915",
+    "entry-769",
+    "entry-824",
+    "entry-853",
+    "entry-965"
   ],
-  "completed_count": 18,
-  "needs_context_count": 21,
-  "remaining_count": 13
+  "completed_count": 22,
+  "needs_context_count": 30,
+  "remaining_count": 0
 }
