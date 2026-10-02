@@ -10,6 +10,7 @@
   "completed_ids": [
     "entry-248",
     "entry-388",
+    "entry-449",
     "entry-801",
     "entry-1868",
     "entry-2340",
@@ -19,13 +20,11 @@
     "entry-4765",
     "entry-4992",
     "entry-6270",
-    "entry-6402",
     "entry-6629"
   ],
   "needs_context_ids": [
     "entry-212",
     "entry-227",
-    "entry-449",
     "entry-836",
     "entry-871",
     "entry-934",
@@ -62,6 +61,7 @@
     "entry-6141",
     "entry-6200",
     "entry-6340",
+    "entry-6402",
     "entry-7045"
   ],
   "remaining_ids": [],
@@ -71,6 +71,7 @@
     "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-003.jsonl",
     "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-004.jsonl",
     "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-005.jsonl",
-    "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-006.jsonl"
+    "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-006.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-007-amendments.jsonl"
   ]
 }
