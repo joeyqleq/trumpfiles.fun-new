@@ -1,0 +1,28 @@
+{
+  "wave": "second-writing-wave-2026-10-02",
+  "worker": "03",
+  "assignment_count": 9,
+  "assigned_ids": [
+    "entry-1174",
+    "entry-1740",
+    "entry-1884",
+    "entry-2619",
+    "entry-2929",
+    "entry-4009",
+    "entry-4308",
+    "entry-5491",
+    "entry-7"
+  ],
+  "batches": [
+    "outputs/worker-03-batch-001.jsonl"
+  ],
+  "completed_ids": [],
+  "needs_context_ids": [
+    "entry-1174",
+    "entry-1740",
+    "entry-1884"
+  ],
+  "completed": 0,
+  "needs_context": 3,
+  "remaining": 6
+}
