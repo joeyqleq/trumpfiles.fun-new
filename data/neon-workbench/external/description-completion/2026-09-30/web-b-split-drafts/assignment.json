@@ -1,0 +1,83 @@
+{
+  "source_branch": "codex/description-results-2026-09-30",
+  "source_path": "data/neon-workbench/external/description-completion/2026-09-30/held.jsonl",
+  "source_blob_sha": "e4a4a9d27f9a031bf5b8b25304bb23de1c8f0379",
+  "selection": "reason === \"split_required\"",
+  "sort": "record_id ascending lexical",
+  "parent_count": 32,
+  "workers": 6,
+  "model": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "batches": [
+    {
+      "batch_id": "batch-01",
+      "record_ids": [
+        "entry-4239",
+        "entry-4240",
+        "entry-4407",
+        "entry-4457",
+        "entry-4577",
+        "entry-4696"
+      ]
+    },
+    {
+      "batch_id": "batch-02",
+      "record_ids": [
+        "entry-4708",
+        "entry-4739",
+        "entry-4753",
+        "entry-4906",
+        "entry-5161",
+        "entry-5189"
+      ]
+    },
+    {
+      "batch_id": "batch-03",
+      "record_ids": [
+        "entry-5190",
+        "entry-5191",
+        "entry-5207",
+        "entry-5213",
+        "entry-5224"
+      ]
+    },
+    {
+      "batch_id": "batch-04",
+      "record_ids": [
+        "entry-5237",
+        "entry-5344",
+        "entry-5512",
+        "entry-5752",
+        "entry-5754"
+      ]
+    },
+    {
+      "batch_id": "batch-05",
+      "record_ids": [
+        "entry-5814",
+        "entry-5816",
+        "entry-5832",
+        "entry-6414",
+        "entry-6424"
+      ]
+    },
+    {
+      "batch_id": "batch-06",
+      "record_ids": [
+        "entry-6428",
+        "entry-6443",
+        "entry-6456",
+        "entry-6479",
+        "entry-6749"
+      ]
+    }
+  ],
+  "output_schema": {
+    "parent_record_id": "exact original ID",
+    "status": "split_drafted or unresolved",
+    "children": "drafted events only, provisional child IDs; no database entry numbers",
+    "unresolved_components": "precise supplied-evidence limitations",
+    "checkpoint": "completed parent ID"
+  },
+  "rules": "Supplied evidence only; no web research or scoring. Child medium45–90 words, long140–300 words; no padding or invention. Partial support must have explicit unresolved components. One immutable file per parent constitutes append-only stream."
+}
