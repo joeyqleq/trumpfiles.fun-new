@@ -7,10 +7,10 @@
   "pr31_accepted_index": "8682e01ae2ec49cf0c06f6f304a75588b4a05283",
   "pr32_validated_proposal_index": "5acf025ac7262eba67a93031339c5874ba22f045",
   "assigned_count": 53,
-  "processed_count": 30,
-  "complete_count": 15,
-  "needs_context_count": 15,
-  "remaining_count": 23,
+  "processed_count": 40,
+  "complete_count": 16,
+  "needs_context_count": 24,
+  "remaining_count": 13,
   "complete_ids": [
     "entry-1000",
     "entry-1299",
@@ -26,7 +26,8 @@
     "entry-2818",
     "entry-3088",
     "entry-359",
-    "entry-3809"
+    "entry-3809",
+    "entry-3985"
   ],
   "needs_context_ids": [
     "entry-1444",
@@ -43,11 +44,21 @@
     "entry-3369",
     "entry-3444",
     "entry-37",
-    "entry-3873"
+    "entry-3873",
+    "entry-425",
+    "entry-444",
+    "entry-4586",
+    "entry-470",
+    "entry-4897",
+    "entry-517",
+    "entry-53",
+    "entry-5488",
+    "entry-57"
   ],
   "batches": [
     "worker-01-batch-001.jsonl",
     "worker-01-batch-002.jsonl",
-    "worker-01-batch-003.jsonl"
+    "worker-01-batch-003.jsonl",
+    "worker-01-batch-004.jsonl"
   ]
 }
