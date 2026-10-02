@@ -63,14 +63,21 @@
     "entry-989"
   ],
   "batches": [
-    "score-outputs/worker-03-score-followup-539c34b-batch-001.jsonl"
+    "score-outputs/worker-03-score-followup-539c34b-batch-001.jsonl",
+    "score-outputs/worker-03-score-followup-539c34b-batch-002.jsonl"
   ],
   "scored_ids": [
     "entry-1205",
     "entry-1479",
     "entry-156",
     "entry-1581",
-    "entry-1629"
+    "entry-1629",
+    "entry-1696",
+    "entry-1751",
+    "entry-1784",
+    "entry-2081",
+    "entry-2422",
+    "entry-2730"
   ],
   "deferred_ids": [
     "entry-1022",
@@ -82,9 +89,18 @@
     "entry-1542",
     "entry-1607",
     "entry-1649",
-    "entry-1666"
+    "entry-1666",
+    "entry-1722",
+    "entry-1767",
+    "entry-195",
+    "entry-220",
+    "entry-232",
+    "entry-2363",
+    "entry-2476",
+    "entry-2545",
+    "entry-2615"
   ],
-  "scored": 5,
-  "deferred": 10,
-  "remaining": 42
+  "scored": 11,
+  "deferred": 19,
+  "remaining": 27
 }
