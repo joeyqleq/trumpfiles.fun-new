@@ -51,25 +51,25 @@
     "entry-3468",
     "entry-3687",
     "entry-3838",
-    "entry-3972"
+    "entry-3972",
+    "entry-4568",
+    "entry-5017",
+    "entry-5517",
+    "entry-568"
   ],
   "needs_context_ids": [
     "entry-1726",
     "entry-2328",
     "entry-2442",
     "entry-2501",
-    "entry-2615"
-  ],
-  "remaining_ids": [
+    "entry-2615",
     "entry-4054",
     "entry-426",
-    "entry-4568",
-    "entry-5017",
     "entry-5403",
-    "entry-5517",
-    "entry-568",
     "entry-6072",
-    "entry-6202",
+    "entry-6202"
+  ],
+  "remaining_ids": [
     "entry-6294",
     "entry-6395",
     "entry-6795",
@@ -80,9 +80,9 @@
   ],
   "counts": {
     "assigned": 34,
-    "complete": 13,
-    "needs_context": 5,
-    "remaining": 16
+    "complete": 17,
+    "needs_context": 10,
+    "remaining": 7
   },
-  "latest_output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-lightsprint/outputs/worker-11-final-context-batch-002.jsonl"
+  "latest_output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-lightsprint/outputs/worker-11-final-context-batch-003.jsonl"
 }
