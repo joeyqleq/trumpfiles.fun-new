@@ -1,0 +1,15 @@
+{
+  "url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+  "discovered_via": "https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js",
+  "landing_page": "https://apnews.com/projects/trump-campaign-promise-tracker/",
+  "retrieved_at": "2026-10-02T23:18:45.181727+00:00",
+  "sha256": "734639f80c3d35a7f2e6f472a14d4130cc73553975793ad814f68f5f6957ee0f",
+  "data_lastModified": "Wed, 03 Dec 2025 21:51:19 GMT",
+  "promise_count": 25,
+  "status_counts": {
+    "Kept": 5,
+    "In progress": 9,
+    "It's complicated": 11
+  },
+  "limitation": "Current retrieved dataset with declared lastModified timestamp; not a verified February/March 2026 archived snapshot. Status labels are AP ratings, not proof of outcomes or category-level causation."
+}

@@ -1,0 +1,5 @@
+{
+  "anomaly": "Jan. 6 clemency fulfillment date field reads Jan. 6, 2025, conflicting with the primary January 20, 2025 instrument.",
+  "source_url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+  "action": "Preserve retrieved source bytes. Correct derived description dates through append-only review patches; do not treat the payload as authoritative over the underlying action."
+}

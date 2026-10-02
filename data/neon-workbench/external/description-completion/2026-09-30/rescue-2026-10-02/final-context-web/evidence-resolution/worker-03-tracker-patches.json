@@ -1,0 +1,146 @@
+[
+  {
+    "record_id": "entry-1443",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "Whether the cited entries can establish all current Trump immigration and trade performance or a deliberate public presentation of selected wins.",
+    "supported_facts": [
+      "AP data file timestamped Dec. 3, 2025; 25 promise entries total.",
+      "Five Immigration rows: deportation and Gaza refugee admission promises marked In progress; birthright citizenship, student-visa revocations, and ideological screening marked It’s complicated.",
+      "One Tariffs row: tariff promise marked It’s complicated."
+    ],
+    "remaining_uncertainties": [
+      "Not a complete account of all administration policies or all campaign promises.",
+      "The available data timestamp is Dec. 3, 2025; it does not establish February/March 2026 status.",
+      "Tracker labels do not establish a selective public messaging pattern or total policy impact."
+    ],
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/",
+      "https://apnews.com/hub/immigration",
+      "https://apnews.com/article/supreme-court-immigration-trump-birthright-citizenship-83f70d58636219c0ff98c7d765ab2b4d",
+      "https://apnews.com/article/refugees-flights-trump-immigration-border-resettlement-33ebaa34bc4d0c069a22ee7aa5f8ff6d",
+      "https://apnews.com/article/marco-rubio-palestinian-demonstrations-universities-24561e3ee9031aad5a83b09925efd674",
+      "https://apnews.com/article/immigration-border-trump-afghan-asylum-refugee-9f3a804633729b8c258d5c6eccd3424c",
+      "https://apnews.com/hub/tariffs"
+    ],
+    "search_attempts": [
+      {
+        "provider": "AP interactive data retrieval",
+        "query": "Fetched the JavaScript-loaded URL discovered in https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js: https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Retrieved 25 promise rows; data lastModified Wed, 03 Dec 2025 21:51:19 GMT; counts: 5 Kept, 9 In progress, 11 It’s complicated."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com \"largest deportation program\" \"promise tracker\" Trump in progress",
+        "result": "Returned AP immigration coverage, not a second version of the tracker snapshot."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com Trump tracker birthright citizenship refugee flights ideological screening student visas status AP promises",
+        "result": "Found related AP articles and the particular linked reporting URLs attached in the tracker dataset."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com AP tracker \"Tariff the hell out of countries\" promise tracker",
+        "result": "No separate dated tracker table surfaced; tariff row and label verified in AP interactive JSON."
+      }
+    ],
+    "proposed_title": "AP’s December 2025 Tracker Rated Five Immigration Promises and One Tariff Pledge as In Progress or Complicated",
+    "description_medium": "AP’s tracker data last modified Dec. 3, 2025, listed five selected immigration promises: two as “In progress” and three as “It’s complicated.” The five included mass deportation, limiting Gaza refugee admissions, ending birthright citizenship, revoking some student visas and ideological screening. Its separate tariff pledge was also marked “It’s complicated.”",
+    "description_long": "The Associated Press tracker’s retrieved data file was last modified Dec. 3, 2025. In its immigration category, the file listed five selected campaign promises. It rated a mass deportation program and barring a large influx of refugees from Gaza “In progress.” It rated ending birthright citizenship, revoking student visas for certain pro-Palestinian protesters and introducing ideological screening for immigrants “It’s complicated.” The trade-related category contained one tariff pledge, Trump’s promise to impose tariffs on countries he said had taken advantage of the United States; AP also marked that item “It’s complicated.” Thus, all six of these selected immigration and tariff entries carried one of the tracker’s two non-final labels in this dated data. The underlying file contained 25 promises overall. These are AP’s labels for selected individual pledges, not a complete inventory of the administration’s immigration or trade policies, a measure of their overall implementation, or a finding about how Trump presented his record. The snapshot does not establish a later February or March 2026 status."
+  },
+  {
+    "record_id": "entry-1444",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "Whether the cited entries can establish all current Trump immigration and trade performance or a deliberate public presentation of selected wins.",
+    "supported_facts": [
+      "25 rows in the data file; 5 Kept, 9 In progress, 11 It’s complicated.",
+      "File data last modified Dec. 3, 2025.",
+      "Rows are selected campaign pledges across multiple policy categories."
+    ],
+    "remaining_uncertainties": [
+      "No particular speech or public statement is identified for a comparison of emphasis.",
+      "This is not a verified February/March 2026 snapshot.",
+      "The status distribution is AP’s rating of selected entries, not a full implementation metric."
+    ],
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/"
+    ],
+    "search_attempts": [
+      {
+        "provider": "AP interactive data retrieval",
+        "query": "Fetched the JavaScript-loaded URL discovered in https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js: https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Retrieved 25 promise rows; data lastModified Wed, 03 Dec 2025 21:51:19 GMT; counts: 5 Kept, 9 In progress, 11 It’s complicated."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com \"largest deportation program\" \"promise tracker\" Trump in progress",
+        "result": "Returned AP immigration coverage, not a second version of the tracker snapshot."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com Trump tracker birthright citizenship refugee flights ideological screening student visas status AP promises",
+        "result": "Found related AP articles and the particular linked reporting URLs attached in the tracker dataset."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com AP tracker \"Tariff the hell out of countries\" promise tracker",
+        "result": "No separate dated tracker table surfaced; tariff row and label verified in AP interactive JSON."
+      }
+    ],
+    "proposed_title": "AP’s December 2025 Promise Tracker Listed Five Kept and Twenty Other Statuses",
+    "description_medium": "The AP tracker’s 25 selected promises were labeled 5 “Kept,” 9 “In progress” and 11 “It’s complicated” in data last modified Dec. 3, 2025. That snapshot shows the tracker’s status balance, but contains no comparison to a specific Trump speech or claim of selective emphasis.",
+    "description_long": "A data file loaded by the Associated Press presidential-promise tracker lists 25 selected campaign promises and carries a last-modified timestamp of Dec. 3, 2025. AP labeled five promises “Kept,” nine “In progress” and 11 “It’s complicated.” The categories cover issues including immigration, education, energy, foreign policy, government, health care, taxes and tariffs. The tracker attaches reporting links to individual promises and, for some items, executive actions or other policy documents. On this dated snapshot, 20 of the 25 listed promises were not labeled “Kept”; nine remained in progress and 11 were placed in the more qualified “It’s complicated” category. These counts describe AP’s selected tracker entries and ratings at that timestamp. They do not show which promises Trump chose to emphasize in a particular speech, establish that his public account relied on selective wins, or provide a comprehensive measure of administration performance. The available file also does not provide a verified February or March 2026 snapshot, so the figures should not be treated as current for those later dates."
+  },
+  {
+    "record_id": "entry-1445",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_fact": "Whether the cited entries can establish all current Trump immigration and trade performance or a deliberate public presentation of selected wins.",
+    "supported_facts": [
+      "AP interactive dataset contains 25 rows with promise, category and status fields.",
+      "Status counts are 5 Kept, 9 In progress, and 11 It’s complicated.",
+      "Dataset last modified Dec. 3, 2025."
+    ],
+    "remaining_uncertainties": [
+      "No independent throughput metric or method comparing campaign certainty to implementation is supplied.",
+      "No later 2026 tracker snapshot was verified.",
+      "The dataset does not establish a selective delivery narrative."
+    ],
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/"
+    ],
+    "search_attempts": [
+      {
+        "provider": "AP interactive data retrieval",
+        "query": "Fetched the JavaScript-loaded URL discovered in https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js: https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Retrieved 25 promise rows; data lastModified Wed, 03 Dec 2025 21:51:19 GMT; counts: 5 Kept, 9 In progress, 11 It’s complicated."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com \"largest deportation program\" \"promise tracker\" Trump in progress",
+        "result": "Returned AP immigration coverage, not a second version of the tracker snapshot."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com Trump tracker birthright citizenship refugee flights ideological screening student visas status AP promises",
+        "result": "Found related AP articles and the particular linked reporting URLs attached in the tracker dataset."
+      },
+      {
+        "provider": "system2_search_query",
+        "query": "site:apnews.com AP tracker \"Tariff the hell out of countries\" promise tracker",
+        "result": "No separate dated tracker table surfaced; tariff row and label verified in AP interactive JSON."
+      }
+    ],
+    "proposed_title": "AP’s Tracker Categorized 25 Selected Trump Campaign Promises by Status",
+    "description_medium": "AP’s tracker data last modified Dec. 3, 2025, covered 25 selected campaign promises. It labeled five “Kept,” nine “In progress” and 11 “It’s complicated.” The file supports a dated count of AP’s categories, but not a separate measure of campaign certainty versus governing throughput. The snapshot covers only the promises AP selected for tracking.",
+    "description_long": "The Associated Press tracker data retrieved for this review contains 25 selected promises from Donald Trump’s 2024 campaign. The dataset’s last-modified field is Dec. 3, 2025. AP assigned five entries the label “Kept,” nine “In progress” and 11 “It’s complicated.” Individual rows identify the promise, its policy category and a status; many include links to related AP reporting, and some link to executive actions or other government materials. The dataset therefore provides a dated accounting of how AP categorized those particular promises at that time. It does not supply a single quantitative measure called governing throughput, explain a broad method for comparing campaign certainty with implementation pace, or establish a current status after December 2025. Nor does a count of tracker labels show that Trump’s public delivery narrative depended on selected wins. A defensible description can report the tracker’s scope, timestamp and category totals, while treating the labels as AP’s status ratings rather than a comprehensive score of presidential performance."
+  }
+]

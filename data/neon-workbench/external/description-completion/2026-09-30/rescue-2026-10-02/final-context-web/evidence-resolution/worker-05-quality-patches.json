@@ -1,0 +1,24 @@
+[
+  {
+    "record_id": "entry-1594",
+    "proposed_title": "AP Promise Dataset Lists Different Statuses for Paris, Energy and Education Pledges",
+    "description_long": "The AP interactive promise tracker presents campaign commitments alongside progress labels. Its retrieved promises data file carries a last-modified timestamp of December 3, 2025, and contains 25 entries: five marked “Kept,” nine “In progress” and 11 “It’s complicated.” The rows pair named promises with their AP-assigned status and method. For example, the promise to withdraw the United States from the Paris Agreement is marked “Kept,” with January 20, 2025, listed as its fulfillment date. The promise to cut energy prices in half is marked “It’s complicated,” while closing the Education Department is marked “In progress.” AP’s companion video describes the project as tracking promises that have been kept, stalled or remain in progress. These records show how AP organized three specific pledges in the dated data file. They do not demonstrate that the tracker changed public discussion, made a promise more contestable, or affected Trump’s messaging; the file also cannot establish a March 4, 2026 status view.",
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/",
+      "https://apnews.com/video/which-promises-has-trump-actually-kept-7c1801a12dbc49909768e6c9ec66bbc8",
+      "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+      "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d",
+      "https://apnews.com/hub/us-department-of-education"
+    ],
+    "evidence_notes": "The AP JSON data file records lastModified Wed, 03 Dec 2025 21:51:19 GMT, 25 rows, and status counts 5 Kept, 9 In progress, 11 It’s complicated. It specifically marks the Paris Agreement withdrawal promise Kept (fulfilled Jan. 20, 2025), halving energy prices It’s complicated, and closing the Education Department In progress. The AP video excerpt says AP tracks what has been kept, stalled and in progress. AP coverage linked from the dataset confirms the Paris withdrawal order; the tracker’s status labels remain AP classifications.",
+    "editorial_notes": "This supplies a substantive dated snapshot with named comparisons. It does not claim that AP changed the public record, Trump’s messaging, or audience debate; no such effect is evidenced.",
+    "search_attempts": [
+      "Exa web search for “AP Trump campaign promise tracker 25 promises 5 kept 9 in progress 11 complicated last updated December 2025 Paris agreement energy prices Social Security” surfaced the AP page, AP video, an archived AP tracker page and linked AP reporting.",
+      "Exa web search for site:apnews.com/article plus “Cut energy prices in half” and “Paris Agreement” returned AP reporting on the Paris withdrawal and utility costs.",
+      "Exa web fetch of AP tracker and video URLs returned the video description: AP tracks what has been kept, stalled and in progress. AP tracker page shell itself returned only its title; named status data comes from the retrieved promises.json file."
+    ],
+    "resolution_kind": "narrowed_correction",
+    "resolved": true
+  }
+]

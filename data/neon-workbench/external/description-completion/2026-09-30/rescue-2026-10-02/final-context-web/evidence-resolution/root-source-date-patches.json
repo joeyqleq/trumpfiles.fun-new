@@ -1,0 +1,132 @@
+[
+  {
+    "record_id": "entry-1591",
+    "description_long": "A retrieved Associated Press promise-tracker data file lists 25 campaign promises and carries a last-modified timestamp of December 3, 2025. Its status counts are five “Kept,” nine “In progress” and 11 “It’s complicated.” The specific entries include the promise to grant pardons related to the January 6, 2021, Capitol attack, listed as kept with a January 20, 2025 fulfillment date, and the promise to close the Education Department, listed as in progress. AP’s related video explains that the project tracks what has been kept, stalled or remains in progress; the data itself also uses an “It’s complicated” label. This is a dated and countable record of how the AP tracker organized selected promises. It does not show a March 4, 2026 view, demonstrate continuing exposure after December 2025, or document a statement that the tracker constrained. The linked presidential action confirms the January 20, 2025 clemency date; the dataset’s conflicting date field should not be used as the event date.",
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/projects/trump-campaign-promise-tracker/",
+      "https://apnews.com/video/which-promises-has-trump-actually-kept-7c1801a12dbc49909768e6c9ec66bbc8",
+      "https://apnews.com/article/capitol-jan-6-pardons-trump-justice-department-8ce8b2a8f8cb602d5eaf85ac7b96960",
+      "https://apnews.com/hub/us-department-of-education",
+      "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/"
+    ],
+    "editorial_notes": "Removes the unsupported persistence/March 4 snapshot and claim that the tracker constrained messaging. Narrows to AP’s specific December 2025 status display. Source-data quality correction: AP payload lists January 6, 2025 for clemency fulfillment, but the linked presidential action is dated January 20, 2025. Use the primary action date; preserve raw payload separately.",
+    "search_attempts": [
+      {
+        "provider": "Exa web search",
+        "query": "AP Trump campaign promise tracker 25 promises 5 kept 9 in progress 11 complicated last updated December 2025 Paris agreement energy prices Social Security",
+        "result": "Found AP tracker landing page, its Dec. 23 video, an archive.ph capture of tracker text last updated July 7, AP stories on energy prices and Paris withdrawal, and unrelated trackers. The landing page alone did not expose the rows."
+      },
+      {
+        "provider": "Exa web search",
+        "query": "site:apnews.com/article \"Tracking Trump's presidential promises\" \"Cut energy prices in half\" \"Paris Agreement\" AP tracker",
+        "result": "Found AP stories documenting the Jan. 20, 2025 Paris withdrawal order and Nov. 2025 utility-bill/energy-price analysis; search did not return March 2026 tracker snapshot."
+      },
+      {
+        "provider": "Exa web fetch",
+        "urls": [
+          "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+          "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d",
+          "https://apnews.com/article/refugees-flights-trump-immigration-border-resettlement-33ebaa34bc4d0c069a22ee7aa5f8ff6d",
+          "https://apnews.com/article/retirement-social-security-trump-bessent-0be15d5f1285cd1b774a8f5c59167b90"
+        ],
+        "result": "Fetched AP status-linked coverage for Paris withdrawal, energy prices, Gaza/refugee admissions and Social Security. AP Paris story confirms order signed Jan. 20; energy article reports rising past-due utility balances and bills. Other pages were truncated to headlines/opening text."
+      },
+      {
+        "provider": "root search-service source open",
+        "query_or_url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+        "result": "Opened presidential action; heading and instrument date are January 20, 2025."
+      }
+    ],
+    "supported_facts": [
+      "AP’s promise-tracker project exists; its companion video identifies kept, stalled and in-progress as tracked states.",
+      "The primary presidential action dates the January 6 clemency to January 20, 2025; raw AP data contains an inconsistent date."
+    ]
+  },
+  {
+    "record_id": "entry-1621",
+    "description_long": "The Associated Press tracker’s retrieved data file contains 25 campaign promises and declares a last-modified date of December 3, 2025. Its labels divide the list into five promises rated Kept, nine rated In progress and eleven rated It’s complicated. Individual examples include the Jan. 6 pardons promise, marked Kept with a fulfillment date of January 20, 2025; closing the Education Department, marked In progress; and cutting money to schools with vaccine or mask mandates, marked It’s complicated. The tracker records AP’s assessment and links to coverage or source documents for individual promises. The saved dataset is a dated snapshot and does not verify a later February or March 2026 status. Its mixed ratings support a factual account of AP’s public tracking, but do not show that the ledger exerted continuing pressure on Trump, made his statements more transparent, or constrained rhetorical change. The linked presidential action establishes January 20, 2025 as the clemency date, despite a conflicting date field in the tracker payload.",
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://apnews.com/article/capitol-jan-6-pardons-trump-justice-department-8ce8b2a8f8cb602d5eaf85ac7b96960",
+      "https://apnews.com/hub/us-department-of-education",
+      "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/"
+    ],
+    "editorial_notes": " Source-data quality correction: AP payload lists January 6, 2025 for clemency fulfillment, but the linked presidential action is dated January 20, 2025. Use the primary action date; preserve raw payload separately.",
+    "search_attempts": [
+      {
+        "provider": "web search (system2)",
+        "query": "AP promise tracker \"last updated\" \"December 3, 2025\" Trump 25 promises",
+        "result": "Search did not index tracker JSON; used retrieved AP JSON source file and its declared lastModified metadata."
+      },
+      {
+        "provider": "direct source inspection",
+        "url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Inspected saved retrieved AP JSON; 25 promises, status counts Kept 5 / In progress 9 / It’s complicated 11; lastModified Wed, 03 Dec 2025 21:51:19 GMT."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/article/capitol-jan-6-pardons-trump-justice-department-8ce8b2a8f8cb602d5eaf85ac7b96960",
+        "result": "Listed as the Jan. 6 tracker row status_link; source was included to expose the row’s linked explanation."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/hub/us-department-of-education",
+        "result": "Listed as the Education Department tracker status_link; general AP hub, not an archived tracker status."
+      },
+      {
+        "provider": "root search-service source open",
+        "query_or_url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+        "result": "Opened presidential action; heading and instrument date are January 20, 2025."
+      }
+    ],
+    "supported_facts": [
+      "The tracker contains 25 promises and reports 5 Kept, 9 In progress, and 11 It’s complicated.",
+      "The Jan. 6 promise is Kept; closing the Education Department is In progress; school funding for vaccine/mask mandates is It’s complicated.",
+      "The primary presidential action dates the January 6 clemency to January 20, 2025; raw AP data contains an inconsistent date."
+    ]
+  },
+  {
+    "record_id": "entry-1623",
+    "description_long": "AP’s campaign-promise tracker organized pledges across policy areas and assigned status labels to individual items. In the retrieved file, last modified December 3, 2025, the promise to pardon some people convicted or charged in the Jan. 6 attack was marked Kept, with a fulfillment date of January 20, 2025. The promise to close the Department of Education was marked In progress. A separate pledge to cut money to schools with vaccine or mask mandates was marked It’s complicated. The examples show the tracker’s use of different ratings across policy topics, rather than a single overall verdict. AP links the entries to related reporting or source documents, including the presidential action on pardons and its coverage of Trump’s call to withhold school funding. The dataset is not a verified snapshot for March 2026, and these separate AP ratings do not alone prove or disprove a distinct claim that Trump made about uniform success. They support a description of the tracker’s cross-topic status view, while the original title’s claim about a particular fragile success assertion remains unspecified. The linked presidential action confirms the actual clemency date as January 20, 2025; the tracker payload’s contradictory date field is a source-data error.",
+    "source_urls": [
+      "https://interactives.ap.org/trump-promise-tracker/promises.json",
+      "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+      "https://apnews.com/article/covid-vaccine-mandate-ee3bcd198dec8e6cf61546f2bbe688bf",
+      "https://apnews.com/hub/us-department-of-education"
+    ],
+    "editorial_notes": " Source-data quality correction: AP payload lists January 6, 2025 for clemency fulfillment, but the linked presidential action is dated January 20, 2025. Use the primary action date; preserve raw payload separately.",
+    "search_attempts": [
+      {
+        "provider": "direct source inspection",
+        "url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Inspected tracker rows in retrieved data: Jan. 6 pardons = Kept (fulfilled Jan. 6, 2025); close Education Department = In progress; vaccine/mask mandate school-funding pledge = It’s complicated."
+      },
+      {
+        "provider": "open",
+        "url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+        "result": "Official White House action cited by AP tracker as the method for the Jan. 6 promise."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/article/covid-vaccine-mandate-ee3bcd198dec8e6cf61546f2bbe688bf",
+        "result": "AP report on Trump’s school-funding/vaccine-mandate announcement, linked by relevant tracker row; article headline confirmed."
+      },
+      {
+        "provider": "open",
+        "url": "https://apnews.com/hub/us-department-of-education",
+        "result": "The Education Department status link resolves to an AP topic hub, not a dated rating history."
+      },
+      {
+        "provider": "root search-service source open",
+        "query_or_url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+        "result": "Opened presidential action; heading and instrument date are January 20, 2025."
+      }
+    ],
+    "supported_facts": [
+      "The tracker assigns different ratings across Jan. 6 clemency, education and school vaccine/mask policy promises.",
+      "The dataset’s lastModified field is December 3, 2025.",
+      "The primary presidential action dates the January 6 clemency to January 20, 2025; raw AP data contains an inconsistent date."
+    ]
+  }
+]
