@@ -1,0 +1,28 @@
+{
+  "worker": "worker-05-handoff-01",
+  "resume_assignment": "handoff-assignment-20261002-03.json",
+  "batch_number": 1,
+  "batch_commit_sha": "e5766cd87f9117e69a4549ecdfb2e5fe5f56a45e",
+  "assigned_total": 10,
+  "cumulative_resumed_terminal_ids": [
+    "entry-6239",
+    "entry-6245",
+    "entry-6264",
+    "entry-6273",
+    "entry-6279"
+  ],
+  "remaining_ids": [
+    "entry-6284",
+    "entry-6293",
+    "entry-6298",
+    "entry-6311",
+    "entry-6318"
+  ],
+  "counts": {
+    "cumulative_terminal": 5,
+    "remaining": 5,
+    "repaired": 4,
+    "supported_partial": 1,
+    "unresolved": 0
+  }
+}
