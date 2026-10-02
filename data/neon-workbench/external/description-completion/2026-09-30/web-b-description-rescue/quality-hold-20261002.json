@@ -1,0 +1,562 @@
+{
+  "quality_hold_date": "2026-10-02",
+  "scope": "Only defective current resume batches; prior314 accepted terminal records remain unchanged.",
+  "held_proposals": [
+    {
+      "record_id": "entry-1394",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1396",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1400",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1407",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1412",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1415",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1418",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1420",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1428",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1435",
+      "file": "worker-01/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1443",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1445",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1448",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1452",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1457",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1459",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1461",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1467",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1471",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-1473",
+      "file": "worker-01/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-231",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-2321",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-2328",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-2330",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-2332",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-2340",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-2343",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-2349",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-2355",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-236",
+      "file": "worker-02/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-5661",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-5668",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-568",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-5698",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-57",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-5707",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-5726",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-5762",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-5779",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-5783",
+      "file": "worker-05/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-732",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-735",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-738",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-743",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-754",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-760",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-766",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-772",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-774",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-776",
+      "file": "worker-06/resume-20261002-batch-001.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-788",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-797",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-801",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-804",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-811",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-814",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-817",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-820",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-822",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-824",
+      "file": "worker-06/resume-20261002-batch-002.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-826",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-830",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-833",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-836",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-838",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-842",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-844",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-846",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-850",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-852",
+      "file": "worker-06/resume-20261002-batch-003.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-854",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-856",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-858",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-860",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-865",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-868",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-871",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-873",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-878",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-881",
+      "file": "worker-06/resume-20261002-batch-004.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-884",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-889",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-893",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-896",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-903",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-908",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-91",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-912",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-916",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-920",
+      "file": "worker-06/resume-20261002-batch-005.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-927",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-929",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-934",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-939",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-945",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-948",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-954",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-959",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-962",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-965",
+      "file": "worker-06/resume-20261002-batch-006.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-969",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-973",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-978",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-985",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-989",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-990",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-993",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "entry-996",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "expanded-20260821-visa75-court",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "expanded-20260921-garces-detention-conference",
+      "file": "worker-06/resume-20261002-batch-007.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    },
+    {
+      "record_id": "fresh-20260914-oge-trump-ptr",
+      "file": "worker-06/resume-20261002-batch-008.jsonl",
+      "reason": "Current resume output contains insufficient source recovery, generic/placeholder prose, or unfinished generated text; excluded until source-backed superseding proposal passes review."
+    }
+  ],
+  "release_rule": "A source-backed explicit superseding proposal at a new file location replaces the held proposal. Root reviews recovery batches; IDs are not accepted as terminal while original held location remains current."
+}
