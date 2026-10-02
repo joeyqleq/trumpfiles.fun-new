@@ -50,7 +50,12 @@
     "entry-344",
     "entry-3654",
     "entry-3809",
-    "entry-3911"
+    "entry-3911",
+    "entry-4843",
+    "entry-5334",
+    "entry-6160",
+    "entry-6358",
+    "entry-6652"
   ],
   "needs_context_ids": [
     "entry-196",
@@ -59,19 +64,14 @@
     "entry-2496",
     "entry-3009",
     "entry-4040",
-    "entry-4232"
-  ],
-  "remaining_ids": [
+    "entry-4232",
     "entry-4353",
-    "entry-4843",
-    "entry-5334",
     "entry-5488",
     "entry-5605",
     "entry-5966",
-    "entry-6160",
-    "entry-6279",
-    "entry-6358",
-    "entry-6652",
+    "entry-6279"
+  ],
+  "remaining_ids": [
     "entry-7074",
     "entry-801",
     "entry-842",
@@ -80,8 +80,8 @@
   ],
   "counts": {
     "assigned": 35,
-    "completed": 13,
-    "needs_context": 7,
-    "remaining": 15
+    "completed": 18,
+    "needs_context": 12,
+    "remaining": 5
   }
 }
