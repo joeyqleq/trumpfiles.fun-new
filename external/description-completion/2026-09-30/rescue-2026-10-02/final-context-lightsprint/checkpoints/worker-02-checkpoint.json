@@ -32,7 +32,12 @@
     "entry-6138",
     "entry-6235",
     "entry-6320",
-    "entry-643"
+    "entry-643",
+    "entry-6991",
+    "entry-766",
+    "entry-824",
+    "entry-868",
+    "entry-954"
   ],
   "complete_ids": [
     "entry-1857",
@@ -66,7 +71,12 @@
     "entry-5433",
     "entry-5559",
     "entry-5707",
-    "entry-643"
+    "entry-643",
+    "entry-6991",
+    "entry-766",
+    "entry-824",
+    "entry-868",
+    "entry-954"
   ],
   "batches": [
     {
@@ -127,6 +137,16 @@
         "entry-6235",
         "entry-6320",
         "entry-643"
+      ]
+    },
+    {
+      "file": "worker-02-batch-007.jsonl",
+      "ids": [
+        "entry-6991",
+        "entry-766",
+        "entry-824",
+        "entry-868",
+        "entry-954"
       ]
     }
   ]
