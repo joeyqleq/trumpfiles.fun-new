@@ -4,13 +4,17 @@
   "input_commit": "e95178ad5ca0de630c007c46523c19e40d37d54f",
   "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
   "batches": [
-    "outputs/worker-09-batch-001.jsonl"
+    "outputs/worker-09-batch-001.jsonl",
+    "outputs/worker-09-batch-002.jsonl"
   ],
   "completed_ids": [
     "entry-1467",
     "entry-1512",
     "entry-1557",
-    "entry-1628"
+    "entry-1628",
+    "entry-2355",
+    "entry-2444",
+    "entry-2563"
   ],
   "needs_context_ids": [
     "entry-1284",
@@ -18,12 +22,19 @@
     "entry-1428",
     "entry-1595",
     "entry-1662",
-    "entry-1708"
+    "entry-1708",
+    "entry-1777",
+    "entry-2057",
+    "entry-216",
+    "entry-231",
+    "entry-2401",
+    "entry-2498",
+    "entry-253"
   ],
   "counts": {
     "assigned": 52,
-    "complete": 4,
-    "needs_context": 6,
-    "remaining": 42
+    "complete": 7,
+    "needs_context": 13,
+    "remaining": 32
   }
 }
