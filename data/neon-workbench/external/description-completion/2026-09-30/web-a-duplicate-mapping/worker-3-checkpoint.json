@@ -1,0 +1,23 @@
+{
+  "worker": "worker-3",
+  "assigned_ids": [
+    "entry-7075",
+    "entry-7085",
+    "entry-7086",
+    "entry-7087",
+    "entry-7089",
+    "entry-7094",
+    "entry-7095",
+    "entry-7101",
+    "entry-7110",
+    "entry-7111"
+  ],
+  "completed": 0,
+  "needs_context": 0,
+  "blocked": 10,
+  "remaining": 0,
+  "terminal": true,
+  "checkpoint_note": "All assigned IDs have explicit evidence-based blockers: duplicate source records and surviving-entry mapping are not present in the repository tree; held.jsonl contains classification metadata only and merged/descriptions.jsonl excludes all held duplicate IDs.",
+  "evidence_branch": "codex/description-results-2026-09-30",
+  "output_file": "worker-3-proposals.jsonl"
+}

@@ -1,0 +1,23 @@
+{
+  "worker": "worker-5",
+  "assigned_ids": [
+    "entry-7132",
+    "entry-7133",
+    "entry-7137",
+    "entry-7138",
+    "entry-7147",
+    "entry-7153",
+    "entry-7154",
+    "entry-7156",
+    "entry-7158",
+    "entry-7159"
+  ],
+  "completed": 0,
+  "needs_context": 0,
+  "blocked": 10,
+  "remaining": 0,
+  "terminal": true,
+  "checkpoint_note": "Every assigned ID has an explicit evidence-based blocker. The held rows provide classification metadata only; each ID is absent from the 6,944-row merged descriptions file, and the repository tree contains no canonical export or duplicate-to-survivor mapping.",
+  "evidence_branch": "codex/description-results-2026-09-30",
+  "output_file": "worker-5-proposals.jsonl"
+}

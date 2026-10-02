@@ -1,0 +1,33 @@
+{
+  "worker": "worker-6",
+  "assigned_ids": [
+    "entry-7166",
+    "entry-7168",
+    "entry-7176",
+    "entry-7177",
+    "entry-7178",
+    "entry-7179",
+    "entry-7186",
+    "entry-7188",
+    "entry-7195"
+  ],
+  "terminal_counts": {
+    "proposed": 0,
+    "blocked": 9,
+    "remaining": 0
+  },
+  "completed_ids": [],
+  "blocked_ids": [
+    "entry-7166",
+    "entry-7168",
+    "entry-7176",
+    "entry-7177",
+    "entry-7178",
+    "entry-7179",
+    "entry-7186",
+    "entry-7188",
+    "entry-7195"
+  ],
+  "remaining_ids": [],
+  "checkpoint_note": "All assigned IDs have terminal explicit blockers; repository inputs do not include duplicate text, source URLs, or survivor pointers, and no canonical export or mapping was found."
+}

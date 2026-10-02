@@ -1,0 +1,26 @@
+{
+  "worker": "worker-4",
+  "assigned_ids": [
+    "entry-7113",
+    "entry-7115",
+    "entry-7117",
+    "entry-7120",
+    "entry-7121",
+    "entry-7123",
+    "entry-7125",
+    "entry-7126",
+    "entry-7130",
+    "entry-7131"
+  ],
+  "terminal_proposals": 0,
+  "explicit_blockers": 10,
+  "remaining_ids": [],
+  "status": "complete",
+  "note": "All ten assigned IDs have explicit blockers: the held records provide no duplicate content or mapping, and available repository description inputs do not provide these records or a canonical-entry export.",
+  "evidence_paths": [
+    "data/neon-workbench/external/description-completion/2026-09-30/held.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/merged/SNAPSHOT.json",
+    "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/batches/"
+  ]
+}
