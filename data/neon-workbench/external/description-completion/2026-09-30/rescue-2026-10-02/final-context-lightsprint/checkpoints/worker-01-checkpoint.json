@@ -2,7 +2,7 @@
   "phase": "final-context-lightsprint",
   "worker": 1,
   "branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
-  "latest_batch": "worker-01-batch-001.jsonl",
+  "latest_batch": "worker-01-batch-002.jsonl",
   "assigned_count": 35,
   "assigned_ids": [
     "entry-1666",
@@ -41,8 +41,8 @@
     "entry-860",
     "entry-945"
   ],
-  "processed_count": 10,
-  "complete_count": 5,
-  "needs_context_count": 5,
-  "remaining_count": 25
+  "processed_count": 20,
+  "complete_count": 11,
+  "needs_context_count": 9,
+  "remaining_count": 15
 }
