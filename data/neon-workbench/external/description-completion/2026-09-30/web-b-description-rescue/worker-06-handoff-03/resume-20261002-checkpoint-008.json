@@ -1,0 +1,34 @@
+{
+  "checkpoint_batch": "resume-20261002-batch-008.jsonl",
+  "batch_commit_sha": "b6959475b41ced3ea997b8e3ce59f409a680c49d",
+  "cumulative_resumed_terminal_ids": [
+    "entry-929",
+    "entry-934",
+    "entry-939",
+    "entry-945",
+    "entry-948",
+    "entry-954",
+    "entry-959",
+    "entry-962",
+    "entry-965",
+    "entry-969",
+    "entry-973",
+    "entry-978",
+    "entry-985",
+    "entry-989",
+    "entry-990",
+    "entry-993",
+    "entry-996",
+    "expanded-20260821-visa75-court",
+    "expanded-20260921-garces-detention-conference",
+    "fresh-20260914-oge-trump-ptr"
+  ],
+  "remaining_ids": [],
+  "counts": {
+    "resumed_terminal": 20,
+    "repaired": 8,
+    "supported_partial": 12,
+    "unresolved": 0,
+    "remaining": 0
+  }
+}
