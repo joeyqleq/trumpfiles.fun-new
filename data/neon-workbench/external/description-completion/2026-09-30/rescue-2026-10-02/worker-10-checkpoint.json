@@ -1,0 +1,24 @@
+{
+  "worker": 10,
+  "assignment_count": 52,
+  "input_commit": "e95178ad5ca0de630c007c46523c19e40d37d54f",
+  "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
+  "processed_ids": [
+    "entry-1286",
+    "entry-1378",
+    "entry-143",
+    "entry-1471",
+    "entry-1517",
+    "entry-1560",
+    "entry-160",
+    "entry-1632",
+    "entry-1666",
+    "entry-1714",
+    "entry-1779",
+    "entry-2061",
+    "entry-2183"
+  ],
+  "completed": 7,
+  "needs_context": 6,
+  "remaining": 39
+}
