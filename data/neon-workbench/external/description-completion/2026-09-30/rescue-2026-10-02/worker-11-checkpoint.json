@@ -125,7 +125,6 @@
     "entry-3863",
     "entry-3911",
     "entry-4377",
-    "entry-4568",
     "entry-5125",
     "entry-568",
     "entry-5936",
@@ -163,9 +162,27 @@
     "entry-769",
     "entry-824",
     "entry-853",
-    "entry-965"
+    "entry-965",
+    "entry-4568"
   ],
-  "completed_count": 22,
-  "needs_context_count": 30,
-  "remaining_count": 0
+  "completed_count": 21,
+  "needs_context_count": 31,
+  "remaining_count": 0,
+  "revisions": [
+    {
+      "record_id": "entry-4198",
+      "revision": 2,
+      "supersedes_file": "worker-11-batch-003.jsonl"
+    },
+    {
+      "record_id": "entry-5125",
+      "revision": 2,
+      "supersedes_file": "worker-11-batch-003.jsonl"
+    },
+    {
+      "record_id": "entry-4568",
+      "revision": 2,
+      "supersedes_file": "worker-11-batch-003.jsonl"
+    }
+  ]
 }
