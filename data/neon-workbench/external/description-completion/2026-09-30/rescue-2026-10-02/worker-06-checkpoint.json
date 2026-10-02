@@ -7,13 +7,14 @@
   "base_results_commit": "0409d51891b75b4adeeb63fbae8d94b66038b560",
   "batches": [
     "outputs/worker-06-batch-001.jsonl",
-    "outputs/worker-06-batch-002.jsonl"
+    "outputs/worker-06-batch-002.jsonl",
+    "outputs/worker-06-batch-003.jsonl"
   ],
   "assigned": 53,
-  "processed": 30,
-  "complete": 4,
-  "needs_context": 26,
-  "remaining": 23,
+  "processed": 45,
+  "complete": 10,
+  "needs_context": 35,
+  "remaining": 8,
   "processed_record_ids": [
     "entry-1203",
     "entry-1349",
@@ -44,6 +45,21 @@
     "entry-3626",
     "entry-3761",
     "entry-3839",
-    "entry-3899"
+    "entry-3899",
+    "entry-4113",
+    "entry-4331",
+    "entry-4516",
+    "entry-4628",
+    "entry-483",
+    "entry-5017",
+    "entry-5233",
+    "entry-537",
+    "entry-5597",
+    "entry-580",
+    "entry-5989",
+    "entry-6148",
+    "entry-6206",
+    "entry-6279",
+    "entry-6344"
   ]
 }
