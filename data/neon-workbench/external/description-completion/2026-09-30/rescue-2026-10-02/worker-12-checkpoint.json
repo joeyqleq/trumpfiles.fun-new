@@ -3,11 +3,11 @@
   "assignment_input": "worker-12-input.jsonl",
   "assignment_sha256": "076f38f8bdadc1dc88d84e1aba73152bb7d7cacedc7ab2173adbd26e5bdfeba6",
   "assigned": 52,
-  "batch_number": 2,
-  "processed": 26,
-  "complete": 9,
-  "needs_context": 17,
-  "remaining": 26,
+  "batch_number": 3,
+  "processed": 39,
+  "complete": 14,
+  "needs_context": 25,
+  "remaining": 13,
   "processed_record_ids": [
     "entry-1297",
     "entry-1394",
@@ -34,7 +34,20 @@
     "entry-3065",
     "entry-3350",
     "entry-3441",
-    "entry-3574"
+    "entry-3574",
+    "entry-3687",
+    "entry-3804",
+    "entry-3871",
+    "entry-3981",
+    "entry-4232",
+    "entry-4400",
+    "entry-4575",
+    "entry-4692",
+    "entry-489",
+    "entry-5151",
+    "entry-5285",
+    "entry-5454",
+    "entry-5698"
   ],
-  "updated_at_utc": "2026-10-02T13:57:28+00:00"
+  "updated_at_utc": "2026-10-02T13:58:39+00:00"
 }
