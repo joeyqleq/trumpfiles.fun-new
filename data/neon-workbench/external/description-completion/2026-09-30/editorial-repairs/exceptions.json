@@ -1,0 +1,170 @@
+{
+  "entry-1500": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1796": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1797": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1798": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1799": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1800": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1801": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1802": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1803": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1804": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1806": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1807": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1808": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1809": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1811": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1812": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1813": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1814": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1815": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1816": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1817": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1818": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1820": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-1821": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "Known generic padded commentary makes existing long text inadequate; preserve original history, replace only this field with supported reader-facing writing."
+  },
+  "entry-465": {
+    "fields": [
+      "description_medium"
+    ],
+    "reason": "User-authorized final reader-QC repair of an unfinished medium description; replace only this field using the frozen assigned NPR context, preserving all other populated originals."
+  },
+  "entry-485": {
+    "fields": [
+      "description_medium"
+    ],
+    "reason": "User-authorized final reader-QC repair of an unfinished medium description; replace only this field using frozen assigned packet context, preserving all other populated originals."
+  },
+  "entry-5569": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "User-authorized final reader-QC removal of internal process boilerplate from the current long draft; original long field was empty, preserve all other fields."
+  },
+  "entry-5642": {
+    "fields": [
+      "description_long"
+    ],
+    "reason": "User-authorized final reader-QC removal of internal process boilerplate from the current long draft; original long field was empty, preserve all other fields."
+  }
+}
