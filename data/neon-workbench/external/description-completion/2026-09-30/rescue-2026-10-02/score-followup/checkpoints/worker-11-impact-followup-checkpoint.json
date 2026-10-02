@@ -43,7 +43,17 @@
     "entry-4269",
     "entry-436",
     "entry-5110",
-    "entry-5559"
+    "entry-5559",
+    "entry-5726",
+    "entry-6100",
+    "entry-6162",
+    "entry-6289",
+    "entry-6500",
+    "entry-690",
+    "entry-6992",
+    "entry-7034",
+    "entry-7071",
+    "entry-7118"
   ],
   "scored_ids": [
     "entry-1187",
@@ -62,7 +72,12 @@
     "entry-2268",
     "entry-350",
     "entry-4043",
-    "entry-4269"
+    "entry-4269",
+    "entry-6100",
+    "entry-6162",
+    "entry-690",
+    "entry-7071",
+    "entry-7118"
   ],
   "deferred_ids": [
     "entry-5471",
@@ -88,14 +103,19 @@
     "entry-4138",
     "entry-436",
     "entry-5110",
-    "entry-5559"
+    "entry-5559",
+    "entry-5726",
+    "entry-6289",
+    "entry-6500",
+    "entry-6992",
+    "entry-7034"
   ],
   "remaining_ids": [],
   "counts": {
-    "assigned": 41,
-    "scored": 17,
-    "deferred": 24,
+    "assigned": 51,
+    "scored": 22,
+    "deferred": 29,
     "remaining": 0
   },
-  "latest_output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/score-outputs/worker-11-impact-followup-batch-05.jsonl"
+  "latest_output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/score-outputs/worker-11-impact-followup-batch-06.jsonl"
 }
