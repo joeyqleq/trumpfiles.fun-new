@@ -3,8 +3,8 @@
   "saved_score_ids": 6944,
   "missing_score_ids": 0,
   "statuses": {
-    "scored": 6267,
-    "deferred": 677
+    "scored": 6548,
+    "deferred": 396
   },
   "held_not_ranked": 283,
   "rejected_rows": [
@@ -19,8 +19,8 @@
   "superseded_historical_rejected_rows": 1,
   "authoritative_rejected_rows": 0,
   "authoritative_rejects": [],
-  "unique_scores": 556,
-  "largest_equal_score_group": 127,
+  "unique_scores": 557,
+  "largest_equal_score_group": 134,
   "rank_positions_unique": true,
   "publication_status": "provisional_offline",
   "publication": "provisional offline; no live or legacy score overwrite"
