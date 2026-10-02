@@ -5,8 +5,8 @@
   "input_commit": "e95178ad5ca0de630c007c46523c19e40d37d54f",
   "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
   "completed_count": 13,
-  "needs_context_count": 37,
-  "remaining_count": 3,
+  "needs_context_count": 40,
+  "remaining_count": 0,
   "completed_ids": [
     "entry-248",
     "entry-388",
@@ -27,6 +27,9 @@
     "entry-227",
     "entry-449",
     "entry-836",
+    "entry-871",
+    "entry-934",
+    "entry-990",
     "entry-1071",
     "entry-1330",
     "entry-1407",
@@ -61,16 +64,13 @@
     "entry-6340",
     "entry-7045"
   ],
-  "remaining_ids": [
-    "entry-871",
-    "entry-934",
-    "entry-990"
-  ],
+  "remaining_ids": [],
   "output_files": [
     "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-001.jsonl",
     "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-002.jsonl",
     "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-003.jsonl",
     "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-004.jsonl",
-    "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-005.jsonl"
+    "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-005.jsonl",
+    "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/outputs/worker-04-batch-006.jsonl"
   ]
 }
