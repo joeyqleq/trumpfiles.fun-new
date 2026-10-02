@@ -3,18 +3,39 @@
   "phase": "offline-impact-v2-follow-up",
   "input_commit": "539c34d9572db4a234ee9e73a4fe8c1d4b3e373e",
   "assigned_ids": [
-    "entry-5471"
+    "entry-5471",
+    "entry-1187",
+    "entry-1253",
+    "entry-1306",
+    "entry-1374",
+    "entry-1417",
+    "entry-1460",
+    "entry-1503",
+    "entry-1533",
+    "entry-1552",
+    "entry-1572"
   ],
-  "scored_ids": [],
+  "scored_ids": [
+    "entry-1187",
+    "entry-1253",
+    "entry-1306",
+    "entry-1374",
+    "entry-1417",
+    "entry-1460",
+    "entry-1503",
+    "entry-1533",
+    "entry-1552"
+  ],
   "deferred_ids": [
-    "entry-5471"
+    "entry-5471",
+    "entry-1572"
   ],
   "remaining_ids": [],
   "counts": {
-    "assigned": 1,
-    "scored": 0,
-    "deferred": 1,
+    "assigned": 11,
+    "scored": 9,
+    "deferred": 2,
     "remaining": 0
   },
-  "latest_output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/score-outputs/worker-11-impact-followup-batch-01.jsonl"
+  "latest_output": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/score-outputs/worker-11-impact-followup-batch-02.jsonl"
 }
