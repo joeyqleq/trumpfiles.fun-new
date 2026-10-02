@@ -7,7 +7,8 @@
     "outputs/worker-09-batch-001.jsonl",
     "outputs/worker-09-batch-002.jsonl",
     "outputs/worker-09-batch-003.jsonl",
-    "outputs/worker-09-batch-004.jsonl"
+    "outputs/worker-09-batch-004.jsonl",
+    "outputs/worker-09-batch-005.jsonl"
   ],
   "completed_ids": [
     "entry-1467",
@@ -33,7 +34,15 @@
     "entry-5102",
     "entry-5277",
     "entry-5429",
-    "entry-5920"
+    "entry-5920",
+    "entry-6043",
+    "entry-6156",
+    "entry-6355",
+    "entry-653",
+    "entry-760",
+    "entry-850",
+    "entry-896",
+    "entry-959"
   ],
   "needs_context_ids": [
     "entry-1284",
@@ -51,12 +60,16 @@
     "entry-253",
     "entry-2624",
     "entry-487",
-    "entry-5661"
+    "entry-5661",
+    "entry-6230",
+    "entry-6294",
+    "entry-6795",
+    "entry-820"
   ],
   "counts": {
     "assigned": 52,
-    "complete": 24,
-    "needs_context": 16,
-    "remaining": 12
+    "complete": 32,
+    "needs_context": 20,
+    "remaining": 0
   }
 }
