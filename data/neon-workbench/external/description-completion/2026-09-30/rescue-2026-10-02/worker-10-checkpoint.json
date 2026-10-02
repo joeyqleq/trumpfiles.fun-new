@@ -3,8 +3,8 @@
   "assignment_commit": "e95178ad5ca0de630c007c46523c19e40d37d54f",
   "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
   "assignment_count": 52,
-  "completed_count": 34,
-  "needs_context_count": 18,
+  "completed_count": 35,
+  "needs_context_count": 17,
   "remaining_count": 0,
   "completed_ids": [
     "entry-143",
@@ -40,7 +40,8 @@
     "entry-6298",
     "entry-6838",
     "entry-852",
-    "entry-903"
+    "entry-903",
+    "entry-962"
   ],
   "needs_context_ids": [
     "entry-1286",
@@ -59,8 +60,7 @@
     "entry-6356",
     "entry-6531",
     "entry-766",
-    "entry-822",
-    "entry-962"
+    "entry-822"
   ],
   "remaining_ids": [],
   "batches": [
