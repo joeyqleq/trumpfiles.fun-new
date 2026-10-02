@@ -1,0 +1,60 @@
+{
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "handoff_id": "20261002-worker05-retained10-to-worker01",
+  "from_worker": "resume_05",
+  "to_worker": "resume_01",
+  "reason": "Source worker confirmed these10 unattempted IDs are reserved, keeping completed worker useful without overlap.",
+  "output_directory": "worker-05-handoff-01",
+  "records": [
+    {
+      "record_id": "entry-6239",
+      "position": 1161,
+      "entry_number": 6239
+    },
+    {
+      "record_id": "entry-6245",
+      "position": 1163,
+      "entry_number": 6245
+    },
+    {
+      "record_id": "entry-6264",
+      "position": 1165,
+      "entry_number": 6264
+    },
+    {
+      "record_id": "entry-6273",
+      "position": 1167,
+      "entry_number": 6273
+    },
+    {
+      "record_id": "entry-6279",
+      "position": 1169,
+      "entry_number": 6279
+    },
+    {
+      "record_id": "entry-6284",
+      "position": 1171,
+      "entry_number": 6284
+    },
+    {
+      "record_id": "entry-6293",
+      "position": 1173,
+      "entry_number": 6293
+    },
+    {
+      "record_id": "entry-6298",
+      "position": 1175,
+      "entry_number": 6298
+    },
+    {
+      "record_id": "entry-6311",
+      "position": 1177,
+      "entry_number": 6311
+    },
+    {
+      "record_id": "entry-6318",
+      "position": 1179,
+      "entry_number": 6318
+    }
+  ]
+}

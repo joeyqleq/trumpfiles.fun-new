@@ -1,0 +1,20 @@
+{
+  "frozen_assignment_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "filtered_count": 1463,
+  "assigned_count": 731,
+  "original_lane_references": {
+    "commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+    "paths": [
+      "chatgpt-web/input.jsonl",
+      "lightsprint/input.jsonl",
+      "native-cloud/input.jsonl"
+    ]
+  },
+  "supplemental_repair_references": {
+    "commit": "d9b92b1f09d85ac4ec0164ad92a8025f5b401340",
+    "paths": "finish-2026-10-01/worker-01-repair-input.jsonl through worker-12-repair-input.jsonl",
+    "reason": "These reference files do not exist at the frozen assignment commit. Used supplementary input-branch context only; assignment remains frozen."
+  },
+  "coverage": "All 731 assigned records have at least one original lane or repair reference packet.",
+  "review_policy": "Reader prose describes events; source access and drafting limitations belong in metadata. Supported partial prose may be shorter than repaired lengths. Published amendments preserve original batches and explicitly supersede earlier proposals."
+}

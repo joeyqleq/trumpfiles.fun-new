@@ -1,0 +1,15 @@
+{
+  "worker": "worker-05-handoff-02",
+  "handoff_id": "20261002-worker05-tail20-to-worker02",
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "batches": [
+    {
+      "file": "resume-20261002-batch-001.jsonl",
+      "commit_sha": "9e745aafc7adc9204d810989b6bda381f217755b",
+      "record_ids": ["entry-6320", "entry-6340", "entry-6343", "entry-6346", "entry-6351", "entry-6356", "entry-6360", "entry-6389", "entry-64", "entry-6408"]
+    }
+  ],
+  "resumed_terminal_ids": ["entry-6320", "entry-6340", "entry-6343", "entry-6346", "entry-6351", "entry-6356", "entry-6360", "entry-6389", "entry-64", "entry-6408"],
+  "remaining_ids": ["entry-643", "entry-6486", "entry-6500", "entry-651", "entry-653", "entry-654", "entry-655", "entry-6561", "entry-6581", "entry-660"],
+  "counts": {"assigned": 20, "resumed_terminal": 10, "remaining": 10, "repaired": 5, "supported_partial": 5, "unresolved": 0}
+}

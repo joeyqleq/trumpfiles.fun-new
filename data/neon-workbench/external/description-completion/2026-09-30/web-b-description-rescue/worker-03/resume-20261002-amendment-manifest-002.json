@@ -1,0 +1,12 @@
+{
+  "amendments": [
+    {
+      "file": "resume-20261002-amendment-002.jsonl",
+      "supersedes_batch": "resume-20261002-batch-002.jsonl",
+      "record_ids": [
+        "entry-34",
+        "entry-3404"
+      ]
+    }
+  ]
+}

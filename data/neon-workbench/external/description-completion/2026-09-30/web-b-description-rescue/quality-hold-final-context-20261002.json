@@ -1,0 +1,18 @@
+{
+  "reason": "Bounded final source-context review: these three partials omitted long text and source-access notes; blockers about motive/later outcomes or independent assessment need review against available same-event evidence.",
+  "held_proposals": [
+    {
+      "record_id": "expanded-20260821-visa75-court",
+      "file": "worker-06-handoff-03/resume-20261002-batch-008.jsonl"
+    },
+    {
+      "record_id": "expanded-20260921-garces-detention-conference",
+      "file": "worker-06-handoff-03/resume-20261002-batch-008.jsonl"
+    },
+    {
+      "record_id": "fresh-20260914-oge-trump-ptr",
+      "file": "worker-06-handoff-03/resume-20261002-batch-008.jsonl"
+    }
+  ],
+  "next_action": "Read supplied links or credible same-event alternative; append source-backed context or exact access/evidence blocker and supported partial. No broad research or new scoring."
+}

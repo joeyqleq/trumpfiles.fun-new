@@ -1,0 +1,38 @@
+{
+  "amendments": [
+    {
+      "file": "resume-20261002-amendment-003.jsonl",
+      "supersedes_batch": "resume-20261002-batch-001.jsonl",
+      "record_ids": [
+        "entry-3258"
+      ]
+    },
+    {
+      "file": "resume-20261002-amendment-003.jsonl",
+      "supersedes_batch": "resume-20261002-batch-003.jsonl",
+      "record_ids": [
+        "entry-3488",
+        "entry-352"
+      ]
+    },
+    {
+      "file": "resume-20261002-amendment-003.jsonl",
+      "supersedes_batch": "resume-20261002-batch-004.jsonl",
+      "record_ids": [
+        "entry-3596",
+        "entry-3626",
+        "entry-3654",
+        "entry-3659",
+        "entry-3678"
+      ]
+    },
+    {
+      "file": "resume-20261002-amendment-003.jsonl",
+      "supersedes_batch": "resume-20261002-batch-005.jsonl",
+      "record_ids": [
+        "entry-3722",
+        "entry-3766"
+      ]
+    }
+  ]
+}

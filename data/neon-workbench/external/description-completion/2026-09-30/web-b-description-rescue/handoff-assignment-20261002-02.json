@@ -1,0 +1,130 @@
+{
+  "frozen_commit": "0089ae722b39edb5180b2496b1f35e2f8fe1ca92",
+  "handoff_id": "20261002-worker06-tail20-to-worker03",
+  "from_worker": "resume_06",
+  "to_worker": "resume_03",
+  "reason": "Source worker reserved tail20 and will stop at927; completed worker replaces held placeholders.",
+  "output_directory": "worker-06-handoff-03",
+  "records": [
+    {
+      "record_id": "entry-929",
+      "position": 1423,
+      "entry_number": 929,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-934",
+      "position": 1425,
+      "entry_number": 934,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-939",
+      "position": 1427,
+      "entry_number": 939,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-945",
+      "position": 1429,
+      "entry_number": 945,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-948",
+      "position": 1431,
+      "entry_number": 948,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-954",
+      "position": 1433,
+      "entry_number": 954,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-959",
+      "position": 1435,
+      "entry_number": 959,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-962",
+      "position": 1437,
+      "entry_number": 962,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-965",
+      "position": 1439,
+      "entry_number": 965,
+      "held_proposal_file": "worker-06/resume-20261002-batch-006.jsonl"
+    },
+    {
+      "record_id": "entry-969",
+      "position": 1441,
+      "entry_number": 969,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "entry-973",
+      "position": 1443,
+      "entry_number": 973,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "entry-978",
+      "position": 1445,
+      "entry_number": 978,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "entry-985",
+      "position": 1447,
+      "entry_number": 985,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "entry-989",
+      "position": 1449,
+      "entry_number": 989,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "entry-990",
+      "position": 1451,
+      "entry_number": 990,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "entry-993",
+      "position": 1453,
+      "entry_number": 993,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "entry-996",
+      "position": 1455,
+      "entry_number": 996,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "expanded-20260821-visa75-court",
+      "position": 1457,
+      "entry_number": null,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "expanded-20260921-garces-detention-conference",
+      "position": 1459,
+      "entry_number": null,
+      "held_proposal_file": "worker-06/resume-20261002-batch-007.jsonl"
+    },
+    {
+      "record_id": "fresh-20260914-oge-trump-ptr",
+      "position": 1461,
+      "entry_number": null,
+      "held_proposal_file": "worker-06/resume-20261002-batch-008.jsonl"
+    }
+  ]
+}

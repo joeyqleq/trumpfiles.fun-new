@@ -1,0 +1,28 @@
+{
+  "worker": "worker-05-handoff-01",
+  "resume_assignment": "handoff-assignment-20261002-03.json",
+  "batch_number": 2,
+  "batch_commit_sha": "39666d2facdfd83e2d553949e43ae8a1084672ec",
+  "assigned_total": 10,
+  "cumulative_resumed_terminal_ids": [
+    "entry-6239",
+    "entry-6245",
+    "entry-6264",
+    "entry-6273",
+    "entry-6279",
+    "entry-6284",
+    "entry-6293",
+    "entry-6298",
+    "entry-6311",
+    "entry-6318"
+  ],
+  "remaining_ids": [],
+  "counts": {
+    "cumulative_terminal": 10,
+    "remaining": 0,
+    "repaired": 7,
+    "supported_partial": 3,
+    "unresolved": 0
+  },
+  "root_review_note": "Removed reader-facing source-audit wording and repetition. Entries6293 and6311 retain shorter supported partials with precise evidence blockers; no facts added."
+}
