@@ -66,9 +66,10 @@
     "entry-996"
   ],
   "remaining_ids": [],
-  "latest_batch": "worker-05-batch-002.jsonl",
+  "latest_batch": "worker-05-batch-003.jsonl",
   "corrected_output_files": [
     "worker-05-batch-001.jsonl",
-    "worker-05-batch-002.jsonl"
+    "worker-05-batch-002.jsonl",
+    "worker-05-batch-003.jsonl"
   ]
 }
