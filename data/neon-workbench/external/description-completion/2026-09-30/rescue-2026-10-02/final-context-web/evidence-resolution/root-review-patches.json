@@ -1,0 +1,144 @@
+[
+  {
+    "record_id": "entry-1213",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_context": null,
+    "resolution_scope": "Corrected description of sourced tracker data; original dated trend, causal impact, or disputed labeling is not verified.",
+    "supported_facts": [
+      "AP tracker JSON contains 25 selected promises: 5 Kept, 9 In progress, 11 It’s complicated.",
+      "Retrieved data declares lastModified Wed, 03 Dec 2025 21:51:19 GMT.",
+      "The birthright-citizenship row is It's complicated; the largest-deportation-program row is In progress."
+    ],
+    "search_attempts": [
+      "system2_search_query: \"site:apnews.com/projects/trump-campaign-promise-tracker AP tracker promise-by-promise statuses total 2026\"; provider search-service; surfaced generic tracker description, not dated item statuses or totals.",
+      "system1_search_query: \"AP Trump promise tracker February 2026 behind core campaign commitments status totals\"; provider search-service; no dated tracker item list supporting title surfaced.",
+      {
+        "provider": "root shell HTTP retrieval and source inspection",
+        "query_or_url": "https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js",
+        "result": "Fetched tracker component; identified JSON URL used by AP frontend."
+      },
+      {
+        "provider": "root shell HTTP retrieval and local JSON inspection",
+        "query_or_url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Fetched exact dataset and inspected named rows, status counts and lastModified; snapshot hash/metadata preserved under sources/."
+      },
+      {
+        "provider": "worker supplied-source checks",
+        "query_or_url": "AP status_link and Read_more_links from the retrieved JSON rows",
+        "result": "Fetched AP Viz.js-discovered promises.json. Retrieval metadata records URL, retrieval time 2026-10-02T23:18:45Z, SHA-256 734639f80c3d35a7f2e6f472a14d4130cc73553975793ad814f68f5f6957ee0f, data_lastModified Wed, 03 Dec 2025 21:51:19 GMT, and counts 5/9/11 across 25 promises. Search attempt: direct retrieval of AP JSON discovered from tracker landing-page Viz.js; provider local retrieved source; succeeded. Opened AP tracker landing page via web search; AP describes tracking selected 2024 promises but page itself did not expose item totals."
+      }
+    ],
+    "remaining_uncertainties": [
+      "Need a dated capture or archive of the AP tracker showing its included promises, statuses and any aggregate basis for saying Trump was “behind.” The accessible AP page only says it tracks selected campaign promises; it does not expose the necessary dated item-level evidence.",
+      "Current JSON with declared lastModified does not prove historical February/March 2026 display or establish public impact."
+    ],
+    "description_medium": "The AP promise-tracker file retrieved October 2, 2026, declares a December 3, 2025 last-modified date. It lists 25 selected Trump campaign pledges: five marked “Kept,” nine “In progress” and eleven “It’s complicated.” Named entries span clemency, education, energy, foreign policy, immigration, tariffs and taxes. These are AP’s individual classifications, rather than a score covering every campaign commitment.",
+    "description_long": "The Associated Press promise-tracker data retrieved on October 2, 2026, declares a last-modified timestamp of December 3, 2025. It contains 25 selected campaign pledges, with five marked “Kept,” nine “In progress” and eleven “It’s complicated.” The kept entries concern January 6 clemency, release of Kennedy-assassination records, declaration of a national energy emergency, withdrawal from the Paris Agreement and making expiring tax cuts permanent.\n\nOther entries remained in different categories. The promise to eliminate the Education Department and the pledge to conduct the largest deportation program were listed as in progress. Ending birthright citizenship, halving energy prices, making in vitro fertilization free and ending the Russia-Ukraine war were among the complicated entries. Each row provides the promise, a policy category and links to reporting or government actions; some also identify the proposed implementation method. The data allows readers to inspect these individual ratings and their cited evidence. It does not provide a performance threshold that would establish that Trump was generally “behind,” and this retrieval is not a verified February or March 2026 archive."
+  },
+  {
+    "record_id": "entry-1284",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_context": null,
+    "resolution_scope": "Corrected description of sourced tracker data; original dated trend, causal impact, or disputed labeling is not verified.",
+    "supported_facts": [
+      "AP tracker JSON contains 25 selected promises: 5 Kept, 9 In progress, 11 It’s complicated.",
+      "Retrieved data declares lastModified Wed, 03 Dec 2025 21:51:19 GMT.",
+      "The birthright-citizenship row is It's complicated; the largest-deportation-program row is In progress."
+    ],
+    "search_attempts": [
+      "system2_search_query: \"AP Trump campaign promise tracker February 28 2026 complicated birthright citizenship\"; provider search-service; no archived dated row surfaced.",
+      "system1_search_query: \"AP tracker birthright citizenship complicated February 2026 Trump pledge\"; provider search-service; returned generic live tracker only; linked AP page did not expose status.",
+      {
+        "provider": "root shell HTTP retrieval and source inspection",
+        "query_or_url": "https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js",
+        "result": "Fetched tracker component; identified JSON URL used by AP frontend."
+      },
+      {
+        "provider": "root shell HTTP retrieval and local JSON inspection",
+        "query_or_url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Fetched exact dataset and inspected named rows, status counts and lastModified; snapshot hash/metadata preserved under sources/."
+      },
+      {
+        "provider": "worker supplied-source checks",
+        "query_or_url": "AP status_link and Read_more_links from the retrieved JSON rows",
+        "result": "Read AP promises.json row: Immigration category; exact promise “End the constitutional right to birthright citizenship”; status “It’s complicated”; AP status_link points to https://apnews.com/article/supreme-court-immigration-trump-birthright-citizenship-83f70d58636219c0ff98c7d765ab2b4d; method_link is the Jan. 20, 2025 White House order. Retrieval metadata gives lastModified Dec. 3, 2025 and retrieval Oct. 2, 2026. Search attempt: system2 query for AP status-link article; generic results initially, then directly opened AP source and found article describing Supreme Court consideration / lower-court blocks. Direct AP open on status-link page succeeded. A separate targeted system2 search for AP June 2026 birthright ruling surfaced AP’s later Supreme Court ruling; used only as subsequent context."
+      }
+    ],
+    "remaining_uncertainties": [
+      "Need an archived AP tracker row or dated capture from February 28, 2026 that shows the birthright-citizenship item and its status. Later legal events establish subsequent context only and do not verify what AP’s tracker displayed in February.",
+      "Current JSON with declared lastModified does not prove historical February/March 2026 display or establish public impact."
+    ]
+  },
+  {
+    "record_id": "entry-1286",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_context": null,
+    "resolution_scope": "Corrected description of sourced tracker data; original dated trend, causal impact, or disputed labeling is not verified.",
+    "supported_facts": [
+      "AP tracker JSON contains 25 selected promises: 5 Kept, 9 In progress, 11 It’s complicated.",
+      "Retrieved data declares lastModified Wed, 03 Dec 2025 21:51:19 GMT.",
+      "The birthright-citizenship row is It's complicated; the largest-deportation-program row is In progress."
+    ],
+    "search_attempts": [
+      "system2_search_query: \"AP tracker criminal migrants complicated deportation promise\"; provider search-service; no tracker row or status rationale found.",
+      "system1_search_query: \"AP campaign promise tracker deportation criminal migrants complicated Trump promise exact wording\"; provider search-service; tracker not itemized; AP reporting returned general deportation policy context.",
+      {
+        "provider": "root shell HTTP retrieval and source inspection",
+        "query_or_url": "https://apnews.com/projects/trump-campaign-promise-tracker/assets/Viz.js",
+        "result": "Fetched tracker component; identified JSON URL used by AP frontend."
+      },
+      {
+        "provider": "root shell HTTP retrieval and local JSON inspection",
+        "query_or_url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+        "result": "Fetched exact dataset and inspected named rows, status counts and lastModified; snapshot hash/metadata preserved under sources/."
+      },
+      {
+        "provider": "worker supplied-source checks",
+        "query_or_url": "AP status_link and Read_more_links from the retrieved JSON rows",
+        "result": "Read AP promises.json row: exact promise “Conduct the largest deportation program in U.S. history”; status “In progress”; read-more link is https://apnews.com/article/trump-mass-deportations-latino-voters-ec64f85e3633c9c7a8a247eaf9feb64f; status_link is the AP Immigration hub; method_link is Trump’s Jan. 20, 2025 executive order. Dataset metadata gives 25 promises, lastModified Dec. 3, 2025, retrieved Oct. 2, 2026. Search attempt: system2 targeted exact AP campaign-pledge URL query; returned AP article describing the mass-deportation pledge. Directly opened that AP article and found the headline/body identifying the pledge. Further system2 exact criminal-migrant query did not surface a separate tracker row; the JSON row resolves the status and wording directly."
+      }
+    ],
+    "remaining_uncertainties": [
+      "Need an AP tracker snapshot or archive naming the criminal-migrant deportation pledge, quoting its exact promise, recording the status date, and explaining the “complicated” rating. The available materials do not support the title’s status claim or a detailed implementation account.",
+      "Current JSON with declared lastModified does not prove historical February/March 2026 display or establish public impact."
+    ]
+  },
+  {
+    "record_id": "entry-1546",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_context": null,
+    "resolution_scope": "Corrected description of sourced tracker data; original dated trend, causal impact, or disputed labeling is not verified."
+  },
+  {
+    "record_id": "entry-1550",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_context": null,
+    "resolution_scope": "Corrected description of sourced tracker data; original dated trend, causal impact, or disputed labeling is not verified."
+  },
+  {
+    "record_id": "entry-1591",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_context": null,
+    "resolution_scope": "Corrected description of sourced tracker data; original dated trend, causal impact, or disputed labeling is not verified."
+  },
+  {
+    "record_id": "entry-1593",
+    "status": "complete",
+    "resolved": true,
+    "resolution_kind": "narrowed_correction",
+    "missing_context": null,
+    "resolution_scope": "Corrected description of sourced tracker data; original dated trend, causal impact, or disputed labeling is not verified."
+  }
+]
