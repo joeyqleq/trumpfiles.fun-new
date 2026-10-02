@@ -4,9 +4,9 @@
   "frozen_results_commit": "0b6568247255dd9f165662146fc0c81efe320205",
   "assignment_file": "worker-03-input.jsonl",
   "assigned_count": 53,
-  "completed_count": 30,
-  "needs_context_count": 6,
-  "remaining_count": 17,
+  "completed_count": 36,
+  "needs_context_count": 17,
+  "remaining_count": 0,
   "completed_ids": [
     "entry-1304",
     "entry-1400",
@@ -37,7 +37,13 @@
     "entry-4473",
     "entry-4603",
     "entry-4741",
-    "entry-4942"
+    "entry-4942",
+    "entry-519",
+    "entry-533",
+    "entry-5726",
+    "entry-5983",
+    "entry-6581",
+    "entry-7044"
   ],
   "needs_context_ids": [
     "entry-1037",
@@ -45,28 +51,21 @@
     "entry-1729",
     "entry-2332",
     "entry-2479",
-    "entry-4261"
-  ],
-  "remaining_ids": [
-    "entry-519",
-    "entry-533",
+    "entry-4261",
     "entry-5531",
-    "entry-5726",
-    "entry-5983",
     "entry-6138",
     "entry-6199",
     "entry-6264",
     "entry-6330",
     "entry-64",
-    "entry-6581",
-    "entry-7044",
     "entry-788",
     "entry-835",
     "entry-868",
     "entry-920",
     "entry-989"
   ],
-  "last_batch": "worker-03-batch-002.jsonl",
+  "remaining_ids": [],
+  "last_batch": "worker-03-batch-003.jsonl",
   "amendment_files": [
     "worker-03/amendments/amendment-001.jsonl",
     "worker-03/amendments/amendment-002.jsonl"
