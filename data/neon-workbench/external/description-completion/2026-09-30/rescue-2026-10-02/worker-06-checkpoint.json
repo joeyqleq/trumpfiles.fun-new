@@ -13,8 +13,8 @@
   ],
   "assigned": 53,
   "processed": 53,
-  "complete": 12,
-  "needs_context": 41,
+  "complete": 9,
+  "needs_context": 44,
   "remaining": 0,
   "processed_record_ids": [
     "entry-1203",
