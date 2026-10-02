@@ -6,7 +6,8 @@
   "batches": [
     "score-outputs/worker-09-batch-001.jsonl",
     "score-outputs/worker-09-batch-002.jsonl",
-    "score-outputs/worker-09-batch-003.jsonl"
+    "score-outputs/worker-09-batch-003.jsonl",
+    "score-outputs/worker-09-batch-004.jsonl"
   ],
   "assigned_ids": [
     "entry-1074",
@@ -84,7 +85,13 @@
     "entry-2945",
     "entry-3346",
     "entry-3488",
-    "entry-372"
+    "entry-372",
+    "entry-3923",
+    "entry-4116",
+    "entry-433",
+    "entry-4801",
+    "entry-5556",
+    "entry-6279"
   ],
   "deferred_ids": [
     "entry-1568",
@@ -99,21 +106,15 @@
     "entry-2335",
     "entry-240",
     "entry-2451",
-    "entry-2507"
+    "entry-2507",
+    "entry-4217",
+    "entry-5449",
+    "entry-5661",
+    "entry-6043",
+    "entry-6156"
   ],
   "remaining_ids": [
     "entry-2817",
-    "entry-3923",
-    "entry-4116",
-    "entry-4217",
-    "entry-433",
-    "entry-4801",
-    "entry-5449",
-    "entry-5556",
-    "entry-5661",
-    "entry-6043",
-    "entry-6156",
-    "entry-6279",
     "entry-64",
     "entry-6795",
     "entry-6990",
@@ -128,9 +129,9 @@
   ],
   "counts": {
     "assigned": 55,
-    "processed": 32,
-    "scored": 19,
-    "deferred": 13,
-    "remaining": 23
+    "processed": 43,
+    "scored": 25,
+    "deferred": 18,
+    "remaining": 12
   }
 }
