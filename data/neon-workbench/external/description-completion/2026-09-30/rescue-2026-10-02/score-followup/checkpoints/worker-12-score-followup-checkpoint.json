@@ -75,7 +75,11 @@
     "entry-3782",
     "entry-4054",
     "entry-4270",
-    "entry-53"
+    "entry-53",
+    "entry-5569",
+    "entry-6103",
+    "entry-6163",
+    "entry-6292"
   ],
   "deferred_ids": [
     "entry-1264",
@@ -101,17 +105,13 @@
     "entry-351",
     "entry-4144",
     "entry-444",
-    "entry-5488"
-  ],
-  "remaining_ids": [
-    "entry-5569",
+    "entry-5488",
     "entry-5897",
-    "entry-6103",
-    "entry-6163",
-    "entry-6292",
     "entry-654",
     "entry-6915",
-    "entry-6997",
+    "entry-6997"
+  ],
+  "remaining_ids": [
     "entry-7040",
     "entry-7072",
     "entry-7122",
@@ -121,7 +121,7 @@
     "entry-934",
     "entry-980"
   ],
-  "scored": 16,
-  "deferred": 24,
-  "remaining": 16
+  "scored": 20,
+  "deferred": 28,
+  "remaining": 8
 }
