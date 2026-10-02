@@ -62,9 +62,9 @@
     "entry-984"
   ],
   "total_assigned": 57,
-  "scored_count": 6,
-  "deferred_count": 6,
-  "remaining_count": 45,
+  "scored_count": 13,
+  "deferred_count": 11,
+  "remaining_count": 33,
   "processed_ids": [
     "entry-1009",
     "entry-1200",
@@ -77,9 +77,22 @@
     "entry-1538",
     "entry-1559",
     "entry-1578",
-    "entry-1604"
+    "entry-1604",
+    "entry-1628",
+    "entry-1648",
+    "entry-1665",
+    "entry-1691",
+    "entry-1721",
+    "entry-1749",
+    "entry-1766",
+    "entry-1780",
+    "entry-194",
+    "entry-2070",
+    "entry-219",
+    "entry-2317"
   ],
   "output_files": [
-    "worker-02-batch-000.jsonl"
+    "worker-02-batch-000.jsonl",
+    "worker-02-batch-001.jsonl"
   ]
 }
