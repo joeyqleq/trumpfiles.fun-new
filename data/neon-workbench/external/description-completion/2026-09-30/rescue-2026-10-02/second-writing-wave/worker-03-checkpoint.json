@@ -15,7 +15,8 @@
   ],
   "batches": [
     "outputs/worker-03-batch-001.jsonl",
-    "outputs/worker-03-batch-002.jsonl"
+    "outputs/worker-03-batch-002.jsonl",
+    "outputs/worker-03-batch-003.jsonl"
   ],
   "completed_ids": [],
   "needs_context_ids": [
@@ -24,9 +25,12 @@
     "entry-1884",
     "entry-2619",
     "entry-2929",
-    "entry-4009"
+    "entry-4009",
+    "entry-4308",
+    "entry-5491",
+    "entry-7"
   ],
   "completed": 0,
-  "needs_context": 6,
-  "remaining": 3
+  "needs_context": 9,
+  "remaining": 0
 }
