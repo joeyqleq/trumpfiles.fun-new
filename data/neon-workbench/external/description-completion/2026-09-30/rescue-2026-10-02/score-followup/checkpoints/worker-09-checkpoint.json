@@ -5,7 +5,8 @@
   "assignment_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/worker-09-score-input.jsonl",
   "batches": [
     "score-outputs/worker-09-batch-001.jsonl",
-    "score-outputs/worker-09-batch-002.jsonl"
+    "score-outputs/worker-09-batch-002.jsonl",
+    "score-outputs/worker-09-batch-003.jsonl"
   ],
   "assigned_ids": [
     "entry-1074",
@@ -77,7 +78,13 @@
     "entry-1659",
     "entry-1675",
     "entry-1735",
-    "entry-202"
+    "entry-202",
+    "entry-257",
+    "entry-2644",
+    "entry-2945",
+    "entry-3346",
+    "entry-3488",
+    "entry-372"
   ],
   "deferred_ids": [
     "entry-1568",
@@ -88,20 +95,14 @@
     "entry-1776",
     "entry-184",
     "entry-212",
-    "entry-2238"
-  ],
-  "remaining_ids": [
+    "entry-2238",
     "entry-2335",
     "entry-240",
     "entry-2451",
-    "entry-2507",
-    "entry-257",
-    "entry-2644",
+    "entry-2507"
+  ],
+  "remaining_ids": [
     "entry-2817",
-    "entry-2945",
-    "entry-3346",
-    "entry-3488",
-    "entry-372",
     "entry-3923",
     "entry-4116",
     "entry-4217",
@@ -127,9 +128,9 @@
   ],
   "counts": {
     "assigned": 55,
-    "processed": 22,
-    "scored": 13,
-    "deferred": 9,
-    "remaining": 33
+    "processed": 32,
+    "scored": 19,
+    "deferred": 13,
+    "remaining": 23
   }
 }
