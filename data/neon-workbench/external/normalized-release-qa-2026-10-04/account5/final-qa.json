@@ -1,0 +1,481 @@
+{
+  "schema": "normalized_release_qa_final_v1",
+  "source_job": "citation190-crossqa-2026-10-03@9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "prior_worker_batch": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-12-batch-20261003-citationqa.jsonl",
+  "prior_batch_rows": 15,
+  "own_batch_files_reconciled": [
+    "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-12-batch-20261003-citationqa.jsonl"
+  ],
+  "prior_terminal_rows_per_id": {
+    "entry-230": 1,
+    "entry-380": 1,
+    "entry-720": 1,
+    "entry-814": 1,
+    "entry-934": 1,
+    "entry-1726": 1,
+    "entry-2106": 1,
+    "entry-2458": 1,
+    "entry-2615": 1,
+    "entry-3273": 1,
+    "entry-3838": 1,
+    "entry-4257": 1,
+    "entry-5374": 1,
+    "entry-5698": 1,
+    "entry-6206": 1
+  },
+  "conflicting_terminal_ids": [],
+  "duplicate_terminal_rows": 0,
+  "descendant_selection_required": false,
+  "expected_ids": [
+    "entry-230",
+    "entry-380",
+    "entry-720",
+    "entry-814",
+    "entry-934",
+    "entry-1726",
+    "entry-2106",
+    "entry-2458",
+    "entry-2615",
+    "entry-3273",
+    "entry-3838",
+    "entry-4257",
+    "entry-5374",
+    "entry-5698",
+    "entry-6206"
+  ],
+  "observed_ids": [
+    "entry-230",
+    "entry-380",
+    "entry-720",
+    "entry-814",
+    "entry-934",
+    "entry-1726",
+    "entry-2106",
+    "entry-2458",
+    "entry-2615",
+    "entry-3273",
+    "entry-3838",
+    "entry-4257",
+    "entry-5374",
+    "entry-5698",
+    "entry-6206"
+  ],
+  "expected_id_count": 15,
+  "saved_id_count": 15,
+  "missing_ids": [],
+  "duplicate_ids": 0,
+  "exact_set_match": true,
+  "disposition_counts": {
+    "supported_proposal": 9,
+    "narrower_revision_required": 4,
+    "unsupported_hold": 0,
+    "intentional_exclusion": 2
+  },
+  "release_ready_count": 9,
+  "blocking_count": 6,
+  "blocking_ids": [
+    "entry-230",
+    "entry-814",
+    "entry-934",
+    "entry-1726",
+    "entry-2615",
+    "entry-6206"
+  ],
+  "blocking_reasons": [
+    {
+      "key": "entry-230",
+      "disposition": "narrower_revision_required",
+      "reason": "The Georgetown CCF article supports Project 2025 proposals for Medicaid funding caps/block grants and modeled risks. The cited NWLC article is dated May 22, 2017 and discusses earlier congressional budget proposals; it does not support attributing those SNAP/safety-net proposals to Project 2025. The staged title and retained short/medium/long text combine the two sources as if both analyze Project 2025. Keep Georgetown for the Project 2025 Medicaid claim; label NWLC as historical/general context or remove it, and do not present projections as implemented effects."
+    },
+    {
+      "key": "entry-814",
+      "disposition": "narrower_revision_required",
+      "reason": "The archived April 29, 2019 White House message says the President would not make the United States a party and requested return of the treaty from the Senate. It does not say in that message that the U.S. withdrew its signature. The July 18, 2019 UN notice supports the non-party status and no legal obligations from the 2013 signature. The title/central claim is sound, but medium and long should replace “withdrawing the U.S. signature” with the narrower action actually stated: withdrawing the treaty from Senate consideration/requesting its return."
+    },
+    {
+      "key": "entry-934",
+      "disposition": "narrower_revision_required",
+      "reason": "DOJ’s pardon list identifies Bernadett under Jan. 19, 2021 and lists the Central District of California, 15 months, one year supervised release, $60,000 fine, Feb. 26, 2021 surrender order, and the offense (the table spells it “Misprison of a felony”). The linked DOJ PDF URL downloaded, but its text was not extractable in this review. The long copy’s assertion that a separate grant document confirms the details is therefore not independently verified; the normalized “misprision” spelling also should be checked against an accessible case record before asserting the underlying offense wording."
+    },
+    {
+      "key": "entry-1726",
+      "disposition": "intentional_exclusion",
+      "reason": "The Atlantic URL is a subjective 50-item retrospective/list of “unthinkable” moments, not a discrete Trump administration action or a measured stability event. It cannot support the staged event framing as an objectively defined event; excluding it from the event timeline is the supported decision."
+    },
+    {
+      "key": "entry-2615",
+      "disposition": "intentional_exclusion",
+      "reason": "The cited Vox article is a 2014 general explainer on Ukraine and Crimea. It does not identify a specific action by Paul Manafort or link such an act to Russia’s seizure of Crimea, and it does not establish a Trump-related event. Exclusion is appropriate until event-specific reporting or primary records support that bridge."
+    },
+    {
+      "key": "entry-6206",
+      "disposition": "narrower_revision_required",
+      "reason": "The Federal Register order supports EO 13780’s Mar. 6, 2017 date, six-country list, 90-day entry provision, exceptions, separate 120-day refugee pause, and Mar. 16 effective time. But the proposed short says the order “imposed” restrictions, which can read as the provisions took effect; the order text alone cannot establish implementation. The long also mentions later district-court injunctions and appellate proceedings although its only source is the order, which contains no litigation record. Revise short to say the order “provided for/ordered” restrictions and remove court-history references or add exact court sources."
+    }
+  ],
+  "url_validation": {
+    "verified_url_count": 19,
+    "valid_https_urls": 19,
+    "invalid_urls": []
+  },
+  "word_length_validation": {
+    "bounds": "short <=180 characters; medium 45-90 words; long 140-300 words, applied to the exact copy source already selected in each prior worker-12 terminal row",
+    "per_id": {
+      "entry-230": {
+        "short": {
+          "present": true,
+          "source": "staged_description.description_short",
+          "chars": 152,
+          "words": 21,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "staged_description.description_medium",
+          "chars": 423,
+          "words": 59,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "staged_description.description_long",
+          "chars": 1307,
+          "words": 194,
+          "within_bounds": true
+        }
+      },
+      "entry-380": {
+        "short": {
+          "present": true,
+          "source": "corrected_description_short",
+          "chars": 116,
+          "words": 19,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "corrected_description_medium",
+          "chars": 371,
+          "words": 55,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "corrected_description_long",
+          "chars": 1122,
+          "words": 165,
+          "within_bounds": true
+        }
+      },
+      "entry-720": {
+        "short": {
+          "present": true,
+          "source": "proposed_fields.description_short",
+          "chars": 116,
+          "words": 19,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "proposed_fields.description_medium",
+          "chars": 397,
+          "words": 64,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "proposed_fields.description_long",
+          "chars": 1119,
+          "words": 165,
+          "within_bounds": true
+        }
+      },
+      "entry-814": {
+        "short": {
+          "present": true,
+          "source": "proposed_fields.description_short",
+          "chars": 123,
+          "words": 23,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "proposed_fields.description_medium",
+          "chars": 471,
+          "words": 85,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "proposed_fields.description_long",
+          "chars": 985,
+          "words": 161,
+          "within_bounds": true
+        }
+      },
+      "entry-934": {
+        "short": {
+          "present": true,
+          "source": "proposed_description_short",
+          "chars": 124,
+          "words": 18,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "proposed_description_medium",
+          "chars": 364,
+          "words": 57,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "proposed_description_long",
+          "chars": 1043,
+          "words": 159,
+          "within_bounds": true
+        }
+      },
+      "entry-1726": {
+        "short": {
+          "present": true,
+          "source": "staged_description.description_short",
+          "chars": 127,
+          "words": 15,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "staged_description.description_medium",
+          "chars": 387,
+          "words": 54,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "staged_description.description_long",
+          "chars": 1130,
+          "words": 163,
+          "within_bounds": true
+        }
+      },
+      "entry-2106": {
+        "short": {
+          "present": true,
+          "source": "proposed_description_short",
+          "chars": 161,
+          "words": 26,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "proposed_description_medium",
+          "chars": 367,
+          "words": 60,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "proposed_description_long",
+          "chars": 1178,
+          "words": 182,
+          "within_bounds": true
+        }
+      },
+      "entry-2458": {
+        "short": {
+          "present": true,
+          "source": "staged_description.description_short",
+          "chars": 51,
+          "words": 8,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "staged_description.description_medium",
+          "chars": 523,
+          "words": 78,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "staged_description.description_long",
+          "chars": 1203,
+          "words": 195,
+          "within_bounds": true
+        }
+      },
+      "entry-2615": {
+        "short": {
+          "present": false,
+          "source": null,
+          "chars": null,
+          "words": null,
+          "within_bounds": null
+        },
+        "medium": {
+          "present": false,
+          "source": null,
+          "chars": null,
+          "words": null,
+          "within_bounds": null
+        },
+        "long": {
+          "present": false,
+          "source": null,
+          "chars": null,
+          "words": null,
+          "within_bounds": null
+        }
+      },
+      "entry-3273": {
+        "short": {
+          "present": true,
+          "source": "corrected_short",
+          "chars": 128,
+          "words": 21,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "corrected_medium",
+          "chars": 365,
+          "words": 56,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "corrected_long",
+          "chars": 1119,
+          "words": 174,
+          "within_bounds": true
+        }
+      },
+      "entry-3838": {
+        "short": {
+          "present": true,
+          "source": "description_short",
+          "chars": 146,
+          "words": 21,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "description_medium",
+          "chars": 444,
+          "words": 65,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "description_long",
+          "chars": 1015,
+          "words": 149,
+          "within_bounds": true
+        }
+      },
+      "entry-4257": {
+        "short": {
+          "present": true,
+          "source": "corrected_description_short",
+          "chars": 107,
+          "words": 18,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "corrected_description_medium",
+          "chars": 354,
+          "words": 59,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "corrected_description_long",
+          "chars": 1172,
+          "words": 193,
+          "within_bounds": true
+        }
+      },
+      "entry-5374": {
+        "short": {
+          "present": true,
+          "source": "staged_description.description_short",
+          "chars": 163,
+          "words": 25,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "staged_description.description_medium",
+          "chars": 507,
+          "words": 82,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "staged_description.description_long",
+          "chars": 1074,
+          "words": 172,
+          "within_bounds": true
+        }
+      },
+      "entry-5698": {
+        "short": {
+          "present": true,
+          "source": "proposed_fields.description_short",
+          "chars": 146,
+          "words": 24,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "proposed_fields.description_medium",
+          "chars": 569,
+          "words": 83,
+          "within_bounds": true
+        },
+        "long": {
+          "present": false,
+          "source": null,
+          "chars": null,
+          "words": null,
+          "within_bounds": null
+        }
+      },
+      "entry-6206": {
+        "short": {
+          "present": true,
+          "source": "proposed_fields.description_short",
+          "chars": 127,
+          "words": 18,
+          "within_bounds": true
+        },
+        "medium": {
+          "present": true,
+          "source": "proposed_fields.description_medium",
+          "chars": 454,
+          "words": 68,
+          "within_bounds": true
+        },
+        "long": {
+          "present": true,
+          "source": "proposed_fields.description_long",
+          "chars": 1002,
+          "words": 153,
+          "within_bounds": true
+        }
+      }
+    },
+    "description_fields_checked": 41,
+    "ids_without_reviewed_proposal_copy": [
+      "entry-2615"
+    ],
+    "violating_ids": []
+  },
+  "normalized_file": "worker-12-normalized.jsonl",
+  "normalized_sha256": "1e2e8c0ca04744656a6ba2c24a4eec3244a7ae67d4a730764c000b205647dcf3",
+  "packet_sha256": "7e9be3cee37b7d50d5accadc1f164099f5d3288689bad0cf9c7e500e0d3271e3",
+  "prior_checkpoint_count": 3,
+  "limits": "No new research, no source re-fetch, no canonical/Neon writes, no other-worker edits. Existing holds and intentional exclusions remain non-ready."
+}
