@@ -1,0 +1,47 @@
+{
+  "worker": 8,
+  "task": "citation58-revision-rescue-2026-10-04",
+  "checkpoint_after_record": 12,
+  "processed_count": 12,
+  "expected_count": 12,
+  "processed_keys": [
+    "entry-211",
+    "entry-293",
+    "entry-651",
+    "entry-996",
+    "entry-1782",
+    "entry-2930",
+    "entry-3722",
+    "entry-4054",
+    "entry-4692",
+    "entry-5565",
+    "entry-6155",
+    "entry-6340"
+  ],
+  "expected_keys": [
+    "entry-211",
+    "entry-293",
+    "entry-651",
+    "entry-996",
+    "entry-1782",
+    "entry-2930",
+    "entry-3722",
+    "entry-4054",
+    "entry-4692",
+    "entry-5565",
+    "entry-6155",
+    "entry-6340"
+  ],
+  "disposition_counts": {
+    "revision_drafted": 11,
+    "revision_drafted_with_field_hold": 1
+  },
+  "status": "complete",
+  "append_only_batch_file": "worker-08-batch-rescue-001.jsonl",
+  "batch_sha256_at_checkpoint": "68b94430a551510932f691626ec5ba1e48cc1e94770bb2df54b5ec10d2d2a54c",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "offline_only": true,
+  "live_neon_calls": 0,
+  "canonical_edits": 0
+}

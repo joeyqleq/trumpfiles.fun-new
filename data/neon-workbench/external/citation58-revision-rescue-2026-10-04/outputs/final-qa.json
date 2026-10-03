@@ -1,0 +1,150 @@
+{
+  "worker": 8,
+  "task": "citation58-revision-rescue-2026-10-04",
+  "status": "complete_with_one_field_hold",
+  "expected_ids": [
+    "entry-211",
+    "entry-293",
+    "entry-651",
+    "entry-996",
+    "entry-1782",
+    "entry-2930",
+    "entry-3722",
+    "entry-4054",
+    "entry-4692",
+    "entry-5565",
+    "entry-6155",
+    "entry-6340"
+  ],
+  "processed_ids": [
+    "entry-211",
+    "entry-293",
+    "entry-651",
+    "entry-996",
+    "entry-1782",
+    "entry-2930",
+    "entry-3722",
+    "entry-4054",
+    "entry-4692",
+    "entry-5565",
+    "entry-6155",
+    "entry-6340"
+  ],
+  "expected_count": 12,
+  "saved_rows": 12,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "revision_drafted": 11,
+    "revision_drafted_with_field_hold": 1
+  },
+  "blocking_ids": [
+    "entry-4054"
+  ],
+  "blocking_fields": [
+    {
+      "key": "entry-4054",
+      "field": "long",
+      "reason": "CBS source supports the core planning/no-final-decision facts, but a 140-word version would require repetition or additional event detail not independently supported in this scrape."
+    }
+  ],
+  "word_count_and_char_count_checks": {
+    "entry-211": {
+      "short_chars": 156,
+      "medium_words": 47,
+      "long_words": 151
+    },
+    "entry-293": {
+      "short_chars": 174,
+      "medium_words": 50,
+      "long_words": 145
+    },
+    "entry-651": {
+      "short_chars": 123,
+      "medium_words": 61,
+      "long_words": 152
+    },
+    "entry-996": {
+      "short_chars": 142,
+      "medium_words": 55,
+      "long_words": 144
+    },
+    "entry-1782": {
+      "short_chars": 164,
+      "medium_words": 58,
+      "long_words": 152
+    },
+    "entry-2930": {
+      "short_chars": 146,
+      "medium_words": 55,
+      "long_words": 154
+    },
+    "entry-3722": {
+      "short_chars": 163,
+      "medium_words": 56,
+      "long_words": 140
+    },
+    "entry-4054": {
+      "short_chars": 160,
+      "medium_words": 52,
+      "long_words": null
+    },
+    "entry-4692": {
+      "short_chars": 144,
+      "medium_words": 60,
+      "long_words": 150
+    },
+    "entry-5565": {
+      "short_chars": 133,
+      "medium_words": 55,
+      "long_words": 142
+    },
+    "entry-6155": {
+      "short_chars": 178,
+      "medium_words": 56,
+      "long_words": 151
+    },
+    "entry-6340": {
+      "short_chars": 141,
+      "medium_words": 51,
+      "long_words": 155
+    }
+  },
+  "validation": {
+    "exact_order_match": true,
+    "unique_key_count": 12,
+    "all_urls_https": true,
+    "all_verified_urls_have_fact_mapping": true,
+    "short_max_chars": 180,
+    "medium_word_bounds": [
+      45,
+      90
+    ],
+    "long_word_bounds_when_supplied": [
+      140,
+      300
+    ]
+  },
+  "provenance": {
+    "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+    "packet_sha256": "42400b29493c02465990e69c739c9d06f08e508ea7bbbd7c13180f9ab4d8aab9",
+    "coordinator_branch": "ls/7-trump-final-corrections-account2-worker1-slYA",
+    "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+    "prior_worker08_qa_files": [
+      "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-08-citation-20261003-batch-001.jsonl",
+      "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-08-citation-20261003-batch-002.jsonl",
+      "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-08-normalized.jsonl"
+    ],
+    "batch_file": "worker-08-batch-rescue-001.jsonl",
+    "batch_sha256": "68b94430a551510932f691626ec5ba1e48cc1e94770bb2df54b5ec10d2d2a54c"
+  },
+  "scope_limits": {
+    "editorial_approval": false,
+    "production_import": false,
+    "live_neon_calls": 0,
+    "canonical_edits": 0,
+    "other_worker_edits": 0,
+    "ui_changes": 0
+  }
+}
