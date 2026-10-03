@@ -1,0 +1,150 @@
+{
+  "job": "sample100-offline-import-rehearsal",
+  "worker": 20,
+  "source_branch": "codex/five-account-review-packets-2026-10-03",
+  "source_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "assigned_count": 100,
+  "validated_count": 100,
+  "missing_keys": [],
+  "duplicate_keys": [],
+  "input_files": {
+    "1": {
+      "file": "sample100/worker-01-input.jsonl",
+      "count": 9,
+      "sha256": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32"
+    },
+    "2": {
+      "file": "sample100/worker-02-input.jsonl",
+      "count": 9,
+      "sha256": "d03503aa35f2e7865af5c00c7c7dff4ded3a181ac4e981c8e4de21d74eeeeff1"
+    },
+    "3": {
+      "file": "sample100/worker-03-input.jsonl",
+      "count": 9,
+      "sha256": "1e26948a9ff5bce1fe6f5e6932871f928ff20c8b1dfcbb6b784b3afa0f112737"
+    },
+    "4": {
+      "file": "sample100/worker-04-input.jsonl",
+      "count": 9,
+      "sha256": "d87729dac75073905c6bd71d889c18fd732f71fcec4be7f40a726704506ef694"
+    },
+    "5": {
+      "file": "sample100/worker-05-input.jsonl",
+      "count": 8,
+      "sha256": "3e4ea56c4330113b712013f1fbb2d43be03efcfe8869f1e8318fd3192adc163c"
+    },
+    "6": {
+      "file": "sample100/worker-06-input.jsonl",
+      "count": 8,
+      "sha256": "87fe6f4c0c9b772554fdf9cd14512738400c2939c8fec304b582dcbee5bcedc7"
+    },
+    "7": {
+      "file": "sample100/worker-07-input.jsonl",
+      "count": 8,
+      "sha256": "5ddd9d3030f55ebaf2a6f99757290826cc9362dbc29099ca53580239d652cdae"
+    },
+    "8": {
+      "file": "sample100/worker-08-input.jsonl",
+      "count": 8,
+      "sha256": "2d8a8cff708e0e95b15792a1938299710341f2d6d228a0b50c3efde2b9e9b24e"
+    },
+    "9": {
+      "file": "sample100/worker-09-input.jsonl",
+      "count": 8,
+      "sha256": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08"
+    },
+    "10": {
+      "file": "sample100/worker-10-input.jsonl",
+      "count": 8,
+      "sha256": "faaedd41063c348cfbd27e134213db6d1b234f9c80deb7fd50f2b1093e38e4ba"
+    },
+    "11": {
+      "file": "sample100/worker-11-input.jsonl",
+      "count": 8,
+      "sha256": "c68361057c7fd624f64e245d66012b3eb8cb895ec4929b42b02c0443e207c536"
+    },
+    "12": {
+      "file": "sample100/worker-12-input.jsonl",
+      "count": 8,
+      "sha256": "3c59e2fb0acd70f3524a41e5587093f6c00470ac81a4ca1863bfcf736708cafc"
+    }
+  },
+  "nullable_fields": [
+    "harm",
+    "reach",
+    "institutions",
+    "procedural_abuse",
+    "self_dealing",
+    "persistence"
+  ],
+  "impact_formula": {
+    "weights": {
+      "harm": 0.3,
+      "reach": 0.2,
+      "institutions": 0.15,
+      "procedural_abuse": 0.15,
+      "self_dealing": 0.1,
+      "persistence": 0.1
+    },
+    "rounding": "ROUND_HALF_UP to 2 decimal places"
+  },
+  "simulation_totals": {
+    "identity": 100,
+    "old_text_preservation": 100,
+    "six_nullable_impact_fields": 100,
+    "sql_null_only_guard": 100,
+    "description_lengths": 100,
+    "impact_arithmetic": 100,
+    "source_provenance": 100,
+    "passed": 97,
+    "held": 3
+  },
+  "preserved_snapshot_differences": [
+    {
+      "key": "entry-77",
+      "fields": [
+        "source_urls"
+      ]
+    },
+    {
+      "key": "entry-29",
+      "fields": [
+        "people_tags"
+      ]
+    },
+    {
+      "key": "entry-7",
+      "fields": [
+        "title",
+        "description_short",
+        "description_long"
+      ]
+    }
+  ],
+  "hold_keys": [
+    {
+      "key": "entry-77",
+      "reason": "Preservation snapshot and staged payload differ in source_urls"
+    },
+    {
+      "key": "entry-29",
+      "reason": "Preservation snapshot and staged payload differ in people_tags"
+    },
+    {
+      "key": "entry-7",
+      "reason": "Preservation snapshot and staged payload differ in title, description_short, description_long"
+    }
+  ],
+  "rollback_conditions": [
+    "rollback the whole transaction if row count is not exactly 100",
+    "rollback if record_id/key/entry_number identity differs or duplicates occur",
+    "rollback if a non-null target field is changed (each write must require target_field IS NULL)",
+    "rollback if any dimension is absent, nonnumeric, outside 0–10, or not one-decimal precision",
+    "rollback if stored proposed impact_score differs from weighted six-dimension formula rounded half-up to 2 decimals",
+    "rollback if any title/short/medium/long limit fails",
+    "rollback if source/draft/impact provenance is missing or source URLs are malformed"
+  ],
+  "sql_validation_limit": "No SQL statement or migration is included in the sample100 source packet, so only the stated per-column IS NULL truth table was simulated; production SQL text must be checked before execution. No database was contacted.",
+  "result_file": "data/neon-workbench/external/account2-coordination-2026-10-03/worker-20/worker-20-batch-UNIQUE.jsonl",
+  "status": "offline simulation complete; not production import approval"
+}
