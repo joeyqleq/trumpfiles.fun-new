@@ -1,0 +1,18 @@
+{
+  "checkpoint": "five-account citation revision rescue worker 09",
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-09-batch-20261004-citation58-rescue-01.jsonl",
+  "checkpoint_rows": 5,
+  "expected_rows": 6,
+  "checkpoint_keys": [
+    "entry-654",
+    "entry-1666",
+    "entry-3009",
+    "entry-3735",
+    "entry-4097"
+  ],
+  "pending_keys": [
+    "entry-5094"
+  ],
+  "batch_sha256_at_checkpoint": "32770942ba0dcf03e79407f276e9c6ac4361432d91c109e9759b14109092107f",
+  "note": "Checkpoint after the first five terminal rows; the sixth exact-key row is appended after this checkpoint."
+}

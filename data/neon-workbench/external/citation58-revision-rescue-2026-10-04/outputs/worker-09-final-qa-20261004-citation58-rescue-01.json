@@ -1,0 +1,65 @@
+{
+  "task": "citation58-revision-rescue-2026-10-04",
+  "worker": 9,
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-09-batch-20261004-citation58-rescue-01.jsonl",
+  "batch_sha256": "60ec4dd1027dcefeb9d637add9232eedb35fec19048e119eae67e50758975a2b",
+  "checkpoint_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-09-checkpoint-20261004-citation58-rescue-01.json",
+  "assigned_keys": [
+    "entry-654",
+    "entry-1666",
+    "entry-3009",
+    "entry-3735",
+    "entry-4097",
+    "entry-5094"
+  ],
+  "rows_saved": 6,
+  "exact_set_pass": true,
+  "duplicate_keys": [],
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "url_format_pass": true,
+  "source_url_mapping_pass": true,
+  "description_length_checks": {
+    "entry-654": {
+      "short_chars": 96,
+      "medium_words": 66,
+      "long_words": 146
+    },
+    "entry-1666": {
+      "short_chars": 102,
+      "medium_words": 53,
+      "long_words": 171
+    },
+    "entry-3009": {
+      "short_chars": 149,
+      "medium_words": 53,
+      "long_words": 164
+    },
+    "entry-3735": {
+      "short_chars": 114,
+      "medium_words": 55,
+      "long_words": 153
+    },
+    "entry-4097": {
+      "short_chars": 139,
+      "medium_words": 58,
+      "long_words": 167
+    },
+    "entry-5094": {
+      "short_chars": 139,
+      "medium_words": 59,
+      "long_words": 173
+    }
+  },
+  "release_ready_count": 6,
+  "blocking_ids": [],
+  "release_ready_semantics": "Citation-supported proposal and aligned source list ready for editorial consideration only; this does not mean editorial approval, canonical change, Neon write, or production import.",
+  "qa": "PASS: exact six-key set, one row per key, no duplicates or omissions, valid HTTPS sources all mapped, requested description lengths pass, and checkpoint digest matches the first five row prefix.",
+  "note": "The final six-row batch supersedes its checkpoint digest after row six was appended; checkpoint digest is the first five-row prefix only.",
+  "prior_packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "prior_packet_sha256": "b25a3e967f9ac4d437e396a71e4bd57d3def1ede3e34d6b72d121139b7da4884",
+  "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "pass_count": 6,
+  "hold_count": 0,
+  "checkpoint_prefix_hash_pass": true
+}
