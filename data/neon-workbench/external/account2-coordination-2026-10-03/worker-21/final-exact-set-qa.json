@@ -1,0 +1,33 @@
+{
+  "passed": false,
+  "partial_audit_complete": true,
+  "citation_packet": {
+    "expected_rows": 190,
+    "actual_rows": 190,
+    "unique_keys": 190,
+    "exact": true,
+    "all_review_hold": true,
+    "latest_proposal_status_counts": {
+      "complete": 172,
+      "needs_context": 18
+    }
+  },
+  "204_staged_set": {
+    "expected_rows": 204,
+    "actual_row_level_keys_available": 0,
+    "exact_set_check": "not possible",
+    "overlap_nonoverlap_check": "not possible"
+  },
+  "blocked_requirements": [
+    "Exact overlap set",
+    "Exact citation-only set",
+    "Exact staged-only set",
+    "Per-ID resolution against the 204 staged key list"
+  ],
+  "nonblocking_findings": [
+    "190 citation keys validated as unique",
+    "172 proposals have status complete",
+    "18 proposals remain needs_context",
+    "all 190 citation records remain NEEDS_REVIEW"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "task": "Account2 worker 21 — staged needs_context vs citation packet coordination audit",
+  "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "inputs": {
+    "citation_packet_ref": "origin/codex/wave3-citation-qa-2026-10-03",
+    "citation_packet_path_prefix": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/",
+    "citation_packet_input_files": 11,
+    "citation_packet_rows": 190,
+    "citation_packet_unique_record_ids": 190,
+    "citation_packet_file_sha256": {
+      "14": "37711ccae09724ab369bc8872b52d79c4829f0f80e50083cfcf9d4323b4f7e1e",
+      "15": "dc42a89d7ddd880f2d1bcc76a9570eabfd1e91fb69e16a9fbcb2b5b57ac6b5dd",
+      "16": "5f6d5a946e203e828f0657ee8a86e14174b158a76891289f14e06c367591517f",
+      "17": "8477a38b8eb5260d7180d3aa6946622bf8d0bbe88e0410fe33710067d7ace75e",
+      "18": "66707778b72432b99d52ae84b77d72957d644752ea8ff238ecbbfe44e2dbb30d",
+      "19": "23055c13459872a1f84f93ce785c42b84ccb5cb7d07bbf660c031115b9bb694d",
+      "20": "fd9aa6254acd685601e87893b7e214a57808b27796e549983e406b14dee98036",
+      "21": "dacaf3fd748c3bafb24c1011e9ce87ba78d0516b484a4082896546bc8b7a76f8",
+      "22": "ab531dfda08b58ebf7602960162b4aabfb9a89af53bd6bce5ec65d06d3417c14",
+      "23": "609357b5bd2d253defe1b89ddaf092b82a70fba23f25532e033caa07306a2a44",
+      "24": "1a29e26c38bd4c693bf959692b3ce3f6eb55feb962f92b6ac5be87bda10e71c2"
+    },
+    "citation_packet_worker_counts": {
+      "14": 18,
+      "15": 18,
+      "16": 18,
+      "17": 17,
+      "18": 17,
+      "19": 17,
+      "20": 17,
+      "21": 17,
+      "22": 17,
+      "23": 17,
+      "24": 17
+    },
+    "saved_description_snapshot_ref": "origin/codex/description-results-2026-09-30",
+    "saved_description_snapshot_path": "data/neon-workbench/external/description-completion/2026-09-30/merged/SNAPSHOT.json",
+    "saved_description_snapshot_content": {
+      "assigned": 6944,
+      "saved_current_rows": 6944,
+      "missing": 0,
+      "draft_statuses": {
+        "complete": 6446,
+        "needs_context": 498
+      },
+      "published_to_neon": false,
+      "scope": "Draft staging snapshot only. Status complete is a writing-worker result, not publication approval. Needs-context and editorial repairs remain."
+    }
+  },
+  "comparison": {
+    "target_staged_needs_context_count": 204,
+    "target_exact_key_set_available": false,
+    "overlap_count": null,
+    "nonoverlap_counts": null,
+    "citation_only_count": null,
+    "membership": "indeterminate",
+    "reason": "The only saved description snapshot available is an aggregate summary with 498 needs_context across 6,944 rows; it contains no row-level IDs and does not identify a 204-record subset. The 204-set key list or row-level snapshot is absent from available published refs and saved files."
+  },
+  "citation_packet_proposal_status_counts": {
+    "complete": 172,
+    "needs_context": 18
+  },
+  "citation_packet_staged_status_counts": {
+    "needs_context": 166,
+    "complete": 24
+  },
+  "citation_review_hold_counts": {
+    "NEEDS_REVIEW": 190
+  },
+  "interpretation": "Latest worker proposals are present in the frozen citation input. 172 carry status complete and 18 carry needs_context. All 190 still carry NEEDS_REVIEW; a proposal marked complete is not citation approval. The 204-set overlap and nonoverlap cannot be truthfully enumerated without the missing exact key list.",
+  "results_path": "data/neon-workbench/external/account2-coordination-2026-10-03/worker-21/worker-21-results-append-only.jsonl",
+  "results_rows": 190,
+  "result_key_set_sha256": "6d79293fc0cbb05629ea94958e648560cd9c4a4772b564bf1a096e26ed575326",
+  "no_canonical_or_database_changes": true,
+  "blocker": "Missing row-level saved snapshot or exact 204 assignment IDs. Available aggregate SNAPSHOT.json reports 498 needs_context of 6,944 rows and cannot determine the 204-set membership."
+}
