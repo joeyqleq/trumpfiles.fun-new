@@ -1,0 +1,36 @@
+{
+  "worker": 10,
+  "packet": "held283-editorial-completion-2026-10-03",
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-10-input.jsonl",
+  "input_sha256": "504bbd566086150986968e34b43de75f3c2a9ca920e740bb96a61b201adfd5c3",
+  "batch_file": "worker-10-batch-held283-editorial-20261003.jsonl",
+  "checkpoint": 3,
+  "cumulative_rows": 18,
+  "cumulative_ids": [
+    "entry-4696",
+    "entry-5207",
+    "entry-5731",
+    "entry-5761",
+    "entry-5863",
+    "entry-6379",
+    "entry-6425",
+    "entry-6456",
+    "entry-6516",
+    "entry-6597",
+    "entry-6615",
+    "entry-6673",
+    "entry-6749",
+    "entry-6784",
+    "entry-6799",
+    "entry-6824",
+    "entry-6857",
+    "entry-6926"
+  ],
+  "terminal_status_counts": {
+    "hold": 14,
+    "propose_narrower": 3,
+    "propose_split_with_child_hold": 1
+  },
+  "checkpoint_status": "in_progress"
+}

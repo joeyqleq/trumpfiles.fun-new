@@ -1,0 +1,112 @@
+{
+  "worker": 10,
+  "packet": "held283-editorial-completion-2026-10-03",
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-10-input.jsonl",
+  "input_sha256": "504bbd566086150986968e34b43de75f3c2a9ca920e740bb96a61b201adfd5c3",
+  "input_sha256_verified": true,
+  "expected_count": 23,
+  "expected_ids": [
+    "entry-4696",
+    "entry-5207",
+    "entry-5731",
+    "entry-5761",
+    "entry-5863",
+    "entry-6379",
+    "entry-6425",
+    "entry-6456",
+    "entry-6516",
+    "entry-6597",
+    "entry-6615",
+    "entry-6673",
+    "entry-6749",
+    "entry-6784",
+    "entry-6799",
+    "entry-6824",
+    "entry-6857",
+    "entry-6926",
+    "entry-6943",
+    "entry-6964",
+    "entry-7094",
+    "entry-7126",
+    "entry-7159"
+  ],
+  "output_batch": "worker-10-batch-held283-editorial-20261003.jsonl",
+  "output_sha256": "023440b40ab923d7e5fe83553370d1302c80d62ebc3e4ac6e3978f8d2996f927",
+  "output_rows": 23,
+  "output_ids": [
+    "entry-4696",
+    "entry-5207",
+    "entry-5731",
+    "entry-5761",
+    "entry-5863",
+    "entry-6379",
+    "entry-6425",
+    "entry-6456",
+    "entry-6516",
+    "entry-6597",
+    "entry-6615",
+    "entry-6673",
+    "entry-6749",
+    "entry-6784",
+    "entry-6799",
+    "entry-6824",
+    "entry-6857",
+    "entry-6926",
+    "entry-6943",
+    "entry-6964",
+    "entry-7094",
+    "entry-7126",
+    "entry-7159"
+  ],
+  "exact_id_set_match": true,
+  "unique_ids": 23,
+  "terminal_status_counts": {
+    "hold": 17,
+    "propose_exclusion": 2,
+    "propose_narrower": 3,
+    "propose_split_with_child_hold": 1
+  },
+  "overlay_provenance_rows_verified": 26,
+  "overlay_blob_and_line_checks_passed": true,
+  "description_length_checks": {
+    "entry-5207": [
+      {
+        "short_characters": 82,
+        "medium_words": 49,
+        "long_words": 149,
+        "limits_met": true
+      }
+    ],
+    "entry-5731": [
+      {
+        "short_characters": 89,
+        "medium_words": 61,
+        "long_words": 183,
+        "limits_met": true
+      }
+    ],
+    "entry-5761": [
+      {
+        "short_characters": 71,
+        "medium_words": 64,
+        "long_words": 156,
+        "limits_met": true
+      }
+    ],
+    "entry-5863": [
+      {
+        "short_characters": 124,
+        "medium_words": 56,
+        "long_words": 143,
+        "limits_met": true
+      }
+    ]
+  },
+  "duplicate_event_review": "All 23 keys are unique. Report/article duplicates are excluded or held with URL/title guards; no unknown counterpart key was guessed. Split candidates are separated by event, date and source URL.",
+  "qa_status": "complete_with_explicit_holds",
+  "canonical_or_neon_edits": false,
+  "packet_inputs_edited": false,
+  "other_worker_outputs_edited": false,
+  "pr_requested": false
+}
