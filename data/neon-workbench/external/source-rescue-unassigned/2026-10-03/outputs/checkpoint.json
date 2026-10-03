@@ -3,11 +3,14 @@
   "input_sha256": "145effce2954b4b3d36faa0520eee25386d42fda977c324dbdd396a8fc01db02",
   "worker": 11,
   "assigned_count": 30,
-  "processed_count": 20,
-  "terminal_count": 20,
+  "processed_count": 30,
+  "terminal_count": 30,
+  "outcome_rows_total": 35,
   "batch_files": [
     "worker-11-batch-001.jsonl",
-    "worker-11-batch-002.jsonl"
+    "worker-11-batch-002.jsonl",
+    "worker-11-batch-003.jsonl",
+    "worker-11-batch-004.jsonl"
   ],
   "processed_entry_numbers": [
     4306,
@@ -29,9 +32,7 @@
     6518,
     6576,
     6621,
-    6641
-  ],
-  "pending_entry_numbers": [
+    6641,
     6669,
     6725,
     6742,
@@ -43,5 +44,30 @@
     6945,
     6965
   ],
-  "notes": "Checkpoint after twenty terminal proposals in two append-only batches."
+  "pending_entry_numbers": [],
+  "superseded_entry_numbers": [
+    5083,
+    5849,
+    6576,
+    6764,
+    6910
+  ],
+  "final_qa": {
+    "input_hash_verified": true,
+    "exact_assigned_id_coverage": true,
+    "unique_latest_outcomes": 30,
+    "terminal_statuses": {
+      "needs_correction": 30
+    },
+    "batch_sizes": [
+      10,
+      10,
+      10,
+      5
+    ],
+    "full_schema_consistent": true,
+    "all_outcomes_have_source_urls_and_claim_findings": true,
+    "append_only_history_preserved": true
+  },
+  "notes": "Four append-only JSONL batches. Batch 004 records five audited latest outcomes, superseding earlier versions for the listed IDs."
 }
