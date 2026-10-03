@@ -1,0 +1,520 @@
+{
+  "worker": 6,
+  "task": "normalized-release-qa-2026-10-04/account3",
+  "status": "complete_with_holds",
+  "assigned_ids": [
+    "entry-1535",
+    "entry-1452",
+    "entry-1714",
+    "entry-1660",
+    "entry-2467",
+    "entry-1722",
+    "entry-1777",
+    "entry-2226",
+    "entry-130",
+    "entry-344",
+    "entry-2358",
+    "entry-5726",
+    "entry-1501",
+    "entry-1760",
+    "entry-7056",
+    "entry-351",
+    "entry-5366",
+    "entry-6399",
+    "entry-1716",
+    "entry-1000",
+    "entry-1424",
+    "entry-2364",
+    "entry-5684",
+    "entry-3205",
+    "entry-6278",
+    "entry-1304",
+    "entry-1730",
+    "entry-260",
+    "entry-7202",
+    "entry-2335",
+    "entry-6969"
+  ],
+  "output_ids": [
+    "entry-1535",
+    "entry-1452",
+    "entry-1714",
+    "entry-1660",
+    "entry-2467",
+    "entry-1722",
+    "entry-1777",
+    "entry-2226",
+    "entry-130",
+    "entry-344",
+    "entry-2358",
+    "entry-5726",
+    "entry-1501",
+    "entry-1760",
+    "entry-7056",
+    "entry-351",
+    "entry-5366",
+    "entry-6399",
+    "entry-1716",
+    "entry-1000",
+    "entry-1424",
+    "entry-2364",
+    "entry-5684",
+    "entry-3205",
+    "entry-6278",
+    "entry-1304",
+    "entry-1730",
+    "entry-260",
+    "entry-7202",
+    "entry-2335",
+    "entry-6969"
+  ],
+  "saved_count": 31,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "pass": 9,
+    "hold": 22
+  },
+  "release_ready_count": 9,
+  "release_blocked_count": 22,
+  "blocking_ids": [
+    "entry-1535",
+    "entry-1452",
+    "entry-1714",
+    "entry-2467",
+    "entry-1722",
+    "entry-1777",
+    "entry-130",
+    "entry-344",
+    "entry-2358",
+    "entry-1501",
+    "entry-1760",
+    "entry-351",
+    "entry-6399",
+    "entry-1716",
+    "entry-1424",
+    "entry-2364",
+    "entry-5684",
+    "entry-1730",
+    "entry-260",
+    "entry-7202",
+    "entry-2335",
+    "entry-6969"
+  ],
+  "proposal_count": 0,
+  "proposal_word_length_check": {
+    "applicable": 0,
+    "status": "not_applicable",
+    "reason": "Neither prior worker-06 batch contains a proposal description; proposal is null for all rows."
+  },
+  "reconciliation": {
+    "source_batch_count": 2,
+    "source_row_counts": {
+      "prior_worker_06_batch": 31,
+      "supplement_worker_06_batch": 31
+    },
+    "effective_terminal_rows": 31,
+    "latest_descendant_selected_for_ids": [
+      "entry-1535",
+      "entry-1452",
+      "entry-1714",
+      "entry-1660",
+      "entry-2467",
+      "entry-1722",
+      "entry-1777",
+      "entry-2226",
+      "entry-130",
+      "entry-344",
+      "entry-2358",
+      "entry-5726",
+      "entry-1501",
+      "entry-1760",
+      "entry-7056",
+      "entry-351",
+      "entry-5366",
+      "entry-6399",
+      "entry-1716",
+      "entry-1000",
+      "entry-1424",
+      "entry-2364",
+      "entry-5684",
+      "entry-3205",
+      "entry-6278",
+      "entry-1304",
+      "entry-1730",
+      "entry-260",
+      "entry-7202",
+      "entry-2335",
+      "entry-6969"
+    ],
+    "latest_descendant_basis": "Every supplement row prior_provenance.superseded_review identifies the exact earlier worker-06 branch, commit, and file. The supplement final QA validates the exact 31-key set, packet SHA256, score formula, source basis, and checkpoint prefixes.",
+    "material_conflict_count": 15,
+    "status_conflict_count": 8,
+    "dimension_conflict_count": 9,
+    "event_state_conflict_count": 13,
+    "material_conflicts": [
+      {
+        "key": "entry-1452",
+        "changed_fields": [
+          "event_state"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "deferred",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": null
+      },
+      {
+        "key": "entry-1714",
+        "changed_fields": [
+          "event_state"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "deferred",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": null
+      },
+      {
+        "key": "entry-1660",
+        "changed_fields": [
+          "status",
+          "event_state",
+          "dimensions"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "scored",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": {
+          "harm": 4.5,
+          "reach": 6.0,
+          "institutions": 4.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 3.0
+        }
+      },
+      {
+        "key": "entry-2226",
+        "changed_fields": [
+          "status",
+          "event_state",
+          "dimensions"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "scored",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": {
+          "harm": 4.5,
+          "reach": 7.0,
+          "institutions": 0.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 4.0
+        }
+      },
+      {
+        "key": "entry-344",
+        "changed_fields": [
+          "event_state"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "deferred",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": null
+      },
+      {
+        "key": "entry-5726",
+        "changed_fields": [
+          "status",
+          "event_state",
+          "dimensions"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "scored",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": {
+          "harm": 5.5,
+          "reach": 8.0,
+          "institutions": 0.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 3.0
+        }
+      },
+      {
+        "key": "entry-7056",
+        "changed_fields": [
+          "status",
+          "event_state",
+          "dimensions"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "scored",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": {
+          "harm": 1.0,
+          "reach": 4.0,
+          "institutions": 1.5,
+          "procedural_abuse": 1.5,
+          "self_dealing": 0.0,
+          "persistence": 1.5
+        }
+      },
+      {
+        "key": "entry-5366",
+        "changed_fields": [
+          "status",
+          "event_state",
+          "dimensions"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "scored",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": {
+          "harm": 3.5,
+          "reach": 6.0,
+          "institutions": 5.5,
+          "procedural_abuse": 5.0,
+          "self_dealing": 0.0,
+          "persistence": 3.5
+        }
+      },
+      {
+        "key": "entry-1000",
+        "changed_fields": [
+          "status",
+          "dimensions"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "scored",
+        "prior_event_state": "realized",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": {
+          "harm": 0.0,
+          "reach": 2.0,
+          "institutions": 0.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 0.0
+        }
+      },
+      {
+        "key": "entry-2364",
+        "changed_fields": [
+          "event_state"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "deferred",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": null
+      },
+      {
+        "key": "entry-3205",
+        "changed_fields": [
+          "status",
+          "event_state",
+          "dimensions"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "scored",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": {
+          "harm": 6.0,
+          "reach": 8.0,
+          "institutions": 8.0,
+          "procedural_abuse": 4.0,
+          "self_dealing": 0.0,
+          "persistence": 3.0
+        }
+      },
+      {
+        "key": "entry-6278",
+        "changed_fields": [
+          "dimensions"
+        ],
+        "prior_status": "scored",
+        "latest_status": "scored",
+        "prior_event_state": "realized",
+        "latest_event_state": "realized",
+        "prior_dimensions": {
+          "harm": 4.5,
+          "reach": 8.0,
+          "institutions": 7.0,
+          "procedural_abuse": 6.0,
+          "self_dealing": 4.0,
+          "persistence": 3.5
+        },
+        "latest_dimensions": {
+          "harm": 4.0,
+          "reach": 8.0,
+          "institutions": 7.0,
+          "procedural_abuse": 6.0,
+          "self_dealing": 4.0,
+          "persistence": 3.0
+        }
+      },
+      {
+        "key": "entry-1304",
+        "changed_fields": [
+          "status",
+          "event_state",
+          "dimensions"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "scored",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": {
+          "harm": 6.0,
+          "reach": 8.0,
+          "institutions": 0.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 4.0
+        }
+      },
+      {
+        "key": "entry-7202",
+        "changed_fields": [
+          "event_state"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "deferred",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": null
+      },
+      {
+        "key": "entry-2335",
+        "changed_fields": [
+          "event_state"
+        ],
+        "prior_status": "deferred",
+        "latest_status": "deferred",
+        "prior_event_state": "unclear",
+        "latest_event_state": "realized",
+        "prior_dimensions": null,
+        "latest_dimensions": null
+      }
+    ],
+    "unresolved_conflict_ids": [],
+    "selection_rule": "For scored/deferred status, event_state, or dimension disagreements, retain the latest supplement row only because its explicit supersession provenance and final QA support it; preserve both prior and latest basis/uncertainty in each row. A latest deferred result stays hold."
+  },
+  "url_validation": {
+    "url_count": 53,
+    "valid_format_count": 53,
+    "format_status": "pass_syntax_only",
+    "invalid_urls": [],
+    "method": "Carry forward only latest supplement source_urls; validate HTTPS URI syntax only. No new web research or live link checks performed."
+  },
+  "source_artifacts": {
+    "prior_output": {
+      "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-06-batch-20261003-a.jsonl",
+      "commit": "53fdd7651b3d9293968d7742cb8806645372103e"
+    },
+    "prior_qa": {
+      "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/qa/worker-06-final-qa-20261003.json",
+      "commit": "53fdd7651b3d9293968d7742cb8806645372103e"
+    },
+    "supplement_packet": {
+      "branch": "codex/impact368-context-supplement-2026-10-03",
+      "commit": "520015274c29cbcc24a4e54d747e896198756415",
+      "input_sha256": "5dab01ced30cefeab09bbbb2ffbfbad7ece991460646e85258c2fa31481514ce"
+    },
+    "supplement_output": {
+      "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-06-batch-20261003-context-a.jsonl",
+      "latest_commit": "eb567ab1be17ea01b7c857c7a36b183674e86042"
+    },
+    "supplement_qa": {
+      "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/qa/worker-06-final-qa-20261003.json",
+      "commit": "0b6202a7b6fda95442cf3cb3fa2f73fa1daf94fe"
+    }
+  },
+  "scope": "Worker-06 files only. No new research, canonical edits, Neon writes, or other-worker changes.",
+  "output": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account3/worker-06-normalized.jsonl",
+  "prior_batch_completion": {
+    "status": "complete_and_pushed_before_normalization",
+    "output_rows": 31,
+    "missing_output_ids": [],
+    "verified_checkpoints": [
+      {
+        "job": "prior-impact368",
+        "count": 8,
+        "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/checkpoints/worker-06-checkpoint-008.jsonl"
+      },
+      {
+        "job": "prior-impact368",
+        "count": 16,
+        "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/checkpoints/worker-06-checkpoint-016.jsonl"
+      },
+      {
+        "job": "prior-impact368",
+        "count": 24,
+        "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/checkpoints/worker-06-checkpoint-024.jsonl"
+      },
+      {
+        "job": "prior-impact368",
+        "count": 31,
+        "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/checkpoints/worker-06-checkpoint-031.jsonl"
+      },
+      {
+        "job": "context-supplement",
+        "count": 8,
+        "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/checkpoints/worker-06-checkpoint-008.jsonl"
+      },
+      {
+        "job": "context-supplement",
+        "count": 16,
+        "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/checkpoints/worker-06-checkpoint-016.jsonl"
+      },
+      {
+        "job": "context-supplement",
+        "count": 24,
+        "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/checkpoints/worker-06-checkpoint-024.jsonl"
+      },
+      {
+        "job": "context-supplement",
+        "count": 31,
+        "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/checkpoints/worker-06-checkpoint-031.jsonl"
+      }
+    ],
+    "checkpoint_artifact_count": 8,
+    "checkpoint_missing_count": 0,
+    "existing_branch_head": "0b6202a7b6fda95442cf3cb3fa2f73fa1daf94fe"
+  },
+  "validation": {
+    "schema": "pass",
+    "exact_ordered_id_set": "pass",
+    "duplicates": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "status_and_score_reconciliation": "pass",
+    "provenance": "pass",
+    "url_format": "pass",
+    "proposal_word_lengths": "not_applicable_no_proposals",
+    "deferred_remain_hold": "pass"
+  }
+}
