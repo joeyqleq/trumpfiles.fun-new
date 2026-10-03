@@ -1,0 +1,250 @@
+{
+  "status": "complete",
+  "worker": "worker-01",
+  "account": "account4",
+  "source_jobs": [
+    "five-account-round-2026-10-03/web425",
+    "held283-editorial-completion-2026-10-03"
+  ],
+  "reconciliation_rule": "Latest held283 row is effective. Retain a later pass only when its proposal has source mapping and passes all field-length rules; holds remain blocking. Conflicts are explicit in row reasons.",
+  "assigned_keys": [
+    "entry-4239",
+    "entry-4753",
+    "entry-5237",
+    "entry-5737",
+    "entry-5815",
+    "entry-6125",
+    "entry-6409",
+    "entry-6432",
+    "entry-6463",
+    "entry-6560",
+    "entry-6600",
+    "entry-6625",
+    "entry-6693",
+    "entry-6758",
+    "entry-6787",
+    "entry-6803",
+    "entry-6829",
+    "entry-6867",
+    "entry-6930",
+    "entry-6949",
+    "entry-7050",
+    "entry-7110",
+    "entry-7132",
+    "entry-7176"
+  ],
+  "assigned_count": 24,
+  "output_path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-01-normalized.jsonl",
+  "written_row_count": 24,
+  "unique_key_count": 24,
+  "missing_ids": [],
+  "outside_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "hold": 19,
+    "propose_consolidation_with_counterpart": 3,
+    "propose_narrower_supported_event": 1,
+    "propose_split": 1
+  },
+  "release_ready_count": 5,
+  "blocking_count": 19,
+  "blocking_ids": [
+    "entry-4239",
+    "entry-4753",
+    "entry-5737",
+    "entry-5815",
+    "entry-6432",
+    "entry-6463",
+    "entry-6560",
+    "entry-6600",
+    "entry-6625",
+    "entry-6693",
+    "entry-6758",
+    "entry-6787",
+    "entry-6803",
+    "entry-6829",
+    "entry-6867",
+    "entry-6930",
+    "entry-6949",
+    "entry-7050",
+    "entry-7132"
+  ],
+  "terminal_conflict_count": 11,
+  "terminal_conflicts": [
+    {
+      "key": "entry-5737",
+      "web425_status": "pass",
+      "held283_status": "hold",
+      "effective_disposition": "hold",
+      "release_ready": false,
+      "resolution": "later hold selected"
+    },
+    {
+      "key": "entry-6125",
+      "web425_status": "hold",
+      "held283_status": "pass",
+      "effective_disposition": "propose_consolidation_with_counterpart",
+      "release_ready": true,
+      "resolution": "later supported proposal selected"
+    },
+    {
+      "key": "entry-6432",
+      "web425_status": "pass",
+      "held283_status": "hold",
+      "effective_disposition": "hold",
+      "release_ready": false,
+      "resolution": "later hold selected"
+    },
+    {
+      "key": "entry-6463",
+      "web425_status": "pass",
+      "held283_status": "hold",
+      "effective_disposition": "hold",
+      "release_ready": false,
+      "resolution": "later hold selected"
+    },
+    {
+      "key": "entry-6560",
+      "web425_status": "pass",
+      "held283_status": "hold",
+      "effective_disposition": "hold",
+      "release_ready": false,
+      "resolution": "later hold selected"
+    },
+    {
+      "key": "entry-6600",
+      "web425_status": "pass",
+      "held283_status": "hold",
+      "effective_disposition": "hold",
+      "release_ready": false,
+      "resolution": "later hold selected"
+    },
+    {
+      "key": "entry-6758",
+      "web425_status": "pass",
+      "held283_status": "hold",
+      "effective_disposition": "hold",
+      "release_ready": false,
+      "resolution": "later hold selected"
+    },
+    {
+      "key": "entry-6829",
+      "web425_status": "pass",
+      "held283_status": "hold",
+      "effective_disposition": "hold",
+      "release_ready": false,
+      "resolution": "later hold selected"
+    },
+    {
+      "key": "entry-7050",
+      "web425_status": "pass",
+      "held283_status": "hold",
+      "effective_disposition": "hold",
+      "release_ready": false,
+      "resolution": "later hold selected"
+    },
+    {
+      "key": "entry-7110",
+      "web425_status": "hold",
+      "held283_status": "pass",
+      "effective_disposition": "propose_consolidation_with_counterpart",
+      "release_ready": true,
+      "resolution": "later supported proposal selected"
+    },
+    {
+      "key": "entry-7176",
+      "web425_status": "hold",
+      "held283_status": "pass",
+      "effective_disposition": "propose_consolidation_with_counterpart",
+      "release_ready": true,
+      "resolution": "later supported proposal selected"
+    }
+  ],
+  "proposal_length_audit": [
+    {
+      "key": "entry-5237",
+      "events": [
+        {
+          "event_index": 1,
+          "title_chars": 57,
+          "short_chars": 82,
+          "medium_words": 55,
+          "long_words": 157
+        },
+        {
+          "event_index": 2,
+          "title_chars": 60,
+          "short_chars": 130,
+          "medium_words": 57,
+          "long_words": 166
+        },
+        {
+          "event_index": 3,
+          "title_chars": 51,
+          "short_chars": 139,
+          "medium_words": 50,
+          "long_words": 153
+        }
+      ]
+    },
+    {
+      "key": "entry-6125",
+      "events": [
+        {
+          "event_index": 1,
+          "title_chars": 60,
+          "short_chars": 177,
+          "medium_words": 57,
+          "long_words": 167
+        }
+      ]
+    },
+    {
+      "key": "entry-6409",
+      "events": [
+        {
+          "event_index": 1,
+          "title_chars": 80,
+          "short_chars": 139,
+          "medium_words": 55,
+          "long_words": 161
+        }
+      ]
+    },
+    {
+      "key": "entry-7110",
+      "events": [
+        {
+          "event_index": 1,
+          "title_chars": 68,
+          "short_chars": 138,
+          "medium_words": 56,
+          "long_words": 172
+        }
+      ]
+    },
+    {
+      "key": "entry-7176",
+      "events": [
+        {
+          "event_index": 1,
+          "title_chars": 64,
+          "short_chars": 155,
+          "medium_words": 74,
+          "long_words": 187
+        }
+      ]
+    }
+  ],
+  "url_validation": {
+    "format": "HTTPS URL with non-empty host",
+    "invalid_url_count": 0,
+    "invalid_verified_urls": [],
+    "invalid_proposal_source_urls": [],
+    "invalid_source_to_fact_urls": [],
+    "verified_urls_from_prior_batches_only": true,
+    "proposal_urls_are_from_prior_batch_proposals": true
+  },
+  "all_validation_checks_passed": true,
+  "scope": "No new research; no canonical/Neon writes; no other worker edits; no PR."
+}
