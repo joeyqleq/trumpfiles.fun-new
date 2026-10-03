@@ -1,0 +1,52 @@
+{
+  "worker": "02",
+  "phase": "impact368-context-supplement-reassessment",
+  "supplement_commit": "520015274c29cbcc24a4e54d747e896198756415",
+  "input_file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/worker-02-input.jsonl",
+  "input_sha256_expected": "3eba7f89530a58b22bcd0502cb1a4129fdf565b18519c338bd13b713815db5a5",
+  "input_sha256_actual": "3eba7f89530a58b22bcd0502cb1a4129fdf565b18519c338bd13b713815db5a5",
+  "prior_review_commit": "7c9b5c7404a1e0bd102b903c8b117ad1f81b4f72",
+  "prior_review_file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-02-batch-86d71a0b-20261003.jsonl",
+  "output_file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-02-batch-context-supplement-52001527-20261003.jsonl",
+  "output_sha256": "06e986aacb2da6e9cb3159c7911efcc9d1bfaed3d6940294a0e2d0c1481b672a",
+  "assigned_count": 31,
+  "output_count": 31,
+  "exact_packet_id_set_match": true,
+  "packet_order_preserved": true,
+  "supersedes_prior_rows_without_mutating_them": true,
+  "scored_count": 5,
+  "deferred_count": 26,
+  "scored_ids": [
+    "entry-1590",
+    "entry-1437",
+    "entry-5518",
+    "entry-816",
+    "entry-1612"
+  ],
+  "formula": {
+    "expression": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+    "weights": {
+      "harm": 0.3,
+      "reach": 0.2,
+      "institutions": 0.15,
+      "procedural_abuse": 0.15,
+      "self_dealing": 0.1,
+      "persistence": 0.1
+    },
+    "weights_sum": 1.0,
+    "rounding": "weighted composite to 2 decimals after one-decimal dimension values",
+    "validation": "PASS: every scored row has six one-decimal dimensions in [0,10] and matching weighted impact_score; deferred rows have null dimensions and impact_score."
+  },
+  "source_basis_validation": "PASS: basis uses the exact row’s staged description, with source_reference preserved from frozen original. Scored rows limit assessment to documented consequences; deferred rows name the remaining claim-critical fact. No general web search or database write used.",
+  "checkpoint_file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/checkpoints/worker-02-checkpoint-context-supplement-52001527-20261003.jsonl",
+  "checkpoint_counts": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    31
+  ],
+  "review_outcome": "All 31 exact IDs reassessed. Five narrowly bounded records scored; all remaining rows stay deferred where claim-critical attribution, consequence, implementation, or outcome is not established."
+}
