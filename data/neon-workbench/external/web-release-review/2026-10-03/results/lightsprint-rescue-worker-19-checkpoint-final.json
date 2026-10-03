@@ -1,0 +1,403 @@
+{
+  "task": "Web PR49 worker 19 final QA checkpoint",
+  "branch": "ls/6-trump-final-corrections-account2-worker1-zeIF",
+  "packet": {
+    "commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+    "path": "data/neon-workbench/external/web-release-review/2026-10-03/lightsprint-rescue/worker-19-input.jsonl",
+    "sha256": "c2674b4f223fdee1fb4e63218fbac93b71fa2976bcea75fa5f2a2c74f19da6f2",
+    "assigned_keys": [
+      "entry-4457",
+      "entry-5161",
+      "entry-5340",
+      "entry-5749",
+      "entry-5826",
+      "entry-6324",
+      "entry-6425",
+      "entry-6457",
+      "entry-6516",
+      "entry-6595",
+      "entry-6612",
+      "entry-6662",
+      "entry-6744",
+      "entry-6781",
+      "entry-6794",
+      "entry-6818",
+      "entry-6834",
+      "entry-6900",
+      "entry-6936",
+      "entry-6954",
+      "expanded-20260825-usps-injunction-violation",
+      "expanded-20260908-gsa-canada-exclusion",
+      "expanded-20260914-un-civilian-airstrike-rebuke",
+      "expanded-20260921-garces-detention-conference",
+      "expanded-20260925-pocket-rescission-announcement",
+      "expanded-20260928-nathan-birthright-lawsuit",
+      "fresh-20260910-trump-phone-price",
+      "pr47-review-entry-1174",
+      "pr47-review-entry-1299",
+      "pr47-review-entry-1455",
+      "pr47-review-entry-1526",
+      "pr47-review-entry-1593",
+      "pr47-review-entry-1662"
+    ],
+    "count": 33,
+    "manifest_input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+    "manifest_pr49_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d"
+  },
+  "output": {
+    "path": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker-19-batch-UNIQUE.jsonl",
+    "physical_append_only_rows": 37,
+    "latest_unique_key_count": 33,
+    "latest_key_set_exact": true,
+    "revision_histories_linked_by_supersedes_revision": true
+  },
+  "authoritative_latest_status": {
+    "rule": "maximum revision per assignment_key",
+    "pr49_amended_keys_cross_checked": 25,
+    "keys_without_pr49_amendment": [
+      "expanded-20260925-pocket-rescission-announcement",
+      "expanded-20260928-nathan-birthright-lawsuit",
+      "pr47-review-entry-1174",
+      "pr47-review-entry-1299",
+      "pr47-review-entry-1455",
+      "pr47-review-entry-1526",
+      "pr47-review-entry-1593",
+      "pr47-review-entry-1662"
+    ],
+    "status_counts": {
+      "reviewed_split_with_complete_event_drafts": 1,
+      "reviewed_split_partial_draft": 1,
+      "reviewed_exclude": 7,
+      "reviewed_unresolved": 9,
+      "reviewed_narrower_supported_event": 1,
+      "reviewed_claim_not_supported_as_written": 1,
+      "reviewed_attributed_event_draft": 1,
+      "reviewed_attributed_conditional_directive_draft": 1,
+      "reviewed_attributed_statement_draft_with_access_limit": 1,
+      "reviewed_attributed_personal_account_draft": 1,
+      "reviewed_candidate_draft_attributed_competing_positions": 1,
+      "reviewed_candidate_draft_attributed_litigation": 1,
+      "reviewed_unresolved_source_inaccessible": 1,
+      "reviewed_narrowed_correction_original_claim_unsubstantiated": 3,
+      "reviewed_unresolved_source_not_accessible": 3
+    },
+    "disposition_counts": {
+      "split_supported_components": 2,
+      "exclude_pending_new_evidence": 7,
+      "retain_unresolved": 2,
+      "replace_with_narrower_supported_event": 1,
+      "retain_unresolved_pending_specific_evidence": 7,
+      "exclude_original_claim_pending_source_for_claim": 1,
+      "retain_for_separate_human_review": 4,
+      "retain_with_explicit_source_limit_for_human_review": 1,
+      "retain_with_explicit_attribution_for_human_review": 1,
+      "retain_unresolved_pending_source_text": 1,
+      "replace_with_narrowed_fact_based_proposal": 3,
+      "retain_unresolved_pending_readable_source": 3
+    }
+  },
+  "draft_qa": {
+    "draft_count_by_key": {
+      "entry-4457": 2,
+      "entry-5161": 1,
+      "entry-5340": 0,
+      "entry-5749": 0,
+      "entry-5826": 0,
+      "entry-6324": 0,
+      "entry-6425": 0,
+      "entry-6457": 1,
+      "entry-6516": 0,
+      "entry-6595": 0,
+      "entry-6612": 0,
+      "entry-6662": 0,
+      "entry-6744": 0,
+      "entry-6781": 0,
+      "entry-6794": 0,
+      "entry-6818": 0,
+      "entry-6834": 0,
+      "entry-6900": 0,
+      "entry-6936": 0,
+      "entry-6954": 0,
+      "expanded-20260825-usps-injunction-violation": 1,
+      "expanded-20260908-gsa-canada-exclusion": 1,
+      "expanded-20260914-un-civilian-airstrike-rebuke": 1,
+      "expanded-20260921-garces-detention-conference": 1,
+      "expanded-20260925-pocket-rescission-announcement": 1,
+      "expanded-20260928-nathan-birthright-lawsuit": 1,
+      "fresh-20260910-trump-phone-price": 0,
+      "pr47-review-entry-1174": 1,
+      "pr47-review-entry-1299": 1,
+      "pr47-review-entry-1455": 0,
+      "pr47-review-entry-1526": 0,
+      "pr47-review-entry-1593": 0,
+      "pr47-review-entry-1662": 1
+    },
+    "keys_with_drafts": 12,
+    "keys_without_draft_by_recorded_disposition_or_unresolved_state": [
+      "entry-5340",
+      "entry-5749",
+      "entry-5826",
+      "entry-6324",
+      "entry-6425",
+      "entry-6516",
+      "entry-6595",
+      "entry-6612",
+      "entry-6662",
+      "entry-6744",
+      "entry-6781",
+      "entry-6794",
+      "entry-6818",
+      "entry-6834",
+      "entry-6900",
+      "entry-6936",
+      "entry-6954",
+      "fresh-20260910-trump-phone-price",
+      "pr47-review-entry-1455",
+      "pr47-review-entry-1526",
+      "pr47-review-entry-1593"
+    ],
+    "short_max_chars": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ],
+    "all_present_draft_lengths_pass": true,
+    "proposal_level_https_source_urls_present_for_all_drafts": true,
+    "unique_urls": 27,
+    "pr47_original_claim_substantiated_false": true
+  },
+  "validation": {
+    "passed": true,
+    "errors": []
+  },
+  "remaining_evidence_gaps": [
+    {
+      "assignment_key": "entry-4457",
+      "namespace": "held",
+      "status": "reviewed_split_with_complete_event_drafts",
+      "disposition": "split_supported_components",
+      "gap": "No material gap for the two drafted components; the Brennan Center’s 34/25/80% figures remain its attributed analysis and should not be described as official Supreme Court statistics."
+    },
+    {
+      "assignment_key": "entry-5161",
+      "namespace": "held",
+      "status": "reviewed_split_partial_draft",
+      "disposition": "split_supported_components",
+      "gap": "The separate March 31, 2026 EO 14399 component needs independently reviewed full source text before a 140–300-word draft is proposed; the supplied review did not verify enough detail. The California ballot total and causal link to federal policy remain unsupported."
+    },
+    {
+      "assignment_key": "entry-5340",
+      "namespace": "held",
+      "status": "reviewed_exclude",
+      "disposition": "exclude_pending_new_evidence",
+      "gap": "No sufficiently supported discrete event survives the proposed soft-hide rationale. Reconsider only if direct evidence establishes a dated occurrence matching the entry."
+    },
+    {
+      "assignment_key": "entry-5749",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved",
+      "gap": "A contemporaneous FBI/DOJ announcement, court docket, named defendant, or credible report matching an August 2025 journalist arrest under the Espionage Act."
+    },
+    {
+      "assignment_key": "entry-5826",
+      "namespace": "held",
+      "status": "reviewed_exclude",
+      "disposition": "exclude_pending_new_evidence",
+      "gap": "No records or reporting supplied establishing foreign heads of state paid Mar-a-Lago memberships to gain meetings. Exact identity, payment record and meeting evidence needed."
+    },
+    {
+      "assignment_key": "entry-6324",
+      "namespace": "held",
+      "status": "reviewed_exclude",
+      "disposition": "exclude_pending_new_evidence",
+      "gap": "No sufficiently supported discrete event survives the proposed soft-hide rationale. Reconsider only if direct evidence establishes a dated occurrence matching the entry."
+    },
+    {
+      "assignment_key": "entry-6425",
+      "namespace": "held",
+      "status": "reviewed_exclude",
+      "disposition": "exclude_pending_new_evidence",
+      "gap": "No sufficiently supported discrete event survives the proposed soft-hide rationale. Reconsider only if direct evidence establishes a dated occurrence matching the entry."
+    },
+    {
+      "assignment_key": "entry-6516",
+      "namespace": "held",
+      "status": "reviewed_exclude",
+      "disposition": "exclude_pending_new_evidence",
+      "gap": "No video or contemporaneous transcript supplied for Trump holding blank paper as a healthcare plan. Need date, setting and original footage."
+    },
+    {
+      "assignment_key": "entry-6595",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved",
+      "gap": "Evidence of individual prosecutorial/DOJ actions does not establish Bondi dropped all pending cases against Trump allies on day one. Need case list and dated dismissal orders/directive."
+    },
+    {
+      "assignment_key": "entry-6612",
+      "namespace": "held",
+      "status": "reviewed_exclude",
+      "disposition": "exclude_pending_new_evidence",
+      "gap": "No official records supplied showing Bondi opened investigations of Cheney and Kinzinger. Exact DOJ announcement or case records needed."
+    },
+    {
+      "assignment_key": "entry-6662",
+      "namespace": "held",
+      "status": "reviewed_exclude",
+      "disposition": "exclude_pending_new_evidence",
+      "gap": "No transcript/source supplied for the specific May 2025 “saved the economy” quote or the claim every major economist disagreed. Need exact statement and attributable economic analyses."
+    },
+    {
+      "assignment_key": "entry-6744",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved_pending_specific_evidence",
+      "gap": "No matching primary or reputable source found in repeated searches."
+    },
+    {
+      "assignment_key": "entry-6781",
+      "namespace": "held",
+      "status": "reviewed_claim_not_supported_as_written",
+      "disposition": "exclude_original_claim_pending_source_for_claim",
+      "gap": "Searches in the matching context did not establish the dated quote; prior judicial-appointment counts are background, not the claimed March statement. Exact blocker: a reliable contemporaneous source establishing the stated date, actor, action and affected group was not found in the supplied evidence."
+    },
+    {
+      "assignment_key": "entry-6794",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved_pending_specific_evidence",
+      "gap": "No matching credible source located."
+    },
+    {
+      "assignment_key": "entry-6818",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved_pending_specific_evidence",
+      "gap": "No matching credible source located."
+    },
+    {
+      "assignment_key": "entry-6834",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved_pending_specific_evidence",
+      "gap": "No matching official or reputable source located."
+    },
+    {
+      "assignment_key": "entry-6900",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved_pending_specific_evidence",
+      "gap": "No matching evidence located for the specific amount and period."
+    },
+    {
+      "assignment_key": "entry-6936",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved_pending_specific_evidence",
+      "gap": "Official policy concerns visa issuance and entry restrictions for foreign nationals, not stripping citizenship from Americans for speech."
+    },
+    {
+      "assignment_key": "entry-6954",
+      "namespace": "held",
+      "status": "reviewed_unresolved",
+      "disposition": "retain_unresolved_pending_specific_evidence",
+      "gap": "AP documents aggressive 2025 deportation actions and litigation but not a formal April reinstatement of the 2018 zero-tolerance family-separation policy."
+    },
+    {
+      "assignment_key": "expanded-20260825-usps-injunction-violation",
+      "namespace": "fresh",
+      "status": "reviewed_attributed_event_draft",
+      "disposition": "retain_for_separate_human_review",
+      "gap": "The cited Reuters excerpt supports the attributed violation finding and refusal to block the rule at that stage; do not convert this into a contempt sanction or final merits ruling."
+    },
+    {
+      "assignment_key": "expanded-20260908-gsa-canada-exclusion",
+      "namespace": "fresh",
+      "status": "reviewed_attributed_conditional_directive_draft",
+      "disposition": "retain_for_separate_human_review",
+      "gap": "Available Reuters excerpt supports a conditional direction. It does not establish that listed products were removed, that every federal purchase from Canada was banned, or that Canada changed its procurement rules."
+    },
+    {
+      "assignment_key": "expanded-20260914-un-civilian-airstrike-rebuke",
+      "namespace": "fresh",
+      "status": "reviewed_attributed_statement_draft_with_access_limit",
+      "disposition": "retain_with_explicit_source_limit_for_human_review",
+      "gap": "The OHCHR page did not render; a focused secondary excerpt attributes the call to the UN mission. Strike attribution, casualties, and any legal finding require independently accessible source text."
+    },
+    {
+      "assignment_key": "expanded-20260921-garces-detention-conference",
+      "namespace": "fresh",
+      "status": "reviewed_attributed_personal_account_draft",
+      "disposition": "retain_with_explicit_attribution_for_human_review",
+      "gap": "Reuters syndication supports that Garces Perez made these statements by phone with his lawyer introducing him. The injury, treatment conditions and shooting circumstances are his and counsel’s account, not independently adjudicated facts."
+    },
+    {
+      "assignment_key": "expanded-20260925-pocket-rescission-announcement",
+      "namespace": "fresh",
+      "status": "reviewed_candidate_draft_attributed_competing_positions",
+      "disposition": "retain_for_separate_human_review",
+      "gap": "Open the cited White House statement and Politico report to verify the September 25 date, nearly $1 billion amount, affected programs, and the attributed objections. The packet draft describes an announcement; it does not establish final implementation, a court ruling, or the ultimate budget outcome."
+    },
+    {
+      "assignment_key": "expanded-20260928-nathan-birthright-lawsuit",
+      "namespace": "fresh",
+      "status": "reviewed_candidate_draft_attributed_litigation",
+      "disposition": "retain_for_separate_human_review",
+      "gap": "The source packet supports the filing and summarizes the complaint; legal violations remain plaintiffs’ allegations, and no merits ruling or outcome is established."
+    },
+    {
+      "assignment_key": "fresh-20260910-trump-phone-price",
+      "namespace": "fresh",
+      "status": "reviewed_unresolved_source_inaccessible",
+      "disposition": "retain_unresolved_pending_source_text",
+      "gap": "The Verge article or a reliable archived copy must be opened to verify both the earlier and later phone prices, the observation dates, and whether the price was the only changed listing detail. Keep the candidate unconfirmed until then."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1174",
+      "namespace": "pr47",
+      "status": "reviewed_narrowed_correction_original_claim_unsubstantiated",
+      "disposition": "replace_with_narrowed_fact_based_proposal",
+      "gap": "AP’s opened March 3 report supports the reported date and two-drone incident. It does not establish that a Trump decision caused the attack; keep that original causal claim out. Reuters direct page was inaccessible, so no-injury and empty-building claims remain excluded."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1299",
+      "namespace": "pr47",
+      "status": "reviewed_narrowed_correction_original_claim_unsubstantiated",
+      "disposition": "replace_with_narrowed_fact_based_proposal",
+      "gap": "AP’s opened report is dated March 2, 2026, and supports the public-communication chronology. It does not establish that experts were sidelined during the strike decision or that the communication approach was intended to sell the operation."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1455",
+      "namespace": "pr47",
+      "status": "reviewed_unresolved_source_not_accessible",
+      "disposition": "retain_unresolved_pending_readable_source",
+      "gap": "Open the cited AP article (either packet URL) and verify the exact June 2025 and February 2026 statements before drafting. Without the source text, the shifts/rationales are not independently verified; the original deterrence-causation claim remains unsupported."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1526",
+      "namespace": "pr47",
+      "status": "reviewed_unresolved_source_not_accessible",
+      "disposition": "retain_unresolved_pending_readable_source",
+      "gap": "Open the PBS report and/or PolitiFact tracker to verify the January Detroit statement, the tracker’s 75 pledges and status percentages. The PBS and tracker URLs returned internal errors; proposal text alone cannot substantiate the corrected facts or the original all-promises claim."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1593",
+      "namespace": "pr47",
+      "status": "reviewed_unresolved_source_not_accessible",
+      "disposition": "retain_unresolved_pending_readable_source",
+      "gap": "Open AP’s tracker data and validate its as-of date, entry count and status counts, plus the cited examples. The tracker returned an internal error; do not assert cross-topic variation or the original uniform-success/fragility narrative until source text is available."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1662",
+      "namespace": "pr47",
+      "status": "reviewed_narrowed_correction_original_claim_unsubstantiated",
+      "disposition": "replace_with_narrowed_fact_based_proposal",
+      "gap": "NPR’s document-release reporting does not establish a contradiction in a specific Trump defense or wrongdoing. The narrowed report may be proposed with allegation and missing-record caveats; original chronology-pressure claim remains unsupported."
+    }
+  ]
+}
