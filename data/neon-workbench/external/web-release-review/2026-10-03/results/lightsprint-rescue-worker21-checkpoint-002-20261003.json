@@ -1,0 +1,55 @@
+{
+  "worker": 21,
+  "batch": 2,
+  "completed_keys": [
+    "entry-6521",
+    "entry-6598",
+    "entry-6615",
+    "entry-6672",
+    "entry-6751",
+    "entry-6784",
+    "entry-6798",
+    "entry-6822"
+  ],
+  "completed_count": 8,
+  "total_assigned": 32,
+  "remaining_keys": [
+    "entry-6839",
+    "entry-6922",
+    "entry-6939",
+    "entry-6958",
+    "expanded-20260827-usps-new-tro",
+    "expanded-20260909-census-exclusion-proposal",
+    "expanded-20260915-ice-locator-exclusion",
+    "expanded-20260922-doj-media-security-defense",
+    "expanded-20260925-save-sc-stay",
+    "expanded-20260929-murray-murphy-ad-letter",
+    "fresh-20260916-eric-dominari-13g",
+    "pr47-review-entry-1213",
+    "pr47-review-entry-1300",
+    "pr47-review-entry-1471",
+    "pr47-review-entry-1537",
+    "pr47-review-entry-1595"
+  ],
+  "source_branch": "codex/web-release-rescue-2026-10-03",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "input_sha256": "6c44e297f22796e6007d0254c89c578195826be719bfc5c9a6b8f04aac4dff65",
+  "pr49_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "checkpoint_type": "append_only_proposal_batch",
+  "qa_counts": {
+    "rows": 8,
+    "supported_proposals": 5,
+    "unresolved_or_excluded": 8,
+    "drafts_present": 0
+  },
+  "remaining_gaps": {
+    "entry-6521": "The official transcript citation is reported as saying “big league,” contradicting the stored “bigly” claim, but this QA pass did not independently open the transcript. Retain exclusion pending direct verification; do not substitute the quote as a new correction.",
+    "entry-6598": "No DOJ filing or official announcement supplied for an investigation of Jan. 6 committee members for prosecutorial misconduct. Need target list, authority and opening date.",
+    "entry-6615": "No credible report or official record located establishing Patel created a dedicated FBI unit to investigate journalists.",
+    "entry-6672": "Reuters syndication says Trump denied selling his shares; it does not establish that Trump or other named insiders sold at market peak while retail investors bought. Need SEC transaction filings and precise dates.",
+    "entry-6751": "No Feb. 15 post or threat located. Later executive actions/administration pressure on universities cannot substantiate the specific February statement. Need original post or contemporaneous transcript.",
+    "entry-6784": "No credible source located.",
+    "entry-6798": "No credible source supports the stored mass-firing claim.",
+    "entry-6822": "No matching primary or reputable source located."
+  }
+}
