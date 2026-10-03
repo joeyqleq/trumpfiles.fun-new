@@ -1,0 +1,63 @@
+{
+  "worker": 21,
+  "batch": 1,
+  "completed_keys": [
+    "entry-4538",
+    "entry-5190",
+    "entry-5478",
+    "entry-5754",
+    "entry-5840",
+    "entry-6398",
+    "entry-6430",
+    "entry-6463"
+  ],
+  "completed_count": 8,
+  "total_assigned": 32,
+  "remaining_keys": [
+    "entry-6521",
+    "entry-6598",
+    "entry-6615",
+    "entry-6672",
+    "entry-6751",
+    "entry-6784",
+    "entry-6798",
+    "entry-6822",
+    "entry-6839",
+    "entry-6922",
+    "entry-6939",
+    "entry-6958",
+    "expanded-20260827-usps-new-tro",
+    "expanded-20260909-census-exclusion-proposal",
+    "expanded-20260915-ice-locator-exclusion",
+    "expanded-20260922-doj-media-security-defense",
+    "expanded-20260925-save-sc-stay",
+    "expanded-20260929-murray-murphy-ad-letter",
+    "fresh-20260916-eric-dominari-13g",
+    "pr47-review-entry-1213",
+    "pr47-review-entry-1300",
+    "pr47-review-entry-1471",
+    "pr47-review-entry-1537",
+    "pr47-review-entry-1595"
+  ],
+  "source_branch": "codex/web-release-rescue-2026-10-03",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "input_sha256": "6c44e297f22796e6007d0254c89c578195826be719bfc5c9a6b8f04aac4dff65",
+  "pr49_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "checkpoint_type": "append_only_proposal_batch",
+  "qa_counts": {
+    "rows": 8,
+    "supported_proposals": 3,
+    "unresolved_or_excluded": 6,
+    "drafts_present": 3
+  },
+  "remaining_gaps": {
+    "entry-4538": "No additional source-backed resolution is present in the published packet.",
+    "entry-5190": "Three independently dated components are supported (July memo, July lawsuit, November DOJ request); retain the split and reject the conspiracy “boomerang” frame. The lawsuit child lacks a source-supported 140-word long field; keep it null.",
+    "entry-5478": "No primary docket or reliable contemporaneous source was supplied or located for a 2013 Mar-a-Lago settlement of a suit alleging exclusion of Black and Jewish residents. Exact gap: case name/docket, settlement date and terms.",
+    "entry-5754": "February work halt, March partial resumption, and April attempted mass layoffs are separate episodes. CFPB was not legally disbanded and the reviewed sources do not establish that all enforcement cases were dropped. Two children intentionally lack long fields because the opened reports do not support 140 words without padding.",
+    "entry-5840": "No sufficiently supported discrete event survives the proposed soft-hide rationale. Reconsider only if direct evidence establishes a dated occurrence matching the entry.",
+    "entry-6398": "No authenticated statement or recording supplied for Trump saying he would reject 2028 results if he lost. Exact date, venue and complete quote needed.",
+    "entry-6430": "No executive order matching indefinite detention of immigrants was located in the packet. Exact order number, date and statutory authority needed.",
+    "entry-6463": "The chronology is inconsistent. The entry is dated June 15, 2025 but says Khamenei's statement followed destruction of Iranian nuclear facilities by U.S. forces; the U.S. strikes on Iranian nuclear sites occurred about a week later, on June 21-22, 2025. I also did not verify the quoted 'gates of hell' and 'severe and unrelenting' language as a June 15 Khamenei address."
+  }
+}
