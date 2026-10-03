@@ -1,0 +1,328 @@
+{
+  "task": "normalized-release-qa-2026-10-04/account5 worker 11",
+  "source_job": "worker-11-citation-crossqa-20261003-01",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_input_path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-11-input.jsonl",
+  "packet_input_sha256": "46fa711b53c7a1665a846eabe328bfc10a1cc34e20f2fb08dd5b516765a2334a",
+  "prior_output_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-11-batch-20261003-citation-crossqa-01.jsonl",
+  "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-11-normalized.jsonl",
+  "normalized_file_sha256": "4c1948c4b9e46574aeb971dd58ad3667da29630753c7c8f9332a1f69896431a6",
+  "expected_ids": [
+    "entry-227",
+    "entry-378",
+    "entry-674",
+    "entry-811",
+    "entry-920",
+    "entry-1687",
+    "entry-2061",
+    "entry-2441",
+    "entry-2571",
+    "entry-3139",
+    "entry-3832",
+    "entry-4232",
+    "entry-5309",
+    "entry-5661",
+    "entry-6202"
+  ],
+  "saved_ids": [
+    "entry-227",
+    "entry-378",
+    "entry-674",
+    "entry-811",
+    "entry-920",
+    "entry-1687",
+    "entry-2061",
+    "entry-2441",
+    "entry-2571",
+    "entry-3139",
+    "entry-3832",
+    "entry-4232",
+    "entry-5309",
+    "entry-5661",
+    "entry-6202"
+  ],
+  "saved_count": 15,
+  "missing_ids": [],
+  "missing_count": 0,
+  "duplicate_ids": [],
+  "duplicate_count": 0,
+  "conflicting_terminal_rows": [],
+  "conflict_count": 0,
+  "effective_terminal_rows": 15,
+  "exact_set_match": true,
+  "disposition_counts": {
+    "supported_proposal": 11,
+    "intentional_exclusion": 1,
+    "narrower_revision_required": 3
+  },
+  "release_ready_count": 10,
+  "blocking_ids": [
+    "entry-2061",
+    "entry-2571",
+    "entry-3832",
+    "entry-4232",
+    "entry-5309"
+  ],
+  "blocking_reasons": {
+    "entry-2061": "The prior QA supports only the indexed excerpt at the exact DNYUZ URL; direct retrieval rendered a generic page. Keep the factual disposition but hold release pending a stable direct source view.",
+    "entry-2571": "The event is sourced, but the prior terminal row intentionally excludes it from the Trump-specific set for lack of a documented Trump/Kushner connection.",
+    "entry-3832": "Prior terminal row requires revision of the short wording because it can extend the farm-damage qualifier to wind projects.",
+    "entry-4232": "Prior terminal row requires title revision because “on July 4” overstates the source’s “over Independence Day” wording.",
+    "entry-5309": "Prior terminal row requires source-identity correction: the cited AG-hosted PDF is a court opinion summarizing petition allegations, not the petition itself."
+  },
+  "verified_url_validation": "all per-record verified_urls are https URLs with nonempty hosts, no whitespace, and no per-record duplicates",
+  "word_length_policy": {
+    "short_max_characters": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ]
+  },
+  "word_length_results": {
+    "entry-227": {
+      "actual_description_fields": {
+        "short": {
+          "field": "description_short",
+          "characters": 81,
+          "words": 13
+        },
+        "medium": {
+          "field": "description_medium",
+          "characters": 391,
+          "words": 61
+        },
+        "long": {
+          "field": "description_long",
+          "characters": 1011,
+          "words": 150
+        }
+      },
+      "recorded_worker_word_counts": null
+    },
+    "entry-378": {
+      "actual_description_fields": {},
+      "recorded_worker_word_counts": {
+        "title_chars": 68,
+        "short_words": 19,
+        "medium_words": 55,
+        "long_words": 156
+      }
+    },
+    "entry-674": {
+      "actual_description_fields": {},
+      "recorded_worker_word_counts": {
+        "title_chars": 50,
+        "short_words": 16,
+        "medium_words": 54,
+        "long_words": 169
+      }
+    },
+    "entry-811": {
+      "actual_description_fields": {
+        "short": {
+          "field": "proposed_fields.description_short",
+          "characters": 134,
+          "words": 21
+        },
+        "medium": {
+          "field": "proposed_fields.description_medium",
+          "characters": 456,
+          "words": 71
+        },
+        "long": {
+          "field": "proposed_fields.description_long",
+          "characters": 1040,
+          "words": 159
+        }
+      },
+      "recorded_worker_word_counts": null
+    },
+    "entry-920": {
+      "actual_description_fields": {
+        "short": {
+          "field": "proposed_fields.description_short",
+          "characters": 137,
+          "words": 21
+        },
+        "medium": {
+          "field": "proposed_fields.description_medium",
+          "characters": 472,
+          "words": 70
+        },
+        "long": {
+          "field": "proposed_fields.description_long",
+          "characters": 1112,
+          "words": 161
+        }
+      },
+      "recorded_worker_word_counts": null
+    },
+    "entry-1687": {
+      "actual_description_fields": {
+        "short": {
+          "field": "proposed_description_short",
+          "characters": 165,
+          "words": 25
+        },
+        "medium": {
+          "field": "proposed_description_medium",
+          "characters": 403,
+          "words": 62
+        },
+        "long": {
+          "field": "proposed_description_long",
+          "characters": 1093,
+          "words": 167
+        }
+      },
+      "recorded_worker_word_counts": null
+    },
+    "entry-2061": {
+      "actual_description_fields": {
+        "short": {
+          "field": "proposed_description_short",
+          "characters": 155,
+          "words": 25
+        },
+        "medium": {
+          "field": "proposed_description_medium",
+          "characters": 531,
+          "words": 85
+        },
+        "long": {
+          "field": "proposed_description_long",
+          "characters": 1073,
+          "words": 168
+        }
+      },
+      "recorded_worker_word_counts": null
+    },
+    "entry-2441": {
+      "actual_description_fields": {
+        "short": {
+          "field": "proposed_description_short",
+          "characters": 152,
+          "words": 24
+        },
+        "medium": {
+          "field": "proposed_description_medium",
+          "characters": 336,
+          "words": 53
+        },
+        "long": {
+          "field": "proposed_description_long",
+          "characters": 1121,
+          "words": 175
+        }
+      },
+      "recorded_worker_word_counts": null
+    },
+    "entry-2571": {
+      "actual_description_fields": {},
+      "recorded_worker_word_counts": null
+    },
+    "entry-3139": {
+      "actual_description_fields": {},
+      "recorded_worker_word_counts": null
+    },
+    "entry-3832": {
+      "actual_description_fields": {
+        "short": {
+          "field": "corrected_short",
+          "characters": 118,
+          "words": 22
+        },
+        "medium": {
+          "field": "corrected_medium",
+          "characters": 343,
+          "words": 53
+        },
+        "long": {
+          "field": "corrected_long",
+          "characters": 1045,
+          "words": 161
+        }
+      },
+      "recorded_worker_word_counts": null
+    },
+    "entry-4232": {
+      "actual_description_fields": {
+        "short": {
+          "field": "description_short",
+          "characters": 112,
+          "words": 18
+        },
+        "medium": {
+          "field": "description_medium",
+          "characters": 406,
+          "words": 68
+        },
+        "long": {
+          "field": "description_long",
+          "characters": 1014,
+          "words": 160
+        }
+      },
+      "recorded_worker_word_counts": null
+    },
+    "entry-5309": {
+      "actual_description_fields": {},
+      "recorded_worker_word_counts": {
+        "title_chars": 83,
+        "short_words": 24,
+        "medium_words": 71,
+        "long_words": 185
+      }
+    },
+    "entry-5661": {
+      "actual_description_fields": {},
+      "recorded_worker_word_counts": {
+        "title_chars": 62,
+        "short_words": 19,
+        "medium_words": 53,
+        "long_words": 186
+      }
+    },
+    "entry-6202": {
+      "actual_description_fields": {
+        "short": {
+          "field": "proposed_fields.description_short",
+          "characters": 132,
+          "words": 20
+        },
+        "medium": {
+          "field": "proposed_fields.description_medium",
+          "characters": 392,
+          "words": 60
+        },
+        "long": {
+          "field": "proposed_fields.description_long",
+          "characters": 1208,
+          "words": 189
+        }
+      },
+      "recorded_worker_word_counts": null
+    }
+  },
+  "word_length_failures": [],
+  "checkpoint_reconciliation": {
+    "prior_checkpoint_records": [
+      5,
+      10
+    ],
+    "prior_terminal_checkpoint_saved_count": 15,
+    "prior_terminal_checkpoint_missing_count": 0,
+    "normalized_checkpoint_count": 15
+  },
+  "source_reconciliation": {
+    "own_citation_batches_found": 1,
+    "review_rows_found": 15,
+    "review_rows_used": 15,
+    "other_worker_outputs_edited": false
+  },
+  "safety": "No new research, canonical edits, Neon calls/writes, DDL/DML, or other-worker edits."
+}
