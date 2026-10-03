@@ -1,0 +1,296 @@
+{
+  "schema": "normalized-release-qa-2026-10-04/account5/worker-06-normalized.jsonl",
+  "source_job": "citation190-crossqa-2026-10-03-worker-06",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_input_sha256": "b4c7d9a725e43e402eb13a9862ab0ba6efe39da7982f3ea49c98b285b5041a7c",
+  "expected_ids": [
+    "entry-203",
+    "entry-267",
+    "entry-594",
+    "entry-774",
+    "entry-860",
+    "entry-985",
+    "entry-1771",
+    "entry-2373",
+    "entry-2518",
+    "entry-2864",
+    "entry-3678",
+    "entry-4017",
+    "entry-4619",
+    "entry-5531",
+    "entry-6141",
+    "entry-6319"
+  ],
+  "saved_count": 16,
+  "missing_count": 0,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "exact_set_pass": true,
+  "disposition_counts": {
+    "supported_proposal": 11,
+    "narrower_revision_required": 2,
+    "unsupported_hold": 0,
+    "intentional_exclusion": 3
+  },
+  "release_ready_count": 14,
+  "blocking_count": 2,
+  "blocking_ids": [
+    "entry-3678",
+    "entry-6141"
+  ],
+  "blocking_reasons": {
+    "entry-3678": [
+      "The Guardian supports a disputed wiretap account, but the proposal overstates Parlatore’s denial: the report says he denied personally telling anyone there was an illegal NSA wiretap and said he had relayed information from Pentagon officials; it does not say he denied a wiretap occurred.",
+      "The short title and disputed-account framing are supported, but proposed medium/long say Parlatore “denied one occurred,” changing a denial about what he personally said into a denial of the underlying event. This is a material claim-scope error.",
+      "Recommended disposition/correction: Replace with: Parlatore denied personally telling anyone a wiretap existed and said he relayed information from Pentagon officials; leave whether a wiretap occurred unresolved.",
+      "Original proposal uncertainty: No proof of knowing lies.",
+      "Blocking: do not release the disputed wording until the narrower correction above is applied and reviewed."
+    ],
+    "entry-6141": [
+      "Public Law 119-21 supports the July 4, 2025 enactment and wind/solar cutoffs after December 31, 2027, but the proposed phrase “subject to statutory transition rules” blurs distinct §45Y and §48E rules and omits §48E’s express energy-storage exception. The U.S. Code URL was under maintenance; Congress.gov primary law is accessible.",
+      "The date and high-level statement are correct, but “covered wind and solar facilities ... subject to statutory transition rules” is too vague to represent the differing statute provisions, especially the storage exception in §48E. Do not imply that all credits or all facility property terminate.",
+      "Recommended disposition/correction: Revise to identify covered §45Y facilities and §48E qualified property at applicable facilities separately, including the §48E energy-storage exception; cite the enacted law.",
+      "Original proposal uncertainty: The proposed description concerns defined facilities and two credit sections only. Project eligibility depends on statutory definitions, construction timing, and transition provisions; this row makes no claim about every project or credit.",
+      "Blocking: do not release the disputed wording until the narrower correction above is applied and reviewed."
+    ]
+  },
+  "intentional_exclusions_are_terminal_exclusions_not_copy_approvals": true,
+  "verified_url_count_unique": 30,
+  "url_validation": {
+    "status": "pass",
+    "format": "absolute https URL with hostname",
+    "all_urls_exactly_match_prior_worker_06_source_reviews": true,
+    "all_urls_present_in_original_source_review": true
+  },
+  "description_length_validation": {
+    "thresholds": {
+      "short_characters_max": 180,
+      "medium_words_min": 45,
+      "medium_words_max": 90,
+      "long_words_min": 140,
+      "long_words_max": 300
+    },
+    "checked_records": {
+      "entry-203": {
+        "short": {
+          "field": "proposed_description_short",
+          "characters": 138,
+          "words": 19,
+          "pass": true
+        },
+        "medium": {
+          "field": "proposed_description_medium",
+          "characters": 368,
+          "words": 60,
+          "pass": true
+        },
+        "long": {
+          "field": "proposed_description_long",
+          "characters": 1023,
+          "words": 163,
+          "pass": true
+        }
+      },
+      "entry-267": {
+        "short": {
+          "field": "proposed_description_short",
+          "characters": 163,
+          "words": 25,
+          "pass": true
+        },
+        "medium": {
+          "field": "proposed_description_medium",
+          "characters": 444,
+          "words": 59,
+          "pass": true
+        },
+        "long": {
+          "field": "proposed_description_long",
+          "characters": 1086,
+          "words": 160,
+          "pass": true
+        }
+      },
+      "entry-594": {
+        "short": {
+          "field": "proposed_short",
+          "characters": 123,
+          "words": 23,
+          "pass": true
+        },
+        "medium": {
+          "field": "proposed_medium",
+          "characters": 314,
+          "words": 53,
+          "pass": true
+        },
+        "long": {
+          "field": "proposed_long",
+          "characters": 944,
+          "words": 153,
+          "pass": true
+        }
+      },
+      "entry-985": {
+        "short": {
+          "field": "description_short",
+          "characters": 86,
+          "words": 13,
+          "pass": true
+        },
+        "medium": {
+          "field": "description_medium",
+          "characters": 496,
+          "words": 73,
+          "pass": true
+        },
+        "long": {
+          "field": "description_long",
+          "characters": 893,
+          "words": 143,
+          "pass": true
+        }
+      },
+      "entry-2518": {
+        "short": {
+          "field": "description_short",
+          "characters": 130,
+          "words": 17,
+          "pass": true
+        },
+        "medium": {
+          "field": "description_medium",
+          "characters": 319,
+          "words": 49,
+          "pass": true
+        },
+        "long": {
+          "field": "description_long",
+          "characters": 1126,
+          "words": 176,
+          "pass": true
+        }
+      },
+      "entry-2864": {
+        "short": {
+          "field": "description_short",
+          "characters": 146,
+          "words": 24,
+          "pass": true
+        },
+        "medium": {
+          "field": "description_medium",
+          "characters": 451,
+          "words": 69,
+          "pass": true
+        },
+        "long": {
+          "field": "description_long",
+          "characters": 1081,
+          "words": 166,
+          "pass": true
+        }
+      },
+      "entry-3678": {
+        "short": {
+          "field": "proposed_description_short",
+          "characters": 114,
+          "words": 15,
+          "pass": true
+        },
+        "medium": {
+          "field": "proposed_description_medium",
+          "characters": 408,
+          "words": 61,
+          "pass": true
+        },
+        "long": {
+          "field": "proposed_description_long",
+          "characters": 1025,
+          "words": 152,
+          "pass": true
+        }
+      },
+      "entry-4017": {
+        "short": {
+          "field": "proposed_description_short",
+          "characters": 128,
+          "words": 18,
+          "pass": true
+        },
+        "medium": {
+          "field": "proposed_description_medium",
+          "characters": 400,
+          "words": 62,
+          "pass": true
+        },
+        "long": {
+          "field": "proposed_description_long",
+          "characters": 1040,
+          "words": 157,
+          "pass": true
+        }
+      },
+      "entry-4619": {
+        "short": {
+          "field": "proposed_description_short",
+          "characters": 117,
+          "words": 21,
+          "pass": true
+        },
+        "medium": {
+          "field": "proposed_description_medium",
+          "characters": 324,
+          "words": 53,
+          "pass": true
+        },
+        "long": {
+          "field": "proposed_description_long",
+          "characters": 1070,
+          "words": 171,
+          "pass": true
+        }
+      },
+      "entry-6319": {
+        "short": {
+          "field": "corrected_short",
+          "characters": 155,
+          "words": 25,
+          "pass": true
+        },
+        "medium": {
+          "field": "corrected_medium",
+          "characters": 393,
+          "words": 62,
+          "pass": true
+        },
+        "long": {
+          "field": "corrected_long",
+          "characters": 1167,
+          "words": 175,
+          "pass": true
+        }
+      }
+    },
+    "checked_field_count": 30,
+    "all_checked_fields_pass": true,
+    "records_without_proposal_descriptions": [
+      "entry-774",
+      "entry-860",
+      "entry-1771",
+      "entry-2373",
+      "entry-5531",
+      "entry-6141"
+    ]
+  },
+  "duplicate_terminal_conflicts": 0,
+  "resolution": "No duplicate or conflicting terminal rows existed in the two prior batches; each assigned key has one source QA row. Narrower-revision cases remain blocked.",
+  "new_research_performed": false,
+  "canonical_edits": 0,
+  "live_neon_writes": 0,
+  "other_worker_edits": 0,
+  "pull_request_opened": false,
+  "prior_terminal_rows_reconciled": 16,
+  "readiness_semantics": "release_ready=true means the supported wording is ready, or that an intentional_exclusion is the terminal action and no included copy is approved. Revision holds are false."
+}
