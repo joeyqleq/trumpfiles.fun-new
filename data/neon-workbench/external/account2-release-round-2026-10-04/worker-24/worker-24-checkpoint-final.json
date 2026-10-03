@@ -1,0 +1,51 @@
+{
+  "task": "worker 24 release-gate audit",
+  "status": "HOLD",
+  "app_commit": "959c3372ba670113ac5e8e787e256f3299a53b9f",
+  "effective_key_rows": 841,
+  "stream_counts": {
+    "3": {
+      "stream": "impact368",
+      "workers": 12,
+      "assigned": 368,
+      "release_ready": 21,
+      "blocking": 347,
+      "unique_keys": 368
+    },
+    "4": {
+      "stream": "web425-held-citation",
+      "workers": 12,
+      "assigned": 283,
+      "release_ready": 41,
+      "blocking": 242,
+      "unique_keys": 283
+    },
+    "5": {
+      "stream": "description-citation",
+      "workers": 12,
+      "assigned": 190,
+      "release_ready": 111,
+      "blocking": 79,
+      "unique_keys": 190
+    }
+  },
+  "latest_worker_branch_refs": 36,
+  "key_qa": "PASS: all 36 current normalized worker outputs pass final-QA row counts; key sets match where full assignment lists exist; blocker/ready lists and ready counts match; no duplicate normalized key within a worker or stream. Some final-QA files attest count/order/schema but do not publish full assigned key lists.",
+  "historical_sample100": "64 PASS/36 HOLD at 38ec98608d61fc9c9 only; stale worker refs.",
+  "blockers": [
+    "Approved exact nullable-field schema contract missing.",
+    "App projections/cards/RAG do not consume fields.",
+    "Latest worker per-key outputs contain HOLDs.",
+    "No current sample100 reconciliation or live DB/null inspection.",
+    "No dedicated account2-release-round assignment manifest/current 100-record reconciliation was located; historical sample100 counts are not current release status."
+  ],
+  "files": [
+    "worker-24-effective-results-20261004.jsonl",
+    "worker-24-release-gate-audit-20261004.json",
+    "worker-24-checkpoint-final.json",
+    "worker-24-qa-report.md"
+  ],
+  "coordinator_assignment_manifest": "Not found on fetched origin/ls refs; effective ledger scope is the 36 current normalized worker assignments, stated explicitly in audit.",
+  "exact_input_commit_refs": 71,
+  "exact_input_commits_unique": 30
+}
