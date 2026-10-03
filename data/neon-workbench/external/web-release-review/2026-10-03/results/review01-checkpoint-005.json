@@ -1,0 +1,11 @@
+{
+  "batch": 5,
+  "worker": "review01",
+  "rows": 8,
+  "first_assignment_key": "entry-6315",
+  "last_assignment_key": "entry-6615",
+  "batch_sha256": "16b1ea154f462dcb175e1f2f7b726584972cca838d5849e22961478eaf82af89",
+  "written_at": "2026-10-03",
+  "append_only": true,
+  "proposal_only": true
+}
