@@ -1,0 +1,542 @@
+{
+  "job": "Worker18 source270/account6 source118 + account1 late89 release-gate reconciliation",
+  "source270_packet": {
+    "branch": "codex/source-rescue-unassigned-2026-10-03",
+    "commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+    "assigned_count": 270,
+    "input_file_hashes": {
+      "worker-04-input.jsonl": "99eb8e59f8f691eccb65b9a4414ab4c199a700c4de3f15758ece7bbe304e3838",
+      "worker-05-input.jsonl": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce",
+      "worker-06-input.jsonl": "11eba459d0ec99483ce443fe8bb5118987fcffab977c9375fc22b424ede4d5f1",
+      "worker-07-input.jsonl": "b6d92fad4aecbb44502faaf55d2e23e38e4de77f767a1587f080b2621c933687",
+      "worker-08-input.jsonl": "655f8228b0974a24983fe6c1d355af4c63e68f92b1c9ba5f75a237bc2d126e60",
+      "worker-09-input.jsonl": "33386ff236ef7d46d3c3fb3e0a71008457b3bf39174b15782a193da784d54c5c",
+      "worker-10-input.jsonl": "95fff8dae3837cc6794eea22f37b29ef152a00b6a88eda783eac78b69ac36d51",
+      "worker-11-input.jsonl": "145effce2954b4b3d36faa0520eee25386d42fda977c324dbdd396a8fc01db02",
+      "worker-12-input.jsonl": "9c37bb09a9f6ed72f8f823752794496c27de571e7393b7634c30991fa5d635cd"
+    },
+    "prompt_sha256": "363789f755dd706a2cadb4dfdacf4a6da85ec1acbef4693dcebb1c9fb3983ade"
+  },
+  "account6_source118_packet": {
+    "branch": "codex/account6-source-corrections-2026-10-03",
+    "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "assigned_count": 118,
+    "input_file_hashes": {
+      "worker-01-input.jsonl": "6baa302190661b9f09d0882a2f95446063067e63185bac1e425efcb02d0914d0",
+      "worker-02-input.jsonl": "87a92c93aad426f6691b022af93fb800600c50f363e2c0d856f4e78090efeea5",
+      "worker-03-input.jsonl": "a8b37f6ce430c73606565455cfe32100d5d5e304060ec0a6f208ec4455786cb0",
+      "worker-04-input.jsonl": "52ec47dff0e1561375a835e7d90b5270a09fad20b500340a04a929f57dbfb558",
+      "worker-05-input.jsonl": "5de22c1733756cb2c507d406e95ca29037d9f48597b768ddc672231a61120b6b",
+      "worker-06-input.jsonl": "41307a706afd639ebf17a21597105890bbeb28da32f325fd8e0189ab989ebc13",
+      "worker-07-input.jsonl": "3812ce121181267108020d2ac61ea4aa2ff0c344e42b1d18f27f520b0d34b4c3",
+      "worker-08-input.jsonl": "c8057f5ca25067dabbd893d763a9e82f2497d7b55a5e71f229a980e650175cd5",
+      "worker-09-input.jsonl": "c7e6c257e05b03ffc0aa7522c002fed7843aa96b3dc931aa5d71dcb5aa413f41",
+      "worker-10-input.jsonl": "ec822054a07dfa1f1d8ee156fec271f60366920a3da02f7d90673e41a010e73c",
+      "worker-11-input.jsonl": "ad146d393ae56378ca0e523e1bbdf28f0b7bf6b50e043584384c7f3abf20d988",
+      "worker-12-input.jsonl": "b4d927b32fd61aef0e209bf46ba3c93e1824582fa422d72fb16b3f40e823ee06"
+    },
+    "prompt_sha256": "6d51a7c7c661f416160d341c32abfa590d1f778504c19c6e5f65445860f3438a"
+  },
+  "account1_late89_packet": {
+    "branch": "codex/account1-late-source-corrections-2026-10-03",
+    "commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+    "assigned_count": 89,
+    "input_file_hashes": {
+      "worker-01-input.jsonl": "a8b321f39e98e87c98c90b6f593bfc7002c77a40125534fcdbe8015e522cb683",
+      "worker-02-input.jsonl": "f134e33e7d74002eeb4db31bf72257955ac250a834a7616146b25b612022e727",
+      "worker-03-input.jsonl": "2af28c541c035f17256c2643a4c5d1cdd30c091aa3e4425cd1bd80cdb9f8ed30",
+      "worker-04-input.jsonl": "f055a9e1065d9dd1ed834b34095a71197fa3175723bd06f1d21ee0f527b9db44",
+      "worker-06-input.jsonl": "b018069524331bfbd2ace009b42a43f38e336d59a3a2e55a9ba3e6faf76fc96d",
+      "worker-11-input.jsonl": "9aa93d0109a966c1f026e78fc6f766f1798a6e37e569ba6f6ed70c7b738f4d37",
+      "worker-12-input.jsonl": "0e5b1285401eb6197123763eaa870a5a05efbc804033f46892e1a8ef614ed0c6"
+    },
+    "prompt_sha256": "7998385fa68204eca8f387e1597d0873131558735e9feacd397368cf045582f7"
+  },
+  "result_branch_heads": {
+    "account6": {
+      "1": {
+        "branch": "ls/1-trump-files-source118-review-01-of-12-Dnux",
+        "commit": "06abec8b43a488aa02fd51a1c867ee859c3c4d89"
+      },
+      "2": {
+        "branch": "ls/2-trump-files-source118-review-02-of-12-alSU",
+        "commit": "3270dcfa2a0a071ca7493445bd59768563980f0d"
+      },
+      "3": {
+        "branch": "ls/3-trump-files-source118-review-03-of-12-mwSm",
+        "commit": "a87bbd2b3d5d7bea26997cd390ad9bc0e09d8bf6"
+      },
+      "4": {
+        "branch": "ls/4-trump-files-source118-review-04-of-12-P8O6",
+        "commit": "0267644e0a6d74898415e909553c7f441777db3c"
+      },
+      "5": {
+        "branch": "ls/5-trump-files-source118-review-05-of-12-ry0H",
+        "commit": "f32fb71eaea83b84e7da3a04e3539262d4b3913d"
+      },
+      "6": {
+        "branch": "ls/6-trump-files-source118-review-06-of-12-vQap",
+        "commit": "c2b1fcab42d3cfa385aa0403d274c3a6987db1f8"
+      },
+      "7": {
+        "branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+        "commit": "b13a0d422183a526959cb04644a847c2be0e8156"
+      },
+      "8": {
+        "branch": "ls/8-trump-files-source118-review-08-of-12-pXJX",
+        "commit": "bdbec80db965d15cda78c8b904bc6e8672e862a4"
+      },
+      "9": {
+        "branch": "ls/9-trump-files-source118-review-09-of-12-278g",
+        "commit": "217296a5b8032dc55524ac361cb76aa6e6b3c05e"
+      },
+      "10": {
+        "branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+        "commit": "8f4e0207555fb9b30147a9e0a528ea2c804e0257"
+      },
+      "11": {
+        "branch": "ls/11-trump-files-source118-review-11-of-12-8RJW",
+        "commit": "a902134ab35d53d51fc69eaacd29b21e3638b680"
+      },
+      "12": {
+        "branch": "ls/12-trump-files-source118-review-12-of-12-MQJb",
+        "commit": "8b3ef3298f86bb31eeb010aa7560573ff8fa750e"
+      }
+    },
+    "account1_late": {
+      "1": {
+        "branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
+        "commit": "6f56a573e3179044b3057c21908ddb30e6ecde43"
+      },
+      "2": {
+        "branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+        "commit": "bfad83b649669b2c7905a18600d1e0c13fdb2a89"
+      },
+      "3": {
+        "branch": "ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+        "commit": "4a7438b200dc1bc8994d880d4da2ed5e2fcfe98b"
+      },
+      "4": {
+        "branch": "ls/4-trump-description-rescue-04-of-12-53-dis-S_ao",
+        "commit": "cf239c89339a8aab8140f1dea7eafd8d544419fa"
+      },
+      "6": {
+        "branch": "ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x",
+        "commit": "5abe0e120125343ef71e1a564097528f01a04050"
+      },
+      "11": {
+        "branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+        "commit": "6c94ecf23fafe2bdb34a64a23fb9147e20d644eb"
+      },
+      "12": {
+        "branch": "ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+        "commit": "61150d33ec2c8efb8e3fffd262921f86e7a9176a"
+      }
+    }
+  },
+  "reconciliation": {
+    "source270_input_count": 270,
+    "account6_source118_count": 118,
+    "account1_late89_count": 89,
+    "intersection_count": 0,
+    "target_union_count": 207,
+    "target_is_subset_of_source270": true,
+    "one_effective_result_per_target_key": true,
+    "source270_keys_outside_target_count": 63,
+    "source_worker05_separate_count": 30,
+    "source_worker05_overlaps_target": false,
+    "other_source270_outside_target_count": 33,
+    "other_source270_outside_by_worker": {
+      "4": 24,
+      "5": 30,
+      "7": 1,
+      "9": 1,
+      "12": 7
+    }
+  },
+  "proposal_status_counts": {
+    "account6:complete": 59,
+    "account1_late:complete": 38,
+    "account1_late:corrected_claim_proposal": 38,
+    "account6:corrected": 20,
+    "account6:needs_correction": 20,
+    "account1_late:needs_correction": 13,
+    "account6:corrected_scope": 10,
+    "account6:corrected_with_scope_limit": 2,
+    "account6:corrected_with_attribution": 1,
+    "account6:corrected_to_documented_action": 1,
+    "account6:corrected_to_supported_ship_movement": 1,
+    "account6:corrected_action_type": 1,
+    "account6:corrected_figure_and_period": 1,
+    "account6:corrected_to_case_specific_holding": 1,
+    "account6:corrected_count_period_and_measure": 1
+  },
+  "qa_counts": {
+    "length_violation_rows": 13,
+    "length_violation_fields": 13,
+    "url_mapping_gap_rows": 14,
+    "explicit_editorial_review_block_rows": 10,
+    "non_https_url_rows": 1,
+    "missing_copy_rows": 0,
+    "source_triage_status_mismatch_rows": 0,
+    "documented_evidence_gap_rows": 167
+  },
+  "exact_findings": {
+    "length_violations": [
+      {
+        "record_id": "entry-4416",
+        "field": "long",
+        "count": 114,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-4545",
+        "field": "medium",
+        "count": 92,
+        "bound": "45-90 words"
+      },
+      {
+        "record_id": "entry-5166",
+        "field": "long",
+        "count": 107,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-5666",
+        "field": "long",
+        "count": 126,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-5810",
+        "field": "long",
+        "count": 113,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-5866",
+        "field": "long",
+        "count": 110,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-6420",
+        "field": "long",
+        "count": 101,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-6509",
+        "field": "long",
+        "count": 107,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-6617",
+        "field": "long",
+        "count": 120,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-6666",
+        "field": "long",
+        "count": 118,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-6754",
+        "field": "long",
+        "count": 110,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-6813",
+        "field": "long",
+        "count": 112,
+        "bound": "140-300 words"
+      },
+      {
+        "record_id": "entry-6899",
+        "field": "long",
+        "count": 114,
+        "bound": "140-300 words"
+      }
+    ],
+    "source_mapping_gaps": [
+      {
+        "record_id": "entry-4504",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://www.theblock.co/news/markets/2025-01-19-donald-trump-memecoin-crashes-48-as-melania-trump-launches-her-own-memecoin-335637",
+          "https://www.theguardian.com/technology/2025/jan/20/donald-trump-meme-coin-price-melania-token"
+        ],
+        "mapping_count": 2,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-5168",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://www.boem.gov/sites/default/files/documents/oil-gas-energy/national-program/11th_National_OCS_Program_1stAnalysis_and_Proposal_508.pdf",
+          "https://www.doi.gov/pressreleases/interior-launches-expansive-11th-national-offshore-leasing-program-advance-us-energy"
+        ],
+        "mapping_count": 2,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-5733",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://thehill.com/regulation/court-battles/5394786-trump-administration-migrant-flights-contempt/"
+        ],
+        "mapping_count": 1,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-5811",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://www.reuters.com/world/us/trump-pushes-out-top-us-general-nominates-retired-three-star-2025-02-22/"
+        ],
+        "mapping_count": 1,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-5873",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://apnews.com/article/79115a1daddf4f20afb020da946b3009"
+        ],
+        "mapping_count": 1,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-6438",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://therecord.media/democrat-pclob-members-defy-white-house-call-for-resignation",
+          "https://www.reuters.com/world/us/white-house-asks-democratic-members-federal-privacy-oversight-board-quit-2025-01-23/"
+        ],
+        "mapping_count": 2,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-6509",
+        "unmapped_source_urls": [
+          "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-eau-claire-wi-april-2-2016/"
+        ],
+        "mapping_urls_not_in_source_url_list": [],
+        "mapping_count": 1,
+        "source_url_count": 2
+      },
+      {
+        "record_id": "entry-6512",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-cabinet-meeting-12/",
+          "https://www.govinfo.gov/content/pkg/DCPD-201900001/pdf/DCPD-201900001.pdf"
+        ],
+        "mapping_count": 2,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-6620",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://apnews.com/article/fluoride-cdc-epa-6f4dbc64b5dc511f712a82cd2d252d76"
+        ],
+        "mapping_count": 1,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-6689",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://www.cms.gov/newsroom/press-releases/cms-announces-new-policy-guidance-states-test-community-engagement-able-bodied-adults"
+        ],
+        "mapping_count": 1,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-6755",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://www.federalregister.gov/documents/2025/02/03/2025-02232/ending-radical-indoctrination-in-k-12-schooling"
+        ],
+        "mapping_count": 1,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-6815",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://www.federalregister.gov/documents/2017/11/06/2017-23590/federal-acquisition-regulation-removal-of-fair-pay-and-safe-workplaces-rule",
+          "https://www.presidency.ucsb.edu/documents/president-donald-j-trump-signs-hj-res-37-hj-res-44-hj-res-57-and-hj-res-58-into-law"
+        ],
+        "mapping_count": 2,
+        "source_url_count": 0
+      },
+      {
+        "record_id": "entry-6836",
+        "unmapped_source_urls": [
+          "https://www.lsc.gov/i-am-grantee/laws-regulations-and-guidance/lsc-appropriations"
+        ],
+        "mapping_urls_not_in_source_url_list": [],
+        "mapping_count": 2,
+        "source_url_count": 3
+      },
+      {
+        "record_id": "entry-6932",
+        "unmapped_source_urls": [],
+        "mapping_urls_not_in_source_url_list": [
+          "https://www.nbcnews.com/politics/national-security/dhs-task-force-scouring-foreign-students-social-media-rcna198532"
+        ],
+        "mapping_count": 1,
+        "source_url_count": 0
+      }
+    ],
+    "explicit_editorial_review_blocks": [
+      {
+        "record_id": "entry-4435",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-5273",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-5745",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-5860",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-6450",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-6537",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-6660",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-6756",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-6838",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      },
+      {
+        "record_id": "entry-6960",
+        "source_rescue_review": {
+          "accepted_source_citation_valid": false,
+          "claim_approval": false,
+          "status": "proposal_requires_editorial_review",
+          "validation_problems": []
+        }
+      }
+    ],
+    "non_https_urls": [
+      {
+        "record_id": "entry-6753",
+        "urls": [
+          "http://www.ed.gov/about/news/press-release/us-department-of-education-takes-action-eliminate-dei"
+        ]
+      }
+    ],
+    "missing_replacement_copy_ids": [],
+    "source_triage_status_mismatches": []
+  },
+  "release_gate": "NOT_CLEAR. These rows remain needs_correction source proposals; this audit does not accept a source or edit canonical records. Rows with explicit QA findings remain blocked. All other rows are proposal-only pending normal review.",
+  "worker05_note": {
+    "separate_namespace": "source-rescue-unassigned worker 05 (not account6 source-corrections worker 05)",
+    "source_manifest_file": "worker-05-input.jsonl",
+    "input_sha256": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce",
+    "exact_ids": [
+      "entry-4231",
+      "entry-4398",
+      "entry-4446",
+      "entry-4781",
+      "entry-5104",
+      "entry-5316",
+      "entry-5522",
+      "entry-5729",
+      "entry-5748",
+      "entry-5802",
+      "entry-5831",
+      "entry-5855",
+      "entry-5892",
+      "entry-6407",
+      "entry-6434",
+      "entry-6462",
+      "entry-6503",
+      "entry-6528",
+      "entry-6604",
+      "entry-6630",
+      "entry-6651",
+      "entry-6682",
+      "entry-6730",
+      "entry-6752",
+      "entry-6771",
+      "entry-6807",
+      "entry-6826",
+      "entry-6881",
+      "entry-6918",
+      "entry-6952"
+    ],
+    "status": "kept separate/pending; not evaluated as part of the 207"
+  },
+  "method_limit": "Independent exact-set, provenance, URL-to-fact-coverage, proposal field and length audit of worker branch outputs. No external URLs were re-fetched across the 207; access notes and exact gaps remain attached to each effective result.",
+  "scope": "No canonical, database, Neon, or other-worker output edits."
+}

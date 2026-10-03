@@ -1,0 +1,81 @@
+{
+  "status": "RECONCILED_207_RELEASE_GATE_BLOCKED",
+  "input_commits": {
+    "source270": "19831e87e22fd5890fe0a764be51c617580d4a99",
+    "account6": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "account1_late89": "d1c9c5990d6b15257fbb406671cd73994b45420e"
+  },
+  "target_count": 207,
+  "account6_count": 118,
+  "account1_late89_count": 89,
+  "disjoint": true,
+  "one_effective_result_per_assigned_id": true,
+  "pending_source_worker05_30_separate": true,
+  "source270_outside_target_count": 63,
+  "latest_result_branch_commits": {
+    "account6": {
+      "1": "06abec8b43a488aa02fd51a1c867ee859c3c4d89",
+      "2": "3270dcfa2a0a071ca7493445bd59768563980f0d",
+      "3": "a87bbd2b3d5d7bea26997cd390ad9bc0e09d8bf6",
+      "4": "0267644e0a6d74898415e909553c7f441777db3c",
+      "5": "f32fb71eaea83b84e7da3a04e3539262d4b3913d",
+      "6": "c2b1fcab42d3cfa385aa0403d274c3a6987db1f8",
+      "7": "b13a0d422183a526959cb04644a847c2be0e8156",
+      "8": "bdbec80db965d15cda78c8b904bc6e8672e862a4",
+      "9": "217296a5b8032dc55524ac361cb76aa6e6b3c05e",
+      "10": "8f4e0207555fb9b30147a9e0a528ea2c804e0257",
+      "11": "a902134ab35d53d51fc69eaacd29b21e3638b680",
+      "12": "8b3ef3298f86bb31eeb010aa7560573ff8fa750e"
+    },
+    "account1_late": {
+      "1": "6f56a573e3179044b3057c21908ddb30e6ecde43",
+      "2": "bfad83b649669b2c7905a18600d1e0c13fdb2a89",
+      "3": "4a7438b200dc1bc8994d880d4da2ed5e2fcfe98b",
+      "4": "cf239c89339a8aab8140f1dea7eafd8d544419fa",
+      "6": "5abe0e120125343ef71e1a564097528f01a04050",
+      "11": "6c94ecf23fafe2bdb34a64a23fb9147e20d644eb",
+      "12": "61150d33ec2c8efb8e3fffd262921f86e7a9176a"
+    }
+  },
+  "batch_file": "worker-18-release-gate-batch-002.jsonl",
+  "independent_qa_file": "worker-18-independent-qa-v2.json",
+  "blocker_ids": {
+    "copy_length": [
+      "entry-4416",
+      "entry-4545",
+      "entry-5166",
+      "entry-5666",
+      "entry-5810",
+      "entry-5866",
+      "entry-6420",
+      "entry-6509",
+      "entry-6617",
+      "entry-6666",
+      "entry-6754",
+      "entry-6813",
+      "entry-6899"
+    ],
+    "unmapped_explicit_source_urls": [
+      "entry-6509",
+      "entry-6836"
+    ],
+    "non_https": [
+      "entry-6753"
+    ],
+    "source_review_rejected": [
+      "entry-4435",
+      "entry-5273",
+      "entry-5745",
+      "entry-5860",
+      "entry-6450",
+      "entry-6537",
+      "entry-6660",
+      "entry-6756",
+      "entry-6838",
+      "entry-6960"
+    ]
+  },
+  "release_gate": "NOT CLEAR",
+  "supersedes": "Initial batch-001 and preliminary QA; source URLs embedded in source_to_fact_mapping are treated as exact URL lists when no separate array is supplied.",
+  "no_canonical_or_db_changes": true
+}

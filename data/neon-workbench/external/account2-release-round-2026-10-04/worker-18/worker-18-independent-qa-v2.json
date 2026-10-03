@@ -1,0 +1,348 @@
+{
+  "task": "Worker18 account2 release-gate audit for source270 needs_correction IDs",
+  "input_packets": {
+    "source270": {
+      "branch": "codex/source-rescue-unassigned-2026-10-03",
+      "commit": "19831e87e22fd5890fe0a764be51c617580d4a99",
+      "count": 270,
+      "sha256_by_file": {
+        "worker-04-input.jsonl": "99eb8e59f8f691eccb65b9a4414ab4c199a700c4de3f15758ece7bbe304e3838",
+        "worker-05-input.jsonl": "7d62a5538346e70e12f535cc8a55eddbb620aba8fbf2c66607306e0c5172c1ce",
+        "worker-06-input.jsonl": "11eba459d0ec99483ce443fe8bb5118987fcffab977c9375fc22b424ede4d5f1",
+        "worker-07-input.jsonl": "b6d92fad4aecbb44502faaf55d2e23e38e4de77f767a1587f080b2621c933687",
+        "worker-08-input.jsonl": "655f8228b0974a24983fe6c1d355af4c63e68f92b1c9ba5f75a237bc2d126e60",
+        "worker-09-input.jsonl": "33386ff236ef7d46d3c3fb3e0a71008457b3bf39174b15782a193da784d54c5c",
+        "worker-10-input.jsonl": "95fff8dae3837cc6794eea22f37b29ef152a00b6a88eda783eac78b69ac36d51",
+        "worker-11-input.jsonl": "145effce2954b4b3d36faa0520eee25386d42fda977c324dbdd396a8fc01db02",
+        "worker-12-input.jsonl": "9c37bb09a9f6ed72f8f823752794496c27de571e7393b7634c30991fa5d635cd"
+      },
+      "prompt_sha256": "363789f755dd706a2cadb4dfdacf4a6da85ec1acbef4693dcebb1c9fb3983ade"
+    },
+    "account6_source118": {
+      "branch": "codex/account6-source-corrections-2026-10-03",
+      "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+      "count": 118,
+      "sha256_by_file": {
+        "worker-01-input.jsonl": "6baa302190661b9f09d0882a2f95446063067e63185bac1e425efcb02d0914d0",
+        "worker-02-input.jsonl": "87a92c93aad426f6691b022af93fb800600c50f363e2c0d856f4e78090efeea5",
+        "worker-03-input.jsonl": "a8b37f6ce430c73606565455cfe32100d5d5e304060ec0a6f208ec4455786cb0",
+        "worker-04-input.jsonl": "52ec47dff0e1561375a835e7d90b5270a09fad20b500340a04a929f57dbfb558",
+        "worker-05-input.jsonl": "5de22c1733756cb2c507d406e95ca29037d9f48597b768ddc672231a61120b6b",
+        "worker-06-input.jsonl": "41307a706afd639ebf17a21597105890bbeb28da32f325fd8e0189ab989ebc13",
+        "worker-07-input.jsonl": "3812ce121181267108020d2ac61ea4aa2ff0c344e42b1d18f27f520b0d34b4c3",
+        "worker-08-input.jsonl": "c8057f5ca25067dabbd893d763a9e82f2497d7b55a5e71f229a980e650175cd5",
+        "worker-09-input.jsonl": "c7e6c257e05b03ffc0aa7522c002fed7843aa96b3dc931aa5d71dcb5aa413f41",
+        "worker-10-input.jsonl": "ec822054a07dfa1f1d8ee156fec271f60366920a3da02f7d90673e41a010e73c",
+        "worker-11-input.jsonl": "ad146d393ae56378ca0e523e1bbdf28f0b7bf6b50e043584384c7f3abf20d988",
+        "worker-12-input.jsonl": "b4d927b32fd61aef0e209bf46ba3c93e1824582fa422d72fb16b3f40e823ee06"
+      },
+      "prompt_sha256": "6d51a7c7c661f416160d341c32abfa590d1f778504c19c6e5f65445860f3438a"
+    },
+    "account1_late89": {
+      "branch": "codex/account1-late-source-corrections-2026-10-03",
+      "commit": "d1c9c5990d6b15257fbb406671cd73994b45420e",
+      "count": 89,
+      "sha256_by_file": {
+        "worker-01-input.jsonl": "a8b321f39e98e87c98c90b6f593bfc7002c77a40125534fcdbe8015e522cb683",
+        "worker-02-input.jsonl": "f134e33e7d74002eeb4db31bf72257955ac250a834a7616146b25b612022e727",
+        "worker-03-input.jsonl": "2af28c541c035f17256c2643a4c5d1cdd30c091aa3e4425cd1bd80cdb9f8ed30",
+        "worker-04-input.jsonl": "f055a9e1065d9dd1ed834b34095a71197fa3175723bd06f1d21ee0f527b9db44",
+        "worker-06-input.jsonl": "b018069524331bfbd2ace009b42a43f38e336d59a3a2e55a9ba3e6faf76fc96d",
+        "worker-11-input.jsonl": "9aa93d0109a966c1f026e78fc6f766f1798a6e37e569ba6f6ed70c7b738f4d37",
+        "worker-12-input.jsonl": "0e5b1285401eb6197123763eaa870a5a05efbc804033f46892e1a8ef614ed0c6"
+      },
+      "prompt_sha256": "7998385fa68204eca8f387e1597d0873131558735e9feacd397368cf045582f7"
+    }
+  },
+  "latest_result_branch_commits": {
+    "account6": {
+      "1": "06abec8b43a488aa02fd51a1c867ee859c3c4d89",
+      "2": "3270dcfa2a0a071ca7493445bd59768563980f0d",
+      "3": "a87bbd2b3d5d7bea26997cd390ad9bc0e09d8bf6",
+      "4": "0267644e0a6d74898415e909553c7f441777db3c",
+      "5": "f32fb71eaea83b84e7da3a04e3539262d4b3913d",
+      "6": "c2b1fcab42d3cfa385aa0403d274c3a6987db1f8",
+      "7": "b13a0d422183a526959cb04644a847c2be0e8156",
+      "8": "bdbec80db965d15cda78c8b904bc6e8672e862a4",
+      "9": "217296a5b8032dc55524ac361cb76aa6e6b3c05e",
+      "10": "8f4e0207555fb9b30147a9e0a528ea2c804e0257",
+      "11": "a902134ab35d53d51fc69eaacd29b21e3638b680",
+      "12": "8b3ef3298f86bb31eeb010aa7560573ff8fa750e"
+    },
+    "account1_late": {
+      "1": "6f56a573e3179044b3057c21908ddb30e6ecde43",
+      "2": "bfad83b649669b2c7905a18600d1e0c13fdb2a89",
+      "3": "4a7438b200dc1bc8994d880d4da2ed5e2fcfe98b",
+      "4": "cf239c89339a8aab8140f1dea7eafd8d544419fa",
+      "6": "5abe0e120125343ef71e1a564097528f01a04050",
+      "11": "6c94ecf23fafe2bdb34a64a23fb9147e20d644eb",
+      "12": "61150d33ec2c8efb8e3fffd262921f86e7a9176a"
+    }
+  },
+  "exact_reconciliation": {
+    "source270_count": 270,
+    "account6_118_count": 118,
+    "account1_late89_count": 89,
+    "overlap": 0,
+    "union_count": 207,
+    "union_exact_subset_of_source270": true,
+    "one_effective_result_for_each_key": true,
+    "source270_outside_target_count": 63,
+    "pending_source_worker05_count": 30,
+    "pending_source_worker05_ids": [
+      "entry-4231",
+      "entry-4398",
+      "entry-4446",
+      "entry-4781",
+      "entry-5104",
+      "entry-5316",
+      "entry-5522",
+      "entry-5729",
+      "entry-5748",
+      "entry-5802",
+      "entry-5831",
+      "entry-5855",
+      "entry-5892",
+      "entry-6407",
+      "entry-6434",
+      "entry-6462",
+      "entry-6503",
+      "entry-6528",
+      "entry-6604",
+      "entry-6630",
+      "entry-6651",
+      "entry-6682",
+      "entry-6730",
+      "entry-6752",
+      "entry-6771",
+      "entry-6807",
+      "entry-6826",
+      "entry-6881",
+      "entry-6918",
+      "entry-6952"
+    ],
+    "pending_worker05_overlap_with_target": 0,
+    "other_outside_target_count": 33,
+    "other_outside_by_source_worker": {
+      "4": 24,
+      "5": 30,
+      "7": 1,
+      "9": 1,
+      "12": 7
+    }
+  },
+  "counts": {
+    "copy_length_violation_fields": 13,
+    "copy_length_violation_ids": 13,
+    "unmapped_explicit_url_rows": 2,
+    "non_https_url_rows": 1,
+    "explicit_editorial_review_block_rows": 10,
+    "mapping_support_missing_rows": 0,
+    "missing_replacement_copy_rows": 0,
+    "packet_assignment_hash_mismatches": 0,
+    "result_branch_head_mismatches": 0
+  },
+  "copy_length_violations": [
+    {
+      "record_id": "entry-4416",
+      "field": "long",
+      "count": 114,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-4545",
+      "field": "medium",
+      "count": 92,
+      "bound": "45-90 words"
+    },
+    {
+      "record_id": "entry-5166",
+      "field": "long",
+      "count": 107,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-5666",
+      "field": "long",
+      "count": 126,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-5810",
+      "field": "long",
+      "count": 113,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-5866",
+      "field": "long",
+      "count": 110,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-6420",
+      "field": "long",
+      "count": 101,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-6509",
+      "field": "long",
+      "count": 107,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-6617",
+      "field": "long",
+      "count": 120,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-6666",
+      "field": "long",
+      "count": 118,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-6754",
+      "field": "long",
+      "count": 110,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-6813",
+      "field": "long",
+      "count": 112,
+      "bound": "140-300 words"
+    },
+    {
+      "record_id": "entry-6899",
+      "field": "long",
+      "count": 114,
+      "bound": "140-300 words"
+    }
+  ],
+  "unmapped_explicit_source_urls": [
+    {
+      "record_id": "entry-6509",
+      "unmapped_explicit_urls": [
+        "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-eau-claire-wi-april-2-2016/"
+      ],
+      "mapping_count": 1
+    },
+    {
+      "record_id": "entry-6836",
+      "unmapped_explicit_urls": [
+        "https://www.lsc.gov/i-am-grantee/laws-regulations-and-guidance/lsc-appropriations"
+      ],
+      "mapping_count": 2
+    }
+  ],
+  "non_https_urls": [
+    {
+      "record_id": "entry-6753",
+      "urls": [
+        "http://www.ed.gov/about/news/press-release/us-department-of-education-takes-action-eliminate-dei"
+      ]
+    }
+  ],
+  "explicit_editorial_review_blocks": [
+    {
+      "record_id": "entry-4435",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-5273",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-5745",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-5860",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-6450",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-6537",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-6660",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-6756",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-6838",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    },
+    {
+      "record_id": "entry-6960",
+      "flags": {
+        "accepted_source_citation_valid": false,
+        "claim_approval": false,
+        "status": "proposal_requires_editorial_review",
+        "validation_problems": []
+      }
+    }
+  ],
+  "mapping_support_missing": [],
+  "missing_replacement_copy": [],
+  "release_gate": "NOT CLEAR. All 207 are correction proposals and remain unaccepted. Do not promote to pass. Exact blockers are recorded per-key below: unsupported length bounds, two explicit source URLs without a source-fact mapping, one non-HTTPS URL, and ten source-review rows with claim_approval=false and citation_valid=false.",
+  "worker05_separation": "Pending source-rescue worker05 (30 IDs) is outside the assigned 207 and remains separate. This differs from account6 source-corrections worker05, whose ten IDs are inside the 118-key account6 assignment.",
+  "audit_method": "Independently revalidated all packet file SHA256s, exact key sets, disjointness, account6/account1 branch heads, one effective result per assigned ID, mapped-fact URL coverage, URL scheme, and short/medium/long bounds. No external pages were re-fetched for every item; branch access notes and evidence gaps remain in effective_result.",
+  "source_classification": "Source-rescue prompt classifies all 270 packet rows as needs_correction. The frozen source270 input rows do not carry a uniform explicit status property; this QA records the classification as prompt-derived and does not infer acceptance.",
+  "scope": "No canonical, database, Neon, or other-worker outputs changed."
+}
