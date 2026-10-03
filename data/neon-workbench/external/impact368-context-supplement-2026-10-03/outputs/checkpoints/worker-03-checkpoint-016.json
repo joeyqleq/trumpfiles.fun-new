@@ -1,0 +1,28 @@
+{
+  "worker": 3,
+  "packet": "impact368-context-supplement-2026-10-03",
+  "supplement_commit": "520015274c29cbcc24a4e54d747e896198756415",
+  "output_file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-03-batch-20261003-context-c4e17.jsonl",
+  "completed_count": 16,
+  "completed_ids": [
+    "entry-1298",
+    "entry-113",
+    "entry-1662",
+    "entry-1603",
+    "entry-1299",
+    "entry-1611",
+    "entry-1661",
+    "entry-199",
+    "entry-2529",
+    "entry-1775",
+    "entry-4138",
+    "entry-835",
+    "entry-1459",
+    "entry-1633",
+    "entry-5966",
+    "entry-980"
+  ],
+  "remaining_count": 15,
+  "output_sha256": "70b098cf86c0aed925730e1d32a9ab8057ef9eb9fb1f6056427762505897a9e9",
+  "checkpoint": "16 of 31; append-only review in progress"
+}
