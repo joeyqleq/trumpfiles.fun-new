@@ -1,0 +1,586 @@
+{
+  "report": "Superseding sample100 score and preservation QA follow-up",
+  "created_date": "2026-10-03",
+  "supersedes": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-12-qa-20261003.md",
+  "source_batch": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-12-batch-20261003-01.jsonl",
+  "source_batch_sha256": "129f7ca377e537c9e65c48a2eb1d275ad58fe9e99c3a0f0df6c3a1426acd2014",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "packet_sha256": "3c59e2fb0acd70f3524a41e5587093f6c00470ac81a4ca1863bfcf736708cafc",
+  "scope_ids": [
+    "entry-12",
+    "entry-24",
+    "entry-38",
+    "entry-50",
+    "entry-62",
+    "entry-76",
+    "entry-88",
+    "entry-100"
+  ],
+  "observed_ids": [
+    "entry-12",
+    "entry-24",
+    "entry-38",
+    "entry-50",
+    "entry-62",
+    "entry-76",
+    "entry-88",
+    "entry-100"
+  ],
+  "exact_set": "PASS",
+  "counts": {
+    "pass": 5,
+    "hold": 3
+  },
+  "formula": {
+    "expression": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+    "weights": {
+      "harm": "0.30",
+      "reach": "0.20",
+      "institutions": "0.15",
+      "procedural_abuse": "0.15",
+      "self_dealing": "0.10",
+      "persistence": "0.10"
+    },
+    "weight_sum": "1.00",
+    "rounding": "decimal ROUND_HALF_UP to 2 decimal places",
+    "correction_note": "The prior QA text used 0.16/0.09 for procedural_abuse/self_dealing. This report uses the specified 0.15/0.10 weights. All eight corrected scores still equal the existing proposal score at two decimals."
+  },
+  "counts_and_blockers": {
+    "pass": 5,
+    "hold": 3,
+    "blocking_ids": [
+      "entry-12",
+      "entry-24",
+      "entry-38"
+    ],
+    "blocking_reasons": {
+      "entry-12": [
+        "HOLD — declared preserved category conflicts with frozen row: staged category is 'Human Rights Violations'; frozen category is 'Misogyny / Sexual Misconduct'."
+      ],
+      "entry-24": [
+        "HOLD — source_urls[0] is a 2017 Atlantic article about Charlottesville; it does not document the 2020 Blackwater pardons."
+      ],
+      "entry-38": [
+        "HOLD — description_short says Trump \"looked directly\" at the eclipse, while packet notes say the photographs do not establish exactly where he was looking."
+      ]
+    }
+  },
+  "scope_limits": [
+    "Only the exact eight assigned IDs were assessed.",
+    "No reviewed batch row or prior QA history was edited; this new file supersedes the prior QA for this score/preservation follow-up.",
+    "URL syntax and provenance references were checked from the existing batch; external source content was not newly fetched.",
+    "No live Neon calls, SQL, DDL/DML, production writes, or canonical edits were performed."
+  ],
+  "rows": [
+    {
+      "key": "entry-12",
+      "entry_number": 12,
+      "disposition": "HOLD",
+      "prior_batch_disposition": "PASS",
+      "lengths": {
+        "short_chars": 60,
+        "medium_words": 53,
+        "long_words": 163
+      },
+      "length_checks": {
+        "short_le_180": true,
+        "medium_45_to_90": true,
+        "long_140_to_300": true
+      },
+      "weighted_score": {
+        "dimensions": {
+          "harm": 5.5,
+          "reach": 2.5,
+          "institutions": 1.0,
+          "procedural_abuse": 0.5,
+          "self_dealing": 0.0,
+          "persistence": 2.5
+        },
+        "corrected_score": "2.63",
+        "existing_proposal_score": "2.63",
+        "matches_existing_proposal": true
+      },
+      "frozen_identity": "PASS",
+      "preservation": {
+        "declared_fields": [
+          "title",
+          "description_short",
+          "category",
+          "subcategory"
+        ],
+        "directly_compared_to_embedded_baseline": {
+          "title": true,
+          "category": false,
+          "subcategory": true
+        },
+        "not_independently_comparable_from_batch_row": [
+          "description_short"
+        ],
+        "prior_batch_preservation_assertion": "pass",
+        "status": "HOLD"
+      },
+      "source_provenance": {
+        "urls": [
+          "https://time.com/4528075/donald-trump-miss-usa-naked/"
+        ],
+        "url_structure_checks_pass": true,
+        "references": {
+          "draft_provenance": "chatgpt-web/outputs/import-web-resume-20261001-luna1-review-002-587fcd3df042.jsonl",
+          "impact_provenance": "score-outputs/import-cloud-06-618903ce9112aad5.jsonl",
+          "supersedes_file": "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/worker-2-batch-014.jsonl",
+          "packet_baseline_used": "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/worker-2-batch-014.jsonl"
+        },
+        "external_contents_fetched": false
+      },
+      "blockers": [
+        "HOLD — declared preserved category conflicts with frozen row: staged category is 'Human Rights Violations'; frozen category is 'Misogyny / Sexual Misconduct'."
+      ]
+    },
+    {
+      "key": "entry-24",
+      "entry_number": 24,
+      "disposition": "HOLD",
+      "prior_batch_disposition": "HOLD",
+      "lengths": {
+        "short_chars": 66,
+        "medium_words": 55,
+        "long_words": 216
+      },
+      "length_checks": {
+        "short_le_180": true,
+        "medium_45_to_90": true,
+        "long_140_to_300": true
+      },
+      "weighted_score": {
+        "dimensions": {
+          "harm": 6.0,
+          "reach": 6.0,
+          "institutions": 5.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 6.0
+        },
+        "corrected_score": "4.35",
+        "existing_proposal_score": "4.35",
+        "matches_existing_proposal": true
+      },
+      "frozen_identity": "PASS",
+      "preservation": {
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long"
+        ],
+        "directly_compared_to_embedded_baseline": {
+          "title": true,
+          "description_long": true
+        },
+        "not_independently_comparable_from_batch_row": [
+          "description_short"
+        ],
+        "prior_batch_preservation_assertion": "pass",
+        "status": "PASS_WITH_INHERITED_CHECK"
+      },
+      "source_provenance": {
+        "urls": [
+          "https://www.theatlantic.com/politics/archive/2017/08/trump-defends-white-nationalist-protesters-some-very-fine-people-on-both-sides/537012/",
+          "https://www.aa.com.tr/en/americas/us-continues-to-pardon-war-criminals-in-iraq-afghanistan/2088191"
+        ],
+        "url_structure_checks_pass": true,
+        "references": {
+          "draft_provenance": "chatgpt-web/outputs/import-web-worker-0-batch-083-c5b754ccfa1c.jsonl",
+          "impact_provenance": "score-outputs/import-cloud-08-3fb1bfca75a47d99.jsonl",
+          "supersedes_file": null,
+          "packet_baseline_used": "frozen_original and packet-carried preserved_fields"
+        },
+        "external_contents_fetched": false
+      },
+      "blockers": [
+        "HOLD — source_urls[0] is a 2017 Atlantic article about Charlottesville; it does not document the 2020 Blackwater pardons."
+      ]
+    },
+    {
+      "key": "entry-38",
+      "entry_number": 38,
+      "disposition": "HOLD",
+      "prior_batch_disposition": "HOLD",
+      "lengths": {
+        "short_chars": 111,
+        "medium_words": 66,
+        "long_words": 210
+      },
+      "length_checks": {
+        "short_le_180": true,
+        "medium_45_to_90": true,
+        "long_140_to_300": true
+      },
+      "weighted_score": {
+        "dimensions": {
+          "harm": 0.5,
+          "reach": 1,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0.2
+        },
+        "corrected_score": "0.37",
+        "existing_proposal_score": "0.37",
+        "matches_existing_proposal": true
+      },
+      "frozen_identity": "PASS",
+      "preservation": {
+        "declared_fields": [
+          "title",
+          "description_short"
+        ],
+        "directly_compared_to_embedded_baseline": {
+          "title": true,
+          "description_short": true
+        },
+        "not_independently_comparable_from_batch_row": [],
+        "prior_batch_preservation_assertion": "pass",
+        "status": "PASS"
+      },
+      "source_provenance": {
+        "urls": [
+          "https://www.usatoday.com/story/news/nation/2024/04/07/donald-trump-looking-2017-solar-eclipse-without-glasses-photo/73170145007/",
+          "https://www.usatoday.com/story/news/nation/2024/04/07/donald-trump-looking-2017-solar-eclipse-photo/73170145007/",
+          "https://www.washingtonpost.com/news/the-fix/wp/2017/08/21/trump-celebrates-solar-eclipse-by-looking-up-without-special-viewing-glasses/",
+          "https://www.cbsnews.com/news/trump-to-watch-eclipse-from-white-house/"
+        ],
+        "url_structure_checks_pass": true,
+        "references": {
+          "draft_provenance": "finish-2026-10-01/outputs/import-cloud-03-6720c1d6d4118868.jsonl",
+          "impact_provenance": "score-outputs/import-cloud-03-59d2cb1ac6035c17.jsonl",
+          "supersedes_file": null,
+          "packet_baseline_used": "frozen_original and packet-carried preserved_fields"
+        },
+        "external_contents_fetched": false
+      },
+      "blockers": [
+        "HOLD — description_short says Trump \"looked directly\" at the eclipse, while packet notes say the photographs do not establish exactly where he was looking."
+      ]
+    },
+    {
+      "key": "entry-50",
+      "entry_number": 50,
+      "disposition": "PASS",
+      "prior_batch_disposition": "PASS",
+      "lengths": {
+        "short_chars": 47,
+        "medium_words": 53,
+        "long_words": 229
+      },
+      "length_checks": {
+        "short_le_180": true,
+        "medium_45_to_90": true,
+        "long_140_to_300": true
+      },
+      "weighted_score": {
+        "dimensions": {
+          "harm": 3.0,
+          "reach": 2.0,
+          "institutions": 5.0,
+          "procedural_abuse": 4.0,
+          "self_dealing": 4.0,
+          "persistence": 3.0
+        },
+        "corrected_score": "3.35",
+        "existing_proposal_score": "3.35",
+        "matches_existing_proposal": true
+      },
+      "frozen_identity": "PASS",
+      "preservation": {
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long"
+        ],
+        "directly_compared_to_embedded_baseline": {
+          "title": true,
+          "description_long": true
+        },
+        "not_independently_comparable_from_batch_row": [
+          "description_short"
+        ],
+        "prior_batch_preservation_assertion": "pass",
+        "status": "PASS_WITH_INHERITED_CHECK"
+      },
+      "source_provenance": {
+        "urls": [
+          "https://www.justice.gov/usao-dc/pr/roger-jason-stone-jr-convicted-seven-counts",
+          "https://www.npr.org/2020/07/12/890075577/roger-stone-clemency-latest-example-of-trump-rewarding-his-friends-scholars-say",
+          "https://www.bbc.com/news/world-us-canada-55433522"
+        ],
+        "url_structure_checks_pass": true,
+        "references": {
+          "draft_provenance": "chatgpt-web/outputs/import-web-worker-1-extra-batch-084-c8a5a9ed016a.jsonl",
+          "impact_provenance": "score-outputs/import-cloud-02-0aac9993202571ea.jsonl",
+          "supersedes_file": null,
+          "packet_baseline_used": "frozen_original and packet-carried preserved_fields"
+        },
+        "external_contents_fetched": false
+      },
+      "blockers": [
+        "Corrected weighted score matches the existing proposal after half-up rounding; frozen identity, checked preservation values, description limits, and provenance structure pass. No external source-content fetch was part of this follow-up."
+      ]
+    },
+    {
+      "key": "entry-62",
+      "entry_number": 62,
+      "disposition": "PASS",
+      "prior_batch_disposition": "PASS",
+      "lengths": {
+        "short_chars": 52,
+        "medium_words": 47,
+        "long_words": 211
+      },
+      "length_checks": {
+        "short_le_180": true,
+        "medium_45_to_90": true,
+        "long_140_to_300": true
+      },
+      "weighted_score": {
+        "dimensions": {
+          "harm": 4.0,
+          "reach": 9.0,
+          "institutions": 4.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 2.0
+        },
+        "corrected_score": "3.80",
+        "existing_proposal_score": "3.80",
+        "matches_existing_proposal": true
+      },
+      "frozen_identity": "PASS",
+      "preservation": {
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long"
+        ],
+        "directly_compared_to_embedded_baseline": {
+          "title": true,
+          "description_short": true,
+          "description_long": true
+        },
+        "not_independently_comparable_from_batch_row": [],
+        "prior_batch_preservation_assertion": "pass",
+        "status": "PASS"
+      },
+      "source_provenance": {
+        "urls": [
+          "https://www.axios.com/2020/10/19/trump-calls-fauci-disaster"
+        ],
+        "url_structure_checks_pass": true,
+        "references": {
+          "draft_provenance": "lightsprint/outputs/import-cloud-03-c8d46fe7e8996bd8.jsonl",
+          "impact_provenance": "score-outputs/import-cloud-05-46cde45ad0c6499b.jsonl",
+          "supersedes_file": null,
+          "packet_baseline_used": "frozen_original and packet-carried preserved_fields"
+        },
+        "external_contents_fetched": false
+      },
+      "blockers": [
+        "Corrected weighted score matches the existing proposal after half-up rounding; frozen identity, checked preservation values, description limits, and provenance structure pass. No external source-content fetch was part of this follow-up."
+      ]
+    },
+    {
+      "key": "entry-76",
+      "entry_number": 76,
+      "disposition": "PASS",
+      "prior_batch_disposition": "PASS",
+      "lengths": {
+        "short_chars": 55,
+        "medium_words": 66,
+        "long_words": 245
+      },
+      "length_checks": {
+        "short_le_180": true,
+        "medium_45_to_90": true,
+        "long_140_to_300": true
+      },
+      "weighted_score": {
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 8.0,
+          "institutions": 2.0,
+          "procedural_abuse": 0.5,
+          "self_dealing": 0.0,
+          "persistence": 0.5
+        },
+        "corrected_score": "3.08",
+        "existing_proposal_score": "3.08",
+        "matches_existing_proposal": true
+      },
+      "frozen_identity": "PASS",
+      "preservation": {
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long",
+          "category",
+          "subcategory",
+          "topic_tags"
+        ],
+        "directly_compared_to_embedded_baseline": {
+          "title": true,
+          "description_short": true,
+          "description_long": true,
+          "category": true,
+          "subcategory": true,
+          "topic_tags": true
+        },
+        "not_independently_comparable_from_batch_row": [],
+        "prior_batch_preservation_assertion": "pass",
+        "status": "PASS"
+      },
+      "source_provenance": {
+        "urls": [
+          "https://www.protestlaw.org/news/ufoi5uhhhkca302bkvdeltxjnykamz"
+        ],
+        "url_structure_checks_pass": true,
+        "references": {
+          "draft_provenance": "native-cloud/outputs/import-cloud-09-5f000d3b97fc2536.jsonl",
+          "impact_provenance": "score-outputs/import-cloud-10-df452fdaff63e836.jsonl",
+          "supersedes_file": null,
+          "packet_baseline_used": "frozen_original and packet-carried preserved_fields"
+        },
+        "external_contents_fetched": false
+      },
+      "blockers": [
+        "Corrected weighted score matches the existing proposal after half-up rounding; frozen identity, checked preservation values, description limits, and provenance structure pass. No external source-content fetch was part of this follow-up."
+      ]
+    },
+    {
+      "key": "entry-88",
+      "entry_number": 88,
+      "disposition": "PASS",
+      "prior_batch_disposition": "PASS",
+      "lengths": {
+        "short_chars": 64,
+        "medium_words": 47,
+        "long_words": 241
+      },
+      "length_checks": {
+        "short_le_180": true,
+        "medium_45_to_90": true,
+        "long_140_to_300": true
+      },
+      "weighted_score": {
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 3.0,
+          "institutions": 3.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 2.0
+        },
+        "corrected_score": "2.30",
+        "existing_proposal_score": "2.30",
+        "matches_existing_proposal": true
+      },
+      "frozen_identity": "PASS",
+      "preservation": {
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long"
+        ],
+        "directly_compared_to_embedded_baseline": {
+          "title": true,
+          "description_long": true
+        },
+        "not_independently_comparable_from_batch_row": [
+          "description_short"
+        ],
+        "prior_batch_preservation_assertion": "pass",
+        "status": "PASS_WITH_INHERITED_CHECK"
+      },
+      "source_provenance": {
+        "urls": [
+          "https://www.nytimes.com/2020/09/23/business/media/trump-ali-velshi.html",
+          "https://www.theguardian.com/us-news/2025/dec/23/violence-against-journalists-increase-trump",
+          "https://www.axios.com/2018/11/01/violence-against-media-bombs-shootings-trump"
+        ],
+        "url_structure_checks_pass": true,
+        "references": {
+          "draft_provenance": "chatgpt-web/outputs/import-web-oct1-luna4-review-revision-011-ab390829a692.jsonl",
+          "impact_provenance": "score-outputs/import-cloud-08-b5680ab7010bc83d.jsonl",
+          "supersedes_file": "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/worker-1-extra-batch-085.jsonl",
+          "packet_baseline_used": "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/worker-1-extra-batch-085.jsonl"
+        },
+        "external_contents_fetched": false
+      },
+      "blockers": [
+        "Corrected weighted score matches the existing proposal after half-up rounding; frozen identity, checked preservation values, description limits, and provenance structure pass. No external source-content fetch was part of this follow-up."
+      ]
+    },
+    {
+      "key": "entry-100",
+      "entry_number": 100,
+      "disposition": "PASS",
+      "prior_batch_disposition": "PASS",
+      "lengths": {
+        "short_chars": 58,
+        "medium_words": 57,
+        "long_words": 233
+      },
+      "length_checks": {
+        "short_le_180": true,
+        "medium_45_to_90": true,
+        "long_140_to_300": true
+      },
+      "weighted_score": {
+        "dimensions": {
+          "harm": 5.2,
+          "reach": 6.2,
+          "institutions": 5.3,
+          "procedural_abuse": 0.4,
+          "self_dealing": 0,
+          "persistence": 4.8
+        },
+        "corrected_score": "4.14",
+        "existing_proposal_score": "4.14",
+        "matches_existing_proposal": true
+      },
+      "frozen_identity": "PASS",
+      "preservation": {
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long"
+        ],
+        "directly_compared_to_embedded_baseline": {
+          "title": true,
+          "description_long": true
+        },
+        "not_independently_comparable_from_batch_row": [
+          "description_short"
+        ],
+        "prior_batch_preservation_assertion": "pass",
+        "status": "PASS_WITH_INHERITED_CHECK"
+      },
+      "source_provenance": {
+        "urls": [
+          "https://www.politico.com/story/2019/07/18/ilhan-omar-trump-rally-violence-1419338",
+          "https://www.cbc.ca/news/world/trump-fake-disgusting-media-rhetoric-dangerous-violence-1.4772658",
+          "https://news.un.org/en/story/2018/08/1016222",
+          "https://www.vox.com/21506029/trump-violence-tweets-racist-hate-speech"
+        ],
+        "url_structure_checks_pass": true,
+        "references": {
+          "draft_provenance": "chatgpt-web/outputs/import-web-oct1-luna2-rootreview-003-362715eaae26.jsonl",
+          "impact_provenance": "score-outputs/import-cloud-03-c9d673de4faf2f00.jsonl",
+          "supersedes_file": "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/worker-1-extra-batch-084.jsonl",
+          "packet_baseline_used": "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/outputs/worker-1-extra-batch-084.jsonl"
+        },
+        "external_contents_fetched": false
+      },
+      "blockers": [
+        "Corrected weighted score matches the existing proposal after half-up rounding; frozen identity, checked preservation values, description limits, and provenance structure pass. No external source-content fetch was part of this follow-up."
+      ]
+    }
+  ]
+}
