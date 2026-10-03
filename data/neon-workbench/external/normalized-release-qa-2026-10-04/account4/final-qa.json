@@ -1,0 +1,305 @@
+{
+  "result": "pass",
+  "normalized_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-09-normalized.jsonl",
+  "row_count": 23,
+  "expected_ids": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6595",
+    "entry-6614",
+    "entry-6672",
+    "entry-6744",
+    "entry-6782",
+    "entry-6798",
+    "entry-6823",
+    "entry-6844",
+    "entry-6925",
+    "entry-6941",
+    "entry-6963",
+    "entry-7089",
+    "entry-7125",
+    "entry-7158"
+  ],
+  "actual_ids": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6595",
+    "entry-6614",
+    "entry-6672",
+    "entry-6744",
+    "entry-6782",
+    "entry-6798",
+    "entry-6823",
+    "entry-6844",
+    "entry-6925",
+    "entry-6941",
+    "entry-6963",
+    "entry-7089",
+    "entry-7125",
+    "entry-7158"
+  ],
+  "exact_id_set_match": true,
+  "duplicate_ids": [],
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "disposition_counts": {
+    "split_proposal_pending_review": 2,
+    "hold_pending_evidence": 12,
+    "narrowed_event_proposal_pending_review": 6,
+    "context_only_proposal_pending_review": 2,
+    "consolidation_proposal_pending_review": 1
+  },
+  "release_ready_count": 0,
+  "blocking_ids": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6595",
+    "entry-6614",
+    "entry-6672",
+    "entry-6744",
+    "entry-6782",
+    "entry-6798",
+    "entry-6823",
+    "entry-6844",
+    "entry-6925",
+    "entry-6941",
+    "entry-6963",
+    "entry-7089",
+    "entry-7125",
+    "entry-7158"
+  ],
+  "evidence_hold_ids": [
+    "entry-5728",
+    "entry-5760",
+    "entry-6455",
+    "entry-6595",
+    "entry-6614",
+    "entry-6672",
+    "entry-6744",
+    "entry-6782",
+    "entry-6798",
+    "entry-6823",
+    "entry-6925",
+    "entry-6963"
+  ],
+  "proposal_pending_review_ids": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6511",
+    "entry-6844",
+    "entry-6941",
+    "entry-7089",
+    "entry-7125",
+    "entry-7158"
+  ],
+  "prior_batch_status_conflict_ids": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6672",
+    "entry-6798",
+    "entry-6823",
+    "entry-6844",
+    "entry-6925",
+    "entry-6941",
+    "entry-6963",
+    "entry-7089",
+    "entry-7125",
+    "entry-7158"
+  ],
+  "source_batches": {
+    "held283": {
+      "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-09-batch-20261003-held283-editorial-completion.jsonl",
+      "output_commit": "1c68334bf4992c971686f7567db71cacba268225",
+      "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+      "input_sha256": "741ae66d8eade620c281d0766ed781b86497e7e98045617774814b476ad5775e",
+      "row_count": 23
+    },
+    "web425": {
+      "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-09-batch-20261003-pr49-rescue.jsonl",
+      "output_commit": "9d781b2c3a00de985d28992462e04afa063d47c0",
+      "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+      "input_sha256": "08b57f5a184eb12d9d053ead4417e5d08655c27832f56f3317d1ecfde12d9ad6",
+      "row_count": 35,
+      "assigned_id_intersection_count": 23
+    }
+  },
+  "resolution_note": "All IDs appear once in each source batch. The held283 worker batch is the later commit on this branch. Its supported proposals remain pending review; its holds remain holds. Earlier Web425 pass/hold/superseded statuses are retained verbatim in each row reason and do not approve or clear a newer proposal/hold. The two pinned source packet commits share a parent but are siblings, so precedence is based on the later worker output plus per-row support, never packet ancestry alone.",
+  "url_validation": {
+    "verified_urls_https": true,
+    "cited_proposal_urls_https": true,
+    "unread_or_metadata_only_urls_excluded_from_verified_urls": true
+  },
+  "description_checks": {
+    "title_max_chars": 180,
+    "short_max_chars": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ],
+    "drafts_checked": 14,
+    "all_pass": true,
+    "items": [
+      {
+        "key": "entry-4577",
+        "child": "entry-4577-order",
+        "title_chars": 59,
+        "short_chars": 60,
+        "medium_words": 70,
+        "long_words": 162,
+        "urls_https": true
+      },
+      {
+        "key": "entry-4577",
+        "child": "entry-4577-npra-plan",
+        "title_chars": 78,
+        "short_chars": 79,
+        "medium_words": 70,
+        "long_words": 164,
+        "urls_https": true
+      },
+      {
+        "key": "entry-4577",
+        "child": "entry-4577-ambler",
+        "title_chars": 41,
+        "short_chars": 42,
+        "medium_words": 70,
+        "long_words": 162,
+        "urls_https": true
+      },
+      {
+        "key": "entry-5191",
+        "child": "entry-5191-springfield-rumor",
+        "title_chars": 62,
+        "short_chars": 118,
+        "medium_words": 55,
+        "long_words": 166,
+        "urls_https": true
+      },
+      {
+        "key": "entry-5191",
+        "child": "entry-5191-haiti-tps",
+        "title_chars": 53,
+        "short_chars": 85,
+        "medium_words": 53,
+        "long_words": 151,
+        "urls_https": true
+      },
+      {
+        "key": "entry-5851",
+        "child": null,
+        "title_chars": 80,
+        "short_chars": 153,
+        "medium_words": 62,
+        "long_words": 168,
+        "urls_https": true
+      },
+      {
+        "key": "entry-6368",
+        "child": null,
+        "title_chars": 75,
+        "short_chars": 75,
+        "medium_words": 51,
+        "long_words": 148,
+        "urls_https": true
+      },
+      {
+        "key": "entry-6424",
+        "child": null,
+        "title_chars": 72,
+        "short_chars": 115,
+        "medium_words": 51,
+        "long_words": 154,
+        "urls_https": true
+      },
+      {
+        "key": "entry-6511",
+        "child": null,
+        "title_chars": 49,
+        "short_chars": 156,
+        "medium_words": 60,
+        "long_words": 152,
+        "urls_https": true
+      },
+      {
+        "key": "entry-6844",
+        "child": null,
+        "title_chars": 79,
+        "short_chars": 125,
+        "medium_words": 69,
+        "long_words": 153,
+        "urls_https": true
+      },
+      {
+        "key": "entry-6941",
+        "child": null,
+        "title_chars": 62,
+        "short_chars": 146,
+        "medium_words": 61,
+        "long_words": 140,
+        "urls_https": true
+      },
+      {
+        "key": "entry-7089",
+        "child": null,
+        "title_chars": 81,
+        "short_chars": 81,
+        "medium_words": 62,
+        "long_words": 155,
+        "urls_https": true
+      },
+      {
+        "key": "entry-7125",
+        "child": null,
+        "title_chars": 49,
+        "short_chars": 125,
+        "medium_words": 51,
+        "long_words": 165,
+        "urls_https": true
+      },
+      {
+        "key": "entry-7158",
+        "child": null,
+        "title_chars": 67,
+        "short_chars": 67,
+        "medium_words": 47,
+        "long_words": 175,
+        "urls_https": true
+      }
+    ]
+  }
+}
