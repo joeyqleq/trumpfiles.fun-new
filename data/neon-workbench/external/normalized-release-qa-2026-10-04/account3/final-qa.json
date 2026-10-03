@@ -1,0 +1,92 @@
+{
+  "worker": 5,
+  "account": 3,
+  "expected_key_count": 31,
+  "output_row_count": 31,
+  "unique_key_count": 31,
+  "missing_count": 0,
+  "unexpected_count": 0,
+  "duplicate_count": 0,
+  "disposition_counts": {
+    "hold": 31
+  },
+  "release_ready_count": 0,
+  "blocked_count": 31,
+  "blocking_ids": [
+    "entry-1502",
+    "entry-1300",
+    "entry-170",
+    "entry-1649",
+    "entry-224",
+    "entry-1708",
+    "entry-1766",
+    "entry-214",
+    "entry-1213",
+    "entry-3212",
+    "entry-2325",
+    "entry-5509",
+    "entry-1491",
+    "entry-1667",
+    "entry-6795",
+    "entry-7151",
+    "entry-6029",
+    "entry-6318",
+    "entry-1640",
+    "entry-3225",
+    "entry-1370",
+    "entry-2331",
+    "entry-5455",
+    "entry-298",
+    "entry-6156",
+    "entry-984",
+    "entry-1717",
+    "entry-259",
+    "entry-7070",
+    "entry-2238",
+    "entry-1925"
+  ],
+  "reconciled_source_jobs": [
+    "five-account-round-2026-10-03/impact368",
+    "impact368-context-supplement-2026-10-03"
+  ],
+  "conflicting_terminal_row_ids": [
+    "entry-1300",
+    "entry-214",
+    "entry-1491",
+    "entry-6029",
+    "entry-1640",
+    "entry-298",
+    "entry-7070"
+  ],
+  "selected_latest_descendant_ids": [
+    "entry-1300",
+    "entry-214",
+    "entry-1491",
+    "entry-6029",
+    "entry-1640",
+    "entry-298",
+    "entry-7070"
+  ],
+  "selected_latest_descendant_supported_count": 7,
+  "proposal_count": 0,
+  "proposal_description_word_length_check": {
+    "applicable_count": 0,
+    "status": "not_applicable_no_proposal_descriptions"
+  },
+  "url_validation": {
+    "format_invalid_count": 0,
+    "verified_url_count": 51,
+    "scope": "Copied from selected source-basis rows and syntax-checked; no fresh web lookup."
+  },
+  "validation": "pass",
+  "validated_checks": [
+    "exact IDs and order",
+    "no duplicate rows",
+    "required schema",
+    "source file provenance",
+    "URL syntax and source-basis match",
+    "proposal description word-length applicability",
+    "hold/defer not released",
+    "conflicts explicitly listed"
+  ]
+}
