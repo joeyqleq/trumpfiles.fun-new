@@ -1,0 +1,124 @@
+{
+  "source_job": "held283-editorial-completion-2026-10-03 / worker-03",
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "worker_input_sha256": "15164c78949f28d336f8510852e0ad01614ee450dbd545383568136a2620b141",
+  "prior_batch_commit": "5e809fbf7b4067571268bf85b510368aac4441ab",
+  "prior_batch_path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-03-batch-UNIQUE.jsonl",
+  "prior_batch_sha256": "78acef8b6870a4e476dcc94ebae9b41a3ce66243b8844de2a60b645046e76715",
+  "normalized_path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-03-normalized.jsonl",
+  "assigned_count": 24,
+  "normalized_count": 24,
+  "unique_id_count": 24,
+  "release_ready_count": 5,
+  "blocked_count": 19,
+  "terminal_counts": {
+    "proposal": 8,
+    "hold": 15,
+    "exclusion_proposal": 1
+  },
+  "disposition_counts": {
+    "propose_narrower_supported_event": 4,
+    "propose_consolidation_with_counterpart": 3,
+    "hold_for_missing_evidence": 9,
+    "exclude_pending_new_evidence": 3,
+    "hold_split_until_full_source_text": 1,
+    "replace_with_narrower_supported_event": 1,
+    "consolidate_as_publication_context_only_exclude_as_event": 1,
+    "hold_for_direct_source_verification": 2
+  },
+  "release_ready_ids": [
+    "entry-4285",
+    "entry-6571",
+    "entry-6727",
+    "entry-6774",
+    "entry-6933"
+  ],
+  "blocking_ids": [
+    "entry-4871",
+    "entry-5335",
+    "entry-5746",
+    "entry-5826",
+    "entry-6208",
+    "entry-6414",
+    "entry-6437",
+    "entry-6475",
+    "entry-6602",
+    "entry-6637",
+    "entry-6789",
+    "entry-6810",
+    "entry-6832",
+    "entry-6884",
+    "entry-6951",
+    "entry-7057",
+    "entry-7113",
+    "entry-7137",
+    "entry-7178"
+  ],
+  "blockers": {
+    "entry-4871": "The official order and Reuters article were opened. The corrected draft states the order’s precise parental-status conditions and LPR exemption, dates the later injunction separately, and removes unsupported annual estimates and ruling dates. Duplicate/split action remains pending: Consolidate with entry-4723 if the event-identity check confirms the same order and chronology; retain only one record for this policy and do not collapse the later court action into the signing date.",
+    "entry-5335": "A third-party OCR rendering is the only read source; the DOJ-hosted PDF could not be opened. The exact “209 files” count lacks an official verified index, the witness account must remain attributed, and the reviewed evidence does not support a non-padded 140–300-word long description.",
+    "entry-5746": "No source is supplied for the claimed Aug. 4, 2025 NATO withdrawal threat or Article 5 refusal. General burden-sharing criticism cannot establish either specific claim.",
+    "entry-5826": "No source establishes that foreign officials paid for Mar-a-Lago memberships or stays to obtain meetings. The record also lacks named officials, payment records, and meeting evidence.",
+    "entry-6208": "The directly opened DOJ release supports the dated prosecution policy and its scope, not the claim that family separation was mandated or intended as deterrence. The correction properly removes those unsupported causal claims. Duplicate/split action remains pending: Propose one record for the April 6 DOJ announcement, deduplicated against entry-5635; do not state family-separation effects without separately sourced evidence.",
+    "entry-6414": "The two source reads support distinct episodes on Nov. 11, 2023 (“vermin”) and Oct. 13, 2024 (“enemy from within”), not the combined Jan. 2025 claim. The published split lead has no complete 45–90-word medium and 140–300-word long description for each component; keep on hold pending complete, separately attributed drafts and duplicate checks. Duplicate/split action remains pending: The November 11, 2023 “vermin” remarks and October 13, 2024 “enemy from within” remarks are separate dated episodes. Before either is split into a record, check for an existing record matching its date, quoted phrase and campaign context; do not combine them into one composite or duplicate either episode.",
+    "entry-6437": "The only surfaced Wired result is a search snippet about ICE observer photos in a later court filing; it does not establish White House-directed dossiers on journalists, politicians, or civil-society critics. No dossier records or responsible agency are cited.",
+    "entry-6475": "The packet does not identify a dated government action establishing that all U.S. aid to Palestinians ended. It lacks the program, funding stream, exemptions, and implementation evidence needed to support the universal claim.",
+    "entry-6602": "No named referral, investigation, or case is given, and no dated DOJ decision shows Bondi’s department halted or declined enforcement against Trump allies. A broad categorical claim cannot be retained from the current evidence.",
+    "entry-6637": "The candidate found no evidence that DOGE obtained unauthorized SSA access for approximately 70 million people. Access logs, a court finding, or agency records naming the data and scope are absent.",
+    "entry-6789": "The official FISC description says the Chief Justice designates its district-judge members, contradicting the held claim that Trump removed and installed loyalists. No reviewed source documents surveillance approvals targeting political opponents or denial of congressional access.",
+    "entry-6810": "No independently verified policy or report establishes that federal agencies ended same-sex marriage benefits in February 2025. The candidate identifies no matching source.",
+    "entry-6832": "Neither cited Department of Education URL was independently opened in the candidate review. The supplied materials do not provide final-rule text or an exact comparison showing that an April 2025 rule newly removed Pell eligibility for undocumented students or short credentials.",
+    "entry-6884": "No source verifies the exact alleged private remark about Jeff Sessions in March 2020. Other public insults do not establish that specific quotation.",
+    "entry-6951": "No directive, opened FBI case, or source documents monitoring protest organizers’ communications or finances as potential terrorists. Prior statements or generalized concerns do not establish the claimed action.",
+    "entry-7057": "The directly read New York Review of Books essay is political commentary describing Trump’s governing style, not a discrete presidential action or legal status. The record duplicates publication context already represented by entry-7008. Duplicate/split action remains pending: The same Aug. 20, 2026 NYRB essay is described by entry-7008. Keep at most one publication-context record for that essay, with the survivor chosen once; neither record should be treated as a separate presidential event.",
+    "entry-7113": "The latest published correction’s QA marked both supplied drafts as failing field/URL checks without identifying the individual failure. This proposal narrows the source list to the directly opened San Francisco Chronicle article, removes the unopened Seattle Times lead, and describes only the Nevada appointment ruling and its limited effect. Duplicate/split action remains pending: Consolidate with entry-7107 only if the comparison confirms the same Aug. 17 Nevada appointment ruling; retain one record, preferably entry-7107 per the published survivor mapping. The Seattle Times strategy story is not used to expand this narrower Nevada claim.",
+    "entry-7137": "The sole CNN URL was not opened; the candidate’s supported-fact summary is frozen metadata/counterpart text rather than a directly reviewed article. Verify the lawsuit filing, date, challenged FCC conduct, and allegation in the exact CNN story before adopting its reader-facing draft. Duplicate/split action remains pending: Do not create an independent row pending source verification; if the CNN article confirms the same Aug. 18 Disney suit already represented by entry-7112, retain one record for that filing.",
+    "entry-7178": "None of the five listed poll-story URLs was opened in the candidate review. The 69% and 63% figures and survey framing therefore remain frozen summaries, without direct source text or methodology; do not publish the proposed numbers until a linked report or poll record is read. Duplicate/split action remains pending: Do not create a separate record pending source verification; if the Reuters/Ipsos poll and question wording are confirmed, consolidate with entry-7139 as the same survey report and keep the public-perception result distinct from proof of misconduct."
+  },
+  "history_reconciliation": {
+    "checkpoint_snapshots": [
+      {
+        "commit": "3980cecd",
+        "rows": 8,
+        "unique_ids": 8
+      },
+      {
+        "commit": "08fa3e99",
+        "rows": 16,
+        "unique_ids": 16
+      },
+      {
+        "commit": "1aca8d36",
+        "rows": 24,
+        "unique_ids": 24
+      },
+      {
+        "commit": "5e809fbf7b4067571268bf85b510368aac4441ab",
+        "rows": 24,
+        "unique_ids": 24
+      }
+    ],
+    "latest_descendant_refinements": [
+      "entry-4285",
+      "entry-4871",
+      "entry-6208",
+      "entry-6414"
+    ],
+    "resolved_version_conflict_count": 4,
+    "unresolved_terminal_conflicts": 0,
+    "selection": "Earlier files were cumulative snapshots. For the four rows changed by the latest descendant, that supported version was selected and the supersession is recorded in row reasons. No duplicate conflicting terminal remains."
+  },
+  "readiness_semantics": "release_ready=true means proposed replacement copy has verified supporting URLs and passes description-length checks with no pending split/duplicate action. It remains proposal-only and was not canonically applied. Holds, exclusion-only rows, and duplicate consolidations awaiting application remain blocked.",
+  "checks": {
+    "exact_assigned_ids_and_order": true,
+    "one_effective_row_per_id": true,
+    "schema_valid": true,
+    "source_provenance_preserved": true,
+    "verified_url_access_statuses_preserved": true,
+    "proposal_urls_https_and_verified": true,
+    "proposal_description_lengths_valid": true,
+    "holds_not_promoted": true,
+    "duplicate_guards_and_uncertainty_preserved": true,
+    "canonical_neon_and_other_worker_files_untouched": true
+  }
+}
