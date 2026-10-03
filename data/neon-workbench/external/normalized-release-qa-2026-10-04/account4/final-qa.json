@@ -1,0 +1,92 @@
+{
+  "worker": 8,
+  "kind": "final_exact_set_normalized_release_qa",
+  "source_job": "held283-editorial-completion-2026-10-03/worker-08-batch-001-20261003",
+  "source_batch_count": 1,
+  "source_batches": [
+    "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-08-batch-001-20261003.jsonl"
+  ],
+  "source_terminal_row_count": 23,
+  "source_terminal_unique_id_count": 23,
+  "checkpoint_files_are_nonterminal": true,
+  "input_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_sha256": "8eda184acba62c7542a9a9a1087a9b0d815bdedc57e8c132ea58cacdedee51b9",
+  "output_file": "worker-08-normalized.jsonl",
+  "output_row_count": 23,
+  "unique_key_count": 23,
+  "assigned_count": 23,
+  "missing_ids": [],
+  "outside_assignment_ids": [],
+  "duplicate_ids": [],
+  "schema_keys": [
+    "disposition",
+    "key",
+    "proposal",
+    "reasons",
+    "release_ready",
+    "source_files",
+    "source_job",
+    "verified_urls"
+  ],
+  "schema_valid": true,
+  "terminal_counts": {
+    "hold": 14,
+    "defer_partial_split": 1,
+    "split_into_separate_presidential_actions": 1,
+    "retain_narrower_corrected_event": 4,
+    "defer_duplicate_consolidation": 1,
+    "exclude_as_standalone_event_keep_publication_context_only": 1,
+    "propose_duplicate_consolidation": 1
+  },
+  "release_ready_count": 7,
+  "blocking_count": 16,
+  "blocking_ids": [
+    "entry-4538",
+    "entry-5190",
+    "entry-5756",
+    "entry-5850",
+    "entry-6324",
+    "entry-6423",
+    "entry-6451",
+    "entry-6504",
+    "entry-6612",
+    "entry-6668",
+    "entry-6781",
+    "entry-6822",
+    "entry-6922",
+    "entry-6940",
+    "entry-6961",
+    "entry-7087"
+  ],
+  "duplicate_terminal_conflict_ids": [],
+  "upstream_revision_conflict_ids": [
+    "entry-4538"
+  ],
+  "conflict_handling": "No duplicate terminal rows appear across worker-08 batches (one terminal batch). Checkpoints are nonterminal. entry-4538 remains held because the recorded published PR49 candidate and highest-authority rescue overlay disagree; the source batch retains exact provenance and no later descendant resolving that conflict is claimed.",
+  "source_provenance": "source_files are copied as exact repo-relative references from the worker-08 terminal rows and their cited candidate/overlay provenance; this normalization performs no new source research.",
+  "verified_url_validation": {
+    "count": 17,
+    "https_only": true,
+    "format_valid": true,
+    "each_url_mapped_to_supported_facts": true,
+    "access_limits_preserved": "URLs whose source maps were snippet-only, packet leads, failed opens, or otherwise lacked supported facts are excluded from verified_urls; limitations stay in reasons."
+  },
+  "description_length_validation": {
+    "description_field_count": 29,
+    "short_max_chars": 180,
+    "medium_word_range": [
+      45,
+      90
+    ],
+    "long_word_range": [
+      140,
+      300
+    ],
+    "out_of_range_fields": [],
+    "missing_long_description_blocks": [
+      "entry-5190"
+    ]
+  },
+  "release_readiness_policy": "release_ready is true only for complete proposals explicitly retained as proposal in the worker-08 terminal batch. Holds, partial split, and unverified duplicate consolidation remain blocking; uncertainty or disputed copy is retained in reasons.",
+  "scope": "Only this worker normalized output and adjacent QA are changed. No canonical edits, Neon writes, other-worker edits, or new research."
+}
