@@ -1,0 +1,185 @@
+{
+  "worker": 9,
+  "scope": "Reconcile worker-09 impact368 terminal rows only; no new research or canonical release action.",
+  "branch": "ls/10-trump-files-impact368-review-09-of-12-jMbt",
+  "output_file": "worker-09-normalized.jsonl",
+  "output_sha256": "deed907aab2b3a6d5cd3bac357c3aeed1a8240aaa30eda35d79f8caaa27b7aca",
+  "expected_count": 30,
+  "output_count": 30,
+  "expected_keys_in_order": [
+    "entry-160",
+    "entry-1443",
+    "entry-1789",
+    "entry-1840",
+    "entry-1428",
+    "entry-1378",
+    "entry-2555",
+    "entry-2402",
+    "entry-5449",
+    "entry-3490",
+    "entry-7074",
+    "entry-1264",
+    "entry-5516",
+    "entry-5984",
+    "entry-6971",
+    "entry-4158",
+    "entry-5507",
+    "entry-7018",
+    "entry-2231",
+    "entry-1522",
+    "entry-4057",
+    "entry-244",
+    "entry-2525",
+    "entry-6915",
+    "entry-7034",
+    "entry-1478",
+    "entry-1769",
+    "entry-2902",
+    "entry-1526",
+    "entry-2498"
+  ],
+  "actual_keys_in_order": [
+    "entry-160",
+    "entry-1443",
+    "entry-1789",
+    "entry-1840",
+    "entry-1428",
+    "entry-1378",
+    "entry-2555",
+    "entry-2402",
+    "entry-5449",
+    "entry-3490",
+    "entry-7074",
+    "entry-1264",
+    "entry-5516",
+    "entry-5984",
+    "entry-6971",
+    "entry-4158",
+    "entry-5507",
+    "entry-7018",
+    "entry-2231",
+    "entry-1522",
+    "entry-4057",
+    "entry-244",
+    "entry-2525",
+    "entry-6915",
+    "entry-7034",
+    "entry-1478",
+    "entry-1769",
+    "entry-2902",
+    "entry-1526",
+    "entry-2498"
+  ],
+  "missing_keys": [],
+  "extra_keys": [],
+  "duplicate_keys": [],
+  "raw_terminal_rows_considered": 60,
+  "prior_batches": [
+    {
+      "file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-09-batch-20261003-review09-b7f4.jsonl",
+      "commit": "5f9c468c66d5c7dde828d98d348f704cad826263",
+      "sha256": "b838a2fc031fd73c5490c9edad0940a91e518225e300d0ac0b743b9fa0a848d2",
+      "rows": 30,
+      "status_counts": {
+        "deferred": 30
+      }
+    },
+    {
+      "file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-09-batch-20261003-supplement-c61a.jsonl",
+      "commit": "5dad3de78903ebd7a014b701585941965462e96c",
+      "sha256": "10675eff7282328fd1a225c8614c6177da1a4c71eaa70c6d892e2caf98672fb4",
+      "rows": 30,
+      "status_counts": {
+        "deferred": 24,
+        "scored": 6
+      }
+    }
+  ],
+  "source_packet_commits": {
+    "initial_review": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "context_supplement": "520015274c29cbcc24a4e54d747e896198756415"
+  },
+  "prior_link_checks": "30/30 supplement rows explicitly supersede the corresponding first-batch row and match its previous_status.",
+  "disposition_counts": {
+    "hold": 24,
+    "pass": 6
+  },
+  "release_ready_count": 6,
+  "blocking_count": 24,
+  "blocking_ids": [
+    "entry-160",
+    "entry-1443",
+    "entry-1840",
+    "entry-1378",
+    "entry-2555",
+    "entry-2402",
+    "entry-3490",
+    "entry-7074",
+    "entry-1264",
+    "entry-5516",
+    "entry-5984",
+    "entry-6971",
+    "entry-4158",
+    "entry-7018",
+    "entry-1522",
+    "entry-244",
+    "entry-2525",
+    "entry-6915",
+    "entry-7034",
+    "entry-1478",
+    "entry-1769",
+    "entry-2902",
+    "entry-1526",
+    "entry-2498"
+  ],
+  "status_conflict_count": 6,
+  "status_conflict_ids": [
+    "entry-1789",
+    "entry-1428",
+    "entry-5449",
+    "entry-5507",
+    "entry-2231",
+    "entry-4057"
+  ],
+  "conflict_resolution": "Latest supplement descendants were selected for all six status changes because each row explicitly names the first-batch commit and has a row-specific evidence basis; conflict and prior defer are retained in reasons. No unresolved conflict remains.",
+  "url_validation": {
+    "url_count": 69,
+    "invalid_urls": [],
+    "not_in_supplement_staged_source_urls": [],
+    "duplicate_url_rows": [],
+    "source_basis": "URLs copied only from each assigned row staged_description.source_urls in the pinned supplement input; no URLs were fetched or invented."
+  },
+  "proposal_validation": {
+    "proposal_null_count": 30,
+    "proposal_object_count": 0,
+    "proposal_descriptions_found": 0,
+    "word_length_checks": "Not applicable: neither source batch contains proposal descriptions."
+  },
+  "canonical_or_neon_writes": 0,
+  "other_worker_edits": 0,
+  "pr_created": false,
+  "packet_inputs": [
+    {
+      "file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/worker-09-input.jsonl",
+      "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+      "sha256": "9952a7bf6fa74d59b2e27d7e871e4d7218e3f46a7398b0306c70d173084df7b2",
+      "rows": 30
+    },
+    {
+      "file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/worker-09-input.jsonl",
+      "commit": "520015274c29cbcc24a4e54d747e896198756415",
+      "sha256": "d2e5447c75ba22455e5c27652e5282fc5ab1f2880413e1e5c1a78d910edf5a89",
+      "rows": 30
+    }
+  ],
+  "independent_validation": {
+    "schema_rows": 30,
+    "exact_order": true,
+    "unique_keys": 30,
+    "supersession_links": 30,
+    "pass_rows": 6,
+    "hold_rows": 24,
+    "proposal_descriptions_word_checked": 0,
+    "word_length_status": "not_applicable_no_proposal_descriptions"
+  }
+}
