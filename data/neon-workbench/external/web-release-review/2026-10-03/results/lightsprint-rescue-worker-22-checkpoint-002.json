@@ -1,0 +1,26 @@
+{
+  "worker": 22,
+  "batch": 2,
+  "rows_appended": 8,
+  "total_rows": 16,
+  "assignment_keys": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5512",
+    "entry-5755",
+    "entry-5844",
+    "entry-6409",
+    "entry-6432",
+    "entry-6464",
+    "entry-6560",
+    "entry-6599",
+    "entry-6619",
+    "entry-6673",
+    "entry-6757",
+    "entry-6785",
+    "entry-6799",
+    "entry-6823"
+  ],
+  "status": "checkpoint",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86"
+}
