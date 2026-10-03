@@ -1,0 +1,517 @@
+{
+  "worker": 6,
+  "packet_branch": "codex/impact368-context-supplement-2026-10-03",
+  "packet_commit": "520015274c29cbcc24a4e54d747e896198756415",
+  "input_sha256_expected": "5dab01ced30cefeab09bbbb2ffbfbad7ece991460646e85258c2fa31481514ce",
+  "input_sha256_verified": "5dab01ced30cefeab09bbbb2ffbfbad7ece991460646e85258c2fa31481514ce",
+  "expected_keys": [
+    "entry-1535",
+    "entry-1452",
+    "entry-1714",
+    "entry-1660",
+    "entry-2467",
+    "entry-1722",
+    "entry-1777",
+    "entry-2226",
+    "entry-130",
+    "entry-344",
+    "entry-2358",
+    "entry-5726",
+    "entry-1501",
+    "entry-1760",
+    "entry-7056",
+    "entry-351",
+    "entry-5366",
+    "entry-6399",
+    "entry-1716",
+    "entry-1000",
+    "entry-1424",
+    "entry-2364",
+    "entry-5684",
+    "entry-3205",
+    "entry-6278",
+    "entry-1304",
+    "entry-1730",
+    "entry-260",
+    "entry-7202",
+    "entry-2335",
+    "entry-6969"
+  ],
+  "output_keys": [
+    "entry-1535",
+    "entry-1452",
+    "entry-1714",
+    "entry-1660",
+    "entry-2467",
+    "entry-1722",
+    "entry-1777",
+    "entry-2226",
+    "entry-130",
+    "entry-344",
+    "entry-2358",
+    "entry-5726",
+    "entry-1501",
+    "entry-1760",
+    "entry-7056",
+    "entry-351",
+    "entry-5366",
+    "entry-6399",
+    "entry-1716",
+    "entry-1000",
+    "entry-1424",
+    "entry-2364",
+    "entry-5684",
+    "entry-3205",
+    "entry-6278",
+    "entry-1304",
+    "entry-1730",
+    "entry-260",
+    "entry-7202",
+    "entry-2335",
+    "entry-6969"
+  ],
+  "record_count": 31,
+  "scored_count": 9,
+  "deferred_count": 22,
+  "weights": {
+    "harm": 0.3,
+    "reach": 0.2,
+    "institutions": 0.15,
+    "procedural_abuse": 0.15,
+    "self_dealing": 0.1,
+    "persistence": 0.1
+  },
+  "formula": "impact_score = round(0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence, 2)",
+  "scored_totals": [
+    {
+      "record_id": "entry-1660",
+      "dimensions": {
+        "harm": 4.5,
+        "reach": 6.0,
+        "institutions": 4.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 3.0
+      },
+      "impact_score": 3.45
+    },
+    {
+      "record_id": "entry-2226",
+      "dimensions": {
+        "harm": 4.5,
+        "reach": 7.0,
+        "institutions": 0.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 4.0
+      },
+      "impact_score": 3.15
+    },
+    {
+      "record_id": "entry-5726",
+      "dimensions": {
+        "harm": 5.5,
+        "reach": 8.0,
+        "institutions": 0.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 3.0
+      },
+      "impact_score": 3.55
+    },
+    {
+      "record_id": "entry-7056",
+      "dimensions": {
+        "harm": 1.0,
+        "reach": 4.0,
+        "institutions": 1.5,
+        "procedural_abuse": 1.5,
+        "self_dealing": 0.0,
+        "persistence": 1.5
+      },
+      "impact_score": 1.7
+    },
+    {
+      "record_id": "entry-5366",
+      "dimensions": {
+        "harm": 3.5,
+        "reach": 6.0,
+        "institutions": 5.5,
+        "procedural_abuse": 5.0,
+        "self_dealing": 0.0,
+        "persistence": 3.5
+      },
+      "impact_score": 4.18
+    },
+    {
+      "record_id": "entry-1000",
+      "dimensions": {
+        "harm": 0.0,
+        "reach": 2.0,
+        "institutions": 0.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 0.0
+      },
+      "impact_score": 0.4
+    },
+    {
+      "record_id": "entry-3205",
+      "dimensions": {
+        "harm": 6.0,
+        "reach": 8.0,
+        "institutions": 8.0,
+        "procedural_abuse": 4.0,
+        "self_dealing": 0.0,
+        "persistence": 3.0
+      },
+      "impact_score": 5.5
+    },
+    {
+      "record_id": "entry-6278",
+      "dimensions": {
+        "harm": 4.0,
+        "reach": 8.0,
+        "institutions": 7.0,
+        "procedural_abuse": 6.0,
+        "self_dealing": 4.0,
+        "persistence": 3.0
+      },
+      "impact_score": 5.45
+    },
+    {
+      "record_id": "entry-1304",
+      "dimensions": {
+        "harm": 6.0,
+        "reach": 8.0,
+        "institutions": 0.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 4.0
+      },
+      "impact_score": 3.8
+    }
+  ],
+  "source_basis_review": {
+    "basis": "The frozen original title/synopsis/rationale and staged descriptions/source links in the exact supplement packet.",
+    "method": "No general web search. Did not use legacy impressions, reach_estimate or financial_cost_usd fields as evidence; scores use only concrete event details in staged descriptions and linked source summaries.",
+    "records": [
+      {
+        "record_id": "entry-1535",
+        "status": "deferred",
+        "basis": "The opinion piece contrasts public claims that strikes obliterated Iran’s nuclear program with later statements about conventional defenses, but does not establish private assessments or military outcomes.",
+        "notes": "Missing fact: independent verification of the claims and a documented consequence of the messaging, such as a specific policy, allied-coordination or public-accountability effect.",
+        "source_urls": [
+          "https://www.rollingstone.com/politics/political-commentary/trump-war-iran-lies-fantasies-1235524016/"
+        ]
+      },
+      {
+        "record_id": "entry-1452",
+        "status": "deferred",
+        "basis": "AP documents evolving descriptions of Iran’s nuclear capability and operation objectives across the 2025 strikes and February 2026 operation.",
+        "notes": "Missing fact: an adopted mission baseline that was later changed and evidence of a resulting oversight or accountability consequence.",
+        "source_urls": [
+          "https://apnews.com/article/5357243212b4b8bbd387ae91ca797325",
+          "https://apnews.com/article/trump-hegseth-vance-iran-nuclear-strikes-5357243212b4b8bbd387ae91ca797325"
+        ]
+      },
+      {
+        "record_id": "entry-1714",
+        "status": "deferred",
+        "basis": "Amnesty’s report lists broad first-100-days policy concerns and affected groups, but presents an advocacy assessment rather than a finding about every policy.",
+        "notes": "Missing fact: a dated Trump statement or documented change showing that Amnesty’s report or pattern evidence actually pressured his rights messaging.",
+        "source_urls": [
+          "https://www.amnesty.org/en/latest/news/2025/04/president-trumps-first-100-days-attacks-on-human-rights/"
+        ]
+      },
+      {
+        "record_id": "entry-1660",
+        "status": "scored",
+        "basis": "Amnesty’s April 2025 review describes first-100-days policies affecting asylum, protest, press freedom and court disputes; it names Mahmoud Khalil’s detention and deportation proceedings. The report is an advocacy assessment, not a judicial finding.",
+        "notes": "The score covers the concrete policy and detention examples in the supplied report summary. Long-term repair costs are unmeasured, and no legal violation is treated as established.",
+        "source_urls": [
+          "https://www.amnesty.org/en/latest/news/2025/04/president-trumps-first-100-days-attacks-on-human-rights/"
+        ]
+      },
+      {
+        "record_id": "entry-2467",
+        "status": "deferred",
+        "basis": "The supplied timeline says FBI photographed Vahtang Ubiriya at a 1994 Republican fundraiser; the FBI-file quotation is truncated.",
+        "notes": "Missing fact: evidence Trump attended, met or was involved with Ubiriya, plus the complete context of the cited FBI passage.",
+        "source_urls": [
+          "https://trumpfile.org/mogilevich-associate-vahtang-ubiriya-is-spotted-at-republican-fundraiser"
+        ]
+      },
+      {
+        "record_id": "entry-1722",
+        "status": "deferred",
+        "basis": "The Guardian records public episodes including a cabinet-meeting digression and confusion between Greenland and Iceland, but no institutional response.",
+        "notes": "Missing fact: a documented agency decision, delay, changed plan or coordination cost tied to those episodes.",
+        "source_urls": [
+          "https://www.theguardian.com/us-news/2026/jan/23/trump-concerning-moments"
+        ]
+      },
+      {
+        "record_id": "entry-1777",
+        "status": "deferred",
+        "basis": "The supplied Atlantic page is inaccessible and the packet names no high-impact decision or oversight sequence.",
+        "notes": "Missing fact: the specific decision, shortened review window and source passage or records documenting that sequence.",
+        "source_urls": [
+          "https://www.theatlantic.com/unthinkable/"
+        ]
+      },
+      {
+        "record_id": "entry-2226",
+        "status": "scored",
+        "basis": "NPR’s dated USCIS analysis gives 11.6 million pending applications, 247,974 unopened submissions, and attorney reports of receipt waits up to eight months, with some clients facing possible removal proceedings during the wait.",
+        "notes": "Application counts are not treated as a count of unique people; actual removals caused by the backlog are not reported. The score reflects documented delay and reported exposure risk.",
+        "source_urls": [
+          "https://www.npr.org/2026/04/17/nx-s1-5777632/us-trump-immigration-delay-applications-citizenship-deportation"
+        ]
+      },
+      {
+        "record_id": "entry-130",
+        "status": "deferred",
+        "basis": "The supplied source summaries describe personnel proposals and an OPM workplace-expression memo, not religious hiring questionnaires or mandatory biblical tests.",
+        "notes": "Missing fact: an authenticated agency hiring policy or implemented questionnaire requiring religious adherence.",
+        "source_urls": [
+          "https://kettering.org/project-2025-the-blueprint-for-christian-nationalist-regime-change/",
+          "https://www.interfaithalliance.org/post/how-project-2025-threatens-religious-freedom-amp-democracy-2f854",
+          "https://www.reuters.com/legal/litigation/us-allow-federal-workers-promote-religion-workplaces-2025-07-28/",
+          "https://www.msnbc.com/opinion/msnbc-opinion/project-2025-heritage-foundation-christian-nationalism-rcna103510",
+          "https://interfaithalliance.org/post/how-project-2025-threatens-religious-freedom-amp-democracy-2f854",
+          "https://static.heritage.org/project2025/2025_MandateForLeadership_FULL.pdf",
+          "https://www.opm.gov/chcoc/published-memos/?TransmittalID=1916",
+          "https://www.opm.gov/chcoc/transmittals/2025/Guidance%20on%20Religious%20Expression%20in%20Federal%20Workplace%207-28-2025.pdf"
+        ]
+      },
+      {
+        "record_id": "entry-344",
+        "status": "deferred",
+        "basis": "NBC supports a 2020 RNC and Trump-campaign effort to recruit partisan poll watchers; it does not establish a later True the Vote partnership or federal observer program.",
+        "notes": "Missing fact: dated evidence of the alleged 2024–2026 program, its federal authority, organizers and documented voter effects.",
+        "source_urls": [
+          "https://www.nbcnews.com/politics/donald-trump/gop-recruits-army-poll-watchers-fight-voter-fraud-no-can-n1217391",
+          "https://www.nytimes.com/2020/05/18/us/Voting-republicans-trump.html"
+        ]
+      },
+      {
+        "record_id": "entry-2358",
+        "status": "deferred",
+        "basis": "The timeline says Donald Barr hired Epstein, while the staged description notes that the cited New York Times account does not establish who made the hiring decision or what school officials knew.",
+        "notes": "Missing fact: corroboration naming the hiring decision-maker and what school officials knew at the time.",
+        "source_urls": [
+          "https://trumpfile.org/william-barrs-father-hires-jeffrey-epstein-at-dalton-school",
+          "https://www.nytimes.com/2019/07/12/nyregion/jeffrey-epstein-dalton-teacher.html"
+        ]
+      },
+      {
+        "record_id": "entry-5726",
+        "status": "scored",
+        "basis": "The supplied CBO-linked description attributes a projection of more than 10 million potential coverage losses to H.R. 1 and identifies Medicaid cuts as a major driver; the law had been enacted, while the projected losses remained future outcomes.",
+        "notes": "The score uses the supplied projection, not realized coverage losses. The time horizon, baseline assumptions, year-by-year figures and mortality evidence remain unspecified.",
+        "source_urls": [
+          "https://www.cbo.gov/publication/60470"
+        ]
+      },
+      {
+        "record_id": "entry-1501",
+        "status": "deferred",
+        "basis": "The Guardian lists seven episodes, including a cabinet-meeting digression, an AI-generated video repost and Greenland/Iceland confusion; it offers no measured operational result.",
+        "notes": "Missing fact: evidence that a specific episode changed a government decision, delayed work or caused another concrete consequence.",
+        "source_urls": [
+          "https://www.theguardian.com/us-news/2026/jan/23/trump-concerning-moments"
+        ]
+      },
+      {
+        "record_id": "entry-1760",
+        "status": "deferred",
+        "basis": "The supplied NPR description identifies Epstein-file allegations and continuing scrutiny but does not specify documents, claims or a legal finding.",
+        "notes": "Missing fact: the specific records and statements under review, their verification status and a documented review-cycle or disclosure consequence.",
+        "source_urls": [
+          "https://www.npr.org/2026/02/24/nx-s1-5723968/epstein-files-trump-accusation-maxwell"
+        ]
+      },
+      {
+        "record_id": "entry-7056",
+        "status": "scored",
+        "basis": "The supplied case account documents an interagency email about immediate actions concerning Colorado and subsequent discovery litigation; the state alleges retaliation, while the White House disputes a connection to Tina Peters.",
+        "notes": "The score is limited to the documented interagency request and litigation. Presidential direction, retaliatory purpose and execution of an adverse action are not established.",
+        "source_urls": [
+          "https://coloradosun.com/2026/08/16/trump-colorado-tina-peters-opinion-littwin/",
+          "https://www.cbsnews.com/colorado/news/colorado-cites-white-house-email-key-evidence-lawsuit-against-trump-administration/",
+          "https://www.cpr.org/2026/08/14/trump-retaliation-colorado-email-tina-peters/"
+        ]
+      },
+      {
+        "record_id": "entry-351",
+        "status": "deferred",
+        "basis": "The supplied account alleges OGE dismantlement, lost protections and mass resignations, but its cited sources do not document an executive order or replacement bodies.",
+        "notes": "Missing fact: the operative order or policy, identified oversight changes and records supporting the claimed resignations and whistleblower effects.",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Project_2025",
+          "https://www.brennancenter.org/our-work/analysis-opinion/project-2025s-plan-criminal-justice-under-trump"
+        ]
+      },
+      {
+        "record_id": "entry-5366",
+        "status": "scored",
+        "basis": "The supplied court-decision summary documents false and misleading election statements, violations of professional-conduct rules and an interim suspension, with claims concerning Georgia and Arizona.",
+        "notes": "The decision is an interim professional-discipline order; no criminal conviction or final disbarment is asserted. The supplied earlier NYT link does not support this event; the official court decision does.",
+        "source_urls": [
+          "https://www.nycourts.gov/reporter/3dseries/2021/2021_04086.htm"
+        ]
+      },
+      {
+        "record_id": "entry-6399",
+        "status": "deferred",
+        "basis": "The synopsis alleges repeated third-term remarks, but the supplied source is the Twenty-Second Amendment text and the staged description has no dated reporting of the remarks.",
+        "notes": "Missing fact: reliable dated records of the specific statements and context; the amendment alone does not verify that the remarks occurred.",
+        "source_urls": [
+          "https://constitution.congress.gov/constitution/amendment-22/"
+        ]
+      },
+      {
+        "record_id": "entry-1716",
+        "status": "deferred",
+        "basis": "The AP page is a live tracker, but this record names no pledge and contains no date-specific tracker result.",
+        "notes": "Missing fact: a specific promise and its dated status, including any cited legal or resource obstacle.",
+        "source_urls": [
+          "https://apnews.com/projects/trump-campaign-promise-tracker/"
+        ]
+      },
+      {
+        "record_id": "entry-1000",
+        "status": "scored",
+        "basis": "The supplied DOJ and White House summaries say DeJohn’s life sentence was commuted after more than 13 years; his convictions were not erased, and the precise replacement sentence is not stated.",
+        "notes": "The action is a commutation, not a pardon. No adverse impact, unlawful process or private benefit is evidenced; 0.0 values reflect that absence rather than an unsupported harm inference.",
+        "source_urls": [
+          "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021",
+          "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-012021/"
+        ]
+      },
+      {
+        "record_id": "entry-1424",
+        "status": "deferred",
+        "basis": "The Rolling Stone piece is identified as opinion criticizing the war rationale; the packet does not supply the hard-news comparison said to corroborate it.",
+        "notes": "Missing fact: identified independent reporting and evidence that the comparison produced a measurable credibility or institutional effect.",
+        "source_urls": [
+          "https://www.rollingstone.com/politics/political-commentary/trump-war-iran-lies-fantasies-1235524016/",
+          "https://www.wsj.com/opinion/donald-trump-iran-economic-pressure-sanctions-u-a-e-china-f2107bc8"
+        ]
+      },
+      {
+        "record_id": "entry-2364",
+        "status": "deferred",
+        "basis": "The Guardian account attributes the “tax-exempt” statement to a Czechoslovak informant and says the file does not verify Trump’s tax status or explain its basis.",
+        "notes": "Missing fact: underlying tax records or an authoritative determination supporting actual tax-exempt status; the informant statement alone is not that evidence.",
+        "source_urls": [
+          "https://trumpfile.org/czech-intelligence-donald-trump-is-tax-exempt-until-2007",
+          "https://www.theguardian.com/us-news/2016/dec/15/czechoslovakia-spied-on-donald-trump-ivana-files"
+        ]
+      },
+      {
+        "record_id": "entry-5684",
+        "status": "deferred",
+        "basis": "The supplied Axios and CBS summaries say Trump received a private vaccine and later urged supporters to get vaccinated, contradicting the title’s refusal claim.",
+        "notes": "Missing fact: a supported promotion refusal and evidence linking it to changed vaccination or health outcomes; the supplied sequence points the other way.",
+        "source_urls": [
+          "https://www.axios.com/2021/03/01/trump-vaccinated-coronavirus",
+          "https://www.cbsnews.com/news/trump-cpac-coronavirus-vaccine-encourages-supporters/"
+        ]
+      },
+      {
+        "record_id": "entry-3205",
+        "status": "scored",
+        "basis": "The staged account documents an attack on the Capitol during electoral certification, a police report of rioters at the doors, the interruption of the count, deaths and injuries, and a McCarthy–Trump call during the riot.",
+        "notes": "No casualty count, Pentagon decision sequence, call transcript or presidential direction is supplied. Dimensions reflect the attack and immediate interruption, not a finding about Trump’s personal legal responsibility.",
+        "source_urls": [
+          "https://trumpfile.org/capitol-attack",
+          "https://www.nbcnews.com/politics/donald-trump/mccarthy-trump-got-expletive-filled-argument-during-capitol-riots-sources-n1257805"
+        ]
+      },
+      {
+        "record_id": "entry-6278",
+        "status": "scored",
+        "basis": "AP reports politically preferential case handling involving allies and opponents, career prosecutors receiving direction to consider White House preferences, and resignations over interference.",
+        "notes": "Self-dealing is limited to reported network favoritism; no personal financial gain is identified. The score does not treat the reports as a formal finding of unlawful conduct.",
+        "source_urls": [
+          "https://apnews.com/article/pam-bondi-trump-justice-department-fbi-upheaval-525dc82b06488c95a76ccfcfdbb95c23"
+        ]
+      },
+      {
+        "record_id": "entry-1304",
+        "status": "scored",
+        "basis": "The dated AP account reports regional attacks, deaths including six U.S. service members, travel and energy-supply disruption, and evacuation orders as the war entered its fifth day.",
+        "notes": "This score uses the March conflict facts only. It does not combine the separate August Hormuz story or infer casualties beyond those stated in the supplied description.",
+        "source_urls": [
+          "https://apnews.com/article/iran-israel-us-03-03-2026-8755877b603e46ed3df8107689c1ee23"
+        ]
+      },
+      {
+        "record_id": "entry-1730",
+        "status": "deferred",
+        "basis": "The Atlantic page returned an access block and the supplied synopsis identifies no specific conduct or guardrail.",
+        "notes": "Missing fact: the conduct described as “unthinkable,” the proposed safeguards and evidence of an adopted institutional change.",
+        "source_urls": [
+          "https://www.theatlantic.com/unthinkable/"
+        ]
+      },
+      {
+        "record_id": "entry-260",
+        "status": "deferred",
+        "basis": "The account alleges government-wide privatization but supplies no identified completed transfer, agency, transaction or date.",
+        "notes": "Missing fact: a named service or function, the decision and date transferring it, the affected parties and evidence the transfer occurred.",
+        "source_urls": [
+          "https://www.americanprogress.org/article/project-2025-would-destroy-the-u-s-system-of-checks-and-balances-and-create-an-imperial-presidency/"
+        ]
+      },
+      {
+        "record_id": "entry-7202",
+        "status": "deferred",
+        "basis": "The supplied segment reports a dated approval poll and a separate $40 trillion debt milestone; it does not connect the two or show an outcome caused by the poll.",
+        "notes": "Missing fact: a documented policy or other impact attributable to the reported sentiment or a supported causal link between the separate developments.",
+        "source_urls": [
+          "https://www.newstalkzb.co.nz/on-air/mike-hosking-breakfast/audio/richard-arnold-us-correspondent-on-trumps-latest-poll-results-national-debt-hitting-40-trillion/",
+          "https://archive.li/V1mkl",
+          "https://www.reuters.com/world/us-debt-crosses-40-trillion-threshold-after-doubling-under-trump-biden-2026-08-19/"
+        ]
+      },
+      {
+        "record_id": "entry-2335",
+        "status": "deferred",
+        "basis": "PBS supports Cohn’s influential role in McCarthy’s investigations, but does not show he alone invented McCarthyism or connect the 1953 appointment to Trump.",
+        "notes": "Missing fact: evidence for the “invented McCarthyism” attribution and a substantiated connection to a Trump-related event.",
+        "source_urls": [
+          "https://trumpfile.org/roy-cohn-stars-in-joseph-mccarthys-investigative-committee-invents-mccarthyism",
+          "https://www.pbs.org/wgbh/americanexperience/features/mccarthy-roy-cohn-chief-counsel/",
+          "https://www.pbs.org/video/roy-cohn-chief-counsel-mccarthy-osd4of/"
+        ]
+      },
+      {
+        "record_id": "entry-6969",
+        "status": "deferred",
+        "basis": "The Guardian summary says Trump’s net worth grew amid business ventures and critics alleged conflicts, but gives no reconciled figures or transaction-level link to official action.",
+        "notes": "Missing fact: a supported wealth comparison, identified business transactions and evidence connecting a private gain to a specific presidential act.",
+        "source_urls": [
+          "https://www.theguardian.com/us-news/2026/aug/13/trump-presidency-revenue-wealth"
+        ]
+      }
+    ]
+  },
+  "supersedes": {
+    "branch": "ls/7-trump-files-impact368-review-06-of-12-sjBp",
+    "commit": "53fdd7651b3d9293968d7742cb8806645372103e",
+    "file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-06-batch-20261003-a.jsonl"
+  },
+  "artifacts": {
+    "output": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-06-batch-20261003-context-a.jsonl",
+    "checkpoint_counts": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "qa": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/qa/worker-06-final-qa-20261003.json"
+  }
+}
