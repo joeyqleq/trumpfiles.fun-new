@@ -1,0 +1,13 @@
+{
+  "worker": 16,
+  "batch": "final-amendment",
+  "rows_appended": 1,
+  "assignment_keys": [
+    "entry-5329"
+  ],
+  "supersedes_worker_row": 1,
+  "reason": "restored previously published draft meeting required length limits; preserved all evidentiary caveats",
+  "cumulative_appended_rows": 34,
+  "unique_latest_keys": 33,
+  "proposal_only": true
+}
