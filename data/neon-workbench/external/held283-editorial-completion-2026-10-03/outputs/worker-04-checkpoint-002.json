@@ -1,0 +1,20 @@
+{
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_sha256": "6d63ede60303af5f925420f9f83f844653f2566c43005e2a05171c582d40ada9",
+  "batch_file": "worker-04-batch-20261003-001.jsonl",
+  "checkpoint": 2,
+  "through_row": 12,
+  "keys": [
+    "entry-6415",
+    "entry-6439",
+    "entry-6479",
+    "entry-6577",
+    "entry-6606",
+    "entry-6638"
+  ],
+  "terminal_counts": {
+    "hold": 5,
+    "propose_narrower_event": 1
+  },
+  "proposal_sha256": "79c6bc422730f1913f4992824ebc62d232f559844b52abb584689650ea9843f5"
+}
