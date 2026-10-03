@@ -1,0 +1,16 @@
+{
+  "worker": 10,
+  "batch": 1,
+  "source_commit": "95eb7977f6d66eb110b38dfba25023743453fd2a",
+  "processed_ids": [
+    "entry-1728",
+    "entry-211",
+    "entry-2413",
+    "entry-2562",
+    "entry-2930",
+    "entry-3709",
+    "entry-4054"
+  ],
+  "output_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-10-batch-20261003-001.jsonl",
+  "row_count": 7
+}
