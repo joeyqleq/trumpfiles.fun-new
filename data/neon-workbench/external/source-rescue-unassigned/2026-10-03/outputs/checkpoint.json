@@ -69,5 +69,13 @@
     "all_outcomes_have_source_urls_and_claim_findings": true,
     "append_only_history_preserved": true
   },
-  "notes": "Four append-only JSONL batches. Batch 004 records five audited latest outcomes, superseding earlier versions for the listed IDs."
+  "accepted_source_support_note_audit": {
+    "scope": "Worker 11 latest outcomes only",
+    "latest_outcomes_audited": 30,
+    "accepted_source_rows": 0,
+    "accepted_source_rows_missing_explicit_support_note": 0,
+    "superseding_rows_appended": 0,
+    "result": "No worker-11 accepted_source rows; no support-note corrections were applicable."
+  },
+  "notes": "Four append-only JSONL batches. Batch 004 records five audited latest outcomes, superseding earlier versions for the listed IDs. Follow-up audit found zero accepted_source outcomes among worker 11's 30 latest rows, so no outcome batch was applicable."
 }
