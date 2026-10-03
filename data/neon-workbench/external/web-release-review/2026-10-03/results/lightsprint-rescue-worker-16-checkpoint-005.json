@@ -1,0 +1,18 @@
+{
+  "worker": 16,
+  "source_branch": "codex/web-release-rescue-2026-10-03",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "input_sha256": "be52cbf5e634262657259d9338bca737655725a41aa2df87fe120dcc4166c7aa",
+  "batch": 5,
+  "rows_appended": 6,
+  "assignment_keys": [
+    "fresh-20260929-irs-sanctions-stay",
+    "pr47-review-entry-1296",
+    "pr47-review-entry-1444",
+    "pr47-review-entry-1502",
+    "pr47-review-entry-1589",
+    "pr47-review-entry-1646"
+  ],
+  "cumulative_rows": 33,
+  "proposal_only": true
+}
