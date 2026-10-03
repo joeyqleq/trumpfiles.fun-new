@@ -1,0 +1,170 @@
+{
+  "packet": "citation58-revision-rescue-2026-10-04",
+  "worker": 1,
+  "assigned_keys": [
+    "entry-231",
+    "entry-735",
+    "entry-2636",
+    "entry-3380",
+    "entry-5406",
+    "entry-5707"
+  ],
+  "terminal_row_count": 6,
+  "saved_row_count": 6,
+  "missing_keys": [],
+  "extra_keys": [],
+  "duplicate_keys": [],
+  "disposition_counts": {
+    "hold_source_unavailable": 1,
+    "narrowed_copy_supported_sentence_details_withheld": 1,
+    "narrowed_copy_supported": 4
+  },
+  "blocking_ids": [
+    "entry-231"
+  ],
+  "verified_url_count": 9,
+  "url_format_errors": [],
+  "proposal_length_checks": {
+    "entry-231": {},
+    "entry-735": {
+      "title_chars": {
+        "count": 50,
+        "limit": 180,
+        "pass": true
+      },
+      "short_chars": {
+        "count": 85,
+        "limit": 180,
+        "pass": true
+      },
+      "medium_words": {
+        "count": 61,
+        "range": [
+          45,
+          90
+        ],
+        "pass": true
+      }
+    },
+    "entry-2636": {
+      "title_chars": {
+        "count": 87,
+        "limit": 180,
+        "pass": true
+      },
+      "short_chars": {
+        "count": 151,
+        "limit": 180,
+        "pass": true
+      },
+      "medium_words": {
+        "count": 64,
+        "range": [
+          45,
+          90
+        ],
+        "pass": true
+      },
+      "long_words": {
+        "count": 155,
+        "range": [
+          140,
+          300
+        ],
+        "pass": true
+      }
+    },
+    "entry-3380": {
+      "title_chars": {
+        "count": 97,
+        "limit": 180,
+        "pass": true
+      },
+      "short_chars": {
+        "count": 127,
+        "limit": 180,
+        "pass": true
+      },
+      "medium_words": {
+        "count": 62,
+        "range": [
+          45,
+          90
+        ],
+        "pass": true
+      },
+      "long_words": {
+        "count": 151,
+        "range": [
+          140,
+          300
+        ],
+        "pass": true
+      }
+    },
+    "entry-5406": {
+      "title_chars": {
+        "count": 71,
+        "limit": 180,
+        "pass": true
+      },
+      "short_chars": {
+        "count": 114,
+        "limit": 180,
+        "pass": true
+      },
+      "medium_words": {
+        "count": 73,
+        "range": [
+          45,
+          90
+        ],
+        "pass": true
+      },
+      "long_words": {
+        "count": 157,
+        "range": [
+          140,
+          300
+        ],
+        "pass": true
+      }
+    },
+    "entry-5707": {
+      "title_chars": {
+        "count": 60,
+        "limit": 180,
+        "pass": true
+      },
+      "short_chars": {
+        "count": 89,
+        "limit": 180,
+        "pass": true
+      },
+      "medium_words": {
+        "count": 57,
+        "range": [
+          45,
+          90
+        ],
+        "pass": true
+      },
+      "long_words": {
+        "count": 152,
+        "range": [
+          140,
+          300
+        ],
+        "pass": true
+      }
+    }
+  },
+  "length_check_failures": [],
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-01-batch-2026-10-04-rescue-a.jsonl",
+  "batch_sha256": "c8241c07655a8b32d070a9b913703f8734e22c0e8d0d6d8a544bbe6999726cb0",
+  "source_coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "frozen_packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "frozen_input_sha256": "b3afbca66c441a34405a3f1144c013b037afeaaca2c9340ebbb6999f1d4df0a6",
+  "qa_result": "pass_with_blockers",
+  "scope_note": "Exact assigned IDs only. Source/copy review is not editorial approval or a production import; no canonical or Neon writes."
+}

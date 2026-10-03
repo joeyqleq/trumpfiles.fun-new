@@ -1,0 +1,19 @@
+{
+  "packet": "citation58-revision-rescue-2026-10-04",
+  "worker": 1,
+  "checkpoint_after_terminal_rows": 6,
+  "terminal_keys": [
+    "entry-231",
+    "entry-735",
+    "entry-2636",
+    "entry-3380",
+    "entry-5406",
+    "entry-5707"
+  ],
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-01-batch-2026-10-04-rescue-a.jsonl",
+  "batch_sha256": "c8241c07655a8b32d070a9b913703f8734e22c0e8d0d6d8a544bbe6999726cb0",
+  "blocking_ids": [
+    "entry-231"
+  ],
+  "checkpoint_state": "all_assigned_rows_written_and_exact_set_validated"
+}
