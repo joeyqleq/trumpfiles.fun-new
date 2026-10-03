@@ -1,0 +1,703 @@
+{
+  "task": "Web release review rescue — worker 18",
+  "packet_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "pr49_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "worker_input_sha256": "e1bd0c2b703adecfebee66ff59fb23e2acf333091b89000eef704ef00800d801",
+  "batch_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker18-batch-UNIQUE.jsonl",
+  "batch_sha256": "983acc7e0187e661e4b3963bcf8cb022adebdf659c5cd9a85bd420578365444f",
+  "assigned_key_count": 33,
+  "unique_key_count": 33,
+  "namespace_counts": {
+    "held": 20,
+    "fresh": 7,
+    "pr47": 6
+  },
+  "latest_status_counts": {
+    "reviewed_actionable_narrower_event": 3,
+    "reviewed_narrower_supported_event": 2,
+    "reviewed_exclude": 5,
+    "reviewed_split_with_supported_component_drafts": 1,
+    "reviewed_split_supported_april_actblue_memorandum": 1,
+    "reviewed_supported_narrower_event": 2,
+    "reviewed_unresolved": 5,
+    "reviewed_unresolved_after_source_check": 1,
+    "partially_source_verified_access_limits_explicit": 5,
+    "source_text_independently_read_with_limits": 1,
+    "reviewed_supported_dated_filing": 1,
+    "reviewed_proposal_narrowed_not_approved": 6
+  },
+  "draft_object_count": 17,
+  "draft_length_and_https_url_checks": "pass",
+  "distinct_https_source_url_count": 32,
+  "fresh_key_missing_matching_published_pr49_revision": [
+    "expanded-20260928-media-preliminary-injunction-request"
+  ],
+  "assignment_keys": [
+    "entry-4438",
+    "entry-5112",
+    "entry-5336",
+    "entry-5746",
+    "entry-5816",
+    "entry-6316",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6585",
+    "entry-6611",
+    "entry-6655",
+    "entry-6743",
+    "entry-6780",
+    "entry-6793",
+    "entry-6817",
+    "entry-6833",
+    "entry-6890",
+    "entry-6935",
+    "entry-6951",
+    "expanded-20260824-economic-outcast",
+    "expanded-20260903-smithsonian-signs-letter",
+    "expanded-20260914-epa-power-repeal",
+    "expanded-20260918-trump-five-vaccine-doses",
+    "expanded-20260924-third-country-emergency-request",
+    "expanded-20260928-media-preliminary-injunction-request",
+    "fresh-20260903-golf-retreat-offer",
+    "pr47-review-entry-113",
+    "pr47-review-entry-1298",
+    "pr47-review-entry-1452",
+    "pr47-review-entry-1523",
+    "pr47-review-entry-1591",
+    "pr47-review-entry-1650"
+  ],
+  "entries": [
+    {
+      "assignment_key": "entry-4438",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-021.jsonl",
+      "published_revision": 3,
+      "prior_status": "reviewed_actionable_narrower_event",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "reviewed_actionable_narrower_event",
+      "latest_recommended_disposition": "retain_narrower",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "CREW Reports Trump Visited His Properties on 191 of 512 Days",
+          "short_characters": 171,
+          "medium_words": 66,
+          "long_words": 153,
+          "url_count": 1,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "CREW supports the 191-of-512-day property-visit count; the exact unsupported claim is $115 million in cumulative second-term golf travel/security cost and a $300 million end-of-term projection. No auditable government accounting or methodology for those totals is in the cited CREW article."
+    },
+    {
+      "assignment_key": "entry-5112",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/handoff-review06-revision-105-batch-002-check.jsonl",
+      "published_revision": 105,
+      "prior_status": "reviewed_narrower_supported_event",
+      "latest_proposal_revision": 106,
+      "latest_review_status": "reviewed_narrower_supported_event",
+      "latest_recommended_disposition": "replace_with_narrower_supported_event",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "Supreme Court clears path for possible dismissal of Bannon contempt case",
+          "short_characters": 136,
+          "medium_words": 57,
+          "long_words": 153,
+          "url_count": 2,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "Confirm the remand and DOJ dismissal-motion posture against the cited Supreme Court docket and Reuters report during editorial review; no dismissal is described as completed."
+    },
+    {
+      "assignment_key": "entry-5336",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-021.jsonl",
+      "published_revision": 3,
+      "prior_status": "reviewed_exclude",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "reviewed_exclude",
+      "latest_recommended_disposition": "exclude_pending_new_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "DOJ OPR materials address Acosta’s judgment and victim-notification failures; they do not establish Trump personally pressured prosecutors. Exact gap: direct documentary evidence naming Trump as a source of pressure in the 2008 NPA process."
+    },
+    {
+      "assignment_key": "entry-5746",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-022.jsonl",
+      "published_revision": 3,
+      "prior_status": "reviewed_exclude",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "reviewed_exclude",
+      "latest_recommended_disposition": "exclude_pending_new_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "No source located for an Aug. 4, 2025 threat to formally withdraw from NATO or refusal to guarantee Article 5 in the terms stated. General burden-sharing criticism is insufficient."
+    },
+    {
+      "assignment_key": "entry-5816",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/handoff-review02-batch-019.jsonl",
+      "published_revision": 106,
+      "prior_status": "reviewed_split_partial_draft",
+      "latest_proposal_revision": 107,
+      "latest_review_status": "reviewed_split_with_supported_component_drafts",
+      "latest_recommended_disposition": "split_supported_ACIP_and_staff_reinstatement_components",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "Kennedy Removes All 17 Members of CDC Vaccine Advisory Panel",
+          "short_characters": 122,
+          "medium_words": 47,
+          "long_words": 146,
+          "url_count": 1,
+          "lengths_pass": true,
+          "urls_pass": true
+        },
+        {
+          "title": "Kennedy Says HHS Reinstated CDC and NIH Employees After Court Order",
+          "short_characters": 106,
+          "medium_words": 49,
+          "long_words": 148,
+          "url_count": 1,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "The two supported components require separate records; no evidence supports the held February 20 combined-event framing or characterizes all replacements as anti-vaccine advocates."
+    },
+    {
+      "assignment_key": "entry-6316",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-023.jsonl",
+      "published_revision": 3,
+      "prior_status": "reviewed_exclude",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "reviewed_exclude",
+      "latest_recommended_disposition": "exclude_pending_new_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "No evidence supplied of a retaliatory investigation of former CIA Director Gina Haspel. Exact investigation, opening date and official record remain unknown."
+    },
+    {
+      "assignment_key": "entry-6424",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review01-revision-005-batch-001.jsonl",
+      "published_revision": 5,
+      "prior_status": "reviewed_split_with_event_specific_drafts",
+      "latest_proposal_revision": 6,
+      "latest_review_status": "reviewed_split_supported_april_actblue_memorandum",
+      "latest_recommended_disposition": "retain_april_24_actblue_memorandum_only",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "Trump Directs DOJ to Investigate Online Election Fundraising Allegations",
+          "short_characters": 115,
+          "medium_words": 51,
+          "long_words": 154,
+          "url_count": 2,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "The September Open Society Foundations directive/date remains unverified and is excluded. The April memorandum is a directive to investigate allegations, not proof of wrongdoing."
+    },
+    {
+      "assignment_key": "entry-6455",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-024.jsonl",
+      "published_revision": 3,
+      "prior_status": "reviewed_exclude",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "reviewed_exclude",
+      "latest_recommended_disposition": "exclude_pending_new_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "No sufficiently supported discrete event survives the proposed soft-hide rationale. Reconsider only if direct evidence establishes a dated occurrence matching the entry."
+    },
+    {
+      "assignment_key": "entry-6511",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-028.jsonl",
+      "published_revision": 3,
+      "prior_status": "reviewed_actionable_narrower_event",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "reviewed_actionable_narrower_event",
+      "latest_recommended_disposition": "retain_narrower",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "Trump Says He Knows More About Courts Than Anyone",
+          "short_characters": 156,
+          "medium_words": 60,
+          "long_words": 152,
+          "url_count": 1,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "None for the November 2015 Texas-rally quote; the held record’s broader 2019 framing and claims about legal experts require separate sources."
+    },
+    {
+      "assignment_key": "entry-6585",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/handoff-review06-revision-105-batch-001-check.jsonl",
+      "published_revision": 105,
+      "prior_status": "reviewed_narrower_supported_event",
+      "latest_proposal_revision": 106,
+      "latest_review_status": "reviewed_narrower_supported_event",
+      "latest_recommended_disposition": "replace_with_narrower_supported_event",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "Trump pardons former Border Patrol agents Ignacio Ramos and Jose Compean",
+          "short_characters": 165,
+          "medium_words": 50,
+          "long_words": 154,
+          "url_count": 2,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "None for the narrow December 22, 2020 DOJ clemency record; retain the January 2025 conflation and unsupported policy implications as excluded claims."
+    },
+    {
+      "assignment_key": "entry-6611",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-026.jsonl",
+      "published_revision": 3,
+      "prior_status": "reviewed_exclude",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "reviewed_exclude",
+      "latest_recommended_disposition": "exclude_pending_new_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "No sufficiently supported discrete event survives the proposed soft-hide rationale. Reconsider only if direct evidence establishes a dated occurrence matching the entry."
+    },
+    {
+      "assignment_key": "entry-6655",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-029.jsonl",
+      "published_revision": 3,
+      "prior_status": "reviewed_actionable_narrower_event",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "reviewed_actionable_narrower_event",
+      "latest_recommended_disposition": "retain_narrower",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "2025 Law Narrows SNAP Eligibility for Many Lawfully Present Immigrants",
+          "short_characters": 106,
+          "medium_words": 59,
+          "long_words": 164,
+          "url_count": 2,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "None for the attributed NILC summary of the July 4, 2025 statutory change; retain exceptions and household effects as stated, not a blanket all-immigrants ban."
+    },
+    {
+      "assignment_key": "entry-6743",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-001-rev06.jsonl",
+      "published_revision": 4,
+      "prior_status": "reviewed_supported_narrower_event",
+      "latest_proposal_revision": 5,
+      "latest_review_status": "reviewed_supported_narrower_event",
+      "latest_recommended_disposition": "retain_narrower_corrected_event",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "HHS Begins Mass Layoffs Across Health Agencies",
+          "short_characters": 154,
+          "medium_words": 64,
+          "long_words": 148,
+          "url_count": 1,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "None identified within the narrow supported scope; broader original claims remain excluded."
+    },
+    {
+      "assignment_key": "entry-6780",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-001-rev06.jsonl",
+      "published_revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "latest_proposal_revision": 5,
+      "latest_review_status": "reviewed_unresolved",
+      "latest_recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "No credible source found."
+    },
+    {
+      "assignment_key": "entry-6793",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-008-rev06.jsonl",
+      "published_revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "latest_proposal_revision": 5,
+      "latest_review_status": "reviewed_unresolved",
+      "latest_recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "I found no credible report or congressional testimony showing DOGE personnel obtained unauthorized access to PACER or CM/ECF in March 2025. The federal judiciary's electronic filing systems are separate from executive-branch agency systems, and the specific breach described here could not be substantiated."
+    },
+    {
+      "assignment_key": "entry-6817",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-008-rev06.jsonl",
+      "published_revision": 4,
+      "prior_status": "reviewed_supported_narrower_event",
+      "latest_proposal_revision": 5,
+      "latest_review_status": "reviewed_supported_narrower_event",
+      "latest_recommended_disposition": "retain_narrower_corrected_event",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "Trump Removes Two EEOC Commissioners and the General Counsel",
+          "short_characters": 127,
+          "medium_words": 63,
+          "long_words": 142,
+          "url_count": 1,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "None for the dated removals described in the cited Reuters account; do not call the general counsel a commissioner."
+    },
+    {
+      "assignment_key": "entry-6833",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-004-rev06.jsonl",
+      "published_revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "latest_proposal_revision": 5,
+      "latest_review_status": "reviewed_unresolved",
+      "latest_recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "HUD FY2025 formula-program allocation page."
+    },
+    {
+      "assignment_key": "entry-6890",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-005-rev06.jsonl",
+      "published_revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "latest_proposal_revision": 5,
+      "latest_review_status": "reviewed_unresolved",
+      "latest_recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "Public schedule confirms the visit and golf."
+    },
+    {
+      "assignment_key": "entry-6935",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-006-rev06.jsonl",
+      "published_revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "latest_proposal_revision": 5,
+      "latest_review_status": "reviewed_unresolved",
+      "latest_recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "Context only."
+    },
+    {
+      "assignment_key": "entry-6951",
+      "namespace": "held",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review01-revision-004-batch-001.jsonl",
+      "published_revision": 4,
+      "prior_status": "reviewed_unresolved_after_source_check",
+      "latest_proposal_revision": 5,
+      "latest_review_status": "reviewed_unresolved_after_source_check",
+      "latest_recommended_disposition": "retain_unresolved",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "No directive, FBI cases, or documented surveillance of protest organizers' communications and finances found to substantiate the specific claim."
+    },
+    {
+      "assignment_key": "expanded-20260824-economic-outcast",
+      "namespace": "fresh",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-003-rev03.jsonl",
+      "published_revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "partially_source_verified_access_limits_explicit",
+      "latest_recommended_disposition": "retain_for_separate_human_review",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "None identified within the narrow supported scope; broader original claims remain excluded."
+    },
+    {
+      "assignment_key": "expanded-20260903-smithsonian-signs-letter",
+      "namespace": "fresh",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-005-rev03.jsonl",
+      "published_revision": 3,
+      "prior_status": "source_text_independently_read_with_limits",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "source_text_independently_read_with_limits",
+      "latest_recommended_disposition": "retain_for_separate_human_review",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "None identified within the narrow supported scope; broader original claims remain excluded."
+    },
+    {
+      "assignment_key": "expanded-20260914-epa-power-repeal",
+      "namespace": "fresh",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-007-rev03.jsonl",
+      "published_revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "partially_source_verified_access_limits_explicit",
+      "latest_recommended_disposition": "retain_for_separate_human_review",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "None identified within the narrow supported scope; broader original claims remain excluded."
+    },
+    {
+      "assignment_key": "expanded-20260918-trump-five-vaccine-doses",
+      "namespace": "fresh",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-008-rev03.jsonl",
+      "published_revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "partially_source_verified_access_limits_explicit",
+      "latest_recommended_disposition": "retain_for_separate_human_review",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "None identified within the narrow supported scope; broader original claims remain excluded."
+    },
+    {
+      "assignment_key": "expanded-20260924-third-country-emergency-request",
+      "namespace": "fresh",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-010-rev03.jsonl",
+      "published_revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "partially_source_verified_access_limits_explicit",
+      "latest_recommended_disposition": "retain_for_separate_human_review",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "None identified within the narrow supported scope; broader original claims remain excluded."
+    },
+    {
+      "assignment_key": "expanded-20260928-media-preliminary-injunction-request",
+      "namespace": "fresh",
+      "published_source_file": null,
+      "published_revision": null,
+      "prior_status": "complete_for_human_insert_review",
+      "latest_proposal_revision": 1,
+      "latest_review_status": "reviewed_supported_dated_filing",
+      "latest_recommended_disposition": "retain_as_proposal_for_human_review",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "CNN, MS NOW and Politico Seek a Preliminary Injunction for White House Access",
+          "short_characters": 141,
+          "medium_words": 53,
+          "long_words": 151,
+          "url_count": 1,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "Human review of the underlying Reuters report and court filing is still needed before any insertion; no disposition of the motion is asserted."
+    },
+    {
+      "assignment_key": "fresh-20260903-golf-retreat-offer",
+      "namespace": "fresh",
+      "published_source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-001-rev03.jsonl",
+      "published_revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "latest_proposal_revision": 4,
+      "latest_review_status": "partially_source_verified_access_limits_explicit",
+      "latest_recommended_disposition": "retain_with_explicit_source_limit_for_human_review",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [],
+      "remaining_evidence_gap": "The central candidate event can be described only with attribution based on currently readable evidence; named source-access limits above leave Letter text and offer conditions could not be inspected in this review; proposed no-charge facilities do not quantify a realized private benefit."
+    },
+    {
+      "assignment_key": "pr47-review-entry-113",
+      "namespace": "pr47",
+      "published_source_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-web/outputs/worker-01.jsonl",
+      "published_revision": null,
+      "prior_status": "PROPOSED_NOT_APPROVED",
+      "latest_proposal_revision": 1,
+      "latest_review_status": "reviewed_proposal_narrowed_not_approved",
+      "latest_recommended_disposition": "retain_as_unapproved_proposal_with_corrections",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "NPR Reports Varied Criminal Histories Among Some Jan. 6 Clemency Recipients",
+          "short_characters": 165,
+          "medium_words": 66,
+          "long_words": 143,
+          "url_count": 2,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "Original claim remains unsubstantiated; PR47 correction remains unapproved and requires normal human review."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1298",
+      "namespace": "pr47",
+      "published_source_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-web/outputs/worker-02.jsonl",
+      "published_revision": null,
+      "prior_status": "PROPOSED_NOT_APPROVED",
+      "latest_proposal_revision": 1,
+      "latest_review_status": "reviewed_proposal_narrowed_not_approved",
+      "latest_recommended_disposition": "retain_as_unapproved_proposal_with_corrections",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "Sonnenfeld and Tian Criticized Trump’s Iran Deal in TIME Essay",
+          "short_characters": 153,
+          "medium_words": 53,
+          "long_words": 153,
+          "url_count": 3,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "Original claim remains unsubstantiated; PR47 correction remains unapproved and requires normal human review."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1452",
+      "namespace": "pr47",
+      "published_source_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-web/outputs/worker-04.jsonl",
+      "published_revision": null,
+      "prior_status": "PROPOSED_NOT_APPROVED",
+      "latest_proposal_revision": 1,
+      "latest_review_status": "reviewed_proposal_narrowed_not_approved",
+      "latest_recommended_disposition": "retain_as_unapproved_proposal_with_corrections",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "AP Compared U.S. Statements on Iran’s Nuclear Threat and the 2026 Operation",
+          "short_characters": 157,
+          "medium_words": 69,
+          "long_words": 154,
+          "url_count": 2,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "Original claim remains unsubstantiated; PR47 correction remains unapproved and requires normal human review."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1523",
+      "namespace": "pr47",
+      "published_source_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-web/outputs/worker-05.jsonl",
+      "published_revision": null,
+      "prior_status": "PROPOSED_NOT_APPROVED",
+      "latest_proposal_revision": 1,
+      "latest_review_status": "reviewed_proposal_narrowed_not_approved",
+      "latest_recommended_disposition": "retain_as_unapproved_proposal_with_corrections",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "AP Promise Tracker Snapshot Lists 25 Pledges and Their Statuses",
+          "short_characters": 159,
+          "medium_words": 55,
+          "long_words": 153,
+          "url_count": 3,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "Original claim remains unsubstantiated; PR47 correction remains unapproved and requires normal human review."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1591",
+      "namespace": "pr47",
+      "published_source_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-web/outputs/worker-05.jsonl",
+      "published_revision": null,
+      "prior_status": "PROPOSED_NOT_APPROVED",
+      "latest_proposal_revision": 1,
+      "latest_review_status": "reviewed_proposal_narrowed_not_approved",
+      "latest_recommended_disposition": "retain_as_unapproved_proposal_with_corrections",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "AP Promise Tracker Snapshot Lists 25 Pledges and Their Statuses",
+          "short_characters": 159,
+          "medium_words": 55,
+          "long_words": 153,
+          "url_count": 6,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "Original claim remains unsubstantiated; PR47 correction remains unapproved and requires normal human review."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1650",
+      "namespace": "pr47",
+      "published_source_file": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-web/outputs/worker-06.jsonl",
+      "published_revision": null,
+      "prior_status": "PROPOSED_NOT_APPROVED",
+      "latest_proposal_revision": 1,
+      "latest_review_status": "reviewed_proposal_narrowed_not_approved",
+      "latest_recommended_disposition": "retain_as_unapproved_proposal_with_corrections",
+      "proposal_only": true,
+      "original_claim_substantiated": false,
+      "draft_qa": [
+        {
+          "title": "The Atlantic’s “Unthinkable” Reviewed Episodes from Trump’s First Two Years",
+          "short_characters": 168,
+          "medium_words": 57,
+          "long_words": 153,
+          "url_count": 3,
+          "lengths_pass": true,
+          "urls_pass": true
+        }
+      ],
+      "remaining_evidence_gap": "Original claim remains unsubstantiated; PR47 correction remains unapproved and requires normal human review."
+    }
+  ]
+}
