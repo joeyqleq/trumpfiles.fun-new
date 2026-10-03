@@ -1,0 +1,32 @@
+{
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_input_sha256": "b25a3e967f9ac4d437e396a71e4bd57d3def1ede3e34d6b72d121139b7da4884",
+  "batch_file": "worker-09-batch-20261003-citation-crossqa-01.jsonl",
+  "reviewed_count": 16,
+  "reviewed_keys": [
+    "entry-219",
+    "entry-352",
+    "entry-654",
+    "entry-801",
+    "entry-884",
+    "entry-1666",
+    "entry-1784",
+    "entry-2413",
+    "entry-2560",
+    "entry-3009",
+    "entry-3735",
+    "entry-4097",
+    "entry-5094",
+    "entry-5597",
+    "entry-6199",
+    "entry-6356"
+  ],
+  "prefix_sha256": "9ff2d7f21968ccc4d36ce1ac03e95e6ece0acc890b5ec7a538c176e0850032af",
+  "classification_counts": {
+    "supported_proposal": 9,
+    "narrower_revision_required": 5,
+    "unsupported_hold": 1,
+    "intentional_exclusion": 1
+  },
+  "checkpoint": "append-only progress snapshot; citation review is offline and non-production"
+}
