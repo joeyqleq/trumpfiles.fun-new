@@ -1,0 +1,27 @@
+{
+  "worker": 8,
+  "kind": "checkpoint",
+  "checkpoint": 1,
+  "assigned_total": 35,
+  "processed_count": 7,
+  "batch_size": 7,
+  "input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "0b9df993c1f4659e4adf219e4357a78fcfc10e5009d9de18fae26506487306d1",
+  "latest_pr49_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "output_file": "worker-08-batch-001-20261003.jsonl",
+  "output_sha256_through_checkpoint": "fb0e55e89c93655d537c9b73bb3bbd10b2f08936290de949ee984340cada784b",
+  "processed_keys": [
+    "entry-4538",
+    "entry-5190",
+    "entry-5512",
+    "entry-5756",
+    "entry-5850",
+    "entry-6324",
+    "entry-6423"
+  ],
+  "terminal_counts": {
+    "hold": 2,
+    "pass": 5
+  },
+  "checkpoint_note": "Append-only proposal QA; no candidate rewriting, canonical or database writes, merge, or deployment."
+}
