@@ -1,0 +1,41 @@
+{
+  "worker": 7,
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "task_branch": "ls/8-trump-files-impact368-review-07-of-12-7OJh",
+  "input": {
+    "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/worker-07-input.jsonl",
+    "sha256": "cf37e4cb202dba8ab9532a623e75f9259ea590de4b1fd93487d5ffd954d5bab1",
+    "record_count": 31,
+    "keys_match_requested_order_exactly": true
+  },
+  "output": {
+    "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-07-batch-86d71a0.jsonl",
+    "sha256": "e1ef125b32ad4ee6afa9e1de53796844782319086cb1cb2fd3ddc73d9f28c98c",
+    "record_count": 31,
+    "exact_key_set_and_order": true,
+    "duplicate_keys": 0,
+    "prior_impact_preserved_verbatim": true
+  },
+  "checkpoints": {
+    "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-07-checkpoints.jsonl",
+    "counts": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "prefix_hashes_verified": true,
+    "cadence_valid_every_5_to_10_records": true
+  },
+  "review": {
+    "deferred": 31,
+    "scored": 0,
+    "all_decisions_have_nonempty_source_basis": true,
+    "all_decisions_name_a_missing_fact": true,
+    "all_prior_scores_and_statuses_preserved": true,
+    "score_formula": "not applied: no records met the supplied-evidence threshold for a numeric score; the packet contains no numeric score to recompute and does not include the weight vector. No impact score was invented.",
+    "dimension_precision": "not applicable: all proposed dimensions are null for deferred records.",
+    "evidence_limit": "The immutable packet contains prior impact summaries, but not the frozen-export claim text or complete source URLs/records. Four PR47-basis records specifically lack the referenced correction title and source_urls; each output states this gap."
+  },
+  "verification_result": "PASS for packet checksum, exact 31-key set/order, append-only prior preservation, checkpoint cadence and hashes, nonempty source-basis/missing-fact fields, and absence of unsupported numeric scores. Formula and numeric precision checks are not applicable because all records remain deferred."
+}
