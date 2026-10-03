@@ -1,0 +1,39 @@
+{
+  "worker": 8,
+  "batch": 1,
+  "status": "complete",
+  "packet_branch": "codex/five-account-review-packets-2026-10-03",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_file": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-08-input.jsonl",
+  "input_sha256": "2d8a8cff708e0e95b15792a1938299710341f2d6d228a0b50c3efde2b9e9b24e",
+  "expected_keys": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "processed_keys": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "processed_count": 8,
+  "checkpoint_after_record": 8,
+  "checkpoint_reason": "All eight assigned records reviewed in one batch; checkpoint falls within the required 5–10-record interval.",
+  "pass_count": 7,
+  "hold_count": 1,
+  "batch_file": "worker-08-batch-001.jsonl",
+  "qa_file": "worker-08-qa.md",
+  "offline_only": true,
+  "live_neon_calls": 0,
+  "ddl_dml": 0
+}
