@@ -1,0 +1,21 @@
+{
+  "record_type": "citation_revision_rescue_checkpoint",
+  "worker": 10,
+  "completed_count": 7,
+  "expected_count": 7,
+  "completed_keys": [
+    "entry-222",
+    "entry-365",
+    "entry-912",
+    "entry-1857",
+    "entry-2415",
+    "entry-3117",
+    "entry-6395"
+  ],
+  "pass_count": 7,
+  "hold_count": 0,
+  "blocking_ids": [],
+  "final_qa_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-10-final-qa.json",
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-10-batch-20261003-001.jsonl",
+  "validated": true
+}

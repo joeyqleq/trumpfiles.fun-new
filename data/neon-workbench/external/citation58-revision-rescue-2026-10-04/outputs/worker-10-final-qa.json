@@ -1,0 +1,79 @@
+{
+  "record_type": "citation_revision_rescue_final_exact_set_qa",
+  "worker": 10,
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "input_sha256": "542f33e20f62876f9c10dbe882dabb7202ac30c69a99a046f3aaf0d235a87569",
+  "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "expected_ids": [
+    "entry-222",
+    "entry-365",
+    "entry-912",
+    "entry-1857",
+    "entry-2415",
+    "entry-3117",
+    "entry-6395"
+  ],
+  "actual_ids": [
+    "entry-222",
+    "entry-365",
+    "entry-912",
+    "entry-1857",
+    "entry-2415",
+    "entry-3117",
+    "entry-6395"
+  ],
+  "expected_count": 7,
+  "actual_count": 7,
+  "exact_key_set": true,
+  "duplicate_keys": [],
+  "pass_count": 7,
+  "hold_count": 0,
+  "blocking_ids": [],
+  "length_validation": {
+    "entry-222": {
+      "short_chars": 160,
+      "medium_words": 54,
+      "long_words": 155
+    },
+    "entry-365": {
+      "short_chars": 128,
+      "medium_words": 50,
+      "long_words": 150
+    },
+    "entry-912": {
+      "short_chars": 152,
+      "medium_words": 68,
+      "long_words": 147
+    },
+    "entry-1857": {
+      "short_chars": 143,
+      "medium_words": 55,
+      "long_words": 146
+    },
+    "entry-2415": {
+      "short_chars": 154,
+      "medium_words": 53,
+      "long_words": 171
+    },
+    "entry-3117": {
+      "short_chars": 137,
+      "medium_words": 60,
+      "long_words": 147
+    },
+    "entry-6395": {
+      "short_chars": 139,
+      "medium_words": 56,
+      "long_words": 152
+    }
+  },
+  "all_source_urls_https": true,
+  "every_source_has_fact_mapping": true,
+  "inaccessible_sources_not_claimed_as_directly_read": true,
+  "scope_decisions": [
+    "entry-365 relies on Exa-indexed AP text and records direct AP HTTP 403; no direct-read claim.",
+    "entry-6395 excludes Reuters because retrieval timed out and omits unmapped Investing.com/NBC.",
+    "entry-912 attributes pardon date to archived White House statement and separates testimony from indictment allegation.",
+    "entry-1857 omits disputed March 2 publication date; PBS page displays March 3."
+  ],
+  "scope": "Seven citation-supported revision proposals only; no canonical or Neon edits and no editorial/production approval."
+}
