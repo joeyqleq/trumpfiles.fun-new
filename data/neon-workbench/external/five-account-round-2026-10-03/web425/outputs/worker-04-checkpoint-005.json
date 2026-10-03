@@ -1,0 +1,22 @@
+{
+  "checkpoint_id": "worker-04-checkpoint-005",
+  "rows_in_checkpoint": 6,
+  "cumulative_rows": 30,
+  "assigned_total": 36,
+  "remaining": 6,
+  "keys": [
+    "expanded-20260828-hush-money-removal",
+    "expanded-20260909-census-exclusion-proposal",
+    "expanded-20260916-cassidy-measles-hearing",
+    "expanded-20260922-un-address-misleading-claims",
+    "expanded-20260927-kennedy-ad-criticism",
+    "fresh-20260824-mcgurn-api-update"
+  ],
+  "input_sha256": "afa29b341422dccd4f453134b75a4f7339636d396c51d43d8f256d36723d33ad",
+  "qa_batch_sha256": "b2c80dac57f185498933887e2aae456d636e46a0e612dae783fe630145c2bc61",
+  "status_counts": {
+    "pass": 15,
+    "hold": 15,
+    "superseded": 0
+  }
+}
