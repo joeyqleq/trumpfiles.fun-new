@@ -1,0 +1,249 @@
+{
+  "worker": 7,
+  "packet_commit": "520015274c29cbcc24a4e54d747e896198756415",
+  "task_branch": "ls/8-trump-files-impact368-review-07-of-12-7OJh",
+  "review_commit": "b3701f607ab71d461498aa88564bd28ae7b477e9",
+  "input": {
+    "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/worker-07-input.jsonl",
+    "sha256": "9b89924876d0a0ed0391533cb4da573d16fb1a6175a50a1354fe245eb73b62d8",
+    "record_count": 31,
+    "keys_match_requested_order_exactly": true
+  },
+  "batch": {
+    "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-07-batch-5200152.jsonl",
+    "sha256": "4fc85e002db860d7ffc6b3041585e61346a752930f1c50ba0ae6815f94bff00a",
+    "record_count": 31,
+    "exact_key_set_and_order": true,
+    "duplicate_keys": 0,
+    "prior_impact_preserved_verbatim": true,
+    "supersedes_commit": "f895c36820bc88fc23933fb1e16b9680dfcc7a92"
+  },
+  "formula": {
+    "weights": {
+      "harm": 0.3,
+      "reach": 0.2,
+      "institutions": 0.15,
+      "procedural_abuse": 0.15,
+      "self_dealing": 0.1,
+      "persistence": 0.1
+    },
+    "expression": "round(0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence, 0.01)",
+    "dimension_range": [
+      0.0,
+      10.0
+    ],
+    "dimension_precision": "0.1",
+    "weighted_score_precision": "0.01",
+    "all_scored_records_recomputed_and_matched": true
+  },
+  "results": {
+    "scored_count": 6,
+    "deferred_count": 25,
+    "scored_records": [
+      {
+        "key": "entry-1496",
+        "dimensions": {
+          "harm": 4.0,
+          "reach": 5.0,
+          "institutions": 5.0,
+          "procedural_abuse": 2.0,
+          "self_dealing": 0.0,
+          "persistence": 2.0
+        },
+        "weighted_score": "3.45",
+        "event_state": "realized",
+        "confidence": "low"
+      },
+      {
+        "key": "entry-127",
+        "dimensions": {
+          "harm": 2.0,
+          "reach": 3.0,
+          "institutions": 4.0,
+          "procedural_abuse": 2.0,
+          "self_dealing": 0.0,
+          "persistence": 2.0
+        },
+        "weighted_score": "2.30",
+        "event_state": "realized",
+        "confidence": "low"
+      },
+      {
+        "key": "entry-5388",
+        "dimensions": {
+          "harm": 0.5,
+          "reach": 0.5,
+          "institutions": 2.5,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 0.5
+        },
+        "weighted_score": "0.68",
+        "event_state": "realized",
+        "confidence": "medium"
+      },
+      {
+        "key": "entry-1457",
+        "dimensions": {
+          "harm": 2.0,
+          "reach": 3.0,
+          "institutions": 5.0,
+          "procedural_abuse": 2.0,
+          "self_dealing": 0.0,
+          "persistence": 2.0
+        },
+        "weighted_score": "2.45",
+        "event_state": "realized",
+        "confidence": "medium"
+      },
+      {
+        "key": "entry-6992",
+        "dimensions": {
+          "harm": 5.0,
+          "reach": 4.0,
+          "institutions": 5.0,
+          "procedural_abuse": 3.0,
+          "self_dealing": 0.0,
+          "persistence": 3.0
+        },
+        "weighted_score": "3.80",
+        "event_state": "realized",
+        "confidence": "medium"
+      },
+      {
+        "key": "entry-6985",
+        "dimensions": {
+          "harm": 0.5,
+          "reach": 2.0,
+          "institutions": 4.0,
+          "procedural_abuse": 1.0,
+          "self_dealing": 0.5,
+          "persistence": 1.0
+        },
+        "weighted_score": "1.45",
+        "event_state": "realized",
+        "confidence": "medium"
+      }
+    ],
+    "deferred_records": [
+      {
+        "key": "entry-1546",
+        "missing_fact": "A dated March 4, 2026 tracker update/status history and evidence that exposure grew or affected public perception; the available snapshot is from Dec. 3, 2025."
+      },
+      {
+        "key": "entry-1767",
+        "missing_fact": "A specific high-impact decision linked to the tracker and dated evidence of the congressional or institutional review interval allegedly compressed."
+      },
+      {
+        "key": "entry-1765",
+        "missing_fact": "A defined later review cycle and documented credibility or policy consequence tied to the listed actions."
+      },
+      {
+        "key": "entry-235",
+        "missing_fact": "A dated implementation record identifying affected USAGM broadcasters, closure scope, and evidence of actual editorial changes."
+      },
+      {
+        "key": "entry-182",
+        "missing_fact": "A specific enacted federal rule/order/program decision, implementation date, and evidence of an affected service or group."
+      },
+      {
+        "key": "entry-195",
+        "missing_fact": "Dated, reliable examples and scope establishing implemented institutional changes matching the claimed complete capture."
+      },
+      {
+        "key": "entry-2479",
+        "missing_fact": "The hearing transcript/committee record naming Mogilevich and any committee finding, plus evidence connecting this 1996 event to Trump if retained in the Trump-focused collection."
+      },
+      {
+        "key": "entry-3371",
+        "missing_fact": "The underlying 2023 intercept/report naming officials and establishing the European Council discussion, plus a sourced Trump connection."
+      },
+      {
+        "key": "entry-252",
+        "missing_fact": "Agency records for an enacted FEMA/NFIP change, effective date, actual cost-share/program terms, and documented disaster-response consequences."
+      },
+      {
+        "key": "entry-3102",
+        "missing_fact": "Corroboration naming the organizer/states and showing an elector commitment or other concrete step beyond conflicting anonymous accounts."
+      },
+      {
+        "key": "entry-1523",
+        "missing_fact": "A dated, documented staffing, legal or administrative bottleneck tied to the volume of promises."
+      },
+      {
+        "key": "entry-2332",
+        "missing_fact": "A dated Foreign Office file or reliable report establishing the investigation and findings, resolving the date conflict, and documenting a Trump connection."
+      },
+      {
+        "key": "entry-7069",
+        "missing_fact": "The OLC memo text and an identified privilege assertion in a specific congressional inquiry or records dispute with a documented effect."
+      },
+      {
+        "key": "entry-3520",
+        "missing_fact": "Independent confirmation of Mussayev’s identity/rank and reliable corroboration of the alleged recruitment; the supplied account is an allegation only."
+      },
+      {
+        "key": "entry-6500",
+        "missing_fact": "The original nuclear-button post or contemporaneous source establishing its exact text, date and context; Reuters covers a different statement."
+      },
+      {
+        "key": "entry-193",
+        "missing_fact": "Records identifying an implemented federal program/agency, surveillance methods and scale, and a documented effect on monitored people."
+      },
+      {
+        "key": "entry-1022",
+        "missing_fact": "The commutation instrument/terms and remaining sentence or release outcome to establish the magnitude and practical effect of relief."
+      },
+      {
+        "key": "entry-2375",
+        "missing_fact": "Reliable records for the alleged intelligence/criminal relationships and a specific Trump link; the supplied business profile does not establish these claims."
+      },
+      {
+        "key": "entry-6043",
+        "missing_fact": "The affidavit docket and an accessible contemporaneous source establishing Trump’s position on release of that separate document."
+      },
+      {
+        "key": "entry-6552",
+        "missing_fact": "A contemporaneous appraisal/comparable-sales analysis establishing any above-market premium, or records documenting an arrangement or buyer purpose."
+      },
+      {
+        "key": "entry-1412",
+        "missing_fact": "The deposition transcript/questions and evidence linking the committee testimony to Trump or to a measurable diversion strategy."
+      },
+      {
+        "key": "entry-1747",
+        "missing_fact": "The relevant congressional oversight process, its timing, and evidence that the strike decision constrained that review."
+      },
+      {
+        "key": "entry-273",
+        "missing_fact": "A dated default/missed payment and verified consequences tied to it; the sources describe risks and hypothetical scenarios only."
+      },
+      {
+        "key": "entry-1407",
+        "missing_fact": "A transcript or sourced analysis of the testimony and evidence that it changed attention or served a Trump-linked diversion strategy."
+      },
+      {
+        "key": "entry-240",
+        "missing_fact": "An operative law/rule with covered data categories, retention period, government-access conditions and implementation evidence."
+      }
+    ],
+    "all_rows_have_source_basis_and_packet_source_urls": true
+  },
+  "checkpoints": {
+    "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-07-checkpoints-5200152.jsonl",
+    "counts": [
+      8,
+      16,
+      24,
+      31
+    ],
+    "cadence_5_to_10_records": true,
+    "prefix_hashes_verified": true
+  },
+  "scope": {
+    "canonical_or_database_edits": false,
+    "production_writes": false,
+    "pull_request_opened": false
+  },
+  "validation_result": "PASS: exact input checksum and requested key order; 31 unique rows; 6 scores comply with weights, dimension bounds/precision, and rounded weighted formula; 25 deferrals each name a specific missing fact; prior impact values, source references, checkpoint hashes and cadence verified."
+}
