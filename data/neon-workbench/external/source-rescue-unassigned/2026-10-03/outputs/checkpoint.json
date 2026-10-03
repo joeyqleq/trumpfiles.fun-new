@@ -3,10 +3,11 @@
   "input_sha256": "145effce2954b4b3d36faa0520eee25386d42fda977c324dbdd396a8fc01db02",
   "worker": 11,
   "assigned_count": 30,
-  "processed_count": 10,
-  "terminal_count": 10,
+  "processed_count": 20,
+  "terminal_count": 20,
   "batch_files": [
-    "worker-11-batch-001.jsonl"
+    "worker-11-batch-001.jsonl",
+    "worker-11-batch-002.jsonl"
   ],
   "processed_entry_numbers": [
     4306,
@@ -18,9 +19,7 @@
     5717,
     5742,
     5763,
-    5820
-  ],
-  "pending_entry_numbers": [
+    5820,
     5849,
     5879,
     6392,
@@ -30,7 +29,9 @@
     6518,
     6576,
     6621,
-    6641,
+    6641
+  ],
+  "pending_entry_numbers": [
     6669,
     6725,
     6742,
@@ -42,5 +43,5 @@
     6945,
     6965
   ],
-  "notes": "Checkpoint after verified first ten terminal proposals; append-only batch outputs."
+  "notes": "Checkpoint after twenty terminal proposals in two append-only batches."
 }
