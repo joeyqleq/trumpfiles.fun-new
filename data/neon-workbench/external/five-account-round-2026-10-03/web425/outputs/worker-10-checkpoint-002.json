@@ -1,0 +1,31 @@
+{
+  "worker": 10,
+  "batch": 2,
+  "batch_file": "worker-10-batch-002-qa.jsonl",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "602d8d4b231505d692620b3a95803492a142e1524be5b0bd87a1068e283cdf72",
+  "rows_in_batch": 7,
+  "cumulative_rows": 14,
+  "keys": [
+    "entry-4696",
+    "entry-5207",
+    "entry-5731",
+    "entry-5761",
+    "entry-5863",
+    "entry-6379",
+    "entry-6425",
+    "entry-6456",
+    "entry-6516",
+    "entry-6597",
+    "entry-6615",
+    "entry-6673",
+    "entry-6749",
+    "entry-6784"
+  ],
+  "terminal_status_counts": {
+    "pass": 6,
+    "hold": 8,
+    "superseded": 0
+  },
+  "checkpoint_status": "in_progress"
+}

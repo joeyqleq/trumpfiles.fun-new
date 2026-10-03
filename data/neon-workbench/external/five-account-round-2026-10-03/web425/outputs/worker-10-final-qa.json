@@ -1,0 +1,39 @@
+{
+  "worker": 10,
+  "assignment": "web425",
+  "packet_branch": "codex/five-account-review-packets-2026-10-03",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-10-input.jsonl",
+  "input_sha256": "602d8d4b231505d692620b3a95803492a142e1524be5b0bd87a1068e283cdf72",
+  "expected_rows": 35,
+  "actual_rows": 35,
+  "exact_key_set_match": true,
+  "keys_unique": true,
+  "every_row_has_one_terminal_status": true,
+  "all_selected_revision_provenance_verified": true,
+  "higher_revision_supersessions": 0,
+  "terminal_status_counts": {
+    "pass": 19,
+    "hold": 16,
+    "superseded": 0
+  },
+  "batch_files": [
+    "worker-10-batch-001-qa.jsonl",
+    "worker-10-batch-002-qa.jsonl",
+    "worker-10-batch-003-qa.jsonl",
+    "worker-10-batch-004-qa.jsonl",
+    "worker-10-batch-005-qa.jsonl"
+  ],
+  "checkpoint_files": [
+    "worker-10-checkpoint-001.json",
+    "worker-10-checkpoint-002.json",
+    "worker-10-checkpoint-003.json",
+    "worker-10-checkpoint-004.json",
+    "worker-10-checkpoint-005.json"
+  ],
+  "database_or_canonical_changes": false,
+  "candidate_rewriting_performed": false,
+  "notes": "All five 7-row batches parse as JSONL and collectively cover the 35 manifest keys in prompt order. Holds identify exact evidence/description defects; no candidate was rewritten. Published PR49 baseline revision pointers are recorded where present, with terminal selection or correction provenance used for rescue-only rows.",
+  "published_baseline_provenance_complete": true,
+  "baseline_provenance_gaps": []
+}
