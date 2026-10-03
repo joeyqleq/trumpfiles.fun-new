@@ -1,0 +1,136 @@
+{
+  "task": "Trump Files impact368 review 10 of 12 — context supplement reassessment",
+  "worker": 10,
+  "supplement_branch": "codex/impact368-context-supplement-2026-10-03",
+  "supplement_commit": "520015274c29cbcc24a4e54d747e896198756415",
+  "input_path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/worker-10-input.jsonl",
+  "input_sha256": "3d2ee1dfd76ab192f0ac2ebce6659ad84af5e1ca913c0e0af24613ab6a6cfd5e",
+  "expected_input_sha256": "3d2ee1dfd76ab192f0ac2ebce6659ad84af5e1ca913c0e0af24613ab6a6cfd5e",
+  "manifest_path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/manifest.json",
+  "input_sha256_matches_manifest": true,
+  "supersedes": {
+    "branch": "ls/11-trump-files-impact368-review-10-of-12-Kjf6",
+    "commit": "af9fe5472384c59ee9bbb9250d4a0d179c05a58f",
+    "file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-10-batch-UNIQUE.jsonl",
+    "prior_rows": 30
+  },
+  "output_path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-10-batch-UNIQUE.jsonl",
+  "output_sha256": "86fc9fd2a74dd2580dd9232512f301fafc27fba1b23f0efde5d9a4b4604675f4",
+  "expected_ids": [
+    "entry-1623",
+    "entry-1476",
+    "entry-228",
+    "entry-196",
+    "entry-1471",
+    "entry-1486",
+    "entry-2577",
+    "entry-2988",
+    "entry-1538",
+    "entry-4088",
+    "entry-4552",
+    "entry-1286",
+    "entry-5541",
+    "entry-6070",
+    "entry-7008",
+    "entry-4169",
+    "entry-66",
+    "entry-7157",
+    "entry-2545",
+    "entry-1544",
+    "entry-4198",
+    "entry-4336",
+    "entry-2558",
+    "entry-3421",
+    "entry-7045",
+    "entry-1531",
+    "entry-206",
+    "entry-341",
+    "entry-1537",
+    "entry-2508"
+  ],
+  "actual_ids": [
+    "entry-1623",
+    "entry-1476",
+    "entry-228",
+    "entry-196",
+    "entry-1471",
+    "entry-1486",
+    "entry-2577",
+    "entry-2988",
+    "entry-1538",
+    "entry-4088",
+    "entry-4552",
+    "entry-1286",
+    "entry-5541",
+    "entry-6070",
+    "entry-7008",
+    "entry-4169",
+    "entry-66",
+    "entry-7157",
+    "entry-2545",
+    "entry-1544",
+    "entry-4198",
+    "entry-4336",
+    "entry-2558",
+    "entry-3421",
+    "entry-7045",
+    "entry-1531",
+    "entry-206",
+    "entry-341",
+    "entry-1537",
+    "entry-2508"
+  ],
+  "record_count": 30,
+  "id_set_exact": true,
+  "duplicates": [],
+  "status_counts": {
+    "scored": 5,
+    "deferred": 25
+  },
+  "dimension_null_count": 25,
+  "score_formula": {
+    "harm": 0.3,
+    "reach": 0.2,
+    "institutions": 0.15,
+    "procedural_abuse": 0.15,
+    "self_dealing": 0.1,
+    "persistence": 0.1
+  },
+  "weight_sum": 1.0,
+  "weighted_total_validation": {
+    "entry-2988": {
+      "computed": 2.7,
+      "stored": 2.7
+    },
+    "entry-4552": {
+      "computed": 3.45,
+      "stored": 3.45
+    },
+    "entry-1544": {
+      "computed": 1.85,
+      "stored": 1.85
+    },
+    "entry-3421": {
+      "computed": 2.85,
+      "stored": 2.85
+    },
+    "entry-206": {
+      "computed": 2.85,
+      "stored": 2.85
+    }
+  },
+  "dimension_precision": "Every scored dimension is in range 0–10 and on a 0.1 step; deferred rows have dimensions=null and impact_score=null.",
+  "source_basis_rows": 30,
+  "specific_missing_fact_rows": 30,
+  "prior_provenance_rows": 30,
+  "supplement_provenance_rows": 30,
+  "checkpoints": {
+    "count": 6,
+    "records_per_checkpoint": 5,
+    "coverage": "input order, non-overlapping chunks 1–6"
+  },
+  "canonical_or_database_changes": false,
+  "other_worker_changes": false,
+  "general_web_search_used": false,
+  "pr_opened": false
+}
