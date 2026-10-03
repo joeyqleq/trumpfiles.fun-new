@@ -1,0 +1,82 @@
+{
+  "record_type": "release_gate_checkpoint",
+  "worker": 22,
+  "status": "complete_with_holds",
+  "task_scope": "Audit latest account1 worker02/worker03 Oct 1-3 fresh-event branches against prior 84 and frozen 7,143 title/date index. Proposal-only.",
+  "exact_input_commits": {
+    "worker02": {
+      "ref": "origin/ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+      "commit": "bfad83b649669b2c7905a18600d1e0c13fdb2a89"
+    },
+    "worker03": {
+      "ref": "origin/ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+      "commit": "4a7438b200dc1bc8994d880d4da2ed5e2fcfe98b"
+    },
+    "context": {
+      "ref": "origin/codex/fresh-events-oct-01-03-2026",
+      "commit": "432179c3cefe6c531217b4315f00df799639d64b"
+    }
+  },
+  "exact_candidate_keys": [
+    "oct2026-1001-scotus-mandatory-detention-cert",
+    "oct2026-1001-rogoff-reinstated",
+    "oct2026-1001-cox-section611-ruling",
+    "oct2026-1001-aau-section117-tro",
+    "oct2026-1002-big-bend-border-wall-injunction",
+    "oct2026-1001-doj-delaware-tuition-suit",
+    "oct2026-1001-epa-blue-marlin-proposed-permits",
+    "oct2026-1001-states-challenge-epa-carbon-repeal",
+    "oct2026-1001-us-diesel-reserve-pressure",
+    "oct2026-1002-g7-coordinated-reserve-release",
+    "oct2026-1002-medicare-90-payment-announcement",
+    "oct2026-1002-cea-dsa-cost-report",
+    "oct2026-1002-doj-white-house-press-ban-brief",
+    "oct2026-1001-trump-iran-flydubai-threat",
+    "oct2026-aircraft-license-slowdown-date-gap",
+    "oct2026-cuba-fuel-vessel-interception-confirmation-gap",
+    "oct2026-1001-state-syria-itar-case-by-case",
+    "oct2026-1002-dhs-new-mexico-border-waiver",
+    "oct2026-1002-usda-reap-cropland-rule",
+    "oct2026-1001-opm-appraisal-cycle-start",
+    "oct2026-1001-trump-iran-deal-ultimatum",
+    "oct2026-1002-trump-denies-diesel-export-ban",
+    "oct2026-powerus-merger-close",
+    "oct2026-powerus-pusa-solana-listing",
+    "oct2026-wlfi-moa-usd1-mou",
+    "oct2026-wlfi-staking-launch",
+    "oct2026-kushner-cnn-response",
+    "oct2026-georgia-fee-appeal-filing-lead"
+  ],
+  "unique_candidate_count": 28,
+  "effective_result_count": 28,
+  "results_path": "worker-22-release-results.jsonl",
+  "independent_qa_path": "worker-22-independent-qa.json",
+  "hold_keys": [
+    "oct2026-1001-us-diesel-reserve-pressure",
+    "oct2026-1002-cea-dsa-cost-report",
+    "oct2026-1001-trump-iran-flydubai-threat",
+    "oct2026-aircraft-license-slowdown-date-gap",
+    "oct2026-cuba-fuel-vessel-interception-confirmation-gap",
+    "oct2026-wlfi-moa-usd1-mou",
+    "oct2026-georgia-fee-appeal-filing-lead"
+  ],
+  "counts_by_disposition": {
+    "retain_proposal_pending_human_release_review": 20,
+    "hold_anonymous_source_only": 1,
+    "hold_correct_event_date_and_key": 1,
+    "hold_primary_quote_and_event_boundary": 1,
+    "hold_unresolved_date_and_action": 1,
+    "hold_unresolved_event_confirmation": 1,
+    "retain_proposal_with_event_boundary_check": 1,
+    "hold_missing_primary_agreement": 1,
+    "hold_unresolved_filing_date": 1
+  },
+  "finished_at_utc": "2026-10-03",
+  "no_pr_required": true,
+  "canonical_edits": false,
+  "database_writes": false,
+  "other_worker_edits": false,
+  "prior84_reference_audit_count": 84,
+  "prior84_reference_audit_path": "worker-22-prior84-reference-audit.jsonl",
+  "combined_audit_row_count": 112
+}

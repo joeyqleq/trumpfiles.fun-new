@@ -1,0 +1,98 @@
+{
+  "record_type": "independent_release_gate_qa",
+  "worker": 22,
+  "scope": "latest worker02/worker03 Oct 1-3 candidate branches compared with frozen prior 84 fresh candidates and frozen 7,143 title/date index",
+  "status": "complete_with_holds",
+  "source_branches": {
+    "worker02": {
+      "ref": "origin/ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+      "commit": "bfad83b649669b2c7905a18600d1e0c13fdb2a89"
+    },
+    "worker03": {
+      "ref": "origin/ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+      "commit": "4a7438b200dc1bc8994d880d4da2ed5e2fcfe98b"
+    },
+    "context": {
+      "ref": "origin/codex/fresh-events-oct-01-03-2026",
+      "commit": "432179c3cefe6c531217b4315f00df799639d64b"
+    }
+  },
+  "frozen_context": {
+    "commit": "432179c3cefe6c531217b4315f00df799639d64b",
+    "prompt_sha256": "c947d3f27e6eecc8aba124fa9c6a227854fe0c8617b6f05d7c94c1a98a026509",
+    "index_count": 7143,
+    "index_sha256": "f07fdd5c9edc563373dd8f790a0d1a945503768c8a9da2581ec0684de5f31ff3",
+    "prior_fresh_count": 84,
+    "prior_fresh_sha256": "29102aea07191ca1ce3f68f2ed276b41edb8a8ec52a3ebf6a7854a3484ee8102"
+  },
+  "candidate_counts": {
+    "worker02": 22,
+    "worker03": 6,
+    "total_unique_keys": 28,
+    "fully_drafted": 25,
+    "unresolved_leads": 3
+  },
+  "disposition_counts": {
+    "retain_proposal_pending_human_release_review": 20,
+    "hold_anonymous_source_only": 1,
+    "hold_correct_event_date_and_key": 1,
+    "hold_primary_quote_and_event_boundary": 1,
+    "hold_unresolved_date_and_action": 1,
+    "hold_unresolved_event_confirmation": 1,
+    "retain_proposal_with_event_boundary_check": 1,
+    "hold_missing_primary_agreement": 1,
+    "hold_unresolved_filing_date": 1
+  },
+  "checks": {
+    "exact_key_uniqueness": true,
+    "exact_source_line_provenance": true,
+    "all_event_dates_in_window_or_lead_hold": true,
+    "three_description_lengths_checked": true,
+    "all_factual_claims_have_source_inventory_url": true,
+    "exact_url_syntax_checked": true,
+    "duplicate_screened_vs_all_7143_index_titles_and_dates": true,
+    "duplicate_screened_vs_all_84_prior_full_records": true,
+    "family_associate_lane_scope_reviewed": true,
+    "proposal_only_no_canonical_or_database_writes": true
+  },
+  "independent_review_method": "Re-read source_event and description records from the fetched refs; independently recounted text lengths, compared event and source publication dates, checked each claim URL against the row URL inventory, re-screened all exact keys against 7,143 title/date rows and the 84 prior records, then reviewed likely same-day/related-event clusters. Direct web inspection sampled primary pages including Supreme Court docket 26-104, DOJ Delaware filing announcement, EPA Blue Marlin release, G7 statement, White House CEA release and Rogoff order. This does not claim independent verification of every source URL or recomputation of policy/business figures.",
+  "holds": [
+    {
+      "candidate_key": "oct2026-1001-us-diesel-reserve-pressure",
+      "reason": "Reuters and NBC both rely on anonymous sources; no public U.S./European record or primary confirmation is cited. Keep the possible export ban explicitly hypothetical; require independent corroboration or retain as an attributed lead, not a clean release."
+    },
+    {
+      "candidate_key": "oct2026-1002-cea-dsa-cost-report",
+      "reason": "The White House primary release page displays October 1, 2026, while this proposal states October 2 in its key, source_event, and descriptions. Recommend event_date 2026-10-01 and change October 2 to October 1 in medium and long descriptions; do not release until the candidate key is reconciled. The $49T amount remains an attributed CEA model estimate, not an independently validated forecast."
+    },
+    {
+      "candidate_key": "oct2026-1001-trump-iran-flydubai-threat",
+      "reason": "Only secondary reporting is cited for Trump’s conditional statement and the suspected co-pilot/Iran link. Require the original press video/transcript and preserve that investigators had not established Iranian direction. The same-day Trump ultimatum is related but a separate quotation; confirm whether the two came from one gaggle before separate event treatment."
+    },
+    {
+      "candidate_key": "oct2026-aircraft-license-slowdown-date-gap",
+      "reason": "Reuters says licensing slowed “in recent weeks”; the packet does not establish a discrete Commerce/BIS decision or effective date in Oct. 1–3. Require the dated licensing action or notice and its primary URL."
+    },
+    {
+      "candidate_key": "oct2026-cuba-fuel-vessel-interception-confirmation-gap",
+      "reason": "The cited Reuters report attributes the interception to a New York Times account. The packet lacks the underlying report, Coast Guard confirmation, vessel identity, precise interception time, and primary URL; do not present the interception as confirmed."
+    },
+    {
+      "candidate_key": "oct2026-wlfi-moa-usd1-mou",
+      "reason": "Contemporaneous secondary coverage supports a reported signing and the proposal correctly describes it as exploratory, but no signed MOU, official WLFI/MOA announcement, or other first-party record is supplied. Keep any wording attributed to outlets and request the primary agreement or company confirmation; family link is indirect via WLFI co-founder status."
+    },
+    {
+      "candidate_key": "oct2026-georgia-fee-appeal-filing-lead",
+      "reason": "Law360 publication on Oct. 2 does not prove the described appellate filing occurred in Oct. 1–3. Require the Georgia Court of Appeals docket entry, filing date, case number, brief, parties, and exact relief."
+    }
+  ],
+  "integrity_note": "No canonical entry, score, database, merge, or other worker output was changed.",
+  "prior84_audit": {
+    "rows": 84,
+    "unique_keys": 84,
+    "file": "worker-22-prior84-reference-audit.jsonl",
+    "description_limit_pass_count": 84,
+    "claim_url_mapping_pass_count": 84,
+    "external_source_reopen": "not performed for every baseline row; treated as dedupe baseline and explicitly disclosed"
+  }
+}
