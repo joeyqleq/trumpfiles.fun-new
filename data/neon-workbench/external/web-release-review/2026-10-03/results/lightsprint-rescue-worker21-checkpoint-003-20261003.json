@@ -1,0 +1,47 @@
+{
+  "worker": 21,
+  "batch": 3,
+  "completed_keys": [
+    "entry-6839",
+    "entry-6922",
+    "entry-6939",
+    "entry-6958",
+    "expanded-20260827-usps-new-tro",
+    "expanded-20260909-census-exclusion-proposal",
+    "expanded-20260915-ice-locator-exclusion",
+    "expanded-20260922-doj-media-security-defense"
+  ],
+  "completed_count": 8,
+  "total_assigned": 32,
+  "remaining_keys": [
+    "expanded-20260925-save-sc-stay",
+    "expanded-20260929-murray-murphy-ad-letter",
+    "fresh-20260916-eric-dominari-13g",
+    "pr47-review-entry-1213",
+    "pr47-review-entry-1300",
+    "pr47-review-entry-1471",
+    "pr47-review-entry-1537",
+    "pr47-review-entry-1595"
+  ],
+  "source_branch": "codex/web-release-rescue-2026-10-03",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "input_sha256": "6c44e297f22796e6007d0254c89c578195826be719bfc5c9a6b8f04aac4dff65",
+  "pr49_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "checkpoint_type": "append_only_proposal_batch",
+  "qa_counts": {
+    "rows": 8,
+    "supported_proposals": 8,
+    "unresolved_or_excluded": 3,
+    "drafts_present": 1
+  },
+  "remaining_gaps": {
+    "entry-6839": "GAO reports FY2019-2025 EAJA awards and explains the statute's continuing operation.",
+    "entry-6922": "No sufficiently reliable source located for the claim as written.",
+    "entry-6939": "NPR reports a VA spokesperson denied DOGE access to Veterans’ or VA beneficiaries’ data. This is a denial statement, not proof that no access occurred; preserve attribution and avoid implying a breach.",
+    "entry-6958": "Useful boundary source showing documented actions without validating the specific raid claim.",
+    "expanded-20260827-usps-new-tro": "Reuters reports a federal judge temporarily blocked the USPS ballot-mail rule on August 28. It is a TRO against implementation of an earlier directive, not a new Trump order; no final ruling or election outcome is established.",
+    "expanded-20260909-census-exclusion-proposal": "Reuters reports a proposed census change limited to citizens and permanent residents and removal of race/ethnicity questions, open for comment. It was a proposal, not a final rule; downstream apportionment or funding effects are not established.",
+    "expanded-20260915-ice-locator-exclusion": "AP reports, citing three current/former officials, that ICE removed locator entries for detainees with final removal orders. ICE did not confirm the change; do not imply every record was removed or that removal/deportation occurred.",
+    "expanded-20260922-doj-media-security-defense": "CBS reports DOJ filed a defense of White House press restrictions, invoking professionalism and national security. This filing is the event; the outlets’ due-process objections and any eventual court ruling must remain attributed/unresolved."
+  }
+}
