@@ -1,0 +1,16 @@
+{
+  "batch": "duplicate-qa-review04-batch-004.jsonl",
+  "rows": 8,
+  "sha256": "e843cba4bebc463c88f5feb64ea67f4a5690563d8130842cdf8caa2fbfe105ce",
+  "assignment_keys": [
+    "entry-7117",
+    "entry-7125",
+    "entry-7126",
+    "entry-7131",
+    "entry-7132",
+    "entry-7133",
+    "entry-7137",
+    "entry-7147"
+  ],
+  "revision": 2000
+}
