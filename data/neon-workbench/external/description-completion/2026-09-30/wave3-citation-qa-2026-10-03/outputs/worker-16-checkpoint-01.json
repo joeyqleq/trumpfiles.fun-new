@@ -1,0 +1,1 @@
+{"worker":16,"batch":1,"record_ids":["entry-176","entry-236","entry-390","entry-720","entry-811","entry-912"],"input_sha256":"5f6d5a946e203e828f0657ee8a86e14174b158a76891289f14e06c367591517f","status":"checkpoint","note":"6 proposals appended; entry-236 and entry-811 remain unresolved pending recoverable supporting source text."}
