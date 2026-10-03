@@ -1,0 +1,1 @@
+{"worker":16,"batch":2,"record_ids":["entry-1666","entry-1782","entry-2380","entry-2518","entry-2854","entry-3488"],"input_sha256":"5f6d5a946e203e828f0657ee8a86e14174b158a76891289f14e06c367591517f","status":"checkpoint","note":"6 proposals appended; four remain explicit scope exclusions or holds. AP evidence supports an offer for entry-3488, not a completed transfer."}
