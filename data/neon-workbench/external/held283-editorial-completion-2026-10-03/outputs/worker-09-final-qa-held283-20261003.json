@@ -1,0 +1,227 @@
+{
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "packet_sha256": "741ae66d8eade620c281d0766ed781b86497e7e98045617774814b476ad5775e",
+  "batch_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-09-batch-20261003-held283-editorial-completion.jsonl",
+  "expected_ids": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6595",
+    "entry-6614",
+    "entry-6672",
+    "entry-6744",
+    "entry-6782",
+    "entry-6798",
+    "entry-6823",
+    "entry-6844",
+    "entry-6925",
+    "entry-6941",
+    "entry-6963",
+    "entry-7089",
+    "entry-7125",
+    "entry-7158"
+  ],
+  "actual_ids": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6595",
+    "entry-6614",
+    "entry-6672",
+    "entry-6744",
+    "entry-6782",
+    "entry-6798",
+    "entry-6823",
+    "entry-6844",
+    "entry-6925",
+    "entry-6941",
+    "entry-6963",
+    "entry-7089",
+    "entry-7125",
+    "entry-7158"
+  ],
+  "expected_count": 23,
+  "actual_count": 23,
+  "exact_id_set_match": true,
+  "duplicate_ids": [],
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "terminal_status_counts": {
+    "proposed": 11,
+    "hold": 12
+  },
+  "authority_blob_checks": {
+    "verified": 25,
+    "failed": 0
+  },
+  "draft_checks": [
+    {
+      "assignment_key": "entry-4577",
+      "child": "entry-4577-order",
+      "title_chars": 59,
+      "short_chars": 60,
+      "medium_words": 70,
+      "long_words": 162,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-4577",
+      "child": "entry-4577-npra-plan",
+      "title_chars": 78,
+      "short_chars": 79,
+      "medium_words": 70,
+      "long_words": 164,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-4577",
+      "child": "entry-4577-ambler",
+      "title_chars": 41,
+      "short_chars": 42,
+      "medium_words": 70,
+      "long_words": 162,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-5191",
+      "child": "entry-5191-springfield-rumor",
+      "title_chars": 62,
+      "short_chars": 118,
+      "medium_words": 55,
+      "long_words": 166,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-5191",
+      "child": "entry-5191-haiti-tps",
+      "title_chars": 53,
+      "short_chars": 85,
+      "medium_words": 53,
+      "long_words": 151,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-5851",
+      "child": null,
+      "title_chars": 80,
+      "short_chars": 153,
+      "medium_words": 62,
+      "long_words": 168,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-6368",
+      "child": null,
+      "title_chars": 75,
+      "short_chars": 75,
+      "medium_words": 51,
+      "long_words": 148,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-6424",
+      "child": null,
+      "title_chars": 72,
+      "short_chars": 115,
+      "medium_words": 51,
+      "long_words": 154,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-6511",
+      "child": null,
+      "title_chars": 49,
+      "short_chars": 156,
+      "medium_words": 60,
+      "long_words": 152,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-6844",
+      "child": null,
+      "title_chars": 79,
+      "short_chars": 125,
+      "medium_words": 69,
+      "long_words": 153,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-6941",
+      "child": null,
+      "title_chars": 62,
+      "short_chars": 146,
+      "medium_words": 61,
+      "long_words": 140,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-7089",
+      "child": null,
+      "title_chars": 81,
+      "short_chars": 81,
+      "medium_words": 62,
+      "long_words": 155,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-7125",
+      "child": null,
+      "title_chars": 49,
+      "short_chars": 125,
+      "medium_words": 51,
+      "long_words": 165,
+      "https_urls": true,
+      "source_fact_map": true
+    },
+    {
+      "assignment_key": "entry-7158",
+      "child": null,
+      "title_chars": 67,
+      "short_chars": 67,
+      "medium_words": 47,
+      "long_words": 175,
+      "https_urls": true,
+      "source_fact_map": true
+    }
+  ],
+  "draft_count": 14,
+  "description_limits": {
+    "title_max_chars": 180,
+    "short_max_chars": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ]
+  },
+  "hold_rows_have_exact_blocker_and_evidence_request": true,
+  "source_to_claim_mapping_coverage": true,
+  "result": "pass"
+}

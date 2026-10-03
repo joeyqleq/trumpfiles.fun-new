@@ -1,0 +1,24 @@
+{
+  "checkpoint": 2,
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "packet_sha256": "741ae66d8eade620c281d0766ed781b86497e7e98045617774814b476ad5775e",
+  "batch_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-09-batch-20261003-held283-editorial-completion.jsonl",
+  "completed_count": 10,
+  "completed_ids": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6595"
+  ],
+  "prefix_sha256": "13bbe713b07fa872d61cb636216d5c4d8f56a0d83883913031024e29267aee75",
+  "terminal_status_counts": {
+    "proposed": 6,
+    "hold": 4
+  }
+}
