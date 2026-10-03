@@ -1,0 +1,19 @@
+{
+  "worker": 16,
+  "source_branch": "codex/web-release-rescue-2026-10-03",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "input_sha256": "be52cbf5e634262657259d9338bca737655725a41aa2df87fe120dcc4166c7aa",
+  "batch": 3,
+  "rows_appended": 7,
+  "assignment_keys": [
+    "entry-6790",
+    "entry-6810",
+    "entry-6830",
+    "entry-6884",
+    "entry-6931",
+    "entry-6949",
+    "expanded-20260821-james-subpoenas-appeal"
+  ],
+  "cumulative_rows": 21,
+  "proposal_only": true
+}
