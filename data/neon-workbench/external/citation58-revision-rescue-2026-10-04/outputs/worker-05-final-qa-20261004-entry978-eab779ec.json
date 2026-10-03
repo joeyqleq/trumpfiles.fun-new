@@ -1,0 +1,51 @@
+{
+  "source_job": "citation58-revision-rescue-2026-10-04 / worker-05 / account5 / entry-978",
+  "coordinator_packet_branch": "ls/7-trump-final-corrections-account2-worker1-slYA",
+  "coordinator_packet_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "coordinator_packet_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+  "coordinator_packet_file_sha256": "c39525df346c7b91046d1b79a70218495abef578654321de584864415ad2ad22",
+  "assigned_ids": [
+    "entry-978"
+  ],
+  "saved_ids": [
+    "entry-978"
+  ],
+  "expected_count": 1,
+  "saved_count": 1,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "exact_set_pass": true,
+  "disposition_counts": {
+    "supported_proposal": 1,
+    "narrower_revision_required": 0,
+    "unsupported_hold": 0,
+    "intentional_exclusion": 0
+  },
+  "release_ready_count": 1,
+  "blocking_ids": [],
+  "description_length_metrics": {
+    "title_chars": 68,
+    "short_chars": 153,
+    "medium_words": 78,
+    "long_words": 194
+  },
+  "description_length_pass": true,
+  "verified_urls": [
+    "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021",
+    "https://www.justice.gov/media/1113006/dl?inline",
+    "https://www.justice.gov/pardon/page/file/1350106/dl?inline",
+    "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-122320/"
+  ],
+  "batch_file": "worker-05-batch-20261004-entry978-eab779ec.jsonl",
+  "batch_sha256": "c13d7a0c03afd1cca626bca15d442a3475df8cb589611b72a3eb349ad153b7a5",
+  "checkpoint_file": "worker-05-checkpoint-20261004-entry978-eab779ec.json",
+  "prior_worker05_batches_fully_pushed_before_rescue": true,
+  "prior_decision_reconciliation": "Entry-978’s earlier narrower_revision_required/hold is superseded by the accessible primary DOJ warrant linked from the DOJ index.",
+  "limitations": [
+    "Rationale is attributed to the White House/clemency warrant and is not independently adjudicated.",
+    "No underlying fraud-scheme narrative was added."
+  ],
+  "no_canonical_or_neon_writes": true,
+  "no_other_ids_reviewed": true
+}

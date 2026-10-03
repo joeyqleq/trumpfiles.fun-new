@@ -1,0 +1,17 @@
+{
+  "source_job": "citation58-revision-rescue-2026-10-04 / worker-05 / account5 / entry-978",
+  "assigned_ids": [
+    "entry-978"
+  ],
+  "completed_ids": [
+    "entry-978"
+  ],
+  "completed_count": 1,
+  "remaining_ids": [],
+  "remaining_count": 0,
+  "terminal_row_count": 1,
+  "prior_hold_resolved_with_new_exact_primary_source": true,
+  "commit_source": "eab779ec075174445237101c2fdf0e72d771d051",
+  "batch_file": "worker-05-batch-20261004-entry978-eab779ec.jsonl",
+  "batch_sha256": "c13d7a0c03afd1cca626bca15d442a3475df8cb589611b72a3eb349ad153b7a5"
+}
