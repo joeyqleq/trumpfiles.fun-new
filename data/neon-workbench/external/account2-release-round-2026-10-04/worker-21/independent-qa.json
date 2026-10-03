@@ -1,0 +1,49 @@
+{
+  "identity_partition": {
+    "staged_count": 6944,
+    "canonical_count": 6860,
+    "fresh_count": 84,
+    "frozen_count": 7143,
+    "held_count": 283,
+    "staged_equals_canonical_union_fresh": true,
+    "canonical_fresh_disjoint": true,
+    "frozen_equals_canonical_union_held": true,
+    "canonical_held_disjoint": true,
+    "staged_frozen_overlap_is_canonical": true,
+    "fresh_equals_staged_only": true,
+    "held_equals_frozen_only": true
+  },
+  "staged_status_counts": {
+    "complete": 6446,
+    "needs_context": 498
+  },
+  "effective_worker_results": {
+    "assigned_keys": 311,
+    "unique_keys": 311,
+    "status_counts": {
+      "complete": 272,
+      "needs_context": 39
+    },
+    "needs_context_count": 39,
+    "needs_context_and_staged_needs_context_overlap": 39,
+    "all_assigned_keys_in_staged": true
+  },
+  "claimed_204": {
+    "expected_count": 204,
+    "exact_key_set_found": false,
+    "overlap": null,
+    "blocker": "No identified authoritative 204-row key list/source. The current merged staging file has 498 needs_context IDs, and the current 311 assigned-worker effective results have 39 needs_context IDs."
+  },
+  "independent_recheck": {
+    "passed": true,
+    "reloaded_output_files": true,
+    "exact_partition_equations": true,
+    "effective_result_count_unique": 311,
+    "effective_status_counts": {
+      "complete": 272,
+      "needs_context": 39
+    },
+    "all_worker_branches_still_at_checkpoint_commits": true,
+    "204_keyset_blocker_preserved": true
+  }
+}

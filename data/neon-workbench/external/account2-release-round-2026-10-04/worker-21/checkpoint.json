@@ -1,0 +1,214 @@
+{
+  "task": "Account2 worker 21 release-gate identity audit",
+  "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "source_commits": {
+    "description_staging": {
+      "branch": "origin/codex/description-results-2026-09-30",
+      "commit": "d1d12b0232c277aeb65d52ddb8f913f2366c275b",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions.jsonl",
+      "sha256": "961153d64790be2b4421766404fd0c2105fcd19be281d551b713f771589ff017"
+    },
+    "held_subset": {
+      "branch": "origin/codex/description-results-2026-09-30",
+      "commit": "d1d12b0232c277aeb65d52ddb8f913f2366c275b",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/held.jsonl",
+      "sha256": "ceff947857970da6ee25e90ae1b7e6a3b590e8492a07c71b7670278b21bf64a7"
+    },
+    "frozen_identity": {
+      "branch": "origin/codex/fresh-events-oct-01-03-2026",
+      "commit": "432179c3cefe6c531217b4315f00df799639d64b",
+      "path": "data/neon-workbench/external/fresh-events-next/2026-10-03/existing-7143-title-date-index.jsonl",
+      "sha256": "f07fdd5c9edc563373dd8f790a0d1a945503768c8a9da2581ec0684de5f31ff3"
+    },
+    "fresh_84": {
+      "branch": "origin/codex/fresh-events-oct-01-03-2026",
+      "commit": "432179c3cefe6c531217b4315f00df799639d64b",
+      "path": "data/neon-workbench/external/fresh-events-next/2026-10-03/prior-fresh-84-context.jsonl",
+      "sha256": "29102aea07191ca1ce3f68f2ed276b41edb8a8ec52a3ebf6a7854a3484ee8102"
+    },
+    "wave3_assignment": {
+      "branch": "origin/codex/dual-account-corrections-2026-10-03",
+      "commit": "95eb7977f6d66eb110b38dfba25023743453fd2a",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/manifest.json",
+      "sha256": "1a22b4b13eb317c1907ecf035c6f9325b47e2ed38e3b1413e0cb90c78d0b5342"
+    }
+  },
+  "worker_branch_commits": {
+    "origin/ls/1-trump-description-rescue-01-of-12-53-dis-nGTY": {
+      "commit": "6f56a573e3179044b3057c21908ddb30e6ecde43",
+      "worker_ids": [
+        1
+      ]
+    },
+    "origin/ls/2-trump-description-rescue-02-of-12-53-dis-d-rf": {
+      "commit": "bfad83b649669b2c7905a18600d1e0c13fdb2a89",
+      "worker_ids": [
+        2
+      ]
+    },
+    "origin/ls/3-trump-description-rescue-03-of-12-53-dis-CLUW": {
+      "commit": "4a7438b200dc1bc8994d880d4da2ed5e2fcfe98b",
+      "worker_ids": [
+        3
+      ]
+    },
+    "origin/ls/4-trump-description-rescue-04-of-12-53-dis-S_ao": {
+      "commit": "cf239c89339a8aab8140f1dea7eafd8d544419fa",
+      "worker_ids": [
+        4
+      ]
+    },
+    "origin/ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ": {
+      "commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+      "worker_ids": [
+        5
+      ]
+    },
+    "origin/ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x": {
+      "commit": "5abe0e120125343ef71e1a564097528f01a04050",
+      "worker_ids": [
+        6
+      ]
+    },
+    "origin/ls/7-trump-description-rescue-07-of-12-53-dis-zltS": {
+      "commit": "96849c269ba6655685e7072759209d3cce0d935b",
+      "worker_ids": [
+        7
+      ]
+    },
+    "origin/ls/8-trump-description-rescue-08-of-12-53-dis-W2qL": {
+      "commit": "d030b300bf1d09f45ed6fa4b159d625e93643a0c",
+      "worker_ids": [
+        8
+      ]
+    },
+    "origin/ls/9-trump-description-rescue-09-of-12-52-dis-a_J8": {
+      "commit": "4070900f9a3333351cf8bc2b1f0afcff90c881ca",
+      "worker_ids": [
+        9
+      ]
+    },
+    "origin/ls/10-trump-description-rescue-10-of-12-52-dis-7sqL": {
+      "commit": "50ee3e2fce05fb45dcaacc25eac4a1bd976f3ac5",
+      "worker_ids": [
+        10
+      ]
+    },
+    "origin/ls/11-trump-description-rescue-11-of-12-52-dis-QZkS": {
+      "commit": "6c94ecf23fafe2bdb34a64a23fb9147e20d644eb",
+      "worker_ids": [
+        11
+      ]
+    },
+    "origin/ls/12-trump-description-rescue-12-of-12-52-dis--oyt": {
+      "commit": "61150d33ec2c8efb8e3fffd262921f86e7a9176a",
+      "worker_ids": [
+        12
+      ]
+    },
+    "origin/ls/1-trump-final-corrections-account2-worker1-zahM": {
+      "commit": "27d5faddef1706d7d92d0873a7b6c1c4656d0eed",
+      "worker_ids": [
+        13
+      ]
+    },
+    "origin/ls/3-trump-final-corrections-account2-worker1--T8S": {
+      "commit": "38ec98608d61fc6e9eab0816f9f83d2d45f8e977",
+      "worker_ids": [
+        14
+      ]
+    },
+    "origin/ls/2-trump-final-corrections-account2-worker1-snHz": {
+      "commit": "8779ac63e2eca30b0d7b95fc786e44afb9fc2b1e",
+      "worker_ids": [
+        15
+      ]
+    },
+    "origin/ls/4-trump-final-corrections-account2-worker1-n96Z": {
+      "commit": "888cb5cf3f756e71a874d1f96db6c98a6fba0843",
+      "worker_ids": [
+        16
+      ]
+    },
+    "origin/ls/7-trump-final-corrections-account2-worker1-slYA": {
+      "commit": "0a838afad9c844c843e89034c22e6af9f2860ba5",
+      "worker_ids": [
+        17
+      ]
+    },
+    "origin/ls/5-trump-final-corrections-account2-worker1-oRtt": {
+      "commit": "4689bdd5cf5108cae7ca5dc72e6ed8003fdc3cf9",
+      "worker_ids": [
+        18
+      ]
+    },
+    "origin/ls/6-trump-final-corrections-account2-worker1-zeIF": {
+      "commit": "67b0105799a90826d1db5b59045d7d2c13d2db35",
+      "worker_ids": [
+        19
+      ]
+    },
+    "origin/ls/8-trump-final-corrections-account2-worker2-A12f": {
+      "commit": "856a2a0b715e5f5fe590eb41d485ac24ee78bc79",
+      "worker_ids": [
+        20
+      ]
+    },
+    "origin/ls/9-trump-final-corrections-account2-worker2-xNvR": {
+      "commit": "df3f8854c9ac311a9b234a60171d6810780d43d6",
+      "worker_ids": [
+        21
+      ]
+    },
+    "origin/ls/10-trump-final-corrections-account2-worker2-qX6f": {
+      "commit": "4896359b8a0542c38eff4973743b667fa7830c44",
+      "worker_ids": [
+        22
+      ]
+    },
+    "origin/ls/12-trump-final-corrections-account2-worker2-KcuW": {
+      "commit": "598285901cf9f372f723fc12c4b331cdca0f2641",
+      "worker_ids": [
+        23
+      ]
+    },
+    "origin/ls/11-trump-final-corrections-account2-worker2-gfyp": {
+      "commit": "959c3372ba670113ac5e8e787e256f3299a53b9f",
+      "worker_ids": [
+        24
+      ]
+    }
+  },
+  "partition_summary": {
+    "staged_descriptions": 6944,
+    "canonical_ids": 6860,
+    "fresh_keys": 84,
+    "frozen_ids": 7143,
+    "held_ids": 283,
+    "staged_needs_context": 498,
+    "assigned_wave3_keys": 311,
+    "assigned_effective_needs_context": 39,
+    "assigned_effective_needs_context_also_staged_needs_context": 39
+  },
+  "identity_equations": {
+    "staged_6944": "canonical_6860 + fresh_84; exact disjoint union",
+    "frozen_7143": "canonical_6860 + held_283; exact disjoint union",
+    "staged_frozen_overlap": 6860,
+    "staged_only_fresh": 84,
+    "frozen_only_held": 283
+  },
+  "204_needs_context_claim": {
+    "authoritative_key_list_found": false,
+    "exact_overlap": null,
+    "blocker": "No identified authoritative 204-row key list/source. The current merged staging file has 498 needs_context IDs, and the current 311 assigned-worker effective results have 39 needs_context IDs."
+  },
+  "effective_results_rule": "One latest result per assigned ID, selected from its assigned worker/account branch by highest revision then output batch order.",
+  "files": [
+    "release-partition.json",
+    "worker-results-effective.jsonl",
+    "independent-qa.json",
+    "checkpoint.json",
+    "release-audit.md"
+  ],
+  "no_canonical_or_neon_writes": true
+}
