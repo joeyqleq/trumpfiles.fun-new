@@ -1,0 +1,219 @@
+{
+  "worker": 7,
+  "task_branch": "ls/8-trump-files-impact368-review-07-of-12-7OJh",
+  "source_job": "normalized-release-qa-2026-10-04/account3/worker-07",
+  "source_lineage": {
+    "original_packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "original_input_sha256": "cf37e4cb202dba8ab9532a623e75f9259ea590de4b1fd93487d5ffd954d5bab1",
+    "supplement_packet_commit": "520015274c29cbcc24a4e54d747e896198756415",
+    "supplement_input_sha256": "9b89924876d0a0ed0391533cb4da573d16fb1a6175a50a1354fe245eb73b62d8",
+    "original_batch": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-07-batch-86d71a0.jsonl",
+    "supplement_batch": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-07-batch-5200152.jsonl",
+    "supersession": "Every supplement row names the original worker-07 batch as the superseded review; six changed from deferred to scored and those conflicts are recorded in row reasons."
+  },
+  "output": {
+    "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account3/worker-07-normalized.jsonl",
+    "sha256": "449c426a611c78f54f6fdf4ec2efbfee5eade73648ca2c3f7aba25035db898c4",
+    "saved_count": 31,
+    "missing_count": 0,
+    "requested_key_order_match": true,
+    "duplicate_keys": 0,
+    "schema_exact": true
+  },
+  "counts": {
+    "pass": 4,
+    "hold": 2,
+    "defer": 25,
+    "release_ready": 4,
+    "blocking": 27,
+    "explicitly_unapproved_proposals": 13,
+    "needs_context_staged_descriptions": 4
+  },
+  "blocking_ids": [
+    "entry-1546",
+    "entry-1767",
+    "entry-1765",
+    "entry-235",
+    "entry-127",
+    "entry-182",
+    "entry-195",
+    "entry-2479",
+    "entry-3371",
+    "entry-252",
+    "entry-3102",
+    "entry-1523",
+    "entry-2332",
+    "entry-7069",
+    "entry-3520",
+    "entry-6500",
+    "entry-193",
+    "entry-1022",
+    "entry-1457",
+    "entry-2375",
+    "entry-6043",
+    "entry-6552",
+    "entry-1412",
+    "entry-1747",
+    "entry-273",
+    "entry-1407",
+    "entry-240"
+  ],
+  "unapproved_proposal_ids": [
+    "entry-1546",
+    "entry-235",
+    "entry-127",
+    "entry-195",
+    "entry-2479",
+    "entry-3371",
+    "entry-252",
+    "entry-1523",
+    "entry-2332",
+    "entry-3520",
+    "entry-1457",
+    "entry-2375",
+    "entry-6552"
+  ],
+  "needs_context_ids": [
+    "entry-2479",
+    "entry-3371",
+    "entry-2332",
+    "entry-6552"
+  ],
+  "word_length_validation": {
+    "method": "Whitespace-separated token count; counts copied into each proposal object and repeated here for validation.",
+    "proposal_copy_ids": [
+      "entry-1546",
+      "entry-235",
+      "entry-127",
+      "entry-195",
+      "entry-2479",
+      "entry-3371",
+      "entry-252",
+      "entry-1523",
+      "entry-2332",
+      "entry-3520",
+      "entry-1457",
+      "entry-2375",
+      "entry-6552"
+    ],
+    "counts_by_id": {
+      "entry-1546": {
+        "title": 10,
+        "description_short": 12,
+        "description_medium": 58,
+        "description_long": 154
+      },
+      "entry-235": {
+        "title": 11,
+        "description_short": 19,
+        "description_medium": 71,
+        "description_long": 154
+      },
+      "entry-127": {
+        "title": 10,
+        "description_short": 11,
+        "description_medium": 81,
+        "description_long": 180
+      },
+      "entry-195": {
+        "title": 11,
+        "description_short": 21,
+        "description_medium": 67,
+        "description_long": 152
+      },
+      "entry-2479": {
+        "title": 13,
+        "description_short": 26,
+        "description_medium": 66,
+        "description_long": 173
+      },
+      "entry-3371": {
+        "title": 14,
+        "description_short": 14,
+        "description_medium": 65,
+        "description_long": null
+      },
+      "entry-252": {
+        "title": 10,
+        "description_short": 14,
+        "description_medium": 61,
+        "description_long": 164
+      },
+      "entry-1523": {
+        "title": 13,
+        "description_short": 10,
+        "description_medium": 60,
+        "description_long": 156
+      },
+      "entry-2332": {
+        "title": 7,
+        "description_short": 7,
+        "description_medium": 66,
+        "description_long": 153
+      },
+      "entry-3520": {
+        "title": 11,
+        "description_short": 18,
+        "description_medium": 66,
+        "description_long": 160
+      },
+      "entry-1457": {
+        "title": 12,
+        "description_short": 9,
+        "description_medium": 85,
+        "description_long": 180
+      },
+      "entry-2375": {
+        "title": 9,
+        "description_short": 22,
+        "description_medium": 75,
+        "description_long": 155
+      },
+      "entry-6552": {
+        "title": 12,
+        "description_short": 27,
+        "description_medium": 77,
+        "description_long": null
+      }
+    },
+    "missing_description_long_ids": [
+      "entry-3371",
+      "entry-6552"
+    ],
+    "length_limits": "No numeric word-length bounds were supplied for this reconciliation; available proposal copy was counted and missing description_long fields are identified as blockers rather than inferred.",
+    "result": "PASS for count integrity; missing long-description fields remain blocking and no text was invented."
+  },
+  "url_validation": {
+    "method": "URLs copied verbatim from later worker-07 supplement review source_urls; checked locally for http(s) scheme, host, whitespace and per-row duplicates; no network request performed.",
+    "url_count": 59,
+    "malformed_count": 0,
+    "duplicate_url_rows": [],
+    "result": "PASS"
+  },
+  "decision_rule": {
+    "disposition": "defer for a deferred impact review or needs_context staged description; hold for a scored review with explicit PROPOSED_NOT_APPROVED copy; pass only when impact is scored, staged description is complete, and no explicit unapproved proposal state exists.",
+    "release_ready": "true only for pass; an impact deferral is never normalized to pass and unapproved copy is never treated as accepted."
+  },
+  "scope": {
+    "canonical_or_database_edits": false,
+    "neon_writes": false,
+    "other_worker_files_edited": false,
+    "pull_request_opened": false
+  },
+  "status": "PASS",
+  "supersession_validation": {
+    "prior_terminal_rows": 31,
+    "later_terminal_rows": 31,
+    "changed_decision_ids": [
+      "entry-1496",
+      "entry-127",
+      "entry-5388",
+      "entry-1457",
+      "entry-6992",
+      "entry-6985"
+    ],
+    "changed_decision_count": 6,
+    "each_conflict_explicitly_recorded_in_reasons": true,
+    "result": "PASS"
+  }
+}
