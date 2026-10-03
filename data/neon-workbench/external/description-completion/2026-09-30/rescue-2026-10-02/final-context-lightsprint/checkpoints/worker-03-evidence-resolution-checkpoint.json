@@ -41,13 +41,15 @@
   "batches": [
     "outputs/worker-03-evidence-resolution-batch-001.jsonl",
     "outputs/worker-03-evidence-resolution-batch-002.jsonl",
-    "outputs/worker-03-evidence-resolution-batch-003.jsonl"
+    "outputs/worker-03-evidence-resolution-batch-003.jsonl",
+    "outputs/worker-03-evidence-resolution-batch-004.jsonl"
   ],
   "complete_ids": [
     "entry-207",
     "entry-263",
     "entry-2903",
-    "entry-3369"
+    "entry-3369",
+    "entry-5203"
   ],
   "needs_context_ids": [
     "entry-1668",
@@ -66,11 +68,17 @@
     "entry-3871",
     "entry-3985",
     "entry-4113",
-    "entry-4308"
+    "entry-4308",
+    "entry-4622",
+    "entry-5441",
+    "entry-5565",
+    "entry-5762",
+    "entry-6141",
+    "entry-6237"
   ],
-  "complete": 4,
-  "needs_context": 17,
-  "remaining": 13,
+  "complete": 5,
+  "needs_context": 23,
+  "remaining": 6,
   "skipped_complete_ids": [
     "entry-6992"
   ]
