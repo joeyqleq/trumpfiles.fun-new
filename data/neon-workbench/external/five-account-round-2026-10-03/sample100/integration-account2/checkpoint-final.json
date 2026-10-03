@@ -1,0 +1,108 @@
+{
+  "artifact_blockers": [
+    {
+      "blocker": "No final QA artifact found on worker branch; available row-level batch reviewed, but exact-set QA attestation is absent.",
+      "branch": "ls/7-trump-files-sample100-review-07-of-12-WFXm",
+      "branch_sha": "2d77d9190ecc70b4fe924b4194b1048042c38e7d",
+      "scope": "worker",
+      "worker": 7
+    },
+    {
+      "blocker": "No final QA artifact found on worker branch; available row-level batch reviewed, but exact-set QA attestation is absent.",
+      "branch": "ls/10-trump-files-sample100-review-10-of-12-5b45",
+      "branch_sha": "1496677d19f2a616a22e9b56f53c0454e9530944",
+      "scope": "worker",
+      "worker": 10
+    },
+    {
+      "blocker": "No final QA artifact found on worker branch; available row-level batch reviewed, but exact-set QA attestation is absent.",
+      "branch": "ls/11-trump-files-sample100-review-11-of-12-mShY",
+      "branch_sha": "3133e52acf65b28dc77ec046266f14a9e2e7db57",
+      "scope": "worker",
+      "worker": 11
+    },
+    {
+      "blocker": "Worker final QA documents procedural_abuse=0.16 and self_dealing=0.09, which sum to 0.99 with the other stated weights. Independent recalculation below uses the six-dimension 0.30/0.20/0.15/0.15/0.10/0.10 formula; all eight supplied scores still round to the same values, but the worker formula attestation is incorrect.",
+      "branch": "ls/12-trump-files-sample100-review-12-of-12-fLSj",
+      "branch_sha": "be0ef4dccf9bcc4f37212eef15bf249c5766c39b",
+      "scope": "worker_formula_definition",
+      "worker": 12
+    }
+  ],
+  "blockers": "exact-blockers.jsonl",
+  "branch_resolution_note": "Manifest provides worker keys and input hashes but omits output branch refs; refs were resolved by worker-number naming convention, and each packet SHA matched its manifest owner.",
+  "checkpoint": "sample100-account2-integration-final",
+  "counts_by_worker": {
+    "1": {
+      "HOLD": 3,
+      "PASS": 6
+    },
+    "10": {
+      "HOLD": 3,
+      "PASS": 5
+    },
+    "11": {
+      "HOLD": 8
+    },
+    "12": {
+      "HOLD": 2,
+      "PASS": 6
+    },
+    "2": {
+      "HOLD": 4,
+      "PASS": 5
+    },
+    "3": {
+      "PASS": 9
+    },
+    "4": {
+      "HOLD": 1,
+      "PASS": 8
+    },
+    "5": {
+      "HOLD": 3,
+      "PASS": 5
+    },
+    "6": {
+      "PASS": 8
+    },
+    "7": {
+      "HOLD": 5,
+      "PASS": 3
+    },
+    "8": {
+      "HOLD": 1,
+      "PASS": 7
+    },
+    "9": {
+      "HOLD": 6,
+      "PASS": 2
+    }
+  },
+  "expected_count": 100,
+  "expected_keys_sha256": "feefc221eaf137409b267fbe69b28b7e05ab57a376eed0cf586e7b2702121a01",
+  "input_unique_count": 100,
+  "ledger": "integration-ledger-proposed-only.jsonl",
+  "normalized_status_counts": {
+    "HOLD": 36,
+    "PASS": 64
+  },
+  "output_unique_count": 100,
+  "scope": "offline proposal-only; no canonical or Neon writes",
+  "source_packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "summary": "summary.md",
+  "worker_final_qa_present": {
+    "1": true,
+    "10": false,
+    "11": false,
+    "12": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": false,
+    "8": true,
+    "9": true
+  }
+}
