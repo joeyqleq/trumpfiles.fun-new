@@ -1,0 +1,22 @@
+{
+  "worker": 14,
+  "batch": 4,
+  "rows_in_batch": 9,
+  "cumulative_rows": 33,
+  "assignment_keys": [
+    "expanded-20260924-ice-federal-plaza-injunction",
+    "expanded-20260928-china-arms-denial",
+    "fresh-20260824-mcgurn-api-update",
+    "fresh-20260924-trump-tv-trademark",
+    "pr47-review-entry-1286",
+    "pr47-review-entry-1428",
+    "pr47-review-entry-1486",
+    "pr47-review-entry-1578",
+    "pr47-review-entry-1626"
+  ],
+  "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "input_sha256": "a9a06c94ba66822e06cd9f878e3720764450e3d6ed7802ab4537ab6c0dfd2530",
+  "output_path": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker-14-batch-UNIQUE.jsonl",
+  "output_sha256": "282b4b856672277bbb623c93793332954966f1f1a3b45f4a5c9dab9c90d06e95",
+  "qa": "cumulative key and draft-length audit passed; no out-of-scope assignments"
+}
