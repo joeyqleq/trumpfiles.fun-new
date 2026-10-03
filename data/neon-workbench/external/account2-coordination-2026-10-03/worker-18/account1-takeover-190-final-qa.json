@@ -1,0 +1,2589 @@
+{
+  "job": "Account2 worker18 coordinator audit of account1 Wave3 citation QA",
+  "source_packet_branch": "codex/wave3-citation-qa-2026-10-03",
+  "source_packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "source_manifest_assigned": 190,
+  "source_manifest_excluded_deterministic_only": 22,
+  "assignment_scope": "Exactly the 190 records assigned across packet workers14-24; account1 worker branches1,2,3,4,6,9,11,12 are authoritative sources. Account2 prior quota-limited attempts excluded from evidence.",
+  "account1_worker_branches": {
+    "1": {
+      "branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
+      "head": "9098660508ee97e9ab5ab4daac23902fe5dde4a8",
+      "source_input_files": [
+        "worker-14-input.jsonl",
+        "worker-15-input.jsonl"
+      ],
+      "row_count": 36
+    },
+    "2": {
+      "branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+      "head": "5db6bd28b9e5b4be1e9ebd18c3b758734200c2fb",
+      "source_input_files": [
+        "worker-16-input.jsonl",
+        "worker-17-input.jsonl"
+      ],
+      "row_count": 35
+    },
+    "3": {
+      "branch": "ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+      "head": "688854d970d4f0276f44c20b564999709b854bfb",
+      "source_input_files": [
+        "worker-18-input.jsonl",
+        "worker-19-input.jsonl"
+      ],
+      "row_count": 34
+    },
+    "4": {
+      "branch": "ls/4-trump-description-rescue-04-of-12-53-dis-S_ao",
+      "head": "53917b7704aaaf228c295bfa8bb1596357e29e91",
+      "source_input_files": [
+        "worker-20-input.jsonl"
+      ],
+      "row_count": 17
+    },
+    "6": {
+      "branch": "ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x",
+      "head": "79bc6ca1c160d42cbe26d90ed7f737bceb5bd793",
+      "source_input_files": [
+        "worker-21-input.jsonl"
+      ],
+      "row_count": 17
+    },
+    "9": {
+      "branch": "ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+      "head": "3c70c7c57e929fb74a18a5a14ce640340b91386d",
+      "source_input_files": [
+        "worker-22-input.jsonl"
+      ],
+      "row_count": 17
+    },
+    "11": {
+      "branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+      "head": "08eda3cef3f0050e903b27de3ea7ef9576e69b0b",
+      "source_input_files": [
+        "worker-23-input.jsonl"
+      ],
+      "row_count": 17
+    },
+    "12": {
+      "branch": "ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+      "head": "96593dee15f4113d861cb4b02b35657bedd9a69f",
+      "source_input_files": [
+        "worker-24-input.jsonl"
+      ],
+      "row_count": 17
+    }
+  },
+  "expected_input_ids": [
+    "entry-35",
+    "entry-37",
+    "entry-176",
+    "entry-178",
+    "entry-188",
+    "entry-203",
+    "entry-210",
+    "entry-211",
+    "entry-219",
+    "entry-222",
+    "entry-227",
+    "entry-230",
+    "entry-231",
+    "entry-236",
+    "entry-255",
+    "entry-264",
+    "entry-266",
+    "entry-267",
+    "entry-275",
+    "entry-293",
+    "entry-352",
+    "entry-365",
+    "entry-378",
+    "entry-380",
+    "entry-390",
+    "entry-425",
+    "entry-426",
+    "entry-444",
+    "entry-581",
+    "entry-594",
+    "entry-643",
+    "entry-651",
+    "entry-654",
+    "entry-655",
+    "entry-674",
+    "entry-720",
+    "entry-735",
+    "entry-754",
+    "entry-766",
+    "entry-769",
+    "entry-772",
+    "entry-774",
+    "entry-776",
+    "entry-788",
+    "entry-801",
+    "entry-804",
+    "entry-811",
+    "entry-814",
+    "entry-822",
+    "entry-824",
+    "entry-830",
+    "entry-833",
+    "entry-853",
+    "entry-860",
+    "entry-873",
+    "entry-878",
+    "entry-884",
+    "entry-912",
+    "entry-920",
+    "entry-934",
+    "entry-945",
+    "entry-954",
+    "entry-965",
+    "entry-969",
+    "entry-978",
+    "entry-985",
+    "entry-990",
+    "entry-996",
+    "entry-1666",
+    "entry-1670",
+    "entry-1687",
+    "entry-1726",
+    "entry-1727",
+    "entry-1728",
+    "entry-1729",
+    "entry-1768",
+    "entry-1770",
+    "entry-1771",
+    "entry-1779",
+    "entry-1782",
+    "entry-1784",
+    "entry-1857",
+    "entry-2061",
+    "entry-2106",
+    "entry-2296",
+    "entry-2330",
+    "entry-2340",
+    "entry-2342",
+    "entry-2343",
+    "entry-2373",
+    "entry-2380",
+    "entry-2401",
+    "entry-2413",
+    "entry-2415",
+    "entry-2441",
+    "entry-2458",
+    "entry-2466",
+    "entry-2496",
+    "entry-2501",
+    "entry-2504",
+    "entry-2515",
+    "entry-2518",
+    "entry-2528",
+    "entry-2557",
+    "entry-2560",
+    "entry-2562",
+    "entry-2571",
+    "entry-2615",
+    "entry-2636",
+    "entry-2710",
+    "entry-2721",
+    "entry-2731",
+    "entry-2854",
+    "entry-2864",
+    "entry-2929",
+    "entry-2930",
+    "entry-3009",
+    "entry-3117",
+    "entry-3139",
+    "entry-3273",
+    "entry-3380",
+    "entry-3385",
+    "entry-3444",
+    "entry-3488",
+    "entry-3574",
+    "entry-3678",
+    "entry-3709",
+    "entry-3722",
+    "entry-3735",
+    "entry-3804",
+    "entry-3832",
+    "entry-3838",
+    "entry-3839",
+    "entry-3873",
+    "entry-3899",
+    "entry-3985",
+    "entry-4004",
+    "entry-4017",
+    "entry-4040",
+    "entry-4054",
+    "entry-4097",
+    "entry-4144",
+    "entry-4232",
+    "entry-4257",
+    "entry-4296",
+    "entry-4304",
+    "entry-4308",
+    "entry-4353",
+    "entry-4603",
+    "entry-4619",
+    "entry-4622",
+    "entry-4692",
+    "entry-5094",
+    "entry-5282",
+    "entry-5309",
+    "entry-5374",
+    "entry-5406",
+    "entry-5413",
+    "entry-5462",
+    "entry-5471",
+    "entry-5505",
+    "entry-5531",
+    "entry-5559",
+    "entry-5565",
+    "entry-5597",
+    "entry-5605",
+    "entry-5661",
+    "entry-5698",
+    "entry-5707",
+    "entry-5936",
+    "entry-5996",
+    "entry-6127",
+    "entry-6138",
+    "entry-6141",
+    "entry-6146",
+    "entry-6155",
+    "entry-6199",
+    "entry-6200",
+    "entry-6202",
+    "entry-6206",
+    "entry-6230",
+    "entry-6235",
+    "entry-6241",
+    "entry-6245",
+    "entry-6293",
+    "entry-6319",
+    "entry-6330",
+    "entry-6340",
+    "entry-6356",
+    "entry-6395"
+  ],
+  "observed_output_ids": [
+    "entry-35",
+    "entry-37",
+    "entry-176",
+    "entry-178",
+    "entry-188",
+    "entry-203",
+    "entry-210",
+    "entry-211",
+    "entry-219",
+    "entry-222",
+    "entry-227",
+    "entry-230",
+    "entry-231",
+    "entry-236",
+    "entry-255",
+    "entry-264",
+    "entry-266",
+    "entry-267",
+    "entry-275",
+    "entry-293",
+    "entry-352",
+    "entry-365",
+    "entry-378",
+    "entry-380",
+    "entry-390",
+    "entry-425",
+    "entry-426",
+    "entry-444",
+    "entry-581",
+    "entry-594",
+    "entry-643",
+    "entry-651",
+    "entry-654",
+    "entry-655",
+    "entry-674",
+    "entry-720",
+    "entry-735",
+    "entry-754",
+    "entry-766",
+    "entry-769",
+    "entry-772",
+    "entry-774",
+    "entry-776",
+    "entry-788",
+    "entry-801",
+    "entry-804",
+    "entry-811",
+    "entry-814",
+    "entry-822",
+    "entry-824",
+    "entry-830",
+    "entry-833",
+    "entry-853",
+    "entry-860",
+    "entry-873",
+    "entry-878",
+    "entry-884",
+    "entry-912",
+    "entry-920",
+    "entry-934",
+    "entry-945",
+    "entry-954",
+    "entry-965",
+    "entry-969",
+    "entry-978",
+    "entry-985",
+    "entry-990",
+    "entry-996",
+    "entry-1666",
+    "entry-1670",
+    "entry-1687",
+    "entry-1726",
+    "entry-1727",
+    "entry-1728",
+    "entry-1729",
+    "entry-1768",
+    "entry-1770",
+    "entry-1771",
+    "entry-1779",
+    "entry-1782",
+    "entry-1784",
+    "entry-1857",
+    "entry-2061",
+    "entry-2106",
+    "entry-2296",
+    "entry-2330",
+    "entry-2340",
+    "entry-2342",
+    "entry-2343",
+    "entry-2373",
+    "entry-2380",
+    "entry-2401",
+    "entry-2413",
+    "entry-2415",
+    "entry-2441",
+    "entry-2458",
+    "entry-2466",
+    "entry-2496",
+    "entry-2501",
+    "entry-2504",
+    "entry-2515",
+    "entry-2518",
+    "entry-2528",
+    "entry-2557",
+    "entry-2560",
+    "entry-2562",
+    "entry-2571",
+    "entry-2615",
+    "entry-2636",
+    "entry-2710",
+    "entry-2721",
+    "entry-2731",
+    "entry-2854",
+    "entry-2864",
+    "entry-2929",
+    "entry-2930",
+    "entry-3009",
+    "entry-3117",
+    "entry-3139",
+    "entry-3273",
+    "entry-3380",
+    "entry-3385",
+    "entry-3444",
+    "entry-3488",
+    "entry-3574",
+    "entry-3678",
+    "entry-3709",
+    "entry-3722",
+    "entry-3735",
+    "entry-3804",
+    "entry-3832",
+    "entry-3838",
+    "entry-3839",
+    "entry-3873",
+    "entry-3899",
+    "entry-3985",
+    "entry-4004",
+    "entry-4017",
+    "entry-4040",
+    "entry-4054",
+    "entry-4097",
+    "entry-4144",
+    "entry-4232",
+    "entry-4257",
+    "entry-4296",
+    "entry-4304",
+    "entry-4308",
+    "entry-4353",
+    "entry-4603",
+    "entry-4619",
+    "entry-4622",
+    "entry-4692",
+    "entry-5094",
+    "entry-5282",
+    "entry-5309",
+    "entry-5374",
+    "entry-5406",
+    "entry-5413",
+    "entry-5462",
+    "entry-5471",
+    "entry-5505",
+    "entry-5531",
+    "entry-5559",
+    "entry-5565",
+    "entry-5597",
+    "entry-5605",
+    "entry-5661",
+    "entry-5698",
+    "entry-5707",
+    "entry-5936",
+    "entry-5996",
+    "entry-6127",
+    "entry-6138",
+    "entry-6141",
+    "entry-6146",
+    "entry-6155",
+    "entry-6199",
+    "entry-6200",
+    "entry-6202",
+    "entry-6206",
+    "entry-6230",
+    "entry-6235",
+    "entry-6241",
+    "entry-6245",
+    "entry-6293",
+    "entry-6319",
+    "entry-6330",
+    "entry-6340",
+    "entry-6356",
+    "entry-6395"
+  ],
+  "exact_id_set_match": true,
+  "expected_count": 190,
+  "observed_unique_count": 190,
+  "status_counts": {
+    "citation_repaired_proposal": 32,
+    "corrected_claim_proposal": 128,
+    "scope_exclusion_proposal": 24,
+    "unresolved_hold": 6
+  },
+  "unresolved_holds": [
+    {
+      "record_id": "entry-231",
+      "gap": "Unresolved: the sole article URL returns 404 and no accessible copy or underlying Project 2025 passage is supplied. Keep on hold; do not treat packet paraphrase as verified article text.",
+      "worker": 1
+    },
+    {
+      "record_id": "entry-853",
+      "gap": "No warrant, case number, offense, sentence, or exact matching DOJ entry is supplied. A full-name or alias mismatch remains possible; the precise gap is identity-to-warrant linkage.",
+      "worker": 9
+    },
+    {
+      "record_id": "entry-2496",
+      "gap": "There is no verified transaction, date, counterparty, financial trail, or finding connecting either property to money laundering.",
+      "worker": 11
+    },
+    {
+      "record_id": "entry-2560",
+      "gap": "Resolve identity/date before replacement.",
+      "worker": 3
+    },
+    {
+      "record_id": "entry-4603",
+      "gap": "Does not support frozen March 4 annual loss/72% claim; source/date mismatch.",
+      "worker": 3
+    },
+    {
+      "record_id": "entry-6200",
+      "gap": "Unresolved hold: absence from this packet does not prove no such statement exists. Required evidence is a dated post, transcript, recording, or event-specific report.",
+      "worker": 1
+    }
+  ],
+  "structural_qa": {
+    "input_hashes_match_manifest": true,
+    "per_worker_set_matches_assigned_packet_files": true,
+    "all_190_have_one_account1_record": true,
+    "no_duplicates": true,
+    "statuses_allowed": true,
+    "all_rows_have_source_to_fact_mapping_and_urls": false,
+    "mapped_urls_belong_to_proposed_source_urls": false,
+    "prior_input_hashes_match_packet": false,
+    "revised_copy_bounds_pass": true,
+    "issues": [
+      {
+        "record_id": "entry-176",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-176",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://techpolicy.press/trumps-social-media-surveillance-social-scoring-by-another-name"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-176",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-176",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-178",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-178",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.aclu.org/project-2025-explained"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-178",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-178",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-210",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-210",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.apha.org/topics-and-issues/public-health-under-threat/project-2025"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-210",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-210",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-211",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-211",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-219",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-219",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-222",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-222",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-227",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-227",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.nea.org/nea-today/all-news-articles/how-project-2025-would-devastate-public-education"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-227",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-227",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-231",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-231",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://uupinfo.org/communications/uupdate/241013.php"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-236",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-236",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.aapd.com/2024-election-series-project-2025/",
+          "https://dredf.org/blog-post/project-2025-and-the-disability-community/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-236",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-236",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-255",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-255",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-children-from-chemical-and-surgical-mutilation/",
+          "https://www.federalregister.gov/documents/2025/02/03/2025-02194/protecting-children-from-chemical-and-surgical-mutilation",
+          "https://www.hrw.org/report/2025/06/03/theyre-ruining-peoples-lives/bans-on-gender-affirming-care-for-transgender-youth"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-255",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-255",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-267",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-267",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.nea.org/nea-today/all-news-articles/how-project-2025-would-devastate-public-education"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-267",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-267",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-275",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-275",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-293",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-293",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-352",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-352",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-365",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-365",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/article/trump-hegseth-generals-meeting-military-pentagon-0ecdcbb8877e24329cfa0fc1e851ebd2",
+          "https://www.reuters.com/world/us/trump-preside-over-unusual-military-gathering-virginia-2025-09-30/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-365",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-365",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-390",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-390",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.npr.org/2025/02/03/nx-s1-5285687/trump-federal-spending-freeze",
+          "https://www.reuters.com/legal/us-judge-extends-pause-trumps-plan-freeze-federal-grants-loans-2025-02-03/",
+          "https://iptp-production.s3.amazonaws.com/media/documents/2025.02.03_Order_Granting_TRO_-_National_Council_of_Nonprofits_v._OMB.pdf"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-390",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-390",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-425",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-425",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://thehill.com/policy/defense/6117672-hegseth-plans-pentagon-leadership-cuts/",
+          "https://abcnews.com/US/wireStory/hegseth-confirms-us-military-cut-20-generals-admirals-136899759"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-425",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-425",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-581",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-581",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://transcripts.cnn.com/show/cg/date/2019-10-03/segment/03"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-581",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-581",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-594",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-594",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-643",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-643",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-651",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-651",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-654",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-654",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.doi.gov/pressreleases/interior-department-finalizes-new-waste-prevention-rule",
+          "https://www.govinfo.gov/content/pkg/FR-2018-09-28/pdf/2018-20689.pdf"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-654",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-654",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-720",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-720",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://congress.gov/115/plaws/publ97/PLAW-115publ97.pdf",
+          "https://www.jct.gov/getattachment/b7441bb5-d3b6-40bb-be8e-46992abedfa8/x-10-19-5173.pdf",
+          "https://trumpwhitehouse.archives.gov/briefings-statements/president-donald-j-trump-signs-h-r-1-tax-cuts-jobs-act/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-720",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-720",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-735",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-735",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-2/",
+          "https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021",
+          "https://www.justice.gov/pardon/page/file/1250056/dl?inline="
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-735",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-735",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-769",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-769",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.newsweek.com/2016/10/14/donald-trump-cuban-embargo-castro-violated-florida-504059.html",
+          "https://www.bbc.co.uk/news/election-us-2016-37509546"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-769",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-769",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-772",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-772",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-774",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-774",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-776",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-776",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-788",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-788",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021",
+          "https://spectrumnews1.com/ap-online/2021/01/20/trump-commutes-sentence-of-ex-detroit-mayor-kwame-kilpatrick"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-788",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-788",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-811",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-811",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.reuters.com/article/world/us-ending-aid-to-el-salvador-guatemala-honduras-over-migrants-idUSKCN1RC02I/",
+          "https://apnews.com/article/6db84f9803044a11af70994a623642fc",
+          "https://www.washingtonpost.com/world/the_americas/trump-plans-us-aid-cut-to-3-central-american-countries-as-fight-widens-over-us-bound-migrants/2019/03/30/d6814b42-52ff-11e9-bdb7-44f948cc0605_story.html"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-811",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-811",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-814",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-814",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://trumpwhitehouse.archives.gov/briefings-statements/presidential-message-senate-united-states-withdrawal-arms-trade-treaty/",
+          "https://treaties.un.org/doc/Publication/CN/2019/CN.314.2019-Eng.pdf"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-814",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-814",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-830",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-830",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.pbs.org/newshour/politics/donald-trump-terminates-acting-secretary-of-defense-mark-esper"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-830",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-830",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-833",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-833",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-853",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-853",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-860",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-860",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-873",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-873",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-122220/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-873",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-873",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-912",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-912",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021",
+          "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-122320/",
+          "https://openjurist.org/364/f3d/613/united-states-v-m-brugman"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-912",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-912",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-920",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-920",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021",
+          "https://www.justice.gov/media/1117776/dl?inline"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-920",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-920",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-954",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-954",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-954",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-954",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-965",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-965",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-969",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-969",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-978",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-978",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-985",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-985",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-985",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-985",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1666",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-1666",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/projects/trump-campaign-promise-tracker/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-1666",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1666",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1670",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-1670",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://source.opennews.org/articles/tracking-trump-trackers/",
+          "https://apnews.com/article/8b2dad76ca5b4714866bfdb6360c5fd1"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-1670",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1670",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1727",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-1727",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.theatlantic.com/unthinkable/",
+          "https://www.wbur.org/onpoint/2019/01/14/trump-presidency-unthinkable-the-atlantic"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-1727",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1727",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1728",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1728",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1729",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1729",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1768",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1768",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1770",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-1770",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/article/trump-day-1-promises-9c842ada3c54e2219445f1598db2c8d6"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-1770",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1770",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1779",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-1779",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.theatlantic.com/unthinkable/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-1782",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-1782",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/article/9290fcaad1cb6fcb1cbc1befabc01994"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-1782",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1782",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-1784",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-1784",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/article/9290fcaad1cb6fcb1cbc1befabc01994"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-1784",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-1784",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2106",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2106",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/article/iran-war-powers-exit-strategy-congress-trump-781ef538fbb493cf0973c6a89698f36e"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2106",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2106",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2296",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2296",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2330",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2330",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2340",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2340",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2342",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2342",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://fordhamram.com/62224/news/a-bit-of-a-loner-former-classmates-remember-donald-trump-in-the-bronx/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2342",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2342",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2343",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2343",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://api.parliament.uk/uk-general-elections/elections/17488",
+          "https://membersafter1832.historyofparliamentonline.org/members/8627",
+          "http://api.parliament.uk/historic-hansard/people/mr-robert-maxwell"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2373",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2373",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.nytimes.com/1981/05/20/us/conservatives-gather-in-umbrella-council-for-a-national-policy.html",
+          "https://documented.org/investigations/documented-has-obtained-a-recent-council-for-national-policy-membership-list",
+          "https://trumpfile.org/cnp-list/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2380",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2380",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://id.loc.gov/authorities/names/no2021035647.html",
+          "https://www.usatoday.com/story/news/politics/2025/01/19/donald-trump-son-eric-trump-wife-kids-career/77674385007/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2380",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2380",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2401",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2401",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.washingtonpost.com/archive/lifestyle/1991/10/25/media-baron-sues-seymour-hersh/c16c29e2-04ba-4038-9fff-08113fa33b77/",
+          "https://www.nytimes.com/1986/11/10/world/israel-confirms-it-is-holding-missing-nuclear-technician.html"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2401",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2401",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2441",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2441",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.upi.com/Archives/1991/04/09/Trump-Castle-agrees-to-30000-penalty-for-loan-from-developers-dad/4509671169600/",
+          "https://www.govinfo.gov/content/pkg/CHRG-116hhrg35635/pdf/CHRG-116hhrg35635.pdf"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2441",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2441",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2458",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2458",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2466",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2466",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2496",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2496",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2501",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2501",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://assets.publishing.service.gov.uk/media/5a8055c340f0b62302692e48/The-Litvinenko-Inquiry-H-C-695-web.pdf"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2501",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2501",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2515",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2515",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://trumpfile.org/ukrainian-intelligence-is-recorded-admitting-mogilevichs-ties-to-putin"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2518",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2518",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.nybooks.com/articles/2000/11/16/the-russians-are-coming/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2518",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2518",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2528",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2528",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.fincen.gov/news/news-releases/fincen-announces-penalty-against-trump-taj-mahal-associates",
+          "https://fincen.gov/sites/default/files/news_release/20150306.pdf",
+          "https://www.fincen.gov/news/enforcement-actions/matter-trump-taj-mahal-casino-resort"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2528",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2528",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2562",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2562",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.nytimes.com/2008/07/01/business/01epstein.html"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2562",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2562",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2571",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2571",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2615",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2615",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2636",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2636",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2710",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2710",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://time.com/4455736/ivanka-trump-vacation-david-geffen-yacht/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2710",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2710",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2854",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2854",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.nbcnews.com/politics/donald-trump/paul-manafort-expressed-concern-about-going-new-york-prison-then-n1018731"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2854",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2854",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-2864",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-2864",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.fbi.gov/contact-us/field-offices/cincinnati/news/press-releases/investigative-report-on-the-august-4-2019-attack-in-dayton-ohio",
+          "https://www.cnn.com/2021/11/29/us/connor-betts-daytona-mass-shooter"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-2864",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-2864",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3009",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-3009",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.cnn.com/2020/09/21/health/cdc-reverts-airborne-transmission-guidance",
+          "https://www.seattletimes.com/nation-world/cdc-says-new-guidance-on-risk-of-coronavirus-aerosols-was-posted-by-mistake/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-3009",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3009",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3117",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3117",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3139",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3139",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3273",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3273",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3380",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-3380",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://ethics.house.gov/committee-reports/in-the-matter-of-allegations-relating-to-representative-matt-gaetz/",
+          "https://apnews.com/article/538cb5387bf95925245bf87fa6b1adcb"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-3380",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3380",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3488",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-3488",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.reuters.com/world/americas/rubio-meet-el-salvadors-bukele-amid-migration-push-2025-02-03/",
+          "https://apnews.com/article/migration-rubio-panama-colombia-venezuela-237f06b7d4bdd9ff1396baf9c45a2c0b"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-3488",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3488",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3574",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-3574",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.knightcolumbia.org/content/dhs-tiger-team-scrutinizing-student-protesters-was-told-to-investigate-5000-names-listed-by-canary-mission-ice-official-testifies",
+          "https://thehill.com/regulation/court-battles/5393795-student-protest-probe-ice-pro-israel-website/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-3574",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3574",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3722",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-3722",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.notus.org/trump-white-house/trump-doge-cuts-middle-eastern-oil-gas-crises"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-3722",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3722",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3735",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3735",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3804",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3804",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3832",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3832",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3838",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-3838",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.pbs.org/newshour/politics/fbi-searches-home-and-office-of-ex-trump-national-security-adviser-john-bolton-ap-source-says"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-3838",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3838",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3899",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-3899",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.govinfo.gov/content/pkg/FR-2025-09-24/html/2025-18601.htm",
+          "https://www.whitehouse.gov/releases/2025/09/h-1b-faq/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-3899",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3899",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-3985",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-3985",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.hhs.gov/press-room/hhs-freezes-child-care-family-assistance-grants-five-states-fraud-concerns.html"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-3985",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-3985",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4040",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-4040",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/article/adventure-car-africa-record-reliant-robin-0328f6a9dbcb407d539fe7aabf23a915"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-4040",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4040",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4054",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4054",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4097",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4097",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4144",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4144",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4232",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-4232",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.washingtonpost.com/politics/2026/07/06/elon-musks-us-doge-service-announces-its-formal-end/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-4232",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4232",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4257",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://yougov.com/en-us/articles/55211-majorities-americans-disapprove-donald-trump-job-handling-several-of-his-personal-qualities-july-17-20-2026-economist-yougov-poll",
+          "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_ESdiNMa.pdf"
+        ],
+        "urls": [
+          "https://yougov.com/en-us/articles/55211-majorities-americans-disapprove-donald-trump-job-handling-several-of-his-personal-qualities-july-17-20-2026-economist-yougov-poll"
+        ]
+      },
+      {
+        "record_id": "entry-4296",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.armscontrol.org/blog/2026-09-01/us-saudi-agreement-civil-nuclear-cooperation-answers-frequently-asked-questions",
+          "https://ola.iaea.org/Applications/FactSheets/Country/Detail?code=SA",
+          "https://apnews.com/article/trump-saudi-arabia-nuclear-program-uranium-15fdb262bb9c83d0d959ca96b7561c12"
+        ],
+        "urls": [
+          "https://www.armscontrol.org/blog/2026-09-01/us-saudi-agreement-civil-nuclear-cooperation-answers-frequently-asked-questions",
+          "https://ola.iaea.org/Applications/FactSheets/Country/Detail?code=SA"
+        ]
+      },
+      {
+        "record_id": "entry-4304",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-4304",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.cnn.com/2026/07/07/politics/netanyahu-opposes-sale-f35-jets",
+          "https://www.washingtonpost.com/politics/2026/07/07/trump-praises-turkish-leader-stops-short-approving-fighter-jet-sale/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-4304",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4304",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4308",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-4308",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/article/iran-us-war-trump-starmer-macron-germany-caff1073f932ddb88c3d75c7c356ebc7"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-4308",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4308",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4619",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-4619",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.cnn.com/2025/01/20/politics/january-6-2021-capitol-riot-pardons-trump",
+          "https://www.npr.org/2025/01/20/g-s1-36809/trump-pardons-january-6-riot"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-4619",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4619",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4622",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4622",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-4692",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-4692",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5094",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5094",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5282",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-5282",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.kff.org/medicaid/allocating-cbos-estimates-of-federal-medicaid-spending-reductions-across-the-states-enacted-reconciliation-package/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-5282",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5282",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5406",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-5406",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.washingtonpost.com/politics/2023/08/05/trump-protective-order/"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-5406",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5406",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5413",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-5413",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.sec.gov/Archives/edgar/data/1849635/000114036124016719/ef20025342_8k.htm",
+          "https://www.sec.gov/Archives/edgar/data/947033/000114036124017051/ef20025668_sc13d.htm"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-5413",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5413",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5505",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-5505",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.reuters.com/world/us/elon-musk-vows-war-over-h-1b-visa-program-amid-rift-with-some-trump-supporters-2024-12-28/",
+          "https://www.cnn.com/2024/12/28/politics/trump-musk-foreign-worker-visas-backlash"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-5505",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5505",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5531",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5531",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5559",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5559",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5565",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5565",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5597",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-5597",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://apnews.com/article/trump-inspectors-general-fired-congress-unlawful-4e8bc57e132c3f9a7f1c2a3754359993"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-5597",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5597",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5698",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-5698",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.archives.gov/press/press-releases/2022/nr22-001",
+          "https://www.archives.gov/foia/15-boxes"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-5698",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5698",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-5707",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-5707",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.reuters.com/world/us/trump-launches-2024-us-presidential-run-getting-jump-rivals-2022-11-15/",
+          "https://www.reutersconnect.com/item/former-us-president-donald-trump-announces-he-will-run-for-president-in-2024-at-his-mar-a-lago-estate-in-palm-beach/dGFnOnJldXRlcnMuY29tLDIwMjI6bmV3c21sX1JDMlFNWDkyR1JTVg"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-5707",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-5707",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6127",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-6127",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.doi.gov/pressreleases/secretary-bernhardt-signs-decision-implement-coastal-plain-oil-and-gas-leasing-program",
+          "https://www.blm.gov/press-release/trump-administration-conducts-first-anwr-coastal-plain-oil-and-gas-lease-sale",
+          "https://www.blm.gov/press-release/leases-issued-anwr-coastal-plain-oil-gas-program"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-6127",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6127",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6138",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6138",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6141",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6141",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6146",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6146",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6155",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-6155",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/",
+          "https://www.federalregister.gov/documents/full_text/html/2025/05/07/2025-08133.html",
+          "https://storage.courtlistener.com/recap/gov.uscourts.dcd.280953/gov.uscourts.dcd.280953.81.0_4.pdf"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-6155",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6155",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6200",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-6200",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.politico.com/news/2023/03/08/trumps-cdc-director-says-fauci-shut-down-debate-on-covids-origin-00086112"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-6202",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-6202",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.nbcnews.com/tech/internet/donald-trump-elon-musk-discussion-rcna166205",
+          "https://apnews.com/article/c04f01217a1efffeca4436804d5ce47d"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-6202",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6202",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6206",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-6206",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.govinfo.gov/content/pkg/FR-2017-03-09/html/2017-04837.htm"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-6206",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6206",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6241",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-6241",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.reuters.com/legal/litigation/trump-administration-says-it-is-suspending-enforcement-biden-era-farmworker-rule-2025-06-20/",
+          "https://www.dol.gov/index.php/agencies/whd/agriculture/h2a"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-6241",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6241",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6245",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6245",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6293",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6293",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6319",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6319",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6330",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-6330",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.gao.gov/assets/gao-19-178.pdf",
+          "https://apnews.com/article/24535cbe40c4459995c6d33c6149e24b"
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-6330",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6330",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      },
+      {
+        "record_id": "entry-6340",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.reuters.com/world/us/trump-draws-global-crypto-investors-with-148-million-meme-coin-dinner-2025-05-22/",
+          "https://www.reuters.com/world/us/buyers-trump-meme-coin-pay-millions-win-dinner-with-president-trump-2025-05-12/",
+          "https://www.cnbc.com/2025/05/22/top-trump-holders-head-to-exclusive-crypto-dinner-with-president.html"
+        ],
+        "urls": [
+          "https://www.cnbc.com/2025/05/22/top-trump-holders-head-to-exclusive-crypto-dinner-with-president.html"
+        ]
+      },
+      {
+        "record_id": "entry-6395",
+        "issue": "missing recommended/source URLs"
+      },
+      {
+        "record_id": "entry-6395",
+        "issue": "mapped URL absent from source URL list",
+        "mapped": [
+          "https://www.reuters.com/world/us/voting-machine-problems-battleground-arizona-seized-by-trump-election-deniers-2022-11-08/",
+          "https://www.trumpstruth.org/statuses/19372",
+          "https://www.maricopa.gov/DocumentCenter/View/82599/Maricopa-Election-Report-and-Attachments?bidId="
+        ],
+        "urls": []
+      },
+      {
+        "record_id": "entry-6395",
+        "issue": "per-row prior input hash mismatch"
+      },
+      {
+        "record_id": "entry-6395",
+        "issue": "prior_input_file not packet file",
+        "value": null
+      }
+    ]
+  },
+  "method_limit": "This coordinator verifies exact-set provenance and internal mapping/copy consistency of the account1 QA records; source-by-source web re-fetch was not repeated for all 190 entries. Row-level account1 support, access notes, uncertainty and exact gaps are preserved verbatim for review.",
+  "batch_file": "data/neon-workbench/external/account2-coordination-2026-10-03/worker-18/account1-takeover-190-batch-001.jsonl",
+  "batch_rows": 190,
+  "unresolved_hold_count": 6,
+  "canonical_or_database_changes": false,
+  "other_worker_outputs_changed": false
+}

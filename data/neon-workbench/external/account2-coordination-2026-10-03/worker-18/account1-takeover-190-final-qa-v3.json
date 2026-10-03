@@ -1,0 +1,82 @@
+{
+  "job": "Account2 worker18 coordinator final exact-set audit of account1 Wave3 citation QA",
+  "source_packet_branch": "codex/wave3-citation-qa-2026-10-03",
+  "source_packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "expected_count": 190,
+  "observed_unique_count": 190,
+  "exact_id_set_match": true,
+  "status_counts": {
+    "citation_repaired_proposal": 32,
+    "corrected_claim_proposal": 128,
+    "scope_exclusion_proposal": 24,
+    "unresolved_hold": 6
+  },
+  "unresolved_holds": [
+    {
+      "record_id": "entry-231",
+      "worker": 1,
+      "gap": "Unresolved: the sole article URL returns 404 and no accessible copy or underlying Project 2025 passage is supplied. Keep on hold; do not treat packet paraphrase as verified article text."
+    },
+    {
+      "record_id": "entry-853",
+      "worker": 9,
+      "gap": "No warrant, case number, offense, sentence, or exact matching DOJ entry is supplied. A full-name or alias mismatch remains possible; the precise gap is identity-to-warrant linkage."
+    },
+    {
+      "record_id": "entry-2496",
+      "worker": 11,
+      "gap": "There is no verified transaction, date, counterparty, financial trail, or finding connecting either property to money laundering."
+    },
+    {
+      "record_id": "entry-2560",
+      "worker": 3,
+      "gap": "Resolve identity/date before replacement."
+    },
+    {
+      "record_id": "entry-4603",
+      "worker": 3,
+      "gap": "Does not support frozen March 4 annual loss/72% claim; source/date mismatch."
+    },
+    {
+      "record_id": "entry-6200",
+      "worker": 1,
+      "gap": "Unresolved hold: absence from this packet does not prove no such statement exists. Required evidence is a dated post, transcript, recording, or event-specific report."
+    }
+  ],
+  "validation": {
+    "immutable_packet_inputs_and_hashes_verified": true,
+    "eight_requested_account1_worker_branches_verified": true,
+    "all_190_input_ids_present_once": true,
+    "account1_statuses_allowed": true,
+    "all_rows_have_exact_source_to_fact_mappings": false,
+    "mapping_urls_preserved_in_exact_url_list": false,
+    "row_hashes_match_packet_file_sha256": true,
+    "copy_length_bounds_pass": true,
+    "unresolved_rows_carry_explicit_gap": true,
+    "issues": [
+      {
+        "id": "entry-4257",
+        "issue": "mapping and explicit URLs disagree"
+      },
+      {
+        "id": "entry-4296",
+        "issue": "mapping and explicit URLs disagree"
+      },
+      {
+        "id": "entry-6340",
+        "issue": "mapping and explicit URLs disagree"
+      }
+    ]
+  },
+  "source_url_normalization": "For account1 rows without a separate source_urls field, exact URLs are taken directly from source_to_fact_mapping.url. Account1 proposal objects are preserved unchanged.",
+  "source_claim_limit": "Coordinator provenance and structural QA across account1 worker outputs. External pages were not independently re-fetched for all 190 entries; account1 fact mappings, support statements, access notes, uncertainty and copy are preserved row by row.",
+  "excluded": "Prior account2 quota-limited attempts are non-authoritative and were not used. No canonical, database, or other-worker output was changed.",
+  "batch_file": "account1-takeover-190-batch-003.jsonl",
+  "batch_rows": 190,
+  "supersedes": [
+    "account1-takeover-190-batch-001.jsonl",
+    "account1-takeover-190-batch-002.jsonl",
+    "account1-takeover-190-final-qa-v2.json",
+    "account1-takeover-190-checkpoint-v2.json"
+  ]
+}

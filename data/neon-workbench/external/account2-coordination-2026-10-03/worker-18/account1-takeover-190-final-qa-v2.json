@@ -1,0 +1,804 @@
+{
+  "job": "Account2 worker18 coordinator audit of account1 Wave3 citation QA",
+  "source_packet_branch": "codex/wave3-citation-qa-2026-10-03",
+  "source_packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "source_manifest_assigned": 190,
+  "assignment_scope": "Exactly all 190 records across frozen packet workers14-24. Account1 branches1,2,3,4,6,9,11,12 are authoritative. Earlier account2 quota-limited attempts are excluded.",
+  "account1_worker_branches": {
+    "1": {
+      "branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
+      "head": "9098660508ee97e9ab5ab4daac23902fe5dde4a8",
+      "source_input_files": [
+        "worker-14-input.jsonl",
+        "worker-15-input.jsonl"
+      ],
+      "count": 36
+    },
+    "2": {
+      "branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+      "head": "5db6bd28b9e5b4be1e9ebd18c3b758734200c2fb",
+      "source_input_files": [
+        "worker-16-input.jsonl",
+        "worker-17-input.jsonl"
+      ],
+      "count": 35
+    },
+    "3": {
+      "branch": "ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+      "head": "688854d970d4f0276f44c20b564999709b854bfb",
+      "source_input_files": [
+        "worker-18-input.jsonl",
+        "worker-19-input.jsonl"
+      ],
+      "count": 34
+    },
+    "4": {
+      "branch": "ls/4-trump-description-rescue-04-of-12-53-dis-S_ao",
+      "head": "53917b7704aaaf228c295bfa8bb1596357e29e91",
+      "source_input_files": [
+        "worker-20-input.jsonl"
+      ],
+      "count": 17
+    },
+    "6": {
+      "branch": "ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x",
+      "head": "79bc6ca1c160d42cbe26d90ed7f737bceb5bd793",
+      "source_input_files": [
+        "worker-21-input.jsonl"
+      ],
+      "count": 17
+    },
+    "9": {
+      "branch": "ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+      "head": "3c70c7c57e929fb74a18a5a14ce640340b91386d",
+      "source_input_files": [
+        "worker-22-input.jsonl"
+      ],
+      "count": 17
+    },
+    "11": {
+      "branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+      "head": "08eda3cef3f0050e903b27de3ea7ef9576e69b0b",
+      "source_input_files": [
+        "worker-23-input.jsonl"
+      ],
+      "count": 17
+    },
+    "12": {
+      "branch": "ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+      "head": "96593dee15f4113d861cb4b02b35657bedd9a69f",
+      "source_input_files": [
+        "worker-24-input.jsonl"
+      ],
+      "count": 17
+    }
+  },
+  "expected_ids": [
+    "entry-35",
+    "entry-37",
+    "entry-176",
+    "entry-178",
+    "entry-188",
+    "entry-203",
+    "entry-210",
+    "entry-211",
+    "entry-219",
+    "entry-222",
+    "entry-227",
+    "entry-230",
+    "entry-231",
+    "entry-236",
+    "entry-255",
+    "entry-264",
+    "entry-266",
+    "entry-267",
+    "entry-275",
+    "entry-293",
+    "entry-352",
+    "entry-365",
+    "entry-378",
+    "entry-380",
+    "entry-390",
+    "entry-425",
+    "entry-426",
+    "entry-444",
+    "entry-581",
+    "entry-594",
+    "entry-643",
+    "entry-651",
+    "entry-654",
+    "entry-655",
+    "entry-674",
+    "entry-720",
+    "entry-735",
+    "entry-754",
+    "entry-766",
+    "entry-769",
+    "entry-772",
+    "entry-774",
+    "entry-776",
+    "entry-788",
+    "entry-801",
+    "entry-804",
+    "entry-811",
+    "entry-814",
+    "entry-822",
+    "entry-824",
+    "entry-830",
+    "entry-833",
+    "entry-853",
+    "entry-860",
+    "entry-873",
+    "entry-878",
+    "entry-884",
+    "entry-912",
+    "entry-920",
+    "entry-934",
+    "entry-945",
+    "entry-954",
+    "entry-965",
+    "entry-969",
+    "entry-978",
+    "entry-985",
+    "entry-990",
+    "entry-996",
+    "entry-1666",
+    "entry-1670",
+    "entry-1687",
+    "entry-1726",
+    "entry-1727",
+    "entry-1728",
+    "entry-1729",
+    "entry-1768",
+    "entry-1770",
+    "entry-1771",
+    "entry-1779",
+    "entry-1782",
+    "entry-1784",
+    "entry-1857",
+    "entry-2061",
+    "entry-2106",
+    "entry-2296",
+    "entry-2330",
+    "entry-2340",
+    "entry-2342",
+    "entry-2343",
+    "entry-2373",
+    "entry-2380",
+    "entry-2401",
+    "entry-2413",
+    "entry-2415",
+    "entry-2441",
+    "entry-2458",
+    "entry-2466",
+    "entry-2496",
+    "entry-2501",
+    "entry-2504",
+    "entry-2515",
+    "entry-2518",
+    "entry-2528",
+    "entry-2557",
+    "entry-2560",
+    "entry-2562",
+    "entry-2571",
+    "entry-2615",
+    "entry-2636",
+    "entry-2710",
+    "entry-2721",
+    "entry-2731",
+    "entry-2854",
+    "entry-2864",
+    "entry-2929",
+    "entry-2930",
+    "entry-3009",
+    "entry-3117",
+    "entry-3139",
+    "entry-3273",
+    "entry-3380",
+    "entry-3385",
+    "entry-3444",
+    "entry-3488",
+    "entry-3574",
+    "entry-3678",
+    "entry-3709",
+    "entry-3722",
+    "entry-3735",
+    "entry-3804",
+    "entry-3832",
+    "entry-3838",
+    "entry-3839",
+    "entry-3873",
+    "entry-3899",
+    "entry-3985",
+    "entry-4004",
+    "entry-4017",
+    "entry-4040",
+    "entry-4054",
+    "entry-4097",
+    "entry-4144",
+    "entry-4232",
+    "entry-4257",
+    "entry-4296",
+    "entry-4304",
+    "entry-4308",
+    "entry-4353",
+    "entry-4603",
+    "entry-4619",
+    "entry-4622",
+    "entry-4692",
+    "entry-5094",
+    "entry-5282",
+    "entry-5309",
+    "entry-5374",
+    "entry-5406",
+    "entry-5413",
+    "entry-5462",
+    "entry-5471",
+    "entry-5505",
+    "entry-5531",
+    "entry-5559",
+    "entry-5565",
+    "entry-5597",
+    "entry-5605",
+    "entry-5661",
+    "entry-5698",
+    "entry-5707",
+    "entry-5936",
+    "entry-5996",
+    "entry-6127",
+    "entry-6138",
+    "entry-6141",
+    "entry-6146",
+    "entry-6155",
+    "entry-6199",
+    "entry-6200",
+    "entry-6202",
+    "entry-6206",
+    "entry-6230",
+    "entry-6235",
+    "entry-6241",
+    "entry-6245",
+    "entry-6293",
+    "entry-6319",
+    "entry-6330",
+    "entry-6340",
+    "entry-6356",
+    "entry-6395"
+  ],
+  "observed_ids": [
+    "entry-35",
+    "entry-37",
+    "entry-176",
+    "entry-178",
+    "entry-188",
+    "entry-203",
+    "entry-210",
+    "entry-211",
+    "entry-219",
+    "entry-222",
+    "entry-227",
+    "entry-230",
+    "entry-231",
+    "entry-236",
+    "entry-255",
+    "entry-264",
+    "entry-266",
+    "entry-267",
+    "entry-275",
+    "entry-293",
+    "entry-352",
+    "entry-365",
+    "entry-378",
+    "entry-380",
+    "entry-390",
+    "entry-425",
+    "entry-426",
+    "entry-444",
+    "entry-581",
+    "entry-594",
+    "entry-643",
+    "entry-651",
+    "entry-654",
+    "entry-655",
+    "entry-674",
+    "entry-720",
+    "entry-735",
+    "entry-754",
+    "entry-766",
+    "entry-769",
+    "entry-772",
+    "entry-774",
+    "entry-776",
+    "entry-788",
+    "entry-801",
+    "entry-804",
+    "entry-811",
+    "entry-814",
+    "entry-822",
+    "entry-824",
+    "entry-830",
+    "entry-833",
+    "entry-853",
+    "entry-860",
+    "entry-873",
+    "entry-878",
+    "entry-884",
+    "entry-912",
+    "entry-920",
+    "entry-934",
+    "entry-945",
+    "entry-954",
+    "entry-965",
+    "entry-969",
+    "entry-978",
+    "entry-985",
+    "entry-990",
+    "entry-996",
+    "entry-1666",
+    "entry-1670",
+    "entry-1687",
+    "entry-1726",
+    "entry-1727",
+    "entry-1728",
+    "entry-1729",
+    "entry-1768",
+    "entry-1770",
+    "entry-1771",
+    "entry-1779",
+    "entry-1782",
+    "entry-1784",
+    "entry-1857",
+    "entry-2061",
+    "entry-2106",
+    "entry-2296",
+    "entry-2330",
+    "entry-2340",
+    "entry-2342",
+    "entry-2343",
+    "entry-2373",
+    "entry-2380",
+    "entry-2401",
+    "entry-2413",
+    "entry-2415",
+    "entry-2441",
+    "entry-2458",
+    "entry-2466",
+    "entry-2496",
+    "entry-2501",
+    "entry-2504",
+    "entry-2515",
+    "entry-2518",
+    "entry-2528",
+    "entry-2557",
+    "entry-2560",
+    "entry-2562",
+    "entry-2571",
+    "entry-2615",
+    "entry-2636",
+    "entry-2710",
+    "entry-2721",
+    "entry-2731",
+    "entry-2854",
+    "entry-2864",
+    "entry-2929",
+    "entry-2930",
+    "entry-3009",
+    "entry-3117",
+    "entry-3139",
+    "entry-3273",
+    "entry-3380",
+    "entry-3385",
+    "entry-3444",
+    "entry-3488",
+    "entry-3574",
+    "entry-3678",
+    "entry-3709",
+    "entry-3722",
+    "entry-3735",
+    "entry-3804",
+    "entry-3832",
+    "entry-3838",
+    "entry-3839",
+    "entry-3873",
+    "entry-3899",
+    "entry-3985",
+    "entry-4004",
+    "entry-4017",
+    "entry-4040",
+    "entry-4054",
+    "entry-4097",
+    "entry-4144",
+    "entry-4232",
+    "entry-4257",
+    "entry-4296",
+    "entry-4304",
+    "entry-4308",
+    "entry-4353",
+    "entry-4603",
+    "entry-4619",
+    "entry-4622",
+    "entry-4692",
+    "entry-5094",
+    "entry-5282",
+    "entry-5309",
+    "entry-5374",
+    "entry-5406",
+    "entry-5413",
+    "entry-5462",
+    "entry-5471",
+    "entry-5505",
+    "entry-5531",
+    "entry-5559",
+    "entry-5565",
+    "entry-5597",
+    "entry-5605",
+    "entry-5661",
+    "entry-5698",
+    "entry-5707",
+    "entry-5936",
+    "entry-5996",
+    "entry-6127",
+    "entry-6138",
+    "entry-6141",
+    "entry-6146",
+    "entry-6155",
+    "entry-6199",
+    "entry-6200",
+    "entry-6202",
+    "entry-6206",
+    "entry-6230",
+    "entry-6235",
+    "entry-6241",
+    "entry-6245",
+    "entry-6293",
+    "entry-6319",
+    "entry-6330",
+    "entry-6340",
+    "entry-6356",
+    "entry-6395"
+  ],
+  "expected_count": 190,
+  "observed_unique_count": 190,
+  "exact_id_set_match": true,
+  "status_counts": {
+    "citation_repaired_proposal": 32,
+    "corrected_claim_proposal": 128,
+    "scope_exclusion_proposal": 24,
+    "unresolved_hold": 6
+  },
+  "unresolved_holds": [
+    {
+      "record_id": "entry-231",
+      "worker": 1,
+      "gap": "Unresolved: the sole article URL returns 404 and no accessible copy or underlying Project 2025 passage is supplied. Keep on hold; do not treat packet paraphrase as verified article text."
+    },
+    {
+      "record_id": "entry-853",
+      "worker": 9,
+      "gap": "No warrant, case number, offense, sentence, or exact matching DOJ entry is supplied. A full-name or alias mismatch remains possible; the precise gap is identity-to-warrant linkage."
+    },
+    {
+      "record_id": "entry-2496",
+      "worker": 11,
+      "gap": "There is no verified transaction, date, counterparty, financial trail, or finding connecting either property to money laundering."
+    },
+    {
+      "record_id": "entry-2560",
+      "worker": 3,
+      "gap": "Resolve identity/date before replacement."
+    },
+    {
+      "record_id": "entry-4603",
+      "worker": 3,
+      "gap": "Does not support frozen March 4 annual loss/72% claim; source/date mismatch."
+    },
+    {
+      "record_id": "entry-6200",
+      "worker": 1,
+      "gap": "Unresolved hold: absence from this packet does not prove no such statement exists. Required evidence is a dated post, transcript, recording, or event-specific report."
+    }
+  ],
+  "validation": {
+    "packet_input_hashes_verified_against_manifest": true,
+    "every_worker_branch_matches_exact_packet_input_groups": true,
+    "all_190_present_once": true,
+    "all_statuses_allowed": true,
+    "all_rows_have_url_to_fact_mapping": true,
+    "all_mapped_urls_listed_as_proposed_sources": false,
+    "row_input_hash_present_and_correct": true,
+    "proposed_copy_bounds_pass": true,
+    "all_holds_have_explicit_gap": true,
+    "issues": [
+      {
+        "id": "entry-227",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-227",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.nea.org/nea-today/all-news-articles/how-project-2025-would-devastate-public-education"
+        ]
+      },
+      {
+        "id": "entry-231",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-231",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://uupinfo.org/communications/uupdate/241013.php"
+        ]
+      },
+      {
+        "id": "entry-365",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-365",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://apnews.com/article/trump-hegseth-generals-meeting-military-pentagon-0ecdcbb8877e24329cfa0fc1e851ebd2",
+          "https://www.reuters.com/world/us/trump-preside-over-unusual-military-gathering-virginia-2025-09-30/"
+        ]
+      },
+      {
+        "id": "entry-654",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-654",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.doi.gov/pressreleases/interior-department-finalizes-new-waste-prevention-rule",
+          "https://www.govinfo.gov/content/pkg/FR-2018-09-28/pdf/2018-20689.pdf"
+        ]
+      },
+      {
+        "id": "entry-788",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-788",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://spectrumnews1.com/ap-online/2021/01/20/trump-commutes-sentence-of-ex-detroit-mayor-kwame-kilpatrick",
+          "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021"
+        ]
+      },
+      {
+        "id": "entry-873",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-873",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-122220/"
+        ]
+      },
+      {
+        "id": "entry-985",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-985",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021"
+        ]
+      },
+      {
+        "id": "entry-1770",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-1770",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://apnews.com/article/trump-day-1-promises-9c842ada3c54e2219445f1598db2c8d6"
+        ]
+      },
+      {
+        "id": "entry-1779",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-1779",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.theatlantic.com/unthinkable/"
+        ]
+      },
+      {
+        "id": "entry-2342",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-2342",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://fordhamram.com/62224/news/a-bit-of-a-loner-former-classmates-remember-donald-trump-in-the-bronx/"
+        ]
+      },
+      {
+        "id": "entry-2343",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-2343",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "http://api.parliament.uk/historic-hansard/people/mr-robert-maxwell",
+          "https://api.parliament.uk/uk-general-elections/elections/17488",
+          "https://membersafter1832.historyofparliamentonline.org/members/8627"
+        ]
+      },
+      {
+        "id": "entry-2373",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-2373",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://documented.org/investigations/documented-has-obtained-a-recent-council-for-national-policy-membership-list",
+          "https://trumpfile.org/cnp-list/",
+          "https://www.nytimes.com/1981/05/20/us/conservatives-gather-in-umbrella-council-for-a-national-policy.html"
+        ]
+      },
+      {
+        "id": "entry-2501",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-2501",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://assets.publishing.service.gov.uk/media/5a8055c340f0b62302692e48/The-Litvinenko-Inquiry-H-C-695-web.pdf"
+        ]
+      },
+      {
+        "id": "entry-2515",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-2515",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://trumpfile.org/ukrainian-intelligence-is-recorded-admitting-mogilevichs-ties-to-putin"
+        ]
+      },
+      {
+        "id": "entry-2710",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-2710",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://time.com/4455736/ivanka-trump-vacation-david-geffen-yacht/"
+        ]
+      },
+      {
+        "id": "entry-3380",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-3380",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://apnews.com/article/538cb5387bf95925245bf87fa6b1adcb",
+          "https://ethics.house.gov/committee-reports/in-the-matter-of-allegations-relating-to-representative-matt-gaetz/"
+        ]
+      },
+      {
+        "id": "entry-3838",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-3838",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.pbs.org/newshour/politics/fbi-searches-home-and-office-of-ex-trump-national-security-adviser-john-bolton-ap-source-says"
+        ]
+      },
+      {
+        "id": "entry-4232",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-4232",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.washingtonpost.com/politics/2026/07/06/elon-musks-us-doge-service-announces-its-formal-end/"
+        ]
+      },
+      {
+        "id": "entry-4257",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://d3nkl3psvxxpe9.cloudfront.net/documents/econTabReport_ESdiNMa.pdf"
+        ]
+      },
+      {
+        "id": "entry-4296",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://apnews.com/article/trump-saudi-arabia-nuclear-program-uranium-15fdb262bb9c83d0d959ca96b7561c12"
+        ]
+      },
+      {
+        "id": "entry-5282",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-5282",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.kff.org/medicaid/allocating-cbos-estimates-of-federal-medicaid-spending-reductions-across-the-states-enacted-reconciliation-package/"
+        ]
+      },
+      {
+        "id": "entry-5597",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-5597",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://apnews.com/article/trump-inspectors-general-fired-congress-unlawful-4e8bc57e132c3f9a7f1c2a3754359993"
+        ]
+      },
+      {
+        "id": "entry-6155",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-6155",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://storage.courtlistener.com/recap/gov.uscourts.dcd.280953/gov.uscourts.dcd.280953.81.0_4.pdf",
+          "https://www.federalregister.gov/documents/full_text/html/2025/05/07/2025-08133.html",
+          "https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/"
+        ]
+      },
+      {
+        "id": "entry-6200",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-6200",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.politico.com/news/2023/03/08/trumps-cdc-director-says-fauci-shut-down-debate-on-covids-origin-00086112"
+        ]
+      },
+      {
+        "id": "entry-6330",
+        "issue": "no exact source URL list"
+      },
+      {
+        "id": "entry-6330",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://apnews.com/article/24535cbe40c4459995c6d33c6149e24b",
+          "https://www.gao.gov/assets/gao-19-178.pdf"
+        ]
+      },
+      {
+        "id": "entry-6340",
+        "issue": "mapped URL not listed as proposed source URL",
+        "urls": [
+          "https://www.reuters.com/world/us/buyers-trump-meme-coin-pay-millions-win-dinner-with-president-trump-2025-05-12/",
+          "https://www.reuters.com/world/us/trump-draws-global-crypto-investors-with-148-million-meme-coin-dinner-2025-05-22/"
+        ]
+      }
+    ]
+  },
+  "source_claim_limit": "This coordinator performed exact-set provenance and structural source-to-fact mapping/copy QA across the account1 records. It did not independently re-fetch all 190 external sources; the account1 mapped support and access notes are preserved in each row.",
+  "canonical_or_database_changes": false,
+  "other_worker_outputs_changed": false,
+  "supersedes_preliminary_audit": "account1-takeover-190-batch-001.jsonl and the initial checkpoint/final-qa; earlier audit used incompatible account1 row schemas for some workers."
+}
