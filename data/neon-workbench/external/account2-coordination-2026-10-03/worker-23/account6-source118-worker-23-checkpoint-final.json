@@ -1,0 +1,301 @@
+{
+  "task": "Independent coordinator QA: account6 source-corrections worker 23",
+  "as_of_utc": "2026-10-03T11:24:48.325495+00:00",
+  "source_packet": {
+    "branch": "codex/account6-source-corrections-2026-10-03",
+    "commit": "eb09172323e4928892548aac8a65a23aa35ba20e",
+    "manifest_sha256": "2222e2e459c7734772816440c844a26faccc629615d323e35cfa5136cf6d7f1d",
+    "assigned_count": 118
+  },
+  "worker_branches": [
+    {
+      "worker": 1,
+      "branch": "origin/ls/1-trump-files-source118-review-01-of-12-Dnux",
+      "head": "337eff1cf14581f938d484044c5031d873677ae1",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-01-batch-20261003-01.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "complete": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 2,
+      "branch": "origin/ls/2-trump-files-source118-review-02-of-12-alSU",
+      "head": "b6035291c97d3baa2fdb90aa9d35a4f22c406db6",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-02-batch-2026-10-03-001.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "complete": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 3,
+      "branch": "origin/ls/3-trump-files-source118-review-03-of-12-mwSm",
+      "head": "b1d3ed267c7ee28e8b13021619049d97a90c6e06",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-03-batch-2026-10-03-source118-review-03.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "corrected": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 4,
+      "branch": "origin/ls/4-trump-files-source118-review-04-of-12-P8O6",
+      "head": "409c43c850897ba90d68a88fc2326aec5d7f95ec",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-04-batch-2026-10-03-01.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "needs_correction": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 5,
+      "branch": "origin/ls/5-trump-files-source118-review-05-of-12-ry0H",
+      "head": "0444963a1a3093b3f699862e1bb12bd4bc97f2cb",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-05-batch-20261003-01.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "complete": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 6,
+      "branch": "origin/ls/6-trump-files-source118-review-06-of-12-vQap",
+      "head": "7207f654f3643be8ae231abeb79577904471465a",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-06-batch-001.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "complete": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 7,
+      "branch": "origin/ls/7-trump-files-source118-review-07-of-12-Asbx",
+      "head": "315b0a36b9e6c6bb1812ad751c938cc1c1821b69",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-07-batch-001-20261003.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "corrected": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 8,
+      "branch": "origin/ls/8-trump-files-source118-review-08-of-12-pXJX",
+      "head": "831ddd224fca228506bee09c936631feb97fe7ef",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-08-batch-2026-10-03-01.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "needs_correction": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 9,
+      "branch": "origin/ls/9-trump-files-source118-review-09-of-12-278g",
+      "head": "d5fe7c52734d1ecbd347320516d95714f35388b2",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-09-batch-001-20261003.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "complete": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 10,
+      "branch": "origin/ls/10-trump-files-source118-review-10-of-12-0nIr",
+      "head": "bdde965ee7cb28f553c675d5ad0d15ae0665da8a",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-10-batch-2026-10-03.jsonl",
+      "assigned_count": 10,
+      "output_count": 10,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "corrected_scope": 10
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 11,
+      "branch": "origin/ls/11-trump-files-source118-review-11-of-12-8RJW",
+      "head": "b1b581372a2dcbe6f3652bab4887893167d49f8a",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-001.jsonl",
+      "assigned_count": 9,
+      "output_count": 9,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "corrected_with_scope_limit": 2,
+        "corrected_with_attribution": 1,
+        "corrected_to_documented_action": 1,
+        "corrected_to_supported_ship_movement": 1,
+        "corrected_action_type": 1,
+        "corrected_figure_and_period": 1,
+        "corrected_to_case_specific_holding": 1,
+        "corrected_count_period_and_measure": 1
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    },
+    {
+      "worker": 12,
+      "branch": "origin/ls/12-trump-files-source118-review-12-of-12-MQJb",
+      "head": "52ead5afd111e17e95a38363f8105b908aaad8e4",
+      "output_path": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-12-batch-001.jsonl",
+      "assigned_count": 9,
+      "output_count": 9,
+      "exact_key_set": true,
+      "duplicate_output_keys": [],
+      "worker_dispositions": {
+        "complete": 9
+      },
+      "all_original_urls_retained": true,
+      "qa_findings": 0
+    }
+  ],
+  "pending_branches": [],
+  "final_exact_set_qa": {
+    "expected_key_count": 118,
+    "expected_unique_key_count": 118,
+    "result_row_count": 118,
+    "result_unique_key_count": 118,
+    "missing_keys": [],
+    "extra_keys": [],
+    "duplicate_result_keys": [],
+    "duplicate_worker_output_keys": [],
+    "all_12_worker_outputs_published": true,
+    "all_key_sets_exact": true,
+    "valid_short_medium_long_lengths": "118/118",
+    "exact_nonempty_url_specific_fact_maps": "118/118",
+    "original_source_urls_retained": "118/118",
+    "no_source_promoted_to_accepted": "118/118",
+    "qa_followup_required": 0,
+    "rows_with_explicit_evidence_gap": 78,
+    "keys_with_explicit_evidence_gap": [
+      "entry-4234",
+      "entry-5074",
+      "entry-5537",
+      "entry-5817",
+      "entry-6392",
+      "entry-6483",
+      "entry-6618",
+      "entry-6725",
+      "entry-6796",
+      "entry-6898",
+      "entry-4243",
+      "entry-5083",
+      "entry-5603",
+      "entry-5820",
+      "entry-6405",
+      "entry-6494",
+      "entry-6621",
+      "entry-6726",
+      "entry-6800",
+      "entry-6910",
+      "entry-4360",
+      "entry-5095",
+      "entry-5718",
+      "entry-5835",
+      "entry-6418",
+      "entry-6507",
+      "entry-6636",
+      "entry-6740",
+      "entry-6814",
+      "entry-6927",
+      "entry-4413",
+      "entry-5222",
+      "entry-5742",
+      "entry-5853",
+      "entry-6435",
+      "entry-6520",
+      "entry-6653",
+      "entry-6753",
+      "entry-6831",
+      "entry-6953",
+      "entry-4435",
+      "entry-5273",
+      "entry-5745",
+      "entry-5860",
+      "entry-6450",
+      "entry-6537",
+      "entry-6660",
+      "entry-6756",
+      "entry-6838",
+      "entry-6960",
+      "entry-4546",
+      "entry-5328",
+      "entry-5758",
+      "entry-5879",
+      "entry-6458",
+      "entry-6576",
+      "entry-6671",
+      "entry-6767",
+      "entry-6868",
+      "entry-6966",
+      "entry-4697",
+      "entry-5333",
+      "entry-5763",
+      "entry-5890",
+      "entry-6459",
+      "entry-6580",
+      "entry-6684",
+      "entry-6772",
+      "entry-6878",
+      "entry-4866",
+      "entry-5342",
+      "entry-5804",
+      "entry-5894",
+      "entry-6470",
+      "entry-6610",
+      "entry-6708",
+      "entry-6783",
+      "entry-6882"
+    ]
+  },
+  "results_jsonl": "data/neon-workbench/external/account2-coordination-2026-10-03/worker-23/account6-source118-worker-23-qa-batch-2026-10-03-01.jsonl",
+  "qa_report": "data/neon-workbench/external/account2-coordination-2026-10-03/worker-23/account6-source118-worker-23-qa-report.md",
+  "limitations": "Checks cover output provenance, exact IDs, prescribed prose bounds, exact mapping of every retained source URL to a non-empty source-specific fact entry, retention of all original input URLs, and preservation of source-triage/acceptance state. This is not a fresh live retrieval of all 217 distinct URLs. Explicit worker evidence gaps and URL-specific limitations are carried verbatim per key. Worker dispositions remain unchanged."
+}
