@@ -1,0 +1,18 @@
+{
+  "worker": 16,
+  "source_branch": "codex/web-release-rescue-2026-10-03",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "input_sha256": "be52cbf5e634262657259d9338bca737655725a41aa2df87fe120dcc4166c7aa",
+  "batch": 4,
+  "rows_appended": 6,
+  "assignment_keys": [
+    "expanded-20260831-vance-kharg-defense",
+    "expanded-20260910-rnc-trump-wall-bail",
+    "expanded-20260917-un-iran-war-crimes-report",
+    "expanded-20260924-press-arrival-exclusion",
+    "expanded-20260928-iran-sanctions-denial",
+    "fresh-20260831-polymarket-round"
+  ],
+  "cumulative_rows": 27,
+  "proposal_only": true
+}
