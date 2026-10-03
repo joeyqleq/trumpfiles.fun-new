@@ -1,0 +1,85 @@
+{
+  "worker": 4,
+  "batch_file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-04-batch-20261003T103043Z-1774a1ef.jsonl",
+  "batch_sha256": "0b7e5b00b185d9d4e447003a38d4c2d3a34c4762d0529588d6d8b245f6d51c95",
+  "checkpoint_file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/checkpoints/worker-04-checkpoint-20261003T103043Z-1774a1ef.jsonl",
+  "checkpoint_sha256": "854befafebda625d75190c67c5d64e7a3f2dc56cf487a145dc918b96b0f9bf47",
+  "input": {
+    "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/worker-04-input.jsonl",
+    "sha256": "a3aad4ff1ccc2f01dec5c9b69cd3b2ec7a679e2cc6cde3678a2e6edf54dc2e81",
+    "count": 31,
+    "ids_exact_and_ordered": true
+  },
+  "frozen_claim_context_source": {
+    "ref": "origin/codex/impact-followup-inputs-2026-10-02",
+    "commit": "539c34d9572db4a234ee9e73a4fe8c1d4b3e373e",
+    "records_found": 31,
+    "source_files_by_record_id": {
+      "entry-1673": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-01-score-input.jsonl",
+      "entry-5488": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-01-score-input.jsonl",
+      "entry-1509": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-02-score-input.jsonl",
+      "entry-3193": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-02-score-input.jsonl",
+      "entry-5444": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-02-score-input.jsonl",
+      "entry-1664": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-03-score-input.jsonl",
+      "entry-2470": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-03-score-input.jsonl",
+      "entry-436": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-03-score-input.jsonl",
+      "entry-1295": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-04-score-input.jsonl",
+      "entry-1780": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-04-score-input.jsonl",
+      "entry-2958": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-04-score-input.jsonl",
+      "entry-5381": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-04-score-input.jsonl",
+      "entry-854": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-04-score-input.jsonl",
+      "entry-1480": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-06-score-input.jsonl",
+      "entry-1644": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-06-score-input.jsonl",
+      "entry-5110": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-06-score-input.jsonl",
+      "entry-1395": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-07-score-input.jsonl",
+      "entry-215": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-07-score-input.jsonl",
+      "entry-1330": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-08-score-input.jsonl",
+      "entry-1646": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-08-score-input.jsonl",
+      "entry-2097": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-08-score-input.jsonl",
+      "entry-2583": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-08-score-input.jsonl",
+      "entry-4149": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-08-score-input.jsonl",
+      "entry-7063": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-08-score-input.jsonl",
+      "entry-213": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-09-score-input.jsonl",
+      "entry-6149": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-09-score-input.jsonl",
+      "entry-184": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-10-score-input.jsonl",
+      "entry-1627": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-11-score-input.jsonl",
+      "entry-6284": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-11-score-input.jsonl",
+      "entry-1672": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-12-score-input.jsonl",
+      "entry-64": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/score-followup/original-score-inputs/worker-12-score-input.jsonl"
+    }
+  },
+  "result": {
+    "count": 31,
+    "ids_exact_and_ordered": true,
+    "unique_ids": true,
+    "status_counts": {
+      "deferred": 31,
+      "scored": 0
+    },
+    "all_deferred_dimensions_null": true,
+    "one_decimal_dimension_precision": "not applicable: all rows are deferred"
+  },
+  "score_formula": {
+    "weights": {
+      "harm": 0.3,
+      "reach": 0.2,
+      "institutions": 0.15,
+      "procedural_abuse": 0.15,
+      "self_dealing": 0.1,
+      "persistence": 0.1
+    },
+    "formula": "weighted_total = 0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+    "weights_sum": 1.0,
+    "formula_valid": true,
+    "aggregate_computed": false,
+    "aggregate_note": "Impact-v2 requires dimensions=null for deferred rows; the rubric calls for no worker-computed composite."
+  },
+  "source_basis_validation": {
+    "all_rows_include_frozen_claim_title": true,
+    "all_rows_include_supplied_evidence_basis": true,
+    "all_rows_include_exact_missing_fact_and_notes": true,
+    "policy": "No general web search; use frozen claim context and supplied prior evidence only."
+  },
+  "qa_note": "All records remain deferred because the supplied record-specific gap blocks a defensible impact score. No earlier score was changed and no numeric zeros were substituted."
+}
