@@ -1,0 +1,52 @@
+{
+  "worker": 5,
+  "checkpoint": 4,
+  "packet_commit": "520015274c29cbcc24a4e54d747e896198756415",
+  "input_path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/worker-05-input.jsonl",
+  "input_sha256": "b9e387a41c64c49677953971d66c956e610aa77d92f0db0b150f0c0cca0ce497",
+  "batch_output": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-05-batch-20261003T115635Z-004.jsonl",
+  "records_complete": 31,
+  "completed_keys": [
+    "entry-1502",
+    "entry-1300",
+    "entry-170",
+    "entry-1649",
+    "entry-224",
+    "entry-1708",
+    "entry-1766",
+    "entry-214",
+    "entry-1213",
+    "entry-3212",
+    "entry-2325",
+    "entry-5509",
+    "entry-1491",
+    "entry-1667",
+    "entry-6795",
+    "entry-7151",
+    "entry-6029",
+    "entry-6318",
+    "entry-1640",
+    "entry-3225",
+    "entry-1370",
+    "entry-2331",
+    "entry-5455",
+    "entry-298",
+    "entry-6156",
+    "entry-984",
+    "entry-1717",
+    "entry-259",
+    "entry-7070",
+    "entry-2238",
+    "entry-1925"
+  ],
+  "status_counts": {
+    "scored": 7,
+    "deferred": 24
+  },
+  "weighted_total_formula": "harm*0.30 + reach*0.20 + institutions*0.15 + procedural_abuse*0.15 + self_dealing*0.10 + persistence*0.10; round to 2 decimals",
+  "prior_review": {
+    "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-05-batch-20261003T103117Z-c186ff3e.jsonl",
+    "commit": "7274ef48"
+  },
+  "created_at": "2026-10-03T11:56:35.961234+00:00"
+}
