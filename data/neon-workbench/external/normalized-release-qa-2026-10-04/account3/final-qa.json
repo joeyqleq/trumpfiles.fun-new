@@ -1,0 +1,126 @@
+{
+  "task": "normalized-release-qa-2026-10-04/account3 worker-11 reconciliation",
+  "branch": "ls/12-trump-files-impact368-review-11-of-12-DPiB",
+  "prior_batch_state": {
+    "status": "complete_and_pushed",
+    "head": "c5861c43bedea7ce484f6f07584bca41399ba6a5"
+  },
+  "assigned_keys": [
+    "entry-1657",
+    "entry-1562",
+    "entry-2485",
+    "entry-2014",
+    "entry-1514",
+    "entry-1550",
+    "entry-262",
+    "entry-2345",
+    "entry-1592",
+    "entry-4217",
+    "entry-2541",
+    "entry-1297",
+    "entry-1567",
+    "entry-6148",
+    "entry-7200",
+    "entry-4300",
+    "entry-6633",
+    "entry-1196",
+    "entry-274",
+    "entry-1677",
+    "entry-1521",
+    "entry-2494",
+    "entry-2569",
+    "entry-7109",
+    "entry-7072",
+    "entry-1542",
+    "entry-220",
+    "entry-3659",
+    "entry-1548",
+    "entry-279"
+  ],
+  "saved_count": 30,
+  "missing_keys": [],
+  "duplicate_keys": [],
+  "out_of_scope_keys": [],
+  "disposition_counts": {
+    "pass": 0,
+    "hold": 3,
+    "defer": 27
+  },
+  "release_ready_count": 0,
+  "blocking_ids": [
+    "entry-1657",
+    "entry-1562",
+    "entry-2485",
+    "entry-2014",
+    "entry-1514",
+    "entry-1550",
+    "entry-262",
+    "entry-2345",
+    "entry-1592",
+    "entry-4217",
+    "entry-2541",
+    "entry-1297",
+    "entry-1567",
+    "entry-6148",
+    "entry-7200",
+    "entry-4300",
+    "entry-6633",
+    "entry-1196",
+    "entry-274",
+    "entry-1677",
+    "entry-1521",
+    "entry-2494",
+    "entry-2569",
+    "entry-7109",
+    "entry-7072",
+    "entry-1542",
+    "entry-220",
+    "entry-3659",
+    "entry-1548",
+    "entry-279"
+  ],
+  "reconciled_append_only_batches": [
+    "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-11-batch-20261003-01.jsonl",
+    "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-11-batch-52001527-20261003.jsonl"
+  ],
+  "checkpoint_rows_are_mirrors_not_additional_terminal_batches": true,
+  "terminal_conflicts": [
+    {
+      "key": "entry-4217",
+      "prior_disposition": "deferred",
+      "latest_disposition": "scored",
+      "selected": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-11-batch-52001527-20261003.jsonl",
+      "resolution": "Latest row is an explicit descendant; score retained for bounded impact assessment, while release disposition remains hold for copy correction."
+    },
+    {
+      "key": "entry-4300",
+      "prior_disposition": "deferred",
+      "latest_disposition": "scored",
+      "selected": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-11-batch-52001527-20261003.jsonl",
+      "resolution": "Latest row is an explicit descendant; score retained for bounded impact assessment, while release disposition remains hold for copy correction."
+    },
+    {
+      "key": "entry-220",
+      "prior_disposition": "deferred",
+      "latest_disposition": "scored",
+      "selected": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-11-batch-52001527-20261003.jsonl",
+      "resolution": "Latest row is an explicit descendant; score retained for bounded impact assessment, while release disposition remains hold for copy correction."
+    }
+  ],
+  "verified_url_count": 0,
+  "source_url_count_in_latest_batch": 57,
+  "source_url_format_valid": true,
+  "verified_url_format_valid": true,
+  "url_verification_note": "No new research or URL fetch was performed. Existing source_urls remain verbatim in the referenced source files; none is promoted into verified_urls during this release pass.",
+  "proposal_description_word_counts": {
+    "entry-4217": 51,
+    "entry-4300": 47,
+    "entry-220": 51
+  },
+  "proposal_description_word_count_check": {
+    "range": "30-80 words per proposed description",
+    "passed": true
+  },
+  "canonical_or_neon_edits": false,
+  "new_research_performed": false
+}
