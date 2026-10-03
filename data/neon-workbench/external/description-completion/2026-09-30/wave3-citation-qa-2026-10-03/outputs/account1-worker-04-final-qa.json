@@ -1,0 +1,65 @@
+{
+  "packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "input_file": "worker-20-input.jsonl",
+  "input_sha256": "fd9aa6254acd685601e87893b7e214a57808b27796e549983e406b14dee98036",
+  "worker": "account1-worker-04",
+  "assigned_entry_numbers": [
+    210,
+    267,
+    581,
+    769,
+    830,
+    954,
+    1727,
+    2106,
+    2441,
+    2562,
+    3009,
+    3722,
+    4040,
+    4619,
+    5505,
+    6127,
+    6241
+  ],
+  "observed_entry_numbers": [
+    210,
+    267,
+    581,
+    769,
+    830,
+    954,
+    1727,
+    2106,
+    2441,
+    2562,
+    3009,
+    3722,
+    4040,
+    4619,
+    5505,
+    6127,
+    6241
+  ],
+  "outcome_count": 17,
+  "batch_files": [
+    "account1-worker-04-batch-001.jsonl",
+    "account1-worker-04-batch-002.jsonl"
+  ],
+  "status_counts": {
+    "citation_repaired_proposal": 3,
+    "corrected_claim_proposal": 12,
+    "scope_exclusion_proposal": 2,
+    "unresolved_hold": 0
+  },
+  "checks": {
+    "jsonl_parse": true,
+    "exact_id_set": true,
+    "one_outcome_per_id": true,
+    "source_urls_mapped": true,
+    "support_notes_present": true,
+    "copy_length_bounds": true,
+    "prior_input_hash_matches": true
+  },
+  "errors": []
+}
