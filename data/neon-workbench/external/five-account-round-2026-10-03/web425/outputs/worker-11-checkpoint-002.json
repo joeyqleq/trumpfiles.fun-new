@@ -1,0 +1,32 @@
+{
+  "worker": 11,
+  "checkpoint": 2,
+  "status": "in_progress",
+  "branch": "ls/11-trump-files-web425-review-11-of-12-Nsfp",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "6331c7e64644c0571bee146975dd3ac264aaea6ec2c7888636b639562b4daad7",
+  "output_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-11-batch-20261003-unique.jsonl",
+  "rows_written": 14,
+  "keys_completed": [
+    "entry-4708",
+    "entry-5213",
+    "entry-5732",
+    "entry-5809",
+    "entry-5899",
+    "entry-6393",
+    "entry-6428",
+    "entry-6457",
+    "entry-6517",
+    "entry-6598",
+    "entry-6619",
+    "entry-6679",
+    "entry-6751",
+    "entry-6785"
+  ],
+  "verdict_counts": {
+    "pass": 6,
+    "hold": 8,
+    "superseded": 0
+  },
+  "exact_set_final_qa": null
+}

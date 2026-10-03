@@ -1,0 +1,142 @@
+{
+  "worker": 11,
+  "checkpoint": 5,
+  "status": "completed",
+  "branch": "ls/11-trump-files-web425-review-11-of-12-Nsfp",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "6331c7e64644c0571bee146975dd3ac264aaea6ec2c7888636b639562b4daad7",
+  "output_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-11-batch-20261003-unique.jsonl",
+  "rows_written": 35,
+  "keys_completed": [
+    "entry-4708",
+    "entry-5213",
+    "entry-5732",
+    "entry-5809",
+    "entry-5899",
+    "entry-6393",
+    "entry-6428",
+    "entry-6457",
+    "entry-6517",
+    "entry-6598",
+    "entry-6619",
+    "entry-6679",
+    "entry-6751",
+    "entry-6785",
+    "entry-6801",
+    "entry-6827",
+    "entry-6865",
+    "entry-6928",
+    "entry-6944",
+    "entry-7047",
+    "entry-7095",
+    "entry-7130",
+    "entry-7166",
+    "expanded-20260821-visa75-court",
+    "expanded-20260902-california-waivers-order",
+    "expanded-20260910-vance-rnc-misleading-claims",
+    "expanded-20260918-trump-five-vaccine-doses",
+    "expanded-20260925-pocket-rescission-announcement",
+    "expanded-20260929-irgc-us-voter-letter",
+    "fresh-20260914-oge-trump-ptr",
+    "pr47-review-entry-1200",
+    "pr47-review-entry-1300",
+    "pr47-review-entry-1472",
+    "pr47-review-entry-1546",
+    "pr47-review-entry-1625"
+  ],
+  "verdict_counts": {
+    "pass": 9,
+    "hold": 26,
+    "superseded": 0
+  },
+  "exact_set_final_qa": {
+    "expected_count": 35,
+    "actual_count": 35,
+    "unique_key_count": 35,
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "duplicate_keys": [],
+    "invalid_verdict_rows": [],
+    "superseded_missing_higher_revision_provenance": [],
+    "cross_key_identity_collisions": [],
+    "packet_rescue_provenance_matches_input": true,
+    "prior_checkpoint_counts_valid": [
+      {
+        "checkpoint": 1,
+        "rows_written": 7,
+        "valid": true
+      },
+      {
+        "checkpoint": 2,
+        "rows_written": 14,
+        "valid": true
+      },
+      {
+        "checkpoint": 3,
+        "rows_written": 21,
+        "valid": true
+      },
+      {
+        "checkpoint": 4,
+        "rows_written": 28,
+        "valid": true
+      }
+    ],
+    "verdict_counts": {
+      "pass": 9,
+      "hold": 26,
+      "superseded": 0
+    },
+    "passed": true,
+    "duplicate_candidate_pairs": [
+      {
+        "key": "entry-6393",
+        "counterpart_entry_number": 5975,
+        "counterpart_within_assigned_35": false
+      },
+      {
+        "key": "entry-7047",
+        "counterpart_entry_number": 7038,
+        "counterpart_within_assigned_35": false
+      },
+      {
+        "key": "entry-7095",
+        "counterpart_entry_number": 7074,
+        "counterpart_within_assigned_35": false
+      },
+      {
+        "key": "entry-7130",
+        "counterpart_entry_number": 7104,
+        "counterpart_within_assigned_35": false
+      },
+      {
+        "key": "entry-7166",
+        "counterpart_entry_number": 7149,
+        "counterpart_within_assigned_35": false
+      },
+      {
+        "key": "expanded-20260821-visa75-court",
+        "counterpart_entry_number": 3992,
+        "counterpart_within_assigned_35": false
+      },
+      {
+        "key": "expanded-20260902-california-waivers-order",
+        "counterpart_entry_number": 4705,
+        "counterpart_within_assigned_35": false
+      },
+      {
+        "key": "expanded-20260918-trump-five-vaccine-doses",
+        "counterpart_entry_number": 82,
+        "counterpart_within_assigned_35": false
+      },
+      {
+        "key": "fresh-20260914-oge-trump-ptr",
+        "counterpart_entry_number": 5347,
+        "counterpart_within_assigned_35": false
+      }
+    ],
+    "assigned_duplicate_counterpart_collisions": [],
+    "output_sha256": "1c9a7d252bd124c40f09dd14453aed9029ee3be1a0ad7b5f6a8e5be989a8a0b8",
+    "output_bytes": 63704
+  }
+}
