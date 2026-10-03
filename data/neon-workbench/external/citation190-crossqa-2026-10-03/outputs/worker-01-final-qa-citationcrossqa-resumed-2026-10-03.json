@@ -1,0 +1,110 @@
+{
+  "qa": "citation190-crossqa-worker-01-final-exact-set-resumed",
+  "packet_branch": "codex/citation190-crossqa-2026-10-03",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "input_file": "worker-01-input.jsonl",
+  "input_sha256": "b3afbca66c441a34405a3f1144c013b037afeaaca2c9340ebbb6999f1d4df0a6",
+  "expected_keys_in_packet_order": [
+    "entry-35",
+    "entry-231",
+    "entry-390",
+    "entry-735",
+    "entry-822",
+    "entry-945",
+    "entry-1727",
+    "entry-2296",
+    "entry-2466",
+    "entry-2636",
+    "entry-3380",
+    "entry-3839",
+    "entry-4296",
+    "entry-5406",
+    "entry-5707",
+    "entry-6230"
+  ],
+  "packet_record_count": 16,
+  "batch_file": "worker-01-batch-2026-10-03-citationcrossqa-a.jsonl",
+  "saved_count": 16,
+  "missing_count": 0,
+  "duplicate_count": 0,
+  "unexpected_keys": [],
+  "exact_set_valid": true,
+  "classification_counts": {
+    "intentional_exclusion": 1,
+    "narrower_revision_required": 6,
+    "supported_proposal": 9,
+    "unsupported_hold": 0
+  },
+  "results_by_key": [
+    {
+      "key": "entry-35",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-231",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-390",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-735",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-822",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-945",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-1727",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-2296",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-2466",
+      "classification": "intentional_exclusion"
+    },
+    {
+      "key": "entry-2636",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-3380",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-3839",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-4296",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-5406",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-5707",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-6230",
+      "classification": "supported_proposal"
+    }
+  ],
+  "terminal_checkpoint": "worker-01-checkpoint-terminal-citationcrossqa-2026-10-03.json",
+  "canonical_edits": false,
+  "neon_or_database_calls_or_writes": false,
+  "packet_inputs_edited": false,
+  "other_worker_outputs_edited": false,
+  "pr_opened": false
+}
