@@ -1,0 +1,45 @@
+{
+  "worker": "02",
+  "phase": "impact368-deferred-score-review",
+  "input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/worker-02-input.jsonl",
+  "input_sha256_expected": "74b66e6a755d88c478e834c7a0abca1400e3f5dc62affaa11ab88a91639c4828",
+  "input_sha256_actual": "74b66e6a755d88c478e834c7a0abca1400e3f5dc62affaa11ab88a91639c4828",
+  "output_file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-02-batch-86d71a0b-20261003.jsonl",
+  "output_sha256": "3c7c0ad38fcdb536d47f49a2d94202dde8233a392d4e332ca72b512dab0f6958",
+  "assigned_count": 31,
+  "output_count": 31,
+  "exact_packet_id_set_match": true,
+  "packet_order_preserved": true,
+  "prior_records_all_deferred_without_dimensions": true,
+  "scored_count": 0,
+  "deferred_count": 31,
+  "all_rows_have_basis_and_exact_missing_fact_reason": true,
+  "dimension_validation": "PASS: every output row is deferred with dimensions=null; there are no numeric dimension values to precision-check.",
+  "formula": {
+    "expression": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+    "weights": {
+      "harm": 0.3,
+      "reach": 0.2,
+      "institutions": 0.15,
+      "procedural_abuse": 0.15,
+      "self_dealing": 0.1,
+      "persistence": 0.1
+    },
+    "weights_sum": 1.0,
+    "rounding": "weighted composite to 2 decimals after one-decimal dimension values",
+    "validation": "PASS: established weights sum to 1.00; no composite applies because no row has defensible numeric dimensions."
+  },
+  "source_basis_validation": "PASS: reviewed the exact packet bases and only matching records for these 31 IDs in the frozen score-follow-up inputs; output bases preserve supported facts and reasons identify the unresolved fact. No general web search or database write was used.",
+  "checkpoint_file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/checkpoints/worker-02-checkpoint-86d71a0b-20261003.jsonl",
+  "checkpoint_counts": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    31
+  ],
+  "review_outcome": "All 31 remain deferred because supplied evidence leaves a claim-critical attribution, source detail, consequence, or outcome unresolved; no prior score was changed."
+}
