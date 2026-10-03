@@ -1,0 +1,1103 @@
+{
+  "record_type": "sample100_superseding_final_exact_set_qa",
+  "status": "superseding_final_exact_set_qa",
+  "supersedes": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-10-batch-20261003-001.jsonl#embedded-final_exact_set_qa",
+  "append_only_note": "This is a new follow-up QA artifact. Prior batch rows and embedded history are unchanged.",
+  "packet": {
+    "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-10-input.jsonl",
+    "input_sha256": "faaedd41063c348cfbd27e134213db6d1b234f9c80deb7fd50f2b1093e38e4ba"
+  },
+  "prior_batch": {
+    "path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-10-batch-20261003-001.jsonl",
+    "row_count": 8,
+    "batch_counts": {
+      "batch_1": 5,
+      "batch_2": 3
+    }
+  },
+  "exact_ids": [
+    "entry-10",
+    "entry-22",
+    "entry-34",
+    "entry-48",
+    "entry-60",
+    "entry-74",
+    "entry-86",
+    "entry-98"
+  ],
+  "counts": {
+    "expected": 8,
+    "actual": 8,
+    "exact_key_set": true,
+    "pass_count": 5,
+    "hold_count": 3
+  },
+  "impact_formula": {
+    "version": "impact-v2",
+    "weights": {
+      "harm": 0.3,
+      "reach": 0.2,
+      "institutions": 0.15,
+      "procedural_abuse": 0.15,
+      "self_dealing": 0.1,
+      "persistence": 0.1
+    },
+    "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+    "rounding": "ROUND_HALF_UP to 2 decimal places"
+  },
+  "blocking_ids": [
+    "entry-22",
+    "entry-34",
+    "entry-74"
+  ],
+  "explicit_blockers": [
+    {
+      "key": "entry-22",
+      "reason": "HOLD: packet notes say the linked Los Angeles Times report supports the $2.5B and $3.6B transfers, lower-court rulings, and an interim Supreme Court stay, but the preserved long description still says the Court approved the transfers, found constitutional violations, and alleges donor enrichment/effectiveness beyond that source. The packet explicitly records that the correction remains needed.",
+      "details": [
+        "HOLD: packet notes say the linked Los Angeles Times report supports the $2.5B and $3.6B transfers, lower-court rulings, and an interim Supreme Court stay, but the preserved long description still says the Court approved the transfers, found constitutional violations, and alleges donor enrichment/effectiveness beyond that source. The packet explicitly records that the correction remains needed."
+      ]
+    },
+    {
+      "key": "entry-34",
+      "reason": "HOLD: packet notes say the supplied FDA notice supports the June 15 authorization revocation and risk assessment, but does not establish that Trump’s promotion caused deaths or medication shortages. The preserved long description retains those causal claims, and the packet explicitly proposes removing them.",
+      "details": [
+        "HOLD: packet notes say the supplied FDA notice supports the June 15 authorization revocation and risk assessment, but does not establish that Trump’s promotion caused deaths or medication shortages. The preserved long description retains those causal claims, and the packet explicitly proposes removing them."
+      ]
+    },
+    {
+      "key": "entry-74",
+      "reason": "HOLD: preserved_fields names description_short but supplies only a list of field names, not the old value; frozen_original contains no description_short field. The staged short value therefore cannot be independently compared with a frozen short-text baseline.",
+      "details": [
+        "HOLD: preserved_fields names description_short but supplies only a list of field names, not the old value; frozen_original contains no description_short field. The staged short value therefore cannot be independently compared with a frozen short-text baseline.",
+        "Preservation cannot be verified because frozen_original lacks values for: description_short, description_long."
+      ]
+    }
+  ],
+  "no_live_database_activity": true,
+  "results": [
+    {
+      "key": "entry-10",
+      "verdict": "PASS",
+      "prior_batch_verdict": "PASS",
+      "reason": "PASS: frozen identity and packet-declared preservation checks match; text limits pass; six-dimension score recomputes to the supplied value; source and draft provenance are present.",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "packet_key_matches_frozen_entry_number": true,
+          "staged_entry_number_matches": true,
+          "staged_record_id_matches": true,
+          "impact_entry_number_matches": true,
+          "impact_record_id_matches": true,
+          "staged_title_matches_frozen": true
+        }
+      },
+      "existing_text_preservation": {
+        "status": "pass",
+        "declared_fields": [
+          "title",
+          "description_short",
+          "category",
+          "subcategory",
+          "topic_tags"
+        ],
+        "details": [
+          {
+            "field": "title",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_short",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "category",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "subcategory",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "topic_tags",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          }
+        ],
+        "missing_frozen_values": [],
+        "mismatches": []
+      },
+      "text_lengths": {
+        "short_chars": 155,
+        "short_max": 180,
+        "short_pass": true,
+        "medium_words": 63,
+        "medium_min": 45,
+        "medium_max": 90,
+        "medium_pass": true,
+        "long_words": 172,
+        "long_min": 140,
+        "long_max": 300,
+        "long_pass": true
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 8.0,
+          "reach": 8.0,
+          "institutions": 4.0,
+          "procedural_abuse": 3.0,
+          "self_dealing": 0.0,
+          "persistence": 4.0
+        },
+        "weights": {
+          "harm": 0.3,
+          "reach": 0.2,
+          "institutions": 0.15,
+          "procedural_abuse": 0.15,
+          "self_dealing": 0.1,
+          "persistence": 0.1
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "weighted_sum_unrounded": "5.450",
+        "rounding": "ROUND_HALF_UP to 2 decimal places",
+        "recomputed_score": 5.45,
+        "recomputed_score_fixed_2dp": "5.45",
+        "packet_score": 5.45,
+        "prior_batch_score": 5.45,
+        "pass": true
+      },
+      "source_provenance": {
+        "status": "pass",
+        "source_urls": [
+          "https://www.bbc.com/news/world-us-canada-38781302"
+        ],
+        "draft_provenance": "finish-2026-10-01/outputs/import-cloud-01-44dc460404cf660c.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-02-1a93e37dfca6fbdd.jsonl",
+        "matches_prior_batch_check": true,
+        "url_format_valid": true,
+        "scope": "packet fields checked; no web requests made"
+      },
+      "simulated_sql_parameter_readiness": {
+        "status": "ready_for_guarded_offline_simulation",
+        "available_parameters": {
+          "entry_number_type": "integer",
+          "description_short_type": "string",
+          "description_medium_type": "string",
+          "description_long_type": "string",
+          "impact_dimensions_type": "object",
+          "impact_score_type": "numeric"
+        },
+        "write_guard": "WHERE entry_number = :entry_number AND each target field IS NULL",
+        "production_ready": false
+      },
+      "blockers": []
+    },
+    {
+      "key": "entry-22",
+      "verdict": "HOLD",
+      "prior_batch_verdict": "HOLD",
+      "reason": "HOLD: packet notes say the linked Los Angeles Times report supports the $2.5B and $3.6B transfers, lower-court rulings, and an interim Supreme Court stay, but the preserved long description still says the Court approved the transfers, found constitutional violations, and alleges donor enrichment/effectiveness beyond that source. The packet explicitly records that the correction remains needed.",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "packet_key_matches_frozen_entry_number": true,
+          "staged_entry_number_matches": true,
+          "staged_record_id_matches": true,
+          "impact_entry_number_matches": true,
+          "impact_record_id_matches": true,
+          "staged_title_matches_frozen": true
+        }
+      },
+      "existing_text_preservation": {
+        "status": "pass",
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long",
+          "category",
+          "subcategory",
+          "topic_tags",
+          "organization_tags",
+          "source_urls"
+        ],
+        "details": [
+          {
+            "field": "title",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_short",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_long",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "category",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "subcategory",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "topic_tags",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "organization_tags",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "source_urls",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          }
+        ],
+        "missing_frozen_values": [],
+        "mismatches": []
+      },
+      "text_lengths": {
+        "short_chars": 58,
+        "short_max": 180,
+        "short_pass": true,
+        "medium_words": 62,
+        "medium_min": 45,
+        "medium_max": 90,
+        "medium_pass": true,
+        "long_words": 226,
+        "long_min": 140,
+        "long_max": 300,
+        "long_pass": true
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 4.0,
+          "reach": 8.0,
+          "institutions": 7.0,
+          "procedural_abuse": 6.0,
+          "self_dealing": 0.0,
+          "persistence": 5.0
+        },
+        "weights": {
+          "harm": 0.3,
+          "reach": 0.2,
+          "institutions": 0.15,
+          "procedural_abuse": 0.15,
+          "self_dealing": 0.1,
+          "persistence": 0.1
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "weighted_sum_unrounded": "5.250",
+        "rounding": "ROUND_HALF_UP to 2 decimal places",
+        "recomputed_score": 5.25,
+        "recomputed_score_fixed_2dp": "5.25",
+        "packet_score": 5.25,
+        "prior_batch_score": 5.25,
+        "pass": true
+      },
+      "source_provenance": {
+        "status": "pass",
+        "source_urls": [
+          "https://www.latimes.com/politics/story/2020-07-31/supreme-court-trump-border-wall-construction"
+        ],
+        "draft_provenance": "finish-2026-10-01/outputs/import-cloud-07-c3ee01caae44a7b9.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-02-9b7697ca623d8702.jsonl",
+        "matches_prior_batch_check": true,
+        "url_format_valid": true,
+        "scope": "packet fields checked; no web requests made"
+      },
+      "simulated_sql_parameter_readiness": {
+        "status": "blocked_by_row_hold",
+        "available_parameters": {
+          "entry_number_type": "integer",
+          "description_short_type": "string",
+          "description_medium_type": "string",
+          "description_long_type": "string",
+          "impact_dimensions_type": "object",
+          "impact_score_type": "numeric"
+        },
+        "write_guard": "WHERE entry_number = :entry_number AND each target field IS NULL",
+        "production_ready": false
+      },
+      "blockers": [
+        "HOLD: packet notes say the linked Los Angeles Times report supports the $2.5B and $3.6B transfers, lower-court rulings, and an interim Supreme Court stay, but the preserved long description still says the Court approved the transfers, found constitutional violations, and alleges donor enrichment/effectiveness beyond that source. The packet explicitly records that the correction remains needed."
+      ]
+    },
+    {
+      "key": "entry-34",
+      "verdict": "HOLD",
+      "prior_batch_verdict": "HOLD",
+      "reason": "HOLD: packet notes say the supplied FDA notice supports the June 15 authorization revocation and risk assessment, but does not establish that Trump’s promotion caused deaths or medication shortages. The preserved long description retains those causal claims, and the packet explicitly proposes removing them.",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "packet_key_matches_frozen_entry_number": true,
+          "staged_entry_number_matches": true,
+          "staged_record_id_matches": true,
+          "impact_entry_number_matches": true,
+          "impact_record_id_matches": true,
+          "staged_title_matches_frozen": true
+        }
+      },
+      "existing_text_preservation": {
+        "status": "pass",
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long",
+          "category",
+          "subcategory",
+          "topic_tags",
+          "organization_tags"
+        ],
+        "details": [
+          {
+            "field": "title",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_short",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_long",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "category",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "subcategory",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "topic_tags",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "organization_tags",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          }
+        ],
+        "missing_frozen_values": [],
+        "mismatches": []
+      },
+      "text_lengths": {
+        "short_chars": 53,
+        "short_max": 180,
+        "short_pass": true,
+        "medium_words": 59,
+        "medium_min": 45,
+        "medium_max": 90,
+        "medium_pass": true,
+        "long_words": 251,
+        "long_min": 140,
+        "long_max": 300,
+        "long_pass": true
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 8,
+          "institutions": 2,
+          "procedural_abuse": 0.5,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weights": {
+          "harm": 0.3,
+          "reach": 0.2,
+          "institutions": 0.15,
+          "procedural_abuse": 0.15,
+          "self_dealing": 0.1,
+          "persistence": 0.1
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "weighted_sum_unrounded": "3.525",
+        "rounding": "ROUND_HALF_UP to 2 decimal places",
+        "recomputed_score": 3.53,
+        "recomputed_score_fixed_2dp": "3.53",
+        "packet_score": 3.53,
+        "prior_batch_score": 3.53,
+        "pass": true
+      },
+      "source_provenance": {
+        "status": "pass",
+        "source_urls": [
+          "https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-revokes-emergency-use-authorization-chloroquine-and"
+        ],
+        "draft_provenance": "finish-2026-10-01/outputs/import-cloud-06-4843026f0e24b7b1.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-03-13827baccf80f202.jsonl",
+        "matches_prior_batch_check": true,
+        "url_format_valid": true,
+        "scope": "packet fields checked; no web requests made"
+      },
+      "simulated_sql_parameter_readiness": {
+        "status": "blocked_by_row_hold",
+        "available_parameters": {
+          "entry_number_type": "integer",
+          "description_short_type": "string",
+          "description_medium_type": "string",
+          "description_long_type": "string",
+          "impact_dimensions_type": "object",
+          "impact_score_type": "numeric"
+        },
+        "write_guard": "WHERE entry_number = :entry_number AND each target field IS NULL",
+        "production_ready": false
+      },
+      "blockers": [
+        "HOLD: packet notes say the supplied FDA notice supports the June 15 authorization revocation and risk assessment, but does not establish that Trump’s promotion caused deaths or medication shortages. The preserved long description retains those causal claims, and the packet explicitly proposes removing them."
+      ]
+    },
+    {
+      "key": "entry-48",
+      "verdict": "PASS",
+      "prior_batch_verdict": "PASS",
+      "reason": "PASS: frozen identity and packet-declared preservation checks match; text limits pass; six-dimension score recomputes to the supplied value; source and draft provenance are present.",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "packet_key_matches_frozen_entry_number": true,
+          "staged_entry_number_matches": true,
+          "staged_record_id_matches": true,
+          "impact_entry_number_matches": true,
+          "impact_record_id_matches": true,
+          "staged_title_matches_frozen": true
+        }
+      },
+      "existing_text_preservation": {
+        "status": "pass",
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long"
+        ],
+        "details": [
+          {
+            "field": "title",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_short",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_long",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          }
+        ],
+        "missing_frozen_values": [],
+        "mismatches": []
+      },
+      "text_lengths": {
+        "short_chars": 44,
+        "short_max": 180,
+        "short_pass": true,
+        "medium_words": 53,
+        "medium_min": 45,
+        "medium_max": 90,
+        "medium_pass": true,
+        "long_words": 232,
+        "long_min": 140,
+        "long_max": 300,
+        "long_pass": true
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 4.0,
+          "reach": 6.0,
+          "institutions": 4.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 5.0
+        },
+        "weights": {
+          "harm": 0.3,
+          "reach": 0.2,
+          "institutions": 0.15,
+          "procedural_abuse": 0.15,
+          "self_dealing": 0.1,
+          "persistence": 0.1
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "weighted_sum_unrounded": "3.500",
+        "rounding": "ROUND_HALF_UP to 2 decimal places",
+        "recomputed_score": 3.5,
+        "recomputed_score_fixed_2dp": "3.50",
+        "packet_score": 3.5,
+        "prior_batch_score": 3.5,
+        "pass": true
+      },
+      "source_provenance": {
+        "status": "pass",
+        "source_urls": [
+          "https://www.usatoday.com/story/news/investigations/2024/05/23/trump-qanon-2024-election/73794116007/"
+        ],
+        "draft_provenance": "chatgpt-web/outputs/import-web-oct1-luna6-review-010-a4030ca73e59.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-01-824d44da1a014984.jsonl",
+        "matches_prior_batch_check": true,
+        "url_format_valid": true,
+        "scope": "packet fields checked; no web requests made"
+      },
+      "simulated_sql_parameter_readiness": {
+        "status": "ready_for_guarded_offline_simulation",
+        "available_parameters": {
+          "entry_number_type": "integer",
+          "description_short_type": "string",
+          "description_medium_type": "string",
+          "description_long_type": "string",
+          "impact_dimensions_type": "object",
+          "impact_score_type": "numeric"
+        },
+        "write_guard": "WHERE entry_number = :entry_number AND each target field IS NULL",
+        "production_ready": false
+      },
+      "blockers": []
+    },
+    {
+      "key": "entry-60",
+      "verdict": "PASS",
+      "prior_batch_verdict": "PASS",
+      "reason": "PASS: frozen identity and packet-declared preservation checks match; text limits pass; six-dimension score recomputes to the supplied value; source and draft provenance are present.",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "packet_key_matches_frozen_entry_number": true,
+          "staged_entry_number_matches": true,
+          "staged_record_id_matches": true,
+          "impact_entry_number_matches": true,
+          "impact_record_id_matches": true,
+          "staged_title_matches_frozen": true
+        }
+      },
+      "existing_text_preservation": {
+        "status": "pass",
+        "declared_fields": [
+          "title",
+          "description_short"
+        ],
+        "details": [
+          {
+            "field": "title",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_short",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          }
+        ],
+        "missing_frozen_values": [],
+        "mismatches": []
+      },
+      "text_lengths": {
+        "short_chars": 113,
+        "short_max": 180,
+        "short_pass": true,
+        "medium_words": 47,
+        "medium_min": 45,
+        "medium_max": 90,
+        "medium_pass": true,
+        "long_words": 149,
+        "long_min": 140,
+        "long_max": 300,
+        "long_pass": true
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 2.0,
+          "reach": 8.0,
+          "institutions": 5.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 4.0
+        },
+        "weights": {
+          "harm": 0.3,
+          "reach": 0.2,
+          "institutions": 0.15,
+          "procedural_abuse": 0.15,
+          "self_dealing": 0.1,
+          "persistence": 0.1
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "weighted_sum_unrounded": "3.350",
+        "rounding": "ROUND_HALF_UP to 2 decimal places",
+        "recomputed_score": 3.35,
+        "recomputed_score_fixed_2dp": "3.35",
+        "packet_score": 3.35,
+        "prior_batch_score": 3.35,
+        "pass": true
+      },
+      "source_provenance": {
+        "status": "pass",
+        "source_urls": [
+          "https://www.reuters.com/article/us-usa-trump-media-idUSKBN15U2D0"
+        ],
+        "draft_provenance": "lightsprint/outputs/import-cloud-07-e355773411e7f682.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-02-912725db82f9484f.jsonl",
+        "matches_prior_batch_check": true,
+        "url_format_valid": true,
+        "scope": "packet fields checked; no web requests made"
+      },
+      "simulated_sql_parameter_readiness": {
+        "status": "ready_for_guarded_offline_simulation",
+        "available_parameters": {
+          "entry_number_type": "integer",
+          "description_short_type": "string",
+          "description_medium_type": "string",
+          "description_long_type": "string",
+          "impact_dimensions_type": "object",
+          "impact_score_type": "numeric"
+        },
+        "write_guard": "WHERE entry_number = :entry_number AND each target field IS NULL",
+        "production_ready": false
+      },
+      "blockers": []
+    },
+    {
+      "key": "entry-74",
+      "verdict": "HOLD",
+      "prior_batch_verdict": "HOLD",
+      "reason": "HOLD: preserved_fields names description_short but supplies only a list of field names, not the old value; frozen_original contains no description_short field. The staged short value therefore cannot be independently compared with a frozen short-text baseline.",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "packet_key_matches_frozen_entry_number": true,
+          "staged_entry_number_matches": true,
+          "staged_record_id_matches": true,
+          "impact_entry_number_matches": true,
+          "impact_record_id_matches": true,
+          "staged_title_matches_frozen": true
+        }
+      },
+      "existing_text_preservation": {
+        "status": "hold",
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long"
+        ],
+        "details": [
+          {
+            "field": "title",
+            "basis": "frozen_original value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_short",
+            "basis": "frozen_original value",
+            "baseline_present": false,
+            "staged_present": true,
+            "match": false
+          },
+          {
+            "field": "description_long",
+            "basis": "frozen_original value",
+            "baseline_present": false,
+            "staged_present": true,
+            "match": false
+          }
+        ],
+        "missing_frozen_values": [
+          "description_short",
+          "description_long"
+        ],
+        "mismatches": []
+      },
+      "text_lengths": {
+        "short_chars": 54,
+        "short_max": 180,
+        "short_pass": true,
+        "medium_words": 52,
+        "medium_min": 45,
+        "medium_max": 90,
+        "medium_pass": true,
+        "long_words": 246,
+        "long_min": 140,
+        "long_max": 300,
+        "long_pass": true
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 1.0,
+          "reach": 5.5,
+          "institutions": 3.2,
+          "procedural_abuse": 3.0,
+          "self_dealing": 3.2,
+          "persistence": 0.8
+        },
+        "weights": {
+          "harm": 0.3,
+          "reach": 0.2,
+          "institutions": 0.15,
+          "procedural_abuse": 0.15,
+          "self_dealing": 0.1,
+          "persistence": 0.1
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "weighted_sum_unrounded": "2.730",
+        "rounding": "ROUND_HALF_UP to 2 decimal places",
+        "recomputed_score": 2.73,
+        "recomputed_score_fixed_2dp": "2.73",
+        "packet_score": 2.73,
+        "prior_batch_score": 2.73,
+        "pass": true
+      },
+      "source_provenance": {
+        "status": "pass",
+        "source_urls": [
+          "https://www.bbc.com/news/world-us-canada-53429797",
+          "https://abcnews.go.com/Politics/ivanka-trumps-social-media-posts-goya-beans-provoke/story?id=71795732"
+        ],
+        "draft_provenance": "chatgpt-web/outputs/import-web-worker-1-extra-batch-085-ccdd3977a850.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-12-2eb146a47c2e1bca.jsonl",
+        "matches_prior_batch_check": true,
+        "url_format_valid": true,
+        "scope": "packet fields checked; no web requests made"
+      },
+      "simulated_sql_parameter_readiness": {
+        "status": "blocked_by_row_hold",
+        "available_parameters": {
+          "entry_number_type": "integer",
+          "description_short_type": "string",
+          "description_medium_type": "string",
+          "description_long_type": "string",
+          "impact_dimensions_type": "object",
+          "impact_score_type": "numeric"
+        },
+        "write_guard": "WHERE entry_number = :entry_number AND each target field IS NULL",
+        "production_ready": false
+      },
+      "blockers": [
+        "HOLD: preserved_fields names description_short but supplies only a list of field names, not the old value; frozen_original contains no description_short field. The staged short value therefore cannot be independently compared with a frozen short-text baseline.",
+        "Preservation cannot be verified because frozen_original lacks values for: description_short, description_long."
+      ]
+    },
+    {
+      "key": "entry-86",
+      "verdict": "PASS",
+      "prior_batch_verdict": "PASS",
+      "reason": "PASS: frozen identity and packet-declared preservation checks match; text limits pass; six-dimension score recomputes to the supplied value; source and draft provenance are present.",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "packet_key_matches_frozen_entry_number": true,
+          "staged_entry_number_matches": true,
+          "staged_record_id_matches": true,
+          "impact_entry_number_matches": true,
+          "impact_record_id_matches": true,
+          "staged_title_matches_frozen": true
+        }
+      },
+      "existing_text_preservation": {
+        "status": "pass",
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long"
+        ],
+        "details": [
+          {
+            "field": "title",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_short",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_long",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          }
+        ],
+        "missing_frozen_values": [],
+        "mismatches": []
+      },
+      "text_lengths": {
+        "short_chars": 61,
+        "short_max": 180,
+        "short_pass": true,
+        "medium_words": 48,
+        "medium_min": 45,
+        "medium_max": 90,
+        "medium_pass": true,
+        "long_words": 227,
+        "long_min": 140,
+        "long_max": 300,
+        "long_pass": true
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 1.5,
+          "reach": 7.0,
+          "institutions": 3.5,
+          "procedural_abuse": 1.0,
+          "self_dealing": 4.0,
+          "persistence": 0.5
+        },
+        "weights": {
+          "harm": 0.3,
+          "reach": 0.2,
+          "institutions": 0.15,
+          "procedural_abuse": 0.15,
+          "self_dealing": 0.1,
+          "persistence": 0.1
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "weighted_sum_unrounded": "2.975",
+        "rounding": "ROUND_HALF_UP to 2 decimal places",
+        "recomputed_score": 2.98,
+        "recomputed_score_fixed_2dp": "2.98",
+        "packet_score": 2.98,
+        "prior_batch_score": 2.98,
+        "pass": true
+      },
+      "source_provenance": {
+        "status": "pass",
+        "source_urls": [
+          "https://www.npr.org/2020/12/03/942229249/in-his-final-weeks-trump-could-dole-out-many-pardons-to-friends-allies",
+          "https://www.cnn.com/2021/01/19/politics/trump-self-pardon-warning",
+          "https://www.politico.com/news/2020/12/03/trump-considers-more-pardons-442727"
+        ],
+        "draft_provenance": "lightsprint/outputs/import-cloud-05-70dada84da62021f.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-10-77dc04f5ff9316e8.jsonl",
+        "matches_prior_batch_check": true,
+        "url_format_valid": true,
+        "scope": "packet fields checked; no web requests made"
+      },
+      "simulated_sql_parameter_readiness": {
+        "status": "ready_for_guarded_offline_simulation",
+        "available_parameters": {
+          "entry_number_type": "integer",
+          "description_short_type": "string",
+          "description_medium_type": "string",
+          "description_long_type": "string",
+          "impact_dimensions_type": "object",
+          "impact_score_type": "numeric"
+        },
+        "write_guard": "WHERE entry_number = :entry_number AND each target field IS NULL",
+        "production_ready": false
+      },
+      "blockers": []
+    },
+    {
+      "key": "entry-98",
+      "verdict": "PASS",
+      "prior_batch_verdict": "PASS",
+      "reason": "PASS: frozen identity and packet-declared preservation checks match; text limits pass; six-dimension score recomputes to the supplied value; source and draft provenance are present.",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "packet_key_matches_frozen_entry_number": true,
+          "staged_entry_number_matches": true,
+          "staged_record_id_matches": true,
+          "impact_entry_number_matches": true,
+          "impact_record_id_matches": true,
+          "staged_title_matches_frozen": true
+        }
+      },
+      "existing_text_preservation": {
+        "status": "pass",
+        "declared_fields": [
+          "title",
+          "description_short",
+          "description_long",
+          "subcategory",
+          "topic_tags"
+        ],
+        "details": [
+          {
+            "field": "title",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_short",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "description_long",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "subcategory",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          },
+          {
+            "field": "topic_tags",
+            "basis": "packet-declared preserved value",
+            "baseline_present": true,
+            "staged_present": true,
+            "match": true
+          }
+        ],
+        "missing_frozen_values": [],
+        "mismatches": []
+      },
+      "text_lengths": {
+        "short_chars": 64,
+        "short_max": 180,
+        "short_pass": true,
+        "medium_words": 69,
+        "medium_min": 45,
+        "medium_max": 90,
+        "medium_pass": true,
+        "long_words": 230,
+        "long_min": 140,
+        "long_max": 300,
+        "long_pass": true
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 9.0,
+          "institutions": 6.5,
+          "procedural_abuse": 3.5,
+          "self_dealing": 0.0,
+          "persistence": 2.0
+        },
+        "weights": {
+          "harm": 0.3,
+          "reach": 0.2,
+          "institutions": 0.15,
+          "procedural_abuse": 0.15,
+          "self_dealing": 0.1,
+          "persistence": 0.1
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "weighted_sum_unrounded": "4.850",
+        "rounding": "ROUND_HALF_UP to 2 decimal places",
+        "recomputed_score": 4.85,
+        "recomputed_score_fixed_2dp": "4.85",
+        "packet_score": 4.85,
+        "prior_batch_score": 4.85,
+        "pass": true
+      },
+      "source_provenance": {
+        "status": "pass",
+        "source_urls": [
+          "https://www.citizensforethics.org/reports-investigations/crew-investigations/trump-has-said-he-wants-to-destroy-the-deep-state-56-times-on-truth-social/",
+          "https://en.wikipedia.org/wiki/Project_2025"
+        ],
+        "draft_provenance": "opencodex/outputs/proxy-1-1790762009378050707.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-11-a35db9b2f453326e.jsonl",
+        "matches_prior_batch_check": true,
+        "url_format_valid": true,
+        "scope": "packet fields checked; no web requests made"
+      },
+      "simulated_sql_parameter_readiness": {
+        "status": "ready_for_guarded_offline_simulation",
+        "available_parameters": {
+          "entry_number_type": "integer",
+          "description_short_type": "string",
+          "description_medium_type": "string",
+          "description_long_type": "string",
+          "impact_dimensions_type": "object",
+          "impact_score_type": "numeric"
+        },
+        "write_guard": "WHERE entry_number = :entry_number AND each target field IS NULL",
+        "production_ready": false
+      },
+      "blockers": []
+    }
+  ]
+}
