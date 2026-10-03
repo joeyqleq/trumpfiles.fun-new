@@ -1,0 +1,159 @@
+{
+  "job": "normalized-release-qa-2026-10-04/account5/worker-08",
+  "source_job": "citation190-crossqa-2026-10-03@9ea34e84716e0599d8c63e0bb0714f64f545df25/worker-08",
+  "assigned_ids": [
+    "entry-211",
+    "entry-293",
+    "entry-651",
+    "entry-788",
+    "entry-878",
+    "entry-996",
+    "entry-1782",
+    "entry-2401",
+    "entry-2557",
+    "entry-2930",
+    "entry-3722",
+    "entry-4054",
+    "entry-4692",
+    "entry-5565",
+    "entry-6155",
+    "entry-6340"
+  ],
+  "assigned_count": 16,
+  "normalized_saved_count": 16,
+  "missing_count": 0,
+  "missing_ids": [],
+  "duplicate_terminal_count": 0,
+  "duplicate_terminal_ids": [],
+  "prior_batch_files": [
+    "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-08-citation-20261003-batch-001.jsonl",
+    "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-08-citation-20261003-batch-002.jsonl"
+  ],
+  "prior_batch_rows": 16,
+  "prior_batch_counts": [
+    8,
+    8
+  ],
+  "cross_batch_conflicts": [],
+  "disposition_counts": {
+    "intentional_exclusion": 2,
+    "narrower_revision_required": 2,
+    "supported_proposal": 12
+  },
+  "release_ready_count": 2,
+  "blocked_count": 14,
+  "blocking_ids": [
+    {
+      "key": "entry-211",
+      "reason": "Prior disposition requires narrower attribution: the short/claim wording states “had crossed into” more categorically than the source assessment. Do not release pending wording correction."
+    },
+    {
+      "key": "entry-293",
+      "reason": "Staged source list still has Politico/edition CNN and omits mapped Washington Post support for a separate long-text sentence; reconcile source mapping before release."
+    },
+    {
+      "key": "entry-651",
+      "reason": "Staged short remains a title placeholder and the corrected title/source mapping has not been carried into the staged copy; release copy is incomplete."
+    },
+    {
+      "key": "entry-996",
+      "reason": "Staged source list omits the exact warrant URL used for the time-served detail; add/map it before release."
+    },
+    {
+      "key": "entry-1782",
+      "reason": "Prior batch captured no account1 proposal text fields for this key. Source support was reviewed, but there is no exact proposal wording in the saved QA to approve."
+    },
+    {
+      "key": "entry-2401",
+      "reason": "Intentional exclusion: mapped sources concern Vanunu/Maxwell history, not a Trump event/action; one exact source was not separately fetched. Do not release as a Trump record."
+    },
+    {
+      "key": "entry-2557",
+      "reason": "Intentional exclusion: testimony supports Caputo’s account of 2007 Bloc Lytvyn work but not Putin direction or a Trump action. Do not release as a Trump record."
+    },
+    {
+      "key": "entry-2930",
+      "reason": "Prior disposition requires narrower source mapping: House release supports that allegations were made, while detailed actors/timing need direct complaint/docket mapping; keep all claims allegation-framed."
+    },
+    {
+      "key": "entry-3722",
+      "reason": "Only the proposed title is retained in the prior batch; the saved review excludes DOGE execution and causal claims. Full copy is not present here for release verification."
+    },
+    {
+      "key": "entry-4054",
+      "reason": "Staged long includes possible target details from a NYT source whose text was inaccessible; keep details hypothetical or remove/remap before release."
+    },
+    {
+      "key": "entry-4692",
+      "reason": "Staged sources include an August 2025 NYT URL that predates the October pardon and was not text-accessible; remove/remap it before release."
+    },
+    {
+      "key": "entry-5565",
+      "reason": "Staged long adds Medicaid/SNAP dollar projections outside the account1 proposal’s mapped sources; map the exact CBO evidence before release."
+    },
+    {
+      "key": "entry-6155",
+      "reason": "Staged copy includes later court-docket procedural dates outside the account1 map; retain only after those dates are mapped to their exact listed docket/Clearinghouse sources."
+    },
+    {
+      "key": "entry-6340",
+      "reason": "Only CNBC supports the narrowed $148m contest-purchase claim in the prior review. Reuters-specific metrics/geography in staged medium/long need supported attribution; they do not establish direct payment or citizenship."
+    }
+  ],
+  "verified_url_count": 26,
+  "url_format_validation": "Passed: 26 verified_urls, 27 mapped source URLs, and 44 staged source URLs; every URL parses as HTTP(S) with a host and no whitespace. All URL values are copied from the prior QA artifacts; this validates formatting, not factual support.",
+  "proposal_description_lengths": {
+    "entry-211": {
+      "proposed_short": {
+        "characters": 110,
+        "words": 16
+      },
+      "proposed_medium": {
+        "characters": 421,
+        "words": 60
+      },
+      "proposed_long": {
+        "characters": 1004,
+        "words": 141
+      },
+      "length_limit_results": {
+        "proposed_short": true,
+        "proposed_medium": true,
+        "proposed_long": true
+      },
+      "length_limits_passed": true
+    },
+    "entry-6340": {
+      "corrected_description_short": {
+        "characters": 124,
+        "words": 21
+      },
+      "length_limit_results": {
+        "corrected_description_short": true
+      },
+      "length_limits_passed": true
+    }
+  },
+  "description_length_validation": "Applied the existing task description-format checks (short <=180 characters; medium 45–90 words; long 140–300 words) to every proposal description present in the prior batches. All present descriptions pass; absent fields were not inferred.",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "input_sha256": "42400b29493c02465990e69c739c9d06f08e508ea7bbbd7c13180f9ab4d8aab9",
+  "offline_only": true,
+  "canonical_edits": 0,
+  "neon_calls_or_writes": 0,
+  "other_worker_edits": 0,
+  "pr_opened": false,
+  "release_ready_is_editorial_approval": false,
+  "validated_url_value_count": 97,
+  "description_length_limits": {
+    "short_characters_max": 180,
+    "medium_words_range": [
+      45,
+      90
+    ],
+    "long_words_range": [
+      140,
+      300
+    ]
+  },
+  "release_ready_scope": "release_ready applies only to the exact account1 change represented in the prior citation-QA artifact; it is not blanket editorial approval or approval of unrelated/staged copy."
+}
