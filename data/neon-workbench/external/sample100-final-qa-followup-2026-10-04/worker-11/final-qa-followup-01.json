@@ -1,0 +1,883 @@
+{
+  "record_type": "superseding_final_exact_set_qa",
+  "artifact_id": "worker-11-sample100-final-qa-followup-01",
+  "created_at": "2026-10-03T21:56:42.851836+00:00",
+  "supersedes": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-11-batch-20261003T120000Z.jsonl final_exact_set_qa rollup only; prior batch history and per-key rows remain unchanged",
+  "scope": "offline sample100 final QA follow-up; not editorial approval or production import",
+  "packet": {
+    "branch": "codex/five-account-review-packets-2026-10-03",
+    "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-11-input.jsonl",
+    "input_sha256": "c68361057c7fd624f64e245d66012b3eb8cb895ec4929b42b02c0443e207c536"
+  },
+  "expected_keys": [
+    "entry-11",
+    "entry-23",
+    "entry-36",
+    "entry-49",
+    "entry-61",
+    "entry-75",
+    "entry-87",
+    "entry-99"
+  ],
+  "observed_keys": [
+    "entry-11",
+    "entry-23",
+    "entry-36",
+    "entry-49",
+    "entry-61",
+    "entry-75",
+    "entry-87",
+    "entry-99"
+  ],
+  "exact_set_match": true,
+  "duplicate_keys": [],
+  "missing_keys": [],
+  "extra_keys": [],
+  "counts": {
+    "records": 8,
+    "pass": 0,
+    "hold": 8,
+    "lengths_pass": 8,
+    "frozen_identity_pass": 8,
+    "preservation_fully_verified": 7,
+    "preservation_partial": 1,
+    "source_provenance_present_and_urls_valid": 8,
+    "impact_formula_match": 8
+  },
+  "blocking_ids": [
+    "entry-11",
+    "entry-23",
+    "entry-36",
+    "entry-49",
+    "entry-61",
+    "entry-75",
+    "entry-87",
+    "entry-99"
+  ],
+  "preservation_evidence_blocking_ids": [
+    "entry-75"
+  ],
+  "sql_and_database_safety": {
+    "neon_calls": 0,
+    "ddl_statements": 0,
+    "dml_statements": 0,
+    "canonical_edits": 0,
+    "production_import": false,
+    "editorial_approval": false
+  },
+  "results": [
+    {
+      "key": "entry-11",
+      "verdict": "HOLD",
+      "existing_batch_id": "worker-11-sample100-20261003T120000Z",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "record_id_matches_key": true,
+          "staged_entry_number_matches_key": true,
+          "frozen_entry_number_matches_key": true,
+          "staged_title_matches_frozen_title": true
+        }
+      },
+      "preserved_existing_text": {
+        "status": "pass",
+        "checks": {
+          "title": true,
+          "description_short": true,
+          "description_long": true,
+          "category": true,
+          "subcategory": true,
+          "topic_tags": true
+        },
+        "unverified_fields": [],
+        "note": "Every value in the packet preserved_fields map matches the staged field."
+      },
+      "lengths": {
+        "short_chars": 66,
+        "medium_words": 72,
+        "long_words": 238
+      },
+      "length_checks": {
+        "short": {
+          "actual": 66,
+          "limit_max": 180,
+          "pass": true
+        },
+        "medium": {
+          "actual": 72,
+          "range": [
+            45,
+            90
+          ],
+          "pass": true
+        },
+        "long": {
+          "actual": 238,
+          "range": [
+            140,
+            300
+          ],
+          "pass": true
+        }
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 5,
+          "reach": 5,
+          "institutions": 1,
+          "procedural_abuse": 2.5,
+          "self_dealing": 4.2,
+          "persistence": 4
+        },
+        "weights": {
+          "harm": "0.30",
+          "reach": "0.20",
+          "institutions": "0.15",
+          "procedural_abuse": "0.15",
+          "self_dealing": "0.10",
+          "persistence": "0.10"
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "rounding": "decimal ROUND_HALF_UP to 2 places",
+        "computed_score": "3.85",
+        "packet_proposed_score": 3.85,
+        "formula_match": true
+      },
+      "source_provenance": {
+        "status": "present; URL format checked, URL content not fetched in this offline follow-up",
+        "source_urls": [
+          "https://www.congress.gov/119/meeting/house/118342/documents/HHRG-119-JU05-20250604-SD021-U21.pdf",
+          "https://www.congress.gov/119/meeting/house/118342/documents/HHRG-119-JU05-20250604-SD020-U20.pdf",
+          "https://abcnews.go.com/US/judge-finalizes-25-million-settlement-victims-donald-trumps/story?id=54347237"
+        ],
+        "url_format_checks": [
+          {
+            "url": "https://www.congress.gov/119/meeting/house/118342/documents/HHRG-119-JU05-20250604-SD021-U21.pdf",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.congress.gov/119/meeting/house/118342/documents/HHRG-119-JU05-20250604-SD020-U20.pdf",
+            "format_valid": true
+          },
+          {
+            "url": "https://abcnews.go.com/US/judge-finalizes-25-million-settlement-victims-donald-trumps/story?id=54347237",
+            "format_valid": true
+          }
+        ],
+        "draft_provenance": "opencodex/outputs/proxy-1-1790761914002340161.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-03-c9d673de4faf2f00.jsonl"
+      },
+      "blockers": [
+        "The preserved long description states that the enterprise defrauded students and labels allegations as established fraud; the impact proposal itself cautions that the $25 million civil settlement was not a trial finding and does not establish every allegation."
+      ]
+    },
+    {
+      "key": "entry-23",
+      "verdict": "HOLD",
+      "existing_batch_id": "worker-11-sample100-20261003T120000Z",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "record_id_matches_key": true,
+          "staged_entry_number_matches_key": true,
+          "frozen_entry_number_matches_key": true,
+          "staged_title_matches_frozen_title": true
+        }
+      },
+      "preserved_existing_text": {
+        "status": "pass",
+        "checks": {
+          "title": true,
+          "description_short": true,
+          "description_long": true
+        },
+        "unverified_fields": [],
+        "note": "Every value in the packet preserved_fields map matches the staged field."
+      },
+      "lengths": {
+        "short_chars": 53,
+        "medium_words": 87,
+        "long_words": 226
+      },
+      "length_checks": {
+        "short": {
+          "actual": 53,
+          "limit_max": 180,
+          "pass": true
+        },
+        "medium": {
+          "actual": 87,
+          "range": [
+            45,
+            90
+          ],
+          "pass": true
+        },
+        "long": {
+          "actual": 226,
+          "range": [
+            140,
+            300
+          ],
+          "pass": true
+        }
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 6.0,
+          "reach": 4.0,
+          "institutions": 5.0,
+          "procedural_abuse": 6.0,
+          "self_dealing": 2.0,
+          "persistence": 4.0
+        },
+        "weights": {
+          "harm": "0.30",
+          "reach": "0.20",
+          "institutions": "0.15",
+          "procedural_abuse": "0.15",
+          "self_dealing": "0.10",
+          "persistence": "0.10"
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "rounding": "decimal ROUND_HALF_UP to 2 places",
+        "computed_score": "4.85",
+        "packet_proposed_score": 4.85,
+        "formula_match": true
+      },
+      "source_provenance": {
+        "status": "present; URL format checked, URL content not fetched in this offline follow-up",
+        "source_urls": [
+          "https://www.bbc.com/news/world-us-canada-52407177",
+          "https://www.npr.org/2017/08/25/545282459/president-trump-pardons-former-sheriff-joe-arpaio"
+        ],
+        "url_format_checks": [
+          {
+            "url": "https://www.bbc.com/news/world-us-canada-52407177",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.npr.org/2017/08/25/545282459/president-trump-pardons-former-sheriff-joe-arpaio",
+            "format_valid": true
+          }
+        ],
+        "draft_provenance": "opencodex/outputs/proxy-2-1790762941145802642.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-05-93a636bcbe6ce16f.jsonl"
+      },
+      "blockers": [
+        "The preserved long description asserts broad abusive conduct and that the pardon was intended to protect racist allies; the impact proposal says the supplied account does not independently establish the pardon’s motive or all of Arpaio’s conduct."
+      ]
+    },
+    {
+      "key": "entry-36",
+      "verdict": "HOLD",
+      "existing_batch_id": "worker-11-sample100-20261003T120000Z",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "record_id_matches_key": true,
+          "staged_entry_number_matches_key": true,
+          "frozen_entry_number_matches_key": true,
+          "staged_title_matches_frozen_title": true
+        }
+      },
+      "preserved_existing_text": {
+        "status": "pass",
+        "checks": {
+          "title": true,
+          "category": true,
+          "subcategory": true,
+          "topic_tags": true,
+          "people_tags": true,
+          "description_short": true
+        },
+        "unverified_fields": [],
+        "note": "Every value in the packet preserved_fields map matches the staged field."
+      },
+      "lengths": {
+        "short_chars": 104,
+        "medium_words": 60,
+        "long_words": 151
+      },
+      "length_checks": {
+        "short": {
+          "actual": 104,
+          "limit_max": 180,
+          "pass": true
+        },
+        "medium": {
+          "actual": 60,
+          "range": [
+            45,
+            90
+          ],
+          "pass": true
+        },
+        "long": {
+          "actual": 151,
+          "range": [
+            140,
+            300
+          ],
+          "pass": true
+        }
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 2.0,
+          "reach": 8.0,
+          "institutions": 1.5,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 1.0
+        },
+        "weights": {
+          "harm": "0.30",
+          "reach": "0.20",
+          "institutions": "0.15",
+          "procedural_abuse": "0.15",
+          "self_dealing": "0.10",
+          "persistence": "0.10"
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "rounding": "decimal ROUND_HALF_UP to 2 places",
+        "computed_score": "2.53",
+        "packet_proposed_score": 2.53,
+        "formula_match": true
+      },
+      "source_provenance": {
+        "status": "present; URL format checked, URL content not fetched in this offline follow-up",
+        "source_urls": [
+          "https://www.npr.org/2020/06/22/881810671/white-house-defends-trumps-use-of-racist-term-to-describe-coronavirus"
+        ],
+        "url_format_checks": [
+          {
+            "url": "https://www.npr.org/2020/06/22/881810671/white-house-defends-trumps-use-of-racist-term-to-describe-coronavirus",
+            "format_valid": true
+          }
+        ],
+        "draft_provenance": "finish-2026-10-01/outputs/import-cloud-11-e3095f5e07d87949.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-09-d964c5d6ba1f3b17.jsonl"
+      },
+      "blockers": [
+        "The preserved short description still claims repeated use and that the term fueled hate crimes, while the packet says NPR documents one June 20 use and the June 22 defense but no causal link; the impact basis also claims use through October without support from that linked report."
+      ]
+    },
+    {
+      "key": "entry-49",
+      "verdict": "HOLD",
+      "existing_batch_id": "worker-11-sample100-20261003T120000Z",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "record_id_matches_key": true,
+          "staged_entry_number_matches_key": true,
+          "frozen_entry_number_matches_key": true,
+          "staged_title_matches_frozen_title": true
+        }
+      },
+      "preserved_existing_text": {
+        "status": "pass",
+        "checks": {
+          "title": true,
+          "description_short": true,
+          "description_long": true,
+          "subcategory": true,
+          "topic_tags": true,
+          "organization_tags": true
+        },
+        "unverified_fields": [],
+        "note": "Every value in the packet preserved_fields map matches the staged field."
+      },
+      "lengths": {
+        "short_chars": 48,
+        "medium_words": 72,
+        "long_words": 240
+      },
+      "length_checks": {
+        "short": {
+          "actual": 48,
+          "limit_max": 180,
+          "pass": true
+        },
+        "medium": {
+          "actual": 72,
+          "range": [
+            45,
+            90
+          ],
+          "pass": true
+        },
+        "long": {
+          "actual": 240,
+          "range": [
+            140,
+            300
+          ],
+          "pass": true
+        }
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 5.5,
+          "reach": 3.0,
+          "institutions": 5.0,
+          "procedural_abuse": 4.0,
+          "self_dealing": 0.0,
+          "persistence": 3.0
+        },
+        "weights": {
+          "harm": "0.30",
+          "reach": "0.20",
+          "institutions": "0.15",
+          "procedural_abuse": "0.15",
+          "self_dealing": "0.10",
+          "persistence": "0.10"
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "rounding": "decimal ROUND_HALF_UP to 2 places",
+        "computed_score": "3.90",
+        "packet_proposed_score": 3.9,
+        "formula_match": true
+      },
+      "source_provenance": {
+        "status": "present; URL format checked, URL content not fetched in this offline follow-up",
+        "source_urls": [
+          "https://www.npr.org/2020/06/01/867532070/trumps-unannounced-church-visit-angers-church-officials",
+          "https://www.nbcnews.com/politics/donald-trump/police-did-not-clear-d-c-s-lafayette-park-protestors-n1270126",
+          "https://www.oversight.gov/reports/review-us-park-police-actions-lafayette-park",
+          "https://www.cnn.com/2019/02/23/politics/trump-north-korea-kim-jong-un-love-letters/index.html",
+          "https://www.politico.com/news/2021/06/09/dc-police-tear-gas-trump-photo-op-492630",
+          "https://www.washingtonpost.com/politics/barr-personally-ordered-removal-of-protesters-near-white-house-leading-to-use-of-force/2020/06/02/0ca2417c-a4d5-11ea-b473-04905b1af82b_story.html"
+        ],
+        "url_format_checks": [
+          {
+            "url": "https://www.npr.org/2020/06/01/867532070/trumps-unannounced-church-visit-angers-church-officials",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.nbcnews.com/politics/donald-trump/police-did-not-clear-d-c-s-lafayette-park-protestors-n1270126",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.oversight.gov/reports/review-us-park-police-actions-lafayette-park",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.cnn.com/2019/02/23/politics/trump-north-korea-kim-jong-un-love-letters/index.html",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.politico.com/news/2021/06/09/dc-police-tear-gas-trump-photo-op-492630",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.washingtonpost.com/politics/barr-personally-ordered-removal-of-protesters-near-white-house-leading-to-use-of-force/2020/06/02/0ca2417c-a4d5-11ea-b473-04905b1af82b_story.html",
+            "format_valid": true
+          }
+        ],
+        "draft_provenance": "finish-2026-10-01/outputs/import-cloud-06-1849e3a7fdfe183a.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-02-e331b9b3cc8a2444.jsonl"
+      },
+      "blockers": [
+        "The preserved long description says Trump ordered the clearing for a photo opportunity; the packet’s source review says the supplied accounts do not establish that motive or the full chain of command."
+      ]
+    },
+    {
+      "key": "entry-61",
+      "verdict": "HOLD",
+      "existing_batch_id": "worker-11-sample100-20261003T120000Z",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "record_id_matches_key": true,
+          "staged_entry_number_matches_key": true,
+          "frozen_entry_number_matches_key": true,
+          "staged_title_matches_frozen_title": true
+        }
+      },
+      "preserved_existing_text": {
+        "status": "pass",
+        "checks": {
+          "title": true,
+          "description_short": true,
+          "description_long": true
+        },
+        "unverified_fields": [],
+        "note": "Every value in the packet preserved_fields map matches the staged field."
+      },
+      "lengths": {
+        "short_chars": 59,
+        "medium_words": 82,
+        "long_words": 207
+      },
+      "length_checks": {
+        "short": {
+          "actual": 59,
+          "limit_max": 180,
+          "pass": true
+        },
+        "medium": {
+          "actual": 82,
+          "range": [
+            45,
+            90
+          ],
+          "pass": true
+        },
+        "long": {
+          "actual": 207,
+          "range": [
+            140,
+            300
+          ],
+          "pass": true
+        }
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 5.0,
+          "reach": 7.0,
+          "institutions": 4.5,
+          "procedural_abuse": 3.5,
+          "self_dealing": 0.0,
+          "persistence": 1.8
+        },
+        "weights": {
+          "harm": "0.30",
+          "reach": "0.20",
+          "institutions": "0.15",
+          "procedural_abuse": "0.15",
+          "self_dealing": "0.10",
+          "persistence": "0.10"
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "rounding": "decimal ROUND_HALF_UP to 2 places",
+        "computed_score": "4.28",
+        "packet_proposed_score": 4.28,
+        "formula_match": true
+      },
+      "source_provenance": {
+        "status": "present; URL format checked, URL content not fetched in this offline follow-up",
+        "source_urls": [
+          "https://www.eenews.net/articles/trump-revives-threats-to-withhold-disaster-aid-for-political-foes/"
+        ],
+        "url_format_checks": [
+          {
+            "url": "https://www.eenews.net/articles/trump-revives-threats-to-withhold-disaster-aid-for-political-foes/",
+            "format_valid": true
+          }
+        ],
+        "draft_provenance": "opencodex/outputs/proxy-2-1790763112666429020.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-04-e39b69a5a7e9fd12.jsonl"
+      },
+      "blockers": [
+        "The preserved long description describes aid threats as completed, unprecedented weaponization and says they violated a governing principle; the impact proposal says no aid cutoff or effect on fire losses is documented, and the supplied basis supports a public threat."
+      ]
+    },
+    {
+      "key": "entry-75",
+      "verdict": "HOLD",
+      "existing_batch_id": "worker-11-sample100-20261003T120000Z",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "record_id_matches_key": true,
+          "staged_entry_number_matches_key": true,
+          "frozen_entry_number_matches_key": true,
+          "staged_title_matches_frozen_title": true
+        }
+      },
+      "preserved_existing_text": {
+        "status": "partial",
+        "checks": {
+          "title": true,
+          "description_long": true
+        },
+        "unverified_fields": [
+          "description_short"
+        ],
+        "note": "Preserved-field names are listed without stored baseline values; title and long text were compared to frozen title/synopsis. The packet has no frozen description_short value."
+      },
+      "lengths": {
+        "short_chars": 66,
+        "medium_words": 52,
+        "long_words": 249
+      },
+      "length_checks": {
+        "short": {
+          "actual": 66,
+          "limit_max": 180,
+          "pass": true
+        },
+        "medium": {
+          "actual": 52,
+          "range": [
+            45,
+            90
+          ],
+          "pass": true
+        },
+        "long": {
+          "actual": 249,
+          "range": [
+            140,
+            300
+          ],
+          "pass": true
+        }
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 9.0,
+          "institutions": 6.0,
+          "procedural_abuse": 4.5,
+          "self_dealing": 0.0,
+          "persistence": 1.5
+        },
+        "weights": {
+          "harm": "0.30",
+          "reach": "0.20",
+          "institutions": "0.15",
+          "procedural_abuse": "0.15",
+          "self_dealing": "0.10",
+          "persistence": "0.10"
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "rounding": "decimal ROUND_HALF_UP to 2 places",
+        "computed_score": "4.88",
+        "packet_proposed_score": 4.88,
+        "formula_match": true
+      },
+      "source_provenance": {
+        "status": "present; URL format checked, URL content not fetched in this offline follow-up",
+        "source_urls": [
+          "https://www.brookings.edu/articles/america-wins-trump-abandons-the-citizenship-question-from-2020-census/",
+          "https://www.npr.org/2022/07/20/1044944618/census-citzenship-question-history-oversight-committee"
+        ],
+        "url_format_checks": [
+          {
+            "url": "https://www.brookings.edu/articles/america-wins-trump-abandons-the-citizenship-question-from-2020-census/",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.npr.org/2022/07/20/1044944618/census-citzenship-question-history-oversight-committee",
+            "format_valid": true
+          }
+        ],
+        "draft_provenance": "chatgpt-web/outputs/import-web-worker-1-extra-batch-085-ccdd3977a850.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-11-10c01b8bf371f5e4.jsonl"
+      },
+      "blockers": [
+        "The preserved long description presents a secret partisan undercount plan and its intended effects as established; the impact proposal says partisan motive and the projected undercount are not established as outcomes, while the new medium description is appropriately qualified.",
+        "Preservation evidence limitation: description_short is marked preserved, but the immutable packet contains no frozen description_short baseline, so exact preservation of that field cannot be independently verified."
+      ]
+    },
+    {
+      "key": "entry-87",
+      "verdict": "HOLD",
+      "existing_batch_id": "worker-11-sample100-20261003T120000Z",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "record_id_matches_key": true,
+          "staged_entry_number_matches_key": true,
+          "frozen_entry_number_matches_key": true,
+          "staged_title_matches_frozen_title": true
+        }
+      },
+      "preserved_existing_text": {
+        "status": "pass",
+        "checks": {
+          "title": true,
+          "description_short": true,
+          "description_long": true
+        },
+        "unverified_fields": [],
+        "note": "Every value in the packet preserved_fields map matches the staged field."
+      },
+      "lengths": {
+        "short_chars": 67,
+        "medium_words": 69,
+        "long_words": 226
+      },
+      "length_checks": {
+        "short": {
+          "actual": 67,
+          "limit_max": 180,
+          "pass": true
+        },
+        "medium": {
+          "actual": 69,
+          "range": [
+            45,
+            90
+          ],
+          "pass": true
+        },
+        "long": {
+          "actual": 226,
+          "range": [
+            140,
+            300
+          ],
+          "pass": true
+        }
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 9.0,
+          "institutions": 8.5,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 7.5
+        },
+        "weights": {
+          "harm": "0.30",
+          "reach": "0.20",
+          "institutions": "0.15",
+          "procedural_abuse": "0.15",
+          "self_dealing": "0.10",
+          "persistence": "0.10"
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "rounding": "decimal ROUND_HALF_UP to 2 places",
+        "computed_score": "5.18",
+        "packet_proposed_score": 5.18,
+        "formula_match": true
+      },
+      "source_provenance": {
+        "status": "present; URL format checked, URL content not fetched in this offline follow-up",
+        "source_urls": [
+          "https://www.ap.org/news-highlights/elections/2024/supreme-court-rules-ex-presidents-have-broad-immunity-dimming-chance-of-a-pre-election-trump-trial/",
+          "https://www.cfr.org/expert-brief/trump-v-us-has-supreme-court-made-presidency-more-dangerous",
+          "https://www.cnn.com/2025/06/27/politics/takeaways-birthright-citizenship-supreme-court-decision"
+        ],
+        "url_format_checks": [
+          {
+            "url": "https://www.ap.org/news-highlights/elections/2024/supreme-court-rules-ex-presidents-have-broad-immunity-dimming-chance-of-a-pre-election-trump-trial/",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.cfr.org/expert-brief/trump-v-us-has-supreme-court-made-presidency-more-dangerous",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.cnn.com/2025/06/27/politics/takeaways-birthright-citizenship-supreme-court-decision",
+            "format_valid": true
+          }
+        ],
+        "draft_provenance": "opencodex/outputs/proxy-3-1790762961289339365.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-09-7eb4877dfd3f8e61.jsonl"
+      },
+      "blockers": [
+        "The preserved long description says Trump pressured the Court and alleges a conflict involving his appointees; the impact proposal explicitly says the supplied account does not establish pressure or a legal conflict."
+      ]
+    },
+    {
+      "key": "entry-99",
+      "verdict": "HOLD",
+      "existing_batch_id": "worker-11-sample100-20261003T120000Z",
+      "frozen_row_identity": {
+        "status": "pass",
+        "checks": {
+          "record_id_matches_key": true,
+          "staged_entry_number_matches_key": true,
+          "frozen_entry_number_matches_key": true,
+          "staged_title_matches_frozen_title": true
+        }
+      },
+      "preserved_existing_text": {
+        "status": "pass",
+        "checks": {
+          "title": true,
+          "description_short": true,
+          "description_long": true
+        },
+        "unverified_fields": [],
+        "note": "Every value in the packet preserved_fields map matches the staged field."
+      },
+      "lengths": {
+        "short_chars": 80,
+        "medium_words": 70,
+        "long_words": 226
+      },
+      "length_checks": {
+        "short": {
+          "actual": 80,
+          "limit_max": 180,
+          "pass": true
+        },
+        "medium": {
+          "actual": 70,
+          "range": [
+            45,
+            90
+          ],
+          "pass": true
+        },
+        "long": {
+          "actual": 226,
+          "range": [
+            140,
+            300
+          ],
+          "pass": true
+        }
+      },
+      "impact_v2": {
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 8.0,
+          "institutions": 5.5,
+          "procedural_abuse": 6.0,
+          "self_dealing": 0.0,
+          "persistence": 3.5
+        },
+        "weights": {
+          "harm": "0.30",
+          "reach": "0.20",
+          "institutions": "0.15",
+          "procedural_abuse": "0.15",
+          "self_dealing": "0.10",
+          "persistence": "0.10"
+        },
+        "formula": "0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence",
+        "rounding": "decimal ROUND_HALF_UP to 2 places",
+        "computed_score": "5.03",
+        "packet_proposed_score": 5.03,
+        "formula_match": true
+      },
+      "source_provenance": {
+        "status": "present; URL format checked, URL content not fetched in this offline follow-up",
+        "source_urls": [
+          "https://www.politico.com/news/2024/11/05/state-vote-certification-preparations-00187117",
+          "https://www.newsweek.com/trump-supporters-warned-stop-certification-counties-1980525",
+          "https://www.brennancenter.org/our-work/research-reports/election-deniers-playbook-2024"
+        ],
+        "url_format_checks": [
+          {
+            "url": "https://www.politico.com/news/2024/11/05/state-vote-certification-preparations-00187117",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.newsweek.com/trump-supporters-warned-stop-certification-counties-1980525",
+            "format_valid": true
+          },
+          {
+            "url": "https://www.brennancenter.org/our-work/research-reports/election-deniers-playbook-2024",
+            "format_valid": true
+          }
+        ],
+        "draft_provenance": "finish-2026-10-01/outputs/import-cloud-11-46983a133f39884d.jsonl",
+        "impact_provenance": "score-outputs/import-cloud-10-bc3945a9f0f9068b.jsonl"
+      },
+      "blockers": [
+        "The preserved long description alleges Trump-directed coordination, intimidation, a cross-state effort to steal elections and established legal conclusions; the packet says its sources support reported trainings and preparation, not those broader claims or any changed result."
+      ]
+    }
+  ]
+}
