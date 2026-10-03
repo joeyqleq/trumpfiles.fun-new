@@ -1,0 +1,29 @@
+{
+  "type": "checkpoint",
+  "worker": 5,
+  "batch": 1,
+  "batch_file": "worker-05-batch-001.jsonl",
+  "batch_keys": [
+    "entry-4438",
+    "entry-5112",
+    "entry-5340",
+    "entry-5752",
+    "entry-5840",
+    "entry-6280",
+    "entry-6417",
+    "entry-6440",
+    "entry-6484"
+  ],
+  "batch_count": 9,
+  "completed_count": 9,
+  "remaining_count": 27,
+  "terminal_status_counts": {
+    "pass": 8,
+    "hold": 1,
+    "superseded": 0
+  },
+  "input_sha256": "5dbb0fd6fd2fc393d54f414163004e9378cd1bd30298e8af4ab6a4e2e85a6e88",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "pr49_head": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "exact_set_validation": "prefix of frozen worker-05 input in input order; no input files modified"
+}

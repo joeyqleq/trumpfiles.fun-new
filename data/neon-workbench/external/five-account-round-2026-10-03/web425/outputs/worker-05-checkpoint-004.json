@@ -1,0 +1,29 @@
+{
+  "type": "checkpoint",
+  "worker": 5,
+  "batch": 4,
+  "batch_file": "worker-05-batch-004.jsonl",
+  "batch_keys": [
+    "expanded-20260923-iowa-poll-suit-dismissal",
+    "expanded-20260928-china-arms-denial",
+    "fresh-20260826-raskin-1789",
+    "fresh-20260924-trump-tv-trademark",
+    "pr47-review-entry-1295",
+    "pr47-review-entry-1444",
+    "pr47-review-entry-1521",
+    "pr47-review-entry-1591",
+    "pr47-review-entry-1662"
+  ],
+  "batch_count": 9,
+  "completed_count": 36,
+  "remaining_count": 0,
+  "terminal_status_counts": {
+    "pass": 27,
+    "hold": 9,
+    "superseded": 0
+  },
+  "input_sha256": "5dbb0fd6fd2fc393d54f414163004e9378cd1bd30298e8af4ab6a4e2e85a6e88",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "pr49_head": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "exact_set_validation": "prefix of frozen worker-05 input in input order; no input files modified"
+}

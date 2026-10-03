@@ -1,0 +1,29 @@
+{
+  "type": "checkpoint",
+  "worker": 5,
+  "batch": 3,
+  "batch_file": "worker-05-batch-003.jsonl",
+  "batch_keys": [
+    "entry-6936",
+    "entry-6955",
+    "entry-7075",
+    "entry-7117",
+    "entry-7147",
+    "entry-7186",
+    "expanded-20260828-smithsonian-pressure-letter",
+    "expanded-20260909-kimmel-talarico-broadcast",
+    "expanded-20260916-gastonia-rally-iran-claims"
+  ],
+  "batch_count": 9,
+  "completed_count": 27,
+  "remaining_count": 9,
+  "terminal_status_counts": {
+    "pass": 19,
+    "hold": 8,
+    "superseded": 0
+  },
+  "input_sha256": "5dbb0fd6fd2fc393d54f414163004e9378cd1bd30298e8af4ab6a4e2e85a6e88",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "pr49_head": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "exact_set_validation": "prefix of frozen worker-05 input in input order; no input files modified"
+}

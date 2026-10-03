@@ -1,0 +1,147 @@
+{
+  "type": "final_exact_set_qa",
+  "worker": 5,
+  "terminal": true,
+  "input_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-05-input.jsonl",
+  "input_sha256": "5dbb0fd6fd2fc393d54f414163004e9378cd1bd30298e8af4ab6a4e2e85a6e88",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "published_pr49_head": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "published_pr49_branch": "codex/web-release-review-results-2026-10-03",
+  "expected_count": 36,
+  "actual_count": 36,
+  "expected_keys": [
+    "entry-4438",
+    "entry-5112",
+    "entry-5340",
+    "entry-5752",
+    "entry-5840",
+    "entry-6280",
+    "entry-6417",
+    "entry-6440",
+    "entry-6484",
+    "entry-6582",
+    "entry-6607",
+    "entry-6642",
+    "entry-6736",
+    "entry-6778",
+    "entry-6791",
+    "entry-6817",
+    "entry-6834",
+    "entry-6890",
+    "entry-6936",
+    "entry-6955",
+    "entry-7075",
+    "entry-7117",
+    "entry-7147",
+    "entry-7186",
+    "expanded-20260828-smithsonian-pressure-letter",
+    "expanded-20260909-kimmel-talarico-broadcast",
+    "expanded-20260916-gastonia-rally-iran-claims",
+    "expanded-20260923-iowa-poll-suit-dismissal",
+    "expanded-20260928-china-arms-denial",
+    "fresh-20260826-raskin-1789",
+    "fresh-20260924-trump-tv-trademark",
+    "pr47-review-entry-1295",
+    "pr47-review-entry-1444",
+    "pr47-review-entry-1521",
+    "pr47-review-entry-1591",
+    "pr47-review-entry-1662"
+  ],
+  "actual_keys": [
+    "entry-4438",
+    "entry-5112",
+    "entry-5340",
+    "entry-5752",
+    "entry-5840",
+    "entry-6280",
+    "entry-6417",
+    "entry-6440",
+    "entry-6484",
+    "entry-6582",
+    "entry-6607",
+    "entry-6642",
+    "entry-6736",
+    "entry-6778",
+    "entry-6791",
+    "entry-6817",
+    "entry-6834",
+    "entry-6890",
+    "entry-6936",
+    "entry-6955",
+    "entry-7075",
+    "entry-7117",
+    "entry-7147",
+    "entry-7186",
+    "expanded-20260828-smithsonian-pressure-letter",
+    "expanded-20260909-kimmel-talarico-broadcast",
+    "expanded-20260916-gastonia-rally-iran-claims",
+    "expanded-20260923-iowa-poll-suit-dismissal",
+    "expanded-20260928-china-arms-denial",
+    "fresh-20260826-raskin-1789",
+    "fresh-20260924-trump-tv-trademark",
+    "pr47-review-entry-1295",
+    "pr47-review-entry-1444",
+    "pr47-review-entry-1521",
+    "pr47-review-entry-1591",
+    "pr47-review-entry-1662"
+  ],
+  "missing_keys": [],
+  "extra_keys": [],
+  "duplicate_assignment_keys": [],
+  "duplicate_record_ids": [],
+  "terminal_status_counts": {
+    "pass": 27,
+    "hold": 9,
+    "superseded": 0
+  },
+  "duplicate_event_findings": [
+    {
+      "assigned_key": "entry-7075",
+      "counterpart": "entry-7060",
+      "finding": "same dated report; proposal maps survivor consistently"
+    },
+    {
+      "assigned_key": "entry-7117",
+      "counterpart": "entry-7100",
+      "finding": "same dated lawsuit/report; proposal maps survivor consistently"
+    },
+    {
+      "assigned_keys": [
+        "entry-7147",
+        "entry-7186"
+      ],
+      "counterpart": "entry-7139",
+      "finding": "same Reuters/Ipsos poll event; two distinct record IDs, both proposed for consolidation to the same survivor; hold pending revision-2002 reconciliation"
+    },
+    {
+      "assigned_keys": [
+        "pr47-review-entry-1521",
+        "pr47-review-entry-1591"
+      ],
+      "finding": "related promise-tracker artifact/theme; proposal explicitly preserves relation and does not assert independent event identity"
+    }
+  ],
+  "known_revision_conflicts": [
+    {
+      "keys": [
+        "entry-7075",
+        "entry-7117",
+        "entry-7147",
+        "entry-7186"
+      ],
+      "published_pr49_revision": 2000,
+      "packet_rescue_revision": 2001,
+      "reported_unrecovered_higher_revision": 2002,
+      "terminal_status": "hold",
+      "basis": "PR49 blocker checkpoint reports later duplicate revision-2002 work and outstanding length/stale-field QA but does not expose reconciliable item-level rows; do not mark superseded without exact provenance"
+    }
+  ],
+  "validation": {
+    "exact_key_set": true,
+    "sha256_verified": true,
+    "terminal_row_once_per_key": true,
+    "no_duplicate_assigned_record_ids": true,
+    "all_rows_proposal_only": true
+  },
+  "scope_note": "Independent QA only. No candidate rewritten; packet inputs, other worker outputs, PR49, canonical data and databases were not changed."
+}
