@@ -1,0 +1,1044 @@
+{
+  "phase": "source review of untouched first-pass components",
+  "previous_owner": "review01",
+  "exclusive_new_owner": "review06",
+  "previous_owner_frozen": true,
+  "assignments": [
+    {
+      "assignment_key": "entry-6443",
+      "namespace": "held",
+      "record_id": "entry-6443",
+      "entry_number": 6443,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 68,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6456",
+      "namespace": "held",
+      "record_id": "entry-6456",
+      "entry_number": 6456,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 71,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6749",
+      "namespace": "held",
+      "record_id": "entry-6749",
+      "entry_number": 6749,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 111,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6585",
+      "namespace": "held",
+      "record_id": "entry-6585",
+      "entry_number": 6585,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 85,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6609",
+      "namespace": "held",
+      "record_id": "entry-6609",
+      "entry_number": 6609,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 92,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6789",
+      "namespace": "held",
+      "record_id": "entry-6789",
+      "entry_number": 6789,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 123,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6939",
+      "namespace": "held",
+      "record_id": "entry-6939",
+      "entry_number": 6939,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 161,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5112",
+      "namespace": "held",
+      "record_id": "entry-5112",
+      "entry_number": 5112,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 218,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5329",
+      "namespace": "held",
+      "record_id": "entry-5329",
+      "entry_number": 5329,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 219,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5335",
+      "namespace": "held",
+      "record_id": "entry-5335",
+      "entry_number": 5335,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 220,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5735",
+      "namespace": "held",
+      "record_id": "entry-5735",
+      "entry_number": 5735,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 222,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5737",
+      "namespace": "held",
+      "record_id": "entry-5737",
+      "entry_number": 5737,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 223,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5743",
+      "namespace": "held",
+      "record_id": "entry-5743",
+      "entry_number": 5743,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 224,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5749",
+      "namespace": "held",
+      "record_id": "entry-5749",
+      "entry_number": 5749,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 225,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5755",
+      "namespace": "held",
+      "record_id": "entry-5755",
+      "entry_number": 5755,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 226,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5815",
+      "namespace": "held",
+      "record_id": "entry-5815",
+      "entry_number": 5815,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 229,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5851",
+      "namespace": "held",
+      "record_id": "entry-5851",
+      "entry_number": 5851,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 231,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5863",
+      "namespace": "held",
+      "record_id": "entry-5863",
+      "entry_number": 5863,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 232,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5899",
+      "namespace": "held",
+      "record_id": "entry-5899",
+      "entry_number": 5899,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 233,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6379",
+      "namespace": "held",
+      "record_id": "entry-6379",
+      "entry_number": 6379,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 234,
+      "review_type": "still_unresolved",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    }
+  ],
+  "prior_outcome_by_key": {
+    "entry-6443": {
+      "assignment_key": "entry-6443",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 68,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6443",
+      "entry_number": 6443,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Trump issued separate southern-border and energy emergency declarations on January 20, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Trump declared a national emergency at the U.S. southern border and directed military and executive support for border-control measures.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Trump separately declared a national energy emergency and directed agencies to use emergency and other authorities to facilitate domestic energy production and infrastructure.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Trump issued one omnibus emergency spanning immigration, energy and economic policy.",
+        "The record collapses separate January 20 emergency declarations: one concerning the southern border and one concerning energy.",
+        "No single omnibus January 20 national emergency covering immigration, energy and economic policy was located."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/declaring-a-national-emergency-at-the-southern-border-of-the-united-states/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Trump issued separate southern-border and energy emergency declarations on January 20, 2025."
+          ]
+        },
+        {
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/declaring-a-national-energy-emergency/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Trump issued separate southern-border and energy emergency declarations on January 20, 2025."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-01-20",
+          "title": "Trump declares a national emergency at the southern border",
+          "description_short": "Trump declared a national emergency at the U.S. southern border and directed military and executive support for border-control measures.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.whitehouse.gov/presidential-actions/2025/01/declaring-a-national-emergency-at-the-southern-border-of-the-united-states/"
+          ]
+        },
+        {
+          "date_start": "2025-01-20",
+          "title": "Trump declares a national energy emergency",
+          "description_short": "Trump separately declared a national energy emergency and directed agencies to use emergency and other authorities to facilitate domestic energy production and infrastructure.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.whitehouse.gov/presidential-actions/2025/01/declaring-a-national-energy-emergency/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6456": {
+      "assignment_key": "entry-6456",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 71,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6456",
+      "entry_number": 6456,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Israel began strikes on Iran on June 13, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "U.S. forces later struck Fordow, Natanz and Isfahan using B-2 bombers and other weapons.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Israel launched a major strike campaign against Iranian nuclear and military targets on June 13, prompting Iranian missile retaliation.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "U.S. forces used B-2 bombers and other weapons to strike Iran's Fordow, Natanz and Isfahan nuclear facilities. Trump described the operation as a major success; later damage assessments required qualification rather than assuming total destruction.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Israel opened its campaign against Iranian nuclear and military targets on June 13; the United States struck Fordow, Natanz, and Isfahan later, on June 21-22 U.S./Iran time.",
+        "U.S. B-2 participation does not belong to the June 13 event.",
+        "The evidence reviewed does not establish the entire sequence as a single jointly executed strike operation beginning June 13."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.investing.com/news/world-news/israel-says-it-strikes-iran-amid-nuclear-tensions-4094254",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Israel began strikes on Iran on June 13, 2025."
+          ]
+        },
+        {
+          "url": "https://www.investing.com/news/world-news/iran-israel-launch-new-attacks-after-tehran-rules-out-nuclear-talks-4104584",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "U.S. forces later struck Fordow, Natanz and Isfahan using B-2 bombers and other weapons."
+          ]
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/timeline-key-moments-in-iran-israel-conflict-as-us-and-israel-launch-strikes-on-iran/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1ZBMTkzODE0MDYyMDI1UlAx/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX0xWQTAwVjE5MzgxNDA2MjAyNVJQMQ",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-06-13",
+          "title": "Israel Launches Strikes on Iranian Nuclear and Military Targets",
+          "description_short": "Israel launched a major strike campaign against Iranian nuclear and military targets on June 13, prompting Iranian missile retaliation.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.investing.com/news/world-news/israel-says-it-strikes-iran-amid-nuclear-tensions-4094254"
+          ]
+        },
+        {
+          "date_start": "2025-06-22",
+          "title": "United States Strikes Fordow, Natanz and Isfahan Nuclear Sites",
+          "description_short": "U.S.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.investing.com/news/world-news/iran-israel-launch-new-attacks-after-tehran-rules-out-nuclear-talks-4104584",
+            "https://www.reutersconnect.com/item/timeline-key-moments-in-iran-israel-conflict-as-us-and-israel-launch-strikes-on-iran/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1ZBMTkzODE0MDYyMDI1UlAx/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX0xWQTAwVjE5MzgxNDA2MjAyNVJQMQ"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6749": {
+      "assignment_key": "entry-6749",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 111,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6749",
+      "entry_number": 6749,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "The administration canceled about $400 million in Columbia grants and contracts on March 7, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "The administration announced cancellation of about $400 million in grants and contracts to Columbia, citing what it described as the university's failure to address antisemitic harassment.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Any record of later federal demands concerning discipline, governance or academic programs should be maintained as a separately dated event with its own primary or contemporaneous sources.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The cancellation of about $400 million in federal grants and contracts was announced March 7, 2025, not February 1.",
+        "The synopsis folds later federal demands concerning university governance, discipline and academic programs into the earlier funding cancellation and adds criminal-prosecution claims not established as part of that March 7 event."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/world/us/us-cancels-400-million-grants-contracts-columbia-university-over-antisemitism-2025-03-07/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "The administration canceled about $400 million in Columbia grants and contracts on March 7, 2025."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-03-07",
+          "title": "Federal agencies cancel about $400 million in Columbia grants and contracts",
+          "description_short": "The administration announced cancellation of about $400 million in grants and contracts to Columbia, citing what it described as the university's failure to address antisemitic\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/us-cancels-400-million-grants-contracts-columbia-university-over-antisemitism-2025-03-07/"
+          ]
+        },
+        {
+          "date_start": "2025-03-13",
+          "title": "Administration presents Columbia with conditions for restoring federal funding",
+          "description_short": "Any record of later federal demands concerning discipline, governance or academic programs should be maintained as a separately dated event with its own primary or\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": []
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6585": {
+      "assignment_key": "entry-6585",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 85,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6585",
+      "entry_number": 6585,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "The located January 20 proclamation covers offenses related to the January 6 Capitol events. Search results instead identify prior pardons of border agents in 2020; no evidence found for January 2025 pardons of Border Patrol agents convicted of immigrant assault."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.justice.gov/pardon/president-trumps-proclamation-granting-pardons-and-commutations-sentences-certain-offenses",
+          "access_status": "actually_read",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "January 20, 2025 clemency record found concerns January 6 offenses; no evidence found for contemporaneous pardons of Border Patrol agents convicted of migrant assault.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6609": {
+      "assignment_key": "entry-6609",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 92,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6609",
+      "entry_number": 6609,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "No credible directive or report located establishing an explicit Trump-loyalty requirement in the military promotion system.",
+        "Defense Department materials state that promotion and selection decisions should be merit-based, and a June 2025 review memorandum calls for fair, transparent, objective and merit-based promotion procedures. Personnel firings do not establish the claimed promotion loyalty test."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.defense.gov/News/News-Stories/Article/Article/4047592/defense-secretary-directs-creation-of-task-force-to-restore-americas-fighting-f/",
+          "access_status": "actually_read",
+          "supported_facts": []
+        },
+        {
+          "url": "https://media.defense.gov/2025/Jul/21/2003758221/-1/-1/1/EVALUATING-MILITARY-OFFICER-PROMOTION-AND-SELECTION-PROCEDURES.PDF",
+          "access_status": "inaccessible",
+          "supported_facts": []
+        },
+        {
+          "url": "https://apnews.com/article/6bead3346b1210e45e77648e6cbc3599",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "No credible directive or report located establishing a military-promotion loyalty test requiring allegiance to Trump. Primary Defense Department materials instead describe promotion and selection policy as merit-based.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6789": {
+      "assignment_key": "entry-6789",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 123,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6789",
+      "entry_number": 6789,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "The Foreign Intelligence Surveillance Court is composed of federal district judges designated by the Chief Justice of the United States, not judges installed by the president.",
+        "No credible evidence located for March 2025 removal/replacement of FISC judges by Trump, for approval of surveillance targeting political opponents or journalists as described, or for the asserted denial of congressional access under executive privilege."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.fisc.uscourts.gov/about-foreign-intelligence-surveillance-court",
+          "access_status": "actually_read",
+          "supported_facts": []
+        },
+        {
+          "url": "https://www.fisc.uscourts.gov/current-membership-foreign-intelligence-surveillance-court",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "The premise that Trump installed FISA Court judges conflicts with the court's official appointment structure: FISC judges are designated by the Chief Justice. No credible evidence was located for the claimed March 2025 removals, replacement by loyalists, or surveillance of political opponents and journalists.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6939": {
+      "assignment_key": "entry-6939",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 161,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6939",
+      "entry_number": 6939,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "The VA stated DOGE had not accessed veterans' or beneficiaries' data. Public officials raised concerns and sought information about access, but the searched material did not verify the asserted access to clinical records or a breach affecting millions."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.npr.org/2025/03/11/nx-s1-5305054/doge-elon-musk-security-data-information-privacy",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        },
+        {
+          "url": "https://www.veterans.senate.gov/services/files/49E7CEC5-BDD2-4D9C-BECE-05CF165BFF84",
+          "access_status": "actually_read",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "The VA said DOGE had not accessed veterans' or beneficiaries' data; concern about potential access did not verify the claimed clinical-record breach or exposure of millions of veterans' diagnoses.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5112": {
+      "assignment_key": "entry-5112",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 218,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5112",
+      "entry_number": 5112,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "The record combines distinct civil and criminal proceedings.",
+        "The Supreme Court docket confirms an April 6, 2026 vacatur and remand in light of a pending motion to dismiss the indictment, but the opened sources did not establish the full claimed June 2025 civil dismissal and September 2025 DOJ 'stopped defending' chronology with sufficient precision."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "A reliable, source-by-source chronology tying the separate civil records case, DOJ's appellate position on the contempt conviction, the motion to dismiss the indictment, and the exact procedural consequences together without conflation.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5329": {
+      "assignment_key": "entry-5329",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 219,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5329",
+      "entry_number": 5329,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "11 Documented Epstein Flights: Trump Flew Palm Beach\u2013New York on Epstein Aircraft 11 Times",
+        "Searched DOJ-linked reporting and available flight-log coverage for the entry's exact claim of 11 Epstein-aircraft flights between 1993 and 1998. Reuters reported that a prosecutor email released by DOJ said Trump flew on Epstein's jet at least eight times between 1993 and 1996, including at least four flights with Ghislaine Maxwell. I did not verify the entry's exact 11-flight count and date range from a credible opened source, so it remains unresolved as written."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "Searched DOJ-linked reporting and available flight-log coverage for the entry's exact claim of 11 Epstein-aircraft flights between 1993 and 1998. Reuters reported that a prosecutor email released by DOJ said Trump flew on Epstein's jet at least eight times between 1993 and 1996, including at least four flights with Ghislaine Maxwell. I did not verify the entry's exact 11-flight count and date range from a credible opened source, so it remains unresolved as written.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5335": {
+      "assignment_key": "entry-5335",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 220,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5335",
+      "entry_number": 5335,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Melania Appears in 209 Epstein Files Through Maxwell's Modeling Network",
+        "An official FBI proffer record in the Epstein Files includes a witness statement that Jeffrey Epstein introduced Melania Trump to Donald Trump through Paolo Zampolli's modeling circle. However, the title's exact claim that Melania appears in 209 EFTA documents comes from a derivative Epstein-index website rather than a primary count or independently verified reputable report, and I did not accept that database-derived count as established evidence."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "An official FBI proffer record in the Epstein Files includes a witness statement that Jeffrey Epstein introduced Melania Trump to Donald Trump through Paolo Zampolli's modeling circle. However, the title's exact claim that Melania appears in 209 EFTA documents comes from a derivative Epstein-index website rather than a primary count or independently verified reputable report, and I did not accept that database-derived count as established evidence.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5735": {
+      "assignment_key": "entry-5735",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 222,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5735",
+      "entry_number": 5735,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "ICE conducted a coordinated sweeping operation on July 21, 2025 resulting in thousands of arrests across major cities.",
+        "No credible contemporaneous source was located establishing a discrete July 21, 2025 coordinated ICE operation with thousands of arrests across major cities as described. Guardian reporting shows ICE arrest levels increased significantly (record June numbers, ~2,000 on June 4) but does not describe the specific July 21 coordinated mass operation the card claims."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "No credible contemporaneous source establishing a discrete July 21, 2025 coordinated ICE operation with thousands of arrests across major cities and widespread civil rights violations.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5737": {
+      "assignment_key": "entry-5737",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 223,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5737",
+      "entry_number": 5737,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Trump Threatens to Fire Federal Judges Blocking His Agenda",
+        "Searched July 29, 2025 reporting and public statements for a Trump threat to fire federal judges who ruled against his agenda or a claim of presidential authority to remove judges. I did not find a credible source matching that event; contemporaneous disputes concerned judicial rulings and appointments, not a verified presidential power to fire sitting Article III judges."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "Searched July 29, 2025 reporting and public statements for a Trump threat to fire federal judges who ruled against his agenda or a claim of presidential authority to remove judges. I did not find a credible source matching that event; contemporaneous disputes concerned judicial rulings and appointments, not a verified presidential power to fire sitting Article III judges.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5743": {
+      "assignment_key": "entry-5743",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 224,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5743",
+      "entry_number": 5743,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "U.S. Abruptly Withdraws from Ukraine Peace Negotiations",
+        "I did not find evidence that the United States abruptly withdrew from all Ukraine peace negotiations on July 23, 2025. Reuters reported Russia and Ukraine held direct peace talks in Istanbul that day, while the Trump administration continued publicly pressuring Russia over the war. The stored event is unsupported as written."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "I did not find evidence that the United States abruptly withdrew from all Ukraine peace negotiations on July 23, 2025. Reuters reported Russia and Ukraine held direct peace talks in Istanbul that day, while the Trump administration continued publicly pressuring Russia over the war. The stored event is unsupported as written.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5749": {
+      "assignment_key": "entry-5749",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 225,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5749",
+      "entry_number": 5749,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Kash Patel Directs FBI to Arrest Investigative Journalists",
+        "Searched August 2025 reporting for FBI Director Kash Patel ordering arrests of investigative journalists under the Espionage Act. I did not find credible reporting or an official record matching the claimed arrests, named charges, or date, so the entry remains unresolved rather than inferring it from broader press-freedom disputes."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "Searched August 2025 reporting for FBI Director Kash Patel ordering arrests of investigative journalists under the Espionage Act. I did not find credible reporting or an official record matching the claimed arrests, named charges, or date, so the entry remains unresolved rather than inferring it from broader press-freedom disputes.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5755": {
+      "assignment_key": "entry-5755",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 226,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5755",
+      "entry_number": 5755,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Trump Pardons Slew of White-Collar Criminals and Political Allies",
+        "Reuters' later review documents an unusually personalized second-term clemency process benefiting political allies and white-collar defendants and frequently bypassing longstanding DOJ guidelines, but I did not verify a discrete August 22, 2025 wave of pardons matching this record or evidence that those pardons were specifically skewed toward major Trump donors on that date."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "Reuters' later review documents an unusually personalized second-term clemency process benefiting political allies and white-collar defendants and frequently bypassing longstanding DOJ guidelines, but I did not verify a discrete August 22, 2025 wave of pardons matching this record or evidence that those pardons were specifically skewed toward major Trump donors on that date.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5815": {
+      "assignment_key": "entry-5815",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 229,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5815",
+      "entry_number": 5815,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Musk DOGE Team Accesses NNSA Nuclear Weapons Agency Personnel Files",
+        "Searched February 2025 reporting for DOGE access to NNSA personnel files. Reuters reported lawmakers' concerns about DOGE access at the Department of Energy, but DOE said DOGE staff had no access to classified data or facilities, including NNSA. I did not find a credible source establishing the specific NNSA personnel-file access described here."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "Searched February 2025 reporting for DOGE access to NNSA personnel files. Reuters reported lawmakers' concerns about DOGE access at the Department of Energy, but DOE said DOGE staff had no access to classified data or facilities, including NNSA. I did not find a credible source establishing the specific NNSA personnel-file access described here.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5851": {
+      "assignment_key": "entry-5851",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 231,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5851",
+      "entry_number": 5851,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Kushner Omits 100+ Foreign Contacts on Security Clearance Form SF-86",
+        "Kushner's initial SF-86 omitted foreign-government contacts and later reporting said he supplemented the form with more than 100 contacts, but the '100+' reporting and multiple amendments emerged in July 2017 rather than the supplied May 25 event. I did not attach a later source to the earlier discrete date."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "Kushner's initial SF-86 omitted foreign-government contacts and later reporting said he supplemented the form with more than 100 contacts, but the '100+' reporting and multiple amendments emerged in July 2017 rather than the supplied May 25 event. I did not attach a later source to the earlier discrete date.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5863": {
+      "assignment_key": "entry-5863",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 232,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5863",
+      "entry_number": 5863,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Eric Trump Foundation Suspends Charity Events Under AG Scrutiny",
+        "New York's attorney general confirmed in June 2017 that it was examining issues raised about Eric Trump's foundation, but Eric Trump had announced suspension of the foundation's fundraising operations on December 22, 2016. The supplied June 30, 2017 suspension event conflates two separate developments."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "New York's attorney general confirmed in June 2017 that it was examining issues raised about Eric Trump's foundation, but Eric Trump had announced suspension of the foundation's fundraising operations on December 22, 2016. The supplied June 30, 2017 suspension event conflates two separate developments.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5899": {
+      "assignment_key": "entry-5899",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 233,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5899",
+      "entry_number": 5899,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Deutsche Bank Loans Trump $640 Million Despite Prior Defaults \u2014 Relationship Via Private Wealth Division (1990s\u20132000s)",
+        "Deutsche Bank's long lending relationship with Trump is well documented, including a $640 million Chicago construction loan and later private-wealth loans after disputes and defaults. The card, however, treats $640 million as an aggregate of late-1990s-to-2000s loans financing several unrelated projects and assigns a 1998 start date, so I did not accept the amalgamated figure and chronology."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "Deutsche Bank's long lending relationship with Trump is well documented, including a $640 million Chicago construction loan and later private-wealth loans after disputes and defaults. The card, however, treats $640 million as an aggregate of late-1990s-to-2000s loans financing several unrelated projects and assigns a 1998 start date, so I did not accept the amalgamated figure and chronology.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6379": {
+      "assignment_key": "entry-6379",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 234,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6379",
+      "entry_number": 6379,
+      "review_status": "reviewed_unresolved_after_source_check",
+      "recommended_disposition": "retain_unresolved",
+      "supported_facts": [],
+      "contradicted_or_unsupported_claims": [
+        "Trump Pressures Postmaster DeJoy to Slow Mail Delivery Before 2020 Election",
+        "Reuters confirms DeJoy implemented operational changes that slowed mail and that Trump separately opposed Postal Service funding because it would facilitate mail voting. I did not find evidence that Trump personally directed or pressured DeJoy to slow mail delivery, and Trump publicly said he did not know what DeJoy was doing. The title's direct-pressure claim is therefore not substantiated."
+      ],
+      "sources_consulted": [],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "claimed_discrete_event_unsubstantiated",
+      "related_event_groups": [],
+      "corrected_draft": null,
+      "proposed_changed_fields": [],
+      "remaining_gap": "Reuters confirms DeJoy implemented operational changes that slowed mail and that Trump separately opposed Postal Service funding because it would facilitate mail voting. I did not find evidence that Trump personally directed or pressured DeJoy to slow mail delivery, and Trump publicly said he did not know what DeJoy was doing. The title's direct-pressure claim is therefore not substantiated.",
+      "proposal_only": true,
+      "revision": 2
+    }
+  },
+  "no_other_keys_authorized": true
+}
