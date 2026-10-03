@@ -1,0 +1,168 @@
+{
+  "record_type": "normalized_release_qa_final",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "input_sha256": "de46e19ba08ca6765362043b1cf9d0c7a3df78108a65ea13ca84b90a7b5145fb",
+  "expected_ids": [
+    "entry-210",
+    "entry-275",
+    "entry-643",
+    "entry-776",
+    "entry-873",
+    "entry-990",
+    "entry-1779",
+    "entry-2380",
+    "entry-2528",
+    "entry-2929",
+    "entry-3709",
+    "entry-4040",
+    "entry-4622",
+    "entry-5559",
+    "entry-6146",
+    "entry-6330"
+  ],
+  "observed_ids": [
+    "entry-210",
+    "entry-275",
+    "entry-643",
+    "entry-776",
+    "entry-873",
+    "entry-990",
+    "entry-1779",
+    "entry-2380",
+    "entry-2528",
+    "entry-2929",
+    "entry-3709",
+    "entry-4040",
+    "entry-4622",
+    "entry-5559",
+    "entry-6146",
+    "entry-6330"
+  ],
+  "record_count": 16,
+  "exact_set_match": true,
+  "duplicate_ids": [],
+  "missing_ids": [],
+  "extra_ids": [],
+  "source_batches_reconciled": [
+    {
+      "path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-07-batch-crossqa-2026-10-03-001.jsonl",
+      "terminal_rows": 16,
+      "duplicate_terminal_ids": [],
+      "checkpoint": {
+        "batch": 1,
+        "processed_count": 8,
+        "processed_keys": [
+          "entry-210",
+          "entry-275",
+          "entry-643",
+          "entry-776",
+          "entry-873",
+          "entry-990",
+          "entry-1779",
+          "entry-2380"
+        ],
+        "complete": true
+      },
+      "prior_final_exact_set_match": true,
+      "batches": [
+        {
+          "batch": 1,
+          "keys": [
+            "entry-210",
+            "entry-275",
+            "entry-643",
+            "entry-776",
+            "entry-873",
+            "entry-990",
+            "entry-1779",
+            "entry-2380"
+          ],
+          "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+          "input_sha256": "de46e19ba08ca6765362043b1cf9d0c7a3df78108a65ea13ca84b90a7b5145fb"
+        },
+        {
+          "batch": 2,
+          "keys": [
+            "entry-2528",
+            "entry-2929",
+            "entry-3709",
+            "entry-4040",
+            "entry-4622",
+            "entry-5559",
+            "entry-6146",
+            "entry-6330"
+          ],
+          "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+          "input_sha256": "de46e19ba08ca6765362043b1cf9d0c7a3df78108a65ea13ca84b90a7b5145fb"
+        }
+      ]
+    }
+  ],
+  "disposition_counts": {
+    "supported_proposal": 10,
+    "intentional_exclusion": 4,
+    "narrower_revision_required": 1,
+    "unsupported_hold": 1
+  },
+  "release_ready_count": 14,
+  "blocking_count": 2,
+  "blocking_ids": [
+    "entry-2528",
+    "entry-2929"
+  ],
+  "blocking_reasons": [
+    {
+      "key": "entry-2528",
+      "disposition": "narrower_revision_required",
+      "reason": "The central 2015 $10 million civil penalty is supported by the exact 2015 FinCEN PDF and the 2015 enforcement-action page. However, the first mapped release URL resolves to FinCEN’s January 28, 1998 $477,000 penalty, not the 2015 $10 million action. Remove or replace that URL and correct its mapping; keep the proposal’s civil-penalty (not criminal-conviction) scope."
+    },
+    {
+      "key": "entry-2929",
+      "disposition": "unsupported_hold",
+      "reason": "The proposal title and staged copy concern Eric Trump’s COVID-19 prediction, but both mapped URLs are Brian Murphy’s September 2020 DHS whistleblower-reprisal complaint and the House committee release about that complaint. The complaint PDF and release contain no Eric Trump prediction or Fox News segment; no source for the proposed COVID claim is supplied."
+    }
+  ],
+  "release_ready_semantics": "true means the prior supported disposition can proceed: supported_proposal is scoped as stated; intentional_exclusion means exclude from the scoped release and does not approve original copy. Narrower revisions and unsupported holds remain blocking.",
+  "url_validation": {
+    "verified_url_occurrences": 25,
+    "unique_verified_urls": 25,
+    "all_urls_from_prior_source_checks": true,
+    "valid_https_urls": 25,
+    "invalid_urls": []
+  },
+  "proposal_length_validation": {
+    "criteria": {
+      "short_max_characters": 180,
+      "medium_words": [
+        45,
+        90
+      ],
+      "long_words": [
+        140,
+        300
+      ],
+      "word_count_method": "whitespace-delimited"
+    },
+    "objects_checked": [
+      "source_proposal",
+      "staged_description",
+      "preserved_fields"
+    ],
+    "checked": {
+      "short": 36,
+      "medium": 29,
+      "long": 28
+    },
+    "passed": {
+      "short": 36,
+      "medium": 29,
+      "long": 28
+    },
+    "failed": []
+  },
+  "neon_calls": 0,
+  "ddl_dml": false,
+  "canonical_edits": false,
+  "other_worker_edits": false,
+  "pull_request_opened": false
+}
