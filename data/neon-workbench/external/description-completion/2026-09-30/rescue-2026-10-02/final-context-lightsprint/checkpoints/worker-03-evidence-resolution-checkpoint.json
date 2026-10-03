@@ -1,0 +1,61 @@
+{
+  "worker": "03",
+  "input_commit": "b746cabf167043cd52896163368baea52af66c07",
+  "assignment_count": 34,
+  "assigned_ids": [
+    "entry-1668",
+    "entry-1730",
+    "entry-1779",
+    "entry-188",
+    "entry-207",
+    "entry-221",
+    "entry-2340",
+    "entry-2380",
+    "entry-2466",
+    "entry-2518",
+    "entry-2560",
+    "entry-263",
+    "entry-275",
+    "entry-2903",
+    "entry-3369",
+    "entry-3520",
+    "entry-3735",
+    "entry-3871",
+    "entry-3985",
+    "entry-4113",
+    "entry-4308",
+    "entry-4622",
+    "entry-5203",
+    "entry-5441",
+    "entry-5565",
+    "entry-5762",
+    "entry-6141",
+    "entry-6237",
+    "entry-6330",
+    "entry-651",
+    "entry-769",
+    "entry-826",
+    "entry-871",
+    "entry-965"
+  ],
+  "batches": [
+    "outputs/worker-03-evidence-resolution-batch-001.jsonl"
+  ],
+  "complete_ids": [
+    "entry-207"
+  ],
+  "needs_context_ids": [
+    "entry-1668",
+    "entry-1730",
+    "entry-1779",
+    "entry-188",
+    "entry-221",
+    "entry-2340"
+  ],
+  "complete": 1,
+  "needs_context": 6,
+  "remaining": 27,
+  "skipped_complete_ids": [
+    "entry-6992"
+  ]
+}
