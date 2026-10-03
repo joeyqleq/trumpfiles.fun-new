@@ -1,0 +1,22 @@
+{
+  "checkpoint_id": "worker-04-checkpoint-001",
+  "rows_in_checkpoint": 6,
+  "cumulative_rows": 6,
+  "assigned_total": 36,
+  "remaining": 30,
+  "keys": [
+    "entry-4407",
+    "entry-4906",
+    "entry-5336",
+    "entry-5749",
+    "entry-5832",
+    "entry-6212"
+  ],
+  "input_sha256": "afa29b341422dccd4f453134b75a4f7339636d396c51d43d8f256d36723d33ad",
+  "qa_batch_sha256": "3a19f4e7e0e5c45efda2bc2d9232e4d56f4ad06ed529a7620e5bdc8122c3c064",
+  "status_counts": {
+    "pass": 3,
+    "hold": 3,
+    "superseded": 0
+  }
+}
