@@ -1,0 +1,94 @@
+{
+  "qa": "normalized-release-qa-2026-10-04/account5/worker-01",
+  "source_job": "citation190-crossqa-2026-10-03/worker-01",
+  "source_packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "source_packet_sha256": "b3afbca66c441a34405a3f1144c013b037afeaaca2c9340ebbb6999f1d4df0a6",
+  "normalized_file": "worker-01-normalized.jsonl",
+  "expected_ids": [
+    "entry-35",
+    "entry-231",
+    "entry-390",
+    "entry-735",
+    "entry-822",
+    "entry-945",
+    "entry-1727",
+    "entry-2296",
+    "entry-2466",
+    "entry-2636",
+    "entry-3380",
+    "entry-3839",
+    "entry-4296",
+    "entry-5406",
+    "entry-5707",
+    "entry-6230"
+  ],
+  "input_records": 16,
+  "saved_rows": 16,
+  "missing_count": 0,
+  "duplicate_count": 0,
+  "unexpected_ids": [],
+  "exact_set_valid": true,
+  "prior_terminal_rows": 16,
+  "prior_terminal_duplicates": 0,
+  "cross_qa_conflicts": 0,
+  "disposition_counts": {
+    "intentional_exclusion": 1,
+    "narrower_revision_required": 6,
+    "supported_proposal": 9
+  },
+  "release_ready_count": 8,
+  "blocking_count": 8,
+  "blocking_ids": [
+    "entry-35",
+    "entry-231",
+    "entry-735",
+    "entry-2466",
+    "entry-2636",
+    "entry-3380",
+    "entry-5406",
+    "entry-5707"
+  ],
+  "release_ready_ids": [
+    "entry-390",
+    "entry-822",
+    "entry-945",
+    "entry-1727",
+    "entry-2296",
+    "entry-3839",
+    "entry-4296",
+    "entry-6230"
+  ],
+  "url_validation": {
+    "invalid_count": 0,
+    "invalid_urls": [],
+    "rule": "verified_urls are absolute HTTPS; proposal URLs are absolute HTTP(S)"
+  },
+  "description_length_validation": {
+    "records_with_proposed_descriptions": 13,
+    "short_fields": 13,
+    "medium_fields": 11,
+    "long_fields": 11,
+    "issues": [],
+    "rules": {
+      "short_chars_max": 180,
+      "medium_words": [
+        45,
+        90
+      ],
+      "long_words": [
+        140,
+        300
+      ]
+    }
+  },
+  "reconciliation": "Exactly one prior worker-01 citation batch terminal row per assigned ID; the prior and resumed final-QA classifications match. Original account1 hold/status caveats remain embedded in proposal and reasons.",
+  "source_research_performed": false,
+  "canonical_edits": false,
+  "neon_or_database_calls_or_writes": false,
+  "other_worker_edits": false,
+  "pr_opened": false,
+  "prior_batch_commit": "c31cb2d97a2c085fec94c8c2c6089933d573c170",
+  "prior_batch_pushed": true,
+  "prior_branch_head_matched_origin": true,
+  "prior_batch_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-01-batch-2026-10-03-citationcrossqa-a.jsonl"
+}
