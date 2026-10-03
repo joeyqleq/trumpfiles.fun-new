@@ -57,9 +57,103 @@
     "exact_id_set": true,
     "one_outcome_per_id": true,
     "source_urls_mapped": true,
-    "support_notes_present": true,
-    "copy_length_bounds": true,
+    "source_support_and_access_notes_present": true,
+    "title_and_short_at_most_180_characters": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
     "prior_input_hash_matches": true
+  },
+  "copy_dimensions": {
+    "210": {
+      "title_characters": 91,
+      "short_characters": 131,
+      "medium_words": 67,
+      "long_words": 160
+    },
+    "267": {
+      "title_characters": 81,
+      "short_characters": 163,
+      "medium_words": 59,
+      "long_words": 160
+    },
+    "581": {
+      "title_characters": 53,
+      "short_characters": 53,
+      "medium_words": 50,
+      "long_words": 174
+    },
+    "769": {
+      "title_characters": 65,
+      "short_characters": 150,
+      "medium_words": 57,
+      "long_words": 174
+    },
+    "830": {
+      "title_characters": 60,
+      "short_characters": 60,
+      "medium_words": 47,
+      "long_words": 160
+    },
+    "954": {
+      "title_characters": 64,
+      "short_characters": 144,
+      "medium_words": 58,
+      "long_words": 179
+    },
+    "1727": {
+      "title_characters": 74,
+      "short_characters": 142,
+      "medium_words": 57,
+      "long_words": 176
+    },
+    "2106": {
+      "title_characters": 50,
+      "short_characters": 161,
+      "medium_words": 60,
+      "long_words": 181
+    },
+    "2441": {
+      "title_characters": 65,
+      "short_characters": 152,
+      "medium_words": 53,
+      "long_words": 175
+    },
+    "3009": {
+      "title_characters": 68,
+      "short_characters": 98,
+      "medium_words": 54,
+      "long_words": 163
+    },
+    "3722": {
+      "title_characters": 74,
+      "short_characters": 155,
+      "medium_words": 59,
+      "long_words": 172
+    },
+    "4619": {
+      "title_characters": 77,
+      "short_characters": 117,
+      "medium_words": 50,
+      "long_words": 166
+    },
+    "5505": {
+      "title_characters": 63,
+      "short_characters": 130,
+      "medium_words": 57,
+      "long_words": 173
+    },
+    "6127": {
+      "title_characters": 84,
+      "short_characters": 143,
+      "medium_words": 52,
+      "long_words": 180
+    },
+    "6241": {
+      "title_characters": 69,
+      "short_characters": 132,
+      "medium_words": 50,
+      "long_words": 160
+    }
   },
   "errors": []
 }
