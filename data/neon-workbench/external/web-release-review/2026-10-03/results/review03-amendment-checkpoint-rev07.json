@@ -1,0 +1,13 @@
+{
+  "assignment": "assignment-review03.json",
+  "amendment_file": "review03-amendment-rev07.jsonl",
+  "rows_written": 2,
+  "assignment_keys": [
+    "entry-6804",
+    "entry-6929"
+  ],
+  "batch_sha256": "38cd6c489c44893eb133d9adb13e6350524cbf29baab76025c6e61d93efa963e",
+  "proposal_only": true,
+  "revision": 7,
+  "supersedes_revision": 6
+}
