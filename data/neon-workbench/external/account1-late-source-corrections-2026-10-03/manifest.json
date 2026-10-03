@@ -1,0 +1,156 @@
+{
+  "branch": "codex/account1-late-source-corrections-2026-10-03",
+  "parent": "df7d51514eb61ef24ee5c79cb0e26ad0dbd20a76",
+  "source_report": "source-rescue-unassigned-20261003T112453Z-3d83869b1487.report.json",
+  "prior_account6_manifest": "codex/account6-source-corrections-2026-10-03",
+  "assigned": 89,
+  "owners": [
+    {
+      "worker": 1,
+      "file": "worker-01-input.jsonl",
+      "count": 13,
+      "keys": [
+        "entry-4235",
+        "entry-4545",
+        "entry-5219",
+        "entry-5734",
+        "entry-5818",
+        "entry-5895",
+        "entry-6442",
+        "entry-6514",
+        "entry-6634",
+        "entry-6700",
+        "entry-6762",
+        "entry-6836",
+        "entry-6934"
+      ],
+      "sha256": "a8b321f39e98e87c98c90b6f593bfc7002c77a40125534fcdbe8015e522cb683"
+    },
+    {
+      "worker": 2,
+      "file": "worker-02-input.jsonl",
+      "count": 13,
+      "keys": [
+        "entry-4242",
+        "entry-4686",
+        "entry-5331",
+        "entry-5741",
+        "entry-5836",
+        "entry-5896",
+        "entry-6452",
+        "entry-6550",
+        "entry-6635",
+        "entry-6716",
+        "entry-6773",
+        "entry-6837",
+        "entry-6942"
+      ],
+      "sha256": "f134e33e7d74002eeb4db31bf72257955ac250a834a7616146b25b612022e727"
+    },
+    {
+      "worker": 3,
+      "file": "worker-03-input.jsonl",
+      "count": 13,
+      "keys": [
+        "entry-4266",
+        "entry-4893",
+        "entry-5332",
+        "entry-5753",
+        "entry-5841",
+        "entry-6387",
+        "entry-6474",
+        "entry-6551",
+        "entry-6639",
+        "entry-6735",
+        "entry-6777",
+        "entry-6842",
+        "entry-6956"
+      ],
+      "sha256": "2af28c541c035f17256c2643a4c5d1cdd30c091aa3e4425cd1bd80cdb9f8ed30"
+    },
+    {
+      "worker": 4,
+      "file": "worker-04-input.jsonl",
+      "count": 13,
+      "keys": [
+        "entry-4410",
+        "entry-5062",
+        "entry-5339",
+        "entry-5757",
+        "entry-5848",
+        "entry-6410",
+        "entry-6480",
+        "entry-6575",
+        "entry-6654",
+        "entry-6737",
+        "entry-6792",
+        "entry-6886",
+        "entry-6957"
+      ],
+      "sha256": "f055a9e1065d9dd1ed834b34095a71197fa3175723bd06f1d21ee0f527b9db44"
+    },
+    {
+      "worker": 6,
+      "file": "worker-06-input.jsonl",
+      "count": 13,
+      "keys": [
+        "entry-4412",
+        "entry-5082",
+        "entry-5567",
+        "entry-5759",
+        "entry-5861",
+        "entry-6416",
+        "entry-6492",
+        "entry-6616",
+        "entry-6659",
+        "entry-6741",
+        "entry-6812",
+        "entry-6897",
+        "entry-6962"
+      ],
+      "sha256": "b018069524331bfbd2ace009b42a43f38e336d59a3a2e55a9ba3e6faf76fc96d"
+    },
+    {
+      "worker": 11,
+      "file": "worker-11-input.jsonl",
+      "count": 12,
+      "keys": [
+        "entry-4416",
+        "entry-5166",
+        "entry-5666",
+        "entry-5810",
+        "entry-5866",
+        "entry-6420",
+        "entry-6509",
+        "entry-6617",
+        "entry-6666",
+        "entry-6754",
+        "entry-6813",
+        "entry-6899"
+      ],
+      "sha256": "9aa93d0109a966c1f026e78fc6f766f1798a6e37e569ba6f6ed70c7b738f4d37"
+    },
+    {
+      "worker": 12,
+      "file": "worker-12-input.jsonl",
+      "count": 12,
+      "keys": [
+        "entry-4504",
+        "entry-5168",
+        "entry-5733",
+        "entry-5811",
+        "entry-5873",
+        "entry-6438",
+        "entry-6512",
+        "entry-6620",
+        "entry-6689",
+        "entry-6755",
+        "entry-6815",
+        "entry-6932"
+      ],
+      "sha256": "0e5b1285401eb6197123763eaa870a5a05efbc804033f46892e1a8ef614ed0c6"
+    }
+  ],
+  "prompt_sha256": "7998385fa68204eca8f387e1597d0873131558735e9feacd397368cf045582f7",
+  "release_status": "PROPOSAL_ONLY"
+}
