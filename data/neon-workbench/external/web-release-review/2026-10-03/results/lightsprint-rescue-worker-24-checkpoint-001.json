@@ -1,0 +1,28 @@
+{
+  "worker": 24,
+  "batch": 1,
+  "keys_processed": [
+    "entry-4708",
+    "entry-5213",
+    "entry-5731",
+    "entry-5760",
+    "entry-5850",
+    "entry-6414",
+    "entry-6437",
+    "entry-6479"
+  ],
+  "count": 8,
+  "drafts_qa_passed": 1,
+  "unresolved_or_draft_gaps": 7,
+  "status_counts": {
+    "reviewed_split_supported_components_draft_gap": 4,
+    "reviewed_narrower_supported_event_draft_qa_pass": 1,
+    "reviewed_exclude": 3
+  },
+  "schema_qa": "pass",
+  "exact_identity_preservation": "pass",
+  "original_claim_substantiated": false,
+  "proposal_only": true,
+  "source_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97",
+  "assignment_packet_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86"
+}

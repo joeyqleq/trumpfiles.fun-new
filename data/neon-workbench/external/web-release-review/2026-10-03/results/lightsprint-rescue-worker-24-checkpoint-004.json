@@ -1,0 +1,27 @@
+{
+  "worker": 24,
+  "batch": 4,
+  "keys_processed": [
+    "expanded-20260927-kennedy-ad-criticism",
+    "expanded-20260929-third-country-sc-stay",
+    "fresh-20260923-melania-series-update",
+    "pr47-review-entry-1284",
+    "pr47-review-entry-1343",
+    "pr47-review-entry-1478",
+    "pr47-review-entry-1550",
+    "pr47-review-entry-1625"
+  ],
+  "count": 8,
+  "drafts_qa_passed": 8,
+  "unresolved_or_draft_gaps": 0,
+  "status_counts": {
+    "proposed_fresh_event_attribution_qa_pass": 3,
+    "proposed_superseding_narrowed_draft_qa_pass": 5
+  },
+  "schema_qa": "pass",
+  "exact_identity_preservation": "pass",
+  "original_claim_substantiated": false,
+  "proposal_only": true,
+  "source_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97",
+  "assignment_packet_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86"
+}
