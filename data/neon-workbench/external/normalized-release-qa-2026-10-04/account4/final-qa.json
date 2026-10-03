@@ -1,0 +1,186 @@
+{
+  "task": "normalized-release-qa-2026-10-04/account4",
+  "source_jobs": [
+    "web425-review-02",
+    "held283-editorial-completion-2026-10-03/worker-02"
+  ],
+  "source_files": [
+    "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-02-batch-UNIQUE.jsonl",
+    "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-02-batch-UNIQUE.jsonl",
+    "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-02-input.jsonl"
+  ],
+  "source_packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "source_input_sha256": "0683bc060c8c772b91d0fa57ac2965865aeaceff79f3ce7a77c115363a38c67b",
+  "expected_id_count": 24,
+  "actual_id_count": 24,
+  "exact_ordered_ids_match": true,
+  "actual_ordered_ids": [
+    "entry-4240",
+    "entry-4827",
+    "entry-5329",
+    "entry-5743",
+    "entry-5816",
+    "entry-6136",
+    "entry-6413",
+    "entry-6433",
+    "entry-6464",
+    "entry-6564",
+    "entry-6601",
+    "entry-6631",
+    "entry-6696",
+    "entry-6763",
+    "entry-6788",
+    "entry-6804",
+    "entry-6830",
+    "entry-6871",
+    "entry-6931",
+    "entry-6950",
+    "entry-7051",
+    "entry-7111",
+    "entry-7133",
+    "entry-7177"
+  ],
+  "duplicate_keys": [],
+  "missing_ids": [],
+  "extra_ids": [],
+  "disposition_counts": {
+    "exclude_as_event_publication_context_only": 1,
+    "hold_URL_to_claim_gap": 1,
+    "hold_actor_action_mismatch": 1,
+    "hold_broader_ruling_source_gap": 1,
+    "hold_duplicate_event_guard": 1,
+    "hold_exact_statement_unverified": 1,
+    "hold_internal_attribution_conflict": 1,
+    "hold_missing_CFPB_records": 1,
+    "hold_missing_authenticated_post": 1,
+    "hold_missing_transaction_evidence": 1,
+    "hold_no_proposal_evidence": 1,
+    "hold_pending_direct_evidence": 1,
+    "hold_pending_specific_evidence": 1,
+    "hold_source_inaccessible_and_copy_unverified": 1,
+    "hold_split_draft_conflict": 1,
+    "hold_unrelated_source": 1,
+    "hold_unsourced_later_court_details": 1,
+    "propose_consolidation_with_counterpart": 2,
+    "propose_narrower_supported_event": 1,
+    "replace_with_narrower_supported_event": 2,
+    "retain_narrower_corrected_event": 2
+  },
+  "release_ready_count": 8,
+  "blocking_count": 16,
+  "blocking_ids": [
+    "entry-4240",
+    "entry-4827",
+    "entry-5743",
+    "entry-5816",
+    "entry-6413",
+    "entry-6464",
+    "entry-6564",
+    "entry-6631",
+    "entry-6696",
+    "entry-6763",
+    "entry-6804",
+    "entry-6830",
+    "entry-6871",
+    "entry-6950",
+    "entry-7051",
+    "entry-7133"
+  ],
+  "terminal_conflict_count": 16,
+  "terminal_conflict_ids": [
+    "entry-4827",
+    "entry-5743",
+    "entry-5816",
+    "entry-6413",
+    "entry-6464",
+    "entry-6564",
+    "entry-6631",
+    "entry-6696",
+    "entry-6763",
+    "entry-6788",
+    "entry-6804",
+    "entry-6830",
+    "entry-6871",
+    "entry-6950",
+    "entry-7051",
+    "entry-7133"
+  ],
+  "unresolved_conflict_ids": [
+    "entry-4827",
+    "entry-5743",
+    "entry-5816",
+    "entry-6413",
+    "entry-6464",
+    "entry-6564",
+    "entry-6631",
+    "entry-6696",
+    "entry-6763",
+    "entry-6804",
+    "entry-6830",
+    "entry-6871",
+    "entry-6950",
+    "entry-7051",
+    "entry-7133"
+  ],
+  "resolved_conflict_ids": [
+    "entry-6788"
+  ],
+  "proposal_count": 8,
+  "proposal_description_length_checks": {
+    "entry-5329": {
+      "short_characters": 177,
+      "medium_words": 52,
+      "long_words": 147,
+      "pass": true
+    },
+    "entry-6136": {
+      "short_characters": 62,
+      "medium_words": 49,
+      "long_words": 164,
+      "pass": true
+    },
+    "entry-6433": {
+      "short_characters": 97,
+      "medium_words": 52,
+      "long_words": 146,
+      "pass": true
+    },
+    "entry-6601": {
+      "short_characters": 153,
+      "medium_words": 60,
+      "long_words": 151,
+      "pass": true
+    },
+    "entry-6788": {
+      "short_characters": 177,
+      "medium_words": 61,
+      "long_words": 160,
+      "pass": true
+    },
+    "entry-6931": {
+      "short_characters": 138,
+      "medium_words": 76,
+      "long_words": 147,
+      "pass": true
+    },
+    "entry-7111": {
+      "short_characters": 63,
+      "medium_words": 63,
+      "long_words": 170,
+      "pass": true
+    },
+    "entry-7177": {
+      "short_characters": 84,
+      "medium_words": 59,
+      "long_words": 147,
+      "pass": true
+    }
+  },
+  "proposal_word_lengths_valid": true,
+  "verified_url_count": 15,
+  "unique_verified_url_count": 15,
+  "verified_urls_https_and_well_formed": true,
+  "hold_or_defer_never_upgraded_to_pass": true,
+  "no_new_research": true,
+  "canonical_or_neon_writes": 0
+}
