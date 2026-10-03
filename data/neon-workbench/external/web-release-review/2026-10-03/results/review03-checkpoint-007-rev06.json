@@ -1,0 +1,16 @@
+{
+  "assignment": "assignment-review03.json",
+  "batch_file": "review03-batch-007-rev06.jsonl",
+  "batch_number": 7,
+  "rows_written": 8,
+  "cumulative_rows_written": 56,
+  "total_assigned_rows": 75,
+  "first_assignment_key": "entry-6944",
+  "last_assignment_key": "entry-6781",
+  "batch_sha256": "08a60df02d903733951dc3b7638f1e86f14eca099968cb73d4a34def32b66a56",
+  "completed": false,
+  "final_batch": false,
+  "proposal_only": true,
+  "revision": 6,
+  "supersedes_revision": 5
+}
