@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "assignment_count": 283,
+  "unique_key_count": 283,
+  "missing_ids": [],
+  "outside_ids": [],
+  "duplicate_ids": [],
+  "eligible_for_human_review": 16,
+  "held": 267,
+  "batch_files": [
+    "account4-worker-01-audit.jsonl",
+    "account4-worker-02-audit.jsonl",
+    "account4-worker-03-audit.jsonl",
+    "account4-worker-04-audit.jsonl",
+    "account4-worker-05-audit.jsonl",
+    "account4-worker-06-audit.jsonl",
+    "account4-worker-07-audit.jsonl",
+    "account4-worker-08-audit.jsonl",
+    "account4-worker-09-audit.jsonl",
+    "account4-worker-10-audit.jsonl",
+    "account4-worker-11-audit.jsonl",
+    "account4-worker-12-audit.jsonl"
+  ],
+  "checkpoint": "checkpoint.json",
+  "blockers": "blockers.json",
+  "independent_qa": "independent-qa.json",
+  "exclusions_auto_approved": 0
+}

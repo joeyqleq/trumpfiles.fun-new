@@ -1,0 +1,24 @@
+{
+  "status": "independent_exact_set_and_gate_qa_passed",
+  "checked_rows": 283,
+  "unique_keys": 283,
+  "missing_ids": [],
+  "outside_ids": [],
+  "duplicate_ids": [],
+  "eligible": 16,
+  "held": 267,
+  "all_eligible_rows_clear_provenance_mapping_draft_length_and_collision_gates": true,
+  "exclusions_auto_approved": 0,
+  "blocker_counts": {
+    "pr49_provenance_incomplete": 116,
+    "source_to_fact_mapping_gaps": 139,
+    "draft_or_length_gaps": 9,
+    "split_consolidation_guard_gaps": 6,
+    "upstream_holds": 242,
+    "exclusion_proposals_held": 2
+  },
+  "limitations": [
+    "No independent re-opening of cited URLs; source-to-fact assertions remain subject to human content review.",
+    "Eligible means eligible for human release review, not publication approval."
+  ]
+}
