@@ -1,0 +1,213 @@
+{
+  "counts": {
+    "assigned_review_rows_total": 425,
+    "distinct_duplicate_canonical_ids": 40,
+    "duplicate_canonical_entry_ids_in_light_wave2_context": [
+      "entry-7045"
+    ],
+    "duplicate_canonical_ids_in_light_wave2_context": 1,
+    "duplicate_pairs_with_any_frozen_source_metadata": 59,
+    "duplicate_pairs_with_both_frozen_records": 59,
+    "duplicate_pairs_with_counterpart_description_snapshot": 59,
+    "existing_correction_context_rows": 230,
+    "fresh_candidate_primary_id_overlap": 0,
+    "fresh_candidates": 84,
+    "fresh_complete_for_human_insert_review_status_only": 82,
+    "fresh_needs_review_status_only": 2,
+    "fresh_related_light_context_ids": [
+      390,
+      3997
+    ],
+    "fresh_related_web80_context_ids": [
+      1071,
+      1284
+    ],
+    "held_by_reason": {
+      "approved duplicate": 59,
+      "soft_hide_candidate": 111,
+      "split_required": 32,
+      "still_unresolved": 81
+    },
+    "held_dispositions": 283,
+    "held_vs_light_wave2_overlap": 0,
+    "held_vs_reserved_web80_overlap": 0,
+    "pr47_proposed_corrections_review_only": 58,
+    "pr47_shared_event_warning": "Corrected proposal completeness is not approval or substantiation of the original claim. Consolidate shared events before canonical acceptance.",
+    "web80_original_records_context_only": 80
+  },
+  "created_for": "ChatGPT Web user-requested offline review only",
+  "gates": {
+    "active_light_and_web_ids_are_context_only": true,
+    "database_access_or_writes": false,
+    "fresh_namespace_separate": true,
+    "held_and_active_primary_assignments_disjoint": true,
+    "insert_authorized": false,
+    "review_only": true,
+    "soft_hide_or_delete_authorized": false,
+    "source_text_not_present_in_offline_inputs_must_be_researched_or_left_unresolved": true,
+    "split_records_created": false
+  },
+  "inputs": [
+    {
+      "bytes": 543127,
+      "label": "held_dispositions",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/held.jsonl",
+      "rows": 283,
+      "sha256": "ceff947857970da6ee25e90ae1b7e6a3b590e8492a07c71b7670278b21bf64a7"
+    },
+    {
+      "bytes": 40618,
+      "label": "dedupe_decisions",
+      "path": "data/neon-workbench/patches/approved/dedupe_decisions.jsonl",
+      "rows": 59,
+      "sha256": "0d5af9fb2909cef948590cc5b41aa49ebc6fc1b77d6ff58987e10fb0305eced4"
+    },
+    {
+      "bytes": 13731560,
+      "label": "frozen_entries",
+      "path": "data/neon-export/tables/trump_entries.jsonl",
+      "rows": 7143,
+      "sha256": "f76bdd5d3ae292871ff685b8bdd6194bac458d87f2f0f814420a94a68e147013"
+    },
+    {
+      "bytes": 1385217,
+      "label": "frozen_sources",
+      "path": "data/neon-export/tables/trump_sources.jsonl",
+      "rows": 4771,
+      "sha256": "cf34a6371fc247f3b040da47ea484de5810e966055620b94f0d8b97081f440cc"
+    },
+    {
+      "bytes": 3818,
+      "label": "frozen_source_manifest",
+      "path": "data/neon-export/manifest.json",
+      "sha256": "4bb249bae71c85e12a4212517ccbba713c4e28635675b1ec7445afe7e7348b44"
+    },
+    {
+      "bytes": 21905817,
+      "label": "corpus_snapshot",
+      "path": "data/neon-workbench/corpus/trumpstein-corpus.jsonl",
+      "rows": 7084,
+      "sha256": "38127aba1aea8274d4bb5053622067dd0f3b32d6600179b098c0ed5255b505d0"
+    },
+    {
+      "bytes": 22639505,
+      "label": "merged_descriptions",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions.jsonl",
+      "rows": 6944,
+      "sha256": "615878c34963cb47a9a06a3ed1bb7db5c17b0ca31938b4d70dbb837ce55d49e5"
+    },
+    {
+      "bytes": 1323474,
+      "label": "correction_manifest",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/correction-manifest/manifest.jsonl",
+      "rows": 494,
+      "sha256": "454d07c454757caf2ce0d1d6a29271d406ecdf750c12c8a0e5ee83d8d5600db1"
+    },
+    {
+      "bytes": 631383,
+      "label": "fresh_promotion_review",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/fresh-candidate-promotion/promotion-review.jsonl",
+      "rows": 84,
+      "sha256": "507c018f10a435be5ec6b40b6572257dd7058a16017b478a6c2099cd2ca68f04"
+    },
+    {
+      "bytes": 9439,
+      "label": "fresh_promotion_manifest",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/fresh-candidate-promotion/manifest.json",
+      "sha256": "45cac3aa7c93d9dd990bf613c1c81174d16627bcf9f6c4d626c2157997a600e4"
+    },
+    {
+      "bytes": 11096,
+      "label": "light_wave2_manifest",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-lightsprint/evidence-resolution-2026-10-03-wave2/manifest.json",
+      "sha256": "cc85bf1d61cbbebbe4ad12ccb64185b72cd41b90cafa50903cdfb64d79f1afe3"
+    },
+    {
+      "bytes": 1693,
+      "label": "web80_manifest",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/final-context-web/manifest.json",
+      "sha256": "d8013384b7b869ae8e495eb43a7db93dc96cccedb05d2531e31ff5e2f70a2abb"
+    },
+    {
+      "bytes": 22725634,
+      "label": "pr47_web_proposals",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions-final-context-web-pr47-proposed.jsonl",
+      "rows": 6944,
+      "sha256": "8aa95e8f4e313880c35378cdeee4b887b9168483473668353bd0529b56afce63"
+    },
+    {
+      "bytes": 916,
+      "label": "pr47_report",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/editorial-repairs/report-pr47-abf8c473.json",
+      "sha256": "7173bc92c8ae70d0ff18a357a5b6580da97488a4c043a059d3a30524f019446a"
+    },
+    {
+      "bytes": 1101834,
+      "label": "prior_web_proposals_a",
+      "path": "web-rescue-import/proposals-68f0132e6d8cc1ec79243e6b43494c9d64221aa8d289266346de881d635bf870.jsonl",
+      "rows": 354,
+      "sha256": "2e505808acf445df12ac5b47331b7dab4ac038277c50e14219159e855a65534d"
+    },
+    {
+      "bytes": 2146782,
+      "label": "prior_web_proposals_b",
+      "path": "web-rescue-import/proposals-9ab2eca58a75ef8523d59192cc19fad53fcd7e58ade324acff6627db66d4eae6.jsonl",
+      "rows": 684,
+      "sha256": "842197e0112f99b665797f71de16fbecb3350fa8951644e27d3f7c309c5aaf63"
+    }
+  ],
+  "packet_files": [
+    {
+      "bytes": 4568,
+      "path": "PROMPT.md",
+      "sha256": "09cbfde47f2e979ec5a23a279cfb05d3a48e0080fd22fae3bd75a795873409ff"
+    },
+    {
+      "bytes": 12842,
+      "path": "active-assignment-exclusions.json",
+      "sha256": "5ba35f9b6f90434f67996f1d784a1e0138013f667c1e209be7fb909d20d7435c"
+    },
+    {
+      "bytes": 729703,
+      "path": "duplicate-counterpart-fulltext.jsonl",
+      "sha256": "8e7753a304f5d085a99b059179fcb29bff3819a4e83cefba75c5bd485d7bf600"
+    },
+    {
+      "bytes": 590233,
+      "path": "existing-corrections-context.jsonl",
+      "sha256": "313c71bbf3cb4d6e822a7695510739f58ea4ee0d79f65139c41a19f3b792fd63"
+    },
+    {
+      "bytes": 667916,
+      "path": "fresh84-review-only.jsonl",
+      "sha256": "29102aea07191ca1ce3f68f2ed276b41edb8a8ec52a3ebf6a7854a3484ee8102"
+    },
+    {
+      "bytes": 1909745,
+      "path": "held-dispositions.jsonl",
+      "sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "bytes": 6507,
+      "path": "manifest.json",
+      "sha256": "dd9cfe80420063a7617b426db93fff8ff32aa16467d54466962f36a92208f60a"
+    },
+    {
+      "bytes": 432273,
+      "path": "pr47-proposed-corrections-review-only.jsonl",
+      "sha256": "d496231ff632e609d01cced3f9363ea3b62b53d4b8d7000bc8c0cd920758fafb"
+    },
+    {
+      "bytes": 501221,
+      "path": "source-evidence.jsonl",
+      "sha256": "30d95b568f59ad97b4c1ccdf68b3342419fba249c999be48a17ea4aff2cd0a0e"
+    },
+    {
+      "bytes": 878821,
+      "path": "web80-original-fullfacts-context-only.jsonl",
+      "sha256": "4af22e6c3a237cbca80c0987d13f01a59864a37f0f140de6d8de0203b8a9f53d"
+    }
+  ],
+  "packet_version": 1,
+  "source_snapshot": "frozen export dated 2026-09-23 plus named description/promotion artifacts"
+}
