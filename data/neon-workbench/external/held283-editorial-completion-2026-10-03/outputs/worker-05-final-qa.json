@@ -1,0 +1,108 @@
+{
+  "result": "pass",
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_file": "worker-05-input.jsonl",
+  "input_sha256": "8a883949ea7e871f76b64d149d313ab4fbf7b56d01b376e1fda03914cc328d8e",
+  "assigned_ids": [
+    "entry-4438",
+    "entry-5112",
+    "entry-5340",
+    "entry-5752",
+    "entry-5840",
+    "entry-6280",
+    "entry-6417",
+    "entry-6440",
+    "entry-6484",
+    "entry-6582",
+    "entry-6607",
+    "entry-6642",
+    "entry-6736",
+    "entry-6778",
+    "entry-6791",
+    "entry-6817",
+    "entry-6834",
+    "entry-6890",
+    "entry-6936",
+    "entry-6955",
+    "entry-7075",
+    "entry-7117",
+    "entry-7147",
+    "entry-7186"
+  ],
+  "input_rows": 24,
+  "proposal_rows": 24,
+  "unique_proposal_ids": 24,
+  "exact_set_match": true,
+  "task_branch": "ls/5-trump-files-web425-review-05-of-12-zM9X",
+  "precommit_head": "d682430c39e2eb5a1e25ee724c6069ff4dbede09",
+  "checkpoints": [
+    {
+      "name": "worker-05-checkpoint-001.json",
+      "cumulative_rows": 6
+    },
+    {
+      "name": "worker-05-checkpoint-002.json",
+      "cumulative_rows": 12
+    },
+    {
+      "name": "worker-05-checkpoint-003.json",
+      "cumulative_rows": 18
+    },
+    {
+      "name": "worker-05-checkpoint-004.json",
+      "cumulative_rows": 24
+    }
+  ],
+  "terminal_outcome_counts": {
+    "ready_narrower_proposal": 5,
+    "hold_evidence_gap": 14,
+    "hold_split_children_incomplete": 1,
+    "duplicate_consolidation_candidate": 2,
+    "hold_duplicate_identity_conflict": 2
+  },
+  "narrowed_description_lengths": {
+    "entry-4438": {
+      "title_chars": 60,
+      "short_chars": 171,
+      "medium_words": 66,
+      "long_words": 153
+    },
+    "entry-5112": {
+      "title_chars": 72,
+      "short_chars": 136,
+      "medium_words": 57,
+      "long_words": 153
+    },
+    "entry-6417": {
+      "title_chars": 68,
+      "short_chars": 138,
+      "medium_words": 72,
+      "long_words": 173
+    },
+    "entry-6778": {
+      "title_chars": 65,
+      "short_chars": 142,
+      "medium_words": 66,
+      "long_words": 151
+    },
+    "entry-6817": {
+      "title_chars": 60,
+      "short_chars": 127,
+      "medium_words": 63,
+      "long_words": 142
+    }
+  },
+  "provenance_coverage": "All 24 rows point to the exact PR49 published result row (file/line/revision/commit) and latest rescue amendment source (ref/commit/path/line/blob).",
+  "source_mapping_coverage": "All rows include source-to-fact mappings or an explicit no-source gap; narrowed draft URLs are mapped to evidence rows.",
+  "duplicate_event_guards": [
+    "entry-7075 → entry-7060",
+    "entry-7117 → entry-7100",
+    "entry-7147 → entry-7139; held for conflicting 63% question wording",
+    "entry-7186 → entry-7139; held with the one-day date distinction preserved"
+  ],
+  "split_guard": "entry-5752 proposes separate Columbia and Harvard events only; remains held because long descriptions cannot meet the required length without padding; no Yale event proposed.",
+  "canonical_or_neon_changes": false,
+  "application_checks": "Not applicable: only review data artifacts changed.",
+  "ui_verification": "Not applicable: no user-facing UI changed.",
+  "failed_checks": []
+}

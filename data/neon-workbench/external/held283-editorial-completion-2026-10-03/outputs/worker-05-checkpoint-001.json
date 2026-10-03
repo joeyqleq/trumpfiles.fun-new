@@ -1,0 +1,16 @@
+{
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_sha256": "8a883949ea7e871f76b64d149d313ab4fbf7b56d01b376e1fda03914cc328d8e",
+  "checkpoint": 1,
+  "rows_appended": 6,
+  "cumulative_rows": 6,
+  "cumulative_keys": [
+    "entry-4438",
+    "entry-5112",
+    "entry-5340",
+    "entry-5752",
+    "entry-5840",
+    "entry-6280"
+  ],
+  "batch_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-05-batch-held283-review-20261003.jsonl"
+}
