@@ -1,0 +1,30 @@
+{
+  "rows_sha256": "3e823142c449c30b9e457e4dd7dfd6e22c4fa18155d331ad97fa3999f4fe9957",
+  "rows": 270,
+  "statuses": {
+    "accepted_source": 29,
+    "needs_correction": 237,
+    "exclusion_candidate": 4,
+    "still_unresolved": 0
+  },
+  "partition": {
+    "kind": "source_correction_partition_checkpoint",
+    "proposal_only": true,
+    "source_terminal_run": "20261003T214603Z-3d83869b1487",
+    "source_assigned": 270,
+    "source_terminal": 270,
+    "source_needs_correction": 237,
+    "correction_partitions": {
+      "account6_source118": 118,
+      "account1_late89": 89,
+      "account1_last30": 30
+    },
+    "partition_union": 237,
+    "missing_needs_correction_ids": 0,
+    "outside_needs_correction_ids": 0,
+    "pairwise_overlap_ids": 0,
+    "note": "All partitions have saved proposal rows on separate worker branches. This checkpoint proves assignment coverage only, not factual approval or Neon readiness."
+  },
+  "proposal_only": true,
+  "neon_writes": false
+}
