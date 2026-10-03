@@ -1,0 +1,21 @@
+{
+  "worker": 14,
+  "batch": 3,
+  "rows_in_batch": 8,
+  "cumulative_rows": 24,
+  "assignment_keys": [
+    "entry-6828",
+    "entry-6865",
+    "entry-6929",
+    "entry-6944",
+    "entry-6964",
+    "expanded-20260830-welker-fcc-threat",
+    "expanded-20260910-h1b-grace-proposal",
+    "expanded-20260917-kennedy-chd-keynote"
+  ],
+  "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "input_sha256": "a9a06c94ba66822e06cd9f878e3720764450e3d6ed7802ab4537ab6c0dfd2530",
+  "output_path": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker-14-batch-UNIQUE.jsonl",
+  "output_sha256": "3aec6d4d1b671da599e43229ffe5bd65b70a5e909055b45524c8084ab754e140",
+  "qa": "cumulative key and draft-length audit passed; no out-of-scope assignments"
+}
