@@ -1,0 +1,93 @@
+{
+  "worker": 14,
+  "branch": "ls/3-trump-final-corrections-account2-worker1--T8S",
+  "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "input_sha256": "a9a06c94ba66822e06cd9f878e3720764450e3d6ed7802ab4537ab6c0dfd2530",
+  "output_path": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker-14-batch-UNIQUE.jsonl",
+  "output_rows": 33,
+  "output_sha256": "282b4b856672277bbb623c93793332954966f1f1a3b45f4a5c9dab9c90d06e95",
+  "exact_assignment_set_validated": true,
+  "latest_baseline_file_revision_references_validated": true,
+  "historical_batch_checkpoints_validated": [
+    {
+      "batch": 1,
+      "commit": "5167b9bed3f814f2bf1753edc6bfd0aae627f1cd",
+      "rows": 8,
+      "cumulative_rows": 8,
+      "output_sha256": "42ecab58beb11193ecae3f3f92bb967c07eb7c8306166bab69dde56901fee278"
+    },
+    {
+      "batch": 2,
+      "commit": "33bf247e59b7c6845bb79d1b1748ea1eeec5d8e7",
+      "rows": 8,
+      "cumulative_rows": 16,
+      "output_sha256": "24cead01ea88ffd86f0a46724f36795cac81cf905cf6eee7af18d713babcb396"
+    },
+    {
+      "batch": 3,
+      "commit": "368dc548c9c0829fe7ed66ead0c8e538f71aba54",
+      "rows": 8,
+      "cumulative_rows": 24,
+      "output_sha256": "3aec6d4d1b671da599e43229ffe5bd65b70a5e909055b45524c8084ab754e140"
+    },
+    {
+      "batch": 4,
+      "commit": "15edbc493d66c0227608252dd6c53eeb9f7d1068",
+      "rows": 9,
+      "cumulative_rows": 33,
+      "output_sha256": "282b4b856672277bbb623c93793332954966f1f1a3b45f4a5c9dab9c90d06e95"
+    }
+  ],
+  "status_counts": {
+    "qa_supported_narrower_event": 7,
+    "reviewed_exclude": 3,
+    "reviewed_narrower_supported_event": 8,
+    "reviewed_split_partial_draft": 2,
+    "reviewed_split_with_event_specific_drafts": 1,
+    "reviewed_supported_narrower_event": 3,
+    "reviewed_unresolved": 7,
+    "reviewed_unresolved_after_source_check": 2
+  },
+  "disposition_counts": {
+    "exclude_pending_new_evidence": 3,
+    "replace_with_narrower_supported_event": 8,
+    "retain_narrower_corrected_event": 10,
+    "retain_unresolved": 4,
+    "retain_unresolved_pending_specific_evidence": 5,
+    "split_supported_components": 3
+  },
+  "drafts_with_complete_medium_and_long": 19,
+  "split_or_partial_draft_records": [
+    "entry-4239",
+    "entry-4739",
+    "entry-5224"
+  ],
+  "all_populated_description_lengths_valid": true,
+  "recorded_https_url_count": 51,
+  "records_without_source_url": [
+    "entry-5732",
+    "entry-6484",
+    "entry-6577",
+    "entry-6602",
+    "entry-6631"
+  ],
+  "remaining_evidence_gaps": {
+    "entry-4239": "Readable event-specific source text for the interagency transfer child and enough verified detail for full workforce-child medium/long copy; the FY2027 $12B/15% figure needs independent documentation or omission.",
+    "entry-4739": "The fourth-death update is short-only; an official investigation result is needed before adding any causal finding.",
+    "entry-5224": "Sourced medium and long text for the Haugh child; direct readable Reuters or official evidence for the separate August clearance-revocation item.",
+    "entry-5732": "Direct Trump statement, transcript, recording, or contemporaneous reliable report identifying the justices and verifying the alleged demand/quotations.",
+    "entry-6439": "Dated emergency declaration or appropriation action plus the specific GAO decision or court order alleged to find it unlawful; otherwise exclude the composite.",
+    "entry-6484": "Identify each Khashoggi-related accountability measure and provide the dated official action or contemporaneous source showing it ended.",
+    "entry-6577": "Recipient-by-recipient Office of Pardon Attorney or court-docket evidence of petition status, plus direct evidence for any intermediary payment/access arrangement.",
+    "entry-6602": "Named campaign-finance referral, investigation, or case and evidence of a dated DOJ decision to stop or decline enforcement.",
+    "entry-6631": "Dated CFPB directives and personnel records or reliable reporting establishing office status and actual workforce change.",
+    "entry-6729": "A named CDC award/program and dated grant notice or termination record establishing the affected reproductive-health scope.",
+    "entry-6803": "Dated White House notice, direct personnel record, or reliable reporting specifically establishing whether and when the DOJ inspector general was dismissed.",
+    "entry-6828": "Dated USDA/FNS directive or rule expressly changing WIC eligibility for the described immigrant population.",
+    "entry-6929": "Specific FISC docket/order or authenticated government record identifying surveillance authority, target class, and relevant date.",
+    "entry-6944": "Official dated policy/system record specifying facial recognition, database scope, and coverage of applicants and current visa holders.",
+    "entry-6964": "Case-specific FBI/DOJ documentation or reliable reporting naming each alleged subject and establishing an opened investigation; otherwise remove the claim."
+  },
+  "database_or_canonical_changes": false,
+  "qa_report_path": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker-14-qa-report.md"
+}
