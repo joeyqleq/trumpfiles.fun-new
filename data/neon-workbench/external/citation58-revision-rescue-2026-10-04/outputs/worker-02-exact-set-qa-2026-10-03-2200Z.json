@@ -1,0 +1,49 @@
+{
+  "packet": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-02-input.jsonl",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_sha256": "24c3f6d0ca57bf5861269a2b9cd3355cd31e0361c974f980ea8e04e1dd33991c",
+  "coordinator_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl@eab779ec075174445237101c2fdf0e72d771d051",
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-02-batch-2026-10-03-2200Z.jsonl",
+  "batch_sha256": "84551495e4efb3ec0372321ca7bc786d3fcc2304d60599159ceb49f52527f565",
+  "checkpoint_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-02-checkpoint-2026-10-03-2200Z.jsonl",
+  "assigned_keys": [
+    "entry-425",
+    "entry-824",
+    "entry-954",
+    "entry-2710"
+  ],
+  "saved_keys": [
+    "entry-425",
+    "entry-824",
+    "entry-954",
+    "entry-2710"
+  ],
+  "saved_count": 4,
+  "missing_keys": [],
+  "missing_count": 0,
+  "extra_keys": [],
+  "duplicate_keys": [],
+  "pass_count": 4,
+  "hold_count": 0,
+  "release_ready_count": 0,
+  "short_char_counts": {
+    "entry-425": 103,
+    "entry-824": 119,
+    "entry-954": 134,
+    "entry-2710": 127
+  },
+  "medium_word_counts": {
+    "entry-425": 61,
+    "entry-824": 56,
+    "entry-954": 63,
+    "entry-2710": 50
+  },
+  "long_word_counts": {
+    "entry-425": 160,
+    "entry-824": 157,
+    "entry-954": 163,
+    "entry-2710": 156
+  },
+  "url_checks": "Every proposed source URL is an exact URL in verified_urls and has a matching source_to_fact_mappings entry; unverified URLs were excluded.",
+  "scope_note": "Pass means the narrowed citation proposal is supported. No editorial approval, canonical edit, Neon operation, DDL/DML or production import is authorized or performed."
+}
