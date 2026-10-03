@@ -1,0 +1,130 @@
+{
+  "report": "Citation58 revision rescue — worker 12 final exact-set QA",
+  "created_date": "2026-10-03",
+  "coordinator_branch": "ls/7-trump-final-corrections-account2-worker1-slYA",
+  "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "coordinator_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+  "assignment_packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "assignment_input": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-12-input.jsonl",
+  "assignment_input_sha256": "7e9be3cee37b7d50d5accadc1f164099f5d3288689bad0cf9c7e500e0d3271e3",
+  "scope_ids": [
+    "entry-230",
+    "entry-814",
+    "entry-934",
+    "entry-6206"
+  ],
+  "observed_ids": [
+    "entry-230",
+    "entry-814",
+    "entry-934",
+    "entry-6206"
+  ],
+  "exact_set_status": "PASS",
+  "saved_count": 4,
+  "missing_count": 0,
+  "duplicate_count": 0,
+  "counts": {
+    "revision_proposed": 3,
+    "partial_hold": 1,
+    "total": 4
+  },
+  "blocking_ids": [
+    "entry-934"
+  ],
+  "blocking_reasons": {
+    "entry-934": [
+      "HOLD description_long: the accessible DOJ table supports only a compact set of facts; the linked grant PDF text could not be extracted, and no accessible case narrative or pardon rationale was established in this review. A 140–300-word long description would require padding or unsupported context; leave it null until an accessible supporting record is available."
+    ]
+  },
+  "checks": {
+    "row_count": 4,
+    "key_set_and_order": "PASS",
+    "title_present": true,
+    "short_limit": "PASS (all proposed short fields <=180 chars)",
+    "medium_limit": "PASS (all proposed medium fields 45–90 words)",
+    "long_limit": "PASS where proposed; entry-934 long deliberately held null",
+    "url_mapping": "Every retained source URL has an explicit fact mapping; unrelated or unsupported citations are excluded.",
+    "review_scope": "Only the four exact IDs; source claims constrained to accessible source text and prior QA; no canonical or production write."
+  },
+  "disposition_note": "Three complete copy revisions are proposed for review. entry-934 has supported title/short/medium copy but remains partially held because a sourced, non-padded long description cannot be supported from the readable evidence. No record is approved for canonical import.",
+  "rows": [
+    {
+      "key": "entry-230",
+      "disposition": "revision_proposed",
+      "lengths": {
+        "title_chars": 43,
+        "short_chars": 144,
+        "medium_words": 63,
+        "long_words": 182
+      },
+      "length_checks": {
+        "title_present": true,
+        "short_le_180_chars": true,
+        "medium_45_to_90_words": true,
+        "long_140_to_300_words": true,
+        "long_field_status": "supported"
+      },
+      "exact_source_mapping_status": "complete",
+      "blockers": []
+    },
+    {
+      "key": "entry-814",
+      "disposition": "revision_proposed",
+      "lengths": {
+        "title_chars": 54,
+        "short_chars": 120,
+        "medium_words": 64,
+        "long_words": 180
+      },
+      "length_checks": {
+        "title_present": true,
+        "short_le_180_chars": true,
+        "medium_45_to_90_words": true,
+        "long_140_to_300_words": true,
+        "long_field_status": "supported"
+      },
+      "exact_source_mapping_status": "complete",
+      "blockers": []
+    },
+    {
+      "key": "entry-934",
+      "disposition": "PARTIAL_HOLD",
+      "lengths": {
+        "title_chars": 33,
+        "short_chars": 104,
+        "medium_words": 58,
+        "long_words": null
+      },
+      "length_checks": {
+        "title_present": true,
+        "short_le_180_chars": true,
+        "medium_45_to_90_words": true,
+        "long_140_to_300_words": null,
+        "long_field_status": "HOLD"
+      },
+      "exact_source_mapping_status": "complete",
+      "blockers": [
+        "HOLD description_long: the accessible DOJ table supports only a compact set of facts; the linked grant PDF text could not be extracted, and no accessible case narrative or pardon rationale was established in this review. A 140–300-word long description would require padding or unsupported context; leave it null until an accessible supporting record is available."
+      ]
+    },
+    {
+      "key": "entry-6206",
+      "disposition": "revision_proposed",
+      "lengths": {
+        "title_chars": 48,
+        "short_chars": 152,
+        "medium_words": 65,
+        "long_words": 161
+      },
+      "length_checks": {
+        "title_present": true,
+        "short_le_180_chars": true,
+        "medium_45_to_90_words": true,
+        "long_140_to_300_words": true,
+        "long_field_status": "supported"
+      },
+      "exact_source_mapping_status": "complete",
+      "blockers": []
+    }
+  ]
+}
