@@ -1,0 +1,686 @@
+{
+  "schema": [
+    "key",
+    "disposition",
+    "source_job",
+    "source_files",
+    "reasons",
+    "verified_urls",
+    "proposal",
+    "release_ready"
+  ],
+  "source_packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "source_packet_path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-09-input.jsonl",
+  "source_packet_sha256_expected": "b25a3e967f9ac4d437e396a71e4bd57d3def1ede3e34d6b72d121139b7da4884",
+  "source_packet_sha256_actual": "b25a3e967f9ac4d437e396a71e4bd57d3def1ede3e34d6b72d121139b7da4884",
+  "prior_source_job": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-09-batch-20261003-citation-crossqa-01.jsonl@5c3fa645638affe75158ec9f8c8fcc5910350951",
+  "assigned_ids": [
+    "entry-219",
+    "entry-352",
+    "entry-654",
+    "entry-801",
+    "entry-884",
+    "entry-1666",
+    "entry-1784",
+    "entry-2413",
+    "entry-2560",
+    "entry-3009",
+    "entry-3735",
+    "entry-4097",
+    "entry-5094",
+    "entry-5597",
+    "entry-6199",
+    "entry-6356"
+  ],
+  "row_count": 16,
+  "exact_id_set": true,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "supported_proposal": 9,
+    "narrower_revision_required": 5,
+    "unsupported_hold": 1,
+    "intentional_exclusion": 1
+  },
+  "release_ready_count": 8,
+  "blocking_count": 8,
+  "blocking_ids": [
+    "entry-654",
+    "entry-801",
+    "entry-1666",
+    "entry-2560",
+    "entry-3009",
+    "entry-3735",
+    "entry-4097",
+    "entry-5094"
+  ],
+  "description_length_rules": {
+    "short_chars_max": 180,
+    "medium_words_min": 45,
+    "medium_words_max": 90,
+    "long_words_min": 140,
+    "long_words_max": 300,
+    "word_count_method": "whitespace split",
+    "proposal_description_fields_checked": 78,
+    "failures": [],
+    "counts_by_key": {
+      "entry-219": [
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "105 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "63 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "181 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-352": [
+        {
+          "field": "proposal.corrected_short",
+          "kind": "short",
+          "metric": "150 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.corrected_medium",
+          "kind": "medium",
+          "metric": "54 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.corrected_long",
+          "kind": "long",
+          "metric": "180 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "143 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "64 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "171 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-654": [
+        {
+          "field": "proposal.description_short",
+          "kind": "short",
+          "metric": "106 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.description_medium",
+          "kind": "medium",
+          "metric": "58 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.description_long",
+          "kind": "long",
+          "metric": "150 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "133 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "57 words (limit 45-90)",
+          "pass": true
+        }
+      ],
+      "entry-801": [
+        {
+          "field": "proposal.corrected_description_short",
+          "kind": "short",
+          "metric": "108 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.corrected_description_medium",
+          "kind": "medium",
+          "metric": "47 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.corrected_description_long",
+          "kind": "long",
+          "metric": "163 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "75 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "69 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "165 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-884": [
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "152 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "61 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "151 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-1666": [
+        {
+          "field": "proposal.proposed_fields.description_short",
+          "kind": "short",
+          "metric": "128 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_medium",
+          "kind": "medium",
+          "metric": "59 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_long",
+          "kind": "long",
+          "metric": "168 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "128 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "59 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "168 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-1784": [
+        {
+          "field": "proposal.proposed_fields.description_short",
+          "kind": "short",
+          "metric": "119 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_medium",
+          "kind": "medium",
+          "metric": "87 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_long",
+          "kind": "long",
+          "metric": "200 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "119 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "87 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "200 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-2413": [
+        {
+          "field": "proposal.proposed_description_short",
+          "kind": "short",
+          "metric": "147 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_description_medium",
+          "kind": "medium",
+          "metric": "56 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_description_long",
+          "kind": "long",
+          "metric": "147 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "147 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "56 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "147 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-2560": [
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "172 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "58 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "166 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-3009": [
+        {
+          "field": "proposal.proposed_description_short",
+          "kind": "short",
+          "metric": "98 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_description_medium",
+          "kind": "medium",
+          "metric": "54 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_description_long",
+          "kind": "long",
+          "metric": "163 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "90 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "62 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "155 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-3735": [
+        {
+          "field": "proposal.proposed_short",
+          "kind": "short",
+          "metric": "91 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_medium",
+          "kind": "medium",
+          "metric": "56 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.proposed_long",
+          "kind": "long",
+          "metric": "146 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "115 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "79 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "185 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-4097": [
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "114 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "67 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "171 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-5094": [
+        {
+          "field": "proposal.corrected_short",
+          "kind": "short",
+          "metric": "139 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.corrected_medium",
+          "kind": "medium",
+          "metric": "59 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.corrected_long",
+          "kind": "long",
+          "metric": "173 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "137 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "61 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "161 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-5597": [
+        {
+          "field": "proposal.description_short",
+          "kind": "short",
+          "metric": "120 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "proposal.description_medium",
+          "kind": "medium",
+          "metric": "64 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "proposal.description_long",
+          "kind": "long",
+          "metric": "142 words (limit 140-300)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "94 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "63 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "165 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-6199": [
+        {
+          "field": "proposal.corrected_description_short",
+          "kind": "short",
+          "metric": "112 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "76 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "86 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "177 words (limit 140-300)",
+          "pass": true
+        }
+      ],
+      "entry-6356": [
+        {
+          "field": "staged.description_short",
+          "kind": "short",
+          "metric": "158 chars (limit <=180)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_medium",
+          "kind": "medium",
+          "metric": "68 words (limit 45-90)",
+          "pass": true
+        },
+        {
+          "field": "staged.description_long",
+          "kind": "long",
+          "metric": "160 words (limit 140-300)",
+          "pass": true
+        }
+      ]
+    }
+  },
+  "url_format_validation": {
+    "unique_url_strings_seen": 53,
+    "malformed_count": 0,
+    "malformed_urls": [],
+    "checked_by_id": {
+      "entry-219": {
+        "urls_seen": 3,
+        "malformed": []
+      },
+      "entry-352": {
+        "urls_seen": 4,
+        "malformed": []
+      },
+      "entry-654": {
+        "urls_seen": 3,
+        "malformed": []
+      },
+      "entry-801": {
+        "urls_seen": 2,
+        "malformed": []
+      },
+      "entry-884": {
+        "urls_seen": 3,
+        "malformed": []
+      },
+      "entry-1666": {
+        "urls_seen": 2,
+        "malformed": []
+      },
+      "entry-1784": {
+        "urls_seen": 1,
+        "malformed": []
+      },
+      "entry-2413": {
+        "urls_seen": 6,
+        "malformed": []
+      },
+      "entry-2560": {
+        "urls_seen": 4,
+        "malformed": []
+      },
+      "entry-3009": {
+        "urls_seen": 4,
+        "malformed": []
+      },
+      "entry-3735": {
+        "urls_seen": 7,
+        "malformed": []
+      },
+      "entry-4097": {
+        "urls_seen": 6,
+        "malformed": []
+      },
+      "entry-5094": {
+        "urls_seen": 2,
+        "malformed": []
+      },
+      "entry-5597": {
+        "urls_seen": 3,
+        "malformed": []
+      },
+      "entry-6199": {
+        "urls_seen": 2,
+        "malformed": []
+      },
+      "entry-6356": {
+        "urls_seen": 1,
+        "malformed": []
+      }
+    }
+  },
+  "proposal_staged_source_list_difference_ids": [
+    "entry-219",
+    "entry-352",
+    "entry-654",
+    "entry-801",
+    "entry-1666",
+    "entry-2413",
+    "entry-2560",
+    "entry-3009",
+    "entry-3735",
+    "entry-4097",
+    "entry-5094",
+    "entry-5597",
+    "entry-6199"
+  ],
+  "terminal_row_conflicts": 0,
+  "own_batches_reconciled": [
+    "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-09-batch-20261003-citation-crossqa-01.jsonl"
+  ],
+  "saved_artifacts": {
+    "normalized_rows": 16,
+    "final_qa_files": 1
+  },
+  "safety": "No new source research; no canonical edits, Neon, DDL/DML, or other-worker edits.",
+  "other_owned_batch_files_checked": [
+    {
+      "path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-09-batch-001.jsonl",
+      "rows": 5,
+      "assigned_id_overlap": []
+    },
+    {
+      "path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-09-batch-002.jsonl",
+      "rows": 3,
+      "assigned_id_overlap": []
+    }
+  ],
+  "prior_citation_batch_status": {
+    "commit": "5c3fa645638affe75158ec9f8c8fcc5910350951",
+    "remote_matches_local": true,
+    "checkpoint_rows": [
+      8,
+      16
+    ],
+    "exact_set_verified": true
+  }
+}
