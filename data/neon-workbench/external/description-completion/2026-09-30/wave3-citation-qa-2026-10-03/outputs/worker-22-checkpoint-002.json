@@ -1,0 +1,22 @@
+{
+  "worker": 22,
+  "batch": 2,
+  "rows_written": 6,
+  "total_written": 12,
+  "record_ids": [
+    "entry-219",
+    "entry-293",
+    "entry-643",
+    "entry-774",
+    "entry-853",
+    "entry-969",
+    "entry-1729",
+    "entry-2330",
+    "entry-2466",
+    "entry-2615",
+    "entry-3139",
+    "entry-3804"
+  ],
+  "packet_sha256": "ab531dfda08b58ebf7602960162b4aabfb9a89af53bd6bce5ec65d06d3417c14",
+  "status": "checkpoint"
+}
