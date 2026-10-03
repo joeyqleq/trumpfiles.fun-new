@@ -1,0 +1,184 @@
+{
+  "source_jobs": [
+    "five-account-round-2026-10-03/web425 worker-07",
+    "held283-editorial-completion-2026-10-03 worker-07"
+  ],
+  "source_commits": {
+    "web425_output": "59c8f860a68cfcea856ed1991a991059c0f0b246",
+    "held283_output": "ea0615c7f251938717e1552fae79535f9fdc87d9",
+    "normalized_branch_head_before_commit": "ea0615c7f251938717e1552fae79535f9fdc87d9"
+  },
+  "packet_inputs": [
+    {
+      "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-07-input.jsonl",
+      "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+      "sha256": "36b76f09433ed757e49755ef6be64fdc3eda2ba5c36b6de98ba4c52809a45452"
+    },
+    {
+      "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-07-input.jsonl",
+      "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+      "sha256": "4dbe8d9a9de6ea1ad01852e1aec813c2c7df6b22c8770d09abe2874d8419c466"
+    }
+  ],
+  "expected_ids": [
+    "entry-4467",
+    "entry-5189",
+    "entry-5478",
+    "entry-5755",
+    "entry-5845",
+    "entry-6316",
+    "entry-6421",
+    "entry-6444",
+    "entry-6501",
+    "entry-6584",
+    "entry-6611",
+    "entry-6662",
+    "entry-6739",
+    "entry-6780",
+    "entry-6794",
+    "entry-6821",
+    "entry-6839",
+    "entry-6913",
+    "entry-6939",
+    "entry-6959",
+    "entry-7086",
+    "entry-7121",
+    "entry-7154",
+    "entry-7195"
+  ],
+  "actual_ids": [
+    "entry-4467",
+    "entry-5189",
+    "entry-5478",
+    "entry-5755",
+    "entry-5845",
+    "entry-6316",
+    "entry-6421",
+    "entry-6444",
+    "entry-6501",
+    "entry-6584",
+    "entry-6611",
+    "entry-6662",
+    "entry-6739",
+    "entry-6780",
+    "entry-6794",
+    "entry-6821",
+    "entry-6839",
+    "entry-6913",
+    "entry-6939",
+    "entry-6959",
+    "entry-7086",
+    "entry-7121",
+    "entry-7154",
+    "entry-7195"
+  ],
+  "counts": {
+    "expected_ids": 24,
+    "normalized_rows": 24,
+    "unique_ids": 24,
+    "dispositions": {
+      "proposal_pending_approval": 3,
+      "hold": 18,
+      "consolidation_pending_approval": 3
+    },
+    "release_ready": 0,
+    "blocking": 24,
+    "prior_web425_terminal_statuses": {
+      "pass": 22,
+      "hold": 1,
+      "superseded": 1
+    },
+    "source_terminal_rows_reconciled": 48,
+    "verified_url_references": 14,
+    "unique_verified_urls": 14
+  },
+  "duplicate_keys": [],
+  "conflicts": [
+    {
+      "key": "entry-6939",
+      "resolution": "hold",
+      "reason": "Web425 selected one same-revision successor, but held283 later records two highest-revision contenders as conflicting; exact lineage is unresolved in the supplied outputs."
+    },
+    {
+      "key": "entry-7154",
+      "resolution": "latest hold governs",
+      "reason": "Earlier Web425 duplicate audit passed candidate checks; held283 revision 2001 documents all cited poll URLs as not opened and holds pending source verification."
+    }
+  ],
+  "blocking_ids": [
+    "entry-4467",
+    "entry-5189",
+    "entry-5478",
+    "entry-5755",
+    "entry-5845",
+    "entry-6316",
+    "entry-6421",
+    "entry-6444",
+    "entry-6501",
+    "entry-6584",
+    "entry-6611",
+    "entry-6662",
+    "entry-6739",
+    "entry-6780",
+    "entry-6794",
+    "entry-6821",
+    "entry-6839",
+    "entry-6913",
+    "entry-6939",
+    "entry-6959",
+    "entry-7086",
+    "entry-7121",
+    "entry-7154",
+    "entry-7195"
+  ],
+  "blocking_reasons": {
+    "entry-4467": "The copy or merge is still a proposal; no human acceptance or canonical application is recorded. It remains release-blocking until explicitly accepted and applied.",
+    "entry-5189": "The split has two supported child proposals, but the Paramount settlement child is explicitly held because the reviewed source cannot support a 140-word long description without padding; therefore the parent split is not release-ready.",
+    "entry-5478": "No primary docket or reliable contemporaneous source in the pinned review establishes a 2013 Mar-a-Lago settlement of a suit alleging exclusion of Black and Jewish Palm Beach residents. Required evidence: case name or docket number, settlement date and terms.",
+    "entry-5755": "The review lacks a contemporaneous list of pardons granted on or around Aug. 22, 2025, identifying recipients and supporting the claimed donor-linked pattern. The original claims about wealth, political allies, refusal to cooperate, DOJ bypass and donations cannot be turned into a reader-facing entry without that evidence.",
+    "entry-5845": "The copy or merge is still a proposal; no human acceptance or canonical application is recorded. It remains release-blocking until explicitly accepted and applied.",
+    "entry-6316": "The latest review supplied no evidence of a retaliatory investigation of former CIA Director Gina Haspel. The investigation itself, its opening date and an official record or attributable report remain unidentified.",
+    "entry-6421": "The read White House fact sheet concerns a new federal-employee category and accountability policy; it does not establish a centralized list compiled from social-media posts, donations and coworker reports, nor DOGE access to personnel databases for termination. Evidence of loyalty-focused screening is not enough to support the specific list described.",
+    "entry-6444": "No dated statement or filing in the review establishes Trump or his legal team claiming “absolute immunity” for any presidential action in April 2025. The exact quote, speaker and legal context are required before a narrower draft is possible.",
+    "entry-6501": "The reviewed May 9, 2019, date-specific archive lists seven posts and none matches the alleged nuclear-policy “hearby” text. A direct original-platform capture or equivalent contemporaneous archive is needed to establish the exact tweet.",
+    "entry-6584": "No dated DOJ clemency warrant or White House instrument in the reviewed evidence establishes a second pardon of Joe Arpaio on Jan. 20, 2025. The listed DOJ and White House URLs were leads only; their source text was not opened in this review.",
+    "entry-6611": "The latest review found no sufficiently supported discrete event matching the claim that Bondi dropped or suspended Trump-allies cases on her first day. The only listed Reuters source is a packet lead about her Senate confirmation, not evidence of case dispositions. A dated DOJ order or case-by-case disposition is required.",
+    "entry-6662": "No transcript or source in the review establishes the specific May 2025 “saved the economy” quote, and no attributable evidence supports “every major economist” disagreeing. Required evidence is the exact dated statement and named economic analyses with their projections.",
+    "entry-6739": "The broad claim that all federal LGBTQ+-specific health programs ended on Jan. 20, 2025, is unsupported. Identify the specific program, the dated day-one action affecting it, and primary evidence showing that the program ended.",
+    "entry-6780": "The review found no credible source that Trump or senior White House officials floated or endorsed a constitutional amendment eliminating judicial review. An attributable dated quote or formal proposal is required.",
+    "entry-6794": "No matching credible source was located for rescission of Biden-era settlement agreements or court monitoring of immigration detention. A specific agreement, court order, facility and dated rescission are needed.",
+    "entry-6821": "The cited HHS pages were not independently read and, according to the latest review, address one-time Title X supplements and funding opportunities rather than a termination of all Title X grants or all federal family-planning programs. HHS program and grant records showing a dated termination are required.",
+    "entry-6839": "The supplied review notes GAO reports EAJA awards through FY2025 and explains that the statute continues to operate. It does not identify a dated administration action ending EAJA enforcement or funding. The GAO URL was not independently opened in this pass; an official action establishing the alleged change is required.",
+    "entry-6913": "The reviewed material supports that Republican committees spent money at Trump properties but does not establish that rates were above market. A reliable comparable-price analysis is required; spending totals alone cannot support the headline claim.",
+    "entry-6939": "Conflict reconciliation: Web425 selected worker-21 batch-005 as the 157-word successor to batch-003, but the later held283 authority lists batch-003 and batch-005 as tied revision-105 contenders and holds for conflicting_rows_tied_at_highest_revision. The supplied rows do not resolve the exact lineage between those contenders; retain hold rather than choosing disputed copy.",
+    "entry-6959": "The copy or merge is still a proposal; no human acceptance or canonical application is recorded. It remains release-blocking until explicitly accepted and applied.",
+    "entry-7086": "The copy or merge is still a proposal; no human acceptance or canonical application is recorded. It remains release-blocking until explicitly accepted and applied.",
+    "entry-7121": "The copy or merge is still a proposal; no human acceptance or canonical application is recorded. It remains release-blocking until explicitly accepted and applied.",
+    "entry-7154": "Cross-job tension resolved conservatively: the earlier Web425 duplicate audit passed its candidate checks, while held283 revision 2001 records all six poll URLs as metadata-only/not opened. The later source-access limitation governs; no poll copy is approved.",
+    "entry-7195": "The copy or merge is still a proposal; no human acceptance or canonical application is recorded. It remains release-blocking until explicitly accepted and applied."
+  },
+  "verified_urls": [
+    "https://ktvz.com/money/cnn-business-consumer/2026/08/17/brazen-act-of-self-dealing-lawmakers-watchdogs-alarmed-after-trump-regulators-let-trump-firm-start-a-bank/",
+    "https://newrepublic.com/article/214440/trump-new-crypto-bank-scandal",
+    "https://www.cnn.com/2026/08/17/investing/trump-crypto-bank-world-liberty",
+    "https://www.govinfo.gov/content/pkg/PLAW-119publ28/html/PLAW-119publ28.htm",
+    "https://www.huffpost.com/entry/trump-crypto-bank_n_6a85e09fe4b0e9f1dd270377",
+    "https://www.latimes.com/business/la-fi-ivanka-trump-brand-20170418-story.html",
+    "https://www.npr.org/2025/03/11/nx-s1-5305054/doge-elon-musk-security-data-information-privacy",
+    "https://www.occ.treas.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf",
+    "https://www.presidency.ucsb.edu/documents/tweets-may-9-2019",
+    "https://www.reuters.com/business/media-telecom/paramount-settles-with-trump-over-60-minutes-interview-la-times-reports-2025-07-02/",
+    "https://www.reuters.com/world/us/white-house-shaken-by-signal-scandal-says-case-is-closed-2025-04-01/",
+    "https://www.ssa.gov/news/en/press/releases/2025-03-27-a.html",
+    "https://www.washingtonpost.com/business/2025/11/28/trump-media-criticism/",
+    "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-creates-new-federal-employee-category-to-enhance-accountability/"
+  ],
+  "validation": {
+    "exact_id_order_match": true,
+    "no_duplicate_normalized_rows": true,
+    "schema_keys_exact": true,
+    "url_format": "All verified_urls and proposal URLs are HTTPS URLs with a host; proposal URLs exactly match the held283 candidate URL list.",
+    "word_lengths": "Existing proposal descriptions were rechecked against title/short <=180 chars, medium 45-90 words and long 140-300 words; the held Paramount child remains exempt only because it is explicitly held for missing long copy.",
+    "release_policy": "No proposal-only copy or duplicate consolidation was marked release-ready; prior Web425 pass labels were not treated as approval."
+  }
+}
