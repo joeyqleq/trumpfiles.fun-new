@@ -1,0 +1,40 @@
+{
+  "checkpoint": 5,
+  "assignment_keys_checkpointed": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6595",
+    "entry-6614",
+    "entry-6672",
+    "entry-6744",
+    "entry-6782",
+    "entry-6798",
+    "entry-6823",
+    "entry-6844",
+    "entry-6925",
+    "entry-6941",
+    "entry-6963",
+    "entry-7089",
+    "entry-7125",
+    "entry-7158",
+    "expanded-20260821-james-subpoenas-appeal",
+    "expanded-20260831-vance-kharg-defense"
+  ],
+  "rows_checkpointed": 25,
+  "status_counts": {
+    "hold": 6,
+    "pass": 15,
+    "superseded": 4
+  },
+  "batch_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-09-batch-20261003-pr49-rescue.jsonl",
+  "batch_prefix_sha256": "6f09aae5ab5a57f561f828704947aed0df6dec391d8a5dadacd9073de75da4ac",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "packet_sha256": "08b57f5a184eb12d9d053ead4417e5d08655c27832f56f3317d1ecfde12d9ad6"
+}

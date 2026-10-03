@@ -1,0 +1,24 @@
+{
+  "checkpoint": 2,
+  "assignment_keys_checkpointed": [
+    "entry-4577",
+    "entry-5191",
+    "entry-5728",
+    "entry-5760",
+    "entry-5851",
+    "entry-6368",
+    "entry-6424",
+    "entry-6455",
+    "entry-6511",
+    "entry-6595"
+  ],
+  "rows_checkpointed": 10,
+  "status_counts": {
+    "hold": 2,
+    "pass": 8
+  },
+  "batch_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-09-batch-20261003-pr49-rescue.jsonl",
+  "batch_prefix_sha256": "96a70a5057a8973cecf048cc27fc5489347c04b81fab22d362f3c82c94dc4e30",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "packet_sha256": "08b57f5a184eb12d9d053ead4417e5d08655c27832f56f3317d1ecfde12d9ad6"
+}
