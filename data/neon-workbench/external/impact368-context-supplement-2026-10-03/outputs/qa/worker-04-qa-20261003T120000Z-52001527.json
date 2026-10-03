@@ -1,0 +1,86 @@
+{
+  "worker": 4,
+  "batch_file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-04-batch-20261003T120000Z-52001527.jsonl",
+  "batch_sha256": "0f37306e3058e888d0fdb88536e8834804d09d0bf524ce6537e50f964fbef8fe",
+  "checkpoint_file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/checkpoints/worker-04-checkpoint-20261003T120000Z-52001527.jsonl",
+  "checkpoint_sha256": "3433f24a4a197a2d3fa186a50b7bd40a9984a8f4ac34250323c4080fc29d8e66",
+  "input": {
+    "branch": "codex/impact368-context-supplement-2026-10-03",
+    "commit": "520015274c29cbcc24a4e54d747e896198756415",
+    "prompt_path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/PROMPT.md",
+    "path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/worker-04-input.jsonl",
+    "sha256": "c366a184f125b9d969f48cf57ab672f84d0cea65767a8b37700eda454ccbde94",
+    "count": 31,
+    "ids_exact_and_ordered": true
+  },
+  "prior_review": {
+    "branch": "ls/5-trump-files-impact368-review-04-of-12-OOIR",
+    "commit": "771947e881ac8f91d1ee58abd8da33b27a6ac6c2",
+    "path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-04-batch-20261003T103043Z-1774a1ef.jsonl",
+    "sha256": "0b7e5b00b185d9d4e447003a38d4c2d3a34c4762d0529588d6d8b245f6d51c95",
+    "count": 31,
+    "ids_exact_and_ordered": true
+  },
+  "result": {
+    "count": 31,
+    "ids_exact_and_ordered": true,
+    "unique_ids": true,
+    "status_counts": {
+      "scored": 6,
+      "deferred": 25
+    },
+    "scored_dimensions_valid": true,
+    "deferred_dimensions_null": true,
+    "source_basis_present_all_rows": true,
+    "prior_provenance_present_all_rows": true
+  },
+  "score_formula": {
+    "weights": {
+      "harm": 0.3,
+      "reach": 0.2,
+      "institutions": 0.15,
+      "procedural_abuse": 0.15,
+      "self_dealing": 0.1,
+      "persistence": 0.1
+    },
+    "formula": "impact_score = round(0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence, 2)",
+    "weights_sum": 1.0,
+    "formula_valid": true,
+    "scored_row_totals": {
+      "entry-1627": {
+        "total_2dp": "0.80",
+        "impact_score": 0.8
+      },
+      "entry-1330": {
+        "total_2dp": "1.40",
+        "impact_score": 1.4
+      },
+      "entry-5110": {
+        "total_2dp": "1.85",
+        "impact_score": 1.85
+      },
+      "entry-6284": {
+        "total_2dp": "2.25",
+        "impact_score": 2.25
+      },
+      "entry-1509": {
+        "total_2dp": "1.80",
+        "impact_score": 1.8
+      },
+      "entry-1664": {
+        "total_2dp": "0.95",
+        "impact_score": 0.95
+      }
+    },
+    "deferred_rows_have_no_composite": true
+  },
+  "source_basis_validation": {
+    "all_rows_include_frozen_claim_title": true,
+    "all_rows_include_supplement_fact_summary": true,
+    "all_rows_include_source_url_field": true,
+    "all_rows_include_exact_gap_or_score_scope": true,
+    "policy": "Used the frozen claim, staged description, supplied source links, and prior review only; no general web search or legacy reach/impression/financial/public-reaction estimates."
+  },
+  "supersession": "Append-only supplemental rows supersede this worker’s prior deferred snapshot only; prior batch remains unchanged.",
+  "qa_note": "Six rows scored on narrow factual consequences; 25 remain deferred with exact missing facts. No unsupported impact was inferred."
+}
