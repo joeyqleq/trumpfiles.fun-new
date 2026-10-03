@@ -1,0 +1,27 @@
+{
+  "worker": 8,
+  "kind": "checkpoint",
+  "checkpoint": 1,
+  "assigned_total": 23,
+  "processed_count": 6,
+  "batch_size": 6,
+  "input_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_sha256": "8eda184acba62c7542a9a9a1087a9b0d815bdedc57e8c132ea58cacdedee51b9",
+  "latest_published_pr49_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "output_file": "worker-08-batch-001-20261003.jsonl",
+  "output_sha256_through_checkpoint": "14be51e5f023c4dc658d789dafc4e21066ce1657c9c12ba2eb462704974df920",
+  "processed_keys": [
+    "entry-4538",
+    "entry-5190",
+    "entry-5512",
+    "entry-5756",
+    "entry-5850",
+    "entry-6324"
+  ],
+  "terminal_counts": {
+    "hold": 4,
+    "proposal_with_component_hold": 1,
+    "proposal": 1
+  },
+  "checkpoint_note": "Append-only evidence-aware editorial proposals; all terminal actions remain proposals/holds. No canonical or Neon writes."
+}

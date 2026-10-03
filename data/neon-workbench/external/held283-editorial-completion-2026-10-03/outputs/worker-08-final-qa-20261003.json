@@ -1,0 +1,38 @@
+{
+  "worker": 8,
+  "kind": "final_exact_set_qa",
+  "task_branch": "ls/8-trump-files-web425-review-08-of-12-9xY1",
+  "input_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-08-input.jsonl",
+  "input_sha256": "8eda184acba62c7542a9a9a1087a9b0d815bdedc57e8c132ea58cacdedee51b9",
+  "published_pr49_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "output_file": "worker-08-batch-001-20261003.jsonl",
+  "output_sha256": "729f2ae39b2a82c78de1d266e29b5d7dbca6b6afa787cf16fcd5c9d7084d3964",
+  "assigned_count": 23,
+  "output_row_count": 23,
+  "unique_key_count": 23,
+  "missing_keys": [],
+  "outside_assignment_keys": [],
+  "duplicate_output_keys": [],
+  "terminal_counts": {
+    "hold": 14,
+    "proposal_with_component_hold": 1,
+    "proposal": 8
+  },
+  "batch_sizes": [
+    6,
+    6,
+    6,
+    5
+  ],
+  "description_limits": "Every supplied title/short/medium meets title presence, <=180-character short and 45-90-word medium checks; every supplied long is 140-300 words. Missing long field on entry-5190 lawsuit component is explicitly held with a source-specific reason.",
+  "source_urls": "Every drafted component maps to the exact HTTPS source URLs in the row; direct source reads and the CBP 403 are labeled distinctly.",
+  "provenance": "Published PR49 candidate rows and highest-authority correction overlays are recorded with exact commit, file, line and revision provenance where available.",
+  "scope": "Only this worker output, its checkpoints and final QA are written; packet inputs, Web425 output, other workers, canonical data and Neon are untouched.",
+  "project_checks": {
+    "npm_run_lint": "passed with 0 errors and 186 warnings in unchanged application files",
+    "tests": "no test script is defined in package.json",
+    "build": "not run; this is packet data/editorial QA output with no application-code changes"
+  },
+  "verification_scope": "UI screenshots and flow visualization do not apply: no user-facing UI or application flow changed."
+}
