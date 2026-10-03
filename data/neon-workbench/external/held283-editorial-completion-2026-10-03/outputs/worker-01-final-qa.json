@@ -1,0 +1,116 @@
+{
+  "worker": "worker-01",
+  "packet": "data/neon-workbench/external/held283-editorial-completion-2026-10-03",
+  "status": "complete",
+  "input_branch": "codex/held283-editorial-completion-2026-10-03",
+  "input_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-01-input.jsonl",
+  "input_sha256": "0cf3dc80ea27b440dbb51c1cf16b6625b75a7429543e63ea7a04d044efb5690a",
+  "assigned_keys": [
+    "entry-4239",
+    "entry-4753",
+    "entry-5237",
+    "entry-5737",
+    "entry-5815",
+    "entry-6125",
+    "entry-6409",
+    "entry-6432",
+    "entry-6463",
+    "entry-6560",
+    "entry-6600",
+    "entry-6625",
+    "entry-6693",
+    "entry-6758",
+    "entry-6787",
+    "entry-6803",
+    "entry-6829",
+    "entry-6867",
+    "entry-6930",
+    "entry-6949",
+    "entry-7050",
+    "entry-7110",
+    "entry-7132",
+    "entry-7176"
+  ],
+  "assigned_count": 24,
+  "written_path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-01-batch-UNIQUE.jsonl",
+  "written_row_count": 24,
+  "unique_written_key_count": 24,
+  "missing_keys": [],
+  "outside_assignment_keys": [],
+  "duplicate_key_rows": [],
+  "terminal_status_counts": {
+    "pass": 5,
+    "hold": 19,
+    "superseded": 0
+  },
+  "proposal_event_count": 7,
+  "description_audit": [
+    {
+      "assignment_key": "entry-5237",
+      "event_index": 1,
+      "title_chars": 57,
+      "short_chars": 82,
+      "medium_words": 55,
+      "long_words": 157
+    },
+    {
+      "assignment_key": "entry-5237",
+      "event_index": 2,
+      "title_chars": 60,
+      "short_chars": 130,
+      "medium_words": 57,
+      "long_words": 166
+    },
+    {
+      "assignment_key": "entry-5237",
+      "event_index": 3,
+      "title_chars": 51,
+      "short_chars": 139,
+      "medium_words": 50,
+      "long_words": 153
+    },
+    {
+      "assignment_key": "entry-6125",
+      "event_index": 1,
+      "title_chars": 60,
+      "short_chars": 177,
+      "medium_words": 57,
+      "long_words": 167
+    },
+    {
+      "assignment_key": "entry-6409",
+      "event_index": 1,
+      "title_chars": 80,
+      "short_chars": 139,
+      "medium_words": 55,
+      "long_words": 161
+    },
+    {
+      "assignment_key": "entry-7110",
+      "event_index": 1,
+      "title_chars": 68,
+      "short_chars": 138,
+      "medium_words": 56,
+      "long_words": 172
+    },
+    {
+      "assignment_key": "entry-7176",
+      "event_index": 1,
+      "title_chars": 64,
+      "short_chars": 155,
+      "medium_words": 74,
+      "long_words": 187
+    }
+  ],
+  "description_rules": {
+    "title": "<=180 characters",
+    "description_short": "<=180 characters",
+    "description_medium": "45-90 words",
+    "description_long": "140-300 words"
+  },
+  "all_proposed_events_pass_length_rules": true,
+  "revision_provenance_rows": 24,
+  "source_mapping": "Each proposed child includes source-to-fact mapping and direct-access notes; holds preserve source status and exact blocker.",
+  "scope": "Proposal-only; no canonical edits or Neon writes; no PR."
+}

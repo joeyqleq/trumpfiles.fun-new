@@ -1,0 +1,25 @@
+{
+  "worker": "worker-01",
+  "packet": "data/neon-workbench/external/held283-editorial-completion-2026-10-03",
+  "input_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_sha256": "0cf3dc80ea27b440dbb51c1cf16b6625b75a7429543e63ea7a04d044efb5690a",
+  "batch_path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-01-batch-UNIQUE.jsonl",
+  "checkpoint": 1,
+  "through_row": 6,
+  "through_key": "entry-6125",
+  "checkpoint_row_count": 6,
+  "checkpoint_keys": [
+    "entry-4239",
+    "entry-4753",
+    "entry-5237",
+    "entry-5737",
+    "entry-5815",
+    "entry-6125"
+  ],
+  "prefix_sha256": "ead934d95847eabb3518540d0116dff152e7a268c7a9b4abe8cc5fdfcd01db4c",
+  "terminal_status_counts": {
+    "pass": 2,
+    "hold": 4,
+    "superseded": 0
+  }
+}
