@@ -1,0 +1,29 @@
+{
+  "worker": "06",
+  "batch": 2,
+  "phase": "terminal_qa_checkpoint",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-06-input.jsonl",
+  "input_sha256": "547dca19c6acc8f21ae571415fb2e8d5c6a895d30d0a79e182b725fbe15f4ad1",
+  "batch_file": "worker-06-batch-002-20261003.jsonl",
+  "batch_sha256": "66822e18a03fa951263956e2e8b8cd0030eaf37531b7d41fad7487fa31ddb087",
+  "batch_rows": 7,
+  "cumulative_rows_completed": 14,
+  "total_rows": 35,
+  "remaining_rows": 21,
+  "terminal_status_counts": {
+    "pass": 0,
+    "hold": 11,
+    "superseded": 3
+  },
+  "exact_keys_in_batch": [
+    "entry-6443",
+    "entry-6498",
+    "entry-6583",
+    "entry-6609",
+    "entry-6655",
+    "entry-6738",
+    "entry-6779"
+  ],
+  "final_batch": false
+}

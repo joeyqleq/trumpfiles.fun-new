@@ -1,0 +1,29 @@
+{
+  "worker": "06",
+  "batch": 4,
+  "phase": "terminal_qa_checkpoint",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-06-input.jsonl",
+  "input_sha256": "547dca19c6acc8f21ae571415fb2e8d5c6a895d30d0a79e182b725fbe15f4ad1",
+  "batch_file": "worker-06-batch-004-20261003.jsonl",
+  "batch_sha256": "79fded42b6546ddb54cbd84199b1f02b653ce565718eef20cc838ea3a2ed6d0f",
+  "batch_rows": 7,
+  "cumulative_rows_completed": 28,
+  "total_rows": 35,
+  "remaining_rows": 7,
+  "terminal_status_counts": {
+    "pass": 3,
+    "hold": 20,
+    "superseded": 5
+  },
+  "exact_keys_in_batch": [
+    "entry-7120",
+    "entry-7153",
+    "entry-7188",
+    "expanded-20260830-kharg-ai-post",
+    "expanded-20260909-rnc-dividend-pledge",
+    "expanded-20260916-nih-censorship-lawsuit",
+    "expanded-20260924-ice-federal-plaza-injunction"
+  ],
+  "final_batch": false
+}

@@ -1,0 +1,36 @@
+{
+  "worker": "06",
+  "phase": "final_exact_set_qa",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-06-input.jsonl",
+  "input_sha256": "547dca19c6acc8f21ae571415fb2e8d5c6a895d30d0a79e182b725fbe15f4ad1",
+  "expected_key_count": 35,
+  "output_row_count": 35,
+  "unique_key_count": 35,
+  "missing_keys": [],
+  "extra_keys": [],
+  "duplicate_keys": [],
+  "terminal_status_counts": {
+    "pass": 7,
+    "hold": 23,
+    "superseded": 5
+  },
+  "published_PR49_head": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "rescue_amendments_resolved": true,
+  "decision_semantics": "superseded identifies an exact higher rescue revision that supersedes the published PR49 version; hold identifies a lineage, description, source-access, event-identity, or claim-support gap; pass means the proposal is internally supported and explicitly remains non-authorizing.",
+  "files": [
+    "worker-06-batch-001-20261003.jsonl",
+    "worker-06-batch-002-20261003.jsonl",
+    "worker-06-batch-003-20261003.jsonl",
+    "worker-06-batch-004-20261003.jsonl",
+    "worker-06-batch-005-20261003.jsonl"
+  ],
+  "checkpoint_files": [
+    "worker-06-checkpoint-001-20261003.json",
+    "worker-06-checkpoint-002-20261003.json",
+    "worker-06-checkpoint-003-20261003.json",
+    "worker-06-checkpoint-004-20261003.json",
+    "worker-06-checkpoint-005-20261003.json"
+  ],
+  "no_canonical_neon_production_or_merge_changes": true
+}

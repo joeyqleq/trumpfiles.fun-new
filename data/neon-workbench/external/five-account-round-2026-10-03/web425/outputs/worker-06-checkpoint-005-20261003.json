@@ -1,0 +1,29 @@
+{
+  "worker": "06",
+  "batch": 5,
+  "phase": "terminal_qa_checkpoint",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-06-input.jsonl",
+  "input_sha256": "547dca19c6acc8f21ae571415fb2e8d5c6a895d30d0a79e182b725fbe15f4ad1",
+  "batch_file": "worker-06-batch-005-20261003.jsonl",
+  "batch_sha256": "403baf25175c8e948ec7d72e4174cb445f9390706f5e984c2ceb8fe3795849e8",
+  "batch_rows": 7,
+  "cumulative_rows_completed": 35,
+  "total_rows": 35,
+  "remaining_rows": 0,
+  "terminal_status_counts": {
+    "pass": 7,
+    "hold": 23,
+    "superseded": 5
+  },
+  "exact_keys_in_batch": [
+    "expanded-20260928-garces-criminal-complaint",
+    "fresh-20260831-polymarket-round",
+    "fresh-20260928-draganfly-financing",
+    "pr47-review-entry-1296",
+    "pr47-review-entry-1445",
+    "pr47-review-entry-1523",
+    "pr47-review-entry-1593"
+  ],
+  "final_batch": true
+}
