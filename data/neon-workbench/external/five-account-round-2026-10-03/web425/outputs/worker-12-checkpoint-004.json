@@ -1,0 +1,53 @@
+{
+  "worker": 12,
+  "checkpoint": 4,
+  "rows_in_batch": 7,
+  "cumulative_rows": 28,
+  "batch_keys": [
+    "entry-7131",
+    "entry-7168",
+    "expanded-20260824-economic-outcast",
+    "expanded-20260902-doj-welfare-reporting",
+    "expanded-20260914-epa-power-repeal",
+    "expanded-20260921-garces-detention-conference",
+    "expanded-20260925-public-citizen-first-ad-complaint"
+  ],
+  "completed_keys": [
+    "entry-4739",
+    "entry-5224",
+    "entry-5735",
+    "entry-5814",
+    "entry-6007",
+    "entry-6398",
+    "entry-6430",
+    "entry-6460",
+    "entry-6521",
+    "entry-6599",
+    "entry-6624",
+    "entry-6691",
+    "entry-6757",
+    "entry-6786",
+    "entry-6802",
+    "entry-6828",
+    "entry-6866",
+    "entry-6929",
+    "entry-6946",
+    "entry-7048",
+    "entry-7101",
+    "entry-7131",
+    "entry-7168",
+    "expanded-20260824-economic-outcast",
+    "expanded-20260902-doj-welfare-reporting",
+    "expanded-20260914-epa-power-repeal",
+    "expanded-20260921-garces-detention-conference",
+    "expanded-20260925-public-citizen-first-ad-complaint"
+  ],
+  "terminal_counts": {
+    "hold": 21,
+    "pass": 7
+  },
+  "input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "cefe9b190a2ba57117c3910121d4d20938758bec433f73c783d58094dc2833f7",
+  "output_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-12-batch-UNIQUE.jsonl",
+  "output_sha256_so_far": "a8c54fdc7d3be647a28269bc3581fe00fed0d979d422ae491b4302ccbf4a2229"
+}

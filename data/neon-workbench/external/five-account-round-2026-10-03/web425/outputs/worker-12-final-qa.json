@@ -1,0 +1,21 @@
+{
+  "worker": 12,
+  "job": "web425",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "cefe9b190a2ba57117c3910121d4d20938758bec433f73c783d58094dc2833f7",
+  "output_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-12-batch-UNIQUE.jsonl",
+  "output_sha256": "78f7ee492b8049a64c86905db717ebf2bb37a0616bf6e5b50392b760fa332ad1",
+  "expected_key_count": 35,
+  "actual_row_count": 35,
+  "unique_key_count": 35,
+  "terminal_counts": {
+    "hold": 27,
+    "pass": 8
+  },
+  "superseded_keys": [],
+  "supersession_note": "The frozen packet explicitly selects the highest worker-overlay revision available per key, and the QA rows retain both its exact provenance and the published baseline. No higher unselected revision exists in the packet lineage, so no row is labeled superseded; terminal decisions apply to the selected candidate/overlay.",
+  "assigned_record_ids_unique": true,
+  "out_of_scope_rows": [],
+  "checkpoint_count": 5,
+  "qa": "Exact-set, uniqueness, provenance-row, and JSONL parse checks passed. Proposal-only QA; no candidate text, packet input, canonical record, Neon data, or merge state changed."
+}

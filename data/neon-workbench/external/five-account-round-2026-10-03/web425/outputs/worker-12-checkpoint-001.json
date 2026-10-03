@@ -1,0 +1,31 @@
+{
+  "worker": 12,
+  "checkpoint": 1,
+  "rows_in_batch": 7,
+  "cumulative_rows": 7,
+  "batch_keys": [
+    "entry-4739",
+    "entry-5224",
+    "entry-5735",
+    "entry-5814",
+    "entry-6007",
+    "entry-6398",
+    "entry-6430"
+  ],
+  "completed_keys": [
+    "entry-4739",
+    "entry-5224",
+    "entry-5735",
+    "entry-5814",
+    "entry-6007",
+    "entry-6398",
+    "entry-6430"
+  ],
+  "terminal_counts": {
+    "hold": 7
+  },
+  "input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "cefe9b190a2ba57117c3910121d4d20938758bec433f73c783d58094dc2833f7",
+  "output_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-12-batch-UNIQUE.jsonl",
+  "output_sha256_so_far": "77edf4ffdbc98909813669ab7a3d67dc2a0d75a4dc8f641d78928723cc2c6ab2"
+}
