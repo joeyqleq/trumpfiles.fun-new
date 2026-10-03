@@ -27,7 +27,15 @@
     "entry-3009",
     "entry-4040",
     "entry-4232",
-    "entry-4353"
+    "entry-4353",
+    "entry-5488",
+    "entry-5605",
+    "entry-5966",
+    "entry-6279",
+    "entry-801",
+    "entry-842",
+    "entry-908",
+    "entry-990"
   ],
   "complete_ids": [
     "entry-196",
@@ -39,9 +47,7 @@
     "entry-3009",
     "entry-4040",
     "entry-4232",
-    "entry-4353"
-  ],
-  "remaining_ids": [
+    "entry-4353",
     "entry-5488",
     "entry-5605",
     "entry-5966",
@@ -51,14 +57,16 @@
     "entry-908",
     "entry-990"
   ],
+  "remaining_ids": [],
   "output_files": [
-    "worker-08-evidence-resolution-batch-001.jsonl"
+    "worker-08-evidence-resolution-batch-001.jsonl",
+    "worker-08-evidence-resolution-batch-002.jsonl"
   ],
   "counts": {
     "assigned": 16,
-    "processed": 8,
+    "processed": 16,
     "complete": 2,
-    "needs_context": 6,
-    "remaining": 8
+    "needs_context": 14,
+    "remaining": 0
   }
 }
