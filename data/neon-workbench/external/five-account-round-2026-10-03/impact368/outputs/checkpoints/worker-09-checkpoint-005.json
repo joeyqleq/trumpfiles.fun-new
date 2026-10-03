@@ -1,0 +1,39 @@
+{
+  "worker": 9,
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "9952a7bf6fa74d59b2e27d7e871e4d7218e3f46a7398b0306c70d173084df7b2",
+  "output_file": "worker-09-batch-20261003-review09-b7f4.jsonl",
+  "through_record_count": 25,
+  "reviewed_keys": [
+    "entry-160",
+    "entry-1443",
+    "entry-1789",
+    "entry-1840",
+    "entry-1428",
+    "entry-1378",
+    "entry-2555",
+    "entry-2402",
+    "entry-5449",
+    "entry-3490",
+    "entry-7074",
+    "entry-1264",
+    "entry-5516",
+    "entry-5984",
+    "entry-6971",
+    "entry-4158",
+    "entry-5507",
+    "entry-7018",
+    "entry-2231",
+    "entry-1522",
+    "entry-4057",
+    "entry-244",
+    "entry-2525",
+    "entry-6915",
+    "entry-7034"
+  ],
+  "status_counts": {
+    "deferred": 25,
+    "scored": 0
+  },
+  "output_prefix_sha256": "06e6011f38b69295e733ef5b0f81ad2461299d3fd7efd1b3b8e43577e97800d2"
+}
