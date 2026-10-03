@@ -1,0 +1,22 @@
+{
+  "worker": "review02",
+  "phase": "handoff-review02-remaining-source-review",
+  "batch_file": "handoff-review02-batch-001.jsonl",
+  "checkpoint_file": "handoff-review02-checkpoint-001.json",
+  "batch_number": 1,
+  "first_index_1based": 1,
+  "last_index_1based": 5,
+  "rows_in_batch": 5,
+  "rows_completed_cumulative": 5,
+  "rows_assigned_total": 20,
+  "assignment_keys": [
+    "entry-4239",
+    "entry-4407",
+    "entry-4457",
+    "entry-4696",
+    "entry-4708"
+  ],
+  "sha256": "a9cb8e7d9c163954ee8928381813fbf8654928556da483e4370a5f55c3cf842a",
+  "proposal_only": true,
+  "revision": 101
+}

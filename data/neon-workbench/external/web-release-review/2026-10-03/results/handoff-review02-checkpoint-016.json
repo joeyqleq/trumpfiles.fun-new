@@ -1,0 +1,16 @@
+{
+  "batch_file": "handoff-review02-batch-016.jsonl",
+  "batch_sha256": "e0619c090a61647d213fbcd3c2513c9d65d989dfdfdec0cf5a7f518b841b8ff6",
+  "row_count": 5,
+  "first_assignment_key": "entry-4696",
+  "last_assignment_key": "entry-5189",
+  "revisions": [
+    105,
+    105,
+    105,
+    105,
+    106
+  ],
+  "immutable_append": true,
+  "checkpoint_revision": 106
+}

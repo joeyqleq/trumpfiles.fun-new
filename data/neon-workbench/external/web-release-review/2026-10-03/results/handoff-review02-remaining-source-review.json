@@ -1,0 +1,2301 @@
+{
+  "phase": "source review of untouched first-pass components",
+  "previous_owner": "review01",
+  "exclusive_new_owner": "review02",
+  "previous_owner_frozen": true,
+  "assignments": [
+    {
+      "assignment_key": "entry-4239",
+      "namespace": "held",
+      "record_id": "entry-4239",
+      "entry_number": 4239,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 1,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-4407",
+      "namespace": "held",
+      "record_id": "entry-4407",
+      "entry_number": 4407,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 4,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-4457",
+      "namespace": "held",
+      "record_id": "entry-4457",
+      "entry_number": 4457,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 6,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-4696",
+      "namespace": "held",
+      "record_id": "entry-4696",
+      "entry_number": 4696,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 10,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-4708",
+      "namespace": "held",
+      "record_id": "entry-4708",
+      "entry_number": 4708,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 11,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-4753",
+      "namespace": "held",
+      "record_id": "entry-4753",
+      "entry_number": 4753,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 13,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-4906",
+      "namespace": "held",
+      "record_id": "entry-4906",
+      "entry_number": 4906,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 16,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5189",
+      "namespace": "held",
+      "record_id": "entry-5189",
+      "entry_number": 5189,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 18,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5190",
+      "namespace": "held",
+      "record_id": "entry-5190",
+      "entry_number": 5190,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 19,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5207",
+      "namespace": "held",
+      "record_id": "entry-5207",
+      "entry_number": 5207,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 21,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5213",
+      "namespace": "held",
+      "record_id": "entry-5213",
+      "entry_number": 5213,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 22,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5224",
+      "namespace": "held",
+      "record_id": "entry-5224",
+      "entry_number": 5224,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 23,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5237",
+      "namespace": "held",
+      "record_id": "entry-5237",
+      "entry_number": 5237,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 24,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5344",
+      "namespace": "held",
+      "record_id": "entry-5344",
+      "entry_number": 5344,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 27,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5752",
+      "namespace": "held",
+      "record_id": "entry-5752",
+      "entry_number": 5752,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 33,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5754",
+      "namespace": "held",
+      "record_id": "entry-5754",
+      "entry_number": 5754,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 34,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5814",
+      "namespace": "held",
+      "record_id": "entry-5814",
+      "entry_number": 5814,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 37,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-5816",
+      "namespace": "held",
+      "record_id": "entry-5816",
+      "entry_number": 5816,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 38,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6414",
+      "namespace": "held",
+      "record_id": "entry-6414",
+      "entry_number": 6414,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 57,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    },
+    {
+      "assignment_key": "entry-6428",
+      "namespace": "held",
+      "record_id": "entry-6428",
+      "entry_number": 6428,
+      "input_file": "held-dispositions.jsonl",
+      "input_line": 63,
+      "review_type": "split_required",
+      "worker": "review01",
+      "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+      "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+    }
+  ],
+  "prior_outcome_by_key": {
+    "entry-4239": {
+      "assignment_key": "entry-4239",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 1,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-4239",
+      "entry_number": 4239,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "The department's workforce declined from roughly 4,200 employees in 2024 to about 2,300 in 2026.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "The administration shifted administration of numerous Education Department programs to other agencies through multiple interagency agreements.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "More than 100 programs and obligations had been offloaded by May 2026.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "OPM data reported by NPR showed the Education Department declining from roughly 4,200 employees in 2024 to about 2,300 in 2026, a reduction of roughly 45%.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "The Education Department announced six interagency agreements with Labor, Interior, HHS and State in November 2025 as part of its effort to shift administration of federal education programs; additional agreements followed in 2026.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The workforce reduction, interagency program-management agreements, congressional testimony, and budget proposal occurred through different actions and dates and should not be represented as one event.",
+        "Reliable reporting documented the roughly 4,200-to-2,300 workforce change by May 2026, while major interagency agreements began in 2025 and continued through 2026, rather than arising only in the stored July-August window.",
+        "The stored FY2027 $12 billion/15% budget figure was not verified in the sources examined for this batch."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.kpbs.org/news/education/2026/05/14/linda-mcmahon-defends-dismantling-the-education-department-shifting-its-work",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "The department's workforce declined from roughly 4,200 employees in 2024 to about 2,300 in 2026.",
+            "More than 100 programs and obligations had been offloaded by May 2026."
+          ]
+        },
+        {
+          "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-six-new-agency-partnerships-break-federal-bureaucracy",
+          "access_status": "inaccessible",
+          "supported_facts": [
+            "The administration shifted administration of numerous Education Department programs to other agencies through multiple interagency agreements."
+          ]
+        },
+        {
+          "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-additional-partnerships-break-federal-education-bureaucracy",
+          "access_status": "inaccessible",
+          "supported_facts": [
+            "The administration shifted administration of numerous Education Department programs to other agencies through multiple interagency agreements."
+          ]
+        },
+        {
+          "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-additional-partnerships-strengthen-coordination-individuals-disabilities-programs-bolster-civil-rights",
+          "access_status": "inaccessible",
+          "supported_facts": [
+            "The administration shifted administration of numerous Education Department programs to other agencies through multiple interagency agreements."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2026-05-14",
+          "title": "Education Department Workforce Falls Roughly 45% From 2024 Level",
+          "description_short": "OPM data reported by NPR showed the Education Department declining from roughly 4,200 employees in 2024 to about 2,300 in 2026, a reduction of roughly 45%.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.kpbs.org/news/education/2026/05/14/linda-mcmahon-defends-dismantling-the-education-department-shifting-its-work"
+          ]
+        },
+        {
+          "date_start": "2025-11-18",
+          "title": "Education Department Begins Broad Interagency Program-Administration Transfers",
+          "description_short": "The Education Department announced six interagency agreements with Labor, Interior, HHS and State in November 2025 as part of its effort to shift administration of federal\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-six-new-agency-partnerships-break-federal-bureaucracy",
+            "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-additional-partnerships-strengthen-coordination-individuals-disabilities-programs-bolster-civil-rights"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: The stored FY2027 $12 billion/15% budget figure was not verified in the sources examined for this batch.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-4407": {
+      "assignment_key": "entry-4407",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 4,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-4407",
+      "entry_number": 4407,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "HUD's FY2026 CoC NOFO authorized more than $4 billion in competitive funding.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "The August 7 district-court ruling set aside the FY2026 NOFO.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "A federal court ruled that HUD's November and December 2025 Continuum of Care notices violated the Administrative Procedure Act and set them aside.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "The U.S. District Court for the District of Rhode Island set aside HUD's FY2026 CoC NOFO. Challengers said its approximately $1.3 billion set-aside for transitional housing and service-only projects could put at least 97,000 residents of permanent supportive housing at risk.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The same changes were blocked three times in March, June and August 2026.",
+        "The litigation concerned different FY2025 and FY2026 notices and different procedural stages; it should not be compressed into one three-block sequence.",
+        "The record includes a preliminary injunction predating the claimed March event, a June 29/30 merits ruling on 2025 notices, and an August 7 ruling on the FY2026 NOFO; the stored March/June/August formulation is not accurate.",
+        "The FY2026 challenge described an approximately $1.3 billion set-aside for transitional housing/support services and risk to at least 97,000 residents; the stored $3.0B-to-$2.4B sequence was not verified."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.hud.gov/hud-partners/coc-program-competition",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "HUD's FY2026 CoC NOFO authorized more than $4 billion in competitive funding."
+          ]
+        },
+        {
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-secures-court-victory-blocking-trump-administration%E2%80%99s",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "The August 7 district-court ruling set aside the FY2026 NOFO."
+          ]
+        },
+        {
+          "url": "https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-wins-case-protecting-billions-dollars-states-fight",
+          "access_status": "actually_read",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2026-06-29",
+          "title": "Court Sets Aside HUD's 2025 Continuum of Care Funding Notices",
+          "description_short": "A federal court ruled that HUD's November and December 2025 Continuum of Care notices violated the Administrative Procedure Act and set them aside.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-wins-case-protecting-billions-dollars-states-fight"
+          ]
+        },
+        {
+          "date_start": "2026-08-07",
+          "title": "Court Sets Aside HUD's FY2026 Continuum of Care Notice",
+          "description_short": "The U.S.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://oag.ca.gov/news/press-releases/attorney-general-bonta-secures-court-victory-blocking-trump-administration%E2%80%99s",
+            "https://www.hud.gov/hud-partners/coc-program-competition"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: The FY2026 challenge described an approximately $1.3 billion set-aside for transitional housing/support services and risk to at least 97,000 residents; the stored $3.0B-to-$2.4B sequence was not verified.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-4457": {
+      "assignment_key": "entry-4457",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 6,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-4457",
+      "entry_number": 4457,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "DOJ's misconduct complaint against Boasberg was dismissed.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "As of March 2026, the administration had asked the Supreme Court to intervene 34 times on the emergency docket and prevailed in 80% of 25 decided requests.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "The Justice Department filed a misconduct complaint against Chief Judge James Boasberg over comments DOJ attributed to him about administration compliance with court orders. The complaint was later dismissed for lack of a cognizable ethics violation.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "A Brennan Center analysis reported that by March 2026 the administration had sought emergency Supreme Court intervention more than 30 times; a later Brennan tally specified 34 applications, 25 decisions, and an 80% administration win rate among those decisions.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The judicial-misconduct complaint and the Supreme Court emergency-docket pattern are distinct events with different dates, institutions, and evidentiary bases.",
+        "The DOJ complaint was publicly announced in July 2025 and dismissed by an order dated December 19, 2025 that became public in January 2026; January 20 is not a reliable date for filing the complaint."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/world/us/us-justice-departments-misconduct-complaint-against-judge-boasberg-gets-tossed-2026-01-31/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "DOJ's misconduct complaint against Boasberg was dismissed."
+          ]
+        },
+        {
+          "url": "https://www.brennancenter.org/our-work/policy-solutions/six-solutions-fix-supreme-court",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "As of March 2026, the administration had asked the Supreme Court to intervene 34 times on the emergency docket and prevailed in 80% of 25 decided requests."
+          ]
+        },
+        {
+          "url": "https://www.brennancenter.org/our-work/analysis-opinion/supreme-court-abuse-shadow-docket-under-trump",
+          "access_status": "actually_read",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-07-28",
+          "title": "Justice Department Files Judicial-Misconduct Complaint Against Judge Boasberg",
+          "description_short": "The Justice Department filed a misconduct complaint against Chief Judge James Boasberg over comments DOJ attributed to him about administration compliance with court orders.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/us-justice-departments-misconduct-complaint-against-judge-boasberg-gets-tossed-2026-01-31/"
+          ]
+        },
+        {
+          "date_start": "2026-03-03",
+          "title": "Brennan Center Finds Trump Administration Frequently Used Supreme Court Emergency Docket",
+          "description_short": "A Brennan Center analysis reported that by March 2026 the administration had sought emergency Supreme Court intervention more than 30 times; a later Brennan tally specified 34\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.brennancenter.org/our-work/analysis-opinion/supreme-court-abuse-shadow-docket-under-trump",
+            "https://www.brennancenter.org/our-work/policy-solutions/six-solutions-fix-supreme-court"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-4696": {
+      "assignment_key": "entry-4696",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 10,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-4696",
+      "entry_number": 4696,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Hegseth's disclosure lists more than twenty stock sales on March 24, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Lutnick's major 2025 divestitures were conducted in accordance with his ethics agreement.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Pete Hegseth's financial disclosures list sales of more than twenty securities on March 24, 2025, including Apple, Amazon, Microsoft, Walmart and others. The timing preceded the April 2 tariff announcement, but the disclosure alone does not establish that he traded on nonpublic information.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Howard Lutnick's disclosure and SEC filings show large sales beginning May 16 and completed October 6, 2025. The filings state that the divestitures were undertaken in accordance with his January 21 ethics agreement and appointment as Commerce Secretary.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Hegseth and Lutnick formed a common pre-tariff trading episode based on nonpublic information.",
+        "Hegseth's March 24 portfolio sales and Lutnick's May/October divestitures were distinct transactions on different timelines and with different stated purposes.",
+        "The timing of Hegseth's sales before the April 2 tariff announcement is documented, but the sources reviewed do not establish use of nonpublic tariff information.",
+        "Lutnick's major May and October sales are explicitly described in disclosure/SEC materials as being carried out under his January 21, 2025 ethics agreement, which makes it misleading to present them as equivalent to an opportunistic pre-tariff trade."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://projects.propublica.org/trump-team-financial-disclosures/appointees/hegseth-pete/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Hegseth's disclosure lists more than twenty stock sales on March 24, 2025."
+          ]
+        },
+        {
+          "url": "https://projects.propublica.org/trump-team-financial-disclosures/appointees/lutnick-howard/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Lutnick's major 2025 divestitures were conducted in accordance with his ethics agreement."
+          ]
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1690680/000162828026013160/R33.htm",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Lutnick's major 2025 divestitures were conducted in accordance with his ethics agreement."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-03-24",
+          "title": "Hegseth reports broad stock sales shortly before April 2 tariff announcement",
+          "description_short": "Pete Hegseth's financial disclosures list sales of more than twenty securities on March 24, 2025, including Apple, Amazon, Microsoft, Walmart and others.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://projects.propublica.org/trump-team-financial-disclosures/appointees/hegseth-pete/"
+          ]
+        },
+        {
+          "date_start": "2025-05-16",
+          "title": "Lutnick begins large divestitures required by ethics agreement",
+          "description_short": "Howard Lutnick's disclosure and SEC filings show large sales beginning May 16 and completed October 6, 2025.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://projects.propublica.org/trump-team-financial-disclosures/appointees/lutnick-howard/",
+            "https://www.sec.gov/Archives/edgar/data/1690680/000162828026013160/R33.htm"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: Lutnick's major May and October sales are explicitly described in disclosure/SEC materials as being carried out under his January 21, 2025 ethics agreement, which makes it misleading to present them as equivalent to an opportunistic pre-tariff trade.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-4708": {
+      "assignment_key": "entry-4708",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 11,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-4708",
+      "entry_number": 4708,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Trump DOJ leadership ordered a broad review of FBI personnel tied to January 6 cases on January 31, 2025, before Patel was FBI director.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Under Patel, the FBI later fired multiple senior officials and at least a dozen agents linked to Trump-related investigations.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Acting Deputy Attorney General Emil Bove ordered personnel actions and a review of FBI employees who worked on January 6 cases. The action occurred before Kash Patel became FBI director.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "The FBI dismissed at least three senior officials, including former acting director Brian Driscoll, amid a broader reshuffling under Patel. The officials had links to January 6 or other politically sensitive investigations.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "The FBI dismissed at least a dozen agents whose work was connected directly or indirectly to investigations involving Trump's classified documents or efforts to overturn the 2020 election.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Patel fired hundreds of agents because they were deemed insufficiently loyal.",
+        "The record merges several distinct episodes: January 2025 DOJ-directed personnel reviews before Patel became FBI director, August 2025 firings of senior FBI officials under Patel, and February 2026 firings of at least a dozen agents tied to Trump investigations.",
+        "The accepted sources support repeated firings of named officials and agents connected to January 6 or Trump-related investigations, but not the stored claim that Patel had fired 'hundreds of agents deemed insufficiently loyal'.",
+        "The January 31, 2025 review and firings predated Patel's confirmation and therefore cannot accurately be described as actions he oversaw as FBI director."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/world/us/fbi-launches-wide-ranging-round-cuts-sources-say-2025-01-31/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Trump DOJ leadership ordered a broad review of FBI personnel tied to January 6 cases on January 31, 2025, before Patel was FBI director."
+          ]
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2025/08/07/trump-fbi-patel-dismissals-jan6/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Under Patel, the FBI later fired multiple senior officials and at least a dozen agents linked to Trump-related investigations."
+          ]
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2026/02/26/kash-patel-fbi-agents-fired/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Under Patel, the FBI later fired multiple senior officials and at least a dozen agents linked to Trump-related investigations."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-01-31",
+          "title": "Trump DOJ orders review of FBI personnel tied to January 6 cases before Patel takes office",
+          "description_short": "Acting Deputy Attorney General Emil Bove ordered personnel actions and a review of FBI employees who worked on January 6 cases.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/fbi-launches-wide-ranging-round-cuts-sources-say-2025-01-31/"
+          ]
+        },
+        {
+          "date_start": "2025-08-07",
+          "title": "FBI under Patel fires three senior officials tied to politically sensitive investigations",
+          "description_short": "The FBI dismissed at least three senior officials, including former acting director Brian Driscoll, amid a broader reshuffling under Patel.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.washingtonpost.com/national-security/2025/08/07/trump-fbi-patel-dismissals-jan6/"
+          ]
+        },
+        {
+          "date_start": "2026-02-26",
+          "title": "Patel-era FBI fires at least a dozen agents tied to Trump investigations",
+          "description_short": "The FBI dismissed at least a dozen agents whose work was connected directly or indirectly to investigations involving Trump's classified documents or efforts to overturn the\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.washingtonpost.com/national-security/2026/02/26/kash-patel-fbi-agents-fired/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-4753": {
+      "assignment_key": "entry-4753",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 13,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-4753",
+      "entry_number": 4753,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "USDA and HHS announced a line-by-line review of the advisory committee scientific report on March 11, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Kevin Hall retired from NIH after 21 years and alleged censorship/interference; HHS denied his claims.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "USDA and HHS announced a line-by-line review of the 2025 Dietary Guidelines Advisory Committee scientific report and said the final guidelines would be released by the statutory deadline.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Longtime NIH nutrition researcher Kevin Hall announced early retirement after 21 years and alleged that HHS officials had interfered with communication of his research. HHS denied the allegation and said it remained committed to unbiased research.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The March dietary-guideline review and April Kevin Hall resignation are distinct events; the remaining budget, CDC, grant and local-food actions also require separate dates and records.",
+        "The title's 'politicized' and 'research gutted' language turns a composite of policy and personnel developments into an unqualified causal judgment."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://fns-prod.azureedge.us/newsroom/usda-0046.25",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "USDA and HHS announced a line-by-line review of the advisory committee scientific report on March 11, 2025."
+          ]
+        },
+        {
+          "url": "https://www.washingtonpost.com/health/2025/04/17/ultra-processed-foods-nih-resignation/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Kevin Hall retired from NIH after 21 years and alleged censorship/interference; HHS denied his claims."
+          ]
+        },
+        {
+          "url": "https://www.cbsnews.com/news/kevin-hall-rfk-jr-ultra-processed-food-nih-censorship/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Kevin Hall retired from NIH after 21 years and alleged censorship/interference; HHS denied his claims."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-03-11",
+          "title": "USDA and HHS Begin Line-by-Line Review of Dietary Guidelines Scientific Report",
+          "description_short": "USDA and HHS announced a line-by-line review of the 2025 Dietary Guidelines Advisory Committee scientific report and said the final guidelines would be released by the\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://fns-prod.azureedge.us/newsroom/usda-0046.25"
+          ]
+        },
+        {
+          "date_start": "2025-04-16",
+          "title": "NIH Nutrition Researcher Kevin Hall Announces Retirement, Alleging Censorship",
+          "description_short": "Longtime NIH nutrition researcher Kevin Hall announced early retirement after 21 years and alleged that HHS officials had interfered with communication of his research.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.washingtonpost.com/health/2025/04/17/ultra-processed-foods-nih-resignation/",
+            "https://www.cbsnews.com/news/kevin-hall-rfk-jr-ultra-processed-food-nih-censorship/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-4906": {
+      "assignment_key": "entry-4906",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 16,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-4906",
+      "entry_number": 4906,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Burgum's February 3, 2025 orders directed Interior to facilitate and expedite energy development on federal lands.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "BLM announced 108 Wyoming parcels totaling 119,595 acres for the June 2026 sale and ultimately leased about 114,439 acres.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Interior Secretary Doug Burgum signed orders directing the department to review policies that burden energy development and identify authorities to expedite permitting and leasing.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "BLM reported leasing 102 parcels totaling about 114,439 acres in its June 2026 Wyoming oil and gas sale for $34.7 million in receipts.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The final sale opened 250,000 acres near Yellowstone and Grand Teton.",
+        "The February 2025 policy order and the 2026 Wyoming lease sale are distinct events.",
+        "BLM's final June 2026 sale offered 108 parcels totaling 119,595 acres and leased about 114,439 acres; the earlier analyzed acreage of roughly 250,000 acres was not the final sale.",
+        "The accepted official sources do not establish that all of the earlier 250,000-acre proposal was near Yellowstone/Grand Teton or that more than 88,000 acres overlapped the stated migration corridors."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.doi.gov/node/61426",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Burgum's February 3, 2025 orders directed Interior to facilitate and expedite energy development on federal lands."
+          ]
+        },
+        {
+          "url": "https://www.blm.gov/press-release/blm-announces-june-2026-sale-oil-and-gas-leases-wyoming",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "BLM announced 108 Wyoming parcels totaling 119,595 acres for the June 2026 sale and ultimately leased about 114,439 acres."
+          ]
+        },
+        {
+          "url": "https://www.blm.gov/press-release/blm-oil-and-gas-lease-sale-wyoming-generates-over-34-million-revenue",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "BLM announced 108 Wyoming parcels totaling 119,595 acres for the June 2026 sale and ultimately leased about 114,439 acres."
+          ]
+        },
+        {
+          "url": "https://www.doi.gov/document-library/secretary-order/so-3418-unleashing-american-energy",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-02-03",
+          "title": "Interior orders review aimed at reducing barriers to federal energy development",
+          "description_short": "Interior Secretary Doug Burgum signed orders directing the department to review policies that burden energy development and identify authorities to expedite permitting and leasing.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.doi.gov/node/61426",
+            "https://www.doi.gov/document-library/secretary-order/so-3418-unleashing-american-energy"
+          ]
+        },
+        {
+          "date_start": "2026-06-09",
+          "title": "BLM leases about 114,439 Wyoming acres in quarterly oil and gas sale",
+          "description_short": "BLM reported leasing 102 parcels totaling about 114,439 acres in its June 2026 Wyoming oil and gas sale for $34.7 million in receipts.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.blm.gov/press-release/blm-oil-and-gas-lease-sale-wyoming-generates-over-34-million-revenue"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: BLM's final June 2026 sale offered 108 parcels totaling 119,595 acres and leased about 114,439 acres; the earlier analyzed acreage of roughly 250,000 acres was not the final sale.; The accepted official sources do not establish that all of the earlier 250,000-acre proposal was near Yellowstone/Grand Teton or that more than 88,000 acres overlapped the stated migration corridors.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5189": {
+      "assignment_key": "entry-5189",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 18,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5189",
+      "entry_number": 5189,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Paramount settled Trump's 60 Minutes lawsuit for $16 million in July 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "ABC's separate settlement included a $15 million presidential-library contribution.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Congress rescinded about $1.1 billion in public-broadcasting funding and Trump signed the measure.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "The White House created an official media-offender tracker in November 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Paramount agreed to pay $16 million to settle Trump's lawsuit over CBS's editing of a 60 Minutes interview. Paramount said the payment would be allocated to Trump's future presidential library and did not apologize.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Trump signed a rescission law canceling about $9 billion in previously approved spending, including roughly $1.1 billion for the Corporation for Public Broadcasting.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "The White House launched a webpage naming outlets and reports it labeled misleading or biased, including an 'Offender Hall of Shame.'",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The record contains many separate actions across 2025 with different actors, dates and legal contexts; treating them as one dated event prevents precise sourcing.",
+        "Descriptions such as 'government-backed suppression at a scale unprecedented in American history' are evaluative conclusions requiring attribution, not atomic facts.",
+        "The $31 million combined ABC/Paramount library-related settlements can be documented, but the card's $32 million headline does not match the $15 million ABC plus $16 million Paramount amounts it itemizes."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/business/media-telecom/paramount-settles-with-trump-over-60-minutes-interview-la-times-reports-2025-07-02/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Paramount settled Trump's 60 Minutes lawsuit for $16 million in July 2025."
+          ]
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/paramount-settles-with-trump-over-60-minutes-interview-la-times-reports-4120264",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "ABC's separate settlement included a $15 million presidential-library contribution."
+          ]
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/trump-signs-bill-canceling-9-billion-in-foreign-aid-and-public-broadcasting-funding",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Congress rescinded about $1.1 billion in public-broadcasting funding and Trump signed the measure."
+          ]
+        },
+        {
+          "url": "https://www.washingtonpost.com/business/2025/11/28/trump-media-criticism/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "The White House created an official media-offender tracker in November 2025."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-07-02",
+          "title": "Paramount Settles Trump's 60 Minutes Lawsuit for $16 Million",
+          "description_short": "Paramount agreed to pay $16 million to settle Trump's lawsuit over CBS's editing of a 60 Minutes interview.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/business/media-telecom/paramount-settles-with-trump-over-60-minutes-interview-la-times-reports-2025-07-02/"
+          ]
+        },
+        {
+          "date_start": "2025-07-24",
+          "title": "Trump Signs Rescission Cutting $1.1 Billion in Public-Broadcasting Funding",
+          "description_short": "Trump signed a rescission law canceling about $9 billion in previously approved spending, including roughly $1.1 billion for the Corporation for Public Broadcasting.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.pbs.org/newshour/politics/trump-signs-bill-canceling-9-billion-in-foreign-aid-and-public-broadcasting-funding"
+          ]
+        },
+        {
+          "date_start": "2025-11-28",
+          "title": "White House Launches Media-Bias Tracker and 'Offender' Page",
+          "description_short": "The White House launched a webpage naming outlets and reports it labeled misleading or biased, including an 'Offender Hall of Shame.'",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.washingtonpost.com/business/2025/11/28/trump-media-criticism/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: The $31 million combined ABC/Paramount library-related settlements can be documented, but the card's $32 million headline does not match the $15 million ABC plus $16 million Paramount amounts it itemizes.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5190": {
+      "assignment_key": "entry-5190",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 19,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5190",
+      "entry_number": 5190,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "DOJ and FBI said their review found no incriminating Epstein client list and no evidence that could predicate an investigation of uncharged third parties.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Trump filed a $10 billion defamation suit over the Wall Street Journal's Epstein birthday-note story.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Trump later asked DOJ to investigate Epstein ties involving Bill Clinton and others, and Bondi assigned Jay Clayton.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "A DOJ/FBI memorandum said an exhaustive review found no incriminating Epstein 'client list,' no credible evidence that Epstein blackmailed prominent individuals, and no evidence that could predicate an investigation of uncharged third parties.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Trump filed a $10 billion defamation lawsuit against the Wall Street Journal, its parent company and Rupert Murdoch after the newspaper reported on an alleged 2003 birthday message to Jeffrey Epstein. Trump denied writing or drawing the message.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Trump said he would ask the Justice Department to investigate Jeffrey Epstein's ties to Bill Clinton, JPMorgan and others. Attorney General Pam Bondi said Manhattan U.S. Attorney Jay Clayton would lead the inquiry.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "These events collectively prove a 'boomerang' conspiracy narrative.",
+        "The synopsis merges at least three independent events occurring in July and November 2025.",
+        "The 'boomerang' framing and claims about motives or political consequences are editorial interpretations, not discrete factual events.",
+        "The DOJ/FBI memorandum says its review found no incriminating client list and no evidence that would predicate an investigation of uncharged third parties; that finding should not be expanded into claims about every person associated with Epstein."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.justice.gov/opa/media/1407001/dl",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "DOJ and FBI said their review found no incriminating Epstein client list and no evidence that could predicate an investigation of uncharged third parties."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/world/us/trump-sues-wall-street-journal-over-epstein-report-seeks-10-billion-2025-07-19/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Trump filed a $10 billion defamation suit over the Wall Street Journal's Epstein birthday-note story."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/world/us/trump-says-he-will-ask-justice-department-probe-epstein-ties-with-bill-clinton-2025-11-14/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Trump later asked DOJ to investigate Epstein ties involving Bill Clinton and others, and Bondi assigned Jay Clayton."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-07-07",
+          "title": "DOJ and FBI say Epstein review found no incriminating client list",
+          "description_short": "A DOJ/FBI memorandum said an exhaustive review found no incriminating Epstein 'client list,' no credible evidence that Epstein blackmailed prominent individuals, and no\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.justice.gov/opa/media/1407001/dl"
+          ]
+        },
+        {
+          "date_start": "2025-07-18",
+          "title": "Trump sues Wall Street Journal over Epstein birthday-note report",
+          "description_short": "Trump filed a $10 billion defamation lawsuit against the Wall Street Journal, its parent company and Rupert Murdoch after the newspaper reported on an alleged 2003 birthday\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/trump-sues-wall-street-journal-over-epstein-report-seeks-10-billion-2025-07-19/"
+          ]
+        },
+        {
+          "date_start": "2025-11-14",
+          "title": "Trump asks DOJ to investigate Epstein ties of Clinton and other political targets",
+          "description_short": "Trump said he would ask the Justice Department to investigate Jeffrey Epstein's ties to Bill Clinton, JPMorgan and others.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/trump-says-he-will-ask-justice-department-probe-epstein-ties-with-bill-clinton-2025-11-14/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: The DOJ/FBI memorandum says its review found no incriminating client list and no evidence that would predicate an investigation of uncharged third parties; that finding should not be expanded into claims about every person associated with Epstein.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5207": {
+      "assignment_key": "entry-5207",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 21,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5207",
+      "entry_number": 5207,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Trump publicly threatened jail if a reporter refused to identify the source of the Iran airman-rescue disclosure.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "DOJ later sought grand-jury testimony from Post and Journal reporters, then withdrew those subpoenas.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "At an April 6 White House press conference, Trump said the news organization that first reported the rescue of a downed U.S. airman in Iran should identify its source and that the reporter could go to jail for refusing.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "The Justice Department issued and later withdrew subpoenas seeking grand-jury testimony from one Washington Post and three Wall Street Journal reporters in national-security leak investigations. Public reporting said the precise subjects and scope of those investigations were unclear.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Those subpoenas were issued because of the specific airman-rescue leak.",
+        "Trump's April threat and the reporter subpoenas are separately documented but public reporting did not establish that the grand-jury subpoenas arose from the airman-rescue disclosure.",
+        "The card asserts that Trump's complaints and marked-up articles accelerated the particular subpoenas, but the precise investigations and causal chain were not publicly established."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/business/media-telecom/trump-threatens-jail-reporter-who-revealed-iran-airman-rescue-2026-04-06/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Trump publicly threatened jail if a reporter refused to identify the source of the Iran airman-rescue disclosure."
+          ]
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2026/06/23/doj-issued-then-withdrew-subpoenas-force-post-wsj-reporters-testify/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "DOJ later sought grand-jury testimony from Post and Journal reporters, then withdrew those subpoenas."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2026-04-06",
+          "title": "Trump Threatens Jail for Reporter Who Would Not Identify Source of Iran Airman Rescue Report",
+          "description_short": "At an April 6 White House press conference, Trump said the news organization that first reported the rescue of a downed U.S.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/business/media-telecom/trump-threatens-jail-reporter-who-revealed-iran-airman-rescue-2026-04-06/"
+          ]
+        },
+        {
+          "date_start": "2026-06-23",
+          "title": "DOJ Withdraws Grand-Jury Testimony Subpoenas Issued to Post and Journal Reporters",
+          "description_short": "The Justice Department issued and later withdrew subpoenas seeking grand-jury testimony from one Washington Post and three Wall Street Journal reporters in national-security\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.washingtonpost.com/national-security/2026/06/23/doj-issued-then-withdrew-subpoenas-force-post-wsj-reporters-testify/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5213": {
+      "assignment_key": "entry-5213",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 22,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5213",
+      "entry_number": 5213,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Lutnick publicly urged viewers to buy Tesla stock in March 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "OGE said in August that Bessent was working to complete required illiquid-asset divestitures by December 15 and remained recused from affected matters.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Bessent reported completing the soybean-farm divestiture in early December.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Commerce Secretary Howard Lutnick urged Fox News viewers to buy Tesla stock. Ethics experts cited federal rules generally prohibiting executive-branch employees from using public office to endorse a product, service or enterprise.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Scott Bessent said he had sold his interest in North Dakota soybean farmland after a prolonged divestiture process required by his ethics agreement. OGE had previously told the Senate that remaining illiquid assets were expected to be divested by December 15 and that Bessent was recused from matters affecting them.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Lutnick's March 2025 televised Tesla recommendation and Bessent's 2025 divestiture compliance issue are separate ethics events and should not be combined with cabinet wealth estimates under January 20.",
+        "The conclusion that officials 'openly enriched themselves' through public power is not established by the cited events; documented facts concern potential ethics-rule violations and delayed divestiture.",
+        "Wealth estimates and disclosure valuations are snapshots requiring their own dated disclosure sources rather than a generic inauguration-date event."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.washingtonpost.com/politics/2025/03/20/lutnick-urges-fox-news-viewers-buy-tesla-stock-raising-ethical-questions/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Lutnick publicly urged viewers to buy Tesla stock in March 2025."
+          ]
+        },
+        {
+          "url": "https://www.oge.gov/web/OGE.nsf/0/58052D1C5B765AF185258CE600524772/%24FILE/Secretary%20Bessent%20Ethics%20Agreement%20Compliance%20Letter-%20Supplement.pdf",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "OGE said in August that Bessent was working to complete required illiquid-asset divestitures by December 15 and remained recused from affected matters."
+          ]
+        },
+        {
+          "url": "https://www.bangordailynews.com/2025/12/08/nation/bessent-divests-from-soybean-farmland-ahead-of-trump-aid-announcement-for-farmers/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Bessent reported completing the soybean-farm divestiture in early December."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-03-19",
+          "title": "Commerce Secretary Lutnick Tells TV Viewers to Buy Tesla, Raising Ethics Questions",
+          "description_short": "Commerce Secretary Howard Lutnick urged Fox News viewers to buy Tesla stock.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.washingtonpost.com/politics/2025/03/20/lutnick-urges-fox-news-viewers-buy-tesla-stock-raising-ethical-questions/"
+          ]
+        },
+        {
+          "date_start": "2025-12-07",
+          "title": "Treasury Secretary Bessent Says He Completed Required Soybean-Farm Divestiture",
+          "description_short": "Scott Bessent said he had sold his interest in North Dakota soybean farmland after a prolonged divestiture process required by his ethics agreement.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.oge.gov/web/OGE.nsf/0/58052D1C5B765AF185258CE600524772/%24FILE/Secretary%20Bessent%20Ethics%20Agreement%20Compliance%20Letter-%20Supplement.pdf",
+            "https://www.bangordailynews.com/2025/12/08/nation/bessent-divests-from-soybean-farmland-ahead-of-trump-aid-announcement-for-farmers/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: Wealth estimates and disclosure valuations are snapshots requiring their own dated disclosure sources rather than a generic inauguration-date event.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5224": {
+      "assignment_key": "entry-5224",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 23,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5224",
+      "entry_number": 5224,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Trump dismissed NSA/Cyber Command chief Timothy Haugh in April 2025 after a White House loyalty-purge episode involving Laura Loomer's recommendations.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Gabbard revoked 37 intelligence-community security clearances in August 2025 and said Trump had directed the action.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Trump dismissed Gen. Timothy Haugh as director of the NSA and head of U.S. Cyber Command, and Haugh's deputy Wendy Noble was reassigned. The removals followed a White House meeting with activist Laura Loomer, who had urged Trump to remove officials she considered disloyal and had criticized Haugh.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Director of National Intelligence Tulsi Gabbard revoked the security clearances of 37 current and former intelligence professionals, saying the action was directed by Trump and accusing the individuals of politicizing intelligence. The reviewed reporting does not connect this action to Laura Loomer.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Loomer ordered or caused the August 37-clearance revocation.",
+        "The April 2025 Haugh/Noble personnel action and the August 2025 revocation of 37 security clearances were distinct events with different decision chains.",
+        "Reporting links Laura Loomer's Oval Office advocacy to the broader April loyalty purge and Haugh was among officials she criticized, but no accepted source links Loomer to Gabbard's August clearance action.",
+        "The phrase 'on Loomer's orders' overstates her role; she was an outside activist who advocated removals, while the president and administration officials made the personnel decisions."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/world/us/us-far-right-activist-raises-loyalty-test-that-could-deepen-purge-security-2025-04-04/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Trump dismissed NSA/Cyber Command chief Timothy Haugh in April 2025 after a White House loyalty-purge episode involving Laura Loomer's recommendations."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/world/us/gabbard-revokes-security-clearances-37-current-former-us-intelligence-members-2025-08-19/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Gabbard revoked 37 intelligence-community security clearances in August 2025 and said Trump had directed the action."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/world/us/us-nsa-director-timothy-haugh-fired-washington-post-reports-2025-04-04/",
+          "access_status": "actually_read",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-04-04",
+          "title": "Trump removes NSA and Cyber Command chief Timothy Haugh after loyalty purge",
+          "description_short": "Trump dismissed Gen.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/us-far-right-activist-raises-loyalty-test-that-could-deepen-purge-security-2025-04-04/",
+            "https://www.reuters.com/world/us/us-nsa-director-timothy-haugh-fired-washington-post-reports-2025-04-04/"
+          ]
+        },
+        {
+          "date_start": "2025-08-19",
+          "title": "Gabbard revokes security clearances of 37 current and former intelligence officials",
+          "description_short": "Director of National Intelligence Tulsi Gabbard revoked the security clearances of 37 current and former intelligence professionals, saying the action was directed by Trump and\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/gabbard-revokes-security-clearances-37-current-former-us-intelligence-members-2025-08-19/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5237": {
+      "assignment_key": "entry-5237",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 24,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5237",
+      "entry_number": 5237,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Trump named Michael Ellis as CIA Deputy Director on February 3, 2025, a role not requiring Senate confirmation.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Michael Ellis was sworn in as CIA Deputy Director on February 10, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "DNI Gabbard revoked security clearances of 37 current and former intelligence officials on August 19, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "A single Washington Post investigation published August 2025 documented the cumulative removal of CIA Russia experts, NSA leaders, the Cyber Command head, the DIA director, and dozens of China/AI/nuclear specialists replaced by social-media-activism loyalists.",
+        "The entry collapses at least four distinct personnel actions spanning February-August 2025 (Ellis appointment Feb 3, NIC firings May, probationary CIA firings March, clearance revocations and Russia-expert removal August) under a single February 3, 2025 event date.",
+        "The claim that specialists were replaced by loyalists handpicked through social media activism rather than operational merit, and that a single Washington Post investigation documented the cumulative effect across NSA, Cyber Command, DIA, and dozens of specialists, is not established by the located factual reporting, which covers discrete actions individually."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.washingtonpost.com/national-security/2025/02/03/cia-michael-ellis-deputy-director-ratcliffe-trump/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Trump named Michael Ellis as CIA Deputy Director on February 3, 2025, a role not requiring Senate confirmation."
+          ]
+        },
+        {
+          "url": "https://www.cia.gov/stories/story/michael-ellis-sworn-in-as-cia-deputy-director/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Michael Ellis was sworn in as CIA Deputy Director on February 10, 2025."
+          ]
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2025/08/19/gabbard-russia-revoke-security-clearance/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "DNI Gabbard revoked security clearances of 37 current and former intelligence officials on August 19, 2025."
+          ]
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2025/08/27/cia-officer-russia-trump-gabbard/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-05",
+          "title": "Gabbard Fires National Intelligence Council Acting Chairman and Deputy (May 2025)",
+          "description_short": "DNI Tulsi Gabbard removed NIC Acting Chairman Mike Collins and deputy Maria Langan-Riekhof; requires separate verification.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": []
+        },
+        {
+          "date_start": "2025-03",
+          "title": "Mass Firing of Probationary CIA Officers (March 2025)",
+          "description_short": "CIA Director Ratcliffe oversaw dismissal of probationary officers; congressional notification reporting requires separate verification.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": []
+        },
+        {
+          "date_start": "2025-08-19",
+          "title": "Gabbard Revokes Security Clearances of 37 Officials; CIA Russia Expert Removed (August 2025)",
+          "description_short": "DNI Gabbard revoked clearances of 37 current and former officials; the CIA senior-most Russia expert was removed days after the Alaska summit.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": []
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5344": {
+      "assignment_key": "entry-5344",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 27,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5344",
+      "entry_number": 5344,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Patel became FBI director on February 20, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "The January 31 purge and January 6 personnel-review demands were directed by acting Deputy Attorney General Emil Bove before Patel's confirmation.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Under Patel, the FBI expanded use of polygraph tests to identify leak sources.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Before Kash Patel's confirmation, acting Deputy Attorney General Emil Bove directed personnel actions and ordered the FBI to identify employees who had worked on January 6 investigations for review.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "The FBI began using polygraph examinations in leak investigations at Director Kash Patel's direction. Later reporting said some senior personnel were asked whether they had disparaged Patel.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "FBI managers were told that up to 1,500 employees would be moved from headquarters to field offices as Patel began his tenure. The transfer plan was presented as a rebalancing toward field operations; the reviewed evidence does not establish that its purpose was to force attrition.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Patel personally began the entire purge before or immediately upon confirmation and removed at least 75 officials in his first month.",
+        "The January 31-February personnel actions and demand for names of January 6 investigators were directed by acting Deputy Attorney General Emil Bove before Patel became FBI director on February 20, while later polygraph and transfer policies occurred under Patel.",
+        "Patel could not have directed the pre-February 20 actions as FBI director.",
+        "The reviewed sources do not establish the entry's asserted first-month count of at least 75 career lawyers and FBI officials removed by Patel."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.fbi.gov/about/leadership-and-structure/director-patel",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "Patel became FBI director on February 20, 2025."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/world/us/fbi-launches-wide-ranging-round-cuts-sources-say-2025-01-31/",
+          "access_status": "actually_read",
+          "supported_facts": [
+            "The January 31 purge and January 6 personnel-review demands were directed by acting Deputy Attorney General Emil Bove before Patel's confirmation."
+          ]
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2025/04/28/leak-polygraph-fbi-justice-odni-dhs/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Under Patel, the FBI expanded use of polygraph tests to identify leak sources."
+          ]
+        },
+        {
+          "url": "https://archive.ph/qZKO3",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2025/02/21/fbi-agent-transfers-kash-patel-sworn-in/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-01-31",
+          "title": "Acting DOJ leadership orders personnel review tied to January 6 investigations",
+          "description_short": "Before Kash Patel's confirmation, acting Deputy Attorney General Emil Bove directed personnel actions and ordered the FBI to identify employees who had worked on January 6\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/fbi-launches-wide-ranging-round-cuts-sources-say-2025-01-31/"
+          ]
+        },
+        {
+          "date_start": "2025-04-28",
+          "title": "FBI under Patel expands polygraph use to investigate internal leaks",
+          "description_short": "The FBI began using polygraph examinations in leak investigations at Director Kash Patel's direction.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.washingtonpost.com/national-security/2025/04/28/leak-polygraph-fbi-justice-odni-dhs/",
+            "https://archive.ph/qZKO3"
+          ]
+        },
+        {
+          "date_start": "2025-02-21",
+          "title": "FBI plans transfer of up to 1,500 headquarters staff and agents",
+          "description_short": "FBI managers were told that up to 1,500 employees would be moved from headquarters to field offices as Patel began his tenure.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.washingtonpost.com/national-security/2025/02/21/fbi-agent-transfers-kash-patel-sworn-in/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: The reviewed sources do not establish the entry's asserted first-month count of at least 75 career lawyers and FBI officials removed by Patel.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5752": {
+      "assignment_key": "entry-5752",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 33,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5752",
+      "entry_number": 5752,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "About $400 million in Columbia grants and contracts were canceled in March 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "About $2.3 billion in Harvard grants and contract value were frozen in April 2025 after Harvard rejected administration demands.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "The administration canceled about $400 million in federal grants and contracts to Columbia University, citing what it described as failure to address antisemitic harassment. Columbia later negotiated with the government and regained most suspended funding under a July settlement.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "After Harvard rejected a list of administration demands concerning campus governance, antisemitism, DEI and other policies, the administration froze about $2.2 billion in grants and $60 million in contract value.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "All federal funding to Harvard, Yale and Columbia was suspended together in August 2025.",
+        "Harvard and Columbia faced distinct funding actions on different dates and under separate administrative processes.",
+        "Major Columbia grant cancellations occurred March 7, 2025 and Harvard's initial $2.3 billion freeze was announced April 14, not in August.",
+        "The actions involved specified grants and contracts or future grant eligibility, not an established blanket suspension of every form of federal education and research funding to all three universities.",
+        "No comparable blanket Yale funding suspension matching the stored three-university claim was verified."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/world/us/us-cancels-400-million-grants-contracts-columbia-university-over-antisemitism-2025-03-07/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "About $400 million in Columbia grants and contracts were canceled in March 2025."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/world/us/harvard-will-fight-trump-administration-demands-over-funding-2025-04-14/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "About $2.3 billion in Harvard grants and contract value were frozen in April 2025 after Harvard rejected administration demands."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-03-07",
+          "title": "Trump administration cancels about $400 million in Columbia grants and contracts",
+          "description_short": "The administration canceled about $400 million in federal grants and contracts to Columbia University, citing what it described as failure to address antisemitic harassment.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/us-cancels-400-million-grants-contracts-columbia-university-over-antisemitism-2025-03-07/"
+          ]
+        },
+        {
+          "date_start": "2025-04-14",
+          "title": "Administration freezes about $2.3 billion in Harvard grants and contracts after university rejects demands",
+          "description_short": "After Harvard rejected a list of administration demands concerning campus governance, antisemitism, DEI and other policies, the administration froze about $2.2 billion in\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/harvard-will-fight-trump-administration-demands-over-funding-2025-04-14/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: No comparable blanket Yale funding suspension matching the stored three-university claim was verified.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5754": {
+      "assignment_key": "entry-5754",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 34,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5754",
+      "entry_number": 5754,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "The administration attempted sweeping CFPB staff reductions and work stoppages beginning in February 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "An April 2025 attempt to lay off roughly 90% of the CFPB workforce was halted by a federal judge.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Acting CFPB leadership ordered broad work stoppages and the administration began terminating categories of employees in February 2025, prompting litigation from the employees' union.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "The CFPB attempted to dismiss roughly 1,400 to 1,500 employees in April, potentially eliminating about 90% of the agency's workforce. A federal judge halted the mass firings while litigation over compliance with earlier court orders continued.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Emails showed that the administration allowed several CFPB offices to resume functions officials considered legally required, undercutting the claim that the agency had simply ceased to exist.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The CFPB was legally disbanded in August 2025 and all enforcement matters were dropped.",
+        "The major stop-work, dismissal and attempted mass-layoff actions began in February and April 2025, not August 12.",
+        "The record combines a February work halt and initial dismissals, later partial resumption under litigation, and an April attempt to dismiss most of the workforce.",
+        "The CFPB was not legally disbanded; courts halted or constrained mass layoffs and some legally required work resumed. The claim that all pending enforcement actions were dropped is broader than the evidence reviewed."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.investing.com/news/economy-news/us-consumer-watchdog-broadens-layoffs-beyond-probationary-staff-sources-say-3869504",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "The administration attempted sweeping CFPB staff reductions and work stoppages beginning in February 2025."
+          ]
+        },
+        {
+          "url": "https://www.inc.com/reuters/judge-temporarily-halts-mass-firings-at-consumer-financial-protection-bureau/91178873",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "An April 2025 attempt to lay off roughly 90% of the CFPB workforce was halted by a federal judge."
+          ]
+        },
+        {
+          "url": "https://www.investing.com/news/world-news/trump-administration-allows-some-cfpb-work-to-resume-amid-court-battle-emails-show-3910711",
+          "access_status": "packet_attribution_only",
+          "supported_facts": []
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-02-10",
+          "title": "Trump administration halts much CFPB work and begins staff reductions",
+          "description_short": "Acting CFPB leadership ordered broad work stoppages and the administration began terminating categories of employees in February 2025, prompting litigation from the employees'\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.investing.com/news/economy-news/us-consumer-watchdog-broadens-layoffs-beyond-probationary-staff-sources-say-3869504"
+          ]
+        },
+        {
+          "date_start": "2025-04-17",
+          "title": "CFPB attempts to lay off roughly 90% of workforce; judge halts dismissals",
+          "description_short": "The CFPB attempted to dismiss roughly 1,400 to 1,500 employees in April, potentially eliminating about 90% of the agency's workforce.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.inc.com/reuters/judge-temporarily-halts-mass-firings-at-consumer-financial-protection-bureau/91178873"
+          ]
+        },
+        {
+          "date_start": "2025-03-05",
+          "title": "Some CFPB work resumes amid court challenge",
+          "description_short": "Emails showed that the administration allowed several CFPB offices to resume functions officials considered legally required, undercutting the claim that the agency had simply\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.investing.com/news/world-news/trump-administration-allows-some-cfpb-work-to-resume-amid-court-battle-emails-show-3910711"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5814": {
+      "assignment_key": "entry-5814",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 37,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5814",
+      "entry_number": 5814,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Treasury confirmed DOGE-linked read-only access to federal payment-system data in early February 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "DOGE personnel later had access to sensitive SSA data, leading a federal judge to order access halted in March.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Treasury told Congress that a DOGE-linked team had read-only access to Fiscal Service payment-system data while reviewing payment integrity. The systems process obligations including Social Security and Medicare.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "A federal judge temporarily blocked DOGE personnel from accessing SSA systems containing extensive personally identifiable information after finding the plaintiffs were likely to succeed on privacy-law claims. Court filings identified systems including Numident, the Master Beneficiary Record and Supplemental Security Record.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The February Treasury payment-system access and March SSA records access were the same SSA system event on February 18.",
+        "The record conflates two distinct access controversies: early-February DOGE access to Treasury's federal payment systems and later DOGE access to sensitive SSA data.",
+        "Treasury confirmed read-only federal payment-system access by February 4; a federal court addressed SSA DOGE access on March 20. Neither matches the stored February 18 SSA event.",
+        "Treasury systems process Social Security payments, but that does not make them SSA systems. The agencies, systems and data categories must be kept distinct."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/world/us/treasury-says-musk-led-team-has-read-only-access-payment-data-2025-02-04/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Treasury confirmed DOGE-linked read-only access to federal payment-system data in early February 2025."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/legal/us-judge-blocks-elon-musks-doge-accessing-social-security-records-2025-03-20/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "DOGE personnel later had access to sensitive SSA data, leading a federal judge to order access halted in March."
+          ]
+        },
+        {
+          "url": "https://www.ssa.gov/foia/resources/proactivedisclosure/2025/Dudek%20Decl.%203.24.25.pdf",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "DOGE personnel later had access to sensitive SSA data, leading a federal judge to order access halted in March."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-02-04",
+          "title": "Treasury confirms DOGE-linked team has read-only access to federal payment systems",
+          "description_short": "Treasury told Congress that a DOGE-linked team had read-only access to Fiscal Service payment-system data while reviewing payment integrity.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/treasury-says-musk-led-team-has-read-only-access-payment-data-2025-02-04/"
+          ]
+        },
+        {
+          "date_start": "2025-03-20",
+          "title": "Federal judge blocks DOGE access to sensitive Social Security Administration records",
+          "description_short": "A federal judge temporarily blocked DOGE personnel from accessing SSA systems containing extensive personally identifiable information after finding the plaintiffs were likely\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/legal/us-judge-blocks-elon-musks-doge-accessing-social-security-records-2025-03-20/",
+            "https://www.ssa.gov/foia/resources/proactivedisclosure/2025/Dudek%20Decl.%203.24.25.pdf"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: Treasury systems process Social Security payments, but that does not make them SSA systems. The agencies, systems and data categories must be kept distinct.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-5816": {
+      "assignment_key": "entry-5816",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 38,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-5816",
+      "entry_number": 5816,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Kennedy removed all 17 ACIP members on June 9, 2025.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "HHS restructuring separately targeted approximately 1,200 NIH positions and later reinstated some NIH employees.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "HHS Secretary Robert F. Kennedy Jr. announced that all 17 members of the CDC's Advisory Committee on Immunization Practices would be removed and replaced. Kennedy said the move was intended to restore public trust; medical organizations and former officials criticized the mass removal.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "As part of a department-wide restructuring, HHS planned major staffing cuts including roughly 1,200 NIH positions; by June Kennedy said 220 NIH employees previously laid off had been reinstated.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "ACIP dissolution and NIH scientist firings were one February 20, 2025 event.",
+        "Kennedy announced removal of all 17 ACIP members on June 9, 2025, not February 20.",
+        "The ACIP removal and broader HHS/NIH layoffs were separate personnel and policy actions.",
+        "The record calls replacement members collectively anti-vaccine advocates and skeptics; individual backgrounds and positions should be documented separately rather than generalized."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/all-members-vaccine-advisory-panel-will-be-retired-us-health-secretary-kennedy-2025-06-09/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Kennedy removed all 17 ACIP members on June 9, 2025."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-health-secretary-kennedy-says-he-brought-back-722-cdc-employees-220-nih-2025-06-24/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "HHS restructuring separately targeted approximately 1,200 NIH positions and later reinstated some NIH employees."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-06-09",
+          "title": "RFK Jr. removes all 17 members of CDC vaccine advisory panel",
+          "description_short": "HHS Secretary Robert F.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/business/healthcare-pharmaceuticals/all-members-vaccine-advisory-panel-will-be-retired-us-health-secretary-kennedy-2025-06-09/"
+          ]
+        },
+        {
+          "date_start": "2025-04-01",
+          "title": "HHS restructuring includes planned NIH workforce reduction",
+          "description_short": "As part of a department-wide restructuring, HHS planned major staffing cuts including roughly 1,200 NIH positions; by June Kennedy said 220 NIH employees previously laid off\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/business/healthcare-pharmaceuticals/us-health-secretary-kennedy-says-he-brought-back-722-cdc-employees-220-nih-2025-06-24/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6414": {
+      "assignment_key": "entry-6414",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 57,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6414",
+      "entry_number": 6414,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "Trump used 'vermin' language about political opponents around Veterans Day 2023.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Trump used 'enemy from within' rhetoric during the October 2024 campaign.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "In a Veterans Day message and campaign rhetoric, Trump said he would 'root out' political opponents he described as living 'like vermin' within the country. The statement drew criticism over its dehumanizing historical associations.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "During the 2024 campaign, Trump described domestic opponents as 'the enemy from within' and discussed the potential use of the National Guard or military in response to disorder, prompting criticism from his political opponents.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "The 'vermin' and 'enemy from within' remarks are distinct episodes from different dates and campaign contexts.",
+        "The 'vermin' language was used around Veterans Day on November 11, 2023; prominent 'enemy from within' remarks were reported in October 2024, not January 2025.",
+        "Claims that the rhetoric deliberately incited supporters or would cause violence are interpretive or predictive and require attribution rather than presentation as fact."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.thedailybeast.com/on-veterans-day-trump-vows-to-root-out-leftist-vermin/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Trump used 'vermin' language about political opponents around Veterans Day 2023."
+          ]
+        },
+        {
+          "url": "https://www.reuters.com/world/us/harris-targets-black-men-with-new-economic-proposals-2024-10-14/",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "Trump used 'enemy from within' rhetoric during the October 2024 campaign."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2023-11-11",
+          "title": "Trump Uses 'Vermin' Language About Political Opponents",
+          "description_short": "In a Veterans Day message and campaign rhetoric, Trump said he would 'root out' political opponents he described as living 'like vermin' within the country.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.thedailybeast.com/on-veterans-day-trump-vows-to-root-out-leftist-vermin/"
+          ]
+        },
+        {
+          "date_start": "2024-10-13",
+          "title": "Trump Describes Domestic Opponents as 'Enemy From Within'",
+          "description_short": "During the 2024 campaign, Trump described domestic opponents as 'the enemy from within' and discussed the potential use of the National Guard or military in response to\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.reuters.com/world/us/harris-targets-black-men-with-new-economic-proposals-2024-10-14/"
+          ]
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "Remaining excluded material needs separate evidence or should be omitted: Claims that the rhetoric deliberately incited supporters or would cause violence are interpretive or predictive and require attribution rather than presentation as fact.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    },
+    "entry-6428": {
+      "assignment_key": "entry-6428",
+      "namespace": "held",
+      "input_provenance": {
+        "input_file": "held-dispositions.jsonl",
+        "input_line": 63,
+        "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+        "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+      },
+      "record_id": "entry-6428",
+      "entry_number": 6428,
+      "review_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "supported_facts": [
+        {
+          "fact": "A January 20 DHS memo terminated all current DHS advisory committee memberships, including the CSRB.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "The CSRB was investigating Salt Typhoon when its members were dismissed.",
+          "evidence_basis": "Packet claim with direct attribution; consult sources_consulted for read status."
+        },
+        {
+          "fact": "Acting DHS Secretary Benjamine Huffman terminated current DHS advisory-committee memberships. The action included the Cyber Safety Review Board, which was reviewing the Salt Typhoon telecommunications intrusions.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        },
+        {
+          "fact": "Jen Easterly's tenure as CISA director ended with the presidential transition; the evidence reviewed does not show that her departure was part of the same advisory-board dismissal memo.",
+          "evidence_basis": "Prior proposal in packet; not independently upgraded beyond listed source access."
+        }
+      ],
+      "contradicted_or_unsupported_claims": [
+        "Trump personally fired Easterly and the CSRB as one action.",
+        "Jen Easterly was the outgoing CISA director at the presidential transition; the January 20 action documented in the reviewed sources was an Acting DHS Secretary memo terminating DHS advisory committee memberships, including the Cyber Safety Review Board.",
+        "The stored record presents Easterly's departure and the CSRB dismissals as one presidential firing action."
+      ],
+      "sources_consulted": [
+        {
+          "url": "https://www.sans.org/newsletters/newsbites/xxvii-6",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "A January 20 DHS memo terminated all current DHS advisory committee memberships, including the CSRB."
+          ]
+        },
+        {
+          "url": "https://www.techtarget.com/cybersecurity/news/366618514/Former-CSRB-members-largely-silent-on-dismissal",
+          "access_status": "packet_attribution_only",
+          "supported_facts": [
+            "The CSRB was investigating Salt Typhoon when its members were dismissed."
+          ]
+        }
+      ],
+      "source_access_notes": "For each URL, access_status distinguishes source text actually opened, a source attributed in the frozen packet, and a URL that was inaccessible. Directly read text supports only the facts listed beside that URL; packet-only attribution is not upgraded to direct verification.",
+      "counterpart_comparison": null,
+      "event_classification": "multi_event_composite",
+      "related_event_groups": [],
+      "child_drafts": [
+        {
+          "date_start": "2025-01-20",
+          "title": "DHS Terminates Advisory Committee Memberships, Including Cyber Safety Review Board",
+          "description_short": "Acting DHS Secretary Benjamine Huffman terminated current DHS advisory-committee memberships.",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": [
+            "https://www.sans.org/newsletters/newsbites/xxvii-6"
+          ]
+        },
+        {
+          "date_start": "2025-01-20",
+          "title": "Jen Easterly Leaves CISA at Presidential Transition",
+          "description_short": "Jen Easterly's tenure as CISA director ended with the presidential transition; the evidence reviewed does not show that her departure was part of the same advisory-board\u2026",
+          "description_medium": null,
+          "description_long": null,
+          "draft_limitation": "The sourced packet supplies the dated event summary but not enough independently read event-specific detail to write a 140\u2013300-word long description without adding unverified context; obtain full text for the linked source before expanding.",
+          "source_urls": []
+        }
+      ],
+      "proposed_changed_fields": [
+        "title",
+        "date_start",
+        "description_short",
+        "synopsis"
+      ],
+      "remaining_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed.",
+      "proposal_only": true,
+      "revision": 2
+    }
+  },
+  "no_other_keys_authorized": true
+}

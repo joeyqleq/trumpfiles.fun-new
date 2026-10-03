@@ -1,0 +1,21 @@
+{
+  "revision": 2,
+  "batch_id": "review04-revision2-batch-002.jsonl",
+  "rows_written": 8,
+  "assignment_keys": [
+    "entry-6419",
+    "entry-6691",
+    "entry-6693",
+    "entry-6696",
+    "entry-6867",
+    "entry-6871",
+    "entry-7047",
+    "entry-7048"
+  ],
+  "batch_sha256": "8e48a20f86cb78737bbf920dfa0126167b89b1540e0307eac5db4b1b9b7d6336",
+  "cumulative_rows": 16,
+  "total_assigned": 59,
+  "remaining": 43,
+  "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+}

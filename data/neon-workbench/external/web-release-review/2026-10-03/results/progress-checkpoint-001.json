@@ -1,0 +1,28 @@
+{
+  "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "saved_keys": 425,
+  "required": 425,
+  "review_stage": "Evidence amendments and independent QA in progress; initial outcomes not terminal",
+  "worker_latest_revisions": {
+    "review01": {
+      "2": 64,
+      "4": 8
+    },
+    "review02": {
+      "2": 77
+    },
+    "review03": {
+      "3": 75
+    },
+    "review04": {
+      "1": 59
+    },
+    "review05": {
+      "1": 84
+    },
+    "review06": {
+      "4": 58
+    }
+  },
+  "proposal_only": true
+}

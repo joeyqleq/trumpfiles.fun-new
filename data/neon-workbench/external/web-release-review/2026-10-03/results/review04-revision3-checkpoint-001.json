@@ -1,0 +1,18 @@
+{
+  "batch": "review04-revision3-batch-001.jsonl",
+  "rows": 10,
+  "sha256": "1455633ab8d4cdecae888703560ab5f9213838c59dc928bedf7f0328558f4af6",
+  "assignment_entries": [
+    7057,
+    7086,
+    7111,
+    7113,
+    7120,
+    7121,
+    7130,
+    7138,
+    7177,
+    7195
+  ],
+  "revision": 3
+}

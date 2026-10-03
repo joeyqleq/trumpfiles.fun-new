@@ -1,0 +1,19 @@
+{
+  "worker": "review06",
+  "phase": "handoff-remaining-source-review",
+  "revision": 102,
+  "batch_file": "handoff-review06-revision-102-batch-003.jsonl",
+  "batch_sha256": "8d9cd4183e8fd5bb8a59402c56f8c552449168927d974e7bb44a2c0e5f6277f6",
+  "exact_assignment_keys": [
+    "entry-5735",
+    "entry-5737",
+    "entry-5743",
+    "entry-5749",
+    "entry-5755"
+  ],
+  "batch_rows": 5,
+  "cumulative_rows_completed": 15,
+  "total_rows": 20,
+  "remaining_rows": 5,
+  "final_batch": false
+}

@@ -1,0 +1,20 @@
+{
+  "batch_id": "review04-batch-007",
+  "rows_written": 8,
+  "assignment_keys": [
+    "entry-7158",
+    "entry-7159",
+    "entry-7166",
+    "entry-7168",
+    "entry-7176",
+    "entry-7177",
+    "entry-7178",
+    "entry-7179"
+  ],
+  "batch_sha256": "1e980d7f0abe1aebb66418b55262d67da5e47a2ef7475f136dc983522ff217fe",
+  "cumulative_rows": 56,
+  "total_assigned": 59,
+  "remaining": 3,
+  "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "input_sha256": "1c4dbaca2896b95f9aea5fa9c17d690d9224ed736c0c733e44d2cedd615ca643"
+}

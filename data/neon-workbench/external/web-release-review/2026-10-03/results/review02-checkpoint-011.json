@@ -1,0 +1,24 @@
+{
+  "worker": "review02",
+  "batch_file": "review02-batch-011.jsonl",
+  "checkpoint_file": "review02-checkpoint-011.json",
+  "batch_number": 11,
+  "first_index_1based": 1,
+  "last_index_1based": 8,
+  "rows_in_batch": 8,
+  "rows_completed_cumulative": 8,
+  "rows_assigned_total": 77,
+  "assignment_keys": [
+    "entry-4285",
+    "entry-4438",
+    "entry-4467",
+    "entry-4538",
+    "entry-4827",
+    "entry-5336",
+    "entry-5340",
+    "entry-5478"
+  ],
+  "sha256": "97d68cb60fec945067ec10b9d1be8b7cec353e421269b8dd4f1577e8cd48bbe4",
+  "proposal_only": true,
+  "revision": 2
+}
