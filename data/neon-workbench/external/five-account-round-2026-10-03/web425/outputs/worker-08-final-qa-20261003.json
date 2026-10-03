@@ -1,0 +1,42 @@
+{
+  "worker": 8,
+  "kind": "final_exact_set_qa",
+  "task_branch": "ls/8-trump-files-web425-review-08-of-12-9xY1",
+  "input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-08-input.jsonl",
+  "input_sha256": "0b9df993c1f4659e4adf219e4357a78fcfc10e5009d9de18fae26506487306d1",
+  "published_pr49": {
+    "branch": "codex/web-release-review-results-2026-10-03",
+    "commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+    "pr_url": "https://github.com/p5n-n3t/trumpfiles.fun-new/pull/49",
+    "state": "open_draft",
+    "global_validation": "blocked per ACCESS-BLOCKER-2026-10-03.md; final PR49 audit/counts are not certified"
+  },
+  "output_file": "worker-08-batch-001-20261003.jsonl",
+  "output_sha256": "44c5079801a808baceee55e94015fc36022451cf393459c8ccce01c62376f377",
+  "assigned_count": 35,
+  "output_row_count": 35,
+  "unique_key_count": 35,
+  "missing_keys": [],
+  "outside_assignment_keys": [],
+  "duplicate_output_keys": [],
+  "terminal_counts": {
+    "hold": 11,
+    "pass": 24
+  },
+  "batch_sizes": [
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "duplicate_record_keys_held": [
+    "entry-7087",
+    "entry-7123",
+    "entry-7156"
+  ],
+  "description_lengths": "All completed description fields are within limits. The entry-5190 lawsuit child long field remains intentionally omitted with an explicit evidence gap.",
+  "superseded_count": 0,
+  "scope": "Only packet candidate QA was written. No packet inputs, other workers, canonical data, Neon, merge, production, or auto-merge state was changed."
+}
