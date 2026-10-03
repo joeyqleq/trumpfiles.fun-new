@@ -1,0 +1,20 @@
+{
+  "checkpoint_id": "001",
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_sha256": "456ccdef22a9cca4e93ec3043aae02cc8eb6ac5ebcbeb1f661895ee412f4de26",
+  "published_results_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "output_file": "outputs/worker-06-batch-UNIQUE.jsonl",
+  "processed_count": 8,
+  "processed_ids": [
+    "entry-4457",
+    "entry-5161",
+    "entry-5344",
+    "entry-5754",
+    "entry-5844",
+    "entry-6315",
+    "entry-6419",
+    "entry-6443"
+  ],
+  "output_prefix_sha256": "9612202f434367075b1b8dd168a50195514dd8e725278d18045e791a3fbeddfa",
+  "checkpoint_status": "in_progress"
+}
