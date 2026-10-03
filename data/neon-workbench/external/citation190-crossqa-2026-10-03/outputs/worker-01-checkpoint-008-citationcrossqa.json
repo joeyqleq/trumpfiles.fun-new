@@ -1,0 +1,19 @@
+{
+  "checkpoint": "citation-crossqa-worker-01",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_sha256": "b3afbca66c441a34405a3f1144c013b037afeaaca2c9340ebbb6999f1d4df0a6",
+  "batch_file": "worker-01-batch-2026-10-03-citationcrossqa-a.jsonl",
+  "reviewed_keys": [
+    "entry-35",
+    "entry-231",
+    "entry-390",
+    "entry-735",
+    "entry-822",
+    "entry-945",
+    "entry-1727",
+    "entry-2296"
+  ],
+  "reviewed_count": 8,
+  "remaining_count": 8,
+  "note": "First append-only batch complete; eight assigned records remain for the final exact-set QA."
+}

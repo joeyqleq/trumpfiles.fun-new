@@ -1,0 +1,142 @@
+{
+  "qa": "citation190-crossqa-worker-01-final-exact-set",
+  "packet_branch": "codex/citation190-crossqa-2026-10-03",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "input_file": "worker-01-input.jsonl",
+  "input_sha256": "b3afbca66c441a34405a3f1144c013b037afeaaca2c9340ebbb6999f1d4df0a6",
+  "expected_keys_in_packet_order": [
+    "entry-35",
+    "entry-231",
+    "entry-390",
+    "entry-735",
+    "entry-822",
+    "entry-945",
+    "entry-1727",
+    "entry-2296",
+    "entry-2466",
+    "entry-2636",
+    "entry-3380",
+    "entry-3839",
+    "entry-4296",
+    "entry-5406",
+    "entry-5707",
+    "entry-6230"
+  ],
+  "packet_record_count": 16,
+  "batch_file": "worker-01-batch-2026-10-03-citationcrossqa-a.jsonl",
+  "output_record_count": 16,
+  "output_unique_key_count": 16,
+  "output_exact_key_set_valid": true,
+  "classification_counts": {
+    "intentional_exclusion": 1,
+    "narrower_revision_required": 6,
+    "supported_proposal": 9,
+    "unsupported_hold": 0
+  },
+  "results_by_key": [
+    {
+      "key": "entry-35",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-231",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-390",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-735",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-822",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-945",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-1727",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-2296",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-2466",
+      "classification": "intentional_exclusion"
+    },
+    {
+      "key": "entry-2636",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-3380",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-3839",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-4296",
+      "classification": "supported_proposal"
+    },
+    {
+      "key": "entry-5406",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-5707",
+      "classification": "narrower_revision_required"
+    },
+    {
+      "key": "entry-6230",
+      "classification": "supported_proposal"
+    }
+  ],
+  "source_review": "Exact URLs were checked using retrieved source content or the preceding focused source pass; each row records access and claim-scope limitations. No headline or search snippet was used as sole proof for detailed claims.",
+  "open_revision_findings": [
+    {
+      "key": "entry-231",
+      "reason": "Remove unsupported teacher-tenure assertion; cited page supports conditional public-sector-union projections."
+    },
+    {
+      "key": "entry-735",
+      "reason": "Change ‘original sentence’ in short copy to the DOJ-listed sentence ‘as amended’."
+    },
+    {
+      "key": "entry-2636",
+      "reason": "Long copy’s ‘Russian agents’ exceeds the source’s narrower ‘Russian contacts’ terminology."
+    },
+    {
+      "key": "entry-3380",
+      "reason": "AP URL was inaccessible; remove the unverified AP-attributed age-disclosure detail or add an independently verified exact citation."
+    },
+    {
+      "key": "entry-5406",
+      "reason": "Add exact citations for the defense-response/separate-September-order details or remove them from the August-source account."
+    },
+    {
+      "key": "entry-5707",
+      "reason": "Use Reuters report as support and remove/verify attribution to the separately unreviewed Reuters Connect caption."
+    }
+  ],
+  "unsupported_hold_findings": [],
+  "intentional_exclusions": [
+    {
+      "key": "entry-2466",
+      "reason": "Guardian supports an attributed Inkombank/Mogilevich historical report but no Trump connection; exclude from Trump timeline."
+    }
+  ],
+  "sql_parameter_readiness": "not_applicable_citation_review; no SQL/import action was performed.",
+  "canonical_edits": false,
+  "neon_or_database_calls_or_writes": false,
+  "packet_inputs_edited": false,
+  "other_worker_outputs_edited": false,
+  "final_exact_set_checkpoint": "worker-01-checkpoint-016-citationcrossqa.json"
+}

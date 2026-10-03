@@ -1,0 +1,19 @@
+{
+  "checkpoint": "citation-crossqa-worker-01",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_sha256": "b3afbca66c441a34405a3f1144c013b037afeaaca2c9340ebbb6999f1d4df0a6",
+  "batch_file": "worker-01-batch-2026-10-03-citationcrossqa-a.jsonl",
+  "reviewed_keys": [
+    "entry-2466",
+    "entry-2636",
+    "entry-3380",
+    "entry-3839",
+    "entry-4296",
+    "entry-5406",
+    "entry-5707",
+    "entry-6230"
+  ],
+  "reviewed_count": 8,
+  "remaining_count": 0,
+  "note": "Second append-only batch complete; final exact-set validation pending."
+}
