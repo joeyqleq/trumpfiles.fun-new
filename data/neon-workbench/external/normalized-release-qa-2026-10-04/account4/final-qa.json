@@ -1,0 +1,399 @@
+{
+  "worker": 12,
+  "scope": "Only the 23 assigned entry IDs; worker-12 append-only batches reconciled, no other worker outputs modified.",
+  "source_job": "five-account-round-2026-10-03/web425 reconciled with held283-editorial-completion-2026-10-03",
+  "source_packet_commits": {
+    "web425": {
+      "branch": "codex/five-account-review-packets-2026-10-03",
+      "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+      "input_sha256": "cefe9b190a2ba57117c3910121d4d20938758bec433f73c783d58094dc2833f7"
+    },
+    "held283": {
+      "branch": "codex/held283-editorial-completion-2026-10-03",
+      "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+      "input_sha256": "7e3fc28fb6c393e8acfb7bbc809e5754728920ab9ffb1a0d9ea994c05055495e"
+    }
+  },
+  "output_path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-12-normalized.jsonl",
+  "expected_count": 23,
+  "actual_row_count": 23,
+  "unique_key_count": 23,
+  "expected_keys": [
+    "entry-4739",
+    "entry-5224",
+    "entry-5735",
+    "entry-5814",
+    "entry-6007",
+    "entry-6398",
+    "entry-6430",
+    "entry-6460",
+    "entry-6521",
+    "entry-6599",
+    "entry-6624",
+    "entry-6691",
+    "entry-6757",
+    "entry-6786",
+    "entry-6802",
+    "entry-6828",
+    "entry-6866",
+    "entry-6929",
+    "entry-6946",
+    "entry-7048",
+    "entry-7101",
+    "entry-7131",
+    "entry-7168"
+  ],
+  "actual_keys": [
+    "entry-4739",
+    "entry-5224",
+    "entry-5735",
+    "entry-5814",
+    "entry-6007",
+    "entry-6398",
+    "entry-6430",
+    "entry-6460",
+    "entry-6521",
+    "entry-6599",
+    "entry-6624",
+    "entry-6691",
+    "entry-6757",
+    "entry-6786",
+    "entry-6802",
+    "entry-6828",
+    "entry-6866",
+    "entry-6929",
+    "entry-6946",
+    "entry-7048",
+    "entry-7101",
+    "entry-7131",
+    "entry-7168"
+  ],
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "proposal": 1,
+    "split_proposed_with_child_hold": 1,
+    "hold": 15,
+    "duplicate_consolidation_proposed": 5,
+    "publication_context_only": 1
+  },
+  "release_ready_count": 1,
+  "blocking_ids": [
+    "entry-5224",
+    "entry-5735",
+    "entry-5814",
+    "entry-6007",
+    "entry-6398",
+    "entry-6430",
+    "entry-6460",
+    "entry-6521",
+    "entry-6599",
+    "entry-6624",
+    "entry-6691",
+    "entry-6757",
+    "entry-6786",
+    "entry-6802",
+    "entry-6828",
+    "entry-6866",
+    "entry-6929",
+    "entry-6946",
+    "entry-7048",
+    "entry-7101",
+    "entry-7131",
+    "entry-7168"
+  ],
+  "blocking_reasons": {
+    "entry-5224": "Unsupported or unverified claims retained: [\"A short fragment “Trump dismissed Gen.” is not publishable; August revocation details and claimed link to Haugh are not independently established here.\"]",
+    "entry-5735": "Unsupported or unverified claims retained: [\"No credible contemporaneous source reviewed establishes a July 21, 2025 coordinated ICE operation across several major cities with thousands of arrests, citizens and permanent residents swept up, and widespread excessive force.\"]",
+    "entry-5814": "Unsupported or unverified claims retained: [\"The February Treasury payment-system access and March SSA records access were the same SSA system event on February 18.\",\"The record conflates two distinct access controversies: early-February DOGE access to Treasury's federal payment systems and later DOGE access to sensitive SSA data.\",\"Treasury confirmed read-only federal payment-system access by February 4; a federal court addressed SSA DOGE access on March 20. Neither matches the stored February 18 SSA event.\",\"Treasury systems process Social Security payments, but that does not make them SSA systems. The agencies, systems and data categories must be kept distinct.\"]",
+    "entry-6007": "Source-to-fact mapping and access uncertainty: [{\"url\":\"https://www.cnn.com/2022/12/03/politics/trump-constitution-truth-social\",\"access_status\":\"directly fetched and read in this pass (CNN NewsArticle body); HTTP 200\",\"supports\":[\"CNN dates the post to December 3, 2022, quotes Trump calling for termination of constitutional provisions in response to claimed 2020 election fraud, and reports his aim to overturn the result and return to power.\",\"CNN says the post followed release of internal Twitter emails about the platform’s handling of a New York Post story involving Hunter Biden.\",\"CNN reports public responses from White House spokesman Andrew Bates and Rep. Liz Cheney.\"],\"limitations\":[\"Does not establish subsequent legal effect or broader policy impacts.\"]},{\"url\":\"https://www.nytimes.com/2022/12/03/us/politics/trump-constitution-truth-social.html\",\"access_status\":\"HTTP 403; not used for this proposal\",\"supports\":[],\"limitations\":[\"No facts attributed to this URL.\"]}]",
+    "entry-6398": "Exact prior PR49 revision provenance: {\"packet_branch\":\"codex/held283-editorial-completion-2026-10-03\",\"packet_commit\":\"9c072598a308f740fa3948896bab26beb72edb3b\",\"input_path\":\"data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-12-input.jsonl\",\"input_sha256\":\"7e3fc28fb6c393e8acfb7bbc809e5754728920ab9ffb1a0d9ea994c05055495e\",\"prior_pr49_source\":{\"file\":\"review02-batch-023.jsonl\",\"revision\":3,\"commit\":null,\"line\":null},\"correction_provenance\":null,\"authoritative_rescue_overlay\":{\"rule\":\"highest_revision_in_explicit_worker_overlay\",\"selected_revision\":1,\"sources\":[{\"ref\":\"refs/codex/dual-wave3/worker-21\",\"commit\":\"b0381f7cee2ae0bfdbfbb82e42dbce2da94c0a49\",\"path\":\"data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker21-batch-001-20261003.jsonl\",\"line\":6,\"blob_sha\":\"9d1453f7d7bc27d24b889756543f0c3534d0ba73\",\"overlay\":true}],\"multiple_rows_payloads_identical\":null},\"earlier_web425_qa\":{\"terminal_status\":\"hold\",\"terminal_reason\":\"No authenticated statement or recording establishes that Trump would reject the 2028 result if he lost; the exact date, venue, and full quote remain missing.\",\"note\":\"Separate prior QA on the same assigned keys; this held283 output is an editorial-completion proposal.\"}}",
+    "entry-6430": "Exact prior PR49 revision provenance: {\"packet_branch\":\"codex/held283-editorial-completion-2026-10-03\",\"packet_commit\":\"9c072598a308f740fa3948896bab26beb72edb3b\",\"input_path\":\"data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-12-input.jsonl\",\"input_sha256\":\"7e3fc28fb6c393e8acfb7bbc809e5754728920ab9ffb1a0d9ea994c05055495e\",\"prior_pr49_source\":{\"file\":\"review02-batch-023.jsonl\",\"revision\":3,\"commit\":null,\"line\":null},\"correction_provenance\":null,\"authoritative_rescue_overlay\":{\"rule\":\"highest_revision_in_explicit_worker_overlay\",\"selected_revision\":1,\"sources\":[{\"ref\":\"refs/codex/dual-wave3/worker-21\",\"commit\":\"b0381f7cee2ae0bfdbfbb82e42dbce2da94c0a49\",\"path\":\"data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker21-batch-001-20261003.jsonl\",\"line\":7,\"blob_sha\":\"9d1453f7d7bc27d24b889756543f0c3534d0ba73\",\"overlay\":true}],\"multiple_rows_payloads_identical\":null},\"earlier_web425_qa\":{\"terminal_status\":\"hold\",\"terminal_reason\":\"The packet identifies no executive order matching the claimed indefinite detention policy; the order number, date, and statutory authority are absent.\",\"note\":\"Separate prior QA on the same assigned keys; this held283 output is an editorial-completion proposal.\"}}",
+    "entry-6460": "Unsupported or unverified claims retained: [{\"claim\":\"Iran closed the Strait of Hormuz for several days in June 2025.\",\"reason\":\"Packet labels unsupported or provides no cited source.\"},{\"claim\":\"That closure caused oil prices to rise more than 40%.\",\"reason\":\"Packet labels unsupported or provides no cited source.\"}]",
+    "entry-6521": "Exact prior PR49 revision provenance: {\"packet_branch\":\"codex/held283-editorial-completion-2026-10-03\",\"packet_commit\":\"9c072598a308f740fa3948896bab26beb72edb3b\",\"input_path\":\"data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-12-input.jsonl\",\"input_sha256\":\"7e3fc28fb6c393e8acfb7bbc809e5754728920ab9ffb1a0d9ea994c05055495e\",\"prior_pr49_source\":{\"file\":\"review02-batch-025.jsonl\",\"revision\":3,\"commit\":null,\"line\":null},\"correction_provenance\":null,\"authoritative_rescue_overlay\":{\"rule\":\"highest_revision_in_explicit_worker_overlay\",\"selected_revision\":1,\"sources\":[{\"ref\":\"refs/codex/dual-wave3/worker-21\",\"commit\":\"b0381f7cee2ae0bfdbfbb82e42dbce2da94c0a49\",\"path\":\"data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker21-batch-002-20261003.jsonl\",\"line\":1,\"blob_sha\":\"f12ff92225790499cf335703e6686b770925aff1\",\"overlay\":true}],\"multiple_rows_payloads_identical\":null},\"earlier_web425_qa\":{\"terminal_status\":\"hold\",\"terminal_reason\":\"The official transcript is reported as saying “big league,” contrary to the stored “bigly” quote, but the transcript itself was not opened. Hold until its exact text is verified.\",\"note\":\"Separate prior QA on the same assigned keys; this held283 output is an editorial-completion proposal.\"}}",
+    "entry-6599": "Unsupported or unverified claims retained: [{\"claim\":\"Patel purged 30% of the FBI counterintelligence division and replaced it with loyalists.\",\"reason\":\"Packet labels unsupported or provides no cited source.\"}]",
+    "entry-6624": "Unsupported or unverified claims retained: [{\"claim\":\"Scott Bessent or Treasury eliminated mandatory stress tests for major financial institutions in March 2025.\",\"reason\":\"Packet labels unsupported or provides no cited source.\"}]",
+    "entry-6691": "Source-to-fact mapping and access uncertainty: [{\"url\":\"https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump-paris-climate-accord/\",\"access_status\":\"directly fetched and read in this pass; archived official transcript, HTTP 200\",\"supports\":[\"Trump announced U.S. withdrawal from the Paris Climate Accord, said implementation would cease, and proposed negotiating reentry or a new arrangement on terms he considered fair.\",\"The transcript records his stated economic rationale.\"],\"limitations\":[\"Does not establish diplomatic consequences, realized environmental effects or hostility to science.\"]}]",
+    "entry-6757": "Unsupported or unverified claims retained: [{\"claim\":\"entry-6757 held synopsis beyond the corrected factual scope\",\"reason\":\"Specific unsupported elements are stated in this draft and in the cited source evidence; the full original narrative is not substantiated by the source.\"}]",
+    "entry-6786": "Unsupported or unverified claims retained: [\"Trump threatened on January 25 to direct a federal investigation of Merchan.\"]",
+    "entry-6802": "Unsupported or unverified claims retained: [\"DOJ opened the described federal investigation into Fani Willis in February 2025.\"]",
+    "entry-6828": "Unsupported or unverified claims retained: [\"A categorical immigration-status ban and its effective date are unsupported.\"]",
+    "entry-6866": "Unsupported or unverified claims retained: [\"Trump called immigrants generally 'not human beings' at the July 5, 2019 Cincinnati rally.\"]",
+    "entry-6929": "Unsupported or unverified claims retained: [\"Targeted journalist surveillance, FISC authorization, and the alleged date are unsupported.\"]",
+    "entry-6946": "Source-to-fact mapping and access uncertainty: [{\"url\":\"https://www.theguardian.com/us-news/2025/feb/06/black-health-federal-workers-watchlist\",\"access_status\":\"URL listed; direct access not stated\",\"supports\":[]}]",
+    "entry-7048": "Unsupported or unverified claims retained: [\"Any assertion that Truth Social posts are public property or that the paid early-access service has been legally adjudicated as unlawful; available record synopsis presents these as criticism/concerns.\"]",
+    "entry-7101": "Unsupported or unverified claims retained: [\"Treating commentary, advocacy framing or multi-action analysis as a discrete proven presidential event.\"]",
+    "entry-7131": "Source-to-fact mapping and access uncertainty: [{\"url\":\"https://www.inquirer.com/opinion/editorials/trump-truth-social-early-access-corruption-social-media-stocks-20260818.html\",\"access_status\":\"opened via Exa; editorial text returned\",\"supports\":[\"Donald Trump is selling early access to his Truth Social posts, a move that is being criticized as a clear example of grift and financial exploitation. The move is seen as a way for Trump to make money, but critics argue that it is unfair and potentially corrupt.\"],\"limitations\":null}]",
+    "entry-7168": "Source-to-fact mapping and access uncertainty: [{\"url\":\"https://www.americanprogress.org/article/fact-sheet-the-trump-administration-is-interfering-in-the-2026-midterm-elections-to-entrench-the-imperial-presidency/\",\"access_status\":\"opened via Exa; fact sheet text returned\",\"supports\":[\"The Center for American Progress argued that the Trump administration was using several methods to influence the 2026 midterms. Its fact sheet lists efforts involving election-denier appointments, federal voter data, agency cuts and executive orders affecting voting access. These are CAP’s claims and framing, not court findings.\"],\"limitations\":null}]"
+  },
+  "verified_url_checks": {
+    "all_verified_urls_valid_https": true,
+    "all_proposal_source_urls_valid_https": true,
+    "invented_urls": [],
+    "verified_url_count": 13,
+    "unverified_source_leads_excluded_from_verified_urls": true
+  },
+  "proposal_description_length_check": {
+    "independent_counting_method": "whitespace-delimited words; short length counted as characters",
+    "bounds_checked": {
+      "short_chars": [
+        30,
+        160
+      ],
+      "medium_words": [
+        40,
+        100
+      ],
+      "long_words": [
+        140,
+        300
+      ]
+    },
+    "all_actual_descriptions_within_bounds": true,
+    "recorded_audit_count_mismatches": [
+      {
+        "key": "entry-5224",
+        "draft_index": 0,
+        "short_chars": 99,
+        "medium_whitespace_words": 63,
+        "long_whitespace_words": 169,
+        "recorded_audit_medium_words": 64,
+        "recorded_audit_long_words": 170,
+        "recorded_audit_within_limits": true
+      },
+      {
+        "key": "entry-6691",
+        "draft_index": 0,
+        "short_chars": 104,
+        "medium_whitespace_words": 55,
+        "long_whitespace_words": 162,
+        "recorded_audit_medium_words": 55,
+        "recorded_audit_long_words": 163,
+        "recorded_audit_within_limits": true
+      },
+      {
+        "key": "entry-6757",
+        "draft_index": 0,
+        "short_chars": 141,
+        "medium_whitespace_words": 73,
+        "long_whitespace_words": 171,
+        "recorded_audit_medium_words": 78,
+        "recorded_audit_long_words": 178,
+        "recorded_audit_within_limits": true
+      },
+      {
+        "key": "entry-7048",
+        "draft_index": 0,
+        "short_chars": 65,
+        "medium_whitespace_words": 55,
+        "long_whitespace_words": 184,
+        "recorded_audit_medium_words": 55,
+        "recorded_audit_long_words": 185,
+        "recorded_audit_within_limits": true
+      },
+      {
+        "key": "entry-7131",
+        "draft_index": 0,
+        "short_chars": 46,
+        "medium_whitespace_words": 48,
+        "long_whitespace_words": 143,
+        "recorded_audit_medium_words": 48,
+        "recorded_audit_long_words": 144,
+        "recorded_audit_within_limits": true
+      }
+    ],
+    "mismatch_assessment": "Recorded audit counts differ from independently whitespace-counted values on some drafts. All recalculated values remain within the checked ranges; retain the discrepancies as uncertainty. entry-6757 remains blocked separately by its URL-to-claim gap."
+  },
+  "revision_conflicts": [
+    {
+      "key": "entry-4739",
+      "earlier_web425": "hold",
+      "later_held283": "proposal",
+      "effective_disposition": "proposal",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    },
+    {
+      "key": "entry-5224",
+      "earlier_web425": "hold",
+      "later_held283": "split_proposed_with_child_hold",
+      "effective_disposition": "split_proposed_with_child_hold",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    },
+    {
+      "key": "entry-6007",
+      "earlier_web425": "hold",
+      "later_held283": "proposal",
+      "effective_disposition": "duplicate_consolidation_proposed",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    },
+    {
+      "key": "entry-6691",
+      "earlier_web425": "hold",
+      "later_held283": "proposal",
+      "effective_disposition": "duplicate_consolidation_proposed",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    },
+    {
+      "key": "entry-6757",
+      "earlier_web425": "pass",
+      "later_held283": "proposal",
+      "effective_disposition": "hold",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    },
+    {
+      "key": "entry-7048",
+      "earlier_web425": "pass",
+      "later_held283": "proposal",
+      "effective_disposition": "duplicate_consolidation_proposed",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    },
+    {
+      "key": "entry-7101",
+      "earlier_web425": "pass",
+      "later_held283": "proposal",
+      "effective_disposition": "publication_context_only",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    },
+    {
+      "key": "entry-7131",
+      "earlier_web425": "pass",
+      "later_held283": "proposal",
+      "effective_disposition": "duplicate_consolidation_proposed",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    },
+    {
+      "key": "entry-7168",
+      "earlier_web425": "pass",
+      "later_held283": "proposal",
+      "effective_disposition": "duplicate_consolidation_proposed",
+      "resolution": "Later worker-12 held283 proposal considered with its recorded evidence and limitations; earlier Web425 assessment retained in reasons. No status difference silently treated as approval."
+    }
+  ],
+  "duplicate_and_identity_controls": {
+    "duplicate_entry_ids_not_marked_release_ready": [
+      "entry-6007",
+      "entry-6691",
+      "entry-7048",
+      "entry-7131",
+      "entry-7168"
+    ],
+    "entry-7101": "publication/analysis context only; not marked release ready as discrete event",
+    "entry-4739": "ready only as a narrowed two-date split proposal with same-incident guard; no canonical approval"
+  },
+  "entry_6757_url_claim_blocker": "Earlier Web425 pass superseded for readiness: Education Department release figures appear in the proposal, but listed URLs are OIG and GAO and do not substantiate those release figures; explicit hold retained.",
+  "proposal_only": true,
+  "canonical_edits": false,
+  "neon_writes": false,
+  "other_worker_edits": false,
+  "result": "pass",
+  "actual_description_lengths": [
+    {
+      "key": "entry-4739",
+      "draft_index": 0,
+      "short_chars": 55,
+      "medium_whitespace_words": 58,
+      "long_whitespace_words": 170,
+      "recorded_audit_medium_words": 58,
+      "recorded_audit_long_words": 170,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-4739",
+      "draft_index": 1,
+      "short_chars": 60,
+      "medium_whitespace_words": 50,
+      "long_whitespace_words": 158,
+      "recorded_audit_medium_words": 50,
+      "recorded_audit_long_words": 158,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-5224",
+      "draft_index": 0,
+      "short_chars": 99,
+      "medium_whitespace_words": 63,
+      "long_whitespace_words": 169,
+      "recorded_audit_medium_words": 64,
+      "recorded_audit_long_words": 170,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-6007",
+      "draft_index": 0,
+      "short_chars": 109,
+      "medium_whitespace_words": 59,
+      "long_whitespace_words": 174,
+      "recorded_audit_medium_words": 59,
+      "recorded_audit_long_words": 174,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-6691",
+      "draft_index": 0,
+      "short_chars": 104,
+      "medium_whitespace_words": 55,
+      "long_whitespace_words": 162,
+      "recorded_audit_medium_words": 55,
+      "recorded_audit_long_words": 163,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-6757",
+      "draft_index": 0,
+      "short_chars": 141,
+      "medium_whitespace_words": 73,
+      "long_whitespace_words": 171,
+      "recorded_audit_medium_words": 78,
+      "recorded_audit_long_words": 178,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-7048",
+      "draft_index": 0,
+      "short_chars": 65,
+      "medium_whitespace_words": 55,
+      "long_whitespace_words": 184,
+      "recorded_audit_medium_words": 55,
+      "recorded_audit_long_words": 185,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-7101",
+      "draft_index": 0,
+      "short_chars": 81,
+      "medium_whitespace_words": 62,
+      "long_whitespace_words": 155,
+      "recorded_audit_medium_words": 62,
+      "recorded_audit_long_words": 155,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-7131",
+      "draft_index": 0,
+      "short_chars": 46,
+      "medium_whitespace_words": 48,
+      "long_whitespace_words": 143,
+      "recorded_audit_medium_words": 48,
+      "recorded_audit_long_words": 144,
+      "recorded_audit_within_limits": true
+    },
+    {
+      "key": "entry-7168",
+      "draft_index": 0,
+      "short_chars": 58,
+      "medium_whitespace_words": 47,
+      "long_whitespace_words": 175,
+      "recorded_audit_medium_words": 47,
+      "recorded_audit_long_words": 175,
+      "recorded_audit_within_limits": true
+    }
+  ],
+  "exact_set_validation": {
+    "row_count": 23,
+    "unique_id_count": 23,
+    "ids_match_exact_assignment": true,
+    "schema_exact": true,
+    "one_effective_terminal_row_per_id": true
+  }
+}
