@@ -1,0 +1,12 @@
+{
+  "worker": 16,
+  "batch": 3,
+  "rows": 85,
+  "first_key": "expanded-20260916-gastonia-rally-iran-claims",
+  "last_key": "entry-5850",
+  "pass": 48,
+  "hold": 37,
+  "status": "checkpoint",
+  "proposal_only": true,
+  "automatic_approval": false
+}

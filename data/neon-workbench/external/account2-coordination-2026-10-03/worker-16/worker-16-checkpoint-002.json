@@ -1,0 +1,12 @@
+{
+  "worker": 16,
+  "batch": 2,
+  "rows": 85,
+  "first_key": "entry-6774",
+  "last_key": "expanded-20260909-kimmel-talarico-broadcast",
+  "pass": 52,
+  "hold": 33,
+  "status": "checkpoint",
+  "proposal_only": true,
+  "automatic_approval": false
+}

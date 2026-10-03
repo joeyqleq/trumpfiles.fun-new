@@ -1,0 +1,12 @@
+{
+  "worker": 16,
+  "batch": 1,
+  "rows": 85,
+  "first_key": "entry-4239",
+  "last_key": "entry-6727",
+  "pass": 48,
+  "hold": 37,
+  "status": "checkpoint",
+  "proposal_only": true,
+  "automatic_approval": false
+}
