@@ -1,0 +1,94 @@
+{
+  "job": "normalized-release-qa-2026-10-04/account5/worker-05",
+  "source_job": "citation190-crossqa-2026-10-03 worker-05",
+  "packet_branch": "codex/citation190-crossqa-2026-10-03",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "input_sha256": "17e946decb723c2ef7d6f9ede57bfefe08526b018d805e219d8b83b974fde6ee",
+  "expected_ids": [
+    "entry-188",
+    "entry-266",
+    "entry-581",
+    "entry-772",
+    "entry-853",
+    "entry-978",
+    "entry-1770",
+    "entry-2343",
+    "entry-2515",
+    "entry-2854",
+    "entry-3574",
+    "entry-4004",
+    "entry-4603",
+    "entry-5505",
+    "entry-6138",
+    "entry-6293"
+  ],
+  "saved_ids": [
+    "entry-188",
+    "entry-266",
+    "entry-581",
+    "entry-772",
+    "entry-853",
+    "entry-978",
+    "entry-1770",
+    "entry-2343",
+    "entry-2515",
+    "entry-2854",
+    "entry-3574",
+    "entry-4004",
+    "entry-4603",
+    "entry-5505",
+    "entry-6138",
+    "entry-6293"
+  ],
+  "expected_count": 16,
+  "saved_count": 16,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "exact_set_pass": true,
+  "disposition_counts": {
+    "intentional_exclusion": 4,
+    "supported_proposal": 9,
+    "unsupported_hold": 2,
+    "narrower_revision_required": 1
+  },
+  "release_ready_count": 13,
+  "blocking_ids": [
+    "entry-853",
+    "entry-978",
+    "entry-4603"
+  ],
+  "length_blocking_ids": [],
+  "prior_batch_reconciliation": {
+    "prior_terminal_rows": 16,
+    "distinct_assigned_ids": 16,
+    "conflicting_duplicate_ids": [],
+    "latest_descendant_selection_needed": false,
+    "prior_batches_fully_pushed": true,
+    "remote_head_matches_prior_commit": "130b38bef7e98992a0187a579a7945daed988b96"
+  },
+  "validation": {
+    "schema_keys": [
+      "key",
+      "disposition",
+      "source_job",
+      "source_files",
+      "reasons",
+      "verified_urls",
+      "proposal",
+      "release_ready"
+    ],
+    "schema_pass": true,
+    "verified_urls_http_format_pass": true,
+    "description_length_criteria": {
+      "short_chars_max": 180,
+      "medium_words_min": 45,
+      "medium_words_max": 90,
+      "long_words_min": 140,
+      "long_words_max": 300
+    },
+    "length_word_count_method": "Unicode word tokens; apostrophe/hyphen compounds count as one. Absent description fields are reported as absent and not counted."
+  },
+  "release_ready_semantics": "True means the terminal decision is safe to release as a supported proposal or intentional exclusion and all present descriptions pass length checks. Holds remain false; intentional exclusions do not approve the underlying event copy.",
+  "limitations": "No new source research was performed. Prior holds and source uncertainty were preserved; this normalization does not approve disputed copy or authorize production import."
+}
