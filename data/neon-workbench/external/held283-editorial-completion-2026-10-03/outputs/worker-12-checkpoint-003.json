@@ -1,0 +1,41 @@
+{
+  "worker": 12,
+  "packet_branch": "codex/held283-editorial-completion-2026-10-03",
+  "packet_commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+  "input_sha256": "7e3fc28fb6c393e8acfb7bbc809e5754728920ab9ffb1a0d9ea994c05055495e",
+  "checkpoint": 3,
+  "rows_written": 18,
+  "batch_keys": [
+    "entry-6757",
+    "entry-6786",
+    "entry-6802",
+    "entry-6828",
+    "entry-6866",
+    "entry-6929"
+  ],
+  "completed_keys": [
+    "entry-4739",
+    "entry-5224",
+    "entry-5735",
+    "entry-5814",
+    "entry-6007",
+    "entry-6398",
+    "entry-6430",
+    "entry-6460",
+    "entry-6521",
+    "entry-6599",
+    "entry-6624",
+    "entry-6691",
+    "entry-6757",
+    "entry-6786",
+    "entry-6802",
+    "entry-6828",
+    "entry-6866",
+    "entry-6929"
+  ],
+  "remaining_count": 5,
+  "proposal_only": true,
+  "canonical_or_neon_writes": false,
+  "batch_sha256": "33c3d389daec021bbece9bb45454e22ef80a99b55881e4a46de283d2f3d3f00e",
+  "cumulative_output_sha256": "0592194448315218f725ed47f4015691c3bb6e0d6c064e4d4165572758671712"
+}
