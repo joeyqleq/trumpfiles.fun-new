@@ -1,0 +1,101 @@
+{
+  "expected_ids": [
+    "entry-4708",
+    "entry-5213",
+    "entry-5732",
+    "entry-5809",
+    "entry-5899",
+    "entry-6393",
+    "entry-6428",
+    "entry-6457",
+    "entry-6517",
+    "entry-6598",
+    "entry-6619",
+    "entry-6679",
+    "entry-6751",
+    "entry-6785",
+    "entry-6801",
+    "entry-6827",
+    "entry-6865",
+    "entry-6928",
+    "entry-6944",
+    "entry-7047",
+    "entry-7095",
+    "entry-7130",
+    "entry-7166"
+  ],
+  "expected_count": 23,
+  "actual_count": 23,
+  "unique_id_count": 23,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "hold": 9,
+    "exclusion_pending_new_evidence": 2,
+    "proposal_pending_final_review": 5,
+    "hold_latest_revision_unverified": 5,
+    "proposal_pending_reqa": 1,
+    "hold_conflicting_terminal_rows": 1
+  },
+  "release_ready_count": 0,
+  "blocking_count": 23,
+  "blocking_ids": [
+    "entry-4708",
+    "entry-5213",
+    "entry-5732",
+    "entry-5809",
+    "entry-5899",
+    "entry-6393",
+    "entry-6428",
+    "entry-6457",
+    "entry-6517",
+    "entry-6598",
+    "entry-6619",
+    "entry-6679",
+    "entry-6751",
+    "entry-6785",
+    "entry-6801",
+    "entry-6827",
+    "entry-6865",
+    "entry-6928",
+    "entry-6944",
+    "entry-7047",
+    "entry-7095",
+    "entry-7130",
+    "entry-7166"
+  ],
+  "conflict_ids": [
+    "entry-6393",
+    "entry-6457",
+    "entry-6801",
+    "entry-7047",
+    "entry-7095",
+    "entry-7130",
+    "entry-7166"
+  ],
+  "url_validation": {
+    "scheme": "https",
+    "invalid_entries": []
+  },
+  "proposal_description_limits": {
+    "short_max_characters": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ],
+    "failures": []
+  },
+  "schema_failures": [],
+  "source_batch_sha256": {
+    "web425": "1c9a7d252bd124c40f09dd14453aed9029ee3be1a0ad7b5f6a8e5be989a8a0b8",
+    "held283": "72047365bbef305c16af633e3ce43dfc31a26642d9f26d8bad60c0da17491825"
+  },
+  "normalized_sha256": "1f5d694e6e9416277345a2cece71f5db600a7563e4af9487e78d13bbb815a776",
+  "normalized_bytes": 111531,
+  "validation_passed": true
+}
