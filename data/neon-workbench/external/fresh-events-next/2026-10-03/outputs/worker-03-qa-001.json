@@ -1,0 +1,111 @@
+{
+  "worker": 3,
+  "assignment": "fresh-events-next/2026-10-03",
+  "packet_commit": "432179c3cefe6c531217b4315f00df799639d64b",
+  "packet_hashes_verified": {
+    "prompt": "c947d3f27e6eecc8aba124fa9c6a227854fe0c8617b6f05d7c94c1a98a026509",
+    "existing-7143-title-date-index.jsonl": "f07fdd5c9edc563373dd8f790a0d1a945503768c8a9da2581ec0684de5f31ff3",
+    "prior-fresh-84-context.jsonl": "29102aea07191ca1ce3f68f2ed276b41edb8a8ec52a3ebf6a7854a3484ee8102"
+  },
+  "outputs": [
+    "worker-03-batch-001.jsonl",
+    "worker-03-checkpoint-001.md",
+    "worker-03-qa-001.json"
+  ],
+  "candidate_count": 6,
+  "complete_proposals": 5,
+  "unresolved_leads": 1,
+  "candidate_keys": [
+    "oct2026-powerus-merger-close",
+    "oct2026-powerus-pusa-solana-listing",
+    "oct2026-wlfi-moa-usd1-mou",
+    "oct2026-wlfi-staking-launch",
+    "oct2026-kushner-cnn-response",
+    "oct2026-georgia-fee-appeal-filing-lead"
+  ],
+  "validation": {
+    "valid_jsonl": true,
+    "unique_candidate_keys": true,
+    "all_keys_prefixed_oct2026": true,
+    "all_insert_authorized_false": true,
+    "all_readonly_proposal_true": true,
+    "complete_event_dates_inside_window": true,
+    "complete_short_summaries_le_180_chars": true,
+    "complete_medium_summaries_45_90_words": true,
+    "complete_long_summaries_140_300_words": true,
+    "all_complete_source_urls_https_and_verified": true,
+    "candidate_rows_have_dedupe_review": true,
+    "unresolved_lead_has_explicit_event_date_gap": true,
+    "impact_v2_scores_omitted_as_unjustified": true
+  },
+  "word_counts": {
+    "oct2026-powerus-merger-close": {
+      "title_characters": 71,
+      "short_characters": 79,
+      "medium_words": 53,
+      "long_words": 155,
+      "status": "complete"
+    },
+    "oct2026-powerus-pusa-solana-listing": {
+      "title_characters": 83,
+      "short_characters": 77,
+      "medium_words": 54,
+      "long_words": 149,
+      "status": "complete"
+    },
+    "oct2026-wlfi-moa-usd1-mou": {
+      "title_characters": 78,
+      "short_characters": 77,
+      "medium_words": 66,
+      "long_words": 148,
+      "status": "complete"
+    },
+    "oct2026-wlfi-staking-launch": {
+      "title_characters": 65,
+      "short_characters": 69,
+      "medium_words": 56,
+      "long_words": 149,
+      "status": "complete"
+    },
+    "oct2026-kushner-cnn-response": {
+      "title_characters": 93,
+      "short_characters": 84,
+      "medium_words": 62,
+      "long_words": 148,
+      "status": "complete"
+    },
+    "oct2026-georgia-fee-appeal-filing-lead": {
+      "title_characters": 88,
+      "short_characters": 114,
+      "medium_words": 0,
+      "long_words": 0,
+      "status": "unresolved_lead"
+    }
+  },
+  "distinct_same_batch_links": {
+    "oct2026-powerus-merger-close": [
+      "oct2026-powerus-pusa-solana-listing"
+    ],
+    "oct2026-wlfi-moa-usd1-mou": [
+      "oct2026-wlfi-staking-launch"
+    ],
+    "oct2026-wlfi-staking-launch": [
+      "oct2026-wlfi-moa-usd1-mou"
+    ]
+  },
+  "exclusions_and_gaps": [
+    "TRUMP gala leaderboard began September 30, outside window.",
+    "CNN/CREW reports published during window describe older investments/holdings; no new October acquisition established.",
+    "11th Circuit IRS-sanctions stay action occurred September 29, not October 1-3.",
+    "Justin Sun v. WLFI complaint filed April 21, 2026; later low-quality October copies were misdated.",
+    "Georgia fee-appeal lead remains unresolved until the primary appellate filing and filing date are retrieved.",
+    "No separate exact-date Powerus Ukrainian-technology action established beyond merger closing and next-day token listing."
+  ],
+  "mutations_forbidden_and_avoided": [
+    "live database",
+    "canonical index",
+    "other worker outputs",
+    "approval/promotion",
+    "merges"
+  ]
+}
