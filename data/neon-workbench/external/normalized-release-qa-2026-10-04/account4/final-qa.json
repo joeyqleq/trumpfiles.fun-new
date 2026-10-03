@@ -1,0 +1,307 @@
+{
+  "source_job": "held283-editorial-completion-2026-10-03/worker-10",
+  "output_file": "worker-10-normalized.jsonl",
+  "expected_count": 23,
+  "expected_ids": [
+    "entry-4696",
+    "entry-5207",
+    "entry-5731",
+    "entry-5761",
+    "entry-5863",
+    "entry-6379",
+    "entry-6425",
+    "entry-6456",
+    "entry-6516",
+    "entry-6597",
+    "entry-6615",
+    "entry-6673",
+    "entry-6749",
+    "entry-6784",
+    "entry-6799",
+    "entry-6824",
+    "entry-6857",
+    "entry-6926",
+    "entry-6943",
+    "entry-6964",
+    "entry-7094",
+    "entry-7126",
+    "entry-7159"
+  ],
+  "actual_count": 23,
+  "actual_ids": [
+    "entry-4696",
+    "entry-5207",
+    "entry-5731",
+    "entry-5761",
+    "entry-5863",
+    "entry-6379",
+    "entry-6425",
+    "entry-6456",
+    "entry-6516",
+    "entry-6597",
+    "entry-6615",
+    "entry-6673",
+    "entry-6749",
+    "entry-6784",
+    "entry-6799",
+    "entry-6824",
+    "entry-6857",
+    "entry-6926",
+    "entry-6943",
+    "entry-6964",
+    "entry-7094",
+    "entry-7126",
+    "entry-7159"
+  ],
+  "exact_id_set_match": true,
+  "duplicate_keys": [],
+  "disposition_counts": {
+    "hold": 17,
+    "split_recommendation_with_child_hold": 1,
+    "narrowed_replacement_proposal": 3,
+    "exclude_as_discrete_event": 2
+  },
+  "release_ready_count": 3,
+  "release_ready_ids": [
+    "entry-5731",
+    "entry-5761",
+    "entry-5863"
+  ],
+  "blocking_count": 20,
+  "blocking_ids": [
+    "entry-4696",
+    "entry-5207",
+    "entry-6379",
+    "entry-6425",
+    "entry-6456",
+    "entry-6516",
+    "entry-6597",
+    "entry-6615",
+    "entry-6673",
+    "entry-6749",
+    "entry-6784",
+    "entry-6799",
+    "entry-6824",
+    "entry-6857",
+    "entry-6926",
+    "entry-6943",
+    "entry-6964",
+    "entry-7094",
+    "entry-7126",
+    "entry-7159"
+  ],
+  "terminal_conflicts": [
+    {
+      "key": "entry-5207",
+      "earlier": "hold",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-001-qa.jsonl#L2",
+      "later": "propose_split_with_child_hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L2",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-5731",
+      "earlier": "hold",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-001-qa.jsonl#L3",
+      "later": "propose_narrower",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L3",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-5761",
+      "earlier": "hold",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-001-qa.jsonl#L4",
+      "later": "propose_narrower",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L4",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-5863",
+      "earlier": "hold",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-001-qa.jsonl#L5",
+      "later": "propose_narrower",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L5",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6425",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-001-qa.jsonl#L7",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L7",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6516",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-002-qa.jsonl#L2",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L9",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6597",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-002-qa.jsonl#L3",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L10",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6615",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-002-qa.jsonl#L4",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L11",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6673",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-002-qa.jsonl#L5",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L12",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6784",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-002-qa.jsonl#L7",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L14",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6799",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-003-qa.jsonl#L1",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L15",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6824",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-003-qa.jsonl#L2",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L16",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6857",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-003-qa.jsonl#L3",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L17",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6926",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-003-qa.jsonl#L4",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L18",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6943",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-003-qa.jsonl#L5",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L19",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-6964",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-003-qa.jsonl#L6",
+      "later": "hold",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L20",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-7094",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-003-qa.jsonl#L7",
+      "later": "propose_exclusion",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L21",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    },
+    {
+      "key": "entry-7159",
+      "earlier": "pass",
+      "earlier_file": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-004-qa.jsonl#L2",
+      "later": "propose_exclusion",
+      "later_file": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/outputs/worker-10-batch-held283-editorial-20261003.jsonl#L23",
+      "resolution": "later held283 row selected because its recorded Web425 revision and provenance match the earlier row exactly"
+    }
+  ],
+  "terminal_conflict_count": 18,
+  "conflict_resolution": "Later held283 rows were used only where their recorded prior Web425 revision and provenance matched the earlier Web425 row exactly. Earlier decisions remain in each normalized row reasons array.",
+  "verified_url_count": 16,
+  "invalid_verified_urls": [],
+  "url_validation": "Each verified URL is HTTPS with a host and no whitespace. Sources identified as unopened in the prior packet were not promoted to verified_urls.",
+  "description_length_checks": [
+    {
+      "key": "entry-5207",
+      "path": "proposal.children[0]",
+      "short_characters": 124,
+      "medium_words": 48,
+      "long_words": null,
+      "limits_met": false,
+      "missing_fields": [
+        "description_long"
+      ]
+    },
+    {
+      "key": "entry-5207",
+      "path": "proposal.children[1]",
+      "short_characters": 82,
+      "medium_words": 49,
+      "long_words": 149,
+      "limits_met": true,
+      "missing_fields": []
+    },
+    {
+      "key": "entry-5731",
+      "path": "proposal",
+      "short_characters": 89,
+      "medium_words": 61,
+      "long_words": 183,
+      "limits_met": true,
+      "missing_fields": []
+    },
+    {
+      "key": "entry-5761",
+      "path": "proposal",
+      "short_characters": 71,
+      "medium_words": 64,
+      "long_words": 156,
+      "limits_met": true,
+      "missing_fields": []
+    },
+    {
+      "key": "entry-5863",
+      "path": "proposal",
+      "short_characters": 124,
+      "medium_words": 56,
+      "long_words": 143,
+      "limits_met": true,
+      "missing_fields": []
+    }
+  ],
+  "description_length_blocking_ids": [
+    "entry-5207"
+  ],
+  "release_ready_definition": "True only for the three complete, source-mapped narrower replacement proposals meeting all description limits; does not approve frozen original copy or authorize canonical changes. Exclusions and partial splits are not release-ready until applied or resolved.",
+  "normalized_sha256": "5051804a93634cf1b8f94bf9d32f8741d0cae625f11488cc564db61693a8ad90",
+  "canonical_edits": false,
+  "neon_writes": false,
+  "other_worker_edits": false,
+  "pr_created": false,
+  "proposal_url_count": 8,
+  "invalid_proposal_urls": [],
+  "proposal_url_format_validation": "All URLs appearing in proposals are well-formed HTTP(S) URLs with a host and no whitespace. Every proposal/verified URL is already present in the pinned packet or prior worker output; unopened URLs remain unverified and are excluded from verified_urls.",
+  "url_format_check_passed": true,
+  "proposal_urls_from_prior_artifacts": true
+}
