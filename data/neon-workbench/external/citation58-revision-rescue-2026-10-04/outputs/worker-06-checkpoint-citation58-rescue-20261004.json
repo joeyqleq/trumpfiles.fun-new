@@ -1,0 +1,21 @@
+{
+  "source_job": "citation58-revision-rescue-2026-10-04-worker-06",
+  "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "coordinator_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+  "coordinator_sha256": "c39525df346c7b91046d1b79a70218495abef578654321de584864415ad2ad22",
+  "prior_citation_input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "prior_citation_input_sha256": "b4c7d9a725e43e402eb13a9862ab0ba6efe39da7982f3ea49c98b285b5041a7c",
+  "reviewed_keys": [
+    "entry-3678",
+    "entry-6141"
+  ],
+  "terminal_rows_written": 2,
+  "dispositions": {
+    "narrowed_supported_revision": 2
+  },
+  "release_ready_count": 2,
+  "blocking_ids": [],
+  "coordinator_gate_metadata_conflict_recorded": true,
+  "prior_proposals_explicitly_unapproved": true,
+  "append_only": true
+}

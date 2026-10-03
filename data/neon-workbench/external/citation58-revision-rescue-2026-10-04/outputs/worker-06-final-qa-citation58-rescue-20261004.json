@@ -1,0 +1,71 @@
+{
+  "source_job": "citation58-revision-rescue-2026-10-04-worker-06",
+  "expected_keys": [
+    "entry-3678",
+    "entry-6141"
+  ],
+  "saved_keys": [
+    "entry-3678",
+    "entry-6141"
+  ],
+  "saved_count": 2,
+  "missing_keys": [],
+  "missing_count": 0,
+  "unexpected_keys": [],
+  "duplicate_keys": [],
+  "exact_set_pass": true,
+  "terminal_rows_per_key": 1,
+  "disposition_counts": {
+    "narrowed_supported_revision": 2
+  },
+  "release_ready_count": 2,
+  "blocking_ids": [],
+  "word_length_checks": {
+    "thresholds": {
+      "short_characters_max": 180,
+      "medium_words_min": 45,
+      "medium_words_max": 90,
+      "long_words_min": 140,
+      "long_words_max": 300
+    },
+    "counts": {
+      "entry-3678": {
+        "short_characters": 110,
+        "medium_words": 76,
+        "long_words": 177
+      },
+      "entry-6141": {
+        "short_characters": 136,
+        "medium_words": 76,
+        "long_words": 166,
+        "long_words_pass": true
+      }
+    },
+    "all_pass": true
+  },
+  "verified_urls": {
+    "entry-3678": [
+      "https://www.theguardian.com/us-news/2025/may/27/hegseth-pentagon-leak-investigation-wiretap"
+    ],
+    "entry-6141": [
+      "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm"
+    ]
+  },
+  "url_validation": "Both URLs are exact URLs already present in their prior source maps; both are absolute HTTPS URLs. Guardian article Firecrawl scrape HTTP 200; Congress.gov Public Law HTTP 200. The U.S. Code URL under maintenance is not marked verified.",
+  "source_access_notes": {
+    "entry-3678": "Firecrawl retrieved exact Guardian article text, HTTP 200.",
+    "entry-6141": "Congress.gov exact enacted law fetched HTTP 200; §§70512–70513 inspected."
+  },
+  "conflicts": {
+    "coordinator_metadata": [
+      "Both coordinator records have explicit_release_blockers:[] but release_gate_outcome:revision_required and release_ready_as_reported:false. The discrepancy is recorded in each terminal row; it did not clear prior holds.",
+      "The new rows contain explicitly revised copy supported by accessible sources; the older disputed account1 wording remains unapproved."
+    ],
+    "duplicate_terminal_rows": 0
+  },
+  "prior_batch_complete": true,
+  "no_other_ids_touched": true,
+  "canonical_edits": 0,
+  "live_neon_writes": 0,
+  "pull_request_opened": false
+}
