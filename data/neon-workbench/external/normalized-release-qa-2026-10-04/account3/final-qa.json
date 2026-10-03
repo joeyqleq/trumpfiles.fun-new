@@ -1,0 +1,153 @@
+{
+  "task": "normalized-release-qa-2026-10-04/account3 worker-01",
+  "scope": {
+    "assigned_ids": [
+      "entry-1179",
+      "entry-1761",
+      "entry-1595",
+      "entry-1517",
+      "entry-1200",
+      "entry-1558",
+      "entry-1583",
+      "entry-2706",
+      "entry-2442",
+      "entry-1648",
+      "entry-4084",
+      "entry-278",
+      "entry-1415",
+      "entry-1589",
+      "entry-2661",
+      "entry-4282",
+      "entry-4261",
+      "entry-7170",
+      "entry-1336",
+      "entry-1296",
+      "entry-1835",
+      "entry-1608",
+      "entry-2363",
+      "entry-2817",
+      "entry-982",
+      "entry-6991",
+      "entry-1607",
+      "entry-233",
+      "entry-3875",
+      "entry-1591",
+      "entry-5407"
+    ],
+    "assigned_count": 31,
+    "no_new_research": true,
+    "canonical_or_neon_edits": false,
+    "other_worker_edits": false,
+    "release_ready_scope": "Impact-v2 assessment row only. No entry headline/description is approved; no copy proposal exists in the reconciled worker batches."
+  },
+  "source_jobs": [
+    {
+      "source_job": "impact368/five-account-round-2026-10-03/worker-01-batch-20261003T103111Z-e38d1783",
+      "commit": "cb484af16587f9b20a48dce25fda6a05a23f3ac6",
+      "file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-01-batch-20261003T103111Z-e38d1783.jsonl",
+      "qa_file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-01-qa-20261003T103111Z-e38d1783.json",
+      "rows": 31
+    },
+    {
+      "source_job": "impact368-context-supplement-2026-10-03/worker-01-batch-20261003T115307Z-52001527",
+      "commit": "f2d0b610496afae29dcc8312d627bc8d9540cc1a",
+      "file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-01-batch-20261003T115307Z-52001527.jsonl",
+      "qa_file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-01-qa-20261003T115307Z-52001527.json",
+      "rows": 31,
+      "supersedes_commit": "cb484af16587f9b20a48dce25fda6a05a23f3ac6"
+    }
+  ],
+  "output": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account3/worker-01-normalized.jsonl",
+  "counts": {
+    "expected": 31,
+    "saved": 31,
+    "missing": 0,
+    "extra": 0,
+    "duplicate_normalized_keys": 0,
+    "source_terminal_rows": 62,
+    "effective_terminal_rows": 31,
+    "resolved_terminal_conflicts": 3,
+    "release_ready": 2,
+    "blocking": 29,
+    "proposals": 0,
+    "proposal_descriptions_checked": 0
+  },
+  "ready_ids": [
+    "entry-1200",
+    "entry-1589"
+  ],
+  "blocking_ids": [
+    "entry-1179",
+    "entry-1761",
+    "entry-1595",
+    "entry-1517",
+    "entry-1558",
+    "entry-1583",
+    "entry-2706",
+    "entry-2442",
+    "entry-1648",
+    "entry-4084",
+    "entry-278",
+    "entry-1415",
+    "entry-2661",
+    "entry-4282",
+    "entry-4261",
+    "entry-7170",
+    "entry-1336",
+    "entry-1296",
+    "entry-1835",
+    "entry-1608",
+    "entry-2363",
+    "entry-2817",
+    "entry-982",
+    "entry-6991",
+    "entry-1607",
+    "entry-233",
+    "entry-3875",
+    "entry-1591",
+    "entry-5407"
+  ],
+  "conflicts": [
+    {
+      "key": "entry-1761",
+      "first_disposition": "deferred",
+      "supplement_disposition": "scored",
+      "resolution": "selected latest explicit supplement descendant as effective impact assessment; kept release blocked because the first terminal row was deferred",
+      "release_ready": false
+    },
+    {
+      "key": "entry-4261",
+      "first_disposition": "deferred",
+      "supplement_disposition": "scored",
+      "resolution": "selected latest explicit supplement descendant as effective impact assessment; kept release blocked because the first terminal row was deferred",
+      "release_ready": false
+    },
+    {
+      "key": "entry-1835",
+      "first_disposition": "deferred",
+      "supplement_disposition": "scored",
+      "resolution": "selected latest explicit supplement descendant as effective impact assessment; kept release blocked because the first terminal row was deferred",
+      "release_ready": false
+    }
+  ],
+  "url_validation": {
+    "carried_url_count": 48,
+    "invalid_format_count": 0,
+    "invalid_urls": [],
+    "validation_scope": "HTTPS syntax/host and exact provenance in the latest impact basis only; not a network reachability or claim re-check."
+  },
+  "validation": {
+    "exact_id_order_and_set": true,
+    "source_batch_keys_exact": true,
+    "latest_rows_explicitly_supersede_first_rows": true,
+    "conflicts_recorded_in_row_reasons": true,
+    "conflicts_resolved_only_when_supported": true,
+    "deferred_rows_remain_not_ready": true,
+    "proposal_null_when_none_in_source_jobs": true,
+    "url_format_valid": true,
+    "proposal_word_length": "not applicable; no proposal descriptions exist in either source batch",
+    "blocking_ids_explicit": true,
+    "hold_not_promoted_to_pass": true
+  },
+  "notes": "All 31 assigned IDs have one effective terminal normalized row. Three status conflicts (entry-1761, entry-4261, entry-1835) resolve to explicitly superseding supplement impact assessments, but remain release-blocked because the earlier rows were deferred. Entry-4261 also lacks direct AP/AAA report URLs. Two rows (entry-1200 and entry-1589) are ready for release of the score-only assessment; no entry copy is approved and no copy proposal exists. No new source research or network URL checks were performed."
+}
