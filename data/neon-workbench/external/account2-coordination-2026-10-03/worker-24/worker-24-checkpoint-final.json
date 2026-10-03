@@ -1,0 +1,26 @@
+{
+  "assignment": "account2 coordination compatibility audit worker 24",
+  "status": "complete_with_explicit_input_gaps",
+  "scope_exact": {
+    "proposed_field_count": 6,
+    "sample_record_count": 100,
+    "record_ids": "not supplied in available source artifacts"
+  },
+  "audit_file": "worker-24-compatibility-audit-20261003.json",
+  "qa": {
+    "application_paths_inspected": true,
+    "field_identifiers_verified": false,
+    "sample_membership_verified": false,
+    "sample_values_checked": false,
+    "database_accessed": false,
+    "code_changed": false,
+    "scope_violations": []
+  },
+  "unresolved_gaps": [
+    "No exact proposal/source file identifying the six SQL field names, types, defaults, or nullability.",
+    "No 100-record sample file; rows/IDs/value coverage cannot be verified without the missing artifact or an expressly authorized read-only data path."
+  ],
+  "safe_order_in_audit": true,
+  "branch": "ls/11-trump-final-corrections-account2-worker2-gfyp",
+  "head_at_checkpoint_creation": "a8081bdb9edbfba26fce6326980cf9c45b681f7d"
+}

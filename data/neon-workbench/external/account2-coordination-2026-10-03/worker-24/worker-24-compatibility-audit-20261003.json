@@ -1,0 +1,134 @@
+{
+  "assignment": "account2 worker 24 read-only application compatibility audit",
+  "audit_date": "2026-10-03",
+  "scope": [
+    "application API/query/card compatibility",
+    "proposed six description/impact-v2 Neon fields",
+    "100-record sample availability"
+  ],
+  "read_only": true,
+  "repository_state": {
+    "branch": "ls/11-trump-final-corrections-account2-worker2-gfyp",
+    "head_at_audit": "a8081bdb9edbfba26fce6326980cf9c45b681f7d",
+    "existing_untracked_files_preserved": [
+      "bun.lock",
+      "workers/trumpstein/bun.lock"
+    ]
+  },
+  "field_set": {
+    "provided_by_request": "six proposed description/impact-v2 Neon fields",
+    "exact_identifiers": null,
+    "working_interpretation_only": [
+      "three version-2 description text fields",
+      "three version-2 impact fields"
+    ],
+    "limitation": "No proposal, schema manifest, or migration file identifying the six exact SQL column names/types/nullability/defaults was present in the checkout. Existing impact_scope is a numeric 0-10 score, not a prose impact-v2 field. Do not infer proposed identifiers from this interpretation."
+  },
+  "compatibility_findings": [
+    {
+      "area": "database/view contract",
+      "status": "gap",
+      "evidence": [
+        "No SQL migration/schema file for these fields was present.",
+        "types/database.ts:115-141 models ai_complete_trump_data and includes synopsis plus numeric impact_scope only."
+      ],
+      "impact": "The TypeScript contract has no proposed fields. A change to base tables alone would not guarantee the ai_complete_trump_data view exposes them."
+    },
+    {
+      "area": "catalog query/API",
+      "status": "blocking explicit projection",
+      "evidence": [
+        "app/api/catalog-data/route.ts:54-77 selects entry.synopsis and enumerated score fields; it does not select any proposed field.",
+        "Search predicates in the same route match entry.title and entry.synopsis (lines 80-89 and corresponding count query), not proposed description fields."
+      ],
+      "impact": "Even if the Neon view/table gains columns, catalog responses and text search omit them until the query and count/search logic are deliberately updated."
+    },
+    {
+      "area": "entries API",
+      "status": "blocking explicit projection",
+      "evidence": [
+        "app/api/entries/route.ts:19-25 selects title, synopsis, category, phase, scores, date_start only."
+      ],
+      "impact": "This route will not return the proposed fields."
+    },
+    {
+      "area": "single-entry API",
+      "status": "conditional passthrough",
+      "evidence": [
+        "app/api/entry/[entry_number]/route.ts:21-26 uses SELECT * FROM ai_complete_trump_data and returns row fields at top level (lines 67-76)."
+      ],
+      "impact": "New fields pass through only if the view exposes them. The typed EntryDossier/AICompleteTrumpData contract still lacks them, and the UI currently renders synopsis."
+    },
+    {
+      "area": "catalog card",
+      "status": "not wired",
+      "evidence": [
+        "components/FlippableEntryCard.tsx:217, 271 renders entry.synopsis; share text at line 157 also uses synopsis.",
+        "components/FlippableEntryCard.tsx:39 defines Impact scope as impact_scope."
+      ],
+      "impact": "No versioned description or impact text is read by either card face or share output. Current impact UI is a numeric score with its existing tooltip."
+    },
+    {
+      "area": "dossier/detail card",
+      "status": "not wired",
+      "evidence": [
+        "app/entry/[entry_number]/page.tsx:248-250 labels and renders Incident synopsis from entry.synopsis.",
+        "components/EntryDetails.tsx:20 renders entry.synopsis and line 90 displays impact_scope."
+      ],
+      "impact": "New descriptions/impact narratives would not be visible in the dossier without an explicit field selection and rendering decision."
+    },
+    {
+      "area": "other query consumers",
+      "status": "mixed",
+      "evidence": [
+        "app/api/visualizer-data/route.ts:8 and app/api/admin-data/route.ts:6 use SELECT * from ai_complete_trump_data, so fields can pass through if present in the view.",
+        "lib/entries.ts queries SELECT * from ai_complete_trump_data but is documented as legacy/backward-compatible and not used for current catalog/visualizer pages.",
+        "app/insights/page.tsx aggregates the numeric impact_scope and searches synopsis in specific queries."
+      ],
+      "impact": "Star projections are runtime-compatible at the raw JSON layer but do not establish typed/UI compatibility; explicit insight predicates remain on legacy synopsis and numeric impact_scope."
+    },
+    {
+      "area": "upload/write path",
+      "status": "not wired",
+      "evidence": [
+        "app/api/upload-entries/route.ts:63-66 inserts synopsis into trump_entries; lines 70-82 upserts numeric impact_scope and existing score rationale into trump_individual_scores."
+      ],
+      "impact": "The ingestion endpoint does not accept/write the proposed six fields. Any future write/backfill path needs target table ownership and idempotent update semantics defined."
+    },
+    {
+      "area": "search/chat/vector path",
+      "status": "not wired",
+      "evidence": [
+        "workers/trumpstein/src/ingest.ts:23-44 accepts synopsis and legacy summaries/medium_summary/long_summary, not Neon v2 fields.",
+        "workers/trumpstein/src/ingest.ts:46-66 emits synopsis and a summary_level; summaryLayersFromEntry at 122-127 uses input aliases.",
+        "workers/trumpstein/src/rag.ts:109-126 reads and emits metadata.synopsis as retrieval context.",
+        "components/TrumpsteinChat.tsx:576-589 types synopsis and impact_scope; lines 677-680 display synopsis and numeric score."
+      ],
+      "impact": "Neon fields alone will not alter vector metadata, retrieval context, or chat tooltip output; pipeline payload, metadata contract, and consumer need coordinated compatibility changes if this path is in scope."
+    }
+  ],
+  "sample": {
+    "expected_records": 100,
+    "sample_artifact_found": false,
+    "repository_search": "No sample/field-proposal/migration artifact was found outside dependencies and git metadata in the checked-out repository.",
+    "database_rows_read": false,
+    "validation_status": "blocked_missing_sample_and_database_access_by_scope",
+    "exact_gap": "Cannot confirm the 100 record IDs, field presence/null rates, old-to-new value equivalence, truncation/encoding, or compatibility distribution because no 100-row sample is in the checkout and this task prohibits Neon access or changes. app/api/entries uses a default limit of 100 but that is a live API pagination default, not the specified frozen sample, and it was not called."
+  },
+  "safe_order": [
+    "Obtain the authoritative field proposal and 100-record sample; lock exact SQL identifiers, meanings, types, nullability, and fallback contract before implementation.",
+    "Define additive nullable schema changes and update/recreate ai_complete_trump_data so all six columns are available without renaming/removing synopsis or impact_scope; verify grants and view dependency behavior in a separately authorized migration plan.",
+    "Update generated/manual TypeScript row contracts and API DTOs. Add fields to explicit SELECT projections, especially /api/catalog-data and /api/entries; decide whether query/search matches short/medium text and keep result/count predicates identical.",
+    "Implement a dual-read display fallback (new v2 field when non-empty, otherwise current synopsis / existing impact score behavior) in cards, dossier and share output; do not silently reinterpret numeric impact_scope as impact prose.",
+    "If chat/RAG is intended to consume the fields, extend ingestion payload normalization and vector metadata with a defined version/fallback policy, then update retrieval and tooltip consumers; reindex only after payload QA and with a rollback path.",
+    "Run a read-only comparison on the exact 100-row sample: missing/null distribution per field, lengths, unicode, field-to-record alignment, old/new fallback output, query/API serialization and card rendering. Keep the sample ID/hash in QA evidence.",
+    "Backfill only after sample acceptance, in resumable batches with row counts and idempotency; verify view/API parity and fallback counts before switching canonical reads.",
+    "Remove legacy fallback only after coverage is demonstrated and consumers are migrated; this audit does not authorize schema or data changes."
+  ],
+  "non_scope": [
+    "No application code modified",
+    "No Neon query or mutation",
+    "No canonical records, scores, merge, PR, or other-worker output changes"
+  ],
+  "conclusion": "Repository compatibility is incomplete: explicit APIs, types, write/ingest paths, cards, and chat/RAG rely on legacy synopsis/impact_scope. SELECT * endpoints can pass through view additions but do not make consumers compatible. The six exact identifiers and the claimed 100-row sample were unavailable, so field-level and sample-level validation remain open."
+}
