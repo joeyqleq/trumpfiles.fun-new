@@ -1,0 +1,21 @@
+{
+  "worker": 14,
+  "batch": 2,
+  "rows_in_batch": 8,
+  "cumulative_rows": 16,
+  "assignment_keys": [
+    "entry-6484",
+    "entry-6577",
+    "entry-6602",
+    "entry-6631",
+    "entry-6729",
+    "entry-6774",
+    "entry-6788",
+    "entry-6803"
+  ],
+  "input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+  "input_sha256": "a9a06c94ba66822e06cd9f878e3720764450e3d6ed7802ab4537ab6c0dfd2530",
+  "output_path": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker-14-batch-UNIQUE.jsonl",
+  "output_sha256": "24cead01ea88ffd86f0a46724f36795cac81cf905cf6eee7af18d713babcb396",
+  "qa": "cumulative key and draft-length audit passed; no out-of-scope assignments"
+}
