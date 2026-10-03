@@ -1,0 +1,37 @@
+{
+  "worker": 3,
+  "phase": "impact-v2-logical-scoring-rescue",
+  "input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/worker-03-input.jsonl",
+  "input_sha256": "32168db7fb65fe41fd76f414c3e67f768f9205f30929eb1d71a0b1b16fe044b3",
+  "expected_input_sha256": "32168db7fb65fe41fd76f414c3e67f768f9205f30929eb1d71a0b1b16fe044b3",
+  "output_path": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-03-batch-20261003-review-a7f2c.jsonl",
+  "output_sha256": "d3e281f388377442997b6844ef818756439c4a1246f8f953cedc45ee88d62e03",
+  "assigned_count": 31,
+  "output_count": 31,
+  "id_set_exact": true,
+  "id_order_matches_packet": true,
+  "no_duplicate_ids": true,
+  "all_records_have_source_basis": true,
+  "dimension_ranges_and_precision_valid": true,
+  "weighted_formula_valid": true,
+  "deferred_rows_have_exact_missing_fact": true,
+  "scored_count": 1,
+  "deferred_count": 30,
+  "score_formula": "round_half_up(0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence, 2)",
+  "weights": {
+    "harm": 0.3,
+    "reach": 0.2,
+    "institutions": 0.15,
+    "procedural_abuse": 0.15,
+    "self_dealing": 0.1,
+    "persistence": 0.1
+  },
+  "dimension_scale": [
+    0,
+    10
+  ],
+  "dimension_precision": 1,
+  "publication_status": "provisional_offline",
+  "scope_note": "Only the 31 assigned packet IDs were reviewed; packet input, canonical data, database, and other worker outputs were not edited."
+}
