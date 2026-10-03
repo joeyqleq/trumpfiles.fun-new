@@ -1,0 +1,466 @@
+{
+  "worker": 20,
+  "packet_branch": "codex/web-release-rescue-2026-10-03",
+  "packet_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "packet_sha256": "258bf04a28ef3542505926068385be6ddc7a1b2d1c787e988bc5cdf95caf39c5",
+  "assigned_count": 32,
+  "validated_count": 32,
+  "missing_keys": [],
+  "duplicate_keys": [],
+  "excluded_keys_touched": [],
+  "proposal_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker-20-batch-UNIQUE.jsonl",
+  "batches": [
+    "lightsprint-rescue-worker-20-batch-01-UNIQUE.jsonl",
+    "lightsprint-rescue-worker-20-batch-02-UNIQUE.jsonl",
+    "lightsprint-rescue-worker-20-batch-03-UNIQUE.jsonl",
+    "lightsprint-rescue-worker-20-batch-04-UNIQUE.jsonl"
+  ],
+  "qa_report": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-rescue-worker-20-qa-report.md",
+  "status_counts": {
+    "reviewed_narrower_supported_event": 2,
+    "reviewed_split_partial_draft": 4,
+    "reviewed_split_with_event_specific_drafts": 1,
+    "reviewed_unresolved": 11,
+    "reviewed_split_with_complete_child_drafts": 1,
+    "reviewed_supported_narrower_event": 1,
+    "reviewed_narrow_source_attribution": 7,
+    "reviewed_proposed_correction_only": 5
+  },
+  "disposition_counts": {
+    "retain_narrower_corrected_event": 2,
+    "split_supported_components": 6,
+    "replace_with_narrower_supported_event": 1,
+    "exclude_pending_specific_evidence": 7,
+    "retain_unresolved_pending_specific_evidence": 5,
+    "retain_narrow_attributed_event_candidate": 7,
+    "retain_corrected_proposal_for_human_review": 3,
+    "exclude_composite_pending_coherent_event": 1
+  },
+  "draft_validation": {
+    "corrected_drafts": 14,
+    "child_drafts": 13,
+    "short_limit_chars": 180,
+    "medium_word_range": [
+      45,
+      90
+    ],
+    "long_word_range": [
+      140,
+      300
+    ],
+    "populated_draft_url_count": 46,
+    "validation_errors": []
+  },
+  "keys": [
+    {
+      "assignment_key": "entry-4467",
+      "namespace": "held",
+      "latest_status": "reviewed_narrower_supported_event",
+      "recommended_disposition": "retain_narrower_corrected_event",
+      "authoritative_source": {
+        "source_file": "review02-batch-021.jsonl",
+        "revision": 3,
+        "status": "reviewed_actionable_narrower_event",
+        "disposition": "retain_narrower"
+      },
+      "remaining_evidence_gap": "None for the narrower event."
+    },
+    {
+      "assignment_key": "entry-5189",
+      "namespace": "held",
+      "latest_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "authoritative_source": {
+        "source_file": "handoff-review02-batch-016.jsonl",
+        "revision": 106,
+        "status": "reviewed_split_partial_draft",
+        "disposition": "split_supported_components"
+      },
+      "remaining_evidence_gap": "The July settlement source does not support an additional 140 words beyond amount, parties, disputed editing allegation and terms; retain the short/medium text. The CPB law child is now separately supported by statute."
+    },
+    {
+      "assignment_key": "entry-5344",
+      "namespace": "held",
+      "latest_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "authoritative_source": {
+        "source_file": "handoff-review02-batch-017.jsonl",
+        "revision": 105,
+        "status": "reviewed_split_partial_draft",
+        "disposition": "split_supported_components"
+      },
+      "remaining_evidence_gap": "The January Bove review, later polygraph reporting and headquarters-transfer proposal are separate children. For the null long fields, the supplied source accounts lack additional event-specific details to reach 140 words; keep narrower short and medium descriptions."
+    },
+    {
+      "assignment_key": "entry-5752",
+      "namespace": "held",
+      "latest_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "authoritative_source": {
+        "source_file": "handoff-review02-batch-017.jsonl",
+        "revision": 105,
+        "status": "reviewed_split_partial_draft",
+        "disposition": "split_supported_components"
+      },
+      "remaining_evidence_gap": "Reuters supports the March Columbia cancellation and April Harvard freeze separately; the supplied reporting does not provide enough additional event-specific detail for either null long field without repeating the review of scope and legal status."
+    },
+    {
+      "assignment_key": "entry-5832",
+      "namespace": "held",
+      "latest_status": "reviewed_split_with_event_specific_drafts",
+      "recommended_disposition": "split_supported_components",
+      "authoritative_source": {
+        "source_file": "review01-revision-005-batch-001.jsonl",
+        "revision": 5,
+        "status": "reviewed_split_with_event_specific_drafts",
+        "disposition": "split_supported_components"
+      },
+      "remaining_evidence_gap": "The source packet supports the separately dated components below, but does not establish every additional assertion bundled into the original card; only the stated components are proposed.; At least one child needs full, event-specific source text before its requested long description can be completed."
+    },
+    {
+      "assignment_key": "entry-6379",
+      "namespace": "held",
+      "latest_status": "reviewed_narrower_supported_event",
+      "recommended_disposition": "replace_with_narrower_supported_event",
+      "authoritative_source": {
+        "source_file": "handoff-review06-revision-105-batch-004-check.jsonl",
+        "revision": 105,
+        "status": "reviewed_narrower_supported_event",
+        "disposition": "replace_with_narrower_supported_event"
+      },
+      "remaining_evidence_gap": "None for the narrower event."
+    },
+    {
+      "assignment_key": "entry-6428",
+      "namespace": "held",
+      "latest_status": "reviewed_split_partial_draft",
+      "recommended_disposition": "split_supported_components",
+      "authoritative_source": {
+        "source_file": "handoff-review02-batch-014.jsonl",
+        "revision": 104,
+        "status": "reviewed_split_partial_draft",
+        "disposition": "split_supported_components"
+      },
+      "remaining_evidence_gap": "No source read establishes Jen Easterly’s CISA departure timing or manner. Do not link it to the DHS CSRB memo or call it a Trump firing without a contemporaneous transition source."
+    },
+    {
+      "assignment_key": "entry-6460",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "exclude_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review02-batch-024.jsonl",
+        "revision": 3,
+        "status": "reviewed_exclude",
+        "disposition": "exclude_pending_new_evidence"
+      },
+      "remaining_evidence_gap": "No sufficiently supported discrete event survives the proposed soft-hide rationale. Reconsider only if direct evidence establishes a dated occurrence matching the entry."
+    },
+    {
+      "assignment_key": "entry-6517",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "exclude_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review02-batch-028.jsonl",
+        "revision": 3,
+        "status": "reviewed_unresolved",
+        "disposition": "retain_unresolved"
+      },
+      "remaining_evidence_gap": "Search found reporting about Trump’s interest in election maps but not the alleged altered Sharpie Electoral College map shown to visitors. Need contemporaneous witness/report and image."
+    },
+    {
+      "assignment_key": "entry-6597",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review01-revision-010-batch-001.jsonl",
+        "revision": 10,
+        "status": "reviewed_unresolved_after_source_check",
+        "disposition": "retain_unresolved"
+      },
+      "remaining_evidence_gap": "House Republicans recommended investigation/prosecution of Liz Cheney in December 2024, but no credible source was located showing that the Bondi Justice Department opened the described criminal investigation in March 2025."
+    },
+    {
+      "assignment_key": "entry-6614",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "exclude_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review02-batch-026.jsonl",
+        "revision": 3,
+        "status": "reviewed_exclude",
+        "disposition": "exclude_pending_new_evidence"
+      },
+      "remaining_evidence_gap": "Reuters’ cited report concerns FBI personnel removals, but does not establish Patel fired 30% of counterintelligence agents and replaced them with loyalists. Need agency headcount baseline and personnel records."
+    },
+    {
+      "assignment_key": "entry-6668",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "exclude_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review02-batch-027.jsonl",
+        "revision": 3,
+        "status": "reviewed_exclude",
+        "disposition": "exclude_pending_new_evidence"
+      },
+      "remaining_evidence_gap": "No source supplied establishing a $1.5 billion CARES Act private-equity tax benefit, lobbyist insertion, or lack of scrutiny. Need provision-level tax analysis and legislative history."
+    },
+    {
+      "assignment_key": "entry-6749",
+      "namespace": "held",
+      "latest_status": "reviewed_split_with_complete_child_drafts",
+      "recommended_disposition": "split_supported_components",
+      "authoritative_source": {
+        "source_file": "handoff-review06-revision-105-batch-001-check.jsonl",
+        "revision": 105,
+        "status": "reviewed_split_with_complete_child_drafts",
+        "disposition": "split_supported_components"
+      },
+      "remaining_evidence_gap": "None for the narrower event."
+    },
+    {
+      "assignment_key": "entry-6782",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review03-batch-002-rev06.jsonl",
+        "revision": 4,
+        "status": "reviewed_unresolved",
+        "disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "remaining_evidence_gap": "Official court description."
+    },
+    {
+      "assignment_key": "entry-6797",
+      "namespace": "held",
+      "latest_status": "reviewed_supported_narrower_event",
+      "recommended_disposition": "retain_narrower_corrected_event",
+      "authoritative_source": {
+        "source_file": "review03-batch-003-rev06.jsonl",
+        "revision": 4,
+        "status": "reviewed_supported_narrower_event",
+        "disposition": "retain_narrower_corrected_event"
+      },
+      "remaining_evidence_gap": "None for the narrower event."
+    },
+    {
+      "assignment_key": "entry-6821",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review03-batch-003-rev06.jsonl",
+        "revision": 4,
+        "status": "reviewed_unresolved",
+        "disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "remaining_evidence_gap": "HHS program records."
+    },
+    {
+      "assignment_key": "entry-6835",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "exclude_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review03-batch-008-rev05.jsonl",
+        "revision": 4,
+        "status": "reviewed_unresolved",
+        "disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "remaining_evidence_gap": "I did not find an April 2025 announcement ending new Section 8/Housing Choice Vouchers. HUD's April 2025 materials continued describing housing programs, while a later 2026 budget-management letter merely urged some housing authorities to consider pausing new voucher issuance to manage funding. The stored event/date is unsupported."
+    },
+    {
+      "assignment_key": "entry-6913",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review03-batch-009-rev04.jsonl",
+        "revision": 4,
+        "status": "reviewed_unresolved",
+        "disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "remaining_evidence_gap": "FEC-derived records show millions of dollars in spending by the Trump campaign, RNC and other Republican committees at Trump properties, but I did not find reliable evidence that those committees generally paid above-market rates. ProPublica reported that an RNC official said the properties charged market rates. The entry's above-market claim is therefore unsupported as written."
+    },
+    {
+      "assignment_key": "entry-6937",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "exclude_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review03-batch-009-rev04.jsonl",
+        "revision": 4,
+        "status": "reviewed_unresolved",
+        "disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "remaining_evidence_gap": "Searched for a March 2025 White House list of 'subversive academics' circulated to agencies and universities. I did not find credible evidence for such a list. There were documented investigations, grant reviews and immigration actions involving universities and individual academics, but not the centralized blacklist described by this entry."
+    },
+    {
+      "assignment_key": "entry-6955",
+      "namespace": "held",
+      "latest_status": "reviewed_unresolved",
+      "recommended_disposition": "exclude_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "review03-batch-010-rev04.jsonl",
+        "revision": 4,
+        "status": "reviewed_unresolved",
+        "disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "remaining_evidence_gap": "Trump's April 11, 2025 border memorandum directed a larger military role on federal border lands, but its text does not create a general presidential authority to detain civilians during declared emergencies or bypass civilian courts. I found no executive order matching the entry's claimed martial-law detention framework."
+    },
+    {
+      "assignment_key": "expanded-20260827-anthropic-blacklist-order",
+      "namespace": "fresh",
+      "latest_status": "reviewed_narrow_source_attribution",
+      "recommended_disposition": "retain_narrow_attributed_event_candidate",
+      "authoritative_source": {
+        "source_file": "review05-batch-004-rev03.jsonl",
+        "revision": 3,
+        "status": "partially_source_verified_access_limits_explicit",
+        "disposition": "retain_for_separate_human_review"
+      },
+      "remaining_evidence_gap": "Confirm full source text for any source whose access note is excerpt-only or page did not render; do not expand the draft beyond the reported event."
+    },
+    {
+      "assignment_key": "expanded-20260908-save-sc-request",
+      "namespace": "fresh",
+      "latest_status": "reviewed_narrow_source_attribution",
+      "recommended_disposition": "retain_narrow_attributed_event_candidate",
+      "authoritative_source": {
+        "source_file": "review05-batch-005-rev03.jsonl",
+        "revision": 3,
+        "status": "partially_source_verified_access_limits_explicit",
+        "disposition": "retain_for_separate_human_review"
+      },
+      "remaining_evidence_gap": "Confirm full source text for any source whose access note is excerpt-only or page did not render; do not expand the draft beyond the reported event."
+    },
+    {
+      "assignment_key": "expanded-20260914-usps-sc-denial",
+      "namespace": "fresh",
+      "latest_status": "reviewed_narrow_source_attribution",
+      "recommended_disposition": "retain_narrow_attributed_event_candidate",
+      "authoritative_source": {
+        "source_file": "review05-batch-007-rev03.jsonl",
+        "revision": 3,
+        "status": "partially_source_verified_access_limits_explicit",
+        "disposition": "retain_for_separate_human_review"
+      },
+      "remaining_evidence_gap": "Confirm full source text for any source whose access note is excerpt-only or page did not render; do not expand the draft beyond the reported event."
+    },
+    {
+      "assignment_key": "expanded-20260921-media-ban-lawsuit",
+      "namespace": "fresh",
+      "latest_status": "reviewed_narrow_source_attribution",
+      "recommended_disposition": "retain_narrow_attributed_event_candidate",
+      "authoritative_source": {
+        "source_file": "review05-batch-008-rev03.jsonl",
+        "revision": 3,
+        "status": "partially_source_verified_access_limits_explicit",
+        "disposition": "retain_for_separate_human_review"
+      },
+      "remaining_evidence_gap": "Confirm full source text for any source whose access note is excerpt-only or page did not render; do not expand the draft beyond the reported event."
+    },
+    {
+      "assignment_key": "expanded-20260925-public-citizen-first-ad-complaint",
+      "namespace": "fresh",
+      "latest_status": "reviewed_narrow_source_attribution",
+      "recommended_disposition": "retain_narrow_attributed_event_candidate",
+      "authoritative_source": {
+        "source_file": "review05-batch-010-rev03.jsonl",
+        "revision": 3,
+        "status": "partially_source_verified_access_limits_explicit",
+        "disposition": "retain_with_explicit_source_limit_for_human_review"
+      },
+      "remaining_evidence_gap": "Confirm full source text for any source whose access note is excerpt-only or page did not render; do not expand the draft beyond the reported event."
+    },
+    {
+      "assignment_key": "expanded-20260929-irgc-us-voter-letter",
+      "namespace": "fresh",
+      "latest_status": "reviewed_narrow_source_attribution",
+      "recommended_disposition": "retain_narrow_attributed_event_candidate",
+      "authoritative_source": {
+        "source_file": "fresh84-review-only.jsonl",
+        "status": "candidate_description_status",
+        "disposition": "candidate_only_not_authorized_for_insert"
+      },
+      "remaining_evidence_gap": "No evidence establishes audience reach or voter response; omit any impact claim pending independent evidence."
+    },
+    {
+      "assignment_key": "fresh-20260914-garcia-kremlev",
+      "namespace": "fresh",
+      "latest_status": "reviewed_narrow_source_attribution",
+      "recommended_disposition": "retain_narrow_attributed_event_candidate",
+      "authoritative_source": {
+        "source_file": "review05-batch-001-rev03.jsonl",
+        "revision": 3,
+        "status": "partially_source_verified_access_limits_explicit",
+        "disposition": "retain_for_separate_human_review"
+      },
+      "remaining_evidence_gap": "Confirm full source text for any source whose access note is excerpt-only or page did not render; do not expand the draft beyond the reported event."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1200",
+      "namespace": "pr47",
+      "latest_status": "reviewed_proposed_correction_only",
+      "recommended_disposition": "retain_corrected_proposal_for_human_review",
+      "authoritative_source": {
+        "source_file": "pr47-proposed-corrections-review-only.jsonl",
+        "status": "PROPOSED_NOT_APPROVED",
+        "disposition": "proposal_only_not_approved"
+      },
+      "remaining_evidence_gap": "PR47’s sourced account supports a technical delay and later departure, not Trump-caused evacuation. Reconcile exact flight/date details against accessible primary or independently readable reporting before completing medium/long; replace the original causal short."
+    },
+    {
+      "assignment_key": "pr47-review-entry-130",
+      "namespace": "pr47",
+      "latest_status": "reviewed_proposed_correction_only",
+      "recommended_disposition": "exclude_composite_pending_coherent_event",
+      "authoritative_source": {
+        "source_file": "pr47-proposed-corrections-review-only.jsonl",
+        "status": "PROPOSED_NOT_APPROVED",
+        "disposition": "proposal_only_not_approved"
+      },
+      "remaining_evidence_gap": "The proposal juxtaposes Project 2025’s personnel blueprint with a separate OPM workplace religious-expression memo; neither supports religion-based hiring tests. Separate the events or exclude; no coherent single-event correction is established."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1457",
+      "namespace": "pr47",
+      "latest_status": "reviewed_proposed_correction_only",
+      "recommended_disposition": "retain_corrected_proposal_for_human_review",
+      "authoritative_source": {
+        "source_file": "pr47-proposed-corrections-review-only.jsonl",
+        "status": "PROPOSED_NOT_APPROVED",
+        "disposition": "proposal_only_not_approved"
+      },
+      "remaining_evidence_gap": "The narrow inquiry is a proposed event only; verify the report and date from a readable source before completing 45–90/140–300 word descriptions. It does not prove Trump’s enforcement doctrine caused the inquiry."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1534",
+      "namespace": "pr47",
+      "latest_status": "reviewed_proposed_correction_only",
+      "recommended_disposition": "retain_corrected_proposal_for_human_review",
+      "authoritative_source": {
+        "source_file": "pr47-proposed-corrections-review-only.jsonl",
+        "status": "PROPOSED_NOT_APPROVED",
+        "disposition": "proposal_only_not_approved"
+      },
+      "remaining_evidence_gap": "This is a specific commentary item, not evidence of broad public skepticism. Verify exact publication date and article text before completing medium/long; keep the corrected short aligned."
+    },
+    {
+      "assignment_key": "pr47-review-entry-1594",
+      "namespace": "pr47",
+      "latest_status": "reviewed_proposed_correction_only",
+      "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+      "authoritative_source": {
+        "source_file": "pr47-proposed-corrections-review-only.jsonl",
+        "status": "PROPOSED_NOT_APPROVED",
+        "disposition": "proposal_only_not_approved"
+      },
+      "remaining_evidence_gap": "The proposed title asserts different statuses for specific Paris, energy, and education pledges, while the checked notes do not establish those rows. Read and cite the exact AP dataset rows or remove the specific comparison; the “contestable” original remains unsupported."
+    }
+  ]
+}
