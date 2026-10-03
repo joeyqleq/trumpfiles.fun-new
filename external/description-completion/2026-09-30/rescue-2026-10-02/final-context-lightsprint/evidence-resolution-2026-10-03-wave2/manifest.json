@@ -6,6 +6,11 @@
   "authoritative_web_blocked_count": 58,
   "web_reserved_total": 80,
   "previous_evidence_assignment_count": 271,
+  "prior_valid_output_count": 0,
+  "prior_output_status_counts": {
+    "complete": 0,
+    "needs_context": 0
+  },
   "prior_valid_complete_count": 0,
   "eligible_unfinished_count": 343,
   "excluded_completed_ids": [],
