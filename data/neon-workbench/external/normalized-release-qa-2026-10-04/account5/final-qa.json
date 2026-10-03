@@ -1,0 +1,309 @@
+{
+  "record_type": "normalized_release_qa_final",
+  "source_packet": {
+    "commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+    "input_path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-10-input.jsonl",
+    "input_sha256": "542f33e20f62876f9c10dbe882dabb7202ac30c69a99a046f3aaf0d235a87569"
+  },
+  "source_job": {
+    "qa_artifact": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-10-batch-20261003-001.jsonl",
+    "qa_commit": "b6a41a6ee8fd690ed0e34c2bd0e3ce8cc90b66ce",
+    "batch_row_counts": {
+      "batch_1": 8,
+      "batch_2": 8
+    },
+    "source_terminal_rows": 16,
+    "source_unique_ids": 16,
+    "duplicate_terminal_rows": 0,
+    "conflicting_terminal_rows": 0
+  },
+  "normalized_output": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-10-normalized.jsonl",
+  "expected_ids": [
+    "entry-222",
+    "entry-365",
+    "entry-655",
+    "entry-804",
+    "entry-912",
+    "entry-1670",
+    "entry-1857",
+    "entry-2415",
+    "entry-2562",
+    "entry-3117",
+    "entry-3804",
+    "entry-4144",
+    "entry-5282",
+    "entry-5605",
+    "entry-6200",
+    "entry-6395"
+  ],
+  "counts": {
+    "expected": 16,
+    "saved": 16,
+    "missing": 0,
+    "extra": 0,
+    "duplicate_ids": 0,
+    "release_ready": 8,
+    "blocked": 8,
+    "by_disposition": {
+      "supported_proposal": 10,
+      "narrower_revision_required": 2,
+      "intentional_exclusion": 3,
+      "unsupported_hold": 1
+    }
+  },
+  "release_ready_ids": [
+    "entry-655",
+    "entry-804",
+    "entry-1670",
+    "entry-2562",
+    "entry-3804",
+    "entry-4144",
+    "entry-5282",
+    "entry-5605"
+  ],
+  "blocking_ids": [
+    "entry-222",
+    "entry-365",
+    "entry-912",
+    "entry-1857",
+    "entry-2415",
+    "entry-3117",
+    "entry-6200",
+    "entry-6395"
+  ],
+  "blocking_reasons": {
+    "entry-222": [
+      "BLOCKED: the staged copy cites other sources and says “clothing manufacturer”; align it to the mapped Los Angeles Times article and its Garment District business/store wording before release."
+    ],
+    "entry-365": [
+      "BLOCKED: the staged source list retains the unmapped The Hill URL and the staged wording is less precise about domestic deployments; align it to the mapped AP/Reuters sources and retain “proposals, not completed deployments.”"
+    ],
+    "entry-912": [
+      "BLOCKED: attribute the Dec. 23, 2020 pardon date to the White House clemency release, not the DOJ case row; revise the force account to distinguish testimony from the indictment allegation and map or remove the extra DOJ PDF."
+    ],
+    "entry-1857": [
+      "BLOCKED: the staged medium/long give March 2 while the exact PBS page displays March 3; correct the displayed date or supply the exact AP dispatch, and do not claim a measured lasting realignment."
+    ],
+    "entry-2415": [
+      "BLOCKED: the staged source list adds TrumpFile and Washington Monthly URLs not mapped to the proposal; retain the mapped Village Voice basis or map the extra claims and sources before release."
+    ],
+    "entry-3117": [
+      "BLOCKED: the staged source list adds AP coverage outside the mapped opinion citation; align the source set or map the added source before release, preserving the local-ordinance and divided-panel scope."
+    ],
+    "entry-6200": [
+      "BLOCKED / HOLD: the mapped Politico story concerns Robert Redfield and does not support the alleged Trump statements; require a dated Trump post, transcript, recording or event-specific report. The mismatch does not prove the statements never occurred."
+    ],
+    "entry-6395": [
+      "BLOCKED: the staged source list retains Investing.com and NBC links marked not relied upon; remove or explicitly mark them. Preserve the post as an allegation, not proof of fraud, and its pre-results timing."
+    ]
+  },
+  "verified_url_validation": {
+    "url_count": 27,
+    "malformed_urls": [],
+    "all_urls_from_prior_source_mapping_check": true
+  },
+  "description_length_validation": {
+    "method": "short character count; medium/long whitespace-delimited word count",
+    "required": {
+      "short": "<=180 characters",
+      "medium": "45-90 words",
+      "long": "140-300 words"
+    },
+    "checked_proposal_description_fields": 23,
+    "invalid_field_count": 0,
+    "per_id": {
+      "entry-222": [
+        {
+          "field": "proposal.corrected_short",
+          "kind": "corrected_short",
+          "value": 160,
+          "unit": "characters",
+          "valid": true
+        },
+        {
+          "field": "proposal.corrected_medium",
+          "kind": "corrected_medium",
+          "value": 53,
+          "unit": "words",
+          "valid": true
+        },
+        {
+          "field": "proposal.corrected_long",
+          "kind": "corrected_long",
+          "value": 185,
+          "unit": "words",
+          "valid": true
+        }
+      ],
+      "entry-365": [
+        {
+          "field": "proposal.description_short",
+          "kind": "description_short",
+          "value": 138,
+          "unit": "characters",
+          "valid": true
+        },
+        {
+          "field": "proposal.description_medium",
+          "kind": "description_medium",
+          "value": 65,
+          "unit": "words",
+          "valid": true
+        },
+        {
+          "field": "proposal.description_long",
+          "kind": "description_long",
+          "value": 152,
+          "unit": "words",
+          "valid": true
+        }
+      ],
+      "entry-655": [],
+      "entry-804": [],
+      "entry-912": [
+        {
+          "field": "proposal.proposed_fields.description_short",
+          "kind": "description_short",
+          "value": 112,
+          "unit": "characters",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_medium",
+          "kind": "description_medium",
+          "value": 79,
+          "unit": "words",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_long",
+          "kind": "description_long",
+          "value": 165,
+          "unit": "words",
+          "valid": true
+        }
+      ],
+      "entry-1670": [
+        {
+          "field": "proposal.proposed_fields.description_short",
+          "kind": "description_short",
+          "value": 100,
+          "unit": "characters",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_medium",
+          "kind": "description_medium",
+          "value": 61,
+          "unit": "words",
+          "valid": true
+        }
+      ],
+      "entry-1857": [
+        {
+          "field": "proposal.proposed_description_short",
+          "kind": "proposed_description_short",
+          "value": 163,
+          "unit": "characters",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_description_medium",
+          "kind": "proposed_description_medium",
+          "value": 57,
+          "unit": "words",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_description_long",
+          "kind": "proposed_description_long",
+          "value": 146,
+          "unit": "words",
+          "valid": true
+        }
+      ],
+      "entry-2415": [
+        {
+          "field": "proposal.proposed_description_short",
+          "kind": "proposed_description_short",
+          "value": 131,
+          "unit": "characters",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_description_medium",
+          "kind": "proposed_description_medium",
+          "value": 74,
+          "unit": "words",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_description_long",
+          "kind": "proposed_description_long",
+          "value": 175,
+          "unit": "words",
+          "valid": true
+        }
+      ],
+      "entry-2562": [],
+      "entry-3117": [],
+      "entry-3804": [],
+      "entry-4144": [],
+      "entry-5282": [
+        {
+          "field": "proposal.description_short",
+          "kind": "description_short",
+          "value": 119,
+          "unit": "characters",
+          "valid": true
+        },
+        {
+          "field": "proposal.description_medium",
+          "kind": "description_medium",
+          "value": 61,
+          "unit": "words",
+          "valid": true
+        },
+        {
+          "field": "proposal.description_long",
+          "kind": "description_long",
+          "value": 149,
+          "unit": "words",
+          "valid": true
+        }
+      ],
+      "entry-5605": [],
+      "entry-6200": [],
+      "entry-6395": [
+        {
+          "field": "proposal.proposed_fields.description_short",
+          "kind": "description_short",
+          "value": 118,
+          "unit": "characters",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_medium",
+          "kind": "description_medium",
+          "value": 71,
+          "unit": "words",
+          "valid": true
+        },
+        {
+          "field": "proposal.proposed_fields.description_long",
+          "kind": "description_long",
+          "value": 175,
+          "unit": "words",
+          "valid": true
+        }
+      ]
+    }
+  },
+  "terminal_reconciliation": {
+    "own_append_only_source_files": [
+      "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-10-batch-20261003-001.jsonl"
+    ],
+    "one_effective_terminal_row_per_id": true,
+    "conflict_policy": "No duplicate terminal rows existed; therefore no latest-descendant selection was needed. Holds and narrower-revision dispositions remain blocked."
+  }
+}
