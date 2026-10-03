@@ -1,0 +1,38 @@
+{
+  "worker": 21,
+  "batch": 4,
+  "completed_keys": [
+    "expanded-20260925-save-sc-stay",
+    "expanded-20260929-murray-murphy-ad-letter",
+    "fresh-20260916-eric-dominari-13g",
+    "pr47-review-entry-1213",
+    "pr47-review-entry-1300",
+    "pr47-review-entry-1471",
+    "pr47-review-entry-1537",
+    "pr47-review-entry-1595"
+  ],
+  "completed_count": 8,
+  "total_assigned": 32,
+  "remaining_keys": [],
+  "source_branch": "codex/web-release-rescue-2026-10-03",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "input_sha256": "6c44e297f22796e6007d0254c89c578195826be719bfc5c9a6b8f04aac4dff65",
+  "pr49_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "checkpoint_type": "append_only_proposal_batch",
+  "qa_counts": {
+    "rows": 8,
+    "supported_proposals": 2,
+    "unresolved_or_excluded": 0,
+    "drafts_present": 5
+  },
+  "remaining_gaps": {
+    "expanded-20260925-save-sc-stay": "Existing source log says CBS body was unavailable and Votebeat was not independently read. Official order, scope, dissent, and practical effect remain unverified; keep the candidate unresolved and do not repeat those details as fact.",
+    "expanded-20260929-murray-murphy-ad-letter": "The supplied proposal describes a senators’ oversight letter and its requests. The alleged DHS advertising payment is not established; the primary letter URL and underlying apportionment/accounting documents need direct inspection before a publication-ready draft.",
+    "fresh-20260916-eric-dominari-13g": "The SEC XML was not readable in the prior source pass. Secondary summary attributes 1,398,414 shares and 5.77% to a Schedule 13G, but primary filing verification, share base, as-of date and warrant context remain gaps.",
+    "pr47-review-entry-1213": "AP tracker snapshot retrieved October 2 declares last modified December 3, 2025 and lists 25 selected pledges: 5 kept, 9 in progress, 11 complicated. This does not support “behind” as a general score or a later dated event; distinct from PolitiFact’s tracker at entry 1595.",
+    "pr47-review-entry-1300": "AP’s March 2 reporting describes communications and press-access choices during the first days of the Iran war. It does not document a personal loyalty test. This is a communications episode, distinct from the February 27 decision chronology at entry 1471.",
+    "pr47-review-entry-1471": "AP chronology supports Trump’s remarks about negotiations at 12:25 p.m. February 27 and strike order at 3:38 p.m. It does not establish deliberate ambiguity or motive. This is a distinct decision-timeline event from entry 1300’s press communications.",
+    "pr47-review-entry-1537": "Keep only the documented February 4 Minnesota “softer touch” remark and personnel drawdown. Remove the separate January Greenland/Iceland exchange from both descriptions to avoid event conflation. Neither event supports measurable institutional strain.",
+    "pr47-review-entry-1595": "PolitiFact’s February 23 fact-check assesses Trump’s January Detroit promise claim against its own 75-promise MAGA-Meter. This is not AP’s separate 25-item tracker (entry 1213), and neither source supports a continuing messaging trend."
+  }
+}
