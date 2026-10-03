@@ -1,0 +1,200 @@
+{
+  "worker": 9,
+  "packet_commit": "520015274c29cbcc24a4e54d747e896198756415",
+  "input_path": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/worker-09-input.jsonl",
+  "input_sha256": "d2e5447c75ba22455e5c27652e5282fc5ab1f2880413e1e5c1a78d910edf5a89",
+  "supersedes_commit": "5f9c468c66d5c7dde828d98d348f704cad826263",
+  "superseded_batch_file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-09-batch-20261003-review09-b7f4.jsonl",
+  "output_file": "worker-09-batch-20261003-supplement-c61a.jsonl",
+  "output_sha256": "10675eff7282328fd1a225c8614c6177da1a4c71eaa70c6d892e2caf98672fb4",
+  "expected_count": 30,
+  "output_count": 30,
+  "expected_keys_in_order": [
+    "entry-160",
+    "entry-1443",
+    "entry-1789",
+    "entry-1840",
+    "entry-1428",
+    "entry-1378",
+    "entry-2555",
+    "entry-2402",
+    "entry-5449",
+    "entry-3490",
+    "entry-7074",
+    "entry-1264",
+    "entry-5516",
+    "entry-5984",
+    "entry-6971",
+    "entry-4158",
+    "entry-5507",
+    "entry-7018",
+    "entry-2231",
+    "entry-1522",
+    "entry-4057",
+    "entry-244",
+    "entry-2525",
+    "entry-6915",
+    "entry-7034",
+    "entry-1478",
+    "entry-1769",
+    "entry-2902",
+    "entry-1526",
+    "entry-2498"
+  ],
+  "actual_keys_in_order": [
+    "entry-160",
+    "entry-1443",
+    "entry-1789",
+    "entry-1840",
+    "entry-1428",
+    "entry-1378",
+    "entry-2555",
+    "entry-2402",
+    "entry-5449",
+    "entry-3490",
+    "entry-7074",
+    "entry-1264",
+    "entry-5516",
+    "entry-5984",
+    "entry-6971",
+    "entry-4158",
+    "entry-5507",
+    "entry-7018",
+    "entry-2231",
+    "entry-1522",
+    "entry-4057",
+    "entry-244",
+    "entry-2525",
+    "entry-6915",
+    "entry-7034",
+    "entry-1478",
+    "entry-1769",
+    "entry-2902",
+    "entry-1526",
+    "entry-2498"
+  ],
+  "missing_keys": [],
+  "extra_keys": [],
+  "duplicate_keys": [],
+  "status_counts": {
+    "scored": 6,
+    "deferred": 24
+  },
+  "scored_keys": [
+    "entry-1789",
+    "entry-1428",
+    "entry-5449",
+    "entry-5507",
+    "entry-2231",
+    "entry-4057"
+  ],
+  "dimension_names": [
+    "harm",
+    "reach",
+    "institutions",
+    "procedural_abuse",
+    "self_dealing",
+    "persistence"
+  ],
+  "dimension_range": [
+    0,
+    10
+  ],
+  "dimension_precision": "0.1",
+  "weights": {
+    "harm": 0.3,
+    "reach": 0.2,
+    "institutions": 0.15,
+    "procedural_abuse": 0.15,
+    "self_dealing": 0.1,
+    "persistence": 0.1
+  },
+  "formula": "round(0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence, 2)",
+  "score_formula_checks": {
+    "entry-1789": {
+      "dimensions": {
+        "harm": 0.0,
+        "reach": 2.0,
+        "institutions": 3.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 2.0
+      },
+      "weighted_total": 1.05,
+      "recomputed_total": 1.05
+    },
+    "entry-1428": {
+      "dimensions": {
+        "harm": 5.0,
+        "reach": 2.0,
+        "institutions": 0.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 8.0
+      },
+      "weighted_total": 2.7,
+      "recomputed_total": 2.7
+    },
+    "entry-5449": {
+      "dimensions": {
+        "harm": 4.0,
+        "reach": 5.0,
+        "institutions": 2.0,
+        "procedural_abuse": 2.0,
+        "self_dealing": 0.0,
+        "persistence": 0.0
+      },
+      "weighted_total": 2.8,
+      "recomputed_total": 2.8
+    },
+    "entry-5507": {
+      "dimensions": {
+        "harm": 0.0,
+        "reach": 5.0,
+        "institutions": 5.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 5.0
+      },
+      "weighted_total": 2.25,
+      "recomputed_total": 2.25
+    },
+    "entry-2231": {
+      "dimensions": {
+        "harm": 2.0,
+        "reach": 5.0,
+        "institutions": 0.0,
+        "procedural_abuse": 0.0,
+        "self_dealing": 0.0,
+        "persistence": 2.0
+      },
+      "weighted_total": 1.8,
+      "recomputed_total": 1.8
+    },
+    "entry-4057": {
+      "dimensions": {
+        "harm": 0.0,
+        "reach": 4.0,
+        "institutions": 4.0,
+        "procedural_abuse": 1.0,
+        "self_dealing": 0.0,
+        "persistence": 2.0
+      },
+      "weighted_total": 1.75,
+      "recomputed_total": 1.75
+    }
+  },
+  "deferred_rows_with_precise_reason": 24,
+  "rows_with_prior_provenance": 30,
+  "rows_with_supplement_provenance": 30,
+  "checkpoints": [
+    "checkpoints/worker-09-checkpoint-001.json",
+    "checkpoints/worker-09-checkpoint-002.json",
+    "checkpoints/worker-09-checkpoint-003.json",
+    "checkpoints/worker-09-checkpoint-004.json",
+    "checkpoints/worker-09-checkpoint-005.json",
+    "checkpoints/worker-09-checkpoint-006.json"
+  ],
+  "canonical_or_database_writes": 0,
+  "pr_created": false
+}
