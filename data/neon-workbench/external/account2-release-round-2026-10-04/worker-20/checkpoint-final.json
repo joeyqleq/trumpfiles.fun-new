@@ -1,0 +1,77 @@
+{
+  "actual_keys": 100,
+  "artifact": "account2-release-round-worker20-final",
+  "blockers": [
+    "Live Neon schema and values uninspected; relation/key/type assumptions cannot be certified.",
+    "Workers 07, 10, 11 lack exact-set QA attestation upstream.",
+    "Worker 12 written weights sum to 0.99 although independent six-dimension recalculation matches scores.",
+    "Source URLs were structurally checked upstream; factual validation was not performed.",
+    "Free-tier quota was not inspected; timeouts and bounded row set are safeguards, not quota certification.",
+    "38 effective HOLD rows excluded."
+  ],
+  "duplicates": [],
+  "effective_counts": {
+    "HOLD": 38,
+    "PASS": 62
+  },
+  "expected_keys": 100,
+  "extra_keys": [],
+  "files": [
+    "worker-20-effective-results.jsonl",
+    "worker-20-offline-simulation-100.jsonl",
+    "migration-six-null-only-proposal.sql",
+    "worker-20-independent-qa.md",
+    "checkpoint-final.json"
+  ],
+  "input_branches": {
+    "latest_account2_integration_qa": "ls/3-trump-final-corrections-account2-worker1--T8S",
+    "prior_worker20_offline_audit": "ls/8-trump-final-corrections-account2-worker2-A12f",
+    "sample100_source_packet": "codex/five-account-review-packets-2026-10-03"
+  },
+  "input_commits": {
+    "latest_account2_integration_qa": "38ec98608d61fc6e9eab0816f9f83d2d45f8e977",
+    "prior_worker20_offline_audit": "856a2a0b715e5f5fe590eb41d485ac24ee78bc79",
+    "sample100_source_packet": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb"
+  },
+  "latest_integration_counts": {
+    "HOLD": 36,
+    "PASS": 64
+  },
+  "manifest_assigned": 100,
+  "manifest_sha256": "d9fe830a4c965a37cd9ce7b7b057a0aa6e61f79034a4aa273965d5392f3939d9",
+  "migration_fields": [
+    "harm",
+    "reach",
+    "institutions",
+    "procedural_abuse",
+    "self_dealing",
+    "persistence"
+  ],
+  "migration_table_key_assumption": "public.trump_entries(entry_number), inferred from local typing; live schema unverified",
+  "missing_keys": [],
+  "offline_simulation_rows": 100,
+  "retained_prior_holds": [
+    "entry-29",
+    "entry-7",
+    "entry-77"
+  ],
+  "scope": "offline only; no database connection or writes",
+  "source_input_file_sha256": {
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-01-input.jsonl": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-02-input.jsonl": "d03503aa35f2e7865af5c00c7c7dff4ded3a181ac4e981c8e4de21d74eeeeff1",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-03-input.jsonl": "1e26948a9ff5bce1fe6f5e6932871f928ff20c8b1dfcbb6b784b3afa0f112737",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-04-input.jsonl": "d87729dac75073905c6bd71d889c18fd732f71fcec4be7f40a726704506ef694",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-05-input.jsonl": "3e4ea56c4330113b712013f1fbb2d43be03efcfe8869f1e8318fd3192adc163c",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-06-input.jsonl": "87fe6f4c0c9b772554fdf9cd14512738400c2939c8fec304b582dcbee5bcedc7",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-07-input.jsonl": "5ddd9d3030f55ebaf2a6f99757290826cc9362dbc29099ca53580239d652cdae",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-08-input.jsonl": "2d8a8cff708e0e95b15792a1938299710341f2d6d228a0b50c3efde2b9e9b24e",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-09-input.jsonl": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-10-input.jsonl": "faaedd41063c348cfbd27e134213db6d1b234f9c80deb7fd50f2b1093e38e4ba",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-11-input.jsonl": "c68361057c7fd624f64e245d66012b3eb8cb895ec4929b42b02c0443e207c536",
+    "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-12-input.jsonl": "3c59e2fb0acd70f3524a41e5587093f6c00470ac81a4ca1863bfcf736708cafc"
+  },
+  "staged_migration_rows": 62,
+  "synthetic_field_checks": 600,
+  "synthetic_nonnull_values_preserved": 300,
+  "unique_keys": 100
+}
