@@ -1,0 +1,22 @@
+{
+  "checkpoint": "worker-01",
+  "supersedes": "worker-01-checkpoint-009-task-3Y1W2k87.json",
+  "batch_file": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-01-batch-2026-10-03-task-3Y1W2k87.jsonl",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32",
+  "processed_count": 9,
+  "processed_keys": [
+    "entry-1",
+    "entry-13",
+    "entry-25",
+    "entry-39",
+    "entry-51",
+    "entry-63",
+    "entry-77",
+    "entry-89",
+    "entry-101"
+  ],
+  "pass_count": 6,
+  "hold_count": 3,
+  "note": "Corrected snapshot: candidate descriptions are read from the top-level staged_description; input.existing is baseline context. Entry-13 proposed medium is 59 words."
+}

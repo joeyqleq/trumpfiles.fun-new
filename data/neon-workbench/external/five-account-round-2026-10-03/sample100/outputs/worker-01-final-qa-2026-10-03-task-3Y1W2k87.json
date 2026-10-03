@@ -1,0 +1,135 @@
+{
+  "qa_type": "sample100_final_exact_set",
+  "packet": {
+    "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-01-input.jsonl",
+    "input_sha256": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32",
+    "prompt_sha256": "b815137c9a758991ae30c6eaa621eb088d547f4161ad1db452a48f2bb5527060"
+  },
+  "batch_output": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-01-batch-2026-10-03-task-3Y1W2k87.jsonl",
+  "batch_output_sha256": "e051beeef673420ca497d39d9e29a88ff35dfa487c878325ed8b3fada3e2206d",
+  "exact_set": {
+    "expected_count": 9,
+    "actual_count": 9,
+    "expected_keys": [
+      "entry-1",
+      "entry-13",
+      "entry-25",
+      "entry-39",
+      "entry-51",
+      "entry-63",
+      "entry-77",
+      "entry-89",
+      "entry-101"
+    ],
+    "actual_keys": [
+      "entry-1",
+      "entry-13",
+      "entry-25",
+      "entry-39",
+      "entry-51",
+      "entry-63",
+      "entry-77",
+      "entry-89",
+      "entry-101"
+    ],
+    "duplicates": 0,
+    "matches_exactly": true
+  },
+  "result_summary": {
+    "pass": 6,
+    "hold": 3,
+    "criterion_pass_counts": {
+      "frozen_row_identity": 9,
+      "preserved_text": 6,
+      "description_short": 9,
+      "description_medium": 9,
+      "description_long": 9,
+      "impact_formula": 9,
+      "source_provenance": 9
+    },
+    "simulated_parameter_readiness": {
+      "ready": 9,
+      "partial": 0
+    }
+  },
+  "per_key": [
+    {
+      "key": "entry-1",
+      "status": "pass",
+      "reason": "All supplied checks pass; the explicit preserved-text snapshot matches and all three description lengths meet bounds.",
+      "sql_parameter_readiness": "ready"
+    },
+    {
+      "key": "entry-13",
+      "status": "pass",
+      "reason": "All supplied checks pass; the proposed medium is present at 59 words, the explicit preserved fields match, and all text lengths meet bounds.",
+      "sql_parameter_readiness": "ready"
+    },
+    {
+      "key": "entry-25",
+      "status": "pass",
+      "reason": "All supplied checks pass; the candidate matches its explicit preserved-text snapshot and all description lengths meet bounds.",
+      "sql_parameter_readiness": "ready"
+    },
+    {
+      "key": "entry-39",
+      "status": "pass",
+      "reason": "All supplied checks pass; preserved title and short text match, and all description lengths meet bounds.",
+      "sql_parameter_readiness": "ready"
+    },
+    {
+      "key": "entry-51",
+      "status": "hold",
+      "reason": "HOLD: packet marks description_short as preserved but supplies no prior short-text value; the current short value cannot be compared offline.",
+      "sql_parameter_readiness": "ready"
+    },
+    {
+      "key": "entry-63",
+      "status": "hold",
+      "reason": "HOLD: packet marks description_short as preserved but supplies no prior short-text value; the current short value cannot be compared offline.",
+      "sql_parameter_readiness": "ready"
+    },
+    {
+      "key": "entry-77",
+      "status": "pass",
+      "reason": "All supplied checks pass; source additions are explicitly recorded in source_metadata_repair and all description lengths meet bounds.",
+      "sql_parameter_readiness": "ready"
+    },
+    {
+      "key": "entry-89",
+      "status": "pass",
+      "reason": "All supplied checks pass; explicit preserved-text values match and all description lengths meet bounds.",
+      "sql_parameter_readiness": "ready"
+    },
+    {
+      "key": "entry-101",
+      "status": "hold",
+      "reason": "HOLD: packet marks description_short as preserved but supplies no prior short-text value; the current short value cannot be compared offline.",
+      "sql_parameter_readiness": "ready"
+    }
+  ],
+  "checkpoints": [
+    "outputs/worker-01-checkpoint-005-task-3Y1W2k87.json",
+    "outputs/worker-01-checkpoint-005-correction-task-3Y1W2k87.json",
+    "outputs/worker-01-checkpoint-009-task-3Y1W2k87.json",
+    "outputs/worker-01-checkpoint-009-correction-task-3Y1W2k87.json"
+  ],
+  "checkpoint_correction": "The correction snapshots supersede earlier in-progress counts after the audit distinguished entry-13 input.existing baseline text from the top-level staged candidate; the proposed medium is 59 words.",
+  "sql_simulation": {
+    "status": "bound-parameter dry-run readiness only",
+    "ready_records": 9,
+    "partial_records": 0,
+    "row_identity_bind": "entry_number",
+    "text_bind_fields": [
+      "description_short",
+      "description_medium",
+      "description_long"
+    ],
+    "null_only_guard": "required per target field; preserve any non-NULL value",
+    "database_null_state": "not read",
+    "neon_calls": 0,
+    "ddl_or_dml_executed": false
+  },
+  "scope_note": "Offline rehearsal only. Source URL and provenance-path presence and consistency were checked from the packet; source pages were not fetched. No canonical data or packet inputs were edited. This is not editorial approval or production import."
+}

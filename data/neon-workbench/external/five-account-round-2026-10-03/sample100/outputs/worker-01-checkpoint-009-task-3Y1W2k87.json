@@ -1,0 +1,21 @@
+{
+  "checkpoint": "worker-01",
+  "batch_file": "worker-01-batch-2026-10-03-task-3Y1W2k87.jsonl",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32",
+  "processed_count": 9,
+  "processed_keys": [
+    "entry-1",
+    "entry-13",
+    "entry-25",
+    "entry-39",
+    "entry-51",
+    "entry-63",
+    "entry-77",
+    "entry-89",
+    "entry-101"
+  ],
+  "pass_count": 5,
+  "hold_count": 4,
+  "note": "All assigned records processed; final exact-set QA follows."
+}
