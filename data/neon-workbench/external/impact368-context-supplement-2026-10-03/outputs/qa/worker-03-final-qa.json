@@ -1,0 +1,86 @@
+{
+  "worker": 3,
+  "packet": "impact368-context-supplement-2026-10-03",
+  "task_branch": "ls/4-trump-files-impact368-review-03-of-12-46t_",
+  "supplement_commit": "520015274c29cbcc24a4e54d747e896198756415",
+  "supplement_input_sha256": "b77c110d361e06cd7378e25372e1e1b7b71ee942eb9193a178abf190aa016b0a",
+  "original_packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "original_input_sha256": "32168db7fb65fe41fd76f414c3e67f768f9205f30929eb1d71a0b1b16fe044b3",
+  "output_file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-03-batch-20261003-context-c4e17.jsonl",
+  "output_sha256": "727340a957f02968027348a9c926c80b26f914a17920fa2c42aa224df7913008",
+  "expected_count": 31,
+  "actual_count": 31,
+  "exact_order_match": true,
+  "unique_ids": 31,
+  "scored_ids": [
+    [
+      "entry-113",
+      3.68
+    ],
+    [
+      "entry-980",
+      1.45
+    ],
+    [
+      "entry-2934",
+      0.48
+    ],
+    [
+      "entry-1284",
+      2.8
+    ],
+    [
+      "entry-2903",
+      0.88
+    ],
+    [
+      "entry-456",
+      4.9
+    ],
+    [
+      "entry-843",
+      0.83
+    ]
+  ],
+  "deferred_ids": [
+    "entry-1298",
+    "entry-1662",
+    "entry-1603",
+    "entry-1299",
+    "entry-1611",
+    "entry-1661",
+    "entry-199",
+    "entry-2529",
+    "entry-1775",
+    "entry-4138",
+    "entry-835",
+    "entry-1459",
+    "entry-1633",
+    "entry-5966",
+    "entry-4859",
+    "entry-6019",
+    "entry-1455",
+    "entry-1702",
+    "entry-2460",
+    "entry-1641",
+    "entry-246",
+    "entry-4166",
+    "entry-1625",
+    "entry-5647"
+  ],
+  "score_weights": {
+    "harm": "0.30",
+    "reach": "0.20",
+    "institutions": "0.15",
+    "procedural_abuse": "0.15",
+    "self_dealing": "0.10",
+    "persistence": "0.10"
+  },
+  "dimension_precision": "0.1",
+  "formula_validation": "passed; weighted totals rounded half-up to 0.01",
+  "source_basis_validation": "passed; every URL comes from that record\u2019s staged description and every row has rationale/basis",
+  "supersession_provenance_validation": "passed; each row references the first worker-03 batch and supplement commit",
+  "checkpoint_024_prefix_matches": "passed",
+  "canonical_or_neon_changes": "none",
+  "project_code_checks": "not applicable; data-only review artifacts"
+}
