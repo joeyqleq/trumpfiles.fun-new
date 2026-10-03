@@ -1,0 +1,392 @@
+{
+  "task": "Wave3 citation QA worker 23 final checkpoint",
+  "source_packet": {
+    "branch": "codex/wave3-citation-qa-2026-10-03",
+    "commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+    "worker_input_path": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/worker-23-input.jsonl",
+    "worker_input_sha256": "609357b5bd2d253defe1b89ddaf092b82a70fba23f25532e033caa07306a2a44",
+    "worker_manifest_count": 17,
+    "manifest_key_count": 17
+  },
+  "output": {
+    "path": "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/worker-23-batch-UNIQUE.jsonl",
+    "row_count": 17,
+    "unique_record_ids": 17,
+    "status_counts": {
+      "corrected_claim_proposal": 8,
+      "citation_repaired_proposal": 5,
+      "scope_exclusion_proposal": 3,
+      "unresolved_hold": 1
+    }
+  },
+  "exact_set_qa": {
+    "expected_count": 17,
+    "output_count": 17,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "all_prior_input_hashes_match": true,
+    "all_original_claim_substantiated_false": true,
+    "all_append_only_proposals": true,
+    "all_no_canonical_or_database_change": true,
+    "all_changed_fields_present": true,
+    "corrected_draft_length_and_source_map_pass_count": 13,
+    "exclusion_or_unresolved_gap_present_count": 4,
+    "qa_findings": 0
+  },
+  "per_id_review": [
+    {
+      "record_id": "entry-222",
+      "status": "corrected_claim_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 4,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 124,
+        "medium_words": 53,
+        "long_words": 167
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "June 2025 Los Angeles workplace raids are supported by contemporary reporting; nationwide E-Verify, quota coordination, and general warrantless-search claims are not.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-352",
+      "status": "corrected_claim_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 3,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 143,
+        "medium_words": 64,
+        "long_words": 171
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "The Brennan Center page supports the described plan proposals. The Heritage chapter PDF was not independently read here; proposals must remain attributed and must not be described as implemented.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-651",
+      "status": "citation_repaired_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 4,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 49,
+        "medium_words": 82,
+        "long_words": 163
+      },
+      "changed_fields": [
+        "description_long",
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "2017 denial is documented; later 2021 rule changes status. Do not present the 2017 decision as current blanket approval.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-776",
+      "status": "citation_repaired_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 3,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 151,
+        "medium_words": 71,
+        "long_words": 181
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "Transcript supports the announced instruction to halt funding pending review, not actual amounts, duration, or payment implementation.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-860",
+      "status": "citation_repaired_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 3,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 133,
+        "medium_words": 73,
+        "long_words": 161
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "DOJ instrument supports pardon, offense, docket, and sentence. No source establishes Trump’s rationale or corruption.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-978",
+      "status": "citation_repaired_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 3,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 137,
+        "medium_words": 73,
+        "long_words": 147
+      },
+      "changed_fields": [
+        "description_long",
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "DOJ clemency instrument supports time-served commutation and terms; stated rationale is attributed to White House. Scheme detail beyond that statement remains unavailable.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-1768",
+      "status": "scope_exclusion_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 1,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": null,
+      "changed_fields": [
+        "source_urls",
+        "status"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "AP tracker page supports existence of a generic promise-tracking project, but packet identifies no dated pledge, status, criterion, or discrete Trump event; exclude from event timeline unless generic tracker records are in scope.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-2340",
+      "status": "unresolved_hold",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 3,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": null,
+      "changed_fields": [
+        "source_urls",
+        "status"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "The Senate interview PDF exceeds retrieval size and could not be read; an archive guide supports only a general FHA inquiry. Need readable primary transcript or credible event-specific account; no official FHA blacklist/sanction record is supplied.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-2496",
+      "status": "scope_exclusion_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 2,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": null,
+      "changed_fields": [
+        "source_urls",
+        "status"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "No verified condominium transaction, counterparties, financial trail, or money-laundering finding is supplied. The NYT tenant-dispute article was inaccessible and its headline cannot support the accusation.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-2636",
+      "status": "corrected_claim_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 2,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 142,
+        "medium_words": 54,
+        "long_words": 183
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "TPM supports reported requests through unofficial Russian email accounts and a FinCEN official’s concern; it says what information was exchanged is unclear. No proof of successful disclosure, infiltration, official finding, or Trump direction.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-3273",
+      "status": "corrected_claim_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 2,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 162,
+        "medium_words": 61,
+        "long_words": 189
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "CNN supports the meeting and reported strategy discussion. The meeting does not establish improper agreement or the senators’ eventual votes.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-3832",
+      "status": "corrected_claim_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 2,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 143,
+        "medium_words": 61,
+        "long_words": 186
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "Bloomberg supports Trump’s public statement. No implementing directive or evidence that every wind/solar approval ceased is supplied; electricity-price assertion remains attributed.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-4144",
+      "status": "scope_exclusion_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 1,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": null,
+      "changed_fields": [
+        "source_urls",
+        "status"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "The Guardian feature is literary coverage and its Trump mention is hypothetical; it supplies no Trump event to place on the timeline.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-5094",
+      "status": "corrected_claim_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 2,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 128,
+        "medium_words": 47,
+        "long_words": 149
+      },
+      "changed_fields": [
+        "description_long",
+        "description_medium",
+        "description_short",
+        "title"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "Cointelegraph reports NYT’s approximate 60% finding using mixed dispositions. NYT could not be read; exact denominator and matter-by-matter changes remain unverified, and political favoritism is not established.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-5565",
+      "status": "citation_repaired_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 5,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 116,
+        "medium_words": 70,
+        "long_words": 162
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "House Clerk confirms 215–214 passage. CBO estimates apply to House-passed text, stated time window and January 2025 baseline; projections are not observed effects or estimates for enacted text.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-6146",
+      "status": "corrected_claim_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 3,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 174,
+        "medium_words": 65,
+        "long_words": 164
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "Hearing transcript supports temporary restoration based on likely Fifth Amendment due-process injury and no First Amendment ruling; Reuters supports later permanent restoration. Video provenance/sole cause is not established.",
+      "qa_findings": []
+    },
+    {
+      "record_id": "entry-6319",
+      "status": "corrected_claim_proposal",
+      "entry_number_ok": true,
+      "prior_input_hash_ok": true,
+      "source_mapping_url_count": 4,
+      "source_mapping_quality_ok": true,
+      "corrected_draft_lengths": {
+        "short_characters": 146,
+        "medium_words": 79,
+        "long_words": 161
+      },
+      "changed_fields": [
+        "source_urls"
+      ],
+      "original_claim_substantiated": false,
+      "proposal_only": true,
+      "remaining_gap_or_uncertainty": "DOJ supports conviction and eight-month sentence. Reuters/AP sources map the alleged malware drive to authorities, but AP pages were inaccessible; malware use, espionage, and routine access claims remain unsupported.",
+      "qa_findings": []
+    }
+  ],
+  "remaining_exact_evidence_gaps": {
+    "entry-222": "June 2025 Los Angeles workplace raids are supported by contemporary reporting; nationwide E-Verify, quota coordination, and general warrantless-search claims are not.",
+    "entry-352": "The Brennan Center page supports the described plan proposals. The Heritage chapter PDF was not independently read here; proposals must remain attributed and must not be described as implemented.",
+    "entry-651": "2017 denial is documented; later 2021 rule changes status. Do not present the 2017 decision as current blanket approval.",
+    "entry-776": "Transcript supports the announced instruction to halt funding pending review, not actual amounts, duration, or payment implementation.",
+    "entry-860": "DOJ instrument supports pardon, offense, docket, and sentence. No source establishes Trump’s rationale or corruption.",
+    "entry-978": "DOJ clemency instrument supports time-served commutation and terms; stated rationale is attributed to White House. Scheme detail beyond that statement remains unavailable.",
+    "entry-1768": "AP tracker page supports existence of a generic promise-tracking project, but packet identifies no dated pledge, status, criterion, or discrete Trump event; exclude from event timeline unless generic tracker records are in scope.",
+    "entry-2340": "The Senate interview PDF exceeds retrieval size and could not be read; an archive guide supports only a general FHA inquiry. Need readable primary transcript or credible event-specific account; no official FHA blacklist/sanction record is supplied.",
+    "entry-2496": "No verified condominium transaction, counterparties, financial trail, or money-laundering finding is supplied. The NYT tenant-dispute article was inaccessible and its headline cannot support the accusation.",
+    "entry-2636": "TPM supports reported requests through unofficial Russian email accounts and a FinCEN official’s concern; it says what information was exchanged is unclear. No proof of successful disclosure, infiltration, official finding, or Trump direction.",
+    "entry-3273": "CNN supports the meeting and reported strategy discussion. The meeting does not establish improper agreement or the senators’ eventual votes.",
+    "entry-3832": "Bloomberg supports Trump’s public statement. No implementing directive or evidence that every wind/solar approval ceased is supplied; electricity-price assertion remains attributed.",
+    "entry-4144": "The Guardian feature is literary coverage and its Trump mention is hypothetical; it supplies no Trump event to place on the timeline.",
+    "entry-5094": "Cointelegraph reports NYT’s approximate 60% finding using mixed dispositions. NYT could not be read; exact denominator and matter-by-matter changes remain unverified, and political favoritism is not established.",
+    "entry-5565": "House Clerk confirms 215–214 passage. CBO estimates apply to House-passed text, stated time window and January 2025 baseline; projections are not observed effects or estimates for enacted text.",
+    "entry-6146": "Hearing transcript supports temporary restoration based on likely Fifth Amendment due-process injury and no First Amendment ruling; Reuters supports later permanent restoration. Video provenance/sole cause is not established.",
+    "entry-6319": "DOJ supports conviction and eight-month sentence. Reuters/AP sources map the alleged malware drive to authorities, but AP pages were inaccessible; malware use, espionage, and routine access claims remain unsupported."
+  },
+  "limitations": "Proposals only: none of the rows modifies canonical records or a database. The unresolved hold for entry-2340 remains because the linked Senate interview PDF could not be read and the packet lacks an authoritative FHA blacklist record; see its row uncertainty. Source access notes are preserved verbatim in each per-URL mapping."
+}
