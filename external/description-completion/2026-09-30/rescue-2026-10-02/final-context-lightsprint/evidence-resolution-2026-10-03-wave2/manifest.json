@@ -6,27 +6,60 @@
   "authoritative_web_blocked_count": 58,
   "web_reserved_total": 80,
   "previous_evidence_assignment_count": 271,
-  "prior_valid_output_count": 0,
+  "prior_valid_output_count": 271,
   "prior_output_status_counts": {
-    "complete": 0,
-    "needs_context": 0
+    "complete": 32,
+    "needs_context": 239
   },
-  "prior_valid_complete_count": 0,
-  "eligible_unfinished_count": 343,
-  "excluded_completed_ids": [],
+  "prior_valid_complete_count": 32,
+  "eligible_unfinished_count": 311,
+  "excluded_completed_ids": [
+    "entry-181",
+    "entry-184",
+    "entry-196",
+    "entry-200",
+    "entry-207",
+    "entry-212",
+    "entry-213",
+    "entry-214",
+    "entry-2328",
+    "entry-2367",
+    "entry-244",
+    "entry-2442",
+    "entry-246",
+    "entry-2498",
+    "entry-2541",
+    "entry-2546",
+    "entry-261",
+    "entry-263",
+    "entry-2824",
+    "entry-283",
+    "entry-2903",
+    "entry-3088",
+    "entry-3369",
+    "entry-3824",
+    "entry-3919",
+    "entry-405",
+    "entry-4897",
+    "entry-5",
+    "entry-5203",
+    "entry-57",
+    "entry-6389",
+    "entry-871"
+  ],
   "worker_sha256": {
-    "1": "f61081ebe018a41491935cc31630f04ad6ca5ce37c596db254dd2d716cdf887d",
+    "1": "ff51e2b6f2a581202d4347be101ec070f09a66f720ec59ed8c4997e150dd5701",
     "2": "41f4e57768ca3c337c276b7e7597064d934af3c5254ee94ad7fb4ad6521767aa",
-    "3": "d40a3dbfea9c5869dffb999f58c2e400d7f664617e037ef91a16ad9f7c60c403",
-    "4": "af98ac2d3e3cf34dcea62d5855f9f0652c24e00023de95e355f666af037d32fb",
-    "5": "d2fd04a68c89c16d939f8deb9eff4b05fe6fe4978bcf62e7685e38ae82e9b427",
-    "6": "65b1484264902bd3afe9f2b425d7407ba7b7f3f8a1048253fbf84a9f3eb03a9c",
-    "7": "e5abe03dd1cb1ed3c174df12496967d64e2e3f4da9a7a60e69ce10d3e9d5e8fd",
-    "8": "2139d5cc90cce136792062be3ea5d107a6f280dde765056081faa89a9d905fc4",
-    "9": "17b86001ee9e60ce68a48c86a737059c3731859ed0dd728bdedc115930e9b34e",
-    "10": "873df2fb8d9946fd31162fb7e0fd3333f434a33811903492215f30562130717b",
-    "11": "97e27fe179bbfc76f27931e40656be8e03198e0da3a11915c3cd2c12f6ff64ba",
-    "12": "81d0fd71f03fd2f1a7208583f8791e57e3ae59742091b3b7c3aa8dd6e96a7616"
+    "3": "229ee6a363b494dd52139dced1198768e867716df8bfe0810c1388db668ee8d2",
+    "4": "6b297f1d9cb498cd828829b23b4a823c24c861b3ca334cd6ce41d11bbcf8ea36",
+    "5": "318ef676a6bd6ef73470318ff5d64c3b4dfd8021b61b14ced94248b010144f8c",
+    "6": "f2d0b0b06046dd873a1478030535036a465d772cf3cc12aadcfbf50b04ef3961",
+    "7": "70053c0ba6d9da53cb64e66a3f4d47d851709737efafbff38015eaddec4b5336",
+    "8": "c339efb235d39f2d82bf36aff1db0057547dd15778c4447d065dc63c334b27f7",
+    "9": "a90ceb586630c6e96e36b0df430097892d4f31bca5a9969b62fe310c76870d51",
+    "10": "857d89c37002b913ac5b52f71fdcd797937ef1c0f465e60c1e789dca7553c22f",
+    "11": "a048319a86caeb2c8b07c796385039cba79d059eca52a6611eae8f9bdd2fa8b6",
+    "12": "f00827850b9c9dc7980a094493e0aa997fd0d0e653d197ee84a04e7912f61e6a"
   },
   "owners": [
     {
@@ -37,7 +70,6 @@
         "entry-1771",
         "entry-2057",
         "entry-2331",
-        "entry-246",
         "entry-2864",
         "entry-3212",
         "entry-35",
@@ -47,7 +79,6 @@
         "entry-5094",
         "entry-5413",
         "entry-5541",
-        "entry-57",
         "entry-6131",
         "entry-6230",
         "entry-6319",
@@ -56,8 +87,8 @@
         "entry-860",
         "entry-945"
       ],
-      "record_count": 23,
-      "sha256": "f61081ebe018a41491935cc31630f04ad6ca5ce37c596db254dd2d716cdf887d"
+      "record_count": 21,
+      "sha256": "ff51e2b6f2a581202d4347be101ec070f09a66f720ec59ed8c4997e150dd5701"
     },
     {
       "worker": 2,
@@ -108,17 +139,13 @@
         "entry-1730",
         "entry-1779",
         "entry-188",
-        "entry-207",
         "entry-221",
         "entry-2340",
         "entry-2380",
         "entry-2466",
         "entry-2518",
         "entry-2560",
-        "entry-263",
         "entry-275",
-        "entry-2903",
-        "entry-3369",
         "entry-3520",
         "entry-3735",
         "entry-3871",
@@ -126,7 +153,6 @@
         "entry-4113",
         "entry-4308",
         "entry-4622",
-        "entry-5203",
         "entry-5441",
         "entry-5565",
         "entry-5762",
@@ -136,11 +162,10 @@
         "entry-651",
         "entry-769",
         "entry-826",
-        "entry-871",
         "entry-965"
       ],
-      "record_count": 34,
-      "sha256": "d40a3dbfea9c5869dffb999f58c2e400d7f664617e037ef91a16ad9f7c60c403"
+      "record_count": 28,
+      "sha256": "229ee6a363b494dd52139dced1198768e867716df8bfe0810c1388db668ee8d2"
     },
     {
       "worker": 4,
@@ -182,7 +207,7 @@
         "entry-969"
       ],
       "record_count": 35,
-      "sha256": "af98ac2d3e3cf34dcea62d5855f9f0652c24e00023de95e355f666af037d32fb"
+      "sha256": "6b297f1d9cb498cd828829b23b4a823c24c861b3ca334cd6ce41d11bbcf8ea36"
     },
     {
       "worker": 5,
@@ -217,7 +242,7 @@
         "entry-978"
       ],
       "record_count": 28,
-      "sha256": "d2fd04a68c89c16d939f8deb9eff4b05fe6fe4978bcf62e7685e38ae82e9b427"
+      "sha256": "318ef676a6bd6ef73470318ff5d64c3b4dfd8021b61b14ced94248b010144f8c"
     },
     {
       "worker": 6,
@@ -247,7 +272,7 @@
         "entry-985"
       ],
       "record_count": 23,
-      "sha256": "65b1484264902bd3afe9f2b425d7407ba7b7f3f8a1048253fbf84a9f3eb03a9c"
+      "sha256": "f2d0b0b06046dd873a1478030535036a465d772cf3cc12aadcfbf50b04ef3961"
     },
     {
       "worker": 7,
@@ -289,13 +314,11 @@
         "entry-989"
       ],
       "record_count": 35,
-      "sha256": "e5abe03dd1cb1ed3c174df12496967d64e2e3f4da9a7a60e69ce10d3e9d5e8fd"
+      "sha256": "70053c0ba6d9da53cb64e66a3f4d47d851709737efafbff38015eaddec4b5336"
     },
     {
       "worker": 8,
       "record_ids": [
-        "entry-196",
-        "entry-212",
         "entry-230",
         "entry-236",
         "entry-2439",
@@ -315,26 +338,17 @@
         "entry-908",
         "entry-990"
       ],
-      "record_count": 20,
-      "sha256": "2139d5cc90cce136792062be3ea5d107a6f280dde765056081faa89a9d905fc4"
+      "record_count": 18,
+      "sha256": "c339efb235d39f2d82bf36aff1db0057547dd15778c4447d065dc63c334b27f7"
     },
     {
       "worker": 9,
       "record_ids": [
-        "entry-213",
         "entry-231",
         "entry-2363",
-        "entry-244",
-        "entry-2498",
-        "entry-2541",
-        "entry-2824",
-        "entry-3088",
         "entry-367",
-        "entry-3824",
-        "entry-3919",
         "entry-425",
         "entry-4377",
-        "entry-4897",
         "entry-5374",
         "entry-5984",
         "entry-6199",
@@ -346,55 +360,43 @@
         "entry-912",
         "entry-996"
       ],
-      "record_count": 24,
-      "sha256": "17b86001ee9e60ce68a48c86a737059c3731859ed0dd728bdedc115930e9b34e"
+      "record_count": 15,
+      "sha256": "a90ceb586630c6e96e36b0df430097892d4f31bca5a9969b62fe310c76870d51"
     },
     {
       "worker": 10,
       "record_ids": [
         "entry-1716",
         "entry-1768",
-        "entry-181",
-        "entry-200",
-        "entry-214",
         "entry-2321",
-        "entry-2367",
         "entry-2441",
         "entry-2500",
-        "entry-2546",
-        "entry-261",
         "entry-2706",
-        "entry-283",
         "entry-3109",
         "entry-3444",
         "entry-3678",
         "entry-3832",
         "entry-3947",
-        "entry-405",
         "entry-4257",
         "entry-444",
-        "entry-5",
         "entry-5381",
         "entry-5505",
         "entry-5661",
         "entry-5996",
         "entry-6200",
         "entry-6293",
-        "entry-6389",
         "entry-6759",
         "entry-732",
         "entry-811",
         "entry-846"
       ],
-      "record_count": 33,
-      "sha256": "873df2fb8d9946fd31162fb7e0fd3333f434a33811903492215f30562130717b"
+      "record_count": 23,
+      "sha256": "857d89c37002b913ac5b52f71fdcd797937ef1c0f465e60c1e789dca7553c22f"
     },
     {
       "worker": 11,
       "record_ids": [
         "entry-1726",
-        "entry-2328",
-        "entry-2442",
         "entry-2501",
         "entry-255",
         "entry-2615",
@@ -417,15 +419,14 @@
         "entry-853",
         "entry-920"
       ],
-      "record_count": 24,
-      "sha256": "97e27fe179bbfc76f27931e40656be8e03198e0da3a11915c3cd2c12f6ff64ba"
+      "record_count": 22,
+      "sha256": "a048319a86caeb2c8b07c796385039cba79d059eca52a6611eae8f9bdd2fa8b6"
     },
     {
       "worker": 12,
       "record_ids": [
         "entry-1727",
         "entry-1770",
-        "entry-184",
         "entry-203",
         "entry-219",
         "entry-2330",
@@ -453,8 +454,8 @@
         "entry-854",
         "entry-934"
       ],
-      "record_count": 29,
-      "sha256": "81d0fd71f03fd2f1a7208583f8791e57e3ae59742091b3b7c3aa8dd6e96a7616"
+      "record_count": 28,
+      "sha256": "f00827850b9c9dc7980a094493e0aa997fd0d0e653d197ee84a04e7912f61e6a"
     }
   ],
   "output_pattern": "final-context-lightsprint/outputs/worker-NN-evidence-resolution-wave2-batch-NNN.jsonl",
