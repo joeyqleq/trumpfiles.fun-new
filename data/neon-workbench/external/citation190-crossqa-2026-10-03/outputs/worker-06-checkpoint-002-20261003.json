@@ -1,0 +1,30 @@
+{
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_input_sha256": "b4c7d9a725e43e402eb13a9862ab0ba6efe39da7982f3ea49c98b285b5041a7c",
+  "checkpoint_after_records": 16,
+  "reviewed_keys": [
+    "entry-203",
+    "entry-267",
+    "entry-594",
+    "entry-774",
+    "entry-860",
+    "entry-985",
+    "entry-1771",
+    "entry-2373",
+    "entry-2518",
+    "entry-2864",
+    "entry-3678",
+    "entry-4017",
+    "entry-4619",
+    "entry-5531",
+    "entry-6141",
+    "entry-6319"
+  ],
+  "classification_counts": {
+    "intentional_exclusion": 3,
+    "narrower_revision_required": 2,
+    "supported_proposal": 11
+  },
+  "all_reviews_include_source_urls": true,
+  "append_only": true
+}

@@ -1,0 +1,62 @@
+{
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_input_path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-06-input.jsonl",
+  "packet_input_sha256": "b4c7d9a725e43e402eb13a9862ab0ba6efe39da7982f3ea49c98b285b5041a7c",
+  "expected_keys": [
+    "entry-203",
+    "entry-267",
+    "entry-594",
+    "entry-774",
+    "entry-860",
+    "entry-985",
+    "entry-1771",
+    "entry-2373",
+    "entry-2518",
+    "entry-2864",
+    "entry-3678",
+    "entry-4017",
+    "entry-4619",
+    "entry-5531",
+    "entry-6141",
+    "entry-6319"
+  ],
+  "reviewed_keys": [
+    "entry-203",
+    "entry-267",
+    "entry-594",
+    "entry-774",
+    "entry-860",
+    "entry-985",
+    "entry-1771",
+    "entry-2373",
+    "entry-2518",
+    "entry-2864",
+    "entry-3678",
+    "entry-4017",
+    "entry-4619",
+    "entry-5531",
+    "entry-6141",
+    "entry-6319"
+  ],
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "duplicate_keys": [],
+  "record_count": 16,
+  "exact_set_pass": true,
+  "classification_counts": {
+    "supported_proposal": 11,
+    "narrower_revision_required": 2,
+    "unsupported_hold": 0,
+    "intentional_exclusion": 3
+  },
+  "unresolved_unsupported_hold_count": 0,
+  "files": [
+    "worker-06-batch-001-20261003.jsonl",
+    "worker-06-batch-002-20261003.jsonl"
+  ],
+  "review_scope": "Independent exact-URL-to-fact and claim-scope review of account1 proposals; no production/canonical changes.",
+  "live_neon_calls": 0,
+  "canonical_edits": 0,
+  "other_worker_edits": 0,
+  "append_only": true
+}
