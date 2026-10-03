@@ -1,0 +1,19 @@
+{
+  "independent_qa": {
+    "old_498_current_claim_retracted": true,
+    "historical_audit_files_unmodified": true,
+    "authoritative_wave3_file_available": false,
+    "exact_204_key_count_verified": false,
+    "exact_overlap_with_311_verified": false,
+    "canonical_fresh_membership_recomputed": false,
+    "held_records_forced_to_pass": false,
+    "canonical_or_neon_mutation": false
+  },
+  "source_search": {
+    "origin_heads_fetched": 130,
+    "matching_authoritative_path_in_reachable_origin_trees": false,
+    "matching_file_in_checkout": false,
+    "matching_path_in_unreachable_commit_trees": false
+  },
+  "result": "BLOCKED: correction is documented and historical 498 claim withdrawn, but exact-set reconciliation cannot be completed without the authoritative row-level input and its source commit."
+}

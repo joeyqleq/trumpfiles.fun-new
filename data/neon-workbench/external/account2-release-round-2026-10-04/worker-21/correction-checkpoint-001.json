@@ -1,0 +1,48 @@
+{
+  "task": "Account2 worker 21 release-gate correction",
+  "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "supersedes": "checkpoint.json staging-status and 204-set blocker statements",
+  "historical_files_preserved": true,
+  "retraction": {
+    "old_claim": "Current authoritative staged file contains 498 needs_context rows",
+    "status": "retracted",
+    "reason": "That count was from the older merged/descriptions.jsonl input and is not the current Wave3 staged file."
+  },
+  "expected_authoritative_input": {
+    "path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions-full-staged-2026-10-03-wave3.jsonl",
+    "reported_rows": 6944,
+    "reported_status_counts": {
+      "complete": 6740,
+      "needs_context": 204
+    },
+    "reported_by": "user; aggregate not independently verified",
+    "branch": null,
+    "commit": null,
+    "sha256": null,
+    "available_locally": false,
+    "searched": {
+      "origin_heads_fetched": 130,
+      "reachable_remote_trees": true,
+      "checkout": true,
+      "unreachable_local_commit_trees": true
+    }
+  },
+  "reconciliation": {
+    "effective_worker_results_file": "worker-results-effective.jsonl",
+    "effective_worker_result_count": 311,
+    "exact_204_needs_context_ids": null,
+    "overlap_with_311_results": null,
+    "canonical_fresh_membership_of_204": null,
+    "status": "blocked_missing_authoritative_row_level_input",
+    "blocker": "The exact authoritative Wave3 staged file is not present in any fetched origin tree, the checkout, or unreachable local commit trees. Its branch, commit, and SHA256 are unknown."
+  },
+  "prior_partition_equations": {
+    "staged_6944_equals_canonical_6860_plus_fresh_84": "historically computed from older staged source; membership must be rechecked against the authoritative Wave3 file",
+    "frozen_7143_equals_canonical_6860_plus_held_283": "unchanged; based on frozen index and held source"
+  },
+  "safety": {
+    "held_records_forced_to_pass": false,
+    "canonical_changes": false,
+    "neon_writes": false
+  }
+}
