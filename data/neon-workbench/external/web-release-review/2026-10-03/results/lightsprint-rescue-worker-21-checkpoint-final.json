@@ -1,0 +1,456 @@
+{
+  "worker": 21,
+  "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "source_branch": "codex/web-release-rescue-2026-10-03",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "pr49_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "input_sha256": "6c44e297f22796e6007d0254c89c578195826be719bfc5c9a6b8f04aac4dff65",
+  "validated_at": "2026-10-03",
+  "head_at_validation": "7bc8198b19c7c139fa61a1625e7209d9e347f4a1",
+  "assignment_count": 32,
+  "latest_row_count": 32,
+  "historical_row_count": 33,
+  "batch_files": [
+    "lightsprint-rescue-worker21-batch-001-20261003.jsonl",
+    "lightsprint-rescue-worker21-batch-002-20261003.jsonl",
+    "lightsprint-rescue-worker21-batch-003-20261003.jsonl",
+    "lightsprint-rescue-worker21-batch-004-20261003.jsonl",
+    "lightsprint-rescue-worker21-batch-005-20261003.jsonl"
+  ],
+  "key_set_exact": true,
+  "latest_status_authority_audit": {
+    "entry-4538": {
+      "baseline_file": "review02-batch-021.jsonl",
+      "baseline_line": 4,
+      "revision": 3,
+      "prior_status": "reviewed_actionable_narrower_event",
+      "terminal_status": "reviewed_actionable_narrower_event",
+      "disposition": "retain_unresolved"
+    },
+    "entry-5190": {
+      "baseline_file": "handoff-review02-batch-017.jsonl",
+      "baseline_line": 1,
+      "revision": 105,
+      "prior_status": "reviewed_split_partial_draft",
+      "terminal_status": "reviewed_split_partial_draft",
+      "disposition": "split_supported_components"
+    },
+    "entry-5478": {
+      "baseline_file": "review02-batch-021.jsonl",
+      "baseline_line": 8,
+      "revision": 3,
+      "prior_status": "reviewed_exclude",
+      "terminal_status": "reviewed_exclude",
+      "disposition": "retain_unresolved"
+    },
+    "entry-5754": {
+      "baseline_file": "handoff-review02-batch-018.jsonl",
+      "baseline_line": 1,
+      "revision": 105,
+      "prior_status": "reviewed_split_partial_draft",
+      "terminal_status": "reviewed_split_partial_draft",
+      "disposition": "split_supported_components"
+    },
+    "entry-5840": {
+      "baseline_file": "review02-batch-022.jsonl",
+      "baseline_line": 7,
+      "revision": 3,
+      "prior_status": "reviewed_exclude",
+      "terminal_status": "reviewed_exclude",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6398": {
+      "baseline_file": "review02-batch-023.jsonl",
+      "baseline_line": 5,
+      "revision": 3,
+      "prior_status": "reviewed_exclude",
+      "terminal_status": "reviewed_exclude",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6430": {
+      "baseline_file": "review02-batch-023.jsonl",
+      "baseline_line": 8,
+      "revision": 3,
+      "prior_status": "reviewed_exclude",
+      "terminal_status": "reviewed_exclude",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6463": {
+      "baseline_file": "review01-revision-007-batch-001.jsonl",
+      "baseline_line": 7,
+      "revision": 7,
+      "prior_status": "reviewed_unresolved_after_source_check",
+      "terminal_status": "reviewed_unresolved_after_source_check",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6521": {
+      "baseline_file": "review02-batch-025.jsonl",
+      "baseline_line": 4,
+      "revision": 3,
+      "prior_status": "reviewed_exclude",
+      "terminal_status": "reviewed_exclude",
+      "disposition": "exclude_pending_new_evidence"
+    },
+    "entry-6598": {
+      "baseline_file": "review02-batch-026.jsonl",
+      "baseline_line": 1,
+      "revision": 3,
+      "prior_status": "reviewed_exclude",
+      "terminal_status": "reviewed_exclude",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6615": {
+      "baseline_file": "review01-revision-004-batch-001.jsonl",
+      "baseline_line": 6,
+      "revision": 4,
+      "prior_status": "reviewed_unresolved_after_source_check",
+      "terminal_status": "reviewed_unresolved_after_source_check",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6672": {
+      "baseline_file": "review02-batch-027.jsonl",
+      "baseline_line": 6,
+      "revision": 3,
+      "prior_status": "reviewed_exclude",
+      "terminal_status": "reviewed_exclude",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6751": {
+      "baseline_file": "review02-batch-030.jsonl",
+      "baseline_line": 3,
+      "revision": 3,
+      "prior_status": "reviewed_unresolved",
+      "terminal_status": "reviewed_unresolved",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6784": {
+      "baseline_file": "review03-batch-002-rev06.jsonl",
+      "baseline_line": 2,
+      "revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "terminal_status": "reviewed_unresolved",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6798": {
+      "baseline_file": "review03-batch-003-rev06.jsonl",
+      "baseline_line": 2,
+      "revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "terminal_status": "reviewed_unresolved",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6822": {
+      "baseline_file": "review03-batch-004-rev06.jsonl",
+      "baseline_line": 1,
+      "revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "terminal_status": "reviewed_unresolved",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6839": {
+      "baseline_file": "review03-batch-005-rev06.jsonl",
+      "baseline_line": 1,
+      "revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "terminal_status": "reviewed_unresolved",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6922": {
+      "baseline_file": "review03-batch-005-rev06.jsonl",
+      "baseline_line": 8,
+      "revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "terminal_status": "reviewed_unresolved",
+      "disposition": "retain_unresolved"
+    },
+    "entry-6939": {
+      "baseline_file": "handoff-review06-revision-105-batch-002-check.jsonl",
+      "baseline_line": 2,
+      "revision": 105,
+      "prior_status": "reviewed_narrower_supported_event",
+      "terminal_status": "reviewed_narrower_supported_event",
+      "disposition": "replace_with_narrower_supported_event"
+    },
+    "entry-6958": {
+      "baseline_file": "review03-batch-007-rev06.jsonl",
+      "baseline_line": 5,
+      "revision": 4,
+      "prior_status": "reviewed_unresolved",
+      "terminal_status": "reviewed_unresolved",
+      "disposition": "retain_unresolved"
+    },
+    "expanded-20260827-usps-new-tro": {
+      "baseline_file": "review05-batch-004-rev03.jsonl",
+      "baseline_line": 2,
+      "revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "terminal_status": "partially_source_verified_access_limits_explicit",
+      "disposition": "retain_for_separate_human_review"
+    },
+    "expanded-20260909-census-exclusion-proposal": {
+      "baseline_file": "review05-batch-005-rev03.jsonl",
+      "baseline_line": 7,
+      "revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "terminal_status": "partially_source_verified_access_limits_explicit",
+      "disposition": "retain_for_separate_human_review"
+    },
+    "expanded-20260915-ice-locator-exclusion": {
+      "baseline_file": "review05-batch-007-rev03.jsonl",
+      "baseline_line": 5,
+      "revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "terminal_status": "partially_source_verified_access_limits_explicit",
+      "disposition": "retain_for_separate_human_review"
+    },
+    "expanded-20260922-doj-media-security-defense": {
+      "baseline_file": "review05-batch-009-rev03.jsonl",
+      "baseline_line": 1,
+      "revision": 3,
+      "prior_status": "source_text_independently_read_with_limits",
+      "terminal_status": "source_text_independently_read_with_limits",
+      "disposition": "retain_for_separate_human_review"
+    },
+    "expanded-20260925-save-sc-stay": {
+      "baseline_file": "review05-batch-010-rev03.jsonl",
+      "baseline_line": 3,
+      "revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "terminal_status": "partially_source_verified_access_limits_explicit",
+      "disposition": "retain_with_explicit_source_limit_for_human_review"
+    },
+    "expanded-20260929-murray-murphy-ad-letter": {
+      "basis": "No PR49 published result row; candidate packet only",
+      "terminal_status": "candidate_source_claims_require_independent_review",
+      "disposition": "retain_for_human_source_review"
+    },
+    "fresh-20260916-eric-dominari-13g": {
+      "baseline_file": "review05-batch-002-rev03.jsonl",
+      "baseline_line": 3,
+      "revision": 3,
+      "prior_status": "partially_source_verified_access_limits_explicit",
+      "terminal_status": "partially_source_verified_access_limits_explicit",
+      "disposition": "retain_with_explicit_source_limit_for_human_review"
+    },
+    "pr47-review-entry-1213": {
+      "basis": "PR47 proposal independent review; excluded from PR49 baseline",
+      "status": "reviewed_narrowed_proposal",
+      "disposition": "replace_with_narrowed_supported_event",
+      "review_key": "pr47-review-entry-1213"
+    },
+    "pr47-review-entry-1300": {
+      "basis": "PR47 proposal independent review; excluded from PR49 baseline",
+      "status": "reviewed_narrowed_proposal",
+      "disposition": "replace_with_narrowed_supported_event",
+      "review_key": "pr47-review-entry-1300"
+    },
+    "pr47-review-entry-1471": {
+      "basis": "PR47 proposal independent review; excluded from PR49 baseline",
+      "status": "reviewed_narrowed_proposal",
+      "disposition": "replace_with_narrowed_supported_event",
+      "review_key": "pr47-review-entry-1471"
+    },
+    "pr47-review-entry-1537": {
+      "basis": "PR47 proposal independent review; excluded from PR49 baseline",
+      "status": "reviewed_narrowed_proposal",
+      "disposition": "replace_with_narrowed_supported_event",
+      "review_key": "pr47-review-entry-1537"
+    },
+    "pr47-review-entry-1595": {
+      "basis": "PR47 proposal independent review; excluded from PR49 baseline",
+      "status": "reviewed_narrowed_proposal",
+      "disposition": "replace_with_narrowed_supported_event",
+      "review_key": "pr47-review-entry-1595"
+    }
+  },
+  "draft_length_audit": {
+    "entry-4538": [
+      {
+        "child": 1,
+        "short_chars": 128,
+        "medium_words": 58,
+        "long_words": 150,
+        "long_null": false
+      }
+    ],
+    "entry-5190": [
+      {
+        "child": 1,
+        "short_chars": 66,
+        "medium_words": 50,
+        "long_words": 143,
+        "long_null": false
+      },
+      {
+        "child": 2,
+        "short_chars": 65,
+        "medium_words": 45,
+        "long_words": null,
+        "long_null": true
+      },
+      {
+        "child": 3,
+        "short_chars": 122,
+        "medium_words": 52,
+        "long_words": 147,
+        "long_null": false
+      }
+    ],
+    "entry-5754": [
+      {
+        "child": 1,
+        "short_chars": 70,
+        "medium_words": 50,
+        "long_words": null,
+        "long_null": true
+      },
+      {
+        "child": 2,
+        "short_chars": 133,
+        "medium_words": 51,
+        "long_words": 143,
+        "long_null": false
+      },
+      {
+        "child": 3,
+        "short_chars": 44,
+        "medium_words": 50,
+        "long_words": null,
+        "long_null": true
+      }
+    ],
+    "entry-6939": [
+      {
+        "child": 1,
+        "short_chars": 119,
+        "medium_words": 46,
+        "long_words": 157,
+        "long_null": false
+      }
+    ],
+    "pr47-review-entry-1213": [
+      {
+        "child": 1,
+        "short_chars": 114,
+        "medium_words": 57,
+        "long_words": 163,
+        "long_null": false
+      }
+    ],
+    "pr47-review-entry-1300": [
+      {
+        "child": 1,
+        "short_chars": 83,
+        "medium_words": 63,
+        "long_words": 152,
+        "long_null": false
+      }
+    ],
+    "pr47-review-entry-1471": [
+      {
+        "child": 1,
+        "short_chars": 85,
+        "medium_words": 55,
+        "long_words": 194,
+        "long_null": false
+      }
+    ],
+    "pr47-review-entry-1537": [
+      {
+        "child": 1,
+        "short_chars": 90,
+        "medium_words": 52,
+        "long_words": 143,
+        "long_null": false
+      }
+    ],
+    "pr47-review-entry-1595": [
+      {
+        "child": 1,
+        "short_chars": 76,
+        "medium_words": 53,
+        "long_words": 150,
+        "long_null": false
+      }
+    ]
+  },
+  "draft_length_issues": [],
+  "source_url_missing_keys": {
+    "entry-5478": "No primary docket or reliable contemporaneous source was supplied or located for a 2013 Mar-a-Lago settlement of a suit alleging exclusion of Black and Jewish residents. Exact gap: case name/docket, settlement date and terms.",
+    "entry-6398": "No authenticated statement or recording supplied for Trump saying he would reject 2028 results if he lost. Exact date, venue and complete quote needed.",
+    "entry-6598": "No DOJ filing or official announcement supplied for an investigation of Jan. 6 committee members for prosecutorial misconduct. Need target list, authority and opening date.",
+    "entry-6751": "No Feb. 15 post or threat located. Later executive actions/administration pressure on universities cannot substantiate the specific February statement. Need original post or contemporaneous transcript.",
+    "entry-6798": "No credible source supports the stored mass-firing claim.",
+    "entry-6822": "No matching primary or reputable source located.",
+    "entry-6922": "No sufficiently reliable source located for the claim as written."
+  },
+  "source_url_format_issues": [],
+  "remaining_evidence_gaps": {
+    "entry-4538": "No additional source-backed resolution is present in the published packet.",
+    "entry-5190": "Three independently dated components are supported (July memo, July lawsuit, November DOJ request); retain the split and reject the conspiracy “boomerang” frame. The lawsuit child lacks a source-supported 140-word long field; keep it null.",
+    "entry-5478": "No primary docket or reliable contemporaneous source was supplied or located for a 2013 Mar-a-Lago settlement of a suit alleging exclusion of Black and Jewish residents. Exact gap: case name/docket, settlement date and terms.",
+    "entry-5754": "February work halt, March partial resumption, and April attempted mass layoffs are separate episodes. CFPB was not legally disbanded and the reviewed sources do not establish that all enforcement cases were dropped. Two children intentionally lack long fields because the opened reports do not support 140 words without padding.",
+    "entry-5840": "No sufficiently supported discrete event survives the proposed soft-hide rationale. Reconsider only if direct evidence establishes a dated occurrence matching the entry.",
+    "entry-6398": "No authenticated statement or recording supplied for Trump saying he would reject 2028 results if he lost. Exact date, venue and complete quote needed.",
+    "entry-6430": "No executive order matching indefinite detention of immigrants was located in the packet. Exact order number, date and statutory authority needed.",
+    "entry-6463": "The chronology is inconsistent. The entry is dated June 15, 2025 but says Khamenei's statement followed destruction of Iranian nuclear facilities by U.S. forces; the U.S. strikes on Iranian nuclear sites occurred about a week later, on June 21-22, 2025. I also did not verify the quoted 'gates of hell' and 'severe and unrelenting' language as a June 15 Khamenei address.",
+    "entry-6521": "The official transcript citation is reported as saying “big league,” contradicting the stored “bigly” claim, but this QA pass did not independently open the transcript. Retain exclusion pending direct verification; do not substitute the quote as a new correction.",
+    "entry-6598": "No DOJ filing or official announcement supplied for an investigation of Jan. 6 committee members for prosecutorial misconduct. Need target list, authority and opening date.",
+    "entry-6615": "No credible report or official record located establishing Patel created a dedicated FBI unit to investigate journalists.",
+    "entry-6672": "Reuters syndication says Trump denied selling his shares; it does not establish that Trump or other named insiders sold at market peak while retail investors bought. Need SEC transaction filings and precise dates.",
+    "entry-6751": "No Feb. 15 post or threat located. Later executive actions/administration pressure on universities cannot substantiate the specific February statement. Need original post or contemporaneous transcript.",
+    "entry-6784": "No credible source located.",
+    "entry-6798": "No credible source supports the stored mass-firing claim.",
+    "entry-6822": "No matching primary or reputable source located.",
+    "entry-6839": "GAO reports FY2019-2025 EAJA awards and explains the statute's continuing operation.",
+    "entry-6922": "No sufficiently reliable source located for the claim as written.",
+    "entry-6939": "NPR reports a VA spokesperson denied DOGE access to Veterans’ or VA beneficiaries’ data. This is a denial statement, not proof that no access occurred; preserve attribution and avoid implying a breach.",
+    "entry-6958": "Useful boundary source showing documented actions without validating the specific raid claim.",
+    "expanded-20260827-usps-new-tro": "Reuters reports a federal judge temporarily blocked the USPS ballot-mail rule on August 28. It is a TRO against implementation of an earlier directive, not a new Trump order; no final ruling or election outcome is established.",
+    "expanded-20260909-census-exclusion-proposal": "Reuters reports a proposed census change limited to citizens and permanent residents and removal of race/ethnicity questions, open for comment. It was a proposal, not a final rule; downstream apportionment or funding effects are not established.",
+    "expanded-20260915-ice-locator-exclusion": "AP reports, citing three current/former officials, that ICE removed locator entries for detainees with final removal orders. ICE did not confirm the change; do not imply every record was removed or that removal/deportation occurred.",
+    "expanded-20260922-doj-media-security-defense": "CBS reports DOJ filed a defense of White House press restrictions, invoking professionalism and national security. This filing is the event; the outlets’ due-process objections and any eventual court ruling must remain attributed/unresolved.",
+    "expanded-20260925-save-sc-stay": "Existing source log says CBS body was unavailable and Votebeat was not independently read. Official order, scope, dissent, and practical effect remain unverified; keep the candidate unresolved and do not repeat those details as fact.",
+    "expanded-20260929-murray-murphy-ad-letter": "The supplied proposal describes a senators’ oversight letter and its requests. The alleged DHS advertising payment is not established; the primary letter URL and underlying apportionment/accounting documents need direct inspection before a publication-ready draft.",
+    "fresh-20260916-eric-dominari-13g": "The SEC XML was not readable in the prior source pass. Secondary summary attributes 1,398,414 shares and 5.77% to a Schedule 13G, but primary filing verification, share base, as-of date and warrant context remain gaps.",
+    "pr47-review-entry-1213": "AP tracker snapshot retrieved October 2 declares last modified December 3, 2025 and lists 25 selected pledges: 5 kept, 9 in progress, 11 complicated. This does not support “behind” as a general score or a later dated event; distinct from PolitiFact’s tracker at entry 1595.",
+    "pr47-review-entry-1300": "AP’s March 2 reporting describes communications and press-access choices during the first days of the Iran war. It does not document a personal loyalty test. This is a communications episode, distinct from the February 27 decision chronology at entry 1471.",
+    "pr47-review-entry-1471": "AP chronology supports Trump’s remarks about negotiations at 12:25 p.m. February 27 and strike order at 3:38 p.m. It does not establish deliberate ambiguity or motive. This is a distinct decision-timeline event from entry 1300’s press communications.",
+    "pr47-review-entry-1537": "Keep only the documented February 4 Minnesota “softer touch” remark and personnel drawdown. Remove the separate January Greenland/Iceland exchange from both descriptions to avoid event conflation. Neither event supports measurable institutional strain.",
+    "pr47-review-entry-1595": "PolitiFact’s February 23 fact-check assesses Trump’s January Detroit promise claim against its own 75-promise MAGA-Meter. This is not AP’s separate 25-item tracker (entry 1213), and neither source supports a continuing messaging trend."
+  },
+  "qa_summary": {
+    "namespace_counts": {
+      "held": 20,
+      "fresh": 7,
+      "pr47": 5
+    },
+    "latest_review_status_counts": {
+      "reviewed_actionable_narrower_event": 1,
+      "reviewed_split_partial_draft": 2,
+      "reviewed_exclude": 7,
+      "reviewed_unresolved_after_source_check": 2,
+      "reviewed_unresolved": 7,
+      "reviewed_narrower_supported_event": 1,
+      "partially_source_verified_access_limits_explicit": 5,
+      "source_text_independently_read_with_limits": 1,
+      "candidate_source_claims_require_independent_review": 1,
+      "reviewed_narrowed_proposal": 5
+    },
+    "latest_disposition_counts": {
+      "retain_unresolved": 16,
+      "split_supported_components": 2,
+      "exclude_pending_new_evidence": 1,
+      "replace_with_narrower_supported_event": 1,
+      "retain_for_separate_human_review": 4,
+      "retain_with_explicit_source_limit_for_human_review": 2,
+      "retain_for_human_source_review": 1,
+      "replace_with_narrowed_supported_event": 5
+    },
+    "pr47_original_claim_substantiated_false": true,
+    "assigned_keys_missing": [],
+    "unassigned_keys_present": [],
+    "description_length_failures": 0,
+    "malformed_or_missing_source_urls": 0
+  }
+}

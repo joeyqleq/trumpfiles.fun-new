@@ -1,0 +1,19 @@
+{
+  "worker": 21,
+  "batch": 5,
+  "completed_keys": [
+    "entry-6939"
+  ],
+  "supersedes": "batch-004 entry-6939 row",
+  "completed_count": 1,
+  "total_assigned": 32,
+  "remaining_keys": [],
+  "checkpoint_type": "append_only_superseding_proposal",
+  "qa_counts": {
+    "rows": 1,
+    "description_short_chars": 119,
+    "description_medium_words": 46,
+    "description_long_words": 157,
+    "all_length_limits_pass": true
+  }
+}
