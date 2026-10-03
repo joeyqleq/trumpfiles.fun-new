@@ -1,0 +1,31 @@
+{
+  "worker": 5,
+  "checkpoint": "1-of-2",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-05-input.jsonl",
+  "input_sha256": "3e4ea56c4330113b712013f1fbb2d43be03efcfe8869f1e8318fd3192adc163c",
+  "completed_count": 5,
+  "assigned_count": 8,
+  "completed_keys": [
+    "entry-5",
+    "entry-17",
+    "entry-29",
+    "entry-43",
+    "entry-55"
+  ],
+  "remaining_keys": [
+    "entry-69",
+    "entry-81",
+    "entry-93"
+  ],
+  "batch_file": "worker-05-batch-2026-10-03-001.jsonl",
+  "batch_sha256": "b3f6f2799a81d6e2e797493c6c9c31dc0e9f3fbaab95213ae95182f72746853c",
+  "decisions": {
+    "entry-5": "hold",
+    "entry-17": "pass",
+    "entry-29": "pass",
+    "entry-43": "hold",
+    "entry-55": "pass"
+  },
+  "review_mode": "offline only; no Neon query, SQL execution, DDL/DML, canonical edit, or production approval"
+}

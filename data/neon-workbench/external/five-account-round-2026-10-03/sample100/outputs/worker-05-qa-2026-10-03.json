@@ -1,0 +1,73 @@
+{
+  "worker": 5,
+  "review_kind": "offline 100-record import rehearsal QA",
+  "packet": {
+    "branch": "codex/five-account-review-packets-2026-10-03",
+    "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-05-input.jsonl",
+    "sha256": "3e4ea56c4330113b712013f1fbb2d43be03efcfe8869f1e8318fd3192adc163c",
+    "expected_keys": [
+      "entry-5",
+      "entry-17",
+      "entry-29",
+      "entry-43",
+      "entry-55",
+      "entry-69",
+      "entry-81",
+      "entry-93"
+    ],
+    "observed_keys": [
+      "entry-5",
+      "entry-17",
+      "entry-29",
+      "entry-43",
+      "entry-55",
+      "entry-69",
+      "entry-81",
+      "entry-93"
+    ],
+    "exact_key_set_pass": true
+  },
+  "method": {
+    "word_count": "whitespace-delimited tokens",
+    "impact_formula": "round(0.30*harm + 0.20*reach + 0.15*institutions + 0.15*procedural_abuse + 0.10*self_dealing + 0.10*persistence, 2)",
+    "preservation": "compare candidate title/short/long against frozen row title/title/synopsis and every populated field declared by preserved_fields",
+    "provenance": "retain source URLs and draft/score provenance; check HTTPS, presence, and packet-specific alignment; source pages were not fetched during this offline rehearsal"
+  },
+  "aggregate": {
+    "records": 8,
+    "pass_count": 5,
+    "hold_count": 3,
+    "decisions": {
+      "entry-5": "hold",
+      "entry-17": "pass",
+      "entry-29": "pass",
+      "entry-43": "hold",
+      "entry-55": "pass",
+      "entry-69": "pass",
+      "entry-81": "hold",
+      "entry-93": "pass"
+    },
+    "all_identity_checks_pass": true,
+    "all_populated_existing_text_preserved": true,
+    "all_length_limits_pass": true,
+    "all_impact_values_recalculate": true,
+    "conditional_sql_parameters_ready": true,
+    "actual_target_null_state": "not observed; no live database access"
+  },
+  "holds": {
+    "entry-5": "The packet’s final source-resolution notes say the preserved long description omits Trump’s explicit exclusion of neo-Nazis and white nationalists and remains inaccurate until that protected field is corrected.",
+    "entry-43": "source_urls includes a 2017 Atlantic Charlottesville article unrelated to the January 2025 inspector-general dismissals; source provenance must be corrected before this record passes.",
+    "entry-81": "The packet’s impact notes say the preserved long description makes stronger claims than the supported medium account, including serious legal and staff-confrontation claims not established in the supplied account; resolve that evidence gap before passing."
+  },
+  "limitations": [
+    "No live Neon calls, database reads, SQL/DDL/DML, or canonical edits occurred.",
+    "SQL readiness means packet values can be passed to a per-column NULL-guarded statement shape; it does not establish live target-row state or authorize execution.",
+    "This trial is not editorial approval or a production import."
+  ],
+  "artifacts": {
+    "worker-05-batch-2026-10-03-001.jsonl": "b3f6f2799a81d6e2e797493c6c9c31dc0e9f3fbaab95213ae95182f72746853c",
+    "worker-05-checkpoint-2026-10-03.json": "0fd092f8c63c3910b3721d1a9840b405df03636db806fd8eb0e81e24c7c470dc",
+    "worker-05-batch-2026-10-03-002.jsonl": "dd28894dbc4bd16380a240b5edcea437e86447f5d061520dd317d4c88d00263e"
+  }
+}
