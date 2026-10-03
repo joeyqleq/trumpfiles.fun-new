@@ -1,0 +1,49 @@
+{
+  "worker": 22,
+  "status": "complete_with_explicit_scope_gaps",
+  "frozen_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "packet_sha256": "ab531dfda08b58ebf7602960162b4aabfb9a89af53bd6bce5ec65d06d3417c14",
+  "assignment_count": 17,
+  "record_ids": [
+    "entry-219",
+    "entry-293",
+    "entry-643",
+    "entry-774",
+    "entry-853",
+    "entry-969",
+    "entry-1729",
+    "entry-2330",
+    "entry-2466",
+    "entry-2615",
+    "entry-3139",
+    "entry-3804",
+    "entry-4097",
+    "entry-4692",
+    "entry-5559",
+    "entry-6141",
+    "entry-6293"
+  ],
+  "batch_file": "worker-22-batch-UNIQUE.jsonl",
+  "qa_report": "worker-22-final-qa.md",
+  "proposal_status_counts": {
+    "corrected_claim_proposal": 13,
+    "citation_repaired_proposal": 2,
+    "scope_exclusion_proposal": 2
+  },
+  "drafts_length_checked": 15,
+  "draft_length_failures": [],
+  "source_mapping_rows": 51,
+  "unmapped_or_unsupported_citations": 19,
+  "source_additions_from_resolution": 5,
+  "unresolved_record_ids": [],
+  "scope_exclusion_record_ids": [
+    "entry-853",
+    "entry-2615"
+  ],
+  "append_only_batches": [
+    6,
+    6,
+    5
+  ],
+  "scope": "Only the 17 worker-22 Wave3 IDs; no canonical/staged/PR47/database/scores/merge changes."
+}
