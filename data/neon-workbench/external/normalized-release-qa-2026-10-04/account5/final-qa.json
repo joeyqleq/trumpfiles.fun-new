@@ -1,0 +1,217 @@
+{
+  "schema": "normalized-release-qa/account5/final-qa/v1",
+  "branch": "ls/2-trump-files-sample100-review-02-of-12-6WFh",
+  "source_job": "citation190-crossqa-2026-10-03 worker-02; packet 9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet": {
+    "path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-02-input.jsonl",
+    "commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+    "sha256": "24c3f6d0ca57bf5861269a2b9cd3355cd31e0361c974f980ea8e04e1dd33991c",
+    "assigned_ids": [
+      "entry-37",
+      "entry-236",
+      "entry-425",
+      "entry-754",
+      "entry-824",
+      "entry-954",
+      "entry-1728",
+      "entry-2330",
+      "entry-2496",
+      "entry-2710",
+      "entry-3385",
+      "entry-3873",
+      "entry-4304",
+      "entry-5413",
+      "entry-5936",
+      "entry-6235"
+    ]
+  },
+  "source_batch_reconciliation": {
+    "scanned_worker02_batch_files": [
+      {
+        "path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-02-batch-2026-10-03-1159Z.jsonl",
+        "assigned_id_overlap_count": 16,
+        "assigned_ids_found": [
+          "entry-37",
+          "entry-236",
+          "entry-425",
+          "entry-754",
+          "entry-824",
+          "entry-954",
+          "entry-1728",
+          "entry-2330",
+          "entry-2496",
+          "entry-2710",
+          "entry-3385",
+          "entry-3873",
+          "entry-4304",
+          "entry-5413",
+          "entry-5936",
+          "entry-6235"
+        ]
+      },
+      {
+        "path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/outputs/worker-02-batch-2026-10-03-1029Z.jsonl",
+        "assigned_id_overlap_count": 0,
+        "assigned_ids_found": []
+      }
+    ],
+    "effective_terminal_batch_count": 1,
+    "effective_terminal_rows": 16,
+    "terminal_rows_per_assigned_id": {
+      "entry-37": 1,
+      "entry-236": 1,
+      "entry-425": 1,
+      "entry-754": 1,
+      "entry-824": 1,
+      "entry-954": 1,
+      "entry-1728": 1,
+      "entry-2330": 1,
+      "entry-2496": 1,
+      "entry-2710": 1,
+      "entry-3385": 1,
+      "entry-3873": 1,
+      "entry-4304": 1,
+      "entry-5413": 1,
+      "entry-5936": 1,
+      "entry-6235": 1
+    },
+    "conflicting_terminal_ids": [],
+    "no_conflict_policy_note": "There was one terminal row per ID, so no latest-descendant conflict resolution was needed."
+  },
+  "normalized_output": {
+    "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-02-normalized.jsonl",
+    "saved_count": 16,
+    "missing_count": 0,
+    "duplicate_count": 0,
+    "extra_ids": [],
+    "schema_fields": [
+      "disposition",
+      "key",
+      "proposal",
+      "reasons",
+      "release_ready",
+      "source_files",
+      "source_job",
+      "verified_urls"
+    ]
+  },
+  "disposition_counts": {
+    "supported_proposal": 13,
+    "narrower_revision_required": 1,
+    "intentional_exclusion": 1,
+    "unsupported_hold": 1
+  },
+  "release_readiness": {
+    "ready_count": 10,
+    "blocked_count": 6,
+    "ready_ids": [
+      "entry-37",
+      "entry-236",
+      "entry-754",
+      "entry-1728",
+      "entry-3385",
+      "entry-3873",
+      "entry-4304",
+      "entry-5413",
+      "entry-5936",
+      "entry-6235"
+    ],
+    "blocking_ids": [
+      "entry-425",
+      "entry-824",
+      "entry-954",
+      "entry-2330",
+      "entry-2496",
+      "entry-2710"
+    ],
+    "blocker_reasons": {
+      "entry-425": "The prior source review limits the past-departure count to the AP-syndicated ABC News report and says The Hill URL provides planned-cut context; account1 short/medium copy attributes the count to The Hill. Keep the prior supported_proposal disposition, but block release until attribution is narrowed to the AP report.",
+      "entry-824": "Account1 medium/long proposed description contains QA/meta text about the unrelated USA Today wildfire URL and tells the reader to replace it with other reporting. The replacement source_urls are present, but this prose is not a clean release description; remove the QA instructions before release.",
+      "entry-954": "Prior disposition is narrower_revision_required and is not release-ready.",
+      "entry-2330": "Prior disposition is intentional_exclusion and is not release-ready.",
+      "entry-2496": "Prior disposition is unsupported_hold and is not release-ready.",
+      "entry-2710": "Account1 long description discusses a later Croatian article and leaked interview material that are not among the exact URLs verified by the prior QA; the prior review says the underlying record/person were not verified. Keep this uncertainty, but remove or source that ancillary discussion before release."
+    },
+    "evaluation_scope": "release_ready evaluates the account1_source_proposal and its selected verified source URLs. staged_description_snapshot is preserved for provenance and comparison only; it is never implicitly approved. A staged source-list mismatch is separately recorded in reasons."
+  },
+  "validation": {
+    "url_format": "pass",
+    "verified_url_count": 27,
+    "account1_selected_urls_not_reviewed": 0,
+    "stage_snapshot_urls_outside_verified_set_count": 12,
+    "stage_snapshot_urls_outside_verified_set": [
+      {
+        "key": "entry-236",
+        "url": "https://www.sheribyrnehaber.com/project-2025s-threat-to-disability-rights/"
+      },
+      {
+        "key": "entry-425",
+        "url": "https://slate.com/news-and-politics/2026/02/pete-hegseth-military-harvard-donald-trump.html"
+      },
+      {
+        "key": "entry-425",
+        "url": "https://en.wikipedia.org/wiki/Pete_Hegseth"
+      },
+      {
+        "key": "entry-754",
+        "url": "https://time.com/5113686/trump-mueller-fired-mcgahn/"
+      },
+      {
+        "key": "entry-754",
+        "url": "https://apnews.com/hub/donald-trump"
+      },
+      {
+        "key": "entry-824",
+        "url": "https://www.usatoday.com/story/weather/2026/02/20/oklahoma-wildfires-map-forecast-red-flag/88774589007/"
+      },
+      {
+        "key": "entry-1728",
+        "url": "https://www.theatlantic.com/unthinkable/"
+      },
+      {
+        "key": "entry-2330",
+        "url": "https://trumpfile.org/semion-mogilevich-the-boss-of-bosses-is-born-in-ukraine"
+      },
+      {
+        "key": "entry-2710",
+        "url": "https://trumpfile.org/jared-ivanka-vacation-in-croatia-with-wendi-deng-meet-with-russian-oligarch"
+      },
+      {
+        "key": "entry-3385",
+        "url": "https://trumpfile.org/donald-trump-doesnt-plan-on-winning-in-november"
+      },
+      {
+        "key": "entry-3873",
+        "url": "https://trumpfile.org/kash-patels-personal-use-of-fbi-aircraft-hampers-response-to-kirk-shooting-other-emergencies"
+      },
+      {
+        "key": "entry-5413",
+        "url": "https://www.reuters.com/world/us/trump-makes-history-with-new-york-hush-money-criminal-trial-2024-04-15/"
+      }
+    ],
+    "word_length_bounds": {
+      "short_max_chars": 180,
+      "medium_words_min": 45,
+      "medium_words_max": 90,
+      "long_words_min": 140,
+      "long_words_max": 300,
+      "word_count_method": "whitespace split"
+    },
+    "proposal_description_fields_checked": {
+      "short": 38,
+      "medium": 26,
+      "long": 27
+    },
+    "word_length_failures": [],
+    "exact_id_order": "pass",
+    "duplicate_ids": "pass",
+    "top_level_schema": "pass",
+    "exact_url_values_in_proposals_and_verified_urls": {
+      "checked_count": 121,
+      "invalid_count": 0,
+      "status": "pass",
+      "method": "Validated string values in url/source_urls/recommended_source_urls/proposed_source_urls/exact_urls fields; did not treat explanatory access_note prose as a URL."
+    }
+  },
+  "scope": "No new research; reconciled existing worker-02 QA and exact packet proposal/source data only. No canonical edits, Neon operations, or other-worker edits."
+}
