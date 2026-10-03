@@ -1,0 +1,91 @@
+{
+  "task": "normalized-release-qa-2026-10-04/account3/worker-03",
+  "branch": "ls/4-trump-files-impact368-review-03-of-12-46t_",
+  "prior_batch_fully_pushed_before_normalization": true,
+  "source_jobs": [
+    {
+      "file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-03-batch-20261003-review-a7f2c.jsonl",
+      "commit": "9601af179bdd3fb6733f789f5a1286388fcdbf86",
+      "source_input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb"
+    },
+    {
+      "file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-03-batch-20261003-context-c4e17.jsonl",
+      "commit": "26f88f3f9d7e5fa9ad7007092c96fbe1543fb1fd",
+      "source_input_commit": "520015274c29cbcc24a4e54d747e896198756415"
+    }
+  ],
+  "expected_count": 31,
+  "actual_count": 31,
+  "exact_id_order_match": true,
+  "missing_count": 0,
+  "missing_ids": [],
+  "normalized_duplicate_count": 0,
+  "source_terminal_rows_reconciled": 62,
+  "prior_batch_overlap_rows": 31,
+  "effective_terminal_rows": 31,
+  "terminal_status_counts": {
+    "deferred": 24,
+    "scored": 7
+  },
+  "disposition_counts": {
+    "hold": 31
+  },
+  "release_ready_count": 0,
+  "blocking_count": 31,
+  "blocking_ids": [
+    "entry-1298",
+    "entry-113",
+    "entry-1662",
+    "entry-1603",
+    "entry-1299",
+    "entry-1611",
+    "entry-1661",
+    "entry-199",
+    "entry-2529",
+    "entry-1775",
+    "entry-4138",
+    "entry-835",
+    "entry-1459",
+    "entry-1633",
+    "entry-5966",
+    "entry-980",
+    "entry-4859",
+    "entry-6019",
+    "entry-1455",
+    "entry-2934",
+    "entry-1284",
+    "entry-1702",
+    "entry-2460",
+    "entry-2903",
+    "entry-456",
+    "entry-843",
+    "entry-1641",
+    "entry-246",
+    "entry-4166",
+    "entry-1625",
+    "entry-5647"
+  ],
+  "resolved_supersession_conflict_count": 7,
+  "resolved_supersession_conflict_ids": [
+    "entry-113",
+    "entry-980",
+    "entry-2934",
+    "entry-1284",
+    "entry-2903",
+    "entry-456",
+    "entry-843"
+  ],
+  "unresolved_conflict_count": 0,
+  "unresolved_conflict_ids": [],
+  "verified_url_count": 31,
+  "url_validation": "passed; all verified_urls use HTTPS, have a host, and are exact links from the selected terminal row; proposal source URLs were also format-checked and not invented",
+  "live_url_checks": "not performed per no-new-research instruction; inherited access/mismatch caveats remain in reasons and source rows",
+  "proposal_count": 7,
+  "proposal_description_count": 0,
+  "proposal_description_word_length_check": "not applicable; no proposal description fields exist",
+  "release_decision": "hold all 31; scored rows remain provisional and deferred rows remain deferred; no pass/approval inferred",
+  "canonical_edits": 0,
+  "neon_writes": 0,
+  "other_worker_edits": 0,
+  "output_sha256": "f96cf3cd88214c710ee3720856d9f0ddffc6b0b7edf898ee86ec35f55b8898bc"
+}
