@@ -1,0 +1,18 @@
+{
+  "branch": "codex/five-account-review-packets-2026-10-03",
+  "parent": "df7d51514eb61ef24ee5c79cb0e26ad0dbd20a76",
+  "jobs": {
+    "impact368": {
+      "assigned": 368,
+      "workers": 12
+    },
+    "web425": {
+      "assigned": 425,
+      "workers": 12
+    },
+    "sample100": {
+      "assigned": 100,
+      "workers": 12
+    }
+  }
+}
