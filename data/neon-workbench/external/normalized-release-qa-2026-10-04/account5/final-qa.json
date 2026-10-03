@@ -1,0 +1,524 @@
+{
+  "source_job": "citation190-crossqa-2026-10-03 worker-04 independent citation QA",
+  "normalization_date": "2026-10-04",
+  "packet": {
+    "branch": "codex/citation190-crossqa-2026-10-03",
+    "commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+    "input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-04-input.jsonl",
+    "sha256": "0864d06b4a85b94c73d77ff96dc7dedb3de23583042db34b2a6202917df080b9"
+  },
+  "reconciled_terminal_batches": [
+    {
+      "path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-04-batch-20261003-independent-citation-qa.jsonl",
+      "rows": 16,
+      "commit": "bc9f7b7af037893bfc005f26258e84d50b250368"
+    }
+  ],
+  "expected_ids": [
+    "entry-178",
+    "entry-264",
+    "entry-444",
+    "entry-769",
+    "entry-833",
+    "entry-969",
+    "entry-1768",
+    "entry-2342",
+    "entry-2504",
+    "entry-2731",
+    "entry-3488",
+    "entry-3985",
+    "entry-4353",
+    "entry-5471",
+    "entry-6127",
+    "entry-6245"
+  ],
+  "saved_count": 16,
+  "saved_ids": [
+    "entry-178",
+    "entry-264",
+    "entry-444",
+    "entry-769",
+    "entry-833",
+    "entry-969",
+    "entry-1768",
+    "entry-2342",
+    "entry-2504",
+    "entry-2731",
+    "entry-3488",
+    "entry-3985",
+    "entry-4353",
+    "entry-5471",
+    "entry-6127",
+    "entry-6245"
+  ],
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "conflicting_terminal_ids": [],
+  "disposition_counts": {
+    "narrower_revision_required": 5,
+    "supported_proposal": 9,
+    "intentional_exclusion": 2
+  },
+  "release_ready_count": 9,
+  "release_ready_ids": [
+    "entry-444",
+    "entry-769",
+    "entry-833",
+    "entry-969",
+    "entry-2731",
+    "entry-3488",
+    "entry-3985",
+    "entry-5471",
+    "entry-6245"
+  ],
+  "blocking_count": 7,
+  "blocking_ids": [
+    "entry-178",
+    "entry-264",
+    "entry-1768",
+    "entry-2342",
+    "entry-2504",
+    "entry-4353",
+    "entry-6127"
+  ],
+  "held_ids": [
+    "entry-178",
+    "entry-264",
+    "entry-2504",
+    "entry-4353",
+    "entry-6127"
+  ],
+  "intentional_exclusion_ids": [
+    "entry-1768",
+    "entry-2342"
+  ],
+  "schema_valid": true,
+  "exact_set_valid": true,
+  "url_validation": {
+    "verified_urls_https_valid": true,
+    "proposal_url_field_issues": [],
+    "verified_url_counts": {
+      "entry-178": 1,
+      "entry-264": 1,
+      "entry-444": 2,
+      "entry-769": 2,
+      "entry-833": 2,
+      "entry-969": 2,
+      "entry-1768": 0,
+      "entry-2342": 1,
+      "entry-2504": 0,
+      "entry-2731": 1,
+      "entry-3488": 2,
+      "entry-3985": 1,
+      "entry-4353": 2,
+      "entry-5471": 2,
+      "entry-6127": 3,
+      "entry-6245": 1
+    }
+  },
+  "description_length_validation": {
+    "bounds_used": "short <=180 characters; medium 45-90 words; long 140-300 words, using the previously stated proposal-field constraints",
+    "by_key": {
+      "entry-178": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_fields.description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 158,
+            "valid": true
+          },
+          {
+            "field": "proposed_fields.description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 79,
+            "valid": true
+          },
+          {
+            "field": "proposed_fields.description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 179,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-264": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 136,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 71,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 172,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-444": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 158,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 72,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 183,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-769": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 150,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 57,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 174,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-833": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 89,
+            "valid": true
+          },
+          {
+            "field": "proposed_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 48,
+            "valid": true
+          },
+          {
+            "field": "proposed_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 141,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-969": {
+        "provided_description_fields": [],
+        "latest_worker_word_count_metadata": null,
+        "status": "not_provided"
+      },
+      "entry-1768": {
+        "provided_description_fields": [],
+        "latest_worker_word_count_metadata": null,
+        "status": "not_provided"
+      },
+      "entry-2342": {
+        "provided_description_fields": [
+          {
+            "field": "description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 130,
+            "valid": true
+          },
+          {
+            "field": "description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 81,
+            "valid": true
+          },
+          {
+            "field": "description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 154,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-2504": {
+        "provided_description_fields": [],
+        "latest_worker_word_count_metadata": {
+          "title_chars": 71,
+          "short_words": 20,
+          "medium_words": 68,
+          "long_words": 177
+        },
+        "status": "metadata_only",
+        "metadata_medium_long_within_bounds": true
+      },
+      "entry-2731": {
+        "provided_description_fields": [],
+        "latest_worker_word_count_metadata": {
+          "title_chars": 65,
+          "short_words": 23,
+          "medium_words": 60,
+          "long_words": 169
+        },
+        "status": "metadata_only",
+        "metadata_medium_long_within_bounds": true
+      },
+      "entry-3488": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_fields.description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 150,
+            "valid": true
+          },
+          {
+            "field": "proposed_fields.description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 78,
+            "valid": true
+          },
+          {
+            "field": "proposed_fields.description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 175,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-3985": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_fields.description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 114,
+            "valid": true
+          },
+          {
+            "field": "proposed_fields.description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 69,
+            "valid": true
+          },
+          {
+            "field": "proposed_fields.description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 165,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-4353": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 139,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 76,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 164,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-5471": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 154,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 70,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 180,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-6127": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_description_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 143,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 52,
+            "valid": true
+          },
+          {
+            "field": "proposed_description_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 180,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      },
+      "entry-6245": {
+        "provided_description_fields": [
+          {
+            "field": "proposed_short",
+            "kind": "short",
+            "metric": "characters",
+            "count": 134,
+            "valid": true
+          },
+          {
+            "field": "proposed_medium",
+            "kind": "medium",
+            "metric": "words",
+            "count": 57,
+            "valid": true
+          },
+          {
+            "field": "proposed_long",
+            "kind": "long",
+            "metric": "words",
+            "count": 142,
+            "valid": true
+          }
+        ],
+        "latest_worker_word_count_metadata": null,
+        "status": "pass"
+      }
+    },
+    "failed_fields": [],
+    "not_verifiable_from_text_ids": [
+      "entry-2504",
+      "entry-2731"
+    ],
+    "no_description_ids": [
+      "entry-969",
+      "entry-1768"
+    ],
+    "text_description_count": 12,
+    "metadata_only_count": 2,
+    "no_description_count": 2
+  },
+  "editorial_status_note": "release_ready represents only citation-readiness from the prior review; it is not editorial approval. Holds and intentional exclusions remain not release-ready.",
+  "database_and_canonical_writes": false,
+  "new_external_research_performed": false,
+  "expected_count": 16,
+  "missing_count": 0,
+  "extra_count": 0,
+  "duplicate_id_count": 0,
+  "conflicting_terminal_id_count": 0,
+  "prior_batch_pushed_commit": "bc9f7b7af037893bfc005f26258e84d50b250368",
+  "prior_checkpoint_file": "ls/4-trump-files-sample100-review-04-of-12-aICV@bc9f7b7af037893bfc005f26258e84d50b250368:data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-04-checkpoints-20261003.jsonl",
+  "prior_checkpoint_summary": [
+    {
+      "checkpoint": "first-8-reviewed",
+      "rows_written": 8,
+      "classification_counts": {
+        "supported_proposal": 4,
+        "narrower_revision_required": 2,
+        "intentional_exclusion": 2
+      }
+    },
+    {
+      "checkpoint": "final-16-reviewed",
+      "rows_written": 16,
+      "classification_counts": {
+        "narrower_revision_required": 5,
+        "supported_proposal": 9,
+        "intentional_exclusion": 2
+      }
+    }
+  ],
+  "prior_checkpoint_exact_set_valid": true
+}
