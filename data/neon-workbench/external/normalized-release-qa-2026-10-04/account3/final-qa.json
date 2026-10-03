@@ -1,0 +1,148 @@
+{
+  "schema": {
+    "key": "string",
+    "disposition": "string",
+    "source_job": "string",
+    "source_files": "array",
+    "reasons": "array",
+    "verified_urls": "array",
+    "proposal": "object|null",
+    "release_ready": "boolean"
+  },
+  "assigned_ids": [
+    "entry-1395",
+    "entry-215",
+    "entry-1673",
+    "entry-1627",
+    "entry-1330",
+    "entry-1646",
+    "entry-1672",
+    "entry-2097",
+    "entry-2583",
+    "entry-184",
+    "entry-4149",
+    "entry-5488",
+    "entry-1480",
+    "entry-1644",
+    "entry-64",
+    "entry-7063",
+    "entry-5110",
+    "entry-6284",
+    "entry-1509",
+    "entry-3193",
+    "entry-1295",
+    "entry-1780",
+    "entry-5444",
+    "entry-2958",
+    "entry-5381",
+    "entry-854",
+    "entry-1664",
+    "entry-2470",
+    "entry-436",
+    "entry-213",
+    "entry-6149"
+  ],
+  "source_batches": [
+    {
+      "file": "data/neon-workbench/external/five-account-round-2026-10-03/impact368/outputs/worker-04-batch-20261003T103043Z-1774a1ef.jsonl",
+      "commit": "771947e881ac8f91d1ee58abd8da33b27a6ac6c2",
+      "sha256": "0b7e5b00b185d9d4e447003a38d4c2d3a34c4762d0529588d6d8b245f6d51c95",
+      "rows": 31,
+      "statuses": {
+        "deferred": 31
+      }
+    },
+    {
+      "file": "data/neon-workbench/external/impact368-context-supplement-2026-10-03/outputs/worker-04-batch-20261003T120000Z-52001527.jsonl",
+      "commit": "3ae2cf2361f78f232dcadcc3f040b85f37d99ec9",
+      "packet_commit": "520015274c29cbcc24a4e54d747e896198756415",
+      "sha256": "0f37306e3058e888d0fdb88536e8834804d09d0bf524ce6537e50f964fbef8fe",
+      "rows": 31,
+      "statuses": {
+        "scored": 6,
+        "deferred": 25
+      }
+    }
+  ],
+  "reconciliation": {
+    "input_terminal_rows": 62,
+    "normalized_rows": 31,
+    "saved_ids": 31,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_normalized_ids": [],
+    "exact_order_match": true,
+    "conflicting_terminal_ids": [
+      "entry-1627",
+      "entry-1330",
+      "entry-5110",
+      "entry-6284",
+      "entry-1509",
+      "entry-1664"
+    ],
+    "conflict_resolution": "Later supplement row selected only when its prior_provenance points to the initial review and Git ancestry confirms the supplement descends from the initial commit."
+  },
+  "counts": {
+    "normalized_rows": 31,
+    "hold_deferred": 25,
+    "hold_scored_copy_unapproved": 6,
+    "release_ready": 0,
+    "blocking": 31,
+    "proposal_null": 31,
+    "proposal_descriptions_present": 0
+  },
+  "blocking_ids": [
+    "entry-1395",
+    "entry-215",
+    "entry-1673",
+    "entry-1627",
+    "entry-1330",
+    "entry-1646",
+    "entry-1672",
+    "entry-2097",
+    "entry-2583",
+    "entry-184",
+    "entry-4149",
+    "entry-5488",
+    "entry-1480",
+    "entry-1644",
+    "entry-64",
+    "entry-7063",
+    "entry-5110",
+    "entry-6284",
+    "entry-1509",
+    "entry-3193",
+    "entry-1295",
+    "entry-1780",
+    "entry-5444",
+    "entry-2958",
+    "entry-5381",
+    "entry-854",
+    "entry-1664",
+    "entry-2470",
+    "entry-436",
+    "entry-213",
+    "entry-6149"
+  ],
+  "url_validation": {
+    "candidate_urls": 66,
+    "included_urls": 62,
+    "excluded_known_non_supporting": 3,
+    "invalid_or_non_https": 1,
+    "format_rule": "Included URLs are exact HTTPS strings carried from the latest reviewed source_urls; host/scheme/whitespace/credentials syntax validated. No network requests were made. Known explicitly unrelated/non-supporting URLs are omitted and documented in row reasons.",
+    "invalid_included_urls": 0
+  },
+  "proposal_word_length_validation": {
+    "proposal_descriptions_present": 0,
+    "checked": 0,
+    "failures": 0,
+    "result": "not_applicable; no source batch contains an approved release-copy proposal, and normalized proposal is null for every held row."
+  },
+  "release_decision": "No records pass release QA. Scoring a record is not approval of disputed public copy; all deferred rows remain held, and scored rows remain held until copy is separately reviewed and approved.",
+  "output": {
+    "file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account3/worker-04-normalized.jsonl",
+    "rows": 31,
+    "sha256": "2fcf16dbd1f361d8e7cbab5d97588146cebfb8003c76de06f2f7f336d475d0fc"
+  },
+  "qa_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account3/final-qa.json"
+}
