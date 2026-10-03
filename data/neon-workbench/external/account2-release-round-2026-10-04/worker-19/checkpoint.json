@@ -1,0 +1,2565 @@
+{
+  "worker": 19,
+  "branch": "ls/6-trump-final-corrections-account2-worker1-zeIF",
+  "scope": "Only 425 Web425 assignment keys; no canon/database writes or other worker outputs.",
+  "inputs": {
+    "web425": {
+      "ref": "origin/codex/five-account-review-packets-2026-10-03",
+      "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+      "manifest_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/manifest.json",
+      "manifest_sha256": "7635e115f547e3adc3ad36fdec357be6c818ca6f3d221094e2e8b709d650b62a",
+      "prompt_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/PROMPT.md",
+      "prompt_sha256": "96fcb3306919cb6ceb40c873d74302d4b35e4ba3ebbd7754bfa7893314331117",
+      "assigned_count": 425,
+      "owner_inputs": {
+        "1": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-01-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "c979be2530fbb9bb537010bd282ecdf7df0d94ea9271d23c62c8ce89b2d1eb83",
+          "count": 36
+        },
+        "2": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-02-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "0c318bbbb5666dd68ccad2e274309b3c3e96dee62ba6f7a84803487f79632cd5",
+          "count": 36
+        },
+        "3": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-03-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "a4011754d6710d7a414077c16f1622d3ebe49134f054186da6ae1aa3a3f5b58e",
+          "count": 36
+        },
+        "4": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-04-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "afa29b341422dccd4f453134b75a4f7339636d396c51d43d8f256d36723d33ad",
+          "count": 36
+        },
+        "5": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-05-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "5dbb0fd6fd2fc393d54f414163004e9378cd1bd30298e8af4ab6a4e2e85a6e88",
+          "count": 36
+        },
+        "6": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-06-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "547dca19c6acc8f21ae571415fb2e8d5c6a895d30d0a79e182b725fbe15f4ad1",
+          "count": 35
+        },
+        "7": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-07-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "36b76f09433ed757e49755ef6be64fdc3eda2ba5c36b6de98ba4c52809a45452",
+          "count": 35
+        },
+        "8": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-08-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "0b9df993c1f4659e4adf219e4357a78fcfc10e5009d9de18fae26506487306d1",
+          "count": 35
+        },
+        "9": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-09-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "08b57f5a184eb12d9d053ead4417e5d08655c27832f56f3317d1ecfde12d9ad6",
+          "count": 35
+        },
+        "10": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-10-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "602d8d4b231505d692620b3a95803492a142e1524be5b0bd87a1068e283cdf72",
+          "count": 35
+        },
+        "11": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-11-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "6331c7e64644c0571bee146975dd3ac264aaea6ec2c7888636b639562b4daad7",
+          "count": 35
+        },
+        "12": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-12-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "cefe9b190a2ba57117c3910121d4d20938758bec433f73c783d58094dc2833f7",
+          "count": 35
+        }
+      }
+    },
+    "held283": {
+      "ref": "origin/codex/held283-editorial-completion-2026-10-03",
+      "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+      "manifest_path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/manifest.json",
+      "manifest_sha256": "b6727071fb6ebe8caea48a3bc0b78079b6103d2b3f4e69c9c0fe93050b652e08",
+      "prompt_path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/PROMPT.md",
+      "prompt_sha256": "59463bb82c46e0c6fa454adbf049ff425fdea7fc350959db3a7924fa95bffb86",
+      "assigned_count": 283,
+      "owner_inputs": {
+        "1": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-01-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "0cf3dc80ea27b440dbb51c1cf16b6625b75a7429543e63ea7a04d044efb5690a",
+          "count": 24
+        },
+        "2": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-02-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "0683bc060c8c772b91d0fa57ac2965865aeaceff79f3ce7a77c115363a38c67b",
+          "count": 24
+        },
+        "3": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-03-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "15164c78949f28d336f8510852e0ad01614ee450dbd545383568136a2620b141",
+          "count": 24
+        },
+        "4": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-04-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "6d63ede60303af5f925420f9f83f844653f2566c43005e2a05171c582d40ada9",
+          "count": 24
+        },
+        "5": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-05-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "8a883949ea7e871f76b64d149d313ab4fbf7b56d01b376e1fda03914cc328d8e",
+          "count": 24
+        },
+        "6": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-06-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "456ccdef22a9cca4e93ec3043aae02cc8eb6ac5ebcbeb1f661895ee412f4de26",
+          "count": 24
+        },
+        "7": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-07-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "4dbe8d9a9de6ea1ad01852e1aec813c2c7df6b22c8770d09abe2874d8419c466",
+          "count": 24
+        },
+        "8": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-08-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "8eda184acba62c7542a9a9a1087a9b0d815bdedc57e8c132ea58cacdedee51b9",
+          "count": 23
+        },
+        "9": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-09-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "741ae66d8eade620c281d0766ed781b86497e7e98045617774814b476ad5775e",
+          "count": 23
+        },
+        "10": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-10-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "504bbd566086150986968e34b43de75f3c2a9ca920e740bb96a61b201adfd5c3",
+          "count": 23
+        },
+        "11": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-11-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "574ac82c959e8b4493c77de04916e95b22d2f0ffbe646333376ab902751566ac",
+          "count": 23
+        },
+        "12": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-12-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "7e3fc28fb6c393e8acfb7bbc809e5754728920ab9ffb1a0d9ea994c05055495e",
+          "count": 23
+        }
+      }
+    },
+    "published_pr49": {
+      "ref": "origin/codex/web-release-review-results-2026-10-03",
+      "commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+      "blocker_path": "data/neon-workbench/external/web-release-review/2026-10-03/results/ACCESS-BLOCKER-2026-10-03.md",
+      "blocker_sha256": "a4c1b3943156b2b30d1fa113bfb09c0c06bd205e348445afb6fb82e03d200913",
+      "release_state": "draft; final validation failed; no terminal authority materialized"
+    },
+    "latest_worker_branches": {
+      "1": {
+        "branch": "origin/ls/1-trump-files-web425-review-01-of-12-TJQB",
+        "head": "aa3d36b5bfdb58df1990c4b6217a5d86c6bb4cab",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-01-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "c979be2530fbb9bb537010bd282ecdf7df0d94ea9271d23c62c8ce89b2d1eb83",
+          "count": 36
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-01-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "0cf3dc80ea27b440dbb51c1cf16b6625b75a7429543e63ea7a04d044efb5690a",
+          "count": 24
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-01-normalized.jsonl",
+          "sha256": "8af0ce2e21ed6dab21b4a402e8ec171cbf30e47fc6a5103ed806a9d6988d7e95",
+          "row_count": 24
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "53bd3c967257ea40e476160c569ad6ff361760048327b6174452628f30fd9639"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-01-batch-UNIQUE.jsonl",
+            "sha256": "2f59f5fe542bbf2ff675027a4542ac6c58445e49d59fa09c12cca2170e08a734",
+            "row_count": 36
+          }
+        ]
+      },
+      "10": {
+        "branch": "origin/ls/10-trump-files-web425-review-10-of-12-aLan",
+        "head": "bda4813b1a0bf2cec8de1990c3b68fd6cb3d99a6",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-10-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "602d8d4b231505d692620b3a95803492a142e1524be5b0bd87a1068e283cdf72",
+          "count": 35
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-10-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "504bbd566086150986968e34b43de75f3c2a9ca920e740bb96a61b201adfd5c3",
+          "count": 23
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-10-normalized.jsonl",
+          "sha256": "5051804a93634cf1b8f94bf9d32f8741d0cae625f11488cc564db61693a8ad90",
+          "row_count": 23
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "384f52a5d1a409c0cd3bad17aaf56c4e177ab3074be8fcb2b0e47c821ff18433"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-001-qa.jsonl",
+            "sha256": "ce872dfcc3bad1f8f82b16de94d5bbae80cdf980db160ec8e1602067344acabb",
+            "row_count": 7
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-002-qa.jsonl",
+            "sha256": "7ebdbc56212a9f70410902933ed8c0d477f96485a75aa5e3d74bfb48ba522829",
+            "row_count": 7
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-003-qa.jsonl",
+            "sha256": "b4235e828666b42185791f3d3429ef237e6b10c36a64d4ed4feb16406f4b9b00",
+            "row_count": 7
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-004-qa.jsonl",
+            "sha256": "31b11b038cc94f9dfd508501e40aeb1169c1e5f5a79452660430365ad40227d6",
+            "row_count": 7
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-10-batch-005-qa.jsonl",
+            "sha256": "73cc20b075d09136778d5ef051a4f862021457eca9368f25c2a81e0c44b36473",
+            "row_count": 7
+          }
+        ]
+      },
+      "11": {
+        "branch": "origin/ls/11-trump-files-web425-review-11-of-12-Nsfp",
+        "head": "b784a9a5d906f0d6b53cbfeadfb0fe99d08a660c",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-11-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "6331c7e64644c0571bee146975dd3ac264aaea6ec2c7888636b639562b4daad7",
+          "count": 35
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-11-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "574ac82c959e8b4493c77de04916e95b22d2f0ffbe646333376ab902751566ac",
+          "count": 23
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-11-normalized.jsonl",
+          "sha256": "1f5d694e6e9416277345a2cece71f5db600a7563e4af9487e78d13bbb815a776",
+          "row_count": 23
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "ead432d7210629d31a0f08672003cc273ab366bfe41e79feab07c2d7d2454a0e"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-11-batch-20261003-unique.jsonl",
+            "sha256": "1c9a7d252bd124c40f09dd14453aed9029ee3be1a0ad7b5f6a8e5be989a8a0b8",
+            "row_count": 35
+          }
+        ]
+      },
+      "12": {
+        "branch": "origin/ls/12-trump-files-web425-review-12-of-12-bsCj",
+        "head": "c1645017304a5ebc54507466551fa84933abec2a",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-12-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "cefe9b190a2ba57117c3910121d4d20938758bec433f73c783d58094dc2833f7",
+          "count": 35
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-12-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "7e3fc28fb6c393e8acfb7bbc809e5754728920ab9ffb1a0d9ea994c05055495e",
+          "count": 23
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-12-normalized.jsonl",
+          "sha256": "11bd731b0367527925569e70e21e9e9b986b775ac3a1aae875ee1ea027d9e8f7",
+          "row_count": 23
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "044bc5ce586edae375fca5180f5c994078919c95990c52303a5fd3363409307e"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-12-batch-UNIQUE.jsonl",
+            "sha256": "78f7ee492b8049a64c86905db717ebf2bb37a0616bf6e5b50392b760fa332ad1",
+            "row_count": 35
+          }
+        ]
+      },
+      "2": {
+        "branch": "origin/ls/2-trump-files-web425-review-02-of-12-IyLH",
+        "head": "d707e2582dc365e9641211365178a9c8be4f08a6",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-02-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "0c318bbbb5666dd68ccad2e274309b3c3e96dee62ba6f7a84803487f79632cd5",
+          "count": 36
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-02-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "0683bc060c8c772b91d0fa57ac2965865aeaceff79f3ce7a77c115363a38c67b",
+          "count": 24
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-02-normalized.jsonl",
+          "sha256": "3a600ada21f95565182b8f42739354258faebbf1896a40b2e44507dde436663d",
+          "row_count": 24
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "66f0604e56fa64aa5a32e7f3de7481b4b35f13f3ba37705ab4ef52a2be7eedb0"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-02-batch-UNIQUE.jsonl",
+            "sha256": "d49306024c115ce692d7df8a97e4bb519651163fab5a6667dae9fcd1248c37f2",
+            "row_count": 43
+          }
+        ]
+      },
+      "3": {
+        "branch": "origin/ls/3-trump-files-web425-review-03-of-12-96hG",
+        "head": "9fb63b1b70a467bb9c523921d1cf0ce51e04c573",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-03-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "a4011754d6710d7a414077c16f1622d3ebe49134f054186da6ae1aa3a3f5b58e",
+          "count": 36
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-03-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "15164c78949f28d336f8510852e0ad01614ee450dbd545383568136a2620b141",
+          "count": 24
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-03-normalized.jsonl",
+          "sha256": "0ae8e72a6808afd2fa025422ee9922444e52d3662aa1107ac38a5806934baeaa",
+          "row_count": 24
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "bae441b5944b3dd24f0be70a7d443bd03fd7ef31dd874f35743dcd117c57ef3f"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-03-batch-UNIQUE.jsonl",
+            "sha256": "09a20243e734d1a9dd1704455504d8d8bfe1330b36e9e2204236ba17c883fe8a",
+            "row_count": 36
+          }
+        ]
+      },
+      "4": {
+        "branch": "origin/ls/4-trump-files-web425-review-04-of-12-h9v-",
+        "head": "b91ea4643cb6470fe3be5ebead19c7991d4c454d",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-04-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "afa29b341422dccd4f453134b75a4f7339636d396c51d43d8f256d36723d33ad",
+          "count": 36
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-04-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "6d63ede60303af5f925420f9f83f844653f2566c43005e2a05171c582d40ada9",
+          "count": 24
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-04-normalized.jsonl",
+          "sha256": "c7fc37c86f4bb234c662b0e3ddcd1aab431f9cf4a64fc5eba1d07b1895d45f6f",
+          "row_count": 24
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "93c2f437735c240563d1f22d19f40d0b2a38ad34281898cf36423be5ed3199a3"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-04-batch-20261003-001.jsonl",
+            "sha256": "62da864c62846ffc95695ac179a10215ad7741a9693db2492c0d222792f40bcc",
+            "row_count": 36
+          }
+        ]
+      },
+      "5": {
+        "branch": "origin/ls/5-trump-files-web425-review-05-of-12-zM9X",
+        "head": "9c5a06642123d07a031dd8083a1eadac0f1f1222",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-05-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "5dbb0fd6fd2fc393d54f414163004e9378cd1bd30298e8af4ab6a4e2e85a6e88",
+          "count": 36
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-05-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "8a883949ea7e871f76b64d149d313ab4fbf7b56d01b376e1fda03914cc328d8e",
+          "count": 24
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-05-normalized.jsonl",
+          "sha256": "667e260aedd3d47ef442802d799d53b47a616387e2db7fd5cadd0bb3ca324000",
+          "row_count": 24
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "3d4ac7e1a01f9d4951015fea78ae8aaf6890908690a0925f13f7c7272b31beae"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-05-batch-001.jsonl",
+            "sha256": "b157e784fea3808ae8e83eef2a7cbd56873ca54c3b69f08a0a6072feff60801a",
+            "row_count": 9
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-05-batch-002.jsonl",
+            "sha256": "3d86428e69c9c9e9af42afd4af7168ea9bee6ddf71cd69a4ab8ab9c3e63735e1",
+            "row_count": 9
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-05-batch-003.jsonl",
+            "sha256": "8b79ac0409564a20c38a181b6fce9f10ff6859fffebdfa8b15b654c66b99484c",
+            "row_count": 9
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-05-batch-004.jsonl",
+            "sha256": "4742e0598a2d32b52c3e53abe23d233d6cac5fd2d18e3a63d1bda46d6e7f38dc",
+            "row_count": 9
+          }
+        ]
+      },
+      "6": {
+        "branch": "origin/ls/6-trump-files-web425-review-06-of-12-boco",
+        "head": "2d93433b70f25022127aa134b4a475e6d22f44a7",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-06-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "547dca19c6acc8f21ae571415fb2e8d5c6a895d30d0a79e182b725fbe15f4ad1",
+          "count": 35
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-06-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "456ccdef22a9cca4e93ec3043aae02cc8eb6ac5ebcbeb1f661895ee412f4de26",
+          "count": 24
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-06-normalized.jsonl",
+          "sha256": "719f5ecd4f591e0b516f6ef41c281d9c6a81fa874bdf143fc984ee4237cd9233",
+          "row_count": 24
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "2b7729e0694718dbdc128ff3d4db04d9da14f7276bd2c66c23cb1b899d34563c"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-06-batch-001-20261003.jsonl",
+            "sha256": "9841b8b0c4ee645391c7cfdfb05e7d90ca6c256618b21275115b5af0a2fc731c",
+            "row_count": 7
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-06-batch-002-20261003.jsonl",
+            "sha256": "66822e18a03fa951263956e2e8b8cd0030eaf37531b7d41fad7487fa31ddb087",
+            "row_count": 7
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-06-batch-003-20261003.jsonl",
+            "sha256": "06af6eee35e0d2a5a63646a01c3b7d255029409f69bbe41b37b6db5459d5ee04",
+            "row_count": 7
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-06-batch-004-20261003.jsonl",
+            "sha256": "79fded42b6546ddb54cbd84199b1f02b653ce565718eef20cc838ea3a2ed6d0f",
+            "row_count": 7
+          },
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-06-batch-005-20261003.jsonl",
+            "sha256": "403baf25175c8e948ec7d72e4174cb445f9390706f5e984c2ceb8fe3795849e8",
+            "row_count": 7
+          }
+        ]
+      },
+      "7": {
+        "branch": "origin/ls/7-trump-files-web425-review-07-of-12-vbH-",
+        "head": "88666d75e999a62b6f0bc0d99a3ac632c3a563e9",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-07-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "36b76f09433ed757e49755ef6be64fdc3eda2ba5c36b6de98ba4c52809a45452",
+          "count": 35
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-07-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "4dbe8d9a9de6ea1ad01852e1aec813c2c7df6b22c8770d09abe2874d8419c466",
+          "count": 24
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-07-normalized.jsonl",
+          "sha256": "3608f98a5b701b6c2d5ca39b5d1fdf1cb64f5f83a95757e47ec62f4fd7f57335",
+          "row_count": 24
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "fbecdeeae520783dc6f2c4ef2f8ac57c6add90fbe7bc2377ecebce78d197b724"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-07-batch-UNIQUE.jsonl",
+            "sha256": "dc49f0ca53bd583515f0ef95d7e79847df66ff4c9530e84a68ba15194a5e291d",
+            "row_count": 50
+          }
+        ]
+      },
+      "8": {
+        "branch": "origin/ls/8-trump-files-web425-review-08-of-12-9xY1",
+        "head": "5082480eb7c85170036ee1c1b47dab0c48e4a41b",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-08-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "0b9df993c1f4659e4adf219e4357a78fcfc10e5009d9de18fae26506487306d1",
+          "count": 35
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-08-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "8eda184acba62c7542a9a9a1087a9b0d815bdedc57e8c132ea58cacdedee51b9",
+          "count": 23
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-08-normalized.jsonl",
+          "sha256": "44015a985b77e6a3e751535361eb20818f4deb8a636ad0da418c22868f2c4c15",
+          "row_count": 23
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "1860fb7f35e048c54fd8e4411edf320390f50a71c299858accb63c16d79a5638"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-08-batch-001-20261003.jsonl",
+            "sha256": "44c5079801a808baceee55e94015fc36022451cf393459c8ccce01c62376f377",
+            "row_count": 35
+          }
+        ]
+      },
+      "9": {
+        "branch": "origin/ls/9-trump-files-web425-review-09-of-12-1tgF",
+        "head": "96f6bb5c868fb0f97eb5655d3d602a3ae6fd6d83",
+        "packet_input": {
+          "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-09-input.jsonl",
+          "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+          "sha256": "08b57f5a184eb12d9d053ead4417e5d08655c27832f56f3317d1ecfde12d9ad6",
+          "count": 35
+        },
+        "held_input": {
+          "path": "data/neon-workbench/external/held283-editorial-completion-2026-10-03/worker-09-input.jsonl",
+          "commit": "9c072598a308f740fa3948896bab26beb72edb3b",
+          "sha256": "741ae66d8eade620c281d0766ed781b86497e7e98045617774814b476ad5775e",
+          "count": 23
+        },
+        "account4_normalized": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/worker-09-normalized.jsonl",
+          "sha256": "ce7afbc0831f772673f2e3ee877f5045071722b6df32b2638746584fcf981650",
+          "row_count": 23
+        },
+        "account4_final_qa": {
+          "path": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account4/final-qa.json",
+          "sha256": "658c749661b51e67a60e435dee6439a3e61f0635cbf41496d8b041396c1c0c28"
+        },
+        "webqa_files": [
+          {
+            "path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-09-batch-20261003-pr49-rescue.jsonl",
+            "sha256": "091d9fa4c528c9be91abdc67fc0318e035919efd723797c89772f50990677afd",
+            "row_count": 35
+          }
+        ]
+      }
+    }
+  },
+  "partition": {
+    "total_web425": 425,
+    "held283": 283,
+    "staged_only142": 142,
+    "held_keys_are_subset_of_web425": true,
+    "exact_key_set": true,
+    "assigned_keys_in_web_packet_order": [
+      "entry-4239",
+      "entry-4753",
+      "entry-5237",
+      "entry-5737",
+      "entry-5815",
+      "entry-6125",
+      "entry-6409",
+      "entry-6432",
+      "entry-6463",
+      "entry-6560",
+      "entry-6600",
+      "entry-6625",
+      "entry-6693",
+      "entry-6758",
+      "entry-6787",
+      "entry-6803",
+      "entry-6829",
+      "entry-6867",
+      "entry-6930",
+      "entry-6949",
+      "entry-7050",
+      "entry-7110",
+      "entry-7132",
+      "entry-7176",
+      "expanded-20260825-usps-injunction-violation",
+      "expanded-20260903-smithsonian-signs-letter",
+      "expanded-20260914-un-civilian-airstrike-rebuke",
+      "expanded-20260921-media-ban-lawsuit",
+      "expanded-20260925-save-sc-stay",
+      "expanded-20260929-public-citizen-broadcaster-complaint",
+      "fresh-20260916-eric-dominari-13g",
+      "pr47-review-entry-1233",
+      "pr47-review-entry-1325",
+      "pr47-review-entry-1478",
+      "pr47-review-entry-1578",
+      "pr47-review-entry-1640",
+      "entry-4240",
+      "entry-4827",
+      "entry-5329",
+      "entry-5743",
+      "entry-5816",
+      "entry-6136",
+      "entry-6413",
+      "entry-6433",
+      "entry-6464",
+      "entry-6564",
+      "entry-6601",
+      "entry-6631",
+      "entry-6696",
+      "entry-6763",
+      "entry-6788",
+      "entry-6804",
+      "entry-6830",
+      "entry-6871",
+      "entry-6931",
+      "entry-6950",
+      "entry-7051",
+      "entry-7111",
+      "entry-7133",
+      "entry-7177",
+      "expanded-20260827-anthropic-blacklist-order",
+      "expanded-20260908-gsa-canada-exclusion",
+      "expanded-20260914-usps-sc-denial",
+      "expanded-20260922-doj-media-security-defense",
+      "expanded-20260925-whitehouse-ads-psa-defense",
+      "expanded-20260929-smith-senate-accusations",
+      "fresh-20260918-trump-repayment-statement",
+      "pr47-review-entry-127",
+      "pr47-review-entry-1343",
+      "pr47-review-entry-1486",
+      "pr47-review-entry-1584",
+      "pr47-review-entry-1646",
+      "entry-4285",
+      "entry-4871",
+      "entry-5335",
+      "entry-5746",
+      "entry-5826",
+      "entry-6208",
+      "entry-6414",
+      "entry-6437",
+      "entry-6475",
+      "entry-6571",
+      "entry-6602",
+      "entry-6637",
+      "entry-6727",
+      "entry-6774",
+      "entry-6789",
+      "entry-6810",
+      "entry-6832",
+      "entry-6884",
+      "entry-6933",
+      "entry-6951",
+      "entry-7057",
+      "entry-7113",
+      "entry-7137",
+      "entry-7178",
+      "expanded-20260827-usps-new-tro",
+      "expanded-20260908-save-sc-request",
+      "expanded-20260915-ice-locator-exclusion",
+      "expanded-20260922-solar-harris-order",
+      "expanded-20260926-iran-proposal-rejection",
+      "expanded-20260929-third-country-sc-stay",
+      "fresh-20260922-curtis-probe-request",
+      "pr47-review-entry-1284",
+      "pr47-review-entry-1428",
+      "pr47-review-entry-1491",
+      "pr47-review-entry-1589",
+      "pr47-review-entry-1648",
+      "entry-4407",
+      "entry-4906",
+      "entry-5336",
+      "entry-5749",
+      "entry-5832",
+      "entry-6212",
+      "entry-6415",
+      "entry-6439",
+      "entry-6479",
+      "entry-6577",
+      "entry-6606",
+      "entry-6638",
+      "entry-6729",
+      "entry-6776",
+      "entry-6790",
+      "entry-6811",
+      "entry-6833",
+      "entry-6889",
+      "entry-6935",
+      "entry-6954",
+      "entry-7066",
+      "entry-7115",
+      "entry-7138",
+      "entry-7179",
+      "expanded-20260828-hush-money-removal",
+      "expanded-20260909-census-exclusion-proposal",
+      "expanded-20260916-cassidy-measles-hearing",
+      "expanded-20260922-un-address-misleading-claims",
+      "expanded-20260927-kennedy-ad-criticism",
+      "fresh-20260824-mcgurn-api-update",
+      "fresh-20260923-melania-series-update",
+      "pr47-review-entry-1286",
+      "pr47-review-entry-1443",
+      "pr47-review-entry-1502",
+      "pr47-review-entry-1590",
+      "pr47-review-entry-1650",
+      "entry-4438",
+      "entry-5112",
+      "entry-5340",
+      "entry-5752",
+      "entry-5840",
+      "entry-6280",
+      "entry-6417",
+      "entry-6440",
+      "entry-6484",
+      "entry-6582",
+      "entry-6607",
+      "entry-6642",
+      "entry-6736",
+      "entry-6778",
+      "entry-6791",
+      "entry-6817",
+      "entry-6834",
+      "entry-6890",
+      "entry-6936",
+      "entry-6955",
+      "entry-7075",
+      "entry-7117",
+      "entry-7147",
+      "entry-7186",
+      "expanded-20260828-smithsonian-pressure-letter",
+      "expanded-20260909-kimmel-talarico-broadcast",
+      "expanded-20260916-gastonia-rally-iran-claims",
+      "expanded-20260923-iowa-poll-suit-dismissal",
+      "expanded-20260928-china-arms-denial",
+      "fresh-20260826-raskin-1789",
+      "fresh-20260924-trump-tv-trademark",
+      "pr47-review-entry-1295",
+      "pr47-review-entry-1444",
+      "pr47-review-entry-1521",
+      "pr47-review-entry-1591",
+      "pr47-review-entry-1662",
+      "entry-4457",
+      "entry-5161",
+      "entry-5344",
+      "entry-5754",
+      "entry-5844",
+      "entry-6315",
+      "entry-6419",
+      "entry-6443",
+      "entry-6498",
+      "entry-6583",
+      "entry-6609",
+      "entry-6655",
+      "entry-6738",
+      "entry-6779",
+      "entry-6793",
+      "entry-6818",
+      "entry-6835",
+      "entry-6900",
+      "entry-6937",
+      "entry-6958",
+      "entry-7085",
+      "entry-7120",
+      "entry-7153",
+      "entry-7188",
+      "expanded-20260830-kharg-ai-post",
+      "expanded-20260909-rnc-dividend-pledge",
+      "expanded-20260916-nih-censorship-lawsuit",
+      "expanded-20260924-ice-federal-plaza-injunction",
+      "expanded-20260928-garces-criminal-complaint",
+      "fresh-20260831-polymarket-round",
+      "fresh-20260928-draganfly-financing",
+      "pr47-review-entry-1296",
+      "pr47-review-entry-1445",
+      "pr47-review-entry-1523",
+      "pr47-review-entry-1593",
+      "entry-4467",
+      "entry-5189",
+      "entry-5478",
+      "entry-5755",
+      "entry-5845",
+      "entry-6316",
+      "entry-6421",
+      "entry-6444",
+      "entry-6501",
+      "entry-6584",
+      "entry-6611",
+      "entry-6662",
+      "entry-6739",
+      "entry-6780",
+      "entry-6794",
+      "entry-6821",
+      "entry-6839",
+      "entry-6913",
+      "entry-6939",
+      "entry-6959",
+      "entry-7086",
+      "entry-7121",
+      "entry-7154",
+      "entry-7195",
+      "expanded-20260830-welker-fcc-threat",
+      "expanded-20260909-rnc-trump-first-falsehoods",
+      "expanded-20260917-kennedy-chd-keynote",
+      "expanded-20260924-media-ban-tro",
+      "expanded-20260928-iran-sanctions-denial",
+      "fresh-20260902-stone-haiti-contract",
+      "fresh-20260929-irs-sanctions-stay",
+      "pr47-review-entry-1297",
+      "pr47-review-entry-1452",
+      "pr47-review-entry-1526",
+      "pr47-review-entry-1594",
+      "entry-4538",
+      "entry-5190",
+      "entry-5512",
+      "entry-5756",
+      "entry-5850",
+      "entry-6324",
+      "entry-6423",
+      "entry-6451",
+      "entry-6504",
+      "entry-6585",
+      "entry-6612",
+      "entry-6668",
+      "entry-6743",
+      "entry-6781",
+      "entry-6797",
+      "entry-6822",
+      "entry-6841",
+      "entry-6922",
+      "entry-6940",
+      "entry-6961",
+      "entry-7087",
+      "entry-7123",
+      "entry-7156",
+      "expanded-20260820-bessent-regime-collapse",
+      "expanded-20260831-ballroom-sc-stay",
+      "expanded-20260910-h1b-grace-proposal",
+      "expanded-20260917-trump-axios-annihilate",
+      "expanded-20260924-press-arrival-exclusion",
+      "expanded-20260928-lee-memorial-bill-objection",
+      "fresh-20260903-golf-retreat-offer",
+      "pr47-review-entry-112",
+      "pr47-review-entry-1298",
+      "pr47-review-entry-1455",
+      "pr47-review-entry-1534",
+      "pr47-review-entry-1595",
+      "entry-4577",
+      "entry-5191",
+      "entry-5728",
+      "entry-5760",
+      "entry-5851",
+      "entry-6368",
+      "entry-6424",
+      "entry-6455",
+      "entry-6511",
+      "entry-6595",
+      "entry-6614",
+      "entry-6672",
+      "entry-6744",
+      "entry-6782",
+      "entry-6798",
+      "entry-6823",
+      "entry-6844",
+      "entry-6925",
+      "entry-6941",
+      "entry-6963",
+      "entry-7089",
+      "entry-7125",
+      "entry-7158",
+      "expanded-20260821-james-subpoenas-appeal",
+      "expanded-20260831-vance-kharg-defense",
+      "expanded-20260910-rnc-kennedy-falsehoods",
+      "expanded-20260917-un-iran-war-crimes-report",
+      "expanded-20260924-senate-oil-donors-report",
+      "expanded-20260928-media-preliminary-injunction-request",
+      "fresh-20260910-trump-phone-price",
+      "pr47-review-entry-113",
+      "pr47-review-entry-1299",
+      "pr47-review-entry-1457",
+      "pr47-review-entry-1537",
+      "pr47-review-entry-1621",
+      "entry-4696",
+      "entry-5207",
+      "entry-5731",
+      "entry-5761",
+      "entry-5863",
+      "entry-6379",
+      "entry-6425",
+      "entry-6456",
+      "entry-6516",
+      "entry-6597",
+      "entry-6615",
+      "entry-6673",
+      "entry-6749",
+      "entry-6784",
+      "entry-6799",
+      "entry-6824",
+      "entry-6857",
+      "entry-6926",
+      "entry-6943",
+      "entry-6964",
+      "entry-7094",
+      "entry-7126",
+      "entry-7159",
+      "expanded-20260821-usps-final-rule",
+      "expanded-20260902-birthright-new-injunction",
+      "expanded-20260910-rnc-trump-wall-bail",
+      "expanded-20260918-press-ban-announcement",
+      "expanded-20260924-third-country-emergency-request",
+      "expanded-20260928-nathan-birthright-lawsuit",
+      "fresh-20260914-garcia-kremlev",
+      "pr47-review-entry-1174",
+      "pr47-review-entry-130",
+      "pr47-review-entry-1471",
+      "pr47-review-entry-1544",
+      "pr47-review-entry-1623",
+      "entry-4708",
+      "entry-5213",
+      "entry-5732",
+      "entry-5809",
+      "entry-5899",
+      "entry-6393",
+      "entry-6428",
+      "entry-6457",
+      "entry-6517",
+      "entry-6598",
+      "entry-6619",
+      "entry-6679",
+      "entry-6751",
+      "entry-6785",
+      "entry-6801",
+      "entry-6827",
+      "entry-6865",
+      "entry-6928",
+      "entry-6944",
+      "entry-7047",
+      "entry-7095",
+      "entry-7130",
+      "entry-7166",
+      "expanded-20260821-visa75-court",
+      "expanded-20260902-california-waivers-order",
+      "expanded-20260910-vance-rnc-misleading-claims",
+      "expanded-20260918-trump-five-vaccine-doses",
+      "expanded-20260925-pocket-rescission-announcement",
+      "expanded-20260929-irgc-us-voter-letter",
+      "fresh-20260914-oge-trump-ptr",
+      "pr47-review-entry-1200",
+      "pr47-review-entry-1300",
+      "pr47-review-entry-1472",
+      "pr47-review-entry-1546",
+      "pr47-review-entry-1625",
+      "entry-4739",
+      "entry-5224",
+      "entry-5735",
+      "entry-5814",
+      "entry-6007",
+      "entry-6398",
+      "entry-6430",
+      "entry-6460",
+      "entry-6521",
+      "entry-6599",
+      "entry-6624",
+      "entry-6691",
+      "entry-6757",
+      "entry-6786",
+      "entry-6802",
+      "entry-6828",
+      "entry-6866",
+      "entry-6929",
+      "entry-6946",
+      "entry-7048",
+      "entry-7101",
+      "entry-7131",
+      "entry-7168",
+      "expanded-20260824-economic-outcast",
+      "expanded-20260902-doj-welfare-reporting",
+      "expanded-20260914-epa-power-repeal",
+      "expanded-20260921-garces-detention-conference",
+      "expanded-20260925-public-citizen-first-ad-complaint",
+      "expanded-20260929-murray-murphy-ad-letter",
+      "fresh-20260915-tbilisi-launch",
+      "pr47-review-entry-1213",
+      "pr47-review-entry-1304",
+      "pr47-review-entry-1476",
+      "pr47-review-entry-1550",
+      "pr47-review-entry-1626"
+    ],
+    "staged_only_namespace_counts": {
+      "fresh": 84,
+      "pr47": 58
+    }
+  },
+  "outputs": {
+    "effective_results_jsonl": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-19/effective-results.jsonl",
+    "row_count": 425,
+    "one_result_per_key": true,
+    "independent_qa": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-19/independent-qa.json"
+  },
+  "qa_summary": {
+    "audit": "Independent Web PR49 release-gate reconciliation for worker 19",
+    "scope_count": 425,
+    "exact_key_set": true,
+    "assignment_key_count": 425,
+    "unique_assignment_key_count": 425,
+    "missing_keys": [],
+    "outside_keys": [],
+    "duplicate_result_rows": 0,
+    "identity_tuple_count": 425,
+    "duplicate_identity_tuples": 0,
+    "web425_terminal_rows": 425,
+    "web425_terminal_status_counts": {
+      "hold": 191,
+      "pass": 224,
+      "superseded": 10
+    },
+    "account4_held283_rows": 283,
+    "staged_only_rows": 142,
+    "staged_only_status_counts": {
+      "pass": 61,
+      "hold": 81
+    },
+    "held283_effective_status_matrix": {
+      "hold / account4_release_ready=False": 97,
+      "pass / account4_release_ready=True": 26,
+      "pass / account4_release_ready=False": 137,
+      "hold / account4_release_ready=True": 13,
+      "superseded / account4_release_ready=True": 2,
+      "superseded / account4_release_ready=False": 8
+    },
+    "account4_readiness": {
+      "release_ready_true": 41,
+      "held_or_unready": 242,
+      "disposition_counts": {
+        "hold": 127,
+        "propose_split": 1,
+        "propose_consolidation_with_counterpart": 8,
+        "propose_narrower_supported_event": 6,
+        "hold_split_draft_conflict": 1,
+        "hold_pending_specific_evidence": 1,
+        "replace_with_narrower_supported_event": 4,
+        "hold_actor_action_mismatch": 1,
+        "hold_duplicate_event_guard": 1,
+        "hold_pending_direct_evidence": 1,
+        "hold_missing_authenticated_post": 1,
+        "hold_missing_transaction_evidence": 1,
+        "hold_missing_CFPB_records": 1,
+        "hold_URL_to_claim_gap": 1,
+        "hold_unsourced_later_court_details": 1,
+        "retain_narrower_corrected_event": 7,
+        "hold_exact_statement_unverified": 1,
+        "hold_no_proposal_evidence": 1,
+        "hold_source_inaccessible_and_copy_unverified": 1,
+        "hold_unrelated_source": 1,
+        "hold_internal_attribution_conflict": 1,
+        "hold_broader_ruling_source_gap": 1,
+        "exclude_as_event_publication_context_only": 1,
+        "hold_for_missing_evidence": 9,
+        "exclude_pending_new_evidence": 3,
+        "hold_split_until_full_source_text": 1,
+        "consolidate_as_publication_context_only_exclude_as_event": 1,
+        "hold_for_direct_source_verification": 2,
+        "split_supported_components": 2,
+        "retain_unresolved_pending_specific_evidence": 18,
+        "split_supported_component_and_hold_unverified_component": 1,
+        "exclude_as_discrete_event_retain_attributed_publication_context": 1,
+        "pass_narrowed_proposal": 5,
+        "hold_split_incomplete": 1,
+        "defer_duplicate_consolidation": 3,
+        "hold_duplicate_conflict": 2,
+        "pass": 3,
+        "proposal_pending_approval": 3,
+        "consolidation_pending_approval": 3,
+        "defer_partial_split": 1,
+        "split_into_separate_presidential_actions": 1,
+        "exclude_as_standalone_event_keep_publication_context_only": 1,
+        "propose_duplicate_consolidation": 1,
+        "split_proposal_pending_review": 2,
+        "hold_pending_evidence": 12,
+        "narrowed_event_proposal_pending_review": 6,
+        "context_only_proposal_pending_review": 2,
+        "consolidation_proposal_pending_review": 1,
+        "split_recommendation_with_child_hold": 1,
+        "narrowed_replacement_proposal": 3,
+        "exclude_as_discrete_event": 2,
+        "exclusion_pending_new_evidence": 2,
+        "proposal_pending_final_review": 5,
+        "hold_latest_revision_unverified": 5,
+        "proposal_pending_reqa": 1,
+        "hold_conflicting_terminal_rows": 1,
+        "proposal": 1,
+        "split_proposed_with_child_hold": 1,
+        "duplicate_consolidation_proposed": 5,
+        "publication_context_only": 1
+      }
+    },
+    "effective_status_counts": {
+      "hold": 329,
+      "pass_proposal_only": 93,
+      "exclude_context_only_proposal_only": 1,
+      "exclude_pending_evidence_proposal_only": 1,
+      "exclude_composite_proposal_only": 1
+    },
+    "blocking_key_count": 329,
+    "blocking_keys": [
+      "entry-4239",
+      "entry-4240",
+      "entry-4467",
+      "entry-4538",
+      "entry-4577",
+      "entry-4696",
+      "entry-4708",
+      "entry-4753",
+      "entry-4827",
+      "entry-4871",
+      "entry-5161",
+      "entry-5189",
+      "entry-5190",
+      "entry-5191",
+      "entry-5207",
+      "entry-5213",
+      "entry-5224",
+      "entry-5335",
+      "entry-5336",
+      "entry-5340",
+      "entry-5344",
+      "entry-5478",
+      "entry-5728",
+      "entry-5732",
+      "entry-5735",
+      "entry-5737",
+      "entry-5743",
+      "entry-5746",
+      "entry-5749",
+      "entry-5752",
+      "entry-5754",
+      "entry-5755",
+      "entry-5756",
+      "entry-5760",
+      "entry-5809",
+      "entry-5814",
+      "entry-5815",
+      "entry-5816",
+      "entry-5826",
+      "entry-5832",
+      "entry-5840",
+      "entry-5844",
+      "entry-5845",
+      "entry-5850",
+      "entry-5851",
+      "entry-5899",
+      "entry-6007",
+      "entry-6208",
+      "entry-6212",
+      "entry-6280",
+      "entry-6315",
+      "entry-6316",
+      "entry-6324",
+      "entry-6368",
+      "entry-6379",
+      "entry-6393",
+      "entry-6398",
+      "entry-6413",
+      "entry-6414",
+      "entry-6419",
+      "entry-6421",
+      "entry-6423",
+      "entry-6424",
+      "entry-6425",
+      "entry-6428",
+      "entry-6430",
+      "entry-6432",
+      "entry-6437",
+      "entry-6439",
+      "entry-6440",
+      "entry-6443",
+      "entry-6444",
+      "entry-6451",
+      "entry-6455",
+      "entry-6456",
+      "entry-6457",
+      "entry-6460",
+      "entry-6463",
+      "entry-6464",
+      "entry-6475",
+      "entry-6479",
+      "entry-6484",
+      "entry-6498",
+      "entry-6501",
+      "entry-6504",
+      "entry-6511",
+      "entry-6516",
+      "entry-6517",
+      "entry-6521",
+      "entry-6560",
+      "entry-6564",
+      "entry-6577",
+      "entry-6582",
+      "entry-6583",
+      "entry-6584",
+      "entry-6595",
+      "entry-6597",
+      "entry-6598",
+      "entry-6599",
+      "entry-6600",
+      "entry-6602",
+      "entry-6606",
+      "entry-6607",
+      "entry-6609",
+      "entry-6611",
+      "entry-6612",
+      "entry-6614",
+      "entry-6615",
+      "entry-6619",
+      "entry-6624",
+      "entry-6625",
+      "entry-6631",
+      "entry-6637",
+      "entry-6638",
+      "entry-6642",
+      "entry-6662",
+      "entry-6668",
+      "entry-6672",
+      "entry-6673",
+      "entry-6679",
+      "entry-6691",
+      "entry-6693",
+      "entry-6696",
+      "entry-6729",
+      "entry-6736",
+      "entry-6738",
+      "entry-6739",
+      "entry-6744",
+      "entry-6749",
+      "entry-6751",
+      "entry-6757",
+      "entry-6758",
+      "entry-6763",
+      "entry-6776",
+      "entry-6779",
+      "entry-6780",
+      "entry-6781",
+      "entry-6782",
+      "entry-6784",
+      "entry-6785",
+      "entry-6786",
+      "entry-6787",
+      "entry-6789",
+      "entry-6790",
+      "entry-6791",
+      "entry-6793",
+      "entry-6794",
+      "entry-6798",
+      "entry-6799",
+      "entry-6801",
+      "entry-6802",
+      "entry-6803",
+      "entry-6804",
+      "entry-6810",
+      "entry-6818",
+      "entry-6821",
+      "entry-6822",
+      "entry-6823",
+      "entry-6824",
+      "entry-6827",
+      "entry-6828",
+      "entry-6829",
+      "entry-6830",
+      "entry-6832",
+      "entry-6833",
+      "entry-6834",
+      "entry-6835",
+      "entry-6839",
+      "entry-6844",
+      "entry-6857",
+      "entry-6865",
+      "entry-6866",
+      "entry-6867",
+      "entry-6871",
+      "entry-6884",
+      "entry-6889",
+      "entry-6890",
+      "entry-6900",
+      "entry-6913",
+      "entry-6922",
+      "entry-6925",
+      "entry-6926",
+      "entry-6928",
+      "entry-6929",
+      "entry-6930",
+      "entry-6935",
+      "entry-6936",
+      "entry-6937",
+      "entry-6939",
+      "entry-6940",
+      "entry-6941",
+      "entry-6943",
+      "entry-6944",
+      "entry-6946",
+      "entry-6949",
+      "entry-6950",
+      "entry-6951",
+      "entry-6954",
+      "entry-6955",
+      "entry-6958",
+      "entry-6959",
+      "entry-6961",
+      "entry-6963",
+      "entry-6964",
+      "entry-7047",
+      "entry-7048",
+      "entry-7050",
+      "entry-7051",
+      "entry-7057",
+      "entry-7066",
+      "entry-7075",
+      "entry-7085",
+      "entry-7086",
+      "entry-7087",
+      "entry-7089",
+      "entry-7094",
+      "entry-7095",
+      "entry-7101",
+      "entry-7113",
+      "entry-7115",
+      "entry-7117",
+      "entry-7121",
+      "entry-7125",
+      "entry-7126",
+      "entry-7130",
+      "entry-7131",
+      "entry-7132",
+      "entry-7133",
+      "entry-7137",
+      "entry-7138",
+      "entry-7147",
+      "entry-7153",
+      "entry-7154",
+      "entry-7158",
+      "entry-7159",
+      "entry-7166",
+      "entry-7168",
+      "entry-7178",
+      "entry-7179",
+      "entry-7186",
+      "entry-7188",
+      "entry-7195",
+      "expanded-20260821-usps-final-rule",
+      "expanded-20260821-visa75-court",
+      "expanded-20260824-economic-outcast",
+      "expanded-20260827-anthropic-blacklist-order",
+      "expanded-20260827-usps-new-tro",
+      "expanded-20260828-smithsonian-pressure-letter",
+      "expanded-20260830-kharg-ai-post",
+      "expanded-20260830-welker-fcc-threat",
+      "expanded-20260902-california-waivers-order",
+      "expanded-20260908-save-sc-request",
+      "expanded-20260909-census-exclusion-proposal",
+      "expanded-20260909-kimmel-talarico-broadcast",
+      "expanded-20260909-rnc-dividend-pledge",
+      "expanded-20260910-h1b-grace-proposal",
+      "expanded-20260910-rnc-kennedy-falsehoods",
+      "expanded-20260910-vance-rnc-misleading-claims",
+      "expanded-20260914-epa-power-repeal",
+      "expanded-20260914-un-civilian-airstrike-rebuke",
+      "expanded-20260915-ice-locator-exclusion",
+      "expanded-20260916-gastonia-rally-iran-claims",
+      "expanded-20260916-nih-censorship-lawsuit",
+      "expanded-20260917-kennedy-chd-keynote",
+      "expanded-20260918-press-ban-announcement",
+      "expanded-20260921-media-ban-lawsuit",
+      "expanded-20260922-solar-harris-order",
+      "expanded-20260922-un-address-misleading-claims",
+      "expanded-20260924-ice-federal-plaza-injunction",
+      "expanded-20260924-third-country-emergency-request",
+      "expanded-20260925-pocket-rescission-announcement",
+      "expanded-20260925-public-citizen-first-ad-complaint",
+      "expanded-20260925-save-sc-stay",
+      "expanded-20260925-whitehouse-ads-psa-defense",
+      "expanded-20260926-iran-proposal-rejection",
+      "expanded-20260927-kennedy-ad-criticism",
+      "expanded-20260928-china-arms-denial",
+      "expanded-20260928-garces-criminal-complaint",
+      "expanded-20260928-lee-memorial-bill-objection",
+      "expanded-20260928-media-preliminary-injunction-request",
+      "expanded-20260929-irgc-us-voter-letter",
+      "expanded-20260929-murray-murphy-ad-letter",
+      "expanded-20260929-public-citizen-broadcaster-complaint",
+      "expanded-20260929-smith-senate-accusations",
+      "fresh-20260824-mcgurn-api-update",
+      "fresh-20260831-polymarket-round",
+      "fresh-20260910-trump-phone-price",
+      "fresh-20260914-garcia-kremlev",
+      "fresh-20260914-oge-trump-ptr",
+      "fresh-20260916-eric-dominari-13g",
+      "fresh-20260923-melania-series-update",
+      "fresh-20260928-draganfly-financing",
+      "pr47-review-entry-1200",
+      "pr47-review-entry-1213",
+      "pr47-review-entry-1233",
+      "pr47-review-entry-127",
+      "pr47-review-entry-1286",
+      "pr47-review-entry-1300",
+      "pr47-review-entry-1304",
+      "pr47-review-entry-1325",
+      "pr47-review-entry-1343",
+      "pr47-review-entry-1428",
+      "pr47-review-entry-1443",
+      "pr47-review-entry-1445",
+      "pr47-review-entry-1455",
+      "pr47-review-entry-1457",
+      "pr47-review-entry-1471",
+      "pr47-review-entry-1472",
+      "pr47-review-entry-1476",
+      "pr47-review-entry-1478",
+      "pr47-review-entry-1486",
+      "pr47-review-entry-1521",
+      "pr47-review-entry-1526",
+      "pr47-review-entry-1534",
+      "pr47-review-entry-1537",
+      "pr47-review-entry-1544",
+      "pr47-review-entry-1546",
+      "pr47-review-entry-1550",
+      "pr47-review-entry-1578",
+      "pr47-review-entry-1584",
+      "pr47-review-entry-1593",
+      "pr47-review-entry-1594",
+      "pr47-review-entry-1621",
+      "pr47-review-entry-1623",
+      "pr47-review-entry-1625",
+      "pr47-review-entry-1626",
+      "pr47-review-entry-1640",
+      "pr47-review-entry-1646",
+      "pr47-review-entry-1648"
+    ],
+    "duplicate_or_counterpart_disposition_key_count": 43,
+    "duplicate_or_counterpart_disposition_keys": [
+      "entry-4871",
+      "entry-5816",
+      "entry-6007",
+      "entry-6125",
+      "entry-6136",
+      "entry-6208",
+      "entry-6212",
+      "entry-6393",
+      "entry-6691",
+      "entry-6696",
+      "entry-6871",
+      "entry-7047",
+      "entry-7048",
+      "entry-7051",
+      "entry-7057",
+      "entry-7066",
+      "entry-7075",
+      "entry-7086",
+      "entry-7087",
+      "entry-7094",
+      "entry-7095",
+      "entry-7110",
+      "entry-7111",
+      "entry-7113",
+      "entry-7115",
+      "entry-7117",
+      "entry-7121",
+      "entry-7125",
+      "entry-7126",
+      "entry-7130",
+      "entry-7131",
+      "entry-7133",
+      "entry-7138",
+      "entry-7147",
+      "entry-7156",
+      "entry-7159",
+      "entry-7166",
+      "entry-7168",
+      "entry-7176",
+      "entry-7177",
+      "entry-7179",
+      "entry-7186",
+      "entry-7195"
+    ],
+    "split_disposition_key_count": 21,
+    "split_disposition_keys": [
+      "entry-4240",
+      "entry-4407",
+      "entry-4577",
+      "entry-4696",
+      "entry-4708",
+      "entry-4906",
+      "entry-5190",
+      "entry-5191",
+      "entry-5207",
+      "entry-5213",
+      "entry-5224",
+      "entry-5237",
+      "entry-5512",
+      "entry-5752",
+      "entry-5816",
+      "entry-5832",
+      "entry-6414",
+      "entry-6428",
+      "entry-6456",
+      "entry-6479",
+      "entry-6749"
+    ],
+    "candidate_description_qa": {
+      "account4_ready_rows": 41,
+      "complete_event_drafts_checked": 47,
+      "no_event_exclusion_rows": [
+        "entry-7123"
+      ],
+      "description_short_max_chars": 180,
+      "description_medium_words": [
+        45,
+        90
+      ],
+      "description_long_words": [
+        140,
+        300
+      ],
+      "failed_ready_candidate_checks": {},
+      "unique_valid_urls_in_account4_candidates_and_verified_urls": 178
+    },
+    "overall_release_gate": "BLOCKED",
+    "overall_gate_reason": "PR49 results commit retains ACCESS-BLOCKER-2026-10-03.md: review not finished; final validation did not pass; published PR49 state is draft/proposal-only; terminal release result unavailable. Row-level proposal passes do not authorize canonical/database/production changes.",
+    "duplicate_split_precedence": "For the 283 held IDs, latest account4 normalized result is effective over previous Web425 QA. A held result stays blocking unless account4 release_ready=true and independent candidate checks pass. Explicit duplicate/consolidation/counterpart dispositions do not merge or overwrite a second record absent a mapped counterpart. Split decisions only count supported complete children; an incomplete/unverified child blocks the split. The 142 staged-only IDs have no held283 row, so current Web425 terminal QA controls. All outputs remain proposal-only.",
+    "known_limitations": [
+      "No external source pages were re-opened in this reconciliation; URL shape, source mappings, draft lengths, and the stored source-access findings were checked against the latest QA artifacts and packet provenance.",
+      "Global PR49 cannot be declared released because the published results branch explicitly records an unfinished final validation and lacks a terminal release result."
+    ],
+    "passed_structural_checks": true,
+    "account4_worker_summary_reconciliation": {
+      "workers": [
+        {
+          "worker": 1,
+          "branch": "origin/ls/1-trump-files-web425-review-01-of-12-TJQB",
+          "head": "aa3d36b5bfdb58df1990c4b6217a5d86c6bb4cab",
+          "row_count": 24,
+          "recomputed": {
+            "assigned_count": 24,
+            "written_row_count": 24,
+            "unique_key_count": 24,
+            "release_ready_count": 5,
+            "blocking_count": 19
+          },
+          "declared_comparisons": {
+            "assigned_count": {
+              "declared": 24,
+              "recomputed": 24,
+              "matches": true
+            },
+            "written_row_count": {
+              "declared": 24,
+              "recomputed": 24,
+              "matches": true
+            },
+            "unique_key_count": {
+              "declared": 24,
+              "recomputed": 24,
+              "matches": true
+            },
+            "release_ready_count": {
+              "declared": 5,
+              "recomputed": 5,
+              "matches": true
+            },
+            "blocking_count": {
+              "declared": 19,
+              "recomputed": 19,
+              "matches": true
+            }
+          },
+          "omitted_fields": []
+        },
+        {
+          "worker": 2,
+          "branch": "origin/ls/2-trump-files-web425-review-02-of-12-IyLH",
+          "head": "d707e2582dc365e9641211365178a9c8be4f08a6",
+          "row_count": 24,
+          "recomputed": {
+            "assigned_count": 24,
+            "written_row_count": 24,
+            "unique_key_count": 24,
+            "release_ready_count": 8,
+            "blocking_count": 16
+          },
+          "declared_comparisons": {
+            "release_ready_count": {
+              "declared": 8,
+              "recomputed": 8,
+              "matches": true
+            },
+            "blocking_count": {
+              "declared": 16,
+              "recomputed": 16,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count"
+          ]
+        },
+        {
+          "worker": 3,
+          "branch": "origin/ls/3-trump-files-web425-review-03-of-12-96hG",
+          "head": "9fb63b1b70a467bb9c523921d1cf0ce51e04c573",
+          "row_count": 24,
+          "recomputed": {
+            "assigned_count": 24,
+            "written_row_count": 24,
+            "unique_key_count": 24,
+            "release_ready_count": 5,
+            "blocking_count": 19
+          },
+          "declared_comparisons": {
+            "assigned_count": {
+              "declared": 24,
+              "recomputed": 24,
+              "matches": true
+            },
+            "release_ready_count": {
+              "declared": 5,
+              "recomputed": 5,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "written_row_count",
+            "unique_key_count",
+            "blocking_count"
+          ]
+        },
+        {
+          "worker": 4,
+          "branch": "origin/ls/4-trump-files-web425-review-04-of-12-h9v-",
+          "head": "b91ea4643cb6470fe3be5ebead19c7991d4c454d",
+          "row_count": 24,
+          "recomputed": {
+            "assigned_count": 24,
+            "written_row_count": 24,
+            "unique_key_count": 24,
+            "release_ready_count": 4,
+            "blocking_count": 20
+          },
+          "declared_comparisons": {
+            "release_ready_count": {
+              "declared": 4,
+              "recomputed": 4,
+              "matches": true
+            },
+            "blocking_count": {
+              "declared": 20,
+              "recomputed": 20,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count"
+          ]
+        },
+        {
+          "worker": 5,
+          "branch": "origin/ls/5-trump-files-web425-review-05-of-12-zM9X",
+          "head": "9c5a06642123d07a031dd8083a1eadac0f1f1222",
+          "row_count": 24,
+          "recomputed": {
+            "assigned_count": 24,
+            "written_row_count": 24,
+            "unique_key_count": 24,
+            "release_ready_count": 5,
+            "blocking_count": 19
+          },
+          "declared_comparisons": {
+            "release_ready_count": {
+              "declared": 5,
+              "recomputed": 5,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count",
+            "blocking_count"
+          ]
+        },
+        {
+          "worker": 6,
+          "branch": "origin/ls/6-trump-files-web425-review-06-of-12-boco",
+          "head": "2d93433b70f25022127aa134b4a475e6d22f44a7",
+          "row_count": 24,
+          "recomputed": {
+            "assigned_count": 24,
+            "written_row_count": 24,
+            "unique_key_count": 24,
+            "release_ready_count": 3,
+            "blocking_count": 21
+          },
+          "declared_comparisons": {},
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count",
+            "release_ready_count",
+            "blocking_count"
+          ]
+        },
+        {
+          "worker": 7,
+          "branch": "origin/ls/7-trump-files-web425-review-07-of-12-vbH-",
+          "head": "88666d75e999a62b6f0bc0d99a3ac632c3a563e9",
+          "row_count": 24,
+          "recomputed": {
+            "assigned_count": 24,
+            "written_row_count": 24,
+            "unique_key_count": 24,
+            "release_ready_count": 0,
+            "blocking_count": 24
+          },
+          "declared_comparisons": {},
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count",
+            "release_ready_count",
+            "blocking_count"
+          ]
+        },
+        {
+          "worker": 8,
+          "branch": "origin/ls/8-trump-files-web425-review-08-of-12-9xY1",
+          "head": "5082480eb7c85170036ee1c1b47dab0c48e4a41b",
+          "row_count": 23,
+          "recomputed": {
+            "assigned_count": 23,
+            "written_row_count": 23,
+            "unique_key_count": 23,
+            "release_ready_count": 7,
+            "blocking_count": 16
+          },
+          "declared_comparisons": {
+            "assigned_count": {
+              "declared": 23,
+              "recomputed": 23,
+              "matches": true
+            },
+            "unique_key_count": {
+              "declared": 23,
+              "recomputed": 23,
+              "matches": true
+            },
+            "release_ready_count": {
+              "declared": 7,
+              "recomputed": 7,
+              "matches": true
+            },
+            "blocking_count": {
+              "declared": 16,
+              "recomputed": 16,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "written_row_count"
+          ]
+        },
+        {
+          "worker": 9,
+          "branch": "origin/ls/9-trump-files-web425-review-09-of-12-1tgF",
+          "head": "96f6bb5c868fb0f97eb5655d3d602a3ae6fd6d83",
+          "row_count": 23,
+          "recomputed": {
+            "assigned_count": 23,
+            "written_row_count": 23,
+            "unique_key_count": 23,
+            "release_ready_count": 0,
+            "blocking_count": 23
+          },
+          "declared_comparisons": {
+            "release_ready_count": {
+              "declared": 0,
+              "recomputed": 0,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count",
+            "blocking_count"
+          ]
+        },
+        {
+          "worker": 10,
+          "branch": "origin/ls/10-trump-files-web425-review-10-of-12-aLan",
+          "head": "bda4813b1a0bf2cec8de1990c3b68fd6cb3d99a6",
+          "row_count": 23,
+          "recomputed": {
+            "assigned_count": 23,
+            "written_row_count": 23,
+            "unique_key_count": 23,
+            "release_ready_count": 3,
+            "blocking_count": 20
+          },
+          "declared_comparisons": {
+            "release_ready_count": {
+              "declared": 3,
+              "recomputed": 3,
+              "matches": true
+            },
+            "blocking_count": {
+              "declared": 20,
+              "recomputed": 20,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count"
+          ]
+        },
+        {
+          "worker": 11,
+          "branch": "origin/ls/11-trump-files-web425-review-11-of-12-Nsfp",
+          "head": "b784a9a5d906f0d6b53cbfeadfb0fe99d08a660c",
+          "row_count": 23,
+          "recomputed": {
+            "assigned_count": 23,
+            "written_row_count": 23,
+            "unique_key_count": 23,
+            "release_ready_count": 0,
+            "blocking_count": 23
+          },
+          "declared_comparisons": {
+            "release_ready_count": {
+              "declared": 0,
+              "recomputed": 0,
+              "matches": true
+            },
+            "blocking_count": {
+              "declared": 23,
+              "recomputed": 23,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count"
+          ]
+        },
+        {
+          "worker": 12,
+          "branch": "origin/ls/12-trump-files-web425-review-12-of-12-bsCj",
+          "head": "c1645017304a5ebc54507466551fa84933abec2a",
+          "row_count": 23,
+          "recomputed": {
+            "assigned_count": 23,
+            "written_row_count": 23,
+            "unique_key_count": 23,
+            "release_ready_count": 1,
+            "blocking_count": 22
+          },
+          "declared_comparisons": {
+            "unique_key_count": {
+              "declared": 23,
+              "recomputed": 23,
+              "matches": true
+            },
+            "release_ready_count": {
+              "declared": 1,
+              "recomputed": 1,
+              "matches": true
+            }
+          },
+          "omitted_fields": [
+            "assigned_count",
+            "written_row_count",
+            "blocking_count"
+          ]
+        }
+      ],
+      "summary_fields_omitted_by_worker": [
+        {
+          "worker": 2,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 3,
+          "omitted_summary_fields": [
+            "written_row_count",
+            "unique_key_count",
+            "blocking_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 4,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 5,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count",
+            "blocking_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 6,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count",
+            "release_ready_count",
+            "blocking_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 7,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count",
+            "release_ready_count",
+            "blocking_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 8,
+          "omitted_summary_fields": [
+            "written_row_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 9,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count",
+            "blocking_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 10,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 11,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "unique_key_count"
+          ],
+          "recomputed_from_exact_rows": true
+        },
+        {
+          "worker": 12,
+          "omitted_summary_fields": [
+            "assigned_count",
+            "written_row_count",
+            "blocking_count"
+          ],
+          "recomputed_from_exact_rows": true
+        }
+      ],
+      "all_reported_summary_values_match_recomputed_rows": true,
+      "note": "Per-worker summary files omit some counters (notably worker 6/7); all 12 row files were independently counted and joined to the exact held input keys."
+    },
+    "staged_only_namespace_counts": {
+      "fresh": 84,
+      "pr47": 58
+    },
+    "staged_only_effective_status_counts": {
+      "pass_proposal_only": 53,
+      "hold": 87,
+      "exclude_pending_evidence_proposal_only": 1,
+      "exclude_composite_proposal_only": 1
+    },
+    "staged_webqa_pass_unresolved_pr47_keys_reclassified_to_hold": [
+      "pr47-review-entry-1445",
+      "pr47-review-entry-1455",
+      "pr47-review-entry-1521",
+      "pr47-review-entry-1526",
+      "pr47-review-entry-1593",
+      "pr47-review-entry-1648"
+    ],
+    "staged_webqa_pass_explicit_exclusion_proposal_keys": [
+      "pr47-review-entry-112"
+    ],
+    "interpretation": "Prior Web425 terminal pass is preserved as row QA only. Unresolved/pending-evidence candidates remain holds. Explicit safe no-create/exclusion decisions are preserved separately and are not counted as supported event candidates.",
+    "explicit_non_event_proposals": [
+      "entry-7123",
+      "pr47-review-entry-112",
+      "pr47-review-entry-130"
+    ],
+    "url_validation": {
+      "unique_valid_https_urls_in_previous_web425_qa": 295,
+      "unique_valid_https_urls_in_account4_results": 178,
+      "invalid_urls": [],
+      "url_to_claim_method": "Retain and compare the worker QA source-access/source-to-fact evidence and account4 verified_urls/source refs; no new external source pages were opened in this reconciliation."
+    }
+  },
+  "explicit_global_blocker": {
+    "status": "BLOCKED",
+    "source_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+    "source_file": "data/neon-workbench/external/web-release-review/2026-10-03/results/ACCESS-BLOCKER-2026-10-03.md",
+    "reason": "The PR49 final validation was not completed; there is no final terminal result. This audit does not turn proposal-only row passes into release approval."
+  },
+  "qa_summary_reconciliation": {
+    "workers": [
+      {
+        "worker": 1,
+        "branch": "origin/ls/1-trump-files-web425-review-01-of-12-TJQB",
+        "head": "aa3d36b5bfdb58df1990c4b6217a5d86c6bb4cab",
+        "row_count": 24,
+        "recomputed": {
+          "assigned_count": 24,
+          "written_row_count": 24,
+          "unique_key_count": 24,
+          "release_ready_count": 5,
+          "blocking_count": 19
+        },
+        "declared_comparisons": {
+          "assigned_count": {
+            "declared": 24,
+            "recomputed": 24,
+            "matches": true
+          },
+          "written_row_count": {
+            "declared": 24,
+            "recomputed": 24,
+            "matches": true
+          },
+          "unique_key_count": {
+            "declared": 24,
+            "recomputed": 24,
+            "matches": true
+          },
+          "release_ready_count": {
+            "declared": 5,
+            "recomputed": 5,
+            "matches": true
+          },
+          "blocking_count": {
+            "declared": 19,
+            "recomputed": 19,
+            "matches": true
+          }
+        },
+        "omitted_fields": []
+      },
+      {
+        "worker": 2,
+        "branch": "origin/ls/2-trump-files-web425-review-02-of-12-IyLH",
+        "head": "d707e2582dc365e9641211365178a9c8be4f08a6",
+        "row_count": 24,
+        "recomputed": {
+          "assigned_count": 24,
+          "written_row_count": 24,
+          "unique_key_count": 24,
+          "release_ready_count": 8,
+          "blocking_count": 16
+        },
+        "declared_comparisons": {
+          "release_ready_count": {
+            "declared": 8,
+            "recomputed": 8,
+            "matches": true
+          },
+          "blocking_count": {
+            "declared": 16,
+            "recomputed": 16,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count"
+        ]
+      },
+      {
+        "worker": 3,
+        "branch": "origin/ls/3-trump-files-web425-review-03-of-12-96hG",
+        "head": "9fb63b1b70a467bb9c523921d1cf0ce51e04c573",
+        "row_count": 24,
+        "recomputed": {
+          "assigned_count": 24,
+          "written_row_count": 24,
+          "unique_key_count": 24,
+          "release_ready_count": 5,
+          "blocking_count": 19
+        },
+        "declared_comparisons": {
+          "assigned_count": {
+            "declared": 24,
+            "recomputed": 24,
+            "matches": true
+          },
+          "release_ready_count": {
+            "declared": 5,
+            "recomputed": 5,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "written_row_count",
+          "unique_key_count",
+          "blocking_count"
+        ]
+      },
+      {
+        "worker": 4,
+        "branch": "origin/ls/4-trump-files-web425-review-04-of-12-h9v-",
+        "head": "b91ea4643cb6470fe3be5ebead19c7991d4c454d",
+        "row_count": 24,
+        "recomputed": {
+          "assigned_count": 24,
+          "written_row_count": 24,
+          "unique_key_count": 24,
+          "release_ready_count": 4,
+          "blocking_count": 20
+        },
+        "declared_comparisons": {
+          "release_ready_count": {
+            "declared": 4,
+            "recomputed": 4,
+            "matches": true
+          },
+          "blocking_count": {
+            "declared": 20,
+            "recomputed": 20,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count"
+        ]
+      },
+      {
+        "worker": 5,
+        "branch": "origin/ls/5-trump-files-web425-review-05-of-12-zM9X",
+        "head": "9c5a06642123d07a031dd8083a1eadac0f1f1222",
+        "row_count": 24,
+        "recomputed": {
+          "assigned_count": 24,
+          "written_row_count": 24,
+          "unique_key_count": 24,
+          "release_ready_count": 5,
+          "blocking_count": 19
+        },
+        "declared_comparisons": {
+          "release_ready_count": {
+            "declared": 5,
+            "recomputed": 5,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count",
+          "blocking_count"
+        ]
+      },
+      {
+        "worker": 6,
+        "branch": "origin/ls/6-trump-files-web425-review-06-of-12-boco",
+        "head": "2d93433b70f25022127aa134b4a475e6d22f44a7",
+        "row_count": 24,
+        "recomputed": {
+          "assigned_count": 24,
+          "written_row_count": 24,
+          "unique_key_count": 24,
+          "release_ready_count": 3,
+          "blocking_count": 21
+        },
+        "declared_comparisons": {},
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count",
+          "release_ready_count",
+          "blocking_count"
+        ]
+      },
+      {
+        "worker": 7,
+        "branch": "origin/ls/7-trump-files-web425-review-07-of-12-vbH-",
+        "head": "88666d75e999a62b6f0bc0d99a3ac632c3a563e9",
+        "row_count": 24,
+        "recomputed": {
+          "assigned_count": 24,
+          "written_row_count": 24,
+          "unique_key_count": 24,
+          "release_ready_count": 0,
+          "blocking_count": 24
+        },
+        "declared_comparisons": {},
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count",
+          "release_ready_count",
+          "blocking_count"
+        ]
+      },
+      {
+        "worker": 8,
+        "branch": "origin/ls/8-trump-files-web425-review-08-of-12-9xY1",
+        "head": "5082480eb7c85170036ee1c1b47dab0c48e4a41b",
+        "row_count": 23,
+        "recomputed": {
+          "assigned_count": 23,
+          "written_row_count": 23,
+          "unique_key_count": 23,
+          "release_ready_count": 7,
+          "blocking_count": 16
+        },
+        "declared_comparisons": {
+          "assigned_count": {
+            "declared": 23,
+            "recomputed": 23,
+            "matches": true
+          },
+          "unique_key_count": {
+            "declared": 23,
+            "recomputed": 23,
+            "matches": true
+          },
+          "release_ready_count": {
+            "declared": 7,
+            "recomputed": 7,
+            "matches": true
+          },
+          "blocking_count": {
+            "declared": 16,
+            "recomputed": 16,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "written_row_count"
+        ]
+      },
+      {
+        "worker": 9,
+        "branch": "origin/ls/9-trump-files-web425-review-09-of-12-1tgF",
+        "head": "96f6bb5c868fb0f97eb5655d3d602a3ae6fd6d83",
+        "row_count": 23,
+        "recomputed": {
+          "assigned_count": 23,
+          "written_row_count": 23,
+          "unique_key_count": 23,
+          "release_ready_count": 0,
+          "blocking_count": 23
+        },
+        "declared_comparisons": {
+          "release_ready_count": {
+            "declared": 0,
+            "recomputed": 0,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count",
+          "blocking_count"
+        ]
+      },
+      {
+        "worker": 10,
+        "branch": "origin/ls/10-trump-files-web425-review-10-of-12-aLan",
+        "head": "bda4813b1a0bf2cec8de1990c3b68fd6cb3d99a6",
+        "row_count": 23,
+        "recomputed": {
+          "assigned_count": 23,
+          "written_row_count": 23,
+          "unique_key_count": 23,
+          "release_ready_count": 3,
+          "blocking_count": 20
+        },
+        "declared_comparisons": {
+          "release_ready_count": {
+            "declared": 3,
+            "recomputed": 3,
+            "matches": true
+          },
+          "blocking_count": {
+            "declared": 20,
+            "recomputed": 20,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count"
+        ]
+      },
+      {
+        "worker": 11,
+        "branch": "origin/ls/11-trump-files-web425-review-11-of-12-Nsfp",
+        "head": "b784a9a5d906f0d6b53cbfeadfb0fe99d08a660c",
+        "row_count": 23,
+        "recomputed": {
+          "assigned_count": 23,
+          "written_row_count": 23,
+          "unique_key_count": 23,
+          "release_ready_count": 0,
+          "blocking_count": 23
+        },
+        "declared_comparisons": {
+          "release_ready_count": {
+            "declared": 0,
+            "recomputed": 0,
+            "matches": true
+          },
+          "blocking_count": {
+            "declared": 23,
+            "recomputed": 23,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count"
+        ]
+      },
+      {
+        "worker": 12,
+        "branch": "origin/ls/12-trump-files-web425-review-12-of-12-bsCj",
+        "head": "c1645017304a5ebc54507466551fa84933abec2a",
+        "row_count": 23,
+        "recomputed": {
+          "assigned_count": 23,
+          "written_row_count": 23,
+          "unique_key_count": 23,
+          "release_ready_count": 1,
+          "blocking_count": 22
+        },
+        "declared_comparisons": {
+          "unique_key_count": {
+            "declared": 23,
+            "recomputed": 23,
+            "matches": true
+          },
+          "release_ready_count": {
+            "declared": 1,
+            "recomputed": 1,
+            "matches": true
+          }
+        },
+        "omitted_fields": [
+          "assigned_count",
+          "written_row_count",
+          "blocking_count"
+        ]
+      }
+    ],
+    "summary_fields_omitted_by_worker": [
+      {
+        "worker": 2,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 3,
+        "omitted_summary_fields": [
+          "written_row_count",
+          "unique_key_count",
+          "blocking_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 4,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 5,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count",
+          "blocking_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 6,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count",
+          "release_ready_count",
+          "blocking_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 7,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count",
+          "release_ready_count",
+          "blocking_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 8,
+        "omitted_summary_fields": [
+          "written_row_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 9,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count",
+          "blocking_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 10,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 11,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "unique_key_count"
+        ],
+        "recomputed_from_exact_rows": true
+      },
+      {
+        "worker": 12,
+        "omitted_summary_fields": [
+          "assigned_count",
+          "written_row_count",
+          "blocking_count"
+        ],
+        "recomputed_from_exact_rows": true
+      }
+    ],
+    "all_reported_summary_values_match_recomputed_rows": true,
+    "note": "Per-worker summary files omit some counters (notably worker 6/7); all 12 row files were independently counted and joined to the exact held input keys."
+  }
+}
