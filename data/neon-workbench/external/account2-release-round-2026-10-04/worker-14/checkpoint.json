@@ -1,0 +1,62 @@
+{
+  "blockers_file": "exact-blockers.jsonl",
+  "candidate_file": "import-candidate-set-proposed-only.jsonl",
+  "candidate_rows": 64,
+  "checkpoint": "account2-release-round-2026-10-04-worker-14-final",
+  "effective_results_file": "effective-results.jsonl",
+  "effective_rows": 100,
+  "expected_ids": 100,
+  "expected_key_set_sha256": "feefc221eaf137409b267fbe69b28b7e05ab57a376eed0cf586e7b2702121a01",
+  "held_rows": 36,
+  "no_db_or_canonical_changes": true,
+  "qa_file": "independent-qa.json",
+  "source_packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "status": "candidate_set_proposed_with_open_blockers",
+  "worker_branch_commits": {
+    "1": "1a94e2256de5de555cb8a5a01c04987b09738cb1",
+    "10": "59186011281f6a21f1fbc3ede03da9be73fb2c6b",
+    "11": "acfa096935de35c098630d26575f8c76e5ca5e3c",
+    "12": "03282adfe6313b912f1535db714b82962a077680",
+    "2": "c5bf875c052abaa7e0b8322254fb95b91a0311af",
+    "3": "e06c4cc47222eb31194cfce8e71ee1df1e80d681",
+    "4": "983f465b5d59d6cadca9a7b94f35013bf4721507",
+    "5": "4cd949b2be9ba1ff69050b0a5fbb9f7573461355",
+    "6": "00dcebbb523a5cd4e52c989313f0c5fe89de6540",
+    "7": "638eabe516349970413c528b5d80f2651a7016a6",
+    "8": "e46548eb9e18085164bfa7853068985dbfdfe8b5",
+    "9": "a887bcb4d6eaf9e4786ed7a426628571d41ab911"
+  },
+  "worker_final_qa_missing": [
+    7,
+    10,
+    11
+  ],
+  "worker_input_hashes": {
+    "1": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32",
+    "10": "faaedd41063c348cfbd27e134213db6d1b234f9c80deb7fd50f2b1093e38e4ba",
+    "11": "c68361057c7fd624f64e245d66012b3eb8cb895ec4929b42b02c0443e207c536",
+    "12": "3c59e2fb0acd70f3524a41e5587093f6c00470ac81a4ca1863bfcf736708cafc",
+    "2": "d03503aa35f2e7865af5c00c7c7dff4ded3a181ac4e981c8e4de21d74eeeeff1",
+    "3": "1e26948a9ff5bce1fe6f5e6932871f928ff20c8b1dfcbb6b784b3afa0f112737",
+    "4": "d87729dac75073905c6bd71d889c18fd732f71fcec4be7f40a726704506ef694",
+    "5": "3e4ea56c4330113b712013f1fbb2d43be03efcfe8869f1e8318fd3192adc163c",
+    "6": "87fe6f4c0c9b772554fdf9cd14512738400c2939c8fec304b582dcbee5bcedc7",
+    "7": "5ddd9d3030f55ebaf2a6f99757290826cc9362dbc29099ca53580239d652cdae",
+    "8": "2d8a8cff708e0e95b15792a1938299710341f2d6d228a0b50c3efde2b9e9b24e",
+    "9": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08"
+  },
+  "worker_sample100_artifacts_changed_since_prior": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+}
