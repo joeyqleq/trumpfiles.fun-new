@@ -1,0 +1,28 @@
+{
+  "assignment": "account1 late source-correction worker-03",
+  "packet_commit": "d1c9c5990d6b15257fbb406671cd73994b45420",
+  "input_sha256_verified": true,
+  "reviewed_count": 13,
+  "unique_ids": 13,
+  "exact_id_set_match": true,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "batch_sizes_5_to_10": true,
+  "batch_sizes": {
+    "worker-03-batch-20261003-001-a1.jsonl": 7,
+    "worker-03-batch-20261003-002-a1.jsonl": 6
+  },
+  "input_provenance_match": true,
+  "source_mapping_urls_match": true,
+  "all_sources_have_support_limits_and_access_notes": true,
+  "description_bounds_pass": true,
+  "status_counts": {
+    "corrected_claim_proposal": 13
+  },
+  "unresolved_hold_ids": [],
+  "limitations": [
+    "All rows are proposals and require editorial review; no canonical descriptions or Neon records were changed.",
+    "Claims are narrowed to the cited event and figures; remaining evidence gaps are recorded per row in uncertainty and source mappings."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "assignment": "account1 late source-correction worker-03",
+  "packet_commit": "d1c9c5990d6b15257fbb406671cd73994b45420",
+  "input_file": "worker-03-input.jsonl",
+  "input_sha256": "2af28c541c035f17256c2643a4c5d1cdd30c091aa3e4425cd1bd80cdb9f8ed30",
+  "expected_record_ids": [
+    "entry-4266",
+    "entry-4893",
+    "entry-5332",
+    "entry-5753",
+    "entry-5841",
+    "entry-6387",
+    "entry-6474",
+    "entry-6551",
+    "entry-6639",
+    "entry-6735",
+    "entry-6777",
+    "entry-6842",
+    "entry-6956"
+  ],
+  "processed_record_ids": [
+    "entry-4266",
+    "entry-4893",
+    "entry-5332",
+    "entry-5753",
+    "entry-5841",
+    "entry-6387",
+    "entry-6474",
+    "entry-6551",
+    "entry-6639",
+    "entry-6735",
+    "entry-6777",
+    "entry-6842",
+    "entry-6956"
+  ],
+  "missing_record_ids": [],
+  "unexpected_record_ids": [],
+  "status_counts": {
+    "corrected_claim_proposal": 13
+  },
+  "written_rows": 13,
+  "batch_files": [
+    "worker-03-batch-20261003-001-a1.jsonl",
+    "worker-03-batch-20261003-002-a1.jsonl"
+  ],
+  "batch_sizes": {
+    "worker-03-batch-20261003-001-a1.jsonl": 7,
+    "worker-03-batch-20261003-002-a1.jsonl": 6
+  },
+  "append_only": true,
+  "proposal_only": true,
+  "canonical_or_neon_changes": false
+}
