@@ -1,0 +1,21 @@
+{
+  "worker": 9,
+  "checkpoint": "final",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08",
+  "reviewed_count": 8,
+  "reviewed_keys": [
+    "entry-9",
+    "entry-21",
+    "entry-33",
+    "entry-47",
+    "entry-59",
+    "entry-73",
+    "entry-85",
+    "entry-97"
+  ],
+  "pass_count": 2,
+  "hold_count": 6,
+  "exact_set_pass": true,
+  "status": "final exact-set QA complete; offline only"
+}

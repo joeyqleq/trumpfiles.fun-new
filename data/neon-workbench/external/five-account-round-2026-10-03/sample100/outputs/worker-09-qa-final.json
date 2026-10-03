@@ -1,0 +1,101 @@
+{
+  "worker": 9,
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-09-input.jsonl",
+  "input_sha256_expected": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08",
+  "input_sha256_actual": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08",
+  "input_checksum_pass": true,
+  "expected_keys": [
+    "entry-9",
+    "entry-21",
+    "entry-33",
+    "entry-47",
+    "entry-59",
+    "entry-73",
+    "entry-85",
+    "entry-97"
+  ],
+  "output_keys": [
+    "entry-9",
+    "entry-21",
+    "entry-33",
+    "entry-47",
+    "entry-59",
+    "entry-73",
+    "entry-85",
+    "entry-97"
+  ],
+  "exact_set_pass": true,
+  "counts": {
+    "reviewed": 8,
+    "pass": 2,
+    "hold": 6
+  },
+  "all_identities_pass": true,
+  "all_text_limits_pass": true,
+  "all_impact_formulas_pass": true,
+  "all_source_and_provenance_fields_present": true,
+  "all_sql_params_ready_for_dry_run_only": true,
+  "live_database_or_sql_calls": 0,
+  "canonical_edits": 0,
+  "packet_input_edits": 0,
+  "visual_verification": "skipped; deliverable is an offline data QA artifact, with no UI or app flow change",
+  "decision_by_key": {
+    "entry-9": {
+      "decision": "HOLD",
+      "exact_reason": "The staged category changes the populated frozen category from 'Violent Rhetoric / Threats' to 'Authoritarianism'; a NULL-only guard must skip that correction. The two CNN URLs are duplicate variants, so they are one underlying citation."
+    },
+    "entry-21": {
+      "decision": "PASS",
+      "exact_reason": "Frozen identity and all declared existing text match; short, medium, and long meet their limits; CREW source and draft/score provenance are present; and the stored six-dimension score matches the weighted formula."
+    },
+    "entry-33": {
+      "decision": "HOLD",
+      "exact_reason": "The staged category and topic tags differ from populated frozen values, so a NULL-only guard must skip those changes. The preserved long description attributes preventable deaths to the response, while the impact rationale says the supplied facts do not connect this remark to particular deaths."
+    },
+    "entry-47": {
+      "decision": "HOLD",
+      "exact_reason": "The only staged source URL is a Wikipedia page, which does not provide adequate independent support in this packet for the detailed intelligence and indictment claims in the new medium text. The row, text limits, preservation markers, and weighted score otherwise validate."
+    },
+    "entry-59": {
+      "decision": "HOLD",
+      "exact_reason": "The preservation marker lists category as preserved, but the frozen category is 'Disability Rights' and the staged category is 'Human Rights Violations'. A NULL-only guard must skip this populated-field change."
+    },
+    "entry-73": {
+      "decision": "HOLD",
+      "exact_reason": "The frozen category is 'Medical Misinformation' but the staged category is 'Conspiracy Theories / Disinformation'; the preservation snapshot repeats the staged value rather than the frozen one. A NULL-only guard must skip the populated-field change."
+    },
+    "entry-85": {
+      "decision": "PASS",
+      "exact_reason": "Frozen identity and all declared existing text match; short, medium, and long meet their limits; ABC/CNN sources and draft/score provenance are present; and the stored six-dimension score matches the weighted formula."
+    },
+    "entry-97": {
+      "decision": "HOLD",
+      "exact_reason": "The packet's own notes flag the preserved long text's 127-project cancellation claim and 5–4 Supreme Court disposition for separate verification; the medium text explicitly qualifies those points. Keep the row on hold until those claims are resolved."
+    }
+  },
+  "limitations": [
+    "Actual target-column NULL state is not observable offline and was not checked.",
+    "PASS means the supplied packet data clears this rehearsal QA; it is not editorial approval or production-import approval."
+  ],
+  "all_declared_existing_text_preserved": true,
+  "preservation_marker_mismatches": [
+    {
+      "key": "entry-59",
+      "field": "category"
+    },
+    {
+      "key": "entry-73",
+      "field": "category"
+    }
+  ],
+  "all_sql_parameter_values_json_serializable": true,
+  "final_batch_files": [
+    "worker-09-batch-001.jsonl",
+    "worker-09-batch-002.jsonl"
+  ],
+  "checkpoint_files": [
+    "worker-09-checkpoint-001.json",
+    "worker-09-checkpoint-final.json"
+  ]
+}
