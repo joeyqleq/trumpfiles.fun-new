@@ -1,0 +1,89 @@
+{
+  "job": "normalized-release-qa-2026-10-04/account3/worker-02",
+  "source_jobs": {
+    "original_packet_input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "original_review_output_commit": "7c9b5c7404a1e0bd102b903c8b117ad1f81b4f72",
+    "supplement_input_commit": "520015274c29cbcc24a4e54d747e896198756415",
+    "supplement_review_output_commit": "5eac66c5e86c3a012f75e0fc539772077e13a029"
+  },
+  "source_input_sha256": "3eba7f89530a58b22bcd0502cb1a4129fdf565b18519c338bd13b713815db5a5",
+  "output_file": "data/neon-workbench/external/normalized-release-qa-2026-10-04/account3/worker-02-normalized.jsonl",
+  "output_sha256": "189354597e550d1c8302df52fe260df8aff94e98b6942167b628a5ad60016f35",
+  "expected_count": 31,
+  "saved_count": 31,
+  "missing_count": 0,
+  "duplicate_row_count": 0,
+  "duplicate_key_count": 0,
+  "exact_id_set_match": true,
+  "packet_order_preserved": true,
+  "prior_batch_status": "complete_and_pushed",
+  "prior_branch_head_matches_upstream": true,
+  "source_terminal_rows_reviewed": 62,
+  "prior_disposition_counts": {
+    "deferred": 31
+  },
+  "latest_impact_review_counts": {
+    "deferred": 26,
+    "scored": 5
+  },
+  "changed_terminal_status_ids": [
+    "entry-1590",
+    "entry-1437",
+    "entry-5518",
+    "entry-816",
+    "entry-1612"
+  ],
+  "supported_descendant_resolutions": 5,
+  "unresolved_conflict_count": 0,
+  "normalized_disposition_counts": {
+    "hold": 31
+  },
+  "release_ready_count": 0,
+  "blocking_ids": [
+    "entry-1210",
+    "entry-1009",
+    "entry-1650",
+    "entry-1593",
+    "entry-1233",
+    "entry-1590",
+    "entry-1594",
+    "entry-2717",
+    "entry-2507",
+    "entry-1753",
+    "entry-212",
+    "entry-7150",
+    "entry-1437",
+    "entry-1621",
+    "entry-2856",
+    "entry-959",
+    "entry-5518",
+    "entry-816",
+    "entry-1444",
+    "entry-2880",
+    "entry-342",
+    "entry-1654",
+    "entry-2406",
+    "entry-2871",
+    "entry-379",
+    "entry-7044",
+    "entry-1619",
+    "entry-2427",
+    "entry-4111",
+    "entry-1612",
+    "entry-5593"
+  ],
+  "verified_url_count": 12,
+  "supplied_source_url_count": 13,
+  "excluded_unverified_urls": [
+    "https://www.politico.com/news/magazine/2025/01/12/trump-military-immigration-domestic-deployment-00195609"
+  ],
+  "url_format_validation": "PASS: all normalized URLs are HTTPS with a hostname, contain no whitespace, and are exact URL strings from the frozen source records; no URL was invented. The previously inaccessible Politico URL is excluded.",
+  "proposal_count": 2,
+  "proposal_description_word_counts": {
+    "entry-342": 25,
+    "entry-5593": 18
+  },
+  "proposal_word_length_validation": "PASS: both proposal descriptions inherited verbatim from the prior review are non-empty; counts are recorded. One is partially superseded by the later debt-total evidence. No proposal was approved.",
+  "release_readiness_rule": "No row is released as ready: earlier rows were deferred, and later impact-v2 scoring is not release-copy approval. All disputed claims remain held until a scoped, supported copy is explicitly proposed and reviewed.",
+  "validation": "PASS: exact 31 IDs in assigned order; one terminal normalized row per key; no duplicates or missing IDs; all 31 blocking IDs listed; holds preserved; latest descendant status changes are documented in reasons and supported by matching supersession hashes."
+}
