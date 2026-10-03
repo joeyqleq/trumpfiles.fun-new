@@ -1,0 +1,26 @@
+{
+  "worker": "worker-01",
+  "status": "complete",
+  "input_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-01-input.jsonl",
+  "input_sha256": "c979be2530fbb9bb537010bd282ecdf7df0d94ea9271d23c62c8ce89b2d1eb83",
+  "published_pr49_head": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "published_pr49_state": "open draft; final validation failed; proposal-only; no terminal authority was materialized",
+  "pr49_blocker_path": "data/neon-workbench/external/web-release-review/2026-10-03/results/ACCESS-BLOCKER-2026-10-03.md",
+  "assigned_count": 36,
+  "written_row_count": 36,
+  "unique_written_key_count": 36,
+  "missing_keys": [],
+  "outside_assignment_keys": [],
+  "duplicate_key_rows": [],
+  "terminal_status_counts": {
+    "hold": 24,
+    "pass": 12
+  },
+  "superseded_rows": [],
+  "revision_conflict_summary": "PR49 equal-revision review03 snapshots differ only in attempted_searches; the two worker-20 media-ban rescue rows at revision 3 are identical. Cross-version conflict: entry-4239 PR49 revision 104 has complete split descriptions while the newer worker-14 rescue authority omits four fields. Six duplicate proposals are held because the PR49 blocker reports an unfinished revision-2002 pass with invalid lengths/stale fields and no published terminal row.",
+  "duplicate_assignment_id_summary": "36 unique assignment keys; 24 unique held record IDs, 7 unique fresh candidate keys, and 5 unique PR47 review keys; no cross-key identity collisions.",
+  "global_gate": "These are proposal-only row QA dispositions. PR49 remains a draft and no result authorizes a canonical, database, merge, or production change.",
+  "captured_at": "2026-10-03T10:37:39.535307+00:00",
+  "superseded_disposition_basis": "No later exact candidate row beyond the packet’s cited highest rescue authority was found. The blocker’s unpublished revision-2002 signal is held for reconciliation rather than treated as exact per-key supersession provenance."
+}

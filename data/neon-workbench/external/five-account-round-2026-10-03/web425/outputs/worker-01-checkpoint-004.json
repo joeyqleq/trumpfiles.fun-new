@@ -1,0 +1,21 @@
+{
+  "worker": "worker-01",
+  "checkpoint": "004",
+  "checkpointed_rows": 24,
+  "input_sha256": "c979be2530fbb9bb537010bd282ecdf7df0d94ea9271d23c62c8ce89b2d1eb83",
+  "output_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-01-batch-UNIQUE.jsonl",
+  "last_assignment_key": "entry-7176",
+  "batch_keys": [
+    "entry-6930",
+    "entry-6949",
+    "entry-7050",
+    "entry-7110",
+    "entry-7132",
+    "entry-7176"
+  ],
+  "terminal_status_counts_through_checkpoint": {
+    "hold": 14,
+    "pass": 10
+  },
+  "captured_at": "2026-10-03T10:37:39.535307+00:00"
+}

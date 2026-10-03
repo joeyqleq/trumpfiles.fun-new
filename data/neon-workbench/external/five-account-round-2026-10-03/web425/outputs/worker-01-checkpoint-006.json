@@ -1,0 +1,21 @@
+{
+  "worker": "worker-01",
+  "checkpoint": "006",
+  "checkpointed_rows": 36,
+  "input_sha256": "c979be2530fbb9bb537010bd282ecdf7df0d94ea9271d23c62c8ce89b2d1eb83",
+  "output_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-01-batch-UNIQUE.jsonl",
+  "last_assignment_key": "pr47-review-entry-1640",
+  "batch_keys": [
+    "fresh-20260916-eric-dominari-13g",
+    "pr47-review-entry-1233",
+    "pr47-review-entry-1325",
+    "pr47-review-entry-1478",
+    "pr47-review-entry-1578",
+    "pr47-review-entry-1640"
+  ],
+  "terminal_status_counts_through_checkpoint": {
+    "hold": 24,
+    "pass": 12
+  },
+  "captured_at": "2026-10-03T10:37:39.535307+00:00"
+}

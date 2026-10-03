@@ -1,0 +1,21 @@
+{
+  "worker": "worker-01",
+  "checkpoint": "005",
+  "checkpointed_rows": 30,
+  "input_sha256": "c979be2530fbb9bb537010bd282ecdf7df0d94ea9271d23c62c8ce89b2d1eb83",
+  "output_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-01-batch-UNIQUE.jsonl",
+  "last_assignment_key": "expanded-20260929-public-citizen-broadcaster-complaint",
+  "batch_keys": [
+    "expanded-20260825-usps-injunction-violation",
+    "expanded-20260903-smithsonian-signs-letter",
+    "expanded-20260914-un-civilian-airstrike-rebuke",
+    "expanded-20260921-media-ban-lawsuit",
+    "expanded-20260925-save-sc-stay",
+    "expanded-20260929-public-citizen-broadcaster-complaint"
+  ],
+  "terminal_status_counts_through_checkpoint": {
+    "hold": 18,
+    "pass": 12
+  },
+  "captured_at": "2026-10-03T10:37:39.535307+00:00"
+}
