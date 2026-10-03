@@ -1,0 +1,9 @@
+# Worker 18 source270 superseding QA — blocked
+
+This addendum corrects the earlier 207-key audit: the collected source270 terminal distribution is 29 `accepted_source`, 237 `needs_correction`, 4 `exclusion_candidate`, and zero missing (270 total). Any earlier statement that all 270 terminal outcomes were `needs_correction` is stale and inaccurate. Only the 237 correction IDs should be reconciled; accepted-source and exclusion-candidate outcomes remain outside that correction set.
+
+The task states the correction partition is disjointly account6 118 + account1 late89 + account1 last30 30. I could not independently validate those exact sets in this checkout. The named collection JSONL and `source237-partition-2026-10-04.json` are absent from the repository tree; a workspace search found no matching files. After `git fetch --all --prune`, the only source-correction refs visible were the older account6 and account1-late branches, not the six account1 last30 branches. The local control ledger requested to identify those six branches is also absent.
+
+Therefore exact-set reconciliation, latest effective-result selection, URL-to-fact support checks, description length checks, and current hold enumeration are not performed here. No unsupported proposal is marked as passing, and no prior hold is cleared. The earlier 207-key audit remains preserved as history and must not be read as a current terminal-outcome classification.
+
+To finish, make the collection JSONL, partition JSON, and local control ledger available in this checkout (or fetch the six branch refs and provide the ledger mapping). Then compare exact keys and effective results across account6 118, account1-late 89, and account1-last30 30 against exactly the 237 terminal `needs_correction` IDs; report URL-to-fact mappings, short/medium/long bounds, and unresolved evidence holds per key.

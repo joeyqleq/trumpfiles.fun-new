@@ -1,0 +1,42 @@
+{
+  "artifact": "worker18 source270 superseding addendum",
+  "status": "blocked_incomplete_reconciliation",
+  "supersedes": [
+    "worker-18-independent-qa-v2.json",
+    "worker-18-checkpoint-v2.json"
+  ],
+  "preserves_history": true,
+  "correction": {
+    "prior_audit_statement": "The earlier 207-key audit treated all 270 source270 terminal outcomes as needs_correction.",
+    "corrected_terminal_distribution": {
+      "accepted_source": 29,
+      "needs_correction": 237,
+      "exclusion_candidate": 4,
+      "missing": 0,
+      "total": 270
+    },
+    "note": "The earlier blanket classification is stale and inaccurate against the later collected terminal outcomes. Only the 237 needs_correction IDs belong in the correction reconciliation; the 29 accepted_source and 4 exclusion_candidate outcomes must remain outside it."
+  },
+  "required_inputs": {
+    "collected_outcomes": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/collected/source-rescue-unassigned-20261003T214603Z-3d83869b1487.jsonl",
+    "partition": "data/neon-workbench/external/source-rescue-unassigned/2026-10-03/source237-partition-2026-10-04.json",
+    "local_control_ledger": "Not found in /home/user/workspace/trumpfiles-fun-new or /home/user/workspace after repository-wide filename/content search.",
+    "last30_worker_branches": "Not advertised by origin after git fetch --all --prune; no refs matching account1 last30/source-last30 were available."
+  },
+  "known_partition_claim_from_request": {
+    "account6": 118,
+    "account1_late": 89,
+    "account1_last30": 30,
+    "total": 237,
+    "disjointness": "asserted by user-provided task context; not independently verified because partition/ledger files were unavailable"
+  },
+  "scope_and_qa": {
+    "unique_terminal_ids_checked": 0,
+    "effective_proposals_checked": 0,
+    "source_url_to_fact_mappings_checked": 0,
+    "description_word_counts_checked": 0,
+    "holds": "No new pass/hold decisions are made. Existing holds from worker18-independent-qa-v2.json remain historical and are not re-certified in this addendum.",
+    "reason": "The named collection JSONL, partition JSON, local control ledger, and six last30 result refs are absent from the fetched checkout. Inferring IDs or treating earlier packet statuses as current terminal outcomes would risk false reconciliation."
+  },
+  "required_follow_up": "Provide/fetch the collection and partition files plus the local control ledger identifying the six account1 last30 branches (or make those refs available). Then reconcile exact IDs and audit the effective proposals before replacing this blocker with a completed superseding ledger."
+}
