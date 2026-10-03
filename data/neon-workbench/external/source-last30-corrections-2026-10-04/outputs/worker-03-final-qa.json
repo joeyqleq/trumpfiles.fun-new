@@ -1,0 +1,34 @@
+{
+  "assignment": "source-last30-corrections-2026-10-04 worker-03",
+  "checked_output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-03-batch-001.jsonl",
+  "expected_entry_numbers": [
+    5831,
+    5855,
+    5892,
+    6407,
+    6434
+  ],
+  "actual_entry_numbers": [
+    5831,
+    5855,
+    5892,
+    6407,
+    6434
+  ],
+  "exact_set_match": true,
+  "unique_ids": true,
+  "row_count": 5,
+  "all_rows_terminal_corrected": true,
+  "all_rows_have_source_urls": true,
+  "title_and_short_at_most_180_chars": true,
+  "medium_45_to_90_words": true,
+  "long_140_to_300_words": true,
+  "input_limitation_recorded": true,
+  "unresolved_gaps_retained": true,
+  "qa_passed": true,
+  "effective_source_output_git_blob": "96399d13b379a360f2e4af49cfbb814f130d386e",
+  "original_record_git_blobs": {
+    "data/neon-workbench/external/description-completion/2026-09-30/chatgpt-web/input.jsonl": "679224cfa0972e0e7564b0cdb32258dd95d10f12",
+    "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions.jsonl": "648d8805c8125dc06521029e4441094fac8f8f5b"
+  }
+}
