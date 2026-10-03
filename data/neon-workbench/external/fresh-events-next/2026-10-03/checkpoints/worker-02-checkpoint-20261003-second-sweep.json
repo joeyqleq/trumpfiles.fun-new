@@ -6,7 +6,7 @@
   "working_branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
   "date_from": "2026-10-01",
   "date_through": "2026-10-03",
-  "status": "second_sweep_candidates_written_pending_final_qa",
+  "status": "complete_with_scoped_second_sweep_additions",
   "proposal_status": "PROPOSED_NOT_APPROVED",
   "previous_checkpoint_file": "data/neon-workbench/external/fresh-events-next/2026-10-03/checkpoints/worker-02-checkpoint-20261003.json",
   "previous_checkpoint_sha256": "7def10dd4907675de7113010a501b0f2f307f64659a4e3a47c3eaae8252910a9",
@@ -63,5 +63,12 @@
     "The DHS notice’s apprehension and seizure figures are agency assertions and were not independently reproduced."
   ],
   "no_database_or_canonical_edits": true,
-  "no_merge_install_deploy_or_web80": true
+  "no_merge_install_deploy_or_web80": true,
+  "final_qa_file": "data/neon-workbench/external/fresh-events-next/2026-10-03/qa/worker-02-qa-20261003-second-sweep.json",
+  "final_qa_status": "PASS_WITH_SCOPED_SECOND_SWEEP_ADDITIONS",
+  "final_candidate_count_including_prior": 22,
+  "final_complete_candidate_count_including_prior": 20,
+  "final_unresolved_lead_count_including_prior": 2,
+  "new_batch_sha256": "36111396bee1db0c8dd73616af2370ffaca071381567d55b3d8abbd137e5a61b",
+  "batch_commit_before_final_qa": "94a46464be42f64431f4990f2e5abee606b1c024"
 }
