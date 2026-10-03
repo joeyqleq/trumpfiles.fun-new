@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "checkpoint_id": "event-links-worker03-checkpoint-001",
+  "task": "ChatGPT Web PR #49 event-identity QA",
+  "status": "review_complete_proposal_only",
+  "review_branch": "ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+  "evidence_packet": {
+    "results_branch": "codex/web-release-review-results-2026-10-03",
+    "results_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+    "original_input_branch": "codex/web-release-review-2026-10-03",
+    "original_input_commit": "934e12c34d9b2c743114e6d7af4d87646a51e30f",
+    "checkpoint": "results/checkpoint-access-blocked-2026-10-03.json",
+    "assignment_manifests": [
+      "results/assignment-review01.json",
+      "results/assignment-review02.json"
+    ]
+  },
+  "outputs": {
+    "review_jsonl": "data/neon-workbench/external/web-release-review/2026-10-03/results/lightsprint-event-links-worker03-review-001.jsonl",
+    "row_count": 5
+  },
+  "scope": {
+    "target_groups": [
+      "Jan 31 Bove review",
+      "Jun 9 ACIP dismissal",
+      "Aug 19 clearances",
+      "Mar 7 Columbia cancellation",
+      "Jan 20 border proclamation"
+    ],
+    "exact_assignment_keys": [
+      "entry-4708",
+      "entry-5344",
+      "entry-5816",
+      "entry-6619",
+      "entry-5224",
+      "entry-5237",
+      "entry-5752",
+      "entry-6749",
+      "entry-5512",
+      "entry-6443"
+    ],
+    "group_count": 5,
+    "verdicts": "same discrete event; cross-link existing components only"
+  },
+  "limitations": [
+    "Public source text was reviewed from search-result excerpts, not complete independently downloaded pages.",
+    "Recommendations are proposal-only. No child IDs created; no source records deleted, consolidated, or canon-approved; no database/index writes; no other worker outputs changed."
+  ],
+  "validation": {
+    "jsonl_rows": 5,
+    "unique_review_ids": 5,
+    "unique_assignment_keys": 10,
+    "proposal_only_all": true,
+    "canonical_write_authorized_any": false
+  }
+}
