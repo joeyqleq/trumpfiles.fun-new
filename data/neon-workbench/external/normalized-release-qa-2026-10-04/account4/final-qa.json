@@ -1,0 +1,216 @@
+{
+  "result": "pass",
+  "source_job": "held283-editorial-completion-2026-10-03",
+  "source_batch_files": [
+    "worker-05-batch-held283-review-20261003.jsonl"
+  ],
+  "source_terminal_rows": 24,
+  "normalized_rows": 24,
+  "unique_ids": 24,
+  "assigned_ids": [
+    "entry-4438",
+    "entry-5112",
+    "entry-5340",
+    "entry-5752",
+    "entry-5840",
+    "entry-6280",
+    "entry-6417",
+    "entry-6440",
+    "entry-6484",
+    "entry-6582",
+    "entry-6607",
+    "entry-6642",
+    "entry-6736",
+    "entry-6778",
+    "entry-6791",
+    "entry-6817",
+    "entry-6834",
+    "entry-6890",
+    "entry-6936",
+    "entry-6955",
+    "entry-7075",
+    "entry-7117",
+    "entry-7147",
+    "entry-7186"
+  ],
+  "exact_id_set_match": true,
+  "duplicate_normalized_keys": 0,
+  "competing_terminal_rows": 0,
+  "duplicate_conflict_policy": "No duplicate terminal rows were present in the worker-05 held283 batch. Conflicting poll wording (entry-7147) and one-day date mismatch (entry-7186) remain explicit holds; duplicate consolidation candidates remain deferred.",
+  "disposition_counts": {
+    "pass_narrowed_proposal": 5,
+    "hold": 14,
+    "hold_split_incomplete": 1,
+    "defer_duplicate_consolidation": 2,
+    "hold_duplicate_conflict": 2
+  },
+  "release_ready_count": 5,
+  "blocked_count": 19,
+  "blocking_ids": [
+    "entry-5340",
+    "entry-5752",
+    "entry-5840",
+    "entry-6280",
+    "entry-6440",
+    "entry-6484",
+    "entry-6582",
+    "entry-6607",
+    "entry-6642",
+    "entry-6736",
+    "entry-6791",
+    "entry-6834",
+    "entry-6890",
+    "entry-6936",
+    "entry-6955",
+    "entry-7075",
+    "entry-7117",
+    "entry-7147",
+    "entry-7186"
+  ],
+  "blocking_reasons": [
+    {
+      "key": "entry-5340",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-5752",
+      "disposition": "hold_split_incomplete",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_split_children_incomplete."
+    },
+    {
+      "key": "entry-5840",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6280",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6440",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6484",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6582",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6607",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6642",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6736",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6791",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6834",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6890",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6936",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-6955",
+      "disposition": "hold",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_evidence_gap."
+    },
+    {
+      "key": "entry-7075",
+      "disposition": "defer_duplicate_consolidation",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=duplicate_consolidation_candidate."
+    },
+    {
+      "key": "entry-7117",
+      "disposition": "defer_duplicate_consolidation",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=duplicate_consolidation_candidate."
+    },
+    {
+      "key": "entry-7147",
+      "disposition": "hold_duplicate_conflict",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_duplicate_identity_conflict."
+    },
+    {
+      "key": "entry-7186",
+      "disposition": "hold_duplicate_conflict",
+      "reason": "Reconciled from the sole worker-05 held283 append-only batch; source terminal outcome=hold_duplicate_identity_conflict."
+    }
+  ],
+  "proposal_description_lengths": {
+    "entry-4438": {
+      "short_chars": 171,
+      "medium_words": 66,
+      "long_words": 153
+    },
+    "entry-5112": {
+      "short_chars": 136,
+      "medium_words": 57,
+      "long_words": 153
+    },
+    "entry-5752": [
+      {
+        "short_chars": 173,
+        "medium_words": 56,
+        "long_words": null
+      },
+      {
+        "short_chars": 107,
+        "medium_words": 53,
+        "long_words": null
+      }
+    ],
+    "entry-6417": {
+      "short_chars": 138,
+      "medium_words": 72,
+      "long_words": 173
+    },
+    "entry-6778": {
+      "short_chars": 142,
+      "medium_words": 66,
+      "long_words": 151
+    },
+    "entry-6817": {
+      "short_chars": 127,
+      "medium_words": 63,
+      "long_words": 142
+    }
+  },
+  "url_validation": {
+    "format": "all verified/proposal URLs are HTTPS with a host and no whitespace",
+    "verified_url_count": 8,
+    "verified_urls_only_from_directly_read_sources": true,
+    "proposal_urls_exist_in_prior_source_maps": true
+  },
+  "schema_valid": true,
+  "release_ready_policy": "Only the five evidence-bounded narrowed drafts are marked release-ready; original held claims remain unapproved. All holds/deferred consolidations remain release_ready=false.",
+  "no_new_research": true,
+  "canonical_or_neon_changes": false
+}
