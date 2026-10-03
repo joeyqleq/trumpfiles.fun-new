@@ -1,0 +1,134 @@
+{
+  "qa_run": "web425 worker 04 independent PR49 release QA",
+  "packet": {
+    "branch": "codex/five-account-review-packets-2026-10-03",
+    "commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+    "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/worker-04-input.jsonl",
+    "input_sha256": "afa29b341422dccd4f453134b75a4f7339636d396c51d43d8f256d36723d33ad"
+  },
+  "pr49_results_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "output_path": "data/neon-workbench/external/five-account-round-2026-10-03/web425/outputs/worker-04-batch-20261003-001.jsonl",
+  "output_sha256": "62da864c62846ffc95695ac179a10215ad7741a9693db2492c0d222792f40bcc",
+  "exact_set_validation": {
+    "expected_count": 36,
+    "actual_count": 36,
+    "unique_assignment_keys": 36,
+    "same_order_as_packet": true,
+    "missing_keys": [],
+    "extra_keys": [],
+    "duplicate_assigned_ids": [],
+    "all_namespaced_ids_match_assignment_keys": true,
+    "all_rows_have_terminal_status": true,
+    "status_counts": {
+      "pass": 18,
+      "hold": 18
+    },
+    "superseded_count": 0,
+    "superseded_note": "No packet candidate was superseded by a higher source than the pinned authority. Entries 5749 and 6212/7066/7115/7138/7179 carry explicit newer provenance than their PR49 baselines; see each row."
+  },
+  "revision_findings": [
+    "entry-5336: PR49 revision 3 -> selected rescue overlay revision 4.",
+    "entry-5749: PR49 revision 105 -> packet candidate revision 106; candidate explicitly supersedes 105.",
+    "entry-6212, entry-7066, entry-7115, entry-7138, entry-7179: PR49 duplicate-QA revision 2000 -> duplicate-fix revision 2001.",
+    "Other per-key publication and overlay provenance is recorded on each QA row; revision numbers from separate worker overlays are not compared across tracks."
+  ],
+  "duplicate_counterpart_findings": [
+    "entry-6212 -> survivor entry-5941",
+    "entry-7066 -> counterpart entry-7060",
+    "entry-7115 -> counterpart entry-7108",
+    "entry-7138 is publication-context-only and is not proposed as an event duplicate",
+    "entry-7179 -> counterpart entry-7173"
+  ],
+  "description_length_exceptions": [
+    {
+      "assignment_key": "entry-4906",
+      "date_start": "2025-02-03",
+      "title_short_ok": true,
+      "medium_words": 56,
+      "medium_ok": true,
+      "long_words": 0,
+      "long_ok": null
+    },
+    {
+      "assignment_key": "entry-5832",
+      "date_start": "2025-07-22",
+      "title_short_ok": true,
+      "medium_words": 0,
+      "medium_ok": null,
+      "long_words": 0,
+      "long_ok": null
+    }
+  ],
+  "source_urls_reviewed_count": 55,
+  "hold_keys": [
+    "entry-4906",
+    "entry-5749",
+    "entry-5832",
+    "entry-6415",
+    "entry-6439",
+    "entry-6479",
+    "entry-6638",
+    "entry-6790",
+    "entry-6833",
+    "entry-6935",
+    "entry-6954",
+    "expanded-20260909-census-exclusion-proposal",
+    "expanded-20260922-un-address-misleading-claims",
+    "expanded-20260927-kennedy-ad-criticism",
+    "fresh-20260824-mcgurn-api-update",
+    "fresh-20260923-melania-series-update",
+    "pr47-review-entry-1286",
+    "pr47-review-entry-1443"
+  ],
+  "checkpoints": [
+    {
+      "checkpoint_id": "worker-04-checkpoint-001",
+      "cumulative_rows": 6,
+      "rows_in_checkpoint": 6,
+      "checkpoint_key_count": 6,
+      "remaining": 30,
+      "sha256": "3a19f4e7e0e5c45efda2bc2d9232e4d56f4ad06ed529a7620e5bdc8122c3c064"
+    },
+    {
+      "checkpoint_id": "worker-04-checkpoint-002",
+      "cumulative_rows": 12,
+      "rows_in_checkpoint": 6,
+      "checkpoint_key_count": 6,
+      "remaining": 24,
+      "sha256": "26a37ed26568b117129a706031d2695c6e842e55b5ed643803d069eeccb295bb"
+    },
+    {
+      "checkpoint_id": "worker-04-checkpoint-003",
+      "cumulative_rows": 18,
+      "rows_in_checkpoint": 6,
+      "checkpoint_key_count": 6,
+      "remaining": 18,
+      "sha256": "1b25d95e9ed32e2da3b3904a28cf3873c08d32608fecdfe592f4489f3ec7f99c"
+    },
+    {
+      "checkpoint_id": "worker-04-checkpoint-004",
+      "cumulative_rows": 24,
+      "rows_in_checkpoint": 6,
+      "checkpoint_key_count": 6,
+      "remaining": 12,
+      "sha256": "475b7091b69f3414e52d174565268c86044c8e185712c58441f67e471da425cf"
+    },
+    {
+      "checkpoint_id": "worker-04-checkpoint-005",
+      "cumulative_rows": 30,
+      "rows_in_checkpoint": 6,
+      "checkpoint_key_count": 6,
+      "remaining": 6,
+      "sha256": "b2c80dac57f185498933887e2aae456d636e46a0e612dae783fe630145c2bc61"
+    },
+    {
+      "checkpoint_id": "worker-04-checkpoint-006",
+      "cumulative_rows": 36,
+      "rows_in_checkpoint": 6,
+      "checkpoint_key_count": 6,
+      "remaining": 0,
+      "sha256": "62da864c62846ffc95695ac179a10215ad7741a9693db2492c0d222792f40bcc"
+    }
+  ],
+  "scope_note": "QA artifact only. No candidate was rewritten; no other worker result, canonical record, database, production state, or merge state was changed."
+}
