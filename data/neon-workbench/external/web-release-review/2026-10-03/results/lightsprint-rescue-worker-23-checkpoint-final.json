@@ -1,0 +1,1069 @@
+{
+  "task": "Web PR49 QA — worker 23",
+  "branch": "ls/12-trump-final-corrections-account2-worker2-KcuW",
+  "source_commit": "f492cfb98aa1e98072527d1a0af50ae6f2122f86",
+  "pr49_baseline_commit": "d68d16f1546cc03b0d5e6596b1dc99921852b97d",
+  "input_sha256": "fd716aeb325d6f42bb145991fe7fdb1e29de198843a25043d66a97b71ae1b048",
+  "assigned_count": 32,
+  "output_count": 32,
+  "unique_key_count": 32,
+  "exact_key_set_validated": true,
+  "draft_length_constraints_passed": true,
+  "https_urls_validated": true,
+  "proposal_only_all_rows": true,
+  "source_url_count": 56,
+  "draft_count_validated": 22,
+  "pr49_baseline_rows_matched": 25,
+  "keys_without_prior_pr49_baseline_row": [
+    "expanded-20260916-gastonia-rally-iran-claims",
+    "expanded-20260929-smith-senate-accusations",
+    "pr47-review-entry-127",
+    "pr47-review-entry-1325",
+    "pr47-review-entry-1476",
+    "pr47-review-entry-1546",
+    "pr47-review-entry-1623"
+  ],
+  "items": [
+    {
+      "assignment_key": "entry-4696",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/handoff-review02-batch-016.jsonl",
+        "revision": 105,
+        "review_status": "reviewed_split_partial_draft",
+        "recommended_disposition": "split_supported_components"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_split_partial_draft",
+        "recommended_disposition": "split_supported_components",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://projects.propublica.org/trump-team-financial-disclosures/appointees/hegseth-pete/",
+          "access_status": "full_text_read"
+        },
+        {
+          "url": "https://projects.propublica.org/trump-team-financial-disclosures/appointees/lutnick-howard/",
+          "access_status": "full_text_read"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1690680/000162828026013160/R33.htm",
+          "access_status": "full_text_read"
+        },
+        {
+          "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS%2BIndex/1D97817A20B559D085258CA2002C8C51/%24FILE/Pete-Hegseth-04.11.2025-278T.pdf",
+          "access_status": "full_text_read"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "child_drafts[0]",
+          "description_short": 166,
+          "description_medium": 45
+        },
+        {
+          "draft": "child_drafts[1]",
+          "description_short": 108,
+          "description_medium": 55
+        }
+      ],
+      "remaining_evidence_gap": "Separate the Hegseth March 24 disclosure from Lutnick ethics-agreement divestitures; no evidence establishes nonpublic tariff knowledge or a joint episode.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-5207",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/handoff-review02-batch-017.jsonl",
+        "revision": 105,
+        "review_status": "reviewed_split_partial_draft",
+        "recommended_disposition": "split_supported_components"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_split_partial_draft",
+        "recommended_disposition": "split_supported_components",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.reuters.com/business/media-telecom/trump-threatens-jail-reporter-who-revealed-iran-airman-rescue-2026-04-06/",
+          "access_status": "full_text_read"
+        },
+        {
+          "url": "https://www.washingtonpost.com/national-security/2026/06/23/doj-issued-then-withdrew-subpoenas-force-post-wsj-reporters-testify/",
+          "access_status": "full_text_read"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "child_drafts[0]",
+          "description_short": 124,
+          "description_medium": 48
+        },
+        {
+          "draft": "child_drafts[1]",
+          "description_short": 82,
+          "description_medium": 49,
+          "description_long": 149
+        }
+      ],
+      "remaining_evidence_gap": "Keep Trump’s April 6 source-refusal threat separate from later Post/Journal subpoenas. Public reporting does not identify the latter as arising from the Iran rescue disclosure.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-5728",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-022.jsonl",
+        "revision": 3,
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.reuters.com/world/middle-east/iran-says-it-will-respond-reimposition-un-sanctions-2025-07-14/",
+          "access_status": "packet_lead_only_source_text_not_opened"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/g7-urges-talks-resume-deal-iran-nuclear-program-2025-07-01/",
+          "access_status": "packet_source_metadata_only_source_text_not_opened"
+        }
+      ],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "Reuters supports only that no restart date or location for U.S.-Iran talks had been set after the June conflict. Missing: dated “historic/perfect” imminent-deal statement and evidence of a July-end collapse.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-5756",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-022.jsonl",
+        "revision": 3,
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://trumpstruth.org/",
+          "access_status": "search_result_snippet_only"
+        }
+      ],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "No authenticated original Truth Social post or contemporaneous record supports the alleged posting of congressional witnesses’ home addresses or “make them pay” wording. Exclude unless the post and proceeding are identified.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-5845",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review01-revision-012-batch-001.jsonl",
+        "revision": 12,
+        "review_status": "reviewed_narrower_supported_event",
+        "recommended_disposition": "replace_with_narrower_supported_event"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_narrower_supported_event",
+        "recommended_disposition": "replace_with_narrower_supported_event",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.latimes.com/business/la-fi-ivanka-trump-brand-20170418-story.html",
+          "access_status": "actually_read_AP_syndication"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 119,
+          "description_medium": 78,
+          "description_long": 154
+        }
+      ],
+      "remaining_evidence_gap": "The April 6 provisional approvals concern three marks, while 16 is the broader registered portfolio. Timing with the Xi dinner does not establish influence.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6413",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-023.jsonl",
+        "revision": 3,
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.reuters.com/world/us/pentagon-pull-milleys-security-clearance-fox-reports-2025-01-28/",
+          "access_status": "packet_lead_only_source_text_not_opened"
+        }
+      ],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "The source describes Milley’s Jan. 28 security detail and retired-rank review, not a February court-martial threat involving Milley and Mattis. No matching discrete event is substantiated.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6433",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review01-revision-012-batch-001.jsonl",
+        "revision": 12,
+        "review_status": "reviewed_narrower_supported_event",
+        "recommended_disposition": "replace_with_narrower_supported_event"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_narrower_supported_event",
+        "recommended_disposition": "replace_with_narrower_supported_event",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-creates-new-federal-employee-category-to-enhance-accountability/",
+          "access_status": "actually_read"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 97,
+          "description_medium": 50,
+          "description_long": 143
+        }
+      ],
+      "remaining_evidence_gap": "The White House fact sheet describes a proposed OPM rule and an estimate, not an immediate Jan. 20 removal or completed reclassification. Limit to the April 18 proposal.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6475",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-028.jsonl",
+        "revision": 3,
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "No cited record establishes that all aid to Palestinians was cut. Exact program, dates, appropriations, exemptions and implementing action are missing; broad freeze reports do not establish the universal claim.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6564",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-025.jsonl",
+        "revision": 3,
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "No deed, closing record, buyer identity, sale date or price supports a post-2021 Mar-a-Lago property sale to a Russian-linked buyer at an inflated price. Do not conflate the separate 2008 Rybolovlev transaction.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6600",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-026.jsonl",
+        "revision": 3,
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.fbi.gov/about/leadership-and-structure/director-patel",
+          "access_status": "packet_lead_only_source_text_not_opened"
+        }
+      ],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "The FBI biography establishes Patel’s office and start date only. No investigative records or identified journalist targets support investigations for negative coverage.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6624",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-027.jsonl",
+        "revision": 3,
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_exclude",
+        "recommended_disposition": "exclude_pending_new_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20250205a.htm",
+          "access_status": "packet_lead_only_source_text_not_opened"
+        }
+      ],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "The 2025 Federal Reserve stress-test materials do not substantiate Treasury ending all bank stress tests. No Treasury action or rule matching the claim is identified.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6679",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review02-batch-029.jsonl",
+        "revision": 3,
+        "review_status": "reviewed_actionable_narrower_event",
+        "recommended_disposition": "retain_narrower"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_actionable_narrower_event",
+        "recommended_disposition": "retain_narrower",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.nycourts.gov/reporter/3dseries/2025/2025_04756.htm",
+          "access_status": "full_text_read"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 136,
+          "description_medium": 68,
+          "description_long": 160
+        }
+      ],
+      "remaining_evidence_gap": "The Appellate Division modified the Trump Organization civil-fraud judgment. That court event is distinct from the alleged favorable self-loan tax scheme, which remains unsupported.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6758",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-001-rev06.jsonl",
+        "revision": 4,
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-agreement-missouri-end-biden-administrations-illegal-save-plan",
+          "access_status": "packet_url_not_independently_read"
+        }
+      ],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "The January 20 order and later litigation do not establish that SAVE was ended by executive order, that eight million borrowers lost relief, or that prior forgiveness was clawed back. Need direct agency action and verified borrower effects.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6786",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-002-rev06.jsonl",
+        "revision": 4,
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.reuters.com/legal/trumps-sentencing-measured-judge-confronts-president-elect-2025-01-10/",
+          "access_status": "search_result_only"
+        }
+      ],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "Reuters supports Trump’s public attacks on Justice Merchan, but not the specific Jan. 25 threat to investigate the judge or family. Need the dated original post or other direct record.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6801",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review01-revision-004-batch-001.jsonl",
+        "revision": 4,
+        "review_status": "reviewed_narrower_supported_event",
+        "recommended_disposition": "replace_with_narrower_supported_event"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_narrower_supported_event",
+        "recommended_disposition": "replace_with_narrower_supported_event",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://docs.house.gov/meetings/JU/JU00/20250212/117881/HHRG-119-JU00-20250212-SD011-U11.pdf",
+          "access_status": "actually_read"
+        },
+        {
+          "url": "https://www.washingtonpost.com/politics/2025/02/05/pam-bondi-attorney-general/",
+          "access_status": "actually_read"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 153,
+          "description_medium": 70,
+          "description_long": 148
+        }
+      ],
+      "remaining_evidence_gap": "Bondi’s Feb. 5 Weaponization Working Group review directive is supported. It is not evidence DOJ opened a criminal investigation of Manhattan DA Bragg.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6824",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-004-rev06.jsonl",
+        "revision": 4,
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.justice.gov/ovw/funding-opportunities",
+          "access_status": "packet_url_not_independently_read"
+        }
+      ],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "DOJ OVW’s FY2025 page lists awards and opportunities, which contradicts an unqualified claim that all grants were eliminated. Need the specific canceled grant, recipient, amount and termination notice.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6844",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-005-rev06.jsonl",
+        "revision": 4,
+        "review_status": "reviewed_supported_narrower_event",
+        "recommended_disposition": "retain_narrower_corrected_event"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_supported_narrower_event",
+        "recommended_disposition": "retain_narrower_corrected_event",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.bop.gov/news/pdfs/20250618-fsa-directive-and-sca.pdf",
+          "access_status": "read_full_text"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 125,
+          "description_medium": 69,
+          "description_long": 153
+        }
+      ],
+      "remaining_evidence_gap": "The June 2025 Bureau of Prisons directive addresses First Step Act and Second Chance Act implementation; it does not substantiate wholesale dismantling alleged for March.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6926",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-006-rev06.jsonl",
+        "revision": 4,
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "No contemporaneous DHS record substantiates a critics’ watchlist. Later data programs are not evidence of the alleged list. Missing: program, records, people covered, purpose and date.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6941",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-006-rev06.jsonl",
+        "revision": 4,
+        "review_status": "reviewed_supported_narrower_event",
+        "recommended_disposition": "retain_narrower_corrected_event"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_supported_narrower_event",
+        "recommended_disposition": "retain_narrower_corrected_event",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-american-people-against-invasion/",
+          "access_status": "read_full_text"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 146,
+          "description_medium": 61,
+          "description_long": 140
+        }
+      ],
+      "remaining_evidence_gap": "The Jan. 20 order directs detention pending specified removal proceedings or removal to the extent permitted by law; it does not say indefinite detention without charge.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "entry-6961",
+      "namespace": "held",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review03-batch-010-rev06.jsonl",
+        "revision": 4,
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence"
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_unresolved",
+        "recommended_disposition": "retain_unresolved_pending_specific_evidence",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [],
+      "draft_lengths": [],
+      "remaining_evidence_gap": "No credible source found for systematic transfer of asylum seekers’ confidential details to foreign governments followed by persecution. Need a named data agreement, countries, cases and documented consequence.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "expanded-20260828-smithsonian-pressure-letter",
+      "namespace": "fresh",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-004-rev03.jsonl",
+        "revision": 3,
+        "review_status": "partially_source_verified_access_limits_explicit",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review"
+      },
+      "saved_latest_proposal": {
+        "review_status": "supported_with_attribution_and_packet_limitations",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review",
+        "status_differs_from_baseline": true,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.cnn.com/2026/09/03/politics/trump-administration-smithsonian-letter-executive-agencies",
+          "access_status": "CNN_direct_page_inaccessible"
+        },
+        {
+          "url": "https://abcnews.com/Politics/trump-admin-threatens-cut-federal-support-smithsonian-accuses/story?id=136182940",
+          "access_status": "ABC_page_fetched_text_not_rendered"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 73,
+          "description_medium": 66,
+          "description_long": 214
+        }
+      ],
+      "remaining_evidence_gap": "The letter threatened specified federal support unless Smithsonian leadership changed course; actual withdrawal of support is not established.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "expanded-20260909-rnc-dividend-pledge",
+      "namespace": "fresh",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-006-rev03.jsonl",
+        "revision": 3,
+        "review_status": "partially_source_verified_access_limits_explicit",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review"
+      },
+      "saved_latest_proposal": {
+        "review_status": "supported_with_attribution_and_packet_limitations",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review",
+        "status_differs_from_baseline": true,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://apnews.com/article/trump-dividend-5k-5000-check-republicans-cc80644e3168acd31c892129fb849436",
+          "access_status": "AP_direct_inaccessible"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/watch-trump-promises-5000-dividend-for-americans-if-gop-wins-midterms",
+          "access_status": "PBS_page_access_403"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 73,
+          "description_medium": 45,
+          "description_long": 219
+        }
+      ],
+      "remaining_evidence_gap": "The conditional $5,000 pledge is reported, but is not an enacted benefit. Cost estimate and authorization claims remain packet-led because AP/PBS pages were inaccessible in the prior review.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "expanded-20260916-gastonia-rally-iran-claims",
+      "namespace": "fresh",
+      "authoritative_latest_source": {
+        "file": "fresh84-review-only.jsonl",
+        "revision": null,
+        "review_status": "no_PR49_baseline_row",
+        "recommended_disposition": null
+      },
+      "saved_latest_proposal": {
+        "review_status": "supported_with_attribution_and_packet_limitations",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.news4jax.com/news/politics/2026/09/20/rising-gas-prices-frustrate-voters-trump-says-its-an-inexpensive-price-to-pay-for-the-iran-war/",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://politifact.com/article/2026/sep/29/a-cheat-sheet-to-trumps-2026-talking-points/",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 77,
+          "description_medium": 52,
+          "description_long": 156
+        }
+      ],
+      "remaining_evidence_gap": "Candidate packet supports a Gastonia rally statement about gasoline prices and Iran’s nuclear capability; the AP/PolitiFact text needs independent source verification. Do not state that all capability was eliminated as fact.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "expanded-20260922-un-address-misleading-claims",
+      "namespace": "fresh",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-009-rev03.jsonl",
+        "revision": 3,
+        "review_status": "partially_source_verified_access_limits_explicit",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review"
+      },
+      "saved_latest_proposal": {
+        "review_status": "partially_source_verified_access_limits_explicit",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://politifact.com/article/2026/sep/22/trump-un-speech-iran-ai-fact-check/",
+          "access_status": "PolitiFact_opened_page_body_not_rendered"
+        },
+        {
+          "url": "https://www.cnn.com/2026/09/22/politics/fact-check-trump-united-nations",
+          "access_status": "CNN_direct_inaccessible"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 80,
+          "description_medium": 68,
+          "description_long": 207
+        }
+      ],
+      "remaining_evidence_gap": "Candidate sources support Trump’s UN address claims, but specific inventory and “eight wars” fact-check findings are not independently source-read here.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "expanded-20260926-iran-proposal-rejection",
+      "namespace": "fresh",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-010-rev03.jsonl",
+        "revision": 3,
+        "review_status": "source_text_independently_read_with_limits",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review"
+      },
+      "saved_latest_proposal": {
+        "review_status": "source_text_independently_read_with_limits",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.21alivenews.com/2026/09/26/trump-rejects-irans-proposal-reopen-strait-hormuz/",
+          "access_status": "AP_syndication_URL_not_opened_focused_packet_claim_only"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 73,
+          "description_medium": 58,
+          "description_long": 149
+        }
+      ],
+      "remaining_evidence_gap": "The cited AP-syndication URL was not opened in the final review. Proposal terms and map post remain supported by frozen packet mapping only; no agreement or legal renaming is established.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "expanded-20260929-smith-senate-accusations",
+      "namespace": "fresh",
+      "authoritative_latest_source": {
+        "file": "fresh84-review-only.jsonl",
+        "revision": null,
+        "review_status": "no_PR49_baseline_row",
+        "recommended_disposition": null
+      },
+      "saved_latest_proposal": {
+        "review_status": "supported_with_attribution_and_packet_limitations",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review",
+        "status_differs_from_baseline": false,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/sep/29/jack-smith-senate-hearing",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-jack-smiths-abuse-of-authority-and-the-targeting-of-republicans-and-related-matters",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 72,
+          "description_medium": 49,
+          "description_long": 157
+        }
+      ],
+      "remaining_evidence_gap": "Packet reports contested accusations and rebuttals at the Sept. 29 Senate Judiciary hearing; no judicial finding of perjury or coordinated wrongdoing is established. Source URLs/access must be preserved from the candidate packet.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "fresh-20260922-curtis-probe-request",
+      "namespace": "fresh",
+      "authoritative_latest_source": {
+        "file": "data/neon-workbench/external/web-release-review/2026-10-03/results/review05-batch-002-rev03.jsonl",
+        "revision": 3,
+        "review_status": "partially_source_verified_access_limits_explicit",
+        "recommended_disposition": "retain_for_separate_human_review"
+      },
+      "saved_latest_proposal": {
+        "review_status": "supported_with_attribution_and_packet_limitations",
+        "recommended_disposition": "retain_with_explicit_source_limit_for_human_review",
+        "status_differs_from_baseline": true,
+        "disposition_differs_from_baseline": true
+      },
+      "source_urls": [
+        {
+          "url": "https://www.curtis.senate.gov/newsroom/press-releases/curtis-calls-for-investigation-into-presidential-families-business-dealings/",
+          "access_status": "independently_opened_senator_release_read"
+        },
+        {
+          "url": "https://abcnews.com/Politics/republican-senator-calls-judiciary-committee-subpoena-donald-trump/story?id=136648436",
+          "access_status": "publisher_page_fetched_text_not_rendered"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 84,
+          "description_medium": 50,
+          "description_long": 199
+        }
+      ],
+      "remaining_evidence_gap": "Curtis’s Sept. 22 letter asks Senate Judiciary leaders to investigate and consider subpoenas; no committee action, testimony or subpoena issuance is established. Separate from Garcia’s House letters.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "pr47-review-entry-127",
+      "namespace": "pr47",
+      "authoritative_latest_source": {
+        "file": "pr47-proposed-corrections-review-only.jsonl",
+        "revision": null,
+        "review_status": "PROPOSED_NOT_APPROVED",
+        "recommended_disposition": null
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_pr47_narrower_proposal",
+        "recommended_disposition": "retain_narrower_for_human_review",
+        "status_differs_from_baseline": true,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://www.aclu.org/project-2025-explained",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://www.hrw.org/news/2025/05/27/trumps-policing-policies-threaten-human-rights",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://www.commoncause.org/actions/stop-trumps-anti-democracy-project-2025-agenda-2/",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://fpif.org/martial-law-in-the-united-states/",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://www.hrw.org/news/2025/05/01/trumps-order-policing-recipe-abuse",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 81,
+          "description_medium": 81,
+          "description_long": 180
+        }
+      ],
+      "remaining_evidence_gap": "HRW’s May 27 analysis of the April 28 policing order supports an advocacy warning on police weaponry, prison capacity and accountability. It does not substantiate protest-specific deployments, coordinated prosecutions or university funding threats.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "pr47-review-entry-1325",
+      "namespace": "pr47",
+      "authoritative_latest_source": {
+        "file": "pr47-proposed-corrections-review-only.jsonl",
+        "revision": null,
+        "review_status": "PROPOSED_NOT_APPROVED",
+        "recommended_disposition": null
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_pr47_narrower_proposal",
+        "recommended_disposition": "replace_with_narrower_supported_event",
+        "status_differs_from_baseline": true,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://apnews.com/article/43e0f13e7b1c7e6ebcc4b558474aacdc",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://apnews.com/article/g7-summit-trump-macron-takeaways-versailles-0b3127724dbbf16dd36353247290568e",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://www.seattlepi.com/business/trump-threatens-to-cut-off-trade-with-spain-after-a21953062",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://wtop.com/news/2026/03/spains-sanchez-stands-firm-on-opposition-to-war-in-iran-despite-trumps-trade-threat/",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 81,
+          "description_medium": 69,
+          "description_long": 223
+        }
+      ],
+      "remaining_evidence_gap": "The Spain-base dispute and Trump’s trade threat are distinct from the June G7 account. Preserve attribution; EU trade policy is handled at bloc level. The original “meeting optics” claim is not supported.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "pr47-review-entry-1476",
+      "namespace": "pr47",
+      "authoritative_latest_source": {
+        "file": "pr47-proposed-corrections-review-only.jsonl",
+        "revision": null,
+        "review_status": "PROPOSED_NOT_APPROVED",
+        "recommended_disposition": null
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_pr47_narrower_proposal",
+        "recommended_disposition": "retain_narrower_for_human_review",
+        "status_differs_from_baseline": true,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://apnews.com/article/5357243212b4b8bbd387ae91ca797325",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://apnews.com/article/trump-hegseth-vance-iran-nuclear-strikes-5357243212b4b8bbd387ae91ca797325",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 78,
+          "description_medium": 67,
+          "description_long": 169
+        }
+      ],
+      "remaining_evidence_gap": "AP’s dated comparison documents changing public statements about Iran’s nuclear threat and the 2026 operation. It does not establish deliberate deception, obstruction of verification or a single controlling operational rationale.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "pr47-review-entry-1546",
+      "namespace": "pr47",
+      "authoritative_latest_source": {
+        "file": "pr47-proposed-corrections-review-only.jsonl",
+        "revision": null,
+        "review_status": "PROPOSED_NOT_APPROVED",
+        "recommended_disposition": null
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_pr47_narrower_proposal",
+        "recommended_disposition": "retain_narrower_for_human_review",
+        "status_differs_from_baseline": true,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://apnews.com/projects/trump-campaign-promise-tracker/",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://apnews.com/video/which-promises-has-trump-actually-kept-7c1801a12dbc49909768e6c9ec66bbc8",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://apnews.com/article/trump-paris-agreement-climate-change-788907bb89fe307a964be757313cdfb0",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://apnews.com/article/trump-inflation-utility-bills-16cf846b44369b5b9660238be7112a4d",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 81,
+          "description_medium": 58,
+          "description_long": 154
+        }
+      ],
+      "remaining_evidence_gap": "AP tracker snapshot dated Dec. 3, 2025 contains 25 promises in three statuses. This does not establish a Mar. 4, 2026 update, growing exposure or a measured reputational effect.",
+      "proposal_only": true
+    },
+    {
+      "assignment_key": "pr47-review-entry-1623",
+      "namespace": "pr47",
+      "authoritative_latest_source": {
+        "file": "pr47-proposed-corrections-review-only.jsonl",
+        "revision": null,
+        "review_status": "PROPOSED_NOT_APPROVED",
+        "recommended_disposition": null
+      },
+      "saved_latest_proposal": {
+        "review_status": "reviewed_pr47_narrower_proposal",
+        "recommended_disposition": "retain_narrower_for_human_review",
+        "status_differs_from_baseline": true,
+        "disposition_differs_from_baseline": false
+      },
+      "source_urls": [
+        {
+          "url": "https://apnews.com/projects/trump-campaign-promise-tracker/",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://interactives.ap.org/trump-promise-tracker/promises.json",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://apnews.com/article/covid-vaccine-mandate-ee3bcd198dec8e6cf61546f2bbe688bf",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        },
+        {
+          "url": "https://apnews.com/hub/us-department-of-education",
+          "access_status": "candidate_packet_source; see saved proposal access notes"
+        }
+      ],
+      "draft_lengths": [
+        {
+          "draft": "corrected_draft",
+          "description_short": 72,
+          "description_medium": 53,
+          "description_long": 198
+        }
+      ],
+      "remaining_evidence_gap": "AP’s Dec. 3, 2025 snapshot assigns different statuses to three pledges. It does not establish a March 2026 snapshot or prove/disprove a separate claim of uniform success.",
+      "proposal_only": true
+    }
+  ]
+}
