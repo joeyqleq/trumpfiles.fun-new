@@ -1,0 +1,22 @@
+{
+  "task": "citation58-revision-rescue-2026-10-04",
+  "reviewer_worker": 4,
+  "checkpoint": "terminal-batch-complete",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-04-batch-20261004-citation58-revision-rescue.jsonl",
+  "batch_sha256": "bedf89c0e4f91faaeb7f099b7db4124a6f2d2f80d9b384cf28f06241fcec959a",
+  "rows_saved": 5,
+  "keys_saved": [
+    "entry-178",
+    "entry-264",
+    "entry-2504",
+    "entry-4353",
+    "entry-6127"
+  ],
+  "exact_set_complete": true,
+  "all_descriptions_within_requested_bounds": true,
+  "verified_urls_all_mapped": true,
+  "release_ready_count": 0,
+  "checkpoint_note": "All five assigned keys have one terminal narrower-copy row. Unsupported original assertions remain explicit blockers; no editorial approval or production action."
+}

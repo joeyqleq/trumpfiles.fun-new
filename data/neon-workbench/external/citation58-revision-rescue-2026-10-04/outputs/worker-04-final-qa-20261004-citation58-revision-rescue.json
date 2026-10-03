@@ -1,0 +1,121 @@
+{
+  "task": "citation58-revision-rescue-2026-10-04",
+  "reviewer_worker": 4,
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_input_sha256": "0864d06b4a85b94c73d77ff96dc7dedb3de23583042db34b2a6202917df080b9",
+  "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+  "coordinator_input_sha256": "c39525df346c7b91046d1b79a70218495abef578654321de584864415ad2ad22",
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-04-batch-20261004-citation58-revision-rescue.jsonl",
+  "batch_sha256": "bedf89c0e4f91faaeb7f099b7db4124a6f2d2f80d9b384cf28f06241fcec959a",
+  "expected_ids": [
+    "entry-178",
+    "entry-264",
+    "entry-2504",
+    "entry-4353",
+    "entry-6127"
+  ],
+  "observed_ids": [
+    "entry-178",
+    "entry-264",
+    "entry-2504",
+    "entry-4353",
+    "entry-6127"
+  ],
+  "expected_count": 5,
+  "saved_count": 5,
+  "duplicate_ids": [],
+  "missing_ids": [],
+  "extra_ids": [],
+  "description_lengths": {
+    "entry-178": {
+      "proposed_description_short": {
+        "length": 110,
+        "valid": true
+      },
+      "proposed_description_medium": {
+        "length": 72,
+        "valid": true
+      },
+      "proposed_description_long": {
+        "length": 172,
+        "valid": true
+      }
+    },
+    "entry-264": {
+      "proposed_description_short": {
+        "length": 160,
+        "valid": true
+      },
+      "proposed_description_medium": {
+        "length": 64,
+        "valid": true
+      },
+      "proposed_description_long": {
+        "length": 169,
+        "valid": true
+      }
+    },
+    "entry-2504": {
+      "proposed_description_short": {
+        "length": 153,
+        "valid": true
+      },
+      "proposed_description_medium": {
+        "length": 63,
+        "valid": true
+      },
+      "proposed_description_long": {
+        "length": 166,
+        "valid": true
+      }
+    },
+    "entry-4353": {
+      "proposed_description_short": {
+        "length": 144,
+        "valid": true
+      },
+      "proposed_description_medium": {
+        "length": 66,
+        "valid": true
+      },
+      "proposed_description_long": {
+        "length": 190,
+        "valid": true
+      }
+    },
+    "entry-6127": {
+      "proposed_description_short": {
+        "length": 143,
+        "valid": true
+      },
+      "proposed_description_medium": {
+        "length": 66,
+        "valid": true
+      },
+      "proposed_description_long": {
+        "length": 168,
+        "valid": true
+      }
+    }
+  },
+  "invalid_description_lengths": [],
+  "verified_url_mapping_errors": [],
+  "supported_narrow_proposal_count": 5,
+  "release_ready_count": 0,
+  "blocking_ids": [
+    "entry-178",
+    "entry-264",
+    "entry-2504",
+    "entry-4353",
+    "entry-6127"
+  ],
+  "blocking_reasons": {
+    "entry-178": "Original federal-school-ban implementation, enrollment, prosecution and constitutional claims lack mapped evidence; only ACLU-attributed proposal copy is supported; PEN content remains inaccessible.",
+    "entry-264": "Original transfer/outcome, police-state/martial-law and mapped opinion claims are not established by EO text; only directive-focused copy is supported.",
+    "entry-2504": "Original “mafia-owned” framing and personal-purchase claim remain unsupported and excluded; corporate deal/executive-role copy is supported.",
+    "entry-4353": "Later appeal claim is not verified; order scope is limited to specified defendants, forms, provisions, and the express Wisconsin exception on §4(a).",
+    "entry-6127": "Drilling/production, Reuters permitting sentence, environmental-impact and lobbying claims remain unverified or unmapped; supported copy is limited to approvals, sale, leases and required further analysis."
+  },
+  "checks_pass": true,
+  "scope_statement": "Narrower source-supported copy proposed for review; not editorial approval, canonical edit, production import, or release clearance. No Neon/DB operation performed."
+}
