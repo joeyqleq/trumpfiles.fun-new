@@ -1,0 +1,52 @@
+{
+  "assignment": "account1 Wave3 citation QA worker-03",
+  "packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02",
+  "reviewed_count": 34,
+  "unique_ids": 34,
+  "exact_set_match": true,
+  "all_input_hashes_verified": true,
+  "all_rows_have_source_mapping": true,
+  "description_bounds_pass": true,
+  "bounds": {
+    "short_chars_max": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ]
+  },
+  "unresolved_hold_ids": [
+    "entry-2560",
+    "entry-4603"
+  ],
+  "scope_exclusion_ids": [
+    "entry-188",
+    "entry-266",
+    "entry-1726"
+  ],
+  "status_counts": {
+    "scope_exclusion_proposal": 3,
+    "corrected_claim_proposal": 23,
+    "citation_repaired_proposal": 6,
+    "unresolved_hold": 2
+  },
+  "limitations": [
+    "Allegations and litigant statements remain attributed.",
+    "Two records remain on hold for event/date mismatch.",
+    "No canonical descriptions, database, or Neon records changed."
+  ],
+  "source_mapping_urls_match_source_urls": true,
+  "entry_numbers_match_record_ids": true,
+  "batch_size_check_passed": true,
+  "batch_sizes": {
+    "account1-worker-03-batch-001-20261003-a1.jsonl": 7,
+    "account1-worker-03-batch-002-20261003-a1.jsonl": 7,
+    "account1-worker-03-batch-003-20261003-a1.jsonl": 7,
+    "account1-worker-03-batch-004-20261003-a1.jsonl": 7,
+    "account1-worker-03-batch-005-20261003-a1.jsonl": 6
+  },
+  "checked_against_packet_commit": "c3cd646a23fb2e2f70e62d460064f71a3fd36c02"
+}
