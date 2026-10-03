@@ -1,0 +1,61 @@
+{
+  "source_job": "citation190-crossqa-2026-10-03/worker-03",
+  "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "packet_input_sha256": "b445048d1ffc033464e0f751b7f0b8d28e088c1fe9035d2fd2aaea76d25179fa",
+  "expected_ids": [
+    "entry-176",
+    "entry-255",
+    "entry-426",
+    "entry-766",
+    "entry-830",
+    "entry-965",
+    "entry-1729",
+    "entry-2340",
+    "entry-2501",
+    "entry-2721",
+    "entry-3444",
+    "entry-3899",
+    "entry-4308",
+    "entry-5462",
+    "entry-5996",
+    "entry-6241"
+  ],
+  "saved_count": 16,
+  "expected_count": 16,
+  "missing_count": 0,
+  "extra_count": 0,
+  "duplicate_count": 0,
+  "terminal_rows": 16,
+  "prior_matching_batches": 1,
+  "conflicting_terminal_rows": 0,
+  "disposition_counts": {
+    "pass": 6,
+    "revision_required": 7,
+    "exclude": 1,
+    "hold": 2
+  },
+  "release_ready_count": 6,
+  "blocking_count": 10,
+  "blocking_ids": [
+    "entry-255",
+    "entry-426",
+    "entry-766",
+    "entry-1729",
+    "entry-2340",
+    "entry-2501",
+    "entry-3899",
+    "entry-4308",
+    "entry-5462",
+    "entry-5996"
+  ],
+  "length_limits": {
+    "short_chars_max": 180,
+    "medium_words_min": 45,
+    "medium_words_max": 90,
+    "long_words_min": 140,
+    "long_words_max": 300
+  },
+  "length_validation": "All supplied short, medium, and long proposal descriptions were checked; absent fields are recorded as not applicable in row reasons.",
+  "verified_url_rule": "verified_urls contains only exact URLs whose prior independent retrieval_status was success; non-success attempts and limitations are preserved in reasons.",
+  "final_exact_set_pass": true
+}
