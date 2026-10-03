@@ -1,0 +1,36 @@
+{
+  "worker": "06",
+  "phase": "sample100-offline-import-rehearsal-qa",
+  "packet_branch": "codex/five-account-review-packets-2026-10-03",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_path": "data/neon-workbench/external/five-account-round-2026-10-03/sample100/worker-06-input.jsonl",
+  "input_sha256": "87fe6f4c0c9b772554fdf9cd14512738400c2939c8fec304b582dcbee5bcedc7",
+  "assigned_keys": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "processed_keys": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "checkpoint_after_records": 8,
+  "batch_file": "worker-06-batch-001.jsonl",
+  "pass_count": 8,
+  "hold_count": 0,
+  "complete": true,
+  "database_calls": 0,
+  "ddl_dml_executed": false,
+  "canonical_edits": false
+}

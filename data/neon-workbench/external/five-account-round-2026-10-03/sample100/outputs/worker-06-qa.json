@@ -1,0 +1,94 @@
+{
+  "worker": "06",
+  "phase": "sample100-offline-import-rehearsal-qa",
+  "packet_commit": "86d71a0bcd9d82301e72bc9f36a4271143c87ddb",
+  "input_sha256": "87fe6f4c0c9b772554fdf9cd14512738400c2939c8fec304b582dcbee5bcedc7",
+  "expected_keys": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "actual_keys": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "exact_set_status": "PASS",
+  "row_count": 8,
+  "duplicate_keys": [],
+  "overall_status": "PASS_OFFLINE_REHEARSAL",
+  "pass_count": 8,
+  "hold_count": 0,
+  "impact_formula": {
+    "weights": {
+      "harm": 0.3,
+      "reach": 0.2,
+      "institutions": 0.15,
+      "procedural_abuse": 0.15,
+      "self_dealing": 0.1,
+      "persistence": 0.1
+    },
+    "rounding": "2 decimal places",
+    "dimensions": "harm, reach, institutions, procedural_abuse, self_dealing, persistence (each 0–10, one-decimal precision)"
+  },
+  "per_key": [
+    {
+      "key": "entry-6",
+      "status": "PASS",
+      "exact_reason": "All eight offline checks pass; only description_medium is parameter-ready behind a NULL guard, and no SQL or database call was made."
+    },
+    {
+      "key": "entry-18",
+      "status": "PASS",
+      "exact_reason": "All eight offline checks pass; only description_medium is parameter-ready behind a NULL guard, and no SQL or database call was made."
+    },
+    {
+      "key": "entry-30",
+      "status": "PASS",
+      "exact_reason": "All eight offline checks pass; only description_medium is parameter-ready behind a NULL guard, and no SQL or database call was made."
+    },
+    {
+      "key": "entry-44",
+      "status": "PASS",
+      "exact_reason": "All eight offline checks pass; only description_medium is parameter-ready behind a NULL guard, and no SQL or database call was made."
+    },
+    {
+      "key": "entry-56",
+      "status": "PASS",
+      "exact_reason": "All eight offline checks pass; only description_medium is parameter-ready behind a NULL guard, and no SQL or database call was made."
+    },
+    {
+      "key": "entry-70",
+      "status": "PASS",
+      "exact_reason": "All eight offline checks pass; only description_medium is parameter-ready behind a NULL guard, and no SQL or database call was made."
+    },
+    {
+      "key": "entry-82",
+      "status": "PASS",
+      "exact_reason": "All eight offline checks pass; only description_medium is parameter-ready behind a NULL guard, and no SQL or database call was made."
+    },
+    {
+      "key": "entry-94",
+      "status": "PASS",
+      "exact_reason": "All eight offline checks pass; only description_medium is parameter-ready behind a NULL guard, and no SQL or database call was made."
+    }
+  ],
+  "limitations": [
+    "Source URLs and provenance paths were structurally checked without fetching external sources.",
+    "Current database NULL state was not queried; guarded runtime eligibility is unknown.",
+    "This is rehearsal QA, not editorial approval or production import."
+  ],
+  "database_calls": 0,
+  "ddl_dml_executed": false,
+  "canonical_edits": false
+}
