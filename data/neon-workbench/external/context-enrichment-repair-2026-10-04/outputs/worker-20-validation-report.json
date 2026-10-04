@@ -1,0 +1,18 @@
+{
+  "job": "context-enrichment-20",
+  "worker": 20,
+  "source_branch": "codex/context-enrichment-repair-2026-10-04",
+  "source_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_file": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-20-input.jsonl",
+  "input_sha256": "9b5c7f3b4b73e725e830726d850fa1057df0f9a583bb5ce8e1d3143ac2e66e6c",
+  "validator_file": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+  "record_id": "entry-2321",
+  "status": "pass",
+  "validator_report": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  },
+  "proposal_only": true
+}

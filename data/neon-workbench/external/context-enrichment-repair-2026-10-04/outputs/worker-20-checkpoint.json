@@ -1,0 +1,38 @@
+{
+  "job": "context-enrichment-20",
+  "worker": 20,
+  "source_branch": "codex/context-enrichment-repair-2026-10-04",
+  "source_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_file": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-20-input.jsonl",
+  "expected_count": 1,
+  "expected_ids": [
+    "entry-2321"
+  ],
+  "terminal_file": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-20-terminal.jsonl",
+  "terminal_sha256": "1304d2572dcabab5858812f9f37fc1cba9c9b2831a02082a4de58bfc2dedf6cf",
+  "terminal_rows": 1,
+  "terminal_ids": [
+    "entry-2321"
+  ],
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "pass": 1,
+    "hold": 0
+  },
+  "validator_report_file": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-20-validation-report.json",
+  "validator_status": "valid",
+  "rows_appended": 1,
+  "prior_terminal_rows": 0,
+  "amendments": [],
+  "proposal_only": true,
+  "canonical_edits": 0,
+  "neon_writes": 0,
+  "web_research": false,
+  "extra_subagents": 0,
+  "artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "qa_status": "passed: exact one-ID set and supplied validator returned valid"
+}
