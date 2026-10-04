@@ -1,0 +1,134 @@
+{
+  "task": "wave3-held204-finalization-2026-10-04",
+  "assigned_ids": [
+    "entry-1857",
+    "entry-2330",
+    "entry-2518",
+    "entry-2854",
+    "entry-35",
+    "entry-3839",
+    "entry-4296",
+    "entry-5374",
+    "entry-581",
+    "entry-6235",
+    "entry-654",
+    "entry-801",
+    "entry-934"
+  ],
+  "row_count": 13,
+  "pass_count": 4,
+  "pass_ids": [
+    "entry-4296",
+    "entry-581",
+    "entry-6235",
+    "entry-934"
+  ],
+  "hold_count": 9,
+  "blocking_ids": [
+    "entry-1857",
+    "entry-2330",
+    "entry-2518",
+    "entry-2854",
+    "entry-35",
+    "entry-3839",
+    "entry-5374",
+    "entry-654",
+    "entry-801"
+  ],
+  "duplicate_ids": [],
+  "lengths_by_id": {
+    "entry-1857": {
+      "short_characters": 163,
+      "medium_words": 58,
+      "long_words": 147
+    },
+    "entry-2330": {
+      "short_characters": 113,
+      "medium_words": 64,
+      "long_words": 166
+    },
+    "entry-2518": {
+      "short_characters": 130,
+      "medium_words": 49,
+      "long_words": 176
+    },
+    "entry-2854": {
+      "short_characters": 144,
+      "medium_words": 67,
+      "long_words": 158
+    },
+    "entry-35": {
+      "short_characters": 165,
+      "medium_words": 61,
+      "long_words": 196
+    },
+    "entry-3839": {
+      "short_characters": 137,
+      "medium_words": 66,
+      "long_words": null
+    },
+    "entry-4296": {
+      "short_characters": 79,
+      "medium_words": 73,
+      "long_words": 178
+    },
+    "entry-5374": {
+      "short_characters": 163,
+      "medium_words": 82,
+      "long_words": 172
+    },
+    "entry-581": {
+      "short_characters": 53,
+      "medium_words": 75,
+      "long_words": 168
+    },
+    "entry-6235": {
+      "short_characters": 151,
+      "medium_words": 57,
+      "long_words": 172
+    },
+    "entry-654": {
+      "short_characters": 133,
+      "medium_words": 57,
+      "long_words": 196
+    },
+    "entry-801": {
+      "short_characters": 75,
+      "medium_words": 69,
+      "long_words": null
+    },
+    "entry-934": {
+      "short_characters": 124,
+      "medium_words": 57,
+      "long_words": 159
+    }
+  },
+  "verified_url_errors": [],
+  "checks": {
+    "exact_ids": true,
+    "no_duplicate_ids": true,
+    "exact_row_count": true,
+    "dispositions_only_pass_or_hold": true,
+    "release_ready_matches_pass": true,
+    "all_source_urls_are_well_formed_https": true,
+    "short_limit_180_characters": true,
+    "medium_limit_45_to_90_words": true,
+    "present_long_copy_140_to_300_words": true,
+    "missing_or_invalid_long_copy_is_held": true,
+    "all_pass_rows_meet_all_length_rules": true,
+    "worker_complete_not_editorial_approval": true
+  },
+  "all_checks_pass": true,
+  "notes": [
+    "PASS means copy/source/format readiness review only; it does not imply worker-complete status is editorial approval or publication approval.",
+    "HOLD rows preserve exact blockers; proposals and frozen inputs were not edited.",
+    "Only the assigned 13 IDs are present. No canonical or Neon data was changed.",
+    "Two worker proposals omit description_long; both are HOLD. Length limits are evaluated on present copy, and missing required copy is listed explicitly."
+  ],
+  "source_url_format_errors": [],
+  "missing_long_ids": [
+    "entry-3839",
+    "entry-801"
+  ],
+  "invalid_long_ids": []
+}
