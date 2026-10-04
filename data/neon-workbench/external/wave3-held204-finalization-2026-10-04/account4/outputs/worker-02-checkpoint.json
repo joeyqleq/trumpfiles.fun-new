@@ -1,0 +1,19 @@
+{
+  "task": "wave3-held204-finalization-2026-10-04",
+  "checkpoint": "final",
+  "batch_file": "worker-02-batch-20261004-finalize.jsonl",
+  "assigned_ids": [
+    "entry-1716",
+    "entry-2442",
+    "entry-4144",
+    "entry-835"
+  ],
+  "accounted_ids": [
+    "entry-1716",
+    "entry-2442",
+    "entry-4144",
+    "entry-835"
+  ],
+  "terminal_rows": 4,
+  "next_action": "Final exact-set and description validation complete; commit and push on existing task branch."
+}
