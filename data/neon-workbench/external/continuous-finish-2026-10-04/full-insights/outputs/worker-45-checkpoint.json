@@ -1,0 +1,9 @@
+{
+  "worker": 45,
+  "processed_count": 92,
+  "last_record_id": "expanded-20260914-un-civilian-airstrike-rebuke",
+  "terminal_file": "worker-45-terminal.jsonl",
+  "amendments_file": "worker-45-amendments.jsonl",
+  "batch_size": 3,
+  "state": "complete"
+}
