@@ -1,0 +1,89 @@
+{
+  "job": "context-enrichment-50",
+  "input_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-50-input.jsonl",
+  "validator_path": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+  "assigned_record_ids": [
+    "entry-3117"
+  ],
+  "validated_record_ids": [
+    "entry-3117"
+  ],
+  "original_terminal_status": "hold",
+  "amendment_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-50-amendment-entry-3117-v1.jsonl",
+  "effective_status": "pass",
+  "validator": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  },
+  "original_diagnostics": {
+    "status": "invalid",
+    "valid": false,
+    "pending": [],
+    "diagnostics": [
+      {
+        "severity": "error",
+        "code": "core_enum_invalid",
+        "path": "insight_facts.action_type",
+        "message": "Expected null or one of ['deception', 'discrimination', 'institutional_pressure', 'legal_action', 'other', 'policy_action', 'private_benefit', 'unknown', 'violence_or_threat']."
+      },
+      {
+        "severity": "error",
+        "code": "core_enum_invalid",
+        "path": "insight_facts.legal_stage",
+        "message": "Expected null or one of ['adjudicated', 'allegation', 'charged', 'investigation', 'not_applicable', 'policy', 'settled', 'unknown']."
+      },
+      {
+        "severity": "error",
+        "code": "evidence_quote_not_in_supplied_material",
+        "path": "insight_evidence_map[0].quote",
+        "message": "Quote must occur literally in source_fact_map or documented source excerpts."
+      },
+      {
+        "severity": "error",
+        "code": "evidence_value_mismatch",
+        "path": "insight_evidence_map[3].value",
+        "message": "Evidence value must correspond exactly to its mapped fact value."
+      },
+      {
+        "severity": "error",
+        "code": "evidence_quote_not_in_supplied_material",
+        "path": "insight_evidence_map[4].quote",
+        "message": "Quote must occur literally in source_fact_map or documented source excerpts."
+      },
+      {
+        "severity": "error",
+        "code": "evidence_quote_not_in_supplied_material",
+        "path": "insight_evidence_map[5].quote",
+        "message": "Quote must occur literally in source_fact_map or documented source excerpts."
+      },
+      {
+        "severity": "error",
+        "code": "evidence_quote_not_in_supplied_material",
+        "path": "insight_evidence_map[6].quote",
+        "message": "Quote must occur literally in source_fact_map or documented source excerpts."
+      },
+      {
+        "severity": "error",
+        "code": "fact_without_evidence_mapping",
+        "path": "insight_facts.institutions",
+        "message": "No corresponding insight_evidence_map value for 'U.S. Court of Appeals for the Eleventh Circuit'."
+      },
+      {
+        "severity": "error",
+        "code": "fact_without_evidence_mapping",
+        "path": "insight_facts.institutions",
+        "message": "No corresponding insight_evidence_map value for 'City of Boca Raton'."
+      },
+      {
+        "severity": "error",
+        "code": "fact_without_evidence_mapping",
+        "path": "insight_facts.institutions",
+        "message": "No corresponding insight_evidence_map value for 'Palm Beach County'."
+      }
+    ]
+  },
+  "reader_copy_and_source_fields_unchanged": true
+}
