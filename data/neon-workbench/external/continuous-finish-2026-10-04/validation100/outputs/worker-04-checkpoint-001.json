@@ -1,0 +1,20 @@
+{
+  "checkpoint_id": "worker-04-checkpoint-001",
+  "packet_branch": "codex/insights-validation100-2026-10-04",
+  "packet_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-04-input.jsonl",
+  "input_sha256": "3d8976d2c1fb86a30a92e33c09093cd6071bfcd472f76f404ca9c25f3d2e1f3e",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-04-terminal.jsonl",
+  "cumulative_rows": 3,
+  "assigned_total": 9,
+  "remaining": 6,
+  "record_ids": [
+    "entry-2727",
+    "entry-6124",
+    "entry-3338"
+  ],
+  "status_counts": {
+    "complete": 3,
+    "insufficient": 0
+  }
+}

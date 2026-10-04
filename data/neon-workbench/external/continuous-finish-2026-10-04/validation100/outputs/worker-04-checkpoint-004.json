@@ -1,0 +1,33 @@
+{
+  "checkpoint_id": "worker-04-checkpoint-004",
+  "packet_branch": "codex/insights-validation100-2026-10-04",
+  "packet_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-04-input.jsonl",
+  "input_sha256": "3d8976d2c1fb86a30a92e33c09093cd6071bfcd472f76f404ca9c25f3d2e1f3e",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-04-terminal.jsonl",
+  "terminal_sha256": "5220a2baa651b7d97f04fe4514539520a72e54d25c708234b193ba5e691e89d5",
+  "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-04-amendments.jsonl",
+  "amendments_sha256": "3f0a2c3684f3e9382b01765a9fe77176c35fe5fae79943fa442abb118298b648",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-04-final-qa.json",
+  "final_qa_sha256": "b3c9025c1a3e3403ebee363e97d5ef7767dcfe8fe0c01a82165d2399ecf967ce",
+  "cumulative_rows": 9,
+  "assigned_total": 9,
+  "remaining": 0,
+  "record_ids": [
+    "entry-2727",
+    "entry-6124",
+    "entry-3338",
+    "entry-2310",
+    "entry-2569",
+    "entry-5879",
+    "entry-6898",
+    "entry-3232",
+    "entry-438"
+  ],
+  "status_counts": {
+    "complete": 9,
+    "insufficient": 0
+  },
+  "amendment_count": 1,
+  "blocking_issues": []
+}

@@ -1,0 +1,80 @@
+{
+  "qa_run": "validation100 worker 04 structured insight extraction final QA",
+  "packet": {
+    "branch": "codex/insights-validation100-2026-10-04",
+    "commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+    "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-04-input.jsonl",
+    "input_sha256": "3d8976d2c1fb86a30a92e33c09093cd6071bfcd472f76f404ca9c25f3d2e1f3e"
+  },
+  "assignment": {
+    "expected_ids": [
+      "entry-2727",
+      "entry-6124",
+      "entry-3338",
+      "entry-2310",
+      "entry-2569",
+      "entry-5879",
+      "entry-6898",
+      "entry-3232",
+      "entry-438"
+    ],
+    "actual_ids": [
+      "entry-2727",
+      "entry-6124",
+      "entry-3338",
+      "entry-2310",
+      "entry-2569",
+      "entry-5879",
+      "entry-6898",
+      "entry-3232",
+      "entry-438"
+    ],
+    "expected_count": 9,
+    "terminal_rows": 9,
+    "unique_record_ids": 9,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "status_counts": {
+      "complete": 9,
+      "insufficient": 0
+    }
+  },
+  "outputs": {
+    "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-04-terminal.jsonl",
+    "terminal_sha256": "5220a2baa651b7d97f04fe4514539520a72e54d25c708234b193ba5e691e89d5",
+    "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-04-amendments.jsonl",
+    "amendments_sha256": "3f0a2c3684f3e9382b01765a9fe77176c35fe5fae79943fa442abb118298b648",
+    "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-04-final-qa.json"
+  },
+  "checks": {
+    "jsonl_parse": "passed",
+    "exact_assigned_set": "passed",
+    "one_terminal_row_per_assigned_id": "passed",
+    "terminal_schema": "passed",
+    "fact_enum_and_array_schema": "passed",
+    "quantity_and_relation_schema": "passed",
+    "evidence_map_coverage": "passed with the amendment applied",
+    "literal_quote_check": "passed against supplied staged descriptions",
+    "source_url_provenance": "URLs are recorded as supplied mappings only; no source page was visited",
+    "scope_check": "Only assigned worker-04 output, amendment, checkpoint, and final-QA artifacts were written; no canonical, Neon, or code files changed."
+  },
+  "amendments": [
+    {
+      "amendment_id": "worker-04-amendment-001",
+      "record_id": "entry-6898",
+      "reason": "Adds the supplied text quote that supports the outcome’s Foreign Emoluments Clause concern clause; the terminal row remains unchanged."
+    }
+  ],
+  "contradictions_and_limitations": [
+    "entry-2727: the headline characterizes Comey’s action as a trick; the supplied long text says the letter did not establish wrongdoing and does not provide the later findings or electoral effect.",
+    "entry-2310: the headline calls the episode a climate-truth blackout, while the supplied description says the replacement plan might be shelved and had no final decision at report time.",
+    "entry-2569: the title claims Koch funding and a takeover aim; supplied notes say the record does not prove the gathering was Koch-directed or aimed at party takeover, and the text says Trump did not participate.",
+    "entry-5879: the supplied correction excludes the exact $65 million attribution to Akhmetov and Yanukovych; the indictment remains an allegation, not a verdict.",
+    "entry-6898: the supplied correction excludes the stored $4M+ figure and CREW attribution; the supported House Oversight estimate is about $3.7 million, not a court finding.",
+    "entry-3232: the supplied account does not substantiate a joint effort to provoke war with Iran or any specific meeting outcome.",
+    "entry-438: the proposed rebate checks were not announced as approved or scheduled; legislation and tariff litigation remained unresolved."
+  ],
+  "blocking_issues": [],
+  "pr": "not requested"
+}
