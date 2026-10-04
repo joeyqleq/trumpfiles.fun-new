@@ -1,0 +1,80 @@
+{
+  "qa_type": "insights100_final_exact_set",
+  "job": "insights100-01",
+  "packet": {
+    "commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+    "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-01-input.jsonl",
+    "input_sha256": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32",
+    "prompt_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/PROMPT.md",
+    "prompt_sha256": "d0e28b069d0b3b5e0f2af3c3b2314accc9f4f1eaba480191fd58509b708c7d2f"
+  },
+  "terminal_output": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-01-terminal.jsonl",
+    "sha256": "ce29a269631754093869c068b228fabacfdd9dd19989e8f59c63dd86f90b2fa6",
+    "row_count": 9,
+    "duplicates": 0
+  },
+  "exact_set": {
+    "expected_count": 9,
+    "actual_count": 9,
+    "expected_keys": [
+      "entry-1",
+      "entry-13",
+      "entry-25",
+      "entry-39",
+      "entry-51",
+      "entry-63",
+      "entry-77",
+      "entry-89",
+      "entry-101"
+    ],
+    "actual_keys": [
+      "entry-1",
+      "entry-13",
+      "entry-25",
+      "entry-39",
+      "entry-51",
+      "entry-63",
+      "entry-77",
+      "entry-89",
+      "entry-101"
+    ],
+    "matches_exactly": true
+  },
+  "result_summary": {
+    "complete": 9,
+    "insufficient": 0,
+    "evidence_items_validated": 87,
+    "literal_quotes_passed": true,
+    "all_urls_present_in_supplied_mapping": true,
+    "schema_validation": "passed"
+  },
+  "amendments": [
+    {
+      "amendment_id": "worker-01-insights100-01-001",
+      "record_id": "entry-1",
+      "reason": "Correct the action-type basis quote to name the tested unequal treatment and make the Black-renter group basis literal and specific."
+    },
+    {
+      "amendment_id": "worker-01-insights100-01-002",
+      "record_id": "entry-89",
+      "reason": "Capture the separately stated count of more than 100 environmental protections without merging it with action or policy counts."
+    }
+  ],
+  "amendments_output": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-01-terminal-amendments.jsonl",
+    "sha256": "dc12b046c7124a11a4180d0f8ed7ed27f6e8d0ea9bd3dd42ca5cb6a4b3c23f1c"
+  },
+  "checkpoint": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-01-checkpoint-final-insights100-01.json",
+    "sha256": "242f0a9ab2ae18754e24464cb5ad35c3c4cb98e36c393f7f5e22209ec43f510c"
+  },
+  "scope_note": "Evidence was limited to the assigned frozen input. Source URLs are supplied mappings; source pages were not fetched. No web search, new scoring, canonical/Neon database change, or application-code change was made.",
+  "project_checks": {
+    "script": "bun run lint",
+    "result": "passed",
+    "errors": 0,
+    "warnings": 186,
+    "note": "The repository lint completed with warnings only; this task changed data artifacts, not application code."
+  }
+}

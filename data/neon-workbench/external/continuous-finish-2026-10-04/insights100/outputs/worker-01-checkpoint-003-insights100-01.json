@@ -1,0 +1,24 @@
+{
+  "checkpoint": "worker-01",
+  "job": "insights100-01",
+  "packet_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-01-input.jsonl",
+  "input_sha256": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-01-terminal.jsonl",
+  "processed_count": 3,
+  "processed_keys": [
+    "entry-1",
+    "entry-13",
+    "entry-25"
+  ],
+  "status_counts": {
+    "complete": 3,
+    "insufficient": 0
+  },
+  "new_rows_appended": [
+    "entry-1",
+    "entry-13",
+    "entry-25"
+  ],
+  "note": "Checkpoint after the first three assigned records; remaining assigned records are pending."
+}
