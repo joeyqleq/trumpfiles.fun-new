@@ -15,6 +15,7 @@
     "entry-4353"
   ],
   "terminal_sha256": "de93be19de3b839fb0729d806fd599e8b03c7c959c04ad35e3928d4c161c47ac",
-  "checkpoint": "all assigned records terminal; exact-set/schema QA passed",
-  "next": "commit and push current worker branch"
+  "checkpoint": "complete: exact-set/schema QA passed; terminal artifacts committed and pushed on the existing worker branch",
+  "next": "none",
+  "artifact_commit": "0baa5419"
 }
