@@ -1,0 +1,10 @@
+{
+  "job": "context-enrichment-14",
+  "record_id": "entry-2061",
+  "status": "pass",
+  "validation_status": "valid",
+  "exact_set_valid": true,
+  "terminal_disposition": "appended_missing_row",
+  "terminal_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-14-terminal.jsonl",
+  "report_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-14-validator-report.json"
+}

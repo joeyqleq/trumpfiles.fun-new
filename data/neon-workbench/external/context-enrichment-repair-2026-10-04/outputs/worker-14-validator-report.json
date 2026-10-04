@@ -1,0 +1,35 @@
+{
+  "record_id": "entry-2061",
+  "source_branch": "codex/context-enrichment-repair-2026-10-04",
+  "source_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-14-input.jsonl",
+  "input_sha256": "8efdf111d7fd363d7d06c9a642a7720364e62241af0bded0ef8536f938b8f8e6",
+  "validator_path": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+  "validator_sha256": "17c6f94612d70b1cf23f44ea816fa3cea554cc2cfc249bd07062b3b6e902c281",
+  "validation": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  },
+  "terminal_status": "pass",
+  "protected_fields_unchanged": {
+    "title": true,
+    "description_short": true,
+    "description_medium": true,
+    "description_long": true,
+    "source_urls": true,
+    "source_fact_map": true,
+    "source_provenance": true
+  },
+  "evidence_quotes_match_source_fact_map": true,
+  "assigned_ids": [
+    "entry-2061"
+  ],
+  "terminal_ids": [
+    "entry-2061"
+  ],
+  "exact_set_valid": true,
+  "terminal_disposition": "appended_missing_row",
+  "amendment_path": null
+}
