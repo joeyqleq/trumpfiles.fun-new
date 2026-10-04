@@ -1,0 +1,32 @@
+{
+  "job": "validation100-06",
+  "proposal_only": true,
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-06-input.jsonl",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-06-terminal.jsonl",
+  "assigned_record_ids": [
+    "entry-2642",
+    "entry-662",
+    "entry-790",
+    "entry-4193",
+    "entry-560",
+    "entry-5778",
+    "entry-6546",
+    "entry-3766"
+  ],
+  "completed_record_ids": [
+    "entry-2642",
+    "entry-662",
+    "entry-790",
+    "entry-4193",
+    "entry-560",
+    "entry-5778",
+    "entry-6546",
+    "entry-3766"
+  ],
+  "pending_record_ids": [],
+  "records_completed": 8,
+  "updated_at_utc": "2026-10-04T10:42:11.318417+00:00",
+  "finalized": true,
+  "final_qa_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-06-final-qa.json"
+}
