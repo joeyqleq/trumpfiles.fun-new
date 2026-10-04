@@ -1,0 +1,324 @@
+{
+  "worker": 9,
+  "run": "wave3-held204-finalization-2026-10-04-account3",
+  "branch": "ls/10-trump-files-impact368-review-09-of-12-jMbt",
+  "output_file": "worker-09-batch-20261004-wave3-held204-a7e2.jsonl",
+  "output_sha256": "f4c0f5eaf1f3433df51e6e16ececaad8c972943817ba746273ff465dc337d96d",
+  "expected_count": 13,
+  "output_count": 13,
+  "expected_keys_in_order": [
+    "entry-178",
+    "entry-230",
+    "entry-2501",
+    "entry-2721",
+    "entry-3380",
+    "entry-3804",
+    "entry-4232",
+    "entry-528",
+    "entry-5605",
+    "entry-6199",
+    "entry-643",
+    "entry-774",
+    "entry-884"
+  ],
+  "actual_keys_in_order": [
+    "entry-178",
+    "entry-230",
+    "entry-2501",
+    "entry-2721",
+    "entry-3380",
+    "entry-3804",
+    "entry-4232",
+    "entry-528",
+    "entry-5605",
+    "entry-6199",
+    "entry-643",
+    "entry-774",
+    "entry-884"
+  ],
+  "missing_keys": [],
+  "extra_keys": [],
+  "duplicate_keys": [],
+  "subset_input": {
+    "commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+    "sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+    "row_count": 204
+  },
+  "coordinator_inputs": [
+    {
+      "commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+      "path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+      "sha256": "0efa1e8b5e8f4b9ef94f09a19533b0679ae124bddf429e35c2a11a8f5569eb2a",
+      "row_count": 204
+    },
+    {
+      "commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+      "path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl",
+      "sha256": "2953556deb4d0c565ec54214661ac08598d41fcdea15dfe96f89d09a53fbbc9d",
+      "row_count": 311
+    }
+  ],
+  "proposal_sources": [
+    {
+      "key": "entry-178",
+      "worker": 20,
+      "effective_revision": 0,
+      "branch": "origin/ls/8-trump-final-corrections-account2-worker2-A12f",
+      "commit": "6b1bbc726f0f93f3e2de755d5f2747d14bdae93e",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-20-batch-001.jsonl",
+      "proposal_fingerprint_sha256": "fb8f49de45d45e01b4a370a150be483722df43e0d763ef8d050429a47c161ccb"
+    },
+    {
+      "key": "entry-230",
+      "worker": 17,
+      "effective_revision": 0,
+      "branch": "origin/ls/7-trump-final-corrections-account2-worker1-slYA",
+      "commit": "eab779ec075174445237101c2fdf0e72d771d051",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-17-batch-001.jsonl",
+      "proposal_fingerprint_sha256": "7c03cb499c12a1fc2894be276c5bdabd66f9bd8124ffa9587a4aea66b6acfeca"
+    },
+    {
+      "key": "entry-2501",
+      "worker": 22,
+      "effective_revision": 2,
+      "branch": "origin/ls/10-trump-final-corrections-account2-worker2-qX6f",
+      "commit": "4896359b8a0542c38eff4973743b667fa7830c44",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-22-followup-UNIQUE.jsonl",
+      "proposal_fingerprint_sha256": "0b9c3acc968d6e094c13a91976b688d46417df77a2cf6b3582c264a49e83c0ec"
+    },
+    {
+      "key": "entry-2721",
+      "worker": 23,
+      "effective_revision": 1,
+      "branch": "origin/ls/12-trump-final-corrections-account2-worker2-KcuW",
+      "commit": "598285901cf9f372f723fc12c4b331cdca0f2641",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-23-batch-UNIQUE.jsonl",
+      "proposal_fingerprint_sha256": "6728c4a384f73400921a4f51f5c256310b13b67e16cfae77b26bab520863f8ec"
+    },
+    {
+      "key": "entry-3380",
+      "worker": 19,
+      "effective_revision": 2,
+      "branch": "origin/ls/6-trump-final-corrections-account2-worker1-zeIF",
+      "commit": "67b0105799a90826d1db5b59045d7d2c13d2db35",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-19-batch-UNIQUE.jsonl",
+      "proposal_fingerprint_sha256": "077b5514078993769cd18dd4bb1aed90da85504eb5f6c9970fc60a1a94949d80"
+    },
+    {
+      "key": "entry-3804",
+      "worker": 16,
+      "effective_revision": 0,
+      "branch": "origin/ls/4-trump-final-corrections-account2-worker1-n96Z",
+      "commit": "888cb5cf3f756e71a874d1f96db6c98a6fba0843",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-16-batch-20261003-a.jsonl",
+      "proposal_fingerprint_sha256": "f0d485b2fcdd6867336da9df94244905f1e0e2ad080385dde86ef99c3a82e6b8"
+    },
+    {
+      "key": "entry-4232",
+      "worker": 17,
+      "effective_revision": 0,
+      "branch": "origin/ls/7-trump-final-corrections-account2-worker1-slYA",
+      "commit": "eab779ec075174445237101c2fdf0e72d771d051",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-17-batch-001.jsonl",
+      "proposal_fingerprint_sha256": "c5c9fa30c30e7f792ed91cc009eee72e8e53a0e775c203e3c641342f6b13a099"
+    },
+    {
+      "key": "entry-528",
+      "worker": 16,
+      "effective_revision": 0,
+      "branch": "origin/ls/4-trump-final-corrections-account2-worker1-n96Z",
+      "commit": "888cb5cf3f756e71a874d1f96db6c98a6fba0843",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-16-batch-20261003-b.jsonl",
+      "proposal_fingerprint_sha256": "12a3a7124d6808c392dd5e313ac1fa3446f899aad06be7ebcb8428a7411d18ee"
+    },
+    {
+      "key": "entry-5605",
+      "worker": 16,
+      "effective_revision": 0,
+      "branch": "origin/ls/4-trump-final-corrections-account2-worker1-n96Z",
+      "commit": "888cb5cf3f756e71a874d1f96db6c98a6fba0843",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-16-batch-20261003-b.jsonl",
+      "proposal_fingerprint_sha256": "b5d3e1ec9789f54c9fdbaa55f8d79632e4dc55554b3bbaf685cfaf0d567fc68b"
+    },
+    {
+      "key": "entry-6199",
+      "worker": 15,
+      "effective_revision": 0,
+      "branch": "origin/ls/2-trump-final-corrections-account2-worker1-snHz",
+      "commit": "8779ac63e2eca30b0d7b95fc786e44afb9fc2b1e",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-15-followup-UNIQUE.jsonl",
+      "proposal_fingerprint_sha256": "777188fa8b2bd26c6e8249f1ef65bb13212b9f47baad1ff43de3959f5473861c"
+    },
+    {
+      "key": "entry-643",
+      "worker": 14,
+      "effective_revision": 0,
+      "branch": "origin/ls/3-trump-final-corrections-account2-worker1--T8S",
+      "commit": "868758565358afd7b98e8b6b246ececab53b9761",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-14-batch-UNIQUE.jsonl",
+      "proposal_fingerprint_sha256": "1e22cc768a405534fff20851373814b8ae2c7508bf422199e7c0fe7a48ee87be"
+    },
+    {
+      "key": "entry-774",
+      "worker": 12,
+      "effective_revision": 0,
+      "branch": "origin/ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+      "commit": "61150d33ec2c8efb8e3fffd262921f86e7a9176a",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-12-batch-002.jsonl",
+      "proposal_fingerprint_sha256": "0cde0c3368319a795bc83c838170a419112ae7bc24ed58079966289c5f5406f0"
+    },
+    {
+      "key": "entry-884",
+      "worker": 10,
+      "effective_revision": 2,
+      "branch": "origin/ls/10-trump-description-rescue-10-of-12-52-dis-7sqL",
+      "commit": "50ee3e2fce05fb45dcaacc25eac4a1bd976f3ac5",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-10-batch-20261003-002.jsonl",
+      "proposal_fingerprint_sha256": "2ee7161b9bde5fb6c53835c02f23a8049416f8136121ff78f0a50bc9fd3083b6"
+    }
+  ],
+  "disposition_counts": {
+    "PASS": 7,
+    "HOLD": 6
+  },
+  "release_ready_count": 7,
+  "blocking_count": 6,
+  "blocking_ids": [
+    "entry-3380",
+    "entry-3804",
+    "entry-4232",
+    "entry-5605",
+    "entry-6199",
+    "entry-643"
+  ],
+  "worker_complete_is_editorial_approval": false,
+  "description_length_rules": {
+    "short": "<=180 characters",
+    "medium": "45-90 whitespace-separated words",
+    "long": "140-300 whitespace-separated words"
+  },
+  "description_length_checks": {
+    "entry-178": {
+      "short_characters": 158,
+      "medium_words": 79,
+      "long_words": 179,
+      "valid": true
+    },
+    "entry-230": {
+      "short_characters": 152,
+      "medium_words": 59,
+      "long_words": 194,
+      "valid": true
+    },
+    "entry-2501": {
+      "short_characters": 73,
+      "medium_words": 71,
+      "long_words": 170,
+      "valid": true
+    },
+    "entry-2721": {
+      "short_characters": 163,
+      "medium_words": 87,
+      "long_words": 183,
+      "valid": true
+    },
+    "entry-3380": {
+      "short_characters": 146,
+      "medium_words": 77,
+      "long_words": 0,
+      "valid": false
+    },
+    "entry-3804": {
+      "short_characters": 138,
+      "medium_words": 66,
+      "long_words": 179,
+      "valid": true
+    },
+    "entry-4232": {
+      "short_characters": 125,
+      "medium_words": 63,
+      "long_words": 201,
+      "valid": true
+    },
+    "entry-528": {
+      "short_characters": 130,
+      "medium_words": 65,
+      "long_words": 182,
+      "valid": true
+    },
+    "entry-5605": {
+      "short_characters": 165,
+      "medium_words": 78,
+      "long_words": 193,
+      "valid": true
+    },
+    "entry-6199": {
+      "short_characters": 76,
+      "medium_words": 86,
+      "long_words": 177,
+      "valid": true
+    },
+    "entry-643": {
+      "short_characters": 144,
+      "medium_words": 53,
+      "long_words": 156,
+      "valid": true
+    },
+    "entry-774": {
+      "short_characters": 117,
+      "medium_words": 83,
+      "long_words": 181,
+      "valid": true
+    },
+    "entry-884": {
+      "short_characters": 152,
+      "medium_words": 61,
+      "long_words": 151,
+      "valid": true
+    }
+  },
+  "length_failure_ids": [
+    "entry-3380"
+  ],
+  "source_support_review": {
+    "method": "Compared proposal source_urls and evidence_resolution source-to-fact mappings against the frozen held204 record; used only supplied URLs and proposal notes. No general web search was performed.",
+    "verified_url_count": 24,
+    "direct_fetch_checks": [
+      {
+        "url": "https://www.aclu.org/project-2025-explained",
+        "http_status": 200,
+        "fact": "ACLU page labels plan discussion as proposals and includes a section about censoring academic discussions of race."
+      },
+      {
+        "url": "https://time.com/4343030/donald-trump-failures/",
+        "http_status": 200,
+        "fact": "GoTrump section states launch in 2006, Travelocity-powered, shut down a year later."
+      },
+      {
+        "url": "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations/2020-final-policy-and-technical-amendments",
+        "http_status": 200,
+        "fact": "EPA page supports the August 13, 2020 rules and methane standard changes; page also notes the policy amendments ceased to be in effect in June 2021."
+      }
+    ],
+    "proposal_source_url_blockers": {
+      "entry-3804": "HOLD: the proposal text relies on the August 2025 AP report for the FY2026 NASA budget request and NASA explanation, but its actual source_urls contains only the TrumpFile page. The AP URL is present only in evidence_resolution, so source-to-fact provenance is not complete in the proposal.",
+      "entry-4232": "HOLD: the July/August 2026 end-date and GAO audit claims rely on Washington Post/AP sources named in evidence_resolution, but the actual proposal source_urls contains only a November 2025 Reuters link. The required later sources are absent from the proposal source list.",
+      "entry-5605": "HOLD: the actual proposal source_urls contains only a 2023 New York Times January 6 indictment article, unrelated to Executive Order 13769. The matching Federal Register, AP, DOJ, and Washington Post sources appear only in evidence_resolution, not the proposal source_urls.",
+      "entry-6199": "HOLD: the actual proposal source_urls contains only an NBC article about Kash Patel and journalists, unrelated to Trump’s Mike Lee image post. The Trump Truth Social archive URL cited in evidence_resolution is missing from the proposal source_urls.",
+      "entry-643": "HOLD: EPA’s official 2020 rule page supports the methane-standard facts, but the proposal still retains a BBC URL about a separate 2026 greenhouse-gas endangerment-finding action. The proposal notes and correction say this BBC link should be replaced, yet it remains in source_urls."
+    },
+    "notes": [
+      "PEN link for entry-178 was inaccessible in the supplied evidence review and is not relied on; the ACLU page supports the narrowed proposal.",
+      "Direct retrieval was restricted/unavailable for some existing publisher links per proposal notes; these were not replaced with new research."
+    ]
+  },
+  "checkpoint_files": [
+    "checkpoints/worker-09-checkpoint-001.json",
+    "checkpoints/worker-09-checkpoint-002.json",
+    "checkpoints/worker-09-checkpoint-003.json"
+  ],
+  "canonical_or_neon_writes": 0,
+  "other_worker_ids_in_output": 0,
+  "pr_created": false
+}

@@ -1,0 +1,29 @@
+{
+  "worker": 9,
+  "run": "wave3-held204-finalization-2026-10-04-account3",
+  "terminal_output": "worker-09-batch-20261004-wave3-held204-a7e2.jsonl",
+  "through_record_count": 13,
+  "expected_total": 13,
+  "reviewed_keys": [
+    "entry-178",
+    "entry-230",
+    "entry-2501",
+    "entry-2721",
+    "entry-3380",
+    "entry-3804",
+    "entry-4232",
+    "entry-528",
+    "entry-5605",
+    "entry-6199",
+    "entry-643",
+    "entry-774",
+    "entry-884"
+  ],
+  "disposition_counts": {
+    "PASS": 7,
+    "HOLD": 6
+  },
+  "prefix_sha256": "f4c0f5eaf1f3433df51e6e16ececaad8c972943817ba746273ff465dc337d96d",
+  "subset_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+  "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544"
+}
