@@ -1,0 +1,377 @@
+{
+  "artifact": "held204-worker-10-exact-set-qa",
+  "qa_date": "2026-10-04",
+  "task_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-10-input.jsonl",
+  "input_sha256": "e1f9db908d2df9eba0a95d3422e993525567b62c8da377ec4c33370938a7df33",
+  "expected_ids": [
+    "entry-227",
+    "entry-390",
+    "entry-720",
+    "entry-824",
+    "entry-934",
+    "entry-1727",
+    "entry-2061",
+    "entry-2401",
+    "entry-2518",
+    "entry-2731",
+    "entry-3444",
+    "entry-3985",
+    "entry-4311",
+    "entry-5413",
+    "entry-5936",
+    "entry-6239",
+    "entry-6915"
+  ],
+  "input_ids_match_expected": true,
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-10-terminal.jsonl",
+  "terminal_sha256": "a52a346256212ebcbfe2c4e51270127b9973936df9f045c32fd52ea69ad5b556",
+  "terminal_row_count": 17,
+  "observed_ids": [
+    "entry-227",
+    "entry-390",
+    "entry-720",
+    "entry-824",
+    "entry-934",
+    "entry-1727",
+    "entry-2061",
+    "entry-2401",
+    "entry-2518",
+    "entry-2731",
+    "entry-3444",
+    "entry-3985",
+    "entry-4311",
+    "entry-5413",
+    "entry-5936",
+    "entry-6239",
+    "entry-6915"
+  ],
+  "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-10-terminal-amendments.jsonl",
+  "amendment_sha256": "2ef0c7da2c88ba31ca6c6ca71d2e3e88fcea746891b204f6e9941938b1b09dd9",
+  "amendment_row_count": 9,
+  "effective_terminal_row_count": 17,
+  "status_counts": {
+    "pass": 6,
+    "hold": 11,
+    "exclusion_candidate": 0
+  },
+  "checks": {
+    "exact_assigned_id_set_and_order": true,
+    "exactly_one_base_terminal_per_id": true,
+    "no_unassigned_ids": true,
+    "all_rows_have_required_normalized_schema": true,
+    "all_rows_proposal_only": true,
+    "all_source_urls_mapped_exactly_once": true,
+    "preservation_notes_and_correction_proposals_present": true,
+    "all_pass_descriptions_meet_title_short_medium_long_limits": true,
+    "amendments_are_separate_and_reference_existing_terminals": true
+  },
+  "amendments_documented": [
+    {
+      "record_id": "entry-227",
+      "type": "immutable_terminal_amendment",
+      "note": "Removes a submitter-directed sentence from the draft and supplements the original long-form text in preservation notes."
+    },
+    {
+      "record_id": "entry-390",
+      "type": "immutable_terminal_amendment",
+      "note": "Adds the full frozen original copy to preservation notes; the terminal descriptions and status remain unchanged."
+    },
+    {
+      "record_id": "entry-720",
+      "type": "immutable_terminal_amendment",
+      "note": "Adds the full frozen original copy to preservation notes; the terminal descriptions and status remain unchanged."
+    },
+    {
+      "record_id": "entry-824",
+      "type": "immutable_terminal_amendment",
+      "note": "Moves the search-service failure detail out of the public description; the hold and source blocker remain unchanged."
+    },
+    {
+      "record_id": "entry-1727",
+      "type": "immutable_terminal_amendment",
+      "note": "Removes review-process commentary and supplements the full frozen original copy in preservation notes."
+    },
+    {
+      "record_id": "entry-2061",
+      "type": "immutable_terminal_amendment",
+      "note": "Removes comparison with the frozen record from the public description; the source-based event and hold remain unchanged."
+    },
+    {
+      "record_id": "entry-2401",
+      "type": "immutable_terminal_amendment",
+      "note": "Removes redundant review language and supplements the complete frozen original copy in preservation notes."
+    },
+    {
+      "record_id": "entry-4311",
+      "type": "immutable_terminal_amendment",
+      "note": "Removes editorial-process wording and adds the complete frozen copy to preservation notes; the corrected source attribution remains."
+    },
+    {
+      "record_id": "entry-5936",
+      "type": "immutable_terminal_amendment",
+      "note": "Moves the source-access limitation to blockers/provenance rather than the public description; the hold remains unchanged."
+    }
+  ],
+  "rescue_attempts": [
+    {
+      "record_id": "entry-824",
+      "result": "focused search service returned HTTP 401; original HOLD retained"
+    },
+    {
+      "record_id": "entry-2731",
+      "result": "focused search service returned HTTP 401; original HOLD retained"
+    }
+  ],
+  "artifact_issue_resolution": [
+    "output_missing"
+  ],
+  "scope_controls": {
+    "only_assigned_ids": true,
+    "canonical_or_neon_or_application_code_changed": false,
+    "task_branch_preserved": true,
+    "pull_request_opened_or_updated": false
+  },
+  "per_record": [
+    {
+      "record_id": "entry-227",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 79,
+        "short_chars": 105,
+        "medium_words": 61,
+        "long_words": 128
+      },
+      "source_url_count": 2,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-390",
+      "status": "pass",
+      "lengths": {
+        "title_chars": 82,
+        "short_chars": 113,
+        "medium_words": 57,
+        "long_words": 140
+      },
+      "source_url_count": 4,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-720",
+      "status": "pass",
+      "lengths": {
+        "title_chars": 59,
+        "short_chars": 116,
+        "medium_words": 62,
+        "long_words": 143
+      },
+      "source_url_count": 2,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-824",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 61,
+        "short_chars": 136,
+        "medium_words": 60,
+        "long_words": 114
+      },
+      "source_url_count": 1,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-934",
+      "status": "pass",
+      "lengths": {
+        "title_chars": 32,
+        "short_chars": 124,
+        "medium_words": 56,
+        "long_words": 155
+      },
+      "source_url_count": 2,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 0
+    },
+    {
+      "record_id": "entry-1727",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 76,
+        "short_chars": 139,
+        "medium_words": 53,
+        "long_words": 112
+      },
+      "source_url_count": 2,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-2061",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 82,
+        "short_chars": 152,
+        "medium_words": 65,
+        "long_words": 110
+      },
+      "source_url_count": 1,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-2401",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 65,
+        "short_chars": 111,
+        "medium_words": 44,
+        "long_words": 131
+      },
+      "source_url_count": 4,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-2518",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 67,
+        "short_chars": 130,
+        "medium_words": 49,
+        "long_words": 154
+      },
+      "source_url_count": 5,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 0
+    },
+    {
+      "record_id": "entry-2731",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 65,
+        "short_chars": 147,
+        "medium_words": 60,
+        "long_words": 161
+      },
+      "source_url_count": 1,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 0
+    },
+    {
+      "record_id": "entry-3444",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 72,
+        "short_chars": 72,
+        "medium_words": 72,
+        "long_words": 166
+      },
+      "source_url_count": 2,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 0
+    },
+    {
+      "record_id": "entry-3985",
+      "status": "pass",
+      "lengths": {
+        "title_chars": 78,
+        "short_chars": 114,
+        "medium_words": 69,
+        "long_words": 161
+      },
+      "source_url_count": 2,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 0
+    },
+    {
+      "record_id": "entry-4311",
+      "status": "pass",
+      "lengths": {
+        "title_chars": 70,
+        "short_chars": 140,
+        "medium_words": 69,
+        "long_words": 171
+      },
+      "source_url_count": 4,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-5413",
+      "status": "pass",
+      "lengths": {
+        "title_chars": 76,
+        "short_chars": 144,
+        "medium_words": 63,
+        "long_words": 150
+      },
+      "source_url_count": 2,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 0
+    },
+    {
+      "record_id": "entry-5936",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 78,
+        "short_chars": 116,
+        "medium_words": 60,
+        "long_words": 118
+      },
+      "source_url_count": 3,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 1
+    },
+    {
+      "record_id": "entry-6239",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 63,
+        "short_chars": 100,
+        "medium_words": 72,
+        "long_words": 153
+      },
+      "source_url_count": 4,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 0
+    },
+    {
+      "record_id": "entry-6915",
+      "status": "hold",
+      "lengths": {
+        "title_chars": 61,
+        "short_chars": 125,
+        "medium_words": 65,
+        "long_words": 126
+      },
+      "source_url_count": 1,
+      "every_source_url_mapped_once": true,
+      "preservation_note_and_correction_present": true,
+      "amendment_count": 0
+    }
+  ],
+  "result": "pass"
+}
