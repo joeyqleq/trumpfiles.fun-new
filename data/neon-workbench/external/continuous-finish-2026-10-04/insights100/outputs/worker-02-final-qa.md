@@ -1,0 +1,13 @@
+# Insights100 worker 02 — final QA
+
+- Source packet: `data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-02-input.jsonl`
+- Packet commit: `2476ae4896b888830fd3888f40581e19b78fae30`
+- Packet SHA-256: `d03503aa35f2e7865af5c00c7c7dff4ded3a181ac4e981c8e4de21d74eeeeff1`
+- Assigned IDs: `entry-2`, `entry-14`, `entry-26`, `entry-40`, `entry-52`, `entry-65`, `entry-78`, `entry-90`, `entry-102`
+- Terminal rows: 9, one per assigned ID, in requested order; all are `complete`. No prior terminal history existed when this output was created.
+- Amendments: 2 immutable corrections in `worker-02-amendments.jsonl`. Entry 40's scope quote now includes the complete supplied sentence. Entry 65's relation evidence-map value now matches the relation object. The original terminal rows remain unchanged; apply the amendment rows to obtain the effective records.
+- Validation: parsed the packet from the specified commit; checked the exact ID sequence, top-level markers/statuses, allowed enum values, quantity/relation shapes, evidence-map coverage for every non-unknown value, and literal quote containment in the supplied staged entry text. Effective rows: 9 checked, 0 errors.
+- Evidence boundary: all facts and quotes come from supplied staged text. `source_url` values are the URLs supplied with those records and do not indicate that the linked pages were opened or checked. No web research or new scoring was done.
+- Recorded blockers: entry 14's long narrative claims audience/fundraising effects that the medium does not measure; entry 26's long narrative states a scheduling conclusion more firmly than the qualified medium; entry 52's long narrative adds amounts, above-market pricing, profit, and legal claims beyond the cautious medium; entry 65's long narrative infers marching orders/future action beyond the stated group reaction; entry 78's long narrative says every case was dismissed for lack of evidence despite the medium's mixed outcomes and overturned procedural win; entry 90's long narrative suggests implementation/weaponization while the medium says the IRS called audits random and causation is unestablished; entry 102's long narrative says rallies directly caused totals that the medium attributes to an estimate. These distinctions remain in each row's `blockers`.
+- Scope: the only authored files are worker 02 output, amendments, checkpoint, and this QA note. No canonical, Neon, application-code, or other-worker artifacts were edited. No UI or application flow changed, so screenshot/flow-diff verification and application tests do not apply; the required data QA was run instead.
+- Pull request: none, as explicitly requested by this task.
