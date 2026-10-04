@@ -1,0 +1,21 @@
+{
+  "job": "full-insights-26",
+  "worker": 26,
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-26-terminal.jsonl",
+  "progress": {
+    "completed": 92,
+    "assigned": 92,
+    "pending": 0,
+    "last_record_id": "fresh-20260831-polymarket-round"
+  },
+  "status_counts": {
+    "complete": 88,
+    "insufficient": 4
+  },
+  "amendment_rows": 20,
+  "terminal_sha256": "bfd642ee3d7d757af26d390e476b516404e23492f0d09ee3fa33c9ca3067bd0a",
+  "amendments_sha256": "63486a5c6efb79c0e978b334eb8ddde89afc64fdba51b56363a5bb49f17eba92",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-26-final-qa.json",
+  "checkpoint_status": "complete"
+}
