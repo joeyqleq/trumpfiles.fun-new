@@ -1,0 +1,30 @@
+{
+  "checkpoint": "source237-qa15-worker-08-final-exact-set-checkpoint",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "coordinator_checkpoint_sha256": "54d409e5f63294ad2233b6ab579feefd75ecd6c415713cc4580407397003ea6f",
+  "coordinator_addendum_sha256": "a4e1d1a0f943bf624a1246aabab2e3423c48d192e792fa174a28f39b98f2270c",
+  "proposal_branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+  "proposal_commit": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+  "proposal_row_sha256": "fd1dea15908375699a40a354dd7c7a1ace6430233584f6031a9455b6f078c15c",
+  "source_url": "https://www.nbcnews.com/politics/2016-election/donald-trump-woos-wisconsin-jobs-economy-pitch-n549841",
+  "source_http_status": 200,
+  "source_page_sha256": "07686d4f24cd94c7531a2a526f57d3dba5149cf833ab6772f9eb61c8704bc14a",
+  "expected_ids": [
+    "entry-6509"
+  ],
+  "actual_ids": [
+    "entry-6509"
+  ],
+  "row_count": 1,
+  "unique_id_count": 1,
+  "exact_set_match": true,
+  "output_path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-08-batch-001.jsonl",
+  "output_sha256": "555c5907b6fc5bc5c7d5dc8d871101708bf5741832c62371402e60a13986f34a",
+  "qa_path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/qa/worker-08-final-qa.jsonl",
+  "qa_sha256": "324211c2f66570a42957f8f24504da7176d8935f94cf8133b3423f60c85022f2",
+  "length_check_pass": true,
+  "source_mapping_pass": true,
+  "triage_status_preserved": "needs_correction",
+  "result": "pass",
+  "scope_note": "One correction proposal row and QA/checkpoint artifacts only; no correction history rewrites, canonical edits, or Neon writes."
+}
