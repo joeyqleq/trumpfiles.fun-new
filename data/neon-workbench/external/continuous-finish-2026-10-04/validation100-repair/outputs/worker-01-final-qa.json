@@ -1,0 +1,100 @@
+{
+  "worker": "worker-01",
+  "status": "complete",
+  "job": "validation100-repair-01",
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-01-input.jsonl",
+  "input_sha256": "7462ac60a1bbf62e00138cc1ba02218d6e12efac2b1e3a18fefca8076ecb2e07",
+  "review_commit": "3669dce6af22954cea6f59c79dbd425a3436b7a8",
+  "amendment_source_commit": "a2871b2f2437c436ad520cd36cc45cedf9928ab6",
+  "assigned_ids": [
+    "entry-2638",
+    "entry-3155",
+    "entry-6196",
+    "entry-6620",
+    "entry-217",
+    "entry-6166",
+    "entry-653",
+    "entry-1088",
+    "entry-462"
+  ],
+  "assigned_count": 9,
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-01-terminal.jsonl",
+  "terminal_row_count": 9,
+  "terminal_unique_record_count": 9,
+  "missing_ids": [],
+  "outside_assignment_ids": [],
+  "duplicate_record_ids": [],
+  "terminal_status_counts": {
+    "complete": 9
+  },
+  "effective_row_count_after_amendments": 9,
+  "amendment_paths": [
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-01-amendment-003.jsonl"
+  ],
+  "amendment_count": 1,
+  "prior_amendments_considered": [
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-amendment-001.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-amendment-002.jsonl"
+  ],
+  "checkpoint_paths": [
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-01-checkpoint-001.json",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-01-checkpoint-002.json",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-01-checkpoint-003.json"
+  ],
+  "latest_checkpoint": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-01-checkpoint-003.json",
+  "validation": {
+    "jsonl_parses": true,
+    "exact_assigned_set": true,
+    "proposal_only_true_for_all_terminal_rows": true,
+    "required_fields_present": true,
+    "allowed_enums_valid": true,
+    "all_non_unknown_scalars_and_array_elements_mapped": true,
+    "all_evidence_quotes_literal_substrings_of_supplied_input": true,
+    "quantity_and_relation_quotes_literal_substrings": true,
+    "quantity_source_urls_present_in_supplied_input": true,
+    "no_duplicate_terminal_record_ids": true,
+    "blockers_arrays_present": true,
+    "terminal_was_created_without_overwriting_existing_history": true,
+    "entry_462_latest_amendment_selected": true,
+    "entry_217_review_correction_applied": true
+  },
+  "correction_notes": [
+    {
+      "record_id": "entry-217",
+      "note": "Removed only the disputed affected_groups value identified by the independent review. Kept supported National Guard deployment, 12-state quantity, and relation, and documented the review basis in blockers and immutable amendment-003."
+    },
+    {
+      "record_id": "entry-462",
+      "note": "Selected amendment-002 revision 1, which supersedes amendment-001 and the original terminal row; made no further fact changes."
+    },
+    {
+      "record_id": "entry-6620",
+      "note": "Preserved the existing blocker describing the conflict between staged description and frozen synopsis; review flagged no insight-fact correction."
+    }
+  ],
+  "source_limitations": "Uses only supplied staged/frozen input text and supplied review/amendment artifacts. Supplied source URLs were not fetched; no web search or new scoring was performed.",
+  "scope_checks": {
+    "canonical_edits": false,
+    "neon_edits": false,
+    "code_edits": false,
+    "pr_opened": false,
+    "artifact_issue_resolved": [
+      "output_missing"
+    ]
+  },
+  "terminal_sha256": "78315047e594f8eb529a9ae1c57f1afa316b850279af082a3b1920329ca13ded",
+  "amendment_sha256": "a659f9b7a91d5d3f14470ecbdbad78e33adddc3e753352cef4c37f8be2e712c7",
+  "captured_at": "2026-10-04",
+  "amended_record_count": 1,
+  "amendment_revisions": {
+    "entry-217": 1
+  },
+  "latest_amendments": {
+    "entry-217": "worker-01-amendment-003",
+    "entry-462": "worker-01-amendment-002"
+  },
+  "amendment_sha256s": {
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-01-amendment-003.jsonl": "a659f9b7a91d5d3f14470ecbdbad78e33adddc3e753352cef4c37f8be2e712c7"
+  }
+}

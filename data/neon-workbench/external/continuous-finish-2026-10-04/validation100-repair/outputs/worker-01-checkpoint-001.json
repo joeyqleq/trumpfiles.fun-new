@@ -1,0 +1,37 @@
+{
+  "worker": "worker-01",
+  "job": "validation100-repair-01",
+  "checkpoint": "001",
+  "checkpointed_rows": 3,
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-01-input.jsonl",
+  "input_sha256": "7462ac60a1bbf62e00138cc1ba02218d6e12efac2b1e3a18fefca8076ecb2e07",
+  "review_commit": "3669dce6af22954cea6f59c79dbd425a3436b7a8",
+  "amendment_commit": "a2871b2f2437c436ad520cd36cc45cedf9928ab6",
+  "output_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-01-terminal.jsonl",
+  "assigned_keys": [
+    "entry-2638",
+    "entry-3155",
+    "entry-6196",
+    "entry-6620",
+    "entry-217",
+    "entry-6166",
+    "entry-653",
+    "entry-1088",
+    "entry-462"
+  ],
+  "completed_keys": [
+    "entry-2638",
+    "entry-3155",
+    "entry-6196"
+  ],
+  "remaining_keys": [
+    "entry-6620",
+    "entry-217",
+    "entry-6166",
+    "entry-653",
+    "entry-1088",
+    "entry-462"
+  ],
+  "captured_at": "2026-10-04"
+}
