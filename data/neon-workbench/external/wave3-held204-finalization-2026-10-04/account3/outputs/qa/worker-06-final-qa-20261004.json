@@ -1,0 +1,233 @@
+{
+  "worker": 6,
+  "task": "wave3-held204-finalization-2026-10-04/account3",
+  "status": "complete_with_holds",
+  "assigned_ids": [
+    "entry-1768",
+    "entry-222",
+    "entry-2441",
+    "entry-266",
+    "entry-3139",
+    "entry-3735",
+    "entry-4054",
+    "entry-4622",
+    "entry-5531",
+    "entry-6141",
+    "entry-6340",
+    "entry-754",
+    "entry-833",
+    "entry-990"
+  ],
+  "output_ids": [
+    "entry-1768",
+    "entry-222",
+    "entry-2441",
+    "entry-266",
+    "entry-3139",
+    "entry-3735",
+    "entry-4054",
+    "entry-4622",
+    "entry-5531",
+    "entry-6141",
+    "entry-6340",
+    "entry-754",
+    "entry-833",
+    "entry-990"
+  ],
+  "saved_count": 14,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "pass_count": 11,
+  "hold_count": 3,
+  "blocking_ids": [
+    "entry-266",
+    "entry-3139",
+    "entry-6340"
+  ],
+  "blocking_reasons": {
+    "entry-266": [
+      "No description_long is present (required 140–300 words).",
+      "The evidence-resolution cites UCLA Williams Institute research that is absent from proposal source_urls; the other listed policy sources have access/extraction limitations in the supplied review.",
+      "The proposal changes from a federal-criminalization claim to a state-policy account without evidence linking that different event to the frozen claim."
+    ],
+    "entry-3139": [
+      "The evidence-resolution source https://abcnews.com/Politics/ivanka-trump-deposed-dc-attorney-general-inauguration-investigation/story?id=74514996 is absent from proposal source_urls, leaving key medium/long details without complete proposal-level provenance."
+    ],
+    "entry-6340": [
+      "The proposal switches from the frozen January launch/foreign-wallet claim to a separate May dinner event.",
+      "The title’s “spent $148 million” wording is unsupported by the cited estimate of qualifying token holdings; the proposal itself disclaims direct payment."
+    ]
+  },
+  "length_validation": {
+    "rules": {
+      "description_short": "<=180 characters",
+      "description_medium": "45-90 whitespace-delimited words",
+      "description_long": "140-300 whitespace-delimited words"
+    },
+    "short_pass_count": 14,
+    "medium_pass_count": 14,
+    "long_pass_count": 13,
+    "long_missing_ids": [
+      "entry-266"
+    ],
+    "method": "Unicode codepoint count for short; whitespace-delimited word count for medium/long; bounds inclusive."
+  },
+  "source_url_validation": {
+    "url_count": 42,
+    "invalid_format_urls": [],
+    "method": "HTTPS URI syntax/hostname check; source-to-fact support was checked against the pinned proposal evidence_resolution source mappings, supported_facts, and limitations. No new web search/live fetching was performed."
+  },
+  "lineage": {
+    "staged_subset_branch": "codex/wave3-needs-context-204-2026-10-04",
+    "staged_subset_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "held_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+    "held_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+    "held_manifest_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+    "coordinator_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+    "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+    "reconciliation_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+    "reconciliation_sha256": "0efa1e8b5e8f4b9ef94f09a19533b0679ae124bddf429e35c2a11a8f5569eb2a",
+    "effective_results_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl",
+    "effective_results_sha256": "2953556deb4d0c565ec54214661ac08598d41fcdea15dfe96f89d09a53fbbc9d",
+    "worker_proposals": [
+      {
+        "record_id": "entry-1768",
+        "result_branch": "origin/ls/2-trump-final-corrections-account2-worker1-snHz",
+        "result_commit": "8779ac63e2eca30b0d7b95fc786e44afb9fc2b1e",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-15-followup-UNIQUE.jsonl",
+        "revision": 0,
+        "row_sha256": "a8ee6e97b1468b63d594401ed02c2c8ba65efe4e3320c0444441ec16f07bceac"
+      },
+      {
+        "record_id": "entry-222",
+        "result_branch": "origin/ls/3-trump-final-corrections-account2-worker1--T8S",
+        "result_commit": "868758565358afd7b98e8b6b246ececab53b9761",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-14-batch-UNIQUE.jsonl",
+        "revision": 0,
+        "row_sha256": "5d79e40937e2f417a5f65eed449ddd3624042aa5cdba1d005fadefba62cf00a1"
+      },
+      {
+        "record_id": "entry-2441",
+        "result_branch": "origin/ls/3-trump-final-corrections-account2-worker1--T8S",
+        "result_commit": "868758565358afd7b98e8b6b246ececab53b9761",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-14-batch-UNIQUE.jsonl",
+        "revision": 0,
+        "row_sha256": "ee72b03f45bb530b91510443583b8bee1c63bc21baaa459ccd463a300920fc42"
+      },
+      {
+        "record_id": "entry-266",
+        "result_branch": "origin/ls/6-trump-final-corrections-account2-worker1-zeIF",
+        "result_commit": "67b0105799a90826d1db5b59045d7d2c13d2db35",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-19-batch-UNIQUE.jsonl",
+        "revision": 0,
+        "row_sha256": "f0930c95d859a0ab9a237e3a7e33e4e92685ee53108fccc19dc382a78ba6aeb2"
+      },
+      {
+        "record_id": "entry-3139",
+        "result_branch": "origin/ls/2-trump-final-corrections-account2-worker1-snHz",
+        "result_commit": "8779ac63e2eca30b0d7b95fc786e44afb9fc2b1e",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-15-followup-UNIQUE.jsonl",
+        "revision": 0,
+        "row_sha256": "ef91aca01851b07e1aa030f3d93267b0cc04b5b7cb23a1eb4aad3b57773ca6d2"
+      },
+      {
+        "record_id": "entry-3735",
+        "result_branch": "origin/ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+        "result_commit": "61150d33ec2c8efb8e3fffd262921f86e7a9176a",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-12-batch-001.jsonl",
+        "revision": 0,
+        "row_sha256": "53c050045d0677adb7717b511e96ee7b1e187e068ca0c268052411329ce06917"
+      },
+      {
+        "record_id": "entry-4054",
+        "result_branch": "origin/ls/10-trump-description-rescue-10-of-12-52-dis-7sqL",
+        "result_commit": "50ee3e2fce05fb45dcaacc25eac4a1bd976f3ac5",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-10-batch-20261003-001.jsonl",
+        "revision": 0,
+        "row_sha256": "6d50f14a0ec97a2ea5e1d4ced3b22bf6b4959d25f2a457aa0ae9baa051fc290c"
+      },
+      {
+        "record_id": "entry-4622",
+        "result_branch": "origin/ls/10-trump-description-rescue-10-of-12-52-dis-7sqL",
+        "result_commit": "50ee3e2fce05fb45dcaacc25eac4a1bd976f3ac5",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-10-batch-20261003-002.jsonl",
+        "revision": 0,
+        "row_sha256": "a97230d9ffccc2a2421c1e07279d17ac70a9460e4f9c5f8cff6326a5263b6d4b"
+      },
+      {
+        "record_id": "entry-5531",
+        "result_branch": "origin/ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+        "result_commit": "4070900f9a3333351cf8bc2b1f0afcff90c881ca",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-09-batch-002.jsonl",
+        "revision": 0,
+        "row_sha256": "6acd5599bc8da132e36da4feb107f825694d45df6b857c21f10062dec545dfca"
+      },
+      {
+        "record_id": "entry-6141",
+        "result_branch": "origin/ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+        "result_commit": "4070900f9a3333351cf8bc2b1f0afcff90c881ca",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-09-batch-002.jsonl",
+        "revision": 0,
+        "row_sha256": "c6da4cfe62ccfeca57a60122a2264c0e0f285e66afb596456789c1286509a05a"
+      },
+      {
+        "record_id": "entry-6340",
+        "result_branch": "origin/ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+        "result_commit": "4070900f9a3333351cf8bc2b1f0afcff90c881ca",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-09-batch-002.jsonl",
+        "revision": 0,
+        "row_sha256": "a248f1bc0f8f9011a67ea585abb6b8979185e3212e52d1d4f2507c748f329d89"
+      },
+      {
+        "record_id": "entry-754",
+        "result_branch": "origin/ls/8-trump-description-rescue-08-of-12-53-dis-W2qL",
+        "result_commit": "d030b300bf1d09f45ed6fa4b159d625e93643a0c",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-08-batch-002.jsonl",
+        "revision": 0,
+        "row_sha256": "4129b9fbd56fe67c57234c10b99e4335fe6406344a88f8ae57a69d5e32546e43"
+      },
+      {
+        "record_id": "entry-833",
+        "result_branch": "origin/ls/12-trump-final-corrections-account2-worker2-KcuW",
+        "result_commit": "598285901cf9f372f723fc12c4b331cdca0f2641",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-23-batch-UNIQUE.jsonl",
+        "revision": 1,
+        "row_sha256": "19709c3052b8f80b12e091281ef0e7992b13b78f94bad4c7c8269cab62115746"
+      },
+      {
+        "record_id": "entry-990",
+        "result_branch": "origin/ls/10-trump-final-corrections-account2-worker2-qX6f",
+        "result_commit": "4896359b8a0542c38eff4973743b667fa7830c44",
+        "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-22-followup-UNIQUE.jsonl",
+        "revision": 2,
+        "row_sha256": "803c8a996343644a434ba783cafd37670a32e6ce1c3ef551e9f682d348d0ff93"
+      }
+    ],
+    "branch_ancestry_verified": true,
+    "pinned_coordinator_result_commits_used": true
+  },
+  "manifest_source_limit": {
+    "path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions-full-staged-2026-10-03-wave3.jsonl",
+    "expected_sha256": "c091939b50a8af24682b6025f69c5a063bfbac90351933016e183b0f5266e762",
+    "present_at_staged_subset_commit": false,
+    "used_for_review": false,
+    "note": "The manifest points to a larger staged source file absent from the exact subset commit; review uses the requested held204.jsonl, whose exact commit and SHA256 are recorded."
+  },
+  "editorial_boundary": "PASS means the finalizer found the pinned proposal satisfies the task QA criteria. It is not editorial approval or publication. Worker status complete is not editorial approval.",
+  "checkpoint": {
+    "path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/checkpoints/worker-06-checkpoint-014.jsonl",
+    "row_count": 14,
+    "matches_output_byte_for_byte": true
+  },
+  "outputs": {
+    "terminal_rows": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-06-batch-20261004-wave3-finalization-a.jsonl",
+    "checkpoint": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/checkpoints/worker-06-checkpoint-014.jsonl",
+    "qa": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/qa/worker-06-final-qa-20261004.json"
+  },
+  "scope": "Only the 14 assigned IDs; no canonical/Neon edits and no other-worker IDs or files.",
+  "artifact_hashes": {
+    "terminal_output_sha256": "635200feb3e89d2349b15f9ee1e6d59b6263083b91cef66fbcd8931d0098468f",
+    "checkpoint_sha256": "635200feb3e89d2349b15f9ee1e6d59b6263083b91cef66fbcd8931d0098468f"
+  }
+}
