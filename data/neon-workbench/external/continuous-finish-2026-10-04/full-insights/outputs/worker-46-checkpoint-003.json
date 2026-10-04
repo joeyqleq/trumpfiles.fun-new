@@ -1,0 +1,21 @@
+{
+  "worker": 46,
+  "assignment": "full-insights-46",
+  "checkpoint": 3,
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "expected_rows": 92,
+  "cumulative_rows": 9,
+  "keys": [
+    "entry-148",
+    "entry-225",
+    "entry-305",
+    "entry-379",
+    "entry-456",
+    "entry-530",
+    "entry-606",
+    "entry-685",
+    "entry-759"
+  ],
+  "terminal_sha256": "6b3b999dc909a1b7c81ce4785aaf1829269323ed517e1939aece8bb46ef9da83",
+  "checkpoint_status": "in_progress"
+}
