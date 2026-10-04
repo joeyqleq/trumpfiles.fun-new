@@ -64,12 +64,14 @@
     "checks": [
       "exact assigned ID set and one terminal row per ID",
       "terminal schema and proposal_only flag",
+      "append-only terminal history preserved; latest amendments applied by record_id",
       "all titles and short descriptions at most 180 characters",
       "pass descriptions meet medium 45–90 and long 140–300 word limits after amendments",
-      "source URLs and fact maps present for every pass",
+      "source URLs and fact maps present for every pass; corrected description claims mapped to cited sources",
       "all source_fact_map entries use normalized url key",
       "every hold has blockers",
-      "previous text and correction proposals recorded"
+      "previous text and correction proposals recorded",
+      "reported artifact issues resolved by immutable amendments"
     ]
   },
   "input_schema_normalization": {
@@ -81,8 +83,8 @@
   },
   "amendments": {
     "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-02-amendments.jsonl",
-    "count": 6,
-    "sha256": "b72b6ccef7fe24868a6f3ee6e392503c15abb5925d383434b3c11ddd8496dfa4",
+    "count": 8,
+    "sha256": "afa5a31d0e2369e0124cf90719c623d8c155d69e97ad9237dc48e86c56b27c10",
     "records": [
       {
         "amendment_id": "held204-02-amendment-001",
@@ -137,23 +139,42 @@
         "corrected_fields": [
           "source_fact_map"
         ]
+      },
+      {
+        "amendment_id": "held204-02-amendment-007",
+        "record_id": "entry-37",
+        "status": "pass",
+        "reason": "Coordinator flagged bad_description_long:entry-37. Replaced commentary about what the draft documents with the supported post text, engagement, deletion time, and follow-up question. The Washington Post source and all other terminal fields remain unchanged.",
+        "corrected_fields": [
+          "description_long"
+        ]
+      },
+      {
+        "amendment_id": "held204-02-amendment-008",
+        "record_id": "entry-264",
+        "status": "pass",
+        "reason": "Coordinator flagged bad_description_long:entry-264. Replaced process-style summary with the supported EO 14288 transfer directive, its separate planning clause, and attributed Legal Defense Fund concerns. Added the matching Section 4(b) fact to the already-cited White House source map; all other terminal fields remain unchanged.",
+        "corrected_fields": [
+          "description_long",
+          "source_fact_map"
+        ]
       }
     ],
-    "reason": "Two add the minimum source-supported words required by the pass schema; three retain omitted pre-existing proposal text; one normalizes the narrowed_entry source map. Terminal history remains unchanged."
+    "reason": "Eight immutable amendments preserve prior terminal history: two required-length description corrections, three preservation-note recoveries, one narrowed_entry source-map normalization, and two coordinator-flagged long-description corrections. The latest two are limited to entry-37 and entry-264."
   },
   "effective_description_lengths": {
     "entry-37": {
       "title_chars": 58,
       "short_chars": 157,
       "medium_words": 70,
-      "long_words": 152,
+      "long_words": 155,
       "status": "pass"
     },
     "entry-264": {
       "title_chars": 66,
       "short_chars": 136,
       "medium_words": 71,
-      "long_words": 148,
+      "long_words": 165,
       "status": "pass"
     },
     "entry-528": {
@@ -269,5 +290,17 @@
     "entry-2562": "The 2008 NYT article does not establish Trump/Kushner involvement in the profile; hold preserved."
   },
   "scope": "Only held204 worker-02 proposal-review artifacts were added; no canonical records, Neon, or application code were edited.",
-  "pull_request": "No PR was requested or created."
+  "pull_request": "No PR was requested or created.",
+  "artifact_issue_followup": {
+    "reported_issues": [
+      "bad_description_long:entry-37",
+      "bad_description_long:entry-264"
+    ],
+    "resolved": true,
+    "amendments": [
+      "held204-02-amendment-007",
+      "held204-02-amendment-008"
+    ],
+    "scope": "Only the two flagged long descriptions were corrected; entry-264 source_fact_map was extended solely to support the corrected description’s Section 4(b) fact."
+  }
 }
