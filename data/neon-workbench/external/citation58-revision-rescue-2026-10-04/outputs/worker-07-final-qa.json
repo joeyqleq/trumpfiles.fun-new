@@ -1,0 +1,124 @@
+{
+  "record_type": "worker_final_qa",
+  "artifact": "citation58-revision-rescue-2026-10-04",
+  "worker": 7,
+  "qa_status": "PASS_WITH_BLOCKED_RECORD",
+  "expected_ids": [
+    "entry-2528"
+  ],
+  "observed_terminal_ids": [
+    "entry-2528"
+  ],
+  "terminal_row_count": 1,
+  "unique_terminal_key_count": 1,
+  "duplicate_terminal_ids": [],
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "exact_set_match": true,
+  "disposition_counts": {
+    "unsupported_hold": 1
+  },
+  "release_ready_count": 0,
+  "blocking_ids": [
+    "entry-2528"
+  ],
+  "checkpoint_records": [
+    {
+      "batch": 1,
+      "processed_count": 1,
+      "processed_keys": [
+        "entry-2528"
+      ],
+      "checkpoint_complete": true
+    }
+  ],
+  "checkpoint_ids_excluded_from_terminal_set": true,
+  "source_url_fact_qa": {
+    "source_check_count": 5,
+    "verified_official_url_count": 4,
+    "unverified_supplied_url_count": 1,
+    "official_url_mappings": [
+      {
+        "url": "https://www.fincen.gov/news/news-releases/fincen-announces-penalty-against-trump-taj-mahal-associates",
+        "direct_access_note": "HTTP 200; HTML retrieved and inspected.",
+        "supports": "FinCEN dated this release January 28, 1998. It reports a $477,000 civil money penalty for untimely casino currency-transaction reports concerning violations from April 1990 through December 1991.",
+        "does_not_support": "A second fine on February 1, 2002 or the 2015 $10 million action.",
+        "mapping_fact": "FinCEN’s accessible page supports a 1998 penalty and 1990–1991 reporting violations; it contradicts mapping this URL as the 2015 release."
+      },
+      {
+        "url": "https://fincen.gov/sites/default/files/news_release/20150306.pdf",
+        "direct_access_note": "HTTP 200; PDF retrieved. Exa indexed text for this exact official URL was also inspected.",
+        "supports": "The March 6, 2015 release states FinCEN imposed a $10 million civil penalty for willful and repeated BSA violations, lists AML-program/reporting/recordkeeping areas, cites a prior 1998 penalty, and says examiner findings date back to 2003.",
+        "does_not_support": "A second fine or enforcement action dated February 1, 2002.",
+        "mapping_fact": "FinCEN’s official release supports a distinct March 2015 $10 million penalty and mentions a 1998 prior penalty and examination findings dating from 2003; no 2002 second fine."
+      },
+      {
+        "url": "https://www.fincen.gov/news/enforcement-actions/matter-trump-taj-mahal-casino-resort",
+        "direct_access_note": "HTTP 200; official HTML page retrieved and inspected.",
+        "supports": "FinCEN’s enforcement-action page for Trump Taj Mahal links the 2015 civil money penalty assessment.",
+        "does_not_support": "A 2002 penalty; the page concerns the 2015 enforcement action.",
+        "mapping_fact": "Official page identifies the 2015 enforcement action and links its assessment; it does not resolve the frozen 2002 date."
+      },
+      {
+        "url": "https://www.fincen.gov/system/files?file=enforcement_action%2F2020-05-21%2F20150302+Assessment+of+Civil+Money+Penalty+Trump+Taj+Mahal+%28post-approval+by+bankruptcy+court%29.pdf",
+        "direct_access_note": "HTTP 200; official PDF bytes retrieved. Exa indexed text for this exact URL was inspected.",
+        "supports": "The document is the assessment associated with the 2015 action; indexed official text identifies the BSA examination findings and 1998 prior penalty.",
+        "does_not_support": "A second fine on February 1, 2002.",
+        "mapping_fact": "Official assessment text is associated with the 2015 action and provides its examination record; it does not support the frozen 2002 second-fine event."
+      }
+    ],
+    "unverified_supplied_url": {
+      "url": "https://trumpfile.org/trumps-taj-mahal-is-fined-a-second-time-for-violating-u-s-currency-laws",
+      "note": "Not independently verified in this rescue; prior packet note says HTTP 202 without readable text.",
+      "claim": "No readable source text was available to verify the frozen date, second-fine sequence, or details.",
+      "relied_on": false
+    },
+    "source_specific_amount_variance": "The 1998 FinCEN release states $477,000; the March 2015 release states $477,700 for the prior 1998 penalty, while the linked assessment text states $477,000. Preserve each cited source wording; this variance does not support a 2002 fine."
+  },
+  "frozen_identity_qa": {
+    "key": "entry-2528",
+    "date_start": "2002-02-01",
+    "date_end": "2002-02-01",
+    "title": "Trump's Taj Mahal is fined a second time for violating U.S. currency laws",
+    "identity_preserved": true,
+    "date_conflict_blocker": "The frozen row is dated 2002-02-01; reviewed FinCEN sources support a January 1998 penalty and a distinct March 2015 enforcement action, not the asserted second fine on the frozen 2002 date."
+  },
+  "copy_and_nonfabrication_qa": {
+    "disposition": "unsupported_hold",
+    "proposal_is_null": true,
+    "release_ready": false,
+    "title_chars": null,
+    "short_chars": null,
+    "medium_words": null,
+    "long_words": null,
+    "length_validation": "Not applicable: explicit HOLD; no corrected title or descriptions were drafted.",
+    "invented_urls_found": false,
+    "inaccessible_trumpfile_content_claimed_verified": false,
+    "unsupported_2015_copy_attached_to_2002_row": false
+  },
+  "provenance_qa": {
+    "rescue_batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-07-batch-citation58-revision-rescue-2026-10-04-001.jsonl",
+    "rescue_batch_sha256": "96235d1c139168219e5522fa8d5e03ab535652bccb7ba651537028b2b906aa6e",
+    "frozen_packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+    "frozen_packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-07-input.jsonl",
+    "frozen_packet_input_sha256": "de46e19ba08ca6765362043b1cf9d0c7a3df78108a65ea13ca84b90a7b5145fb",
+    "coordinator_branch": "ls/7-trump-final-corrections-account2-worker1-slYA",
+    "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+    "coordinator_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+    "coordinator_key_count": 1,
+    "coordinator_release_gate_outcome": "revision_required",
+    "prior_worker_qa_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-07-batch-crossqa-2026-10-03-001.jsonl",
+    "prior_worker_qa_disposition": "narrower_revision_required"
+  },
+  "qa_checks": {
+    "one_terminal_row_for_exact_key": true,
+    "checkpoint_kept_separate": true,
+    "source_url_support_and_limitations_recorded": true,
+    "provenance_reconciled": true,
+    "explicit_hold_retained": true,
+    "no_live_neon_calls": true,
+    "no_canonical_or_other_worker_edits": true,
+    "no_pull_request_opened": true
+  },
+  "scope": "Durable QA of worker 07 citation rescue output only. PASS_WITH_BLOCKED_RECORD means the QA artifact passed its checks; entry-2528 remains on HOLD and is not approved for editorial release or production import."
+}
