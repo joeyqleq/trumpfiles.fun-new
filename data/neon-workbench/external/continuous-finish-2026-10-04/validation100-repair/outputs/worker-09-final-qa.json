@@ -1,0 +1,81 @@
+{
+  "job_id": "validation100-repair-09",
+  "result": "complete",
+  "input": {
+    "commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-09-input.jsonl",
+    "records": 8
+  },
+  "review": {
+    "commit": "8d3afe55402568238994bbdfb243bec66c47d176",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-qa/outputs/worker-09-terminal.jsonl",
+    "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-qa/outputs/worker-09-terminal-amendment-001.jsonl",
+    "amendment_id": "worker-09-terminal-amendment-001",
+    "amendment_effect": "Corrected typographic apostrophes in the independent review quotes for entry-3341; reviewed verdicts and extracted facts were unchanged."
+  },
+  "baseline_terminal": {
+    "commit": "c60b0fee6502239b536cdc144ba089bb5f6fb8b8",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-09-terminal.jsonl",
+    "records": 8
+  },
+  "effective_terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-09-terminal.jsonl",
+  "assigned_record_ids": [
+    "entry-2683",
+    "entry-507",
+    "entry-3314",
+    "entry-385",
+    "entry-295",
+    "entry-2730",
+    "entry-3341",
+    "entry-3515"
+  ],
+  "effective_rows": 8,
+  "status_counts": {
+    "complete": 7,
+    "insufficient": 1
+  },
+  "corrections": [
+    {
+      "record_id": "entry-2683",
+      "change": "Updated the acted_on relation quote to include both the attributed actor and the DNC email-server target."
+    },
+    {
+      "record_id": "entry-3314",
+      "change": "Cleared affected_groups because the named U.S. public figures are described as amplifiers, not an affected group."
+    },
+    {
+      "record_id": "entry-385",
+      "change": "Set legal_stage to unknown and removed the acted_on relation because the Insurrection Act was only under consideration; the temporary Chicago block concerns a related deployment."
+    },
+    {
+      "record_id": "entry-295",
+      "change": "Kept the row insufficient and documented the unresolved conflict between the staged medium allegation/denial/clarification and long-description assertions using literal supplied quotes."
+    }
+  ],
+  "validation": {
+    "assigned_ids_exact_once": true,
+    "rows_have_required_terminal_shape": true,
+    "supported_nonunknown_fields_have_evidence_map_entries": true,
+    "evidence_and_blocker_quotes_are_literal_staged_text_substrings": true,
+    "quote_checks": 75,
+    "evidence_map_entries": 59,
+    "source_urls_are_from_supplied_input": true,
+    "review_pass_rows_unchanged": [
+      "entry-507",
+      "entry-2730",
+      "entry-3341",
+      "entry-3515"
+    ],
+    "no_canonical_neon_or_code_changes": true,
+    "no_web_searches_or_new_scoring": true,
+    "repair_terminal_was_missing_before_this_run": true,
+    "appended_rows": 8,
+    "separate_repair_amendment_needed": false
+  },
+  "checkpoint_files": [
+    "worker-09-checkpoint-001.json",
+    "worker-09-checkpoint-002.json",
+    "worker-09-checkpoint-003.json",
+    "worker-09-checkpoint-004.json"
+  ]
+}

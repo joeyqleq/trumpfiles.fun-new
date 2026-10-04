@@ -1,0 +1,18 @@
+{
+  "checkpoint_id": "worker-09-checkpoint-004",
+  "job_id": "validation100-repair-09",
+  "records_completed": 8,
+  "completed_record_ids": [
+    "entry-2683",
+    "entry-507",
+    "entry-3314",
+    "entry-385",
+    "entry-295",
+    "entry-2730",
+    "entry-3341",
+    "entry-3515"
+  ],
+  "pending_record_ids": [],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-09-terminal.jsonl",
+  "saved_at_utc": "2026-10-04"
+}
