@@ -1,0 +1,30 @@
+{
+  "worker": 8,
+  "kind": "checkpoint",
+  "date": "2026-10-04",
+  "task_branch": "ls/8-trump-files-web425-review-08-of-12-9xY1",
+  "batch_file": "worker-08-batch-001-20261004.jsonl",
+  "batch_sha256": "33af68d4c0675c96dfcef2f409580bd11f60978d9989db73ca05ee53377b9990",
+  "assigned_ids": [
+    "entry-2332",
+    "entry-2615",
+    "entry-6200"
+  ],
+  "processed_ids": [
+    "entry-2332",
+    "entry-2615",
+    "entry-6200"
+  ],
+  "processed_count": 3,
+  "missing_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "hold_with_narrower_draft": 1,
+    "narrowed_proposal": 2
+  },
+  "release_ready_count": 2,
+  "blocking_ids": [
+    "entry-2332"
+  ],
+  "checkpoint_note": "All three assigned IDs have one terminal row; research decisions and exact source/proposal provenance are recorded in the batch."
+}

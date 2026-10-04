@@ -1,0 +1,116 @@
+{
+  "worker": 8,
+  "kind": "final_exact_set_held204_qa",
+  "date": "2026-10-04",
+  "task_branch": "ls/8-trump-files-web425-review-08-of-12-9xY1",
+  "staged_input": {
+    "branch": "codex/wave3-needs-context-204-2026-10-04",
+    "commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "file": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+    "sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41"
+  },
+  "coordinator_input": {
+    "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+    "commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+    "reconciliation_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+    "effective_results_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl",
+    "reconciliation_sha256": "0efa1e8b5e8f4b9ef94f09a19533b0679ae124bddf429e35c2a11a8f5569eb2a",
+    "effective_results_sha256": "2953556deb4d0c565ec54214661ac08598d41fcdea15dfe96f89d09a53fbbc9d"
+  },
+  "assigned_count": 3,
+  "assigned_ids": [
+    "entry-2332",
+    "entry-2615",
+    "entry-6200"
+  ],
+  "output_file": "worker-08-batch-001-20261004.jsonl",
+  "output_sha256": "33af68d4c0675c96dfcef2f409580bd11f60978d9989db73ca05ee53377b9990",
+  "output_row_count": 3,
+  "unique_key_count": 3,
+  "missing_ids": [],
+  "outside_assignment_ids": [],
+  "duplicate_ids": [],
+  "schema_valid": true,
+  "terminal_status_counts": {
+    "hold_with_narrower_draft": 1,
+    "narrowed_proposal": 2
+  },
+  "release_ready_count": 2,
+  "blocking_count": 1,
+  "blocking_ids": [
+    "entry-2332"
+  ],
+  "effective_result_provenance": {
+    "entry-2332": {
+      "result_branch": "origin/ls/10-trump-final-corrections-account2-worker2-qX6f",
+      "result_commit": "4896359b8a0542c38eff4973743b667fa7830c44",
+      "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-22-followup-UNIQUE.jsonl",
+      "result_line": 2,
+      "revision": 2
+    },
+    "entry-2615": {
+      "result_branch": "origin/ls/3-trump-final-corrections-account2-worker1--T8S",
+      "result_commit": "868758565358afd7b98e8b6b246ececab53b9761",
+      "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-14-followup-UNIQUE.jsonl",
+      "result_line": 1,
+      "revision": 1
+    },
+    "entry-6200": {
+      "result_branch": "origin/ls/4-trump-final-corrections-account2-worker1-n96Z",
+      "result_commit": "888cb5cf3f756e71a874d1f96db6c98a6fba0843",
+      "result_path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-16-followup-20261003.jsonl",
+      "result_line": 4,
+      "revision": 0
+    }
+  },
+  "description_validation": {
+    "short_max_chars": 180,
+    "medium_word_range": [
+      45,
+      90
+    ],
+    "long_word_range": [
+      140,
+      300
+    ],
+    "rows_checked": 3,
+    "out_of_range_fields": [],
+    "audits": {
+      "entry-2332": {
+        "short_max_chars": 180,
+        "description_short_chars": 108,
+        "medium_words": 57,
+        "long_words": 149,
+        "long_field": "draft_present_but_release_held_for_scope"
+      },
+      "entry-2615": {
+        "short_max_chars": 180,
+        "description_short_chars": 102,
+        "medium_words": 60,
+        "long_words": 162,
+        "long_field": "present"
+      },
+      "entry-6200": {
+        "short_max_chars": 180,
+        "description_short_chars": 122,
+        "medium_words": 58,
+        "long_words": 147,
+        "long_field": "present"
+      }
+    }
+  },
+  "url_claim_validation": {
+    "proposal_citation_urls_checked": 3,
+    "all_exact_https": true,
+    "each_proposal_url_maps_to_explicit_supported_facts": true,
+    "unsupported_or_disputed_claims_are_excluded_or_attributed": true
+  },
+  "findings": {
+    "entry-2332": "HOLD. Telegraph provides a credible attributed account of a 1959 FO note; no reviewed source ties this historical matter to Trump or supports the packet date and espionage conclusion. A bounded draft is retained but not release-ready.",
+    "entry-2615": "NARROWED PROPOSAL. The Times reports a prosecutor alleged 2006 Crimea protest activity and says charges were not pursued for lack of evidence. The draft describes the allegation only and excludes a claim that Manafort helped the 2014 annexation.",
+    "entry-6200": "NARROWED PROPOSAL. Fox News reports Trump’s September 2023 Hugh Hewitt interview remarks about Fauci. The packet’s cited Politico story instead concerns Robert Redfield, and the July 2023 DOJ referral letter was from Senator Rand Paul; the disputed allegations are excluded."
+  },
+  "duplicate_handling": "Exactly one row per assigned ID; no additional IDs, splits, or standalone duplicate records were created. The pinned material did not include a complete canonical timeline for a global duplicate scan, so no global absence claim is made.",
+  "scope": "Only worker-08 output, checkpoint, and QA files are written. No canonical edits, Neon writes, or other-worker edits.",
+  "verification": "Structured exact-set, duplicate, HTTPS URL, source-to-claim mapping, and description-length validation passed; application tests are not applicable to this research/data deliverable."
+}
