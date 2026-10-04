@@ -1,0 +1,40 @@
+{
+  "checkpoint": "worker-01-final",
+  "job": "insights100-repair-01",
+  "packet_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-01-input.jsonl",
+  "input_sha256": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32",
+  "review_commit": "56a8733aa0e8e2d7491fa4d2b26e4b07c38b639e",
+  "review_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-qa/outputs/worker-01-terminal.jsonl",
+  "review_sha256": "0dd4493f2c6a60fad2b0c57867ea399c5b2529ca9a0a65620b8b16fdc2d4faf3",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-01-terminal.jsonl",
+  "terminal_sha256": "c1675e1de57e2b333f89c71f503717d20a6f9cac8c83ea679dbc8c173cd17919",
+  "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-01-terminal-amendments.jsonl",
+  "amendments_sha256": "a94f458743b2bb8702450b3da0a24e3a030c3a326e07e6b53247dc343befb687",
+  "processed_count": 9,
+  "processed_keys": [
+    "entry-1",
+    "entry-13",
+    "entry-25",
+    "entry-39",
+    "entry-51",
+    "entry-63",
+    "entry-77",
+    "entry-89",
+    "entry-101"
+  ],
+  "status_counts": {
+    "complete": 9,
+    "insufficient": 0
+  },
+  "qa_status": "passed",
+  "note": "Resolved output_missing by creating the repair terminal with all assigned effective rows. Applied only the flagged entry-1 relation-direction correction; preserved all other passing values, including immutable amendments 001 and 002. Terminal rows are append-only.",
+  "scope_note": "Only supplied frozen input and supplied source mappings were used; no source pages were fetched, no web search or new scoring was performed, and no canonical/Neon/code edits were made.",
+  "project_checks": {
+    "script": "bun run lint",
+    "result": "passed",
+    "errors": 0,
+    "warnings": 186,
+    "note": "Repository lint completed with warnings only; this task changed data artifacts, not application code."
+  }
+}

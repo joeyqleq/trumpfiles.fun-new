@@ -1,0 +1,92 @@
+{
+  "qa_type": "insights100_repair_final_exact_set",
+  "job": "insights100-repair-01",
+  "packet": {
+    "commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+    "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-01-input.jsonl",
+    "input_sha256": "78f41e171999daed57a79d2bb6bcedfc0f3abb0b3c57a2a459131dd62dee4f32"
+  },
+  "independent_review": {
+    "branch": "ls/2-trump-files-impact368-review-01-of-12-ulQ4",
+    "commit": "56a8733aa0e8e2d7491fa4d2b26e4b07c38b639e",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-qa/outputs/worker-01-terminal.jsonl",
+    "sha256": "0dd4493f2c6a60fad2b0c57867ea399c5b2529ca9a0a65620b8b16fdc2d4faf3"
+  },
+  "terminal_output": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-01-terminal.jsonl",
+    "sha256": "c1675e1de57e2b333f89c71f503717d20a6f9cac8c83ea679dbc8c173cd17919",
+    "row_count": 9,
+    "duplicates": 0
+  },
+  "exact_set": {
+    "expected_count": 9,
+    "actual_count": 9,
+    "expected_keys": [
+      "entry-1",
+      "entry-13",
+      "entry-25",
+      "entry-39",
+      "entry-51",
+      "entry-63",
+      "entry-77",
+      "entry-89",
+      "entry-101"
+    ],
+    "actual_keys": [
+      "entry-1",
+      "entry-13",
+      "entry-25",
+      "entry-39",
+      "entry-51",
+      "entry-63",
+      "entry-77",
+      "entry-89",
+      "entry-101"
+    ],
+    "matches_exactly": true
+  },
+  "result_summary": {
+    "complete": 9,
+    "insufficient": 0,
+    "evidence_items_validated": 87,
+    "literal_quotes_passed": true,
+    "all_urls_present_in_supplied_mapping": true,
+    "schema_validation": "passed"
+  },
+  "review_findings": [
+    {
+      "record_id": "entry-1",
+      "field": "insight_facts.relations[0]",
+      "resolution": "Reversed subject/object to defendants → Justice Department; matching evidence-map value updated."
+    }
+  ],
+  "unchanged_passing_records": [
+    "entry-13",
+    "entry-25",
+    "entry-39",
+    "entry-51",
+    "entry-63",
+    "entry-77",
+    "entry-89",
+    "entry-101"
+  ],
+  "additional_literal_evidence_findings": [],
+  "output_missing_resolution": "Created the missing repair terminal; all nine assigned keys were absent and appended in requested order.",
+  "amendments_output": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-01-terminal-amendments.jsonl",
+    "sha256": "a94f458743b2bb8702450b3da0a24e3a030c3a326e07e6b53247dc343befb687",
+    "count": 1
+  },
+  "checkpoint": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-01-checkpoint-final-insights100-repair-01.json",
+    "sha256": "bfda5354a48dc5a35c5dfef5e2ae682745d8b130a476bc41a48ecb1b5e71bc75"
+  },
+  "scope_note": "Only supplied frozen input and supplied source mappings were used; no source pages were fetched, no web search or new scoring was performed, and no canonical/Neon/code edits were made.",
+  "project_checks": {
+    "script": "bun run lint",
+    "result": "passed",
+    "errors": 0,
+    "warnings": 186,
+    "note": "Repository lint completed with warnings only; this task changed data artifacts, not application code."
+  }
+}
