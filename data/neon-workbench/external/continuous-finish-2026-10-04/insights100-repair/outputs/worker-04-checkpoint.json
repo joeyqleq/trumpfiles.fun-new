@@ -1,0 +1,29 @@
+{
+  "worker": "worker-04",
+  "job": "insights100-repair-04",
+  "status": "complete",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "review_commit": "0e89046d3c12762b525195bac834fb11942037e7",
+  "source_terminal_commit": "7f191ff187d55e3b33ee2345dfa3b65f54d89794",
+  "branch": "ls/4-trump-files-sample100-review-04-of-12-aICV",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-04-terminal.jsonl",
+  "preexisting_terminal_rows": 0,
+  "rows_appended": 9,
+  "record_ids": [
+    "entry-4",
+    "entry-16",
+    "entry-28",
+    "entry-42",
+    "entry-54",
+    "entry-68",
+    "entry-80",
+    "entry-92",
+    "entry-104"
+  ],
+  "terminal_sha256": "6958b8a04aa2a826643f967156a64b468f3709fe5821620acc9dcafb488cd48b",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-04-final-qa.json",
+  "final_qa_sha256": "de6bd2b7adbe1fc64df9ed29b5f86d674ef7d6d351d8c7088d6daf99302a0ac0",
+  "amendments": [],
+  "finding_resolved": "output_missing",
+  "validated_at": "2026-10-04T11:08:07.767413+00:00"
+}

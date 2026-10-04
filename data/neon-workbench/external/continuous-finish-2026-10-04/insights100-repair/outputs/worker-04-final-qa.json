@@ -1,0 +1,88 @@
+{
+  "worker": "worker-04",
+  "job": "insights100-repair-04",
+  "status": "pass",
+  "proposal_only": true,
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-04-input.jsonl",
+  "input_sha256": "d87729dac75073905c6bd71d889c18fd732f71fcec4be7f40a726704506ef694",
+  "review_commit": "0e89046d3c12762b525195bac834fb11942037e7",
+  "source_terminal_commit": "7f191ff187d55e3b33ee2345dfa3b65f54d89794",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-04-terminal.jsonl",
+  "terminal_sha256": "6958b8a04aa2a826643f967156a64b468f3709fe5821620acc9dcafb488cd48b",
+  "assigned_record_ids": [
+    "entry-4",
+    "entry-16",
+    "entry-28",
+    "entry-42",
+    "entry-54",
+    "entry-68",
+    "entry-80",
+    "entry-92",
+    "entry-104"
+  ],
+  "output_record_ids": [
+    "entry-4",
+    "entry-16",
+    "entry-28",
+    "entry-42",
+    "entry-54",
+    "entry-68",
+    "entry-80",
+    "entry-92",
+    "entry-104"
+  ],
+  "rows": 9,
+  "complete": 9,
+  "insufficient": 0,
+  "coordinator_findings": [
+    "output_missing"
+  ],
+  "coordinator_findings_resolved": [
+    "output_missing"
+  ],
+  "additional_literal_evidence_findings": [],
+  "review_corrections": [
+    {
+      "record_id": "entry-68",
+      "change": "Removed unsupported object_of_legal_action relation; supplied text names no authority taking legal action."
+    },
+    {
+      "record_id": "entry-80",
+      "change": "Kept the outcome and replaced its incomplete evidence quote with the supplied contiguous passage supporting both clauses."
+    },
+    {
+      "record_id": "entry-92",
+      "change": "Set scope to unknown and removed the unsupported scope evidence-map entry."
+    },
+    {
+      "record_id": "entry-104",
+      "change": "Kept national scope with a direct supplied-text quote about federal elections."
+    }
+  ],
+  "checks": {
+    "exact_assigned_set_and_order": true,
+    "one_row_per_record_id": true,
+    "proposal_only_true": true,
+    "required_schema_and_enums": true,
+    "evidence_map_covers_non_unknown_facts": true,
+    "all_basis_quotes_literal_substrings_of_supplied_text": true,
+    "quantity_source_urls_supplied_in_packet": true,
+    "five_previously_passing_rows_unchanged": true,
+    "only_review_flagged_facts_or_evidence_corrected": true,
+    "no_canonical_neon_or_code_edits": true,
+    "repository_lint_exit_zero": true,
+    "general_test_script_defined": false,
+    "general_typecheck_script_defined": false
+  },
+  "notes": [
+    "The repair terminal did not exist at the start; nine effective rows were appended in assigned order, preserving the original terminal as immutable source material.",
+    "Entries 4, 16, 28, 42, and 54 remain unchanged from the reviewed passing output.",
+    "Source URLs are supplied metadata only; no source pages were fetched. No web search or new scoring was performed.",
+    "No source code, canonical records, or Neon data were changed; UI screenshots and flow visualizations do not apply.",
+    "Root bun run lint completed with exit code 0 (0 errors, 186 warnings). The warnings are in application source outside this data-only repair.",
+    "No general test or type-check script is defined in the root package; feature-specific worker verification scripts were not relevant to this data-only change."
+  ],
+  "amendments": [],
+  "validated_at": "2026-10-04T11:08:07.767413+00:00"
+}
