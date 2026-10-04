@@ -1,0 +1,43 @@
+{
+  "worker": "08",
+  "job": "full-insights-08",
+  "status": "passed",
+  "input_packet": {
+    "path": "/tmp/worker-08-input.jsonl",
+    "source_branch": "codex/full-insights-packets-2026-10-04",
+    "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+    "row_count": 93
+  },
+  "terminal": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-08-terminal.jsonl",
+    "row_count": 93,
+    "unique_record_ids": 93,
+    "status_counts": {
+      "complete": 75,
+      "insufficient": 18
+    },
+    "packet_id_set_matches_terminal_id_set": true,
+    "proposal_only_true_for_all_rows": true
+  },
+  "schema_checks": {
+    "core_fields_only": true,
+    "quantities_empty_for_all_rows": true,
+    "relations_empty_for_all_rows": true,
+    "every_non_unknown_core_value_has_evidence_map_support": true,
+    "every_basis_quote_is_a_literal_substring_of_supplied_packet_text_after_amendments": true,
+    "every_non_null_source_url_matches_a_supplied_source_mapping": true,
+    "unknown_null_and_empty_used_when_support_missing": true
+  },
+  "amendments": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-08-amendments.jsonl",
+    "append_only": true,
+    "row_count": 22,
+    "applied_during_validation": true,
+    "summary": "Immutable quote, fact-value, evidence-map, and source-mapping corrections were applied for effective-output validation; terminal history was not rewritten."
+  },
+  "blockers_reviewed": true,
+  "limitations": [
+    "Supplied descriptions and source mappings were used as evidence; linked source pages were not independently checked."
+  ],
+  "scope_confirmation": "No canonical data, Neon, application-code, or unrelated files were edited. No pull request was created, per task instruction."
+}
