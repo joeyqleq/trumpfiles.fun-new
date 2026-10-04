@@ -1,0 +1,586 @@
+{
+  "record_type": "worker_final_qa",
+  "artifact": "full-insights-55",
+  "worker": 55,
+  "qa_status": "PASS_WITH_DISCLOSED_LIMITS",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-55-input.jsonl",
+  "input_sha256": "00131c3f377f3090e2b28f4400084973307d431b16da91987410c968b032c98b",
+  "expected_ids": [
+    "entry-157",
+    "entry-238",
+    "entry-315",
+    "entry-390",
+    "entry-466",
+    "entry-539",
+    "entry-615",
+    "entry-694",
+    "entry-769",
+    "entry-848",
+    "entry-923",
+    "entry-999",
+    "entry-1073",
+    "entry-1148",
+    "entry-1220",
+    "entry-1294",
+    "entry-1366",
+    "entry-1439",
+    "entry-1511",
+    "entry-1583",
+    "entry-1658",
+    "entry-1755",
+    "entry-1832",
+    "entry-1906",
+    "entry-1978",
+    "entry-2051",
+    "entry-2125",
+    "entry-2197",
+    "entry-2269",
+    "entry-2347",
+    "entry-2426",
+    "entry-2506",
+    "entry-2586",
+    "entry-2666",
+    "entry-2745",
+    "entry-2817",
+    "entry-2895",
+    "entry-2967",
+    "entry-3040",
+    "entry-3113",
+    "entry-3189",
+    "entry-3264",
+    "entry-3340",
+    "entry-3418",
+    "entry-3493",
+    "entry-3566",
+    "entry-3638",
+    "entry-3710",
+    "entry-3783",
+    "entry-3855",
+    "entry-3928",
+    "entry-4000",
+    "entry-4073",
+    "entry-4146",
+    "entry-4222",
+    "entry-4298",
+    "entry-4379",
+    "entry-4453",
+    "entry-4527",
+    "entry-4601",
+    "entry-4674",
+    "entry-4751",
+    "entry-4824",
+    "entry-4898",
+    "entry-4987",
+    "entry-5059",
+    "entry-5132",
+    "entry-5209",
+    "entry-5285",
+    "entry-5364",
+    "entry-5438",
+    "entry-5513",
+    "entry-5587",
+    "entry-5661",
+    "entry-5741",
+    "entry-5830",
+    "entry-5911",
+    "entry-5986",
+    "entry-6059",
+    "entry-6133",
+    "entry-6211",
+    "entry-6288",
+    "entry-6366",
+    "entry-6468",
+    "entry-6553",
+    "entry-6656",
+    "entry-6745",
+    "entry-6872",
+    "entry-6986",
+    "entry-7063",
+    "entry-7169",
+    "expanded-20260917-kennedy-chd-keynote"
+  ],
+  "observed_terminal_ids": [
+    "entry-157",
+    "entry-238",
+    "entry-315",
+    "entry-390",
+    "entry-466",
+    "entry-539",
+    "entry-615",
+    "entry-694",
+    "entry-769",
+    "entry-848",
+    "entry-923",
+    "entry-999",
+    "entry-1073",
+    "entry-1148",
+    "entry-1220",
+    "entry-1294",
+    "entry-1366",
+    "entry-1439",
+    "entry-1511",
+    "entry-1583",
+    "entry-1658",
+    "entry-1755",
+    "entry-1832",
+    "entry-1906",
+    "entry-1978",
+    "entry-2051",
+    "entry-2125",
+    "entry-2197",
+    "entry-2269",
+    "entry-2347",
+    "entry-2426",
+    "entry-2506",
+    "entry-2586",
+    "entry-2666",
+    "entry-2745",
+    "entry-2817",
+    "entry-2895",
+    "entry-2967",
+    "entry-3040",
+    "entry-3113",
+    "entry-3189",
+    "entry-3264",
+    "entry-3340",
+    "entry-3418",
+    "entry-3493",
+    "entry-3566",
+    "entry-3638",
+    "entry-3710",
+    "entry-3783",
+    "entry-3855",
+    "entry-3928",
+    "entry-4000",
+    "entry-4073",
+    "entry-4146",
+    "entry-4222",
+    "entry-4298",
+    "entry-4379",
+    "entry-4453",
+    "entry-4527",
+    "entry-4601",
+    "entry-4674",
+    "entry-4751",
+    "entry-4824",
+    "entry-4898",
+    "entry-4987",
+    "entry-5059",
+    "entry-5132",
+    "entry-5209",
+    "entry-5285",
+    "entry-5364",
+    "entry-5438",
+    "entry-5513",
+    "entry-5587",
+    "entry-5661",
+    "entry-5741",
+    "entry-5830",
+    "entry-5911",
+    "entry-5986",
+    "entry-6059",
+    "entry-6133",
+    "entry-6211",
+    "entry-6288",
+    "entry-6366",
+    "entry-6468",
+    "entry-6553",
+    "entry-6656",
+    "entry-6745",
+    "entry-6872",
+    "entry-6986",
+    "entry-7063",
+    "entry-7169",
+    "expanded-20260917-kennedy-chd-keynote"
+  ],
+  "terminal_row_count": 92,
+  "unique_terminal_key_count": 92,
+  "duplicate_terminal_ids": [],
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "exact_set_match": true,
+  "terminal_status_counts": {
+    "complete": 90,
+    "insufficient": 2
+  },
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-55-terminal.jsonl",
+  "checkpoint_file": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-55-checkpoint.jsonl",
+  "checkpoint_batch_count": 30,
+  "checkpoint_batch_sizes": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    4,
+    3,
+    3,
+    3,
+    5,
+    3,
+    3,
+    3
+  ],
+  "checkpoint_processed_total": 92,
+  "validation": {
+    "schema_enums_valid": true,
+    "all_non_unknown_facts_mapped": true,
+    "all_evidence_quotes_literal_substrings": true,
+    "source_urls_not_treated_as_checked": true,
+    "quantity_and_relation_shapes_valid": true,
+    "quantities_and_relations_empty_per_approved_core_scope": true,
+    "no_live_source_fetches": true,
+    "canonical_or_neon_edits": false,
+    "code_edits": false,
+    "pull_request_opened": false,
+    "coordinator_artifact_issue_resolved": [
+      "output_missing"
+    ]
+  },
+  "blockers": [
+    {
+      "record_id": "entry-157",
+      "type": "staged_text_contradiction",
+      "detail": "The title says “Scientists Terminated,” and the long description says Zeldin “ordered the termination of 1,155 scientists”; the medium description instead says they were “at risk of termination” and calls the cuts planned."
+    },
+    {
+      "record_id": "entry-238",
+      "type": "staged_text_claim_conflict",
+      "detail": "The medium text calls this an “alleged shift” and says the account “does not provide specific cases or quantify any resulting effects”; the long text states that voting-rights enforcement was “systematically eliminated” and describes realized criminal prosecutions and chilling effects."
+    },
+    {
+      "record_id": "entry-390",
+      "type": "staged_text_contradiction",
+      "detail": "The frozen synopsis says the order stopped firings “during the ongoing shutdown”; the staged account says the order concerned the federal-assistance freeze and explicitly says these reports were “not shutdown-related federal firings.”"
+    },
+    {
+      "record_id": "entry-694",
+      "type": "staged_source_support_conflict",
+      "detail": "The staged medium text gives an $83.3 million award and its $18.3 million/$65 million breakdown, while the note says the provided source links do not document the verdict and the record lacks the damages breakdown. These are treated as supplied description claims, not independently verified facts."
+    },
+    {
+      "record_id": "entry-769",
+      "type": "staged_text_contradiction",
+      "detail": "The frozen synopsis says the company “paid a federal fine for violating the U.S. embargo on Cuba”; the staged medium text says the trip expenses were potentially unlawful and did not report an official fine or establish Trump’s personal role."
+    },
+    {
+      "record_id": "entry-1148",
+      "type": "scope_limit",
+      "detail": "The supplied text does not identify which agencies or personnel were included in the 700-agent withdrawal, so the extraction does not attribute that withdrawal specifically to ICE."
+    },
+    {
+      "record_id": "entry-1366",
+      "type": "staged_text_claim_conflict",
+      "detail": "The frozen synopsis says the mixed messaging “weakens coordinated policy execution” and “made governance harder”; the staged medium account says no specific consequence is documented."
+    },
+    {
+      "record_id": "entry-1439",
+      "type": "staged_text_claim_conflict",
+      "detail": "The title and frozen synopsis attribute the poll result to Trump’s agenda, while the medium text explicitly says the article “reports public opinion, not a causal test of Trump’s policies.”"
+    },
+    {
+      "record_id": "entry-1755",
+      "type": "staged_text_conflict",
+      "detail": "The note says the supplied AP headline gives no dated statement pairs and that the generalized medium text cannot support a specific long account; the long description nevertheless asserts a dated sequence of Iran statements and military messaging. No core event facts are selected from the unresolved detailed account."
+    },
+    {
+      "record_id": "entry-1832",
+      "type": "unsupported_staged_impacts",
+      "detail": "The frozen synopsis says the downstream effects included public-trust erosion and measurable accountability pressure, while the long description says regional consequences were uncertain and does not state those impacts."
+    },
+    {
+      "record_id": "entry-1906",
+      "type": "unsupported_staged_impacts",
+      "detail": "The frozen synopsis adds generic claims of institutional stress, public-trust erosion and measurable accountability pressure. The supplied long description identifies competing arguments about voter burden and bill status but does not substantiate those added impacts."
+    },
+    {
+      "record_id": "entry-1978",
+      "type": "unsupported_staged_impacts",
+      "detail": "The frozen synopsis adds generic institutional-stress, public-trust and accountability claims; the long description says the event was a public tribute and no specific policy consequence is established."
+    },
+    {
+      "record_id": "entry-2051",
+      "type": "unsupported_staged_impacts",
+      "detail": "The frozen synopsis claims measurable accountability pressure as a downstream effect; the long description says the proposal could affect accountability but identifies no case or actual suspension."
+    },
+    {
+      "record_id": "entry-2125",
+      "type": "staged_text_claim_conflict",
+      "detail": "The medium text predicts a “distance to catastrophe” and says planning keeps narrowing that distance; the supplied note calls this catastrophe prediction unsourced, and the long description says the reports describe potential contingencies rather than an order or deployment."
+    },
+    {
+      "record_id": "entry-2197",
+      "type": "staged_text_claim_conflict",
+      "detail": "The medium/frozen wording calls the policy “planned cruelty” and attributes a motive; the long description says the report does not establish DHS’s motive for purchasing the warehouses."
+    },
+    {
+      "record_id": "entry-2347",
+      "type": "interpretive_title",
+      "detail": "The title calls the career “fictional,” but the long text says that characterization is an interpretation and that the supplied facts do not establish each role’s responsibilities or legality."
+    },
+    {
+      "record_id": "entry-2506",
+      "type": "unsupported_trump_connection",
+      "detail": "The staged title frames the entry around Trump, but the staged medium and long descriptions state that the transcript does not mention Donald Trump."
+    },
+    {
+      "record_id": "entry-2586",
+      "type": "unsupported_title_claim",
+      "detail": "The title states that the FBI called Mogilevich the biggest threat to U.S. democracy, but the medium calls the network a serious national-security threat and expressly says the democracy superlative and Trump connection are unsupported."
+    },
+    {
+      "record_id": "entry-2666",
+      "type": "staged_text_claim_conflict",
+      "detail": "The title says Rohrabacher “gets documents”; the medium says Yakunin offered investigative materials, while the long account says the chronology does not establish that Rohrabacher accepted or acted on them."
+    },
+    {
+      "record_id": "entry-2745",
+      "type": "staged_text_claim_conflict",
+      "detail": "The title calls this a Russian document; the medium says Foresman wrote it on behalf of an unnamed foreign nation and that an earlier version drew on material shared by a Russian oligarch’s associate."
+    },
+    {
+      "record_id": "entry-2817",
+      "type": "unsupported_trump_connection",
+      "detail": "The staged title prefixes the account with “Trump,” but the medium text describes Epstein’s claims about Tesla and says the account does not verify them; it supplies no Trump connection."
+    },
+    {
+      "record_id": "entry-2895",
+      "type": "unsupported_staged_impacts",
+      "detail": "The frozen synopsis adds generic claims of institutional stress, public-trust erosion and accountability pressure that are not stated in the supplied description of the procedural block."
+    },
+    {
+      "record_id": "entry-2967",
+      "type": "staged_text_contradiction",
+      "detail": "The title and frozen synopsis say Senate Republicans agreed Trump won by colluding with Russia; the staged medium explicitly says the report did not find that Trump conspired with Russia to win the election."
+    },
+    {
+      "record_id": "entry-3040",
+      "type": "staged_text_claim_conflict",
+      "detail": "The frozen synopsis says an incoming administration “will not be able to” remove Durham; the long description says DOJ regulations allowed removal for misconduct, dereliction of duty or conflict of interest, with a written explanation."
+    },
+    {
+      "record_id": "entry-3189",
+      "type": "staged_text_claim_conflict",
+      "detail": "The title calls the conduct a threat; the medium says Trump urged Raffensperger to find votes and the long characterizes the call as pressure but supplies no explicit threat in the described text."
+    },
+    {
+      "record_id": "entry-3264",
+      "type": "unsupported_staged_impacts",
+      "detail": "The frozen synopsis calls Heritage an arm of the Council for National Policy and says it influenced staffing and directed Trump administration policy; the staged description supports only the claim that Heritage worked closely with administration officials on policy."
+    },
+    {
+      "record_id": "entry-3418",
+      "type": "interpretive_title",
+      "detail": "The title calls Long “profoundly unqualified”; the supplied account lists gaps and says the announcement prompted debate about qualifications but does not establish an objective qualification standard or conclusion."
+    },
+    {
+      "record_id": "entry-3418",
+      "type": "motive_limit",
+      "detail": "The frozen synopsis says the selection was at least partly a reward for Long’s election-related action; the supplied description lists that action but does not state Trump’s motive."
+    },
+    {
+      "record_id": "entry-3493",
+      "type": "unsupported_staged_impacts",
+      "detail": "The frozen synopsis adds generic claims of institutional stress, public-trust erosion and accountability pressure; the long description says the reports do not show that specific investigations were interrupted."
+    },
+    {
+      "record_id": "entry-3566",
+      "type": "staged_text_status_limit",
+      "detail": "The title calls the event “Trump’s attack”; the account describes an attack being planned and Vance urging delay, and says the chat did not decide whether to cancel it."
+    },
+    {
+      "record_id": "entry-3783",
+      "type": "staged_text_contradiction",
+      "detail": "The title says EPA “fires thousands”; the medium description says the agency announced plans and explicitly distinguishes planned layoffs from completed departures."
+    },
+    {
+      "record_id": "entry-3855",
+      "type": "attributed_opinion",
+      "detail": "The mayor called the decision an “act of revenge”; the supplied material reports that characterization without attributing motive as an established fact."
+    },
+    {
+      "record_id": "entry-3928",
+      "type": "staged_text_claim_conflict",
+      "detail": "The title labels Antoni an “extremist,” which the long description says the linked account does not establish as a formal finding. The note also says the input start date was October 1 while the linked account gives September 30."
+    },
+    {
+      "record_id": "entry-4000",
+      "type": "unsupported_trump_connection",
+      "detail": "The title attributes the search to Trump, but the supplied descriptions report an FBI search and do not say Trump ordered or directed it."
+    },
+    {
+      "record_id": "entry-4146",
+      "type": "unsupported_staged_impacts",
+      "detail": "The frozen synopsis adds generic institutional-stress, public-trust and accountability effects that the long account does not establish; it specifically says the joint statement does not establish lasting operational cooperation."
+    },
+    {
+      "record_id": "entry-4222",
+      "type": "staged_text_claim_limit",
+      "detail": "The title calls Patel’s actions a “political purge” and says bipartisan pushback “mounts”; the supplied text describes arguments in ongoing litigation rather than a final finding that dismissals were unlawful."
+    },
+    {
+      "record_id": "entry-4298",
+      "type": "staged_text_claim_limit",
+      "detail": "The short description calls the positions a “diplomatic embarrassment”; the note says the packet does not document the plan and responses sufficiently for that characterization. The medium/long describe attributed positions and uncertainty."
+    },
+    {
+      "record_id": "entry-4379",
+      "type": "staged_scope_conflict",
+      "detail": "The title combines VA care changes with a separate Federal Employee Health Benefits change and attributes the 11-million-person coverage figure to the combined action. The medium explicitly distinguishes the separate programs and populations."
+    },
+    {
+      "record_id": "entry-4527",
+      "type": "staged_scope_conflict",
+      "detail": "The medium/frozen text treats a 40% workforce reduction, $700 million annual budget cut and lasting intelligence damage as completed consequences; the long description calls staffing and budget reductions proposed and says precise operational effects require additional evidence."
+    },
+    {
+      "record_id": "entry-4674",
+      "type": "staged_text_claim_limit",
+      "detail": "The title calls this a “food safety collapse”; the text supports vacancies, temporary lab closures and delayed inspections, while noting no documented illness or injury caused by them."
+    },
+    {
+      "record_id": "entry-4751",
+      "type": "staged_status_conflict",
+      "detail": "The title says Congress “rescinds” the appropriations, but the description states only that the House passed a rescission bill; it does not establish enactment by Congress."
+    },
+    {
+      "record_id": "entry-4824",
+      "type": "quantity_conflict",
+      "detail": "The title claims clemency for “all 1,500+” defendants, while the description and note support only more than 1,000 pardons plus separate commutations and pending-case dismissals; the 1,500-plus title count is not confirmed."
+    },
+    {
+      "record_id": "entry-4898",
+      "type": "staged_text_scope_limit",
+      "detail": "The title says HHS “dismantles” monitoring programs; the medium and long text describe a suspended planned exercise, a closed lab, and disrupted preparations, not a complete end to monitoring."
+    },
+    {
+      "record_id": "entry-4987",
+      "type": "staged_text_contradiction",
+      "detail": "The account reports U.S.-born children deported to Honduras and Mexico, while the quoted DHS response says the agency does not deport U.S. citizens and has no data on such deportations. The allegations and denial are preserved separately."
+    },
+    {
+      "record_id": "entry-5132",
+      "type": "staged_account_conflict",
+      "detail": "The medium text reports conflicting accounts: Mayor Frey criticized the officer’s actions, while DHS Secretary Noem and President Trump described Good as a threat. The source does not resolve the circumstances of the shooting."
+    },
+    {
+      "record_id": "entry-5209",
+      "type": "staged_claim_limit",
+      "detail": "The long text characterizes the product announcement as personal enrichment and policy capture; the medium text supports the company’s ownership stake and proposed products but does not establish that policy actions inflated product value or that enrichment occurred."
+    },
+    {
+      "record_id": "entry-5285",
+      "type": "unsupported_title_causation",
+      "detail": "The title says the monuments were shrunk “to open mining”; the supplied text says multiple-use management includes resource development but identifies no mining lease, permit or project and expressly does not claim a mine opened."
+    },
+    {
+      "record_id": "entry-5438",
+      "type": "unsupported_financial_claim",
+      "detail": "The frozen synopsis says the partnership sold products “for profit”; the supplied account says it does not establish the amount of sales proceeds or how much Trump personally received."
+    },
+    {
+      "record_id": "entry-5513",
+      "type": "staged_status_conflict",
+      "detail": "The title says the order “Ends Birthright Citizenship,” while the medium calls it an attempt and the long says injunctions prevented it from taking effect and that no final merits ruling resolved constitutionality."
+    },
+    {
+      "record_id": "entry-5587",
+      "type": "staged_timing_conflict",
+      "detail": "The medium and frozen synopsis place Trump’s “very close” deal claim after U.S.-Israeli strikes. The note says the linked May 15 report covers a pre-strike claim and cannot support that timing; the long description also says the negotiations and claim preceded June strikes. No supplied post-strike statement supports the titled event."
+    },
+    {
+      "record_id": "entry-5661",
+      "type": "staged_causal_conflict",
+      "detail": "The frozen synopsis claims the reorganization left the U.S. without centralized preparedness and “crippled” the COVID response; the staged medium and long say that causal failure is not established and related functions remained elsewhere."
+    },
+    {
+      "record_id": "entry-5741",
+      "type": "staged_date_and_claim_conflict",
+      "detail": "The frozen synopsis says DOGE was winding down by August 2025, had achieved none of its goals and wasted billions in consulting fees; the medium and long place the disbanding in November and say no final accounting of savings or costs was provided."
+    },
+    {
+      "record_id": "entry-5830",
+      "type": "interim_vs_merits",
+      "detail": "The courts blocked implementation, but the supplied description says the long-term legal outcome remained unresolved; adjudicated here refers to the interim judicial restraints, not a final ruling on constitutionality."
+    },
+    {
+      "record_id": "entry-6059",
+      "type": "estimate_and_legal_status_caveat",
+      "detail": "The supplied account does not identify the calculation method for the taxpayer-cost estimate, and frames the emoluments issue as a possibility rather than a judicial finding."
+    },
+    {
+      "record_id": "entry-6133",
+      "type": "proposed_vs_finalized_scope",
+      "detail": "The title says Trump weakens standards, while the long description says the event being described is the 2018 proposal and explicitly distinguishes the later finalization covered by the supplied Reuters link."
+    },
+    {
+      "record_id": "entry-6211",
+      "type": "staged_claim_scope_conflict",
+      "detail": "The frozen synopsis asserts some children were placed with traffickers or forced into labor and cites a Senate investigation; the staged descriptions narrow the cohort claim and say they do not establish that the 1,475 children were trafficked or harmed."
+    },
+    {
+      "record_id": "entry-6288",
+      "type": "reported_consequence_limit",
+      "detail": "The source material frames the event as the disclosure itself and says it did not establish an attack, lost submarine, or other concrete military consequence."
+    },
+    {
+      "record_id": "entry-6553",
+      "type": "Trump_connection_not_established",
+      "detail": "The title calls Deutsche Bank Trump’s primary lender, while the revised description says it was one of his major lenders; the supplied material expressly says the mirror-trade proceeds were not shown to reach his loans or accounts and does not establish his participation."
+    },
+    {
+      "record_id": "entry-6656",
+      "type": "threat_vs_implementation",
+      "detail": "The title and supplied synopsis describe a tariff threat; the long description says the announcement was prospective and not a tariff already imposed on January 20."
+    },
+    {
+      "record_id": "entry-6745",
+      "type": "order_vs_completed_dismantling",
+      "detail": "The title says the order is to dismantle the department, while the supplied long description says signing set a goal and could not itself eliminate statutory functions; lasting transfer or reduction depended on further steps."
+    },
+    {
+      "record_id": "entry-6872",
+      "type": "motive_unresolved",
+      "detail": "The supplied text records Cummings’s view and critics’ racial framing but says it does not resolve the dispute over Trump’s motives."
+    },
+    {
+      "record_id": "entry-6986",
+      "type": "allegation_vs_finding",
+      "detail": "The title uses “mob” language, while the supplied account calls Shehu a suspected gangster, reports charges he denies, and says he has not been convicted; it also expressly says the facts do not establish Kushner knew of or participated in criminal conduct."
+    },
+    {
+      "record_id": "entry-7063",
+      "type": "wealth_claim_scope_limit",
+      "detail": "The supplied text states a comparison with prior administrations but provides no count, roster, valuation method, or example of a specific policy affected; it supports concern, not demonstrated private benefit or wrongdoing."
+    },
+    {
+      "record_id": "entry-7169",
+      "type": "request_vs_proceeding",
+      "detail": "The title describes a call for prosecution, while the supplied account says it was a public demand and not a charge, warrant, or formal Justice Department decision."
+    },
+    {
+      "record_id": "expanded-20260917-kennedy-chd-keynote",
+      "type": "Trump_connection_not_in_supplied_text",
+      "detail": "Although Donald Trump appears in the record's people tags, the supplied descriptions discuss Kennedy and Children's Health Defense and do not describe an action or relationship involving Trump; no Trump connection is asserted in the insights."
+    }
+  ],
+  "scope_note": "Terminal rows use only supplied frozen/staged packet text; supplied source URLs were not fetched or independently verified. Quantities and relations remain empty under the approved core-only scope. No canonical, Neon, or code changes were made. The task explicitly prohibits opening a PR."
+}
