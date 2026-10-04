@@ -1,0 +1,68 @@
+{
+  "job": "full-insights-10",
+  "worker": 10,
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "proposal_only": true,
+  "assigned_count": 93,
+  "terminal_row_count": 93,
+  "unique_record_count": 93,
+  "status_counts": {
+    "complete": 74,
+    "insufficient": 19
+  },
+  "assigned_id_validation": {
+    "passed": true,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicates": []
+  },
+  "schema_validation": {
+    "passed": true,
+    "only_approved_core_fields": true,
+    "all_rows_have_empty_quantities_and_relations": true
+  },
+  "evidence_validation": {
+    "passed_after_amendments": true,
+    "all_non_unknown_core_values_mapped": true,
+    "basis_quotes_are_literal_packet_substrings": true,
+    "source_urls_supplied_in_packet": true,
+    "source_pages_independently_checked": false
+  },
+  "contradictions_and_uncertainty": "Preserved in per-record blockers; forecasts, allegations, contested attribution, and unresolved outcomes remain qualified.",
+  "amendment_count": 21,
+  "amendment_ids": [
+    "worker-10-amendment-001",
+    "worker-10-amendment-002",
+    "worker-10-amendment-003",
+    "worker-10-amendment-004",
+    "worker-10-amendment-005",
+    "worker-10-amendment-006",
+    "worker-10-amendment-007",
+    "worker-10-amendment-008",
+    "worker-10-amendment-009",
+    "worker-10-amendment-010",
+    "worker-10-amendment-011",
+    "worker-10-amendment-012",
+    "worker-10-amendment-013",
+    "worker-10-amendment-014",
+    "worker-10-amendment-015",
+    "worker-10-amendment-016",
+    "worker-10-amendment-017",
+    "worker-10-amendment-018",
+    "worker-10-amendment-019",
+    "worker-10-amendment-020",
+    "worker-10-amendment-021"
+  ],
+  "batches_recorded": 31,
+  "rows_appended_after_checkpointed_81": 12,
+  "scope_notes": [
+    "Core fields only: event_state, action_type, affected_groups, institutions, scope, legal_stage, outcome.",
+    "quantities and relations remained empty; no candidate_extensions were retained.",
+    "No web searches, new scoring, canonical/Neon/code edits, or PR creation.",
+    "Task says No PR; changes are committed and pushed only."
+  ],
+  "final_validation": {
+    "passed": true,
+    "errors": 0
+  }
+}

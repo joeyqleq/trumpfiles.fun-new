@@ -1,0 +1,660 @@
+{
+  "job": "full-insights-10",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "assigned_count": 93,
+  "processed_ids": [
+    "entry-111",
+    "entry-184",
+    "entry-267",
+    "entry-342",
+    "entry-418",
+    "entry-493",
+    "entry-569",
+    "entry-644",
+    "entry-721",
+    "entry-798",
+    "entry-878",
+    "entry-951",
+    "entry-1026",
+    "entry-1101",
+    "entry-1175",
+    "entry-1248",
+    "entry-1321",
+    "entry-1393",
+    "entry-1466",
+    "entry-1538",
+    "entry-1610",
+    "entry-1691",
+    "entry-1787",
+    "entry-1861",
+    "entry-1933",
+    "entry-2005",
+    "entry-2079",
+    "entry-2152",
+    "entry-2224",
+    "entry-2297",
+    "entry-2377",
+    "entry-2455",
+    "entry-2535",
+    "entry-2613",
+    "entry-2696",
+    "entry-2772",
+    "entry-2848",
+    "entry-2922",
+    "entry-2994",
+    "entry-3068",
+    "entry-3142",
+    "entry-3217",
+    "entry-3291",
+    "entry-3369",
+    "entry-3448",
+    "entry-3521",
+    "entry-3593",
+    "entry-3665",
+    "entry-3737",
+    "entry-3810",
+    "entry-3882",
+    "entry-3955",
+    "entry-4027",
+    "entry-4100",
+    "entry-4173",
+    "entry-4252",
+    "entry-4333",
+    "entry-4482",
+    "entry-4555",
+    "entry-4629",
+    "entry-4704",
+    "entry-4779",
+    "entry-4852",
+    "entry-4927",
+    "entry-5014",
+    "entry-5086",
+    "entry-5159",
+    "entry-5240",
+    "entry-5313",
+    "entry-5391",
+    "entry-5465",
+    "entry-5540",
+    "entry-5616",
+    "entry-5688",
+    "entry-5779",
+    "entry-5864",
+    "entry-5940",
+    "entry-6014",
+    "entry-6086",
+    "entry-6161",
+    "entry-6240",
+    "entry-4406",
+    "entry-6317",
+    "entry-6396",
+    "entry-6499",
+    "entry-6588",
+    "entry-6688",
+    "entry-6792",
+    "entry-6904",
+    "entry-7013",
+    "entry-7098",
+    "expanded-20260820-bessent-regime-collapse",
+    "expanded-20260928-garces-criminal-complaint"
+  ],
+  "batches": [
+    {
+      "batch": 1,
+      "record_ids": [
+        "entry-111",
+        "entry-184",
+        "entry-267"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 2,
+      "record_ids": [
+        "entry-342",
+        "entry-418",
+        "entry-493"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 3,
+      "record_ids": [
+        "entry-569",
+        "entry-644",
+        "entry-721"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 4,
+      "record_ids": [
+        "entry-798",
+        "entry-878",
+        "entry-951"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 5,
+      "record_ids": [
+        "entry-1026",
+        "entry-1101",
+        "entry-1175"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 6,
+      "record_ids": [
+        "entry-1248",
+        "entry-1321",
+        "entry-1393"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 7,
+      "record_ids": [
+        "entry-1466",
+        "entry-1538",
+        "entry-1610"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 8,
+      "record_ids": [
+        "entry-1691",
+        "entry-1787",
+        "entry-1861"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 9,
+      "record_ids": [
+        "entry-1933",
+        "entry-2005",
+        "entry-2079"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 10,
+      "record_ids": [
+        "entry-2152",
+        "entry-2224",
+        "entry-2297"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 11,
+      "record_ids": [
+        "entry-2377",
+        "entry-2455",
+        "entry-2535"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 12,
+      "record_ids": [
+        "entry-2613",
+        "entry-2696",
+        "entry-2772"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 13,
+      "record_ids": [
+        "entry-2848",
+        "entry-2922",
+        "entry-2994"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 14,
+      "record_ids": [
+        "entry-3068",
+        "entry-3142",
+        "entry-3217"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 15,
+      "record_ids": [
+        "entry-3291",
+        "entry-3369",
+        "entry-3448"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 16,
+      "record_ids": [
+        "entry-3521",
+        "entry-3593",
+        "entry-3665"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 17,
+      "record_ids": [
+        "entry-3737",
+        "entry-3810",
+        "entry-3882"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 18,
+      "record_ids": [
+        "entry-3955",
+        "entry-4027",
+        "entry-4100"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 19,
+      "record_ids": [
+        "entry-4173",
+        "entry-4252",
+        "entry-4333"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 20,
+      "record_ids": [
+        "entry-4482",
+        "entry-4555",
+        "entry-4629"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 21,
+      "record_ids": [
+        "entry-4704",
+        "entry-4779",
+        "entry-4852"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 22,
+      "record_ids": [
+        "entry-4927",
+        "entry-5014",
+        "entry-5086"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 23,
+      "record_ids": [
+        "entry-5159",
+        "entry-5240",
+        "entry-5313"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 24,
+      "record_ids": [
+        "entry-5391",
+        "entry-5465",
+        "entry-5540"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 25,
+      "record_ids": [
+        "entry-5616",
+        "entry-5688",
+        "entry-5779"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 26,
+      "record_ids": [
+        "entry-5864",
+        "entry-5940",
+        "entry-6014"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 27,
+      "record_ids": [
+        "entry-6086",
+        "entry-6161",
+        "entry-6240"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 28,
+      "record_ids": [
+        "entry-4406",
+        "entry-6317",
+        "entry-6396"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 29,
+      "record_ids": [
+        "entry-6499",
+        "entry-6588",
+        "entry-6688"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 30,
+      "record_ids": [
+        "entry-6792",
+        "entry-6904",
+        "entry-7013"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    },
+    {
+      "batch": 31,
+      "record_ids": [
+        "entry-7098",
+        "expanded-20260820-bessent-regime-collapse",
+        "expanded-20260928-garces-criminal-complaint"
+      ],
+      "rows_appended": 3,
+      "quote_substring_validation": "passed"
+    }
+  ],
+  "rows_appended": 81,
+  "amendments": [
+    {
+      "amendment_id": "worker-10-amendment-001",
+      "record_id": "entry-418",
+      "supersedes_terminal_row": 2,
+      "change": {
+        "path": "evidence_map[3].source_url",
+        "old_value": "https://edition.cnn.com/2025/11/02/politics/hegseth-bars-military-officials-from-discussing-drug-boat-strikes-with-congress.",
+        "new_value": "https://edition.cnn.com/2025/11/02/politics/hegseth-bars-military-officials-from-discussing-drug-boat-strikes-with-congress-without-prior-approval"
+      },
+      "reason": "Corrected a source URL transcription to match the URL supplied in the frozen packet; no source page was checked."
+    },
+    {
+      "amendment_id": "worker-10-amendment-002",
+      "record_id": "entry-493",
+      "supersedes_terminal_row": 3,
+      "change": {
+        "path": "evidence_map[8].basis_quote",
+        "old_value": "Continued raids and use-of-force incidents kept the operation under national scrutiny.",
+        "new_value": "residents and officials reported mass protests and disruption across the Twin Cities."
+      },
+      "reason": "Replaced a quote about national attention with the literal supplied text that supports the regional scope of the operation."
+    },
+    {
+      "amendment_id": "worker-10-amendment-003",
+      "record_id": "entry-644",
+      "supersedes_terminal_row": 8,
+      "change": {
+        "path": "evidence_map[6].basis_quote",
+        "old_value": "The statute remained in force.",
+        "new_value": "On January 8, 2026, the Council on Environmental Quality finalized a rule rescinding White House regulations that guided federal agencies' environmental reviews under NEPA. The statute remained in force."
+      },
+      "reason": "Expanded the literal evidence quote so it supports the complete text-explicit outcome in the terminal row."
+    },
+    {
+      "amendment_id": "worker-10-amendment-004",
+      "record_id": "entry-721",
+      "supersedes_terminal_row": 9,
+      "change": {
+        "path": "evidence_map[5].basis_quote",
+        "old_value": "The new rule took a narrower approach to reducing power-sector pollution.",
+        "new_value": "On June 19, 2019, EPA finalized the Affordable Clean Energy rule, replacing the Clean Power Plan as the federal standard for emissions from existing power plants. The new rule took a narrower approach to reducing power-sector pollution."
+      },
+      "reason": "Expanded the literal evidence quote so it supports the complete text-explicit outcome in the terminal row."
+    },
+    {
+      "amendment_id": "worker-10-amendment-005",
+      "record_id": "entry-878",
+      "supersedes_terminal_row": 11,
+      "change": {
+        "path": "evidence_map[6].basis_quote",
+        "old_value": "The Justice Department’s clemency list records Trump’s January 13, 2021, pardon of Paul L. Behrens in the Middle District of Florida.",
+        "new_value": "The Justice Department’s clemency list records Trump’s January 13, 2021, pardon of Paul L. Behrens in the Middle District of Florida. It lists two counts of health-care fraud and two counts of false statements related to health-care matters, with a 24-month prison sentence and two years of supervised release imposed in 2014."
+      },
+      "reason": "Expanded the literal evidence quote so it supports the complete text-explicit outcome in the terminal row."
+    },
+    {
+      "amendment_id": "worker-10-amendment-006",
+      "record_id": "entry-951",
+      "supersedes_terminal_row": 12,
+      "change": {
+        "path": "evidence_map[5].basis_quote",
+        "old_value": "The official list confirms the pardon and sentence but does not explain the decision.",
+        "new_value": "Trump pardoned Wesley Scott Harkonen, Jr. on January 19, 2021. The Justice Department lists a wire-fraud conviction and aiding-and-abetting offense, with an original sentence of three years' probation, six months of home confinement, 200 hours of community service, and a $20,000 fine. The official list confirms the pardon and sentence but does not explain the decision."
+      },
+      "reason": "Expanded the literal evidence quote so it supports the complete text-explicit outcome in the terminal row."
+    },
+    {
+      "amendment_id": "worker-10-amendment-007",
+      "target_amendment_id": "worker-10-amendment-001",
+      "record_id": "entry-418",
+      "change": {
+        "path": "supersedes_terminal_row",
+        "old_value": 2,
+        "new_value": 5
+      },
+      "reason": "Corrected the referenced JSONL line number; entry-418 is terminal row 5."
+    },
+    {
+      "amendment_id": "worker-10-amendment-008",
+      "target_amendment_id": "worker-10-amendment-002",
+      "record_id": "entry-493",
+      "change": {
+        "path": "supersedes_terminal_row",
+        "old_value": 3,
+        "new_value": 6
+      },
+      "reason": "Corrected the referenced JSONL line number; entry-493 is terminal row 6."
+    },
+    {
+      "amendment_id": "worker-10-amendment-009",
+      "record_id": "entry-1393",
+      "supersedes_terminal_row": 18,
+      "change": {
+        "path": "evidence_map[5].basis_quote",
+        "old_value": "That fact does not establish that the claims were true or endorsed by the committee as findings.",
+        "new_value": "During a 2026 congressional hearing about Jeffrey Epstein, lawmakers questioned Bill and Hillary Clinton and also raised Pizzagate and UFO-related topics, according to the supplied Associated Press report. The article described conspiracy-themed questions entering a formal committee proceeding. That fact does not establish that the claims were true or endorsed by the committee as findings."
+      },
+      "reason": "Expanded the literal quote to support the full text-explicit outcome while preserving the qualification."
+    },
+    {
+      "amendment_id": "worker-10-amendment-010",
+      "record_id": "entry-1321",
+      "supersedes_terminal_row": 17,
+      "change": {
+        "path": "insight_facts.affected_groups",
+        "old_value": [
+          "Spain"
+        ],
+        "new_value": []
+      },
+      "reason": "Spain is a named state party rather than a text-explicit population group; the named political target is recorded as an institution."
+    },
+    {
+      "amendment_id": "worker-10-amendment-011",
+      "record_id": "entry-1321",
+      "supersedes_terminal_row": 17,
+      "change": {
+        "path": "insight_facts.institutions",
+        "old_value": [],
+        "new_value": [
+          "Spain"
+        ]
+      },
+      "reason": "The supplied text explicitly names Spain as the threatened trade counterpart; retaining it as a named state institution avoids labeling a country as a population group."
+    },
+    {
+      "amendment_id": "worker-10-amendment-012",
+      "record_id": "entry-1321",
+      "supersedes_terminal_row": 17,
+      "change": {
+        "path": "evidence_map",
+        "add": {
+          "field": "insight_facts.institutions[0]",
+          "value": "Spain",
+          "basis_quote": "Trump threatened to cut trade ties with Spain after Madrid resisted U.S. use of joint bases for Iran strikes without U.N. cover.",
+          "source_url": "https://apnews.com/article/43e0f13e7b1c7e6ebcc4b558474aacdc",
+          "evidence_status": "supplied_text"
+        }
+      },
+      "reason": "Adds literal supplied-text evidence for Spain in the institutions array after the affected-group categorization was removed."
+    },
+    {
+      "amendment_id": "worker-10-amendment-013",
+      "record_id": "entry-2005",
+      "supersedes_terminal_row": 26,
+      "change": {
+        "path": "evidence_map[4].basis_quote",
+        "old_value": "‘I saw the writing on the wall’: Austria offers safe haven for US academics as Trump wages war on universities. Other countries benefit from the Trump brain drain as administration wages war on academia and research",
+        "new_value": "‘I saw the writing on the wall’: Austria offers safe haven for US academics as Trump wages war on universities. Other countries benefit from the Trump brain drain as administration wages war on academia and research"
+      },
+      "reason": "No field value change; the literal quote fully supports the headline-based description, while absence of policy or relocation detail remains in blockers."
+    },
+    {
+      "amendment_id": "worker-10-amendment-014",
+      "record_id": "entry-2224",
+      "supersedes_terminal_row": 29,
+      "change": {
+        "path": "evidence_map[4].basis_quote",
+        "old_value": "Hours later, Iran’s foreign ministry said the uranium would not be transferred anywhere and that sending it to the United States was not an option.",
+        "new_value": "In a CBS phone interview on April 17, 2026, Trump said Iran had agreed to everything, including working with the United States to remove enriched uranium. He said no U.S. ground troops would be involved. Hours later, Iran’s foreign ministry said the uranium would not be transferred anywhere and that sending it to the United States was not an option."
+      },
+      "reason": "The outcome combines Trump's statement and Iran's denial, so the literal evidence quote now contains both sides of the contradiction."
+    },
+    {
+      "amendment_id": "worker-10-amendment-015",
+      "record_id": "entry-3142",
+      "supersedes_terminal_row": 41,
+      "change": {
+        "path": "evidence_map[6].basis_quote",
+        "old_value": "The documents described an investigation, not a proven crime or established sale.",
+        "new_value": "On December 1, 2020, newly unsealed court documents disclosed a Justice Department investigation into a possible scheme involving the sale of presidential pardons. Prosecutors were examining whether someone connected to Trump’s closest advisers had sought to funnel money to the White House or a related political committee in exchange for a pardon. The documents described an investigation, not a proven crime or established sale."
+      },
+      "reason": "Expanded the literal quote so the outcome mapping supports both the investigation and its unresolved status."
+    },
+    {
+      "amendment_id": "worker-10-amendment-016",
+      "record_id": "entry-3955",
+      "supersedes_terminal_row": 49,
+      "change": {
+        "path": "evidence_map[7].basis_quote",
+        "old_value": "The report framed it as a response to concerns about the U.S. political direction, not a termination of intelligence cooperation.",
+        "new_value": "In mid-October 2025, Dutch intelligence services reportedly reduced the information they shared with U.S. counterparts, citing concerns about Donald Trump’s increasingly autocratic course. DutchNews.nl described the move as an unusual break with decades of practice between NATO partners. The report does not specify which information streams were affected, how much sharing changed, or whether the decision was temporary. The report framed it as a response to concerns about the U.S. political direction, not a termination of intelligence cooperation."
+      },
+      "reason": "Expanded the literal quote to support both the reported reduction and the qualification that cooperation was not terminated."
+    },
+    {
+      "amendment_id": "worker-10-amendment-017",
+      "record_id": "entry-4173",
+      "supersedes_terminal_row": 55,
+      "change": {
+        "paths": {
+          "insight_facts.outcome": {
+            "old_value": "The UAE informed the IAEA that off-site power was restored to a Barakah unit after a drone strike.",
+            "new_value": "The UAE informed the IAEA that off-site power was restored to a unit after a drone strike."
+          },
+          "evidence_map[4].basis_quote": {
+            "old_value": "off-site power was restored to a unit",
+            "new_value": "UAE restores power to Barakah nuclear plant after drone strike, says IAEA – as it happened"
+          },
+          "evidence_map[6].value": {
+            "old_value": "The UAE informed the IAEA that off-site power was restored to a Barakah unit after a drone strike.",
+            "new_value": "The UAE informed the IAEA that off-site power was restored to a unit after a drone strike."
+          }
+        }
+      },
+      "reason": "Kept the plant name tied to the supplied title and made the outcome quote rely only on the supplied source-summary text."
+    }
+  ],
+  "amendment_ids": [
+    "worker-10-amendment-001",
+    "worker-10-amendment-002",
+    "worker-10-amendment-003",
+    "worker-10-amendment-004",
+    "worker-10-amendment-005",
+    "worker-10-amendment-006",
+    "worker-10-amendment-007",
+    "worker-10-amendment-008",
+    "worker-10-amendment-009",
+    "worker-10-amendment-010",
+    "worker-10-amendment-011",
+    "worker-10-amendment-012",
+    "worker-10-amendment-013",
+    "worker-10-amendment-014",
+    "worker-10-amendment-015",
+    "worker-10-amendment-016",
+    "worker-10-amendment-017",
+    "worker-10-amendment-018",
+    "worker-10-amendment-019",
+    "worker-10-amendment-020",
+    "worker-10-amendment-021"
+  ],
+  "completion_status": "complete",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-10-final-qa.json",
+  "final_terminal_rows": 93,
+  "final_status_counts": {
+    "complete": 74,
+    "insufficient": 19
+  },
+  "final_amendment_count": 21,
+  "final_validation": {
+    "passed": true,
+    "errors": 0,
+    "exact_assigned_set": true,
+    "literal_quote_check": true,
+    "non_unknown_evidence_coverage": true
+  }
+}
