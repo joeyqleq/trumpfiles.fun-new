@@ -1,0 +1,463 @@
+{
+  "artifact_type": "worker-03-exact-set-qa",
+  "worker": 3,
+  "created_at_utc": "2026-10-04T10:48:56.501703+00:00",
+  "source_branch": "codex/continuous-finish-2026-10-04",
+  "source_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-03-input.jsonl",
+  "input_sha256": "cfd589dce644893b8ea2532de1ccb62f08951c394706cb8c8514130318d2123b",
+  "working_branch": "ls/3-trump-files-source118-review-03-of-12-mwSm",
+  "expected_ids": [
+    "entry-176",
+    "entry-266",
+    "entry-581",
+    "entry-776",
+    "entry-853",
+    "entry-985",
+    "entry-1771",
+    "entry-2332",
+    "entry-2458",
+    "entry-2571",
+    "entry-3009",
+    "entry-3735",
+    "entry-4144",
+    "entry-4692",
+    "entry-5541",
+    "entry-6146",
+    "entry-6330"
+  ],
+  "observed_terminal_ids": [
+    "entry-176",
+    "entry-266",
+    "entry-581",
+    "entry-776",
+    "entry-853",
+    "entry-985",
+    "entry-1771",
+    "entry-2332",
+    "entry-2458",
+    "entry-2571",
+    "entry-3009",
+    "entry-3735",
+    "entry-4144",
+    "entry-4692",
+    "entry-5541",
+    "entry-6146",
+    "entry-6330"
+  ],
+  "exact_set_match": true,
+  "row_count": 17,
+  "unique_record_id_count": 17,
+  "status_counts": {
+    "pass": 8,
+    "hold": 8,
+    "exclusion_candidate": 1
+  },
+  "effective_rows_apply_amendments_in_append_order": true,
+  "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-03-amendments.jsonl",
+  "amendment_count": 32,
+  "amendments_sha256": "08ee6508463c11839f63e0627aaa84791417ab4c8f8e2ffe9a2168e2422dd663",
+  "amendment_summary": [
+    {
+      "record_id": "entry-176",
+      "fields": [
+        "description_long"
+      ]
+    },
+    {
+      "record_id": "entry-2332",
+      "fields": [
+        "description_long"
+      ]
+    },
+    {
+      "record_id": "entry-2458",
+      "fields": [
+        "description_medium"
+      ]
+    },
+    {
+      "record_id": "entry-2571",
+      "fields": [
+        "description_medium"
+      ]
+    },
+    {
+      "record_id": "entry-266",
+      "fields": [
+        "description_medium",
+        "source_provenance[1].commit"
+      ]
+    },
+    {
+      "record_id": "entry-3009",
+      "fields": [
+        "blockers",
+        "description_long",
+        "rationale",
+        "status"
+      ]
+    },
+    {
+      "record_id": "entry-3735",
+      "fields": [
+        "description_long",
+        "description_medium"
+      ]
+    },
+    {
+      "record_id": "entry-4144",
+      "fields": [
+        "title"
+      ]
+    },
+    {
+      "record_id": "entry-4692",
+      "fields": [
+        "description_long"
+      ]
+    },
+    {
+      "record_id": "entry-5541",
+      "fields": [
+        "description_short"
+      ]
+    },
+    {
+      "record_id": "entry-581",
+      "fields": [
+        "description_long",
+        "description_medium"
+      ]
+    },
+    {
+      "record_id": "entry-6146",
+      "fields": [
+        "description_long"
+      ]
+    },
+    {
+      "record_id": "entry-6330",
+      "fields": [
+        "description_long"
+      ]
+    },
+    {
+      "record_id": "entry-776",
+      "fields": [
+        "description_long"
+      ]
+    },
+    {
+      "record_id": "entry-853",
+      "fields": [
+        "description_medium"
+      ]
+    },
+    {
+      "record_id": "entry-985",
+      "fields": [
+        "description_long",
+        "source_provenance[2].path"
+      ]
+    }
+  ],
+  "per_key_checks": [
+    {
+      "record_id": "entry-176",
+      "status": "pass",
+      "title_chars": 71,
+      "short_chars": 127,
+      "medium_words": 50,
+      "long_words": 143,
+      "source_url_count": 1,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": []
+    },
+    {
+      "record_id": "entry-266",
+      "status": "hold",
+      "title_chars": 55,
+      "short_chars": 176,
+      "medium_words": 51,
+      "long_words": 0,
+      "source_url_count": 4,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The current draft switches from the frozen claim about federal criminal penalties for parents to state education restrictions, changing the event identity. The supplied sources identify no matching federal statute, prosecution, or child-welfare case.",
+        "The required 140–300-word description_long is absent from the pinned proposal."
+      ]
+    },
+    {
+      "record_id": "entry-581",
+      "status": "pass",
+      "title_chars": 53,
+      "short_chars": 53,
+      "medium_words": 59,
+      "long_words": 144,
+      "source_url_count": 1,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": []
+    },
+    {
+      "record_id": "entry-776",
+      "status": "pass",
+      "title_chars": 71,
+      "short_chars": 151,
+      "medium_words": 65,
+      "long_words": 148,
+      "source_url_count": 2,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": []
+    },
+    {
+      "record_id": "entry-853",
+      "status": "hold",
+      "title_chars": 64,
+      "short_chars": 107,
+      "medium_words": 55,
+      "long_words": 0,
+      "source_url_count": 1,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The DOJ index search did not identify Joseph Frederick, but absence from the index is not evidence that no commutation occurred. No entry-specific warrant or reliable case record establishes the identity, clemency action, date, or terms."
+      ]
+    },
+    {
+      "record_id": "entry-985",
+      "status": "pass",
+      "title_chars": 70,
+      "short_chars": 123,
+      "medium_words": 69,
+      "long_words": 150,
+      "source_url_count": 2,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": []
+    },
+    {
+      "record_id": "entry-1771",
+      "status": "pass",
+      "title_chars": 62,
+      "short_chars": 115,
+      "medium_words": 62,
+      "long_words": 143,
+      "source_url_count": 1,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": []
+    },
+    {
+      "record_id": "entry-2332",
+      "status": "hold",
+      "title_chars": 60,
+      "short_chars": 108,
+      "medium_words": 57,
+      "long_words": 147,
+      "source_url_count": 1,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The narrower proposal concerns a postwar Foreign Office matter and has no source linking the event to Trump, a family member, or an associate. This changes the event identity represented by the Trump-related record.",
+        "The underlying Maxwell archival file and findings were not retrieved; the reported 1959 note does not prove espionage or a dated investigation."
+      ]
+    },
+    {
+      "record_id": "entry-2458",
+      "status": "hold",
+      "title_chars": 51,
+      "short_chars": 51,
+      "medium_words": 44,
+      "long_words": 0,
+      "source_url_count": 2,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The pinned proposal has no description_long, below the required 140–300 words. The source review reports the New York Times article inaccessible and the TrumpFile page without readable text; the account’s filing details and arguments therefore remain incompletely sourced.",
+        "The proposal retains the Government Corruption / Transparency Obstruction classification, but the reviewed material supports a lawsuit and attributed allegations, not corruption or obstruction."
+      ]
+    },
+    {
+      "record_id": "entry-2571",
+      "status": "hold",
+      "title_chars": 44,
+      "short_chars": 84,
+      "medium_words": 32,
+      "long_words": 0,
+      "source_url_count": 2,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The record is in a Trump-specific collection, but the sources document Netanyahu’s government formation only. A separate 2017 report about Trump, Netanyahu, and Kushner does not tie them to this December 2022 event; the requested Trump/family/associate connection is missing."
+      ]
+    },
+    {
+      "record_id": "entry-3009",
+      "status": "hold",
+      "title_chars": 68,
+      "short_chars": 90,
+      "medium_words": 62,
+      "long_words": 133,
+      "source_url_count": 3,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The sources establish the CDC page’s posting and removal but do not connect this specific event to Trump, a family member, or an associate. Separate allegations about earlier testing guidance do not establish involvement in this September page change."
+      ]
+    },
+    {
+      "record_id": "entry-3735",
+      "status": "pass",
+      "title_chars": 62,
+      "short_chars": 120,
+      "medium_words": 71,
+      "long_words": 156,
+      "source_url_count": 6,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": []
+    },
+    {
+      "record_id": "entry-4144",
+      "status": "exclusion_candidate",
+      "title_chars": 62,
+      "short_chars": 0,
+      "medium_words": 0,
+      "long_words": 0,
+      "source_url_count": 1,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The source documents no Trump event or direct connection; the single mention is hypothetical and incidental."
+      ]
+    },
+    {
+      "record_id": "entry-4692",
+      "status": "hold",
+      "title_chars": 88,
+      "short_chars": 126,
+      "medium_words": 73,
+      "long_words": 151,
+      "source_url_count": 6,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The pinned review HOLD cites the Government Corruption category as an unsupported adverse conclusion because the record establishes a pardon and reported conflict concerns, not a quid pro quo or corruption. Category is outside this normalized description schema, so this terminal review leaves the hold unchanged."
+      ]
+    },
+    {
+      "record_id": "entry-5541",
+      "status": "hold",
+      "title_chars": 56,
+      "short_chars": 86,
+      "medium_words": 68,
+      "long_words": 152,
+      "source_url_count": 2,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": [
+        "The narrower proposal describes New Jersey officials’ January 22 reaction to clemency, a different event from the frozen claim that Trump pardoned corrupt New Jersey politicians. The sources do not say the critics were recipients or show a political exchange."
+      ]
+    },
+    {
+      "record_id": "entry-6146",
+      "status": "pass",
+      "title_chars": 68,
+      "short_chars": 174,
+      "medium_words": 65,
+      "long_words": 163,
+      "source_url_count": 3,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": []
+    },
+    {
+      "record_id": "entry-6330",
+      "status": "pass",
+      "title_chars": 83,
+      "short_chars": 136,
+      "medium_words": 55,
+      "long_words": 147,
+      "source_url_count": 4,
+      "source_fact_map_complete": true,
+      "pinned_reference_match": true,
+      "frozen_original_reference_present": true,
+      "preservation_notes_present": true,
+      "correction_proposal_documented": true,
+      "blockers": []
+    }
+  ],
+  "global_checks": {
+    "all_ids_terminal": true,
+    "all_statuses_allowed": true,
+    "all_rows_proposal_only": true,
+    "pass_length_rules_met": true,
+    "source_urls_exactly_mapped_to_facts": true,
+    "pinned_provenance_matches_raw": true,
+    "frozen_original_provenance_present": true,
+    "prior_non_null_text_preservation_notes_present": true,
+    "correction_proposals_documented": true
+  },
+  "focused_rescues": {
+    "entry-266": "One direct retrieval of the supplied UCLA Williams Institute lead returned HTTP 200 and confirmed it addresses state laws/policies; it did not link them to the frozen federal-parent-criminalization claim, so HOLD remains.",
+    "entry-985": "One direct retrieval of the signed DOJ warrant URL returned HTTP 200 PDF. Text extraction was unavailable; the pinned proposal’s evidence map identifies the warrant’s prison-term scope, and the URL is retained in source_urls."
+  },
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-03-terminal.jsonl",
+  "terminal_sha256": "16e523328c54f89c2adf16ddd9a980d89a65d70d343c60e6e513c3e70664c2f5",
+  "amendment_history_note": "The terminal file remains append-only. Corrections and copy refinements are recorded in the amendments file; later patches to the same field supersede earlier patches in file order. The amendments also correct two provenance details, including the final exact worker-19 commit for entry-266.",
+  "issues": [],
+  "overall": "passed"
+}
