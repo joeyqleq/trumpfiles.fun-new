@@ -110,12 +110,12 @@
       "record_id": "entry-643",
       "status": "pass",
       "title_characters": 83,
-      "short_characters": 148,
+      "short_characters": 138,
       "medium_words": 51,
       "long_words": 142,
       "source_url_count": 1,
       "blocker_count": 0,
-      "amendment_count": 3
+      "amendment_count": 4
     },
     {
       "record_id": "entry-801",
@@ -274,9 +274,9 @@
   ],
   "append_only_history": {
     "base_terminal_rows_appended": 17,
-    "amendment_rows": 14,
+    "amendment_rows": 15,
     "amendments_by_record": {
-      "entry-643": 3,
+      "entry-643": 4,
       "entry-275": 1,
       "entry-801": 1,
       "entry-873": 1,
@@ -290,8 +290,8 @@
       "entry-6356": 1
     },
     "entry_643_initial_short_characters": 182,
-    "entry_643_effective_short_characters": 148,
-    "note": "The initial entry-643 row is retained. Three immutable amendments form a hash-linked chain; the latest row is the effective replacement."
+    "entry_643_effective_short_characters": 138,
+    "note": "The initial entry-643 row is retained. Four immutable amendments form a hash-linked chain; the latest amendment replaces only description_short (138 characters) to resolve the coordinator finding. Earlier preservation and correction notes remain in the chain."
   },
   "focused_source_checks": {
     "entry-643_epa": "HTTP 200; official 2020 rule summary supports the amendments",
@@ -301,11 +301,11 @@
     "entry-3832_bloomberg": "HTTP 403; pinned review had verified the source and URL is retained with attribution",
     "entry-6199_truth_archive": "HTTP 403 in current retrieval; pinned review had read the archive and URL is retained with attribution"
   },
-  "coordinator_issue": "output_missing",
+  "coordinator_issue": "bad_description_short:entry-643",
   "coordinator_issue_resolved": true,
   "canonical_or_neon_writes": false,
   "code_changes": false,
   "pull_request_created": false,
   "terminal_sha256": "d961f765a5fb496e677ffc0c83415691432550856d728eb2a495475fffeb9d07",
-  "amendments_sha256": "bff6ff1263fa6165aba87a294344023a81cc8ff3a9c55fe96ebae968df330b7b"
+  "amendments_sha256": "4915ef788fd7ef2bb6b4cfe6886c66c56039172057ba4b3cf7df8dabf5b9c58f"
 }
