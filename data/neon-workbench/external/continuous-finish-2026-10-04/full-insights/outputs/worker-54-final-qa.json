@@ -1,0 +1,489 @@
+{
+  "job": "full-insights-54",
+  "status": "complete",
+  "source_branch": "codex/full-insights-packets-2026-10-04",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-54-input.jsonl",
+  "work_branch": "ls/6-trump-files-sample100-review-06-of-12-pfm2",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-terminal.jsonl",
+  "checkpoint_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-checkpoint.json",
+  "amendment_paths": [
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-001.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-002.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-003.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-004.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-005.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-006.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-007.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-008.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-009.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-54-amendment-010.jsonl"
+  ],
+  "assigned_record_ids": [
+    "entry-156",
+    "entry-237",
+    "entry-314",
+    "entry-389",
+    "entry-465",
+    "entry-538",
+    "entry-614",
+    "entry-693",
+    "entry-767",
+    "entry-847",
+    "entry-922",
+    "entry-998",
+    "entry-1072",
+    "entry-1147",
+    "entry-1219",
+    "entry-1293",
+    "entry-1365",
+    "entry-1438",
+    "entry-1510",
+    "entry-1582",
+    "entry-1657",
+    "entry-1754",
+    "entry-1831",
+    "entry-1905",
+    "entry-1977",
+    "entry-2050",
+    "entry-2124",
+    "entry-2196",
+    "entry-2268",
+    "entry-2346",
+    "entry-2425",
+    "entry-2505",
+    "entry-2585",
+    "entry-2665",
+    "entry-2744",
+    "entry-2816",
+    "entry-2894",
+    "entry-2966",
+    "entry-3039",
+    "entry-3112",
+    "entry-3188",
+    "entry-3263",
+    "entry-3339",
+    "entry-3417",
+    "entry-3492",
+    "entry-3565",
+    "entry-3637",
+    "entry-3709",
+    "entry-3782",
+    "entry-3854",
+    "entry-3927",
+    "entry-3999",
+    "entry-4072",
+    "entry-4145",
+    "entry-4221",
+    "entry-4297",
+    "entry-4378",
+    "entry-4452",
+    "entry-4526",
+    "entry-4600",
+    "entry-4673",
+    "entry-4750",
+    "entry-4823",
+    "entry-4897",
+    "entry-4986",
+    "entry-5058",
+    "entry-5131",
+    "entry-5208",
+    "entry-5284",
+    "entry-5363",
+    "entry-5437",
+    "entry-5511",
+    "entry-5586",
+    "entry-5660",
+    "entry-5740",
+    "entry-5829",
+    "entry-5910",
+    "entry-5985",
+    "entry-6058",
+    "entry-6132",
+    "entry-6210",
+    "entry-6287",
+    "entry-6365",
+    "entry-6467",
+    "entry-6551",
+    "entry-6654",
+    "entry-6742",
+    "entry-6870",
+    "entry-6985",
+    "entry-7062",
+    "entry-7167",
+    "fresh-20260916-eric-dominari-13g"
+  ],
+  "input_record_count": 92,
+  "terminal_record_count": 92,
+  "effective_record_count": 92,
+  "status_counts": {
+    "complete": 90,
+    "insufficient": 2
+  },
+  "checks": {
+    "exact_assigned_set": true,
+    "no_duplicate_terminal_ids": true,
+    "required_output_schema": true,
+    "all_non_unknown_core_values_evidence_mapped": true,
+    "all_evidence_quotes_literal_substrings_of_supplied_record_text": true,
+    "source_urls_limited_to_supplied_mappings": true,
+    "quantities_empty": true,
+    "relations_empty": true,
+    "no_unapproved_candidate_extensions": true,
+    "source_pages_not_independently_checked": true,
+    "no_web_search_or_new_scoring": true,
+    "no_canonical_neon_or_code_edits": true,
+    "output_missing_resolved": true,
+    "no_pull_request_created": true
+  },
+  "saved_batches": [
+    [
+      "entry-156",
+      "entry-237"
+    ],
+    [
+      "entry-314",
+      "entry-389"
+    ],
+    [
+      "entry-465",
+      "entry-538"
+    ],
+    [
+      "entry-614",
+      "entry-693"
+    ],
+    [
+      "entry-847",
+      "entry-922"
+    ],
+    [
+      "entry-998",
+      "entry-1072"
+    ],
+    [
+      "entry-1147",
+      "entry-1219"
+    ],
+    [
+      "entry-767",
+      "entry-1293"
+    ],
+    [
+      "entry-1365",
+      "entry-1438"
+    ],
+    [
+      "entry-1510",
+      "entry-1582"
+    ],
+    [
+      "entry-1657",
+      "entry-1754"
+    ],
+    [
+      "entry-1831",
+      "entry-1905"
+    ],
+    [
+      "entry-1977",
+      "entry-2050"
+    ],
+    [
+      "entry-2124",
+      "entry-2196"
+    ],
+    [
+      "entry-2268",
+      "entry-2346"
+    ],
+    [
+      "entry-2425",
+      "entry-2505"
+    ],
+    [
+      "entry-2585",
+      "entry-2665"
+    ],
+    [
+      "entry-2744",
+      "entry-2816"
+    ],
+    [
+      "entry-2894",
+      "entry-2966"
+    ],
+    [
+      "entry-3039",
+      "entry-3112"
+    ],
+    [
+      "entry-3188",
+      "entry-3263"
+    ],
+    [
+      "entry-3339",
+      "entry-3417"
+    ],
+    [
+      "entry-3492",
+      "entry-3565"
+    ],
+    [
+      "entry-3637",
+      "entry-3709"
+    ],
+    [
+      "entry-3782",
+      "entry-3854"
+    ],
+    [
+      "entry-3927",
+      "entry-3999"
+    ],
+    [
+      "entry-4072",
+      "entry-4145"
+    ],
+    [
+      "entry-4221",
+      "entry-4297"
+    ],
+    [
+      "entry-4378",
+      "entry-4452"
+    ],
+    [
+      "entry-4526",
+      "entry-4600"
+    ],
+    [
+      "entry-4673",
+      "entry-4750"
+    ],
+    [
+      "entry-4823",
+      "entry-4897"
+    ],
+    [
+      "entry-4986",
+      "entry-5058"
+    ],
+    [
+      "entry-5131",
+      "entry-5208"
+    ],
+    [
+      "entry-5284",
+      "entry-5363"
+    ],
+    [
+      "entry-5437",
+      "entry-5511"
+    ],
+    [
+      "entry-5586",
+      "entry-5660"
+    ],
+    [
+      "entry-5740",
+      "entry-5829"
+    ],
+    [
+      "entry-5910",
+      "entry-5985"
+    ],
+    [
+      "entry-6058",
+      "entry-6132"
+    ],
+    [
+      "entry-6210",
+      "entry-6287"
+    ],
+    [
+      "entry-6365",
+      "entry-6467"
+    ],
+    [
+      "entry-6551",
+      "entry-6654"
+    ],
+    [
+      "entry-6742",
+      "entry-6870"
+    ],
+    [
+      "entry-6985",
+      "entry-7062"
+    ],
+    [
+      "entry-7167",
+      "fresh-20260916-eric-dominari-13g"
+    ]
+  ],
+  "amendment_count": 10,
+  "amendments": [
+    {
+      "amendment_id": "worker-54-amendment-001",
+      "record_id": "entry-1438",
+      "file": "worker-54-amendment-001.jsonl",
+      "reason": "The original outcome paraphrase claimed confidence was lower than earlier measurements, but its cited quote only said the poll shifted attention toward confidence in democratic guardrails. The corrected outcome states only the supported poll finding."
+    },
+    {
+      "amendment_id": "worker-54-amendment-002",
+      "record_id": "entry-998",
+      "file": "worker-54-amendment-002.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    },
+    {
+      "amendment_id": "worker-54-amendment-003",
+      "record_id": "entry-5985",
+      "file": "worker-54-amendment-003.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    },
+    {
+      "amendment_id": "worker-54-amendment-004",
+      "record_id": "entry-2816",
+      "file": "worker-54-amendment-004.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    },
+    {
+      "amendment_id": "worker-54-amendment-005",
+      "record_id": "entry-3565",
+      "file": "worker-54-amendment-005.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    },
+    {
+      "amendment_id": "worker-54-amendment-006",
+      "record_id": "entry-4452",
+      "file": "worker-54-amendment-006.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    },
+    {
+      "amendment_id": "worker-54-amendment-007",
+      "record_id": "entry-4600",
+      "file": "worker-54-amendment-007.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    },
+    {
+      "amendment_id": "worker-54-amendment-008",
+      "record_id": "entry-5058",
+      "file": "worker-54-amendment-008.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    },
+    {
+      "amendment_id": "worker-54-amendment-009",
+      "record_id": "entry-6210",
+      "file": "worker-54-amendment-009.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    },
+    {
+      "amendment_id": "worker-54-amendment-010",
+      "record_id": "entry-6742",
+      "file": "worker-54-amendment-010.jsonl",
+      "reason": "Narrow the outcome to the fact directly supported by its cited literal quote; the original terminal row is preserved unchanged."
+    }
+  ],
+  "blockers_record_ids": [
+    "entry-1072",
+    "entry-1147",
+    "entry-1219",
+    "entry-1293",
+    "entry-1365",
+    "entry-1438",
+    "entry-1510",
+    "entry-156",
+    "entry-1582",
+    "entry-1657",
+    "entry-1754",
+    "entry-1831",
+    "entry-1905",
+    "entry-1977",
+    "entry-2050",
+    "entry-2124",
+    "entry-2196",
+    "entry-2268",
+    "entry-2346",
+    "entry-237",
+    "entry-2425",
+    "entry-2505",
+    "entry-2585",
+    "entry-2665",
+    "entry-2744",
+    "entry-2816",
+    "entry-2894",
+    "entry-2966",
+    "entry-3039",
+    "entry-3112",
+    "entry-314",
+    "entry-3188",
+    "entry-3263",
+    "entry-3339",
+    "entry-3417",
+    "entry-3492",
+    "entry-3565",
+    "entry-3637",
+    "entry-3709",
+    "entry-3782",
+    "entry-3854",
+    "entry-389",
+    "entry-3927",
+    "entry-3999",
+    "entry-4072",
+    "entry-4145",
+    "entry-4221",
+    "entry-4297",
+    "entry-4378",
+    "entry-4452",
+    "entry-4526",
+    "entry-4600",
+    "entry-465",
+    "entry-4673",
+    "entry-4750",
+    "entry-4823",
+    "entry-4897",
+    "entry-4986",
+    "entry-5058",
+    "entry-5131",
+    "entry-5208",
+    "entry-5284",
+    "entry-5363",
+    "entry-538",
+    "entry-5437",
+    "entry-5511",
+    "entry-5586",
+    "entry-5660",
+    "entry-5740",
+    "entry-5829",
+    "entry-5910",
+    "entry-5985",
+    "entry-6058",
+    "entry-6132",
+    "entry-614",
+    "entry-6210",
+    "entry-6287",
+    "entry-6365",
+    "entry-6467",
+    "entry-6551",
+    "entry-6654",
+    "entry-6742",
+    "entry-6870",
+    "entry-693",
+    "entry-6985",
+    "entry-7062",
+    "entry-7167",
+    "entry-767",
+    "entry-847",
+    "entry-998",
+    "fresh-20260916-eric-dominari-13g"
+  ],
+  "limitations": [
+    "Source pages were not opened or independently verified; citations/URLs are only the mappings supplied with the frozen packet.",
+    "Two records are insufficient because their supplied text does not identify a discrete event: entry-1219 and entry-1754.",
+    "Contradictions, allegations, forecast status, and source limitations are documented in the corresponding row blockers.",
+    "Project code checks were skipped because no code changed."
+  ],
+  "pull_request": "None; explicitly excluded by the task.",
+  "checked_at": "2026-10-04T12:10:33+00:00"
+}
