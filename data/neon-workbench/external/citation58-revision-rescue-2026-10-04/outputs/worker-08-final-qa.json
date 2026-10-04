@@ -1,0 +1,470 @@
+{
+  "artifact": "worker-08-final-qa",
+  "task": "citation58-revision-rescue-2026-10-04",
+  "status": "complete_with_one_explicit_field_hold",
+  "audit_date_utc": "2026-10-04",
+  "branch": "ls/8-trump-files-sample100-review-08-of-12-Qhy0",
+  "pre_audit_head": "af11d551f5ec701ba1b0abd7aa8198850fdba7f3",
+  "terminal_set": {
+    "expected_ids": [
+      "entry-211",
+      "entry-293",
+      "entry-651",
+      "entry-996",
+      "entry-1782",
+      "entry-2930",
+      "entry-3722",
+      "entry-4054",
+      "entry-4692",
+      "entry-5565",
+      "entry-6155",
+      "entry-6340"
+    ],
+    "saved_count": 12,
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "exact_order_match": true,
+    "terminal_batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-08-batch-rescue-001.jsonl",
+    "terminal_batch_sha256": "68b94430a551510932f691626ec5ba1e48cc1e94770bb2df54b5ec10d2d2a54c"
+  },
+  "checkpoints": {
+    "files": [
+      {
+        "file": "worker-08-checkpoint-06.json",
+        "checkpoint_after_record": 6,
+        "processed_count": 6,
+        "processed_keys": [
+          "entry-211",
+          "entry-293",
+          "entry-651",
+          "entry-996",
+          "entry-1782",
+          "entry-2930"
+        ],
+        "terminal_ids_counted": false
+      },
+      {
+        "file": "worker-08-checkpoint-12.json",
+        "checkpoint_after_record": 12,
+        "processed_count": 12,
+        "processed_keys": [
+          "entry-211",
+          "entry-293",
+          "entry-651",
+          "entry-996",
+          "entry-1782",
+          "entry-2930",
+          "entry-3722",
+          "entry-4054",
+          "entry-4692",
+          "entry-5565",
+          "entry-6155",
+          "entry-6340"
+        ],
+        "terminal_ids_counted": false
+      }
+    ],
+    "kept_separate_from_terminal_ids": true
+  },
+  "provenance": {
+    "packet_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+    "packet_input_file": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-08-input.jsonl",
+    "packet_input_sha256": "42400b29493c02465990e69c739c9d06f08e508ea7bbbd7c13180f9ab4d8aab9",
+    "coordinator_branch": "ls/7-trump-final-corrections-account2-worker1-slYA",
+    "coordinator_commit": "eab779ec075174445237101c2fdf0e72d771d051",
+    "coordinator_source_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+    "prior_worker08_citation_qa": [
+      "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-08-citation-20261003-batch-001.jsonl",
+      "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-08-citation-20261003-batch-002.jsonl",
+      "data/neon-workbench/external/normalized-release-qa-2026-10-04/account5/worker-08-normalized.jsonl"
+    ]
+  },
+  "source_url_recheck": {
+    "method": "Firecrawl batch scrape of the exact URLs in each terminal row; source excerpts manually compared with mapped claims",
+    "job_id": "01a1058d-b963-714b-ace5-eef2386ab6b3",
+    "url_count": 19,
+    "http_200_count": 19,
+    "failed_urls": [],
+    "all_verified_urls_have_exact_fact_mappings": true,
+    "per_key_results": [
+      {
+        "key": "entry-211",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 1,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.npr.org/2025/04/22/nx-s1-5372334/harvard-professor-offers-a-grim-assessment-of-american-democracy-under-trump",
+            "http_status": 200,
+            "mapped_support": "Transcript dated April 22, 2025, identifies Levitsky as a Harvard government professor; he says the “most likely outcome” is a “slide into” competitive authoritarianism, describes those regimes, and quotes the coauthored Foreign Affairs forecast.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 156,
+          "medium_words": 47,
+          "long_words": 151
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-293",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 1,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.cnn.com/2015/07/31/politics/trump-mob-mafia",
+            "http_status": 200,
+            "mapped_support": "CNN says Trump used S&A Concrete for Trump Plaza condos; it attributes identification of Salerno and Castellano as controllers to federal court records cited by Wayne Barrett, and reports that the 1979 and 1981 investigations led to no criminal charges.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 174,
+          "medium_words": 50,
+          "long_words": 145
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-651",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 2,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.epa.gov/ingredients-used-pesticide-products/order-denying-petition-revoke-all-tolerances-pesticide",
+            "http_status": 200,
+            "mapped_support": "EPA’s accessible page lists the order by its denial title and links a March 2017 document. The linked PDF itself timed out in the direct scrape and is not represented as text-read.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          },
+          {
+            "url": "https://www.epa.gov/newsreleases/epa-takes-next-step-keep-chlorpyrifos-out-food-protecting-farmworkers-and-childrens",
+            "http_status": 200,
+            "mapped_support": "EPA identifies PANNA/NRDC’s petition; says it revoked food tolerances by an August 2021 final rule and denied objections/hearing requests in February 2022.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 123,
+          "medium_words": 61,
+          "long_words": 152
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-996",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 2,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021",
+            "http_status": 200,
+            "mapped_support": "DOJ table lists Cruz under January 19, 2021, and states the original sentence and offense.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          },
+          {
+            "url": "https://www.justice.gov/pardon/page/file/1358316/dl?inline=",
+            "http_status": 200,
+            "mapped_support": "Cruz-specific warrant commutes the prison term to time served, retains fine/assessment/supervised-release terms, and directs BOP to effect immediate release after receipt; it does not establish the physical release date.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 142,
+          "medium_words": 55,
+          "long_words": 144
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-1782",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 1,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://apnews.com/article/9290fcaad1cb6fcb1cbc1befabc01994",
+            "http_status": 200,
+            "mapped_support": "AP page states at least 16 files disappeared from the DOJ webpage less than a day after posting; says they were available Friday and not accessible Saturday, DOJ did not answer specific questions, and quotes its general review/redaction statement.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 164,
+          "medium_words": 58,
+          "long_words": 152
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-2930",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 2,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://democrats-intelligence.house.gov/news/documentsingle.aspx?DocumentID=1054",
+            "http_status": 200,
+            "mapped_support": "House Intelligence Committee release confirms Murphy filed the complaint with DHS OIG on September 8, 2020.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          },
+          {
+            "url": "https://courthousenews.com/wp-content/uploads/2020/09/murphy_wb_dhs_oig_complaint9.8.20.pdf",
+            "http_status": 200,
+            "mapped_support": "The complaint text contains Murphy’s allegations about requested changes to threat assessments and reprisal; these remain the complainant’s allegations, not findings.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 146,
+          "medium_words": 55,
+          "long_words": 154
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-3722",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 1,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.notus.org/trump-white-house/trump-doge-cuts-middle-eastern-oil-gas-crises",
+            "http_status": 200,
+            "mapped_support": "NOTUS reports July 2025 RIF layoffs affecting potential Strait of Hormuz scenario planning, Middle Eastern company relationships and foreign energy-bureau contacts, attributing its account to former employees.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 163,
+          "medium_words": 56,
+          "long_words": 140
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-4054",
+        "terminal_disposition": "revision_drafted_with_field_hold",
+        "verified_url_count": 1,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.cbsnews.com/news/us-prepares-new-military-strikes-against-iran/",
+            "http_status": 200,
+            "mapped_support": "CBS report dated May 22, 2026, cites sources with direct knowledge of planning, says diplomacy continued, and reports no final strike decision by Friday afternoon.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 160,
+          "medium_words": 52,
+          "long_words": null
+        },
+        "held_fields": [
+          "long"
+        ],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-4692",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 3,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.justice.gov/pardon/clemency-grants-president-donald-j-trump-2025-present",
+            "http_status": 200,
+            "mapped_support": "DOJ register lists Zhao’s October 21, 2025 pardon, district, sentence and offense.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          },
+          {
+            "url": "https://www.justice.gov/pardon/media/1416576/dl?inline=",
+            "http_status": 200,
+            "mapped_support": "Signed DOJ warrant identifies Changpeng Zhao and is dated October 21, 2025.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          },
+          {
+            "url": "https://www.cnn.com/2025/10/23/politics/binance-founder-trump-pardon",
+            "http_status": 200,
+            "mapped_support": "CNN reports the October 23 public announcement and describes Binance/World Liberty Financial business links and conflict concerns; it does not establish a quid pro quo.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 144,
+          "medium_words": 60,
+          "long_words": 150
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-5565",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 2,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://clerk.house.gov/Votes/2025145",
+            "http_status": 200,
+            "mapped_support": "House Clerk roll call records H.R. 1 passage on May 22, 2025, by 215–214.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          },
+          {
+            "url": "https://www.cbo.gov/system/files/2025-06/Wyden-Pallone-Neal_Letter_6-4-25.pdf",
+            "http_status": 200,
+            "mapped_support": "CBO letter says House-passed H.R. 1 would add 10.9 million uninsured in 2034 relative to baseline; 5.1 million of the broader 16.0 million projection is baseline-policy change.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 133,
+          "medium_words": 55,
+          "long_words": 142
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-6155",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 2,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.whitehouse.gov/presidential-actions/2025/05/ending-taxpayer-subsidization-of-biased-media/",
+            "http_status": 200,
+            "mapped_support": "White House page dates EO 14290 May 1, 2025 and gives the funding instructions to agencies and CPB subject to legal limits.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          },
+          {
+            "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.280953/gov.uscourts.dcd.280953.81.0_4.pdf",
+            "http_status": 200,
+            "mapped_support": "March 31, 2026 court opinion says Section 3(a) is unconstitutional and enjoins federal agency defendants from implementing that section.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 178,
+          "medium_words": 56,
+          "long_words": 151
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      },
+      {
+        "key": "entry-6340",
+        "terminal_disposition": "revision_drafted",
+        "verified_url_count": 1,
+        "source_url_to_fact_support": [
+          {
+            "url": "https://www.cnbc.com/2025/05/22/top-trump-holders-head-to-exclusive-crypto-dinner-with-president.html",
+            "http_status": 200,
+            "mapped_support": "CNBC reports the May contest drew an estimated $148 million in global purchases, citing Inca Digital, and that top-ranked wallets gained direct access to the president; wallet location analysis is not nationality evidence.",
+            "access_note": "Firecrawl scrape returned HTTP 200; the cited passage was reviewed."
+          }
+        ],
+        "copy_lengths": {
+          "short_characters": 141,
+          "medium_words": 51,
+          "long_words": 155
+        },
+        "held_fields": [],
+        "nonfabrication_result": "Copy stays within mapped source facts; unsupported inferences are expressly excluded or qualified."
+      }
+    ],
+    "limitation": "The linked EPA 2017 order PDF was not listed as a verified URL and was not read; the accessible EPA landing page itself states that the order denies PANNA/NRDC’s petition and links the March 2017 attachment."
+  },
+  "copy_bounds": {
+    "short_max_characters": 180,
+    "medium_word_range": [
+      45,
+      90
+    ],
+    "long_word_range_if_present": [
+      140,
+      300
+    ],
+    "per_key_lengths": {
+      "entry-211": {
+        "short_characters": 156,
+        "medium_words": 47,
+        "long_words": 151
+      },
+      "entry-293": {
+        "short_characters": 174,
+        "medium_words": 50,
+        "long_words": 145
+      },
+      "entry-651": {
+        "short_characters": 123,
+        "medium_words": 61,
+        "long_words": 152
+      },
+      "entry-996": {
+        "short_characters": 142,
+        "medium_words": 55,
+        "long_words": 144
+      },
+      "entry-1782": {
+        "short_characters": 164,
+        "medium_words": 58,
+        "long_words": 152
+      },
+      "entry-2930": {
+        "short_characters": 146,
+        "medium_words": 55,
+        "long_words": 154
+      },
+      "entry-3722": {
+        "short_characters": 163,
+        "medium_words": 56,
+        "long_words": 140
+      },
+      "entry-4054": {
+        "short_characters": 160,
+        "medium_words": 52,
+        "long_words": null
+      },
+      "entry-4692": {
+        "short_characters": 144,
+        "medium_words": 60,
+        "long_words": 150
+      },
+      "entry-5565": {
+        "short_characters": 133,
+        "medium_words": 55,
+        "long_words": 142
+      },
+      "entry-6155": {
+        "short_characters": 178,
+        "medium_words": 56,
+        "long_words": 151
+      },
+      "entry-6340": {
+        "short_characters": 141,
+        "medium_words": 51,
+        "long_words": 155
+      }
+    }
+  },
+  "blocking_ids": [
+    {
+      "key": "entry-4054",
+      "field": "long",
+      "reason": "The accessible CBS report supports the date, possible preparations, continued diplomacy, and no-final-decision qualification. A 140-word long version would require repetition or additional event details not supported by this source check."
+    }
+  ],
+  "disposition_counts": {
+    "revision_drafted": 11,
+    "revision_drafted_with_field_hold": 1
+  },
+  "scope_attestation": {
+    "editorial_approval": false,
+    "production_import_authorization": false,
+    "live_neon_calls": 0,
+    "canonical_edits": 0,
+    "other_worker_edits": 0,
+    "pr_opened": false
+  }
+}
