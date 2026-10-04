@@ -1,0 +1,67 @@
+{
+  "job": "held204-06",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-06-input.jsonl",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-06-terminal.jsonl",
+  "assigned_ids": [
+    "entry-203",
+    "entry-293",
+    "entry-651",
+    "entry-804",
+    "entry-878",
+    "entry-1666",
+    "entry-1780",
+    "entry-2343",
+    "entry-2496",
+    "entry-2619",
+    "entry-3212",
+    "entry-3838",
+    "entry-4232",
+    "entry-5334",
+    "entry-5599",
+    "entry-6200",
+    "entry-6395"
+  ],
+  "processed_ids": [
+    "entry-203",
+    "entry-293",
+    "entry-651",
+    "entry-804",
+    "entry-878",
+    "entry-1666",
+    "entry-1780",
+    "entry-2343",
+    "entry-2496",
+    "entry-2619",
+    "entry-3212",
+    "entry-3838",
+    "entry-4232",
+    "entry-5334",
+    "entry-5599",
+    "entry-6200",
+    "entry-6395"
+  ],
+  "processed_count": 17,
+  "missing_ids": [],
+  "last_batch": [
+    "entry-6200",
+    "entry-6395"
+  ],
+  "newly_appended_ids": [
+    "entry-6200",
+    "entry-6395"
+  ],
+  "updated_at": "2026-10-04T10:43:09.201265+00:00",
+  "input_sha256": "b246e7fe88b5ccf9500647211c6d97c6c7a032f0300f97e963ad178fffe0b1b0",
+  "exact_set_validated": true,
+  "terminal_row_count": 17,
+  "status_counts": {
+    "exclusion_candidate": 1,
+    "hold": 8,
+    "pass": 8
+  },
+  "exact_set_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-06-exact-set-qa.json",
+  "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-06-terminal-amendments.jsonl",
+  "amendment_count": 1,
+  "result": "complete"
+}

@@ -1,0 +1,117 @@
+{
+  "job": "held204-06",
+  "source_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "source_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-06-input.jsonl",
+  "source_sha256": "b246e7fe88b5ccf9500647211c6d97c6c7a032f0300f97e963ad178fffe0b1b0",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-06-terminal.jsonl",
+  "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-06-terminal-amendments.jsonl",
+  "expected_ids": [
+    "entry-203",
+    "entry-293",
+    "entry-651",
+    "entry-804",
+    "entry-878",
+    "entry-1666",
+    "entry-1780",
+    "entry-2343",
+    "entry-2496",
+    "entry-2619",
+    "entry-3212",
+    "entry-3838",
+    "entry-4232",
+    "entry-5334",
+    "entry-5599",
+    "entry-6200",
+    "entry-6395"
+  ],
+  "terminal_ids": [
+    "entry-203",
+    "entry-293",
+    "entry-651",
+    "entry-804",
+    "entry-878",
+    "entry-1666",
+    "entry-1780",
+    "entry-2343",
+    "entry-2496",
+    "entry-2619",
+    "entry-3212",
+    "entry-3838",
+    "entry-4232",
+    "entry-5334",
+    "entry-5599",
+    "entry-6200",
+    "entry-6395"
+  ],
+  "effective_ids": [
+    "entry-203",
+    "entry-293",
+    "entry-651",
+    "entry-804",
+    "entry-878",
+    "entry-1666",
+    "entry-1780",
+    "entry-2343",
+    "entry-2496",
+    "entry-2619",
+    "entry-3212",
+    "entry-3838",
+    "entry-4232",
+    "entry-5334",
+    "entry-5599",
+    "entry-6200",
+    "entry-6395"
+  ],
+  "expected_count": 17,
+  "terminal_row_count": 17,
+  "unique_record_count": 17,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "exclusion_candidate": 1,
+    "hold": 8,
+    "pass": 8
+  },
+  "all_rows_have_required_schema": true,
+  "all_rows_proposal_only": true,
+  "source_urls_match_fact_map_for_every_effective_row": true,
+  "pass_length_checks": true,
+  "pass_ids": [
+    "entry-804",
+    "entry-878",
+    "entry-1666",
+    "entry-2496",
+    "entry-3838",
+    "entry-4232",
+    "entry-5334",
+    "entry-6395"
+  ],
+  "hold_ids": [
+    "entry-203",
+    "entry-293",
+    "entry-651",
+    "entry-1780",
+    "entry-2619",
+    "entry-3212",
+    "entry-5599",
+    "entry-6200"
+  ],
+  "exclusion_candidate_ids": [
+    "entry-2343"
+  ],
+  "amendments_written": [
+    {
+      "amendment_id": "worker-06-amendment-001",
+      "record_id": "entry-5599",
+      "changed_fields": [
+        "source_urls"
+      ]
+    }
+  ],
+  "coordinator_issues_resolved": [
+    "output_missing"
+  ],
+  "verification_scope": "Artifact QA only; data output changed, with no application code or UI changes.",
+  "result": "pass"
+}
