@@ -1,0 +1,292 @@
+{
+  "job_id": "held204-07",
+  "branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+  "source_input": {
+    "branch": "codex/continuous-finish-2026-10-04",
+    "commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-07-input.jsonl"
+  },
+  "assigned_ids": [
+    "entry-210",
+    "entry-352",
+    "entry-654",
+    "entry-811",
+    "entry-884",
+    "entry-1670",
+    "entry-1782",
+    "entry-2349",
+    "entry-2501",
+    "entry-2624",
+    "entry-3273",
+    "entry-3839",
+    "entry-4296",
+    "entry-5374",
+    "entry-5605",
+    "entry-6206",
+    "entry-6531"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-07-terminal.jsonl",
+  "terminal_rows_immutable": 17,
+  "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-07-amendments.jsonl",
+  "amendments": [
+    {
+      "amendment_id": "held204-07-amendment-01",
+      "record_id": "entry-210",
+      "amends_terminal_sha256": "1ec8d59c8e1ca0bcee495b125a6c1094f5af4a9db76cab2030b8f19e172258c9",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-02",
+      "record_id": "entry-352",
+      "amends_terminal_sha256": "094f262efd419c7ab51949682432fcdc76586dea3f9190d08e943ba00f1ead12",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-03",
+      "record_id": "entry-654",
+      "amends_terminal_sha256": "a351b875c5dd4a812249c43d0b4ba4dbb6c92d3b26e0f97fb6de483e8c30cc46",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-04",
+      "record_id": "entry-884",
+      "amends_terminal_sha256": "4f60c1bd470ddd2d7117c5d7cb50944affe90e4d22ae76a402de207f813cdee0",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-05",
+      "record_id": "entry-1670",
+      "amends_terminal_sha256": "4bd894770bb8e07eee415c93665bda6e6aa8f807d8ad390c51971c9aaf9e1507",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-06",
+      "record_id": "entry-1782",
+      "amends_terminal_sha256": "f07290b242a3ff762588c158a39bed64f7155255a65d2f56e12a12640ef69a63",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-07",
+      "record_id": "entry-2349",
+      "amends_terminal_sha256": "2eabc944e03f4cd71f0623dd7ff84acf3fd6290181d80d2da6a2ac7c5da38072",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-08",
+      "record_id": "entry-2501",
+      "amends_terminal_sha256": "32486335f15777ce54e119a0ce6496fc02d56ebd13ef9f68078ccaf5276f7ff8",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-09",
+      "record_id": "entry-2624",
+      "amends_terminal_sha256": "b331f2eb8fd41336862dfb1e3990e30411f7d4a94b7b699d3a2edfb5c530a761",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-10",
+      "record_id": "entry-3273",
+      "amends_terminal_sha256": "8883ffa359b70514d7adbcb42992ee45cab107941ead53051dfbf0b038ecea99",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-11",
+      "record_id": "entry-3839",
+      "amends_terminal_sha256": "9a3c48f4d0a2da71a1b2d796ea8b4ce8a09f6ffa37617fb91a8787bce3bd3532",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-12",
+      "record_id": "entry-4296",
+      "amends_terminal_sha256": "33e4e180ca7a6abf3ef2cbad39fc76074cebbb7c9309985cd7bdfed5ee55e226",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-13",
+      "record_id": "entry-5374",
+      "amends_terminal_sha256": "30bdfa9c94f50f0bec9f2ded63bf825869cd00f781138fb82fe532ece14f1ff6",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-14",
+      "record_id": "entry-6206",
+      "amends_terminal_sha256": "56b20499677e9d1fd474fbbd978045285a180e56dcc31167dedfb1b364b53e97",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-15",
+      "record_id": "entry-6531",
+      "amends_terminal_sha256": "554b765bd76b0d81236cd9dea30568c008dc4603ee0c5b9e03c9c3211752a560",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-16",
+      "record_id": "entry-1670",
+      "amends_terminal_sha256": "4bd894770bb8e07eee415c93665bda6e6aa8f807d8ad390c51971c9aaf9e1507",
+      "prior_amendment_ids": [
+        "held204-07-amendment-05"
+      ]
+    },
+    {
+      "amendment_id": "held204-07-amendment-17",
+      "record_id": "entry-2349",
+      "amends_terminal_sha256": "2eabc944e03f4cd71f0623dd7ff84acf3fd6290181d80d2da6a2ac7c5da38072",
+      "prior_amendment_ids": [
+        "held204-07-amendment-07"
+      ]
+    },
+    {
+      "amendment_id": "held204-07-amendment-18",
+      "record_id": "entry-2624",
+      "amends_terminal_sha256": "b331f2eb8fd41336862dfb1e3990e30411f7d4a94b7b699d3a2edfb5c530a761",
+      "prior_amendment_ids": [
+        "held204-07-amendment-09"
+      ]
+    },
+    {
+      "amendment_id": "held204-07-amendment-19",
+      "record_id": "entry-5374",
+      "amends_terminal_sha256": "30bdfa9c94f50f0bec9f2ded63bf825869cd00f781138fb82fe532ece14f1ff6",
+      "prior_amendment_ids": [
+        "held204-07-amendment-13"
+      ]
+    },
+    {
+      "amendment_id": "held204-07-amendment-20",
+      "record_id": "entry-5605",
+      "amends_terminal_sha256": "886473f08f0c2875dc7da0e955f1ecb8ba736e2f1a9f874049a146837413f559",
+      "prior_amendment_ids": []
+    },
+    {
+      "amendment_id": "held204-07-amendment-21",
+      "record_id": "entry-6206",
+      "amends_terminal_sha256": "56b20499677e9d1fd474fbbd978045285a180e56dcc31167dedfb1b364b53e97",
+      "prior_amendment_ids": [
+        "held204-07-amendment-14"
+      ]
+    }
+  ],
+  "effective_row_count": 17,
+  "exact_set": {
+    "pass": true,
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "duplicate_terminal_ids": []
+  },
+  "status_counts": {
+    "pass": 12,
+    "hold": 5,
+    "exclusion_candidate": 0
+  },
+  "lengths_by_record_id": {
+    "entry-210": {
+      "title_characters": 71,
+      "short_characters": 131,
+      "medium_words": 54,
+      "long_words": 145
+    },
+    "entry-352": {
+      "title_characters": 86,
+      "short_characters": 143,
+      "medium_words": 62,
+      "long_words": 156
+    },
+    "entry-654": {
+      "title_characters": 57,
+      "short_characters": 144,
+      "medium_words": 54,
+      "long_words": 148
+    },
+    "entry-811": {
+      "title_characters": 91,
+      "short_characters": 143,
+      "medium_words": 62,
+      "long_words": 161
+    },
+    "entry-884": {
+      "title_characters": 60,
+      "short_characters": 152,
+      "medium_words": 53,
+      "long_words": 155
+    },
+    "entry-1670": {
+      "title_characters": 64,
+      "short_characters": 94,
+      "medium_words": 46,
+      "long_words": 143
+    },
+    "entry-1782": {
+      "title_characters": 60,
+      "short_characters": 123,
+      "medium_words": 52,
+      "long_words": 152
+    },
+    "entry-2349": {
+      "title_characters": 65,
+      "short_characters": 123,
+      "medium_words": 50,
+      "long_words": 142
+    },
+    "entry-2501": {
+      "title_characters": 73,
+      "short_characters": 87,
+      "medium_words": 51,
+      "long_words": 145
+    },
+    "entry-2624": {
+      "title_characters": 73,
+      "short_characters": 125,
+      "medium_words": 50,
+      "long_words": 145
+    },
+    "entry-3273": {
+      "title_characters": 58,
+      "short_characters": 140,
+      "medium_words": 58,
+      "long_words": 170
+    },
+    "entry-3839": {
+      "title_characters": 57,
+      "short_characters": 129,
+      "medium_words": 56,
+      "long_words": 142
+    },
+    "entry-4296": {
+      "title_characters": 76,
+      "short_characters": 147,
+      "medium_words": 59,
+      "long_words": 156
+    },
+    "entry-5374": {
+      "title_characters": 74,
+      "short_characters": 162,
+      "medium_words": 47,
+      "long_words": 144
+    },
+    "entry-5605": {
+      "title_characters": 80,
+      "short_characters": 165,
+      "medium_words": 60,
+      "long_words": 144
+    },
+    "entry-6206": {
+      "title_characters": 62,
+      "short_characters": 127,
+      "medium_words": 54,
+      "long_words": 144
+    },
+    "entry-6531": {
+      "title_characters": 82,
+      "short_characters": 129,
+      "medium_words": 56,
+      "long_words": 143
+    }
+  },
+  "all_rows_proposal_only": true,
+  "all_rows_preserve_prior_text_and_document_correction": true,
+  "pass_rows_have_source_maps_and_no_blockers": true,
+  "append_history_preserved": true,
+  "amendments_documented": "21 immutable amendments record copy cleanups and the final entry-1670 hold; terminal JSONL rows remain unchanged.",
+  "issue_resolved": "output_missing",
+  "scope": "description rows only; no canonical, Neon, or code edits"
+}
