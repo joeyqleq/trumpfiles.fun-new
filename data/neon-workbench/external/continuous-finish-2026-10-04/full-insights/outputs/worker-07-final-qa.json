@@ -1,0 +1,40 @@
+{
+  "job": "full-insights-07",
+  "validated_at": "2026-10-04T12:02:14Z",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "branch": "ls/7-trump-description-rescue-07-of-12-53-dis-zltS",
+  "result": "pass",
+  "checks": {
+    "assigned_ids_exact_and_unique": true,
+    "packet_row_count": 93,
+    "terminal_row_count": 93,
+    "unique_terminal_record_ids": 93,
+    "checkpoint_processed_count": 93,
+    "statuses": {
+      "complete": 93
+    },
+    "all_rows_proposal_only": true,
+    "core_schema_and_enums_valid": true,
+    "non_unknown_core_values_have_evidence_map_support": true,
+    "literal_quote_matches": 657,
+    "literal_quotes_match_pinned_packet": true,
+    "supplied_source_urls_present_in_packet_when_given": true,
+    "quantities_and_relations_empty_in_all_rows": true,
+    "blocker_count": 73,
+    "rows_with_blockers": 73,
+    "validator_errors": 0
+  },
+  "scope_notes": [
+    "Only approved core insight fields were validated; quantities and relations remain empty.",
+    "Evidence was checked against supplied packet text and mappings only. Supplied source pages were not independently opened or verified.",
+    "No canonical data, Neon data, or application code was changed.",
+    "No PR action was taken per the explicit No PR instruction; pre-existing draft PR #43 was left untouched."
+  ],
+  "artifacts": {
+    "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-07-terminal.jsonl",
+    "terminal_sha256": "1bdd973fe1f9084c4f4f222c2a94149177000cee8254b7c8648485d038824e78",
+    "checkpoint_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/checkpoints/worker-07-checkpoint.json",
+    "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-07-final-qa.json",
+    "pinned_packet_sha256": "f4e712b9e934dfd5407fff90d4db487aead0f1c79b78b974630a2db91fd8bfbb"
+  }
+}
