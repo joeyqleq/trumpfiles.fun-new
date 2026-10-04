@@ -1,0 +1,25 @@
+{
+  "checkpoint": 1,
+  "packet_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+  "packet_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+  "packet_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+  "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+  "batch_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-09-batch-20261004-held204.jsonl",
+  "batch_sha256": "b375c0996990f315467c74b09f4b4f1fc5ab549eb390145a97c59fc3ad411dcd",
+  "completed_count": 3,
+  "completed_ids": [
+    "entry-2349",
+    "entry-2619",
+    "entry-6239"
+  ],
+  "terminal_status_counts": {
+    "hold": 3
+  },
+  "candidate_draft_count": 2,
+  "blocking_ids": [
+    "entry-2349",
+    "entry-2619",
+    "entry-6239"
+  ],
+  "exact_set_validated": true
+}
