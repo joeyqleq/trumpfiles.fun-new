@@ -1,0 +1,80 @@
+{
+  "task": "wave3-held204-finalization-2026-10-04/account4/worker-05",
+  "batch_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-05-batch-held204-finalization-20261004-001.jsonl",
+  "batch_sha256": "265eaa2dbdb91798907620cbe01423c5fe9bb416c0fbb2ba8ffc5387b0573b47",
+  "expected_ids": [
+    "entry-1779",
+    "entry-2562",
+    "entry-5403",
+    "entry-873"
+  ],
+  "actual_ids": [
+    "entry-1779",
+    "entry-2562",
+    "entry-5403",
+    "entry-873"
+  ],
+  "expected_count": 4,
+  "actual_count": 4,
+  "exact_set_pass": true,
+  "duplicate_record_ids": [],
+  "terminal_outcome_counts": {
+    "narrower_proposal_held_for_taxonomy": 2,
+    "hold": 1,
+    "ready_narrower_proposal": 1
+  },
+  "release_ready_count": 1,
+  "blocking_ids": [
+    "entry-1779",
+    "entry-2562",
+    "entry-873"
+  ],
+  "blocking_reasons": [
+    {
+      "key": "entry-1779",
+      "reason": "Candidate only describes The Atlantic editorial retrospective; original causal claim is unsupported and current Election Interference/Democratic Institution Undermining taxonomy does not fit."
+    },
+    {
+      "key": "entry-2562",
+      "reason": "The readable NYT article concerns Epstein and does not mention Trump/Kushner or document influence; the “fluff” label is evaluative and unsupported."
+    },
+    {
+      "key": "entry-873",
+      "reason": "Pardon facts are supported, but the source spells “Otis Gordon” and no source supports Grift / Financial Exploitation or Corrupt Pardons; taxonomy and identity require correction."
+    }
+  ],
+  "description_lengths": {
+    "entry-1779": {
+      "title_chars": 72,
+      "short_chars": 112,
+      "medium_words": 68,
+      "long_words": 168
+    },
+    "entry-5403": {
+      "title_chars": 75,
+      "short_chars": 131,
+      "medium_words": 63,
+      "long_words": 168
+    },
+    "entry-873": {
+      "title_chars": 62,
+      "short_chars": 90,
+      "medium_words": 63,
+      "long_words": 172
+    }
+  },
+  "description_length_validation": "pass",
+  "url_validation": {
+    "urls_checked": 22,
+    "formatting": "pass",
+    "candidate_urls_have_explicit_fact_mapping": true
+  },
+  "duplicate_event_review": {
+    "scope": "the four assigned IDs and drafted proposals",
+    "result": "no duplicate proposed event detected",
+    "basis": "the drafted items describe distinct subjects/timeframes (2019 Atlantic editorial package; 2023 reported planning; 2020 pardon); entry-2562 is held without a replacement event."
+  },
+  "source_provenance": "Packet and coordinator commits match the requested exact SHAs; each worker result pointer was followed to its exact commit, path, row, and blob.",
+  "qa_pass": true,
+  "errors": []
+}
