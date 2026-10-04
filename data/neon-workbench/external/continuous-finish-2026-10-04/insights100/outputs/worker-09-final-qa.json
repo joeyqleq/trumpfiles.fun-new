@@ -1,0 +1,55 @@
+{
+  "worker": 9,
+  "job": "insights100-09",
+  "packet_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-09-input.jsonl",
+  "input_sha256": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08",
+  "reviewed_count": 8,
+  "reviewed_keys": [
+    "entry-9",
+    "entry-21",
+    "entry-33",
+    "entry-47",
+    "entry-59",
+    "entry-73",
+    "entry-85",
+    "entry-97"
+  ],
+  "complete_count": 8,
+  "insufficient_count": 0,
+  "exact_set_pass": true,
+  "terminal_row_count": 8,
+  "schema_pass": true,
+  "evidence_map_coverage_pass": true,
+  "literal_quote_pass": true,
+  "literal_quote_count": 81,
+  "original_quantity_units_pass": true,
+  "amendment_count": 3,
+  "amendments": [
+    {
+      "record_id": "entry-21",
+      "amendment_id": "worker-09-original-units-entry-21",
+      "reason": "Preserve the amount in the original million/billion unit instead of converting it to base USD; quoted source text and the fact itself are unchanged."
+    },
+    {
+      "record_id": "entry-85",
+      "amendment_id": "worker-09-original-units-entry-85",
+      "reason": "Preserve the amount in the original million/billion unit instead of converting it to base USD; quoted source text and the fact itself are unchanged."
+    },
+    {
+      "record_id": "entry-97",
+      "amendment_id": "worker-09-original-units-entry-97",
+      "reason": "Preserve the amount in the original million/billion unit instead of converting it to base USD; quoted source text and the fact itself are unchanged."
+    }
+  ],
+  "source_pages_checked": false,
+  "web_searches_performed": false,
+  "new_scoring_performed": false,
+  "canonical_neon_or_code_edits": false,
+  "coordinator_issues_resolved": [
+    "output_missing"
+  ],
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-09-terminal.jsonl",
+  "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-09-terminal-amendments.jsonl",
+  "status": "final exact-set QA complete; offline only"
+}

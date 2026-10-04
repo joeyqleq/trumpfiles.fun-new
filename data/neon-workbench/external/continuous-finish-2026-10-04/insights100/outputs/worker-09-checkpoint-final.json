@@ -1,0 +1,24 @@
+{
+  "worker": 9,
+  "checkpoint": "final",
+  "packet_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_sha256": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08",
+  "reviewed_count": 8,
+  "reviewed_keys": [
+    "entry-9",
+    "entry-21",
+    "entry-33",
+    "entry-47",
+    "entry-59",
+    "entry-73",
+    "entry-85",
+    "entry-97"
+  ],
+  "pass_count": 8,
+  "hold_count": 0,
+  "exact_set_pass": true,
+  "terminal_row_count": 8,
+  "amendment_count": 3,
+  "final_qa_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-09-final-qa.json",
+  "status": "final checkpoint after exact-set and evidence QA; offline only"
+}

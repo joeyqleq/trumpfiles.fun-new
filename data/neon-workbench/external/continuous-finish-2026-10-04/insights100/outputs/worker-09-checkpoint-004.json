@@ -1,0 +1,17 @@
+{
+  "worker": 9,
+  "checkpoint": "004",
+  "packet_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_sha256": "12f486997c4e7eceaa01b735d3ee75a8e371d38013a852b232c5fcb9e4674e08",
+  "reviewed_count": 4,
+  "reviewed_keys": [
+    "entry-9",
+    "entry-21",
+    "entry-33",
+    "entry-47"
+  ],
+  "pass_count": 4,
+  "hold_count": 0,
+  "exact_set_pass": null,
+  "status": "checkpoint after four reviewed records; offline only"
+}
