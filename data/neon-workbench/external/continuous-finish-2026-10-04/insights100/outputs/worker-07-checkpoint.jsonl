@@ -1,0 +1,4 @@
+{"record_type":"checkpoint","batch":1,"processed_count":3,"processed_keys":["entry-7","entry-19","entry-31"],"checkpoint_status":"complete","terminal_rows_appended":3,"proposal_only_rows":true}
+{"record_type":"checkpoint","batch":2,"processed_count":3,"processed_keys":["entry-45","entry-57","entry-71"],"checkpoint_status":"complete","terminal_rows_appended":3,"proposal_only_rows":true}
+{"record_type":"checkpoint","batch":3,"processed_count":2,"processed_keys":["entry-83","entry-95"],"checkpoint_status":"complete","terminal_rows_appended":2,"proposal_only_rows":true}
+{"record_type":"checkpoint","batch":4,"processed_count":8,"processed_keys":["entry-7","entry-19","entry-31","entry-45","entry-57","entry-71","entry-83","entry-95"],"checkpoint_status":"amendments_recorded","amendment_count_to_date":12,"terminal_rows_appended":0}

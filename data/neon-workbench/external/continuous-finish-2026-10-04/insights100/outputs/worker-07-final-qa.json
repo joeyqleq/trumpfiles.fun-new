@@ -1,0 +1,133 @@
+{
+  "record_type": "worker_final_qa",
+  "artifact": "insights100-07",
+  "worker": 7,
+  "qa_status": "PASS_WITH_DISCLOSED_LIMITS",
+  "packet_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-07-input.jsonl",
+  "input_sha256": "5ddd9d3030f55ebaf2a6f99757290826cc9362dbc29099ca53580239d652cdae",
+  "expected_ids": [
+    "entry-7",
+    "entry-19",
+    "entry-31",
+    "entry-45",
+    "entry-57",
+    "entry-71",
+    "entry-83",
+    "entry-95"
+  ],
+  "observed_terminal_ids": [
+    "entry-7",
+    "entry-19",
+    "entry-31",
+    "entry-45",
+    "entry-57",
+    "entry-71",
+    "entry-83",
+    "entry-95"
+  ],
+  "terminal_row_count": 8,
+  "unique_terminal_key_count": 8,
+  "duplicate_terminal_ids": [],
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "exact_set_match": true,
+  "terminal_status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "checkpoint_records": [
+    {
+      "batch": 1,
+      "processed_count": 3,
+      "processed_keys": [
+        "entry-7",
+        "entry-19",
+        "entry-31"
+      ],
+      "checkpoint_status": "complete"
+    },
+    {
+      "batch": 2,
+      "processed_count": 3,
+      "processed_keys": [
+        "entry-45",
+        "entry-57",
+        "entry-71"
+      ],
+      "checkpoint_status": "complete"
+    },
+    {
+      "batch": 3,
+      "processed_count": 2,
+      "processed_keys": [
+        "entry-83",
+        "entry-95"
+      ],
+      "checkpoint_status": "complete"
+    },
+    {
+      "batch": 4,
+      "processed_count": 8,
+      "processed_keys": [
+        "entry-7",
+        "entry-19",
+        "entry-31",
+        "entry-45",
+        "entry-57",
+        "entry-71",
+        "entry-83",
+        "entry-95"
+      ],
+      "checkpoint_status": "amendments_recorded"
+    }
+  ],
+  "checkpoint_records_excluded_from_terminal_set": true,
+  "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-07-amendments.jsonl",
+  "amendment_count": 12,
+  "amendments_applied_for_validation": true,
+  "blockers": [
+    {
+      "record_id": "entry-7",
+      "type": "staged_text_discrepancy",
+      "detail": "The staged short description summarizes this as “The Senate later acquitted him 57–43”; the medium description clarifies that 57–43 was the vote to convict and that acquittal followed because the two-thirds threshold was not met."
+    },
+    {
+      "record_id": "entry-19",
+      "type": "staged_text_contradiction",
+      "detail": "The medium description says the linked FBI statistics do not establish that specific attacks were caused by Trump’s remarks; the long description says perpetrators explicitly cited Trump’s language. The supplied packet provides no direct source passage to resolve this, so no causal attack outcome is asserted."
+    },
+    {
+      "record_id": "entry-31",
+      "type": "staged_amount_variance",
+      "detail": "The medium description states a $787.5 million settlement, while the long description rounds it to $787 million. The quantity preserves the medium wording; the source page was not checked."
+    },
+    {
+      "record_id": "entry-57",
+      "type": "quantity_precision_limit",
+      "detail": "The staged text says “thousands” but supplies no exact employee count; no numeric quantity was added."
+    },
+    {
+      "record_id": "entry-71",
+      "type": "legal_status_limit",
+      "detail": "The staged text says prosecutions followed and cases and outcomes varied, but gives no individual case status or disposition; legal_stage remains unknown."
+    },
+    {
+      "record_id": "entry-95",
+      "type": "staged_text_claim_limit",
+      "detail": "The long description characterizes the Supreme Court as Trump’s personal protection; the medium description says the rulings should not be treated as proof that courts operated solely as his personal protection. The extraction uses only the narrower claims in the medium description."
+    }
+  ],
+  "validation": {
+    "schema_enums_valid": true,
+    "all_non_unknown_facts_mapped": true,
+    "all_evidence_quotes_literal_substrings": true,
+    "all_cited_urls_present_in_packet": true,
+    "quantity_and_relation_shapes_valid": true,
+    "no_live_source_fetches": true,
+    "canonical_or_neon_edits": false,
+    "code_edits": false,
+    "pull_request_opened": false
+  },
+  "scope_note": "Rows record only supplied staged/frozen text; supplied URLs were not fetched. The terminal JSONL is append-only; corrections are represented in the separate amendment log."
+}
