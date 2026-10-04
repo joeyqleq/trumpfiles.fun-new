@@ -1,0 +1,57 @@
+{
+  "job": "validation100-repair-06",
+  "checked_at_utc": "2026-10-04T11:09:33.673118+00:00",
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-06-input.jsonl",
+  "review_commit": "ab91c2da8d09e0a0350bfbc62207eacc02c4502e",
+  "review_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-qa/outputs/worker-06-terminal.jsonl",
+  "original_output_commit": "acfff1a830f94094f858f53839378162dc02090c",
+  "original_terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-06-terminal.jsonl",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-06-terminal.jsonl",
+  "proposal_only_all_rows": true,
+  "assigned_record_ids": [
+    "entry-2642",
+    "entry-662",
+    "entry-790",
+    "entry-4193",
+    "entry-560",
+    "entry-5778",
+    "entry-6546",
+    "entry-3766"
+  ],
+  "terminal_record_ids": [
+    "entry-2642",
+    "entry-662",
+    "entry-790",
+    "entry-4193",
+    "entry-560",
+    "entry-5778",
+    "entry-6546",
+    "entry-3766"
+  ],
+  "row_count": 8,
+  "status_counts": {
+    "complete": 8
+  },
+  "unique_record_ids": 8,
+  "required_schema_valid": true,
+  "enum_values_valid": true,
+  "evidence_map_covers_every_non_unknown_insight_value": true,
+  "all_basis_quotes_literal_substrings_of_supplied_staged_text": true,
+  "quantity_units_and_source_urls_valid": true,
+  "history_preserved_append_only": true,
+  "amendments": [],
+  "unassigned_or_missing_ids": [],
+  "issues_resolved": [
+    "output_missing"
+  ],
+  "blocker_notes_present": true,
+  "external_sources_checked": false,
+  "canonical_neon_or_code_files_changed": false,
+  "pull_request_created": false,
+  "review_disposition": [
+    "Seven records passed independently and are preserved unchanged.",
+    "entry-5778 remains unchanged: review suggested legal_stage=litigation, but litigation is outside the required legal_stage enum; the supported extraction keeps legal_stage=unknown and does not map an in-litigation document-release event to a different enum value."
+  ],
+  "additional_literal_evidence_findings": []
+}
