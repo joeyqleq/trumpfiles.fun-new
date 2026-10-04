@@ -67,7 +67,7 @@
       "title_characters": 78,
       "short_characters": 129,
       "medium_words": 56,
-      "long_words": 157
+      "long_words": 149
     },
     "entry-426": {
       "title_characters": 82,
@@ -146,7 +146,7 @@
   "all_rows_have_required_normalized_fields": true,
   "all_rows_proposal_only": true,
   "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-01-terminal-amendments.jsonl",
-  "amendment_count": 10,
+  "amendment_count": 11,
   "amendment_ids": [
     "worker-01-amendment-01",
     "worker-01-amendment-02",
@@ -157,10 +157,11 @@
     "worker-01-amendment-07",
     "worker-01-amendment-08",
     "worker-01-amendment-09",
-    "worker-01-amendment-10"
+    "worker-01-amendment-10",
+    "worker-01-amendment-11"
   ],
   "amendments_by_record": {
-    "entry-236": "worker-01-amendment-08",
+    "entry-236": "worker-01-amendment-11",
     "entry-1768": "worker-01-amendment-02",
     "entry-2321": "worker-01-amendment-10",
     "entry-4619": "worker-01-amendment-04",
@@ -221,8 +222,17 @@
     "entry-2321": "Long description remains absent and both supplied AP pages were inaccessible; retained hold and exact upstream reasons."
   },
   "coordinator_issue_resolved": [
-    "output_missing"
+    "output_missing",
+    "bad_description_long:entry-236"
   ],
   "scope_check": "Only held204-01 worker-01 review artifacts were added; no canonical data, Neon, or application code was edited.",
-  "verification_errors": []
+  "verification_errors": [],
+  "amendment_correction_history": [
+    {
+      "record_id": "entry-236",
+      "new_amendment_id": "worker-01-amendment-11",
+      "supersedes_amendment_id": "worker-01-amendment-08",
+      "reason": "Replaced repetitive and editorial long-description wording while preserving attribution, source-backed facts, and the proposal-versus-realized-outcome distinction."
+    }
+  ]
 }
