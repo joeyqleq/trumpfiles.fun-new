@@ -1,0 +1,31 @@
+{
+  "task": "wave3-held204-finalization-2026-10-04/account4/worker-10",
+  "batch_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-10-batch-001-20261004-aLan.jsonl",
+  "batch_number": 1,
+  "processed_ids": [
+    "entry-2373",
+    "entry-2864",
+    "entry-6795"
+  ],
+  "expected_ids": [
+    "entry-2373",
+    "entry-2864",
+    "entry-6795"
+  ],
+  "counts": {
+    "rows": 3,
+    "propose_narrower_event": 1,
+    "hold": 2,
+    "release_ready": 1,
+    "blocking_ids": [
+      "entry-2373",
+      "entry-6795"
+    ]
+  },
+  "source_commits": {
+    "staged_subset": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "coordinator": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+    "worker_06": "d82ad23edd64c9f6dca92e676205a0b6b32c5729",
+    "worker_22": "4896359b8a0542c38eff4973743b667fa7830c44"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "task": "wave3-held204-finalization-2026-10-04/account4/worker-10",
+  "batch_files": [
+    "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-10-batch-001-20261004-aLan.jsonl"
+  ],
+  "expected_ids": [
+    "entry-2373",
+    "entry-2864",
+    "entry-6795"
+  ],
+  "observed_ids": [
+    "entry-2373",
+    "entry-2864",
+    "entry-6795"
+  ],
+  "exact_id_set": true,
+  "row_count": 3,
+  "duplicate_keys": [],
+  "schema_valid": true,
+  "verified_url_format_valid": true,
+  "proposal_count": 1,
+  "proposal_validation": {
+    "entry-2864": {
+      "title_characters": 55,
+      "short_characters": 111,
+      "medium_words": 55,
+      "long_words": 181,
+      "limits_met": true
+    }
+  },
+  "counts": {
+    "propose_narrower_event": 1,
+    "hold": 2,
+    "release_ready": 1,
+    "blocking_ids": [
+      "entry-2373",
+      "entry-6795"
+    ]
+  },
+  "blocking_reasons": {
+    "entry-2373": [
+      "Hold pending a readable, reliable membership record naming Trump or credible event-specific reporting documenting his participation or a CNP action involving him. A list compiler’s incomplete-list description alone cannot establish Trump’s membership or role."
+    ],
+    "entry-6795": [
+      "Hold until a primary termination/removal communication or reliable contemporaneous report identifies the affected commissioners and establishes an actual Trump removal; any claimed legal dispute also needs its case filing or docket and procedural status. Do not transfer facts from removals involving another commission."
+    ]
+  },
+  "conflicts": [],
+  "notes": [
+    "Only assigned keys were processed. Referenced coordinator results were still held; no unsupported hold was promoted to a pass. The only proposal is narrowed to Trump’s directly documented August 5 statement."
+  ]
+}
