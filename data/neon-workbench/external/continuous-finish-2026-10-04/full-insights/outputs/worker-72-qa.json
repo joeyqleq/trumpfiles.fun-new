@@ -1,0 +1,44 @@
+{
+  "job": "full-insights-72",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "assigned_count": 92,
+  "terminal_rows": 92,
+  "terminal_unique_ids": 92,
+  "exact_set_pass": true,
+  "effective_rows": 92,
+  "effective_status_counts": {
+    "complete": 90,
+    "insufficient": 2
+  },
+  "amendments": 38,
+  "amendment_ids_unique": true,
+  "quote_substring_validation": "pass: every evidence_map basis_quote is a literal substring of supplied staged/title text",
+  "evidence_map_validation": "pass: every non-unknown core scalar and array element is mapped",
+  "approved_core_fields": [
+    "event_state",
+    "action_type",
+    "affected_groups",
+    "institutions",
+    "scope",
+    "legal_stage",
+    "outcome"
+  ],
+  "quantities_empty": true,
+  "relations_empty": true,
+  "proposal_only": true,
+  "candidate_extensions": 0,
+  "sources_independently_checked": false,
+  "source_claim": "Supplied descriptions and source mappings were used as text evidence; linked source pages were not independently checked.",
+  "artifact_issue_resolution": {
+    "output_missing": true,
+    "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-72-terminal.jsonl",
+    "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-72-qa.json",
+    "checkpoint_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-72-checkpoint.json",
+    "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-72-amendments.jsonl"
+  },
+  "resolved_issues": [
+    "output_missing"
+  ],
+  "created_at_utc": "2026-10-04T12:35:32.957508+00:00",
+  "validation_errors": 0
+}
