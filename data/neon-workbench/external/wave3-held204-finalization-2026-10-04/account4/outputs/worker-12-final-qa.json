@@ -1,0 +1,84 @@
+{
+  "worker": 12,
+  "task": "Wave3 held204 finalization 2026-10-04 account4",
+  "source_packet": {
+    "branch": "codex/wave3-needs-context-204-2026-10-04",
+    "commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl"
+  },
+  "coordinator": {
+    "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+    "commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+    "reconciliation_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+    "effective_results_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl"
+  },
+  "output_path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-12-batch-UNIQUE.jsonl",
+  "expected_ids": [
+    "entry-2401",
+    "entry-4040",
+    "entry-6991"
+  ],
+  "actual_ids": [
+    "entry-2401",
+    "entry-4040",
+    "entry-6991"
+  ],
+  "expected_count": 3,
+  "actual_row_count": 3,
+  "unique_id_count": 3,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "terminal_status_counts": {
+    "hold": 2,
+    "proposal": 1
+  },
+  "disposition_counts": {
+    "hold_missing_trump_connection": 1,
+    "hold_source_mismatch": 1,
+    "propose_narrow_attributed_public_statement": 1
+  },
+  "proposal_length_audit": {
+    "entry-6991": {
+      "short_characters": 109,
+      "short_limit": 180,
+      "medium_words": 74,
+      "medium_limits": [
+        45,
+        90
+      ],
+      "long_words": 166,
+      "long_limits": [
+        140,
+        300
+      ],
+      "pass": true
+    },
+    "hold_rows_have_no_description_proposals": true
+  },
+  "url_audit": {
+    "all_source_urls_https": true,
+    "proposal_urls_match_research_sources": true,
+    "facts_have_exact_url_mappings": true,
+    "unverified_or_inaccessible_sources_disclosed": true
+  },
+  "blocking_ids": [
+    "entry-2401",
+    "entry-4040"
+  ],
+  "blockers": {
+    "entry-2401": "No verifiable Trump connection; the sourced historical Maxwell allegation remains disputed.",
+    "entry-4040": "The AP source is unrelated to Trump; the intended event and correct citation are missing."
+  },
+  "research_access_note": "Exa returned source highlights/summaries. Firecrawl direct scrapes failed (rate limit/credit limit); this limitation is preserved in rows.",
+  "canonical_edits": false,
+  "neon_writes": false,
+  "other_worker_ids_edited": false,
+  "result": "pass",
+  "exact_set_check": {
+    "ids_match_exact_assignment": true,
+    "row_count": 3,
+    "unique_id_count": 3,
+    "one_terminal_row_per_id": true
+  }
+}
