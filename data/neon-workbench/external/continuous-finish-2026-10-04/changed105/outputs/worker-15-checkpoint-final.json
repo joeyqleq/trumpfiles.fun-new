@@ -1,0 +1,26 @@
+{
+  "task": "continuous-finish-2026-10-04 changed105 worker-15",
+  "checkpoint": "final",
+  "branch": "ls/2-trump-final-corrections-account2-worker1-snHz",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-15-terminal.jsonl",
+  "processed_record_ids": [
+    "entry-769",
+    "entry-774",
+    "entry-776",
+    "entry-2340",
+    "entry-1666",
+    "entry-3273",
+    "entry-3873",
+    "entry-5413",
+    "entry-766"
+  ],
+  "processed_count": 9,
+  "status_counts": {
+    "scored": 9,
+    "deferred": 0
+  },
+  "exact_set_qa": "PASS",
+  "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-15-final-qa.json",
+  "checkpointed_at_utc": "2026-10-04T11:22:38Z"
+}
