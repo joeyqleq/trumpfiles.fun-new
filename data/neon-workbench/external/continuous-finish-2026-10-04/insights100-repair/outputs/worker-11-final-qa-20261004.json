@@ -1,0 +1,75 @@
+{
+  "artifact_id": "worker-11-insights100-repair-final-qa-20261004-01",
+  "job_id": "insights100-repair-11",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-11-input.jsonl",
+  "input_sha256": "c68361057c7fd624f64e245d66012b3eb8cb895ec4929b42b02c0443e207c536",
+  "review_commit": "7e99ccb1abbfa950aa76b364781b24cb3e8f8cdb",
+  "review_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-qa/outputs/worker-11-terminal.jsonl",
+  "original_terminal_commit": "29d316e81f2f20a29ae8b97d3d4e6e599967a459",
+  "assigned_ids": [
+    "entry-11",
+    "entry-23",
+    "entry-36",
+    "entry-49",
+    "entry-61",
+    "entry-75",
+    "entry-87",
+    "entry-99"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-11-terminal.jsonl",
+  "terminal_row_count": 8,
+  "terminal_ids_in_order": [
+    "entry-11",
+    "entry-23",
+    "entry-36",
+    "entry-49",
+    "entry-61",
+    "entry-75",
+    "entry-87",
+    "entry-99"
+  ],
+  "exact_assigned_set_match": true,
+  "duplicate_record_id_count": 0,
+  "extra_record_id_count": 0,
+  "status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "evidence_quote_validation": "passed: every evidence_map basis_quote and nested quantity/relation basis_quote is a literal substring of the corresponding supplied input record; every populated non-unknown scalar and array element has an evidence_map entry",
+  "schema_validation": "passed: required fields, allowed enum values, terminal envelope, evidence status, and supplied quantity source URLs checked",
+  "source_limit": "No web search or source-page fetch was used. All evidence is limited to the supplied frozen/staged text and source mappings; supplied URLs are recorded as mappings only.",
+  "review_corrections": {
+    "entry-11": "Changed object_of_legal_action target to judge and updated its literal quote, following the reviewer’s direction finding.",
+    "entry-75": "Changed event_state from realized to proposed; the citizenship question was sought and abandoned.",
+    "entry-99": "Removed the unsupported Trump supporters -> local officials acted_on relation; trainings encouraged pressure but the supplied text does not establish it was carried out."
+  },
+  "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-11-amendments.jsonl",
+  "amendment_count": 3,
+  "history": "No prior repair terminal existed. The eight full effective rows were appended in assigned order. The original insights100 terminal remains unchanged; the three review corrections are recorded in the separate immutable amendment file.",
+  "checkpoint_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-11-checkpoint.jsonl",
+  "checkpoint_count": 4,
+  "blockers_summary": {
+    "entry-11": [
+      "Timing conflict in supplied fields: description_medium says “The settlement was finalized by a judge in 2018.” while frozen_original.fact_check says “$25 million settlement approved March 2017.” The terminal facts follow the medium summary and do not resolve the date conflict.",
+      "The frozen long text calls the enterprise fraudulent, while the medium summary attributes the misleading-sales claims to students. The settlement is recorded as a settlement, not a judicial finding that the allegations were true."
+    ],
+    "entry-36": [
+      "The frozen synopsis says Trump “repeatedly used” the term and that it was “fueling anti-Asian hate crimes”; the medium summary documents a June 20 use and says the linked report “does not establish that it caused specific hate crimes.” The broader repeated-use and causal claims are not included as facts."
+    ],
+    "entry-49": [
+      "The frozen synopsis says Trump “ordered federal law enforcement” to clear protesters “so he could walk” to the church for a photograph; the medium summary says “a photo-op order is not established” and reports that the inspector general did not find the park was cleared for Trump’s visit."
+    ],
+    "entry-75": [
+      "The frozen long text additionally asserts a deliberate partisan plan and gives a nine-million-person nonresponse estimate. The medium summary says subsequent reporting examined potential effects and concerns about immigrant-household participation, but does not supply that motive or quantity; neither is included as a fact."
+    ],
+    "entry-87": [
+      "The title and frozen long text characterize the decision as resulting from Trump’s pressure and appointment strategy. The medium summary documents the ruling and its effect but does not substantiate pressure, appointment motive, or a causal link to the justices’ votes."
+    ],
+    "entry-99": [
+      "The frozen long text attributes systematic training to Trump and his allies and alleges a coordinated election-stealing effort. The medium summary attributes the reported trainings to David Clements and explicitly says the report did not describe a county refusing certification as a result; Trump-directed coordination and a changed result are not asserted here.",
+      "The prior terminal relation treated encouraged pressure as completed action. The supplied text says trainings encouraged Trump supporters to pressure local officials but does not establish that supporters carried it out, so that relation is omitted."
+    ]
+  },
+  "completed_at_utc": "2026-10-04T11:08:25.155990+00:00"
+}
