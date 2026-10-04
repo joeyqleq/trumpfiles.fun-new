@@ -1,0 +1,39 @@
+{
+  "task": "Wave3 held204 finalization 2026-10-04 account3 worker03",
+  "worker": 3,
+  "batch_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-03-batch-20261004-final.jsonl",
+  "input_commits": {
+    "staged_subset": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "coordinator": "9c111656258b9a6c049d4e8b5a097e09f7c6e544"
+  },
+  "processed_count": 14,
+  "processed_ids": [
+    "entry-1727",
+    "entry-210",
+    "entry-2343",
+    "entry-2560",
+    "entry-2930",
+    "entry-3678",
+    "entry-390",
+    "entry-4311",
+    "entry-5433",
+    "entry-5945",
+    "entry-6264",
+    "entry-674",
+    "entry-822",
+    "entry-969"
+  ],
+  "pass_count": 8,
+  "hold_count": 6,
+  "blocking_ids": [
+    "entry-1727",
+    "entry-4311",
+    "entry-6264",
+    "entry-674",
+    "entry-822",
+    "entry-969"
+  ],
+  "qa_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-03-final-qa.json",
+  "state": "finalized",
+  "checkpoint_note": "Terminal exact-set batch written; no input, canonical record, Neon, or other-worker data was edited."
+}
