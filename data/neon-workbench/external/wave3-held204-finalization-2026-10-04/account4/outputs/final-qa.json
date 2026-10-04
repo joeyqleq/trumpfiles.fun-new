@@ -1,0 +1,56 @@
+{
+  "job": "wave3-held204-finalization-2026-10-04/account4/worker-07",
+  "source_commits": {
+    "staged_subset": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "coordinator": "9c111656258b9a6c049d4e8b5a097e09f7c6e544"
+  },
+  "expected_ids": [
+    "entry-2061",
+    "entry-2574",
+    "entry-5599"
+  ],
+  "observed_ids": [
+    "entry-2061",
+    "entry-2574",
+    "entry-5599"
+  ],
+  "row_count": 3,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "HOLD": 1,
+    "draft_narrowed_event_hold_for_reclassification": 2
+  },
+  "release_ready_count": 0,
+  "blocking_ids": [
+    "entry-2061",
+    "entry-2574",
+    "entry-5599"
+  ],
+  "blocking_reasons": {
+    "entry-2061": "The evidence does not support the inherited Authoritarianism / Government Power Abuse classification by itself. Keep the proposal unapproved until neutral campaign/election-pressure classification is applied or additional evidence establishes abuse of office. The supplied NYT URL is not relied on for the narrower claim.",
+    "entry-2574": "Research surfaced independently reported, narrower Russia/business episodes, but none can be reliably matched to this catch-all record, and repurposing an unrelated specific episode risks duplicating the chronology. Missing evidence: identify the particular dated Trump action this ID is intended to represent and provide a credible source that supports both the action and its election-interference connection. No title or description is drafted.",
+    "entry-5599": "No reviewed source establishes that Brownstein’s or associates’ donations caused or influenced the pardon. Those claims are omitted. The inherited Government Corruption / donor-tie classification is unsupported by this narrowed copy; reclassify to a neutral clemency category before release."
+  },
+  "lengths": {
+    "entry-2061": {
+      "title_characters": 82,
+      "short_characters": 152,
+      "medium_words": 65,
+      "long_words": 172
+    },
+    "entry-5599": {
+      "title_characters": 49,
+      "short_characters": 114,
+      "medium_words": 64,
+      "long_words": 184
+    }
+  },
+  "verified_url_count": 4,
+  "url_format_errors": [],
+  "source_map_errors": [],
+  "duplicate_event_review": "The two proposed events are distinct (Texas Senate runoff statement vs. Brownstein clemency); entry-2574 remains held rather than being reassigned to a potentially overlapping Russia/business event.",
+  "qa_errors": [],
+  "qa_pass": true
+}

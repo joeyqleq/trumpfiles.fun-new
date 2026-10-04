@@ -1,0 +1,23 @@
+{
+  "job": "wave3-held204-finalization-2026-10-04/account4/worker-07",
+  "status": "complete",
+  "completed_rows": 3,
+  "expected_rows": 3,
+  "ids": [
+    "entry-2061",
+    "entry-2574",
+    "entry-5599"
+  ],
+  "batch_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-07-batch-UNIQUE.jsonl",
+  "final_qa_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/final-qa.json",
+  "source_commits": {
+    "staged_subset": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "coordinator": "9c111656258b9a6c049d4e8b5a097e09f7c6e544"
+  },
+  "checkpoint_note": "Exact-set complete. All proposals remain unapproved; two sourced narrowed drafts require neutral metadata reclassification before release, and one ID is held for missing event/source linkage.",
+  "terminal_dispositions": {
+    "entry-2061": "draft_narrowed_event_hold_for_reclassification",
+    "entry-2574": "HOLD",
+    "entry-5599": "draft_narrowed_event_hold_for_reclassification"
+  }
+}
