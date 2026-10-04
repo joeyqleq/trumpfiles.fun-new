@@ -11,7 +11,7 @@
 
 - `worker-03-terminal.jsonl`: 9 valid JSONL rows in the exact assigned order; no missing, duplicate, or extra record IDs. Every row has `proposal_only: true`, status `complete`, the required insight fields, an evidence map, and a blockers array.
 - All non-unknown scalar and array values have evidence-map coverage. Literal-quote, source-map, and schema checks passed against the frozen input.
-- Two amendments are recorded in `worker-03-amendment-01.jsonl`, each with `amendment_revision: 1`: entry-41 corrects four non-literal quote boundaries found by strict validation; entry-67 corrects the evidence-map value for the Paul Alexander relation. The terminal history is preserved, and validation applies these amendment records.
+- The amendment log preserves entry-41 revision 1 and entry-67 revision 1, and appends entry-67 revision 2 with the explicit target `evidence_map[9].value`. Entry-41 corrects four non-literal quote boundaries; entry-67 corrects the evidence-map value for the Paul Alexander relation. The terminal history is preserved, and the revision-2 target identifies the exact existing evidence-map element.
 - Contradictory or broader unsupported claims are documented in blockers for entry-15, entry-27, entry-41, entry-53, entry-67, entry-79, entry-91, and entry-103. Entry-3 has no identified internal contradiction.
 - Quantities retain source units and qualifiers: verbal attacks; combined people and organizations; index place; years. No values were added or aggregated.
 
