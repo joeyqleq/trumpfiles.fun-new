@@ -1,0 +1,192 @@
+{
+  "task": "Wave3 held204 finalization, account3 / worker11",
+  "source_packets": [
+    {
+      "commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+      "path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+      "rows": 204
+    },
+    {
+      "commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+      "path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+      "rows": 204
+    },
+    {
+      "commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+      "path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl",
+      "rows": 311
+    }
+  ],
+  "assigned_keys": [
+    "entry-1784",
+    "entry-2321",
+    "entry-2515",
+    "entry-275",
+    "entry-3488",
+    "entry-3838",
+    "entry-426",
+    "entry-5334",
+    "entry-5707",
+    "entry-6230",
+    "entry-6531",
+    "entry-788",
+    "entry-920"
+  ],
+  "result_rows_saved": 13,
+  "missing_keys": [],
+  "duplicate_keys": [],
+  "out_of_scope_keys": [],
+  "pass_count": 5,
+  "pass_ids": [
+    "entry-1784",
+    "entry-275",
+    "entry-3488",
+    "entry-6531",
+    "entry-920"
+  ],
+  "hold_count": 8,
+  "hold_ids": [
+    "entry-2321",
+    "entry-2515",
+    "entry-3838",
+    "entry-426",
+    "entry-5334",
+    "entry-5707",
+    "entry-6230",
+    "entry-788"
+  ],
+  "worker_complete_count": 13,
+  "worker_complete_is_editorial_approval": false,
+  "editorial_approval_granted": false,
+  "length_rules": {
+    "short_characters_max": 180,
+    "medium_words_min": 45,
+    "medium_words_max": 90,
+    "long_words_min": 140,
+    "long_words_max": 300,
+    "word_count_method": "whitespace-delimited words"
+  },
+  "description_length_checks": {
+    "entry-1784": {
+      "short_characters": 119,
+      "medium_words": 87,
+      "long_words": 200
+    },
+    "entry-2321": {
+      "short_characters": 110,
+      "medium_words": 68,
+      "long_words": null
+    },
+    "entry-2515": {
+      "short_characters": 148,
+      "medium_words": 55,
+      "long_words": 161
+    },
+    "entry-275": {
+      "short_characters": 119,
+      "medium_words": 55,
+      "long_words": 165
+    },
+    "entry-3488": {
+      "short_characters": 150,
+      "medium_words": 78,
+      "long_words": 175
+    },
+    "entry-3838": {
+      "short_characters": 121,
+      "medium_words": 73,
+      "long_words": 162
+    },
+    "entry-426": {
+      "short_characters": 148,
+      "medium_words": 68,
+      "long_words": 183
+    },
+    "entry-5334": {
+      "short_characters": 157,
+      "medium_words": 67,
+      "long_words": null
+    },
+    "entry-5707": {
+      "short_characters": 87,
+      "medium_words": 67,
+      "long_words": 151
+    },
+    "entry-6230": {
+      "short_characters": 136,
+      "medium_words": 78,
+      "long_words": null
+    },
+    "entry-6531": {
+      "short_characters": 132,
+      "medium_words": 73,
+      "long_words": 187
+    },
+    "entry-788": {
+      "short_characters": 133,
+      "medium_words": 54,
+      "long_words": 154
+    },
+    "entry-920": {
+      "short_characters": 137,
+      "medium_words": 70,
+      "long_words": 161
+    }
+  },
+  "short_length_failures": [],
+  "medium_length_failures": [],
+  "long_length_failures": [
+    "entry-2321",
+    "entry-5334",
+    "entry-6230"
+  ],
+  "source_url_format_valid": true,
+  "source_url_count": 25,
+  "source_url_to_fact_holds": [
+    "entry-3838",
+    "entry-426",
+    "entry-5707",
+    "entry-6230",
+    "entry-788"
+  ],
+  "preserved_meaning_holds": [
+    "entry-2515"
+  ],
+  "hold_blockers": {
+    "entry-2321": [
+      "HOLD: description_long is null; the required long description must be 140–300 words. Do not pad from the inaccessible AP pages or infer missing provisions.",
+      "The packet records both AP URLs as inaccessible and the proposal does not provide the missing long text; worker status “complete” is not editorial approval."
+    ],
+    "entry-2515": [
+      "HOLD: the frozen claim is a Trump/Ukrainian-intelligence connection, but the proposal reframes it as publication of an unauthenticated Kuchma–Derkach transcript and explicitly says it has no Trump connection. That changes the record’s central event identity; an editorial decision to exclude or accept a different event is required.",
+      "The source URL supports only the attributed, unauthenticated transcript; it cannot substantiate the frozen Trump connection. Description lengths pass, but meaning preservation does not."
+    ],
+    "entry-3838": [
+      "HOLD: the proposal’s medium and long descriptions rely on an AP report via PBS for the August 2025 search and investigation, but that PBS/AP URL appears only in evidence_resolution.sources and is absent from the proposal source_urls. Add the supporting URL to the proposal’s source list before release.",
+      "Description lengths and the narrowed, non-retaliation framing pass; source-list provenance does not."
+    ],
+    "entry-426": [
+      "HOLD: source_urls lists only the USA Today URL, which the packet says returned HTTP 402. The proposal relies on TheWrap for the DHS response sequence, but that supporting URL appears only in evidence_resolution.sources and is absent from source_urls.",
+      "The original post, full chronology, and exact objection remain unavailable in the packet. Add the cited TheWrap URL and retain those explicit limits before release."
+    ],
+    "entry-5334": [
+      "HOLD: description_long is null; the required long description must be 140–300 words. The short and medium are within bounds, but cannot replace the required long field."
+    ],
+    "entry-5707": [
+      "HOLD: the proposal’s medium/long use Reuters contemporaneous reporting, but source_urls contains only a Reuters Connect caption. The article URL and the caption URL cited in evidence_resolution are absent from source_urls; the caption listed in source_urls is a different Reuters Connect item.",
+      "Add the supporting Reuters URLs to the proposal source list or narrow those claims; description lengths otherwise pass."
+    ],
+    "entry-6230": [
+      "HOLD: description_long is null; the required long description must be 140–300 words.",
+      "The short and medium assert the completed transfer and detention concerns using Human Rights Watch findings, but source_urls contains only a Reuters explainer about a possible destination. The HRW URL appears in evidence_resolution.sources but is absent from the proposal source_urls; add the source and keep HRW findings attributed."
+    ],
+    "entry-788": [
+      "HOLD: evidence_resolution marks source_urls as changed and calls for replacing the generic/404 DOJ clemency page and AP topic hub with the individual DOJ record and contemporaneous AP report, but the proposal source_urls still retains the generic DOJ URL and AP hub.",
+      "The specific DOJ commutations list and Spectrum/AP report are present and support the factual text; remove the stale, non-supporting links so the source list matches the stated correction. Description lengths pass."
+    ]
+  },
+  "checkpoint_rows": 13,
+  "checkpoint_exact_copy_of_batch": true,
+  "scope_note": "Only the 13 explicitly assigned keys were evaluated. “PASS” means the worker proposal met this finalization check; it is not editorial approval, publication, or canonical application.",
+  "no_canonical_or_neon_edits": true
+}
