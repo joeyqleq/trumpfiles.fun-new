@@ -6,7 +6,8 @@
 - Source commit: `2476ae4896b888830fd3888f40581e19b78fae30`.
 - Input SHA-256: `1e26948a9ff5bce1fe6f5e6932871f928ff20c8b1dfcbb6b784b3afa0f112737`.
 - Terminal SHA-256: `8e5e8675b3943dfd4a1b214077ba4421b304a4212864ff27f2558d90a29dee8f`.
-- Amendment SHA-256: `387e9968627cd8e6e3357a9194026928386c7d9af735cacd83d994f14c17b623`.
+- Amendment SHA-256: `cf07ee3dc8309a48e9190f54580a4b2e4cedfbea8963364d9461f3cd83602d41`.
+- Coordinator follow-up: `amendment_revision: 1` is present for entry-41 and entry-67.
 - Final QA: `worker-03-final-qa.md`.
 - Output: `worker-03-terminal.jsonl`; immutable corrections: `worker-03-amendment-01.jsonl`.
 - Validation: exact assigned ID set/order, JSONL parsing, required fields, evidence-map coverage, and literal substring checks passed with amendments applied.
