@@ -1,0 +1,17 @@
+{
+  "job": "context-enrichment-48",
+  "worker": 48,
+  "completed_ids": [
+    "entry-2864"
+  ],
+  "expected_ids": [
+    "entry-2864"
+  ],
+  "completed_count": 1,
+  "expected_count": 1,
+  "record_status": "pass",
+  "validation_status": "valid",
+  "terminal_file": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-48-terminal.jsonl",
+  "validation_report": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-48-validation.json",
+  "terminal_sha256": "02b0858582818e68c5e0597314341fb3be6d6bb57b7ee783c2a9ca4b5d8e8690"
+}

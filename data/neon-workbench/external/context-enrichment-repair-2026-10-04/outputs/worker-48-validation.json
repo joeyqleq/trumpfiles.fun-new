@@ -1,0 +1,15 @@
+{
+  "job": "context-enrichment-48",
+  "record_id": "entry-2864",
+  "terminal_status": "pass",
+  "validator": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+  "validator_source_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "result": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  },
+  "protected_fields_unchanged": true,
+  "terminal_sha256": "02b0858582818e68c5e0597314341fb3be6d6bb57b7ee783c2a9ca4b5d8e8690"
+}
