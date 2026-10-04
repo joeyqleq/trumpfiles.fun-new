@@ -1,0 +1,27 @@
+{
+  "worker": 8,
+  "kind": "checkpoint",
+  "checkpoint": 4,
+  "assigned_total": 8,
+  "processed_count": 8,
+  "batch_size": 2,
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_sha256": "7fcf78ebb5e16035eef7cb2b1a345516d05c551c2df5437801af9ae69e96da9e",
+  "output_file": "worker-08-terminal.jsonl",
+  "output_sha256_through_checkpoint": "2545b4e49cf9f9423a0150329e1241d4f60944d12c04608769bd3af22318a36a",
+  "processed_keys": [
+    "entry-555",
+    "entry-3170",
+    "entry-344",
+    "entry-191",
+    "entry-5912",
+    "entry-2657",
+    "entry-5353",
+    "entry-1244"
+  ],
+  "terminal_counts": {
+    "complete": 2,
+    "insufficient": 6
+  },
+  "checkpoint_note": "Append-only insights utility pilot output; supplied frozen/staged text only. No canonical data, Neon, or code edits."
+}

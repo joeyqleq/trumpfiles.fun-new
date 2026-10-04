@@ -1,0 +1,43 @@
+{
+  "worker": 8,
+  "kind": "final_exact_set_qa",
+  "task_branch": "ls/8-trump-files-web425-review-08-of-12-9xY1",
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-08-input.jsonl",
+  "input_sha256": "7fcf78ebb5e16035eef7cb2b1a345516d05c551c2df5437801af9ae69e96da9e",
+  "output_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-08-terminal.jsonl",
+  "output_sha256": "2545b4e49cf9f9423a0150329e1241d4f60944d12c04608769bd3af22318a36a",
+  "assigned_count": 8,
+  "output_row_count": 8,
+  "unique_record_id_count": 8,
+  "assigned_ids": [
+    "entry-555",
+    "entry-3170",
+    "entry-344",
+    "entry-191",
+    "entry-5912",
+    "entry-2657",
+    "entry-5353",
+    "entry-1244"
+  ],
+  "missing_ids": [],
+  "outside_assignment_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "complete": 2,
+    "insufficient": 6
+  },
+  "schema_validation": "pass",
+  "literal_quote_validation": "pass",
+  "evidence_map_coverage": "pass for every non-unknown scalar and populated array element, including amendment evidence",
+  "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-08-terminal-amendments.jsonl",
+  "amendment_count": 2,
+  "amendment_notes": [
+    "entry-344 event_state corrected from proposed to realized; recruitment was reported underway in June 2020.",
+    "entry-2657 legal_stage evidence-map entry added for not_applicable; terminal row retained unchanged."
+  ],
+  "source_limit": "Source URLs are supplied mappings; no linked pages were opened or treated as independently verified.",
+  "legacy_estimates": "not used",
+  "scope": "Only assigned terminal rows, append-only amendments, checkpoints, and this QA artifact. No canonical data, Neon, or code edits.",
+  "result": "pass"
+}
