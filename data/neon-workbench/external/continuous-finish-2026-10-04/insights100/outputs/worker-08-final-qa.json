@@ -1,0 +1,54 @@
+{
+  "job_id": "insights100-08",
+  "input_snapshot_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-08-input.jsonl",
+  "output_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-08-terminal.jsonl",
+  "checked_at_utc": "2026-10-04T10:40:03+00:00",
+  "expected_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "actual_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "row_count": 8,
+  "status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "blocker_record_ids": [
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "amendments": [],
+  "checks": {
+    "input_contains_exact_assigned_set": true,
+    "terminal_contains_exact_assigned_set_once_each": true,
+    "jsonl_parses": true,
+    "required_fact_fields_present": true,
+    "enum_values_valid": true,
+    "every_non_unknown_fact_has_evidence_map_entry": true,
+    "every_basis_quote_is_literal_supplied_text": true,
+    "quantity_and_relation_shapes_valid": true,
+    "no_source_page_claimed_checked": true
+  },
+  "result": "pass"
+}

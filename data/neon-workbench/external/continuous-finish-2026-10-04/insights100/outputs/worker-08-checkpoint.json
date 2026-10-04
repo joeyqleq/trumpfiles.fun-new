@@ -1,0 +1,33 @@
+{
+  "job_id": "insights100-08",
+  "checkpointed_at_utc": "2026-10-04T10:40:03+00:00",
+  "input_snapshot_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "expected_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "completed_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "remaining_record_ids": [],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-08-terminal.jsonl",
+  "terminal_rows": 8,
+  "status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "state": "complete"
+}
