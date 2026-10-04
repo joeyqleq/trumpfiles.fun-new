@@ -1,0 +1,31 @@
+{
+  "job": "full-insights-17",
+  "worker": 17,
+  "source_branch": "codex/full-insights-packets-2026-10-04",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "source_file": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-17-input.jsonl",
+  "source_input_sha256": "af1fb8ae3ace28042d5e89974ec24a3494b56e4166d189e311ba8f36c700984d",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-17-terminal.jsonl",
+  "expected_count": 93,
+  "actual_terminal_rows_for_assignment": 93,
+  "actual_unique_keys": 93,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "complete": 59,
+    "insufficient": 34
+  },
+  "exact_set_pass": true,
+  "terminal_order_pass": true,
+  "literal_quote_pass": true,
+  "evidence_map_coverage_pass": true,
+  "quantities_relations_empty_pass": true,
+  "proposal_only_pass": true,
+  "checkpoint_file": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-17-checkpoint.json",
+  "checkpoint_status": "complete",
+  "checkpoint_pending_count": 0,
+  "amendments": [],
+  "artifact_issue_resolved": "output_missing",
+  "scope_note": "Only the 93 assigned IDs were extracted from the specified frozen packet. All non-unknown core fields have evidence-map entries with literal packet substrings. Quantities and relations remain empty. Supplied claims, allegations, source mappings, and contradictions were preserved without web research or independent source verification."
+}
