@@ -41,10 +41,10 @@
   ],
   "exact_set_pass": true,
   "terminal_rows": 17,
-  "amendments": 16,
+  "amendments": 17,
   "effective_status_counts": {
-    "pass": 8,
-    "hold": 9,
+    "pass": 7,
+    "hold": 10,
     "exclusion_candidate": 0
   },
   "effective_pass_metrics": {
@@ -59,12 +59,6 @@
       "short_chars": 120,
       "medium_words": 72,
       "long_words": 141
-    },
-    "entry-954": {
-      "title_chars": 60,
-      "short_chars": 141,
-      "medium_words": 75,
-      "long_words": 157
     },
     "entry-3574": {
       "title_chars": 65,
@@ -116,6 +110,10 @@
       "blocker": "HOLD: the listed Slate opinion article concerns Hegseth and Harvard, and the Wikipedia profile does not establish the proposal's AP-reported count. The AP report URL and the named cases/category basis for 'more than two dozen' are absent; provide that reporting and retain the distinction between firing and pressured retirement."
     },
     {
+      "record_id": "entry-954",
+      "blocker": "The proposal retains the “Corrupt Pardons” subcategory while its own evidence_resolution says the instrument supplies no rationale and does not support an inference of corrupt motive. A neutral clemency classification or evidence for corruption is required."
+    },
+    {
       "record_id": "entry-1730",
       "blocker": "The proposed “Trump 50” publication account is supported by The Atlantic link, but the frozen event concerns alleged guardrail/Iran consequences. The candidate changes event identity, so it cannot pass as a description for this record."
     },
@@ -149,5 +147,8 @@
     "bad_description_long:entry-954"
   ],
   "entry_954_long_description_correction": "Replaced the prior repetitive wording with a source-grounded description of the pardon, conviction identifier, sentence, and limits of the warrant; see the latest immutable amendment for the exact text.",
-  "updated_at_utc": "2026-10-04T10:44:42.674278+00:00"
+  "updated_at_utc": "2026-10-04T10:50:11.037847+00:00",
+  "issue_resolution_details": {
+    "entry-954": "The previous long description was withdrawn and status amended to HOLD; the DOJ warrant does not provide enough case-specific facts for a substantive long description. Original text remains preserved in the terminal and amendment history."
+  }
 }

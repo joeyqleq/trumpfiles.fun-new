@@ -40,17 +40,17 @@
     "entry-6997"
   ],
   "terminal_row_count": 17,
-  "amendment_count": 16,
+  "amendment_count": 17,
   "effective_status_counts": {
-    "pass": 8,
-    "hold": 9,
+    "pass": 7,
+    "hold": 10,
     "exclusion_candidate": 0
   },
   "qa_exact_set_pass": true,
   "artifact_issue_resolution": {
     "output_missing": false
   },
-  "last_saved_at_utc": "2026-10-04T10:44:42.674660+00:00",
+  "last_saved_at_utc": "2026-10-04T10:50:11.038255+00:00",
   "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-terminal.jsonl",
   "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-amendments.jsonl",
   "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-qa.json",
