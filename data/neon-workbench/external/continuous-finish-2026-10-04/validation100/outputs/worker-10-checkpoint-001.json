@@ -1,0 +1,16 @@
+{
+  "worker": 10,
+  "assignment": "validation100-10",
+  "checkpoint": 1,
+  "packet_branch": "codex/insights-validation100-2026-10-04",
+  "packet_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-10-input.jsonl",
+  "input_sha256": "71324d3364cbcd962172bf54a31524c1e31f5d44053f7fce48cf790961bf299b",
+  "expected_rows": 8,
+  "cumulative_rows": 2,
+  "keys": [
+    "entry-568",
+    "entry-3116"
+  ],
+  "checkpoint_status": "in_progress"
+}

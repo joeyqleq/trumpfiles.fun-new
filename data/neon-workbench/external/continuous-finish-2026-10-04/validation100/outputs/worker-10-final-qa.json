@@ -1,0 +1,48 @@
+{
+  "worker": 10,
+  "assignment": "validation100-10",
+  "source_branch": "codex/insights-validation100-2026-10-04",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-10-input.jsonl",
+  "input_sha256": "71324d3364cbcd962172bf54a31524c1e31f5d44053f7fce48cf790961bf299b",
+  "expected_rows": 8,
+  "actual_rows": 8,
+  "expected_record_ids": [
+    "entry-568",
+    "entry-3116",
+    "entry-3370",
+    "entry-4250",
+    "entry-2481",
+    "entry-6505",
+    "entry-5490",
+    "entry-5548"
+  ],
+  "actual_record_ids": [
+    "entry-568",
+    "entry-3116",
+    "entry-3370",
+    "entry-4250",
+    "entry-2481",
+    "entry-6505",
+    "entry-5490",
+    "entry-5548"
+  ],
+  "exact_key_set_match": true,
+  "keys_unique": true,
+  "terminal_status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "proposal_only_all_rows": true,
+  "evidence_and_schema_validation": "pass after applying immutable amendments; all cited basis quotes are literal substrings of the corresponding supplied record text",
+  "evidence_map_entries": 65,
+  "immutable_amendment_count": 11,
+  "amendment_file": "worker-10-amendments.jsonl",
+  "amendment_summary": "Original terminal rows are retained unchanged. Amendments correct quote punctuation, align one evidence-map outcome value with its emitted outcome, and make quantity/relation map values equal their full structured array elements.",
+  "blockers_handled": "Text-level contradictions and limits are recorded per row; no unsupported Trump connection, affected group, monetary amount, finding, final retaliation, or market quantity is asserted.",
+  "web_searches_performed": false,
+  "canonical_or_neon_edits": false,
+  "code_edits": false,
+  "pull_request_created": false,
+  "verification": "Validated exact assigned ID set, unique rows, schema enums/shapes, required evidence-map coverage, and literal quote matches using the frozen supplied input and amendment overlay."
+}
