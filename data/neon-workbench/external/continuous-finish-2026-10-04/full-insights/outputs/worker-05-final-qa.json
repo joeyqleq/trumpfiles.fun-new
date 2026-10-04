@@ -1,0 +1,73 @@
+{
+  "job": "full-insights-05",
+  "proposal_only": true,
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "source_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-05-input.jsonl",
+  "source_sha256": "eb1c8cdc2e7e206b9822c5ba898bb6dbd5e01627812cb701ad787a92827e2399",
+  "assigned_count": 93,
+  "terminal_count": 93,
+  "exact_ids_and_order": true,
+  "proposal_only_rows": 93,
+  "status_counts": {
+    "complete": 93,
+    "insufficient": 0
+  },
+  "core_fields_checked": [
+    "action_type",
+    "affected_groups",
+    "event_state",
+    "institutions",
+    "legal_stage",
+    "outcome",
+    "scope"
+  ],
+  "quantities_empty": true,
+  "relations_empty": true,
+  "literal_evidence_and_blocker_quotes": true,
+  "supported_nonunknown_core_fields": true,
+  "amendments": [
+    {
+      "amendment_id": "worker-05-amendment-001",
+      "record_id": "entry-2767",
+      "field": "insight_facts.affected_groups",
+      "operation": "replace",
+      "value": [
+        "U.S. attorneys appointed under Barack Obama"
+      ],
+      "reason": "The affected_groups field names groups; Preet Bharara is an individual and is already identified in the source as one official asked to leave."
+    },
+    {
+      "amendment_id": "worker-05-amendment-002",
+      "record_id": "entry-2989",
+      "field": "insight_facts.affected_groups",
+      "operation": "replace",
+      "value": [],
+      "reason": "The supplied text names Michael Forest Reinoehl as an individual but does not name a group as the target of the shooting."
+    },
+    {
+      "amendment_id": "worker-05-amendment-003",
+      "record_id": "entry-4774",
+      "field": "blockers[0].basis_quotes",
+      "operation": "replace",
+      "value": [
+        "On April 9, 2025, Trump paused most reciprocal tariffs for 90 days after a sharp bond-market selloff raised concern among advisers.",
+        "the White House later described it as a negotiating strategy."
+      ],
+      "reason": "Correct the copied quote casing to match the supplied medium text literally; the terminal row remains unchanged."
+    },
+    {
+      "amendment_id": "worker-05-amendment-004",
+      "record_id": "entry-6772",
+      "field": "blockers[0].basis_quotes",
+      "operation": "replace",
+      "value": [
+        "In March 2025, the Trump administration issued executive guidance and supported legislation purporting to strip federal district courts of jurisdiction to hear challenges to immigration enforcement actions — effectively attempting to remove judicial oversight from deportations, detentions, and applications of the Alien Enemies Act.",
+        "Those arguments sought to narrow or redirect judicial oversight in specific cases; they did not strip federal courts of immigration jurisdiction across the board."
+      ],
+      "reason": "Correct the copied quote start to match the supplied frozen synopsis literally; the terminal row remains unchanged."
+    }
+  ],
+  "known_extraction_limit": "Source URLs were treated as supplied mappings only; no pages were fetched or independently verified.",
+  "issues": [],
+  "qa_status": "pass"
+}
