@@ -1,0 +1,12 @@
+{
+  "job_id": "context-enrichment-57",
+  "source_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "record_id": "entry-3899",
+  "state": "validated",
+  "status": "pass",
+  "validation_status": "valid",
+  "exact_assigned_set": true,
+  "terminal_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-57-terminal.jsonl",
+  "terminal_sha256": "a284392819f2165f706bc1bce1ed3d4619c2a7ae2e3614ce7bc0b79b1fefbbe0",
+  "report_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-57-validator-report.json"
+}
