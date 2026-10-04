@@ -1,0 +1,43 @@
+{
+  "worker": 14,
+  "job": "changed105-14",
+  "phase": "final",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-14-terminal.jsonl",
+  "assigned_record_ids": [
+    "entry-426",
+    "entry-528",
+    "entry-581",
+    "entry-990",
+    "entry-878",
+    "entry-1782",
+    "entry-2710",
+    "entry-4311",
+    "entry-6991"
+  ],
+  "completed_record_ids": [
+    "entry-426",
+    "entry-528",
+    "entry-581",
+    "entry-990",
+    "entry-878",
+    "entry-1782",
+    "entry-2710",
+    "entry-4311",
+    "entry-6991"
+  ],
+  "remaining_record_ids": [],
+  "row_count": 9,
+  "status_counts": {
+    "scored": 8,
+    "deferred": 1
+  },
+  "terminal_sha256": "fce971e95605e772e5eebf297293d16646e638fde30e9c2f39a4d59d5d9eb528",
+  "qa_report": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-14-qa-report.json",
+  "partial_checkpoints": [
+    "worker-14-checkpoint-001.json",
+    "worker-14-checkpoint-002.json"
+  ],
+  "append_only": true,
+  "neon_written": false,
+  "qa_result": "PASS"
+}

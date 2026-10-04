@@ -1,0 +1,52 @@
+{
+  "worker": 14,
+  "job": "changed105-14",
+  "result": "PASS",
+  "source": {
+    "branch": "codex/final-description-scores-2026-10-04",
+    "commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+    "packet": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-14-input.jsonl",
+    "rubric": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/RUBRIC.md"
+  },
+  "scope": {
+    "assigned_record_ids": [
+      "entry-426",
+      "entry-528",
+      "entry-581",
+      "entry-990",
+      "entry-878",
+      "entry-1782",
+      "entry-2710",
+      "entry-4311",
+      "entry-6991"
+    ],
+    "packet_record_count": 9,
+    "terminal_record_count": 9
+  },
+  "status_counts": {
+    "scored": 8,
+    "deferred": 1
+  },
+  "checks": {
+    "packet_has_exact_assigned_set": true,
+    "terminal_has_exact_assigned_set": true,
+    "entry_numbers_match_packet": true,
+    "required_fields_present": true,
+    "versions_and_states_valid": true,
+    "dimensions_valid": true,
+    "deferred_row_has_exact_reason": true,
+    "no_weighted_total_or_jitter": true,
+    "rubric_exists_at_source_commit": true
+  },
+  "deferred_record_ids": [
+    "entry-6991"
+  ],
+  "notes": [
+    "Only the assigned nine IDs were processed.",
+    "Terminal rows were appended to a previously absent output path; no existing terminal history or original scores were overwritten.",
+    "No canonical data or Neon writes were made.",
+    "No web research or subagents were used."
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-14-terminal.jsonl",
+  "terminal_sha256": "fce971e95605e772e5eebf297293d16646e638fde30e9c2f39a4d59d5d9eb528"
+}

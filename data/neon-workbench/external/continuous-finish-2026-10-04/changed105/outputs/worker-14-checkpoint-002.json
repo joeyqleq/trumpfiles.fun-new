@@ -1,0 +1,34 @@
+{
+  "worker": 14,
+  "job": "changed105-14",
+  "phase": "progress",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-14-terminal.jsonl",
+  "assigned_record_ids": [
+    "entry-426",
+    "entry-528",
+    "entry-581",
+    "entry-990",
+    "entry-878",
+    "entry-1782",
+    "entry-2710",
+    "entry-4311",
+    "entry-6991"
+  ],
+  "completed_record_ids": [
+    "entry-426",
+    "entry-528",
+    "entry-581",
+    "entry-990",
+    "entry-878",
+    "entry-1782"
+  ],
+  "remaining_record_ids": [
+    "entry-2710",
+    "entry-4311",
+    "entry-6991"
+  ],
+  "row_count": 6,
+  "terminal_sha256": "dc3f59e5fb86eb46377bf58cea0d3238438954edf1919ba9df43cce6fe8442fd",
+  "append_only": true,
+  "neon_written": false
+}
