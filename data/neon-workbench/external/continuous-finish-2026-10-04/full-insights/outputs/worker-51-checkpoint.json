@@ -1,0 +1,12 @@
+{
+  "job_id": "full-insights-51",
+  "assigned_ids": 92,
+  "completed_ids": 92,
+  "remaining_ids": 0,
+  "completion_ratio": 1.0,
+  "complete_ids": 89,
+  "insufficient_ids": 3,
+  "last_completed_id": "expanded-20260916-cassidy-measles-hearing",
+  "terminal_path": "outputs/worker-51-terminal.jsonl",
+  "amendment_path": "outputs/worker-51-terminal-amendments.jsonl"
+}

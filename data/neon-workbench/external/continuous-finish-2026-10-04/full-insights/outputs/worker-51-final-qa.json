@@ -1,0 +1,21 @@
+{
+  "job_id": "full-insights-51",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "assigned_ids": 92,
+  "effective_terminal_ids": 92,
+  "append_only_terminal_lines": 95,
+  "status_counts": {
+    "complete": 89,
+    "insufficient": 3
+  },
+  "duplicate_history_rows": "3 identical duplicate lines retained and resolved by worker-51-terminal-amendments.jsonl",
+  "amendments": 4,
+  "evidence_quotes_literal": true,
+  "non_unknown_core_fields_mapped": true,
+  "source_urls_present_in_packet": true,
+  "quantities_empty": true,
+  "relations_empty": true,
+  "inspection_scope": "supplied packet text/source mappings only; no web research or rescoring",
+  "application_tests": "not applicable; no application code changed",
+  "qa_passed": true
+}
