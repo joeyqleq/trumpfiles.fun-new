@@ -1,0 +1,56 @@
+{
+  "artifact": "Trump Files validation100-09 terminal extraction",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "source_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-09-input.jsonl",
+  "source_sha256": "b35fbee61cc7e5ce076616204d14c4a3868d75009e4c03907851a58f207059b9",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-09-terminal.jsonl",
+  "terminal_sha256": "83337d9e31ffc07c36447e8165489541a9d2adb57ae2fdfbcd0904ee37529eb4",
+  "expected_record_ids": [
+    "entry-2683",
+    "entry-507",
+    "entry-3314",
+    "entry-385",
+    "entry-295",
+    "entry-2730",
+    "entry-3341",
+    "entry-3515"
+  ],
+  "terminal_record_ids": [
+    "entry-2683",
+    "entry-507",
+    "entry-3314",
+    "entry-385",
+    "entry-295",
+    "entry-2730",
+    "entry-3341",
+    "entry-3515"
+  ],
+  "input_records": 8,
+  "terminal_rows": 8,
+  "status_counts": {
+    "complete": 7,
+    "insufficient": 1
+  },
+  "evidence_map_entries": 62,
+  "prior_terminal_rows": 0,
+  "rows_appended": 8,
+  "append_only": true,
+  "amendment_file": null,
+  "issues_resolved": [
+    "output_missing"
+  ],
+  "checks": {
+    "assigned_input_set_exact": true,
+    "terminal_id_set_exact_once": true,
+    "required_fields_and_enums_valid": true,
+    "non_unknown_facts_mapped_to_literal_supplied_text": true,
+    "source_urls_were_not_treated_as_opened_sources": true,
+    "quantities_and_relations_schema_valid": true,
+    "contradictions_recorded_in_blockers": true,
+    "legacy_estimates_omitted": true
+  },
+  "limitations": [
+    "No supplied source page was opened; evidence is limited to the frozen staged text.",
+    "Project code checks and UI verification do not apply to this artifact-only data change."
+  ]
+}

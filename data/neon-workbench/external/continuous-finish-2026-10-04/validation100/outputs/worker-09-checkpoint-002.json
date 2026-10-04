@@ -1,0 +1,29 @@
+{
+  "job": "validation100-09",
+  "checkpoint": 2,
+  "appended_this_checkpoint": [
+    "entry-385",
+    "entry-295",
+    "entry-2730"
+  ],
+  "terminal_record_ids": [
+    "entry-2683",
+    "entry-507",
+    "entry-3314",
+    "entry-385",
+    "entry-295",
+    "entry-2730"
+  ],
+  "expected_record_ids": [
+    "entry-2683",
+    "entry-507",
+    "entry-3314",
+    "entry-385",
+    "entry-295",
+    "entry-2730",
+    "entry-3341",
+    "entry-3515"
+  ],
+  "rows_complete": false,
+  "terminal_sha256": "7534081fad906fd0b9e0a9c03ac1e98f04322a237423470b195092ce7dfa895a"
+}
