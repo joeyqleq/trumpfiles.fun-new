@@ -1,0 +1,97 @@
+{
+  "worker": 5,
+  "account": 3,
+  "input": {
+    "branch": "codex/wave3-needs-context-204-2026-10-04",
+    "commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+    "sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+    "staged_subset_rows": 204
+  },
+  "coordinator": {
+    "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+    "commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+    "reconciliation_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+    "effective_results_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl"
+  },
+  "assigned_keys": [
+    "entry-176",
+    "entry-211",
+    "entry-2413",
+    "entry-264",
+    "entry-3117",
+    "entry-3709",
+    "entry-4017",
+    "entry-4619",
+    "entry-5505",
+    "entry-6138",
+    "entry-6330",
+    "entry-720",
+    "entry-830",
+    "entry-985"
+  ],
+  "expected_count": 14,
+  "output_count": 14,
+  "unique_id_count": 14,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "worker_complete_count": 14,
+  "pass_count": 12,
+  "pass_ids": [
+    "entry-176",
+    "entry-211",
+    "entry-2413",
+    "entry-3117",
+    "entry-3709",
+    "entry-4017",
+    "entry-4619",
+    "entry-5505",
+    "entry-6138",
+    "entry-6330",
+    "entry-720",
+    "entry-830"
+  ],
+  "hold_count": 2,
+  "hold_ids": [
+    "entry-264",
+    "entry-985"
+  ],
+  "blocking_ids": [
+    "entry-264",
+    "entry-985"
+  ],
+  "length_failures": [],
+  "length_check_counts": {
+    "short_max_180_passed": 14,
+    "medium_45_to_90_passed": 14,
+    "long_140_to_300_passed": 14
+  },
+  "source_url_to_fact_support": {
+    "pass_count": 12,
+    "hold_count": 2,
+    "blocking_ids": [
+      "entry-264",
+      "entry-985"
+    ],
+    "missing_cited_urls": {
+      "entry-264": [
+        "https://www.whitehouse.gov/presidential-actions/2025/04/strengthening-and-unleashing-americas-law-enforcement-to-pursue-criminals-and-protect-innocent-citizens/"
+      ],
+      "entry-985": [
+        "https://www.justice.gov/pardon/page/file/1358311/dl"
+      ]
+    }
+  },
+  "provenance_failures": [],
+  "preserved_meaning_failures": [],
+  "editorial_approval_count": 0,
+  "decision_scope": "PASS denotes proposal QA against evidence, preserved-meaning, provenance, and length criteria only; no row is editorial, publication, or release approval. Worker status complete is not approval. No source URL was fetched outside the supplied artifacts.",
+  "validation": "pass",
+  "output_path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-05-batch-20261004T062406Z-wave3-held204.jsonl",
+  "output_sha256": "e62e68da808e033fa920c436a5a5202cc65fb419136aa1665ca95b18d12a7700",
+  "checkpoint_paths": [
+    "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/checkpoints/worker-05-checkpoint-001.json",
+    "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/checkpoints/worker-05-checkpoint-002.json"
+  ]
+}

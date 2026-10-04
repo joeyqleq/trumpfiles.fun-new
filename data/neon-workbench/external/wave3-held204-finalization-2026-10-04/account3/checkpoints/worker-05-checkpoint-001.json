@@ -1,0 +1,32 @@
+{
+  "worker": 5,
+  "account": 3,
+  "checkpoint": 1,
+  "records_complete": 8,
+  "completed_keys": [
+    "entry-176",
+    "entry-211",
+    "entry-2413",
+    "entry-264",
+    "entry-3117",
+    "entry-3709",
+    "entry-4017",
+    "entry-4619"
+  ],
+  "status_counts": {
+    "PASS": 7,
+    "HOLD": 1
+  },
+  "input_branch": "codex/wave3-needs-context-204-2026-10-04",
+  "input_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+  "input_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+  "input_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+  "coordinator_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+  "reconciliation_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+  "effective_results_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl",
+  "output_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-05-batch-20261004T062406Z-wave3-held204.jsonl",
+  "blocking_ids": [
+    "entry-264"
+  ]
+}
