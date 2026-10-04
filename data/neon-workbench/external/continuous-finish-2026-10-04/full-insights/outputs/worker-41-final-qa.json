@@ -1,0 +1,52 @@
+{
+  "job": "full-insights-41",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "branch": "ls/5-trump-files-web425-review-05-of-12-zM9X",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-41-terminal.jsonl",
+  "assigned_record_count": 92,
+  "terminal_row_count": 92,
+  "status_counts": {
+    "complete": 90,
+    "insufficient": 2
+  },
+  "last_checkpoint": "worker-41-checkpoint-031.json",
+  "amendment_count": 15,
+  "amendments_appended_this_final_audit": [
+    "worker-41-amendment-009",
+    "worker-41-amendment-010",
+    "worker-41-amendment-011",
+    "worker-41-amendment-012",
+    "worker-41-amendment-013",
+    "worker-41-amendment-014",
+    "worker-41-amendment-015"
+  ],
+  "array_label_count": 203,
+  "checks": {
+    "terminal_exact_assigned_id_set": true,
+    "terminal_rows_have_valid_status_and_proposal_marker": true,
+    "core_schema_enums_and_sparse_extensions_valid": true,
+    "all_nonunknown_values_have_field_value_evidence": true,
+    "all_evidence_and_blocker_quotes_are_literal_pinned_text": true,
+    "all_array_labels_have_own_evidence_entries": true,
+    "amendments_are_separate_and_append_only": true,
+    "quantities_and_relations_empty_for_all_rows": true
+  },
+  "findings": [
+    "The terminal file contains one row for every assigned ID with no duplicates or extras.",
+    "All quoted evidence and blocker quotes are literal substrings of the pinned staged descriptions.",
+    "Group and institution values each have a matching field/value evidence entry; seven earlier labels or citations with weak/indirect wording were corrected in separate immutable amendments 009–015. Remaining acronym, role-title, and concise-label mappings point to explicit text in their own basis quotes.",
+    "Quantities and relations remain empty in all terminal rows; no candidate_extensions were added.",
+    "The two final assigned records were processed from the pinned input and checkpoint 31 records completion."
+  ],
+  "source_limitations": [
+    "Only supplied frozen/staged text was used. Supplied source URLs were not opened or independently verified.",
+    "No claims, descriptions, legacy estimates, or source mappings are represented as independently verified."
+  ],
+  "scope_exclusions": [
+    "No web research or scoring.",
+    "No canonical, Neon, or code edits.",
+    "No project checks, screenshots, or UI verification were applicable to this data-only artifact task.",
+    "No pull request, as explicitly required by the task."
+  ],
+  "errors": []
+}
