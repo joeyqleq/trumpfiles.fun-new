@@ -1,0 +1,28 @@
+{
+  "job": "full-insights-37",
+  "worker": 37,
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "completed_count": 92,
+  "assigned_count": 92,
+  "last_record_ids": [
+    "entry-7142",
+    "expanded-20260909-rnc-dividend-pledge"
+  ],
+  "quote_validation": "passed for all records",
+  "exact_id_set_match": true,
+  "duplicate_record_ids": [],
+  "qa_file": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-37-final-qa.json",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-37-terminal.jsonl",
+  "completed": true,
+  "insufficient_record_ids": [
+    "entry-214",
+    "entry-1420",
+    "entry-1493",
+    "entry-2033",
+    "entry-2406"
+  ],
+  "blocker_counts": {
+    "contradiction": 9,
+    "limitation": 56
+  }
+}

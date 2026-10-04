@@ -1,0 +1,15 @@
+{
+  "job": "full-insights-37",
+  "worker": 37,
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "batch": 30,
+  "completed_count": 90,
+  "last_record_ids": [
+    "entry-6849",
+    "entry-6956",
+    "entry-7040"
+  ],
+  "next_packet_position": 90,
+  "quote_validation": "passed",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-37-terminal.jsonl"
+}
