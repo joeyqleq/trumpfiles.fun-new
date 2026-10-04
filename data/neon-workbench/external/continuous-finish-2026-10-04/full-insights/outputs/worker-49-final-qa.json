@@ -1,0 +1,27 @@
+{
+  "job": "full-insights-49",
+  "worker": 49,
+  "proposal_only": true,
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "assigned_count": 92,
+  "packet_count": 92,
+  "terminal_count": 92,
+  "exact_id_set_match": true,
+  "duplicate_terminal_ids": 0,
+  "status_counts": {
+    "complete": 74,
+    "insufficient": 18
+  },
+  "non_unknown_core_values_with_evidence_support": 548,
+  "literal_evidence_quotes_validated": 551,
+  "blockers_with_literal_quotes_checked": 84,
+  "quantities_relations_empty_for_all_rows": true,
+  "checkpoint_remaining_count": 0,
+  "validation": "passed",
+  "scope_note": "Core fields only; quantities and relations remain empty. No sources were newly fetched or independently verified in this extraction.",
+  "immutable_amendment_count": 1,
+  "amended_record_ids": [
+    "entry-5358"
+  ],
+  "amendment_reason": "Removed an individual from affected_groups; original terminal history is preserved."
+}
