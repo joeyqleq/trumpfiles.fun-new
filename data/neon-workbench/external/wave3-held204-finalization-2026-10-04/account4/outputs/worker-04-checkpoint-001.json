@@ -1,0 +1,53 @@
+{
+  "packet_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+  "packet_file_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+  "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+  "coordinator_reconciliation_sha256": "0efa1e8b5e8f4b9ef94f09a19533b0679ae124bddf429e35c2a11a8f5569eb2a",
+  "coordinator_effective_results_sha256": "2953556deb4d0c565ec54214661ac08598d41fcdea15dfe96f89d09a53fbbc9d",
+  "expected_keys": [
+    "entry-1777",
+    "entry-2496",
+    "entry-4603",
+    "entry-854"
+  ],
+  "actual_keys": [
+    "entry-1777",
+    "entry-2496",
+    "entry-4603",
+    "entry-854"
+  ],
+  "terminal_rows": 4,
+  "terminal_counts": {
+    "hold": 2,
+    "propose_narrower_event": 1,
+    "propose_publication_context_only": 1
+  },
+  "release_ready_count": 2,
+  "blocking_ids": [
+    "entry-1777",
+    "entry-854"
+  ],
+  "description_length_check": "passed",
+  "description_lengths": {
+    "entry-2496": {
+      "title_chars": 77,
+      "short_chars": 142,
+      "medium_words": 66,
+      "long_words": 162
+    },
+    "entry-4603": {
+      "title_chars": 69,
+      "short_chars": 127,
+      "medium_words": 67,
+      "long_words": 177
+    }
+  },
+  "url_format_check": "passed",
+  "duplicate_id_check": "passed",
+  "duplicate_event_check": "No duplicate event identified within assigned four-key subset; broader corpus duplicate audit not performed.",
+  "source_mapping_check": "Each proposed factual claim has an exact supporting URL mapping; holds identify specific missing evidence and source limitations.",
+  "scope_check": "Only the four assigned IDs were written; no packet input, canonical data, Neon state, or other-worker outputs changed.",
+  "batch_file": "worker-04-batch-UNIQUE.jsonl",
+  "batch_sha256": "104d0008733743887b44201905886efb6604f51cdb84307d5c69e3ce39db1f65",
+  "blocking_issues": []
+}
