@@ -1,0 +1,181 @@
+{
+  "worker": 12,
+  "task": "Trump Files web425 review 12 of 12",
+  "source_packet": {
+    "branch": "codex/insights-validation100-2026-10-04",
+    "commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-12-input.jsonl",
+    "sha256": "f5da2bcafe5d6ed11226beef381cd8c08aaa65cd9736b604c6c924509582cd45"
+  },
+  "review_packet": {
+    "branch": "ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+    "commit": "f6ebb562095289168c8caf52017ad197ef4e8771",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-qa/outputs/worker-12-terminal.jsonl",
+    "statuses": {
+      "entry-2847": "pass",
+      "entry-3361": "pass",
+      "entry-4703": "revise",
+      "entry-224": "revise",
+      "entry-2629": "pass",
+      "entry-2843": "pass",
+      "entry-3428": "revise",
+      "entry-5218": "revise"
+    }
+  },
+  "prior_terminal": {
+    "commit": "35995c163e35e9dc9eb81f0407ec2dc92a041102",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-12-terminal.jsonl",
+    "row_count": 8,
+    "prior_amendments": {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-12-amendments.jsonl",
+      "count": 4,
+      "ids": [
+        "worker-12-amendment-001",
+        "worker-12-amendment-002",
+        "worker-12-amendment-003",
+        "worker-12-amendment-004"
+      ],
+      "considered_for_effective_rows": true
+    }
+  },
+  "output_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-12-terminal.jsonl",
+  "expected_ids": [
+    "entry-2847",
+    "entry-3361",
+    "entry-4703",
+    "entry-224",
+    "entry-2629",
+    "entry-2843",
+    "entry-3428",
+    "entry-5218"
+  ],
+  "actual_ids": [
+    "entry-2847",
+    "entry-3361",
+    "entry-4703",
+    "entry-224",
+    "entry-2629",
+    "entry-2843",
+    "entry-3428",
+    "entry-5218"
+  ],
+  "expected_count": 8,
+  "actual_row_count": 8,
+  "unique_id_count": 8,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "terminal_status_counts": {
+    "complete": 8
+  },
+  "repair_amendments": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-12-amendments.jsonl",
+    "count": 4,
+    "ids": [
+      "worker-12-repair-amendment-001",
+      "worker-12-repair-amendment-002",
+      "worker-12-repair-amendment-003",
+      "worker-12-repair-amendment-004"
+    ],
+    "note": "Separate immutable amendments document review-directed corrections; the prior terminal and its history remain unchanged."
+  },
+  "evidence_audit": {
+    "evidence_map_entries": 68,
+    "literal_basis_quotes_checked": 83,
+    "nonliteral_or_missing_quotes": [],
+    "asserted_values_without_evidence_map": [],
+    "unsupplied_source_urls": [],
+    "source_page_checked": false,
+    "note": "Quotes were checked only against the supplied staged descriptions and frozen original text; supplied URLs were retained as mappings and were not treated as page verification."
+  },
+  "artifact_findings": {
+    "coordinator_findings": [
+      "output_missing"
+    ],
+    "resolution": "Created the repair terminal output, three progress checkpoints, four immutable repair amendments, and this final QA artifact."
+  },
+  "corrections": [
+    {
+      "record_id": "entry-4703",
+      "fields": [
+        "event_state evidence quote",
+        "relations"
+      ],
+      "note": "Use a literal lowercase quote and direct officials -> Judge Boasberg for object_of_legal_action."
+    },
+    {
+      "record_id": "entry-224",
+      "fields": [
+        "affected_groups"
+      ],
+      "note": "Remove journalists’ sources as a current affected group; keep the advocate warning as outcome and record the prospective-risk limit."
+    },
+    {
+      "record_id": "entry-3428",
+      "fields": [
+        "outcome"
+      ],
+      "note": "Use the literal announced-return sentence so the outcome agrees with proposed event_state."
+    },
+    {
+      "record_id": "entry-5218",
+      "fields": [
+        "outcome"
+      ],
+      "note": "Keep only the attributed ethics-expert characterization, with a literal quote; no quid pro quo is asserted."
+    }
+  ],
+  "retained_limitations": [
+    {
+      "record_id": "entry-2847",
+      "note": "The contact is reported; no specific order violation or call content is established."
+    },
+    {
+      "record_id": "entry-3361",
+      "note": "The interview proposed staffing changes; implementation and formal endorsement of a completed Project 2025 document are not established."
+    },
+    {
+      "record_id": "entry-4703",
+      "note": "Probable cause and inquiry steps are not a conviction or final contempt judgment."
+    },
+    {
+      "record_id": "entry-224",
+      "note": "Journalists’ sources are mentioned only in a prospective warning."
+    },
+    {
+      "record_id": "entry-2629",
+      "note": "The reported federal income-tax amount is supported; return figures and calculation details are absent."
+    },
+    {
+      "record_id": "entry-2843",
+      "note": "Funding, implementation, and an actual plan to prevent voting are not established."
+    },
+    {
+      "record_id": "entry-3428",
+      "note": "The announced appointment’s scope and access restrictions are unspecified."
+    },
+    {
+      "record_id": "entry-5218",
+      "note": "Ethics experts’ appearance/bid characterization is not a finding of quid pro quo."
+    }
+  ],
+  "scope": {
+    "canonical_data_changed": false,
+    "neon_changed": false,
+    "code_changed": false,
+    "external_sources_fetched": false,
+    "sample_scope": "Assigned worker-12 records only; no claim made about the full 100-record sample."
+  },
+  "checks": {
+    "exact_assigned_set": true,
+    "one_full_row_per_id": true,
+    "required_fields_present": true,
+    "allowed_enums": true,
+    "asserted_values_mapped": true,
+    "literal_quotes": true,
+    "supplied_source_mappings": true,
+    "relation_direction_reviewed": true,
+    "prior_rows_preserved": true,
+    "no_code_or_canonical_or_neon_edits": true
+  }
+}
