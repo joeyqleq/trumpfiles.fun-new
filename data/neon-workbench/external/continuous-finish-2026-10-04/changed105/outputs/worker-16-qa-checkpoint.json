@@ -1,0 +1,41 @@
+{
+  "worker": 16,
+  "job": "changed105-16",
+  "input_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-16-input.jsonl",
+  "rubric_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/RUBRIC.md",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-16-terminal.jsonl",
+  "expected_ids": [
+    "entry-969",
+    "entry-836",
+    "entry-985",
+    "entry-3804",
+    "entry-2496",
+    "entry-3839",
+    "entry-4304",
+    "entry-754",
+    "entry-833"
+  ],
+  "terminal_ids": [
+    "entry-969",
+    "entry-836",
+    "entry-985",
+    "entry-3804",
+    "entry-2496",
+    "entry-3839",
+    "entry-4304",
+    "entry-754",
+    "entry-833"
+  ],
+  "expected_count": 9,
+  "terminal_count": 9,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "schema_and_score_validation": "passed",
+  "exact_set_validation": "passed",
+  "original_scores_overwritten": false,
+  "canonical_data_edited": false,
+  "neon_written": false,
+  "amendments": []
+}
