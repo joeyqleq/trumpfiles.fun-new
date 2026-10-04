@@ -1,0 +1,26 @@
+{
+  "job": "context-enrichment-13",
+  "status": "complete",
+  "source_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-13-input.jsonl",
+  "output_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-13-terminal.jsonl",
+  "validation_report_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-13-validation-report.json",
+  "expected_count": 1,
+  "actual_count": 1,
+  "expected_record_ids": [
+    "entry-203"
+  ],
+  "actual_record_ids": [
+    "entry-203"
+  ],
+  "missing_record_ids": [],
+  "extra_record_ids": [],
+  "duplicate_record_ids": [],
+  "exact_set_pass": true,
+  "validator_status": "valid",
+  "validator_valid": true,
+  "input_sha256": "fad7a0458b0694e64a0f1708d13dfafdea8506fae64197c57596f93c858dc3f6",
+  "terminal_sha256": "38d00b5b49e22990cb9308b5e240d8c910449b8bc0a084e629e4f65c399e021e",
+  "validation_report_sha256": "8920dca312dbe22cf32900df0830fcb3915c2c105a8f51a5ce7a9596618a86fe",
+  "updated_at": "2026-10-04T17:57:23.967902+00:00"
+}
