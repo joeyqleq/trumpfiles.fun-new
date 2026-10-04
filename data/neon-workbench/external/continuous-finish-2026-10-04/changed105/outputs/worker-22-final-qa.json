@@ -1,0 +1,69 @@
+{
+  "record_type": "exact_set_qa",
+  "worker": 22,
+  "status": "pass",
+  "checked_at_utc": "2026-10-04T11:24:20.830076Z",
+  "source_ref": {
+    "branch": "codex/final-description-scores-2026-10-04",
+    "commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+    "packet_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-22-input.jsonl",
+    "packet_sha256": "9fa9b53754f04292cffed6432c55c48c55b28e47dddd56dcd9b80f178f1abd7a",
+    "rubric_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/RUBRIC.md",
+    "rubric_sha256": "1ac7e1f208a8fe8fde1db5accda6d5b587c79f7780baafa0baa1053909d28d27"
+  },
+  "expected_ids": [
+    "entry-4619",
+    "entry-5531",
+    "entry-178",
+    "entry-3139",
+    "entry-352",
+    "entry-378",
+    "entry-390",
+    "entry-4017"
+  ],
+  "packet_ids": [
+    "entry-4619",
+    "entry-5531",
+    "entry-178",
+    "entry-3139",
+    "entry-352",
+    "entry-378",
+    "entry-390",
+    "entry-4017"
+  ],
+  "terminal_ids": [
+    "entry-4619",
+    "entry-5531",
+    "entry-178",
+    "entry-3139",
+    "entry-352",
+    "entry-378",
+    "entry-390",
+    "entry-4017"
+  ],
+  "packet_count": 8,
+  "terminal_count": 8,
+  "status_counts": {
+    "scored": 7,
+    "deferred": 1
+  },
+  "checks": {
+    "exact_packet_set": true,
+    "exact_terminal_set": true,
+    "no_duplicate_terminal_ids": true,
+    "entry_numbers_match_packet": true,
+    "impact_v2_schema": true,
+    "dimension_bounds_and_precision": true,
+    "deferred_rows_have_null_dimensions_and_reason": true,
+    "required_rationale_basis_notes": true
+  },
+  "scope_note": "Task title says 13 IDs, but the explicit ONLY list and pinned worker-22 packet each contain exactly these 8 IDs; the explicit set was followed.",
+  "issues_resolved": [
+    "output_missing"
+  ],
+  "no_web_research": true,
+  "no_extra_subagents": true,
+  "no_canonical_edits": true,
+  "no_database_writes": true,
+  "no_pull_request": true
+}
