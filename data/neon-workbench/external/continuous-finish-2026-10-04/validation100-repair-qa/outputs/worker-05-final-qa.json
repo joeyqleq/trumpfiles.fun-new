@@ -1,0 +1,73 @@
+{
+  "job": "validation100-repair-qa-05",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "review_commit": "373333bb56d01036aeb302b2c8c36647883b5ebc",
+  "qa_branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+  "assigned_record_ids": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422",
+    "entry-5729",
+    "entry-2561",
+    "entry-2728",
+    "entry-310",
+    "entry-3309"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair-qa/outputs/worker-05-terminal.jsonl",
+  "terminal_rows": 8,
+  "terminal_record_ids": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422",
+    "entry-5729",
+    "entry-2561",
+    "entry-2728",
+    "entry-310",
+    "entry-3309"
+  ],
+  "statuses": {
+    "entry-2675": "pass",
+    "entry-6699": "pass",
+    "entry-3422": "pass",
+    "entry-5729": "pass",
+    "entry-2561": "pass",
+    "entry-2728": "pass",
+    "entry-310": "pass",
+    "entry-3309": "pass"
+  },
+  "supported_useful_fields": {
+    "entry-2675": 7,
+    "entry-6699": 16,
+    "entry-3422": 9,
+    "entry-5729": 8,
+    "entry-2561": 6,
+    "entry-2728": 10,
+    "entry-310": 9,
+    "entry-3309": 10
+  },
+  "immutable_amendments_read": [
+    "worker-05-repair-amendment-001"
+  ],
+  "qa_amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair-qa/outputs/worker-05-terminal-amendments-001.jsonl",
+  "qa_amendments_appended": [
+    "worker-05-terminal-amendment-001"
+  ],
+  "validation": {
+    "input_exact_id_set": true,
+    "terminal_exact_id_set": true,
+    "no_terminal_duplicates": true,
+    "jsonl_parseable": true,
+    "evidence_map_basis_quotes_literal_in_staged_descriptions": true,
+    "worker_blocker_quotes_compared_to_supplied_original_input": true,
+    "effective_entry_3309_relation_matches_immutable_repair_amendment": true,
+    "supported_useful_field_counts_calculated": true,
+    "enum_definitions_available": false,
+    "source_pages_fetched": false,
+    "database_or_canonical_data_written": false
+  },
+  "sample_selection_bias": "These are early eligible records, not a random whole-catalog sample.",
+  "artifact_issue_resolved": [
+    "output_missing"
+  ],
+  "no_pull_request": true
+}
