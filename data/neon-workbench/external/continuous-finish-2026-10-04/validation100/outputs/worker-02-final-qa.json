@@ -1,0 +1,53 @@
+{
+  "task": "validation100-02",
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-02-input.jsonl",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-02-terminal.jsonl",
+  "assigned_ids": [
+    "entry-6848",
+    "entry-3035",
+    "entry-1110",
+    "entry-4209",
+    "entry-2453",
+    "entry-5781",
+    "entry-2823",
+    "entry-6912",
+    "entry-143"
+  ],
+  "counts": {
+    "rows": 9,
+    "unique_ids": 9,
+    "complete": 9,
+    "insufficient": 0,
+    "evidence_items": 74
+  },
+  "exact_set": {
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "pass": true
+  },
+  "validation": {
+    "jsonl_parse": true,
+    "row_schema": true,
+    "enum_values": true,
+    "all_evidence_quotes_literal_substrings": true,
+    "all_non_unknown_fields_and_array_elements_mapped": true,
+    "quantities_relations_validated": true
+  },
+  "contradictions_and_limits": [
+    "entry-6848 frozen synopsis contains broader account and reaction claims absent from staged description; excluded.",
+    "entry-4209 staged medium description and frozen synopsis contain labor participation, wage, and financial-sector figures that staged long says are not supported by the linked BBC report; omitted. Staged long explicitly does not establish Trump-policy causation.",
+    "entry-143 staged medium frames the European analysis as interpretation rather than an official plan, while staged long states broader systematic-campaign claims; broader claims excluded.",
+    "entry-3035 is presented as Reince Priebus’s recollection, not as an observed or recorded announcement.",
+    "entry-2453 describes a regulatory finding against Trump Plaza, not a personal criminal conviction or proof Trump directed the arrangement.",
+    "entry-5781 does not establish that Trump’s comment caused targeting, that Russia found the emails, or Trump’s intent.",
+    "entry-2823 does not establish quid pro quo or U.S. policy influence; entry-6912 gives no revenue amount."
+  ],
+  "source_handling": "Used only supplied staged/frozen text and supplied source mappings. No supplied URL was visited; evidence_status records supplied_text. No web searches or new scoring.",
+  "scope_controls": "No canonical, Neon, or application-code files changed. Only the assigned terminal output and final QA/checkpoint artifacts are intended.",
+  "artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "result": "pass"
+}
