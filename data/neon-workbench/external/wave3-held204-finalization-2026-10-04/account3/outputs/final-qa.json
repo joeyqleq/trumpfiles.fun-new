@@ -1,0 +1,181 @@
+{
+  "task": "wave3-held204-finalization-2026-10-04/account3/worker-01",
+  "packet_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+  "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+  "batch_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-01-batch-20261004T062402Z-4b722b9.jsonl",
+  "assigned_keys": [
+    "entry-1666",
+    "entry-188",
+    "entry-2340",
+    "entry-2528",
+    "entry-2929",
+    "entry-352",
+    "entry-3873",
+    "entry-4304",
+    "entry-5406",
+    "entry-5936",
+    "entry-6241",
+    "entry-655",
+    "entry-804",
+    "entry-945"
+  ],
+  "assigned_count": 14,
+  "saved_count": 14,
+  "missing_count": 0,
+  "missing_ids": [],
+  "duplicate_row_count": 0,
+  "pass_count": 6,
+  "hold_count": 8,
+  "blocking_ids": [
+    "entry-188",
+    "entry-3873",
+    "entry-5406",
+    "entry-5936",
+    "entry-6241",
+    "entry-655",
+    "entry-804",
+    "entry-945"
+  ],
+  "worker_complete_is_editorial_approval": false,
+  "length_rules": {
+    "short": "<=180 characters",
+    "medium": "45-90 whitespace-delimited words",
+    "long": "140-300 whitespace-delimited words when present"
+  },
+  "length_results": [
+    {
+      "key": "entry-1666",
+      "short_chars": 128,
+      "medium_words": 59,
+      "long_words": 168,
+      "source_url_count": 2
+    },
+    {
+      "key": "entry-188",
+      "short_chars": 154,
+      "medium_words": 57,
+      "long_words": 177,
+      "source_url_count": 6
+    },
+    {
+      "key": "entry-2340",
+      "short_chars": 178,
+      "medium_words": 80,
+      "long_words": 188,
+      "source_url_count": 3
+    },
+    {
+      "key": "entry-2528",
+      "short_chars": 125,
+      "medium_words": 55,
+      "long_words": 148,
+      "source_url_count": 4
+    },
+    {
+      "key": "entry-2929",
+      "short_chars": 136,
+      "medium_words": 57,
+      "long_words": 148,
+      "source_url_count": 4
+    },
+    {
+      "key": "entry-352",
+      "short_chars": 143,
+      "medium_words": 64,
+      "long_words": 171,
+      "source_url_count": 4
+    },
+    {
+      "key": "entry-3873",
+      "short_chars": 75,
+      "medium_words": 72,
+      "long_words": 185,
+      "source_url_count": 3
+    },
+    {
+      "key": "entry-4304",
+      "short_chars": 171,
+      "medium_words": 75,
+      "long_words": 172,
+      "source_url_count": 2
+    },
+    {
+      "key": "entry-5406",
+      "short_chars": 168,
+      "medium_words": 89,
+      "long_words": 204,
+      "source_url_count": 3
+    },
+    {
+      "key": "entry-5936",
+      "short_chars": 116,
+      "medium_words": 73,
+      "long_words": 218,
+      "source_url_count": 3
+    },
+    {
+      "key": "entry-6241",
+      "short_chars": 150,
+      "medium_words": 70,
+      "long_words": 186,
+      "source_url_count": 2
+    },
+    {
+      "key": "entry-655",
+      "short_chars": 133,
+      "medium_words": 79,
+      "long_words": 168,
+      "source_url_count": 3
+    },
+    {
+      "key": "entry-804",
+      "short_chars": 147,
+      "medium_words": 71,
+      "long_words": 186,
+      "source_url_count": 1
+    },
+    {
+      "key": "entry-945",
+      "short_chars": 55,
+      "medium_words": 88,
+      "long_words": 0,
+      "source_url_count": 1
+    }
+  ],
+  "length_failures": {
+    "short_ids": [],
+    "medium_ids": [],
+    "long_missing_or_invalid_ids": [
+      "entry-945"
+    ]
+  },
+  "url_format_valid": true,
+  "verified_urls_are_subset_of_actual_worker_proposal_source_urls": true,
+  "source_urls_verified_count": 19,
+  "source_url_citation_counts": {
+    "entry-1666": 2,
+    "entry-188": 6,
+    "entry-2340": 3,
+    "entry-2528": 4,
+    "entry-2929": 4,
+    "entry-352": 4,
+    "entry-3873": 3,
+    "entry-4304": 2,
+    "entry-5406": 3,
+    "entry-5936": 3,
+    "entry-6241": 2,
+    "entry-655": 3,
+    "entry-804": 1,
+    "entry-945": 1
+  },
+  "checkpoint_files": [
+    "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/checkpoints/worker-01-checkpoint-001-through-07-20261004T062402Z.jsonl",
+    "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/checkpoints/worker-01-checkpoint-002-through-14-20261004T062402Z.jsonl"
+  ],
+  "notes": [
+    "Exact assigned key set only; original proposals copied without rewriting.",
+    "HOLD rows retain the worker proposal and state the specific unresolved blocker.",
+    "PASS means this independent source/meaning/length audit found the proposal release-ready for its stated bounded scope; it does not reflect worker completion or canonical publication approval.",
+    "Length validation uses whitespace-delimited words; a missing long description is a failure."
+  ]
+}
