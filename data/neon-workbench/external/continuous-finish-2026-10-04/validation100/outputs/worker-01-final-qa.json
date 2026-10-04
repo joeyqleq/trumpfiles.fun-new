@@ -1,0 +1,79 @@
+{
+  "worker": "worker-01",
+  "status": "complete",
+  "job": "validation100-01",
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-01-input.jsonl",
+  "input_sha256": "7462ac60a1bbf62e00138cc1ba02218d6e12efac2b1e3a18fefca8076ecb2e07",
+  "assigned_ids": [
+    "entry-2638",
+    "entry-3155",
+    "entry-6196",
+    "entry-6620",
+    "entry-217",
+    "entry-6166",
+    "entry-653",
+    "entry-1088",
+    "entry-462"
+  ],
+  "assigned_count": 9,
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-terminal.jsonl",
+  "terminal_row_count": 9,
+  "terminal_unique_record_count": 9,
+  "missing_ids": [],
+  "outside_assignment_ids": [],
+  "duplicate_record_ids": [],
+  "terminal_status_counts": {
+    "complete": 9
+  },
+  "effective_row_count_after_amendments": 9,
+  "amendment_paths": [
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-amendment-001.jsonl"
+  ],
+  "amendment_count": 1,
+  "checkpoint_paths": [
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-checkpoint-001.json",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-checkpoint-002.json",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-checkpoint-003.json"
+  ],
+  "latest_checkpoint": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-checkpoint-003.json",
+  "validation": {
+    "jsonl_parses": true,
+    "exact_assigned_set": true,
+    "proposal_only_true_for_all_terminal_rows": true,
+    "required_fields_present": true,
+    "allowed_enums_valid": true,
+    "all_non_unknown_scalars_and_array_elements_mapped": true,
+    "all_evidence_quotes_literal_substrings_of_supplied_input": true,
+    "quantity_and_relation_quotes_literal_substrings": true,
+    "no_duplicate_terminal_record_ids": true,
+    "blockers_arrays_present": true
+  },
+  "contradictions_and_scope_notes": [
+    {
+      "record_id": "entry-6620",
+      "note": "Staged description says planned directive and CDC recommendation remained; frozen synopsis says CDC was directed to remove its recommendation."
+    },
+    {
+      "record_id": "entry-217",
+      "note": "Civilian-group activity is presented with different attribution/certainty in staged medium versus staged long and frozen synopsis; only explicit National Guard deployment is recorded as completed."
+    },
+    {
+      "record_id": "entry-462",
+      "note": "Staged long description identifies an unrelated immigration-crackdown category attached to a Kennedy Center medal ceremony; recorded as a blocker, with no taxonomy edit."
+    }
+  ],
+  "source_limitations": "Annotation uses only supplied frozen/staged input text. Supplied URLs were not fetched; no web search, new scoring, or source-page verification was performed.",
+  "scope_checks": {
+    "canonical_edits": false,
+    "neon_edits": false,
+    "code_edits": false,
+    "pr_opened": false,
+    "artifact_issue_resolved": [
+      "output_missing"
+    ]
+  },
+  "terminal_sha256": "e7fcc1a4c120004287a19dc407e3bfed58c98f73f9a7639ab6f1d2c5bc4470ba",
+  "amendment_sha256": "084bd9b0d7310abd1cc281d1f5043e43a2e773af3b22a12324a15ebc9c8c0037",
+  "captured_at": "2026-10-04"
+}
