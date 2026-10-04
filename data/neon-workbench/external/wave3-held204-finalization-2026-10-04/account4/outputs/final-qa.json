@@ -1,0 +1,82 @@
+{
+  "worker": "worker-01",
+  "status": "complete_with_hold",
+  "packet": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4",
+  "input_branch": "codex/wave3-needs-context-204-2026-10-04",
+  "input_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+  "input_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+  "input_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+  "coordinator_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+  "coordinator_reconciliation_sha256": "0efa1e8b5e8f4b9ef94f09a19533b0679ae124bddf429e35c2a11a8f5569eb2a",
+  "coordinator_effective_results_sha256": "2953556deb4d0c565ec54214661ac08598d41fcdea15dfe96f89d09a53fbbc9d",
+  "assigned_keys": [
+    "entry-1670",
+    "entry-2418",
+    "entry-405",
+    "entry-811"
+  ],
+  "assigned_count": 4,
+  "batch_path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-01-batch-UNIQUE.jsonl",
+  "batch_sha256": "559e91b17bd4c4bb0f05d2510706e24298fc113002ef2c965c4f560c94b5ca8e",
+  "written_row_count": 4,
+  "unique_written_key_count": 4,
+  "missing_keys": [],
+  "outside_assignment_keys": [],
+  "duplicate_key_rows": [],
+  "terminal_disposition_counts": {
+    "hold": 1,
+    "proposal": 3
+  },
+  "blocking_ids": [
+    "entry-1670"
+  ],
+  "description_length_rules": {
+    "description_short": "<=180 characters",
+    "description_medium": "45-90 words",
+    "description_long": "140-300 words"
+  },
+  "description_length_audit": [
+    {
+      "key": "entry-2418",
+      "title_chars": 69,
+      "short_chars": 114,
+      "medium_words": 66,
+      "long_words": 186
+    },
+    {
+      "key": "entry-405",
+      "title_chars": 77,
+      "short_chars": 112,
+      "medium_words": 76,
+      "long_words": 163
+    },
+    {
+      "key": "entry-811",
+      "title_chars": 91,
+      "short_chars": 142,
+      "medium_words": 85,
+      "long_words": 208
+    }
+  ],
+  "length_issues": [],
+  "url_format_issues": [],
+  "url_to_fact_mapping_issues": [],
+  "duplicate_event_review": {
+    "staged_packet_search": "No second row in the staged 204-key packet describes the May 1989 Lady Ghislaine party. Other Maxwell/Mogilevich rows concern different stated events.",
+    "catalog_limit": "The full canonical event catalog is not included in this packet; global non-duplication cannot be certified."
+  },
+  "research_limitations": [
+    "The AP-tracker claim lacks a named pledge and dated status transition; it remains held.",
+    "The 1989 party proposal for entry-2418 is scoped to the reported social event and does not validate the unrelated passport, banking, or KGB claims.",
+    "Firecrawl direct scraping returned HTTP 402 (insufficient credits); source review used Exa indexed source excerpts and cited source URLs."
+  ],
+  "captured_at": "2026-10-04",
+  "source_result_checks": {
+    "linked_result_rows": 3,
+    "unassigned_without_result": [
+      "entry-405"
+    ],
+    "all_source_rows_match_assignment_key": true
+  }
+}

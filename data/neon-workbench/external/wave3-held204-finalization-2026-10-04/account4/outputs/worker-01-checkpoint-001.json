@@ -1,0 +1,28 @@
+{
+  "worker": "worker-01",
+  "packet": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4",
+  "input_branch": "codex/wave3-needs-context-204-2026-10-04",
+  "input_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+  "input_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+  "input_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+  "coordinator_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+  "reconciliation_sha256": "0efa1e8b5e8f4b9ef94f09a19533b0679ae124bddf429e35c2a11a8f5569eb2a",
+  "effective_results_sha256": "2953556deb4d0c565ec54214661ac08598d41fcdea15dfe96f89d09a53fbbc9d",
+  "batch_path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-01-batch-UNIQUE.jsonl",
+  "checkpoint": 1,
+  "through_row": 4,
+  "through_key": "entry-811",
+  "checkpoint_row_count": 4,
+  "checkpoint_keys": [
+    "entry-1670",
+    "entry-2418",
+    "entry-405",
+    "entry-811"
+  ],
+  "prefix_sha256": "559e91b17bd4c4bb0f05d2510706e24298fc113002ef2c965c4f560c94b5ca8e",
+  "terminal_disposition_counts": {
+    "hold": 1,
+    "proposal": 3
+  }
+}
