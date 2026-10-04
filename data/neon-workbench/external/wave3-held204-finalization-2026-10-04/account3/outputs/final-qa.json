@@ -1,0 +1,74 @@
+{
+  "task": "Wave3 held204 finalization 2026-10-04 account3 worker-02",
+  "branch": "ls/3-trump-files-impact368-review-02-of-12-2F_B",
+  "source_snapshots": {
+    "staged_subset": {
+      "branch": "codex/wave3-needs-context-204-2026-10-04",
+      "commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+      "path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl"
+    },
+    "coordinator": {
+      "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+      "commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+      "paths": [
+        "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+        "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl"
+      ]
+    }
+  },
+  "output_path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-02-batch-wave3-held204-finalization-20261004.jsonl",
+  "assigned_ids": [
+    "entry-1726",
+    "entry-203",
+    "entry-2342",
+    "entry-2557",
+    "entry-293",
+    "entry-3574",
+    "entry-3899",
+    "entry-4308",
+    "entry-5413",
+    "entry-594",
+    "entry-6245",
+    "entry-6552",
+    "entry-814",
+    "entry-954"
+  ],
+  "row_count": 14,
+  "unique_key_count": 14,
+  "exact_id_set_match": true,
+  "duplicate_keys": [],
+  "staged_records_found_and_needs_context": 14,
+  "coordinator_rows_found": 14,
+  "effective_worker_results_complete": 14,
+  "proposal_files_crosschecked_to_result_commit_and_path": 14,
+  "counts": {
+    "PASS": 1,
+    "HOLD": 13
+  },
+  "blocking_ids": [
+    "entry-1726",
+    "entry-203",
+    "entry-2557",
+    "entry-293",
+    "entry-3574",
+    "entry-3899",
+    "entry-4308",
+    "entry-5413",
+    "entry-594",
+    "entry-6245",
+    "entry-6552",
+    "entry-814",
+    "entry-954"
+  ],
+  "proposal_description_length_violations": [
+    {
+      "key": "entry-6552",
+      "field": "description_long",
+      "value": 0
+    }
+  ],
+  "source_url_format_errors": [],
+  "editorial_approval_granted": false,
+  "qa_scope": "PASS means only that the proposal cleared this packet QA; it does not approve copy for publication.",
+  "batch_integrity_status": "PASS"
+}
