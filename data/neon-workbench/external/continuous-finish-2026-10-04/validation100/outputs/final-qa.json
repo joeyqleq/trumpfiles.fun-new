@@ -1,0 +1,49 @@
+{
+  "job": "continuous-finish-2026-10-04/validation100/worker-07",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "source_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-07-input.jsonl",
+  "expected_ids": [
+    "entry-6329",
+    "entry-6705",
+    "entry-3408",
+    "entry-4918",
+    "entry-2358",
+    "entry-5768",
+    "entry-2818",
+    "entry-1254"
+  ],
+  "observed_ids": [
+    "entry-6329",
+    "entry-6705",
+    "entry-3408",
+    "entry-4918",
+    "entry-2358",
+    "entry-5768",
+    "entry-2818",
+    "entry-1254"
+  ],
+  "row_count": 8,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "complete": 8
+  },
+  "evidence_checks": {
+    "quotes_are_literal_substrings_after_amendments": true,
+    "every_supported_scalar_and_array_element_mapped": true,
+    "source_urls_present_in_supplied_input": true,
+    "source_pages_independently_checked": false
+  },
+  "amendments": [
+    "worker-07-amendments.jsonl: amendment-01 corrects entry-1254 outcome and relations[1] evidence-map quotes. Amendment-02 refines relations[1] punctuation and relation basis quote to match the literal supplied text. Apply both amendments in order; terminal rows remain unchanged."
+  ],
+  "scope_checks": {
+    "only_assigned_ids": true,
+    "canonical_neon_or_application_code_edits": false,
+    "web_searches_or_new_scoring": false
+  },
+  "blockers_review": "Per-row blockers preserve stated limits and textual tension, including the competing Kovaleski accounts, the non-credible label versus later release chronology, and unsupported Trump links in entries 2358 and 2818.",
+  "qa_errors": [],
+  "qa_pass": true
+}

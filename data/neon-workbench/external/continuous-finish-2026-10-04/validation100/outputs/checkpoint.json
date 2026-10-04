@@ -1,0 +1,22 @@
+{
+  "job": "continuous-finish-2026-10-04/validation100/worker-07",
+  "status": "complete",
+  "completed_rows": 8,
+  "expected_rows": 8,
+  "ids": [
+    "entry-6329",
+    "entry-6705",
+    "entry-3408",
+    "entry-4918",
+    "entry-2358",
+    "entry-5768",
+    "entry-2818",
+    "entry-1254"
+  ],
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-07-input.jsonl",
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-07-terminal.jsonl",
+  "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-07-amendments.jsonl",
+  "final_qa_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/final-qa.json",
+  "checkpoint_note": "Exact assigned set complete. Effective evidence citations pass literal-substring validation after two immutable amendments for entry-1254; source pages were not independently checked."
+}
