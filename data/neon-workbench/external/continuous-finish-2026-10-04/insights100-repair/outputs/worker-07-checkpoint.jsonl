@@ -1,0 +1,3 @@
+{"record_type":"worker_checkpoint","batch":1,"processed_count":3,"processed_keys":["entry-7","entry-19","entry-31"],"checkpoint_status":"in_progress","terminal_rows_appended":3,"proposal_only_rows":3}
+{"record_type":"worker_checkpoint","batch":2,"processed_count":3,"processed_keys":["entry-45","entry-57","entry-71"],"checkpoint_status":"in_progress","terminal_rows_appended":6,"proposal_only_rows":6}
+{"record_type":"worker_checkpoint","batch":3,"processed_count":2,"processed_keys":["entry-83","entry-95"],"checkpoint_status":"complete","terminal_rows_appended":8,"proposal_only_rows":8}
