@@ -1,0 +1,21 @@
+{
+  "worker": 18,
+  "job": "context-enrichment-18",
+  "checkpoint_status": "COMPLETE_EXACT_ASSIGNED_SET",
+  "assigned_ids": [
+    "entry-230"
+  ],
+  "assigned_ids_present": [
+    "entry-230"
+  ],
+  "assigned_set_complete": true,
+  "validated_status": "valid",
+  "terminal_row_status": "pass",
+  "terminal_action": "appended",
+  "terminal_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-18-terminal.jsonl",
+  "amendment_path": null,
+  "input_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "validation_report": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-18-validation-report.json",
+  "terminal_sha256": "4fa528ef5bb2576b3e4e393a3a0ab570faae16b3ed81a031b29e9a9cefff594a",
+  "completed_at_utc": "2026-10-04T17:58:33.199438+00:00"
+}
