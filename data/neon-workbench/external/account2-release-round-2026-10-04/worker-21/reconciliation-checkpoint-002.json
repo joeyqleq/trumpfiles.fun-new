@@ -1,0 +1,190 @@
+{
+  "task": "Worker21 release-gate 204-key reconciliation",
+  "supersedes": "correction-checkpoint-001.json on input availability and 204 reconciliation",
+  "historical_audits_preserved": true,
+  "sources": {
+    "held204_packet": {
+      "branch": "origin/codex/wave3-needs-context-204-2026-10-04",
+      "commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+      "manifest_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/manifest.json",
+      "manifest_sha256": "0f2bec33f17a92cb44250286897e41c1d2d3ecafce2324cfe016b8266ce1c769",
+      "held_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+      "held_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+      "bound_snapshot_path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions-full-staged-2026-10-03-wave3.jsonl",
+      "bound_snapshot_sha256": "c091939b50a8af24682b6025f69c5a063bfbac90351933016e183b0f5266e762"
+    },
+    "assignment_manifest": {
+      "branch": "origin/codex/dual-account-corrections-2026-10-03",
+      "commit": "95eb7977f6d66eb110b38dfba25023743453fd2a",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/manifest.json",
+      "sha256": "1a22b4b13eb317c1907ecf035c6f9325b47e2ed38e3b1413e0cb90c78d0b5342",
+      "assigned_count": 311
+    }
+  },
+  "latest_worker_branch_commits": {
+    "origin/ls/1-trump-description-rescue-01-of-12-53-dis-nGTY": {
+      "commit": "bae41a0c6664270c42a5266f420f5f8735c6ef6b",
+      "worker_ids": [
+        1
+      ]
+    },
+    "origin/ls/2-trump-description-rescue-02-of-12-53-dis-d-rf": {
+      "commit": "672897a1d84ac990e1f01801ab258d1ec785578d",
+      "worker_ids": [
+        2
+      ]
+    },
+    "origin/ls/3-trump-description-rescue-03-of-12-53-dis-CLUW": {
+      "commit": "a826adc58915108625f4243a77552f1d5845062f",
+      "worker_ids": [
+        3
+      ]
+    },
+    "origin/ls/4-trump-description-rescue-04-of-12-53-dis-S_ao": {
+      "commit": "bfb4ed592da85e4b33edb579ab374f449a335a16",
+      "worker_ids": [
+        4
+      ]
+    },
+    "origin/ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ": {
+      "commit": "ef2007fd51a47a237f10e35213faaa50eb7c7df5",
+      "worker_ids": [
+        5
+      ]
+    },
+    "origin/ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x": {
+      "commit": "d82ad23edd64c9f6dca92e676205a0b6b32c5729",
+      "worker_ids": [
+        6
+      ]
+    },
+    "origin/ls/7-trump-description-rescue-07-of-12-53-dis-zltS": {
+      "commit": "96849c269ba6655685e7072759209d3cce0d935b",
+      "worker_ids": [
+        7
+      ]
+    },
+    "origin/ls/8-trump-description-rescue-08-of-12-53-dis-W2qL": {
+      "commit": "d030b300bf1d09f45ed6fa4b159d625e93643a0c",
+      "worker_ids": [
+        8
+      ]
+    },
+    "origin/ls/9-trump-description-rescue-09-of-12-52-dis-a_J8": {
+      "commit": "4070900f9a3333351cf8bc2b1f0afcff90c881ca",
+      "worker_ids": [
+        9
+      ]
+    },
+    "origin/ls/10-trump-description-rescue-10-of-12-52-dis-7sqL": {
+      "commit": "50ee3e2fce05fb45dcaacc25eac4a1bd976f3ac5",
+      "worker_ids": [
+        10
+      ]
+    },
+    "origin/ls/11-trump-description-rescue-11-of-12-52-dis-QZkS": {
+      "commit": "a93a0c63201206c81b32740d670f643cfa9072ce",
+      "worker_ids": [
+        11
+      ]
+    },
+    "origin/ls/12-trump-description-rescue-12-of-12-52-dis--oyt": {
+      "commit": "61150d33ec2c8efb8e3fffd262921f86e7a9176a",
+      "worker_ids": [
+        12
+      ]
+    },
+    "origin/ls/1-trump-final-corrections-account2-worker1-zahM": {
+      "commit": "566e4034c86620483723d720244a84b86cdf838c",
+      "worker_ids": [
+        13
+      ]
+    },
+    "origin/ls/3-trump-final-corrections-account2-worker1--T8S": {
+      "commit": "868758565358afd7b98e8b6b246ececab53b9761",
+      "worker_ids": [
+        14
+      ]
+    },
+    "origin/ls/2-trump-final-corrections-account2-worker1-snHz": {
+      "commit": "8779ac63e2eca30b0d7b95fc786e44afb9fc2b1e",
+      "worker_ids": [
+        15
+      ]
+    },
+    "origin/ls/4-trump-final-corrections-account2-worker1-n96Z": {
+      "commit": "888cb5cf3f756e71a874d1f96db6c98a6fba0843",
+      "worker_ids": [
+        16
+      ]
+    },
+    "origin/ls/7-trump-final-corrections-account2-worker1-slYA": {
+      "commit": "eab779ec075174445237101c2fdf0e72d771d051",
+      "worker_ids": [
+        17
+      ]
+    },
+    "origin/ls/5-trump-final-corrections-account2-worker1-oRtt": {
+      "commit": "4689bdd5cf5108cae7ca5dc72e6ed8003fdc3cf9",
+      "worker_ids": [
+        18
+      ]
+    },
+    "origin/ls/6-trump-final-corrections-account2-worker1-zeIF": {
+      "commit": "67b0105799a90826d1db5b59045d7d2c13d2db35",
+      "worker_ids": [
+        19
+      ]
+    },
+    "origin/ls/8-trump-final-corrections-account2-worker2-A12f": {
+      "commit": "6b1bbc726f0f93f3e2de755d5f2747d14bdae93e",
+      "worker_ids": [
+        20
+      ]
+    },
+    "origin/ls/9-trump-final-corrections-account2-worker2-xNvR": {
+      "commit": "410e2268a0fa410351668fa06c7a88f6e49237bd",
+      "worker_ids": [
+        21
+      ]
+    },
+    "origin/ls/10-trump-final-corrections-account2-worker2-qX6f": {
+      "commit": "4896359b8a0542c38eff4973743b667fa7830c44",
+      "worker_ids": [
+        22
+      ]
+    },
+    "origin/ls/12-trump-final-corrections-account2-worker2-KcuW": {
+      "commit": "598285901cf9f372f723fc12c4b331cdca0f2641",
+      "worker_ids": [
+        23
+      ]
+    },
+    "origin/ls/11-trump-final-corrections-account2-worker2-gfyp": {
+      "commit": "959c3372ba670113ac5e8e787e256f3299a53b9f",
+      "worker_ids": [
+        24
+      ]
+    }
+  },
+  "counts": {
+    "held204": 204,
+    "effective_assignments": 311,
+    "overlap": 202,
+    "overlap_worker_proposal_complete": 163,
+    "overlap_still_needs_context": 39,
+    "outside_assignment": 2
+  },
+  "classification_rule": {
+    "complete": "latest assigned-worker proposal status complete; not release approval",
+    "needs_context": "still held",
+    "outside_assignment": "outside 311 assignment; remains held"
+  },
+  "files": [
+    "held204-reconciliation-20261004.jsonl",
+    "worker-results-effective-20261004.jsonl",
+    "reconciliation-independent-qa-002.json",
+    "reconciliation-addendum-002.md"
+  ],
+  "no_canonical_or_neon_writes": true
+}
