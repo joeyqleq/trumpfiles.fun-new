@@ -1,0 +1,33 @@
+{
+  "job_id": "full-insights-67",
+  "branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+  "source_input": {
+    "branch": "codex/full-insights-packets-2026-10-04",
+    "commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-67-input.jsonl"
+  },
+  "assigned_count": 92,
+  "terminal_count": 92,
+  "exact_set": {
+    "pass": true,
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "duplicate_terminal_ids": []
+  },
+  "status_counts": {
+    "complete": 92
+  },
+  "all_rows_proposal_only": true,
+  "all_core_non_unknown_values_mapped": true,
+  "literal_quote_validation": {
+    "pass": true,
+    "quotes_checked": 690,
+    "core_values_with_evidence_maps": 690
+  },
+  "quantities_and_relations_empty": true,
+  "rows_with_blockers": 88,
+  "blockers_are_separate_row_fields": true,
+  "issues": [],
+  "issue_resolved": "output_missing",
+  "scope": "proposal-only core insight fields; no quantities, relations, canonical data, Neon, or code edits"
+}
