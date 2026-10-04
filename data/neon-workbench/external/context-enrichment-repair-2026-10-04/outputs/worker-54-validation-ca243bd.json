@@ -1,0 +1,66 @@
+{
+  "job": "context-enrichment-54",
+  "input_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-54-input.jsonl",
+  "validator_source": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+  "validator_sha256": "17c6f94612d70b1cf23f44ea816fa3cea554cc2cfc249bd07062b3b6e902c281",
+  "record_id": "entry-3444",
+  "input_diagnostics": {
+    "status": "invalid",
+    "valid": false,
+    "pending": [],
+    "diagnostics": [
+      {
+        "severity": "error",
+        "code": "core_enum_invalid",
+        "path": "insight_facts.event_state",
+        "message": "Expected null or one of ['proposed', 'realized', 'threatened', 'unclear', 'unknown']."
+      },
+      {
+        "severity": "error",
+        "code": "core_enum_invalid",
+        "path": "insight_facts.action_type",
+        "message": "Expected null or one of ['deception', 'discrimination', 'institutional_pressure', 'legal_action', 'other', 'policy_action', 'private_benefit', 'unknown', 'violence_or_threat']."
+      },
+      {
+        "severity": "error",
+        "code": "core_enum_invalid",
+        "path": "insight_facts.scope",
+        "message": "Expected null or one of ['individual', 'international', 'local', 'national', 'organization', 'regional', 'unknown']."
+      },
+      {
+        "severity": "error",
+        "code": "evidence_map_type",
+        "path": "insight_evidence_map",
+        "message": "Expected an array of field/value/quote mappings."
+      }
+    ]
+  },
+  "candidate_validation": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  },
+  "persisted_validation": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  },
+  "persisted_terminal_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-54-terminal.jsonl",
+  "terminal_ids": [
+    "entry-3444"
+  ],
+  "immutable_fields": [
+    "title",
+    "description_short",
+    "description_medium",
+    "description_long",
+    "source_urls",
+    "source_fact_map"
+  ],
+  "immutable_fields_sha256": "20f60778704788b768e1683990c55e7e0cfd8ed820f3017936a1de862f808e4c",
+  "checkpoint": "complete",
+  "proposal_only": true
+}
