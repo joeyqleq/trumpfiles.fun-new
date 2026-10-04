@@ -1,0 +1,66 @@
+{
+  "job": "validation100-repair-04",
+  "result": "complete",
+  "coordinator_findings": [
+    "output_missing"
+  ],
+  "resolved_findings": [
+    "Created the missing repair terminal with one effective row for each assigned ID."
+  ],
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "review_commit": "ae51f87068ccfaba0738cd589d34b17400cf2501",
+  "immutable_amendments_commit": "177a28e8521e55d8c1ff51d1969fda33568676a2",
+  "assigned_record_ids": [
+    "entry-2727",
+    "entry-6124",
+    "entry-3338",
+    "entry-2310",
+    "entry-2569",
+    "entry-5879",
+    "entry-6898",
+    "entry-3232",
+    "entry-438"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-04-terminal.jsonl",
+  "row_count": 9,
+  "status_counts": {
+    "complete": 9
+  },
+  "checks": {
+    "exact_assigned_set_and_order": true,
+    "no_duplicate_record_ids": true,
+    "proposal_only_true_all_rows": true,
+    "insight_facts_schema_and_enums": true,
+    "every_supported_fact_has_matching_evidence_map_entry": true,
+    "all_evidence_quotes_are_literal_substrings_of_supplied_input_text": true,
+    "quantity_and_relation_shapes_valid": true
+  },
+  "corrections_applied": [
+    {
+      "record_id": "entry-2727",
+      "change": "Changed action_type from deception to other; replaced its evidence quote with the neutral description of Comey disclosing potentially relevant material before significance was determined."
+    },
+    {
+      "record_id": "entry-2310",
+      "change": "Removed developing countries from affected_groups and its evidence-map entry because the text states only a possible future effect."
+    },
+    {
+      "record_id": "entry-5879",
+      "change": "Changed object_of_legal_action target from Federal prosecutors’ allegations to Federal prosecutors, preserving target-to-authority direction."
+    },
+    {
+      "record_id": "entry-6898",
+      "change": "Changed relation to Trump International Hotel benefited_from foreign-government payments; included the existing immutable amendment’s evidence-map quote for possible Foreign Emoluments Clause concerns."
+    }
+  ],
+  "unchanged_passing_rows": [
+    "entry-6124",
+    "entry-3338",
+    "entry-2569",
+    "entry-3232",
+    "entry-438"
+  ],
+  "source_constraints": "Used only supplied frozen/staged text, the review artifact, original worker rows, and the cited immutable amendment. No web lookup, rescoring, canonical/Neon/code edit, or unsupported inference.",
+  "unresolved_artifact_findings": [],
+  "saved_at_utc": "2026-10-04T11:09:17.428825+00:00"
+}
