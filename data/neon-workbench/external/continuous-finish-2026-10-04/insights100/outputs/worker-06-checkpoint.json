@@ -74,7 +74,7 @@
     }
   ],
   "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-06-final-qa.json",
-  "updated_at": "2026-10-04T10:45:49.856693+00:00",
+  "updated_at": "2026-10-04T10:48:47.554994+00:00",
   "amendment_revision_progress": {
     "file": "worker-06-amendment-004.jsonl",
     "rows_written": 14,
@@ -141,5 +141,27 @@
       ]
     }
   ],
-  "resolved_artifact_issue_count": 14
+  "resolved_artifact_issue_count": 20,
+  "revision_resolution_progress": {
+    "file": "worker-06-amendment-005.jsonl",
+    "rows_written": 4,
+    "total_rows": 4,
+    "last_record_ids": [
+      "entry-44",
+      "entry-56"
+    ],
+    "updated_at": "2026-10-04T10:48:38.607912+00:00"
+  },
+  "revision_resolution_index": {
+    "file": "worker-06-amendment-005.jsonl",
+    "record_ids": [
+      "entry-18",
+      "entry-30",
+      "entry-44",
+      "entry-56"
+    ],
+    "resolved_ambiguity_edges": 6,
+    "policy": "highest sequential per-record amendment_revision is current; earlier snapshots are explicitly superseded"
+  },
+  "resolved_ambiguous_amendment_revision_count": 6
 }

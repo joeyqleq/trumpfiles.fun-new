@@ -40,7 +40,9 @@
     "supplied_source_url_mapping_only": true,
     "no_web_search_or_new_scoring": true,
     "no_canonical_neon_or_code_edits": true,
-    "amendment_revision_fields_present": true
+    "amendment_revision_fields_present": true,
+    "ambiguous_amendment_revisions_resolved": true,
+    "current_revision_selection_unambiguous": true
   },
   "source_url_note": "URLs in quantity records are those supplied beside each input record; no source page was fetched or independently verified.",
   "blockers_record_ids": [
@@ -105,7 +107,7 @@
     "Several supplied records contain stronger long-synopsis allegations or causal claims than their medium summaries; these differences are documented in per-row blockers.",
     "No external source pages were checked."
   ],
-  "checked_at": "2026-10-04T10:45:49.856212+00:00",
+  "checked_at": "2026-10-04T10:48:47.554577+00:00",
   "amendment_revision_coverage": [
     {
       "record_id": "entry-6",
@@ -176,6 +178,23 @@
     "amendment_revision_missing:entry-18",
     "amendment_revision_missing:entry-30",
     "amendment_revision_missing:entry-44",
-    "amendment_revision_missing:entry-56"
-  ]
+    "amendment_revision_missing:entry-56",
+    "ambiguous_amendment_revision:entry-18",
+    "ambiguous_amendment_revision:entry-30",
+    "ambiguous_amendment_revision:entry-30",
+    "ambiguous_amendment_revision:entry-44",
+    "ambiguous_amendment_revision:entry-56",
+    "ambiguous_amendment_revision:entry-56"
+  ],
+  "revision_resolution_index": {
+    "file": "worker-06-amendment-005.jsonl",
+    "record_ids": [
+      "entry-18",
+      "entry-30",
+      "entry-44",
+      "entry-56"
+    ],
+    "resolved_ambiguity_edges": 6,
+    "policy": "highest sequential per-record amendment_revision is current; earlier snapshots are explicitly superseded"
+  }
 }
