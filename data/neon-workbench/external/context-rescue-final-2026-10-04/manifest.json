@@ -1,0 +1,162 @@
+{
+  "purpose": "offline original-description context rescue packet preparation; proposals only",
+  "counts": {
+    "needs_context": 99,
+    "lightsprint_cloud_slots": 60,
+    "chatgpt_web_a": 20,
+    "chatgpt_web_b": 19,
+    "frozen_originals_found": 99,
+    "held204_terminal_matches": 99
+  },
+  "sort": "record_id lexicographic ascending before contiguous allocation",
+  "assignments": {
+    "LightSprint": [
+      "entry-1670",
+      "entry-1716",
+      "entry-1726",
+      "entry-1727",
+      "entry-1730",
+      "entry-1768",
+      "entry-1770",
+      "entry-1777",
+      "entry-1779",
+      "entry-1780",
+      "entry-1857",
+      "entry-188",
+      "entry-203",
+      "entry-2061",
+      "entry-2106",
+      "entry-227",
+      "entry-2296",
+      "entry-230",
+      "entry-231",
+      "entry-2321",
+      "entry-2330",
+      "entry-2332",
+      "entry-2343",
+      "entry-2349",
+      "entry-236",
+      "entry-2373",
+      "entry-2380",
+      "entry-2401",
+      "entry-2418",
+      "entry-2458",
+      "entry-2479",
+      "entry-2494",
+      "entry-2501",
+      "entry-2504",
+      "entry-2515",
+      "entry-2518",
+      "entry-2557",
+      "entry-2562",
+      "entry-2571",
+      "entry-2574",
+      "entry-2615",
+      "entry-2619",
+      "entry-2624",
+      "entry-264",
+      "entry-266",
+      "entry-2731",
+      "entry-2854",
+      "entry-2864",
+      "entry-293",
+      "entry-3117",
+      "entry-3212",
+      "entry-3371",
+      "entry-3380",
+      "entry-3444",
+      "entry-37",
+      "entry-380",
+      "entry-3899",
+      "entry-4040",
+      "entry-405",
+      "entry-4144"
+    ],
+    "ChatGPT Web A": [
+      "entry-4198",
+      "entry-4207",
+      "entry-425",
+      "entry-4308",
+      "entry-4603",
+      "entry-4692",
+      "entry-5309",
+      "entry-5403",
+      "entry-5406",
+      "entry-5541",
+      "entry-5597",
+      "entry-5599",
+      "entry-5698",
+      "entry-5707",
+      "entry-5936",
+      "entry-6200",
+      "entry-6206",
+      "entry-6239",
+      "entry-6241",
+      "entry-6340"
+    ],
+    "ChatGPT Web B": [
+      "entry-6356",
+      "entry-643",
+      "entry-651",
+      "entry-655",
+      "entry-6552",
+      "entry-674",
+      "entry-6795",
+      "entry-6915",
+      "entry-801",
+      "entry-822",
+      "entry-824",
+      "entry-835",
+      "entry-853",
+      "entry-854",
+      "entry-873",
+      "entry-945",
+      "entry-954",
+      "entry-978",
+      "entry-996"
+    ]
+  },
+  "inputs": {
+    "staged": {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/descriptions-full-staged-finalization.jsonl",
+      "sha256": "4b509f8ce4a6bd8fd2e20c5c9d5d35aab54a06fccb208fe47de90535c9b712a0"
+    },
+    "frozen": {
+      "path": "data/neon-export/tables/trump_entries.jsonl",
+      "rows": 7143,
+      "sha256": "f76bdd5d3ae292871ff685b8bdd6194bac458d87f2f0f814420a94a68e147013"
+    },
+    "held204": {
+      "path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/collected/held204-terminal-raw.jsonl",
+      "rows": 204,
+      "sha256": "57e4be7fdc4d2a75bee1a57b86ced9b5c97c0f218d3ad40de44bac20dc7c634d"
+    }
+  },
+  "constraints": {
+    "one_meaningful_record_per_cloud_slot": true,
+    "one_focused_rescue_max_per_record": true,
+    "web_a_workers_if_available": 6,
+    "web_b_workers_if_available": 6,
+    "lengths": {
+      "title_chars_max": 180,
+      "short_chars_max": 180,
+      "medium_words": [
+        45,
+        90
+      ],
+      "long_words": [
+        140,
+        300
+      ]
+    },
+    "terminal_outcomes": [
+      "pass",
+      "hold",
+      "exclusion_candidate"
+    ],
+    "canonical_or_live_changes": false,
+    "neon_writes": false,
+    "worker_dispatch": false,
+    "append_only_outputs": true
+  }
+}
