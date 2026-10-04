@@ -1,0 +1,96 @@
+{
+  "report": "Worker 12 insights100 terminal QA",
+  "created_date": "2026-10-04",
+  "source_packet": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-12-input.jsonl",
+  "packet_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "packet_sha256": "3c59e2fb0acd70f3524a41e5587093f6c00470ac81a4ca1863bfcf736708cafc",
+  "scope_ids": [
+    "entry-12",
+    "entry-24",
+    "entry-38",
+    "entry-50",
+    "entry-62",
+    "entry-76",
+    "entry-88",
+    "entry-100"
+  ],
+  "observed_terminal_ids": [
+    "entry-12",
+    "entry-24",
+    "entry-38",
+    "entry-50",
+    "entry-62",
+    "entry-76",
+    "entry-88",
+    "entry-100"
+  ],
+  "exact_set": "PASS",
+  "counts": {
+    "complete": 8,
+    "insufficient": 0,
+    "terminal_rows": 8,
+    "rows_with_blockers": 6
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": [
+      "Exact assigned terminal ID set and order; no duplicate terminal rows.",
+      "All rows are proposal_only and use the requested insight_facts schema and allowed enum values.",
+      "Every supported non-unknown scalar and populated array element has an evidence_map entry.",
+      "All evidence and quantity basis quotes are literal substrings of that record’s supplied staged text.",
+      "Quantity kinds, numeric values, original units, qualifiers, and source URLs are present and valid against supplied URL mappings.",
+      "Relations use allowed predicates and have literal evidence quotes."
+    ],
+    "terminal_sha256": "b9116d447c64ebd8638981d87b83238f5d278992394b14e4e65d868932448b5e",
+    "amendments_file": "worker-12-terminal-amendments.jsonl",
+    "amendments_sha256": "a516a9207557dd4127e3c94e4c3732540bc4f57135cc1f100e1f111f39b29b71",
+    "amendment_records": 4,
+    "effective_rows_after_amendments": 8
+  },
+  "amendment_history": [
+    {
+      "record_id": "entry-76",
+      "amendment_ids": [
+        "worker-12-entry-76-quote-correction-01",
+        "worker-12-entry-76-quote-correction-02",
+        "worker-12-entry-76-quote-correction-03"
+      ],
+      "effective_change": "Uses the complete literal source excerpt for the 24-hour permit rule and synchronizes the duplicated evidence_map quantity values."
+    },
+    {
+      "record_id": "entry-24",
+      "amendment_ids": [
+        "worker-12-entry-24-source-map-correction-01"
+      ],
+      "effective_change": "Maps quantity evidence to the supplied Anadolu URL about the Blackwater pardons; the unrelated supplied Atlantic URL remains noted in blockers."
+    }
+  ],
+  "blockers": {
+    "entry-12": [
+      "The text says participant accounts differed but does not specify the discrepancy."
+    ],
+    "entry-24": [
+      "The supplied source list includes a The Atlantic URL whose path concerns Charlottesville; its relevance to the Blackwater account is not established by the supplied text."
+    ],
+    "entry-38": [
+      "The title and short description characterize the event as looking directly at the eclipse, while the medium and long descriptions say the images do not establish where he was looking."
+    ],
+    "entry-50": [
+      "The medium description says claims about Trump’s motive are unproven; the long description asserts a personal motive and says Stone threatened to expose damaging information. Those claims are not used as established facts."
+    ],
+    "entry-88": [
+      "The medium description says Trump praised the injury and drew criticism; the long description characterizes the remarks as active incitement, without supplied text establishing that they caused an attack."
+    ],
+    "entry-100": [
+      "The medium description says the language coincided with hostile crowd conduct and cautions that the supplied sources do not assign every incident to a specific remark; the long description asserts broader incitement."
+    ]
+  },
+  "scope_limits": [
+    "Only the eight assigned IDs were processed.",
+    "No web search or external source-page fetch was performed; source URLs were treated only as supplied mappings.",
+    "No new scoring was performed.",
+    "No canonical, Neon, or code files were edited.",
+    "No project tests or builds were run because this change contains only task data artifacts; the offline structural and literal-evidence QA above was run.",
+    "No pull request was opened, as explicitly directed by the task."
+  ]
+}
