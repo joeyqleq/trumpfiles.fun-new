@@ -1,0 +1,46 @@
+{
+  "job": "insights100-10",
+  "task_id": "Z2z8IIzgO-Z-2QSAUvplo",
+  "source_branch": "codex/continuous-finish-2026-10-04",
+  "source_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "source_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-10-input.jsonl",
+  "source_sha256": "faaedd41063c348cfbd27e134213db6d1b234f9c80deb7fd50f2b1093e38e4ba",
+  "assigned_record_ids": [
+    "entry-10",
+    "entry-22",
+    "entry-34",
+    "entry-48",
+    "entry-60",
+    "entry-74",
+    "entry-86",
+    "entry-98"
+  ],
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-10-terminal.jsonl",
+  "terminal_rows": 8,
+  "terminal_sha256": "b94235bc2aaff7386eb5ab56480b56976497ddf3ce63090db2c29fb07ffe2944",
+  "statuses": {
+    "entry-10": "complete",
+    "entry-22": "complete",
+    "entry-34": "complete",
+    "entry-48": "complete",
+    "entry-60": "complete",
+    "entry-74": "complete",
+    "entry-86": "complete",
+    "entry-98": "complete"
+  },
+  "evidence_map_entries": 78,
+  "blocker_record_ids": [
+    "entry-22",
+    "entry-34",
+    "entry-48",
+    "entry-74",
+    "entry-86",
+    "entry-98"
+  ],
+  "amendments": [],
+  "coordinator_issues_resolved": [
+    "output_missing"
+  ],
+  "validation": "passed: exact IDs, uniqueness, schema/enums, evidence coverage, literal quote containment, quantity/relation schema, source hash against manifest",
+  "branch": "ls/10-trump-files-sample100-review-10-of-12-5b45"
+}
