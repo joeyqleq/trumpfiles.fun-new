@@ -1,0 +1,25 @@
+{
+  "job": "context-enrichment-50",
+  "input_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-50-input.jsonl",
+  "validator_path": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+  "assigned_record_ids": [
+    "entry-3117"
+  ],
+  "validated_record_ids": [
+    "entry-3117"
+  ],
+  "amendment_revision": 2,
+  "previous_amendment": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-50-amendment-entry-3117-v1.jsonl",
+  "amendment_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-50-amendment-entry-3117-v2.jsonl",
+  "terminal_initial_status": "hold",
+  "effective_status": "pass",
+  "validator": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  },
+  "reader_copy_and_source_fields_unchanged": true,
+  "proposal_fields_unchanged_from_validated_revision_1": true
+}
