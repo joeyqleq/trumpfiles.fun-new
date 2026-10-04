@@ -1,0 +1,17 @@
+{
+  "job": "full-insights-18",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-18-input.jsonl",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-18-terminal.jsonl",
+  "packet_count": 93,
+  "terminal_count": 93,
+  "complete": 91,
+  "insufficient": 2,
+  "exact_set_match": true,
+  "unique_record_ids": true,
+  "quotes_literal_substrings": true,
+  "all_non_unknown_core_values_evidence_mapped": true,
+  "quantities_empty": true,
+  "relations_empty": true,
+  "issues": []
+}
