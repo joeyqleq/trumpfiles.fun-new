@@ -1,0 +1,54 @@
+{
+  "checkpoint_status": "COMPLETE_EXACT_SET",
+  "checked_at_utc": "2026-10-04T11:23:27+00:00",
+  "branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-18-terminal.jsonl",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-18-final-qa.json",
+  "assigned_ids": [
+    "entry-2560",
+    "entry-2930",
+    "entry-3009",
+    "entry-5565",
+    "entry-4232",
+    "entry-5374",
+    "entry-222",
+    "entry-1728",
+    "entry-5462"
+  ],
+  "terminal_ids_in_order": [
+    "entry-2560",
+    "entry-2930",
+    "entry-3009",
+    "entry-5565",
+    "entry-4232",
+    "entry-5374",
+    "entry-222",
+    "entry-1728",
+    "entry-5462"
+  ],
+  "completed_count": 9,
+  "remaining_ids": [],
+  "prior_terminal_rows_preserved": 0,
+  "append_batches": [
+    [
+      "entry-2560",
+      "entry-2930",
+      "entry-3009"
+    ],
+    [
+      "entry-5565",
+      "entry-4232",
+      "entry-5374"
+    ],
+    [
+      "entry-222",
+      "entry-1728",
+      "entry-5462"
+    ]
+  ],
+  "amendments": [],
+  "qa_status": "PASS_EXACT_SET",
+  "terminal_sha256": "7ef60a1d814dcbc6881cc5fd00807dccda6da72713fd49453ca37fdfae41cd9b",
+  "note": "Only missing terminal rows were appended in three progress saves; prior terminal file did not exist on the task branch or pinned source commit."
+}

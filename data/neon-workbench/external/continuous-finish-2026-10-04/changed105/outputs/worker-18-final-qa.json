@@ -1,0 +1,25 @@
+{
+  "artifact": "worker-18-terminal.jsonl",
+  "qa_status": "PASS_EXACT_SET",
+  "checked_at_utc": "2026-10-04T11:23:27+00:00",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-18-input.jsonl",
+  "input_sha256": "b59083eddc352efe08bd35a8ef5c6ef7c33ec87ff8e2392462fc39a70f8e6a0f",
+  "rubric_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/RUBRIC.md",
+  "rubric_sha256": "1ac7e1f208a8fe8fde1db5accda6d5b587c79f7780baafa0baa1053909d28d27",
+  "terminal_sha256": "7ef60a1d814dcbc6881cc5fd00807dccda6da72713fd49453ca37fdfae41cd9b",
+  "expected_count": 9,
+  "actual_count": 9,
+  "unique_record_ids": 9,
+  "exact_id_set_match": true,
+  "duplicate_ids": [],
+  "missing_ids": [],
+  "extra_ids": [],
+  "scored_count": 8,
+  "deferred_count": 1,
+  "deferred_ids": [
+    "entry-1728"
+  ],
+  "schema_checks": "All required fields, status/event/confidence enums, dimension keys, and 0.0–10.0 one-decimal values passed; deferred row has null dimensions and an explicit reason.",
+  "scope_checks": "No original-score overwrite, canonical edit, web research, or Neon write; no amendment required."
+}
