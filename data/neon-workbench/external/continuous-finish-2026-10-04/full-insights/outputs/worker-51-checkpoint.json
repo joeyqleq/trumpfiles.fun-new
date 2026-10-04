@@ -11,25 +11,43 @@
   "amendment_path": "outputs/worker-51-terminal-amendments.jsonl",
   "effective_terminal_ids": 92,
   "effective_duplicate_ids": [],
-  "duplicate_id_issue": "resolved_in_effective_set",
+  "duplicate_id_issue": "resolved_in_canonical_terminal",
   "duplicate_resolution_amendments": [
     {
       "record_id": "entry-6284",
-      "canonical_terminal_line": 82,
-      "duplicate_terminal_line": 85,
-      "amendment_line": 2
+      "canonical_history_line": 82,
+      "duplicate_history_line": 85,
+      "identical_rows": true,
+      "amendment_line": 5,
+      "amendment_id": "worker-51-amendment-02",
+      "prior_amendment_line": 2
     },
     {
       "record_id": "entry-6362",
-      "canonical_terminal_line": 83,
-      "duplicate_terminal_line": 86,
-      "amendment_line": 3
+      "canonical_history_line": 83,
+      "duplicate_history_line": 86,
+      "identical_rows": true,
+      "amendment_line": 6,
+      "amendment_id": "worker-51-amendment-03",
+      "prior_amendment_line": 3
     },
     {
       "record_id": "entry-6462",
-      "canonical_terminal_line": 84,
-      "duplicate_terminal_line": 87,
-      "amendment_line": 4
+      "canonical_history_line": 84,
+      "duplicate_history_line": 87,
+      "identical_rows": true,
+      "amendment_line": 7,
+      "amendment_id": "worker-51-amendment-04",
+      "prior_amendment_line": 4
     }
+  ],
+  "canonical_terminal_rows": 92,
+  "history_archive_path": "outputs/worker-51-terminal-history-pre-dedup-2026-10-04.jsonl",
+  "history_archive_rows": 95,
+  "materialized_prior_replacements": 1,
+  "legacy_duplicate_amendment_lines_interpreted_against_history_archive": [
+    2,
+    3,
+    4
   ]
 }

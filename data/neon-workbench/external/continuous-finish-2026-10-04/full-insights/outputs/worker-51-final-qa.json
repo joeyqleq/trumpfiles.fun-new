@@ -3,13 +3,12 @@
   "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
   "assigned_ids": 92,
   "effective_terminal_ids": 92,
-  "append_only_terminal_lines": 95,
   "status_counts": {
     "complete": 89,
     "insufficient": 3
   },
-  "duplicate_history_rows": "3 identical duplicate lines retained and resolved by worker-51-terminal-amendments.jsonl",
-  "amendments": 4,
+  "duplicate_history_rows": "Three identical retry duplicates were removed from the canonical terminal under immutable amendments; all 95 original rows are preserved in the history archive.",
+  "amendments": 7,
   "evidence_quotes_literal": true,
   "non_unknown_core_fields_mapped": true,
   "source_urls_present_in_packet": true,
@@ -22,33 +21,49 @@
   "terminal_rows_exactly_assigned_ids": true,
   "effective_duplicate_ids": [],
   "duplicate_id_issue": {
-    "status": "resolved_in_effective_set",
-    "raw_history_duplicates_preserved": true,
+    "status": "resolved_in_canonical_terminal",
+    "canonical_terminal_duplicate_ids": [],
+    "raw_history_preserved": true,
     "resolutions": [
       {
         "record_id": "entry-6284",
-        "canonical_terminal_line": 82,
-        "duplicate_terminal_line": 85,
+        "canonical_history_line": 82,
+        "duplicate_history_line": 85,
         "identical_rows": true,
-        "amendment_line": 2
+        "amendment_line": 5,
+        "amendment_id": "worker-51-amendment-02",
+        "prior_amendment_line": 2
       },
       {
         "record_id": "entry-6362",
-        "canonical_terminal_line": 83,
-        "duplicate_terminal_line": 86,
+        "canonical_history_line": 83,
+        "duplicate_history_line": 86,
         "identical_rows": true,
-        "amendment_line": 3
+        "amendment_line": 6,
+        "amendment_id": "worker-51-amendment-03",
+        "prior_amendment_line": 3
       },
       {
         "record_id": "entry-6462",
-        "canonical_terminal_line": 84,
-        "duplicate_terminal_line": 87,
+        "canonical_history_line": 84,
+        "duplicate_history_line": 87,
         "identical_rows": true,
-        "amendment_line": 4
+        "amendment_line": 7,
+        "amendment_id": "worker-51-amendment-04",
+        "prior_amendment_line": 4
       }
     ]
   },
   "coordinator_artifact_issues": {
-    "duplicate_ids": "resolved by effective-set deduplication amendments; terminal history retained append-only"
-  }
+    "duplicate_ids": "resolved; canonical terminal has unique record_id values and prior 95-row history is archived"
+  },
+  "canonical_terminal_rows": 92,
+  "history_archive_path": "outputs/worker-51-terminal-history-pre-dedup-2026-10-04.jsonl",
+  "history_archive_rows": 95,
+  "materialized_prior_replacements": 1,
+  "legacy_duplicate_amendment_lines_interpreted_against_history_archive": [
+    2,
+    3,
+    4
+  ]
 }
