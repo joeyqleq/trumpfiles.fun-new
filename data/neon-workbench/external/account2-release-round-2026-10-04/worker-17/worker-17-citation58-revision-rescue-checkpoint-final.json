@@ -1,0 +1,254 @@
+{
+  "task": "Superseding proposal-only integration of all prior citation190 revision_required rows after owner revision rescue.",
+  "created_at_utc": "2026-10-04",
+  "prior_ledger": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+  "prior_ledger_sha256": "c39525df346c7b91046d1b79a70218495abef578654321de584864415ad2ad22",
+  "input_commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+  "expected_key_count": 58,
+  "observed_key_count": 58,
+  "exact_key_set_match": true,
+  "duplicate_keys": 0,
+  "advance_count": 53,
+  "hold_count": 5,
+  "held_keys": [
+    "entry-231",
+    "entry-735",
+    "entry-2528",
+    "entry-4054",
+    "entry-934"
+  ],
+  "workers": {
+    "1": {
+      "branch": "ls/1-trump-files-sample100-review-01-of-12-iPnX",
+      "head": "ca2753870f5d2b6f4af8b27754695a5b06fb043c",
+      "assigned": 6,
+      "advance": 4,
+      "hold": 2,
+      "keys": [
+        "entry-231",
+        "entry-2636",
+        "entry-3380",
+        "entry-5406",
+        "entry-5707",
+        "entry-735"
+      ],
+      "qa_files": [
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-01-final-qa-2026-10-04-rescue-a.json",
+          "sha256": "bd9ed5f1d3fc3e3a9761b3571b3b30488f8f1cce8895c6be67eb550f4538894f"
+        }
+      ]
+    },
+    "2": {
+      "branch": "ls/2-trump-files-sample100-review-02-of-12-6WFh",
+      "head": "ef0f7aaf3e624a62d4cc4a97a3157fe4c520cd77",
+      "assigned": 4,
+      "advance": 4,
+      "hold": 0,
+      "keys": [
+        "entry-2710",
+        "entry-425",
+        "entry-824",
+        "entry-954"
+      ],
+      "qa_files": []
+    },
+    "3": {
+      "branch": "ls/3-trump-files-sample100-review-03-of-12-gPrZ",
+      "head": "0ed948d51f73995c4a817c57aa83bc8954d887a6",
+      "assigned": 7,
+      "advance": 7,
+      "hold": 0,
+      "keys": [
+        "entry-1729",
+        "entry-2340",
+        "entry-255",
+        "entry-3899",
+        "entry-426",
+        "entry-4308",
+        "entry-766"
+      ],
+      "qa_files": []
+    },
+    "4": {
+      "branch": "ls/4-trump-files-sample100-review-04-of-12-aICV",
+      "head": "b22376a92812aa816684c2f9bf163b8bd02da9a0",
+      "assigned": 5,
+      "advance": 5,
+      "hold": 0,
+      "keys": [
+        "entry-178",
+        "entry-2504",
+        "entry-264",
+        "entry-4353",
+        "entry-6127"
+      ],
+      "qa_files": [
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-04-final-qa-20261004-citation58-revision-rescue.json",
+          "sha256": "2e9a04886f90b9310f3738827e20eec05c377a7d3276a93de1e2c158ed91dcb9"
+        }
+      ]
+    },
+    "5": {
+      "branch": "ls/5-trump-files-sample100-review-05-of-12-uITi",
+      "head": "e9aeb237e10a69c27339600b7e81e5c9b4f18ddb",
+      "assigned": 1,
+      "advance": 1,
+      "hold": 0,
+      "keys": [
+        "entry-978"
+      ],
+      "qa_files": [
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-05-final-qa-20261004-entry978-eab779ec.json",
+          "sha256": "fb4ddf13b042d3c98777ced6e89b0ba845735292f99f7f1cf4be32e8e4372317"
+        }
+      ]
+    },
+    "6": {
+      "branch": "ls/6-trump-files-sample100-review-06-of-12-pfm2",
+      "head": "0b51500283f01c42beb24ba0b71db2c79861bfe1",
+      "assigned": 2,
+      "advance": 2,
+      "hold": 0,
+      "keys": [
+        "entry-3678",
+        "entry-6141"
+      ],
+      "qa_files": [
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-06-final-qa-citation58-rescue-20261004.json",
+          "sha256": "452f1298cb72404b36d424619d9dfd2d42474f5f1f13a2f814a70eda4e32e4aa"
+        }
+      ]
+    },
+    "7": {
+      "branch": "ls/7-trump-files-sample100-review-07-of-12-WFXm",
+      "head": "9b273474237fa0f2ed13dc41a523b2e276c18137",
+      "assigned": 1,
+      "advance": 0,
+      "hold": 1,
+      "keys": [
+        "entry-2528"
+      ],
+      "qa_files": []
+    },
+    "8": {
+      "branch": "ls/8-trump-files-sample100-review-08-of-12-Qhy0",
+      "head": "af11d551f5ec701ba1b0abd7aa8198850fdba7f3",
+      "assigned": 12,
+      "advance": 11,
+      "hold": 1,
+      "keys": [
+        "entry-1782",
+        "entry-211",
+        "entry-293",
+        "entry-2930",
+        "entry-3722",
+        "entry-4054",
+        "entry-4692",
+        "entry-5565",
+        "entry-6155",
+        "entry-6340",
+        "entry-651",
+        "entry-996"
+      ],
+      "qa_files": [
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/final-qa.json",
+          "sha256": "56bd0ce6233322515c64d70c1aab14e12e733e95ae81d27ab56ecffeda65eee2"
+        },
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/final-qa.md",
+          "sha256": "3cf3195c3a054aa14b64605c859dd4124e9ce3eaac6b9a7e63eb8a19182d34d5"
+        }
+      ]
+    },
+    "9": {
+      "branch": "ls/9-trump-files-sample100-review-09-of-12-WtKf",
+      "head": "8c5f414322949d05d394b9bf1faa44b1fd7c26a1",
+      "assigned": 6,
+      "advance": 6,
+      "hold": 0,
+      "keys": [
+        "entry-1666",
+        "entry-3009",
+        "entry-3735",
+        "entry-4097",
+        "entry-5094",
+        "entry-654"
+      ],
+      "qa_files": [
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-09-final-qa-20261004-citation58-rescue-01.json",
+          "sha256": "be9072fd7e90e8c3187624fcb2ed61e0a7fb8e28885b0bae890f6e2822ca71f2"
+        }
+      ]
+    },
+    "10": {
+      "branch": "ls/10-trump-files-sample100-review-10-of-12-5b45",
+      "head": "ca5038610785ff4a062f5403209f29ff6a90eeb0",
+      "assigned": 7,
+      "advance": 7,
+      "hold": 0,
+      "keys": [
+        "entry-1857",
+        "entry-222",
+        "entry-2415",
+        "entry-3117",
+        "entry-365",
+        "entry-6395",
+        "entry-912"
+      ],
+      "qa_files": [
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-10-final-qa.json",
+          "sha256": "43091a101334aef83ea12f1f0da1a0b97d793e5f5e34210d659ca208309ee1c4"
+        }
+      ]
+    },
+    "11": {
+      "branch": "ls/11-trump-files-sample100-review-11-of-12-mShY",
+      "head": "b198ef6abdc8b47149ae84d247c96b12a5ad603b",
+      "assigned": 3,
+      "advance": 3,
+      "hold": 0,
+      "keys": [
+        "entry-3832",
+        "entry-4232",
+        "entry-5309"
+      ],
+      "qa_files": []
+    },
+    "12": {
+      "branch": "ls/12-trump-files-sample100-review-12-of-12-fLSj",
+      "head": "0c2265edb3db0710eb25fbc325efaa7334a70ead",
+      "assigned": 4,
+      "advance": 3,
+      "hold": 1,
+      "keys": [
+        "entry-230",
+        "entry-6206",
+        "entry-814",
+        "entry-934"
+      ],
+      "qa_files": [
+        {
+          "path": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-12-final-qa-20261004.json",
+          "sha256": "1b6ced8da50df0d1de256de9c3d2a6760c97f962c7c1a29f4d114d1aafbb4a29"
+        }
+      ]
+    }
+  },
+  "final_qa_status": {
+    "worker_07": "complete inline in worker-07 batch JSONL; exact 1/1; unsupported_hold retained",
+    "worker_08": "complete standalone final-qa JSON/MD; exact 12/12; 11 drafted, entry-4054 long field held",
+    "worker_11": "complete inline in worker-11 batch JSONL; exact 3/3; all proposals length-checked"
+  },
+  "exclusions": "Keyless metadata, checkpoint and final-QA rows are source evidence only and are not emitted as results.",
+  "scope": "Proposal-only; prior 190 ledger untouched; no canonical record, database, Neon, merge, or PR changes.",
+  "output_file": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-revision-rescue-effective-001.jsonl",
+  "output_sha256": "bae24634412880ab2eabb232f8630ebfa4de96e8a28c9363c436e945b5e200d0",
+  "independent_qa": "Each emitted result is checked for exact source URL coverage by source-to-fact mappings, preserved-prior-ledger reference, title/short/medium/long field presence and required length bounds, scope qualifiers/exclusions, and any explicit hold. Advancement means editorial review only."
+}
