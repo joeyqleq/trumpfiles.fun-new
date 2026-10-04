@@ -1,0 +1,99 @@
+{
+  "job": "insights100-repair-06",
+  "status": "complete",
+  "source_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "review_commit": "a837c80bff5663ed965aad5f3230683248de2898",
+  "effective_prior_commit": "046173143a032f1e8afe6cd664a1da8b477a73f2",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-06-input.jsonl",
+  "review_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-qa/outputs/worker-06-terminal.jsonl",
+  "prior_terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-06-terminal.jsonl",
+  "prior_amendments": [
+    "worker-06-amendment-001.jsonl",
+    "worker-06-amendment-002.jsonl",
+    "worker-06-amendment-003.jsonl",
+    "worker-06-amendment-004.jsonl",
+    "worker-06-amendment-005.jsonl"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-06-terminal.jsonl",
+  "assigned_record_ids": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "terminal_record_ids": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "terminal_row_count": 8,
+  "status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "review_outcome": {
+    "passed_unchanged": [
+      "entry-6",
+      "entry-30",
+      "entry-44",
+      "entry-56",
+      "entry-82",
+      "entry-94"
+    ],
+    "corrected": [
+      "entry-18",
+      "entry-70"
+    ]
+  },
+  "corrections": [
+    {
+      "record_id": "entry-18",
+      "change": "Removed the object_of_legal_action relation to “first impeachment” and its evidence-map entry.",
+      "reason": "The supplied text names a proceeding but does not name the authority; the remaining three acted_on relations are unchanged."
+    },
+    {
+      "record_id": "entry-70",
+      "change": "Removed “electoral process” from institutions and its evidence-map entry.",
+      "reason": "The supplied text describes a process, not a named affected institution; “courts” remains."
+    }
+  ],
+  "checks": {
+    "exact_assigned_set": true,
+    "no_duplicate_terminal_ids": true,
+    "required_output_schema": true,
+    "all_non_unknown_facts_evidence_mapped": true,
+    "all_79_evidence_quotes_literal_substrings_of_supplied_text": true,
+    "quantity_and_relation_evidence_valid": true,
+    "source_urls_limited_to_supplied_mappings": true,
+    "no_web_search_or_new_scoring": true,
+    "no_canonical_neon_or_code_edits": true,
+    "prior_terminal_and_immutable_amendments_preserved": true,
+    "output_missing_resolved": true
+  },
+  "blockers_record_ids": [
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "limitations": [
+    "Supplied source pages were not opened; URLs are retained only as supplied source mappings.",
+    "Some inputs contain stronger long-synopsis claims than the staged medium description; unresolved differences remain documented in row blockers."
+  ],
+  "prior_terminal_corrections": "The repair terminal did not previously exist. Effective rows were appended as the initial repair history; two review-flagged removals are documented above and in the affected row blockers, so no separate amendment file was needed.",
+  "checks_not_run": "Project type-check/lint/tests were skipped because this task changes only evidence data and QA artifacts, with no code changes.",
+  "pull_request": "None; explicitly excluded by the task.",
+  "checked_at": "2026-10-04T11:16:32Z"
+}

@@ -1,0 +1,49 @@
+{
+  "job": "insights100-repair-06",
+  "status": "complete",
+  "source_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "review_commit": "a837c80bff5663ed965aad5f3230683248de2898",
+  "effective_prior_commit": "046173143a032f1e8afe6cd664a1da8b477a73f2",
+  "expected_record_ids": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "completed_record_ids": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-06-terminal.jsonl",
+  "terminal_rows": 8,
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-06-final-qa.json",
+  "batches": [
+    [
+      "entry-6",
+      "entry-18",
+      "entry-30"
+    ],
+    [
+      "entry-44",
+      "entry-56",
+      "entry-70"
+    ],
+    [
+      "entry-82",
+      "entry-94"
+    ]
+  ],
+  "output_missing_resolved": true,
+  "prior_amendments_preserved": true,
+  "updated_at": "2026-10-04T11:16:32Z"
+}
