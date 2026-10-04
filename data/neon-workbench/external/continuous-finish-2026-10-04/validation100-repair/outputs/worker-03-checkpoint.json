@@ -1,0 +1,35 @@
+{
+  "task": "validation100-repair-03",
+  "source_ref": "origin/codex/insights-validation100-2026-10-04",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "review_ref": "origin/ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+  "review_commit": "7cb7c0950cef110ee139a6dd218fa99ace85fafe",
+  "assigned_ids": [
+    "entry-743",
+    "entry-3041",
+    "entry-725",
+    "entry-1429",
+    "entry-2438",
+    "entry-2661",
+    "entry-6262",
+    "entry-3239",
+    "entry-1845"
+  ],
+  "completed_ids": [
+    "entry-743",
+    "entry-3041",
+    "entry-725",
+    "entry-1429",
+    "entry-2438",
+    "entry-2661",
+    "entry-6262",
+    "entry-3239",
+    "entry-1845"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-03-terminal.jsonl",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-03-final-qa.json",
+  "checkpoint_status": "all nine assigned records have one effective repair terminal row; one immutable evidence-quote amendment and final QA written",
+  "terminal_sha256": "caffe4b421bf6260c45a826cfe08aafc66ea729393800cf2f309d5a1f357b9de",
+  "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-03-amendments.jsonl",
+  "amendment_sha256": "d75d5df87979fc4835474c75ab609c5c43301f041002c7917f467515815fd024"
+}
