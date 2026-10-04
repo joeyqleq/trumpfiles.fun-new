@@ -1,0 +1,26 @@
+{
+  "job": "validation100-05",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "assigned_record_ids": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422",
+    "entry-5729",
+    "entry-2561",
+    "entry-2728",
+    "entry-310",
+    "entry-3309"
+  ],
+  "completed_this_run_ids": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422"
+  ],
+  "terminal_record_ids_after_checkpoint": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422"
+  ],
+  "rows_written_this_checkpoint": 3,
+  "append_only": true
+}

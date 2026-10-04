@@ -1,0 +1,29 @@
+{
+  "job": "validation100-05",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "assigned_record_ids": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422",
+    "entry-5729",
+    "entry-2561",
+    "entry-2728",
+    "entry-310",
+    "entry-3309"
+  ],
+  "completed_record_ids": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422",
+    "entry-5729",
+    "entry-2561",
+    "entry-2728",
+    "entry-310",
+    "entry-3309"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-05-terminal.jsonl",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-05-final-qa.json",
+  "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-05-amendments.jsonl",
+  "status": "complete",
+  "append_only": true
+}
