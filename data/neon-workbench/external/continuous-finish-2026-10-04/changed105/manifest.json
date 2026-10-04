@@ -1,0 +1,16 @@
+{
+  "rows": 6944,
+  "statuses": {
+    "complete": 6845,
+    "needs_context": 99
+  },
+  "final204": {
+    "pass": 105,
+    "hold": 95,
+    "exclusion_candidate": 4
+  },
+  "changed_descriptions": 105,
+  "prior_snapshot_sha256": "c091939b50a8af24682b6025f69c5a063bfbac90351933016e183b0f5266e762",
+  "snapshot_sha256": "4b509f8ce4a6bd8fd2e20c5c9d5d35aab54a06fccb208fe47de90535c9b712a0",
+  "proposal_only": true
+}
