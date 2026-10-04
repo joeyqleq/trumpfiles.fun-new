@@ -1,0 +1,44 @@
+{
+  "job": "changed105-19",
+  "worker": 19,
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-19-input.jsonl",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-19-terminal.jsonl",
+  "assigned_count": 9,
+  "packet_count": 9,
+  "terminal_count": 9,
+  "unique_terminal_count": 9,
+  "exact_set_match": true,
+  "packet_order_matches_assignment": true,
+  "row_status_counts": {
+    "scored": 9,
+    "deferred": 0
+  },
+  "schema_and_score_validation": "passed",
+  "errors": [],
+  "prior_terminal_rows": 0,
+  "append_only_preserved_history": true,
+  "amendments": [],
+  "coordinator_artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "scope_note": "The task title says 13 IDs; both the explicit ONLY list and the pinned worker-19 packet contain exactly these 9 IDs. No other packet IDs are present.",
+  "side_effects": {
+    "canonical_record_edits": 0,
+    "neon_writes": 0,
+    "web_research": 0,
+    "subagents": 0,
+    "pull_requests": 0
+  },
+  "repository_checks": {
+    "lint": {
+      "command": "bun run lint",
+      "result": "passed",
+      "errors": 0,
+      "warnings": 186
+    },
+    "typecheck": "not_defined",
+    "tests": "not_defined",
+    "visual_verification": "not_applicable_data_only_change"
+  }
+}

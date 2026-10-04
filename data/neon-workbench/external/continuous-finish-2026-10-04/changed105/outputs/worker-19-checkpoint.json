@@ -1,0 +1,28 @@
+{
+  "job": "changed105-19",
+  "worker": 19,
+  "branch": "ls/6-trump-final-corrections-account2-worker1-zeIF",
+  "source_branch": "codex/final-description-scores-2026-10-04",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-19-input.jsonl",
+  "rubric_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/RUBRIC.md",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-19-terminal.jsonl",
+  "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-19-final-exact-set-qa.json",
+  "assigned_count": 9,
+  "written_count": 9,
+  "completed_record_ids": [
+    "entry-2929",
+    "entry-3709",
+    "entry-3735",
+    "entry-6155",
+    "entry-5334",
+    "entry-5605",
+    "entry-920",
+    "entry-2413",
+    "entry-5996"
+  ],
+  "remaining_record_ids": [],
+  "status": "complete",
+  "prior_rows_preserved": true,
+  "amendments": []
+}
