@@ -1,0 +1,18 @@
+{
+  "job": "full-insights-24",
+  "packet_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "expected_count": 92,
+  "packet_unique_ids": 92,
+  "terminal_rows": 92,
+  "terminal_unique_ids": 92,
+  "assigned_set_exact": true,
+  "schema_valid": true,
+  "evidence_map_complete": true,
+  "literal_quote_matches": 619,
+  "quantities_relations_empty": true,
+  "status_counts": {
+    "complete": 78,
+    "insufficient": 14
+  },
+  "amendment": "worker-24-amendment-001 preserves and documents the initial duplicate-writer attempt; authoritative terminal was restarted with no prior history and contains one valid row per assigned ID."
+}
