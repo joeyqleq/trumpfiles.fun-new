@@ -1,0 +1,40 @@
+{
+  "worker": "worker-30",
+  "job": "full-insights-30",
+  "branch": "ls/7-trump-files-impact368-review-06-of-12-sjBp",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "result": "passed",
+  "assigned_ids_expected": 92,
+  "packet_ids": 92,
+  "terminal_rows": 92,
+  "unique_terminal_ids": 92,
+  "assigned_id_set_exact": true,
+  "status_counts": {
+    "complete": 85,
+    "insufficient": 7
+  },
+  "evidence_entries_checked_including_amendments": 599,
+  "non_unknown_core_values_checked": 584,
+  "checks": {
+    "schema_and_allowed_fields": "passed",
+    "enum_values": "passed",
+    "proposal_only_and_status": "passed",
+    "exact_assigned_set_and_unique_rows": "passed",
+    "quote_literal_substring": "passed",
+    "evidence_map_covers_non_unknown_core_values": "passed",
+    "source_urls_limited_to_supplied_mapping": "passed",
+    "quantities_and_relations_empty": "passed"
+  },
+  "amendments": [
+    "worker-30-a1: entry-4048 outcome narrowed to quoted Iran dispute",
+    "worker-30-a2: entry-5034 outcome supported with settlement and subsequent merger-approval text",
+    "worker-30-a3: entry-5180 outcome supported with weather-modification context"
+  ],
+  "terminal_sha256": "6e50b5130797ec84b208bf1874afd1be540e80339cdd9ea3c12eba2a8beb3775",
+  "limitations": [
+    "Only staged title, short/medium descriptions, notes, and supplied source mappings were used; linked pages were not independently checked.",
+    "No independent verification is claimed for supplied descriptions or legacy numeric estimates.",
+    "Quantities and relations were left empty as required.",
+    "Project checks/tests skipped because only data outputs and QA artifacts changed; no application code changed."
+  ]
+}

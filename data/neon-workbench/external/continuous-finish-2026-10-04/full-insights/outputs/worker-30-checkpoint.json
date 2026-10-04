@@ -1,0 +1,12 @@
+{
+  "worker": "worker-30",
+  "job": "full-insights-30",
+  "state": "complete",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_records": 92,
+  "terminal_rows": 92,
+  "assigned_ids_exact": true,
+  "amendments": 3,
+  "terminal_sha256": "6e50b5130797ec84b208bf1874afd1be540e80339cdd9ea3c12eba2a8beb3775",
+  "last_record_in_append_order": "entry-440"
+}
