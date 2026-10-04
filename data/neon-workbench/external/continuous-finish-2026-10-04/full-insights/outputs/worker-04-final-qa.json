@@ -1,0 +1,43 @@
+{
+  "job_id": "full-insights-04",
+  "source_revision": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "result": "pass",
+  "packet_rows": 93,
+  "terminal_rows": 93,
+  "unique_terminal_ids": 93,
+  "assigned_id_set_matches_packet": true,
+  "statuses": {
+    "complete": 90,
+    "insufficient": 3
+  },
+  "effective_literal_quote_checks": 697,
+  "effective_core_fields_supported": true,
+  "quantities_and_relations_empty": true,
+  "amendment_count": 4,
+  "amendments": [
+    {
+      "record_id": "entry-412",
+      "reason": "The supplied text describes a diplomatic exchange and an upcoming U.N. vote; it does not establish a legal stage."
+    },
+    {
+      "record_id": "entry-637",
+      "reason": "The supplied description names the agencies and statute but does not explicitly state geographic scope."
+    },
+    {
+      "record_id": "entry-715",
+      "reason": "The earlier outcome added a claim about actual admissions that is not stated verbatim in the source text. Retain only the stated ceiling."
+    },
+    {
+      "record_id": "entry-871",
+      "reason": "A local literal-substring check found three evidence quotes used a curly apostrophe where the supplied text uses an ASCII apostrophe; corrected the quotes without changing the extracted facts."
+    }
+  ],
+  "append_only_history_quote_issues": 3,
+  "historical_issue_ids": [
+    "entry-871"
+  ],
+  "rows_with_blockers": 74,
+  "canonical_data_neon_and_code_edits": 0,
+  "note": "This extraction records supplied text only and does not independently verify source pages. Amendments are immutable corrections and define effective values where a terminal row has been superseded.",
+  "effective_record_count": 93
+}
