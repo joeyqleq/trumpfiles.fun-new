@@ -1,0 +1,24 @@
+{
+  "checkpoint": "final_exact_set",
+  "worker": "06",
+  "batch_file": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account4/outputs/worker-06-batch-UNIQUE.jsonl",
+  "expected_ids": [
+    "entry-1780",
+    "entry-2571",
+    "entry-5541"
+  ],
+  "row_count": 3,
+  "unique_keys": 3,
+  "terminal_status_counts": {
+    "hold": 2,
+    "propose_narrowed_event": 1
+  },
+  "status_by_key": {
+    "entry-1780": "hold",
+    "entry-2571": "hold",
+    "entry-5541": "propose_narrowed_event"
+  },
+  "source_packet_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+  "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+  "qa_file": "final-qa.json"
+}
