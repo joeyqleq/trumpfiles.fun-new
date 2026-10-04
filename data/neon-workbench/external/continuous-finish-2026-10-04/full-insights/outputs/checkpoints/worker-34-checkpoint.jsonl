@@ -1,0 +1,43 @@
+{"batch":1,"completed_through":"entry-291","record_ids":["entry-135","entry-211","entry-291"],"status":"saved_terminal_rows"}
+{"batch":2,"completed_through":"entry-747","record_ids":["entry-367","entry-444","entry-518","entry-594","entry-672","entry-747"],"status":"saved_terminal_rows"}
+{"batch":2,"amendment_for":"entry-594","status":"saved_immutable_amendment"}
+{"batch":3,"completed_through":"entry-1199","record_ids":["entry-826","entry-902","entry-976","entry-1050","entry-1127","entry-1199"],"status":"saved_terminal_rows"}
+{"batch":4,"completed_through":"entry-1636","record_ids":["entry-1273","entry-1345","entry-1417","entry-1490","entry-1562","entry-1636"],"status":"saved_terminal_rows"}
+{"after_terminal_row":21,"amendment_count":7,"status":"immutable_amendments_saved_and_quote_errors_corrected_for_qa"}
+{"after_terminal_row":21,"amendment_count":9,"status":"amendment_locators_and_literal_quotes_corrected"}
+{"batch":5,"completed_through":"entry-1885","record_ids":["entry-1725","entry-1811","entry-1885"],"status":"saved_terminal_rows"}
+{"batch":6,"completed_through":"entry-2103","record_ids":["entry-1957","entry-2029","entry-2103"],"status":"saved_terminal_rows"}
+{"after_terminal_row":27,"amendment_count":10,"status":"literal_quote_review_checkpoint_saved"}
+{"batch":7,"completed_through":"entry-2323","record_ids":["entry-2176","entry-2248","entry-2323"],"status":"saved_terminal_rows"}
+{"batch":8,"completed_through":"entry-2560","record_ids":["entry-2403","entry-2482","entry-2560"],"status":"saved_terminal_rows"}
+{"after_terminal_row":33,"amendment_count":23,"status":"core_values_and_quote_corrections_saved"}
+{"batch":9,"completed_through":"entry-2796","record_ids":["entry-2643","entry-2720","entry-2796"],"status":"saved_terminal_rows"}
+{"batch":10,"completed_through":"entry-3018","record_ids":["entry-2874","entry-2946","entry-3018"],"status":"saved_terminal_rows"}
+{"batch":11,"completed_through":"entry-3243","record_ids":["entry-3092","entry-3167","entry-3243"],"status":"saved_terminal_rows"}
+{"batch":12,"completed_through":"entry-3472","record_ids":["entry-3318","entry-3396","entry-3472"],"status":"saved_terminal_rows"}
+{"after_terminal_row":45,"amendment_count":28,"status":"literal_quote_review_checkpoint_saved"}
+{"batch":13,"completed_through":"entry-3689","record_ids":["entry-3545","entry-3617","entry-3689"],"status":"saved_terminal_rows"}
+{"batch":14,"completed_through":"entry-3907","record_ids":["entry-3761","entry-3834","entry-3907"],"status":"saved_terminal_rows"}
+{"after_terminal_row":51,"amendment_count":32,"status":"literal_quote_and_value_review_checkpoint_saved"}
+{"after_terminal_row":51,"amendment_count":34,"status":"superseding_locator_error_and_aligning_outcome_evidence"}
+{"after_terminal_row":51,"amendment_count":35,"status":"entry_3617_amendment_index_corrected"}
+{"batch":15,"completed_through":"entry-4124","record_ids":["entry-3979","entry-4052","entry-4124"],"status":"saved_terminal_rows"}
+{"batch":16,"completed_through":"entry-4358","record_ids":["entry-4199","entry-4276","entry-4358"],"status":"saved_terminal_rows"}
+{"after_terminal_row":57,"amendment_count":39,"status":"batch_15_16_support_review_checkpoint_saved"}
+{"batch":17,"completed_through":"entry-4580","record_ids":["entry-4431","entry-4506","entry-4580"],"status":"saved_terminal_rows"}
+{"batch":18,"completed_through":"entry-4803","record_ids":["entry-4653","entry-4729","entry-4803"],"status":"saved_terminal_rows"}
+{"batch":19,"completed_through":"entry-5038","record_ids":["entry-4877","entry-4951","entry-5038"],"status":"saved_terminal_rows"}
+{"batch":20,"completed_through":"entry-5264","record_ids":["entry-5110","entry-5184","entry-5264"],"status":"saved_terminal_rows"}
+{"after_terminal_row":69,"amendment_count":41,"status":"quote_and_outcome_corrections_saved"}
+{"after_terminal_row":69,"amendment_count_correction":41,"status":"amendment_count_refers_to_expected_total_after_quote_fixes"}
+{"batch":21,"completed_through":"entry-5491","record_ids":["entry-5341","entry-5417","entry-5491"],"status":"saved_terminal_rows"}
+{"batch":22,"completed_through":"entry-5714","record_ids":["entry-5566","entry-5640","entry-5714"],"status":"saved_terminal_rows"}
+{"after_terminal_row":75,"status":"entity_semantics_review_saved","note":"Individual persons and non-group organizations removed from affected_groups; unsupported institution names removed or corrected."}
+{"batch":23,"completed_through":"entry-5965","record_ids":["entry-5804","entry-5889","entry-5965"],"status":"saved_terminal_rows"}
+{"batch":24,"completed_through":"entry-6186","record_ids":["entry-6038","entry-6110","entry-6186"],"status":"saved_terminal_rows"}
+{"after_terminal_row":81,"status":"qa_corrections_appended","record_ids":["entry-5341","entry-5491","entry-5566","entry-5965","entry-1725","entry-3617"],"note":"Quote equality checked against staged_description before appending immutable amendments."}
+{"batch":25,"completed_through":"entry-6435","record_ids":["entry-6266","entry-6344","entry-6435"],"status":"saved_terminal_rows"}
+{"batch":26,"completed_through":"entry-6717","record_ids":["entry-6530","entry-6630","entry-6717"],"status":"saved_terminal_rows"}
+{"batch":27,"completed_through":"entry-7037","record_ids":["entry-6845","entry-6948","entry-7037"],"status":"saved_terminal_rows"}
+{"batch":28,"completed_through":"expanded-20260908-save-sc-request","record_ids":["entry-7139","expanded-20260908-save-sc-request"],"status":"saved_terminal_rows"}
+{"after_terminal_row":92,"status":"qa_correction_appended","record_ids":["entry-3617"],"note":"Removed the scope evidence-map entry after scope was corrected to unknown; terminal history remains unchanged."}
