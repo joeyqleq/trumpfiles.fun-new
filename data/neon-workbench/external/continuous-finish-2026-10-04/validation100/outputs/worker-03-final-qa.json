@@ -1,0 +1,70 @@
+{
+  "final_qa": {
+    "task": "validation100-03",
+    "source_ref": "origin/codex/insights-validation100-2026-10-04",
+    "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+    "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-03-input.jsonl",
+    "assigned_ids": [
+      "entry-743",
+      "entry-3041",
+      "entry-725",
+      "entry-1429",
+      "entry-2438",
+      "entry-2661",
+      "entry-6262",
+      "entry-3239",
+      "entry-1845"
+    ],
+    "row_count": 9,
+    "terminal_counts": {
+      "complete": 9,
+      "insufficient": 0
+    },
+    "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-03-terminal.jsonl",
+    "checkpoint_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-03-checkpoint.json",
+    "terminal_sha256": "3e706c8be18f7aab6a669b4c2499907dc3f8d5683127b090143ae5f609989aab",
+    "proposal_only": true,
+    "checks": {
+      "input_has_exact_assigned_ids_once_and_in_order": true,
+      "terminal_has_exact_assigned_ids_once_and_in_order": true,
+      "all_rows_are_valid_jsonl": true,
+      "required_insight_facts_schema_valid": true,
+      "all_evidence_quotes_are_literal_substrings_of_supplied_staged_text": true,
+      "each_non_unknown_fact_and_array_element_has_evidence_map_entry": true,
+      "quantity_urls_and_original_units_preserved": true,
+      "progress_checkpoints_saved_after_3_6_and_9_records": true,
+      "output_missing_resolved": true,
+      "canonical_neon_and_code_files_untouched": true,
+      "source_pages_independently_checked": false,
+      "new_scoring_or_global_deduplication_performed": false
+    },
+    "blockers_by_record": {
+      "entry-3041": [
+        "EPA said the revisions would clarify and simplify compliance while maintaining worker protections; farmworker and environmental advocates argued they could leave workers and nearby residents more exposed to pesticide drift."
+      ],
+      "entry-725": [
+        "EPA described the policy as improving openness for review; critics argued it could sideline important public-health research based on confidential medical information."
+      ],
+      "entry-1429": [
+        "Trump described destroying Iran’s missile capabilities and preventing a nuclear weapon as goals; national-security experts disputed his assertion that Iran would soon have missiles capable of reaching the United States."
+      ],
+      "entry-2438": [
+        "The supplied account documents Ross’s criticism of the proposed terms but says it does not establish the final consequences of this specific offer."
+      ],
+      "entry-2661": [
+        "The reported dating claim is explicitly unconfirmed and attributed to an unnamed source; the supplied coverage says no source verified it."
+      ],
+      "entry-6262": [
+        "Democrats and other critics said the timing suggested retaliation, but the supplied account says it does not establish what happened to each investigation afterward."
+      ],
+      "entry-3239": [
+        "The description states that the ratifications aimed to keep contested rules in place but does not establish whether each rule ultimately took effect."
+      ],
+      "entry-1845": [
+        "The supplied text says the documentation lacks the full text of Trump’s remarks, the precise content of Rubio’s briefings, and independent verification of Israel’s influence on the strike decision."
+      ]
+    },
+    "scope_note": "Claims are based on frozen supplied staged descriptions and source mappings only. A source URL beside text was not treated as independently verified page content. Unsupported outcomes and populations remain null or empty; disagreements and unverified claims are recorded in row blockers."
+  },
+  "visual_verification": "Not applicable: this task changes data artifacts only and has no user-facing UI or code flow."
+}

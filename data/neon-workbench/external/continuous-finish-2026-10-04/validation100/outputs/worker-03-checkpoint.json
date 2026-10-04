@@ -1,0 +1,31 @@
+{
+  "task": "validation100-03",
+  "source_ref": "origin/codex/insights-validation100-2026-10-04",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "assigned_ids": [
+    "entry-743",
+    "entry-3041",
+    "entry-725",
+    "entry-1429",
+    "entry-2438",
+    "entry-2661",
+    "entry-6262",
+    "entry-3239",
+    "entry-1845"
+  ],
+  "completed_ids": [
+    "entry-743",
+    "entry-3041",
+    "entry-725",
+    "entry-1429",
+    "entry-2438",
+    "entry-2661",
+    "entry-6262",
+    "entry-3239",
+    "entry-1845"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-03-terminal.jsonl",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-03-final-qa.json",
+  "checkpoint_status": "all nine assigned records have one terminal row; final QA written",
+  "terminal_sha256": "3e706c8be18f7aab6a669b4c2499907dc3f8d5683127b090143ae5f609989aab"
+}
