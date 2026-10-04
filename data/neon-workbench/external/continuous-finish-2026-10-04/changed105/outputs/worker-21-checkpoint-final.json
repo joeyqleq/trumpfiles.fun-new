@@ -1,0 +1,41 @@
+{
+  "job": "changed105-21",
+  "status": "complete",
+  "task_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "base_head_before_output_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+  "source_branch": "codex/final-description-scores-2026-10-04",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "source_sha256": "2ec30c6bd0adedf07ab13be571d451293cfb4a7d4163af62640b0db875944d36",
+  "assigned_ids": [
+    "entry-4054",
+    "entry-4622",
+    "entry-6330",
+    "entry-2342",
+    "entry-210",
+    "entry-211",
+    "entry-6235",
+    "entry-3488",
+    "entry-6997"
+  ],
+  "completed_ids": [
+    "entry-4054",
+    "entry-4622",
+    "entry-6330",
+    "entry-2342",
+    "entry-210",
+    "entry-211",
+    "entry-6235",
+    "entry-3488",
+    "entry-6997"
+  ],
+  "completed_count": 9,
+  "scored_count": 8,
+  "deferred_count": 1,
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-21-terminal.jsonl",
+  "final_exact_set_qa": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-21-final-exact-set-qa.json",
+  "progress_saved_after_each_batch": [
+    3,
+    6,
+    9
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "job": "changed105-21",
+  "status": "pass",
+  "source_branch": "codex/final-description-scores-2026-10-04",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "source_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-21-input.jsonl",
+  "source_sha256": "2ec30c6bd0adedf07ab13be571d451293cfb4a7d4163af62640b0db875944d36",
+  "rubric_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/RUBRIC.md",
+  "rubric_sha256": "1ac7e1f208a8fe8fde1db5accda6d5b587c79f7780baafa0baa1053909d28d27",
+  "task_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-21-terminal.jsonl",
+  "assigned_ids": [
+    "entry-4054",
+    "entry-4622",
+    "entry-6330",
+    "entry-2342",
+    "entry-210",
+    "entry-211",
+    "entry-6235",
+    "entry-3488",
+    "entry-6997"
+  ],
+  "terminal_count": 9,
+  "terminal_ids": [
+    "entry-4054",
+    "entry-4622",
+    "entry-6330",
+    "entry-2342",
+    "entry-210",
+    "entry-211",
+    "entry-6235",
+    "entry-3488",
+    "entry-6997"
+  ],
+  "missing_ids": [],
+  "out_of_scope_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "scored": 8,
+    "deferred": 1
+  },
+  "schema_valid": true,
+  "dimensions_valid": true,
+  "existing_history_before_append": 0,
+  "new_rows_appended": 9,
+  "resolved_artifact_issues": [
+    "output_missing"
+  ],
+  "unresolved_artifact_issues": [],
+  "no_canonical_edits": true,
+  "no_neon_writes": true,
+  "no_original_score_overwrites": true,
+  "pull_request": "not requested; none opened"
+}
