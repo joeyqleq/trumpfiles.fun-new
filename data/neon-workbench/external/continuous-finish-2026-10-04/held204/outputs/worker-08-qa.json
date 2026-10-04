@@ -1,0 +1,89 @@
+{
+  "job": "held204-08",
+  "assignment_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-08-input.jsonl",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-08-terminal.jsonl",
+  "terminal_row_count": 17,
+  "expected_ids": [
+    "entry-211",
+    "entry-378",
+    "entry-655",
+    "entry-814",
+    "entry-912",
+    "entry-1716",
+    "entry-1784",
+    "entry-2373",
+    "entry-2504",
+    "entry-2710",
+    "entry-3371",
+    "entry-3873",
+    "entry-4304",
+    "entry-5403",
+    "entry-5698",
+    "entry-6230",
+    "entry-6552"
+  ],
+  "terminal_ids": [
+    "entry-211",
+    "entry-378",
+    "entry-655",
+    "entry-814",
+    "entry-912",
+    "entry-1716",
+    "entry-1784",
+    "entry-2373",
+    "entry-2504",
+    "entry-2710",
+    "entry-3371",
+    "entry-3873",
+    "entry-4304",
+    "entry-5403",
+    "entry-5698",
+    "entry-6230",
+    "entry-6552"
+  ],
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "pass": 9,
+    "hold": 8
+  },
+  "all_proposal_only": true,
+  "schema_validation": "pass",
+  "exact_set_validation": "pass",
+  "pass_length_validation": "pass",
+  "source_and_preservation_fields": "present on all 17 rows",
+  "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-08-amendments.jsonl",
+  "amendments": [
+    {
+      "record_id": "entry-2710",
+      "line": 1,
+      "amends_terminal_line": 10,
+      "reason": "Clarifies the allegation without implying that Donald Trump attended the alleged meeting; the source packet does not establish the meeting or identify its participants clearly enough to state them as fact."
+    },
+    {
+      "record_id": "entry-814",
+      "line": 2,
+      "amends_terminal_line": 4,
+      "reason": "Removes a source-review note about the unsupported convention announcement from the public copy while retaining the documented decision and meeting the long-description length requirement."
+    },
+    {
+      "record_id": "entry-6230",
+      "line": 3,
+      "amends_terminal_line": 16,
+      "reason": "Names the single cited rights organization and removes an imperative editorial instruction from the proposed description."
+    }
+  ],
+  "effective_copy_length_validation": "pass",
+  "resolved_coordinator_artifact_issue": "output_missing",
+  "no_other_coordinator_issue_changed": true,
+  "notes": [
+    "Terminal history was initially absent; all 17 assigned IDs were appended.",
+    "Three immutable amendments clarify event participants and remove editorial wording; apply field_patch entries to the effective rows.",
+    "No prior terminal rows existed, so no decisions were overwritten."
+  ],
+  "terminal_sha256": "f5b8c76507f0041671f57c7f920e020e15536a5a4eebc4d2808462d10d08f7ce",
+  "amendment_sha256": "a22d9ebeb5d0bf3eac9f9d842901933c265d93a3b1ab071c97140d2329b8a10d",
+  "created_at_utc": "2026-10-04T10:45:13.436189+00:00"
+}
