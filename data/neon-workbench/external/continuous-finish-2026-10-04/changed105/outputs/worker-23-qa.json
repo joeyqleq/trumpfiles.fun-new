@@ -1,0 +1,39 @@
+{
+  "job": "changed105-23",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "source_input": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-23-input.jsonl",
+  "source_input_sha256": "27326b04094a236f97a9241e42d57a95ebeb8886adde02f8a5e48a17a1df2304",
+  "assigned_record_ids": [
+    "entry-5505",
+    "entry-6141",
+    "entry-267",
+    "entry-3832",
+    "entry-654",
+    "entry-814",
+    "entry-720",
+    "entry-4353"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-23-terminal.jsonl",
+  "terminal_record_ids": [
+    "entry-5505",
+    "entry-6141",
+    "entry-267",
+    "entry-3832",
+    "entry-654",
+    "entry-814",
+    "entry-720",
+    "entry-4353"
+  ],
+  "terminal_count": 8,
+  "scored_count": 7,
+  "deferred_count": 1,
+  "duplicate_record_ids": [],
+  "exact_set_pass": true,
+  "schema_pass": true,
+  "dimension_bounds_and_precision_pass": true,
+  "rationale_length_pass": true,
+  "scope": "Only the eight IDs in worker-23-input.jsonl were scored; no canonical data or live database was changed.",
+  "deferred_reasons": {
+    "entry-654": "Packet confirms a final BLM rule revision but does not identify the operative requirements changed or their direction, so impact cannot be defensibly scored."
+  }
+}

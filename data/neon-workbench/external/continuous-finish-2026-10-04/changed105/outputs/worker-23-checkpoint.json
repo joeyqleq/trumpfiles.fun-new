@@ -1,0 +1,20 @@
+{
+  "job": "changed105-23",
+  "worker": 23,
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-23-terminal.jsonl",
+  "terminal_count": 8,
+  "terminal_ids": [
+    "entry-5505",
+    "entry-6141",
+    "entry-267",
+    "entry-3832",
+    "entry-654",
+    "entry-814",
+    "entry-720",
+    "entry-4353"
+  ],
+  "terminal_sha256": "de93be19de3b839fb0729d806fd599e8b03c7c959c04ad35e3928d4c161c47ac",
+  "checkpoint": "all assigned records terminal; exact-set/schema QA passed",
+  "next": "commit and push current worker branch"
+}
