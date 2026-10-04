@@ -28,9 +28,10 @@
   },
   "effective_row_count_after_amendments": 9,
   "amendment_paths": [
-    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-amendment-001.jsonl"
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-amendment-001.jsonl",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-amendment-002.jsonl"
   ],
-  "amendment_count": 1,
+  "amendment_count": 2,
   "checkpoint_paths": [
     "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-checkpoint-001.json",
     "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-checkpoint-002.json",
@@ -70,10 +71,22 @@
     "code_edits": false,
     "pr_opened": false,
     "artifact_issue_resolved": [
-      "output_missing"
+      "output_missing",
+      "amendment_revision_missing:entry-462"
     ]
   },
   "terminal_sha256": "e7fcc1a4c120004287a19dc407e3bfed58c98f73f9a7639ab6f1d2c5bc4470ba",
-  "amendment_sha256": "084bd9b0d7310abd1cc281d1f5043e43a2e773af3b22a12324a15ebc9c8c0037",
-  "captured_at": "2026-10-04"
+  "amendment_sha256": "7f6bb353b7d442b84b25bcaa3d48843126eeada3dd1ac57f84b58ad8aee3a054",
+  "captured_at": "2026-10-04",
+  "amended_record_count": 1,
+  "amendment_revisions": {
+    "entry-462": 1
+  },
+  "latest_amendments": {
+    "entry-462": "worker-01-amendment-002"
+  },
+  "amendment_sha256s": {
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-amendment-001.jsonl": "084bd9b0d7310abd1cc281d1f5043e43a2e773af3b22a12324a15ebc9c8c0037",
+    "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-01-amendment-002.jsonl": "7f6bb353b7d442b84b25bcaa3d48843126eeada3dd1ac57f84b58ad8aee3a054"
+  }
 }
