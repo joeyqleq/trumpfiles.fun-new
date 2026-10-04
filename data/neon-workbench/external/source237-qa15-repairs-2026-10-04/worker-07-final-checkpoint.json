@@ -1,0 +1,39 @@
+{
+  "checkpoint": "source237-qa15-repairs-2026-10-04-worker-07-final",
+  "task": "repair only assigned finding records by append-only copy-length/source-mapping QA",
+  "worker": 7,
+  "branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+  "output_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-07-batch-001-20261004.jsonl",
+  "finding_set": [
+    "entry-6420"
+  ],
+  "exact_set_match": true,
+  "finding_count": 1,
+  "rows_written": 1,
+  "lengths": {
+    "entry-6420": {
+      "title_chars": 75,
+      "short_chars": 75,
+      "medium_words": 57,
+      "long_words": 192,
+      "title_and_short_within_180_chars": true,
+      "medium_within_45_90_words": true,
+      "long_within_140_300_words": true,
+      "every_url_mapped": true,
+      "word_count_method": "Same Unicode word-token convention as source237 reported counts; internal apostrophes and hyphens remain within a token."
+    }
+  },
+  "source_urls_mapped": [
+    "https://www.govinfo.gov/content/pkg/DCPD-202500138/html/DCPD-202500138.htm",
+    "https://www.opm.gov/news/news-releases/opm-finalizes-schedule-policycareer-rule-to-strengthen-accountability/"
+  ],
+  "unmapped_urls": [],
+  "word_length_finding_cleared": true,
+  "source_record_status": "needs_correction",
+  "source_record_accepted_or_verified": false,
+  "unresolved_gap": [
+    "The order and OPM notice do not establish the number of positions ultimately designated or the result for any individual employee."
+  ],
+  "scope_note": "No canonical, Neon, target proposal, packet input, or other worker files were edited. This checkpoint evaluates only the requested long-copy finding.",
+  "word_count_method": "Same Unicode word-token convention as source237 reported counts; internal apostrophes and hyphens remain within a token."
+}
