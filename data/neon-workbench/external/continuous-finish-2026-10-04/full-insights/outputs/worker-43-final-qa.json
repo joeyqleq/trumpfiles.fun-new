@@ -1,0 +1,41 @@
+{
+  "job": "full-insights-43",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "source_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-43-input.jsonl",
+  "proposal_only": true,
+  "expected_ids": 92,
+  "input_ids": 92,
+  "terminal_rows": 92,
+  "terminal_unique_ids": 92,
+  "exact_id_set_match": true,
+  "status_counts": {
+    "complete": 89,
+    "insufficient": 3
+  },
+  "effective_blocker_count_after_amendments": 57,
+  "amendment_rows": 8,
+  "amended_record_ids": [
+    "entry-221",
+    "entry-302",
+    "entry-527",
+    "entry-5575",
+    "entry-5649",
+    "entry-5723",
+    "entry-1740",
+    "entry-2113"
+  ],
+  "literal_evidence_quotes_validated": true,
+  "literal_blocker_and_amendment_quotes_validated": true,
+  "all_non_unknown_core_values_have_evidence": true,
+  "quantities_relations_empty_for_all_rows": true,
+  "source_pages_independently_checked": false,
+  "artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "scope_notes": [
+    "Only supplied packet text and supplied notes were used.",
+    "No quantities or relations were extracted; only the approved seven core fields were populated.",
+    "Conflicts and unsupported claims are recorded in blockers or immutable amendments.",
+    "No canonical data, Neon, or application code was changed."
+  ]
+}
