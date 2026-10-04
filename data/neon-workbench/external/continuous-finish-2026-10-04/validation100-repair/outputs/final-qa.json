@@ -1,0 +1,99 @@
+{
+  "job": "continuous-finish-2026-10-04/validation100-repair/worker-07",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "source_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-07-input.jsonl",
+  "review_branch": "ls/7-trump-description-rescue-07-of-12-53-dis-zltS",
+  "review_commit": "ba8dca2de91b22a3f5c3bd8bdc0b8ac546c894d1",
+  "immutable_amendments_commit": "9c0e470ec54e6559d7de6a5124f0484554f8ccbc",
+  "expected_ids": [
+    "entry-6329",
+    "entry-6705",
+    "entry-3408",
+    "entry-4918",
+    "entry-2358",
+    "entry-5768",
+    "entry-2818",
+    "entry-1254"
+  ],
+  "observed_ids": [
+    "entry-6329",
+    "entry-6705",
+    "entry-3408",
+    "entry-4918",
+    "entry-2358",
+    "entry-5768",
+    "entry-2818",
+    "entry-1254"
+  ],
+  "row_count": 8,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "complete": 8
+  },
+  "artifact_issue": "output_missing",
+  "corrections": [
+    {
+      "record_id": "entry-4918",
+      "fields": [
+        "insight_facts.relations[0].basis_quote",
+        "evidence_map.event_state.basis_quote",
+        "evidence_map.relations[0]"
+      ],
+      "reason": "Replace the two review-flagged nonliteral citations and use the review-supported relation wording."
+    },
+    {
+      "record_id": "entry-5768",
+      "fields": [
+        "insight_facts.action_type",
+        "insight_facts.relations[0]",
+        "evidence_map.action_type.value",
+        "evidence_map.relations[0]"
+      ],
+      "reason": "Use a neutral classification and association wording per independent review."
+    },
+    {
+      "record_id": "entry-2818",
+      "fields": [
+        "insight_facts.relations[2]",
+        "evidence_map.relations[2]",
+        "blockers"
+      ],
+      "reason": "Remove unsupported object_of_legal_action relation; supplied account names no legal authority."
+    },
+    {
+      "record_id": "entry-1254",
+      "fields": [
+        "evidence_map.outcome.basis_quote",
+        "insight_facts.relations[1].basis_quote",
+        "evidence_map.relations[1]"
+      ],
+      "reason": "Apply prior immutable evidence-map amendments and fix the two additionally flagged literal quote issues."
+    }
+  ],
+  "prior_immutable_amendments_applied": [
+    "worker-07-amendment-01",
+    "worker-07-amendment-02"
+  ],
+  "repair_amendments": [
+    "worker-07-repair-amendment-01",
+    "worker-07-repair-amendment-02",
+    "worker-07-repair-amendment-03",
+    "worker-07-repair-amendment-04"
+  ],
+  "evidence_checks": {
+    "effective_quotes_are_literal_substrings_of_supplied_input": true,
+    "every_supported_scalar_and_array_element_mapped": true,
+    "source_urls_present_in_supplied_input": true,
+    "source_pages_independently_checked": false
+  },
+  "scope_checks": {
+    "only_assigned_ids": true,
+    "canonical_neon_or_application_code_edits": false,
+    "web_searches_or_new_scoring": false,
+    "unflagged_passing_rows_preserved": true
+  },
+  "qa_errors": [],
+  "qa_pass": true
+}
