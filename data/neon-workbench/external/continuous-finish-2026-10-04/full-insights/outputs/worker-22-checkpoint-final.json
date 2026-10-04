@@ -1,0 +1,25 @@
+{
+  "record_type": "worker_checkpoint",
+  "worker": 22,
+  "status": "complete",
+  "completed_at_utc": "2026-10-04T11:57:58.389629+00:00",
+  "task_scope": "full-insights-22 core extraction of exactly the 92 packet IDs",
+  "source_ref": {
+    "branch": "codex/full-insights-packets-2026-10-04",
+    "commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-22-input.jsonl"
+  },
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-22-terminal.jsonl",
+  "terminal_sha256": "68bc88275a5e34113264c6904a1e2552614655d6a414419b639c145fd5282b44",
+  "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-22-amendments.jsonl",
+  "amendments_sha256": "c8fac382e6fa5a58f8c71d0066ff5fb0ae2890cf2b75a86e897349386f2bad2f",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-22-final-qa.json",
+  "final_qa_sha256": "4bb5808c96da1d862b8ca342716f6895126a630f9db49a915361373dd7680633",
+  "expected_count": 92,
+  "terminal_count": 92,
+  "status_counts": {
+    "complete": 91,
+    "insufficient": 1
+  },
+  "next_action": "Commit and push only these worker output artifacts on the existing assigned branch; do not open a pull request."
+}
