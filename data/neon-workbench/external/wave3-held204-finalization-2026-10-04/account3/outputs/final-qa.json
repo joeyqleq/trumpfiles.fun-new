@@ -1,0 +1,563 @@
+{
+  "worker": 7,
+  "task_branch": "ls/8-trump-files-impact368-review-07-of-12-7OJh",
+  "source_packets": {
+    "staged_subset_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "staged_subset_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+    "staged_subset_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+    "staged_rows": 204,
+    "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+    "reconciliation_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+    "reconciliation_sha256": "0efa1e8b5e8f4b9ef94f09a19533b0679ae124bddf429e35c2a11a8f5569eb2a",
+    "effective_results_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl",
+    "effective_results_sha256": "2953556deb4d0c565ec54214661ac08598d41fcdea15dfe96f89d09a53fbbc9d",
+    "original_baseline_commit": "61150d33ec2c8efb8e3fffd262921f86e7a9176a",
+    "original_baseline_path": "data/neon-workbench/external/description-completion/2026-09-30/merged/descriptions.jsonl",
+    "original_baseline_sha256": "3107dbb2d64245ea0326e1175baa6214444918bc02381ec213340b7b4f01d29e",
+    "original_baseline_match_count": 14,
+    "held_subset_statuses": {
+      "needs_context": 204
+    },
+    "assigned_subset_count": 14,
+    "assigned_subset_all_needs_context": true,
+    "frozen_pipeline_input_matches": 9,
+    "frozen_baseline_only_ids": [
+      "entry-378",
+      "entry-4097",
+      "entry-6356",
+      "entry-836",
+      "entry-996"
+    ],
+    "assigned_subset_statuses": {
+      "needs_context": 14
+    }
+  },
+  "assigned_keys": [
+    "entry-1770",
+    "entry-227",
+    "entry-2458",
+    "entry-267",
+    "entry-3212",
+    "entry-378",
+    "entry-4097",
+    "entry-4692",
+    "entry-5565",
+    "entry-6146",
+    "entry-6356",
+    "entry-766",
+    "entry-836",
+    "entry-996"
+  ],
+  "proposal_files": [
+    {
+      "commit": "4070900f9a3333351cf8bc2b1f0afcff90c881ca",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-09-batch-002.jsonl",
+      "sha256": "c81097e192d157e19e6125cc97c7b1a8477f4e067079d582b9d4d1a0653eded0"
+    },
+    {
+      "commit": "50ee3e2fce05fb45dcaacc25eac4a1bd976f3ac5",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-10-batch-20261003-002.jsonl",
+      "sha256": "b9f221aa626a957fc79de698c50aaf6b0c70bad83179b8989ca310562e9edecc"
+    },
+    {
+      "commit": "598285901cf9f372f723fc12c4b331cdca0f2641",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-23-batch-UNIQUE.jsonl",
+      "sha256": "8862b92deccc1add45d234f2fa6193faa0999d916b137e37fa90e828527eb366"
+    },
+    {
+      "commit": "61150d33ec2c8efb8e3fffd262921f86e7a9176a",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-12-batch-002.jsonl",
+      "sha256": "2a11c4a8b2e5ed555350ced255d033845714968dde337e610d62f98fb45eacea"
+    },
+    {
+      "commit": "6b1bbc726f0f93f3e2de755d5f2747d14bdae93e",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-20-batch-001.jsonl",
+      "sha256": "f0a202e620c4fa0a8e4ff0e7bcb4f1c8dd5470a55a89d626f620c21631aba024"
+    },
+    {
+      "commit": "868758565358afd7b98e8b6b246ececab53b9761",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-14-batch-UNIQUE.jsonl",
+      "sha256": "6ed5fbb3cf7d1e78fbabae0c5b2684aefab1bfa3261ac0cde05b84c8a9a1c1ef"
+    },
+    {
+      "commit": "8779ac63e2eca30b0d7b95fc786e44afb9fc2b1e",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-15-batch-UNIQUE.jsonl",
+      "sha256": "4a650857d1d0d8407c5de0c5ad3d1f11f0b0a4654d5d48ff30c4a9e4f570f1b0"
+    },
+    {
+      "commit": "888cb5cf3f756e71a874d1f96db6c98a6fba0843",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-16-batch-20261003-a.jsonl",
+      "sha256": "2f14721f472180323a1d2867876db65bb9d7ada8894612641fb392427f45a0cd"
+    },
+    {
+      "commit": "888cb5cf3f756e71a874d1f96db6c98a6fba0843",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-16-followup-20261003.jsonl",
+      "sha256": "8e8af6e18a320e9f7b82f64078afbf5f56df153a4006660a76b0970af1f2d281"
+    },
+    {
+      "commit": "bae41a0c6664270c42a5266f420f5f8735c6ef6b",
+      "path": "data/neon-workbench/external/description-completion/2026-09-30/rescue-2026-10-02/dual-account-wave3/outputs/worker-01-batch-002.jsonl",
+      "sha256": "c6326c6d4e680aa708ad29182954e7d5c24dc5a64dbcd739711dbe4e5e6baf83"
+    }
+  ],
+  "output": {
+    "path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-07-batch-UNIQUE.jsonl",
+    "sha256": "af12ba578bee5b1db30925ce101abb76a77ec154d387a082d36b192cf2e66948",
+    "row_count": 14,
+    "exact_requested_key_order": true,
+    "duplicate_keys": 0,
+    "expected_count": 14,
+    "saved_count": 14,
+    "missing_count": 0,
+    "exact_key_set": true
+  },
+  "checkpoint": {
+    "path": "data/neon-workbench/external/wave3-held204-finalization-2026-10-04/account3/outputs/worker-07-checkpoint.jsonl",
+    "counts": [
+      7,
+      14
+    ],
+    "prefix_hashes_verified": true
+  },
+  "results": {
+    "pass_count": 6,
+    "hold_count": 8,
+    "pass_ids": [
+      "entry-378",
+      "entry-4097",
+      "entry-5565",
+      "entry-6146",
+      "entry-766",
+      "entry-836"
+    ],
+    "hold_ids": [
+      "entry-1770",
+      "entry-227",
+      "entry-2458",
+      "entry-267",
+      "entry-3212",
+      "entry-4692",
+      "entry-6356",
+      "entry-996"
+    ],
+    "blocking_ids": [
+      {
+        "key": "entry-1770",
+        "blockers": [
+          "The original frozen claim is the March 4, 2026 AP tracker/long-tail review-cycle assertion. The proposal pivots to AP’s January 2025 Day-One promises article, a different time-bound event.",
+          "The evidence_resolution cites an AP January 2025 review URL that is absent from proposal.source_urls; the only listed AP tracker URL was reported HTTP 403 in the existing focused review. The listed URL therefore does not support the proposed Day-One facts."
+        ]
+      },
+      {
+        "key": "entry-227",
+        "blockers": [
+          "description_long is null (0 words), below the required 140–300 words.",
+          "The proposal retains subcategory “Child Nutrition and Education Program Elimination” while its text says the evidence establishes proposals, not implemented eliminations."
+        ]
+      },
+      {
+        "key": "entry-2458",
+        "blockers": [
+          "description_long is null (0 words), below the required 140–300 words.",
+          "The existing source review reports both linked pages inaccessible (Times HTTP 403; TrumpFile HTTP 202/no article body); the filing/argument account relies on a headline and supplied summary, with no docket or accessible report to complete the claim provenance.",
+          "The proposal retains Government Corruption / Transparency Obstruction classification although the reviewed materials support a lawsuit and attributed arguments, not corruption or obstruction."
+        ]
+      },
+      {
+        "key": "entry-267",
+        "blockers": [
+          "The title and descriptions appropriately distinguish Project 2025 proposals from enacted policy and meet the length limits, but the proposal retains subcategory “LGBTQ+ Content Prohibition and Expression Criminalization,” directly contradicting its own statement that the sources do not establish an enacted ban or criminalization."
+        ]
+      },
+      {
+        "key": "entry-3212",
+        "blockers": [
+          "The frozen event is the January 7 social-media truck/College Hunks sighting and alleged junk removal. The linked CNN transcript reports moving vans at the household during the week of January 20; the proposal provides no evidence these are the same observation, date, vehicle, or service. This changes event identity rather than verifying the original claim.",
+          "The proposal itself says no public-business or government-funds connection is documented and leaves collection relevance for separate review."
+        ]
+      },
+      {
+        "key": "entry-4692",
+        "blockers": [
+          "The descriptions carefully limit the story to a pardon and reported conflict concerns, but the proposal retains category “Government Corruption.” The supplied evidence explicitly does not establish a quid pro quo, purchase of clemency, or that the business ties caused the pardon; the category remains an unsupported adverse conclusion."
+        ]
+      },
+      {
+        "key": "entry-6356",
+        "blockers": [
+          "The frozen claim is double-billing through internal loans as a New York fraud-trial finding. The proposal substitutes separate banker testimony about financial statements and loan approvals; the cited AP report expressly does not document double-billing, internal loans, or a court finding. This adjacent testimony does not preserve or substantiate the original event."
+        ]
+      },
+      {
+        "key": "entry-996",
+        "blockers": [
+          "The proposal retains category/subcategory Grift / Financial Exploitation / Corrupt Pardons, but its evidence review says the commutation is not a pardon and supplies no rationale, favoritism, exchange, or corrupt act.",
+          "The existing focused-review note says the linked warrant PDF was image-only and did not expose readable terms, while the latest evidence_resolution relies on that URL for “time served” and release-date facts. The URL-to-fact trail is not fully auditable from the supplied record."
+        ]
+      }
+    ],
+    "saved_count": 14,
+    "missing_count": 0
+  },
+  "validations": {
+    "all_effective_coordinator_rows_complete": true,
+    "actual_proposal_path_commit_matched": true,
+    "proposal_title_and_urls_match_effective_index": true,
+    "worker_complete_not_treated_as_editorial_approval": true,
+    "length_counts_by_id": {
+      "entry-1770": {
+        "short_characters": 139,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 77,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 170,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-227": {
+        "short_characters": 79,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 75,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 0,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": false,
+        "source_url_syntax_pass": true
+      },
+      "entry-2458": {
+        "short_characters": 51,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 78,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 0,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": false,
+        "source_url_syntax_pass": true
+      },
+      "entry-267": {
+        "short_characters": 179,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 79,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 170,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-3212": {
+        "short_characters": 119,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 59,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 198,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-378": {
+        "short_characters": 107,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 55,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 156,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-4097": {
+        "short_characters": 114,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 67,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 171,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-4692": {
+        "short_characters": 126,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 90,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 164,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-5565": {
+        "short_characters": 116,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 65,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 157,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-6146": {
+        "short_characters": 174,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 65,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 163,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-6356": {
+        "short_characters": 158,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 68,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 160,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-766": {
+        "short_characters": 160,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 66,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 168,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-836": {
+        "short_characters": 142,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 64,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 186,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      },
+      "entry-996": {
+        "short_characters": 167,
+        "short_limit": 180,
+        "short_pass": true,
+        "medium_words": 78,
+        "medium_range": [
+          45,
+          90
+        ],
+        "medium_pass": true,
+        "long_words": 190,
+        "long_range": [
+          140,
+          300
+        ],
+        "long_pass": true,
+        "source_url_syntax_pass": true
+      }
+    },
+    "all_source_urls_well_formed": true,
+    "source_fact_maps_included": true,
+    "exact_schema_fields_written": [
+      "key",
+      "disposition",
+      "worker_status",
+      "editorial_proposal_status",
+      "publication_approved",
+      "proposal_provenance",
+      "source_files",
+      "frozen_original",
+      "proposal",
+      "fact_support",
+      "verified_urls",
+      "length_check",
+      "reasons"
+    ],
+    "fact_support_url_coverage_by_id": {
+      "entry-1770": {
+        "evidence_map_urls": 1,
+        "evidence_map_urls_absent_from_proposal_source_urls": [
+          "https://www.ap.org/news-highlights/spotlights/2025/trump-offered-a-bountiful-batch-of-campaign-promises-that-come-due-on-day-1/"
+        ]
+      },
+      "entry-227": {
+        "evidence_map_urls": 2,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-2458": {
+        "evidence_map_urls": 2,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-267": {
+        "evidence_map_urls": 3,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-3212": {
+        "evidence_map_urls": 1,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-378": {
+        "evidence_map_urls": 3,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-4097": {
+        "evidence_map_urls": 4,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-4692": {
+        "evidence_map_urls": 6,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-5565": {
+        "evidence_map_urls": 3,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-6146": {
+        "evidence_map_urls": 2,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-6356": {
+        "evidence_map_urls": 1,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-766": {
+        "evidence_map_urls": 3,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-836": {
+        "evidence_map_urls": 2,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      },
+      "entry-996": {
+        "evidence_map_urls": 2,
+        "evidence_map_urls_absent_from_proposal_source_urls": []
+      }
+    },
+    "all_pass_rows_have_mapped_fact_urls_in_proposal_source_urls": true,
+    "all_required_description_lengths_pass_for_pass_rows": true,
+    "source_review_method": "Checked each exact coordinator-linked complete proposal and its evidence_resolution source-to-fact map against the frozen baseline and supplied notes; no proposal text was edited and no new external fetch was performed.",
+    "worker_complete_is_not_approval": true,
+    "independent_final_check": {
+      "exact_14_ids_and_order": true,
+      "no_duplicates": true,
+      "saved_count": 14,
+      "missing_count": 0,
+      "all_pass_rows_meet_three_length_bounds": true,
+      "all_source_urls_well_formed": true,
+      "pass_source_maps_covered_by_proposal_urls": true,
+      "checkpoint_prefix_hashes": true,
+      "all_14_proposal_files_rechecked_by_commit_path_and_row_sha256": true,
+      "result": "PASS"
+    }
+  },
+  "scope": {
+    "only_assigned_ids": true,
+    "canonical_edits": false,
+    "neon_writes": false,
+    "other_worker_outputs_edited": false,
+    "pull_request_opened": false
+  },
+  "status": "PASS_WITH_HOLDS"
+}
