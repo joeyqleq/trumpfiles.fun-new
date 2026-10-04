@@ -1,0 +1,12 @@
+{
+  "job": "context-enrichment-15",
+  "source_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "assigned_record_ids": [
+    "entry-2106"
+  ],
+  "processed_record_ids": [
+    "entry-2106"
+  ],
+  "terminal_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-15-terminal.jsonl",
+  "status": "pass"
+}
