@@ -112,5 +112,35 @@
   "final_qa_json": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-24-final-qa.json",
   "final_qa_report": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-24-qa-report.md",
   "amendment": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-24-amendments.jsonl",
-  "updated_at": "2026-10-04T12:01:48.584264+00:00"
+  "updated_at": "2026-10-04T12:15:31+00:00",
+  "last_saved_batch": {
+    "record_ids": [
+      "entry-125",
+      "entry-200"
+    ],
+    "count": 2,
+    "literal_quotes_validated": true,
+    "note": "Clarified duplicate archived revisions; no terminal rows changed."
+  },
+  "amendment_resolution": {
+    "amendment_id": "worker-24-amendment-002",
+    "resolved_record_ids": [
+      "entry-125",
+      "entry-200"
+    ],
+    "duplicate_archive_counts": {
+      "entry-125": 3,
+      "entry-200": 2
+    },
+    "distinct_payloads_per_record": {
+      "entry-125": 1,
+      "entry-200": 1
+    },
+    "authoritative_rows_match": {
+      "entry-125": true,
+      "entry-200": true
+    },
+    "terminal_mutated": false,
+    "final_packet_validation": "passed: 92 assigned IDs; 92 unique terminal rows; 619 literal evidence-map quote matches; no evidence/schema errors"
+  }
 }

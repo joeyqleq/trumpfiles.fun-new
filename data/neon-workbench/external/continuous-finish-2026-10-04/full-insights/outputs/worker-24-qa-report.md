@@ -8,3 +8,9 @@
 - Literal quote validation passed for all 619 evidence-map entries against supplied staged/frozen packet text. All evidence is marked `supplied_text` with `source_url: null`; no source pages were newly checked.
 - No quantities, relations, candidate extensions, or independent source-verification claims were added. Record-level limitations and contradictions are listed in each row's `blockers`.
 - Amendment: `worker-24-amendment-001` preserves the initial duplicate-writer attempt byte-for-byte and documents the correction. The authoritative terminal was restarted because it had no pre-existing history; it contains one row per assigned ID.
+
+## Amendment resolution — worker-24-amendment-002
+
+- Resolved the coordinator flags for `entry-125` (reported twice) and `entry-200`. The archived initial attempt contains three `entry-125` rows and two `entry-200` rows; each record has one distinct payload, and every archived copy exactly equals its single authoritative terminal row.
+- This is a clarification-only amendment. The terminal was not mutated; no factual revision was needed. The archive checksum remains recorded in amendment-001 and is repeated in amendment-002.
+- Revalidated against the supplied packet at commit `2d7b76b4e48cdb8695a091fcfb6487301155d551`: 92 packet rows, 92 unique terminal rows, 619 literal evidence-map quote matches, zero schema/evidence errors. Source pages were not independently checked.

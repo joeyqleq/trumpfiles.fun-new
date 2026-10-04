@@ -14,5 +14,32 @@
     "complete": 78,
     "insufficient": 14
   },
-  "amendment": "worker-24-amendment-001 preserves and documents the initial duplicate-writer attempt; authoritative terminal was restarted with no prior history and contains one valid row per assigned ID."
+  "amendment": "worker-24-amendment-001 preserves the initial duplicate-writer attempt; worker-24-amendment-002 clarifies that flagged entry-125 and entry-200 archive rows are exact duplicates, not competing revisions. The authoritative terminal was unchanged.",
+  "amendment_resolution": {
+    "amendment_id": "worker-24-amendment-002",
+    "issues_resolved": [
+      "ambiguous_amendment_revision:entry-125 (reported twice)",
+      "ambiguous_amendment_revision:entry-200"
+    ],
+    "archived_attempt_rows": {
+      "entry-125": 3,
+      "entry-200": 2
+    },
+    "distinct_archived_payloads": {
+      "entry-125": 1,
+      "entry-200": 1
+    },
+    "terminal_rows_match_archives": {
+      "entry-125": true,
+      "entry-200": true
+    },
+    "terminal_mutated": false
+  },
+  "final_validation": {
+    "packet_rows": 92,
+    "terminal_rows": 92,
+    "unique_terminal_ids": 92,
+    "literal_quote_matches": 619,
+    "errors": 0
+  }
 }
