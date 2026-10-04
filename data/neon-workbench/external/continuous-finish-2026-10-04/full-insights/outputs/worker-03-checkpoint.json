@@ -117,5 +117,32 @@
   "final_schema_validation": "passed",
   "terminal_history_preserved": true,
   "final_qa_passed": true,
-  "source_pages_independently_checked": false
+  "source_pages_independently_checked": false,
+  "coordinator_artifact_audit": {
+    "status": "complete",
+    "flagged_record_count": 16,
+    "flagged_record_ids": [
+      "entry-1240",
+      "entry-1459",
+      "entry-4244",
+      "entry-4326",
+      "entry-4399",
+      "entry-4475",
+      "entry-4695",
+      "entry-5384",
+      "entry-5609",
+      "entry-5856",
+      "entry-6232",
+      "entry-6308",
+      "entry-6388",
+      "entry-6770",
+      "entry-7088",
+      "expanded-20260925-pocket-rescission-announcement"
+    ],
+    "reported_issue_count": 32,
+    "correction_source": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/amendments/worker-03-amendment-001.jsonl",
+    "terminal_history_preserved": true,
+    "effective_assigned_rows_validated": 93,
+    "validation_errors": []
+  }
 }
