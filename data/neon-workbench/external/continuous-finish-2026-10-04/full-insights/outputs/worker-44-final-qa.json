@@ -1,0 +1,27 @@
+{
+  "job": "full-insights-44",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-44-input.jsonl",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-44-terminal.jsonl",
+  "proposal_only": true,
+  "assigned_count": 92,
+  "terminal_count": 92,
+  "exact_id_set": true,
+  "status_counts": {
+    "complete": 83,
+    "insufficient": 9
+  },
+  "evidence_entries": 613,
+  "literal_quote_and_source_validation": "passed",
+  "checkpoint_count": 31,
+  "latest_checkpoint": {
+    "batch_record_ids": [
+      "entry-604",
+      "entry-683"
+    ],
+    "completed_count": 92,
+    "assigned_count": 92,
+    "last_record_id": "entry-683"
+  },
+  "errors": []
+}
