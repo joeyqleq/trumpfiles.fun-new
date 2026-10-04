@@ -1,0 +1,83 @@
+{
+  "worker": 12,
+  "task": "Trump Files web425 review 12 of 12",
+  "source_packet": {
+    "branch": "codex/insights-validation100-2026-10-04",
+    "commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-12-input.jsonl",
+    "sha256": "f5da2bcafe5d6ed11226beef381cd8c08aaa65cd9736b604c6c924509582cd45"
+  },
+  "output_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-12-terminal.jsonl",
+  "expected_ids": [
+    "entry-2847",
+    "entry-3361",
+    "entry-4703",
+    "entry-224",
+    "entry-2629",
+    "entry-2843",
+    "entry-3428",
+    "entry-5218"
+  ],
+  "actual_ids": [
+    "entry-2847",
+    "entry-3361",
+    "entry-4703",
+    "entry-224",
+    "entry-2629",
+    "entry-2843",
+    "entry-3428",
+    "entry-5218"
+  ],
+  "expected_count": 8,
+  "actual_row_count": 8,
+  "unique_id_count": 8,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "terminal_status_counts": {
+    "complete": 8
+  },
+  "amendments": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-12-amendments.jsonl",
+    "count": 4,
+    "ids": [
+      "worker-12-amendment-001",
+      "worker-12-amendment-002",
+      "worker-12-amendment-003",
+      "worker-12-amendment-004"
+    ],
+    "applied_for_effective_validation": true,
+    "note": "Four immutable amendments correct literal-quote alignment in three terminal records; original terminal rows and their hashes remain unchanged."
+  },
+  "evidence_audit": {
+    "effective_rows": 8,
+    "evidence_map_entries": 69,
+    "all_non_unknown_facts_mapped": true,
+    "all_basis_quotes_literal_substrings_of_supplied_input": true,
+    "all_source_urls_present_in_supplied_mappings": true,
+    "source_pages_checked": false,
+    "quantities_preserve_units_and_are_not_aggregated": true
+  },
+  "scope": {
+    "assigned_ids_only": true,
+    "canonical_edits": false,
+    "neon_writes": false,
+    "code_edits": false,
+    "web_searches": false,
+    "new_scoring": false,
+    "extra_subagents": false
+  },
+  "blockers": [
+    "Several supplied descriptions contain stronger headline/long-form claims than the more cautious account text; per-record blockers preserve those limits. The four quote corrections are documented in the amendment file."
+  ],
+  "checks": {
+    "jsonl_parse": true,
+    "exact_set": true,
+    "unique_terminal_rows": true,
+    "allowed_enums": true,
+    "evidence_coverage": true,
+    "literal_quote_containment_after_amendments": true,
+    "amendment_hash_targets": true,
+    "result": "pass"
+  }
+}

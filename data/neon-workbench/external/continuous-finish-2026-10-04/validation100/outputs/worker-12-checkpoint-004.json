@@ -1,0 +1,36 @@
+{
+  "worker": 12,
+  "task": "Trump Files web425 review 12 of 12",
+  "checkpoint": 4,
+  "expected_ids": [
+    "entry-2847",
+    "entry-3361",
+    "entry-4703",
+    "entry-224",
+    "entry-2629",
+    "entry-2843",
+    "entry-3428",
+    "entry-5218"
+  ],
+  "completed_ids": [
+    "entry-2847",
+    "entry-3361",
+    "entry-4703",
+    "entry-224",
+    "entry-2629",
+    "entry-2843",
+    "entry-3428",
+    "entry-5218"
+  ],
+  "row_count": 8,
+  "terminal_status_counts": {
+    "complete": 8
+  },
+  "output_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-12-terminal.jsonl",
+  "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-12-amendments.jsonl",
+  "amendment_count": 4,
+  "source_packet_branch": "codex/insights-validation100-2026-10-04",
+  "source_packet_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "result": "exact_set_checkpoint",
+  "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-12-final-qa.json"
+}
