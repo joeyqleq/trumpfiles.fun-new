@@ -1,0 +1,16 @@
+{
+  "job": "full-insights-21",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "task_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+  "allowlist_count": 93,
+  "packet_count": 93,
+  "terminal_row_count": 93,
+  "complete_count": 88,
+  "insufficient_count": 5,
+  "exact_allowlist_match": true,
+  "terminal_ids_unique": true,
+  "all_non_unknown_core_values_supported": true,
+  "all_evidence_quotes_literal_substrings": true,
+  "quantities_and_relations_empty": true,
+  "errors": []
+}
