@@ -1,0 +1,34 @@
+{
+  "artifact": "source237-qa15-repair-final-checkpoint",
+  "checkpoint_date": "2026-10-04",
+  "task_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "checkpoint_base_commit": "8f4e0207555fb9b30147a9e0a528ea2c804e0257",
+  "exact_assigned_ids": [
+    "entry-6666"
+  ],
+  "output_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-10-batch-20261004-001.jsonl",
+  "output_sha256": "75b9024927d639938c03caf23bdfde4653ac07318513e76fcdd2258362bcbd9b",
+  "output_row_count": 1,
+  "terminal_row_count": 1,
+  "final_qa_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/qa/worker-10-final-qa-20261004-001.json",
+  "final_qa_sha256": "81cfc47cdcb1d523e3e641720b1b182dd0a163f026801358af37dca812279ed9",
+  "qa_result": "pass",
+  "source237_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "prior_proposal_sha256": "45eb9c4d1d7ecc46884884a22391b911adb572ab4c743a2df2689db2a5751422",
+  "source_urls": [
+    "https://www.bls.gov/news.release/archives/prod5_11192020.pdf",
+    "https://www.bls.gov/opub/mlr/2020/article/pdf/employment-expansion-continued-in-2019-but-growth-slowed-in-several-industries.pdf",
+    "https://www.federalreserve.gov/econres/feds/files/2019086pap.pdf"
+  ],
+  "only_long_description_changed": true,
+  "terminal_correction_status": "needs_correction",
+  "accepted_source": false,
+  "append_only_note": "A new one-row output file and final QA/checkpoint were added; no earlier repair history or proposal rows were rewritten.",
+  "scope_controls": {
+    "canonical_or_neon_data_edited": false,
+    "source237_inputs_edited": false,
+    "proposal_output_edited": false,
+    "other_ids_edited": false
+  }
+}
