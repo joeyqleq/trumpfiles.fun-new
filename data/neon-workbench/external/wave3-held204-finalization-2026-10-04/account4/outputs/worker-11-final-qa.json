@@ -1,0 +1,46 @@
+{
+  "task": "wave3-held204-finalization-2026-10-04/account4",
+  "expected_ids": [
+    "entry-2380",
+    "entry-3371",
+    "entry-6915"
+  ],
+  "observed_ids": [
+    "entry-2380",
+    "entry-3371",
+    "entry-6915"
+  ],
+  "row_count": 3,
+  "unique_id_count": 3,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "hold": 3
+  },
+  "release_ready_count": 0,
+  "draft_lengths": {
+    "entry-3371": {
+      "title_chars": 82,
+      "short_chars": 100,
+      "medium_words": 70,
+      "long_words": 188
+    }
+  },
+  "url_format_errors": [],
+  "blocking_ids": [
+    "entry-2380",
+    "entry-3371",
+    "entry-6915"
+  ],
+  "blocking_reasons": {
+    "entry-2380": "The Library of Congress authority record supports Eric Trump’s birth date (January 6, 1984); the USA Today profile supports the family identification. These establish a biographical fact, not a public or policy event. The staged Environmental Destruction / Environmental Rollbacks classification is unsupported by the event. Hold pending an explicit biography/archive inclusion policy and suitable taxonomy, or a separate sourced public/policy event; do not pad a long event description from the birth fact.",
+    "entry-3371": "The draft below is limited to a reported December 14, 2023 call and attributes the account to published reporting. It does not claim an authenticated recording, a successful blockade, or a Trump role. Keep release_ready false for this Trump-focused record until a credible source establishes its connection to Trump or the collection owner confirms unrelated foreign-policy events are in scope.",
+    "entry-6915": "The official DOJ first-term pardon list is generic and the staged record supplies no recipient name, offense/case, or pardon date to match. It also supplies no source naming a donor or documenting the alleged relationship to Dennis Hastert. Missing evidence: recipient-specific clemency warrant or equivalent identifying the person and grant, plus credible reporting or records supporting the Hastert and donor links. The absence of a Hastert match in the list does not prove the alleged relationship did not exist."
+  },
+  "exact_set_valid": true,
+  "qa_notes": [
+    "Narrow entry-3371 draft is preserved as a proposal but held from release for missing Trump relevance.",
+    "No terminal row is a pass or release approval."
+  ]
+}
