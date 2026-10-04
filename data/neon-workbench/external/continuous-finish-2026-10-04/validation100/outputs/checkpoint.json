@@ -18,5 +18,5 @@
   "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-07-terminal.jsonl",
   "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-07-amendments.jsonl",
   "final_qa_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/final-qa.json",
-  "checkpoint_note": "Exact assigned set complete. Effective evidence citations pass literal-substring validation after two immutable amendments for entry-1254; source pages were not independently checked."
+  "checkpoint_note": "Exact assigned set complete. Effective evidence citations pass schema and literal-substring validation after three immutable amendments for improved citation accuracy; source pages were not independently checked."
 }

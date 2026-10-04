@@ -30,20 +30,20 @@
     "complete": 8
   },
   "evidence_checks": {
-    "quotes_are_literal_substrings_after_amendments": true,
+    "effective_quotes_are_literal_substrings": true,
     "every_supported_scalar_and_array_element_mapped": true,
     "source_urls_present_in_supplied_input": true,
     "source_pages_independently_checked": false
   },
   "amendments": [
-    "worker-07-amendments.jsonl: amendment-01 corrects entry-1254 outcome and relations[1] evidence-map quotes. Amendment-02 refines relations[1] punctuation and relation basis quote to match the literal supplied text. Apply both amendments in order; terminal rows remain unchanged."
+    "worker-07-amendments.jsonl: amendment-01 fixes entry-1254 outcome and relations[1] evidence-map quotes; amendment-02 refines the relation quote punctuation; amendment-03 replaces direct citations for entry-6705 and entry-4918 outcomes and entry-2358 outcome and hiring relation. Apply amendments in order; terminal rows remain unchanged."
   ],
   "scope_checks": {
     "only_assigned_ids": true,
     "canonical_neon_or_application_code_edits": false,
     "web_searches_or_new_scoring": false
   },
-  "blockers_review": "Per-row blockers preserve stated limits and textual tension, including the competing Kovaleski accounts, the non-credible label versus later release chronology, and unsupported Trump links in entries 2358 and 2818.",
+  "blockers_review": "Per-row blockers preserve explicit limits and textual tension, including competing Kovaleski accounts, the missing-files chronology, and unsupported Trump links in entries 2358 and 2818.",
   "qa_errors": [],
   "qa_pass": true
 }
