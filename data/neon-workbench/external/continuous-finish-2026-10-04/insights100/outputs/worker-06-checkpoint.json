@@ -1,0 +1,58 @@
+{
+  "job": "insights100-06",
+  "status": "complete",
+  "source_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "expected_record_ids": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "completed_record_ids": [
+    "entry-6",
+    "entry-18",
+    "entry-30",
+    "entry-44",
+    "entry-56",
+    "entry-70",
+    "entry-82",
+    "entry-94"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-06-terminal.jsonl",
+  "terminal_rows": 8,
+  "amendment_files": [
+    {
+      "file": "worker-06-amendment-001.jsonl",
+      "record_ids": [
+        "entry-6",
+        "entry-18",
+        "entry-30",
+        "entry-44",
+        "entry-56",
+        "entry-82"
+      ]
+    },
+    {
+      "file": "worker-06-amendment-002.jsonl",
+      "record_ids": [
+        "entry-30",
+        "entry-56"
+      ]
+    },
+    {
+      "file": "worker-06-amendment-003.jsonl",
+      "record_ids": [
+        "entry-18",
+        "entry-30",
+        "entry-44",
+        "entry-56"
+      ]
+    }
+  ],
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-06-final-qa.json",
+  "updated_at": "2026-10-04T10:41:12.243506+00:00"
+}
