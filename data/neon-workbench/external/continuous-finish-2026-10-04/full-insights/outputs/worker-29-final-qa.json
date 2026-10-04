@@ -1,0 +1,30 @@
+{
+  "job": "full-insights-29",
+  "proposal_only": true,
+  "source_branch": "codex/full-insights-packets-2026-10-04",
+  "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-29-input.jsonl",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-29-terminal.jsonl",
+  "checkpoint_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-29-checkpoint.jsonl",
+  "assigned_count": 92,
+  "terminal_count": 92,
+  "counts_by_status": {
+    "complete": 89,
+    "insufficient": 3
+  },
+  "assigned_ids_match_packet_and_terminal": true,
+  "terminal_ids_unique": true,
+  "literal_quote_check": "passed per record against supplied packet text",
+  "evidence_map_coverage": "passed for every non-unknown core value",
+  "quantities_and_relations": "empty in all approved insight_facts objects",
+  "latest_checkpoint_count": 92,
+  "latest_checkpoint_covers_all_assigned_ids": true,
+  "amendments": [],
+  "external_source_pages_checked": false,
+  "coordinator_reported_issues": [
+    "output_missing"
+  ],
+  "resolved_issues": [
+    "output_missing"
+  ]
+}
