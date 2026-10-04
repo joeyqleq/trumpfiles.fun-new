@@ -1,0 +1,71 @@
+{
+  "job": "validation100-repair-05",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "review_commit": "ae82ee061956a7cc382cbbb8a5d0c31ed7b9bab7",
+  "amendments_base_commit": "c1349a146507e1aa4aa945935c44eb7618da0854",
+  "branch": "ls/5-trump-files-web425-review-05-of-12-zM9X",
+  "assigned_record_ids": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422",
+    "entry-5729",
+    "entry-2561",
+    "entry-2728",
+    "entry-310",
+    "entry-3309"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-05-terminal.jsonl",
+  "terminal_rows": 8,
+  "terminal_record_ids": [
+    "entry-2675",
+    "entry-6699",
+    "entry-3422",
+    "entry-5729",
+    "entry-2561",
+    "entry-2728",
+    "entry-310",
+    "entry-3309"
+  ],
+  "statuses": {
+    "entry-2675": "complete",
+    "entry-6699": "complete",
+    "entry-3422": "complete",
+    "entry-5729": "complete",
+    "entry-2561": "complete",
+    "entry-2728": "complete",
+    "entry-310": "complete",
+    "entry-3309": "complete"
+  },
+  "proposal_only_all": true,
+  "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-05-amendments.jsonl",
+  "provided_amendments_applied": [
+    "worker-05-amendment-001",
+    "worker-05-amendment-002",
+    "worker-05-amendment-003"
+  ],
+  "repair_amendments_appended": [
+    "worker-05-repair-amendment-001"
+  ],
+  "validation": {
+    "input_exact_id_set": true,
+    "terminal_exact_id_set": true,
+    "no_terminal_duplicates": true,
+    "jsonl_parseable": true,
+    "allowed_enum_values": true,
+    "all_nonempty_insight_values_evidence_mapped": true,
+    "all_effective_evidence_quotes_literal_substrings": true,
+    "quantity_and_relation_shapes_valid": true,
+    "blocker_quotes_literal_substrings": true,
+    "review_findings_resolved_only": true,
+    "provided_amendments_applied": true,
+    "immutable_direction_amendment_written": true,
+    "checkpoints_saved_every_two_records": true
+  },
+  "artifact_issue_resolved": [
+    "output_missing"
+  ],
+  "review_outcome": "Seven records remain unchanged from passing review; entry-3309 relation direction was corrected and recorded as an immutable amendment.",
+  "source_pages_checked": false,
+  "scope_note": "Used only supplied frozen/staged text and source mappings. No web search, new scoring, canonical data, Neon, or application-code edits.",
+  "no_pr_created": true
+}
