@@ -1,0 +1,64 @@
+{
+  "artifact_id": "worker-11-insights100-final-qa-20261004-01",
+  "job_id": "insights100-11",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-11-input.jsonl",
+  "input_sha256": "c68361057c7fd624f64e245d66012b3eb8cb895ec4929b42b02c0443e207c536",
+  "assigned_ids": [
+    "entry-11",
+    "entry-23",
+    "entry-36",
+    "entry-49",
+    "entry-61",
+    "entry-75",
+    "entry-87",
+    "entry-99"
+  ],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-11-terminal.jsonl",
+  "terminal_row_count": 8,
+  "terminal_ids_in_order": [
+    "entry-11",
+    "entry-23",
+    "entry-36",
+    "entry-49",
+    "entry-61",
+    "entry-75",
+    "entry-87",
+    "entry-99"
+  ],
+  "exact_assigned_set_match": true,
+  "duplicate_record_id_count": 0,
+  "extra_record_id_count": 0,
+  "status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "evidence_quote_validation": "passed: every evidence_map basis_quote is a literal substring of its supplied input record; each non-unknown fact and array element is mapped",
+  "schema_validation": "passed: required insight fields and allowed enum values checked; quantities retain source units and supplied source URLs",
+  "source_limit": "No web search or external source-page fetch was used. Evidence is attributed to supplied frozen/staged text; source URLs are supplied mappings only.",
+  "history": "No prior worker-11 terminal existed at the target path; rows were appended in assigned order. No amendments were required.",
+  "blockers_summary": {
+    "entry-11": [
+      "Timing conflict in supplied fields: description_medium says “The settlement was finalized by a judge in 2018.” while frozen_original.fact_check says “$25 million settlement approved March 2017.” The terminal facts follow the medium summary and do not resolve the date conflict.",
+      "The frozen long text calls the enterprise fraudulent, while the medium summary attributes the misleading-sales claims to students. The settlement is recorded as a settlement, not a judicial finding that the allegations were true."
+    ],
+    "entry-36": [
+      "The frozen synopsis says Trump “repeatedly used” the term and that it was “fueling anti-Asian hate crimes”; the medium summary documents a June 20 use and says the linked report “does not establish that it caused specific hate crimes.” The broader repeated-use and causal claims are not included as facts."
+    ],
+    "entry-49": [
+      "The frozen synopsis says Trump “ordered federal law enforcement” to clear protesters “so he could walk” to the church for a photograph; the medium summary says “a photo-op order is not established” and reports that the inspector general did not find the park was cleared for Trump’s visit."
+    ],
+    "entry-75": [
+      "The frozen long text additionally asserts a deliberate partisan plan and gives a nine-million-person nonresponse estimate. The medium summary says subsequent reporting examined potential effects and concerns about immigrant-household participation, but does not supply that motive or quantity; neither is included as a fact."
+    ],
+    "entry-87": [
+      "The title and frozen long text characterize the decision as resulting from Trump’s pressure and appointment strategy. The medium summary documents the ruling and its effect but does not substantiate pressure, appointment motive, or a causal link to the justices’ votes."
+    ],
+    "entry-99": [
+      "The frozen long text attributes systematic training to Trump and his allies and alleges a coordinated election-stealing effort. The medium summary attributes the reported trainings to David Clements and explicitly says the report did not describe a county refusing certification as a result; Trump-directed coordination and a changed result are not asserted here."
+    ]
+  },
+  "checkpoint_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-11-checkpoint.jsonl",
+  "checkpoint_count": 3,
+  "completed_at_utc": "2026-10-04T10:40:22.826890+00:00"
+}
