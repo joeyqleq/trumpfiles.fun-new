@@ -1,0 +1,78 @@
+{
+  "artifact": "source237 QA-15 repair final QA",
+  "status": "pass_length_repair_proposal_only",
+  "worker": 6,
+  "checked_at": "2026-10-04",
+  "expected_ids": [
+    "entry-5866"
+  ],
+  "observed_ids": [
+    "entry-5866"
+  ],
+  "expected_count": 1,
+  "observed_count": 1,
+  "duplicate_ids": [],
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "finding_input": {
+    "id": "entry-5866",
+    "flags": [
+      "long_out_of_140_300"
+    ],
+    "lengths": {
+      "title_chars": 82,
+      "short_chars": 82,
+      "medium_words": 62,
+      "long_words": 110
+    }
+  },
+  "result_lengths": {
+    "title_chars": 82,
+    "short_chars": 82,
+    "medium_words": 60,
+    "long_words": 153
+  },
+  "all_copy_limits_pass": true,
+  "authoritative_source237_status": "needs_correction",
+  "accepted_source_claimed": false,
+  "source_mapping_pass": true,
+  "mapped_urls": [
+    "https://www.bloomberg.com/news/articles/2022-02-16/who-won-the-melania-trump-nft-auction-trump-crypto-wallet-linked-to-185k-funds"
+  ],
+  "source_url_facts_and_limits": [
+    {
+      "url": "https://www.bloomberg.com/news/articles/2022-02-16/who-won-the-melania-trump-nft-auction-trump-crypto-wallet-linked-to-185k-funds",
+      "supported_facts": [
+        "Bloomberg reports the January 2022 auction of Melania Trump’s “Head of State” NFT.",
+        "The winning bid was 1,800 SOL, worth approximately $185,000 at the time; these express one transaction in cryptocurrency and its approximate contemporaneous dollar value.",
+        "Bloomberg traces transfers from a wallet associated with the project toward the wallet that placed the winning bid."
+      ],
+      "limits": [
+        "The report concerns one auction/bid and does not establish total collection revenue or later Trump-family NFT sales.",
+        "A wallet link/transfer trail does not conclusively identify wallet controllers, establish intent, or demonstrate taxpayer funding."
+      ]
+    }
+  ],
+  "unsupported_original_claims_and_gap": {
+    "claims": [
+      "The collection earned more than $45 million in January 2022.",
+      "Taxpayers funded the winning purchase.",
+      "The cited investigation establishes wallet beneficial ownership or intent.",
+      "The cited report establishes later Trump-family NFT sales totals."
+    ],
+    "gap": "The Bloomberg report supports one 1,800-SOL bid and a reported wallet-transfer link. It does not establish overall collection revenue, who controlled the wallets, why transfers occurred, taxpayer funding, or later family NFT sales."
+  },
+  "proposal_only": true,
+  "output_path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-06-batch-20261004-001.jsonl",
+  "output_sha256": "7851a0d9a92afaab653671b549946a8580dd7e4f8b2617fa57ec2661c85a06d9",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "coordinator_checkpoint_sha256": "54d409e5f63294ad2233b6ab579feefd75ecd6c415713cc4580407397003ea6f",
+  "coordinator_addendum_sha256": "a4e1d1a0f943bf624a1246aabab2e3423c48d192e792fa174a28f39b98f2270c",
+  "proposal_commit": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+  "proposal_file_sha256": "ad06627e52055eb1a06896a2926262e3f22b4dd631881c2429536bb58e826654",
+  "canonical_or_neon_modified": false,
+  "current_proposal_title_short_medium_preserved": true,
+  "long_only_repaired": true,
+  "word_count_method": "whitespace-separated tokens; coordinator reports medium at 62 tokens, this recheck counts 60; both satisfy the required 45–90 range.",
+  "source_live_access": "Firecrawl returned HTTP 429 rate limit; Exa returned HTTP 401 authentication failure. Relied on the exact URL-specific facts and limits recorded in the immutable current proposal and coordinator addendum; no new URL or outside factual claim added."
+}
