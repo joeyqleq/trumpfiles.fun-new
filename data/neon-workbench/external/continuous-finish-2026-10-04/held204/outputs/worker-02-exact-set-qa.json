@@ -1,0 +1,273 @@
+{
+  "job": "held204-02",
+  "worker": 2,
+  "pinned_input": {
+    "commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-02-input.jsonl",
+    "sha256": "651d3518a758cccacbd371b83e9c51d6b216f5a4e049a3c0994e1d3b58e5f1f2",
+    "rows": 17
+  },
+  "terminal_output": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-02-terminal.jsonl",
+    "sha256": "e12253702905b6e3b7d954aa0d520b147a38ff3560da4390d990234455908416",
+    "rows": 17,
+    "unique_record_ids": 17,
+    "expected_ids": [
+      "entry-37",
+      "entry-264",
+      "entry-528",
+      "entry-774",
+      "entry-836",
+      "entry-978",
+      "entry-1770",
+      "entry-2330",
+      "entry-2442",
+      "entry-2562",
+      "entry-2930",
+      "entry-3709",
+      "entry-4097",
+      "entry-4622",
+      "entry-5531",
+      "entry-6141",
+      "entry-6293"
+    ],
+    "observed_ids_in_order": [
+      "entry-37",
+      "entry-264",
+      "entry-528",
+      "entry-774",
+      "entry-836",
+      "entry-978",
+      "entry-1770",
+      "entry-2330",
+      "entry-2442",
+      "entry-2562",
+      "entry-2930",
+      "entry-3709",
+      "entry-4097",
+      "entry-4622",
+      "entry-5531",
+      "entry-6141",
+      "entry-6293"
+    ],
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": []
+  },
+  "outcomes": {
+    "pass": 13,
+    "hold": 4
+  },
+  "validation": {
+    "errors": [],
+    "passed": true,
+    "checks": [
+      "exact assigned ID set and one terminal row per ID",
+      "terminal schema and proposal_only flag",
+      "all titles and short descriptions at most 180 characters",
+      "pass descriptions meet medium 45–90 and long 140–300 word limits after amendments",
+      "source URLs and fact maps present for every pass",
+      "all source_fact_map entries use normalized url key",
+      "every hold has blockers",
+      "previous text and correction proposals recorded"
+    ]
+  },
+  "input_schema_normalization": {
+    "proposal": 8,
+    "forensic_review": 6,
+    "frozen_original_plus_proposal_provenance": 2,
+    "narrowed_entry": 1,
+    "all_rows_normalized": true
+  },
+  "amendments": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-02-amendments.jsonl",
+    "count": 6,
+    "sha256": "b72b6ccef7fe24868a6f3ee6e392503c15abb5925d383434b3c11ddd8496dfa4",
+    "records": [
+      {
+        "amendment_id": "held204-02-amendment-001",
+        "record_id": "entry-37",
+        "status": "pass",
+        "reason": "The initial saved long description was 139 whitespace-delimited words, one below the 140-word minimum. This version adds a source-supported sentence about public discussion; all other terminal fields remain unchanged.",
+        "corrected_fields": [
+          "description_long"
+        ]
+      },
+      {
+        "amendment_id": "held204-02-amendment-002",
+        "record_id": "entry-264",
+        "status": "pass",
+        "reason": "The initial saved long description was 139 whitespace-delimited words, one below the 140-word minimum. This version adds a source-supported statement that the order contains multiple directives; all other terminal fields remain unchanged.",
+        "corrected_fields": [
+          "description_long"
+        ]
+      },
+      {
+        "amendment_id": "held204-02-amendment-003",
+        "record_id": "entry-978",
+        "status": "hold",
+        "reason": "The terminal row preserved the frozen snapshot but omitted one or more non-null fields retained by the pinned correction proposal. This amendment records those exact prior fields without changing the terminal disposition or public descriptions.",
+        "corrected_fields": [
+          "preservation_notes_prior_existing_fields"
+        ]
+      },
+      {
+        "amendment_id": "held204-02-amendment-004",
+        "record_id": "entry-2930",
+        "status": "pass",
+        "reason": "The terminal row preserved the frozen snapshot but omitted one or more non-null fields retained by the pinned correction proposal. This amendment records those exact prior fields without changing the terminal disposition or public descriptions.",
+        "corrected_fields": [
+          "preservation_notes_prior_existing_fields"
+        ]
+      },
+      {
+        "amendment_id": "held204-02-amendment-005",
+        "record_id": "entry-6293",
+        "status": "pass",
+        "reason": "The terminal row preserved the frozen snapshot but omitted one or more non-null fields retained by the pinned correction proposal. This amendment records those exact prior fields without changing the terminal disposition or public descriptions.",
+        "corrected_fields": [
+          "preservation_notes_prior_existing_fields"
+        ]
+      },
+      {
+        "amendment_id": "held204-02-amendment-006",
+        "record_id": "entry-2562",
+        "status": "hold",
+        "reason": "Normalize the narrowed_entry source mapping to the terminal schema’s common url field while retaining its publisher, support, limitation, and access-status details.",
+        "corrected_fields": [
+          "source_fact_map"
+        ]
+      }
+    ],
+    "reason": "Two add the minimum source-supported words required by the pass schema; three retain omitted pre-existing proposal text; one normalizes the narrowed_entry source map. Terminal history remains unchanged."
+  },
+  "effective_description_lengths": {
+    "entry-37": {
+      "title_chars": 58,
+      "short_chars": 157,
+      "medium_words": 70,
+      "long_words": 152,
+      "status": "pass"
+    },
+    "entry-264": {
+      "title_chars": 66,
+      "short_chars": 136,
+      "medium_words": 71,
+      "long_words": 148,
+      "status": "pass"
+    },
+    "entry-528": {
+      "title_chars": 65,
+      "short_chars": 130,
+      "medium_words": 65,
+      "long_words": 143,
+      "status": "pass"
+    },
+    "entry-774": {
+      "title_chars": 79,
+      "short_chars": 117,
+      "medium_words": 81,
+      "long_words": 152,
+      "status": "pass"
+    },
+    "entry-836": {
+      "title_chars": 70,
+      "short_chars": 142,
+      "medium_words": 64,
+      "long_words": 145,
+      "status": "pass"
+    },
+    "entry-978": {
+      "title_chars": 68,
+      "short_chars": 137,
+      "medium_words": 71,
+      "long_words": null,
+      "status": "hold"
+    },
+    "entry-1770": {
+      "title_chars": 44,
+      "short_chars": 139,
+      "medium_words": 61,
+      "long_words": 138,
+      "status": "hold"
+    },
+    "entry-2330": {
+      "title_chars": 42,
+      "short_chars": 113,
+      "medium_words": 54,
+      "long_words": 128,
+      "status": "hold"
+    },
+    "entry-2442": {
+      "title_chars": 62,
+      "short_chars": 122,
+      "medium_words": 75,
+      "long_words": 173,
+      "status": "pass"
+    },
+    "entry-2562": {
+      "title_chars": 67,
+      "short_chars": 67,
+      "medium_words": 53,
+      "long_words": null,
+      "status": "hold"
+    },
+    "entry-2930": {
+      "title_chars": 83,
+      "short_chars": 174,
+      "medium_words": 63,
+      "long_words": 155,
+      "status": "pass"
+    },
+    "entry-3709": {
+      "title_chars": 69,
+      "short_chars": 160,
+      "medium_words": 66,
+      "long_words": 144,
+      "status": "pass"
+    },
+    "entry-4097": {
+      "title_chars": 81,
+      "short_chars": 114,
+      "medium_words": 57,
+      "long_words": 161,
+      "status": "pass"
+    },
+    "entry-4622": {
+      "title_chars": 61,
+      "short_chars": 141,
+      "medium_words": 60,
+      "long_words": 152,
+      "status": "pass"
+    },
+    "entry-5531": {
+      "title_chars": 65,
+      "short_chars": 125,
+      "medium_words": 64,
+      "long_words": 141,
+      "status": "pass"
+    },
+    "entry-6141": {
+      "title_chars": 64,
+      "short_chars": 142,
+      "medium_words": 52,
+      "long_words": 148,
+      "status": "pass"
+    },
+    "entry-6293": {
+      "title_chars": 83,
+      "short_chars": 121,
+      "medium_words": 53,
+      "long_words": 149,
+      "status": "pass"
+    }
+  },
+  "held_records": {
+    "entry-978": "The supplied official source lead could not be retrieved: the one focused Firecrawl attempt returned HTTP 402; the original hold is preserved.",
+    "entry-1770": "The candidate January 2025 AP promise review changes the frozen March 2026 tracker event; hold preserved.",
+    "entry-2330": "FBI/Business Insider support biography, but no Trump/family/associate connection is documented; hold preserved.",
+    "entry-2562": "The 2008 NYT article does not establish Trump/Kushner involvement in the profile; hold preserved."
+  },
+  "scope": "Only held204 worker-02 proposal-review artifacts were added; no canonical records, Neon, or application code were edited.",
+  "pull_request": "No PR was requested or created."
+}
