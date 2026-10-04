@@ -40,7 +40,7 @@
     "entry-6997"
   ],
   "terminal_row_count": 17,
-  "amendment_count": 15,
+  "amendment_count": 16,
   "effective_status_counts": {
     "pass": 8,
     "hold": 9,
@@ -50,8 +50,11 @@
   "artifact_issue_resolution": {
     "output_missing": false
   },
-  "last_saved_at_utc": "2026-10-04T10:42:18.287847+00:00",
+  "last_saved_at_utc": "2026-10-04T10:44:42.674660+00:00",
   "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-terminal.jsonl",
   "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-amendments.jsonl",
-  "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-qa.json"
+  "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-qa.json",
+  "resolved_coordinator_issues": [
+    "bad_description_long:entry-954"
+  ]
 }
