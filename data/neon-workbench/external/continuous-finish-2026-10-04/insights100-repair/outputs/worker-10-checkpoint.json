@@ -1,0 +1,59 @@
+{
+  "job": "insights100-repair-10",
+  "task_id": "Z2z8IIzgO-Z-2QSAUvplo",
+  "source_branch": "codex/continuous-finish-2026-10-04",
+  "source_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "source_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-10-input.jsonl",
+  "source_sha256": "faaedd41063c348cfbd27e134213db6d1b234f9c80deb7fd50f2b1093e38e4ba",
+  "review_branch": "ls/11-trump-files-impact368-review-10-of-12-Kjf6",
+  "review_commit": "35fd8faa1bd36dd59922183b7eb2b2b818c131d8",
+  "prior_output_and_immutable_amendments_commit": "69dd956893ab36b6158b06e136cd8d6189ca5b5d",
+  "assigned_record_ids": [
+    "entry-10",
+    "entry-22",
+    "entry-34",
+    "entry-48",
+    "entry-60",
+    "entry-74",
+    "entry-86",
+    "entry-98"
+  ],
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-10-terminal.jsonl",
+  "terminal_rows": 8,
+  "terminal_sha256": "846badca59ed04942b9d15512e56246f97fbf4a26611c3543297dc78fcf76f51",
+  "statuses": {
+    "entry-10": "complete",
+    "entry-22": "complete",
+    "entry-34": "complete",
+    "entry-48": "complete",
+    "entry-60": "complete",
+    "entry-74": "complete",
+    "entry-86": "complete",
+    "entry-98": "complete"
+  },
+  "evidence_map_entries": 78,
+  "blocker_record_ids": [
+    "entry-22",
+    "entry-34",
+    "entry-48",
+    "entry-74",
+    "entry-86",
+    "entry-98"
+  ],
+  "review_corrections_applied": {
+    "entry-10": [
+      "quantities[3].qualifier: exact -> at_most",
+      "quantities[4].qualifier: exact -> at_most"
+    ],
+    "entry-60": [
+      "action_type: other -> institutional_pressure"
+    ]
+  },
+  "other_passing_values_changed": false,
+  "repair_amendments": [],
+  "coordinator_issues_resolved": [
+    "output_missing"
+  ],
+  "validation": "passed: exact IDs, uniqueness, schema/enums, evidence coverage, literal quote containment, quantity/relation schema, source hash",
+  "branch": "ls/10-trump-files-sample100-review-10-of-12-5b45"
+}
