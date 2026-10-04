@@ -37,7 +37,7 @@
   "unique_terminal_count": 17,
   "amendments": {
     "path": "worker-11-amendments.jsonl",
-    "count": 7,
+    "count": 9,
     "record_ids": [
       "entry-2106",
       "entry-230",
@@ -63,12 +63,12 @@
       "bytes": 82009
     },
     "worker-11-amendments.jsonl": {
-      "sha256": "c910228c8124f5500471ac46c0827e734179c3482ecb1ca58f92510f4f1d82ba",
-      "bytes": 41911
+      "sha256": "8b8fd2f8a6570f75b769450af0fc0cc41dff429e72b5700bf3ef60abb4ae05b9",
+      "bytes": 55724
     },
     "worker-11-exact-set-qa.jsonl": {
-      "sha256": "f8885e7236574492948cd0a162fa3150296fc808f8c8925ee6f6a98471a148da",
-      "bytes": 8245
+      "sha256": "1432da6af5f9c6fe28b0376972cc693b3700d500100f4b7024bcd4e79e419c40",
+      "bytes": 8651
     }
   },
   "focused_rescue": {
@@ -84,5 +84,15 @@
     "entry-6241"
   ],
   "pr_action": "No PR created per task instruction.",
-  "scope": "Only review output artifacts were added; no canonical, Neon, or application-code changes."
+  "scope": "Only review output artifacts were added; no canonical, Neon, or application-code changes.",
+  "follow_up_correction": {
+    "issues_resolved": [
+      "bad_description_long:entry-230",
+      "bad_description_long:entry-405"
+    ],
+    "amendment_rows_appended": 2,
+    "terminal_rows_overwritten": 0,
+    "effective_statuses_changed": 0,
+    "scope": "Only the two flagged long descriptions were amended; prior terminal and amendment rows are preserved."
+  }
 }
