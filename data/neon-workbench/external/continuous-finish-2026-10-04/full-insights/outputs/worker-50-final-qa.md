@@ -10,3 +10,7 @@ Validation applied the amendments and checked the effective rows against the fro
 Immutable amendments preserve the output history: the duplicate terminal/checkpoint occurrences are marked for exclusion; `entry-534` scope is corrected from `state` to `regional`; `entry-1506` and `entry-1750` receive supported core facts and corrected status/event state; and four `entry-5906` evidence-map URLs are corrected to the URL supplied with its packet text. No quantity or relation extensions were added. Contradictions and limits in the supplied descriptions remain documented in row blockers.
 
 Evidence uses only the supplied frozen/staged text and source mappings. No source page was independently checked, and no claim is made that a supplied URL verifies the text. No canonical data, Neon data, application code, or configuration was changed. No pull request is part of this worker's scope.
+
+## Duplicate-ID follow-up
+
+The `duplicate_ids` finding is recorded explicitly in immutable amendment `worker-50-duplicate-ids-resolution-002`. It identifies the authoritative terminal line and byte-identical duplicate line for `entry-152` and `entry-232`; the effective projection therefore has 92 unique rows and no duplicate IDs. The raw append-only terminal log still contains 94 physical lines, preserving the original history; consumers must apply the amendment when deriving the effective rows.
