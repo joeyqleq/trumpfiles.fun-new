@@ -1,0 +1,26 @@
+{
+  "worker": 10,
+  "assignment": "validation100-repair-10",
+  "checkpoint": 3,
+  "source_branch": "codex/insights-validation100-2026-10-04",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "review_branch": "ls/10-trump-description-rescue-10-of-12-52-dis-7sqL",
+  "review_commit": "94cdcf63969214acd2bb4d65ec9b996488cb77c6",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-10-input.jsonl",
+  "input_sha256": "71324d3364cbcd962172bf54a31524c1e31f5d44053f7fce48cf790961bf299b",
+  "expected_rows": 8,
+  "cumulative_rows": 6,
+  "keys": [
+    "entry-568",
+    "entry-3116",
+    "entry-3370",
+    "entry-4250",
+    "entry-2481",
+    "entry-6505"
+  ],
+  "terminal_file": "worker-10-terminal.jsonl",
+  "terminal_sha256": "1db30462fccb32ab3b4b92476df8ac0f9e450e10f41fd87631f23edf8ab3a120",
+  "immutable_amendment_commit": "159d89cbbe1a3ac14d6e679206105c369c547d80",
+  "immutable_amendment_count": 11,
+  "checkpoint_status": "in_progress"
+}

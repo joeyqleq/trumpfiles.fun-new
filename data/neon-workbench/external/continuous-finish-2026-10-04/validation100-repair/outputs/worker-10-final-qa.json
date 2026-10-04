@@ -1,0 +1,91 @@
+{
+  "worker": 10,
+  "assignment": "validation100-repair-10",
+  "source_branch": "codex/insights-validation100-2026-10-04",
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-10-input.jsonl",
+  "input_sha256": "71324d3364cbcd962172bf54a31524c1e31f5d44053f7fce48cf790961bf299b",
+  "review_branch": "ls/10-trump-description-rescue-10-of-12-52-dis-7sqL",
+  "review_commit": "94cdcf63969214acd2bb4d65ec9b996488cb77c6",
+  "review_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-qa/outputs/worker-10-terminal.jsonl",
+  "expected_rows": 8,
+  "actual_rows": 8,
+  "expected_record_ids": [
+    "entry-568",
+    "entry-3116",
+    "entry-3370",
+    "entry-4250",
+    "entry-2481",
+    "entry-6505",
+    "entry-5490",
+    "entry-5548"
+  ],
+  "actual_record_ids": [
+    "entry-568",
+    "entry-3116",
+    "entry-3370",
+    "entry-4250",
+    "entry-2481",
+    "entry-6505",
+    "entry-5490",
+    "entry-5548"
+  ],
+  "exact_key_set_match": true,
+  "keys_unique": true,
+  "terminal_status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "proposal_only_all_rows": true,
+  "immutable_amendment_commit": "159d89cbbe1a3ac14d6e679206105c369c547d80",
+  "immutable_amendment_count_applied": 11,
+  "corrections_applied": [
+    {
+      "record_id": "entry-568",
+      "field": "insight_facts.action_type",
+      "change": "Replaced the flagged basis quote with a literal event sentence; retained action_type other."
+    },
+    {
+      "record_id": "entry-5490",
+      "field": "insight_facts.institutions[1]",
+      "change": "Replaced the flagged basis quote with the complete literal Electoral College count sentence; retained the institution value."
+    },
+    {
+      "record_id": "entry-5490",
+      "field": "insight_facts.quantities[0]",
+      "change": "Replaced the flagged nested and evidence-map basis quotes with the complete literal Electoral College count sentence; retained 312 electoral votes."
+    },
+    {
+      "record_id": "entry-5490",
+      "field": "insight_facts.quantities[1]",
+      "change": "Replaced the flagged nested and evidence-map basis quotes with the complete literal Electoral College count sentence; retained 226 electoral votes."
+    },
+    {
+      "record_id": "entry-5490",
+      "field": "evidence_map[6].value.basis_quote and evidence_map[7].value.basis_quote",
+      "change": "Immutable amendment synchronizes embedded evidence-map quantity objects with their repaired literal basis quotes; terminal rows remain unchanged."
+    }
+  ],
+  "evidence_validation": "pass after applying all 11 source immutable amendments and the single repair amendment; every evidence-map basis quote is a literal substring of its assigned staged/frozen input text and nested evidence-map values match insight_facts.",
+  "relations": "Preserved unchanged; the review confirmed every relation direction. No relation-direction correction was flagged.",
+  "contradictions_and_limits": "Retained the original row blockers; unsupported claims and contradictions remain separately documented there.",
+  "web_searches_performed": false,
+  "new_scoring_performed": false,
+  "canonical_or_neon_edits": false,
+  "code_edits": false,
+  "pull_request_created": false,
+  "terminal_file": "worker-10-terminal.jsonl",
+  "terminal_sha256": "a779a774fff4b5f9fbf48a0bb8913e6bb4f95da2d2dac6276e22dc0451077d8b",
+  "verification": "Validated exact assigned IDs/order and uniqueness, proposal-only marker, statuses, all immutable overlays, evidence-map value parity, and literal quote fidelity against only supplied staged/frozen text.",
+  "repair_amendment_file": "worker-10-amendments.jsonl",
+  "repair_amendment_count": 1,
+  "repair_amendment_sha256": "f371c7ab2e4fd45f7837202d8250f19378859244e5c43aece5c949dec668d914",
+  "coordinator_artifact_issues": [
+    "output_missing"
+  ],
+  "coordinator_artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "terminal_rows_appended": 8,
+  "terminal_history_preserved": true
+}

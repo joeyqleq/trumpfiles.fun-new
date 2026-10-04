@@ -1,0 +1,27 @@
+{
+  "worker": 10,
+  "assignment": "validation100-repair-10",
+  "checkpoint": 6,
+  "source_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "review_commit": "94cdcf63969214acd2bb4d65ec9b996488cb77c6",
+  "expected_rows": 8,
+  "cumulative_rows": 8,
+  "keys": [
+    "entry-568",
+    "entry-3116",
+    "entry-3370",
+    "entry-4250",
+    "entry-2481",
+    "entry-6505",
+    "entry-5490",
+    "entry-5548"
+  ],
+  "terminal_sha256": "a779a774fff4b5f9fbf48a0bb8913e6bb4f95da2d2dac6276e22dc0451077d8b",
+  "repair_amendment_sha256": "f371c7ab2e4fd45f7837202d8250f19378859244e5c43aece5c949dec668d914",
+  "final_qa_file": "worker-10-final-qa.json",
+  "final_qa_sha256": "de901439a1357fd644f4e67f86e123dbd1bba3b83d93a8ef638e53aa732fc9cd",
+  "artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "checkpoint_status": "complete"
+}
