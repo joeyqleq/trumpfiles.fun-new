@@ -17,5 +17,38 @@
   "relations_empty": true,
   "inspection_scope": "supplied packet text/source mappings only; no web research or rescoring",
   "application_tests": "not applicable; no application code changed",
-  "qa_passed": true
+  "qa_passed": true,
+  "input_packet_unique_assigned_ids": 92,
+  "terminal_rows_exactly_assigned_ids": true,
+  "effective_duplicate_ids": [],
+  "duplicate_id_issue": {
+    "status": "resolved_in_effective_set",
+    "raw_history_duplicates_preserved": true,
+    "resolutions": [
+      {
+        "record_id": "entry-6284",
+        "canonical_terminal_line": 82,
+        "duplicate_terminal_line": 85,
+        "identical_rows": true,
+        "amendment_line": 2
+      },
+      {
+        "record_id": "entry-6362",
+        "canonical_terminal_line": 83,
+        "duplicate_terminal_line": 86,
+        "identical_rows": true,
+        "amendment_line": 3
+      },
+      {
+        "record_id": "entry-6462",
+        "canonical_terminal_line": 84,
+        "duplicate_terminal_line": 87,
+        "identical_rows": true,
+        "amendment_line": 4
+      }
+    ]
+  },
+  "coordinator_artifact_issues": {
+    "duplicate_ids": "resolved by effective-set deduplication amendments; terminal history retained append-only"
+  }
 }
