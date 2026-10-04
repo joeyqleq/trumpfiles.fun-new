@@ -39,7 +39,8 @@
     "quantity_and_relation_evidence_valid": true,
     "supplied_source_url_mapping_only": true,
     "no_web_search_or_new_scoring": true,
-    "no_canonical_neon_or_code_edits": true
+    "no_canonical_neon_or_code_edits": true,
+    "amendment_revision_fields_present": true
   },
   "source_url_note": "URLs in quantity records are those supplied beside each input record; no source page was fetched or independently verified.",
   "blockers_record_ids": [
@@ -78,11 +79,103 @@
         "entry-44",
         "entry-56"
       ]
+    },
+    {
+      "file": "worker-06-amendment-004.jsonl",
+      "record_ids": [
+        "entry-6",
+        "entry-18",
+        "entry-18",
+        "entry-30",
+        "entry-30",
+        "entry-30",
+        "entry-44",
+        "entry-44",
+        "entry-56",
+        "entry-56",
+        "entry-56",
+        "entry-82",
+        "entry-70",
+        "entry-94"
+      ],
+      "revision_count": 14
     }
   ],
   "limitations": [
     "Several supplied records contain stronger long-synopsis allegations or causal claims than their medium summaries; these differences are documented in per-row blockers.",
     "No external source pages were checked."
   ],
-  "checked_at": "2026-10-04T10:41:12.243506+00:00"
+  "checked_at": "2026-10-04T10:45:49.856212+00:00",
+  "amendment_revision_coverage": [
+    {
+      "record_id": "entry-6",
+      "revisions": [
+        1
+      ]
+    },
+    {
+      "record_id": "entry-18",
+      "revisions": [
+        1,
+        2
+      ]
+    },
+    {
+      "record_id": "entry-30",
+      "revisions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "record_id": "entry-44",
+      "revisions": [
+        1,
+        2
+      ]
+    },
+    {
+      "record_id": "entry-56",
+      "revisions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "record_id": "entry-70",
+      "revisions": [
+        1
+      ]
+    },
+    {
+      "record_id": "entry-82",
+      "revisions": [
+        1
+      ]
+    },
+    {
+      "record_id": "entry-94",
+      "revisions": [
+        1
+      ]
+    }
+  ],
+  "resolved_artifact_issues": [
+    "amendment_revision_missing:entry-6",
+    "amendment_revision_missing:entry-18",
+    "amendment_revision_missing:entry-30",
+    "amendment_revision_missing:entry-44",
+    "amendment_revision_missing:entry-56",
+    "amendment_revision_missing:entry-70",
+    "amendment_revision_missing:entry-82",
+    "amendment_revision_missing:entry-94",
+    "amendment_revision_missing:entry-30",
+    "amendment_revision_missing:entry-56",
+    "amendment_revision_missing:entry-18",
+    "amendment_revision_missing:entry-30",
+    "amendment_revision_missing:entry-44",
+    "amendment_revision_missing:entry-56"
+  ]
 }

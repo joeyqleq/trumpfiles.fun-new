@@ -51,8 +51,95 @@
         "entry-44",
         "entry-56"
       ]
+    },
+    {
+      "file": "worker-06-amendment-004.jsonl",
+      "record_ids": [
+        "entry-6",
+        "entry-18",
+        "entry-18",
+        "entry-30",
+        "entry-30",
+        "entry-30",
+        "entry-44",
+        "entry-44",
+        "entry-56",
+        "entry-56",
+        "entry-56",
+        "entry-82",
+        "entry-70",
+        "entry-94"
+      ],
+      "revision_count": 14
     }
   ],
   "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-06-final-qa.json",
-  "updated_at": "2026-10-04T10:41:12.243506+00:00"
+  "updated_at": "2026-10-04T10:45:49.856693+00:00",
+  "amendment_revision_progress": {
+    "file": "worker-06-amendment-004.jsonl",
+    "rows_written": 14,
+    "total_rows": 14,
+    "last_record_ids": [
+      "entry-70",
+      "entry-94"
+    ],
+    "updated_at": "2026-10-04T10:45:28.261721+00:00"
+  },
+  "amendment_revision_coverage": [
+    {
+      "record_id": "entry-6",
+      "revisions": [
+        1
+      ]
+    },
+    {
+      "record_id": "entry-18",
+      "revisions": [
+        1,
+        2
+      ]
+    },
+    {
+      "record_id": "entry-30",
+      "revisions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "record_id": "entry-44",
+      "revisions": [
+        1,
+        2
+      ]
+    },
+    {
+      "record_id": "entry-56",
+      "revisions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "record_id": "entry-70",
+      "revisions": [
+        1
+      ]
+    },
+    {
+      "record_id": "entry-82",
+      "revisions": [
+        1
+      ]
+    },
+    {
+      "record_id": "entry-94",
+      "revisions": [
+        1
+      ]
+    }
+  ],
+  "resolved_artifact_issue_count": 14
 }
