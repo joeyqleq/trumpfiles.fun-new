@@ -1,0 +1,491 @@
+{
+  "report": "Worker 60 full-insights terminal QA",
+  "created_date": "2026-10-04",
+  "source_packet": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-60-input.jsonl",
+  "packet_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "packet_sha256": "70c34667c2ddad8b66c0e6c5c4f4609484d0fd45d86f4f1ed53cad0633f48498",
+  "scope_ids": [
+    "entry-162",
+    "entry-243",
+    "entry-320",
+    "entry-395",
+    "entry-471",
+    "entry-544",
+    "entry-620",
+    "entry-699",
+    "entry-775",
+    "entry-855",
+    "entry-928",
+    "entry-1004",
+    "entry-1078",
+    "entry-1153",
+    "entry-1225",
+    "entry-1299",
+    "entry-1371",
+    "entry-1444",
+    "entry-1516",
+    "entry-1588",
+    "entry-1663",
+    "entry-1760",
+    "entry-1837",
+    "entry-1911",
+    "entry-1983",
+    "entry-2056",
+    "entry-2130",
+    "entry-2202",
+    "entry-2274",
+    "entry-2353",
+    "entry-2431",
+    "entry-2511",
+    "entry-2591",
+    "entry-2671",
+    "entry-2750",
+    "entry-2824",
+    "entry-2900",
+    "entry-2972",
+    "entry-3046",
+    "entry-3120",
+    "entry-3194",
+    "entry-3269",
+    "entry-3346",
+    "entry-3424",
+    "entry-3498",
+    "entry-3571",
+    "entry-3643",
+    "entry-3715",
+    "entry-3788",
+    "entry-3860",
+    "entry-3933",
+    "entry-4005",
+    "entry-4078",
+    "entry-4151",
+    "entry-4227",
+    "entry-4303",
+    "entry-4384",
+    "entry-4459",
+    "entry-4532",
+    "entry-4607",
+    "entry-4679",
+    "entry-4757",
+    "entry-4830",
+    "entry-4903",
+    "entry-4992",
+    "entry-5064",
+    "entry-5137",
+    "entry-5215",
+    "entry-5290",
+    "entry-5369",
+    "entry-5443",
+    "entry-5518",
+    "entry-5592",
+    "entry-5666",
+    "entry-5748",
+    "entry-5836",
+    "entry-5917",
+    "entry-5991",
+    "entry-6064",
+    "entry-6139",
+    "entry-6217",
+    "entry-6293",
+    "entry-6372",
+    "entry-6473",
+    "entry-6558",
+    "entry-6661",
+    "entry-6752",
+    "entry-6877",
+    "entry-6991",
+    "entry-7069",
+    "entry-7174",
+    "fresh-20260918-trump-repayment-statement"
+  ],
+  "observed_terminal_ids": [
+    "entry-162",
+    "entry-243",
+    "entry-320",
+    "entry-395",
+    "entry-471",
+    "entry-544",
+    "entry-620",
+    "entry-699",
+    "entry-775",
+    "entry-855",
+    "entry-928",
+    "entry-1004",
+    "entry-1078",
+    "entry-1153",
+    "entry-1225",
+    "entry-1299",
+    "entry-1371",
+    "entry-1444",
+    "entry-1516",
+    "entry-1588",
+    "entry-1663",
+    "entry-1760",
+    "entry-1837",
+    "entry-1911",
+    "entry-1983",
+    "entry-2056",
+    "entry-2130",
+    "entry-2202",
+    "entry-2274",
+    "entry-2353",
+    "entry-2431",
+    "entry-2511",
+    "entry-2591",
+    "entry-2671",
+    "entry-2750",
+    "entry-2824",
+    "entry-2900",
+    "entry-2972",
+    "entry-3046",
+    "entry-3120",
+    "entry-3194",
+    "entry-3269",
+    "entry-3346",
+    "entry-3424",
+    "entry-3498",
+    "entry-3571",
+    "entry-3643",
+    "entry-3715",
+    "entry-3788",
+    "entry-3860",
+    "entry-3933",
+    "entry-4005",
+    "entry-4078",
+    "entry-4151",
+    "entry-4227",
+    "entry-4303",
+    "entry-4384",
+    "entry-4459",
+    "entry-4532",
+    "entry-4607",
+    "entry-4679",
+    "entry-4757",
+    "entry-4830",
+    "entry-4903",
+    "entry-4992",
+    "entry-5064",
+    "entry-5137",
+    "entry-5215",
+    "entry-5290",
+    "entry-5369",
+    "entry-5443",
+    "entry-5518",
+    "entry-5592",
+    "entry-5666",
+    "entry-5748",
+    "entry-5836",
+    "entry-5917",
+    "entry-5991",
+    "entry-6064",
+    "entry-6139",
+    "entry-6217",
+    "entry-6293",
+    "entry-6372",
+    "entry-6473",
+    "entry-6558",
+    "entry-6661",
+    "entry-6752",
+    "entry-6877",
+    "entry-6991",
+    "entry-7069",
+    "entry-7174",
+    "fresh-20260918-trump-repayment-statement"
+  ],
+  "exact_set": "PASS",
+  "counts": {
+    "complete": 90,
+    "insufficient": 2,
+    "terminal_rows": 92,
+    "rows_with_blockers": 82
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": [
+      "Exact assigned terminal ID set and order; no duplicate rows.",
+      "All rows are proposal_only and use the approved core-only schema and allowed enum values.",
+      "Every supported non-unknown core scalar and populated array element has evidence_map support.",
+      "All basis quotes are literal substrings of that record’s supplied staged/frozen text.",
+      "Quantities and relations remain empty in all rows.",
+      "Amendment replacement rows are valid and preserve terminal history."
+    ],
+    "terminal_sha256": "7597127d3b24d1985ce74c84ba58a21f5106e5ace47dd337bfae6a0e4e04b539",
+    "amendments_file": "worker-60-terminal-amendments.jsonl",
+    "amendments_sha256": "7e8dd18f9e3477eb528df8767c1b7e9f02677110754dfd30dedec80cae7c16c0",
+    "amendment_records": 1,
+    "effective_rows_after_amendments": 92
+  },
+  "amendment_history": [
+    {
+      "record_id": "entry-1588",
+      "amendment_ids": [
+        "worker-60-entry-1588-outcome-evidence-01"
+      ],
+      "effective_change": "Replaced the generic missing-access quote with literal supplied excerpts supporting the stated file availability and DOJ explanation; terminal history remains unchanged."
+    }
+  ],
+  "blockers": {
+    "entry-162": [
+      "The staged note says the preserved long description alleges completed FBI intimidation, lawsuits and prosecution threats; the medium says the warnings were concerns about a nominee and were not evidence that the FBI targeted every person mentioned. Those alleged completed actions are not extracted."
+    ],
+    "entry-320": [
+      "The staged note says the old long description makes unsupported claims about systematic prosecution and named targets; the medium says the speech did not specify a federal law-enforcement program or named targets. No such program or targets are extracted."
+    ],
+    "entry-471": [
+      "The supplied medium says the order’s specific enforcement mechanisms, agency assignments, and operational effects were not detailed. Those effects are left unspecified.",
+      "The supplied note says the linked CNN source was not reviewed in this call; the source URL is not treated as independent verification."
+    ],
+    "entry-620": [
+      "The supplied medium says the order’s legal basis, conditions, and PLO response are not given; those details are left unspecified."
+    ],
+    "entry-699": [
+      "The supplied medium distinguishes impeachment as a formal charge from removal or criminal conviction and says the Senate acquitted Trump; no conviction or removal is asserted."
+    ],
+    "entry-775": [
+      "The supplied note says the linked CDC page concerns COVID-19 transmission, not the Title 42 order, and that order text and implementation details were not supplied. This extraction relies only on the supplied medium, not the source URL."
+    ],
+    "entry-855": [
+      "The supplied note says the official list does not establish the underlying racketeering conduct, Nolan’s role, or Trump’s reason for clemency; no rationale beyond the White House's stated advocacy and rehabilitation is asserted."
+    ],
+    "entry-928": [
+      "The supplied summary says the clemency record does not identify the underlying felony; the circumstances Nystrom concealed are not inferred.",
+      "The supplied note says packet context does not establish the pardon date, stated rationale, or case context beyond the clemency listing."
+    ],
+    "entry-1004": [
+      "The supplied medium says the official record does not explain why Gibson was selected for commutation; no selection rationale is inferred."
+    ],
+    "entry-1225": [
+      "The supplied text presents competing accounts: DOJ officials said records were withheld for privilege or duplication, while outside reviewers pointed to serial-number and log inconsistencies indicating gaps. Neither explanation is treated as independently verified."
+    ],
+    "entry-1299": [
+      "The supplied medium says the account concerns public communication after the decision and does not establish that experts were excluded from the strike decision; the title's implied exclusion is not extracted."
+    ],
+    "entry-1371": [
+      "The supplied note says the chronology does not establish that speed narrowed allied deliberation or made the strikes less of a last resort. Those causal interpretations are not extracted."
+    ],
+    "entry-1444": [
+      "The supplied note says no dated tracker snapshot or specific Trump statement is available to test selective emphasis. Only the supplied tracker status balance is extracted."
+    ],
+    "entry-1516": [
+      "The supplied medium attributes distraction accusations to critics and says motive may not be provable; no motive is asserted as fact."
+    ],
+    "entry-1588": [
+      "The supplied medium says the report documents missing web access, not a chain-of-custody breach; the title’s chain-of-custody suspicion is not treated as established.",
+      "The supplied note says file-by-file timeline, restoration history, custody records, and DOJ explanation were unavailable; the count and linked-source claim are not independently verified here."
+    ],
+    "entry-1663": [
+      "The supplied note says allegations and legal interpretations are attributed, not adjudicated findings. No allegation is treated as proven or as a finding against Trump."
+    ],
+    "entry-1760": [
+      "The supplied medium gives no specific event, action, date, or concrete review cycle; its broad claims about credibility costs and accountability pressure are not made into structured facts."
+    ],
+    "entry-1837": [
+      "The supplied text does not identify who fired Scaramucci or explain why; no direct personal action by Trump is attributed."
+    ],
+    "entry-1911": [
+      "The supplied note says the Guardian reports lawmakers’ characterizations and is not a point-by-point fact check. The Democrats’ characterization is not extracted as a finding that the speech contained lies."
+    ],
+    "entry-1983": [
+      "The supplied medium does not state a direct action by Trump or establish his connection to the purchaser beyond the title’s description of a candidate as ‘Trump Republican’; no Trump relationship or motive is inferred."
+    ],
+    "entry-2056": [
+      "The supplied summary describes first steps toward refund orders and a likely appeal; it does not establish a final repayment order or completed appeal."
+    ],
+    "entry-2130": [
+      "The supplied medium includes interpretive language about policies being designed to punish scrutiny; the structured outcome is limited to the stated court ruling and block."
+    ],
+    "entry-2202": [
+      "The supplied note says the long description distinguishes reported softening from a confirmed end to the blockade. The title’s claim of a definitive relaxation is not treated as confirmed.",
+      "The medium calls the policy hollow and says the moral line was stepped over for convenience; no motive or judgment is extracted as established fact."
+    ],
+    "entry-2274": [
+      "The supplied title characterizes the event as a threat to jail a journalist, while the medium describes targeting media to identify a leaker and gives no specific jail statement. The threat is preserved only as title-level framing; no prosecution or jailing is asserted."
+    ],
+    "entry-2353": [
+      "The title says Fred ‘gives all of the credit to Donald,’ while the medium says Fred supplied most of the investment and experience; this distinction is retained in the outcome."
+    ],
+    "entry-2431": [
+      "The supplied medium supports bond-market and marital strain but does not support the title’s claim that Trump’s fame was taking off; the connected Washington Post article was not reviewed."
+    ],
+    "entry-2511": [
+      "The title says Trump and Roger Stone plotted a campaign; the medium describes a campaign managed by Stone and supplies no evidence of a plot."
+    ],
+    "entry-2591": [
+      "The supplied email excerpt shows a possible call, not proof that it occurred or what was discussed. The reference to ‘vrginina’ is the packet’s interpretation as Virginia Roberts Giuffre, not a verified identification here."
+    ],
+    "entry-2671": [
+      "The supplied medium says the public campaign-event meeting alone does not establish coordination or an agreement with Russia. No collusion claim is inferred."
+    ],
+    "entry-2750": [
+      "The supplied medium says the proposal was not adopted as policy; delivery and internal circulation do not establish adoption or agreement with its contents."
+    ],
+    "entry-2824": [
+      "The supplied medium says the record gives no evidence that the Saudi transfer or private appeals caused Trump’s response. The title’s causal ‘covering for’ framing is not extracted.",
+      "The supplied notes conflict about access to the linked page (HTTP 202 versus HTTP 200) and the reported timing; these details remain unverified and are not used to infer causation."
+    ],
+    "entry-2900": [
+      "The supplied medium does not name the attorneys or identify an adopted proposal; the title’s Trump connection is not established in this account."
+    ],
+    "entry-2972": [
+      "The supplied account says Kushner’s earliest known interaction with Dmitriev remained uncertain. It reports, but does not independently establish, a connection to Trump traceable to 1996."
+    ],
+    "entry-3046": [
+      "The supplied medium says Krebs’s dismissal followed the warning but was not shown to have caused the attacks; it is kept separate from the ransomware event.",
+      "The medium says some hospitals never received a ransom demand, so no ransom outcome is asserted."
+    ],
+    "entry-3120": [
+      "The supplied medium says Schedule F could make dismissal easier but does not establish mass firings; no firings are asserted."
+    ],
+    "entry-3194": [
+      "The supplied medium places Pak’s resignation during Trump’s pressure on federal officials but does not expressly say the pressure caused his resignation; no causal finding is asserted."
+    ],
+    "entry-3346": [
+      "The supplied medium says the amount and mechanics of OANN’s contribution are unspecified and does not show Russian officials funded the audit; Russia-related language remains attributed to the article’s criticism."
+    ],
+    "entry-3424": [
+      "The supplied medium distinguishes the E. Jean Carroll jury finding from the ABC settlement, which included no admission of liability. The settlement is not treated as an adjudication of the defamation claim."
+    ],
+    "entry-3498": [
+      "The supplied medium says it does not state how many employees were tested and does not establish that tests led to the later claimed identification of two leakers."
+    ],
+    "entry-3571": [
+      "The supplied medium and note say the reports do not identify who changed the page or establish that Rogers was targeted because of his race; the title’s causal claim is not extracted."
+    ],
+    "entry-3715": [
+      "The supplied note says the source does not provide the subpoena investigative basis, privacy safeguards, disclosure status, or any misuse of the data. The legal stage and handling beyond issuance remain unknown."
+    ],
+    "entry-3788": [
+      "The supplied medium explicitly says the event concerned the House’s schedule and disclosure dispute, not a shutdown of the entire federal government; the title is narrowed accordingly."
+    ],
+    "entry-3860": [
+      "The supplied note says the account does not establish that the warning was intended to protect Epstein clients, identify such clients, or show what unreleased files contained."
+    ],
+    "entry-3933": [
+      "The supplied note says not to claim that the outage lasted beyond the reported period; no duration beyond the evening of October 1 is asserted."
+    ],
+    "entry-4078": [
+      "The supplied medium consists of the headline and generic catalog text, with no details confirming the pause or the acting chief’s full statement; the claim remains attributed to the headline."
+    ],
+    "entry-4151": [
+      "The supplied text is a speculative headline and generic catalog language; it does not establish a concrete action, relationship, or policy consequence involving Trump."
+    ],
+    "entry-4227": [
+      "The supplied note says the source does not quantify delayed campaigns or specify when recipients received funds; no downstream effect or receipt date is inferred.",
+      "The medium says Kennedy linked thimerosal to autism despite evidence finding no causal connection; the asserted link is not presented as a finding."
+    ],
+    "entry-4303": [
+      "The supplied medium says the Brazil and Canada tariffs were separate actions with different legal bases and stated rationales; they are not described as a single package."
+    ],
+    "entry-4384": [
+      "The supplied text describes a FY2027 budget request, not enacted cuts; Congress rejected similar requests for FY2026, which is a separate budget cycle."
+    ],
+    "entry-4459": [
+      "The supplied note says the record does not establish that data was intercepted or misused; no downstream misuse is asserted."
+    ],
+    "entry-4532": [
+      "The supplied note says no records of disciplinary or legal reviews support the title’s claim that no one faced accountability. The outcome is not characterized as zero accountability."
+    ],
+    "entry-4607": [
+      "The supplied medium says the reporting raised questions but did not establish that lobbying caused Reyes Holdings’ exemption; no donor favoritism or corruption finding is asserted."
+    ],
+    "entry-4679": [
+      "The supplied medium reports research/care disruptions and a 17-hospital closure proposal, but the supplied note says the AP account/current draft concerns a pause in VA contract cancellations and does not document those title claims. This source-account conflict remains unresolved; closures are only marked as proposed in the medium."
+    ],
+    "entry-4830": [
+      "The supplied medium says the bill still needed Senate approval and had not become law; its requirements, lawsuits, and penalties are proposed provisions, not implemented outcomes."
+    ],
+    "entry-4992": [
+      "The supplied medium conflicts on whether Venegas was detained: ProPublica reported three detentions, while DHS disputed that he had been detained. The lawyer’s racial-profiling concern is not treated as an established finding.",
+      "The supplied note identifies an internal chronology conflict in the long description; that chronology and claims about REAL ID eligibility are not used."
+    ],
+    "entry-5064": [
+      "The Yale Budget Lab amount is an estimate of possible future effects of planned reductions, not a realized revenue loss; it remains only in the supplied text and is not entered as a quantity."
+    ],
+    "entry-5137": [
+      "The supplied medium does not name transgender students as an affected group; the title’s specific claim about transgender protections is not independently supported by the medium and is not extracted."
+    ],
+    "entry-5215": [
+      "The supplied medium describes a proposed reunification deal and potential benefit to Trump golf properties; it does not say a merger or realized benefit occurred. The title’s claim that Trump forced the merger is not supported by the medium."
+    ],
+    "entry-5290": [
+      "The supplied medium says the above-normal fire year was a forecast; no actual fire-season effect is asserted."
+    ],
+    "entry-5369": [
+      "The supplied medium places the launch at the time the January 6 Committee released its final report but does not state a causal link between the two."
+    ],
+    "entry-5443": [
+      "The supplied medium attributes the pet claim to Trump, while Springfield officials disputed it and the debate information did not substantiate it; it is not treated as fact."
+    ],
+    "entry-5518": [
+      "The supplied note says the linked Reuters story concerns a separate February 5 sports order, while this medium describes policies from a January 20 order. The source mapping and dates are mismatched, so this entry relies only on supplied medium text.",
+      "The medium’s characterization of protections being stripped overnight is evaluative and is not separately extracted."
+    ],
+    "entry-5592": [
+      "The supplied title and summary contain corrupted numeric values for the debt-limit increase, deficit estimate, and projected debt. Numeric values are not recovered or inferred."
+    ],
+    "entry-5666": [
+      "The supplied review says Park Police planned the clearance for contractor fencing rather than Trump’s church visit. It also says the review did not assess every individual use of force."
+    ],
+    "entry-5748": [
+      "The supplied medium says the broader characterization of all U.S. policy as ‘unconditional backing’ should remain analysis, not a database fact."
+    ],
+    "entry-5836": [
+      "The supplied note says the account separates 2024 capital from an earlier Saudi investment and makes no claim of policy influence; no policy benefit or causal connection is inferred."
+    ],
+    "entry-5917": [
+      "The supplied medium says the report documents disputes and allegations, not a finding that every claim was valid; no claim is presented as adjudicated."
+    ],
+    "entry-5991": [
+      "The supplied note says the account does not support the synopsis’s claim of hundreds of millions in ad spending; no spending or voter-effect claim is extracted."
+    ],
+    "entry-6064": [
+      "The supplied medium attributes the ‘politically motivated retaliation’ characterization to cybersecurity experts and election officials; it is not asserted as an independently established motive."
+    ],
+    "entry-6139": [
+      "The supplied medium says the announcement did not immediately repeal every rule or eliminate clean-air enforcement; the title’s categorical ‘dismantles’ framing is narrowed to planned actions.",
+      "The supplied note says the linked page and synopsis do not identify the specific directives and dates for several claimed rollbacks; no additional actions are inferred."
+    ],
+    "entry-6217": [
+      "The medium attributes claims that the caravan included criminals and people from the Middle East to Trump; those claims are not presented as established facts."
+    ],
+    "entry-6293": [
+      "The supplied notes say the linked 2017 report does not support claims about 2018 call interception, repeated NSA or Secret Service warnings, or withheld briefings; those claims are not extracted."
+    ],
+    "entry-6372": [
+      "The supplied medium says the reporting does not establish that Trump knew about a specific later WikiLeaks release or that the data sharing proved campaign coordination with Russia."
+    ],
+    "entry-6473": [
+      "The medium describes a proposal and attributed legal characterizations; it does not say Palestinians were relocated. The possible crime-against-humanity characterization is not a finding."
+    ],
+    "entry-6558": [
+      "The supplied medium says Mueller’s investigation treated the contacts as part of a pattern; this is not described as an adjudicated finding of obstruction."
+    ],
+    "entry-6661": [
+      "The supplied medium asserts a market ‘tailspin’ and statements by every major central bank and finance ministry but provides no details for those claims; they are not extracted as outcomes."
+    ],
+    "entry-6752": [
+      "The supplied medium attributes the ‘illegal DEI’ characterization to the administration and says the order did not categorically ban every DEI program at federally funded institutions; the characterization is not treated as a finding of illegality."
+    ],
+    "entry-6877": [
+      "The supplied medium says the title’s claim of more than 100 uses of this exact phrase is unsupported; a 108-count referred to broader public attacks during an eight-week period, not uses of the phrase. The supplied note says no tweet collection substantiates the larger total."
+    ],
+    "entry-6991": [
+      "The supplied medium leaves Warrington’s precise role unconfirmed and reports that the governor’s office had no records mentioning him. The linked Sentinel page returned an access error; the packet does not establish which decisions or evidence Peters presented."
+    ],
+    "entry-7069": [
+      "The supplied note says the article is opinion and does not document a court ruling or completed obstruction of a specific investigation; the warned risk is attributed as the author’s argument."
+    ],
+    "entry-7174": [
+      "The supplied note says the account does not establish that Harp accessed classified information or caused a security breach; neither is asserted."
+    ],
+    "fresh-20260918-trump-repayment-statement": [
+      "The supplied medium contains an exact status conflict: Trump said his son would repay Kremlev and also described repayment as already made. ABC reported no evidence for the claim that repayment had occurred; actual payment is not established."
+    ]
+  },
+  "scope_limits": [
+    "Only the assigned packet records were processed.",
+    "No web searches or source-page fetches were performed; supplied URLs were treated only as mappings.",
+    "Only approved core fields were extracted; quantities, relations, and candidate extensions were omitted.",
+    "No canonical, Neon, or application-code edits were made."
+  ]
+}
