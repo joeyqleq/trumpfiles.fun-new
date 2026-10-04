@@ -1,0 +1,16 @@
+{
+  "record_id": "entry-37",
+  "source_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-55-input.jsonl",
+  "input_sha256": "f2aa217a913e29650efcfb1e3e14fd6cda3338fbc336a5318597890e8eca33d3",
+  "validator_path": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+  "validator_result": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  },
+  "terminal_status": "pass",
+  "terminal_record_id": "entry-37",
+  "proposal_only": true
+}
