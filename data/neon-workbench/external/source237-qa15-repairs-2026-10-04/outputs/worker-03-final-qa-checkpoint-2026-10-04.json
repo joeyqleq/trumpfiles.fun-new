@@ -1,0 +1,60 @@
+{
+  "artifact_type": "source237-qa15-repair-final-exact-set-checkpoint",
+  "created_at_utc": "2026-10-04T06:26:35.538659+00:00",
+  "worker": 3,
+  "branch": "ls/3-trump-files-source118-review-03-of-12-mwSm",
+  "coordinator_branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "coordinator_checkpoint_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-checkpoint-v2.json",
+  "coordinator_checkpoint_sha256": "54d409e5f63294ad2233b6ab579feefd75ecd6c415713cc4580407397003ea6f",
+  "coordinator_addendum_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-addendum-v2.jsonl",
+  "coordinator_addendum_sha256": "a4e1d1a0f943bf624a1246aabab2e3423c48d192e792fa174a28f39b98f2270c",
+  "source_packet_branch": "codex/source237-reconciliation-2026-10-04",
+  "source_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+  "source_terminal_path": "data/neon-workbench/external/source237-reconciliation-2026-10-04/source270-terminal.jsonl",
+  "source_terminal_sha256": "3e823142c449c30b9e457e4dd7dfd6e22c4fa18155d331ad97fa3999f4fe9957",
+  "current_proposal_branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+  "current_proposal_head": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+  "current_proposal_files": {
+    "entry-5166": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-001.jsonl",
+    "entry-6899": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-002.jsonl"
+  },
+  "expected_ids": [
+    "entry-5166",
+    "entry-6899"
+  ],
+  "observed_ids": [
+    "entry-5166",
+    "entry-6899"
+  ],
+  "exact_set_match": true,
+  "row_count": 2,
+  "unique_id_count": 2,
+  "one_terminal_row_per_id": true,
+  "only_requested_ids": true,
+  "source_status_preserved": "needs_correction",
+  "proposal_only_not_accepted_source": true,
+  "prior_qa_findings": [
+    "entry-5166: long_out_of_140_300 (107 words)",
+    "entry-6899: long_out_of_140_300 (114 words)"
+  ],
+  "result_checks": {
+    "title_and_short_le_180_chars": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "source_urls_exactly_preserved_from_current_proposals": true,
+    "every_url_mapped_to_supported_facts_and_limits": true,
+    "unsupported_claims_and_gaps_recorded": true
+  },
+  "output_path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-03-batch-2026-10-04-001.jsonl",
+  "output_sha256": "eefd7290038bdfb71f644e499fbdf8512c766d005d93a371ef6018aada4299bf",
+  "output_rows": 2,
+  "direct_source_access_limits": {
+    "entry-5166": "Washington Post page timed out; used exact current proposal mapping and coordinator indexed-text review.",
+    "entry-6899": "Politico returned HTTP 403; current proposal/coordinator mapping retained. HuffPost returned HTTP 200 and directly supported the mapped rent figures and funding chronology."
+  },
+  "no_canonical_or_neon_edits": true,
+  "append_only": true,
+  "prior_outputs_or_history_modified": false,
+  "overall": "passed_with_direct_retrieval_limits_recorded"
+}
