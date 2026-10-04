@@ -1,0 +1,153 @@
+{
+  "report": "Worker 12 insights100 repair terminal QA",
+  "created_date": "2026-10-04",
+  "source_packet": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-12-input.jsonl",
+  "packet_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "packet_sha256": "3c59e2fb0acd70f3524a41e5587093f6c00470ac81a4ca1863bfcf736708cafc",
+  "independent_review": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-qa/outputs/worker-12-terminal.jsonl",
+  "review_commit": "3130c7e67c988dfcfcf23d4626bc3f8b16833c20",
+  "historical_terminal_and_immutable_amendments_commit": "72f223802d45f72bfdad0c6f10af9130fd1e8a99",
+  "terminal": "worker-12-terminal.jsonl",
+  "amendments": "worker-12-terminal-amendments.jsonl",
+  "scope_ids": [
+    "entry-12",
+    "entry-24",
+    "entry-38",
+    "entry-50",
+    "entry-62",
+    "entry-76",
+    "entry-88",
+    "entry-100"
+  ],
+  "observed_terminal_ids": [
+    "entry-12",
+    "entry-24",
+    "entry-38",
+    "entry-50",
+    "entry-62",
+    "entry-76",
+    "entry-88",
+    "entry-100"
+  ],
+  "exact_set": "PASS",
+  "counts": {
+    "complete": 8,
+    "insufficient": 0,
+    "terminal_rows": 8,
+    "effective_rows_after_amendments": 8,
+    "rows_with_blockers": 6
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": [
+      "Exact assigned terminal ID set and order; no duplicate terminal rows.",
+      "All rows are proposal_only and use the requested insight_facts schema and allowed enum values.",
+      "Every supported non-unknown scalar and populated array element has a matching evidence_map entry.",
+      "Every evidence and quantity basis quote is a literal substring of that record’s supplied staged text.",
+      "Quantity kinds, numeric values, original units, qualifiers, and source URLs match the supplied mapping; source pages were not fetched.",
+      "Relations use allowed predicates, retain the reviewed subject/object direction, and have literal supplied-text evidence.",
+      "Blockers preserve supplied-text contradictions and source-mapping caveats separately from extracted facts."
+    ],
+    "terminal_sha256": "cc8722172182ee142f4a700372fee002ccfd04bf881652f3435b56149d57cb94",
+    "amendments_sha256": "e77f9870c96d79178f12724fa3e0cc869ea1c3e744a7ffa7c460239d9a48ef86",
+    "effective_rows_sha256": "eea448921758ee035d3c6929927b43f4b2de73881e2f1b9d6fa87eabbf6319ec",
+    "effective_rows": 8
+  },
+  "resolved_artifact_issues": [
+    "output_missing",
+    "entry-76 quantities[1] repeated evidence-map quote not literal (two mappings corrected by appended amendment)"
+  ],
+  "review_corrections_applied": [
+    {
+      "record_id": "entry-38",
+      "field": "event_state",
+      "value": "realized",
+      "basis_quote": "Photographs captured him looking upward without eclipse glasses at one moment"
+    },
+    {
+      "record_id": "entry-76",
+      "field": "quantities[0]",
+      "value": {
+        "kind": "duration",
+        "value": 30,
+        "unit": "days",
+        "qualifier": "exact"
+      },
+      "basis_quote": "forcing evictions after 30 days"
+    },
+    {
+      "record_id": "entry-76",
+      "field": "quantities[1]",
+      "value": {
+        "kind": "duration",
+        "value": 24,
+        "unit": "hours",
+        "qualifier": "exact"
+      },
+      "basis_quote": "eliminating the current 24-hour 'deemed granted' rule for permit applications"
+    },
+    {
+      "record_id": "entry-88",
+      "field": "action_type",
+      "value": "other",
+      "basis_quote": "Trump inaccurately described the object as a tear-gas canister and called the injury “beautiful.”"
+    },
+    {
+      "record_id": "entry-100",
+      "field": "action_type",
+      "value": "other",
+      "basis_quote": "At rallies and in public statements, Donald Trump repeatedly called news organizations “fake news.”"
+    }
+  ],
+  "prior_immutable_amendments_used": [
+    {
+      "record_id": "entry-24",
+      "amendment_id": "worker-12-entry-24-source-map-correction-01",
+      "effect": "Uses the supplied Anadolu URL for quantities and preserves the unrelated supplied Atlantic URL caveat in blockers."
+    },
+    {
+      "record_id": "entry-76",
+      "amendment_ids": [
+        "worker-12-entry-76-quote-correction-01",
+        "worker-12-entry-76-quote-correction-02",
+        "worker-12-entry-76-quote-correction-03"
+      ],
+      "effect": "Preserves the literal quantity basis quote from the supplied description."
+    }
+  ],
+  "new_amendment_history": [
+    {
+      "record_id": "entry-76",
+      "amendment_id": "worker-12-entry-76-literal-evidence-map-correction-01",
+      "effect": "Corrects both repeated evidence_map values to the literal description excerpt; insight_facts.quantities[1] already had that literal quote."
+    }
+  ],
+  "blockers": {
+    "entry-12": [
+      "The text says participant accounts differed but does not specify the discrepancy."
+    ],
+    "entry-24": [
+      "The supplied source list includes a The Atlantic URL whose path concerns Charlottesville; its relevance to the Blackwater account is not established by the supplied text."
+    ],
+    "entry-38": [
+      "The title and short description characterize the event as looking directly at the eclipse, while the medium and long descriptions say the images do not establish where he was looking."
+    ],
+    "entry-50": [
+      "The medium description says claims about Trump’s motive are unproven; the long description asserts a personal motive and says Stone threatened to expose damaging information. Those claims are not used as established facts."
+    ],
+    "entry-88": [
+      "The medium description says Trump praised the injury and drew criticism; the long description characterizes the remarks as active incitement, without supplied text establishing that they caused an attack."
+    ],
+    "entry-100": [
+      "The medium description says the language coincided with hostile crowd conduct and cautions that the supplied sources do not assign every incident to a specific remark; the long description asserts broader incitement."
+    ]
+  },
+  "scope_limits": [
+    "Only the eight assigned IDs were processed.",
+    "No web search or source-page fetch; source URLs were treated only as supplied mappings.",
+    "No new scoring was performed.",
+    "No canonical, Neon, or code files were edited.",
+    "Project tests and builds were skipped because only task data artifacts changed; the offline structural and literal-evidence QA above was run.",
+    "No pull request was opened, as explicitly directed."
+  ]
+}
