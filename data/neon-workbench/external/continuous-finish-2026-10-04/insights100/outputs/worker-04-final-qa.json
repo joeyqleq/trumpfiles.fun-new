@@ -1,0 +1,52 @@
+{
+  "worker": "worker-04",
+  "job": "insights100-04",
+  "status": "pass",
+  "proposal_only": true,
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-04-input.jsonl",
+  "input_sha256": "d87729dac75073905c6bd71d889c18fd732f71fcec4be7f40a726704506ef694",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-04-terminal.jsonl",
+  "terminal_sha256": "3b7da12cba9a52c49948d10986a30ef0df9146258f394de6db0657df2159c60a",
+  "assigned_record_ids": [
+    "entry-4",
+    "entry-16",
+    "entry-28",
+    "entry-42",
+    "entry-54",
+    "entry-68",
+    "entry-80",
+    "entry-92",
+    "entry-104"
+  ],
+  "output_record_ids": [
+    "entry-4",
+    "entry-16",
+    "entry-28",
+    "entry-42",
+    "entry-54",
+    "entry-68",
+    "entry-80",
+    "entry-92",
+    "entry-104"
+  ],
+  "rows": 9,
+  "complete": 9,
+  "insufficient": 0,
+  "checks": {
+    "exact_assigned_set_and_order": true,
+    "one_row_per_record_id": true,
+    "proposal_only_true": true,
+    "required_schema_and_enums": true,
+    "evidence_map_covers_non_unknown_facts": true,
+    "all_basis_quotes_literal_substrings": true,
+    "quantity_source_urls_supplied_in_packet": true,
+    "no_duplicate_or_amended_rows": true
+  },
+  "notes": [
+    "All evidence quotes were checked against staged/frozen text in the supplied packet.",
+    "Source URLs are carried as supplied metadata; no source pages were checked.",
+    "No web searches, new scoring, canonical data changes, Neon changes, or code changes were made."
+  ],
+  "validated_at": "2026-10-04T10:40:01.612308+00:00"
+}

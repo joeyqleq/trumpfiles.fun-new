@@ -1,0 +1,25 @@
+{
+  "worker": "worker-04",
+  "job": "insights100-04",
+  "status": "complete",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "branch": "ls/4-trump-files-sample100-review-04-of-12-aICV",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-04-terminal.jsonl",
+  "preexisting_terminal_rows": 0,
+  "rows_appended": 9,
+  "record_ids": [
+    "entry-4",
+    "entry-16",
+    "entry-28",
+    "entry-42",
+    "entry-54",
+    "entry-68",
+    "entry-80",
+    "entry-92",
+    "entry-104"
+  ],
+  "terminal_sha256": "3b7da12cba9a52c49948d10986a30ef0df9146258f394de6db0657df2159c60a",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-04-final-qa.json",
+  "amendments": [],
+  "validated_at": "2026-10-04T10:40:01.612308+00:00"
+}
