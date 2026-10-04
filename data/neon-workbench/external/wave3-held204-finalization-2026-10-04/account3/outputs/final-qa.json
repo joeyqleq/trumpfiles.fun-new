@@ -1,0 +1,156 @@
+{
+  "task": "Wave3 held204 release-readiness finalization, account3 worker10",
+  "input_provenance": {
+    "staged_subset_branch": "codex/wave3-needs-context-204-2026-10-04",
+    "staged_subset_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "staged_subset_path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl",
+    "staged_subset_sha256": "0fe8113c09856847ae3e1bf2bb8f4ce60d7499469bc0f7297f3112ea10211e41",
+    "coordinator_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+    "coordinator_commit": "9c111656258b9a6c049d4e8b5a097e09f7c6e544",
+    "reconciliation_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/held204-reconciliation-20261004.jsonl",
+    "effective_results_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-21/worker-results-effective-20261004.jsonl"
+  },
+  "expected_ids": [
+    "entry-1782",
+    "entry-231",
+    "entry-2504",
+    "entry-2731",
+    "entry-3444",
+    "entry-3832",
+    "entry-425",
+    "entry-5309",
+    "entry-5698",
+    "entry-6206",
+    "entry-651",
+    "entry-776",
+    "entry-912"
+  ],
+  "row_count": 13,
+  "unique_id_count": 13,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "disposition_counts": {
+    "PASS": 2,
+    "HOLD": 11
+  },
+  "release_ready_count": 2,
+  "blocking_ids": [
+    "entry-231",
+    "entry-2504",
+    "entry-2731",
+    "entry-3444",
+    "entry-3832",
+    "entry-425",
+    "entry-5309",
+    "entry-5698",
+    "entry-6206",
+    "entry-651",
+    "entry-776"
+  ],
+  "source_reference_count": 13,
+  "proposal_matches_coordinator_result_ref": true,
+  "frozen_origin_row_present_for_all_ids": true,
+  "url_format_valid": true,
+  "url_format_failures": [],
+  "copy_length_checks": {
+    "limits": {
+      "short_characters_max": 180,
+      "medium_words": "45-90 when present",
+      "long_words": "140-300 when present"
+    },
+    "short_characters": {
+      "entry-1782": 60,
+      "entry-231": 176,
+      "entry-2504": 133,
+      "entry-2731": 147,
+      "entry-3444": 72,
+      "entry-3832": 143,
+      "entry-425": 101,
+      "entry-5309": 160,
+      "entry-5698": 146,
+      "entry-6206": 127,
+      "entry-651": 49,
+      "entry-776": 151,
+      "entry-912": 112
+    },
+    "word_counts": {
+      "entry-1782": {
+        "short": 9,
+        "medium": 64,
+        "long": 149
+      },
+      "entry-231": {
+        "short": 23,
+        "medium": 60,
+        "long": 182
+      },
+      "entry-2504": {
+        "short": 20,
+        "medium": 68,
+        "long": 177
+      },
+      "entry-2731": {
+        "short": 23,
+        "medium": 60,
+        "long": 169
+      },
+      "entry-3444": {
+        "short": 11,
+        "medium": 72,
+        "long": 175
+      },
+      "entry-3832": {
+        "short": 23,
+        "medium": 61,
+        "long": 186
+      },
+      "entry-425": {
+        "short": 18,
+        "medium": 88,
+        "long": 177
+      },
+      "entry-5309": {
+        "short": 26,
+        "medium": 73,
+        "long": 187
+      },
+      "entry-5698": {
+        "short": 24,
+        "medium": 83,
+        "long": null
+      },
+      "entry-6206": {
+        "short": 18,
+        "medium": 87,
+        "long": 191
+      },
+      "entry-651": {
+        "short": 9,
+        "medium": 82,
+        "long": null
+      },
+      "entry-776": {
+        "short": 25,
+        "medium": 71,
+        "long": 181
+      },
+      "entry-912": {
+        "short": 17,
+        "medium": 79,
+        "long": 166
+      }
+    },
+    "out_of_range_fields": [],
+    "missing_long_description_ids": [
+      "entry-5698",
+      "entry-651"
+    ]
+  },
+  "worker_completion_is_editorial_approval": false,
+  "canonical_or_neon_edits": false,
+  "notes": [
+    "PASS means source-supported and meaning-preserving under this review; HOLD rows require the exact blockers in their reasons.",
+    "Descriptions and source URLs are copied from the referenced worker proposals without rewriting."
+  ]
+}
