@@ -1,0 +1,23 @@
+{
+  "worker": 8,
+  "kind": "checkpoint",
+  "checkpoint": 2,
+  "assigned_total": 8,
+  "processed_count": 4,
+  "batch_size": 2,
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_sha256": "7fcf78ebb5e16035eef7cb2b1a345516d05c551c2df5437801af9ae69e96da9e",
+  "output_file": "worker-08-terminal.jsonl",
+  "output_sha256_through_checkpoint": "0bddc78d1511833e4a5e068c2ad183d38e2ed31a8f1ad71cbbfbde3185c6cfee",
+  "processed_keys": [
+    "entry-555",
+    "entry-3170",
+    "entry-344",
+    "entry-191"
+  ],
+  "terminal_counts": {
+    "complete": 1,
+    "insufficient": 3
+  },
+  "checkpoint_note": "Append-only validation100-repair output; effective rows derived only from supplied frozen/staged text and the specified immutable review/amendments. No canonical data, Neon, or code edits."
+}

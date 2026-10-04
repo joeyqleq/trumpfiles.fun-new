@@ -1,0 +1,76 @@
+{
+  "worker": 8,
+  "kind": "final_exact_set_qa",
+  "task_branch": "ls/8-trump-files-web425-review-08-of-12-9xY1",
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-08-input.jsonl",
+  "input_sha256": "7fcf78ebb5e16035eef7cb2b1a345516d05c551c2df5437801af9ae69e96da9e",
+  "review_commit": "402c91aeb80435bea217d5288382a52474ac1581",
+  "review_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-qa/outputs/worker-08-terminal.jsonl",
+  "original_output_commit": "1a193851b37ff2fbea74027c9a04e0ffa2ddde9f",
+  "immutable_amendments_commit": "1a193851b37ff2fbea74027c9a04e0ffa2ddde9f",
+  "output_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-08-terminal.jsonl",
+  "output_sha256": "e170ece4a978c0322bdc7ad8d0cfc0c2c0796cb14715619f701552981c15d42d",
+  "assigned_count": 8,
+  "output_row_count": 8,
+  "unique_record_id_count": 8,
+  "assigned_ids": [
+    "entry-555",
+    "entry-3170",
+    "entry-344",
+    "entry-191",
+    "entry-5912",
+    "entry-2657",
+    "entry-5353",
+    "entry-1244"
+  ],
+  "missing_ids": [],
+  "outside_assignment_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "complete": 2,
+    "insufficient": 6
+  },
+  "artifact_issue": "output_missing",
+  "artifact_issue_resolved": true,
+  "schema_validation": "pass",
+  "literal_quote_validation": "pass",
+  "evidence_map_coverage": "pass for every non-unknown scalar and populated array element",
+  "review_corrections": [
+    {
+      "record_id": "entry-555",
+      "field": "insight_facts.event_state",
+      "change": "proposed→realized"
+    },
+    {
+      "record_id": "entry-3170",
+      "field": "insight_facts.institutions",
+      "change": "removed unsupported Romanian public officials value"
+    },
+    {
+      "record_id": "entry-191",
+      "field": "insight_facts.event_state/legal_stage",
+      "change": "unclear/unknown; recorded the supplied-description contradiction in blockers"
+    },
+    {
+      "record_id": "entry-5353",
+      "field": "insight_facts.relations",
+      "change": "reversed both object_of_legal_action relations to defendant→federal jury"
+    },
+    {
+      "record_id": "entry-344",
+      "field": "insight_facts.event_state",
+      "change": "incorporated immutable amendment proposed→realized"
+    },
+    {
+      "record_id": "entry-2657",
+      "field": "insight_facts.legal_stage",
+      "change": "incorporated immutable evidence-map-only amendment"
+    }
+  ],
+  "amendment_count_incorporated": 2,
+  "source_limit": "Only supplied frozen/staged text and source mappings were used; no linked pages were opened, no web search or rescoring was performed.",
+  "legacy_estimates": "not used",
+  "scope": "Only the assigned validation100-repair terminal rows, checkpoints, and final QA. No canonical data, Neon, or code edits. No PR.",
+  "result": "pass"
+}
