@@ -1,0 +1,73 @@
+{
+  "artifact": "source237 QA15 repair worker 11 final checkpoint",
+  "status": "completed",
+  "created_utc": "2026-10-04",
+  "branch": "ls/11-trump-files-source118-review-11-of-12-8RJW",
+  "scope": {
+    "exact_ids": [
+      "entry-6753"
+    ],
+    "count": 1,
+    "only_finding_records": [
+      {
+        "id": "entry-6753",
+        "flags": [
+          "non_https_source_url"
+        ],
+        "lengths": {
+          "title_chars": 66,
+          "short_chars": 155,
+          "medium_words": 63,
+          "long_words": 189
+        }
+      }
+    ]
+  },
+  "source_packet": {
+    "branch": "codex/source237-reconciliation-2026-10-04",
+    "commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+    "path": "data/neon-workbench/external/source237-reconciliation-2026-10-04/source270-terminal.jsonl",
+    "line": 210,
+    "sha256": "3e823142c449c30b9e457e4dd7dfd6e22c4fa18155d331ad97fa3999f4fe9957"
+  },
+  "coordinator": {
+    "branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+    "commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+    "checkpoint": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-checkpoint-v2.json",
+    "addendum": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-addendum-v2.jsonl",
+    "addendum_row": 183
+  },
+  "proposal": {
+    "branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+    "commit": "b13a0d422183a526959cb04644a847c2be0e8156",
+    "file": "data/neon-workbench/external/account6-source-corrections-2026-10-03/outputs/worker-07-batch-001-20261003.jsonl",
+    "line": 8
+  },
+  "result": {
+    "append_only_batch": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-11-batch-20261004-001.jsonl",
+    "rows": 1,
+    "sha256": "49e4a8158372d87156748ef19f7e64ca964a87ee710b8b3672fa29d52dc9a051",
+    "exact_set_qa": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-11-exact-set-qa-20261004.jsonl",
+    "qa_sha256": "0a7185143f4b8f3381a38a7c4c4fba0cc5be0148c2081ee478316f5aec3e6336",
+    "url_finding": "repaired",
+    "description_length_findings": "none",
+    "copy_preservation": "title, short, medium, long unchanged"
+  },
+  "constraints": {
+    "only_assigned_id": true,
+    "no_target_output_edits": true,
+    "no_canonical_edits": true,
+    "no_neon_edits": true,
+    "no_pull_request": true
+  },
+  "verification": {
+    "lengths": {
+      "title_chars": 66,
+      "short_chars": 155,
+      "medium_words": 63,
+      "long_words": 189
+    },
+    "mapping": "Federal Register maps to EO 14151 federal direction; HTTPS Education Department release maps only to its Jan. 23 implementation facts. Both output URLs are HTTPS and both have a fact mapping.",
+    "access_limit": "Direct requests from this sandbox were blocked; exact URL and mapping were checked against pinned source237 terminal and worker-18 reconciliation evidence."
+  }
+}
