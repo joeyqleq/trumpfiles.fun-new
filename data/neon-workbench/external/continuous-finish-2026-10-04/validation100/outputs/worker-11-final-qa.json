@@ -1,0 +1,65 @@
+{
+  "task": "validation100-11",
+  "source_packet_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "source_packet_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-11-input.jsonl",
+  "expected_ids": [
+    "entry-2688",
+    "entry-585",
+    "entry-1115",
+    "entry-2032",
+    "entry-2409",
+    "entry-5959",
+    "entry-3311",
+    "entry-7148"
+  ],
+  "observed_ids": [
+    "entry-2688",
+    "entry-585",
+    "entry-1115",
+    "entry-2032",
+    "entry-2409",
+    "entry-5959",
+    "entry-3311",
+    "entry-7148"
+  ],
+  "row_count": 8,
+  "unique_id_count": 8,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "complete": 8
+  },
+  "exact_set_valid": true,
+  "proposal_only_valid": true,
+  "schema_errors": [],
+  "unsupported_facts": [],
+  "nonliteral_quotes": [],
+  "all_nonunknown_facts_evidence_mapped": true,
+  "all_quotes_literal_substrings_of_supplied_text": true,
+  "blockers_by_id": {
+    "entry-2688": [
+      "The frozen synopsis truncates the attendee list after “Don [&hellip;]”; the person’s identity and the rest of the list are unresolved."
+    ],
+    "entry-585": [
+      "The staged description says “looking toward the sun,” while the frozen synopsis says “looking directly at the sun”; the material does not establish duration or injury."
+    ],
+    "entry-2032": [
+      "Susan Glasser’s suggested motives are explicitly described as analysis, not established facts about Trump’s private motives; the war’s duration and consequences were still uncertain."
+    ],
+    "entry-2409": [
+      "The visit timing is uncertain: the supplied account says “On the same day, or in the days immediately before,” and it does not establish that the advertisements were part of a campaign or a candidacy announcement."
+    ],
+    "entry-5959": [
+      "The frozen synopsis says the remarks were made “in complete seriousness,” while the staged description says Trump later said he had been sarcastic; both accounts are retained without resolving intent."
+    ],
+    "entry-3311": [
+      "The title uses “steals,” while the description states the investigation and resignation “neither amounted to a criminal theft finding”; no criminal theft finding is asserted."
+    ],
+    "entry-7148": [
+      "The article also says some inspectors general continued to act independently and includes the White House’s defense of the appointments; “loyalists” is not treated as a description of every replacement."
+    ]
+  },
+  "source_review_note": "Only the frozen/staged text in the supplied input packet was used. Supplied URLs were recorded as mappings and were not treated as inspected source pages. No web searches or scoring were performed.",
+  "pass": true
+}

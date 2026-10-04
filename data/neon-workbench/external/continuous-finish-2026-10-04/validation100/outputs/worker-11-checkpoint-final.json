@@ -1,0 +1,31 @@
+{
+  "task": "validation100-11",
+  "worker": 11,
+  "packet_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "packet_path": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-11-input.jsonl",
+  "packet_sha256": "1c21dcc314633a8dba49f526ec3beeca857df02e35099afed5dfb1f4e02bd05a",
+  "assigned_ids": [
+    "entry-2688",
+    "entry-585",
+    "entry-1115",
+    "entry-2032",
+    "entry-2409",
+    "entry-5959",
+    "entry-3311",
+    "entry-7148"
+  ],
+  "processed_ids": [
+    "entry-2688",
+    "entry-585",
+    "entry-1115",
+    "entry-2032",
+    "entry-2409",
+    "entry-5959",
+    "entry-3311",
+    "entry-7148"
+  ],
+  "rows_written": 8,
+  "terminal_file": "worker-11-terminal.jsonl",
+  "checkpoint_status": "complete",
+  "final_qa_file": "worker-11-final-qa.json"
+}
