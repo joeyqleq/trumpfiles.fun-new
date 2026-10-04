@@ -1,0 +1,35 @@
+{
+  "job_id": "insights100-repair-08",
+  "checkpointed_at_utc": "2026-10-04T11:07:47Z",
+  "input_snapshot_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "expected_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "completed_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "remaining_record_ids": [],
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-08-terminal.jsonl",
+  "terminal_rows": 8,
+  "status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "repair_amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-08-terminal-amendment-001.jsonl",
+  "final_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-08-final-qa.json",
+  "state": "complete"
+}

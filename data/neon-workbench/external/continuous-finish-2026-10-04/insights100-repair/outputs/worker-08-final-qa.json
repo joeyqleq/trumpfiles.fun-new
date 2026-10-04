@@ -1,0 +1,88 @@
+{
+  "job_id": "insights100-repair-08",
+  "input_snapshot_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/worker-08-input.jsonl",
+  "source_output_commit": "b2312a712c59061ccb14520cbe1b1cdb94b73062",
+  "source_output_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100/outputs/worker-08-terminal.jsonl",
+  "independent_review_commit": "6ca48f11416493ff675be194f84aee6371f53b9d",
+  "independent_review_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-qa/outputs/worker-08-terminal.jsonl",
+  "checked_at_utc": "2026-10-04T11:07:47Z",
+  "expected_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "actual_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "row_count": 8,
+  "status_counts": {
+    "complete": 8,
+    "insufficient": 0
+  },
+  "blocker_record_ids": [
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-84",
+    "entry-96"
+  ],
+  "preserved_passing_record_ids": [
+    "entry-8",
+    "entry-20",
+    "entry-32",
+    "entry-46",
+    "entry-58",
+    "entry-72",
+    "entry-96"
+  ],
+  "corrected_record_ids": [
+    "entry-84"
+  ],
+  "corrections": [
+    "Changed event_state to realized for Trump’s pursuit of the deal, supported by the literal staged medium-description quote; the tower and penthouse quantities remain proposed/planned as previously stated.",
+    "Removed the unsupported Michael Cohen object_of_legal_action relation and its evidence-map entry because the supplied material names no authority taking legal action."
+  ],
+  "review_amendments_read": [
+    {
+      "commit": "6ca48f11416493ff675be194f84aee6371f53b9d",
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-qa/outputs/worker-08-terminal-amendment-001.jsonl",
+      "note": "Corrects entry-46 useful-field count."
+    },
+    {
+      "commit": "6ca48f11416493ff675be194f84aee6371f53b9d",
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-qa/outputs/worker-08-terminal-amendment-002.jsonl",
+      "note": "Adds the literal staged-text basis for the entry-84 event-state correction."
+    }
+  ],
+  "repair_amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights100-repair/outputs/worker-08-terminal-amendment-001.jsonl",
+  "checks": {
+    "input_contains_exact_assigned_set": true,
+    "terminal_contains_exact_assigned_set_once_each": true,
+    "jsonl_parses": true,
+    "required_fact_fields_present": true,
+    "enum_values_valid": true,
+    "every_non_unknown_fact_has_evidence_map_entry": true,
+    "every_basis_quote_is_literal_supplied_text": true,
+    "quantity_and_relation_shapes_valid": true,
+    "supplied_source_urls_preserved_without_claiming_page_review": true,
+    "seven_previously_passing_rows_unchanged": true,
+    "flagged_entry_84_corrections_applied": true,
+    "original_terminal_preserved": true
+  },
+  "result": "pass"
+}
