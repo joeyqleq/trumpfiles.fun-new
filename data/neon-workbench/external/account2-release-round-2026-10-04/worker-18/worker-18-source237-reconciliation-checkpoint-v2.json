@@ -1,0 +1,736 @@
+{
+  "artifact": "worker18 source237 reconciliation superseding addendum",
+  "status": "completed_with_preserved_holds_and_qa_findings",
+  "supersedes": [
+    "worker-18-source270-superseding-addendum.json",
+    "worker-18-source270-superseding-qa.md",
+    "worker-18-independent-qa-v2.json",
+    "worker-18-checkpoint-v2.json"
+  ],
+  "preserves_prior_audits_as_history": true,
+  "source_packet": {
+    "branch": "codex/source237-reconciliation-2026-10-04",
+    "commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+    "manifest_path": "data/neon-workbench/external/source237-reconciliation-2026-10-04/manifest.json",
+    "terminal_path": "data/neon-workbench/external/source237-reconciliation-2026-10-04/source270-terminal.jsonl",
+    "terminal_sha256": "3e823142c449c30b9e457e4dd7dfd6e22c4fa18155d331ad97fa3999f4fe9957",
+    "rows": 270,
+    "unique_ids": 270,
+    "status_counts": {
+      "accepted_source": 29,
+      "needs_correction": 237,
+      "exclusion_candidate": 4
+    }
+  },
+  "correction_partition": {
+    "account6_source118": {
+      "count": 118,
+      "ids": [
+        "entry-4234",
+        "entry-4243",
+        "entry-4306",
+        "entry-4360",
+        "entry-4386",
+        "entry-4399",
+        "entry-4413",
+        "entry-4435",
+        "entry-4496",
+        "entry-4546",
+        "entry-4697",
+        "entry-4866",
+        "entry-5074",
+        "entry-5083",
+        "entry-5091",
+        "entry-5095",
+        "entry-5154",
+        "entry-5212",
+        "entry-5222",
+        "entry-5273",
+        "entry-5289",
+        "entry-5328",
+        "entry-5333",
+        "entry-5342",
+        "entry-5537",
+        "entry-5603",
+        "entry-5717",
+        "entry-5718",
+        "entry-5730",
+        "entry-5740",
+        "entry-5742",
+        "entry-5745",
+        "entry-5750",
+        "entry-5758",
+        "entry-5763",
+        "entry-5804",
+        "entry-5817",
+        "entry-5820",
+        "entry-5823",
+        "entry-5835",
+        "entry-5842",
+        "entry-5849",
+        "entry-5853",
+        "entry-5860",
+        "entry-5868",
+        "entry-5879",
+        "entry-5890",
+        "entry-5894",
+        "entry-6392",
+        "entry-6405",
+        "entry-6408",
+        "entry-6418",
+        "entry-6422",
+        "entry-6429",
+        "entry-6435",
+        "entry-6450",
+        "entry-6454",
+        "entry-6458",
+        "entry-6459",
+        "entry-6470",
+        "entry-6483",
+        "entry-6494",
+        "entry-6495",
+        "entry-6507",
+        "entry-6513",
+        "entry-6518",
+        "entry-6520",
+        "entry-6537",
+        "entry-6562",
+        "entry-6576",
+        "entry-6580",
+        "entry-6610",
+        "entry-6618",
+        "entry-6621",
+        "entry-6632",
+        "entry-6636",
+        "entry-6641",
+        "entry-6644",
+        "entry-6653",
+        "entry-6660",
+        "entry-6669",
+        "entry-6671",
+        "entry-6684",
+        "entry-6708",
+        "entry-6725",
+        "entry-6726",
+        "entry-6731",
+        "entry-6740",
+        "entry-6742",
+        "entry-6746",
+        "entry-6753",
+        "entry-6756",
+        "entry-6764",
+        "entry-6767",
+        "entry-6772",
+        "entry-6783",
+        "entry-6796",
+        "entry-6800",
+        "entry-6809",
+        "entry-6814",
+        "entry-6816",
+        "entry-6820",
+        "entry-6831",
+        "entry-6838",
+        "entry-6850",
+        "entry-6868",
+        "entry-6878",
+        "entry-6882",
+        "entry-6898",
+        "entry-6910",
+        "entry-6916",
+        "entry-6927",
+        "entry-6938",
+        "entry-6945",
+        "entry-6953",
+        "entry-6960",
+        "entry-6965",
+        "entry-6966"
+      ]
+    },
+    "account1_late89": {
+      "count": 89,
+      "ids": [
+        "entry-4235",
+        "entry-4242",
+        "entry-4266",
+        "entry-4410",
+        "entry-4412",
+        "entry-4416",
+        "entry-4504",
+        "entry-4545",
+        "entry-4686",
+        "entry-4893",
+        "entry-5062",
+        "entry-5082",
+        "entry-5166",
+        "entry-5168",
+        "entry-5219",
+        "entry-5331",
+        "entry-5332",
+        "entry-5339",
+        "entry-5567",
+        "entry-5666",
+        "entry-5733",
+        "entry-5734",
+        "entry-5741",
+        "entry-5753",
+        "entry-5757",
+        "entry-5759",
+        "entry-5810",
+        "entry-5811",
+        "entry-5818",
+        "entry-5836",
+        "entry-5841",
+        "entry-5848",
+        "entry-5861",
+        "entry-5866",
+        "entry-5873",
+        "entry-5895",
+        "entry-5896",
+        "entry-6387",
+        "entry-6410",
+        "entry-6416",
+        "entry-6420",
+        "entry-6438",
+        "entry-6442",
+        "entry-6452",
+        "entry-6474",
+        "entry-6480",
+        "entry-6492",
+        "entry-6509",
+        "entry-6512",
+        "entry-6514",
+        "entry-6550",
+        "entry-6551",
+        "entry-6575",
+        "entry-6616",
+        "entry-6617",
+        "entry-6620",
+        "entry-6634",
+        "entry-6635",
+        "entry-6639",
+        "entry-6654",
+        "entry-6659",
+        "entry-6666",
+        "entry-6689",
+        "entry-6700",
+        "entry-6716",
+        "entry-6735",
+        "entry-6737",
+        "entry-6741",
+        "entry-6754",
+        "entry-6755",
+        "entry-6762",
+        "entry-6773",
+        "entry-6777",
+        "entry-6792",
+        "entry-6812",
+        "entry-6813",
+        "entry-6815",
+        "entry-6836",
+        "entry-6837",
+        "entry-6842",
+        "entry-6886",
+        "entry-6897",
+        "entry-6899",
+        "entry-6932",
+        "entry-6934",
+        "entry-6942",
+        "entry-6956",
+        "entry-6957",
+        "entry-6962"
+      ]
+    },
+    "account1_last30": {
+      "count": 30,
+      "ids": [
+        "entry-4231",
+        "entry-4398",
+        "entry-4446",
+        "entry-4781",
+        "entry-5104",
+        "entry-5316",
+        "entry-5522",
+        "entry-5729",
+        "entry-5748",
+        "entry-5802",
+        "entry-5831",
+        "entry-5855",
+        "entry-5892",
+        "entry-6407",
+        "entry-6434",
+        "entry-6462",
+        "entry-6503",
+        "entry-6528",
+        "entry-6604",
+        "entry-6630",
+        "entry-6651",
+        "entry-6682",
+        "entry-6730",
+        "entry-6752",
+        "entry-6771",
+        "entry-6807",
+        "entry-6826",
+        "entry-6881",
+        "entry-6918",
+        "entry-6952"
+      ]
+    },
+    "union_count": 237,
+    "pairwise_overlaps": 0,
+    "missing_needs_correction_ids": [],
+    "outside_needs_correction_ids": []
+  },
+  "non_correction_terminal_ids": {
+    "accepted_source": [
+      "entry-4225",
+      "entry-4439",
+      "entry-4440",
+      "entry-4758",
+      "entry-4778",
+      "entry-5349",
+      "entry-5492",
+      "entry-5727",
+      "entry-5747",
+      "entry-5764",
+      "entry-5786",
+      "entry-5828",
+      "entry-5891",
+      "entry-6406",
+      "entry-6431",
+      "entry-6497",
+      "entry-6525",
+      "entry-6596",
+      "entry-6622",
+      "entry-6628",
+      "entry-6650",
+      "entry-6681",
+      "entry-6728",
+      "entry-6750",
+      "entry-6770",
+      "entry-6806",
+      "entry-6917",
+      "entry-6947",
+      "entry-6948"
+    ],
+    "exclusion_candidate": [
+      "entry-5555",
+      "entry-5852",
+      "entry-6363",
+      "entry-6825"
+    ],
+    "still_unresolved": []
+  },
+  "last30_workers": [
+    {
+      "worker": 1,
+      "branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
+      "head": "4241a509b2fd829f6fe1890827910901bb3c5f2c",
+      "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-01-batch-20261004-a.jsonl",
+      "output_git_blob": "91a3ad3dbc0a7ded8a77daf62a1c696712bba9e3",
+      "output_sha256": "08073068c5828a02a919e9900644cc25870c7e41fec4cf8f7f69f54b38829aa9",
+      "qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-01-final-qa-recheck-20261004.json",
+      "qa_checks": {
+        "exact_assigned_id_coverage": "pass",
+        "one_terminal_row_per_id": "pass",
+        "frozen_original_preserved": "pass",
+        "source_input_and_campaign_provenance": "pass",
+        "worker05_prior_proposal_provenance": "pass",
+        "every_correction_source_in_prior_packet_provenance": "pass",
+        "source_urls_https_and_unique_per_row": "pass",
+        "source_to_fact_mapping_and_limits_present": "pass",
+        "title_and_short_max_180_chars": "pass",
+        "medium_45_to_90_words": "pass",
+        "long_140_to_300_words": "pass",
+        "unsupported_claims_and_exact_gaps_recorded": "pass",
+        "later_worker05_batches_checked_for_assigned_ids": "pass"
+      },
+      "qa_status": {
+        "needs_correction": 5,
+        "accepted_source": 0,
+        "exclusion_candidate": 0,
+        "still_unresolved": 0
+      },
+      "ids": [
+        "entry-4231",
+        "entry-4398",
+        "entry-4446",
+        "entry-4781",
+        "entry-5104"
+      ],
+      "qa_note": "Latest final exact-set recheck; scope, source map coverage, lengths, and per-entry gaps all pass."
+    },
+    {
+      "worker": 2,
+      "branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+      "head": "2e7a482a9d4ecde89b5c757d2bed15bb67eaea96",
+      "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-02-batch-20261004-001.jsonl",
+      "output_git_blob": "1ad34b5f4a3322fba2f4152795354ffed0cac2e5",
+      "output_sha256": "34fe827283544297e5469ad040ae4b1ce6e17e612ff5fe081a5dc7d4ba3a0912",
+      "qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-02-final-qa-20261004-002.json",
+      "qa_checks": {
+        "exactly_five_rows": true,
+        "exact_id_set": true,
+        "no_duplicate_ids": true,
+        "one_terminal_proposal_per_id": true,
+        "original_claim_summaries_exactly_match_effective_worker05_unsupported_claims": true,
+        "frozen_input_unavailable_caveat_retained": true,
+        "provenance_source_commit_and_batch_match": true,
+        "title_and_short_fields_le_180_chars": true,
+        "medium_fields_45_to_90_words": true,
+        "long_fields_140_to_300_words": true,
+        "claim_fields_match_evidence_resolution_proposal": true,
+        "source_urls_match_mapping_and_citation_dispositions": true,
+        "source_urls_preserved_from_effective_worker05_sources": true,
+        "source_mappings_and_supported_facts_present": true
+      },
+      "qa_status": null,
+      "ids": [
+        "entry-5316",
+        "entry-5522",
+        "entry-5729",
+        "entry-5748",
+        "entry-5802"
+      ]
+    },
+    {
+      "worker": 3,
+      "branch": "ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+      "head": "a826adc58915108625f4243a77552f1d5845062f",
+      "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-03-batch-001.jsonl",
+      "output_git_blob": "f70ac1a19dda8802084640b8e20bc5e65dc81fde",
+      "output_sha256": "5104f80da962cf08cbb17fb12da425ba7e9f7454647622550cdba98fcb491658",
+      "qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-03-final-qa.json",
+      "qa_checks": {},
+      "qa_status": true,
+      "ids": [
+        "entry-5831",
+        "entry-5855",
+        "entry-5892",
+        "entry-6407",
+        "entry-6434"
+      ]
+    },
+    {
+      "worker": 4,
+      "branch": "ls/4-trump-description-rescue-04-of-12-53-dis-S_ao",
+      "head": "bfb4ed592da85e4b33edb579ab374f449a335a16",
+      "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-04-batch-001.jsonl",
+      "output_git_blob": "68cc64308bf771385dff88ec074c061ba1f0c9b7",
+      "output_sha256": "103fb3c711c890d4d88a9611f85a9263a692c4b668e71f1d983b616dba8d81b7",
+      "qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-04-final-qa.json",
+      "qa_checks": {
+        "jsonl_parse": true,
+        "exact_five_id_set": true,
+        "one_terminal_row_per_id": true,
+        "frozen_original_preserved": true,
+        "source_provenance_preserved": true,
+        "source_urls_map_to_specific_facts": true,
+        "original_claims_not_marked_supported": true,
+        "title_and_short_at_most_180_chars": true,
+        "medium_45_to_90_words": true,
+        "long_140_to_300_words": true,
+        "input_sha_recorded": true
+      },
+      "qa_status": {
+        "corrected_claim_proposal": 5,
+        "unresolved_hold": 0
+      },
+      "ids": [
+        "entry-6462",
+        "entry-6503",
+        "entry-6528",
+        "entry-6604",
+        "entry-6630"
+      ]
+    },
+    {
+      "worker": 6,
+      "branch": "ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x",
+      "head": "cc42c621a425c6a55a1c445f0e8c3454ec0ed76f",
+      "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-06-batch-20261004-001.jsonl",
+      "output_git_blob": "bbfc8a1212a56f56388b04c6d18ef29fe8e72103",
+      "output_sha256": "b16e89ed990e34ed22ab795e5aee325f71cb371bb47574e7751fde930c0c7595",
+      "qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-06-final-qa-20261004.json",
+      "qa_checks": {
+        "exact_assigned_set_once_each": true,
+        "no_extra_or_duplicate_ids": true,
+        "frozen_originals_match_worker05_input": true,
+        "source_urls_match_source_evidence_records": true,
+        "every_source_url_mapped_to_claim_facts_and_limits": true,
+        "title_and_short_at_most_180_characters": true,
+        "medium_45_to_90_words": true,
+        "long_140_to_300_words": true,
+        "every_row_has_terminal_proposal_or_hold": true,
+        "unsupported_original_claims_have_explicit_gaps": true
+      },
+      "qa_status": "pass",
+      "ids": [
+        "entry-6651",
+        "entry-6682",
+        "entry-6730",
+        "entry-6752",
+        "entry-6771"
+      ]
+    },
+    {
+      "worker": 11,
+      "branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+      "head": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+      "output_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-11-batch-20261004-001.jsonl",
+      "output_git_blob": "f2e75d88683fd3669b2f9870377a811ad08bc52e",
+      "output_sha256": "a3ead84758e1f7b133be73876c15fa3b71bfa78d3f67abc2569c9861b6901621",
+      "qa_file": "data/neon-workbench/external/source-last30-corrections-2026-10-04/outputs/worker-11-final-qa-20261004-001.json",
+      "qa_checks": {},
+      "qa_status": "PASS",
+      "ids": [
+        "entry-6807",
+        "entry-6826",
+        "entry-6881",
+        "entry-6918",
+        "entry-6952"
+      ]
+    }
+  ],
+  "qa": {
+    "all_237_terminal_ids_matched_once": true,
+    "all_statuses_match_needs_correction": true,
+    "account6_and_late89_rows_reopened_from_current_result_branch_tips": true,
+    "last30_output_count": 30,
+    "last30_description_or_mapping_issues": [],
+    "last30_current_qa_holds": [
+      "entry-6807",
+      "entry-6826",
+      "entry-6881",
+      "entry-6918",
+      "entry-6952"
+    ],
+    "prior_207_held_ids": [
+      "entry-4416",
+      "entry-4435",
+      "entry-4545",
+      "entry-5166",
+      "entry-5273",
+      "entry-5666",
+      "entry-5745",
+      "entry-5810",
+      "entry-5860",
+      "entry-5866",
+      "entry-6420",
+      "entry-6450",
+      "entry-6509",
+      "entry-6537",
+      "entry-6617",
+      "entry-6660",
+      "entry-6666",
+      "entry-6753",
+      "entry-6754",
+      "entry-6756",
+      "entry-6813",
+      "entry-6836",
+      "entry-6838",
+      "entry-6899",
+      "entry-6960"
+    ],
+    "prior_207_held_count": 25,
+    "prior_207_length_url_qa_issue_count": 15,
+    "prior_207_length_url_qa_issues": [
+      {
+        "id": "entry-4416",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 64,
+          "short_chars": 64,
+          "medium_words": 62,
+          "long_words": 114
+        }
+      },
+      {
+        "id": "entry-4545",
+        "flags": [
+          "medium_out_of_45_90"
+        ],
+        "lengths": {
+          "title_chars": 75,
+          "short_chars": 75,
+          "medium_words": 92,
+          "long_words": 163
+        }
+      },
+      {
+        "id": "entry-5166",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 85,
+          "short_chars": 85,
+          "medium_words": 54,
+          "long_words": 107
+        }
+      },
+      {
+        "id": "entry-5666",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 82,
+          "short_chars": 82,
+          "medium_words": 67,
+          "long_words": 126
+        }
+      },
+      {
+        "id": "entry-5810",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 74,
+          "short_chars": 74,
+          "medium_words": 60,
+          "long_words": 113
+        }
+      },
+      {
+        "id": "entry-5866",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 82,
+          "short_chars": 82,
+          "medium_words": 62,
+          "long_words": 110
+        }
+      },
+      {
+        "id": "entry-6420",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 75,
+          "short_chars": 75,
+          "medium_words": 57,
+          "long_words": 101
+        }
+      },
+      {
+        "id": "entry-6509",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 65,
+          "short_chars": 65,
+          "medium_words": 58,
+          "long_words": 107
+        }
+      },
+      {
+        "id": "entry-6617",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 75,
+          "short_chars": 75,
+          "medium_words": 62,
+          "long_words": 120
+        }
+      },
+      {
+        "id": "entry-6666",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 66,
+          "short_chars": 66,
+          "medium_words": 64,
+          "long_words": 118
+        }
+      },
+      {
+        "id": "entry-6753",
+        "flags": [
+          "non_https_source_url"
+        ],
+        "lengths": {
+          "title_chars": 66,
+          "short_chars": 155,
+          "medium_words": 63,
+          "long_words": 189
+        }
+      },
+      {
+        "id": "entry-6754",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 64,
+          "short_chars": 64,
+          "medium_words": 59,
+          "long_words": 110
+        }
+      },
+      {
+        "id": "entry-6813",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 76,
+          "short_chars": 76,
+          "medium_words": 52,
+          "long_words": 112
+        }
+      },
+      {
+        "id": "entry-6836",
+        "flags": [
+          "unmapped_source_url"
+        ],
+        "lengths": {
+          "title_chars": 71,
+          "short_chars": 90,
+          "medium_words": 49,
+          "long_words": 142
+        }
+      },
+      {
+        "id": "entry-6899",
+        "flags": [
+          "long_out_of_140_300"
+        ],
+        "lengths": {
+          "title_chars": 71,
+          "short_chars": 71,
+          "medium_words": 61,
+          "long_words": 114
+        }
+      }
+    ],
+    "prior_207_unmapped_urls": [
+      {
+        "id": "entry-6836",
+        "urls": [
+          "https://www.lsc.gov/i-am-grantee/laws-regulations-and-guidance/lsc-appropriations"
+        ]
+      }
+    ],
+    "last30_explicit_hold_count": 5,
+    "total_explicit_holds_preserved": 30,
+    "note": "Proposal QA does not approve original claims or authorize canonical/Neon writes. Last30 worker 11 explicitly retains frozen-original preservation HOLD for all five IDs.",
+    "current_unmapped_url_record_count": 1,
+    "prior_gate_6509_note": "entry-6509 retains its historical source_url_mapping_gap gate flag, but the current effective branch output has removed the previously unmapped Roll Call URL and its remaining NBC source is mapped. The historical hold is not cleared by this audit."
+  },
+  "terminal_distribution_correction": {
+    "earlier_worker18_207_audit_used_prompt_classification_for_all_270": "That framing is superseded. The authoritative terminal distribution is 29 accepted_source, 237 needs_correction, 4 exclusion_candidate, and zero unresolved/missing. It was never correct to state that all 270 terminal outcomes were needs_correction."
+  },
+  "proposal_rows": 237
+}
