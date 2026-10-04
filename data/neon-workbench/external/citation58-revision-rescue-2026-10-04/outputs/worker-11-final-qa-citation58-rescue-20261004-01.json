@@ -1,0 +1,331 @@
+{
+  "record_type": "durable_final_qa",
+  "artifact_id": "worker-11-citation58-rescue-final-qa-20261004-01",
+  "created_at": "2026-10-04T06:16:53.365528+00:00",
+  "scope": "Final QA reconciliation for exactly the three citation58 revision-rescue keys; does not apply proposals to canonical records.",
+  "branch": {
+    "name": "ls/11-trump-files-sample100-review-11-of-12-mShY",
+    "reviewed_batch_head": "b198ef6abdc8b47149ae84d247c96b12a5ad603b"
+  },
+  "batch_file": "data/neon-workbench/external/citation58-revision-rescue-2026-10-04/outputs/worker-11-batch-citation58-revision-rescue-20261003-01.jsonl",
+  "batch_id": "worker-11-citation58-revision-rescue-20261003-01",
+  "coordinator_source": {
+    "commit": "eab779ec075174445237101c2fdf0e72d771d051",
+    "path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+    "sha256": "c39525df346c7b91046d1b79a70218495abef578654321de584864415ad2ad22",
+    "expected_keys": [
+      "entry-3832",
+      "entry-4232",
+      "entry-5309"
+    ],
+    "row_dispositions": {
+      "entry-3832": "narrower_revision_required",
+      "entry-4232": "narrower_revision_required",
+      "entry-5309": "narrower_revision_required"
+    }
+  },
+  "assignment_source": {
+    "commit": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+    "path": "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-11-input.jsonl",
+    "sha256": "46fa711b53c7a1665a846eabe328bfc10a1cc34e20f2fb08dd5b516765a2334a"
+  },
+  "expected_terminal_ids": [
+    "entry-3832",
+    "entry-4232",
+    "entry-5309"
+  ],
+  "terminal_ids_observed": [
+    "entry-3832",
+    "entry-4232",
+    "entry-5309"
+  ],
+  "terminal_exact_set_match": true,
+  "counts": {
+    "expected_terminal_rows": 3,
+    "saved_terminal_rows": 3,
+    "pass": 3,
+    "hold": 0,
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "duplicate_terminal_ids": 0,
+    "source_url_mapping_matches": 3,
+    "provenance_source_files_resolved": 3,
+    "lengths_pass": 3
+  },
+  "terminal_results": [
+    {
+      "key": "entry-3832",
+      "terminal_count": 1,
+      "verdict": "PASS",
+      "prior_qa_disposition": "narrower_revision_required",
+      "frozen_identity_checks": {
+        "record_id_matches_key": true,
+        "entry_number_matches_key": true,
+        "saved_frozen_title_matches": true,
+        "saved_frozen_dates_match": true
+      },
+      "source_provenance": {
+        "source_files": [
+          "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-11-input.jsonl",
+          "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-11-batch-20261003-citation-crossqa-01.jsonl",
+          "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+          "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-11-batch-002.jsonl"
+        ],
+        "source_file_commits": {
+          "assignment_packet": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+          "coordinator_effective_rows": "eab779ec075174445237101c2fdf0e72d771d051",
+          "prior_source_branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+          "prior_source_commit": "08eda3cef3f0050e903b27de3ea7ef9576e69b0b"
+        },
+        "prior_source_file_commit_object_check": "present",
+        "urls": [
+          "https://www.presidency.ucsb.edu/documents/truth-social-posts-august-20-2025"
+        ],
+        "url_to_fact_mappings_match": true,
+        "source_mapping": [
+          {
+            "url": "https://www.presidency.ucsb.edu/documents/truth-social-posts-august-20-2025",
+            "publisher": "The American Presidency Project, University of California, Santa Barbara",
+            "supports": "The archive dates the post to August 20, 2025 and reproduces the exact statement: “We will not approve wind or farmer destroying Solar.” It also records the electricity-cost assertion as Trump’s claim.",
+            "access": "Exa fetched the exact archive URL successfully; the post text and date were present in the returned content."
+          }
+        ],
+        "support_recheck": "Cached exact archive result reproduces the post date and quoted “wind or farmer destroying Solar” language. Revised copy attributes the quote and does not infer implementation or validate the energy-price claim.",
+        "access_record": "Exa cache-only retrieval succeeded with exact post text/date; a separate live retrieval attempt during final QA returned HTTP 504, so no newer live-source claim is made."
+      },
+      "nonfabrication": {
+        "nonfabrication_check": "The quotation matches the archive; the ambiguous wording is preserved. No agency action, project list, permit decision, or energy-cost finding is invented."
+      },
+      "description_lengths": {
+        "actual": {
+          "title_chars": 71,
+          "short_chars": 108,
+          "medium_words": 56,
+          "long_words": 161
+        },
+        "limits": {
+          "short_chars_max": 180,
+          "medium_words": [
+            45,
+            90
+          ],
+          "long_words": [
+            140,
+            300
+          ]
+        },
+        "pass": {
+          "short": true,
+          "medium": true,
+          "long": true
+        },
+        "saved_counts_match_recomputed": true
+      },
+      "explicit_blockers": [],
+      "proposal_status": "PROPOSED_NOT_APPROVED"
+    },
+    {
+      "key": "entry-4232",
+      "terminal_count": 1,
+      "verdict": "PASS",
+      "prior_qa_disposition": "narrower_revision_required",
+      "frozen_identity_checks": {
+        "record_id_matches_key": true,
+        "entry_number_matches_key": true,
+        "saved_frozen_title_matches": true,
+        "saved_frozen_dates_match": true
+      },
+      "source_provenance": {
+        "source_files": [
+          "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-11-input.jsonl",
+          "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-11-batch-20261003-citation-crossqa-01.jsonl",
+          "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+          "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-12-batch-002-cqa.jsonl"
+        ],
+        "source_file_commits": {
+          "assignment_packet": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+          "coordinator_effective_rows": "eab779ec075174445237101c2fdf0e72d771d051",
+          "prior_source_branch": "ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+          "prior_source_commit": "96593dee15f4113d861cb4b02b35657bedd9a69f"
+        },
+        "prior_source_file_commit_object_check": "present",
+        "urls": [
+          "https://www.federalregister.gov/documents/2025/01/29/2025-02005/establishing-and-implementing-the-presidents-department-of-government-efficiency",
+          "https://www.washingtonpost.com/politics/2026/07/06/elon-musks-us-doge-service-announces-its-formal-end/"
+        ],
+        "url_to_fact_mappings_match": true,
+        "source_mapping": [
+          {
+            "url": "https://www.federalregister.gov/documents/2025/01/29/2025-02005/establishing-and-implementing-the-presidents-department-of-government-efficiency",
+            "publisher": "Federal Register / Executive Office of the President",
+            "supports": "Executive Order 14158 renames USDS, establishes the U.S. DOGE Service Temporary Organization, sets its termination date as July 4, 2026, says termination does not end other authorities/provisions, and directs agency heads to establish DOGE teams.",
+            "access": "Exa fetched the exact Federal Register URL successfully and returned the order text."
+          },
+          {
+            "url": "https://www.washingtonpost.com/politics/2026/07/06/elon-musks-us-doge-service-announces-its-formal-end/",
+            "publisher": "The Washington Post",
+            "supports": "July 6, 2026 article lead says the U.S. DOGE Service marked what it said was the end of official work over Independence Day and notes the temporary organization had been expected to terminate July 4.",
+            "access": "A direct request had returned HTTP 403 in the prior review; this follow-up used Exa on the exact URL and received a successful result with the headline, byline, date, and lead paragraph. The article body beyond that returned text was not treated as verified."
+          }
+        ],
+        "support_recheck": "Federal Register text supports EO 14158 and the temporary organization’s July 4, 2026 termination date, with other authorities/agency teams not thereby ended. The Washington Post exact-URL result supports only the article headline/date/byline and lead statement that the service marked what it said was an end of official work over Independence Day.",
+        "access_record": "Exa exact-URL retrieval succeeded for both sources. Washington Post body text beyond the returned lead was not treated as verified."
+      },
+      "nonfabrication": {
+        "nonfabrication_check": "The title and copy distinguish the scheduled termination of the temporary organization from the attributed report about official work; no agency-wide cessation, job-loss, cost, or savings result is asserted."
+      },
+      "description_lengths": {
+        "actual": {
+          "title_chars": 117,
+          "short_chars": 119,
+          "medium_words": 52,
+          "long_words": 162
+        },
+        "limits": {
+          "short_chars_max": 180,
+          "medium_words": [
+            45,
+            90
+          ],
+          "long_words": [
+            140,
+            300
+          ]
+        },
+        "pass": {
+          "short": true,
+          "medium": true,
+          "long": true
+        },
+        "saved_counts_match_recomputed": true
+      },
+      "explicit_blockers": [],
+      "proposal_status": "PROPOSED_NOT_APPROVED"
+    },
+    {
+      "key": "entry-5309",
+      "terminal_count": 1,
+      "verdict": "PASS",
+      "prior_qa_disposition": "narrower_revision_required",
+      "frozen_identity_checks": {
+        "record_id_matches_key": true,
+        "entry_number_matches_key": true,
+        "saved_frozen_title_matches": true,
+        "saved_frozen_dates_match": true
+      },
+      "source_provenance": {
+        "source_files": [
+          "data/neon-workbench/external/citation190-crossqa-2026-10-03/worker-11-input.jsonl",
+          "data/neon-workbench/external/citation190-crossqa-2026-10-03/outputs/worker-11-batch-20261003-citation-crossqa-01.jsonl",
+          "data/neon-workbench/external/account2-release-round-2026-10-04/worker-17/worker-17-account5-citation190-effective-001.jsonl",
+          "data/neon-workbench/external/description-completion/2026-09-30/wave3-citation-qa-2026-10-03/outputs/account1-worker-01-batch-20261003-b.jsonl"
+        ],
+        "source_file_commits": {
+          "assignment_packet": "9ea34e84716e0599d8c63e0bb0714f64f545df25",
+          "coordinator_effective_rows": "eab779ec075174445237101c2fdf0e72d771d051",
+          "prior_source_branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
+          "prior_source_commit": "9098660508ee97e9ab5ab4daac23902fe5dde4a8"
+        },
+        "prior_source_file_commit_object_check": "present",
+        "urls": [
+          "https://ag.ny.gov/sites/default/files/court_stamped_petition.pdf"
+        ],
+        "url_to_fact_mappings_match": true,
+        "source_mapping": [
+          {
+            "url": "https://ag.ny.gov/sites/default/files/court_stamped_petition.pdf",
+            "publisher": "New York State Office of the Attorney General",
+            "supports": "The official verified petition alleges a January 28, 2016 Des Moines fundraiser; its paragraphs 34 and 39 say the event was held in lieu of a televised debate, raised approximately $5.6 million in tax-free donations, and $2.823 million went to the Foundation, with the remainder donated directly by private donors to veterans’ charity groups.",
+            "access": "Exa fetched the exact official PDF URL successfully and returned its verified-petition text and the relevant fundraiser passages."
+          }
+        ],
+        "support_recheck": "The exact official New York AG court_stamped_petition.pdf is a verified petition and its retrieved text supports the January 28, 2016 fundraiser, amounts, remainder distribution, debate timing, and attributed campaign-coordination allegations.",
+        "access_record": "Exa exact-URL retrieval succeeded and returned verified-petition text including the relevant fundraiser passages."
+      },
+      "nonfabrication": {
+        "nonfabrication_check": "Amounts and conduct are attributed to petition allegations. The previously misidentified trump_foundation.pdf court opinion is excluded; no allegation is described as a judicial finding."
+      },
+      "description_lengths": {
+        "actual": {
+          "title_chars": 97,
+          "short_chars": 153,
+          "medium_words": 51,
+          "long_words": 150
+        },
+        "limits": {
+          "short_chars_max": 180,
+          "medium_words": [
+            45,
+            90
+          ],
+          "long_words": [
+            140,
+            300
+          ]
+        },
+        "pass": {
+          "short": true,
+          "medium": true,
+          "long": true
+        },
+        "saved_counts_match_recomputed": true
+      },
+      "explicit_blockers": [],
+      "proposal_status": "PROPOSED_NOT_APPROVED"
+    }
+  ],
+  "nonterminal_batch_records": {
+    "batch_meta_count": 1,
+    "checkpoint_count": 1,
+    "existing_final_exact_set_qa_count": 1,
+    "checkpoints": [
+      {
+        "record_type": "checkpoint",
+        "stage": "all_assigned_terminal_rows_written",
+        "records_completed": 3,
+        "keys_completed": [
+          "entry-3832",
+          "entry-4232",
+          "entry-5309"
+        ],
+        "pass_count": 3,
+        "hold_count": 0,
+        "excluded_count": 0,
+        "status": "checkpointed"
+      }
+    ],
+    "existing_rollup": [
+      {
+        "record_type": "final_exact_set_qa",
+        "expected_keys": [
+          "entry-3832",
+          "entry-4232",
+          "entry-5309"
+        ],
+        "reviewed_keys": [
+          "entry-3832",
+          "entry-4232",
+          "entry-5309"
+        ],
+        "exact_set_match": true,
+        "counts": {
+          "supported_proposal": 3,
+          "narrower_revision_required": 0,
+          "hold": 0,
+          "intentional_exclusion": 0
+        }
+      }
+    ],
+    "counting_rule": "Checkpoint and final-rollup keys are summarized separately and are not counted as terminal result rows."
+  },
+  "safety": {
+    "neon_calls": 0,
+    "ddl": 0,
+    "dml": 0,
+    "canonical_edits": 0,
+    "other_worker_edits": 0,
+    "pr_opened": false,
+    "proposal_applied": false
+  },
+  "final_status": "PASS for all three revised proposals, with source-access limitations stated per key."
+}
