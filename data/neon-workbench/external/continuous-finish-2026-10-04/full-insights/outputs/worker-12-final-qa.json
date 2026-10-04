@@ -1,0 +1,24 @@
+{
+  "worker": 12,
+  "job": "full-insights-12",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-12-input.jsonl",
+  "assigned_count": 93,
+  "terminal_count": 93,
+  "unique_record_ids": 93,
+  "missing_record_ids": [],
+  "unexpected_record_ids": [],
+  "duplicate_record_ids": [],
+  "status_counts": {
+    "complete": 93,
+    "insufficient": 0
+  },
+  "evidence_mapping_count": 755,
+  "literal_quote_validation": "passed for every evidence_map basis_quote and blocker quote against the assigned packet's staged/frozen text",
+  "insight_schema_validation": "passed; core fields supported, quantities and relations empty for all records",
+  "checkpoint_validation": "passed; 93 of 93 assigned IDs recorded",
+  "source_policy": "Used only supplied staged/frozen text and supplied source mappings; no web searches; source pages were not independently checked.",
+  "amendments": [],
+  "code_or_canonical_data_changes": false,
+  "result": "PASS"
+}
