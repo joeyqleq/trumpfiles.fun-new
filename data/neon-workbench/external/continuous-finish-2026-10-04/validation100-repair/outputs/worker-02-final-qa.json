@@ -1,0 +1,76 @@
+{
+  "task": "validation100-repair-02",
+  "input_commit": "5bad039a6b1abdc3e85d2bb4487a02dc23bc4bfe",
+  "review_commit": "0fa288ff3557aa017208f715f128060491c4e6ff",
+  "original_output_commit": "d157522d520e666fdb868f5030eefa6d1d882a06",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/worker-02-input.jsonl",
+  "review_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-qa/outputs/worker-02-terminal.jsonl",
+  "original_output_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100/outputs/worker-02-terminal.jsonl",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-02-terminal.jsonl",
+  "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/validation100-repair/outputs/worker-02-amendments.jsonl",
+  "assigned_ids": [
+    "entry-6848",
+    "entry-3035",
+    "entry-1110",
+    "entry-4209",
+    "entry-2453",
+    "entry-5781",
+    "entry-2823",
+    "entry-6912",
+    "entry-143"
+  ],
+  "counts": {
+    "rows": 9,
+    "unique_ids": 9,
+    "complete": 9,
+    "insufficient": 0,
+    "evidence_items": 74
+  },
+  "exact_set": {
+    "missing_ids": [],
+    "extra_ids": [],
+    "duplicate_ids": [],
+    "pass": true
+  },
+  "validation": {
+    "jsonl_parse": true,
+    "row_schema": true,
+    "enum_values": true,
+    "all_evidence_quotes_literal_substrings_of_supplied_staged_text": true,
+    "all_non_unknown_fields_and_array_elements_mapped": true,
+    "quantity_and_relation_evidence_consistent": true,
+    "source_urls_are_supplied_mappings_not_claims_of_page_review": true
+  },
+  "review_reconciliation": {
+    "passing_rows_preserved_unchanged": [
+      "entry-6848",
+      "entry-3035",
+      "entry-1110",
+      "entry-4209",
+      "entry-2453",
+      "entry-5781",
+      "entry-6912",
+      "entry-143"
+    ],
+    "corrected_row": "entry-2823",
+    "corrected_field": "insight_facts.relations[0]",
+    "correction": "Chinese government acted_on Ivanka Trump’s brand trademark applications, including the voting-machine category.",
+    "additional_literal_evidence_findings": []
+  },
+  "contradictions_and_limits": [
+    "entry-6848: frozen synopsis adds account and downstream-reaction details absent from the staged description; excluded.",
+    "entry-3035: the planned declaration is reported through Priebus’s recollection, not an observed or recorded announcement.",
+    "entry-4209: staged medium and frozen synopsis include labor participation, wage, and financial-sector figures the staged long text says are unsupported by the linked BBC report; omitted. Trump-policy causation is not established.",
+    "entry-2453: the finding is a regulatory action against Trump Plaza, not a personal criminal conviction of Donald Trump or proof he directed the arrangement.",
+    "entry-5781: the text does not establish that Trump’s remark caused targeting, that Russia found the specific emails, or Trump’s intent; no charge against Trump is asserted.",
+    "entry-2823: timing raised conflict-of-interest questions but does not establish quid pro quo or U.S. policy influence; preliminary trademark approval does not establish manufacture or election administration.",
+    "entry-6912: revenue is described as substantial with no amount; 2,977 refers to people killed on September 11, not protestors. Sportswashing is attributed to critics.",
+    "entry-143: the staged medium text frames ECFR’s account as analyst interpretation rather than an official single plan; broader long-description claims are excluded."
+  ],
+  "source_handling": "Used supplied staged text and source mappings only. No supplied URL was visited; evidence_status is supplied_text. No web search or new scoring.",
+  "scope_controls": "Only validation100-repair output artifacts were added. No canonical, Neon, or application-code edits. No PR requested.",
+  "artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "result": "pass"
+}
