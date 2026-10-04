@@ -1,0 +1,8 @@
+{
+  "record_id": "entry-2731",
+  "status": "pass",
+  "terminal_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-46-terminal.jsonl",
+  "terminal_row_sha256": "c24eabb0f301dbbe2eb7624f402947db7c39ed5a7a46067fb9914308e2104272",
+  "validation_status": "valid",
+  "proposal_only": true
+}
