@@ -1,0 +1,71 @@
+{
+  "task": "Wave3 held204 finalization 2026-10-04, worker 04",
+  "batch_file": "worker-04-batch-UNIQUE.jsonl",
+  "status": "complete",
+  "checkpoints": [
+    {
+      "after_rows": 5,
+      "keys": [
+        "entry-1728",
+        "entry-2106",
+        "entry-236",
+        "entry-2624",
+        "entry-3009"
+      ],
+      "pass_count": 3,
+      "hold_count": 2,
+      "checkpoint_status": "complete"
+    },
+    {
+      "after_rows": 10,
+      "keys": [
+        "entry-1728",
+        "entry-2106",
+        "entry-236",
+        "entry-2624",
+        "entry-3009",
+        "entry-37",
+        "entry-3985",
+        "entry-4353",
+        "entry-5462",
+        "entry-5996"
+      ],
+      "pass_count": 7,
+      "hold_count": 3,
+      "checkpoint_status": "complete"
+    },
+    {
+      "after_rows": 14,
+      "keys": [
+        "entry-1728",
+        "entry-2106",
+        "entry-236",
+        "entry-2624",
+        "entry-3009",
+        "entry-37",
+        "entry-3985",
+        "entry-4353",
+        "entry-5462",
+        "entry-5996",
+        "entry-6293",
+        "entry-6997",
+        "entry-824",
+        "entry-978"
+      ],
+      "pass_count": 8,
+      "hold_count": 6,
+      "checkpoint_status": "complete"
+    }
+  ],
+  "final_row_count": 14,
+  "final_pass_count": 8,
+  "final_hold_count": 6,
+  "blocking_ids": [
+    "entry-2106",
+    "entry-2624",
+    "entry-37",
+    "entry-6997",
+    "entry-824",
+    "entry-978"
+  ]
+}
