@@ -1,0 +1,55 @@
+{
+  "job": "changed105-20",
+  "worker": 20,
+  "source_branch": "codex/final-description-scores-2026-10-04",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "input_file": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-20-input.jsonl",
+  "input_sha256": "397c43349877b99a07080734bfb6f5a85dcd7b9e740a099262427b3e82d5bbda",
+  "expected_count": 9,
+  "expected_ids": [
+    "entry-3678",
+    "entry-4097",
+    "entry-6146",
+    "entry-275",
+    "entry-6395",
+    "entry-6531",
+    "entry-2721",
+    "entry-2528",
+    "entry-6245"
+  ],
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-20-terminal.jsonl",
+  "terminal_sha256": "2cec19a3515d259e0529ca8e87d78c8d0e1a7e247a859fbc12f34fd3b643c0fd",
+  "terminal_rows": 9,
+  "terminal_ids": [
+    "entry-3678",
+    "entry-4097",
+    "entry-6146",
+    "entry-275",
+    "entry-6395",
+    "entry-6531",
+    "entry-2721",
+    "entry-2528",
+    "entry-6245"
+  ],
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "scored": 9,
+    "deferred": 0
+  },
+  "version": "impact-v2",
+  "dimension_precision": "one decimal place, range 0–10",
+  "prior_terminal_rows": 0,
+  "rows_appended": 9,
+  "amendments": [],
+  "original_score_overwrites": 0,
+  "canonical_edits": 0,
+  "neon_writes": 0,
+  "web_research": false,
+  "extra_subagents": 0,
+  "artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "qa_status": "passed: exact nine IDs, no missing/extra/duplicate rows; required schema and dimension checks passed"
+}
