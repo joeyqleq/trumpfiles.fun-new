@@ -1,0 +1,72 @@
+{
+  "worker_id": "held336-35",
+  "source_branch": "codex/held336-research-2026-10-05",
+  "source_commit": "5f62d1c2569277d9b25e9cb07c6492ec5d6988fb",
+  "target_branch": "ls/6-trump-files-sample100-review-06-of-12-pfm2",
+  "assigned_record_ids": [
+    "entry-2418",
+    "entry-5851",
+    "entry-6642",
+    "entry-6915"
+  ],
+  "effective_terminal_records": [
+    {
+      "record_id": "entry-2418",
+      "status": "draft_as_supplied",
+      "latest_revision": 2,
+      "gate_errors": []
+    },
+    {
+      "record_id": "entry-5851",
+      "status": "pass",
+      "latest_revision": 1,
+      "gate_errors": []
+    },
+    {
+      "record_id": "entry-6642",
+      "status": "pass",
+      "latest_revision": 1,
+      "gate_errors": []
+    },
+    {
+      "record_id": "entry-6915",
+      "status": "hold",
+      "latest_revision": 2,
+      "gate_errors": []
+    }
+  ],
+  "validation": {
+    "validator": "data/neon-workbench/scripts/validate_held336.py from source commit",
+    "result": "pass",
+    "exact_assigned_set": true,
+    "one_effective_terminal_per_parent": true,
+    "source_fact_map_literal_quotes_checked": true,
+    "impact_v2_required_fields_checked": true
+  },
+  "immutable_amendments": [
+    {
+      "file": "worker-35-amendment-1.jsonl",
+      "revision": 1,
+      "records": [
+        "entry-2418",
+        "entry-5851",
+        "entry-6642",
+        "entry-6915"
+      ],
+      "reason": "Add complete impact-v2 fields required by RUBRIC.md without editing the checkpointed terminal rows."
+    },
+    {
+      "file": "worker-35-amendment-2.jsonl",
+      "revision": 2,
+      "records": [
+        "entry-2418",
+        "entry-6915"
+      ],
+      "reason": "Align draft insight mapping to its supplied allegation and remove an unsupported absence claim from the hold source_fact_map."
+    }
+  ],
+  "frozen_worker35_input_sha256": "28f38cf8d783eadb218e8df504cf5bcd7a977fd0899a8382ba68e170ac825eeb",
+  "research_access_note": "Firecrawl returned HTTP 429 rate limits; successful direct HTTP fetches and Exa search excerpts are recorded per source/record.",
+  "live_or_canonical_writes": false,
+  "pull_request_created": false
+}
