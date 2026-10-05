@@ -1,0 +1,32 @@
+{
+  "job": "full-insights-02",
+  "packet_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "packet_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-02-input.jsonl",
+  "assigned_count": 93,
+  "terminal_rows": 93,
+  "unique_record_ids": 93,
+  "exact_assigned_set_match": true,
+  "checkpoint_complete": true,
+  "status_counts": {
+    "complete": 91,
+    "insufficient": 2
+  },
+  "validations": {
+    "proposal_only_true_for_all_rows": true,
+    "statuses_valid": true,
+    "core_schema_and_enum_values_valid": true,
+    "evidence_map_covers_every_non_unknown_core_value": true,
+    "all_basis_quotes_literal_substrings_of_supplied_packet_text": true,
+    "quantities_empty_for_all_rows": true,
+    "relations_empty_for_all_rows": true,
+    "no_duplicate_or_unassigned_terminal_ids": true,
+    "checkpoint_matches_terminal_set": true
+  },
+  "source_handling": "Only the frozen supplied packet was used; source URLs were not independently checked.",
+  "candidate_extensions": "None retained; quantities and relations remain empty.",
+  "artifact_issues_resolved": [
+    "output_missing"
+  ],
+  "amendments": [],
+  "terminal_sha256": "d812f297e2322f599846875de6b177cc3cf442d581c63e1892e20809f2469505"
+}
