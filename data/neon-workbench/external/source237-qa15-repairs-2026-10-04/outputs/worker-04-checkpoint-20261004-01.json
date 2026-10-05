@@ -1,0 +1,11 @@
+{
+  "artifact_type": "source237_qa15_repair_final_checkpoint",
+  "checked_at_utc": "2026-10-04T06:25:27+00:00",
+  "branch": "ls/4-trump-files-source118-review-04-of-12-P8O6",
+  "repair_output": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-04-batch-20261004-01.jsonl",
+  "final_qa": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-04-final-qa-20261004-01.json",
+  "finding_count": 1,
+  "result": "complete",
+  "commit_scope": "Only the new output, QA, and checkpoint artifacts; target proposal, canonical data, and Neon untouched.",
+  "status": "complete"
+}

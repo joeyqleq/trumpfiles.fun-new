@@ -1,0 +1,77 @@
+{
+  "artifact_type": "source237_qa15_repair_final_qa",
+  "reviewer_worker": "04",
+  "checked_at_utc": "2026-10-04T06:25:27+00:00",
+  "finding_ids": [
+    "entry-5666"
+  ],
+  "actual_result_ids": [
+    "entry-5666"
+  ],
+  "finding_source": "coordinator source237 reconciliation addendum v2",
+  "coordinator_branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "coordinator_checkpoint": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-checkpoint-v2.json",
+  "coordinator_checkpoint_sha256": "54d409e5f63294ad2233b6ab579feefd75ecd6c415713cc4580407397003ea6f",
+  "coordinator_addendum": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-addendum-v2.jsonl",
+  "coordinator_addendum_sha256": "a4e1d1a0f943bf624a1246aabab2e3423c48d192e792fa174a28f39b98f2270c",
+  "source_packet_branch": "codex/source237-reconciliation-2026-10-04",
+  "source_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+  "source_terminal": "data/neon-workbench/external/source237-reconciliation-2026-10-04/source270-terminal.jsonl",
+  "source_terminal_sha256": "3e823142c449c30b9e457e4dd7dfd6e22c4fa18155d331ad97fa3999f4fe9957",
+  "proposal_branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+  "proposal_commit": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+  "proposal_file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-001.jsonl",
+  "proposal_blob_sha256": "ad06627e52055eb1a06896a2926262e3f22b4dd631881c2429536bb58e826654",
+  "output_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-04-batch-20261004-01.jsonl",
+  "output_sha256": "dea8d1a83fd76a497be35e4e58282c873ed49968e80b8ab4e78505cddb03ba42",
+  "per_id": [
+    {
+      "id": "entry-5666",
+      "authoritative_source_status": "needs_correction",
+      "prior_qa_flags": [
+        "copy_length_long"
+      ],
+      "prior_reported_lengths": {
+        "title_chars": 82,
+        "short_chars": 82,
+        "medium_words": 67,
+        "long_words": 126
+      },
+      "final_recomputed_lengths_whitespace": {
+        "title_chars": 82,
+        "short_chars": 82,
+        "medium_words_whitespace": 62,
+        "long_words_whitespace": 146
+      },
+      "final_source_urls": [
+        "https://www.oversight.gov/reports/review-us-park-police-actions-lafayette-park"
+      ],
+      "source_url_map_complete": true,
+      "unsupported_original_claims": [
+        "That the clearing was ordered specifically for a staged photo-op or Trump’s church visit.",
+        "That the entire crowd was peaceful; the OIG described prior property damage and officer injuries and does not support that blanket characterization.",
+        "Any claim that the OIG found no force concerns; its report separately noted warning audibility and other operational issues."
+      ],
+      "exact_evidence_gap": "The OIG review does not determine the legality or appropriateness of every use of force by all agencies and officers; it does not support a blanket characterization that the entire crowd was peaceful or that all force concerns were resolved."
+    }
+  ],
+  "checks": {
+    "one_result_per_finding_id": true,
+    "exact_id_set": true,
+    "current_proposal_title_short_medium_preserved": true,
+    "title_and_short_limits_pass": true,
+    "medium_length_pass": true,
+    "long_length_pass": true,
+    "all_urls_https_and_mapped": true,
+    "added_long_copy_facts_verified_at_exact_oig_url": true,
+    "source_triage_status_remains_needs_correction": true,
+    "no_canonical_or_neon_writes": true
+  },
+  "source_verification": {
+    "url": "https://www.oversight.gov/reports/review-us-park-police-actions-lafayette-park",
+    "retrieval": "Directly retrieved the report text from this URL during QA. It supports the contractor fence-installation purpose, the operation and walk times, planning before awareness of Trump’s potential movement, and 7:30 p.m. fence assembly.",
+    "mapping_scope": "The Department of the Interior OIG report supports the operational purpose (contractor installation of anti-scale fencing), the 6:23–6:50 p.m. clearing and 7:01 p.m. walk, that USPP began planning hours before learning of Trump’s potential movement, and that the contractor began assembling/installing fencing at 7:30 p.m. The report does not resolve every use-of-force question."
+  },
+  "result": "PASS; the sole finding is repaired by adding concise, verifiable chronology to the long description. No other claim, field, or source URL was changed."
+}

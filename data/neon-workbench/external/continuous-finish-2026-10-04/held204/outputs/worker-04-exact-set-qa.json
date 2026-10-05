@@ -1,0 +1,278 @@
+{
+  "artifact_type": "held204_worker_04_exact_set_qa",
+  "checked_at_utc": "2026-10-04T10:42:59.015174+00:00",
+  "finding": "output_missing",
+  "result": "complete",
+  "branch": "ls/4-trump-files-source118-review-04-of-12-P8O6",
+  "input": {
+    "branch": "codex/continuous-finish-2026-10-04",
+    "commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-04-input.jsonl"
+  },
+  "terminal_output": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-04-terminal.jsonl",
+    "sha256": "3b332eea69d290353c01d32f0e8a24c615977a7c8b57c4f4003e5e330357b6ee",
+    "rows": 17,
+    "new_rows_appended": 17,
+    "prior_terminal_rows_preserved": 0
+  },
+  "amendments": [
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-04-amendments.jsonl",
+      "sha256": "17e48394ccaa3e2df8b4bf8b62402e6e9a047a7d83d8349d908bbaeb8e9b8fe5",
+      "record_id": "entry-5565",
+      "reason": "Removed the uncited statement that the bill then went to the Senate; the remaining description retains the sourced House-passage event and meets the 140-word minimum.",
+      "effective_long_words": 148
+    }
+  ],
+  "expected_ids": [
+    "entry-178",
+    "entry-267",
+    "entry-594",
+    "entry-788",
+    "entry-854",
+    "entry-990",
+    "entry-1777",
+    "entry-2340",
+    "entry-2479",
+    "entry-2574",
+    "entry-3117",
+    "entry-3804",
+    "entry-4198",
+    "entry-5094",
+    "entry-5565",
+    "entry-6155",
+    "entry-6340"
+  ],
+  "actual_terminal_ids": [
+    "entry-178",
+    "entry-267",
+    "entry-594",
+    "entry-788",
+    "entry-854",
+    "entry-990",
+    "entry-1777",
+    "entry-2340",
+    "entry-2479",
+    "entry-2574",
+    "entry-3117",
+    "entry-3804",
+    "entry-4198",
+    "entry-5094",
+    "entry-5565",
+    "entry-6155",
+    "entry-6340"
+  ],
+  "status_counts": {
+    "pass": 10,
+    "hold": 7,
+    "exclusion_candidate": 0
+  },
+  "per_record": [
+    {
+      "record_id": "entry-178",
+      "status": "pass",
+      "title_chars": 59,
+      "short_chars": 122,
+      "medium_words": 72,
+      "long_words": 147,
+      "source_count": 1,
+      "preserved_text_snapshots": 4
+    },
+    {
+      "record_id": "entry-267",
+      "status": "pass",
+      "title_chars": 57,
+      "short_chars": 136,
+      "medium_words": 63,
+      "long_words": 141,
+      "source_count": 2,
+      "preserved_text_snapshots": 20
+    },
+    {
+      "record_id": "entry-594",
+      "status": "pass",
+      "title_chars": 51,
+      "short_chars": 95,
+      "medium_words": 62,
+      "long_words": 140,
+      "source_count": 2,
+      "preserved_text_snapshots": 7
+    },
+    {
+      "record_id": "entry-788",
+      "status": "pass",
+      "title_chars": 49,
+      "short_chars": 130,
+      "medium_words": 49,
+      "long_words": 142,
+      "source_count": 2,
+      "preserved_text_snapshots": 6
+    },
+    {
+      "record_id": "entry-854",
+      "status": "hold",
+      "title_chars": 0,
+      "short_chars": 0,
+      "medium_words": 0,
+      "long_words": 0,
+      "source_count": 3,
+      "preserved_text_snapshots": 1
+    },
+    {
+      "record_id": "entry-990",
+      "status": "pass",
+      "title_chars": 60,
+      "short_chars": 77,
+      "medium_words": 65,
+      "long_words": 153,
+      "source_count": 1,
+      "preserved_text_snapshots": 9
+    },
+    {
+      "record_id": "entry-1777",
+      "status": "hold",
+      "title_chars": 0,
+      "short_chars": 0,
+      "medium_words": 0,
+      "long_words": 0,
+      "source_count": 1,
+      "preserved_text_snapshots": 2
+    },
+    {
+      "record_id": "entry-2340",
+      "status": "pass",
+      "title_chars": 64,
+      "short_chars": 158,
+      "medium_words": 70,
+      "long_words": 150,
+      "source_count": 1,
+      "preserved_text_snapshots": 8
+    },
+    {
+      "record_id": "entry-2479",
+      "status": "hold",
+      "title_chars": 64,
+      "short_chars": 157,
+      "medium_words": 66,
+      "long_words": 129,
+      "source_count": 2,
+      "preserved_text_snapshots": 6
+    },
+    {
+      "record_id": "entry-2574",
+      "status": "hold",
+      "title_chars": 0,
+      "short_chars": 0,
+      "medium_words": 0,
+      "long_words": 0,
+      "source_count": 1,
+      "preserved_text_snapshots": 10
+    },
+    {
+      "record_id": "entry-3117",
+      "status": "hold",
+      "title_chars": 84,
+      "short_chars": 113,
+      "medium_words": 52,
+      "long_words": 143,
+      "source_count": 1,
+      "preserved_text_snapshots": 5
+    },
+    {
+      "record_id": "entry-3804",
+      "status": "pass",
+      "title_chars": 68,
+      "short_chars": 97,
+      "medium_words": 61,
+      "long_words": 148,
+      "source_count": 1,
+      "preserved_text_snapshots": 3
+    },
+    {
+      "record_id": "entry-4198",
+      "status": "hold",
+      "title_chars": 44,
+      "short_chars": 119,
+      "medium_words": 59,
+      "long_words": 152,
+      "source_count": 2,
+      "preserved_text_snapshots": 5
+    },
+    {
+      "record_id": "entry-5094",
+      "status": "pass",
+      "title_chars": 59,
+      "short_chars": 137,
+      "medium_words": 61,
+      "long_words": 144,
+      "source_count": 1,
+      "preserved_text_snapshots": 14
+    },
+    {
+      "record_id": "entry-5565",
+      "status": "pass",
+      "title_chars": 31,
+      "short_chars": 116,
+      "medium_words": 65,
+      "long_words": 156,
+      "source_count": 3,
+      "preserved_text_snapshots": 13
+    },
+    {
+      "record_id": "entry-6155",
+      "status": "pass",
+      "title_chars": 57,
+      "short_chars": 97,
+      "medium_words": 49,
+      "long_words": 151,
+      "source_count": 2,
+      "preserved_text_snapshots": 11
+    },
+    {
+      "record_id": "entry-6340",
+      "status": "hold",
+      "title_chars": 75,
+      "short_chars": 121,
+      "medium_words": 61,
+      "long_words": 152,
+      "source_count": 3,
+      "preserved_text_snapshots": 18
+    }
+  ],
+  "checks": {
+    "one_terminal_row_per_id": true,
+    "exact_id_set": true,
+    "no_duplicate_ids": true,
+    "terminal_status_vocabulary_valid": true,
+    "all_rows_proposal_only": true,
+    "all_rows_preserve_non_null_text": true,
+    "all_rows_trace_pinned_review": true,
+    "source_urls_mapped_exactly": true,
+    "pass_title_short_and_description_lengths_valid": true,
+    "pass_rows_have_evidence_fact_maps": true,
+    "hold_rows_have_blockers": true,
+    "only_requested_records_touched": true,
+    "canonical_neon_and_application_code_untouched": true
+  },
+  "source_review_notes": {
+    "entry-594": "One focused retrieval of TIME and Roll Call transcripts returned HTTP 200; the short text and source URLs were corrected.",
+    "entry-788": "One focused retrieval of DOJ and AP sources returned HTTP 200; stale generic links were removed.",
+    "entry-3804": "One focused AP refetch returned HTTP 403. The exact AP URL and reported facts were already verified in the pinned worker review, so the proposal is limited to those previously verified facts and records the refetch limitation.",
+    "unresolved_holds": [
+      "entry-854",
+      "entry-1777",
+      "entry-2479",
+      "entry-2574",
+      "entry-3117",
+      "entry-4198",
+      "entry-6340"
+    ]
+  },
+  "scope_notes": [
+    "No canonical data, Neon state, or application code was changed.",
+    "No UI or code flow changed; tests and visual verification do not apply to this data-only artifact.",
+    "No PR was created, per the task instruction. Task status was left unchanged.",
+    "One immutable amendment is used instead of overwriting the terminal row for entry-5565."
+  ]
+}
