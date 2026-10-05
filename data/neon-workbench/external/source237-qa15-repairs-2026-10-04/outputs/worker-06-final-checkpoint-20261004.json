@@ -1,0 +1,34 @@
+{
+  "artifact": "source237 QA-15 worker-06 final checkpoint",
+  "status": "complete",
+  "branch": "ls/6-trump-files-source118-review-06-of-12-vQap",
+  "finding_set_exact": true,
+  "qa_path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-06-final-qa-20261004.json",
+  "qa_sha256": "9aa246fa5d4644ff3e3e9eeb95fa9f997c160f11215104da2146e77075b90999",
+  "result_path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-06-batch-20261004-001.jsonl",
+  "result_sha256": "7851a0d9a92afaab653671b549946a8580dd7e4f8b2617fa57ec2661c85a06d9",
+  "exact_ids": [
+    "entry-5866"
+  ],
+  "row_count": 1,
+  "result_status": "corrected_claim_proposal",
+  "source237_status_preserved": "needs_correction",
+  "lengths": {
+    "title_chars": 82,
+    "short_chars": 82,
+    "medium_words": 60,
+    "long_words": 153
+  },
+  "source_urls": [
+    "https://www.bloomberg.com/news/articles/2022-02-16/who-won-the-melania-trump-nft-auction-trump-crypto-wallet-linked-to-185k-funds"
+  ],
+  "source_mapping_complete": true,
+  "unsupported_claims_and_precise_gap_recorded": true,
+  "source_review_note": "Live retrieval attempts were blocked (Firecrawl HTTP 429; Exa HTTP 401). Used the current proposal and immutable coordinator addendum’s exact URL-specific facts and limits; the long copy clarifies only the single bid, contemporaneous valuation, and limits already mapped there. No URL or new factual claim was added.",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "proposal_branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+  "proposal_commit": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+  "proposal_file_sha256": "ad06627e52055eb1a06896a2926262e3f22b4dd631881c2429536bb58e826654",
+  "canonical_or_neon_modified": false,
+  "pr_requested": false
+}

@@ -1,0 +1,19 @@
+{
+  "job": "full-insights-66",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_rows": 92,
+  "terminal_rows": 92,
+  "assigned_ids_match_packet": true,
+  "missing_ids": [],
+  "unexpected_ids": [],
+  "duplicate_terminal_ids": 0,
+  "status_counts": {
+    "complete": 89,
+    "insufficient": 3
+  },
+  "quote_and_evidence_checks": "passed",
+  "approved_extensions": "quantities and relations empty on every row",
+  "checkpoint_complete": true,
+  "errors": [],
+  "qa_status": "passed"
+}
