@@ -1,0 +1,80 @@
+{
+  "artifact": "source237-qa15-repair-final-qa",
+  "review_date": "2026-10-04",
+  "reviewer_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+  "assigned_ids": [
+    "entry-6666"
+  ],
+  "observed_ids": [
+    "entry-6666"
+  ],
+  "exact_set_pass": true,
+  "coordinator": {
+    "branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+    "commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+    "checkpoint_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-checkpoint-v2.json",
+    "checkpoint_sha256": "54d409e5f63294ad2233b6ab579feefd75ecd6c415713cc4580407397003ea6f",
+    "addendum_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-addendum-v2.jsonl",
+    "addendum_sha256": "a4e1d1a0f943bf624a1246aabab2e3423c48d192e792fa174a28f39b98f2270c",
+    "source237_packet_branch": "codex/source237-reconciliation-2026-10-04",
+    "source237_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+    "source237_terminal_path": "data/neon-workbench/external/source237-reconciliation-2026-10-04/source270-terminal.jsonl",
+    "source237_terminal_sha256": "3e823142c449c30b9e457e4dd7dfd6e22c4fa18155d331ad97fa3999f4fe9957"
+  },
+  "current_proposal": {
+    "branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+    "commit": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+    "file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-002.jsonl",
+    "file_sha256": "45eb9c4d1d7ecc46884884a22391b911adb572ab4c743a2df2689db2a5751422",
+    "record_id": "entry-6666",
+    "source_urls_match_current_proposal": true
+  },
+  "repair_output": {
+    "path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-10-batch-20261004-001.jsonl",
+    "sha256": "75b9024927d639938c03caf23bdfde4653ac07318513e76fcdd2258362bcbd9b",
+    "row_count": 1,
+    "terminal_rows": 1,
+    "changed_fields": [
+      "description_long"
+    ],
+    "copy_lengths": {
+      "title_chars": 66,
+      "short_chars": 66,
+      "medium_words": 61,
+      "long_words": 170
+    },
+    "limits_pass": true,
+    "all_source_urls_mapped_once": true,
+    "all_urls_https": true,
+    "unsupported_original_claims_preserved_as_exclusions": true,
+    "precise_evidence_gap_retained": true,
+    "result": "pass"
+  },
+  "source_access": [
+    {
+      "url": "https://www.bls.gov/news.release/archives/prod5_11192020.pdf",
+      "direct_fetch_status": "HTTP 403",
+      "note": "Official BLS PDF was inaccessible to direct automated retrieval in this run; the pinned source237 reconciliation and current proposal explicitly map it to the 1.1% 2019 output decline."
+    },
+    {
+      "url": "https://www.bls.gov/opub/mlr/2020/article/pdf/employment-expansion-continued-in-2019-but-growth-slowed-in-several-industries.pdf",
+      "direct_fetch_status": "HTTP 403",
+      "note": "Official BLS PDF was inaccessible to direct automated retrieval in this run; the pinned source237 reconciliation and current proposal explicitly map it to 61,000 manufacturing jobs added in 2019 and 264,000 in 2018."
+    },
+    {
+      "url": "https://www.federalreserve.gov/econres/feds/files/2019086pap.pdf",
+      "direct_fetch_status": "HTTP 200",
+      "note": "Federal Reserve PDF downloaded from the exact cited URL; this repair uses only the mapped finding about relative employment reductions in more tariff-exposed industries and analyzed tariff channels."
+    }
+  ],
+  "hold_decision": {
+    "held": false,
+    "reason": "The correction proposal and source237 reconciliation provide explicit, source-specific facts sufficient to expand only the long description; no unsupported detail was added. The final correction remains needs_correction and is not represented as an accepted source."
+  },
+  "scope_controls": {
+    "canonical_or_neon_data_edited": false,
+    "source237_inputs_edited": false,
+    "proposal_output_edited": false,
+    "other_ids_edited": false
+  }
+}
