@@ -1,0 +1,32 @@
+{
+  "job": "changed105-13",
+  "status": "complete",
+  "input_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-13-input.jsonl",
+  "rubric_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/RUBRIC.md",
+  "output_path": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-13-terminal.jsonl",
+  "updated_at": "2026-10-04T11:21:33.492998+00:00",
+  "qa": {
+    "expected_count": 9,
+    "actual_count": 9,
+    "expected_record_ids": [
+      "entry-35",
+      "entry-6264",
+      "entry-176",
+      "entry-788",
+      "entry-804",
+      "entry-884",
+      "entry-1784",
+      "entry-3985",
+      "entry-5945"
+    ],
+    "missing_record_ids": [],
+    "extra_record_ids": [],
+    "duplicate_or_missing_count_record_ids": [],
+    "invalid_rows": [],
+    "exact_set_pass": true
+  },
+  "output_sha256": "66799a20eb3c297c104d1ab0e05019c98efe6f47cdfb3fd4701f9456d73eb0c4",
+  "input_sha256": "0d7af53d549739284887f7255fd1df96378c0a457168a431455154412fea5504",
+  "rubric_sha256": "1ac7e1f208a8fe8fde1db5accda6d5b587c79f7780baafa0baa1053909d28d27"
+}
