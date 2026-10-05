@@ -1,0 +1,30 @@
+{
+  "assigned_ids": [
+    "entry-1181",
+    "entry-1461",
+    "entry-1639",
+    "entry-177",
+    "entry-184",
+    "entry-212",
+    "entry-2390",
+    "entry-246",
+    "entry-2534",
+    "entry-266",
+    "entry-282",
+    "entry-293",
+    "entry-324",
+    "entry-342",
+    "entry-344",
+    "entry-4889",
+    "entry-6163",
+    "entry-6486",
+    "entry-6675",
+    "entry-735",
+    "entry-826"
+  ],
+  "count": 21,
+  "workers": 12,
+  "account": 6,
+  "source_manifest": "data/neon-workbench/external/offline-gap653-2026-10-05/manifest-20261005T102855Z.json",
+  "scope": "Explicit copy-consistency flags, not general source factual re-verification."
+}

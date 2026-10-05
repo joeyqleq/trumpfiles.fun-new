@@ -1,0 +1,366 @@
+{
+  "created_at": "2026-10-05T12:09:04.578376+00:00",
+  "status": "offline_editorial_work_complete_not_production_approved",
+  "dataset_manifest": "data/neon-workbench/external/card-consistency21-2026-10-05/manifest-20261005T120428Z.json",
+  "full_catalog": {
+    "source_manifest": "data/neon-workbench/external/card-consistency21-2026-10-05/manifest-20261005T120428Z.json",
+    "index": "data/neon-workbench/external/offline-gap653-2026-10-05/full-catalog-dispositions-20261005T120450Z.jsonl",
+    "sha256": "17b10245b79a49c334860bb5c10009024bca9b72c00e226f340acef1d31a88ab",
+    "rows": 7227,
+    "origins": {
+      "frozen_catalog": 7143,
+      "new_candidate": 84
+    },
+    "descriptions": {
+      "complete": 6891,
+      "needs_context": 53,
+      "held_before_rewrite": 283
+    },
+    "insights": {
+      "complete": 6891,
+      "not_applicable_held": 336
+    },
+    "scores": {
+      "scored": 6758,
+      "deferred": 469
+    },
+    "held_reasons": {
+      "insufficient_event_evidence": 53,
+      "split_required": 32,
+      "soft_hide_candidate": 111,
+      "approved duplicate": 59,
+      "still_unresolved": 81
+    },
+    "coverage": "Every7143 frozen ID and84 candidate IDs accounted for; prior283 held dispositions preserved, not silently excluded.",
+    "production_approved": false,
+    "live_database_changed": false
+  },
+  "eligible_scored_descriptions": 6739,
+  "withheld_historical_scores": 19,
+  "completed_cloud_jobs": 486,
+  "preserved_history_jobs": 132,
+  "word_limit_check": {
+    "checked_complete_records": 6891,
+    "failures": 0,
+    "short_max_characters": 180,
+    "medium_words": [
+      45,
+      90
+    ],
+    "long_words": [
+      140,
+      300
+    ]
+  },
+  "history_file_revisions": 495,
+  "verification_scope": "Word limits, exact ID accounting, schema/decimal arithmetic, rank sequences, literal supplied evidence and preservation; not independent verification of every source.",
+  "production_blockers": [
+    "Distinct content release approval",
+    "Exact current Neon branch and schema/NULL-target preflight",
+    "Current Neon compute/storage headroom and reset evidence"
+  ],
+  "live_database_changed": false,
+  "frozen_export_written": false,
+  "files": [
+    {
+      "path": "data/neon-workbench/PROGRESS.md",
+      "sha256": "a425e0eb50d05ab674ece43f5e7988327bcfe34ce1ad6b0268ed0d642b31595e",
+      "bytes": 10807
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/RUBRIC.md",
+      "sha256": "1ac7e1f208a8fe8fde1db5accda6d5b587c79f7780baafa0baa1053909d28d27",
+      "bytes": 3162
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/assignments.json",
+      "sha256": "ac3f014c6918476010c036be311a6338324d66b310b16dc25a2075a9611d1b88",
+      "bytes": 642
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/coordinator-score-amendments.json",
+      "sha256": "8d9a586ceb558cca0bfab3c846f7b93dbf7f3e1b7ff8526ee69915682cf96735",
+      "bytes": 2061
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/descriptions-final-20261005T120428Z.jsonl",
+      "sha256": "188d82b50cba05ab801e6fb7a4aeef1ee2c2e4d9456502ac1545ee45401c46fa",
+      "bytes": 23501990
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/insights-final-20261005T120428Z.jsonl",
+      "sha256": "b712758d7e87f4a65e029208ba83e5ff4d1bb6e4db64dead6b5ebe2a7a0f4957",
+      "bytes": 22091852
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/manifest-20261005T120428Z.json",
+      "sha256": "0c6a995ceb6042917f19221a4734d0bd5e8e2658d4644bd6065832653f27e8a5",
+      "bytes": 3371
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/provenance-20261005T120428Z.jsonl",
+      "sha256": "0a875a3b77c0898f762639aae5a044877777e8933c5da06a1188f89763b0dda6",
+      "bytes": 267807
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/scores-final-20261005T120428Z.jsonl",
+      "sha256": "cf0dd41f22d3fbaf68db00ee819ffe1158d16f7057dcca64fe8e6474b4478b2f",
+      "bytes": 9937077
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-01-input.jsonl",
+      "sha256": "d1d75861dba07135fd8813711fae7de911fc31a741cecf2a64e489e5cfc1077b",
+      "bytes": 17396
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-02-input.jsonl",
+      "sha256": "d9dd6344106731c96a31ec45571c068e59a72bc5ea7c4cebef6dcaa601a176e3",
+      "bytes": 21582
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-03-input.jsonl",
+      "sha256": "3e484d833a1b7c4f3c3696cb103626a20ff72ac6220b5c173f9397ab4ae6c0fb",
+      "bytes": 20948
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-04-input.jsonl",
+      "sha256": "b21c8926581f409948592d5289e971156c9f7ba88e59fa5eb99fd27e9266a109",
+      "bytes": 20851
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-05-input.jsonl",
+      "sha256": "082261ea64ceb0cc828e24dc4af4f7020f0ecbbc373ae20bbed08d6046a38f5e",
+      "bytes": 26648
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-06-input.jsonl",
+      "sha256": "24e689a9b6dae581cf2bfbd3db642f5d55445aa8d353ba831eda5b69728e4b7f",
+      "bytes": 20107
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-07-input.jsonl",
+      "sha256": "9be8ba634ccc5acf933c67e76b713d69f7389fd6a5a03f72d76f3c1dbac61df5",
+      "bytes": 14555
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-08-input.jsonl",
+      "sha256": "bb2de2730fd61cdaa8121875af90170ba066e8a5d1d91f4f5facc6c4e2154c53",
+      "bytes": 30776
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-09-input.jsonl",
+      "sha256": "ae9dc2f44739455c7b0e03579910dff58636bef2a5053c88d0517b0ba9deb6d5",
+      "bytes": 21065
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-10-input.jsonl",
+      "sha256": "1a03feb45c0a644e8cb99cd27ae737b5fd7d9fdefdc0b354f1fe6cddc7d87820",
+      "bytes": 16908
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-11-input.jsonl",
+      "sha256": "16e70029355907ee9a0af71be1a857889d23ba62ab0b62e7a82e4473f6f3c66e",
+      "bytes": 10567
+    },
+    {
+      "path": "data/neon-workbench/external/card-consistency21-2026-10-05/worker-12-input.jsonl",
+      "sha256": "92d20a6baa07c3c771be769e26608195454fd41270baf30b4deb271d0b0eb219",
+      "bytes": 12696
+    },
+    {
+      "path": "data/neon-workbench/external/consolidated-offline-release-2026-10-05/ora5-validation-20261005T120451Z.json",
+      "sha256": "c68db6bec452e5cb9251edadfd9d819913cdd8dc39ca99e49ffa000bb48f8643",
+      "bytes": 1035
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-01.jsonl",
+      "sha256": "07cebb68630625b2abdf88b5e3dbfde9d4fa84198791293401f2516655115fb6",
+      "bytes": 13932
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-02.jsonl",
+      "sha256": "a85b447450c772adfdd43fb85ef900e6aded2a6086c693f8720a75855e5ccbda",
+      "bytes": 13971
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-03.jsonl",
+      "sha256": "a05cd3d527de6992d80f2cdcd5b307cfebf910ce6b357a4b8f0e69942c4074e2",
+      "bytes": 15920
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-04.jsonl",
+      "sha256": "023a787893630a9b217e2dc8853abbf945d8975424ed3d1f4d770860bbcdcbf7",
+      "bytes": 15836
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-05.jsonl",
+      "sha256": "b42f6ec8ee2d6a08505e0b58ac8502d2431736d115fb275085895febb9e940a1",
+      "bytes": 16680
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-06.jsonl",
+      "sha256": "7b51f7a658c5914a26adb6fe93bf023f0e1551dc0689cd5f991156428dd7bd57",
+      "bytes": 15591
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-07.jsonl",
+      "sha256": "1ee7b2d25db5a58f3d034407318520c86e978f0e9dc0e18658fb6e1473a4df28",
+      "bytes": 13778
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-08.jsonl",
+      "sha256": "7cd4ba67f29b6f08033587291bb06622d04fbf4db9cc3024d2e8db97aca38524",
+      "bytes": 15965
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-09.jsonl",
+      "sha256": "d659aaf07c039d1aeb92943c6e7637c7db040b508991aed368335e65e16b6f98",
+      "bytes": 16352
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-10.jsonl",
+      "sha256": "d9a5305dd8774454a4c7a1a9e2749ed177b9ea74f3516a08d4e0c0bc2f895af7",
+      "bytes": 8968
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-11.jsonl",
+      "sha256": "a50765dda91caed37c6a674e641d0d7c9d3de6ac2d4d666702d80b1a112f5a7b",
+      "bytes": 7550
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/collected/card-consistency21/worker-12.jsonl",
+      "sha256": "8873be1745ee9b5f4f07f533cff83f09a2056cdedadb2dca5a87ab48f7aa4bf4",
+      "bytes": 7399
+    },
+    {
+      "path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights-core-decision.json",
+      "sha256": "24ca7e22845889ff7d0b76c0705ea1ffbe2b6da70cb3e45bf6dfde1b4a7b87f8",
+      "bytes": 332
+    },
+    {
+      "path": "data/neon-workbench/external/offline-gap653-2026-10-05/coordinator-field-amendments-20261005T102855Z.json",
+      "sha256": "41c2bc91ae2ebdce5c062dbffa5712929279a341f36f0abe7ce1b836f8094b3f",
+      "bytes": 21005
+    },
+    {
+      "path": "data/neon-workbench/external/offline-gap653-2026-10-05/coordinator-review-overrides.json",
+      "sha256": "877b236944b8b20e3771093ab94c1bc9e3d338a1c8b36dc021e8971d9282d883",
+      "bytes": 6373
+    },
+    {
+      "path": "data/neon-workbench/external/offline-gap653-2026-10-05/coordinator-schema-amendments-20261005T102855Z.json",
+      "sha256": "1c49249ded5a50029019d8aaa12f2217d1715112709937e59a410f9c445c08f3",
+      "bytes": 1810
+    },
+    {
+      "path": "data/neon-workbench/external/offline-gap653-2026-10-05/full-catalog-dispositions-20261005T120450Z.jsonl",
+      "sha256": "17b10245b79a49c334860bb5c10009024bca9b72c00e226f340acef1d31a88ab",
+      "bytes": 2272616
+    },
+    {
+      "path": "data/neon-workbench/external/offline-gap653-2026-10-05/full-catalog-report-20261005T120450Z.json",
+      "sha256": "7d797b9e806b4245f5f08eb6ebc2e2d1815d78f7a8925f64f4e288d2f0cd4f73",
+      "bytes": 1017
+    },
+    {
+      "path": "data/neon-workbench/external/offline-gap653-2026-10-05/history-audit-20261005T120438Z.json",
+      "sha256": "83d48c1a5e56547197f43f0d1278db2f5b0b60b4f141fd562d48c552836139f6",
+      "bytes": 107
+    },
+    {
+      "path": "data/neon-workbench/external/offline-gap653-2026-10-05/provenance-20261005T102855Z.jsonl",
+      "sha256": "88b3e22f6d041cbe433dd7c696d4227490ba808f9cd5f59fef4dcd7117904d6a",
+      "bytes": 4158646
+    },
+    {
+      "path": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+      "sha256": "17c6f94612d70b1cf23f44ea816fa3cea554cc2cfc249bd07062b3b6e902c281",
+      "bytes": 12234
+    },
+    {
+      "path": "data/neon-workbench/scripts/audit_gap_terminal_history.py",
+      "sha256": "6ffeffb174e65ff1b5268de5057b6edc7547bfa3602ca120aefb47b82abef310",
+      "bytes": 1925
+    },
+    {
+      "path": "data/neon-workbench/scripts/build_full_catalog_disposition_index.py",
+      "sha256": "e013022c79c98ef8bea4c604c4277b3d6b6b9d6a635c52ccdcd6d2dbacecc4ec",
+      "bytes": 3252
+    },
+    {
+      "path": "data/neon-workbench/scripts/finalize_consistency21.py",
+      "sha256": "1281016de7f6a1da3b859af4dedb1fa37a8ce5136c3641abbf1549d2da560209",
+      "bytes": 10638
+    },
+    {
+      "path": "data/neon-workbench/scripts/lightsprint_mcp.py",
+      "sha256": "7f54a754232e218105d432c3d9f4fbde1e41f22d2d64b1c8cacce3b6e3473aab",
+      "bytes": 4867
+    },
+    {
+      "path": "data/neon-workbench/scripts/ora5_final_check.py",
+      "sha256": "7f1aa5200efe95f73b70185cea841545f53d39bfa88c6f6a04efe8c3c5534ffe",
+      "bytes": 3145
+    },
+    {
+      "path": "data/neon-workbench/scripts/prepare_consistency21.py",
+      "sha256": "4dcf7f6ca0109c1da2c3ce0f41eb00a007475d53c3a7c3427abf29b35e9d3658",
+      "bytes": 7123
+    },
+    {
+      "path": "data/neon-workbench/scripts/prepare_continuous_finish.py",
+      "sha256": "dc7a5742b18b2bd9e0a15f695d36321a335e0d3f2b3365601dd307999e4458b7",
+      "bytes": 7577
+    },
+    {
+      "path": "data/neon-workbench/scripts/prepare_offline_gap653.py",
+      "sha256": "3e1afcf75bb87decfda58c971a579065716004ab796115dd1c066eca575cfb05",
+      "bytes": 7172
+    },
+    {
+      "path": "data/neon-workbench/scripts/publish_final_offline_package.py",
+      "sha256": "131dde75042fa2f224d447ea175f971944cbf0aeb345d9dfe33180112132e676",
+      "bytes": 7224
+    },
+    {
+      "path": "data/neon-workbench/scripts/recalibrate_context_quota.py",
+      "sha256": "ba97c7b0ea93e78abc3b45c081baf41439afeb8a1de8127bb46e939f51ef3e11",
+      "bytes": 4864
+    },
+    {
+      "path": "data/neon-workbench/scripts/repair_consistency_wrappers.py",
+      "sha256": "83537ada0c188c76a208a61879d446230cbbd4dc8922adba3aa038b3bbe6f620",
+      "bytes": 2738
+    },
+    {
+      "path": "data/neon-workbench/scripts/run_ora5_release_check.py",
+      "sha256": "223ffb5faa910a8c2e850204408318f29e8ce0149beb55758ad50048da1524f8",
+      "bytes": 1893
+    },
+    {
+      "path": "data/neon-workbench/scripts/supervise_continuous_finish.py",
+      "sha256": "9045d96deaa3c5001fb91fb26cbe3fdbcc0a44e04d9e57b65bcc0a5ea9d5300c",
+      "bytes": 35888
+    },
+    {
+      "path": "data/neon-workbench/scripts/test_finalize_consistency21.py",
+      "sha256": "c77365725e140034c4456169bfc37a8290d33ef0014ff48df2ec78b57b5e4efa",
+      "bytes": 3332
+    },
+    {
+      "path": "docs/neon-manual-safe-import.md",
+      "sha256": "28c9db04e5695f1a52d632b97cd66337101febe43b84190cb538e61f928a2fe8",
+      "bytes": 6135
+    },
+    {
+      "path": "scripts/neon-safe-import.mjs",
+      "sha256": "380dfea76f6e3a316557e278cb0f504e384806cad23f7e5d401b8f1a0a9e6c2b",
+      "bytes": 8514
+    },
+    {
+      "path": "scripts/neon-safe-import.test.mjs",
+      "sha256": "2066416786c276cf5a4c54076eff7865a44c2c085cf089d7b73595e20c8e135f",
+      "bytes": 3024
+    }
+  ]
+}

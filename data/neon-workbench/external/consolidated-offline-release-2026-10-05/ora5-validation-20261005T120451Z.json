@@ -1,0 +1,32 @@
+{
+  "host_role": "Ora5 independent offline dataset check",
+  "counts": {
+    "descriptions": {
+      "complete": 6891,
+      "needs_context": 53
+    },
+    "scores": {
+      "scored": 6758,
+      "deferred": 186
+    },
+    "insights": {
+      "complete": 6891
+    }
+  },
+  "rows": {
+    "descriptions": 6944,
+    "scores": 6944,
+    "insights": 6891
+  },
+  "sha256": {
+    "descriptions": "188d82b50cba05ab801e6fb7a4aeef1ee2c2e4d9456502ac1545ee45401c46fa",
+    "scores": "cf0dd41f22d3fbaf68db00ee819ffe1158d16f7057dcca64fe8e6474b4478b2f",
+    "insights": "b712758d7e87f4a65e029208ba83e5ff4d1bb6e4db64dead6b5ebe2a7a0f4957"
+  },
+  "findings": [],
+  "live_database_access": false,
+  "scope": "ID universes, duplicates, decimal arithmetic, deferred NULLs, ordinal rank sequence; not factual/source verification",
+  "source_manifest": "data/neon-workbench/external/card-consistency21-2026-10-05/manifest-20261005T120428Z.json",
+  "remote_host_alias": "ora5",
+  "remote_folder": "/home/jq/trumpfiles-agents/release-check-20261005T120451Z"
+}

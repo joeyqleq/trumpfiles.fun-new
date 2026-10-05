@@ -1,0 +1,136 @@
+[
+  {
+    "record_id": "entry-1328",
+    "terminal_record": {
+      "record_id": "entry-1328",
+      "status": "complete",
+      "proposal_only": true,
+      "insight_proposal": {
+        "status": "complete",
+        "insight_facts": {
+          "event_state": "proposed",
+          "action_type": "other",
+          "scope": "organization",
+          "legal_stage": "not_applicable",
+          "affected_groups": [],
+          "institutions": [
+            "White House Correspondents' Association"
+          ],
+          "outcome": "Trump said he would attend the White House Correspondents' Association dinner, marking a break with his prior pattern of boycotting the event as president.",
+          "quantities": [],
+          "relations": []
+        },
+        "evidence_map": [
+          {
+            "field": "event_state",
+            "value": "proposed",
+            "basis_quote": "Trump said he would attend the White House Correspondents' Association dinner",
+            "source_url": null,
+            "evidence_status": "supplied_text"
+          },
+          {
+            "field": "action_type",
+            "value": "other",
+            "basis_quote": "Trump said he would attend the White House Correspondents' Association dinner",
+            "source_url": null,
+            "evidence_status": "supplied_text"
+          },
+          {
+            "field": "scope",
+            "value": "organization",
+            "basis_quote": "the White House Correspondents' Association dinner",
+            "source_url": null,
+            "evidence_status": "supplied_text"
+          },
+          {
+            "field": "legal_stage",
+            "value": "not_applicable",
+            "basis_quote": "White House Correspondents' Association dinner",
+            "source_url": null,
+            "evidence_status": "supplied_text"
+          },
+          {
+            "field": "institutions",
+            "value": "White House Correspondents' Association",
+            "basis_quote": "White House Correspondents' Association dinner",
+            "source_url": null,
+            "evidence_status": "supplied_text"
+          },
+          {
+            "field": "outcome",
+            "value": "Trump said he would attend the White House Correspondents' Association dinner, marking a break with his prior pattern of boycotting the event as president.",
+            "basis_quote": "Trump said he would attend the White House Correspondents' Association dinner, marking a break with his prior pattern of boycotting the event as president.",
+            "source_url": null,
+            "evidence_status": "supplied_text"
+          }
+        ]
+      },
+      "score_proposal": null,
+      "blockers": [
+        "The packet does not establish that the announcement changed press access or transparency."
+      ]
+    },
+    "reason": "Record the documented attendance announcement, not asserted downstream media effects.",
+    "review_reference": "native-fallback/terminal.jsonl",
+    "scope": "Only assigned repair fields; no prior numeric-score or complete-label replacement."
+  },
+  {
+    "record_id": "entry-1336",
+    "terminal_record": {
+      "record_id": "entry-1336",
+      "status": "complete",
+      "proposal_only": true,
+      "insight_proposal": null,
+      "score_proposal": {
+        "record_id": "entry-1336",
+        "entry_number": 1336,
+        "version": "impact-v2",
+        "status": "deferred",
+        "dimensions": null,
+        "event_state": "realized",
+        "confidence": "low",
+        "confidence_reason": "The packet supplies generalized warnings and scrutiny, not a discrete attributed Trump action or incident-specific impact basis.",
+        "rationale": "The account reports civilian-site warnings and legal scrutiny during expanding strikes, without identifying incidents, responsibility or confirmed consequences. A comparative numeric assessment cannot be defended from this packet alone; deferral does not imply that civilian harm was zero.",
+        "basis": "AP\u2019s March 3, 2026, live coverage included repeated warnings about impacts on civilian sites and possible legal implications as strikes expanded.",
+        "notes": "Coordinator rejects both speculative positive dimensions and a misleading zero assessment of unsupported incident-specific impacts."
+      },
+      "blockers": []
+    },
+    "reason": "Core impact remains insufficiently specified; defer rather than infer harm or certify zero harm.",
+    "review_reference": "native-fallback/terminal.jsonl",
+    "scope": "Only assigned repair fields; no prior numeric-score or complete-label replacement."
+  },
+  {
+    "record_id": "entry-1521",
+    "terminal_record": {
+      "record_id": "entry-1521",
+      "status": "complete",
+      "proposal_only": true,
+      "insight_proposal": null,
+      "score_proposal": {
+        "record_id": "entry-1521",
+        "entry_number": 1521,
+        "version": "impact-v2",
+        "status": "scored",
+        "dimensions": {
+          "harm": 0.0,
+          "reach": 0.0,
+          "institutions": 0.0,
+          "procedural_abuse": 0.0,
+          "self_dealing": 0.0,
+          "persistence": 0.0
+        },
+        "event_state": "realized",
+        "confidence": "low",
+        "confidence_reason": "The report and selected tracker comparison are described, but the packet establishes no audience effect, intent, or resulting policy harm.",
+        "rationale": "The entry documents PolitiFact\u2019s comparison of Trump\u2019s broad promise claim with a selected tracker and one tax example. It does not establish a resulting harm, affected population, institutional damage, misconduct, private benefit, or lasting effect; the comparison itself is not evidence of those impacts.",
+        "basis": "PolitiFact compared Trump\u2019s claim that he had kept all his promises with its MAGA-Meter, which tracked 75 second-term campaign pledges.",
+        "notes": "The selected tracker is not an exhaustive audit, and no reputational or policy consequence is inferred."
+      },
+      "blockers": []
+    },
+    "reason": "The tax-law population is an illustration used in a fact-check, not an identified affected population from the false-claim event itself.",
+    "review_reference": "native-fallback/terminal.jsonl",
+    "scope": "Only assigned repair fields; no prior numeric-score or complete-label replacement."
+  }
+]

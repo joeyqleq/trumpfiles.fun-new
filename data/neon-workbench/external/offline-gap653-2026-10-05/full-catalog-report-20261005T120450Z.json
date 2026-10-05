@@ -1,0 +1,33 @@
+{
+  "source_manifest": "data/neon-workbench/external/card-consistency21-2026-10-05/manifest-20261005T120428Z.json",
+  "index": "data/neon-workbench/external/offline-gap653-2026-10-05/full-catalog-dispositions-20261005T120450Z.jsonl",
+  "sha256": "17b10245b79a49c334860bb5c10009024bca9b72c00e226f340acef1d31a88ab",
+  "rows": 7227,
+  "origins": {
+    "frozen_catalog": 7143,
+    "new_candidate": 84
+  },
+  "descriptions": {
+    "complete": 6891,
+    "needs_context": 53,
+    "held_before_rewrite": 283
+  },
+  "insights": {
+    "complete": 6891,
+    "not_applicable_held": 336
+  },
+  "scores": {
+    "scored": 6758,
+    "deferred": 469
+  },
+  "held_reasons": {
+    "insufficient_event_evidence": 53,
+    "split_required": 32,
+    "soft_hide_candidate": 111,
+    "approved duplicate": 59,
+    "still_unresolved": 81
+  },
+  "coverage": "Every7143 frozen ID and84 candidate IDs accounted for; prior283 held dispositions preserved, not silently excluded.",
+  "production_approved": false,
+  "live_database_changed": false
+}
