@@ -1,0 +1,1021 @@
+{
+  "count": 653,
+  "insights": 365,
+  "scores": 370,
+  "workers": 60,
+  "assignments": [
+    {
+      "id": "gap653-01",
+      "account": 1,
+      "assigned": [
+        "entry-1000",
+        "entry-1415",
+        "entry-1550",
+        "entry-1722",
+        "entry-1932",
+        "entry-235",
+        "entry-2700",
+        "entry-3530",
+        "entry-4331",
+        "entry-5629",
+        "entry-6985"
+      ]
+    },
+    {
+      "id": "gap653-02",
+      "account": 2,
+      "assigned": [
+        "entry-1009",
+        "entry-1419",
+        "entry-1558",
+        "entry-1728",
+        "entry-1933",
+        "entry-2358",
+        "entry-2703",
+        "entry-3607",
+        "entry-4336",
+        "entry-5647",
+        "entry-6990"
+      ]
+    },
+    {
+      "id": "gap653-03",
+      "account": 3,
+      "assigned": [
+        "entry-1022",
+        "entry-1420",
+        "entry-1559",
+        "entry-1729",
+        "entry-1936",
+        "entry-2363",
+        "entry-2706",
+        "entry-365",
+        "entry-4340",
+        "entry-5661",
+        "entry-6991"
+      ]
+    },
+    {
+      "id": "gap653-04",
+      "account": 4,
+      "assigned": [
+        "entry-1033",
+        "entry-1424",
+        "entry-1562",
+        "entry-1746",
+        "entry-1940",
+        "entry-2364",
+        "entry-2715",
+        "entry-3659",
+        "entry-436",
+        "entry-5665",
+        "entry-6992"
+      ]
+    },
+    {
+      "id": "gap653-05",
+      "account": 5,
+      "assigned": [
+        "entry-1074",
+        "entry-1428",
+        "entry-1567",
+        "entry-1747",
+        "entry-195",
+        "entry-2367",
+        "entry-2717",
+        "entry-367",
+        "entry-4400",
+        "entry-5668",
+        "entry-7006"
+      ]
+    },
+    {
+      "id": "gap653-06",
+      "account": 1,
+      "assigned": [
+        "entry-1081",
+        "entry-1429",
+        "entry-1568",
+        "entry-1748",
+        "entry-196",
+        "entry-2375",
+        "entry-272",
+        "entry-379",
+        "entry-4414",
+        "entry-5684",
+        "entry-7007"
+      ]
+    },
+    {
+      "id": "gap653-07",
+      "account": 2,
+      "assigned": [
+        "entry-113",
+        "entry-1437",
+        "entry-1572",
+        "entry-1749",
+        "entry-1971",
+        "entry-2377",
+        "entry-273",
+        "entry-3809",
+        "entry-444",
+        "entry-5716",
+        "entry-7008"
+      ]
+    },
+    {
+      "id": "gap653-08",
+      "account": 3,
+      "assigned": [
+        "entry-1179",
+        "entry-1443",
+        "entry-1578",
+        "entry-1750",
+        "entry-1972",
+        "entry-2382",
+        "entry-274",
+        "entry-3814",
+        "entry-4482",
+        "entry-5726",
+        "entry-7018"
+      ]
+    },
+    {
+      "id": "gap653-09",
+      "account": 4,
+      "assigned": [
+        "entry-1182",
+        "entry-1444",
+        "entry-1583",
+        "entry-1751",
+        "entry-1982",
+        "entry-2385",
+        "entry-2749",
+        "entry-3875",
+        "entry-4516",
+        "entry-5733",
+        "entry-7023"
+      ]
+    },
+    {
+      "id": "gap653-10",
+      "account": 5,
+      "assigned": [
+        "entry-1184",
+        "entry-1445",
+        "entry-1584",
+        "entry-1752",
+        "entry-1986",
+        "entry-2392",
+        "entry-278",
+        "entry-3936",
+        "entry-4528",
+        "entry-5751",
+        "entry-7025"
+      ]
+    },
+    {
+      "id": "gap653-11",
+      "account": 1,
+      "assigned": [
+        "entry-1196",
+        "entry-1447",
+        "entry-1589",
+        "entry-1753",
+        "entry-199",
+        "entry-240",
+        "entry-2788",
+        "entry-3962",
+        "entry-4552",
+        "entry-5779",
+        "entry-7033"
+      ]
+    },
+    {
+      "id": "gap653-12",
+      "account": 2,
+      "assigned": [
+        "entry-1200",
+        "entry-1452",
+        "entry-1590",
+        "entry-1754",
+        "entry-1992",
+        "entry-2402",
+        "entry-279",
+        "entry-4036",
+        "entry-456",
+        "entry-5897",
+        "entry-7034"
+      ]
+    },
+    {
+      "id": "gap653-13",
+      "account": 3,
+      "assigned": [
+        "entry-1210",
+        "entry-1455",
+        "entry-1591",
+        "entry-1755",
+        "entry-2005",
+        "entry-2405",
+        "entry-2811",
+        "entry-4042",
+        "entry-4662",
+        "entry-5923",
+        "entry-7044"
+      ]
+    },
+    {
+      "id": "gap653-14",
+      "account": 4,
+      "assigned": [
+        "entry-1212",
+        "entry-1457",
+        "entry-1592",
+        "entry-1756",
+        "entry-2012",
+        "entry-2406",
+        "entry-2817",
+        "entry-4043",
+        "entry-470",
+        "entry-5966",
+        "entry-7045"
+      ]
+    },
+    {
+      "id": "gap653-15",
+      "account": 5,
+      "assigned": [
+        "entry-1213",
+        "entry-1459",
+        "entry-1593",
+        "entry-1758",
+        "entry-2014",
+        "entry-2413",
+        "entry-282",
+        "entry-4044",
+        "entry-4716",
+        "entry-5984",
+        "entry-7056"
+      ]
+    },
+    {
+      "id": "gap653-16",
+      "account": 1,
+      "assigned": [
+        "entry-1215",
+        "entry-1470",
+        "entry-1594",
+        "entry-1760",
+        "entry-2033",
+        "entry-2415",
+        "entry-2826",
+        "entry-4045",
+        "entry-4719",
+        "entry-6019",
+        "entry-7059"
+      ]
+    },
+    {
+      "id": "gap653-17",
+      "account": 2,
+      "assigned": [
+        "entry-1219",
+        "entry-1471",
+        "entry-1595",
+        "entry-1761",
+        "entry-204",
+        "entry-2427",
+        "entry-283",
+        "entry-4056",
+        "entry-4779",
+        "entry-6021",
+        "entry-7063"
+      ]
+    },
+    {
+      "id": "gap653-18",
+      "account": 3,
+      "assigned": [
+        "entry-1233",
+        "entry-1472",
+        "entry-1597",
+        "entry-1762",
+        "entry-2045",
+        "entry-2438",
+        "entry-2834",
+        "entry-4057",
+        "entry-4801",
+        "entry-6029",
+        "entry-7069"
+      ]
+    },
+    {
+      "id": "gap653-19",
+      "account": 4,
+      "assigned": [
+        "entry-1252",
+        "entry-1473",
+        "entry-160",
+        "entry-1763",
+        "entry-206",
+        "entry-244",
+        "entry-2845",
+        "entry-4067",
+        "entry-4859",
+        "entry-6043",
+        "entry-7070"
+      ]
+    },
+    {
+      "id": "gap653-20",
+      "account": 5,
+      "assigned": [
+        "entry-1263",
+        "entry-1474",
+        "entry-1603",
+        "entry-1764",
+        "entry-2061",
+        "entry-2447",
+        "entry-2848",
+        "entry-4084",
+        "entry-4890",
+        "entry-6070",
+        "entry-7071"
+      ]
+    },
+    {
+      "id": "gap653-21",
+      "account": 1,
+      "assigned": [
+        "entry-1264",
+        "entry-1475",
+        "entry-1607",
+        "entry-1765",
+        "entry-2086",
+        "entry-2451",
+        "entry-2852",
+        "entry-4087",
+        "entry-4892",
+        "entry-6100",
+        "entry-7072"
+      ]
+    },
+    {
+      "id": "gap653-22",
+      "account": 2,
+      "assigned": [
+        "entry-1265",
+        "entry-1476",
+        "entry-1608",
+        "entry-1766",
+        "entry-209",
+        "entry-2452",
+        "entry-2856",
+        "entry-4088",
+        "entry-4937",
+        "entry-6112",
+        "entry-7074"
+      ]
+    },
+    {
+      "id": "gap653-23",
+      "account": 3,
+      "assigned": [
+        "entry-127",
+        "entry-1477",
+        "entry-1610",
+        "entry-1767",
+        "entry-2093",
+        "entry-246",
+        "entry-2871",
+        "entry-4098",
+        "entry-5110",
+        "entry-6148",
+        "entry-7080"
+      ]
+    },
+    {
+      "id": "gap653-24",
+      "account": 4,
+      "assigned": [
+        "entry-1281",
+        "entry-1478",
+        "entry-1611",
+        "entry-1769",
+        "entry-2097",
+        "entry-2460",
+        "entry-2880",
+        "entry-4100",
+        "entry-5247",
+        "entry-6149",
+        "entry-7109"
+      ]
+    },
+    {
+      "id": "gap653-25",
+      "account": 5,
+      "assigned": [
+        "entry-1284",
+        "entry-1479",
+        "entry-1612",
+        "entry-1773",
+        "entry-211",
+        "entry-2466",
+        "entry-2881",
+        "entry-4107",
+        "entry-533",
+        "entry-6156",
+        "entry-7129"
+      ]
+    },
+    {
+      "id": "gap653-26",
+      "account": 1,
+      "assigned": [
+        "entry-1286",
+        "entry-1480",
+        "entry-1619",
+        "entry-1774",
+        "entry-212",
+        "entry-2467",
+        "entry-2902",
+        "entry-4110",
+        "entry-5352",
+        "entry-6159",
+        "entry-7141"
+      ]
+    },
+    {
+      "id": "gap653-27",
+      "account": 2,
+      "assigned": [
+        "entry-1295",
+        "entry-1482",
+        "entry-1620",
+        "entry-1775",
+        "entry-2120",
+        "entry-2470",
+        "entry-2903",
+        "entry-4111",
+        "entry-5366",
+        "entry-6162",
+        "entry-7150"
+      ]
+    },
+    {
+      "id": "gap653-28",
+      "account": 3,
+      "assigned": [
+        "entry-1296",
+        "entry-1483",
+        "entry-1621",
+        "entry-1776",
+        "entry-213",
+        "entry-2476",
+        "entry-293",
+        "entry-4120",
+        "entry-5373",
+        "entry-6164",
+        "entry-7151"
+      ]
+    },
+    {
+      "id": "gap653-29",
+      "account": 4,
+      "assigned": [
+        "entry-1297",
+        "entry-1484",
+        "entry-1623",
+        "entry-1778",
+        "entry-214",
+        "entry-2485",
+        "entry-2934",
+        "entry-4125",
+        "entry-5381",
+        "entry-6169",
+        "entry-7157"
+      ]
+    },
+    {
+      "id": "gap653-30",
+      "account": 5,
+      "assigned": [
+        "entry-1298",
+        "entry-1485",
+        "entry-1625",
+        "entry-178",
+        "entry-215",
+        "entry-2491",
+        "entry-295",
+        "entry-4131",
+        "entry-5388",
+        "entry-62",
+        "entry-7170"
+      ]
+    },
+    {
+      "id": "gap653-31",
+      "account": 1,
+      "assigned": [
+        "entry-1299",
+        "entry-1486",
+        "entry-1626",
+        "entry-1781",
+        "entry-2152",
+        "entry-2498",
+        "entry-2951",
+        "entry-4137",
+        "entry-5398",
+        "entry-6202",
+        "entry-7174"
+      ]
+    },
+    {
+      "id": "gap653-32",
+      "account": 2,
+      "assigned": [
+        "entry-130",
+        "entry-1489",
+        "entry-1627",
+        "entry-1785",
+        "entry-2162",
+        "entry-25",
+        "entry-2958",
+        "entry-4138",
+        "entry-5402",
+        "entry-6240",
+        "entry-7182"
+      ]
+    },
+    {
+      "id": "gap653-33",
+      "account": 3,
+      "assigned": [
+        "entry-1300",
+        "entry-1491",
+        "entry-1633",
+        "entry-1786",
+        "entry-2189",
+        "entry-2507",
+        "entry-298",
+        "entry-4139",
+        "entry-5407",
+        "entry-6278",
+        "entry-7193"
+      ]
+    },
+    {
+      "id": "gap653-34",
+      "account": 4,
+      "assigned": [
+        "entry-1302",
+        "entry-1493",
+        "entry-1638",
+        "entry-1787",
+        "entry-220",
+        "entry-2508",
+        "entry-2988",
+        "entry-4141",
+        "entry-5428",
+        "entry-6284",
+        "entry-7200"
+      ]
+    },
+    {
+      "id": "gap653-35",
+      "account": 5,
+      "assigned": [
+        "entry-1303",
+        "entry-1496",
+        "entry-1640",
+        "entry-1789",
+        "entry-2201",
+        "entry-252",
+        "entry-3071",
+        "entry-4149",
+        "entry-5441",
+        "entry-6289",
+        "entry-7201"
+      ]
+    },
+    {
+      "id": "gap653-36",
+      "account": 1,
+      "assigned": [
+        "entry-1304",
+        "entry-1500",
+        "entry-1641",
+        "entry-1791",
+        "entry-221",
+        "entry-2525",
+        "entry-3102",
+        "entry-4151",
+        "entry-5444",
+        "entry-6318",
+        "entry-7202"
+      ]
+    },
+    {
+      "id": "gap653-37",
+      "account": 2,
+      "assigned": [
+        "entry-1305",
+        "entry-1501",
+        "entry-1644",
+        "entry-1792",
+        "entry-222",
+        "entry-2529",
+        "entry-3122",
+        "entry-4154",
+        "entry-5449",
+        "entry-6319",
+        "entry-738"
+      ]
+    },
+    {
+      "id": "gap653-38",
+      "account": 3,
+      "assigned": [
+        "entry-1319",
+        "entry-1502",
+        "entry-1646",
+        "entry-1794",
+        "entry-2226",
+        "entry-2533",
+        "entry-3183",
+        "entry-4158",
+        "entry-5455",
+        "entry-6325",
+        "entry-743"
+      ]
+    },
+    {
+      "id": "gap653-39",
+      "account": 4,
+      "assigned": [
+        "entry-1320",
+        "entry-1504",
+        "entry-1648",
+        "entry-1795",
+        "entry-2231",
+        "entry-2539",
+        "entry-3193",
+        "entry-4160",
+        "entry-5471",
+        "entry-6343",
+        "entry-76"
+      ]
+    },
+    {
+      "id": "gap653-40",
+      "account": 5,
+      "assigned": [
+        "entry-1322",
+        "entry-1506",
+        "entry-1649",
+        "entry-182",
+        "entry-2235",
+        "entry-2541",
+        "entry-3205",
+        "entry-4164",
+        "entry-5481",
+        "entry-6346",
+        "entry-763"
+      ]
+    },
+    {
+      "id": "gap653-41",
+      "account": 1,
+      "assigned": [
+        "entry-1325",
+        "entry-1509",
+        "entry-1650",
+        "entry-1835",
+        "entry-2238",
+        "entry-2542",
+        "entry-3215",
+        "entry-4166",
+        "entry-5488",
+        "entry-6355",
+        "entry-796"
+      ]
+    },
+    {
+      "id": "gap653-42",
+      "account": 2,
+      "assigned": [
+        "entry-1328",
+        "entry-1514",
+        "entry-1651",
+        "entry-184",
+        "entry-224",
+        "entry-2545",
+        "entry-3225",
+        "entry-4169",
+        "entry-5507",
+        "entry-6360",
+        "entry-816"
+      ]
+    },
+    {
+      "id": "gap653-43",
+      "account": 3,
+      "assigned": [
+        "entry-1330",
+        "entry-1515",
+        "entry-1654",
+        "entry-1840",
+        "entry-2249",
+        "entry-2555",
+        "entry-3258",
+        "entry-4171",
+        "entry-5509",
+        "entry-6399",
+        "entry-820"
+      ]
+    },
+    {
+      "id": "gap653-44",
+      "account": 4,
+      "assigned": [
+        "entry-1335",
+        "entry-1517",
+        "entry-1657",
+        "entry-1847",
+        "entry-228",
+        "entry-2558",
+        "entry-3295",
+        "entry-4173",
+        "entry-5516",
+        "entry-64",
+        "entry-843"
+      ]
+    },
+    {
+      "id": "gap653-45",
+      "account": 5,
+      "assigned": [
+        "entry-1336",
+        "entry-1521",
+        "entry-1660",
+        "entry-1848",
+        "entry-2289",
+        "entry-2564",
+        "entry-3320",
+        "entry-4180",
+        "entry-5518",
+        "entry-6411",
+        "entry-857"
+      ]
+    },
+    {
+      "id": "gap653-46",
+      "account": 1,
+      "assigned": [
+        "entry-1356",
+        "entry-1522",
+        "entry-1661",
+        "entry-1865",
+        "entry-229",
+        "entry-2569",
+        "entry-3349",
+        "entry-4182",
+        "entry-5521",
+        "entry-6500",
+        "entry-879"
+      ]
+    },
+    {
+      "id": "gap653-47",
+      "account": 2,
+      "assigned": [
+        "entry-1370",
+        "entry-1523",
+        "entry-1662",
+        "entry-1868",
+        "entry-2294",
+        "entry-2577",
+        "entry-3369",
+        "entry-4192",
+        "entry-5524",
+        "entry-652",
+        "entry-90"
+      ]
+    },
+    {
+      "id": "gap653-48",
+      "account": 3,
+      "assigned": [
+        "entry-1374",
+        "entry-1526",
+        "entry-1664",
+        "entry-1872",
+        "entry-2300",
+        "entry-258",
+        "entry-3393",
+        "entry-4193",
+        "entry-5533",
+        "entry-654",
+        "entry-959"
+      ]
+    },
+    {
+      "id": "gap653-49",
+      "account": 4,
+      "assigned": [
+        "entry-1375",
+        "entry-1531",
+        "entry-1667",
+        "entry-1873",
+        "entry-2301",
+        "entry-2580",
+        "entry-340",
+        "entry-4201",
+        "entry-5538",
+        "entry-655",
+        "entry-980"
+      ]
+    },
+    {
+      "id": "gap653-50",
+      "account": 5,
+      "assigned": [
+        "entry-1378",
+        "entry-1534",
+        "entry-1672",
+        "entry-1875",
+        "entry-2302",
+        "entry-2583",
+        "entry-3408",
+        "entry-4203",
+        "entry-5540",
+        "entry-6552",
+        "entry-982"
+      ]
+    },
+    {
+      "id": "gap653-51",
+      "account": 1,
+      "assigned": [
+        "entry-1383",
+        "entry-1535",
+        "entry-1673",
+        "entry-1881",
+        "entry-2304",
+        "entry-259",
+        "entry-341",
+        "entry-4204",
+        "entry-5541",
+        "entry-66",
+        "entry-984"
+      ]
+    },
+    {
+      "id": "gap653-52",
+      "account": 2,
+      "assigned": [
+        "entry-1385",
+        "entry-1537",
+        "entry-1677",
+        "entry-1895",
+        "entry-2308",
+        "entry-260",
+        "entry-342",
+        "entry-4217",
+        "entry-5549",
+        "entry-663",
+        "entry-989"
+      ]
+    },
+    {
+      "id": "gap653-53",
+      "account": 3,
+      "assigned": [
+        "entry-1387",
+        "entry-1538",
+        "entry-1687",
+        "entry-1898",
+        "entry-2312",
+        "entry-2600",
+        "entry-3421",
+        "entry-4261",
+        "entry-5559",
+        "entry-6633",
+        "expanded-20260928-china-arms-denial"
+      ]
+    },
+    {
+      "id": "gap653-54",
+      "account": 4,
+      "assigned": [
+        "entry-1393",
+        "entry-1539",
+        "entry-1698",
+        "entry-1900",
+        "entry-232",
+        "entry-2618",
+        "entry-3423",
+        "entry-4282",
+        "entry-5571",
+        "entry-6641"
+      ]
+    },
+    {
+      "id": "gap653-55",
+      "account": 5,
+      "assigned": [
+        "entry-1394",
+        "entry-1542",
+        "entry-170",
+        "entry-191",
+        "entry-2325",
+        "entry-262",
+        "entry-344",
+        "entry-4287",
+        "entry-5582",
+        "entry-6666"
+      ]
+    },
+    {
+      "id": "gap653-56",
+      "account": 1,
+      "assigned": [
+        "entry-1395",
+        "entry-1543",
+        "entry-1702",
+        "entry-1913",
+        "entry-233",
+        "entry-263",
+        "entry-3468",
+        "entry-4300",
+        "entry-5587",
+        "entry-6759"
+      ]
+    },
+    {
+      "id": "gap653-57",
+      "account": 2,
+      "assigned": [
+        "entry-1400",
+        "entry-1544",
+        "entry-1708",
+        "entry-1921",
+        "entry-2331",
+        "entry-2636",
+        "entry-3490",
+        "entry-4305",
+        "entry-5593",
+        "entry-6905"
+      ]
+    },
+    {
+      "id": "gap653-58",
+      "account": 3,
+      "assigned": [
+        "entry-1407",
+        "entry-1546",
+        "entry-1714",
+        "entry-1925",
+        "entry-2335",
+        "entry-2641",
+        "entry-350",
+        "entry-4308",
+        "entry-5595",
+        "entry-6927"
+      ]
+    },
+    {
+      "id": "gap653-59",
+      "account": 4,
+      "assigned": [
+        "entry-1410",
+        "entry-1547",
+        "entry-1717",
+        "entry-1926",
+        "entry-2340",
+        "entry-2661",
+        "entry-351",
+        "entry-4321",
+        "entry-5596",
+        "entry-6969"
+      ]
+    },
+    {
+      "id": "gap653-60",
+      "account": 5,
+      "assigned": [
+        "entry-1412",
+        "entry-1548",
+        "entry-1721",
+        "entry-193",
+        "entry-2345",
+        "entry-2695",
+        "entry-3520",
+        "entry-4324",
+        "entry-5600",
+        "entry-6971"
+      ]
+    }
+  ]
+}
