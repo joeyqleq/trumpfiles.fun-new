@@ -1,0 +1,23 @@
+{
+  "checkpoint_type": "source237_qa15_repair_final_checkpoint",
+  "date": "2026-10-04",
+  "branch": "ls/5-trump-files-source118-review-05-of-12-ry0H",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "coordinator_checkpoint": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-checkpoint-v2.json",
+  "coordinator_addendum": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-addendum-v2.jsonl",
+  "source237_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+  "assigned_ids": [
+    "entry-5810"
+  ],
+  "observed_terminal_ids": [
+    "entry-5810"
+  ],
+  "assigned_count": 1,
+  "output_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-05-batch-20261004-001.jsonl",
+  "output_sha256": "d33bc46c2250c16032332235f4084a5600847eb58a504bc4f5933de1a4337f72",
+  "final_qa_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/worker-05-final-qa-20261004.json",
+  "final_qa_sha256": "e04fce006294524c07215096ac39034c82432f60367e68edbe6a2756647f471b",
+  "overall_result": "PASS_REPAIR_COMPLETE_PROPOSAL_ONLY",
+  "remaining_claim_gap": "The cited reporting does not establish who directed specific investigations or whether any investigative action was caused by inclusion on Patel’s list.",
+  "canonical_or_neon_writes": false
+}

@@ -1,0 +1,50 @@
+{
+  "qa_type": "source237_qa15_repair_final_exact_set_qa",
+  "date": "2026-10-04",
+  "worker": 5,
+  "branch": "ls/5-trump-files-source118-review-05-of-12-ry0H",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "source237_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+  "expected_ids": [
+    "entry-5810"
+  ],
+  "observed_ids": [
+    "entry-5810"
+  ],
+  "row_count": 1,
+  "exact_set_result": "PASS",
+  "finding_flags": {
+    "entry-5810": [
+      "long_out_of_140_300"
+    ]
+  },
+  "repair_status": "CORRECTED_CLAIM_PROPOSAL",
+  "lengths": {
+    "title_chars": 74,
+    "short_chars": 74,
+    "medium_words": 60,
+    "long_words": 234
+  },
+  "source_urls": [
+    "https://rollcall.com/2024/12/09/trumps-pick-to-lead-fbi-identified-government-gangsters/"
+  ],
+  "source_mapping_result": "PASS",
+  "source_access": "Roll Call URL returned HTTP 200; text checked against all factual expansions.",
+  "original_claim_approval": false,
+  "exact_unresolved_gaps": "The cited reporting does not establish who directed specific investigations or whether any investigative action was caused by inclusion on Patel’s list.",
+  "output_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-05-batch-20261004-001.jsonl",
+  "output_sha256": "d33bc46c2250c16032332235f4084a5600847eb58a504bc4f5933de1a4337f72",
+  "qa_checks": {
+    "exact_assigned_id_once": "pass",
+    "source_triage_status_preserved": "pass",
+    "prior_title_short_medium_preserved": "pass",
+    "long_in_140_300": "pass",
+    "short_and_title_at_most_180_chars": "pass",
+    "medium_in_45_90": "pass",
+    "only_current_proposal_source_url_retained": "pass",
+    "source_url_mapped_to_supported_facts_and_limits": "pass",
+    "unsupported_original_claims_and_exact_gaps_preserved": "pass",
+    "original_claim_not_marked_accepted_or_substantiated": "pass"
+  },
+  "scope": "One assigned source237 finding only; no canonical or Neon changes."
+}
