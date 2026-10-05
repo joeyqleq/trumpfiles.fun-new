@@ -1,0 +1,43 @@
+{
+  "job": "full-insights-62",
+  "worker": "62",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "proposal_only": true,
+  "assigned_count": 92,
+  "input_count": 92,
+  "terminal_rows": 92,
+  "unique_terminal_ids": 92,
+  "complete_count": 84,
+  "insufficient_count": 8,
+  "amendment_count": 9,
+  "amendment_ids": [
+    "full-insights-62-amendment-001",
+    "full-insights-62-amendment-002",
+    "full-insights-62-amendment-003",
+    "full-insights-62-amendment-004",
+    "full-insights-62-amendment-005",
+    "full-insights-62-amendment-006",
+    "full-insights-62-amendment-007",
+    "full-insights-62-amendment-008",
+    "full-insights-62-amendment-009"
+  ],
+  "amended_record_ids": [
+    "entry-1762",
+    "entry-1913",
+    "entry-3122",
+    "entry-4305",
+    "entry-5668",
+    "entry-5751",
+    "entry-857"
+  ],
+  "checks": {
+    "exact_assigned_id_set": true,
+    "no_duplicate_terminal_ids": true,
+    "required_schema_and_enum_values": true,
+    "all_effective_core_values_supported": true,
+    "all_terminal_and_effective_amendment_quotes_literal": true,
+    "quantities_and_relations_empty": true,
+    "proposal_only_rows": true
+  },
+  "errors": []
+}

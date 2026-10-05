@@ -1,0 +1,40 @@
+{
+  "job": "held204-02",
+  "worker": 2,
+  "saved_at": "2026-10-04T10:52:02.073471+00:00",
+  "branch": "ls/2-trump-files-source118-review-02-of-12-alSU",
+  "pinned_input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_rows": 17,
+  "terminal_rows": 17,
+  "terminal_status_counts": {
+    "pass": 13,
+    "hold": 4
+  },
+  "terminal_record_ids": [
+    "entry-37",
+    "entry-264",
+    "entry-528",
+    "entry-774",
+    "entry-836",
+    "entry-978",
+    "entry-1770",
+    "entry-2330",
+    "entry-2442",
+    "entry-2562",
+    "entry-2930",
+    "entry-3709",
+    "entry-4097",
+    "entry-4622",
+    "entry-5531",
+    "entry-6141",
+    "entry-6293"
+  ],
+  "amendment_rows": 8,
+  "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-02-exact-set-qa.json",
+  "qa_passed": true,
+  "next_action": null,
+  "status": "complete",
+  "implementation_commit": "95da567534568f176e2d5591da47b2efd6dc1555",
+  "push_confirmed": true,
+  "remote_branch": "origin/ls/2-trump-files-source118-review-02-of-12-alSU"
+}
