@@ -1,0 +1,16 @@
+{
+  "worker": 43,
+  "qa_checkpoint": 2,
+  "source_commit": "597ea5739623393fcf62c3859ada19ec85a848bf",
+  "target_commit": "b2490ee980415410bfe4f53926db84cad33aca35",
+  "record_ids": [
+    "entry-1847",
+    "entry-228",
+    "entry-2558"
+  ],
+  "qa_path": "data/neon-workbench/external/offline-gap653-2026-10-05/qa/worker-43-terminal.jsonl",
+  "rows_appended": 3,
+  "corrected_records": [
+    "entry-2558"
+  ]
+}
