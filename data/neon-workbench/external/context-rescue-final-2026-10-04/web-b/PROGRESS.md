@@ -41,3 +41,5 @@ Local rescue commit: `5cd2329`. Shell push could not authenticate. GitHub metada
 Automatic approval review rejected remote commit creation, stating that redirect/matching identity evidence does not authorize publication to the current owner name. No generated-result commit was attached to the remote branch and no draft PR was created. Publication remains pending explicit user authorization of `p5n-n3t/trumpfiles.fun-new`; local results and validation are complete.
 
 Publication authorization received from the user on 2026-10-05 for `p5n-n3t/trumpfiles.fun-new`. Publishing the validated Web B proposals as a separate draft PR targeting `codex/context-rescue-final-2026-10-04`. Web A draft PR #63 remains separate.
+
+Publication completed: draft PR #64, https://github.com/p5n-n3t/trumpfiles.fun-new/pull/64 . Rescue commit: `f29b7c78aa4281183f615bcc7d9d3d367917bd4d`. All 19 owned records are terminal, validation passed, and the 26-file diff is confined to Web B. The earlier publication blocker is resolved by explicit user authorization.
