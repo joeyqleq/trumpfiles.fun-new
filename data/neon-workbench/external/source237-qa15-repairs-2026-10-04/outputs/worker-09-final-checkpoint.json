@@ -1,0 +1,21 @@
+{
+  "kind": "source237-qa15-repair-final-checkpoint",
+  "worker": 9,
+  "date": "2026-10-04",
+  "branch": "ls/9-trump-files-source118-review-09-of-12-278g",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "source237_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+  "proposal_commit": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+  "output_path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-09-batch-20261004-001.jsonl",
+  "qa_path": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-09-final-qa.json",
+  "expected_ids": [
+    "entry-6617"
+  ],
+  "row_count": 1,
+  "exact_set_qa": "pass",
+  "finding_repaired": "long_out_of_140_300",
+  "long_words": 188,
+  "source_urls_preserved_and_mapped": true,
+  "result": "complete",
+  "scope": "Append-only QA repair for the one assigned entry; no canonical, Neon, or upstream branch edits."
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "source237-qa15-repair-final-qa",
+  "worker": 9,
+  "review_date": "2026-10-04",
+  "coordinator_branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "source237_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+  "coordinator_checkpoint_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-checkpoint-v2.json",
+  "coordinator_checkpoint_sha256": "54d409e5f63294ad2233b6ab579feefd75ecd6c415713cc4580407397003ea6f",
+  "coordinator_addendum_path": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-addendum-v2.jsonl",
+  "coordinator_addendum_sha256": "a4e1d1a0f943bf624a1246aabab2e3423c48d192e792fa174a28f39b98f2270c",
+  "source237_id": "entry-6617",
+  "authoritative_status": "needs_correction",
+  "proposal_branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+  "proposal_commit": "8c7fe53755566dde56f4939c0abb805bebfb24df",
+  "proposal_file": "data/neon-workbench/external/account1-late-source-corrections-2026-10-03/outputs/worker-11-batch-20261003-002.jsonl",
+  "proposal_file_sha256": "45eb9c4d1d7ecc46884884a22391b911adb572ab4c743a2df2689db2a5751422",
+  "output_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-09-batch-20261004-001.jsonl",
+  "output_sha256": "bc89bdd79f83c9b995a8048b1088575827172d313589a01bcb7a68dad6de0bc4",
+  "expected_ids": [
+    "entry-6617"
+  ],
+  "observed_ids": [
+    "entry-6617"
+  ],
+  "row_count": 1,
+  "unique_id_count": 1,
+  "original_flag": "long_out_of_140_300",
+  "original_lengths": {
+    "title_chars": 75,
+    "short_chars": 75,
+    "medium_words": 62,
+    "long_words": 120
+  },
+  "repaired_lengths": {
+    "title_chars": 75,
+    "short_chars": 75,
+    "medium_words": 72,
+    "long_words": 188
+  },
+  "checks": {
+    "exact_set": true,
+    "one_terminal_row": true,
+    "needs_correction_not_misreported": true,
+    "title_short_at_most_180": true,
+    "medium_45_90": true,
+    "long_140_300": true,
+    "source_urls_match_current_proposal": true,
+    "source_urls_https": true,
+    "source_url_to_fact_notes_present": true,
+    "unmapped_urls_empty": true,
+    "preserved_exact_gap_and_unsupported_claims": true
+  },
+  "source_access_note": "White House and USAGM primary pages returned HTTP 200 and were checked directly. Reuters returned HTTP 401; its source mapping and limit are disclosed and carried from the pinned reconciliation record.",
+  "result": "pass",
+  "scope": "Only entry-6617 QA repair output and its QA/checkpoint. No canonical, Neon, or upstream proposal files edited."
+}

@@ -1,0 +1,109 @@
+{
+  "kind": "held204-worker-checkpoint",
+  "job": "held204-09",
+  "worker": 9,
+  "date": "2026-10-04",
+  "branch": "ls/9-trump-files-source118-review-09-of-12-278g",
+  "input_branch": "codex/continuous-finish-2026-10-04",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-09-input.jsonl",
+  "output_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-09-terminal.jsonl",
+  "output_sha256": "e493bb83ba15a3374cd5d3aa386057d98977e1c460736c1232552f4d158a8692",
+  "exact_set_qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-09-exact-set-qa.json",
+  "exact_set_qa_sha256": "ad554d6f733961e7b6714644ce0bc74b2a2be06bfa222b6f7273b02e550cf973",
+  "expected_count": 17,
+  "terminal_row_count": 17,
+  "previous_terminal_rows_preserved": 0,
+  "rows_appended": 17,
+  "status_counts": {
+    "hold": 13,
+    "pass": 4
+  },
+  "exact_set_qa": "pass",
+  "preservation_notes_complete": true,
+  "source_fact_maps_present": true,
+  "pass_length_checks": true,
+  "unresolved_holds": [
+    {
+      "record_id": "entry-380",
+      "blockers": [
+        "The only event-specific source was recorded as HTTP 403, and the proposed long description is missing. The packet provides an attributed summary but not enough independently reviewable detail for a 140–300-word account."
+      ]
+    },
+    {
+      "record_id": "entry-674",
+      "blockers": [
+        "The one focused batch retrieval attempt failed with HTTP 402 before returning any source text. Event-specific citations are now recorded, but this review could not independently inspect their contents, so the prior hold remains."
+      ]
+    },
+    {
+      "record_id": "entry-822",
+      "blockers": [
+        "The one focused batch retrieval attempt failed with HTTP 402 before returning any source text. Event-specific citations are now recorded, but this review could not independently inspect their contents, so the prior hold remains."
+      ]
+    },
+    {
+      "record_id": "entry-1726",
+      "blockers": [
+        "Prior focused checks recorded the Atlantic pages as HTTP 403, leaving no accessible source text for independent review. The retained Authoritarianism / Government Power Abuse classification is not established by a description of the magazine’s editorial list and cannot be corrected through this description-only output."
+      ]
+    },
+    {
+      "record_id": "entry-1857",
+      "blockers": [
+        "PBS returned an access error in the prior review. The AP-syndicated URL was added from the pinned evidence map, but the single attempted retrieval batch failed with HTTP 402 before returning source text; the detailed positions and primary-election context therefore remain unverified here."
+      ]
+    },
+    {
+      "record_id": "entry-2380",
+      "blockers": [
+        "The cited facts establish a family biography, not a public or policy event. The existing Environmental Destruction / Environmental Rollbacks classification is inapplicable, and the project’s policy-event versus biography inclusion rule is not supplied. A 140-word long description would require padding unrelated biographical details."
+      ]
+    },
+    {
+      "record_id": "entry-2515",
+      "blockers": [
+        "The narrowed proposal describes an unrelated Kuchma–Derkach transcript and changes the frozen record’s central Trump/Ukrainian-intelligence claim. The cited excerpt does not establish a Trump, family, or associate connection; hold under the explicit event-identity rule."
+      ]
+    },
+    {
+      "record_id": "entry-3380",
+      "blockers": [
+        "The proposed description changes the frozen event from alleged congressional testimony to a later House Ethics report. The packet does not verify the public testimony or a direct Trump/family/associate connection. Keep hold despite the usable later-report draft."
+      ]
+    },
+    {
+      "record_id": "entry-3899",
+      "blockers": [
+        "The one focused batch retrieval attempt failed with HTTP 402 before returning any source text. Event-specific citations are now recorded, but this review could not independently inspect their contents, so the prior hold remains."
+      ]
+    },
+    {
+      "record_id": "entry-4308",
+      "blockers": [
+        "The sole AP report returned HTTP 403 in the focused source review. A retrieval batch failed with HTTP 402 before returning text. Detailed allied positions, dates, and military actions cannot be independently reviewed from the supplied packet."
+      ]
+    },
+    {
+      "record_id": "entry-5406",
+      "blockers": [
+        "The Washington Post article bodies were not readable in the focused review. The packet does not verify the cited posts, the precise requested restrictions, the separate September request, or final court rulings. The available URLs do not include the underlying court filings or orders."
+      ]
+    },
+    {
+      "record_id": "entry-5707",
+      "blockers": [
+        "The one focused batch retrieval attempt failed with HTTP 402 before returning any source text. Event-specific citations are now recorded, but this review could not independently inspect their contents, so the prior hold remains."
+      ]
+    },
+    {
+      "record_id": "entry-6795",
+      "blockers": [
+        "Official records document two departures, not the alleged three Trump firings on January 20, 2025. No names, primary removal notices, contemporaneous event-specific report, or litigation docket are supplied to verify the alleged acts or legal dispute."
+      ]
+    }
+  ],
+  "source_retrieval_note": "One focused batch retrieval attempt for explicit URLs returned HTTP 402 (insufficient Firecrawl credits) before yielding source text. No new facts were taken from that attempt; existing holds with unresolved source access remain holds.",
+  "scope": "Append-only description review artifacts for the 17 assigned IDs only; no canonical, Neon, or code edits. No PR action.",
+  "result": "complete"
+}
