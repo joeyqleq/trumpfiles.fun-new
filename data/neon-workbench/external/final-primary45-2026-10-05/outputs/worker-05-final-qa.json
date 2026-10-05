@@ -1,0 +1,31 @@
+{
+  "job": "primary45-05",
+  "assigned_ids": [
+    "entry-1770"
+  ],
+  "input": {
+    "branch": "codex/final-primary45-2026-10-05",
+    "commit": "5c16cfa50b686dfd4311ccc3bc6b838120124b1a",
+    "path": "data/neon-workbench/external/final-primary45-2026-10-05/worker-05-input.jsonl"
+  },
+  "terminal_path": "data/neon-workbench/external/final-primary45-2026-10-05/outputs/worker-05-terminal.jsonl",
+  "terminal_row_count": 1,
+  "terminal_id_set": [
+    "entry-1770"
+  ],
+  "effective_status": "hold",
+  "amendment": {
+    "id": "worker-05-final-primary45-amendment-001",
+    "number": 1,
+    "path": "data/neon-workbench/external/final-primary45-2026-10-05/outputs/worker-05-terminal-amendments.jsonl",
+    "corrects": "The first terminal row omitted the supplied prior_terminal_history; the immutable base row was retained and this amendment contains the corrected full terminal record."
+  },
+  "validation": {
+    "exact_assigned_id_set": true,
+    "required_terminal_fields": true,
+    "prior_history_preserved": true,
+    "unsupported_citations_omitted": true,
+    "pass_only_insight_audit": "not applicable; disposition is hold"
+  },
+  "research_disposition": "One focused query and two source-read attempts yielded no readable same-event evidence; terminal hold records the query and exact missing fact."
+}
