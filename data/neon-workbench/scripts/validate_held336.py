@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 def gate(row):
     errors=[]
     status=row.get('status')
-    if status not in ('pass','split_ready','duplicate_resolved','hold','exclusion_candidate'):return ['invalid_status']
+    if status not in ('pass','draft_as_supplied','split_ready','duplicate_resolved','hold','exclusion_candidate'):return ['invalid_status']
     def card(card):
         findings=[]
         for key,lo,hi,words in [('title',1,180,False),('description_short',1,180,False),('description_medium',45,90,True),('description_long',140,300,True)]:
@@ -19,6 +19,11 @@ def gate(row):
         if not card.get('category') or not isinstance(card.get('topic_tags'),list):findings.append('category_or_tags')
         return findings
     if status=='pass':errors.extend(card(row))
+    elif status=='draft_as_supplied':
+        for key,lo,hi,words in [('title',1,180,False),('description_short',1,180,False),('description_medium',45,90,True),('description_long',140,300,True)]:
+            value=row.get(key);n=len(value.split()) if words and isinstance(value,str) else len(value) if isinstance(value,str) else 0
+            if not lo<=n<=hi:errors.append('length:'+key)
+        if row.get('evidence_status')!='unverified_as_supplied' or row.get('publication_eligible') is not False or not row.get('uncertainties'):errors.append('draft_missing_unverified_boundary')
     elif status=='split_ready':
         children=row.get('children')
         if not isinstance(children,list) or len(children)<2:errors.append('missing_split_children')
