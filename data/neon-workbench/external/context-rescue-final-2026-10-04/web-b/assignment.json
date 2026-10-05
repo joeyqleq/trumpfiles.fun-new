@@ -1,0 +1,56 @@
+{
+  "base_commit": "f30b5cee35140a60c3b7c8fa1715fb55967e4929",
+  "input_sha256": "17a3e9c3ba86f83c10b9b498aa327e32a527cd9852dde3cd36747d42f0f6acf0",
+  "record_count": 19,
+  "workers": [
+    {
+      "worker": 1,
+      "record_ids": [
+        "entry-6356",
+        "entry-643",
+        "entry-651"
+      ]
+    },
+    {
+      "worker": 2,
+      "record_ids": [
+        "entry-655",
+        "entry-6552",
+        "entry-674"
+      ]
+    },
+    {
+      "worker": 3,
+      "record_ids": [
+        "entry-6795",
+        "entry-6915",
+        "entry-801"
+      ]
+    },
+    {
+      "worker": 4,
+      "record_ids": [
+        "entry-822",
+        "entry-824",
+        "entry-835"
+      ]
+    },
+    {
+      "worker": 5,
+      "record_ids": [
+        "entry-853",
+        "entry-854",
+        "entry-873"
+      ]
+    },
+    {
+      "worker": 6,
+      "record_ids": [
+        "entry-945",
+        "entry-954",
+        "entry-978",
+        "entry-996"
+      ]
+    }
+  ]
+}

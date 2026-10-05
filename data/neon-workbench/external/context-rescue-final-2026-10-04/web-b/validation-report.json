@@ -1,0 +1,21 @@
+{
+  "input_records": 19,
+  "historical_terminal_rows": 26,
+  "effective_terminal_records": 19,
+  "counts": {
+    "hold": 8,
+    "pass": 11
+  },
+  "checks": {
+    "exact_ids": "passed",
+    "nonoverlapping_assignments": "passed",
+    "schema": "passed",
+    "word_counts": "passed",
+    "url_syntax_and_fact_mapping": "passed",
+    "insight_quote_mapping": "passed",
+    "impact_proposal": "passed",
+    "research_coverage": "passed",
+    "immutable_worker_row_preservation": "passed",
+    "input_sha256": "passed"
+  }
+}
