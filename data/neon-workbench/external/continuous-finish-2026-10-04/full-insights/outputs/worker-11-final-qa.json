@@ -1,0 +1,95 @@
+{
+  "job_id": "full-insights-11",
+  "worker": 11,
+  "proposal_only": true,
+  "source": {
+    "branch": "codex/full-insights-packets-2026-10-04",
+    "commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-11-input.jsonl",
+    "rows": 93,
+    "sources_fetched": false
+  },
+  "scope": {
+    "assigned_ids": 93,
+    "terminal_rows": 93,
+    "unique_terminal_ids": 93,
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "status_counts": {
+      "complete": 87,
+      "insufficient": 6
+    },
+    "insufficient_ids": [
+      "entry-879",
+      "entry-1322",
+      "entry-1539",
+      "entry-6162",
+      "entry-6318",
+      "entry-6905"
+    ],
+    "quantities_in_core": 0,
+    "relations_in_core": 0,
+    "candidate_extensions_saved": false
+  },
+  "validation": {
+    "schema_and_enum_check": "passed",
+    "literal_basis_quotes": "passed",
+    "active_literal_quote_count": 635,
+    "every_populated_core_value_has_evidence_map_entry": "passed",
+    "evidence_status": "supplied_text",
+    "source_urls_used_as_checked_sources": false,
+    "append_only_terminal": "preserved",
+    "amendments": 34,
+    "amended_record_ids": [
+      "entry-494",
+      "entry-1176",
+      "entry-1788",
+      "entry-2923",
+      "entry-2995",
+      "entry-3449",
+      "entry-3738",
+      "entry-4483",
+      "entry-4556",
+      "entry-5015",
+      "entry-5466",
+      "entry-4028",
+      "entry-6087",
+      "entry-6500",
+      "entry-7014",
+      "entry-1539",
+      "entry-879",
+      "entry-6162",
+      "entry-6318"
+    ],
+    "nonliteral_active_quotes": 0,
+    "unsupported_populated_core_values": 0
+  },
+  "artifact_paths": {
+    "terminal": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-11-terminal.jsonl",
+    "amendments": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-11-amendments.jsonl",
+    "checkpoint": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/checkpoints/worker-11-checkpoint.json",
+    "final_qa": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-11-final-qa.json"
+  },
+  "boundary": "Extraction uses only supplied staged/frozen text and notes. Supplied descriptions and source mappings are not independently verified; no web searches or new scoring were performed.",
+  "created_at_utc": "2026-10-04T12:02:38.135194+00:00",
+  "task_title_count_discrepancy": {
+    "title_rows": 52,
+    "explicit_assigned_ids": 93,
+    "frozen_packet_rows": 93,
+    "resolution": "Processed the complete explicit assigned-ID list and packet (93 records); title count retained unchanged."
+  },
+  "coordinator_artifact_issues": {
+    "reported": [
+      "output_missing"
+    ],
+    "resolved": {
+      "output_missing": true
+    },
+    "evidence_paths": [
+      "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-11-terminal.jsonl",
+      "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-11-final-qa.json",
+      "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/checkpoints/worker-11-checkpoint.json"
+    ]
+  },
+  "updated_at_utc": "2026-10-04T12:08:30.162745+00:00"
+}

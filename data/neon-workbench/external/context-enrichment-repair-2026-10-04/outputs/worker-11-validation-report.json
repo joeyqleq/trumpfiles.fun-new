@@ -1,0 +1,24 @@
+{
+  "record_id": "entry-1857",
+  "input_commit": "ca243bd27677f9c0d6cd4d2f30d44277bbdad615",
+  "input_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/worker-11-input.jsonl",
+  "validator_path": "data/neon-workbench/scripts/audit_context_rescue_enrichments.py",
+  "validator_sha256": "17c6f94612d70b1cf23f44ea816fa3cea554cc2cfc249bd07062b3b6e902c281",
+  "terminal_path": "data/neon-workbench/external/context-enrichment-repair-2026-10-04/outputs/worker-11-terminal.jsonl",
+  "terminal_sha256": "095ce416d93c3cae773c04e72401703f877bf6316d8f44049f16442fcd3adf0e",
+  "protected_fields_unchanged": [
+    "title",
+    "description_short",
+    "description_medium",
+    "description_long",
+    "source_urls",
+    "source_fact_map",
+    "source_provenance"
+  ],
+  "validation": {
+    "status": "valid",
+    "valid": true,
+    "pending": [],
+    "diagnostics": []
+  }
+}

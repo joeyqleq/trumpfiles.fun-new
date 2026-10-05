@@ -1,0 +1,22 @@
+{
+  "job": "gap653-51",
+  "worker": 51,
+  "input_commit": "597ea5739623393fcf62c3859ada19ec85a848bf",
+  "completed_count": 11,
+  "completed_record_ids": [
+    "entry-1383",
+    "entry-1535",
+    "entry-1673",
+    "entry-1881",
+    "entry-2304",
+    "entry-259",
+    "entry-341",
+    "entry-4204",
+    "entry-5541",
+    "entry-66",
+    "entry-984"
+  ],
+  "terminal_path": "data/neon-workbench/external/offline-gap653-2026-10-05/outputs/worker-51-terminal.jsonl",
+  "terminal_sha256": "f250eb70a1eb913bb2eaae3c03133a6c66049d1d345062d2eee026517969ecf1",
+  "validation": "passed"
+}
