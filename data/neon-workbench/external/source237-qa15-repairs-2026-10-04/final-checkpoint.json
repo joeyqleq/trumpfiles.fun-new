@@ -1,0 +1,35 @@
+{
+  "artifact": "source237 QA15 repair worker 12 final checkpoint",
+  "status": "PASS",
+  "worker": 12,
+  "expected_ids": [
+    "entry-6754"
+  ],
+  "result_ids": [
+    "entry-6754"
+  ],
+  "exact_set_match": true,
+  "row_count": 1,
+  "unique_id_count": 1,
+  "output_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-12-batch-20261004-001.jsonl",
+  "output_sha256": "009eab81a154e629bb5f2be3f173a98665ccb794dc9279520f46ae05ee9dcc3c",
+  "checked": {
+    "title_short_max_180_chars": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "all_source_urls_https_and_mapped": true,
+    "correction_is_limited_to_order_supported_facts": true,
+    "original_evidence_gaps_preserved": true,
+    "no_canonical_or_neon_edits": true
+  },
+  "lengths": {
+    "title_chars": 64,
+    "short_chars": 64,
+    "medium_words_whitespace": 59,
+    "long_words_whitespace": 183
+  },
+  "source_packet_commit": "52043a55a1e1a658003baaca9d0c6472f4bd8639",
+  "coordinator_commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+  "branch": "ls/12-trump-files-source118-review-12-of-12-MQJb",
+  "note": "Proposal-only QA repair. The length finding is repaired; unsupported original outcome claims remain explicitly out of scope. No canonical or Neon data was changed."
+}

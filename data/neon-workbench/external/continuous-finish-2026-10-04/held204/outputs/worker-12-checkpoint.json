@@ -1,0 +1,60 @@
+{
+  "job": "held204-12",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "expected_record_ids": [
+    "entry-231",
+    "entry-425",
+    "entry-766",
+    "entry-833",
+    "entry-954",
+    "entry-1730",
+    "entry-2296",
+    "entry-2418",
+    "entry-2557",
+    "entry-2864",
+    "entry-3574",
+    "entry-4040",
+    "entry-4603",
+    "entry-5462",
+    "entry-5996",
+    "entry-6245",
+    "entry-6997"
+  ],
+  "processed_record_ids": [
+    "entry-231",
+    "entry-425",
+    "entry-766",
+    "entry-833",
+    "entry-954",
+    "entry-1730",
+    "entry-2296",
+    "entry-2418",
+    "entry-2557",
+    "entry-2864",
+    "entry-3574",
+    "entry-4040",
+    "entry-4603",
+    "entry-5462",
+    "entry-5996",
+    "entry-6245",
+    "entry-6997"
+  ],
+  "terminal_row_count": 17,
+  "amendment_count": 17,
+  "effective_status_counts": {
+    "pass": 7,
+    "hold": 10,
+    "exclusion_candidate": 0
+  },
+  "qa_exact_set_pass": true,
+  "artifact_issue_resolution": {
+    "output_missing": false
+  },
+  "last_saved_at_utc": "2026-10-04T10:50:11.038255+00:00",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-terminal.jsonl",
+  "amendments_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-amendments.jsonl",
+  "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-qa.json",
+  "resolved_coordinator_issues": [
+    "bad_description_long:entry-954"
+  ]
+}

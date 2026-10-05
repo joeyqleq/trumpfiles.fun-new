@@ -1,0 +1,154 @@
+{
+  "job": "held204-12",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "assigned_ids": [
+    "entry-231",
+    "entry-425",
+    "entry-766",
+    "entry-833",
+    "entry-954",
+    "entry-1730",
+    "entry-2296",
+    "entry-2418",
+    "entry-2557",
+    "entry-2864",
+    "entry-3574",
+    "entry-4040",
+    "entry-4603",
+    "entry-5462",
+    "entry-5996",
+    "entry-6245",
+    "entry-6997"
+  ],
+  "terminal_unique_ids": [
+    "entry-231",
+    "entry-425",
+    "entry-766",
+    "entry-833",
+    "entry-954",
+    "entry-1730",
+    "entry-2296",
+    "entry-2418",
+    "entry-2557",
+    "entry-2864",
+    "entry-3574",
+    "entry-4040",
+    "entry-4603",
+    "entry-5462",
+    "entry-5996",
+    "entry-6245",
+    "entry-6997"
+  ],
+  "exact_set_pass": true,
+  "terminal_rows": 17,
+  "amendments": 17,
+  "effective_status_counts": {
+    "pass": 7,
+    "hold": 10,
+    "exclusion_candidate": 0
+  },
+  "effective_pass_metrics": {
+    "entry-766": {
+      "title_chars": 81,
+      "short_chars": 160,
+      "medium_words": 67,
+      "long_words": 145
+    },
+    "entry-833": {
+      "title_chars": 54,
+      "short_chars": 120,
+      "medium_words": 72,
+      "long_words": 141
+    },
+    "entry-3574": {
+      "title_chars": 65,
+      "short_chars": 156,
+      "medium_words": 77,
+      "long_words": 145
+    },
+    "entry-5462": {
+      "title_chars": 81,
+      "short_chars": 132,
+      "medium_words": 56,
+      "long_words": 140
+    },
+    "entry-5996": {
+      "title_chars": 73,
+      "short_chars": 127,
+      "medium_words": 64,
+      "long_words": 140
+    },
+    "entry-6245": {
+      "title_chars": 76,
+      "short_chars": 134,
+      "medium_words": 76,
+      "long_words": 147
+    },
+    "entry-6997": {
+      "title_chars": 76,
+      "short_chars": 127,
+      "medium_words": 67,
+      "long_words": 145
+    }
+  },
+  "pass_checks": "All effective pass rows satisfy title/short <=180 characters, medium 45–90 words, long 140–300 words, no blockers, and each listed source URL has a fact map.",
+  "hold_checks": "Every hold has a blocker and preserves prior non-null text in preservation_notes; changed-event-identity cases remain held.",
+  "append_only": "Existing terminal history was preserved; only missing rows were appended. Corrections are in worker-12-amendments.jsonl.",
+  "artifact_issue_resolution": {
+    "output_missing": false,
+    "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-terminal.jsonl",
+    "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-qa.json",
+    "checkpoint_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-12-checkpoint.json"
+  },
+  "unresolved_items": [
+    {
+      "record_id": "entry-231",
+      "blocker": "HOLD: the only linked University of Utah page returned 404, so the exact analysis and provisions cannot be checked from the supplied source. The supplied synopsis can support only a proposal-focused summary; an accessible copy is needed, and any claim of enacted or nationwide tenure/union changes requires the specific law/order and affected jurisdictions."
+    },
+    {
+      "record_id": "entry-425",
+      "blocker": "HOLD: the listed Slate opinion article concerns Hegseth and Harvard, and the Wikipedia profile does not establish the proposal's AP-reported count. The AP report URL and the named cases/category basis for 'more than two dozen' are absent; provide that reporting and retain the distinction between firing and pressured retirement."
+    },
+    {
+      "record_id": "entry-954",
+      "blocker": "The proposal retains the “Corrupt Pardons” subcategory while its own evidence_resolution says the instrument supplies no rationale and does not support an inference of corrupt motive. A neutral clemency classification or evidence for corruption is required."
+    },
+    {
+      "record_id": "entry-1730",
+      "blocker": "The proposed “Trump 50” publication account is supported by The Atlantic link, but the frozen event concerns alleged guardrail/Iran consequences. The candidate changes event identity, so it cannot pass as a description for this record."
+    },
+    {
+      "record_id": "entry-2296",
+      "blocker": "The Roll Call report cited in the draft is absent from source_urls; NPR supplies a short rally recap, while the AP video URL returned HTTP 403 and its title alone does not establish the full remark or context."
+    },
+    {
+      "record_id": "entry-2418",
+      "blocker": "The 1989 yacht-party sources support a social encounter but do not support the frozen 1988 passport, banking, and KGB allegations. Replacing those allegations with the party would change event identity."
+    },
+    {
+      "record_id": "entry-2557",
+      "blocker": "The House testimony supports Caputo’s account of 2007 campaign work, but it does not establish that Putin directed or hired Caputo, that the work aided a political takeover, or that this was a Trump action. The original Press Freedom / Media Intimidation classification is unsupported."
+    },
+    {
+      "record_id": "entry-2864",
+      "blocker": "The official transcript supports Trump’s August 5 response to the Dayton and El Paso attacks. Reframing the frozen shooting event as a separate Trump statement changes event identity; retain the statement draft only as a distinct-event proposal."
+    },
+    {
+      "record_id": "entry-4040",
+      "blocker": "The exact AP URL resolves to an adventure-car feature unrelated to Donald Trump. The preserved description is generic boilerplate with no event-specific facts; the intended Trump-related event and a correct event-specific source are missing."
+    },
+    {
+      "record_id": "entry-4603",
+      "blocker": "The NDSU report supports a May 2026 publication-context proposal, but the source record concerns a March 4, 2025 event and a 72% soybean-export claim. Substituting the later report changes event identity and date."
+    }
+  ],
+  "created_at_utc": "2026-10-04T10:42:18.287064+00:00",
+  "resolved_coordinator_issues": [
+    "bad_description_long:entry-954"
+  ],
+  "entry_954_long_description_correction": "Replaced the prior repetitive wording with a source-grounded description of the pardon, conviction identifier, sentence, and limits of the warrant; see the latest immutable amendment for the exact text.",
+  "updated_at_utc": "2026-10-04T10:50:11.037847+00:00",
+  "issue_resolution_details": {
+    "entry-954": "The previous long description was withdrawn and status amended to HOLD; the DOJ warrant does not provide enough case-specific facts for a substantive long description. Original text remains preserved in the terminal and amendment history."
+  }
+}
