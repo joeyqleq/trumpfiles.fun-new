@@ -1,0 +1,8 @@
+{
+  "worker": "08",
+  "input_rows": 93,
+  "processed_rows": 93,
+  "last_record_id": "expanded-20260927-kennedy-ad-criticism",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/outputs/worker-08-terminal.jsonl",
+  "checkpoint_status": "complete"
+}
