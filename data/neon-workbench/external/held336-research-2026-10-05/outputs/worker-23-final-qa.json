@@ -1,0 +1,56 @@
+{
+  "job": "held336-23",
+  "worker": 23,
+  "date": "2026-10-05",
+  "input": {
+    "branch": "codex/held336-research-2026-10-05",
+    "commit": "5f62d1c2569277d9b25e9cb07c6492ec5d6988fb",
+    "path": "data/neon-workbench/external/held336-research-2026-10-05/worker-23-input.jsonl"
+  },
+  "assigned_ids": [
+    "entry-1777",
+    "entry-5760",
+    "entry-6612",
+    "entry-6865"
+  ],
+  "terminal_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-23-terminal.jsonl",
+  "authoritative_statuses": {
+    "entry-1777": "exclusion_candidate",
+    "entry-5760": "exclusion_candidate",
+    "entry-6612": "hold",
+    "entry-6865": "pass (latest effective terminal is amendment revision 2)"
+  },
+  "amendments": [
+    {
+      "path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-23-amendment-1.jsonl",
+      "record_id": "entry-6865",
+      "revision": 1,
+      "reason": "Restored the complete source_fact_map and matching evidence_map after the initial row assembly retained only the last evidence entry."
+    },
+    {
+      "path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-23-amendment-2.jsonl",
+      "record_id": "entry-6865",
+      "revision": 2,
+      "reason": "Separated the White House statement from Trump's later clarification and supplied a literal source excerpt for each."
+    }
+  ],
+  "validation": {
+    "validator": "data/neon-workbench/scripts/validate_held336.py at the supplied commit",
+    "gate": "PASS for all four terminal rows and latest amended entry-6865 terminal_record",
+    "exact_assigned_set": "PASS",
+    "unique_terminal_parent_ids": 4,
+    "held_or_excluded_search_gate": "PASS: at least 3 distinct searches and 2 source-fetch attempts for each of the three unresolved rows",
+    "entry_6865_medium_words": 77,
+    "entry_6865_long_words": 190,
+    "source_quotes": "PASS: each quote is a literal substring of its accessed excerpt"
+  },
+  "source_access": {
+    "atlantic": "Exa Get Contents returned CRAWL_UNKNOWN_ERROR (HTTP 500) on both relevant pages; Firecrawl returned HTTP 429 rate limits. Exa Search excerpts identified the linked package as a first-term retrospective, but no fetch supplied the missing event-specific passage.",
+    "firecrawl": "Relevant scrape attempts returned HTTP 429 rate limits; successful source extraction was completed through Exa for the supported card and corroborating mismatch sources."
+  },
+  "coordinator_issue_resolved": [
+    "output_missing"
+  ],
+  "preservation": "Only append-only terminal output, immutable amendment records, and this QA file were added. No frozen input, canonical, export, database, or survivor file was changed.",
+  "pull_request": "Not requested; no PR created."
+}
