@@ -1,0 +1,44 @@
+{
+  "job": "web39-31",
+  "input_commit": "23c3a4bc68a517c37a4bee60bef4b11490ef14fc",
+  "input_ids": [
+    "entry-824"
+  ],
+  "terminal_file": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-31-terminal.jsonl",
+  "terminal_rows": 1,
+  "amendment_file": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-31-amendments.jsonl",
+  "amendments": [
+    {
+      "record_id": "entry-824",
+      "revision": 1,
+      "reason": "Validator found that two institution evidence-map quotes were absent from source_fact_map; added the exact supporting source excerpt and retained the initial terminal unchanged as history."
+    }
+  ],
+  "effective_terminal": {
+    "record_id": "entry-824",
+    "status": "pass",
+    "proposal_only": true,
+    "copy_limits": {
+      "title_chars": 61,
+      "short_chars": 121,
+      "medium_words": 60,
+      "long_words": 207
+    },
+    "context_enrichment_audit": {
+      "status": "valid",
+      "valid": true,
+      "pending": [],
+      "diagnostics": []
+    }
+  },
+  "research_history": [
+    {
+      "url": "https://www.usatoday.com/story/weather/2026/02/20/oklahoma-wildfires-map-forecast-red-flag/88774589007/",
+      "result": "HTTP 402 Payment Required; not used as supporting evidence.",
+      "relevance": "The supplied USA Today page is an Oklahoma wildfire forecast and is unrelated to Linick’s removal or the inquiries."
+    }
+  ],
+  "canonical_live_data_modified": false,
+  "neon_written": false,
+  "new_pull_request_opened": false
+}
