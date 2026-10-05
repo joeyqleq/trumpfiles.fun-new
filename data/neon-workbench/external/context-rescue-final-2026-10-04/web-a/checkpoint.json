@@ -1,0 +1,97 @@
+{
+  "input_commit": "f30b5cee35140a60c3b7c8fa1715fb55967e4929",
+  "input_sha256": "6f38bba3ec9244d8b1f926abde93d72b2311934f4006fa3d3886f0a2ab090c5b",
+  "assigned_ids": [
+    "entry-4198",
+    "entry-4207",
+    "entry-425",
+    "entry-4308",
+    "entry-4603",
+    "entry-4692",
+    "entry-5309",
+    "entry-5403",
+    "entry-5406",
+    "entry-5541",
+    "entry-5597",
+    "entry-5599",
+    "entry-5698",
+    "entry-5707",
+    "entry-5936",
+    "entry-6200",
+    "entry-6206",
+    "entry-6239",
+    "entry-6241",
+    "entry-6340"
+  ],
+  "workers": {
+    "worker-1": [
+      "entry-4198",
+      "entry-4207",
+      "entry-425",
+      "entry-4308"
+    ],
+    "worker-2": [
+      "entry-4603",
+      "entry-4692",
+      "entry-5309",
+      "entry-5403"
+    ],
+    "worker-3": [
+      "entry-5406",
+      "entry-5541",
+      "entry-5597",
+      "entry-5599"
+    ],
+    "worker-4": [
+      "entry-5698",
+      "entry-5707",
+      "entry-5936",
+      "entry-6200"
+    ],
+    "worker-5": [
+      "entry-6206",
+      "entry-6239",
+      "entry-6241",
+      "entry-6340"
+    ]
+  },
+  "proposal_only": true,
+  "status": "complete",
+  "completed_ids": [
+    "entry-4198",
+    "entry-4207",
+    "entry-425",
+    "entry-4308",
+    "entry-4603",
+    "entry-4692",
+    "entry-5309",
+    "entry-5403",
+    "entry-5406",
+    "entry-5541",
+    "entry-5597",
+    "entry-5599",
+    "entry-5698",
+    "entry-5707",
+    "entry-5936",
+    "entry-6200",
+    "entry-6206",
+    "entry-6239",
+    "entry-6241",
+    "entry-6340"
+  ],
+  "remaining_ids": [],
+  "outcomes": {
+    "hold": 12,
+    "pass": 8
+  },
+  "focused_rescues": 20,
+  "impact_scored": 0,
+  "impact_deferred": 8,
+  "validation_passed": true,
+  "output_sha256": {
+    "terminal-results.jsonl": "42803a8fab254acfbeeb48a01143f3c90e71c2b3088bd98e17404fc185b7bb20",
+    "amendments.jsonl": "19b5bb27c56bd6001729f7ac7fad7470e1c2274fe6183b057249061f73814c10",
+    "effective-results.jsonl": "bb56335547d3dd83e7a4abadea5f9d49ea4f5d952423342b50d784764e1a4e0a",
+    "research-log.jsonl": "6ae57b1b02e21f75a16b54068dde623de407e72f31470a070fb1f16c5167fb21"
+  }
+}

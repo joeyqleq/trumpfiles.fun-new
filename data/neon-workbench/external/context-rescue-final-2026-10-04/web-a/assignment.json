@@ -1,0 +1,59 @@
+{
+  "input_commit": "f30b5cee35140a60c3b7c8fa1715fb55967e4929",
+  "input_sha256": "6f38bba3ec9244d8b1f926abde93d72b2311934f4006fa3d3886f0a2ab090c5b",
+  "assigned_ids": [
+    "entry-4198",
+    "entry-4207",
+    "entry-425",
+    "entry-4308",
+    "entry-4603",
+    "entry-4692",
+    "entry-5309",
+    "entry-5403",
+    "entry-5406",
+    "entry-5541",
+    "entry-5597",
+    "entry-5599",
+    "entry-5698",
+    "entry-5707",
+    "entry-5936",
+    "entry-6200",
+    "entry-6206",
+    "entry-6239",
+    "entry-6241",
+    "entry-6340"
+  ],
+  "workers": {
+    "worker-1": [
+      "entry-4198",
+      "entry-4207",
+      "entry-425",
+      "entry-4308"
+    ],
+    "worker-2": [
+      "entry-4603",
+      "entry-4692",
+      "entry-5309",
+      "entry-5403"
+    ],
+    "worker-3": [
+      "entry-5406",
+      "entry-5541",
+      "entry-5597",
+      "entry-5599"
+    ],
+    "worker-4": [
+      "entry-5698",
+      "entry-5707",
+      "entry-5936",
+      "entry-6200"
+    ],
+    "worker-5": [
+      "entry-6206",
+      "entry-6239",
+      "entry-6241",
+      "entry-6340"
+    ]
+  },
+  "proposal_only": true
+}
