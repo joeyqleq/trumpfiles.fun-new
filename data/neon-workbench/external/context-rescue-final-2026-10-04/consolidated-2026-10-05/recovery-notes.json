@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-05",
+  "method": "GitHub API recovery after filesystem gateway disconnection",
+  "original_source_bytes": "preserved verbatim in candidate-history raw_line, verifiable SHA-256 and frozen Git blobs",
+  "audit_recovery": "Semantically recovered from completed worker contexts; JSON whitespace and some issue wording differ from inaccessible local originals. All candidate selections and substantive patches preserved.",
+  "new_research": false,
+  "prior_checkpoint": "publication-checkpoint.json retained unchanged",
+  "proposal_only": true
+}
