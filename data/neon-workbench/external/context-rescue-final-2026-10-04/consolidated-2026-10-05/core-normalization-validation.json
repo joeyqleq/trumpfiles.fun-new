@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "records": 32,
+  "checks": [
+    "strict core enums",
+    "string arrays",
+    "empty deferred extensions",
+    "field/value mapping",
+    "literal supplied source excerpts",
+    "deferred impact dimensions/total"
+  ],
+  "new_source_verification": false,
+  "publication_approval": false
+}

@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {neon} from '@neondatabase/serverless';
+if(!process.env.DATABASE_URL)throw Error('DATABASE_URL is required; secrets must remain outside git');
+const sql=neon(process.env.DATABASE_URL);
+const output=process.argv[2]||'/tmp/trumpfiles-neon-preflight.json';
+const tables=await sql`SELECT table_name,column_name,data_type,is_nullable FROM information_schema.columns WHERE table_schema='public' AND (table_name LIKE 'trump_%' OR table_name='ai_complete_trump_data') ORDER BY table_name,ordinal_position`;
+const constraints=await sql`SELECT table_name,constraint_name,constraint_type FROM information_schema.table_constraints WHERE table_schema='public' AND table_name LIKE 'trump_%' ORDER BY table_name,constraint_type`;
+const inventory=await sql`SELECT count(*)::int AS count,min(entry_number) AS first_entry,max(entry_number) AS last_entry,max(date_start) AS latest_event FROM trump_entries`;
+const ids=[1857,203,2106,2296,2321,264,2731,3117,3444,37,3899,405,4207,425,4308,5309,5698,5707,5936,6206,643,651,655,674,801,822,824,873,945,954,978,996];
+const targetRows=await sql`SELECT entry_number,title,date_start,date_end,synopsis,category,subcategory FROM trump_entries WHERE entry_number=ANY(${ids}::int[]) ORDER BY entry_number`;
+const report={status:'preflight_only_no_writes',generated_at:new Date().toISOString(),inventory,tables,constraints,targetRows,expected_target_count:ids.length,missing_ids:ids.filter(id=>!targetRows.some(r=>Number(r.entry_number)===id)),credentials_in_report:false};
+fs.mkdirSync(path.dirname(output),{recursive:true});
+fs.writeFileSync(output,JSON.stringify(report,null,2)+'\n',{mode:0o600});
+console.log(JSON.stringify({status:report.status,inventory,targets:targetRows.length,missing:report.missing_ids,report:output}));

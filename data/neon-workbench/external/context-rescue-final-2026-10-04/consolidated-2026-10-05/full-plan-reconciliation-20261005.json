@@ -1,0 +1,87 @@
+{
+  "updated": "2026-10-05",
+  "authorization": "User explicitly authorized all work needed, including reviewed live changes.",
+  "frozen_corpus": {
+    "count": 7143,
+    "path": "data/neon-export/tables/trump_entries.jsonl",
+    "sha256": "f76bdd5d3ae292871ff685b8bdd6194bac458d87f2f0f814420a94a68e147013",
+    "live_count_verified": true,
+    "live_count": 7143,
+    "live_count_checked": "2026-10-05"
+  },
+  "context_rescue": {
+    "assigned": 99,
+    "terminal": 99,
+    "pass": 32,
+    "hold": 51,
+    "exclusion_proposal": 16,
+    "impact_deferred": 32,
+    "commit": "645a380e9fbc6a90be515571acc4194947b83257"
+  },
+  "original_sample100": {
+    "assigned": 100,
+    "qa_rows": 100,
+    "missing_qa_rows": 0,
+    "ids": "entry1–104 excluding35,37,64,66",
+    "editorial_approval": false,
+    "live_application_verified": false
+  },
+  "full_insights": {
+    "assigned": 6645,
+    "packets": 72,
+    "source_branch": "codex/full-insights-packets-2026-10-04",
+    "trial_ids_excluded": 200,
+    "workers": [
+      {
+        "worker": 1,
+        "packet_first": 1,
+        "packet_last": 12
+      },
+      {
+        "worker": 2,
+        "packet_first": 13,
+        "packet_last": 24
+      },
+      {
+        "worker": 3,
+        "packet_first": 25,
+        "packet_last": 36
+      },
+      {
+        "worker": 4,
+        "packet_first": 37,
+        "packet_last": 48
+      },
+      {
+        "worker": 5,
+        "packet_first": 49,
+        "packet_last": 60
+      },
+      {
+        "worker": 6,
+        "packet_first": 61,
+        "packet_last": 72
+      }
+    ],
+    "status": "processing supplied-text extraction",
+    "editorial_approval": false,
+    "source_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551"
+  },
+  "live_application": {
+    "status": "not_applied",
+    "database_schema_verified": false,
+    "reason": "Workspace command transport disconnected. Vercel project/environment access succeeds; no available direct Neon SQL tool or callable session/deployment creator.",
+    "preflight_script": "database-preflight.mjs",
+    "schema_mapping": "pending live preflight; preserve deferred new impact score independently of legacy eight-dimensional rubric",
+    "rollback": "required before transaction",
+    "public_api_mapping": "current main uses ai_complete_trump_data and trump_sources; full three-description/structured-insight mapping not yet verified",
+    "observed": {
+      "entry37_title": "Twitter Covfefe Mystery",
+      "entry37_old_copy": true,
+      "public_api_has_three_descriptions": false,
+      "checked": "2026-10-05",
+      "url": "https://trumpfiles-fun-6mz4olikn-joeyqleqs-projects.vercel.app/api/entry/37"
+    }
+  },
+  "completion": "not complete"
+}

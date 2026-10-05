@@ -1,0 +1,954 @@
+[
+  {
+    "file_id": "be48485874083519",
+    "commit": "a9fb81410690a216d41769ab4253f4e8532ad6f6",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-01-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "4f5ac40572308a871ef66a75d721695acb748d779db8df5465c5ee14005b7fdb",
+    "git_blob": "98004d108bc847a93b3750441698b943690e7a13"
+  },
+  {
+    "file_id": "3a07d9d62542389c",
+    "commit": "7aee36af22849e58d75077eff6dcb9da9093bd44",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-02-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "18c71ca0162af07e13b8188a3c7adac4f33aa063b90df103e58a2ac32c639804",
+    "git_blob": "d1528afd3a575f484785ca657fa37f7547a9fa5b"
+  },
+  {
+    "file_id": "ff058ad2397827b0",
+    "commit": "7f5e7b6b31e7b081d251ceecad6e0bba11405430",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-03-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "1cd0b56562966ca2d89f71c57cb75d860c8ea23ca0529d578417f2aa8772f779",
+    "git_blob": "49fcc3cb79cd8334992b1f3a704d227588d8475d"
+  },
+  {
+    "file_id": "1e02198a1b97f672",
+    "commit": "4948486e0b3ce87bd5ced667cc22058bc9e10ffa",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-04-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "28b056d6f0a22d2f8df665acc65cf083cf62485b3c3bd5cee1b793e3041d8176",
+    "git_blob": "aa9d9205e3986eba543fdd80b0232e56d95838dc"
+  },
+  {
+    "file_id": "1d4e6932d73f33c1",
+    "commit": "13fb22f27848c475fc1f31e2b1a1cf7b721f48a9",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-05-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "b598173a98266501a5c8a4c958d5d77f9bae5e925e62b9717c6b4c8f9a8a6562",
+    "git_blob": "1bd7f633145c324f9c0465ee3ff7678f09b1bc3c"
+  },
+  {
+    "file_id": "bed666138d077e60",
+    "commit": "72a11b8aba8a280cb568b61733752ed059e07058",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-06-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "054d58e38cc3bb246d1137f421e7e97bfb2637c1bea22fb72eec0bbc6a6c5101",
+    "git_blob": "066e8b7f04396e2123447813659bbfd9a3ca4e54"
+  },
+  {
+    "file_id": "e9a2acdc85f5f920",
+    "commit": "40a1c9bc09fd10b44e2dfc4ba59830b80206ab88",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-07-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "ecb33f3620113586714a2f8ba8d33d4b78d4b834fa5c8909a4958b34262184cc",
+    "git_blob": "bc23108cb782b1c02f21f26909c9eacf7198c8e0"
+  },
+  {
+    "file_id": "1507d8579ca6c4b5",
+    "commit": "f595dfbc5990a33cc8d83984af86d36da48b7788",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-08-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "48de0b5c85b853f2f6237bbbe4a72bdd60ba81450e3d32a8c3a3e9433e37c880",
+    "git_blob": "b98d04dbc27b6152b93874fa26ed951c21619442"
+  },
+  {
+    "file_id": "e56a0a1da3921c41",
+    "commit": "a81a0eed3071768b612068155c8b316e9ed98fe5",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-09-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "d1525cd66028167d9df83abfca2ebde4cd3ee142f89231bb2d83770b70f5775c",
+    "git_blob": "57f22bd77000f5e404edb51a0b085d5eb3172ffa"
+  },
+  {
+    "file_id": "2dc2b71ccab70868",
+    "commit": "d2fde1d3154a908a2fcd6510dd5f17f9341ceb86",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-10-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "2a8c1cc7ec0bb0e211c780e175f3cfca5163a3127f2acc2dcf08931ef2227cc3",
+    "git_blob": "033059b5e213f6b5061eb8b410042fce35239d1d"
+  },
+  {
+    "file_id": "d1b75fbcc0753865",
+    "commit": "2ac255edbd71ecd91974517f7b2f8bad6c7188c6",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-11-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "9b39e7d590263a2e497f16e65165ae100c191e0ebc2eda7c9c7756adb965e127",
+    "git_blob": "855c2baabfb5c6ccb44996abbc21af6811882790"
+  },
+  {
+    "file_id": "5a13402cd10cac16",
+    "commit": "51bebe711263b557cfd2f21d7a899ab0f403996e",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-12-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "a9d4dd9898856544ce24a608dcbaa17b693d9f4b6d843d22920b663ccbcbd160",
+    "git_blob": "b74ddfa9e8d94cf51f8a9913fbb4bc05691bcd3c"
+  },
+  {
+    "file_id": "c5bc0145592302f3",
+    "commit": "e0743445972b9a3fc45feb66d78af1768c167800",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-13-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "b262a2e56c7ad2f928ab1faefab22555342e8643667a494a3eee334a57526835",
+    "git_blob": "8f8488d47d28e46e15adfe9fe6af666e1e2c8348"
+  },
+  {
+    "file_id": "8e94d989b30c2cf7",
+    "commit": "5a22292202f91fc2f6e9d3b794669b240946362d",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-14-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "868707b0f668111c0c3bfcc8345990902f53e8df15fcd234b282dd31084311ba",
+    "git_blob": "2879008c62725e82401ab2e7084c1157bf654f43"
+  },
+  {
+    "file_id": "70dd52e99137fee2",
+    "commit": "e7c4cdb38c791243f4c2789c1c32ce9270aa258a",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-15-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "44563f38e2f892e46a7ce83c8163382ea9a183d968746db7b9c3d6ee2f334a82",
+    "git_blob": "4f97b9dfc77db88bd210ab9891c0bcc04bc1d4d8"
+  },
+  {
+    "file_id": "438a02484dd484e8",
+    "commit": "6d2e5d05acad382df74857083eff995706c9d45c",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-16-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "5b138b494133673c4371f41bb17fdcc877a6241c03d7eb9b2cd7c5dcc73e9896",
+    "git_blob": "10a7a6ec640a6aa81d7ce6c82fe1339c4af298df"
+  },
+  {
+    "file_id": "21d3531afb62ed1e",
+    "commit": "d1957cc06daf21f3f06e03f95ffbb6d20ae1bbd0",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-17-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "1638dfb8a49268910834d94254e4f353e58bc87e39e4581605593dd4ea4cbe7f",
+    "git_blob": "54783f70e52ca0a85bc2eab1a43c3d328315c170"
+  },
+  {
+    "file_id": "50f42df052acadc6",
+    "commit": "529149c79e8cf014ed5db835619116d3b3c67462",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-18-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "3cc6e466a41d9687007b4cae402c25fb2b17f323c05f43f0979a9fb89b0c3d81",
+    "git_blob": "86e5af86c5145e5720db849246380db089503a4c"
+  },
+  {
+    "file_id": "3f9f0b29c26af541",
+    "commit": "f1e102419b79e0360dce4dbe78669c73b6fe4835",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-19-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "012a6c14ca5440736f0dcd9e887ae4ba883991c5ec150ad05372907f3262bcd1",
+    "git_blob": "0b5acf0f72c1f776a1c5364cbcbfd665d18dabf3"
+  },
+  {
+    "file_id": "975636958b7ad1b1",
+    "commit": "e953e772bf3dc8fcf4ff992946f97dac6ac458fc",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-20-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "33986971bc0817ebf7100c5221832afa1453a40adc125c4a01e8e8a70c5b439d",
+    "git_blob": "75904afcf6188f5dbf99e624d32775a2ab50c7ed"
+  },
+  {
+    "file_id": "aaccee53e883f037",
+    "commit": "0f9909a2743ee61c5d5270b7ecb597f8a926a0a6",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-21-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "0b01599123b8b5f753ed2ef38127db071d635507da7e75c26789f70f9bd35dc3",
+    "git_blob": "b18c5292024b458b429a69f02380a4fefc782403"
+  },
+  {
+    "file_id": "060e2a8affafb0f2",
+    "commit": "8207edc7ec97f793c81d1ac01578d5ab4cc3359a",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-22-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "41323c43e60ded8c3115804dddb336b34f1965244f981e08e59e5e5a15f6f270",
+    "git_blob": "c9fbed3533bd05dcf72352ec678d0bd69d29d1b8"
+  },
+  {
+    "file_id": "a574e2a711af4a6f",
+    "commit": "631874be0eaf1746aeb00fe7f3a95eca3ba00387",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-23-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "3a0b5cf492231be99922c2dc81725cea0bc63eadb07b03ccbee2b806584ec7f8",
+    "git_blob": "4aae1c055d5ca20ff9b78c94ed56cf470e395c9d"
+  },
+  {
+    "file_id": "52fcde3f3b86bc44",
+    "commit": "07c72ace8a77b8b1d5d46474ea88cd28c4c9a3cf",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-24-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "40d81272f6ed3f8d49d1334c9e90877030834bc679876f3f2931fbdbdd973069",
+    "git_blob": "bf89347d1663f9bf7d5efe2da8c37ce7fe7c2c9f"
+  },
+  {
+    "file_id": "a181acb7dcc7452a",
+    "commit": "12bacc7d8d099ac0f5ad48bab5205a8e92c48897",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-25-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "cb608cab3e31e03c4d81796cd211a7bd2fcf30f9a5ed3f32442890e7af4362c1",
+    "git_blob": "80be980232197a33c0c099c7cd291a9ed6c50fdf"
+  },
+  {
+    "file_id": "55e441d67fe904de",
+    "commit": "f48f0873fc05e542b0a5fd663e1b9abe1b6430a1",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-26-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "d2a91c242e7d5b67cae0d071399ea2719c32d7c6b43c7ec27b75b39f9dac46e6",
+    "git_blob": "b1a3ed9af76b35ee5880c67fd29ef48a3c289510"
+  },
+  {
+    "file_id": "fe2cba2bd67170b9",
+    "commit": "106cfdaae7df39ee3b200deb390798ad3f008826",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-27-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "ba451513ef0c021e5b19467fad2d0e9f9b27656e66b66fefd5596781f08a8ce0",
+    "git_blob": "d4dc4231149b8ac226de7870c9aa61da5bb9e750"
+  },
+  {
+    "file_id": "5a90a31d6fef6fe6",
+    "commit": "3a506caea0234940b6c66b410d6c023db1e156f6",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-28-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "4d7b9a6f8cf752062ef7151aad05fe43c04ab05220443ccef15a4228d155b7d4",
+    "git_blob": "ffa5eb84caa453c74c80913a038173593babf006"
+  },
+  {
+    "file_id": "ebedd855489bfa5b",
+    "commit": "55d8d4f42d0722bbd6124cc133064ffa058e8674",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-29-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "ab82c0acb9bf546f946deedb3d9f976839ec8522f3f561defb68babb9458de04",
+    "git_blob": "45f5af895b65b46f56eaa101f8b0adff20374219"
+  },
+  {
+    "file_id": "92e71b2fc554debd",
+    "commit": "148ead58d4f193bf928530c65354631d9cb83798",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-30-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "ae96d3bfe8cd3bdd63c851d707fac5505e333c7d18c2f9c643380e777cf74af6",
+    "git_blob": "edd83b79bb6ede08de6226f44f77422c0877582a"
+  },
+  {
+    "file_id": "973bf2630e9832d8",
+    "commit": "4ccbd891dbd60fb3f61446033f4bc38bb7c7e7ea",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-31-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "2c6438519d9ad8aefd8f558934ff07f61b22251ceee324fe9542a17daca41807",
+    "git_blob": "571316d189fecf52ba061c1bc6870c3aaabb5edd"
+  },
+  {
+    "file_id": "ac1fbcd8acb8261c",
+    "commit": "2d5fe12efa27555b9f3bf7ef7a366af279f7d240",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-32-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "9c64d24d1bbcb2e527fa304124401aac7d1b07b99429925c82404b0206f52f94",
+    "git_blob": "a95bfa3dbdc7102ffd5054a0bd0a4b7d0a8f66eb"
+  },
+  {
+    "file_id": "f1fa19adb2cb7a81",
+    "commit": "777a75c389078daebedbd994ccdb47d49468f1c5",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-33-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "8a332552fb732b4fc34e6fbe956b95dd3bde08750c6bf16054d8f2c4c1f99f94",
+    "git_blob": "4b89784c92d88386dfcb0b03f7bc8f8687172903"
+  },
+  {
+    "file_id": "26415488ab43d72c",
+    "commit": "49c736b20309b871dc570e73414905159f132dfb",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-34-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "7565b500bcb3fadae2ba385d4f734b3d486425f1056920b5d8b9795361cd5b3a",
+    "git_blob": "17945ac3d0b69dc010dc615ed583177479360dfd"
+  },
+  {
+    "file_id": "9a5b67b12cbd8575",
+    "commit": "aa3f790151610e93afb1c80a81f1a7ef13300b3f",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-35-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "5d999276d4339d1ce289f1638fd78e10a07c1a356ec145604cf647511b7f3600",
+    "git_blob": "3a39fa72c30823e510baeb5a8d6df422109419d7"
+  },
+  {
+    "file_id": "87b74a35eafa629c",
+    "commit": "50a87cbe4bef707ef5c1e761ee97df21ccd87f81",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-36-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "2df919b230ec40aca2e2ebcfbc6d762e7f5154a9ca9870867a9daac358868563",
+    "git_blob": "0a753af732ca7550d971055be8ed20594f7d6815"
+  },
+  {
+    "file_id": "255dfe2fe11e5587",
+    "commit": "f6aa7aa655032d5a5bdb8821b0f45a351306d651",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-37-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "26a134e1c1f9292e47fd7564a888d8433be14c5583feec94f3c91a6cb3b3b012",
+    "git_blob": "cc9b2882a935d86bcbc0c6d3dfa0cef12a0f69eb"
+  },
+  {
+    "file_id": "49572887983d7dc1",
+    "commit": "347b6f196a0057c92c95464ed3c0cdca1d97f5f7",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-38-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "5be123ff10ab21b82bbcfa1ab6a79376f2f400aa4cdd7d61d914456976497a73",
+    "git_blob": "594ab2fc125134997e84f2ba4445cd75253693a6"
+  },
+  {
+    "file_id": "cc121322cdcad467",
+    "commit": "fdcfc4c741e0c02067f83bab1a09eb601e1c1e3e",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-39-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "329d627345da389922b8999d1925df1c15c13cbd5fbd304872a8017193fb70f3",
+    "git_blob": "499f126c4c2510a2d5fcf98a857c0610bfff82db"
+  },
+  {
+    "file_id": "ff8ce1707675124d",
+    "commit": "0aab11ff0fd50c4af7d12e38bf951219b0ff6ecd",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-40-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "0319c1d4de4e2b8e78744a9b878fb5eb2fc6d438def3ad174a61c24e9a497ba0",
+    "git_blob": "562a274a92ac40e705e5136aad4a5019b3e869a0"
+  },
+  {
+    "file_id": "1e55c79b164b7c49",
+    "commit": "a98fcef35d3ff8e83b61e0dfedb19334928dbd7a",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-41-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "dbb851069f81ebd08c5e8a7f9e1bde502d70e0481e7b0c355efd3f9f0d5420a9",
+    "git_blob": "5d5be9b64b7f16e9eb68b10894045d46a10b0972"
+  },
+  {
+    "file_id": "3a4c50fcc18008a8",
+    "commit": "e6c6f5e6f9a8950d243a92b886601ccf6eea7840",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-42-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "95608a566b4f57154eb20e9904a8aff5fa78f9818c041abee38c7fe46379c7dc",
+    "git_blob": "6feae5cd77978145e24ee8e044143ac7a8f7f5b0"
+  },
+  {
+    "file_id": "ed39376493291181",
+    "commit": "c34cb91e32b311fe54819f6db74a8d2007285a02",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-43-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "80192c0fe1b038202a6ee1b4069628b0d84b400ab4fcd94b154427d5af6d48a9",
+    "git_blob": "5cf15e834e9f8463c7ddc507616424ea14ffa82a"
+  },
+  {
+    "file_id": "1b942a0b17a43482",
+    "commit": "0d10d67d4252b37152580fb5de67777657af0ff6",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-44-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "31c35d455454e276e2543b7cbaef7f6abed3835e99e693dec8976ae1fb10aed8",
+    "git_blob": "0108d5010241cf5ece39798eb84d8092c3afb45e"
+  },
+  {
+    "file_id": "b8e2fba6371f1fde",
+    "commit": "c2d04ffbb6c96a31137b8deabc06a48622f11c08",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-45-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "2857f75b9b6d1861f7f66e23ee7bc98a7804e17e8fe3571fe97e892ccb20619a",
+    "git_blob": "c87d56055b9056d4e167b4fca801ae1eb7b066a9"
+  },
+  {
+    "file_id": "6200a9e9f84a6e65",
+    "commit": "89f2eda9c0b55cd9cfbacbb55a476906f416cec6",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-46-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "1ebf1bb42b83b771175a7820c58c5810158b0261b8ec336bf1b90676a9dda00b",
+    "git_blob": "1113fbd622fd1b371b718f5094bc1ff2525af773"
+  },
+  {
+    "file_id": "5981e22c79cb3a21",
+    "commit": "1af1cb831fa9308859b0f8a1a525d729c7475dab",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-47-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "33ee339b679487cfcc84a2c2f96452656eac0effe221d1258262fbe678b41783",
+    "git_blob": "7cf6eeb48903737b28657cfa787ec72240c5f8e5"
+  },
+  {
+    "file_id": "36dcf8648a4bdb9a",
+    "commit": "60599ac37153b42fe8cbca845fb1822f01ac60a6",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-48-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "09de07858e8db2c6cc69a31c551c6b5a3efa5090ed1acd2ab8a131efc639c90e",
+    "git_blob": "912097c280bf1c1402d9cb8919544cc1ced16e7f"
+  },
+  {
+    "file_id": "a0b445a9b46cea15",
+    "commit": "4726a2ec10af35b8a3bb677460e5acd3bdfdfe95",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-49-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "8c7ec958fba70e639b95462639567a8de630c96c3b8ffc41665b6f8b70d735d0",
+    "git_blob": "836374ac3f3672896502727702430739273185ed"
+  },
+  {
+    "file_id": "3b5995f21964ce3a",
+    "commit": "048d2c79ca1770d2f08c258854fb649e5972cccc",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-50-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "4e5d57ec97f78fd251aea5601199e811431f2fbe070faa538e5191a4e9b8730e",
+    "git_blob": "aee0872e65aa36e638398ac00dc6ad9136180dda"
+  },
+  {
+    "file_id": "af89a24d3a5fa0f7",
+    "commit": "592d67417fc017fb2360fb903b61b98c4949088d",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-51-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "33433c78f24eca4705e95ca74a88191c4db2cda6e1e75bfa87f7cd1457030a3e",
+    "git_blob": "dec5c0e1c265487382b9e7e1908ef870c8b2fcfb"
+  },
+  {
+    "file_id": "003faecaec45028e",
+    "commit": "8e236fb54a4106b6efd9f1668a23101bd25fc895",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-52-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "9cb406d5275b99d694e3bb5eff0852f0ecbf4e0f93944e07e631d53120f44c2d",
+    "git_blob": "e0cc787a4f65055715a1f89eb89048151eab072d"
+  },
+  {
+    "file_id": "5dcfaebbb4759d8f",
+    "commit": "93f5e860f32f1de20a97f4cc012310480b4d21bb",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-53-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "471273ddda46a3c0eeed835ce72254fb8df87a8ce9fca7ffac278bcab2e49741",
+    "git_blob": "d68fba87f1951729fe981e6098f1edaf985f0e1b"
+  },
+  {
+    "file_id": "7d0dc3cd2955b540",
+    "commit": "9d2c54567b479e8a15fcbb432a6dcf7ed5abb7a9",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-54-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "46856914e24af9f6a878bc09d8ca476ea1f549f731a27f714d1638567d045144",
+    "git_blob": "f95e9175f7f2999e1c5f36c18645cdaa97a0aacd"
+  },
+  {
+    "file_id": "4946523640c27c44",
+    "commit": "88cfae1cfac71eabcd0cbd90aa3fddc0ad96019c",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-55-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "8abaed6a0887da4280cccd597e7f069fdba2cf46041711389a95bbd037093278",
+    "git_blob": "eb81efcc474e1df97eb7557719690033e52c1183"
+  },
+  {
+    "file_id": "b8669465838f5193",
+    "commit": "9341638257b6e48bbddf3e1021a20cbda2ead623",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-56-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "5def3e11caf2749735159fb4aae173433c683f2e07bd7edc9f422de76d43aa4e",
+    "git_blob": "05cc896304972995e6da3df9904f81cb088089a0"
+  },
+  {
+    "file_id": "dc3b68bdb602e017",
+    "commit": "3c770ef2137e39da1b62ac5f652a83f181b117d0",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-57-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "f3a4c6686d1dd09043c1b40449678a0d2d39ae413df581fd6fd85bfc4a10e572",
+    "git_blob": "ac53f7e05797494f3acc099c150059b85f72be89"
+  },
+  {
+    "file_id": "199a0b9772c65cd9",
+    "commit": "c196edb08bd07bf6b02d6f1b25bf600a65f32f52",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-58-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "160f570ce8484ab6142592c512770d77281045f1d842625eb6c6dc0098e776cc",
+    "git_blob": "1abcb52ba60ba5055f708cb4c748b69adb6d3003"
+  },
+  {
+    "file_id": "613bebd0639cefea",
+    "commit": "7e958148f81eda6ed078379cd40cc9609c62e629",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-59-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "27f6fefed5829210ca09b8abefe5f45ca6cace845119157602832406cb3a4475",
+    "git_blob": "b33d4c1c09a0f73528100a26becf2d2c8b9a5ca4"
+  },
+  {
+    "file_id": "03bafac8a2a76fb3",
+    "commit": "48f04338e3709d61fad585c7e92afedab0a419ba",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-60-terminal.jsonl",
+    "phase": "cloud",
+    "sha256": "f5069bfd9210f7b3778dbfe513c0c032fd71864d8184f66e307054bb113707a7",
+    "git_blob": "9e680f3fe7f22cf5a1dc33b70c36c1ed1ff21d15"
+  },
+  {
+    "file_id": "8425351f09d58315",
+    "commit": "a9fb81410690a216d41769ab4253f4e8532ad6f6",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-01-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "518e840604e7a291fc22e7147a6a2e6cc998659f4801d51c3f5254b69ab6092e",
+    "git_blob": "851d24f12b70ab64d54927b2e49e368567922a14"
+  },
+  {
+    "file_id": "73fdfc6bebfe7f75",
+    "commit": "e0743445972b9a3fc45feb66d78af1768c167800",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-02-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "c0b0e184c997a8a765554e59ae572d015c84f64176e6c85b71e736536693c334",
+    "git_blob": "7f61c34d903ce0961f51eeeb22455550fabb5a74"
+  },
+  {
+    "file_id": "4ea2e3f3c06b33a5",
+    "commit": "12bacc7d8d099ac0f5ad48bab5205a8e92c48897",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-03-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "221350ae818a7d45bdfcc5e2bbde4812d10afa98fc4483853085abac5fdcadf4",
+    "git_blob": "d2495e254bb7bc4d8f9a75cac9e78eef16f1a4e9"
+  },
+  {
+    "file_id": "547ac08a192c100d",
+    "commit": "f6aa7aa655032d5a5bdb8821b0f45a351306d651",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-04-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "1225cbecdb7271b60793bd48005da33b62bae3edd3590816c6b9fd2534a4e310",
+    "git_blob": "888a72e5b79bf3af4783dbd95f3c7588ef5c8f3f"
+  },
+  {
+    "file_id": "03aceec621cdf064",
+    "commit": "4726a2ec10af35b8a3bb677460e5acd3bdfdfe95",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-05-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "be9ff265b45710d3fe747542e5d35e586846ae05328ef27b62833ae61acfa7f2",
+    "git_blob": "94ceb312c3c22c1300a2f307967fabdd8ddf5862"
+  },
+  {
+    "file_id": "15aa5986c52a7cba",
+    "commit": "7aee36af22849e58d75077eff6dcb9da9093bd44",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-06-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "77fc0d175dd8a4e8fbc1de9aa7bea5fa91aea9ae1d4c20c1dbc84221a82340c8",
+    "git_blob": "7041da3dd5f680c936a4f6f3b9e5fc0489fd31b8"
+  },
+  {
+    "file_id": "de7063efa3e87e5a",
+    "commit": "5a22292202f91fc2f6e9d3b794669b240946362d",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-07-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "e6fd53c95a59a629876602b314ef4822b32843baad1bd6d756f1d4c340d14632",
+    "git_blob": "3ff77a450e27a1fc37c7c6bce8e597cc266c048a"
+  },
+  {
+    "file_id": "0533acd36d2cf57f",
+    "commit": "f48f0873fc05e542b0a5fd663e1b9abe1b6430a1",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-08-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "fecf11d86c60345e949d9d97e826781727d6ce02f281cdb08bda159d09582b69",
+    "git_blob": "bbc626e973d2420ca7f99faadfa1441b0782dfa3"
+  },
+  {
+    "file_id": "ed223f2fc024baa1",
+    "commit": "347b6f196a0057c92c95464ed3c0cdca1d97f5f7",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-09-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "5309a3f6b14c09b24422e583cedcb275db1d351fcbd362c493eb4a6cba3d27c9",
+    "git_blob": "62f3431e94507c84c6338d1504986ee706b8cf44"
+  },
+  {
+    "file_id": "d7463eb45a767c1f",
+    "commit": "048d2c79ca1770d2f08c258854fb649e5972cccc",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-10-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "c4f4553fc04dd5b25a1481803f9f1891659b406f93de3efa9d4414827b811673",
+    "git_blob": "096f57aff8b9ce1b3f8b8332946956ca31722031"
+  },
+  {
+    "file_id": "99e8ac22d68a42a4",
+    "commit": "7f5e7b6b31e7b081d251ceecad6e0bba11405430",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-11-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "0df090c31c90b3d71c4aadf2932a7a09457467d48f37a43cb69ecd999756f227",
+    "git_blob": "235c1c2d9d4a71a135834875d09724c4ff702a1e"
+  },
+  {
+    "file_id": "b940434b7d94e521",
+    "commit": "e7c4cdb38c791243f4c2789c1c32ce9270aa258a",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-12-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "fd247aee85c64f8daaee67f899d93103ecb89b12c9cfcb2ff7f4f251537700a0",
+    "git_blob": "c0cb0ec43f35761f67bea3e3f87a9d3f1c899cbd"
+  },
+  {
+    "file_id": "edea694b77f32663",
+    "commit": "106cfdaae7df39ee3b200deb390798ad3f008826",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-13-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "6f8fe3553fa71396ab8560678258e88d6270f93706f0dc05d96fb2bd48160472",
+    "git_blob": "de757df2f4c9b9d0ca301ed349bd1c66938d4be5"
+  },
+  {
+    "file_id": "8f3df9c54b355a2c",
+    "commit": "fdcfc4c741e0c02067f83bab1a09eb601e1c1e3e",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-14-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "592f45446909719fda0c22227e474f15cc4716f7f64da1ee990f0a2484f89165",
+    "git_blob": "1d46b9b279d3836ab097d41f4906e67af07c7543"
+  },
+  {
+    "file_id": "5435c1c3f59876f5",
+    "commit": "592d67417fc017fb2360fb903b61b98c4949088d",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-15-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "3f3fd2636f2fb9f9ab4324dc1c80bf544cda9f5016dec024d93070e6d8c30afa",
+    "git_blob": "d00dcc3b9474b5a9518adb71be29ddc466270c32"
+  },
+  {
+    "file_id": "14028fdcca8bf1d5",
+    "commit": "4948486e0b3ce87bd5ced667cc22058bc9e10ffa",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-16-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "bec5e139e44b558fd4ccd11b57f0cef39c41525800b97998b381c17d5fb7ee0c",
+    "git_blob": "c9b9379f001dffced4c441fc42d2c2722edec7a7"
+  },
+  {
+    "file_id": "bbfa4d7739ca57fa",
+    "commit": "6d2e5d05acad382df74857083eff995706c9d45c",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-17-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "4f929bc217e8c06b9ce28e813927d4b374581c4a4471ce279d2d5882a366f74f",
+    "git_blob": "cbfeadb7fadb11750d9aa5d972d795b5ebd738ca"
+  },
+  {
+    "file_id": "b243b3aba2949105",
+    "commit": "3a506caea0234940b6c66b410d6c023db1e156f6",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-18-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "7f336163e5f723d8e83b273cb2ae0fb011f6612f8245b6f31bbfaabec7cd3250",
+    "git_blob": "06b4988b9b5364f335157f81bdd229ffe58c00ce"
+  },
+  {
+    "file_id": "c9b13d37dc8ef155",
+    "commit": "0aab11ff0fd50c4af7d12e38bf951219b0ff6ecd",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-19-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "b9d4d7471c0874110df90682436ccbadf12560200c7ea35e11a144b9940783cc",
+    "git_blob": "5be8bc80e702edf5d39f8c0f0d1aaf84ca70affa"
+  },
+  {
+    "file_id": "687d40ac26bf3066",
+    "commit": "8e236fb54a4106b6efd9f1668a23101bd25fc895",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-20-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "2cda3fcac213097330b60e014e68b9a0457d0f98062ce696157376ac5bb0ef7c",
+    "git_blob": "bf78d85003afdc7f78d13f4889e2ebf4423db0d7"
+  },
+  {
+    "file_id": "c0aa5d1e4bae3259",
+    "commit": "13fb22f27848c475fc1f31e2b1a1cf7b721f48a9",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-21-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "d799c106e4421d53b05ea8cc71a86046c86fe79620f45d1c1d6273aef03bc83f",
+    "git_blob": "f951d2fb6f41e22f2690bcbaa095877fa9e947f9"
+  },
+  {
+    "file_id": "7171423e6b21ae94",
+    "commit": "d1957cc06daf21f3f06e03f95ffbb6d20ae1bbd0",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-22-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "7477adf464823a26b72f6ff1d6bff9a05d1c5544ae7dee7064dad225be63c723",
+    "git_blob": "d9b3bb4b28d55c72d2de53556bba558812f7f420"
+  },
+  {
+    "file_id": "1e2310cfc9529608",
+    "commit": "55d8d4f42d0722bbd6124cc133064ffa058e8674",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-23-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "32fa49e3eccbba6922bfe802aad83f7c0b0549bb8567fb56e61b54a1c6e6f4da",
+    "git_blob": "6a8ed1f9e50f2085256a19ee78b2b8623533bbd4"
+  },
+  {
+    "file_id": "73c51a9b2740d94e",
+    "commit": "a98fcef35d3ff8e83b61e0dfedb19334928dbd7a",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-24-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "ed8fc2ca7cf5a9e7f8dcbf2e5632730493b5c8c086856f2c84d8fdc6d6d9ea50",
+    "git_blob": "0b52841fc1343c95a677b03581e8797246adf309"
+  },
+  {
+    "file_id": "b29dcd56a46a81d2",
+    "commit": "93f5e860f32f1de20a97f4cc012310480b4d21bb",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-25-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "8b1aa1e18d237307da958fc85d6abd75907f2828fa7bce9d0dd983dc32d7c2b9",
+    "git_blob": "57c2d938149990b49878fd86e54d88d8bd56ca45"
+  },
+  {
+    "file_id": "79a378917997edf3",
+    "commit": "72a11b8aba8a280cb568b61733752ed059e07058",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-26-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "4c67915a7d11806162266edb378d03c9200984e2e23e8016da73a81b6720a4e4",
+    "git_blob": "d5c49bff42dbca92d6f9e67a1bf2f7785e31c58d"
+  },
+  {
+    "file_id": "b42c09a9abcb5b3c",
+    "commit": "529149c79e8cf014ed5db835619116d3b3c67462",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-27-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "046803f514ef9cb063387eb73ded5e26da9a70aa1d9aaeed5f0744cef908ae69",
+    "git_blob": "d0277d6df9ff6cfef16cae157625c29cac7751de"
+  },
+  {
+    "file_id": "e4b787039fd22379",
+    "commit": "148ead58d4f193bf928530c65354631d9cb83798",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-28-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "67ca138e0e24dd937ed98ecc734c3905c46dbb92fbec7018bcf7d35bd0836db7",
+    "git_blob": "9225b80fff2db6a05e47d314e3963a8932e7e31f"
+  },
+  {
+    "file_id": "c5cf9317cf9b022b",
+    "commit": "e6c6f5e6f9a8950d243a92b886601ccf6eea7840",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-29-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "b29193245592f220715f3881add4813fd9ce57bd16b3631ec1370d66c0802020",
+    "git_blob": "29e0d11a0d0e1fcc086a4b94629537d6a4507fef"
+  },
+  {
+    "file_id": "b0725b73aa814723",
+    "commit": "9d2c54567b479e8a15fcbb432a6dcf7ed5abb7a9",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-30-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "bfc329e0d0cc344073c9c8d969884fc92149537c849d01b6709d77dfc6d9977c",
+    "git_blob": "5c03d4db97e9cd124abd061467a089a231994c7a"
+  },
+  {
+    "file_id": "c49ba8ceca2259d6",
+    "commit": "40a1c9bc09fd10b44e2dfc4ba59830b80206ab88",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-31-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "e9a889a4ee8565e79462134b41e84af8760a3ed9d4055c5dfe6f1c5271801200",
+    "git_blob": "ef788c5db046117652d030a20c607a7a5e16e8ca"
+  },
+  {
+    "file_id": "e51d5eebefd4db33",
+    "commit": "f1e102419b79e0360dce4dbe78669c73b6fe4835",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-32-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "cdd2d26e61158e1e235416334a65a1ca411fe3fca109bb10d67885b9c60e61c9",
+    "git_blob": "53d0656e0df43764d355ef4a2e5fc769050208c7"
+  },
+  {
+    "file_id": "b5e7750d95db9127",
+    "commit": "4ccbd891dbd60fb3f61446033f4bc38bb7c7e7ea",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-33-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "48f95bcf7493335f36353c9c6026a065a07e7e0544ef0ad92af9ddf0177b9f40",
+    "git_blob": "db267be03c9ee17e19fd1776e53bc61cc550b7e4"
+  },
+  {
+    "file_id": "617a593469ba6292",
+    "commit": "c34cb91e32b311fe54819f6db74a8d2007285a02",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-34-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "1d0ca27ef0153a74fd90fa79657252d49c2455798b6ecd212fb82f10efcef399",
+    "git_blob": "a46acfb320e6bc69e2a40b57f53d75d12b2ac0d7"
+  },
+  {
+    "file_id": "2d070dd9354f3dee",
+    "commit": "88cfae1cfac71eabcd0cbd90aa3fddc0ad96019c",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-35-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "6316a0896685b965f758545b08c53004b011655c8fdb46a1417f988e765b4733",
+    "git_blob": "d30d7080078568a021d52135c653ddc5fd1d31c3"
+  },
+  {
+    "file_id": "74cdabbe4be8c2d4",
+    "commit": "f595dfbc5990a33cc8d83984af86d36da48b7788",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-36-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "277e4d21c6d99bc2496a16c97a8082897d8ef87e666f25d503ab92e217f888b6",
+    "git_blob": "dad8cfffac2b908df3a7a04cce038896dae2005b"
+  },
+  {
+    "file_id": "0e9ba36db4acc179",
+    "commit": "e953e772bf3dc8fcf4ff992946f97dac6ac458fc",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-37-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "7b69189093fde4895dde3c3bc8136d3b0db263107b5db9de518719e3ded8ffc0",
+    "git_blob": "66980d0d073cc575a774d7a2227abae6406a16e5"
+  },
+  {
+    "file_id": "9b679f36486ae399",
+    "commit": "2d5fe12efa27555b9f3bf7ef7a366af279f7d240",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-38-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "ecb6c39072428332a8f1961cf512c42b506894df4747933b1a071432535e96b4",
+    "git_blob": "ffa16783c686bf6dcb1b25af0b95a0a9b8382f77"
+  },
+  {
+    "file_id": "ceda3366dab74903",
+    "commit": "0d10d67d4252b37152580fb5de67777657af0ff6",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-39-terminal.jsonl",
+    "phase": "takeover",
+    "sha256": "6488ff2d280085e0989116580b9d185069737620f9f103ad2fa41fd1b925224a",
+    "git_blob": "b1b60c9ab9e70da9cd6a084de76b2d4ae45a60f6"
+  },
+  {
+    "file_id": "ec537e6f58e932a9",
+    "commit": "5a22292202f91fc2f6e9d3b794669b240946362d",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-07-terminal-amendments.jsonl",
+    "phase": "takeover-amendment",
+    "sha256": "b5217e974f3349f9da4746fd4b66ebb3abe37b59ccffaadfa2429938f2f8e7b0",
+    "git_blob": "55f0f0c9c67750e54f74de4e393b44efa6d8816f"
+  },
+  {
+    "file_id": "a0f3e14fa06481b7",
+    "commit": "e7c4cdb38c791243f4c2789c1c32ce9270aa258a",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-12-amendments.jsonl",
+    "phase": "takeover-amendment",
+    "sha256": "71e52b73d4eaa29c100c127ff8df3d7b88499034ed91cc4aafa1386bc56d7b6f",
+    "git_blob": "55a9c17fd40399b9f053a26f1b7c133c62ca4c8c"
+  },
+  {
+    "file_id": "296393dfa55bf137",
+    "commit": "72a11b8aba8a280cb568b61733752ed059e07058",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-26-amendments.jsonl",
+    "phase": "takeover-amendment",
+    "sha256": "7009d04154f6a79174db5adb143f8c36a147ef70ab8bf6fb679dad76edd43316",
+    "git_blob": "26f049016b0f9293354d2be98f758e0a66e5ba4e"
+  },
+  {
+    "file_id": "7990110ff7ab14a9",
+    "commit": "40a1c9bc09fd10b44e2dfc4ba59830b80206ab88",
+    "path": "data/neon-workbench/external/web39-lightsprint-takeover-2026-10-05/outputs/worker-31-amendments.jsonl",
+    "phase": "takeover-amendment",
+    "sha256": "86ee4947761e32823b4183951aadd63ec920848e0cfdebcf74ab892e1f5c0ee9",
+    "git_blob": "592c458b628897418bca9d68894e17da531f78c1"
+  },
+  {
+    "file_id": "f64347fc26aa2df2",
+    "commit": "e0743445972b9a3fc45feb66d78af1768c167800",
+    "path": "data/neon-workbench/external/web39-targeted-recovery-2026-10-05/outputs/worker-02-terminal.jsonl",
+    "phase": "recovery",
+    "sha256": "f785d21b47aaf4eab0b074c4cb883b6ca6704395a995737753999b23a7db015b",
+    "git_blob": "21d94500694d6a2aed188d18c45c087d2c9d2525"
+  },
+  {
+    "file_id": "d0e5182b587ab090",
+    "commit": "12bacc7d8d099ac0f5ad48bab5205a8e92c48897",
+    "path": "data/neon-workbench/external/web39-targeted-recovery-2026-10-05/outputs/worker-03-terminal.jsonl",
+    "phase": "recovery",
+    "sha256": "0a255eadb268d04635dfbed12468d2de33bfab58fbbc4dc1bfc30cd8528ec91d",
+    "git_blob": "1d5eb0d142504849ccde17cc55360946b4c34d4b"
+  },
+  {
+    "file_id": "67f81e32311c6296",
+    "commit": "f6aa7aa655032d5a5bdb8821b0f45a351306d651",
+    "path": "data/neon-workbench/external/web39-targeted-recovery-2026-10-05/outputs/worker-04-terminal.jsonl",
+    "phase": "recovery",
+    "sha256": "5710ba9df50809a43c6f4848613847919b47ea548aecdc05e985ada543fe31e2",
+    "git_blob": "48efa585b4192691d0acee0211762050277a49dc"
+  },
+  {
+    "file_id": "e27f1c6704ef1a11",
+    "commit": "7aee36af22849e58d75077eff6dcb9da9093bd44",
+    "path": "data/neon-workbench/external/web39-targeted-recovery-2026-10-05/outputs/worker-06-terminal.jsonl",
+    "phase": "recovery",
+    "sha256": "8950584995c7e8573ed6f3b99cca932bfa2fc20c7c6ca7539bb7f896187e9994",
+    "git_blob": "548b8fe6eb0775dc1c82a38d603109e22aeddf4e"
+  },
+  {
+    "file_id": "b6fd007df89cfc62",
+    "commit": "347b6f196a0057c92c95464ed3c0cdca1d97f5f7",
+    "path": "data/neon-workbench/external/web39-targeted-recovery-2026-10-05/outputs/worker-09-terminal.jsonl",
+    "phase": "recovery",
+    "sha256": "df532758966abcdc06de6c168aae059d74d1b38fbed3acc98a3ab6fd2926e3fc",
+    "git_blob": "0684f91245cfea96af4acff501289f2f5110ee1c"
+  },
+  {
+    "file_id": "bf693ef98e3f90fd",
+    "commit": "3a506caea0234940b6c66b410d6c023db1e156f6",
+    "path": "data/neon-workbench/external/web39-targeted-recovery-2026-10-05/outputs/worker-18-terminal.jsonl",
+    "phase": "recovery",
+    "sha256": "fe52f3bf14def93dc6e92f2bcef0ab5d9136ac4cba1b4bfedbb396a63f0da7b7",
+    "git_blob": "76880ac55f454f63880fbee44bb49a51da64054b"
+  },
+  {
+    "file_id": "0557ebadfcf2b831",
+    "commit": "a81a0eed3071768b612068155c8b316e9ed98fe5",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-09-terminal-amendment-001.jsonl",
+    "phase": "cloud-amendment",
+    "sha256": "30851438b1e8f32a9bc068c9dab57fd9855081788d9535c0b2b60a11800d70d3",
+    "git_blob": "b868390374381716293a2c870986f9b3c35d0be9"
+  },
+  {
+    "file_id": "fcf282140e37490b",
+    "commit": "d2fde1d3154a908a2fcd6510dd5f17f9341ceb86",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/outputs/worker-10-terminal-amendments.jsonl",
+    "phase": "cloud-amendment",
+    "sha256": "de1c8d5a8dc5aa08d95e18165e65a503efeb86396a2fd0eea12027b550ecaba9",
+    "git_blob": "f842ebaca81dece9e97f8990cd2d7708025e56ec"
+  },
+  {
+    "file_id": "f1db54b6d36e9ea9",
+    "commit": "23c21ea36600d216bb4b335d56240094c03eb47f",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/web-a/terminal-results.jsonl",
+    "phase": "web-a",
+    "sha256": "42803a8fab254acfbeeb48a01143f3c90e71c2b3088bd98e17404fc185b7bb20",
+    "git_blob": "bb3cce111c223a882746e80c65fecae54c43c225"
+  },
+  {
+    "file_id": "478c775072adeb32",
+    "commit": "23c21ea36600d216bb4b335d56240094c03eb47f",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/web-a/effective-results.jsonl",
+    "phase": "web-a",
+    "sha256": "bb56335547d3dd83e7a4abadea5f9d49ea4f5d952423342b50d784764e1a4e0a",
+    "git_blob": "efdaf3a8aac95e43d037568380a67275df673b19"
+  },
+  {
+    "file_id": "30a807041697158f",
+    "commit": "23c21ea36600d216bb4b335d56240094c03eb47f",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/web-a/amendments.jsonl",
+    "phase": "web-a",
+    "sha256": "19b5bb27c56bd6001729f7ac7fad7470e1c2274fe6183b057249061f73814c10",
+    "git_blob": "5ebda4f471a4aaabddc186d889a1ebd051711bd1"
+  },
+  {
+    "file_id": "9fc992ed6dcddc24",
+    "commit": "23c21ea36600d216bb4b335d56240094c03eb47f",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/web-a/research-log.jsonl",
+    "phase": "web-a",
+    "sha256": "6ae57b1b02e21f75a16b54068dde623de407e72f31470a070fb1f16c5167fb21",
+    "git_blob": "dc94aeb9c13a2ac307473ef18057b3d5d883f8f4"
+  },
+  {
+    "file_id": "e8d09ad24d26c849",
+    "commit": "23c21ea36600d216bb4b335d56240094c03eb47f",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/web-a/insight-proposals.jsonl",
+    "phase": "web-a",
+    "sha256": "f08afb1b41add3f616fb1a7bdcc59c692c8f36278d80ea21559b72fcbc3aa360",
+    "git_blob": "7d549c16b62d5c7bc54add7c98b561bff50a921b"
+  },
+  {
+    "file_id": "cd15926d312692cb",
+    "commit": "23c21ea36600d216bb4b335d56240094c03eb47f",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/web-a/impact-proposals.jsonl",
+    "phase": "web-a",
+    "sha256": "9bd1c2f8e806936ef1546e72798dfa00e73a43bdd06d50075835b1488319ad94",
+    "git_blob": "e0c8798f4987770ebd59a9073c560db9e1673856"
+  },
+  {
+    "file_id": "7ea1241de8a0b967",
+    "commit": "0679a1b0473b6b3486a0385dfea46545e8dc398e",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/web-b/terminal-results.jsonl",
+    "phase": "web-b",
+    "sha256": "2471899c9dc8cdc121f8738d17815a02f1e00766ee529c89a3bad9fa0e58e6b4",
+    "git_blob": "ae1d737ef1aecb01c21391d5d0c4cfff9707a27d"
+  },
+  {
+    "file_id": "bfcd5e188d21132d",
+    "commit": "0679a1b0473b6b3486a0385dfea46545e8dc398e",
+    "path": "data/neon-workbench/external/context-rescue-final-2026-10-04/web-b/research-log.jsonl",
+    "phase": "web-b",
+    "sha256": "b28f0d68bbadbd80747bd07b7d3a9ce1c584efbc9a28f5515db94ac2149fd605",
+    "git_blob": "da7f6f22dde2831da50c90499aa135a98a69b49e"
+  }
+]
