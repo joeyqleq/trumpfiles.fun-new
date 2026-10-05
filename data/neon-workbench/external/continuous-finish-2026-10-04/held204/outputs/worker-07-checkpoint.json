@@ -1,0 +1,32 @@
+{
+  "job_id": "held204-07",
+  "branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+  "source_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "state": "complete",
+  "processed_ids": [
+    "entry-210",
+    "entry-352",
+    "entry-654",
+    "entry-811",
+    "entry-884",
+    "entry-1670",
+    "entry-1782",
+    "entry-2349",
+    "entry-2501",
+    "entry-2624",
+    "entry-3273",
+    "entry-3839",
+    "entry-4296",
+    "entry-5374",
+    "entry-5605",
+    "entry-6206",
+    "entry-6531"
+  ],
+  "pending_ids": [],
+  "saved_terminal_count": 17,
+  "amendment_count": 21,
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-07-terminal.jsonl",
+  "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-07-amendments.jsonl",
+  "qa_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-07-exact-set-qa.json",
+  "artifact_issue_resolved": "output_missing"
+}
