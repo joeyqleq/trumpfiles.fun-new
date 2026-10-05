@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "completed_at": "2026-10-05T07:33:43.992068+00:00",
+  "branch": "codex/web-b-context-final-2026-10-04",
+  "base_branch": "codex/context-rescue-final-2026-10-04",
+  "base_commit": "f30b5cee35140a60c3b7c8fa1715fb55967e4929",
+  "input_sha256": "17a3e9c3ba86f83c10b9b498aa327e32a527cd9852dde3cd36747d42f0f6acf0",
+  "owned_ids": [
+    "entry-6356",
+    "entry-643",
+    "entry-651",
+    "entry-655",
+    "entry-6552",
+    "entry-674",
+    "entry-6795",
+    "entry-6915",
+    "entry-801",
+    "entry-822",
+    "entry-824",
+    "entry-835",
+    "entry-853",
+    "entry-854",
+    "entry-873",
+    "entry-945",
+    "entry-954",
+    "entry-978",
+    "entry-996"
+  ],
+  "pending_ids": [],
+  "pass_ids": [
+    "entry-643",
+    "entry-651",
+    "entry-655",
+    "entry-801",
+    "entry-822",
+    "entry-824",
+    "entry-873",
+    "entry-945",
+    "entry-954",
+    "entry-978",
+    "entry-996"
+  ],
+  "hold_ids": [
+    "entry-6356",
+    "entry-6552",
+    "entry-674",
+    "entry-6795",
+    "entry-6915",
+    "entry-835",
+    "entry-853",
+    "entry-854"
+  ],
+  "exclusion_candidate_ids": [],
+  "validation": {
+    "input_records": 19,
+    "historical_terminal_rows": 26,
+    "effective_terminal_records": 19,
+    "counts": {
+      "hold": 8,
+      "pass": 11
+    },
+    "checks": {
+      "exact_ids": "passed",
+      "nonoverlapping_assignments": "passed",
+      "schema": "passed",
+      "word_counts": "passed",
+      "url_syntax_and_fact_mapping": "passed",
+      "insight_quote_mapping": "passed",
+      "impact_proposal": "passed",
+      "research_coverage": "passed",
+      "immutable_worker_row_preservation": "passed",
+      "input_sha256": "passed"
+    }
+  },
+  "artifact_sha256": {
+    "terminal-results.jsonl": "2471899c9dc8cdc121f8738d17815a02f1e00766ee529c89a3bad9fa0e58e6b4",
+    "research-log.jsonl": "b28f0d68bbadbd80747bd07b7d3a9ce1c584efbc9a28f5515db94ac2149fd605"
+  },
+  "history_policy": "All worker and aggregate JSONL history preserved. Last terminal row per record_id is effective; source_provenance amendment metadata identifies corrections. No new rescue in amendments.",
+  "proposal_only": true
+}
