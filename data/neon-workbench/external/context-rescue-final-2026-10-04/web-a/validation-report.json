@@ -1,0 +1,70 @@
+{
+  "assigned": 20,
+  "terminal": 20,
+  "outcomes": {
+    "hold": 12,
+    "pass": 8
+  },
+  "research_records": 21,
+  "unique_source_urls": 57,
+  "pass_lengths": [
+    {
+      "record_id": "entry-4207",
+      "title": 60,
+      "description_short": 123,
+      "description_medium": 58,
+      "description_long": 157
+    },
+    {
+      "record_id": "entry-425",
+      "title": 74,
+      "description_short": 116,
+      "description_medium": 61,
+      "description_long": 152
+    },
+    {
+      "record_id": "entry-4308",
+      "title": 54,
+      "description_short": 130,
+      "description_medium": 57,
+      "description_long": 154
+    },
+    {
+      "record_id": "entry-5309",
+      "title": 64,
+      "description_short": 128,
+      "description_medium": 56,
+      "description_long": 169
+    },
+    {
+      "record_id": "entry-5698",
+      "title": 79,
+      "description_short": 146,
+      "description_medium": 54,
+      "description_long": 161
+    },
+    {
+      "record_id": "entry-5707",
+      "title": 29,
+      "description_short": 87,
+      "description_medium": 63,
+      "description_long": 171
+    },
+    {
+      "record_id": "entry-5936",
+      "title": 102,
+      "description_short": 116,
+      "description_medium": 59,
+      "description_long": 195
+    },
+    {
+      "record_id": "entry-6206",
+      "title": 38,
+      "description_short": 127,
+      "description_medium": 66,
+      "description_long": 212
+    }
+  ],
+  "errors": [],
+  "passed": true
+}
