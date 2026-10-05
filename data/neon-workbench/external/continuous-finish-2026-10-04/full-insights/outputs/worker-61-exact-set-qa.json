@@ -1,0 +1,20 @@
+{
+  "job": "full-insights-61",
+  "worker": "worker-61",
+  "input_commit": "2d7b76b4e48cdb8695a091fcfb6487301155d551",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/full-insights/worker-61-input.jsonl",
+  "assigned_count": 92,
+  "terminal_count": 92,
+  "status_counts": {
+    "complete": 91,
+    "insufficient": 1
+  },
+  "exact_assigned_set_match": true,
+  "pinned_packet_order_matches_assigned_ids": true,
+  "checkpoint_complete": true,
+  "all_quotes_are_literal_substrings": true,
+  "all_non_unknown_fields_have_evidence": true,
+  "quantities_and_relations_empty": true,
+  "validation": "passed",
+  "issues": []
+}

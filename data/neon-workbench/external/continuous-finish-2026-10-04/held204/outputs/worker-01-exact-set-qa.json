@@ -1,0 +1,238 @@
+{
+  "job": "held204-01",
+  "worker": "worker-01",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-01-input.jsonl",
+  "terminal_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-01-terminal.jsonl",
+  "terminal_count": 17,
+  "assigned_count": 17,
+  "assigned_ids": [
+    "entry-35",
+    "entry-236",
+    "entry-426",
+    "entry-769",
+    "entry-835",
+    "entry-969",
+    "entry-1768",
+    "entry-2321",
+    "entry-2441",
+    "entry-2560",
+    "entry-2929",
+    "entry-3678",
+    "entry-4054",
+    "entry-4619",
+    "entry-5505",
+    "entry-6138",
+    "entry-6264"
+  ],
+  "terminal_ids": [
+    "entry-35",
+    "entry-236",
+    "entry-426",
+    "entry-769",
+    "entry-835",
+    "entry-969",
+    "entry-1768",
+    "entry-2321",
+    "entry-2441",
+    "entry-2560",
+    "entry-2929",
+    "entry-3678",
+    "entry-4054",
+    "entry-4619",
+    "entry-5505",
+    "entry-6138",
+    "entry-6264"
+  ],
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "exact_set_pass": true,
+  "terminal_status_counts": {
+    "pass": 14,
+    "hold": 3
+  },
+  "effective_status_counts_after_amendments": {
+    "pass": 14,
+    "hold": 3
+  },
+  "pass_length_checks": {
+    "entry-35": {
+      "title_characters": 71,
+      "short_characters": 141,
+      "medium_words": 67,
+      "long_words": 161
+    },
+    "entry-236": {
+      "title_characters": 78,
+      "short_characters": 129,
+      "medium_words": 56,
+      "long_words": 149
+    },
+    "entry-426": {
+      "title_characters": 82,
+      "short_characters": 120,
+      "medium_words": 54,
+      "long_words": 156
+    },
+    "entry-769": {
+      "title_characters": 65,
+      "short_characters": 143,
+      "medium_words": 56,
+      "long_words": 140
+    },
+    "entry-969": {
+      "title_characters": 66,
+      "short_characters": 125,
+      "medium_words": 56,
+      "long_words": 150
+    },
+    "entry-2441": {
+      "title_characters": 82,
+      "short_characters": 131,
+      "medium_words": 59,
+      "long_words": 152
+    },
+    "entry-2560": {
+      "title_characters": 63,
+      "short_characters": 172,
+      "medium_words": 58,
+      "long_words": 150
+    },
+    "entry-2929": {
+      "title_characters": 60,
+      "short_characters": 136,
+      "medium_words": 55,
+      "long_words": 144
+    },
+    "entry-3678": {
+      "title_characters": 68,
+      "short_characters": 114,
+      "medium_words": 61,
+      "long_words": 143
+    },
+    "entry-4054": {
+      "title_characters": 67,
+      "short_characters": 152,
+      "medium_words": 65,
+      "long_words": 151
+    },
+    "entry-4619": {
+      "title_characters": 76,
+      "short_characters": 125,
+      "medium_words": 51,
+      "long_words": 141
+    },
+    "entry-5505": {
+      "title_characters": 63,
+      "short_characters": 122,
+      "medium_words": 55,
+      "long_words": 146
+    },
+    "entry-6138": {
+      "title_characters": 69,
+      "short_characters": 106,
+      "medium_words": 59,
+      "long_words": 148
+    },
+    "entry-6264": {
+      "title_characters": 69,
+      "short_characters": 115,
+      "medium_words": 59,
+      "long_words": 172
+    }
+  },
+  "all_pass_rows_meet_length_requirements": true,
+  "all_rows_have_required_normalized_fields": true,
+  "all_rows_proposal_only": true,
+  "amendment_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-01-terminal-amendments.jsonl",
+  "amendment_count": 11,
+  "amendment_ids": [
+    "worker-01-amendment-01",
+    "worker-01-amendment-02",
+    "worker-01-amendment-03",
+    "worker-01-amendment-04",
+    "worker-01-amendment-05",
+    "worker-01-amendment-06",
+    "worker-01-amendment-07",
+    "worker-01-amendment-08",
+    "worker-01-amendment-09",
+    "worker-01-amendment-10",
+    "worker-01-amendment-11"
+  ],
+  "amendments_by_record": {
+    "entry-236": "worker-01-amendment-11",
+    "entry-1768": "worker-01-amendment-02",
+    "entry-2321": "worker-01-amendment-10",
+    "entry-4619": "worker-01-amendment-04",
+    "entry-769": "worker-01-amendment-05",
+    "entry-2441": "worker-01-amendment-06",
+    "entry-35": "worker-01-amendment-07",
+    "entry-835": "worker-01-amendment-09"
+  },
+  "amendments_immutable_and_documented": true,
+  "pinned_review_rows": {
+    "count": 17,
+    "matched_record_ids": [
+      "entry-35",
+      "entry-236",
+      "entry-426",
+      "entry-769",
+      "entry-835",
+      "entry-969",
+      "entry-1768",
+      "entry-2321",
+      "entry-2441",
+      "entry-2560",
+      "entry-2929",
+      "entry-3678",
+      "entry-4054",
+      "entry-4619",
+      "entry-5505",
+      "entry-6138",
+      "entry-6264"
+    ],
+    "frozen_snapshot_commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3"
+  },
+  "focused_source_checks": [
+    {
+      "record_id": "entry-35",
+      "url": "https://clearinghouse.net/case/15342/",
+      "result": "Loaded case file; confirmed consent decree and no-admission clause."
+    },
+    {
+      "record_id": "entry-426",
+      "url": "https://www.thewrap.com/dhs-responds-olivia-rodrigo-hateful-propaganda-comment/",
+      "result": "Loaded article; confirmed Rodrigo’s objection and attributed DHS response."
+    },
+    {
+      "record_id": "entry-969",
+      "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-012021/",
+      "result": "Loaded statement; confirmed Patton full pardon and mortgage false-statement offense."
+    },
+    {
+      "record_id": "entry-6264",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-the-press-secretary-regarding-executive-grants-clemency-4",
+      "result": "Loaded statement; confirmed 73 pardons, 70 commutations and Bannon full pardon; copy distinguishes Jan. 20 announcement from DOJ Jan. 19 grant listing."
+    }
+  ],
+  "held_rows": {
+    "entry-835": "No supplied alternate identity or case-specific clemency record; retained hold and exact upstream reasons.",
+    "entry-1768": "Narrowed description shifts the event to AP’s tracker publication and the source identifies no specific pledge or dated tracker assessment.",
+    "entry-2321": "Long description remains absent and both supplied AP pages were inaccessible; retained hold and exact upstream reasons."
+  },
+  "coordinator_issue_resolved": [
+    "output_missing",
+    "bad_description_long:entry-236"
+  ],
+  "scope_check": "Only held204-01 worker-01 review artifacts were added; no canonical data, Neon, or application code was edited.",
+  "verification_errors": [],
+  "amendment_correction_history": [
+    {
+      "record_id": "entry-236",
+      "new_amendment_id": "worker-01-amendment-11",
+      "supersedes_amendment_id": "worker-01-amendment-08",
+      "reason": "Replaced repetitive and editorial long-description wording while preserving attribution, source-backed facts, and the proposal-versus-realized-outcome distinction."
+    }
+  ]
+}

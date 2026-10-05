@@ -1,0 +1,78 @@
+{
+  "job": "held204-01",
+  "worker": "worker-01",
+  "input_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "input_path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-01-input.jsonl",
+  "assigned_ids": [
+    "entry-35",
+    "entry-236",
+    "entry-426",
+    "entry-769",
+    "entry-835",
+    "entry-969",
+    "entry-1768",
+    "entry-2321",
+    "entry-2441",
+    "entry-2560",
+    "entry-2929",
+    "entry-3678",
+    "entry-4054",
+    "entry-4619",
+    "entry-5505",
+    "entry-6138",
+    "entry-6264"
+  ],
+  "terminal_ids": [
+    "entry-35",
+    "entry-236",
+    "entry-426",
+    "entry-769",
+    "entry-835",
+    "entry-969",
+    "entry-1768",
+    "entry-2321",
+    "entry-2441",
+    "entry-2560",
+    "entry-2929",
+    "entry-3678",
+    "entry-4054",
+    "entry-4619",
+    "entry-5505",
+    "entry-6138",
+    "entry-6264"
+  ],
+  "remaining_ids": [],
+  "status_counts": {
+    "pass": 14,
+    "hold": 3
+  },
+  "effective_status_counts_after_amendments": {
+    "pass": 14,
+    "hold": 3
+  },
+  "amendment_count": 11,
+  "amendments_by_record": {
+    "entry-236": "worker-01-amendment-11",
+    "entry-1768": "worker-01-amendment-02",
+    "entry-2321": "worker-01-amendment-10",
+    "entry-4619": "worker-01-amendment-04",
+    "entry-769": "worker-01-amendment-05",
+    "entry-2441": "worker-01-amendment-06",
+    "entry-35": "worker-01-amendment-07",
+    "entry-835": "worker-01-amendment-09"
+  },
+  "last_batch_added": [
+    "entry-5505",
+    "entry-6138",
+    "entry-6264"
+  ],
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-01-terminal.jsonl",
+  "amendment_file": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-01-terminal-amendments.jsonl",
+  "qa_file": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/outputs/worker-01-exact-set-qa.json",
+  "state": "complete",
+  "last_amendment": {
+    "amendment_id": "worker-01-amendment-11",
+    "record_id": "entry-236",
+    "supersedes_amendment_id": "worker-01-amendment-08"
+  }
+}

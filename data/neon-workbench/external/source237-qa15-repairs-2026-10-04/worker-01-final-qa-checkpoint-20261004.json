@@ -1,0 +1,101 @@
+{
+  "artifact": "source237 QA15 repair final exact-set checkpoint",
+  "created_utc_date": "2026-10-04",
+  "branch": "ls/1-trump-files-source118-review-01-of-12-Dnux",
+  "scope": "Only the two supplied finding records; copy/source QA repair only. No canonical, database, or Neon writes.",
+  "coordinator_provenance": {
+    "branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+    "commit": "032b7cb2cdf4f885793f043e4247374a2847d6f5",
+    "checkpoint": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-checkpoint-v2.json",
+    "addendum": "data/neon-workbench/external/account2-release-round-2026-10-04/worker-18/worker-18-source237-reconciliation-addendum-v2.jsonl"
+  },
+  "proposal_provenance": {
+    "branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+    "commit": "8c7fe53755566dde56f4939c0abb805bebfb24df"
+  },
+  "input_findings": [
+    {
+      "id": "entry-4416",
+      "flags": [
+        "long_out_of_140_300"
+      ],
+      "prior_lengths": {
+        "title_chars": 64,
+        "short_chars": 64,
+        "medium_words": 62,
+        "long_words": 114
+      }
+    },
+    {
+      "id": "entry-6813",
+      "flags": [
+        "long_out_of_140_300"
+      ],
+      "prior_lengths": {
+        "title_chars": 76,
+        "short_chars": 76,
+        "medium_words": 52,
+        "long_words": 112
+      }
+    }
+  ],
+  "output_file": "data/neon-workbench/external/source237-qa15-repairs-2026-10-04/outputs/worker-01-batch-20261004-source237-qa15.jsonl",
+  "output_sha256": "f0b1134aaa42667cb466d8b335f8ca91a0f9d154f371a919be5dfdb1970d25b2",
+  "exact_assigned_ids": [
+    "entry-4416",
+    "entry-6813"
+  ],
+  "observed_ids": [
+    "entry-4416",
+    "entry-6813"
+  ],
+  "row_count": 2,
+  "one_terminal_result_per_id": true,
+  "source_triage_status_counts": {
+    "needs_correction": 2,
+    "accepted_source": 0
+  },
+  "repair_outcomes": {
+    "corrected_claim": 2,
+    "held": 0
+  },
+  "length_word_rule": "Unicode word units; letters/numbers with internal apostrophes or hyphens count as one unit, matching the source packet QA convention.",
+  "per_id_lengths": {
+    "entry-4416": {
+      "title_chars": 64,
+      "short_chars": 64,
+      "medium_words": 62,
+      "long_words": 165
+    },
+    "entry-6813": {
+      "title_chars": 76,
+      "short_chars": 76,
+      "medium_words": 52,
+      "long_words": 211
+    }
+  },
+  "qa_checks": {
+    "jsonl_parse": true,
+    "exact_two_id_set": true,
+    "one_row_per_id": true,
+    "no_duplicates": true,
+    "all_sources_https": true,
+    "every_source_url_mapped_to_supported_facts_and_limits": true,
+    "existing_title_short_medium_and_source_urls_preserved": true,
+    "title_and_short_le_180_characters": true,
+    "medium_45_to_90_words": true,
+    "long_140_to_300_words": true,
+    "unsupported_claims_and_exact_evidence_gaps_recorded": true,
+    "source_triage_not_reported_as_verified": true
+  },
+  "source_review_notes": {
+    "entry-4416": "Brookings article returned HTTP 200. The retained single URL supports all existing claims and the added contextual passages; remaining gaps are itinerary records, complete poll methodology, causality, and the private Alaska understanding.",
+    "entry-6813": "Official Federal Register full text for document 2025-02097 and official API metadata were checked. The landing route returned a request-access page, while the full-text document was accessible. The retained exact HTTPS proposal URL maps to each added order fact; no URL was added or removed."
+  },
+  "excluded_work": [
+    "No canonical data edits.",
+    "No Neon/database writes.",
+    "No PR requested or opened.",
+    "No application code changed; application tests and visual verification do not apply to these data-only QA artifacts."
+  ]
+}
