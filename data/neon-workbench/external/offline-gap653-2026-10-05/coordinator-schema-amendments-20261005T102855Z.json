@@ -1,0 +1,58 @@
+[
+  {
+    "record_id": "entry-1213",
+    "field": "score_proposal.version",
+    "from": null,
+    "to": "impact-v2",
+    "reason": "Pinned task/rubric version header omitted; factual values and score dimensions unchanged."
+  },
+  {
+    "record_id": "entry-1459",
+    "field": "score_proposal.version",
+    "from": null,
+    "to": "impact-v2",
+    "reason": "Pinned task/rubric version header omitted; factual values and score dimensions unchanged."
+  },
+  {
+    "record_id": "entry-1593",
+    "field": "score_proposal.version",
+    "from": null,
+    "to": "impact-v2",
+    "reason": "Pinned task/rubric version header omitted; factual values and score dimensions unchanged."
+  },
+  {
+    "record_id": "entry-1758",
+    "field": "score_proposal.version",
+    "from": null,
+    "to": "impact-v2",
+    "reason": "Pinned task/rubric version header omitted; factual values and score dimensions unchanged."
+  },
+  {
+    "record_id": "entry-2014",
+    "field": "score_proposal.version",
+    "from": null,
+    "to": "impact-v2",
+    "reason": "Pinned task/rubric version header omitted; factual values and score dimensions unchanged."
+  },
+  {
+    "record_id": "entry-282",
+    "field": "score_proposal.version",
+    "from": null,
+    "to": "impact-v2",
+    "reason": "Pinned task/rubric version header omitted; factual values and score dimensions unchanged."
+  },
+  {
+    "record_id": "entry-5984",
+    "field": "score_proposal.version",
+    "from": null,
+    "to": "impact-v2",
+    "reason": "Pinned task/rubric version header omitted; factual values and score dimensions unchanged."
+  },
+  {
+    "record_id": "entry-7056",
+    "field": "score_proposal.version",
+    "from": null,
+    "to": "impact-v2",
+    "reason": "Pinned task/rubric version header omitted; factual values and score dimensions unchanged."
+  }
+]

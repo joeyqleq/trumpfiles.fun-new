@@ -1,0 +1,15 @@
+{
+  "samples": {
+    "insights100": {
+      "accepted_core": 96,
+      "held": 4
+    },
+    "validation100": {
+      "accepted_core": 93,
+      "held": 7
+    }
+  },
+  "decision": "GO for core structured facts; sparse numerical and directed relationship extensions remain review candidates",
+  "rows": 200,
+  "proposal_only": true
+}

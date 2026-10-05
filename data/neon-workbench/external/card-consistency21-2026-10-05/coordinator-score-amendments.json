@@ -1,0 +1,13 @@
+{
+  "scope": "Only explicit rubric contradictions in the 21 card repairs; preserve worker proposals in provenance. No independent page verification or measured impact claim.",
+  "entries": {
+    "entry-735": {"dimensions": {"harm": 0.0, "reach": 2.0, "institutions": 0.0, "persistence": 0.0}, "reason": "An ordinary pardon affecting one individual does not establish harm, damage to checks, or persistent abusive effects. Reach uses the rubric's individual anchor."},
+    "entry-177": {"dimensions": {"institutions": 0.0, "procedural_abuse": 0.0}, "reason": "Public-health staffing and capacity concerns are not themselves damage to institutional checks or an identified procedural bypass."},
+    "entry-184": {"dimensions": {"institutions": 0.0, "persistence": 0.0}, "reason": "The reported surveillance supports a privacy concern, but the packet establishes neither damage to accountability checks nor subsequent retention/use or lasting effects."},
+    "entry-266": {"dimensions": {"institutions": 0.0, "persistence": 0.0}, "reason": "The directive and care restrictions can be assessed as policy and threat; the supplied material does not establish impairment of checks or implemented lasting effects."},
+    "entry-6163": {"dimensions": {"persistence": 0.0}, "reason": "A funding directive is documented; final funding loss and legal outcomes are unknown, so no lasting effect is established."},
+    "entry-324": {"dimensions": {"procedural_abuse": 0.0, "persistence": 0.0}, "reason": "A conditional threat and separate square clearing do not establish unlawful bypass or lasting effects; the packet expressly says the Insurrection Act was not invoked."},
+    "entry-4889": {"dimensions": {"persistence": 0.0}, "reason": "The two savings reviews establish discrepancies in different samples, not a lasting downstream effect."},
+    "entry-282": {"dimensions": {"institutions": 0.0, "persistence": 0.0}, "reason": "The blueprint's projected risks are not evidence of realized impairment of accountability or lasting effects; event remains proposed."}
+  }
+}
