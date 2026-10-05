@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-10-05T10:29:02.742196+00:00",
+  "publication_status": "offline_proposals_only",
+  "descriptions": {
+    "path": "data/neon-workbench/external/final-primary45-2026-10-05/descriptions-20261005T093600Z.jsonl",
+    "sha256": "4787d76f25622805493a02b4257c0faba034f390871f838627ca04d25d52fd93",
+    "rows": 6944,
+    "counts": {
+      "complete": 6892,
+      "needs_context": 52
+    }
+  },
+  "insights": {
+    "path": "data/neon-workbench/external/offline-gap653-2026-10-05/insights-repaired-20261005T102855Z.jsonl",
+    "sha256": "b8a2fa84d12cac086deb1cbca45bc4b981b7d085db51db8adae9ba3e880564fa",
+    "rows": 6892,
+    "counts": {
+      "complete": 6891,
+      "insufficient": 1
+    }
+  },
+  "scores": {
+    "path": "data/neon-workbench/external/offline-gap653-2026-10-05/scores-repaired-20261005T102855Z.jsonl",
+    "sha256": "882900cbc77026833d747b23ff20bc5cfc5d5bda12307d9fd099ad0ed2c2f85e",
+    "rows": 6944,
+    "counts": {
+      "scored": 6759,
+      "deferred": 185
+    }
+  },
+  "qa": {
+    "all_complete_descriptions_have_exactly_one_insight_row": true,
+    "no_duplicate_ids": true,
+    "score_and_description_universes_match": true,
+    "existing_complete_insight_rows_preserved": true,
+    "all653_independently_reviewed": true
+  },
+  "release_gates": {
+    "canonical_and_live_data_unchanged": true,
+    "production_schema_and_quota_still_required": true,
+    "no_automatic_database_retry_workflow": true,
+    "unsupported_held_records_not_deleted": true
+  },
+  "gap_repairs": {
+    "qa_pass": 406,
+    "score_scored": 219,
+    "score_deferred": 150,
+    "insight_complete": 364,
+    "qa_revise": 246,
+    "coordinator_review_override": 3,
+    "insight_insufficient": 1,
+    "qa_hold": 1
+  },
+  "baseline_manifest": "data/neon-workbench/external/offline-gap653-2026-10-05/baseline-manifest.json",
+  "provenance": "data/neon-workbench/external/offline-gap653-2026-10-05/provenance-20261005T102855Z.jsonl",
+  "preservation": {
+    "existing_scored_dimensions_totals_rationales_unchanged": true,
+    "existing_complete_insights_unchanged": true,
+    "rankings_recomputed_without_jitter": true,
+    "append_only_inputs_preserved": true
+  },
+  "withheld_scored_records": 18,
+  "eligible_scored_descriptions": 6741,
+  "coordinator_field_amendments": {
+    "path": "data/neon-workbench/external/offline-gap653-2026-10-05/coordinator-field-amendments-20261005T102855Z.json",
+    "count": 49
+  },
+  "coordinator_schema_amendments": {
+    "path": "data/neon-workbench/external/offline-gap653-2026-10-05/coordinator-schema-amendments-20261005T102855Z.json",
+    "count": 8
+  },
+  "coordinator_review_overrides": "data/neon-workbench/external/offline-gap653-2026-10-05/coordinator-review-overrides.json"
+}
