@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-10-05T09:36:03.941121+00:00",
+  "publication_status": "offline_proposals_only",
+  "descriptions": {
+    "path": "data/neon-workbench/external/final-primary45-2026-10-05/descriptions-20261005T093600Z.jsonl",
+    "sha256": "4787d76f25622805493a02b4257c0faba034f390871f838627ca04d25d52fd93",
+    "rows": 6944,
+    "counts": {
+      "complete": 6892,
+      "needs_context": 52
+    }
+  },
+  "insights": {
+    "path": "data/neon-workbench/external/consolidated-offline-release-2026-10-05/insights-aligned-20261005T093603Z.jsonl",
+    "sha256": "24c38be26d3a7bf74a34c04a9e0cd540a89bd9ba1fc3b758bf7d2798568ce4b4",
+    "rows": 6892,
+    "counts": {
+      "complete": 6527,
+      "insufficient": 365
+    },
+    "new_context_additions": [
+      "entry-1857",
+      "entry-203",
+      "entry-2061",
+      "entry-2106",
+      "entry-227",
+      "entry-2296",
+      "entry-230",
+      "entry-2321",
+      "entry-264",
+      "entry-2731",
+      "entry-2864",
+      "entry-3117",
+      "entry-3444",
+      "entry-37",
+      "entry-3899",
+      "entry-405",
+      "entry-4207",
+      "entry-425",
+      "entry-4308",
+      "entry-4603",
+      "entry-4692",
+      "entry-5309",
+      "entry-5403",
+      "entry-5406",
+      "entry-5599",
+      "entry-5698",
+      "entry-5707",
+      "entry-5936",
+      "entry-6206",
+      "entry-6241",
+      "entry-6340",
+      "entry-643",
+      "entry-651",
+      "entry-655",
+      "entry-674",
+      "entry-824",
+      "entry-873",
+      "entry-945",
+      "entry-231",
+      "entry-266",
+      "entry-293",
+      "entry-5541",
+      "entry-6552",
+      "entry-801",
+      "entry-822",
+      "entry-978",
+      "entry-996"
+    ],
+    "base_path": "data/neon-workbench/external/continuous-finish-2026-10-04/insights-full-coordinator-proposed-v2.jsonl",
+    "base_sha256": "e6fdf8393a3e73b805c1c11b077c3bd9462fe089aad571fba8baf0ee6d137773"
+  },
+  "scores": {
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/impact-finalized-descriptions-proposed.jsonl",
+    "sha256": "13bbd39d3122a401c6f9f6c16ae00d65f439fcb749a84a1ad600abcd2e1e635f",
+    "rows": 6944,
+    "counts": {
+      "scored": 6540,
+      "deferred": 404
+    },
+    "original_scores_unchanged": true
+  },
+  "qa": {
+    "all_complete_descriptions_have_exactly_one_insight_row": true,
+    "no_duplicate_ids": true,
+    "score_and_description_universes_match": true,
+    "base_insight_rows_preserved": true
+  },
+  "release_gates": {
+    "canonical_and_live_data_unchanged": true,
+    "production_schema_and_quota_still_required": true,
+    "no_automatic_database_retry_workflow": true,
+    "unsupported_held_records_not_deleted": true
+  }
+}
