@@ -1,0 +1,13 @@
+{
+  "worker": 43,
+  "checkpoint": 1,
+  "source_commit": "597ea5739623393fcf62c3859ada19ec85a848bf",
+  "record_ids": [
+    "entry-1330",
+    "entry-1515",
+    "entry-1654"
+  ],
+  "terminal_path": "data/neon-workbench/external/offline-gap653-2026-10-05/outputs/worker-43-terminal.jsonl",
+  "rows_appended": 3,
+  "gate": "passed"
+}
