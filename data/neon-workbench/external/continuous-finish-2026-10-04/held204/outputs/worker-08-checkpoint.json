@@ -1,0 +1,14 @@
+{
+  "job": "held204-08",
+  "assignment_commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+  "expected_count": 17,
+  "terminal_rows_written": 17,
+  "remaining_record_ids": [],
+  "status_counts": {
+    "pass": 9,
+    "hold": 8
+  },
+  "amendments": 3,
+  "exact_set_qa": "pass",
+  "checkpointed_at_utc": "2026-10-04T10:45:13.436442+00:00"
+}
