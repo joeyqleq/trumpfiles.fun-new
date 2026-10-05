@@ -1,0 +1,36 @@
+{
+  "job": "changed105-17",
+  "worker": 17,
+  "source_branch": "codex/final-description-scores-2026-10-04",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "source_file": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-17-input.jsonl",
+  "source_input_sha256": "493df7839b5449247b55bd5d8d3654170685143c242914ae01f519143912bb47",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-17-terminal.jsonl",
+  "expected_record_ids": [
+    "entry-2441",
+    "entry-2442",
+    "entry-1771",
+    "entry-5094",
+    "entry-3838",
+    "entry-4296",
+    "entry-6230",
+    "entry-830",
+    "entry-3574"
+  ],
+  "completed_record_ids": [
+    "entry-2441",
+    "entry-2442",
+    "entry-1771",
+    "entry-5094",
+    "entry-3838",
+    "entry-4296",
+    "entry-6230",
+    "entry-830",
+    "entry-3574"
+  ],
+  "completed_count": 9,
+  "checkpoint_batch": 3,
+  "status": "complete",
+  "append_only": true,
+  "amendments": []
+}

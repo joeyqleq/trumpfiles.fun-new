@@ -1,0 +1,32 @@
+{
+  "job": "changed105-17",
+  "source_branch": "codex/final-description-scores-2026-10-04",
+  "source_commit": "5c14293f4d0478462fd6e83148025eed1e5a6dc1",
+  "source_file": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/worker-17-input.jsonl",
+  "source_input_sha256": "493df7839b5449247b55bd5d8d3654170685143c242914ae01f519143912bb47",
+  "terminal_file": "data/neon-workbench/external/continuous-finish-2026-10-04/changed105/outputs/worker-17-terminal.jsonl",
+  "expected_record_ids": [
+    "entry-2441",
+    "entry-2442",
+    "entry-1771",
+    "entry-5094",
+    "entry-3838",
+    "entry-4296",
+    "entry-6230",
+    "entry-830",
+    "entry-3574"
+  ],
+  "expected_count": 9,
+  "actual_terminal_rows_for_assignment": 9,
+  "actual_unique_keys": 9,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicate_ids": [],
+  "status_counts": {
+    "scored": 9,
+    "deferred": 0
+  },
+  "exact_set_pass": true,
+  "amendments": [],
+  "scope_note": "Only the nine explicitly assigned records were scored from the supplied packet and rubric; no web research, canonical edits, original-score overwrites, or Neon writes."
+}
