@@ -1,0 +1,98 @@
+{
+  "job": "held204-11",
+  "completed": true,
+  "completed_at_date": "2026-10-04",
+  "branch": "ls/11-trump-files-source118-review-11-of-12-8RJW",
+  "base_head": "6fd6fce034406b3cf004437046694d93b7d54456",
+  "pinned_input": {
+    "commit": "2476ae4896b888830fd3888f40581e19b78fae30",
+    "path": "data/neon-workbench/external/continuous-finish-2026-10-04/held204/worker-11-input.jsonl",
+    "row_count": 17,
+    "sha256": "384acd53401d8f30fe001b8561b14730f3f44133bff74c6331e47b00fd31efe5"
+  },
+  "frozen_original_source": {
+    "commit": "4b722b9fc56f83e514181cdb9a1098500f1fe1c3",
+    "path": "data/neon-workbench/external/wave3-needs-context-204-2026-10-04/held204.jsonl"
+  },
+  "assigned_ids": [
+    "entry-230",
+    "entry-405",
+    "entry-754",
+    "entry-830",
+    "entry-945",
+    "entry-1728",
+    "entry-2106",
+    "entry-2413",
+    "entry-2528",
+    "entry-2854",
+    "entry-3488",
+    "entry-4017",
+    "entry-4353",
+    "entry-5433",
+    "entry-5945",
+    "entry-6241",
+    "entry-6991"
+  ],
+  "terminal_count": 17,
+  "unique_terminal_count": 17,
+  "amendments": {
+    "path": "worker-11-amendments.jsonl",
+    "count": 9,
+    "record_ids": [
+      "entry-2106",
+      "entry-230",
+      "entry-4017",
+      "entry-405",
+      "entry-4353",
+      "entry-5945"
+    ]
+  },
+  "status_counts": {
+    "pass": 12,
+    "hold": 5,
+    "exclusion_candidate": 0
+  },
+  "qa": {
+    "path": "worker-11-exact-set-qa.jsonl",
+    "exact_set_pass": true,
+    "all_effective_rows_valid": true
+  },
+  "artifacts": {
+    "worker-11-terminal.jsonl": {
+      "sha256": "b7f83adab6a1b739308e4220028c0990d395f5c01123edf62865570be82450a1",
+      "bytes": 82009
+    },
+    "worker-11-amendments.jsonl": {
+      "sha256": "8b8fd2f8a6570f75b769450af0fc0cc41dff429e72b5700bf3ef60abb4ae05b9",
+      "bytes": 55724
+    },
+    "worker-11-exact-set-qa.jsonl": {
+      "sha256": "1432da6af5f9c6fe28b0376972cc693b3700d500100f4b7024bcd4e79e419c40",
+      "bytes": 8651
+    }
+  },
+  "focused_rescue": {
+    "record_id": "entry-2106",
+    "source": "https://www.sfgate.com/news/article/congress-looks-for-trump-s-exit-plan-as-the-iran-22089130.php",
+    "result": "HTTP 200 returned a JavaScript client challenge; article text remained inaccessible; hold retained"
+  },
+  "unresolved_holds": [
+    "entry-230",
+    "entry-945",
+    "entry-2106",
+    "entry-2854",
+    "entry-6241"
+  ],
+  "pr_action": "No PR created per task instruction.",
+  "scope": "Only review output artifacts were added; no canonical, Neon, or application-code changes.",
+  "follow_up_correction": {
+    "issues_resolved": [
+      "bad_description_long:entry-230",
+      "bad_description_long:entry-405"
+    ],
+    "amendment_rows_appended": 2,
+    "terminal_rows_overwritten": 0,
+    "effective_statuses_changed": 0,
+    "scope": "Only the two flagged long descriptions were amended; prior terminal and amendment rows are preserved."
+  }
+}
