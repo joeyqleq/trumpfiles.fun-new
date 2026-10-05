@@ -1,0 +1,12 @@
+{
+  "job": "primary45-30",
+  "record_id": "entry-5541",
+  "current_before_restoration_commit": "6b9e3da3665ebae2d6b96513c26e17362a678e75",
+  "prior_history_commit": "7aa27dd951fec42ae3d6e2a315b505dfd6b271ba",
+  "current_before_restoration_sha256": "5b8197855441fb3cc860a4eb0d7c074579b0b60a63e9f0a5d1dc42e4a501f814",
+  "prior_history_sha256": "5d8f1f3ec0e78bdcc2ab5de3082289ca6361ee5e144386518fe2627e39b3a29a",
+  "restored_row_count": 2,
+  "current_rows_not_removed_or_rewritten": true,
+  "authoritative_amendment": "data/neon-workbench/external/final-primary45-2026-10-05/outputs/worker-30-amendment-1.jsonl",
+  "issue": "Worker had reduced conflicting terminal history to one row; coordinator restored older rows by append."
+}
