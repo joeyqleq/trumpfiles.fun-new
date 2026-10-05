@@ -1,0 +1,13 @@
+{
+  "job_id": "gap653-16",
+  "source_commit": "597ea5739623393fcf62c3859ada19ec85a848bf",
+  "worker": 16,
+  "completed_ids": [
+    "entry-1760",
+    "entry-2033",
+    "entry-2415"
+  ],
+  "terminal_path": "data/neon-workbench/external/offline-gap653-2026-10-05/outputs/worker-16-terminal.jsonl",
+  "completed_count": 6,
+  "gate": "passed"
+}

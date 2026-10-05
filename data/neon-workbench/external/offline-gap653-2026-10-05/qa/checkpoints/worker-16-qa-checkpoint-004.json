@@ -1,0 +1,16 @@
+{
+  "job_id": "gap653-qa-16",
+  "source_commit": "597ea5739623393fcf62c3859ada19ec85a848bf",
+  "target_commit": "d8c014b135406457ed7c1a5860120ae33da3f4b9",
+  "worker": 16,
+  "completed_ids": [
+    "entry-6021",
+    "entry-7063"
+  ],
+  "completed_count": 11,
+  "qa_terminal_path": "data/neon-workbench/external/offline-gap653-2026-10-05/qa/worker-16-terminal.jsonl",
+  "statuses": {
+    "entry-6021": "pass",
+    "entry-7063": "revise"
+  }
+}
