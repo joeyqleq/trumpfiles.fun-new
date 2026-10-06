@@ -21,5 +21,21 @@
     "entry-6631",
     "entry-6929"
   ],
-  "push_results": []
+  "push_results": [
+    {
+      "record_id": "entry-1779",
+      "commit": "e574e95",
+      "canonical_origin_attempt": {
+        "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "exit_code": 128,
+        "result": "HTTP 403: Repository is not a member of this stack"
+      },
+      "successful_redirect_push": {
+        "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+        "exit_code": 0,
+        "result": "GitHub reported repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git and created branch ls/15-trump-files-migration-reconciliation-17--kWGP",
+        "immutable_repository_id": 1082328314
+      }
+    }
+  ]
 }
