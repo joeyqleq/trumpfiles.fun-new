@@ -11,10 +11,10 @@
     "requested_commit_is_ancestor": true
   },
   "completed_ids": [
-    "entry-4239"
+    "entry-4239",
+    "entry-6424"
   ],
   "remaining_ids": [
-    "entry-6424",
     "entry-6782",
     "entry-7086"
   ],
@@ -28,5 +28,5 @@
       "result": "success; created and tracked the required task branch"
     }
   ],
-  "checkpoint_state": "entry-4239 committed and pushed; exact remaining IDs recorded"
+  "checkpoint_state": "entry-6424 reconciled; awaiting parent push result"
 }
