@@ -11,10 +11,10 @@
     "output": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * branch codex/migration-reconcile336-2026-10-06 -> FETCH_HEAD\n * [new branch] codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06"
   },
   "completed_parent_ids": [
-    "entry-854"
+    "entry-854",
+    "entry-5754"
   ],
   "remaining_parent_ids": [
-    "entry-5754",
     "entry-6602",
     "entry-6871"
   ],
