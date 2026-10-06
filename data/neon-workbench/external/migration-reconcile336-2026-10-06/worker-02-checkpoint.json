@@ -74,8 +74,20 @@
       "exit_code": 0,
       "status": "pushed",
       "output": "7f58c64f..d0dfa46d updated ls/14-trump-files-migration-reconciliation-02--NyIq"
+    },
+    {
+      "record_id": "entry-6857",
+      "commit": "18a97705",
+      "remote": "verified_legacy_redirect",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "resolved_repository_id": 1082328314,
+      "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/14-trump-files-migration-reconciliation-02--NyIq",
+      "exit_code": 0,
+      "status": "pushed",
+      "output": "d0dfa46d..18a97705 updated ls/14-trump-files-migration-reconciliation-02--NyIq"
     }
   ],
-  "current_parent_push": "entry-6857 commit not yet pushed",
-  "stack_mapping_note": "Lightsprint registers repository ID 1082328314 under the stale fullName p5n-n3t/trumpfiles.fun-new; GitHub API confirms the legacy name resolves to canonical repository ID 1082328314. Keep origin canonical and push via the verified redirect when needed."
+  "current_parent_push": "all four assigned parent commits pushed successfully via the verified legacy redirect",
+  "stack_mapping_note": "Lightsprint registers repository ID 1082328314 under the stale fullName p5n-n3t/trumpfiles.fun-new; GitHub API confirms the legacy name resolves to canonical repository ID 1082328314. Keep origin canonical and push via the verified redirect when needed.",
+  "final_branch_commit": "18a97705"
 }
