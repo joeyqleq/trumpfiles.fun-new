@@ -51,6 +51,14 @@
       "exit_code": 0,
       "result": "success",
       "output": "GitHub accepted update to ls/15-trump-files-migration-reconciliation-19--t6oz; repository moved response names canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git"
+    },
+    {
+      "remote": "one-time rename alias",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "commit": "1b38da374ab3f56e60053e764ec4b50c0f3bf399",
+      "exit_code": 0,
+      "result": "success",
+      "output": "GitHub accepted update to ls/15-trump-files-migration-reconciliation-19--t6oz; repository moved response names canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git"
     }
   ]
 }
