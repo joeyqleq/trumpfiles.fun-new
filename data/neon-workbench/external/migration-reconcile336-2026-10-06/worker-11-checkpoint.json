@@ -5,7 +5,10 @@
     "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "github_repository_id": 1082328314,
     "identity_verified_as": "p5n-n3t/trumpfiles-fun-new",
-    "branch": "ls/14-trump-files-migration-reconciliation-11--symm"
+    "branch": "ls/14-trump-files-migration-reconciliation-11--symm",
+    "origin_fetch_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "origin_push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+    "push_alias_resolution": "GitHub reports the old registered stack slug moved to the canonical URL; both identify repository ID 1082328314."
   },
   "packet": {
     "branch": "codex/migration-reconcile336-2026-10-06",
@@ -22,5 +25,25 @@
     "entry-6612",
     "entry-6913"
   ],
-  "push_history": []
+  "push_history": [
+    {
+      "after_record_id": "entry-1726",
+      "commit": "aff0e6db",
+      "attempts": [
+        {
+          "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+          "exit_code": 128,
+          "result": "failed",
+          "response": "Lightsprint credential helper: Repository is not a member of this stack."
+        },
+        {
+          "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+          "exit_code": 0,
+          "result": "success",
+          "response": "GitHub accepted the push and reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git.",
+          "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm"
+        }
+      ]
+    }
+  ]
 }
