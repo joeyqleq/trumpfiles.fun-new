@@ -1,0 +1,1581 @@
+{
+  "schema_validation": {
+    "expected_count": 336,
+    "authoritative_count": 336,
+    "unique_count": 336,
+    "status_counts": {
+      "revise": 93,
+      "hold": 133,
+      "pass": 104,
+      "draft_unverified": 6
+    },
+    "missing_ids": [],
+    "failures": [],
+    "passed": true
+  },
+  "effective_card_validation": {
+    "passed": true,
+    "card_count": 167,
+    "score_count": 128,
+    "failures": [],
+    "card_lengths": [
+      {
+        "parent_record_id": "entry-1181",
+        "record_id": "entry-1181",
+        "path": "entry-1181",
+        "title_chars": 67,
+        "short_chars": 131,
+        "medium_words": 69,
+        "long_words": 179
+      },
+      {
+        "parent_record_id": "entry-1726",
+        "record_id": "entry-1726",
+        "path": "entry-1726",
+        "title_chars": 66,
+        "short_chars": 121,
+        "medium_words": 56,
+        "long_words": 181
+      },
+      {
+        "parent_record_id": "entry-1727",
+        "record_id": "entry-1727",
+        "path": "entry-1727",
+        "title_chars": 69,
+        "short_chars": 117,
+        "medium_words": 52,
+        "long_words": 173
+      },
+      {
+        "parent_record_id": "entry-236",
+        "record_id": "entry-236",
+        "path": "entry-236",
+        "title_chars": 59,
+        "short_chars": 121,
+        "medium_words": 59,
+        "long_words": 175
+      },
+      {
+        "parent_record_id": "entry-2418",
+        "record_id": "entry-2418",
+        "path": "entry-2418",
+        "title_chars": 84,
+        "short_chars": 106,
+        "medium_words": 63,
+        "long_words": 191
+      },
+      {
+        "parent_record_id": "entry-2458",
+        "record_id": "entry-2458",
+        "path": "entry-2458",
+        "title_chars": 66,
+        "short_chars": 84,
+        "medium_words": 50,
+        "long_words": 188
+      },
+      {
+        "parent_record_id": "entry-2494",
+        "record_id": "entry-2494",
+        "path": "entry-2494",
+        "title_chars": 69,
+        "short_chars": 179,
+        "medium_words": 72,
+        "long_words": 179
+      },
+      {
+        "parent_record_id": "entry-2501",
+        "record_id": "entry-2501",
+        "path": "entry-2501",
+        "title_chars": 72,
+        "short_chars": 82,
+        "medium_words": 61,
+        "long_words": 170
+      },
+      {
+        "parent_record_id": "entry-2504",
+        "record_id": "entry-2504",
+        "path": "entry-2504",
+        "title_chars": 73,
+        "short_chars": 133,
+        "medium_words": 72,
+        "long_words": 163
+      },
+      {
+        "parent_record_id": "entry-2515",
+        "record_id": "entry-2515",
+        "path": "entry-2515",
+        "title_chars": 80,
+        "short_chars": 140,
+        "medium_words": 71,
+        "long_words": 168
+      },
+      {
+        "parent_record_id": "entry-2557",
+        "record_id": "entry-2557",
+        "path": "entry-2557",
+        "title_chars": 65,
+        "short_chars": 134,
+        "medium_words": 48,
+        "long_words": 193
+      },
+      {
+        "parent_record_id": "entry-2562",
+        "record_id": "entry-2562",
+        "path": "entry-2562",
+        "title_chars": 88,
+        "short_chars": 88,
+        "medium_words": 64,
+        "long_words": 172
+      },
+      {
+        "parent_record_id": "entry-2615",
+        "record_id": "entry-2615",
+        "path": "entry-2615",
+        "title_chars": 50,
+        "short_chars": 130,
+        "medium_words": 57,
+        "long_words": 206
+      },
+      {
+        "parent_record_id": "entry-2619",
+        "record_id": "entry-2619",
+        "path": "entry-2619",
+        "title_chars": 82,
+        "short_chars": 152,
+        "medium_words": 77,
+        "long_words": 189
+      },
+      {
+        "parent_record_id": "entry-2624",
+        "record_id": "entry-2624",
+        "path": "entry-2624",
+        "title_chars": 74,
+        "short_chars": 137,
+        "medium_words": 56,
+        "long_words": 184
+      },
+      {
+        "parent_record_id": "entry-2854",
+        "record_id": "entry-2854",
+        "path": "entry-2854",
+        "title_chars": 84,
+        "short_chars": 135,
+        "medium_words": 56,
+        "long_words": 170
+      },
+      {
+        "parent_record_id": "entry-3380",
+        "record_id": "entry-3380",
+        "path": "entry-3380",
+        "title_chars": 75,
+        "short_chars": 157,
+        "medium_words": 69,
+        "long_words": 182
+      },
+      {
+        "parent_record_id": "entry-380",
+        "record_id": "entry-380",
+        "path": "entry-380",
+        "title_chars": 100,
+        "short_chars": 145,
+        "medium_words": 66,
+        "long_words": 198
+      },
+      {
+        "parent_record_id": "entry-4198",
+        "record_id": "entry-4198",
+        "path": "entry-4198",
+        "title_chars": 59,
+        "short_chars": 108,
+        "medium_words": 72,
+        "long_words": 167
+      },
+      {
+        "parent_record_id": "entry-4239",
+        "record_id": "entry-4239-child-01",
+        "path": "entry-4239.children[0]",
+        "title_chars": 70,
+        "short_chars": 119,
+        "medium_words": 58,
+        "long_words": 163
+      },
+      {
+        "parent_record_id": "entry-4239",
+        "record_id": "entry-4239-child-02",
+        "path": "entry-4239.children[1]",
+        "title_chars": 78,
+        "short_chars": 148,
+        "medium_words": 52,
+        "long_words": 153
+      },
+      {
+        "parent_record_id": "entry-4239",
+        "record_id": "entry-4239-child-03",
+        "path": "entry-4239.children[2]",
+        "title_chars": 79,
+        "short_chars": 148,
+        "medium_words": 52,
+        "long_words": 170
+      },
+      {
+        "parent_record_id": "entry-4240",
+        "record_id": "entry-4240-child-01",
+        "path": "entry-4240.children[0]",
+        "title_chars": 59,
+        "short_chars": 114,
+        "medium_words": 54,
+        "long_words": 172
+      },
+      {
+        "parent_record_id": "entry-4240",
+        "record_id": "entry-4240-child-02",
+        "path": "entry-4240.children[1]",
+        "title_chars": 47,
+        "short_chars": 91,
+        "medium_words": 67,
+        "long_words": 173
+      },
+      {
+        "parent_record_id": "entry-4407",
+        "record_id": "entry-4407-child-01",
+        "path": "entry-4407.children[0]",
+        "title_chars": 63,
+        "short_chars": 63,
+        "medium_words": 58,
+        "long_words": 182
+      },
+      {
+        "parent_record_id": "entry-4407",
+        "record_id": "entry-4407-child-02",
+        "path": "entry-4407.children[1]",
+        "title_chars": 59,
+        "short_chars": 59,
+        "medium_words": 62,
+        "long_words": 170
+      },
+      {
+        "parent_record_id": "entry-4438",
+        "record_id": "entry-4438",
+        "path": "entry-4438",
+        "title_chars": 68,
+        "short_chars": 118,
+        "medium_words": 61,
+        "long_words": 162
+      },
+      {
+        "parent_record_id": "entry-5112",
+        "record_id": "entry-5112",
+        "path": "entry-5112",
+        "title_chars": 59,
+        "short_chars": 140,
+        "medium_words": 54,
+        "long_words": 177
+      },
+      {
+        "parent_record_id": "entry-5161",
+        "record_id": "entry-5161-child-01",
+        "path": "entry-5161.children[0]",
+        "title_chars": 61,
+        "short_chars": 152,
+        "medium_words": 55,
+        "long_words": 205
+      },
+      {
+        "parent_record_id": "entry-5161",
+        "record_id": "entry-5161-child-02",
+        "path": "entry-5161.children[1]",
+        "title_chars": 68,
+        "short_chars": 128,
+        "medium_words": 50,
+        "long_words": 227
+      },
+      {
+        "parent_record_id": "entry-5189",
+        "record_id": "entry-5189-child-01",
+        "path": "entry-5189.children[0]",
+        "title_chars": 60,
+        "short_chars": 165,
+        "medium_words": 86,
+        "long_words": 169
+      },
+      {
+        "parent_record_id": "entry-5189",
+        "record_id": "entry-5189-child-02",
+        "path": "entry-5189.children[1]",
+        "title_chars": 73,
+        "short_chars": 161,
+        "medium_words": 69,
+        "long_words": 178
+      },
+      {
+        "parent_record_id": "entry-5189",
+        "record_id": "entry-5189-child-03",
+        "path": "entry-5189.children[2]",
+        "title_chars": 57,
+        "short_chars": 137,
+        "medium_words": 83,
+        "long_words": 152
+      },
+      {
+        "parent_record_id": "entry-5190",
+        "record_id": "entry-5190-child-01",
+        "path": "entry-5190.children[0]",
+        "title_chars": 71,
+        "short_chars": 71,
+        "medium_words": 60,
+        "long_words": 181
+      },
+      {
+        "parent_record_id": "entry-5190",
+        "record_id": "entry-5190-child-02",
+        "path": "entry-5190.children[1]",
+        "title_chars": 64,
+        "short_chars": 90,
+        "medium_words": 58,
+        "long_words": 181
+      },
+      {
+        "parent_record_id": "entry-5190",
+        "record_id": "entry-5190-child-03",
+        "path": "entry-5190.children[2]",
+        "title_chars": 60,
+        "short_chars": 100,
+        "medium_words": 60,
+        "long_words": 174
+      },
+      {
+        "parent_record_id": "entry-5191",
+        "record_id": "entry-5191-child-01",
+        "path": "entry-5191.children[0]",
+        "title_chars": 77,
+        "short_chars": 77,
+        "medium_words": 67,
+        "long_words": 173
+      },
+      {
+        "parent_record_id": "entry-5191",
+        "record_id": "entry-5191-child-02",
+        "path": "entry-5191.children[1]",
+        "title_chars": 58,
+        "short_chars": 58,
+        "medium_words": 68,
+        "long_words": 154
+      },
+      {
+        "parent_record_id": "entry-5207",
+        "record_id": "entry-5207-child-01",
+        "path": "entry-5207.children[0]",
+        "title_chars": 76,
+        "short_chars": 87,
+        "medium_words": 61,
+        "long_words": 186
+      },
+      {
+        "parent_record_id": "entry-5207",
+        "record_id": "entry-5207-child-02",
+        "path": "entry-5207.children[1]",
+        "title_chars": 84,
+        "short_chars": 134,
+        "medium_words": 60,
+        "long_words": 191
+      },
+      {
+        "parent_record_id": "entry-5213",
+        "record_id": "entry-5213-child-01",
+        "path": "entry-5213.children[0]",
+        "title_chars": 68,
+        "short_chars": 112,
+        "medium_words": 71,
+        "long_words": 188
+      },
+      {
+        "parent_record_id": "entry-5213",
+        "record_id": "entry-5213-child-02",
+        "path": "entry-5213.children[1]",
+        "title_chars": 73,
+        "short_chars": 102,
+        "medium_words": 77,
+        "long_words": 189
+      },
+      {
+        "parent_record_id": "entry-5224",
+        "record_id": "entry-5224-child-01",
+        "path": "entry-5224.children[0]",
+        "title_chars": 57,
+        "short_chars": 57,
+        "medium_words": 65,
+        "long_words": 183
+      },
+      {
+        "parent_record_id": "entry-5224",
+        "record_id": "entry-5224-child-02",
+        "path": "entry-5224.children[1]",
+        "title_chars": 59,
+        "short_chars": 59,
+        "medium_words": 55,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-5237",
+        "record_id": "entry-5237",
+        "path": "entry-5237",
+        "title_chars": 45,
+        "short_chars": 107,
+        "medium_words": 72,
+        "long_words": 147
+      },
+      {
+        "parent_record_id": "entry-5335",
+        "record_id": "entry-5335",
+        "path": "entry-5335",
+        "title_chars": 79,
+        "short_chars": 126,
+        "medium_words": 69,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-5752",
+        "record_id": "entry-5752-child-01",
+        "path": "entry-5752.children[0]",
+        "title_chars": 75,
+        "short_chars": 127,
+        "medium_words": 67,
+        "long_words": 161
+      },
+      {
+        "parent_record_id": "entry-5752",
+        "record_id": "entry-5752-child-02",
+        "path": "entry-5752.children[1]",
+        "title_chars": 82,
+        "short_chars": 136,
+        "medium_words": 61,
+        "long_words": 152
+      },
+      {
+        "parent_record_id": "entry-5754",
+        "record_id": "entry-5754",
+        "path": "entry-5754",
+        "title_chars": 69,
+        "short_chars": 84,
+        "medium_words": 62,
+        "long_words": 177
+      },
+      {
+        "parent_record_id": "entry-5809",
+        "record_id": "entry-5809",
+        "path": "entry-5809",
+        "title_chars": 58,
+        "short_chars": 160,
+        "medium_words": 57,
+        "long_words": 192
+      },
+      {
+        "parent_record_id": "entry-5814",
+        "record_id": "entry-5814-child-01",
+        "path": "entry-5814.children[0]",
+        "title_chars": 66,
+        "short_chars": 116,
+        "medium_words": 63,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-5814",
+        "record_id": "entry-5814-child-02",
+        "path": "entry-5814.children[1]",
+        "title_chars": 77,
+        "short_chars": 158,
+        "medium_words": 61,
+        "long_words": 196
+      },
+      {
+        "parent_record_id": "entry-5815",
+        "record_id": "entry-5815",
+        "path": "entry-5815",
+        "title_chars": 66,
+        "short_chars": 134,
+        "medium_words": 63,
+        "long_words": 190
+      },
+      {
+        "parent_record_id": "entry-5816",
+        "record_id": "entry-5816-child-01",
+        "path": "entry-5816.children[0]",
+        "title_chars": 60,
+        "short_chars": 79,
+        "medium_words": 68,
+        "long_words": 200
+      },
+      {
+        "parent_record_id": "entry-5816",
+        "record_id": "entry-5816-child-02",
+        "path": "entry-5816.children[1]",
+        "title_chars": 66,
+        "short_chars": 100,
+        "medium_words": 64,
+        "long_words": 186
+      },
+      {
+        "parent_record_id": "entry-5826",
+        "record_id": "entry-5826",
+        "path": "entry-5826",
+        "title_chars": 75,
+        "short_chars": 147,
+        "medium_words": 56,
+        "long_words": 155
+      },
+      {
+        "parent_record_id": "entry-5832",
+        "record_id": "entry-5832-child-01",
+        "path": "entry-5832.children[0]",
+        "title_chars": 63,
+        "short_chars": 111,
+        "medium_words": 66,
+        "long_words": 181
+      },
+      {
+        "parent_record_id": "entry-5336",
+        "record_id": "entry-5336",
+        "path": "entry-5336",
+        "title_chars": 69,
+        "short_chars": 150,
+        "medium_words": 75,
+        "long_words": 172
+      },
+      {
+        "parent_record_id": "entry-5340",
+        "record_id": "entry-5340",
+        "path": "entry-5340",
+        "title_chars": 73,
+        "short_chars": 108,
+        "medium_words": 67,
+        "long_words": 198
+      },
+      {
+        "parent_record_id": "entry-5344",
+        "record_id": "entry-5344-child-02",
+        "path": "entry-5344.children[0]",
+        "title_chars": 64,
+        "short_chars": 64,
+        "medium_words": 54,
+        "long_words": 169
+      },
+      {
+        "parent_record_id": "entry-5344",
+        "record_id": "entry-5344-child-03",
+        "path": "entry-5344.children[1]",
+        "title_chars": 75,
+        "short_chars": 75,
+        "medium_words": 56,
+        "long_words": 171
+      },
+      {
+        "parent_record_id": "entry-4457",
+        "record_id": "entry-4457-child-01",
+        "path": "entry-4457.children[0]",
+        "title_chars": 68,
+        "short_chars": 136,
+        "medium_words": 68,
+        "long_words": 168
+      },
+      {
+        "parent_record_id": "entry-4457",
+        "record_id": "entry-4457-child-02",
+        "path": "entry-4457.children[1]",
+        "title_chars": 83,
+        "short_chars": 163,
+        "medium_words": 75,
+        "long_words": 190
+      },
+      {
+        "parent_record_id": "entry-5478",
+        "record_id": "entry-5478",
+        "path": "entry-5478",
+        "title_chars": 66,
+        "short_chars": 128,
+        "medium_words": 64,
+        "long_words": 177
+      },
+      {
+        "parent_record_id": "entry-4467",
+        "record_id": "entry-4467",
+        "path": "entry-4467",
+        "title_chars": 76,
+        "short_chars": 148,
+        "medium_words": 70,
+        "long_words": 176
+      },
+      {
+        "parent_record_id": "entry-4538",
+        "record_id": "entry-4538",
+        "path": "entry-4538",
+        "title_chars": 81,
+        "short_chars": 135,
+        "medium_words": 72,
+        "long_words": 198
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-01",
+        "path": "entry-4577.children[0]",
+        "title_chars": 64,
+        "short_chars": 108,
+        "medium_words": 68,
+        "long_words": 155
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-02",
+        "path": "entry-4577.children[1]",
+        "title_chars": 78,
+        "short_chars": 87,
+        "medium_words": 66,
+        "long_words": 171
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-03",
+        "path": "entry-4577.children[2]",
+        "title_chars": 76,
+        "short_chars": 108,
+        "medium_words": 66,
+        "long_words": 169
+      },
+      {
+        "parent_record_id": "entry-5512",
+        "record_id": "entry-5512-child-01",
+        "path": "entry-5512.children[0]",
+        "title_chars": 58,
+        "short_chars": 86,
+        "medium_words": 54,
+        "long_words": 143
+      },
+      {
+        "parent_record_id": "entry-5512",
+        "record_id": "entry-5512-child-02",
+        "path": "entry-5512.children[1]",
+        "title_chars": 92,
+        "short_chars": 121,
+        "medium_words": 62,
+        "long_words": 148
+      },
+      {
+        "parent_record_id": "entry-4696",
+        "record_id": "entry-4696-child-01",
+        "path": "entry-4696.children[0]",
+        "title_chars": 65,
+        "short_chars": 86,
+        "medium_words": 51,
+        "long_words": 153
+      },
+      {
+        "parent_record_id": "entry-4696",
+        "record_id": "entry-4696-child-02",
+        "path": "entry-4696.children[1]",
+        "title_chars": 59,
+        "short_chars": 125,
+        "medium_words": 52,
+        "long_words": 156
+      },
+      {
+        "parent_record_id": "entry-5597",
+        "record_id": "entry-5597",
+        "path": "entry-5597",
+        "title_chars": 65,
+        "short_chars": 93,
+        "medium_words": 63,
+        "long_words": 195
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-01",
+        "path": "entry-4708.children[0]",
+        "title_chars": 90,
+        "short_chars": 112,
+        "medium_words": 65,
+        "long_words": 184
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-02",
+        "path": "entry-4708.children[1]",
+        "title_chars": 72,
+        "short_chars": 115,
+        "medium_words": 63,
+        "long_words": 190
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-03",
+        "path": "entry-4708.children[2]",
+        "title_chars": 74,
+        "short_chars": 127,
+        "medium_words": 66,
+        "long_words": 191
+      },
+      {
+        "parent_record_id": "entry-5728",
+        "record_id": "entry-5728",
+        "path": "entry-5728",
+        "title_chars": 61,
+        "short_chars": 134,
+        "medium_words": 80,
+        "long_words": 199
+      },
+      {
+        "parent_record_id": "entry-4739",
+        "record_id": "entry-4739-child-01",
+        "path": "entry-4739.children[0]",
+        "title_chars": 45,
+        "short_chars": 146,
+        "medium_words": 48,
+        "long_words": 155
+      },
+      {
+        "parent_record_id": "entry-4753",
+        "record_id": "entry-4753-child-01",
+        "path": "entry-4753.children[0]",
+        "title_chars": 70,
+        "short_chars": 177,
+        "medium_words": 54,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-4753",
+        "record_id": "entry-4753-child-02",
+        "path": "entry-4753.children[1]",
+        "title_chars": 85,
+        "short_chars": 120,
+        "medium_words": 53,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-4827",
+        "record_id": "entry-4827",
+        "path": "entry-4827",
+        "title_chars": 90,
+        "short_chars": 161,
+        "medium_words": 65,
+        "long_words": 179
+      },
+      {
+        "parent_record_id": "entry-4906",
+        "record_id": "entry-4906-child-01",
+        "path": "entry-4906.children[0]",
+        "title_chars": 49,
+        "short_chars": 105,
+        "medium_words": 54,
+        "long_words": 153
+      },
+      {
+        "parent_record_id": "entry-4906",
+        "record_id": "entry-4906-child-02",
+        "path": "entry-4906.children[1]",
+        "title_chars": 62,
+        "short_chars": 99,
+        "medium_words": 52,
+        "long_words": 173
+      },
+      {
+        "parent_record_id": "entry-5851",
+        "record_id": "entry-5851",
+        "path": "entry-5851",
+        "title_chars": 59,
+        "short_chars": 96,
+        "medium_words": 56,
+        "long_words": 184
+      },
+      {
+        "parent_record_id": "entry-5863",
+        "record_id": "entry-5863",
+        "path": "entry-5863",
+        "title_chars": 67,
+        "short_chars": 94,
+        "medium_words": 54,
+        "long_words": 177
+      },
+      {
+        "parent_record_id": "entry-5899",
+        "record_id": "entry-5899",
+        "path": "entry-5899",
+        "title_chars": 62,
+        "short_chars": 120,
+        "medium_words": 54,
+        "long_words": 168
+      },
+      {
+        "parent_record_id": "entry-6200",
+        "record_id": "entry-6200",
+        "path": "entry-6200",
+        "title_chars": 88,
+        "short_chars": 125,
+        "medium_words": 49,
+        "long_words": 156
+      },
+      {
+        "parent_record_id": "entry-6239",
+        "record_id": "entry-6239",
+        "path": "entry-6239",
+        "title_chars": 60,
+        "short_chars": 155,
+        "medium_words": 49,
+        "long_words": 179
+      },
+      {
+        "parent_record_id": "entry-6324",
+        "record_id": "entry-6324",
+        "path": "entry-6324",
+        "title_chars": 60,
+        "short_chars": 154,
+        "medium_words": 66,
+        "long_words": 229
+      },
+      {
+        "parent_record_id": "entry-6379",
+        "record_id": "entry-6379",
+        "path": "entry-6379",
+        "title_chars": 60,
+        "short_chars": 131,
+        "medium_words": 65,
+        "long_words": 178
+      },
+      {
+        "parent_record_id": "entry-6409",
+        "record_id": "entry-6409",
+        "path": "entry-6409",
+        "title_chars": 76,
+        "short_chars": 146,
+        "medium_words": 52,
+        "long_words": 161
+      },
+      {
+        "parent_record_id": "entry-6424",
+        "record_id": "entry-6424-child-01",
+        "path": "entry-6424.children[0]",
+        "title_chars": 80,
+        "short_chars": 178,
+        "medium_words": 63,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-6424",
+        "record_id": "entry-6424-child-02",
+        "path": "entry-6424.children[1]",
+        "title_chars": 98,
+        "short_chars": 135,
+        "medium_words": 61,
+        "long_words": 182
+      },
+      {
+        "parent_record_id": "entry-6425",
+        "record_id": "entry-6425",
+        "path": "entry-6425",
+        "title_chars": 83,
+        "short_chars": 160,
+        "medium_words": 64,
+        "long_words": 172
+      },
+      {
+        "parent_record_id": "entry-6428",
+        "record_id": "entry-6428",
+        "path": "entry-6428",
+        "title_chars": 73,
+        "short_chars": 127,
+        "medium_words": 52,
+        "long_words": 161
+      },
+      {
+        "parent_record_id": "entry-6433",
+        "record_id": "entry-6433",
+        "path": "entry-6433",
+        "title_chars": 82,
+        "short_chars": 152,
+        "medium_words": 62,
+        "long_words": 167
+      },
+      {
+        "parent_record_id": "entry-6437",
+        "record_id": "entry-6437",
+        "path": "entry-6437",
+        "title_chars": 79,
+        "short_chars": 92,
+        "medium_words": 63,
+        "long_words": 168
+      },
+      {
+        "parent_record_id": "entry-6443",
+        "record_id": "entry-6443-child-02",
+        "path": "entry-6443.children[0]",
+        "title_chars": 42,
+        "short_chars": 148,
+        "medium_words": 64,
+        "long_words": 170
+      },
+      {
+        "parent_record_id": "entry-6456",
+        "record_id": "entry-6456-child-01",
+        "path": "entry-6456.children[0]",
+        "title_chars": 58,
+        "short_chars": 144,
+        "medium_words": 69,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-6456",
+        "record_id": "entry-6456-child-02",
+        "path": "entry-6456.children[1]",
+        "title_chars": 72,
+        "short_chars": 160,
+        "medium_words": 68,
+        "long_words": 174
+      },
+      {
+        "parent_record_id": "entry-6460",
+        "record_id": "entry-6460",
+        "path": "entry-6460",
+        "title_chars": 66,
+        "short_chars": 66,
+        "medium_words": 75,
+        "long_words": 155
+      },
+      {
+        "parent_record_id": "entry-6463",
+        "record_id": "entry-6463",
+        "path": "entry-6463",
+        "title_chars": 77,
+        "short_chars": 97,
+        "medium_words": 61,
+        "long_words": 193
+      },
+      {
+        "parent_record_id": "entry-6464",
+        "record_id": "entry-6464",
+        "path": "entry-6464",
+        "title_chars": 76,
+        "short_chars": 113,
+        "medium_words": 70,
+        "long_words": 171
+      },
+      {
+        "parent_record_id": "entry-6475",
+        "record_id": "entry-6475",
+        "path": "entry-6475",
+        "title_chars": 70,
+        "short_chars": 70,
+        "medium_words": 71,
+        "long_words": 193
+      },
+      {
+        "parent_record_id": "entry-6479",
+        "record_id": "entry-6479-child-01",
+        "path": "entry-6479.children[0]",
+        "title_chars": 40,
+        "short_chars": 105,
+        "medium_words": 65,
+        "long_words": 163
+      },
+      {
+        "parent_record_id": "entry-6479",
+        "record_id": "entry-6479-child-02",
+        "path": "entry-6479.children[1]",
+        "title_chars": 56,
+        "short_chars": 97,
+        "medium_words": 67,
+        "long_words": 178
+      },
+      {
+        "parent_record_id": "entry-6511",
+        "record_id": "entry-6511",
+        "path": "entry-6511",
+        "title_chars": 65,
+        "short_chars": 104,
+        "medium_words": 61,
+        "long_words": 159
+      },
+      {
+        "parent_record_id": "entry-6516",
+        "record_id": "entry-6516",
+        "path": "entry-6516",
+        "title_chars": 75,
+        "short_chars": 114,
+        "medium_words": 56,
+        "long_words": 175
+      },
+      {
+        "parent_record_id": "entry-6521",
+        "record_id": "entry-6521",
+        "path": "entry-6521",
+        "title_chars": 62,
+        "short_chars": 139,
+        "medium_words": 71,
+        "long_words": 162
+      },
+      {
+        "parent_record_id": "entry-6560",
+        "record_id": "entry-6560",
+        "path": "entry-6560",
+        "title_chars": 57,
+        "short_chars": 124,
+        "medium_words": 66,
+        "long_words": 177
+      },
+      {
+        "parent_record_id": "entry-6577",
+        "record_id": "entry-6577",
+        "path": "entry-6577",
+        "title_chars": 76,
+        "short_chars": 116,
+        "medium_words": 53,
+        "long_words": 164
+      },
+      {
+        "parent_record_id": "entry-6583",
+        "record_id": "entry-6583",
+        "path": "entry-6583",
+        "title_chars": 50,
+        "short_chars": 140,
+        "medium_words": 57,
+        "long_words": 172
+      },
+      {
+        "parent_record_id": "entry-6585",
+        "record_id": "entry-6585",
+        "path": "entry-6585",
+        "title_chars": 65,
+        "short_chars": 105,
+        "medium_words": 55,
+        "long_words": 176
+      },
+      {
+        "parent_record_id": "entry-6601",
+        "record_id": "entry-6601",
+        "path": "entry-6601",
+        "title_chars": 74,
+        "short_chars": 136,
+        "medium_words": 69,
+        "long_words": 188
+      },
+      {
+        "parent_record_id": "entry-6606",
+        "record_id": "entry-6606",
+        "path": "entry-6606",
+        "title_chars": 65,
+        "short_chars": 147,
+        "medium_words": 70,
+        "long_words": 185
+      },
+      {
+        "parent_record_id": "entry-6611",
+        "record_id": "entry-6611",
+        "path": "entry-6611",
+        "title_chars": 66,
+        "short_chars": 120,
+        "medium_words": 61,
+        "long_words": 172
+      },
+      {
+        "parent_record_id": "entry-6619",
+        "record_id": "entry-6619",
+        "path": "entry-6619",
+        "title_chars": 64,
+        "short_chars": 104,
+        "medium_words": 62,
+        "long_words": 169
+      },
+      {
+        "parent_record_id": "entry-6625",
+        "record_id": "entry-6625",
+        "path": "entry-6625",
+        "title_chars": 65,
+        "short_chars": 123,
+        "medium_words": 64,
+        "long_words": 179
+      },
+      {
+        "parent_record_id": "entry-6631",
+        "record_id": "entry-6631",
+        "path": "entry-6631",
+        "title_chars": 69,
+        "short_chars": 124,
+        "medium_words": 60,
+        "long_words": 185
+      },
+      {
+        "parent_record_id": "entry-6638",
+        "record_id": "entry-6638",
+        "path": "entry-6638",
+        "title_chars": 83,
+        "short_chars": 132,
+        "medium_words": 68,
+        "long_words": 166
+      },
+      {
+        "parent_record_id": "entry-6642",
+        "record_id": "entry-6642",
+        "path": "entry-6642",
+        "title_chars": 53,
+        "short_chars": 101,
+        "medium_words": 63,
+        "long_words": 168
+      },
+      {
+        "parent_record_id": "entry-6655",
+        "record_id": "entry-6655",
+        "path": "entry-6655",
+        "title_chars": 71,
+        "short_chars": 83,
+        "medium_words": 54,
+        "long_words": 177
+      },
+      {
+        "parent_record_id": "entry-6668",
+        "record_id": "entry-6668",
+        "path": "entry-6668",
+        "title_chars": 67,
+        "short_chars": 168,
+        "medium_words": 73,
+        "long_words": 163
+      },
+      {
+        "parent_record_id": "entry-6673",
+        "record_id": "entry-6673",
+        "path": "entry-6673",
+        "title_chars": 77,
+        "short_chars": 117,
+        "medium_words": 88,
+        "long_words": 198
+      },
+      {
+        "parent_record_id": "entry-6679",
+        "record_id": "entry-6679",
+        "path": "entry-6679",
+        "title_chars": 90,
+        "short_chars": 116,
+        "medium_words": 60,
+        "long_words": 160
+      },
+      {
+        "parent_record_id": "entry-6729",
+        "record_id": "entry-6729",
+        "path": "entry-6729",
+        "title_chars": 74,
+        "short_chars": 142,
+        "medium_words": 57,
+        "long_words": 142
+      },
+      {
+        "parent_record_id": "entry-6736",
+        "record_id": "entry-6736",
+        "path": "entry-6736",
+        "title_chars": 63,
+        "short_chars": 145,
+        "medium_words": 45,
+        "long_words": 147
+      },
+      {
+        "parent_record_id": "entry-6738",
+        "record_id": "entry-6738",
+        "path": "entry-6738",
+        "title_chars": 85,
+        "short_chars": 139,
+        "medium_words": 71,
+        "long_words": 179
+      },
+      {
+        "parent_record_id": "entry-6739",
+        "record_id": "entry-6739",
+        "path": "entry-6739",
+        "title_chars": 77,
+        "short_chars": 145,
+        "medium_words": 71,
+        "long_words": 196
+      },
+      {
+        "parent_record_id": "entry-6743",
+        "record_id": "entry-6743",
+        "path": "entry-6743",
+        "title_chars": 78,
+        "short_chars": 156,
+        "medium_words": 64,
+        "long_words": 159
+      },
+      {
+        "parent_record_id": "entry-6744",
+        "record_id": "entry-6744",
+        "path": "entry-6744",
+        "title_chars": 60,
+        "short_chars": 97,
+        "medium_words": 74,
+        "long_words": 170
+      },
+      {
+        "parent_record_id": "entry-6749",
+        "record_id": "entry-6749",
+        "path": "entry-6749",
+        "title_chars": 77,
+        "short_chars": 161,
+        "medium_words": 74,
+        "long_words": 176
+      },
+      {
+        "parent_record_id": "entry-6751",
+        "record_id": "entry-6751",
+        "path": "entry-6751",
+        "title_chars": 62,
+        "short_chars": 118,
+        "medium_words": 62,
+        "long_words": 142
+      },
+      {
+        "parent_record_id": "entry-6757",
+        "record_id": "entry-6757",
+        "path": "entry-6757",
+        "title_chars": 66,
+        "short_chars": 148,
+        "medium_words": 66,
+        "long_words": 187
+      },
+      {
+        "parent_record_id": "entry-6758",
+        "record_id": "entry-6758",
+        "path": "entry-6758",
+        "title_chars": 66,
+        "short_chars": 140,
+        "medium_words": 69,
+        "long_words": 175
+      },
+      {
+        "parent_record_id": "entry-6763",
+        "record_id": "entry-6763",
+        "path": "entry-6763",
+        "title_chars": 90,
+        "short_chars": 131,
+        "medium_words": 74,
+        "long_words": 191
+      },
+      {
+        "parent_record_id": "entry-6774",
+        "record_id": "entry-6774",
+        "path": "entry-6774",
+        "title_chars": 66,
+        "short_chars": 143,
+        "medium_words": 57,
+        "long_words": 147
+      },
+      {
+        "parent_record_id": "entry-6781",
+        "record_id": "entry-6781",
+        "path": "entry-6781",
+        "title_chars": 83,
+        "short_chars": 148,
+        "medium_words": 58,
+        "long_words": 143
+      },
+      {
+        "parent_record_id": "entry-6785",
+        "record_id": "entry-6785",
+        "path": "entry-6785",
+        "title_chars": 68,
+        "short_chars": 121,
+        "medium_words": 56,
+        "long_words": 194
+      },
+      {
+        "parent_record_id": "entry-6794",
+        "record_id": "entry-6794",
+        "path": "entry-6794",
+        "title_chars": 78,
+        "short_chars": 78,
+        "medium_words": 65,
+        "long_words": 183
+      },
+      {
+        "parent_record_id": "entry-6797",
+        "record_id": "entry-6797",
+        "path": "entry-6797",
+        "title_chars": 66,
+        "short_chars": 66,
+        "medium_words": 69,
+        "long_words": 168
+      },
+      {
+        "parent_record_id": "entry-6798",
+        "record_id": "entry-6798",
+        "path": "entry-6798",
+        "title_chars": 59,
+        "short_chars": 135,
+        "medium_words": 57,
+        "long_words": 191
+      },
+      {
+        "parent_record_id": "entry-6799",
+        "record_id": "entry-6799",
+        "path": "entry-6799",
+        "title_chars": 80,
+        "short_chars": 153,
+        "medium_words": 74,
+        "long_words": 190
+      },
+      {
+        "parent_record_id": "entry-6801",
+        "record_id": "entry-6801",
+        "path": "entry-6801",
+        "title_chars": 79,
+        "short_chars": 136,
+        "medium_words": 63,
+        "long_words": 171
+      },
+      {
+        "parent_record_id": "entry-6810",
+        "record_id": "entry-6810",
+        "path": "entry-6810",
+        "title_chars": 83,
+        "short_chars": 93,
+        "medium_words": 53,
+        "long_words": 142
+      },
+      {
+        "parent_record_id": "entry-6811",
+        "record_id": "entry-6811",
+        "path": "entry-6811",
+        "title_chars": 63,
+        "short_chars": 137,
+        "medium_words": 65,
+        "long_words": 172
+      },
+      {
+        "parent_record_id": "entry-6818",
+        "record_id": "entry-6818",
+        "path": "entry-6818",
+        "title_chars": 73,
+        "short_chars": 142,
+        "medium_words": 68,
+        "long_words": 152
+      },
+      {
+        "parent_record_id": "entry-6824",
+        "record_id": "entry-6824",
+        "path": "entry-6824",
+        "title_chars": 78,
+        "short_chars": 173,
+        "medium_words": 75,
+        "long_words": 148
+      },
+      {
+        "parent_record_id": "entry-6827",
+        "record_id": "entry-6827",
+        "path": "entry-6827",
+        "title_chars": 71,
+        "short_chars": 104,
+        "medium_words": 50,
+        "long_words": 147
+      },
+      {
+        "parent_record_id": "entry-6828",
+        "record_id": "entry-6828",
+        "path": "entry-6828",
+        "title_chars": 78,
+        "short_chars": 161,
+        "medium_words": 80,
+        "long_words": 144
+      },
+      {
+        "parent_record_id": "entry-6829",
+        "record_id": "entry-6829",
+        "path": "entry-6829",
+        "title_chars": 80,
+        "short_chars": 127,
+        "medium_words": 70,
+        "long_words": 183
+      },
+      {
+        "parent_record_id": "entry-6834",
+        "record_id": "entry-6834",
+        "path": "entry-6834",
+        "title_chars": 82,
+        "short_chars": 136,
+        "medium_words": 66,
+        "long_words": 180
+      },
+      {
+        "parent_record_id": "entry-6835",
+        "record_id": "entry-6835",
+        "path": "entry-6835",
+        "title_chars": 82,
+        "short_chars": 154,
+        "medium_words": 67,
+        "long_words": 189
+      },
+      {
+        "parent_record_id": "entry-6841",
+        "record_id": "entry-6841",
+        "path": "entry-6841",
+        "title_chars": 62,
+        "short_chars": 93,
+        "medium_words": 63,
+        "long_words": 160
+      },
+      {
+        "parent_record_id": "entry-6857",
+        "record_id": "entry-6857",
+        "path": "entry-6857",
+        "title_chars": 65,
+        "short_chars": 116,
+        "medium_words": 52,
+        "long_words": 168
+      },
+      {
+        "parent_record_id": "entry-6865",
+        "record_id": "entry-6865",
+        "path": "entry-6865",
+        "title_chars": 68,
+        "short_chars": 77,
+        "medium_words": 77,
+        "long_words": 190
+      },
+      {
+        "parent_record_id": "entry-6884",
+        "record_id": "entry-6884",
+        "path": "entry-6884",
+        "title_chars": 77,
+        "short_chars": 142,
+        "medium_words": 63,
+        "long_words": 183
+      },
+      {
+        "parent_record_id": "entry-6889",
+        "record_id": "entry-6889",
+        "path": "entry-6889",
+        "title_chars": 63,
+        "short_chars": 121,
+        "medium_words": 64,
+        "long_words": 170
+      },
+      {
+        "parent_record_id": "entry-6890",
+        "record_id": "entry-6890",
+        "path": "entry-6890",
+        "title_chars": 73,
+        "short_chars": 133,
+        "medium_words": 64,
+        "long_words": 203
+      },
+      {
+        "parent_record_id": "entry-6913",
+        "record_id": "entry-6913",
+        "path": "entry-6913",
+        "title_chars": 88,
+        "short_chars": 129,
+        "medium_words": 70,
+        "long_words": 178
+      },
+      {
+        "parent_record_id": "entry-6930",
+        "record_id": "entry-6930",
+        "path": "entry-6930",
+        "title_chars": 75,
+        "short_chars": 126,
+        "medium_words": 60,
+        "long_words": 157
+      },
+      {
+        "parent_record_id": "entry-6939",
+        "record_id": "entry-6939",
+        "path": "entry-6939",
+        "title_chars": 78,
+        "short_chars": 148,
+        "medium_words": 68,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-6941",
+        "record_id": "entry-6941",
+        "path": "entry-6941",
+        "title_chars": 79,
+        "short_chars": 127,
+        "medium_words": 57,
+        "long_words": 186
+      },
+      {
+        "parent_record_id": "entry-6955",
+        "record_id": "entry-6955",
+        "path": "entry-6955",
+        "title_chars": 72,
+        "short_chars": 144,
+        "medium_words": 71,
+        "long_words": 196
+      },
+      {
+        "parent_record_id": "entry-6961",
+        "record_id": "entry-6961",
+        "path": "entry-6961",
+        "title_chars": 78,
+        "short_chars": 154,
+        "medium_words": 70,
+        "long_words": 212
+      },
+      {
+        "parent_record_id": "entry-954",
+        "record_id": "entry-954",
+        "path": "entry-954",
+        "title_chars": 51,
+        "short_chars": 107,
+        "medium_words": 47,
+        "long_words": 145
+      }
+    ]
+  },
+  "source_provenance_validation": {
+    "passed": true,
+    "failures": [],
+    "branches_refreshed": 72,
+    "heads_changed": 0
+  },
+  "assignment_reconciliation": [
+    {
+      "worker": "qa-1",
+      "assigned": 48,
+      "assessed": 48,
+      "missing": []
+    },
+    {
+      "worker": "qa-2",
+      "assigned": 48,
+      "assessed": 48,
+      "missing": []
+    },
+    {
+      "worker": "qa-3",
+      "assigned": 48,
+      "assessed": 48,
+      "missing": []
+    },
+    {
+      "worker": "qa-4",
+      "assigned": 48,
+      "assessed": 48,
+      "missing": []
+    },
+    {
+      "worker": "qa-5",
+      "assigned": 48,
+      "assessed": 48,
+      "missing": []
+    },
+    {
+      "worker": "qa-6",
+      "assigned": 48,
+      "assessed": 48,
+      "missing": []
+    },
+    {
+      "worker": "root",
+      "assigned": 48,
+      "assessed": 48,
+      "missing": []
+    }
+  ],
+  "actual_peak_concurrency": 7,
+  "excluded_withdrawn_file": "qa-3-batch-01.jsonl",
+  "evidence_policy": "Structural checks supplement each worker's semantic review; they do not independently verify every supplied claim. Frozen comparison snapshots are excluded from proposed-copy length gates. Holds are completed QA dispositions with exact blockers, not awaiting output.",
+  "passed": true
+}
