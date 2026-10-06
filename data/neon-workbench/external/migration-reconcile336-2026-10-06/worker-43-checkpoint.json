@@ -1,0 +1,38 @@
+{
+  "worker": 43,
+  "branch": "ls/19-trump-files-migration-reconciliation-43--LLHi",
+  "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+  "github_repository_id": 1082328314,
+  "requested_packet_commit": "19a772e15765348b82f6d708ad63f58927931321",
+  "requested_packet_branch": "codex/migration-reconcile336-2026-10-06",
+  "fetch_results": [
+    {
+      "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+      "exit_code": 0,
+      "result": "Fetched branch to origin/codex/migration-reconcile336-2026-10-06 from canonical origin."
+    },
+    {
+      "command": "git fetch origin 19a772e15765348b82f6d708ad63f58927931321",
+      "exit_code": 0,
+      "result": "Fetched immutable commit; cat-file type was commit and git show identified it as the fetched branch tip."
+    }
+  ],
+  "completed_record_ids": [
+    "entry-3371"
+  ],
+  "remaining_record_ids": [
+    "entry-6415",
+    "entry-6776",
+    "entry-7051"
+  ],
+  "parent_push_results": [],
+  "pending_parent_push": {
+    "record_id": "entry-3371",
+    "files": [
+      "outputs/worker-43-terminal.jsonl",
+      "outputs/worker-43-amendment-1.jsonl"
+    ],
+    "status": "awaiting_push"
+  },
+  "last_updated_after": "entry-3371 content appended; push result to follow"
+}
