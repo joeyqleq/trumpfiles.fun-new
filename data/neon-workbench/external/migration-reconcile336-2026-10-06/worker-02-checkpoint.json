@@ -19,9 +19,7 @@
     "entry-6598",
     "entry-6857"
   ],
-  "remaining_ids": [
-    "entry-6857"
-  ],
+  "remaining_ids": [],
   "push_results": [
     {
       "record_id": "entry-236",
@@ -87,9 +85,30 @@
       "exit_code": 0,
       "status": "pushed",
       "output": "d0dfa46d..18a97705 updated ls/14-trump-files-migration-reconciliation-02--NyIq"
+    },
+    {
+      "record_id": "entry-6857",
+      "commit": "0029971597ed15c5a9042ac565858018b35f31d3",
+      "remote": "origin",
+      "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "command": "git push -u origin HEAD",
+      "exit_code": 128,
+      "status": "rejected",
+      "output": "HTTP 403; credential helper reports Repository is not a member of this stack."
+    },
+    {
+      "record_id": "entry-6857",
+      "commit": "0029971597ed15c5a9042ac565858018b35f31d3",
+      "remote": "verified_legacy_redirect",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "resolved_repository_id": 1082328314,
+      "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/14-trump-files-migration-reconciliation-02--NyIq",
+      "exit_code": 0,
+      "status": "pushed",
+      "output": "ac696de0..00299715 HEAD -> ls/14-trump-files-migration-reconciliation-02--NyIq; GitHub directed future use of canonical trumpfiles-fun-new.git"
     }
   ],
-  "current_parent_push": "entry-6857 amendment revision 2 recorded locally; final validation and push pending",
+  "current_parent_push": "entry-6857 revision 2 amendment pushed successfully; all four assigned IDs are complete",
   "stack_mapping_note": "Lightsprint registers repository ID 1082328314 under the stale fullName p5n-n3t/trumpfiles.fun-new; GitHub API confirms the legacy name resolves to canonical repository ID 1082328314. Keep origin canonical and push via the verified redirect when needed.",
   "last_parent_commit": "18a97705",
   "latest_amendment": {
@@ -97,6 +116,7 @@
     "path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-02-amendment-5.jsonl",
     "revision": 2,
     "supersedes": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-02-amendment-4.jsonl:1@revision1",
-    "status": "appended; pending final validation and push"
+    "status": "pushed",
+    "commit": "0029971597ed15c5a9042ac565858018b35f31d3"
   }
 }
