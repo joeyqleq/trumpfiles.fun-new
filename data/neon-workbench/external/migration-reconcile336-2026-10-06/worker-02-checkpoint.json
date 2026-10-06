@@ -19,7 +19,9 @@
     "entry-6598",
     "entry-6857"
   ],
-  "remaining_ids": [],
+  "remaining_ids": [
+    "entry-6857"
+  ],
   "push_results": [
     {
       "record_id": "entry-236",
@@ -87,7 +89,14 @@
       "output": "d0dfa46d..18a97705 updated ls/14-trump-files-migration-reconciliation-02--NyIq"
     }
   ],
-  "current_parent_push": "all four assigned parent commits pushed successfully via the verified legacy redirect",
+  "current_parent_push": "entry-6857 amendment revision 2 recorded locally; final validation and push pending",
   "stack_mapping_note": "Lightsprint registers repository ID 1082328314 under the stale fullName p5n-n3t/trumpfiles.fun-new; GitHub API confirms the legacy name resolves to canonical repository ID 1082328314. Keep origin canonical and push via the verified redirect when needed.",
-  "last_parent_commit": "18a97705"
+  "last_parent_commit": "18a97705",
+  "latest_amendment": {
+    "record_id": "entry-6857",
+    "path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-02-amendment-5.jsonl",
+    "revision": 2,
+    "supersedes": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-02-amendment-4.jsonl:1@revision1",
+    "status": "appended; pending final validation and push"
+  }
 }
