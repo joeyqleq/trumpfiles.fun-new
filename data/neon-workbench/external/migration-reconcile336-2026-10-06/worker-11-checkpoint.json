@@ -113,6 +113,16 @@
       "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
       "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm",
       "response": "GitHub accepted the checkpoint update and reported the registered alias moved to the canonical repository."
+    },
+    {
+      "after_record_id": "entry-6913",
+      "commit": "754c75b6",
+      "result": "success",
+      "exit_code": 0,
+      "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm",
+      "response": "GitHub accepted the push and reported the registered alias moved to the canonical repository."
     }
   ],
   "reconciliation_progress": {
@@ -132,7 +142,7 @@
     "latest_action": "Appended revision 2 core-label correction for entry-6913 after applying the supplied corrected proposal; terminal output history left unchanged. All four assigned parents reconciled.",
     "latest_amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/worker-11-amendment-2.jsonl",
     "latest_amendment_revision": 2,
-    "latest_push_result": "pending"
+    "latest_push_result": "success: 754c75b6 pushed to refs/heads/ls/14-trump-files-migration-reconciliation-11--symm through registered alias; GitHub resolved it to the canonical repository."
   },
   "held_records": [
     {
