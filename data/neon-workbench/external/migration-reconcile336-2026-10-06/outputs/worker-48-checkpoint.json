@@ -16,9 +16,7 @@
     "entry-6782",
     "entry-7086"
   ],
-  "remaining_ids": [
-    "entry-6424"
-  ],
+  "remaining_ids": [],
   "push_results": [
     {
       "record_id": "entry-4239",
@@ -45,15 +43,14 @@
       "result": "success; parent amendment pushed to required task branch"
     }
   ],
-  "checkpoint_state": "entry-4239 correction and its push are recorded; entry-6424 revision 6 is prepared and remains pending commit/push.",
+  "checkpoint_state": "Both coordinator-listed core-label corrections are saved in immutable full-wrapper amendments and pushed; exact remaining ID set is empty. Existing terminal rows were preserved because none were missing.",
   "correction_status": {
     "scope": "Resolve only the coordinator-listed missing_core_labels artifacts on entries 4239 and 6424.",
     "completed_correction_ids": [
-      "entry-4239"
-    ],
-    "remaining_correction_ids": [
+      "entry-4239",
       "entry-6424"
     ],
+    "remaining_correction_ids": [],
     "terminal_rows_missing": [],
     "amendment_files": [
       "worker-48-amendment-5.jsonl",
@@ -67,6 +64,14 @@
         "exit_code": 0,
         "stdout": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   be4c1012..66fff2b7  HEAD -> ls/7-trump-files-migration-reconciliation-48--YctR",
         "result": "success; entry-4239 revision 5 amendment pushed to required task branch"
+      },
+      {
+        "record_id": "entry-6424",
+        "commit": "c859f6c9",
+        "command": "git push origin HEAD",
+        "exit_code": 0,
+        "stdout": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   d29f3ea0..c859f6c9  HEAD -> ls/7-trump-files-migration-reconciliation-48--YctR",
+        "result": "success; entry-6424 revision 6 amendment pushed to required task branch"
       }
     ]
   },
@@ -84,6 +89,13 @@
       "exit_code": 0,
       "stdout": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   66fff2b7..d29f3ea0  HEAD -> ls/7-trump-files-migration-reconciliation-48--YctR",
       "result": "success; checkpoint containing the entry-4239 correction push result is on the required branch"
+    },
+    {
+      "commit": "c859f6c9",
+      "command": "git push origin HEAD",
+      "exit_code": 0,
+      "stdout": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   d29f3ea0..c859f6c9  HEAD -> ls/7-trump-files-migration-reconciliation-48--YctR",
+      "result": "success; checkpoint and entry-6424 revision 6 are on the required task branch"
     }
   ]
 }
