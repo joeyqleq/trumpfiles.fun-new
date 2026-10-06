@@ -7,9 +7,12 @@
   "packet_branch": "codex/migration-reconcile336-2026-10-06",
   "packet_commit": "19a772e15765348b82f6d708ad63f58927931321",
   "remote_verification": {
-    "git_remote_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
-    "github_api_full_name": "p5n-n3t/trumpfiles-fun-new",
-    "github_api_id": 1082328314
+    "canonical_fetch_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "stack_registered_push_alias": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+    "github_api_canonical_full_name": "p5n-n3t/trumpfiles-fun-new",
+    "github_api_repo_id": 1082328314,
+    "github_repo_push_redirect": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "identity_result": "Both paths resolve to immutable repository ID 1082328314; the sandbox credential helper accepts the stack-registered alias."
   },
   "fetch_result": {
     "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
