@@ -87,5 +87,12 @@
       "matches_pushed_commit": true
     }
   },
-  "all_assigned_outputs_pushed": true
+  "all_assigned_outputs_pushed": true,
+  "post_completion_correction": {
+    "record_id": "entry-6672",
+    "reason": "Set terminal entry_number from null to frozen input value 6672.",
+    "amendment_file": "worker-24-amendment-5.jsonl",
+    "revision": 5,
+    "supersedes": "worker-24-amendment-3.jsonl revision 3."
+  }
 }
