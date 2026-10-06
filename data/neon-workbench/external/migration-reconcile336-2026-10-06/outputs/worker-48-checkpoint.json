@@ -45,7 +45,7 @@
       "result": "success; parent amendment pushed to required task branch"
     }
   ],
-  "checkpoint_state": "entry-4239 core-label correction saved in immutable amendment revision 5; entry-6424 correction remains; all four existing parent outcomes are retained.",
+  "checkpoint_state": "entry-4239 revision 5 core-label correction is committed and pushed; entry-6424 core-label correction remains.",
   "correction_status": {
     "scope": "Resolve only the coordinator-listed missing_core_labels artifacts on entries 4239 and 6424.",
     "completed_correction_ids": [
@@ -57,6 +57,16 @@
     "terminal_rows_missing": [],
     "amendment_files": [
       "worker-48-amendment-5.jsonl"
+    ],
+    "push_results": [
+      {
+        "record_id": "entry-4239",
+        "commit": "66fff2b7",
+        "command": "git push origin HEAD",
+        "exit_code": 0,
+        "stdout": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   be4c1012..66fff2b7  HEAD -> ls/7-trump-files-migration-reconciliation-48--YctR",
+        "result": "success; entry-4239 revision 5 amendment pushed to required task branch"
+      }
     ]
   },
   "pre_correction_remote_verification": {
