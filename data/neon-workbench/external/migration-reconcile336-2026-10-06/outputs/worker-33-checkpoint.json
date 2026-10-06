@@ -57,6 +57,13 @@
       "configured_push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
       "remote_report": "GitHub reported that this repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git and accepted the branch update.",
       "resolved_repository_id": 1082328314
+    },
+    {
+      "commit": "4468b207",
+      "result": "success",
+      "configured_push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "remote_report": "GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git and accepted the branch update.",
+      "resolved_repository_id": 1082328314
     }
   ],
   "completed_ids": [
@@ -68,10 +75,10 @@
   "remaining_ids": [],
   "latest_artifact_push": {
     "result": "success",
-    "commit": "13ad2a2b",
+    "commit": "4468b207",
     "branch": "ls/17-trump-files-migration-reconciliation-33--fQgz",
     "configured_push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
-    "remote_report": "GitHub redirected the legacy URL to the canonical repository; branch update succeeded.",
+    "remote_report": "GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git and accepted the branch update.",
     "resolved_repository_id": 1082328314
   },
   "reconciliation_runs": [
@@ -174,14 +181,23 @@
         "remaining_ids": []
       },
       "gate_runtime": "validate_held336.gate is not installed, importable, or exposed as a command in this checkout. Existing terminal rows retain their stored empty gate-result arrays; new amendments were checked against the requested structural and content criteria directly.",
-      "push_result": "pending_until_commit_and_push"
+      "push_result": {
+        "commit": "4468b207",
+        "result": "success",
+        "configured_push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+        "remote_report": "GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git and accepted the branch update.",
+        "resolved_repository_id": 1082328314
+      },
+      "remaining_ids": []
     }
   ],
   "latest_reconciliation_push": {
-    "result": "pending_until_push",
-    "commit": null,
+    "result": "success",
+    "commit": "4468b207",
     "branch": "ls/17-trump-files-migration-reconciliation-33--fQgz",
+    "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "successful_redirect_push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
     "resolved_repository_id": 1082328314,
-    "amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/worker-33-amendment-05.jsonl"
+    "remote_report": "GitHub moved repository redirect; branch update succeeded."
   }
 }
