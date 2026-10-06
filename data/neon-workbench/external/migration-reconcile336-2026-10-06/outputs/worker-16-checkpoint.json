@@ -26,5 +26,17 @@
     "entry-6625",
     "entry-6928"
   ],
-  "completed_pushes": []
+  "completed_pushes": [
+    {
+      "record_id": "entry-1777",
+      "revision": 1,
+      "commit": "a9d91553",
+      "push_result": {
+        "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push -u origin HEAD",
+        "exit_code": 0,
+        "remote_branch": "ls/16-trump-files-migration-reconciliation-16--oO_e",
+        "result": "created successfully; GitHub confirmed repository moved to canonical https://github.com/p5n-n3t/trumpfiles-fun-new.git"
+      }
+    }
+  ]
 }
