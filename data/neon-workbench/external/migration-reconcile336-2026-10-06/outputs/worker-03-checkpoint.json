@@ -1,0 +1,29 @@
+{
+  "worker": "03",
+  "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+  "immutable_repository_id": 1082328314,
+  "working_branch": "ls/13-trump-files-migration-reconciliation-03--ZE-d",
+  "packet_branch": "codex/migration-reconcile336-2026-10-06",
+  "packet_commit": "19a772e15765348b82f6d708ad63f58927931321",
+  "fetch_result": {
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "exit_code": 0,
+    "resolved_commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "output": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * branch codex/migration-reconcile336-2026-10-06 -> FETCH_HEAD\n * [new branch] codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06"
+  },
+  "assigned_ids": [
+    "entry-380",
+    "entry-5746",
+    "entry-6599",
+    "entry-6865"
+  ],
+  "completed_ids": [
+    "entry-380"
+  ],
+  "remaining_ids": [
+    "entry-5746",
+    "entry-6599",
+    "entry-6865"
+  ],
+  "parent_pushes": []
+}
