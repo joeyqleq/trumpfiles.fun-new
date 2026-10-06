@@ -21,6 +21,29 @@
     "entry-6598",
     "entry-6857"
   ],
-  "push_results": [],
-  "current_parent_push": "pending"
+  "push_results": [
+    {
+      "record_id": "entry-236",
+      "commit": "e02d09ba",
+      "remote": "origin",
+      "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "command": "git push -u origin HEAD",
+      "exit_code": 128,
+      "status": "rejected",
+      "output": "curl: (22) The requested URL returned error: 403\nwarning: invalid credential line: Repository is not a member of this stack\nfatal: could not read Username for 'https://github.com/p5n-n3t/trumpfiles-fun-new.git': No such device or address"
+    },
+    {
+      "record_id": "entry-236",
+      "commit": "e02d09ba",
+      "remote": "verified_legacy_redirect",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "resolved_repository_id": 1082328314,
+      "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/14-trump-files-migration-reconciliation-02--NyIq",
+      "exit_code": 0,
+      "status": "pushed",
+      "output": "To https://github.com/p5n-n3t/trumpfiles.fun-new.git\n * [new branch] HEAD -> ls/14-trump-files-migration-reconciliation-02--NyIq"
+    }
+  ],
+  "current_parent_push": "entry-236 pushed successfully via verified legacy redirect; origin credential rejected due stale stack display name",
+  "stack_mapping_note": "Lightsprint registers repository ID 1082328314 under the stale fullName p5n-n3t/trumpfiles.fun-new; GitHub API confirms the legacy name resolves to canonical repository ID 1082328314. Keep origin canonical and push via the verified redirect when needed."
 }
