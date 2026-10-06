@@ -20,10 +20,11 @@
   "completed_ids": [
     "entry-380",
     "entry-5746",
-    "entry-6599",
+    "entry-6599"
+  ],
+  "remaining_ids": [
     "entry-6865"
   ],
-  "remaining_ids": [],
   "parent_pushes": [
     {
       "record_id": "entry-380",
@@ -100,5 +101,23 @@
       }
     }
   ],
-  "push_compatibility_note": "origin remains the required canonical URL. Lightsprint credential mapping still names this immutable repo by its pre-rename slug; pushing to that slug redirects to the verified canonical repo ID 1082328314."
+  "push_compatibility_note": "origin remains the required canonical URL. Lightsprint credential mapping still names this immutable repo by its pre-rename slug; pushing to that slug redirects to the verified canonical repo ID 1082328314.",
+  "pending_core_label_fixes": [
+    "entry-6865"
+  ],
+  "actual_this_session_fetch": {
+    "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "immutable_repository_id": 1082328314,
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "exit_code": 0,
+    "resolved_commit": "19a772e15765348b82f6d708ad63f58927931321"
+  },
+  "correction_progress": [
+    {
+      "record_id": "entry-380",
+      "amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-03-amendment-05.jsonl",
+      "revision": 2,
+      "state": "appended; push pending"
+    }
+  ]
 }
