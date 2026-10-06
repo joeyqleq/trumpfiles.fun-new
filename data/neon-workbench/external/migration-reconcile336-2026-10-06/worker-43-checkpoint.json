@@ -70,8 +70,12 @@
       }
     }
   ],
-  "pending_parent_push": null,
-  "last_updated_after": "Final canonical-origin remote-ref verification matched the pushed task branch; alias push check returned Everything up-to-date.",
+  "pending_parent_push": {
+    "record_id": "entry-6776",
+    "amendment_revision": 2,
+    "status": "awaiting_push"
+  },
+  "last_updated_after": "entry-6776 artifact issue resolved in immutable revision 2; amendment push pending.",
   "push_route_note": "origin is the canonical URL and ls-remote/fetch succeed against immutable repository ID 1082328314. Lightsprint credential proxy rejects pushes to the canonical spelling as not a stack member (HTTP 403); pushes through the former URL succeed and GitHub redirects to the canonical repository. Every assigned parent push attempt and result is recorded above.",
   "branch_push_verification": {
     "remote_ref": "refs/heads/ls/19-trump-files-migration-reconciliation-43--LLHi",
@@ -90,5 +94,13 @@
       "entry-7051"
     ],
     "note": "The pre-existing entry-6415 row was present in the branch history; this branch-wide remote-ref check confirms it alongside the newly appended rows."
-  }
+  },
+  "artifact_issue_resolutions": [
+    {
+      "issue": "migration336:entry-6776:hold_without_attempts_and_blocker",
+      "resolution": "Appended revision 2 full-wrapper amendment. Research attempts now contains an explicitly attributed trace of the supplied 2026-09-29 prior-review note; no query, URL, tool, search log, or fresh search is claimed. Existing specific blocker and hold remain.",
+      "amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-43-amendment-3.jsonl",
+      "record_id": "entry-6776"
+    }
+  ]
 }
