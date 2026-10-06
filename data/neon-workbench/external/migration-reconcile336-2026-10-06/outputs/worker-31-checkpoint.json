@@ -101,24 +101,55 @@
         "commit": "e3b7358f",
         "effective_repository_id": 1082328314
       }
+    },
+    {
+      "for_parent": "entry-2504",
+      "change": "wrapper-level core-label amendment revision 3",
+      "commit": "1df4c1ee",
+      "successful_push": {
+        "result": "success",
+        "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push -u origin HEAD",
+        "github_redirect": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
+        "effective_repository_id": 1082328314
+      }
+    },
+    {
+      "for_parent": "entry-6729",
+      "change": "wrapper-level core-label amendment revision 5",
+      "commit": "2892d4cc",
+      "canonical_origin_attempt": {
+        "result": "failed",
+        "details": "HTTP 403; Lightsprint credential helper returned Repository is not a member of this stack"
+      },
+      "successful_push": {
+        "result": "success",
+        "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push -u origin HEAD",
+        "github_redirect": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
+        "effective_repository_id": 1082328314
+      }
     }
   ],
   "current_branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
-  "latest_parent": "entry-6950",
+  "latest_parent": "entry-6729",
   "latest_parent_validation": {
     "assigned_id_exact": true,
-    "terminal_outcome": "hold",
-    "candidate_title_chars": 60,
-    "candidate_short_chars": 135,
-    "candidate_medium_words": 55,
-    "candidate_long_words": 186,
-    "candidate_copy_selected": false,
+    "terminal_outcome": "draft_as_supplied",
+    "title_chars": 74,
+    "short_chars": 142,
+    "medium_words": 57,
+    "long_words": 142,
+    "title_limit": true,
+    "short_limit": true,
+    "medium_limit": true,
+    "long_limit": true,
+    "known_quotes_match_excerpts": true,
     "held336_gate_errors": [],
     "evidence_status": "unverified_as_supplied",
     "publication_eligible": false,
-    "exact_date_unverified": true,
-    "impact_v2_deferred_valid": true,
-    "authoritative_hold_confirmed_by": "revision-1 QA plus resume2 amendment and recheck"
+    "core_labels_present_at_amendment_envelope_parent_wrapper_and_inner_terminal": true,
+    "impact_v2_deferred_valid": true
   },
   "final_set_validation": {
     "assignedIDs": [
@@ -136,5 +167,9 @@
       "entry-6729 revision 4",
       "entry-6950 revision 1"
     ]
+  },
+  "core_label_resolution": {
+    "entry-2504": "labels are present on amendment envelope, complete parent wrapper, and inner terminal record",
+    "entry-6729": "labels are present on amendment envelope, complete parent wrapper, and inner terminal record"
   }
 }
