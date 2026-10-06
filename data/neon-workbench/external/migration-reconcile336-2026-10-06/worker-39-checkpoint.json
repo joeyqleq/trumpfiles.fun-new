@@ -71,5 +71,29 @@
       "push_result": "pending"
     }
   ],
-  "remainingIDs": []
+  "remainingIDs": [
+    "entry-6757"
+  ],
+  "actual_fetch": {
+    "remote": "origin",
+    "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "repository_id": 1082328314,
+    "command": "git fetch origin refs/heads/codex/migration-reconcile336-2026-10-06",
+    "result": "success",
+    "fetched_ref": "refs/remotes/origin/codex/migration-reconcile336-2026-10-06",
+    "resolved_commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "commit_object": "verified"
+  },
+  "corrections": [
+    {
+      "record_id": "entry-2619",
+      "revision": 2,
+      "amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-39-amendment-5.jsonl",
+      "commit": "pending",
+      "push_result": "pending",
+      "remainingIDs": [
+        "entry-6757"
+      ]
+    }
+  ]
 }
