@@ -14,10 +14,10 @@
   },
   "processed_ids": [
     "entry-2330",
-    "entry-5845"
+    "entry-5845",
+    "entry-6638"
   ],
   "remainingIDs": [
-    "entry-6638",
     "entry-6931"
   ],
   "push_history": [
@@ -36,6 +36,14 @@
       "exit_code": 0,
       "result": "success",
       "output": "GitHub accepted new branch ls/15-trump-files-migration-reconciliation-19--t6oz; server reported repository moved to canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git"
+    },
+    {
+      "remote": "one-time rename alias",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "commit": "975b98093b9e26b793571ba9092c43ee97303160",
+      "exit_code": 0,
+      "result": "success",
+      "output": "GitHub accepted update to ls/15-trump-files-migration-reconciliation-19--t6oz; repository moved response names canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git"
     }
   ]
 }
