@@ -1,7 +1,7 @@
 export function validateQA(expectedIds, outcomes) {
   const failures = [], counts = {}, seen = new Set();
   const weights = {harm: 30, reach: 20, institutions: 15, procedural_abuse: 15, self_dealing: 10, persistence: 10};
-  const words = s => typeof s === "string" && s.trim() ? s.trim().split(/\\s+/).length : 0;
+  const words = s => typeof s === "string" && s.trim() ? s.trim().split(/\s+/).length : 0;
   const chars = s => typeof s === "string" ? Array.from(s).length : 0;
   function card(row, path) {
     if (!row || typeof row !== "object") return;
