@@ -20,14 +20,14 @@
   ],
   "completedIDs": [
     "entry-2494",
-    "entry-6212"
+    "entry-6212",
+    "entry-6696"
   ],
   "remainingIDs": [
-    "entry-6696",
     "entry-6946"
   ],
-  "last_completed_parent": "entry-6212",
-  "last_amendment_revision": 2,
+  "last_completed_parent": "entry-6696",
+  "last_amendment_revision": 3,
   "push_results": [
     {
       "parent_record_id": "entry-2494",
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "pending_push_for_parent_commit": "entry-6696"
 }
