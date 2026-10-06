@@ -8,8 +8,11 @@
   "fetch_result": {
     "result": "success",
     "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "packet_branch": "codex/migration-reconcile336-2026-10-06",
     "fetched_commit": "19a772e15765348b82f6d708ad63f58927931321",
-    "remote_verified_by": "GitHub API repository ID 1082328314; git ls-remote returned the requested packet ref"
+    "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "resolved_repository_id": 1082328314,
+    "verified_by": "GitHub API repository metadata returned immutable id 1082328314; git fetch fetched the requested branch and its resolved ref matched the requested commit."
   },
   "push_results": [
     {
@@ -53,6 +56,55 @@
   "latest_artifact_push": {
     "result": "success",
     "commit": "b16b0a88",
+    "branch": "ls/17-trump-files-migration-reconciliation-33--fQgz",
+    "resolved_repository_id": 1082328314
+  },
+  "reconciliation_runs": [
+    {
+      "run_date": "2026-10-06",
+      "assigned_ids": [
+        "entry-2518",
+        "entry-6316",
+        "entry-6738",
+        "entry-6954"
+      ],
+      "terminal_rows_found": 4,
+      "terminal_rows_appended": 0,
+      "reason_no_append": "All four assigned top-level record_id/status rows already exist in worker-33-terminal.jsonl; no missing IDs were found, so append-only history was preserved.",
+      "coordinator_artifacts": {
+        "migration336:entry-6316:missing_core_labels:entry-6316": "Already resolved in the existing terminal record: people, organizations, and topics are nonempty and each label is represented in its corresponding tag list.",
+        "migration336:entry-6738:missing_core_labels:entry-6738": "Already resolved in the existing terminal record: people, organizations, and topics are nonempty and each label is represented in its corresponding tag list.",
+        "migration336:entry-6954:missing_core_labels:entry-6954": "Already resolved in the existing terminal record: people, organizations, and topics are nonempty and each label is represented in its corresponding tag list."
+      },
+      "amendment_action": "No new amendment emitted because the current terminal rows already contain the required labels and their reconciled copy/provenance; creating duplicate immutable history would not correct a present defect.",
+      "validation": {
+        "exact_assigned_set": true,
+        "unique_ids": true,
+        "all_wrappers_complete_proposal_only": true,
+        "stored_validate_held336_gate_results": {
+          "entry-2518": [],
+          "entry-6316": [],
+          "entry-6738": [],
+          "entry-6954": []
+        },
+        "gate_runtime": "validate_held336.gate was not importable or present as a command in this checkout; manually verified wrapper identity, required copy limits (except the explicit no-copy hold for entry-2518), nonempty core label groups, evidence boundaries, deferred-score reasons, and weighted impact arithmetic.",
+        "copy_withheld_exception": "entry-2518 remains hold with a documented copy_withheld_reason because the supplied event has no supported Trump nexus; no filler narrative was added.",
+        "weighted_score_entry_6738": 1.85,
+        "unverified_as_supplied_ids": [
+          "entry-6316",
+          "entry-6954"
+        ],
+        "publication_eligible_false_ids": [
+          "entry-6316",
+          "entry-6954"
+        ]
+      },
+      "remaining_ids": []
+    }
+  ],
+  "latest_reconciliation_push": {
+    "result": "pending_until_push",
+    "commit": null,
     "branch": "ls/17-trump-files-migration-reconciliation-33--fQgz",
     "resolved_repository_id": 1082328314
   }
