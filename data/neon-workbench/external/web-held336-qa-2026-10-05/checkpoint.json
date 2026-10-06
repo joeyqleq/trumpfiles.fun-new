@@ -1,32 +1,30 @@
 {
-  "phase": "final_reconciliation",
+  "phase": "complete_pr_pending",
   "assigned_count": 336,
-  "saved_unique_parent_count": 328,
+  "assessed_count": 336,
+  "unique_authoritative_count": 336,
   "status_counts": {
-    "revise": 83,
-    "hold": 131,
-    "pass": 107,
-    "draft_unverified": 7
+    "revise": 93,
+    "hold": 133,
+    "pass": 104,
+    "draft_unverified": 6
   },
-  "source_outputs_available": 336,
+  "remaining_ids": [],
   "awaiting_output_ids": [],
-  "remaining_ids": [
-    "entry-6817",
-    "entry-6818",
-    "entry-6821",
-    "entry-6822",
-    "entry-6823",
-    "entry-6824",
-    "entry-6827",
-    "entry-6828"
-  ],
   "actual_peak_concurrency": 7,
-  "remaining_amendment_checks": [
-    "Latest QA-3 and QA-4 amendments pending root readback in this checkpoint",
-    "QA-5 last batch and duplicate amendments pending"
+  "assignment_batches": 7,
+  "batch_size": 48,
+  "output_branches_refreshed": 72,
+  "changed_source_heads": [],
+  "combined_index": "data/neon-workbench/external/web-held336-qa-2026-10-05/combined-index.json",
+  "validation": "data/neon-workbench/external/web-held336-qa-2026-10-05/validation-results.json",
+  "validation_passed": true,
+  "excluded_withdrawn_history": [
+    "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-01.jsonl"
   ],
-  "withdrawn_files": [
-    "qa-3-batch-01.jsonl"
-  ],
-  "note": "Historical outcomes preserved; final authoritative selection will be explicit in combined-index.json."
+  "source_snapshot": "data/neon-workbench/external/web-held336-qa-2026-10-05/source-snapshot-02.json",
+  "canonical_writes": false,
+  "neon_writes": false,
+  "lightsprint_output_writes": false,
+  "draft_pr": null
 }
