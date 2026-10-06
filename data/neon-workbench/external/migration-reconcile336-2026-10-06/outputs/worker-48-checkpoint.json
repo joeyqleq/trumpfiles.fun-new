@@ -45,7 +45,7 @@
       "result": "success; parent amendment pushed to required task branch"
     }
   ],
-  "checkpoint_state": "entry-4239 revision 5 core-label correction is committed and pushed; entry-6424 core-label correction remains.",
+  "checkpoint_state": "entry-4239 correction and its push are recorded; entry-6424 revision 6 is prepared and remains pending commit/push.",
   "correction_status": {
     "scope": "Resolve only the coordinator-listed missing_core_labels artifacts on entries 4239 and 6424.",
     "completed_correction_ids": [
@@ -56,7 +56,8 @@
     ],
     "terminal_rows_missing": [],
     "amendment_files": [
-      "worker-48-amendment-5.jsonl"
+      "worker-48-amendment-5.jsonl",
+      "worker-48-amendment-6.jsonl"
     ],
     "push_results": [
       {
@@ -75,5 +76,14 @@
     "remote_head": "be4c101263e4bf713dda48624c512103376d207e",
     "exit_code": 0,
     "result": "The existing entry-7086 commit is present on the canonical task branch; the prior checkpoint lacked its push stdout, so this records observed remote state rather than inventing a push transcript."
-  }
+  },
+  "checkpoint_push_results": [
+    {
+      "commit": "d29f3ea0",
+      "command": "git push origin HEAD",
+      "exit_code": 0,
+      "stdout": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   66fff2b7..d29f3ea0  HEAD -> ls/7-trump-files-migration-reconciliation-48--YctR",
+      "result": "success; checkpoint containing the entry-4239 correction push result is on the required branch"
+    }
+  ]
 }
