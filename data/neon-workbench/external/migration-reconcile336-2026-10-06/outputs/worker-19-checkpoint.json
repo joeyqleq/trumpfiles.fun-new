@@ -67,6 +67,24 @@
       "exit_code": 0,
       "result": "success",
       "output": "GitHub accepted update to ls/15-trump-files-migration-reconciliation-19--t6oz; repository moved response names canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git"
+    },
+    {
+      "remote": "origin (canonical URL)",
+      "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "commit": "36734f03d4b7e83ad55459b3ab8fcbf7997857b8",
+      "exit_code": 128,
+      "result": "failed",
+      "output": "curl: (22) The requested URL returned error: 403; warning: invalid credential line: Repository is not a member of this stack; fatal: could not read Username for canonical URL"
+    },
+    {
+      "remote": "one-time rename alias transport; origin remains canonical",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "github_repository_id": 1082328314,
+      "commit": "36734f03d4b7e83ad55459b3ab8fcbf7997857b8",
+      "exit_code": 0,
+      "result": "success",
+      "output": "GitHub accepted update to ls/15-trump-files-migration-reconciliation-19--t6oz; response names canonical repository URL https://github.com/p5n-n3t/trumpfiles-fun-new.git"
     }
   ],
   "latest_amendment": {
@@ -76,5 +94,15 @@
       "entry-6931"
     ],
     "result": "appended; prior terminal rows and amendment history preserved"
+  },
+  "latest_push": {
+    "origin_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "origin_repository_id": 1082328314,
+    "transport_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+    "transport_redirected_to": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "commit": "36734f03d4b7e83ad55459b3ab8fcbf7997857b8",
+    "branch": "ls/15-trump-files-migration-reconciliation-19--t6oz",
+    "result": "success",
+    "exit_code": 0
   }
 }
