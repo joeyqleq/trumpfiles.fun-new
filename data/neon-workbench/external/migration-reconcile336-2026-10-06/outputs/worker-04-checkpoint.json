@@ -79,7 +79,8 @@
   "last_record_id": "entry-6866",
   "last_validation_gate": {
     "available": false,
-    "custom_checks": "All three missing-core-label issues have explicit revision-2 amendments; final exact-ID, wrapper-shape, copy-length, quote-attribution, unverified-boundary, and deferred-impact checks pending."
+    "custom_validation": "PASS",
+    "details": "See final_validation; exact assigned IDs complete and only specified core-label omissions amended."
   },
   "checkpoint_push_results": [
     {
@@ -130,6 +131,31 @@
       "exit_code": 0,
       "result": "success; GitHub redirected the registered renamed-repository alias to canonical https://github.com/p5n-n3t/trumpfiles-fun-new.git",
       "verified_remote_branch_head": "77eeb0303fa2a957a2b4463ac166650c3d2dfb3e"
+    },
+    {
+      "record_id": "entry-6866",
+      "output_commit": "b0566e49b24d1dbd590daa03b72c8dddba59462c",
+      "remote_branch": "refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
+      "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
+      "exit_code": 0,
+      "result": "success; GitHub redirected the registered renamed-repository alias to canonical https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "verified_remote_branch_head": "b0566e49b24d1dbd590daa03b72c8dddba59462c"
     }
-  ]
+  ],
+  "final_validation": {
+    "validate_held336_gate_available": false,
+    "reason": "No validate_held336 executable, module, or repository implementation was present.",
+    "custom_checks": "PASS",
+    "checks": [
+      "exact assigned terminal ID set; four complete top-level wrappers",
+      "all three coordinator missing_core_labels issues resolved in revision-2 full-wrapper amendments",
+      "title/short limits and medium/long word ranges; entry-835 remains a justified exclusion candidate with copy length not applicable",
+      "known quote strings preserved as unverified attributions",
+      "all four impact-v2 proposals deferred with null dimensions and null weighted totals; no unsupported numeric scoring",
+      "all supplied-claim drafts remain evidence_status=unverified_as_supplied and publication_eligible=false",
+      "checkpoint completed_ids exact; remaining_ids empty"
+    ],
+    "terminal_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-04-terminal.jsonl",
+    "amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-04-amendment-2.jsonl"
+  }
 }
