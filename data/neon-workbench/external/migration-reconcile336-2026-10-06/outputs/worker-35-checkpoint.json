@@ -24,5 +24,14 @@
     "fetch_head": "19a772e15765348b82f6d708ad63f58927931321",
     "requested_commit_present": true
   },
-  "parent_push_results": []
+  "parent_push_results": [
+    {
+      "record_id": "entry-2562",
+      "commit": "e1fda2ee",
+      "branch": "ls/5-trump-files-migration-reconciliation-35--38S7",
+      "command": "git push origin ls/5-trump-files-migration-reconciliation-35--38S7",
+      "exit_code": 0,
+      "result": "created remote branch; push succeeded"
+    }
+  ]
 }
