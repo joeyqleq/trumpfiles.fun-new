@@ -26,7 +26,7 @@
   ],
   "remainingIDs": [],
   "last_completed_parent": "entry-6946",
-  "last_amendment_revision": 4,
+  "last_amendment_revision": 5,
   "push_results": [
     {
       "parent_record_id": "entry-2494",
@@ -86,6 +86,31 @@
           "result": "Push succeeded; GitHub reported redirect to canonical repository URL, immutable repository ID 1082328314."
         }
       ]
+    },
+    {
+      "parent_record_id": "entry-2494",
+      "amendment_revision": 5,
+      "commit": "b9dd0af64d7c829cc91e4b5ee0c04c4a826a1acd",
+      "success": true,
+      "attempts": [
+        {
+          "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+          "command": "git push -u origin HEAD",
+          "exit_code": 128,
+          "result": "Rejected by local Lightsprint credential helper: Repository is not a member of this stack; no remote update."
+        },
+        {
+          "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+          "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/17-trump-files-migration-reconciliation-29--M0N2",
+          "exit_code": 0,
+          "result": "Push succeeded; GitHub reported redirect to canonical repository URL https://github.com/p5n-n3t/trumpfiles-fun-new.git, immutable repository ID 1082328314."
+        }
+      ],
+      "canonical_remote_head_after_push": "b9dd0af64d7c829cc91e4b5ee0c04c4a826a1acd"
     }
-  ]
+  ],
+  "origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+  "repository_id_verified": 1082328314,
+  "last_amendment_record_id": "entry-2494",
+  "last_amendment_commit": "b9dd0af64d7c829cc91e4b5ee0c04c4a826a1acd"
 }
