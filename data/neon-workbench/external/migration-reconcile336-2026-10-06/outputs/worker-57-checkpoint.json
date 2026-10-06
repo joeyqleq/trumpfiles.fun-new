@@ -9,7 +9,10 @@
     "status": "success",
     "fetched_commit": "19a772e15765348b82f6d708ad63f58927931321"
   },
-  "push_result": "pending actual push",
+  "push_result": {
+    "status": "pending",
+    "command": "git push origin HEAD"
+  },
   "completed_parent_ids": [
     "entry-4696"
   ],
@@ -18,6 +21,7 @@
     "entry-6793",
     "entry-7115"
   ],
-  "last_amendment": "worker-57-amendment-1.jsonl",
-  "task_branch": "ls/21-trump-files-migration-reconciliation-57--atMw"
+  "last_amendment": "worker-57-amendment-2.jsonl",
+  "task_branch": "ls/21-trump-files-migration-reconciliation-57--atMw",
+  "last_reconciled_parent_id": "entry-4696"
 }
