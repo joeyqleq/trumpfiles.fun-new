@@ -18,9 +18,9 @@
   ],
   "last_successful_push": {
     "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:ls/17-trump-files-migration-reconciliation-32--rVYQ",
-    "result": "succeeded; GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git and created the branch there.",
+    "result": "succeeded; GitHub redirected the registered spelling to the canonical repository and advanced the task branch.",
     "repository_id": 1082328314,
-    "commit": "c38dad60"
+    "commit": "7080b475"
   },
   "origin_push_result": {
     "command": "git push -u origin HEAD",
