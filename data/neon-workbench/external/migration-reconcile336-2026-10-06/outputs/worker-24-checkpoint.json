@@ -93,6 +93,15 @@
     "reason": "Set terminal entry_number from null to frozen input value 6672.",
     "amendment_file": "worker-24-amendment-5.jsonl",
     "revision": 5,
-    "supersedes": "worker-24-amendment-3.jsonl revision 3."
+    "supersedes": "worker-24-amendment-3.jsonl revision 3.",
+    "push_receipt": {
+      "commit": "c919f3eadd08c5b7a66b989e54115c1c7ed5d9d9",
+      "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
+      "exit_code": 0,
+      "result": "remote: This repository moved. Please use the new location:        \nremote:   https://github.com/p5n-n3t/trumpfiles-fun-new.git        \nremote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit:        \nremote:      https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot        \nremote: \nTo https://github.com/p5n-n3t/trumpfiles.fun-new.git\n   53b94cde..c919f3ea  HEAD -> ls/16-trump-files-migration-reconciliation-24--AFHh",
+      "status": "success",
+      "redirect_target": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "repository_id": 1082328314
+    }
   }
 }
