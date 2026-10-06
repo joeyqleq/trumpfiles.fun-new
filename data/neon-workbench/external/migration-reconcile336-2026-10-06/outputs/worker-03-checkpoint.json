@@ -25,5 +25,30 @@
     "entry-6599",
     "entry-6865"
   ],
-  "parent_pushes": []
+  "parent_pushes": [
+    {
+      "record_id": "entry-380",
+      "commit": "9553d446e362d96c6dc4c411b51cf540000af4b4",
+      "attempts": [
+        {
+          "command": "git push -u origin HEAD",
+          "exit_code": 128,
+          "result": "failed",
+          "output": "curl: (22) The requested URL returned error: 403; warning: invalid credential line: Repository is not a member of this stack; fatal: could not read Username."
+        },
+        {
+          "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d",
+          "exit_code": 0,
+          "result": "pushed",
+          "output": "GitHub reported the legacy repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git; new branch created."
+        }
+      ],
+      "canonical_remote_verification": {
+        "command": "git ls-remote origin refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d",
+        "exit_code": 0,
+        "output": "9553d446e362d96c6dc4c411b51cf540000af4b4 refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d"
+      }
+    }
+  ],
+  "push_compatibility_note": "origin remains the required canonical URL. Lightsprint credential mapping still names this immutable repo by its pre-rename slug; pushing to that slug redirects to the verified canonical repo ID 1082328314."
 }
