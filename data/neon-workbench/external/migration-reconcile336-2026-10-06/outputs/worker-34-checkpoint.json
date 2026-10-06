@@ -27,8 +27,8 @@
     "result": "success",
     "remote": "origin",
     "branch": "ls/5-trump-files-migration-reconciliation-34--VMtO",
-    "pushed_commit": "ced5c489",
-    "scope": "appended complete entry-6955 terminal wrapper from primary revision 1 and authoritative QA pass; all assigned IDs now have terminal or corrective amendment coverage"
+    "pushed_commit": "583171bb",
+    "scope": "append-only wrapper correction for entry-6955 clarifies that evidence_status is absent in the selected primary terminal and preserves that boundary"
   },
   "validator_runtime": "validate_held336.gate unavailable; manual equivalent checks recorded per wrapper",
   "repository_identity": {
