@@ -1,0 +1,38 @@
+{
+  "worker": 20,
+  "assigned_record_ids": [
+    "entry-2332",
+    "entry-5850",
+    "entry-6642",
+    "entry-6933"
+  ],
+  "completed_record_ids": [
+    "entry-2332"
+  ],
+  "remaining_record_ids": [
+    "entry-5850",
+    "entry-6642",
+    "entry-6933"
+  ],
+  "task_branch": "ls/3-trump-files-migration-reconciliation-20--i7_e",
+  "canonical_remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+  "github_repository": {
+    "full_name": "p5n-n3t/trumpfiles-fun-new",
+    "immutable_id": 1082328314,
+    "html_url": "https://github.com/p5n-n3t/trumpfiles-fun-new"
+  },
+  "packet_fetch_result": {
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "exit_code": 0,
+    "fetched_ref": "origin/codex/migration-reconcile336-2026-10-06",
+    "commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "result": "Fetched requested branch; FETCH_HEAD and origin ref resolve to requested commit."
+  },
+  "output_files": {
+    "terminal_snapshot": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-20-terminal.jsonl",
+    "append_only_amendments": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-20-amendment-1.jsonl"
+  },
+  "per_parent_push_results": [],
+  "current_record_id": "entry-2332",
+  "updated_at_utc": "2026-10-06T10:45:33.396048+00:00"
+}
