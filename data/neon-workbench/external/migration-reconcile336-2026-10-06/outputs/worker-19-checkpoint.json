@@ -1,0 +1,24 @@
+{
+  "worker": "19",
+  "assignment_id": "migration336-19",
+  "branch": "ls/15-trump-files-migration-reconciliation-19--t6oz",
+  "repository": {
+    "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "github_repository_id": 1082328314
+  },
+  "fetch": {
+    "requested_commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "command": "git fetch origin 19a772e15765348b82f6d708ad63f58927931321",
+    "result": "success",
+    "fetch_head": "19a772e15765348b82f6d708ad63f58927931321"
+  },
+  "processed_ids": [
+    "entry-2330"
+  ],
+  "remainingIDs": [
+    "entry-5845",
+    "entry-6638",
+    "entry-6931"
+  ],
+  "last_push": null
+}
