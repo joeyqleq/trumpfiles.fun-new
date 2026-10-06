@@ -96,6 +96,30 @@
       "exit_code": 0,
       "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\\n   4e926563..de2e9e7b  HEAD -> ls/7-trump-files-migration-reconciliation-49--bL3n\\nbranch set to track origin/ls/7-trump-files-migration-reconciliation-49--bL3n",
       "commit": "de2e9e7b"
+    },
+    {
+      "for_completedIDs": [
+        "entry-4240",
+        "entry-6425",
+        "entry-6784",
+        "entry-7087"
+      ],
+      "command": "git push -u origin HEAD",
+      "exit_code": 0,
+      "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\\n   de2e9e7b..00a97619  HEAD -> ls/7-trump-files-migration-reconciliation-49--bL3n\\nbranch set to track origin/ls/7-trump-files-migration-reconciliation-49--bL3n",
+      "commit": "00a97619"
     }
-  ]
+  ],
+  "final_validation": {
+    "exact_assigned_ids": true,
+    "append_only_terminal_history": true,
+    "latest_revision2_core_labels": {
+      "entry-4240": true,
+      "entry-6425": true
+    },
+    "copy_lengths_quotes_and_weighted_scores": "manual validation passed",
+    "entry_6784_unverified_boundary": "preserved as unverified_as_supplied; publication_eligible=false; impact deferred",
+    "entry_7087": "duplicate_resolved to entry-7062; no duplicate card",
+    "validate_held336_gate": "helper unavailable in workspace and tool registry; manual contract checks recorded in amendments"
+  }
 }
