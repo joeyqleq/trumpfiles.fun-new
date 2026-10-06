@@ -19,11 +19,10 @@
   "completedIDs": [
     "entry-2401",
     "entry-6125",
-    "entry-6673"
-  ],
-  "remainingIDs": [
+    "entry-6673",
     "entry-6940"
   ],
+  "remainingIDs": [],
   "parent_push_receipts": [
     {
       "record_id": "entry-2401",
@@ -59,9 +58,14 @@
       "exit_code": 0,
       "output": "6ab644a3..5ab90c3b HEAD -> ls/16-trump-files-migration-reconciliation-25--qfNe",
       "push_url": "legacy alias redirected by GitHub to canonical repository"
+    },
+    {
+      "record_id": "entry-6940",
+      "commit": "pending",
+      "result": "pending"
     }
   ],
-  "updated_at": "2026-10-06T10:47:09.372537+00:00",
+  "updated_at": "2026-10-06T10:47:29.684409+00:00",
   "checkpoint_push_receipts": [
     {
       "commit": "6c1546e3",
@@ -80,6 +84,12 @@
       "result": "success",
       "exit_code": 0,
       "output": "cb77a431..6ab644a3 HEAD -> ls/16-trump-files-migration-reconciliation-25--qfNe"
+    },
+    {
+      "commit": "eb1fb8fe",
+      "result": "success",
+      "exit_code": 0,
+      "output": "5ab90c3b..eb1fb8fe HEAD -> ls/16-trump-files-migration-reconciliation-25--qfNe"
     }
   ]
 }
