@@ -13,7 +13,7 @@ export function validateQA(expectedIds, outcomes) {
         const n = measure(row[field]); if (n < min || n > max) failures.push({path,field,n,min,max});
       }
     }
-    for (const key of ["impact_proposal","score_proposal"]) {
+    for (const key of ["impact_proposal","score_proposal","survivor_score_proposal"]) {
       const s = row[key]; if (!s) continue;
       if (s.status === "deferred" && s.dimensions !== null) failures.push({path,key,check:"deferred_dimensions"});
       if (s.status === "scored") {
@@ -56,7 +56,7 @@ export function validateEffectiveCards(qaOutcomes, sourceById) {
       if(value.evidence_status==="unverified_as_supplied"||value.status==="draft_as_supplied")if(value.publication_eligible!==false)failures.push({parent,path,check:"unverified_publication_gate"});
       for(const [i,e] of (Array.isArray(value.source_fact_map)?value.source_fact_map:[]).entries())if(e.quote && (!e.source_excerpt||!e.source_excerpt.includes(e.quote)))failures.push({parent,path,index:i,check:"literal_quote"});
     }
-    for(const key of ["impact_proposal","score_proposal"]){const p=value[key];if(p?.status==="scored"){let n=0;for(const [k,weight]of Object.entries(w)){const d=p.dimensions?.[k];if(typeof d!=="number"||d<0||d>10||Math.abs(d*10-Math.round(d*10))>1e-8)failures.push({parent,path,check:"dimension",field:k});else n+=Math.round(d*10)*weight;}const total=Math.round(n/10)/100;scores.push({parent_record_id:parent,record_id:p.record_id||value.record_id||parent,path:path+"."+key,dimensions:p.dimensions,weighted_total:total,event_state:p.event_state});for(const f of ["weighted_total","total","composite","weighted_score"])if(typeof p[f]==="number"&&Math.abs(p[f]-total)>1e-8)failures.push({parent,path,check:"weighted_total",field:f,expected:total,actual:p[f]});}}
+    for(const key of ["impact_proposal","score_proposal","survivor_score_proposal"]){const p=value[key];if(p?.status==="scored"){let n=0;for(const [k,weight]of Object.entries(w)){const d=p.dimensions?.[k];if(typeof d!=="number"||d<0||d>10||Math.abs(d*10-Math.round(d*10))>1e-8)failures.push({parent,path,check:"dimension",field:k});else n+=Math.round(d*10)*weight;}const total=Math.round(n/10)/100;scores.push({parent_record_id:parent,record_id:p.record_id||value.record_id||parent,path:path+"."+key,dimensions:p.dimensions,weighted_total:total,event_state:p.event_state});for(const f of ["weighted_total","total","composite","weighted_score"])if(typeof p[f]==="number"&&Math.abs(p[f]-total)>1e-8)failures.push({parent,path,check:"weighted_total",field:f,expected:total,actual:p[f]});}}
     for(const [k,x]of Object.entries(value)) if(!["impact_proposal","score_proposal","comparison","compared_records","same_event_evidence","survivor_existing_description_snapshot","duplicate_frozen_record","survivor_frozen_record","survivor_current"].includes(k))walk(x,parent,path+"."+k);
   }
   for(const q of qaOutcomes) if(q.status!=="hold") walk(q.corrected_proposal||sourceById[q.record_id],q.record_id,q.record_id);
