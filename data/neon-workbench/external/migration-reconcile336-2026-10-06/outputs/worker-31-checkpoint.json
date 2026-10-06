@@ -7,10 +7,10 @@
     "entry-6950"
   ],
   "completedIDs": [
-    "entry-2504"
+    "entry-2504",
+    "entry-6280"
   ],
   "remainingIDs": [
-    "entry-6280",
     "entry-6729",
     "entry-6950"
   ],
@@ -39,5 +39,24 @@
       }
     }
   ],
-  "current_branch": "ls/17-trump-files-migration-reconciliation-31--DqWK"
+  "current_branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
+  "latest_parent": "entry-6280",
+  "latest_parent_validation": {
+    "assigned_id_exact": true,
+    "terminal_outcome": "hold",
+    "held_candidate_title_chars": 108,
+    "held_candidate_short_chars": 119,
+    "held_candidate_medium_words": 71,
+    "held_candidate_long_words": 182,
+    "held_candidate_numeric_lengths_within_bounds": true,
+    "held_candidate_semantic_check": "not selected per authoritative copy_blocker; numeric length does not clear the padding finding",
+    "known_quotes_match_excerpts": true,
+    "impact_v2_deferred_valid": true,
+    "publication_boundary": true,
+    "validator_gate": {
+      "name": "validate_held336.gate(terminal_record)",
+      "available": false,
+      "workspace_search": "no implementation/module/command found; manual schema, provenance, copy and impact checks recorded"
+    }
+  }
 }
