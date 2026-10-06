@@ -24,13 +24,22 @@
     "entry-6922"
   ],
   "completed_ids": [
-    "entry-1730"
+    "entry-1730",
+    "entry-5815"
   ],
   "remaining_ids": [
-    "entry-5815",
     "entry-6615",
     "entry-6922"
   ],
-  "parent_push_results": [],
-  "last_completed_parent": "entry-1730"
+  "parent_push_results": [
+    {
+      "record_id": "entry-1730",
+      "commit": "ff325909",
+      "command": "git push -u origin ls/2-trump-files-migration-reconciliation-13--lN8f",
+      "exit_code": 0,
+      "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n * [new branch]        ls/2-trump-files-migration-reconciliation-13--lN8f -> ls/2-trump-files-migration-reconciliation-13--lN8f",
+      "status": "success"
+    }
+  ],
+  "last_completed_parent": "entry-5815"
 }
