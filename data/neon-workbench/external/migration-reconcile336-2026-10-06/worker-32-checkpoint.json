@@ -16,14 +16,16 @@
   ],
   "remainingIDs": [],
   "last_successful_push": {
-    "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:ls/17-trump-files-migration-reconciliation-32--rVYQ",
-    "result": "succeeded; GitHub redirected the registered spelling to the canonical repository and advanced the task branch.",
+    "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/17-trump-files-migration-reconciliation-32--rVYQ",
+    "result": "succeeded; GitHub reported the registered repository moved to the canonical URL and advanced the task branch.",
     "repository_id": 1082328314,
-    "commit": "d5dd28d2"
+    "commit": "78c7655c33cbb66624f8dc9e67ebfe59bab01805",
+    "canonical_destination": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
   },
   "origin_push_result": {
     "command": "git push -u origin HEAD",
-    "result": "failed with HTTP 403; Lightsprint credential reported the repository is not a member of this stack because its registered fullName retains the old .fun-new spelling."
+    "result": "failed with HTTP 403; Lightsprint credential reported the canonical repository is not a member of this stack because registered fullName retains the old .fun-new spelling.",
+    "origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
   },
   "actual_fetch": {
     "origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
@@ -32,7 +34,12 @@
     "result": "succeeded; origin/codex/migration-reconcile336-2026-10-06 points to requested commit 19a772e15765348b82f6d708ad63f58927931321"
   },
   "latest_push_attempt": {
-    "status": "pending",
-    "command": "git push -u origin HEAD"
+    "status": "succeeded via registered alias; canonical branch head verified",
+    "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/17-trump-files-migration-reconciliation-32--rVYQ",
+    "canonical_branch_head": "78c7655c33cbb66624f8dc9e67ebfe59bab01805"
+  },
+  "push_verification": {
+    "command": "git ls-remote https://github.com/p5n-n3t/trumpfiles-fun-new.git refs/heads/ls/17-trump-files-migration-reconciliation-32--rVYQ",
+    "result": "returned 78c7655c33cbb66624f8dc9e67ebfe59bab01805"
   }
 }
