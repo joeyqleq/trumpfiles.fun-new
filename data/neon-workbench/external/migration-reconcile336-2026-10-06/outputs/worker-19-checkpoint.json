@@ -13,12 +13,29 @@
     "fetch_head": "19a772e15765348b82f6d708ad63f58927931321"
   },
   "processed_ids": [
-    "entry-2330"
+    "entry-2330",
+    "entry-5845"
   ],
   "remainingIDs": [
-    "entry-5845",
     "entry-6638",
     "entry-6931"
   ],
-  "last_push": null
+  "push_history": [
+    {
+      "remote": "origin",
+      "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "commit": "7dd9f6c884a4486c13447133f7467b0ad21dadca",
+      "exit_code": 128,
+      "result": "failed",
+      "output": "curl: (22) The requested URL returned error: 403; warning: invalid credential line: Repository is not a member of this stack; fatal: could not read Username for canonical URL"
+    },
+    {
+      "remote": "one-time rename alias",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "commit": "7dd9f6c884a4486c13447133f7467b0ad21dadca",
+      "exit_code": 0,
+      "result": "success",
+      "output": "GitHub accepted new branch ls/15-trump-files-migration-reconciliation-19--t6oz; server reported repository moved to canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git"
+    }
+  ]
 }
