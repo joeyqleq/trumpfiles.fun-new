@@ -37,6 +37,17 @@
         "remote_branch": "ls/16-trump-files-migration-reconciliation-16--oO_e",
         "result": "created successfully; GitHub confirmed repository moved to canonical https://github.com/p5n-n3t/trumpfiles-fun-new.git"
       }
+    },
+    {
+      "record_id": "entry-5832",
+      "revision": 2,
+      "commit": "f4ceafe2da323392c3a1d569ae580e71ac4e9010",
+      "push_result": {
+        "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push origin HEAD",
+        "exit_code": 0,
+        "remote_branch": "ls/16-trump-files-migration-reconciliation-16--oO_e",
+        "result": "success; GitHub redirected the historic registered slug to the canonical repository"
+      }
     }
   ],
   "push_resolution": {
@@ -50,6 +61,7 @@
   "last_parent_push": {
     "record_id": "entry-5832",
     "revision": 2,
-    "status": "pending"
+    "commit": "f4ceafe2da323392c3a1d569ae580e71ac4e9010",
+    "status": "success"
   }
 }
