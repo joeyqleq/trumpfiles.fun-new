@@ -1,0 +1,29 @@
+{
+  "checkpoint": "final-reconciliation-02",
+  "date": "2026-10-07",
+  "repository": "p5n-n3t/trumpfiles-fun-new",
+  "base_assignment_commit": "19a772e15765348b82f6d708ad63f58927931321",
+  "assigned_parent_records": 336,
+  "direct_recovered_pushed_results": 158,
+  "newly_derived_from_saved_packets": 178,
+  "final_parent_records": 336,
+  "status_counts": {
+    "draft_as_supplied": 40,
+    "duplicate_resolved": 68,
+    "exclusion_candidate": 8,
+    "hold": 109,
+    "pass": 86,
+    "split_ready": 25
+  },
+  "validation_errors": 0,
+  "delivery": {
+    "branch": "codex/web-trump-recovery-20261007",
+    "github_commit": "9a481b40d5b9ca5e1d04e92f4a84d8684eed6338",
+    "push": "completed_via_github_ui",
+    "draft_pr": "https://github.com/p5n-n3t/trumpfiles-fun-new/pull/68"
+  },
+  "next": [
+    "Review this independent proposal set and its conflicts.jsonl.",
+    "Merge only after editorial review; do not apply directly to canonical data or live Neon."
+  ]
+}
