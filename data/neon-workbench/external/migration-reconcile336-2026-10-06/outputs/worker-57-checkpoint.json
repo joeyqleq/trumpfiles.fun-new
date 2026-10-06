@@ -7,11 +7,16 @@
   "fetch_result": {
     "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
     "status": "success",
-    "fetched_commit": "19a772e15765348b82f6d708ad63f58927931321"
+    "fetched_commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
   },
   "push_result": {
-    "status": "pending",
-    "command": "git push origin HEAD"
+    "command": "git push origin HEAD",
+    "status": "success",
+    "pushed_commit": "674a779f416953d5869acc469eab8b950a92c99e",
+    "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+    "github_redirect": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "repository_id": 1082328314
   },
   "completed_parent_ids": [
     "entry-4696"
@@ -23,5 +28,6 @@
   ],
   "last_amendment": "worker-57-amendment-2.jsonl",
   "task_branch": "ls/21-trump-files-migration-reconciliation-57--atMw",
-  "last_reconciled_parent_id": "entry-4696"
+  "last_reconciled_parent_id": "entry-4696",
+  "last_pushed_commit": "674a779f416953d5869acc469eab8b950a92c99e"
 }
