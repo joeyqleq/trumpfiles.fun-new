@@ -14,7 +14,6 @@
     "entry-7048"
   ],
   "remaining_ids": [
-    "entry-6413",
     "entry-6763"
   ],
   "push_results": [
@@ -47,7 +46,7 @@
       "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
     }
   ],
-  "last_updated_after": "entry-2854 correction committed and pushed successfully; remaining core-label corrections: entry-6413, entry-6763",
+  "last_updated_after": "entry-6413 core-label correction appended as immutable amendment revision 2; push result pending",
   "fetch_verification": {
     "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
     "result": "success; FETCH_HEAD and origin/codex/migration-reconcile336-2026-10-06 resolved to 19a772e15765348b82f6d708ad63f58927931321",
@@ -55,7 +54,8 @@
     "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
   },
   "correction_completed_ids": [
-    "entry-2854"
+    "entry-2854",
+    "entry-6413"
   ],
   "correction_push_results": [
     {
