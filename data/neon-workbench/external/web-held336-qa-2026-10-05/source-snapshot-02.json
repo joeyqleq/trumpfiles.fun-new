@@ -1,0 +1,2872 @@
+{
+  "phase": "final_source_refresh",
+  "source_branch": "codex/held336-research-2026-10-05",
+  "source_parent_count": 336,
+  "output_branch_count": 72,
+  "source_outputs_available": 336,
+  "awaiting_output_ids": [],
+  "refresh": {
+    "checked": 72,
+    "changed": [],
+    "failures": []
+  },
+  "catalog": [
+    {
+      "worker_id": "held336-01",
+      "source_branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
+      "source_commit": "ef45c5555123f725b6ca6fed5195a33fbe5194e3",
+      "records": [
+        {
+          "record_id": "entry-6430",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-01-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6776",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-01-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6950",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-01-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-7057",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-01-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7120",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-01-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7138",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-01-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7177",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-01-terminal.jsonl",
+          "line": 7,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-02",
+      "source_branch": "ls/1-trump-final-corrections-account2-worker1-zahM",
+      "source_commit": "bdf80f9070644614341d64cddb9228492743bf97",
+      "records": [
+        {
+          "record_id": "entry-6432",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-02-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6778",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-02-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6951",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-02-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-7147",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-02-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7154",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-02-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7178",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-02-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7186",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-02-terminal.jsonl",
+          "line": 7,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-03",
+      "source_branch": "ls/2-trump-files-impact368-review-01-of-12-ulQ4",
+      "source_commit": "6ac584de42d66a16596adf59f48e66287bd260c3",
+      "records": [
+        {
+          "record_id": "entry-5735",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-03-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6600",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-03-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6833",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-03-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-7111",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-03-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7121",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-03-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7130",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-03-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-04",
+      "source_branch": "ls/1-trump-files-web425-review-01-of-12-TJQB",
+      "source_commit": "89aa995f78a4dd157121b97a39588e45f281c77f",
+      "records": [
+        {
+          "record_id": "entry-5112",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-04-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6125",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-04-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6501",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-04-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6691",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-04-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6798",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-04-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-7159",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-04-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-05",
+      "source_branch": "ls/1-trump-files-sample100-review-01-of-12-iPnX",
+      "source_commit": "1c9a704e05db53425fb759f630561beb92785443",
+      "records": [
+        {
+          "record_id": "entry-5161",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-05-amendment-2.jsonl",
+          "line": 1,
+          "revision": 2,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6455",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-05-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6788",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-05-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-7051",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-05-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7066",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-05-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7075",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-05-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-954",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-05-amendment-2.jsonl",
+          "line": 2,
+          "revision": 2,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-06",
+      "source_branch": "ls/1-trump-files-source118-review-01-of-12-Dnux",
+      "source_commit": "f7eef6943d1f6b752ad45c562d6c2035576a99c8",
+      "records": [
+        {
+          "record_id": "entry-5189",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-06-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6456",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-06-amendment-1.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6763",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-06-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6946",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-06-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-7087",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-06-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7094",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-06-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-07",
+      "source_branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+      "source_commit": "5acc830a16c7e9edbd7b808d37b230130d5895e2",
+      "records": [
+        {
+          "record_id": "entry-5190",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-07-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6457",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-07-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6789",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-07-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-7085",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-07-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7089",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-07-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7101",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-07-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-08",
+      "source_branch": "ls/3-trump-final-corrections-account2-worker1--T8S",
+      "source_commit": "990cba295310da09f22916639970195c8cd8360f",
+      "records": [
+        {
+          "record_id": "entry-5191",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-08-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6460",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-08-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6790",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-08-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-7086",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-08-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7110",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-08-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7117",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-08-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-09",
+      "source_branch": "ls/3-trump-files-impact368-review-02-of-12-2F_B",
+      "source_commit": "33c7085b593d318d984db585a94ae6af8d069a8c",
+      "records": [
+        {
+          "record_id": "entry-5207",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-09-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6463",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-09-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6791",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-09-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-7095",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-09-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7113",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-09-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7133",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-09-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-10",
+      "source_branch": "ls/2-trump-files-web425-review-02-of-12-IyLH",
+      "source_commit": "bba0bb3d9dd4622be120f115daf4dc815bcd77c3",
+      "records": [
+        {
+          "record_id": "entry-5213",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-10-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6464",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-10-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6793",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-10-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-7115",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-10-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7123",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-10-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7131",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-10-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-11",
+      "source_branch": "ls/2-trump-files-sample100-review-02-of-12-6WFh",
+      "source_commit": "79147ac56c445f67170870bdf7a3935ed0c15b75",
+      "records": [
+        {
+          "record_id": "entry-5224",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-11-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6475",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-11-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6794",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-11-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-7125",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-11-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7126",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-11-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7137",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-11-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-12",
+      "source_branch": "ls/2-trump-files-source118-review-02-of-12-alSU",
+      "source_commit": "c5e62b2fde2ce25e37efe291a2bbdeb5c864c8df",
+      "records": [
+        {
+          "record_id": "entry-5237",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-12-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6479",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-12-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6774",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-12-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6949",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-12-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-7156",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-12-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7166",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-12-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-13",
+      "source_branch": "ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+      "source_commit": "4339c9a7e694f2a172806e14215ae993061b3419",
+      "records": [
+        {
+          "record_id": "entry-5329",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-13-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6504",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-13-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6799",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-13-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-7158",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-13-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7168",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-13-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7176",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-13-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-14",
+      "source_branch": "ls/2-trump-final-corrections-account2-worker1-snHz",
+      "source_commit": "83eb52994fff68b44a27d899d53ef7e50fef9daf",
+      "records": [
+        {
+          "record_id": "entry-5335",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-14-amendment-3.jsonl",
+          "line": 1,
+          "revision": 3,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6511",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-14-amendment-1.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6801",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-14-amendment-2.jsonl",
+          "line": 2,
+          "revision": 2,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-7179",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-14-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7188",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-14-amendment-4.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-7195",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-14-amendment-1.jsonl",
+          "line": 4,
+          "revision": 1,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-15",
+      "source_branch": "ls/4-trump-files-impact368-review-03-of-12-46t_",
+      "source_commit": "5950626a28095af788c139d42e7d6d32dd067dc2",
+      "records": [
+        {
+          "record_id": "entry-1181",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-15-amendment-01.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5737",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-15-amendment-01.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6601",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-15-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6834",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-15-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-16",
+      "source_branch": "ls/3-trump-files-web425-review-03-of-12-96hG",
+      "source_commit": "e9c1dfd4d32f0aae0e5078237aa70d0a59c0b15c",
+      "records": [
+        {
+          "record_id": "entry-1670",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-16-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-5743",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-16-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6602",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-16-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6835",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-16-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-17",
+      "source_branch": "ls/3-trump-files-sample100-review-03-of-12-gPrZ",
+      "source_commit": "0093962a318b098f99f8b862f6e138b0865ae1cb",
+      "records": [
+        {
+          "record_id": "entry-1716",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-17-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-5746",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-17-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6606",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-17-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6839",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-17-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-18",
+      "source_branch": "ls/3-trump-files-source118-review-03-of-12-mwSm",
+      "source_commit": "df846a7271dcbc52150b2e1cb74913ce082b65c9",
+      "records": [
+        {
+          "record_id": "entry-1726",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-18-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-5749",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-18-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6607",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-18-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6841",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-18-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-19",
+      "source_branch": "ls/4-trump-description-rescue-04-of-12-53-dis-S_ao",
+      "source_commit": "d9e404a46b5907c83fd609830b929a960580eb16",
+      "records": [
+        {
+          "record_id": "entry-1727",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-19-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-5752",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-19-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6516",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-19-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6802",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-19-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-20",
+      "source_branch": "ls/4-trump-final-corrections-account2-worker1-n96Z",
+      "source_commit": "0d683f48df49baeb09318cf6520e4801f1e8399b",
+      "records": [
+        {
+          "record_id": "entry-1730",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-20-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-5754",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-20-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6517",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-20-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6803",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-20-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-21",
+      "source_branch": "ls/5-trump-files-impact368-review-04-of-12-OOIR",
+      "source_commit": "667a2fa316b3e1e521fe11c55ee0b428880bb83c",
+      "records": [
+        {
+          "record_id": "entry-1768",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-21-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5755",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-21-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6609",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-21-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6844",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-21-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-22",
+      "source_branch": "ls/4-trump-files-web425-review-04-of-12-h9v-",
+      "source_commit": "6cede33a54b79c7ca79aa597f8f7a44f4931f971",
+      "records": [
+        {
+          "record_id": "entry-1770",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-22-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5756",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-22-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6611",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-22-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6857",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-22-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-23",
+      "source_branch": "ls/4-trump-files-sample100-review-04-of-12-aICV",
+      "source_commit": "d96bd24630de92c6de7be2a59541798c48120932",
+      "records": [
+        {
+          "record_id": "entry-1777",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-23-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-5760",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-23-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6612",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-23-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6865",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-23-amendment-2.jsonl",
+          "line": 1,
+          "revision": 2,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-24",
+      "source_branch": "ls/4-trump-files-source118-review-04-of-12-P8O6",
+      "source_commit": "e0103cab8a2901d5975ba6e2e6c7b2ef2ad0898d",
+      "records": [
+        {
+          "record_id": "entry-1779",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-24-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-5761",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-24-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6614",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-24-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6866",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-24-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-25",
+      "source_branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+      "source_commit": "599af5dd73e24db286595fe1a01f8dce4ecac1dd",
+      "records": [
+        {
+          "record_id": "entry-1780",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-25-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-5809",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-25-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6615",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-25-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6867",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-25-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6954",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-25-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "hold"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-26",
+      "source_branch": "ls/7-trump-final-corrections-account2-worker1-slYA",
+      "source_commit": "01dbb460383d28d1d589f8d7fbdce786d53b5089",
+      "records": [
+        {
+          "record_id": "entry-188",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-26-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-5814",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-26-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6521",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-26-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6804",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-26-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-27",
+      "source_branch": "ls/6-trump-files-impact368-review-05-of-12-o-Gh",
+      "source_commit": "07c1b81a0e56c08560adb3d51ace8f5824646331",
+      "records": [
+        {
+          "record_id": "entry-2330",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-27-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5815",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-27-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6619",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-27-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6871",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-27-amendment-2.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6955",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-27-amendment-2.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-28",
+      "source_branch": "ls/5-trump-files-web425-review-05-of-12-zM9X",
+      "source_commit": "da4287ef48135c945ed8ba7e090f4c3d64fe1d15",
+      "records": [
+        {
+          "record_id": "entry-2332",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-28-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-5816",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-28-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6560",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-28-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6810",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-28-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-29",
+      "source_branch": "ls/5-trump-files-sample100-review-05-of-12-uITi",
+      "source_commit": "becdddc28638233804c321cc5a36061fceaf1bfd",
+      "records": [
+        {
+          "record_id": "entry-2343",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-29-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5826",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-29-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6624",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-29-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6884",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-29-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-30",
+      "source_branch": "ls/5-trump-files-source118-review-05-of-12-ry0H",
+      "source_commit": "f3d0642e364b8ee00636cec5cdfb67c3d374128a",
+      "records": [
+        {
+          "record_id": "entry-2349",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-30-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-5832",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-30-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6564",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-30-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6811",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-30-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-31",
+      "source_branch": "ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x",
+      "source_commit": "be27575c1db6ce2bddee6e2ac6a1cd7acf4eb232",
+      "records": [
+        {
+          "record_id": "entry-236",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-31-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-5840",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-31-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6625",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-31-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6889",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-31-amendment-1.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-32",
+      "source_branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+      "source_commit": "3289d34787d2d7cdc7d1eb84a4e530898b198ebb",
+      "records": [
+        {
+          "record_id": "entry-2373",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-32-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5844",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-32-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6631",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-32-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6890",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-32-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-33",
+      "source_branch": "ls/7-trump-files-impact368-review-06-of-12-sjBp",
+      "source_commit": "c029b189fa96be74f0b9fa3ded9a1181657f3fdb",
+      "records": [
+        {
+          "record_id": "entry-2380",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-33-amendment-2.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-5845",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-33-amendment-3.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6637",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-33-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6900",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-33-amendment-4.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-34",
+      "source_branch": "ls/6-trump-files-web425-review-06-of-12-boco",
+      "source_commit": "e1fba52915d32ae185fb04484e53f107d6cdcd67",
+      "records": [
+        {
+          "record_id": "entry-2401",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-34-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5850",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-34-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6638",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-34-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6913",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-34-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-35",
+      "source_branch": "ls/6-trump-files-sample100-review-06-of-12-pfm2",
+      "source_commit": "b61360ea11c788952e3de2588b6f2e96b1486cec",
+      "records": [
+        {
+          "record_id": "entry-2418",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-35-amendment-2.jsonl",
+          "line": 1,
+          "revision": 2,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5851",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-35-amendment-1.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6642",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-35-amendment-1.jsonl",
+          "line": 3,
+          "revision": 1,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6915",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-35-amendment-2.jsonl",
+          "line": 2,
+          "revision": 2,
+          "status": "hold"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-36",
+      "source_branch": "ls/6-trump-files-source118-review-06-of-12-vQap",
+      "source_commit": "a8b9cadad4c059dac1f3c962254dbd60ccef356a",
+      "records": [
+        {
+          "record_id": "entry-2458",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-36-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-5863",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-36-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6655",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-36-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6922",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-36-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "hold"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-37",
+      "source_branch": "ls/7-trump-description-rescue-07-of-12-53-dis-zltS",
+      "source_commit": "9f32698a762318ac9b7a88b9a1794839693e0007",
+      "records": [
+        {
+          "record_id": "entry-2479",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-37-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-5899",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-37-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6662",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-37-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6925",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-37-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-38",
+      "source_branch": "ls/6-trump-final-corrections-account2-worker1-zeIF",
+      "source_commit": "57fef8df4882fed49eb14cde23bde9f2aa2b6199",
+      "records": [
+        {
+          "record_id": "entry-2494",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-38-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6007",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-38-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6433",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-38-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6779",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-38-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6958",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-38-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "hold"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-39",
+      "source_branch": "ls/8-trump-files-impact368-review-07-of-12-7OJh",
+      "source_commit": "a86eee9abf00333c18253e256e6ffa5ba17c360c",
+      "records": [
+        {
+          "record_id": "entry-2501",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-39-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6136",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-39-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6437",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-39-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6780",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-39-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6959",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-39-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-40",
+      "source_branch": "ls/7-trump-files-web425-review-07-of-12-vbH-",
+      "source_commit": "a72d47c5a950fbdece34c6e12d1e98cb7253f15e",
+      "records": [
+        {
+          "record_id": "entry-2504",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-40-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6200",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-40-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6668",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-40-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6926",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-40-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-41",
+      "source_branch": "ls/7-trump-files-sample100-review-07-of-12-WFXm",
+      "source_commit": "a53ec2d4fea4a2a3d9f75facafcf63328c96b18a",
+      "records": [
+        {
+          "record_id": "entry-2515",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-41-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6208",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-41-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6439",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-41-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6781",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-41-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6961",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-41-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-42",
+      "source_branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+      "source_commit": "a4fba9198635b99817436bc2bcb0e52c81ee352a",
+      "records": [
+        {
+          "record_id": "entry-2518",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-42-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6212",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-42-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6440",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-42-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6782",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-42-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6963",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-42-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-43",
+      "source_branch": "ls/8-trump-description-rescue-08-of-12-53-dis-W2qL",
+      "source_commit": "5c10882f4c8de6fceec956e52ac4181ac9e1cefd",
+      "records": [
+        {
+          "record_id": "entry-2557",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-43-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6239",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-43-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6672",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-43-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6928",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-43-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-44",
+      "source_branch": "ls/8-trump-final-corrections-account2-worker2-A12f",
+      "source_commit": "6c7877a80152184eb69aea35391b835ab5929973",
+      "records": [
+        {
+          "record_id": "entry-2562",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-44-terminal.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6280",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-44-terminal.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6673",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-44-terminal.jsonl",
+          "line": 3,
+          "revision": 1,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6929",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-44-terminal.jsonl",
+          "line": 4,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-45",
+      "source_branch": "ls/9-trump-files-impact368-review-08-of-12-3Ywr",
+      "source_commit": "6b3292a8be4bd18dbf121a92036ac4f6adfebbfc",
+      "records": [
+        {
+          "record_id": "entry-2571",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-45-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6315",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-45-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6679",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-45-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6930",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-45-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-46",
+      "source_branch": "ls/8-trump-files-web425-review-08-of-12-9xY1",
+      "source_commit": "2e851787c76eccd44d57f883954f3abcb7d5c9d4",
+      "records": [
+        {
+          "record_id": "entry-2574",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-46-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6316",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-46-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6693",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-46-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6784",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-46-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6964",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-46-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-47",
+      "source_branch": "ls/8-trump-files-sample100-review-08-of-12-Qhy0",
+      "source_commit": "a74b31f70fdae9cf750d5bb901293d858df90ce4",
+      "records": [
+        {
+          "record_id": "entry-2615",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-47-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6324",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-47-amendment-2.jsonl",
+          "line": 1,
+          "revision": 2,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6696",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-47-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6785",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-47-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-7047",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-47-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-835",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-47-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-48",
+      "source_branch": "ls/8-trump-files-source118-review-08-of-12-pXJX",
+      "source_commit": "b700ea2daabb9b4a1b1d41b83134b82252480be6",
+      "records": [
+        {
+          "record_id": "entry-2619",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-48-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6356",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-48-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6727",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-48-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6931",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-48-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-49",
+      "source_branch": "ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+      "source_commit": "5f7538a88b2ee3d2970375e6ce7650768054f1b5",
+      "records": [
+        {
+          "record_id": "entry-2624",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-49-terminal-amendment-002.jsonl",
+          "line": 1,
+          "revision": 2,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6368",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-49-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6443",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-49-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6758",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-49-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6944",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-49-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-50",
+      "source_branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+      "source_commit": "1d28075e627ca749fffd1899a6c9e85e73cede03",
+      "records": [
+        {
+          "record_id": "entry-2854",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-50-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6379",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-50-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6729",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-50-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6933",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-50-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "hold"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-51",
+      "source_branch": "ls/10-trump-files-impact368-review-09-of-12-jMbt",
+      "source_commit": "f26570242797aeea2cbb4de4bb762d84fd3f0af7",
+      "records": [
+        {
+          "record_id": "entry-3212",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-51-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6393",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-51-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6444",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-51-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6786",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-51-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-7048",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-51-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-853",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-51-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-52",
+      "source_branch": "ls/9-trump-files-web425-review-09-of-12-1tgF",
+      "source_commit": "d6eefc1a9a34e2592a66e0d2ea0f67889d3f3a02",
+      "records": [
+        {
+          "record_id": "entry-3371",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-52-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6398",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-52-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6736",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-52-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6935",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-52-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-53",
+      "source_branch": "ls/9-trump-files-sample100-review-09-of-12-WtKf",
+      "source_commit": "d5581fae6b6291f6d8bd1b52ee4950e8b922cf80",
+      "records": [
+        {
+          "record_id": "entry-3380",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-53-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6409",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-53-amendment-1.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6738",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-53-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6936",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-53-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "hold"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-54",
+      "source_branch": "ls/9-trump-files-source118-review-09-of-12-278g",
+      "source_commit": "69088c77cc512da0050e6adfe57a3295e9e1a189",
+      "records": [
+        {
+          "record_id": "entry-380",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-54-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6413",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-54-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6739",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-54-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6937",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-54-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-55",
+      "source_branch": "ls/10-trump-description-rescue-10-of-12-52-dis-7sqL",
+      "source_commit": "926db32c3cffdd254ab5fc93049227479cee9879",
+      "records": [
+        {
+          "record_id": "entry-4040",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-55-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6414",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-55-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6571",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-55-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6817",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-55-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-56",
+      "source_branch": "ls/10-trump-final-corrections-account2-worker2-qX6f",
+      "source_commit": "ea311b8c1376bb0aa11ac07399fb0054384017fa",
+      "records": [
+        {
+          "record_id": "entry-4144",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-56-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6415",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-56-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6743",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-56-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6939",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-56-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-57",
+      "source_branch": "ls/11-trump-files-impact368-review-10-of-12-Kjf6",
+      "source_commit": "7c9665d1eeeaeaef0012b19ab517f0aca6d429b8",
+      "records": [
+        {
+          "record_id": "entry-4198",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-57-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6417",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-57-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6744",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-57-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6940",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-57-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-58",
+      "source_branch": "ls/10-trump-files-web425-review-10-of-12-aLan",
+      "source_commit": "d29775b093842992ad5f37ab741950a5b7e8f3d0",
+      "records": [
+        {
+          "record_id": "entry-4239",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-58-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5336",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-58-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6577",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-58-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6818",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-58-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-59",
+      "source_branch": "ls/10-trump-files-sample100-review-10-of-12-5b45",
+      "source_commit": "7de6818332dc7ccea80ae25c40e76103870cfd2f",
+      "records": [
+        {
+          "record_id": "entry-4240",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-59-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5340",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-59-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6582",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-59-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        },
+        {
+          "record_id": "entry-6821",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-59-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "exclusion_candidate"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-60",
+      "source_branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+      "source_commit": "53e162da2d881d2004b347249f789a4bbae57873",
+      "records": [
+        {
+          "record_id": "entry-4285",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-60-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6419",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-60-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-6451",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-60-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6787",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-60-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-7050",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-60-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-854",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-60-terminal.jsonl",
+          "line": 6,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-61",
+      "source_branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+      "source_commit": "eeaecbb4ac80442da1bff08aecf53488aa478ab3",
+      "records": [
+        {
+          "record_id": "entry-4407",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-61-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5344",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-61-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6484",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-61-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6795",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-61-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-7132",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-61-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-62",
+      "source_branch": "ls/12-trump-final-corrections-account2-worker2-KcuW",
+      "source_commit": "3db019303954903485bcf0a005d6e2d28c2b9c0c",
+      "records": [
+        {
+          "record_id": "entry-4438",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-62-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6421",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-62-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6749",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-62-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6822",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-62-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-63",
+      "source_branch": "ls/12-trump-files-impact368-review-11-of-12-DPiB",
+      "source_commit": "ecf8f453632d6250ff10c9f87680ea938c2970bb",
+      "records": [
+        {
+          "record_id": "entry-4457",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-63-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5478",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-63-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6583",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-63-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6823",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-63-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-64",
+      "source_branch": "ls/11-trump-files-web425-review-11-of-12-Nsfp",
+      "source_commit": "3fe1eadfd93d8671b5077d8b291fd472684e8d96",
+      "records": [
+        {
+          "record_id": "entry-4467",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-64-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6423",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-64-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6751",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-64-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6941",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-64-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-65",
+      "source_branch": "ls/11-trump-files-sample100-review-11-of-12-mShY",
+      "source_commit": "2add426d6d375cf27507ccf20607ad3929b7596d",
+      "records": [
+        {
+          "record_id": "entry-4538",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-65-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6424",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-65-amendment-2.jsonl",
+          "line": 1,
+          "revision": 2,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6584",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-65-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6824",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-65-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-66",
+      "source_branch": "ls/11-trump-files-source118-review-11-of-12-8RJW",
+      "source_commit": "804d6560db913ff6415bad8c4be94cb3086ddf67",
+      "records": [
+        {
+          "record_id": "entry-4577",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-66-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5512",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-66-amendment-1.jsonl",
+          "line": 2,
+          "revision": 1,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6498",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-66-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6797",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-66-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-7153",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-66-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-67",
+      "source_branch": "ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+      "source_commit": "802ce7af44084b9dc9e6a99f753db9a692351775",
+      "records": [
+        {
+          "record_id": "entry-4696",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-67-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5597",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-67-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6585",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-67-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6827",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-67-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-68",
+      "source_branch": "ls/11-trump-final-corrections-account2-worker2-gfyp",
+      "source_commit": "68a42fd21ac2e41eddc2ba49e8aeaffbfe38047a",
+      "records": [
+        {
+          "record_id": "entry-4708",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-68-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5728",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-68-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6595",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-68-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6828",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-68-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-69",
+      "source_branch": "ls/13-trump-files-impact368-review-12-of-12-lHzI",
+      "source_commit": "fb9b0d1661af2872d3f87111f2a0681d943328e9",
+      "records": [
+        {
+          "record_id": "entry-4739",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-69-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5731",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-69-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6597",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-69-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "hold"
+        },
+        {
+          "record_id": "entry-6829",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-69-amendment-1.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-70",
+      "source_branch": "ls/12-trump-files-web425-review-12-of-12-bsCj",
+      "source_commit": "d3dd626896701e8675c81bd915e0a9136baad0d3",
+      "records": [
+        {
+          "record_id": "entry-4753",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-70-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-5732",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-70-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6598",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-70-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6830",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-70-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-71",
+      "source_branch": "ls/12-trump-files-sample100-review-12-of-12-fLSj",
+      "source_commit": "752f07a48e3c82078ea317df37dbdb333106910e",
+      "records": [
+        {
+          "record_id": "entry-4827",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-71-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6425",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-71-terminal.jsonl",
+          "line": 2,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6757",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-71-terminal.jsonl",
+          "line": 3,
+          "revision": 0,
+          "status": "pass"
+        },
+        {
+          "record_id": "entry-6943",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-71-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    },
+    {
+      "worker_id": "held336-72",
+      "source_branch": "ls/12-trump-files-source118-review-12-of-12-MQJb",
+      "source_commit": "4c666074dde760b1d5830562698172c159746d03",
+      "records": [
+        {
+          "record_id": "entry-4871",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-72-terminal.jsonl",
+          "line": 1,
+          "revision": 0,
+          "status": "duplicate_resolved"
+        },
+        {
+          "record_id": "entry-4906",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-72-amendment-2.jsonl",
+          "line": 1,
+          "revision": 2,
+          "status": "split_ready"
+        },
+        {
+          "record_id": "entry-6428",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-72-amendment-3.jsonl",
+          "line": 1,
+          "revision": 1,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6599",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-72-terminal.jsonl",
+          "line": 4,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        },
+        {
+          "record_id": "entry-6832",
+          "source_output_path": "data/neon-workbench/external/held336-research-2026-10-05/outputs/worker-72-terminal.jsonl",
+          "line": 5,
+          "revision": 0,
+          "status": "draft_as_supplied"
+        }
+      ]
+    }
+  ],
+  "scope": "All branch heads refreshed through GitHub; no head changed since source-snapshot-01.json. QA used full input packets and latest base/amendment records. Source access claims inside primary-worker outputs are supplied evidence unless separate QA access explicitly recorded."
+}

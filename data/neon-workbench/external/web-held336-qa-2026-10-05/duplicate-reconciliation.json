@@ -1,0 +1,124 @@
+{
+  "policy": "Merge/reference proposals only. Preserve unique material before any eventual hiding; no canonical edit or hiding was performed.",
+  "confirmed_cross_parent_events": [
+    {
+      "duplicate": "entry-5344-child-01",
+      "survivor": "entry-4708-child-01",
+      "event": "2025-01-31 DOJ/FBI January 6 personnel review"
+    },
+    {
+      "duplicate": "entry-6443-child-01",
+      "survivor": "entry-5512-child-01",
+      "event": "2025-01-20 southern-border emergency proclamation"
+    },
+    {
+      "duplicate": "entry-6619",
+      "survivor": "entry-5816-child-01",
+      "event": "2025-06-09 removal of all 17 ACIP members"
+    },
+    {
+      "duplicate": "entry-6642",
+      "survivor": "entry-6433",
+      "event": "2025-01-20 EO 14171 / Schedule Policy-Career"
+    },
+    {
+      "duplicate": "entry-6799",
+      "survivor": "entry-6601",
+      "event": "2025-03-07 revised proposed Google antitrust remedy"
+    },
+    {
+      "duplicate": "entry-6801",
+      "survivor": "entry-6611",
+      "event": "2025-02-05 DOJ Weaponization Working Group directive"
+    }
+  ],
+  "missing_full_counterparts": [],
+  "additional_candidate_clusters": [
+    {
+      "candidates": [
+        "entry-7073",
+        "entry-7104",
+        "entry-7185"
+      ],
+      "event": "World Liberty Financial conditional national trust-bank charter approval",
+      "disposition": "Potential overlap across supplied survivor clusters is explicitly flagged in root duplicate outcomes; retain unique URLs and approval-stage qualifications. No additional survivor reassignment or hiding approved."
+    }
+  ],
+  "unique_material_correction": {
+    "record_id": "entry-7057",
+    "related_record": "entry-7062",
+    "issue": "SMH executive-privilege story is distinct from the NYRB administration essay; preserve as separately attributed material before merging/hiding the essay duplicate."
+  },
+  "source_url_relevance_correction": {
+    "record_id": "entry-6696",
+    "survivor": "entry-5633",
+    "url": "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-briefing-opioid-crisis/",
+    "result": "Root independently accessed the transcript; its final question and answer document the North Korea fire-and-fury remark despite the page title. Preserve that URL. Coordination/Tillerson details remain supplied and unverified."
+  },
+  "resolved_previous_missing_counterparts": [
+    {
+      "parent": "entry-5845",
+      "candidate": "entry-665"
+    },
+    {
+      "parent": "entry-6414",
+      "candidate": "entry-6004"
+    },
+    {
+      "parent": "entry-6571",
+      "candidate": "entry-633"
+    },
+    {
+      "parent": "entry-6817",
+      "candidate": "entry-5842"
+    },
+    {
+      "parent": "entry-6900",
+      "candidate": "entry-6336"
+    },
+    {
+      "parent": "entry-6823",
+      "candidates": [
+        "entry-6740",
+        "entry-4766"
+      ]
+    }
+  ],
+  "continuation_confirmed_merges": [
+    {
+      "parent": "entry-5845",
+      "survivor": "entry-665",
+      "event": "Three provisional Chinese trademarks April 6, 2017;16 existing registered marks separate"
+    },
+    {
+      "parent": "entry-6414",
+      "survivors": [
+        "entry-6004",
+        "entry-3390"
+      ],
+      "event": "Two separate campaign statements November 11,2023 and October13,2024"
+    },
+    {
+      "parent": "entry-6571",
+      "survivor": "entry-633",
+      "event": "Bannon pardon Jan19 formalgrant / Jan20announcement"
+    },
+    {
+      "parent": "entry-6817",
+      "survivor": "entry-5842",
+      "related": "entry-6274",
+      "event": "January27,2025 EEOC removals; retain Gilbride separately"
+    },
+    {
+      "parent": "entry-6823",
+      "survivor": "entry-4766",
+      "related": "entry-6740",
+      "event": "March31,2025 broaderTitleXwithholding; distinguish grant/grantee/affiliate units"
+    },
+    {
+      "parent": "entry-6900",
+      "survivor": "entry-6336",
+      "event": "January2017inauguralhotelpayments; offeredrentalrate notfinalprice orprofit"
+    }
+  ]
+}

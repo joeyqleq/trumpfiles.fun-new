@@ -1,0 +1,6 @@
+{
+  "batch": "qa-3-batch-01.jsonl",
+  "authoritative": false,
+  "status": "withdrawn",
+  "reason": "Created against LightSprint worker-03's six-entry lane before checking the saved QA assignment. None of those six records belongs to qa-3's assigned 48 IDs. Preserve this append-only history file, exclude all of its records from the final combined index, and do not count them for qa-3 or another batch."
+}

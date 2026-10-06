@@ -1,0 +1,139 @@
+{
+  "worker": "root",
+  "scope": "Specific detail lookups for held parents; source scores remain rubric-only",
+  "queries": [
+    {
+      "engine": "system2",
+      "query": "\"Harvard Law\" \"detained\" \"airport\" 2025 social media",
+      "record_id": "entry-6935",
+      "result": "June2025affiliates/Julyguidance andearlierIsraelincident, noAprilLawstudentmatch"
+    },
+    {
+      "engine": "system2",
+      "query": "\"Milley\" \"Esper\" \"Romney\" \"FBI\" April 2025 investigation",
+      "record_id": "entry-6964",
+      "result": "Background/militaryevents, notmatchedFBIgroupcase"
+    },
+    {
+      "engine": "system2",
+      "query": "\"Tanya Santos\" Trump commutation",
+      "record_id": "entry-835",
+      "result": "Same-nameMainecase andunrelatedSantosrecords; identitynotlinked"
+    },
+    {
+      "engine": "system2",
+      "query": "\"Joseph Frederick\" Trump commutation",
+      "record_id": "entry-853",
+      "result": "Obama-denialrecipientwithadditionalSturdysurname, notTrumpgrant"
+    },
+    {
+      "engine": "system1",
+      "query": "Harvard Law student airport detained social media April 2025 name",
+      "record_id": "entry-6935",
+      "result": "MedicalresearcherPetrova anddifferentstudentcases"
+    },
+    {
+      "engine": "system1",
+      "query": "FBI investigation Mark Milley Mark Esper Mitt Romney April 2025",
+      "record_id": "entry-6964",
+      "result": "JanuaryPentagonMilleyreviewnotAprilFBItrio"
+    },
+    {
+      "engine": "system1",
+      "query": "Trump \"Tanya Santos\" \"Joseph Frederick\" commutation",
+      "record_ids": [
+        "entry-835",
+        "entry-853"
+      ],
+      "result": "GeorgeSantos2025differentidentity"
+    },
+    {
+      "engine": "system2",
+      "query": "2025 Trump citizenship journalists classified information revoke citizenship threat",
+      "record_id": "entry-6950",
+      "result": "Pentagonpresscredentials/othercitizenshipthreats differ"
+    },
+    {
+      "engine": "system2",
+      "query": "March 2025 Trump strip citizenship criticism Israel Americans Betar",
+      "record_id": "entry-6936",
+      "result": "PrivateBetar list/JulyO'Donnell/JuneDOJpriorities differ"
+    },
+    {
+      "engine": "system2",
+      "query": "Kash Patel March 2025 FBI mosque surveillance sermons program",
+      "record_id": "entry-6943",
+      "result": "GeneralFBIremarksnotsermonprogram"
+    },
+    {
+      "engine": "system2",
+      "query": "February 2025 State Department facial recognition visa database new integrated biometric",
+      "record_id": "entry-6944",
+      "result": "FAMFeb5transmittal date/currentbiometricsguidancenotdatabasecreation"
+    }
+  ],
+  "accessed_evidence": [
+    {
+      "record_id": "entry-6935",
+      "finding": "New focused search and June14Crimsonretrieval identify June5 Harvard-affiliate secondary inspections after June4entryban; no AprilHarvardLawstudent political-post interrogation. Similarinstitution/airport does not establishidentity/date/motive.",
+      "urls": [
+        "https://www.thecrimson.com/article/2025/6/14/martin-declaration-international-students/"
+      ],
+      "quote": "detained for several hours",
+      "scope": "independently accessed article, distinct later event"
+    },
+    {
+      "record_id": "entry-6944",
+      "finding": "February5,2025 ForeignAffairsManual facial-recognition change-transmittal date appears in search results, but document timed out; date alone notdatabase creation. DirectStateDeptbiometrics guidance links existingcollection to2002law and describesphoto/fingerprints; not newFebruary2025all-holderlinked system.",
+      "urls": [
+        "https://fam.state.gov/fam/09FAM/09FAM030306.html",
+        "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/border-biometrics.html"
+      ],
+      "quote": "The electronic data from the ten fingerprints is stored in a database",
+      "scope": "FAM searchsnippetonly/fullfetch400timeout; biometrics pageindependentlyaccessed"
+    },
+    {
+      "record_id": "entry-6964",
+      "finding": "New search returned January29Pentagonclearance/protectivedetail andinspector-general review ofMilley, not AprilFBIinvestigations ofMilley/Esper/Romney. DirectAPfetch internalerror. Background/otherauthority cannotestablish claimedgroupcase.",
+      "urls": [
+        "https://apnews.com/article/9bc8ebb7cd7cd2c334d00c97d4c142d0"
+      ],
+      "scope": "searchresultonly; APdirectfetchinternalerror"
+    },
+    {
+      "record_id": "entry-835",
+      "finding": "IndependentlyaccessedDOJcommutationsroster2017–2021 has noTanya match infind. Newnamequery surfaces a2018Mainecriminalcase, notfederalclemency; noidentitylink/warrant/offense/sentence to correctthis13wordclaim. Absencenotproofnonoccurrence.",
+      "urls": [
+        "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021"
+      ],
+      "scope": "DOJrosterdirectlyaccessed/findTanya returnednomatch; Mainecase searchresultonly"
+    },
+    {
+      "record_id": "entry-853",
+      "finding": "IndependentlyaccessedDOJcommutationsroster2017–2021 findFredericknomatch; searchresultJosephFrederickSturdy isObama commutationdenial, notTrumpgrant. Supplied13words lacksidentifyingcourt/offense/sentence/warrant; no assumedidentity.",
+      "urls": [
+        "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021"
+      ],
+      "scope": "DOJrosterindependentlyaccessed/find; Obama denialsearchresultonly"
+    },
+    {
+      "record_id": "entry-854",
+      "finding": "IndependentlyaccessedDOJrosterCharlesmatches CharlesTanner andothers, notMathewGCharles; similarnameMatthewCharles suppliedNPRjudicialresentencing staysdistinct. Fourteenwordclaim lacksconfirmedrecipient/warrant/offense/sentence; identityandpresidentialactionunresolved.",
+      "urls": [
+        "https://www.justice.gov/pardon/commutations-granted-president-donald-j-trump-2017-2021"
+      ],
+      "scope": "DOJrosterindependentlyaccessed/findCharles; NPRjudicialeventinheritedsuppliedevidence"
+    },
+    {
+      "record_id": "entry-6936",
+      "finding": "Newfocusedquery returns privateBetar deportation list, JulyO'Donnellcitizenshipthreat andJuneDOJdenaturalizationpriorities, notMarchTrumpthreatstrippingcitizenshipforIsraelcriticism. Speaker/date/motive/populationunresolved.",
+      "scope": "searchresults only, no independentverification of adjacentclaims"
+    },
+    {
+      "record_id": "entry-6950",
+      "finding": "Newfocusedquery returns Pentagonpresscredentialrules andJulyO'Donnell citizenship threat, notjournalistcitizenshiprevocationforclassifiedreporting. Cannot substitutecredentialsforcitizenshiporcomedianforjournalist.",
+      "scope": "searchresults only"
+    }
+  ],
+  "policy": "No claim promoted to verified or source-backed repair. ExactURLs/accessfailures preserved; absence/searchnomatch notproofnonoccurrence. SourceURLsnotmatchedrecords are excluded as substitutes."
+}
