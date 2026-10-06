@@ -1,0 +1,31 @@
+{
+  "worker": 39,
+  "repository_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+  "repository_id": 1082328314,
+  "branch": "ls/18-trump-files-migration-reconciliation-39--w96S",
+  "packet_branch": "codex/migration-reconcile336-2026-10-06",
+  "packet_commit": "19a772e15765348b82f6d708ad63f58927931321",
+  "fetch_result": {
+    "remote": "origin",
+    "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "branch_fetch": "success",
+    "commit_fetch": "success",
+    "commit_type": "commit",
+    "verified_repo_id": 1082328314
+  },
+  "completed": [
+    {
+      "record_id": "entry-2619",
+      "revision": 1,
+      "amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-39-amendment-1.jsonl",
+      "output_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-39-terminal.jsonl",
+      "commit": "pending",
+      "push_result": "pending"
+    }
+  ],
+  "remainingIDs": [
+    "entry-6398",
+    "entry-6757",
+    "entry-6964"
+  ]
+}
