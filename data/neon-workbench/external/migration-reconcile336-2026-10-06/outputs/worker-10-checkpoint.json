@@ -27,6 +27,29 @@
     "result": "success",
     "resolved_commit": "19a772e15765348b82f6d708ad63f58927931321"
   },
-  "parent_push_results": [],
-  "last_completed_record_id": "entry-1716"
+  "parent_push_results": [
+    {
+      "record_id": "entry-1716",
+      "commit": "c6e4fd0b",
+      "result": "success",
+      "transport_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "canonical_repository_id": 1082328314,
+      "remote_branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf"
+    }
+  ],
+  "last_completed_record_id": "entry-1716",
+  "push_attempts": [
+    {
+      "record_id": "entry-1716",
+      "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "result": "failed",
+      "detail": "Lightsprint credential helper returned HTTP 403: Repository is not a member of this stack; this path is canonical but does not match the stale repo fullName registered on the stack."
+    },
+    {
+      "record_id": "entry-1716",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "result": "success",
+      "detail": "Push accepted. GitHub reports this repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git; both names resolve to immutable repository ID 1082328314."
+    }
+  ]
 }
