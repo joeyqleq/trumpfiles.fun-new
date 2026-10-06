@@ -88,5 +88,23 @@
       "exit_code": 0,
       "output": "remote: This repository moved. Please use the new location:        \nremote:   https://github.com/p5n-n3t/trumpfiles-fun-new.git        \nremote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit: https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot\nTo https://github.com/p5n-n3t/trumpfiles.fun-new.git\n   cf5005ac..c285b9b3  HEAD -> ls/15-trump-files-migration-reconciliation-09--TU3z"
     }
-  ]
+  ],
+  "latest_reconciliation": {
+    "record_id": "entry-6890",
+    "amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-09-amendment-05.jsonl",
+    "revision": 2,
+    "supersedes": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-09-amendment-04.jsonl:1@revision-1",
+    "status": "complete",
+    "coordinator_issue_resolved": "migration336:entry-6890:missing_core_labels:entry-6890"
+  },
+  "latest_fetch_result": {
+    "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "github_full_name": "p5n-n3t/trumpfiles-fun-new",
+    "github_repo_id": 1082328314,
+    "command": "git fetch origin refs/heads/codex/migration-reconcile336-2026-10-06:refs/remotes/origin/codex/migration-reconcile336-2026-10-06",
+    "exit_code": 0,
+    "output": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * [new branch]        codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06",
+    "verified_commit": "19a772e15765348b82f6d708ad63f58927931321"
+  },
+  "latest_push_results": []
 }
