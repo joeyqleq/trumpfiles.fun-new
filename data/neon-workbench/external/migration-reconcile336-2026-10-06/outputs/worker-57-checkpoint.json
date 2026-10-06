@@ -17,13 +17,12 @@
   "completed_parent_ids": [
     "entry-4696",
     "entry-6443",
-    "entry-6793"
-  ],
-  "remaining_parent_ids": [
+    "entry-6793",
     "entry-7115"
   ],
+  "remaining_parent_ids": [],
   "last_amendment": "worker-57-amendment-2.jsonl",
   "task_branch": "ls/21-trump-files-migration-reconciliation-57--atMw",
-  "last_reconciled_parent_id": "entry-6793",
+  "last_reconciled_parent_id": "entry-7115",
   "last_pushed_commit": "4b19409c130a25dd31885f9967f140dcf397b488"
 }
