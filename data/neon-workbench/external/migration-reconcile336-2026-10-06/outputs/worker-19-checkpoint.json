@@ -4,12 +4,20 @@
   "branch": "ls/15-trump-files-migration-reconciliation-19--t6oz",
   "repository": {
     "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
-    "github_repository_id": 1082328314
+    "github_repository_id": 1082328314,
+    "verified": {
+      "command": "curl -fsSL https://api.github.com/repos/p5n-n3t/trumpfiles-fun-new",
+      "result": "success",
+      "http_repository": "p5n-n3t/trumpfiles-fun-new",
+      "immutable_repository_id": 1082328314
+    }
   },
   "fetch": {
+    "requested_branch": "codex/migration-reconcile336-2026-10-06",
     "requested_commit": "19a772e15765348b82f6d708ad63f58927931321",
-    "command": "git fetch origin 19a772e15765348b82f6d708ad63f58927931321",
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
     "result": "success",
+    "exit_code": 0,
     "fetch_head": "19a772e15765348b82f6d708ad63f58927931321"
   },
   "processed_ids": [
@@ -60,5 +68,13 @@
       "result": "success",
       "output": "GitHub accepted update to ls/15-trump-files-migration-reconciliation-19--t6oz; repository moved response names canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git"
     }
-  ]
+  ],
+  "latest_amendment": {
+    "path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-19-amendment-2.jsonl",
+    "record_ids": [
+      "entry-6638",
+      "entry-6931"
+    ],
+    "result": "appended; prior terminal rows and amendment history preserved"
+  }
 }
