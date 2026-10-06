@@ -64,13 +64,13 @@
       "status": "success"
     }
   ],
-  "last_completed_parent": "entry-5815",
-  "checkpoint_finalized_after_all_parents": false,
+  "last_completed_parent": "entry-6922",
+  "checkpoint_finalized_after_all_parents": true,
   "amendment_progress": {
     "record_id": "entry-6922",
     "file": "worker-13-amendment-3.jsonl",
     "revision": 2,
-    "status": "validated_pending_commit_and_push"
+    "status": "pushed"
   },
   "amendment_push_results": [
     {
@@ -97,6 +97,15 @@
       "command": "git push origin HEAD",
       "exit_code": 0,
       "output": "remote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit:        \nremote:      https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot        \nremote: \nTo https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   ac75b0a5..fb637fa9  HEAD -> ls/2-trump-files-migration-reconciliation-13--lN8f",
+      "status": "success"
+    },
+    {
+      "record_id": "entry-6922",
+      "revision": 2,
+      "commit": "d86a3e5f",
+      "command": "git push origin HEAD",
+      "exit_code": 0,
+      "output": "remote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit:        \nremote:      https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot        \nremote: \nTo https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   7fd5eca1..d86a3e5f  HEAD -> ls/2-trump-files-migration-reconciliation-13--lN8f",
       "status": "success"
     }
   ]
