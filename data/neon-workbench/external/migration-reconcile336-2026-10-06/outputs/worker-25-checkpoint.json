@@ -17,10 +17,10 @@
     "entry-6940"
   ],
   "completedIDs": [
-    "entry-2401"
+    "entry-2401",
+    "entry-6125"
   ],
   "remainingIDs": [
-    "entry-6125",
     "entry-6673",
     "entry-6940"
   ],
@@ -43,7 +43,18 @@
         }
       ],
       "verified_canonical_remote_branch": "ls/16-trump-files-migration-reconciliation-25--qfNe"
+    },
+    {
+      "record_id": "entry-6125",
+      "commit": "pending",
+      "result": "pending"
     }
   ],
-  "updated_at": "2026-10-06T10:46:00Z"
+  "updated_at": "2026-10-06T10:46:18.548493+00:00",
+  "checkpoint_push_receipt": {
+    "commit": "6c1546e3",
+    "result": "success",
+    "exit_code": 0,
+    "output": "5b160cb1..6c1546e3 HEAD -> ls/16-trump-files-migration-reconciliation-25--qfNe"
+  }
 }
