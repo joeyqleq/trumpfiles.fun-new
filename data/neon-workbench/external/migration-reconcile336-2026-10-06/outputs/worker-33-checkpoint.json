@@ -11,7 +11,20 @@
     "fetched_commit": "19a772e15765348b82f6d708ad63f58927931321",
     "remote_verified_by": "GitHub API repository ID 1082328314; git ls-remote returned the requested packet ref"
   },
-  "push_results": [],
+  "push_results": [
+    {
+      "commit": "aefd321c",
+      "result": "success",
+      "configured_push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "remote_report": "GitHub: repository moved; canonical location https://github.com/p5n-n3t/trumpfiles-fun-new.git; branch created successfully."
+    },
+    {
+      "commit": "aefd321c",
+      "result": "failed_attempt",
+      "configured_push_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "remote_report": "Lightsprint credential helper returned HTTP 403: Repository is not a member of this stack."
+    }
+  ],
   "completed_ids": [
     "entry-2518"
   ],
@@ -20,5 +33,10 @@
     "entry-6738",
     "entry-6954"
   ],
-  "latest_artifact_push": "pending until output commit is pushed"
+  "latest_artifact_push": {
+    "result": "success",
+    "commit": "aefd321c",
+    "branch": "ls/17-trump-files-migration-reconciliation-33--fQgz",
+    "resolved_repository_id": 1082328314
+  }
 }
