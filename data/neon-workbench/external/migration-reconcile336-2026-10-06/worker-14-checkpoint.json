@@ -7,10 +7,10 @@
     "entry-6925"
   ],
   "completedIDs": [
-    "entry-1768"
+    "entry-1768",
+    "entry-5816"
   ],
   "remainingIDs": [
-    "entry-5816",
     "entry-6619",
     "entry-6925"
   ],
@@ -35,11 +35,17 @@
     }
   ],
   "currentParent": {
-    "record_id": "entry-1768",
+    "record_id": "entry-5816",
     "status": "complete",
-    "terminal_status": "hold",
-    "pushedCommit": "81305bd35903b226d38bc7180a04ea74a4b9aaf6",
-    "pushPending": false
+    "terminal_status": "split_ready",
+    "pushPending": true
   },
-  "updatedAt": "2026-10-06"
+  "updatedAt": "2026-10-06",
+  "checkpointPushes": [
+    {
+      "after_record_id": "entry-1768",
+      "command": "git push -u origin HEAD",
+      "result": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   81305bd3..178ab5a6  HEAD -> ls/2-trump-files-migration-reconciliation-14--a4VV"
+    }
+  ]
 }
