@@ -1,0 +1,533 @@
+{
+  "scope": "Second continuation: revisit all127 held parents using specific missing facts and existing evidence; preserve prior outcomes",
+  "count": 127,
+  "actual_planned_slots": 7,
+  "batches": [
+    {
+      "worker": "resume2-1",
+      "assigned": [
+        "entry-1670",
+        "entry-1716",
+        "entry-1730",
+        "entry-1768",
+        "entry-1770",
+        "entry-1777",
+        "entry-1779",
+        "entry-1780",
+        "entry-188",
+        "entry-2330",
+        "entry-2332",
+        "entry-2343",
+        "entry-2349",
+        "entry-2373",
+        "entry-2380",
+        "entry-2401",
+        "entry-2479",
+        "entry-2518",
+        "entry-2571"
+      ]
+    },
+    {
+      "worker": "resume2-2",
+      "assigned": [
+        "entry-2574",
+        "entry-3212",
+        "entry-3371",
+        "entry-4040",
+        "entry-4144",
+        "entry-4285",
+        "entry-5329",
+        "entry-5731",
+        "entry-5732",
+        "entry-5735",
+        "entry-5737",
+        "entry-5743",
+        "entry-5746",
+        "entry-5749",
+        "entry-5755",
+        "entry-5756",
+        "entry-5760",
+        "entry-5761"
+      ]
+    },
+    {
+      "worker": "resume2-3",
+      "assigned": [
+        "entry-5840",
+        "entry-5844",
+        "entry-5850",
+        "entry-6280",
+        "entry-6315",
+        "entry-6316",
+        "entry-6356",
+        "entry-6398",
+        "entry-6413",
+        "entry-6415",
+        "entry-6417",
+        "entry-6421",
+        "entry-6423",
+        "entry-6430",
+        "entry-6432",
+        "entry-6439",
+        "entry-6440",
+        "entry-6444"
+      ]
+    },
+    {
+      "worker": "resume2-4",
+      "assigned": [
+        "entry-6451",
+        "entry-6455",
+        "entry-6457",
+        "entry-6484",
+        "entry-6498",
+        "entry-6501",
+        "entry-6504",
+        "entry-6517",
+        "entry-6564",
+        "entry-6582",
+        "entry-6584",
+        "entry-6595",
+        "entry-6597",
+        "entry-6598",
+        "entry-6599",
+        "entry-6600",
+        "entry-6602",
+        "entry-6607"
+      ]
+    },
+    {
+      "worker": "resume2-5",
+      "assigned": [
+        "entry-6609",
+        "entry-6612",
+        "entry-6614",
+        "entry-6615",
+        "entry-6624",
+        "entry-6637",
+        "entry-6662",
+        "entry-6672",
+        "entry-6727",
+        "entry-6776",
+        "entry-6778",
+        "entry-6779",
+        "entry-6780",
+        "entry-6784",
+        "entry-6786",
+        "entry-6787",
+        "entry-6791",
+        "entry-6793"
+      ]
+    },
+    {
+      "worker": "resume2-6",
+      "assigned": [
+        "entry-6795",
+        "entry-6802",
+        "entry-6804",
+        "entry-6822",
+        "entry-6830",
+        "entry-6832",
+        "entry-6833",
+        "entry-6839",
+        "entry-6844",
+        "entry-6866",
+        "entry-6915",
+        "entry-6922",
+        "entry-6925",
+        "entry-6926",
+        "entry-6928",
+        "entry-6929",
+        "entry-6931",
+        "entry-6933"
+      ]
+    },
+    {
+      "worker": "root",
+      "assigned": [
+        "entry-6935",
+        "entry-6936",
+        "entry-6937",
+        "entry-6940",
+        "entry-6943",
+        "entry-6944",
+        "entry-6946",
+        "entry-6949",
+        "entry-6950",
+        "entry-6951",
+        "entry-6954",
+        "entry-6958",
+        "entry-6959",
+        "entry-6963",
+        "entry-6964",
+        "entry-835",
+        "entry-853",
+        "entry-854"
+      ]
+    }
+  ],
+  "sorting": "record_id lexicographic",
+  "publication_policy": "Supplied facts permitted internaldrafting, never independently verified; no padding or unrelated event substitution.",
+  "source_refresh": [
+    {
+      "branch": "ls/1-trump-description-rescue-01-of-12-53-dis-nGTY",
+      "old": "ef45c5555123f725b6ca6fed5195a33fbe5194e3",
+      "head": "ef45c5555123f725b6ca6fed5195a33fbe5194e3"
+    },
+    {
+      "branch": "ls/1-trump-final-corrections-account2-worker1-zahM",
+      "old": "bdf80f9070644614341d64cddb9228492743bf97",
+      "head": "bdf80f9070644614341d64cddb9228492743bf97"
+    },
+    {
+      "branch": "ls/2-trump-files-impact368-review-01-of-12-ulQ4",
+      "old": "6ac584de42d66a16596adf59f48e66287bd260c3",
+      "head": "6ac584de42d66a16596adf59f48e66287bd260c3"
+    },
+    {
+      "branch": "ls/1-trump-files-web425-review-01-of-12-TJQB",
+      "old": "89aa995f78a4dd157121b97a39588e45f281c77f",
+      "head": "89aa995f78a4dd157121b97a39588e45f281c77f"
+    },
+    {
+      "branch": "ls/1-trump-files-sample100-review-01-of-12-iPnX",
+      "old": "1c9a704e05db53425fb759f630561beb92785443",
+      "head": "1c9a704e05db53425fb759f630561beb92785443"
+    },
+    {
+      "branch": "ls/1-trump-files-source118-review-01-of-12-Dnux",
+      "old": "f7eef6943d1f6b752ad45c562d6c2035576a99c8",
+      "head": "f7eef6943d1f6b752ad45c562d6c2035576a99c8"
+    },
+    {
+      "branch": "ls/2-trump-description-rescue-02-of-12-53-dis-d-rf",
+      "old": "5acc830a16c7e9edbd7b808d37b230130d5895e2",
+      "head": "5acc830a16c7e9edbd7b808d37b230130d5895e2"
+    },
+    {
+      "branch": "ls/3-trump-final-corrections-account2-worker1--T8S",
+      "old": "990cba295310da09f22916639970195c8cd8360f",
+      "head": "990cba295310da09f22916639970195c8cd8360f"
+    },
+    {
+      "branch": "ls/3-trump-files-impact368-review-02-of-12-2F_B",
+      "old": "33c7085b593d318d984db585a94ae6af8d069a8c",
+      "head": "33c7085b593d318d984db585a94ae6af8d069a8c"
+    },
+    {
+      "branch": "ls/2-trump-files-web425-review-02-of-12-IyLH",
+      "old": "bba0bb3d9dd4622be120f115daf4dc815bcd77c3",
+      "head": "bba0bb3d9dd4622be120f115daf4dc815bcd77c3"
+    },
+    {
+      "branch": "ls/2-trump-files-sample100-review-02-of-12-6WFh",
+      "old": "79147ac56c445f67170870bdf7a3935ed0c15b75",
+      "head": "79147ac56c445f67170870bdf7a3935ed0c15b75"
+    },
+    {
+      "branch": "ls/2-trump-files-source118-review-02-of-12-alSU",
+      "old": "c5e62b2fde2ce25e37efe291a2bbdeb5c864c8df",
+      "head": "c5e62b2fde2ce25e37efe291a2bbdeb5c864c8df"
+    },
+    {
+      "branch": "ls/3-trump-description-rescue-03-of-12-53-dis-CLUW",
+      "old": "4339c9a7e694f2a172806e14215ae993061b3419",
+      "head": "4339c9a7e694f2a172806e14215ae993061b3419"
+    },
+    {
+      "branch": "ls/2-trump-final-corrections-account2-worker1-snHz",
+      "old": "83eb52994fff68b44a27d899d53ef7e50fef9daf",
+      "head": "83eb52994fff68b44a27d899d53ef7e50fef9daf"
+    },
+    {
+      "branch": "ls/4-trump-files-impact368-review-03-of-12-46t_",
+      "old": "5950626a28095af788c139d42e7d6d32dd067dc2",
+      "head": "5950626a28095af788c139d42e7d6d32dd067dc2"
+    },
+    {
+      "branch": "ls/3-trump-files-web425-review-03-of-12-96hG",
+      "old": "e9c1dfd4d32f0aae0e5078237aa70d0a59c0b15c",
+      "head": "e9c1dfd4d32f0aae0e5078237aa70d0a59c0b15c"
+    },
+    {
+      "branch": "ls/3-trump-files-sample100-review-03-of-12-gPrZ",
+      "old": "0093962a318b098f99f8b862f6e138b0865ae1cb",
+      "head": "0093962a318b098f99f8b862f6e138b0865ae1cb"
+    },
+    {
+      "branch": "ls/3-trump-files-source118-review-03-of-12-mwSm",
+      "old": "df846a7271dcbc52150b2e1cb74913ce082b65c9",
+      "head": "df846a7271dcbc52150b2e1cb74913ce082b65c9"
+    },
+    {
+      "branch": "ls/4-trump-description-rescue-04-of-12-53-dis-S_ao",
+      "old": "d9e404a46b5907c83fd609830b929a960580eb16",
+      "head": "d9e404a46b5907c83fd609830b929a960580eb16"
+    },
+    {
+      "branch": "ls/4-trump-final-corrections-account2-worker1-n96Z",
+      "old": "0d683f48df49baeb09318cf6520e4801f1e8399b",
+      "head": "0d683f48df49baeb09318cf6520e4801f1e8399b"
+    },
+    {
+      "branch": "ls/5-trump-files-impact368-review-04-of-12-OOIR",
+      "old": "667a2fa316b3e1e521fe11c55ee0b428880bb83c",
+      "head": "667a2fa316b3e1e521fe11c55ee0b428880bb83c"
+    },
+    {
+      "branch": "ls/4-trump-files-web425-review-04-of-12-h9v-",
+      "old": "6cede33a54b79c7ca79aa597f8f7a44f4931f971",
+      "head": "6cede33a54b79c7ca79aa597f8f7a44f4931f971"
+    },
+    {
+      "branch": "ls/4-trump-files-sample100-review-04-of-12-aICV",
+      "old": "d96bd24630de92c6de7be2a59541798c48120932",
+      "head": "d96bd24630de92c6de7be2a59541798c48120932"
+    },
+    {
+      "branch": "ls/4-trump-files-source118-review-04-of-12-P8O6",
+      "old": "e0103cab8a2901d5975ba6e2e6c7b2ef2ad0898d",
+      "head": "e0103cab8a2901d5975ba6e2e6c7b2ef2ad0898d"
+    },
+    {
+      "branch": "ls/5-trump-description-rescue-05-of-12-53-dis-8OoQ",
+      "old": "599af5dd73e24db286595fe1a01f8dce4ecac1dd",
+      "head": "599af5dd73e24db286595fe1a01f8dce4ecac1dd"
+    },
+    {
+      "branch": "ls/7-trump-final-corrections-account2-worker1-slYA",
+      "old": "01dbb460383d28d1d589f8d7fbdce786d53b5089",
+      "head": "01dbb460383d28d1d589f8d7fbdce786d53b5089"
+    },
+    {
+      "branch": "ls/6-trump-files-impact368-review-05-of-12-o-Gh",
+      "old": "07c1b81a0e56c08560adb3d51ace8f5824646331",
+      "head": "07c1b81a0e56c08560adb3d51ace8f5824646331"
+    },
+    {
+      "branch": "ls/5-trump-files-web425-review-05-of-12-zM9X",
+      "old": "da4287ef48135c945ed8ba7e090f4c3d64fe1d15",
+      "head": "da4287ef48135c945ed8ba7e090f4c3d64fe1d15"
+    },
+    {
+      "branch": "ls/5-trump-files-sample100-review-05-of-12-uITi",
+      "old": "becdddc28638233804c321cc5a36061fceaf1bfd",
+      "head": "becdddc28638233804c321cc5a36061fceaf1bfd"
+    },
+    {
+      "branch": "ls/5-trump-files-source118-review-05-of-12-ry0H",
+      "old": "f3d0642e364b8ee00636cec5cdfb67c3d374128a",
+      "head": "f3d0642e364b8ee00636cec5cdfb67c3d374128a"
+    },
+    {
+      "branch": "ls/6-trump-description-rescue-06-of-12-53-dis-Qq2x",
+      "old": "be27575c1db6ce2bddee6e2ac6a1cd7acf4eb232",
+      "head": "be27575c1db6ce2bddee6e2ac6a1cd7acf4eb232"
+    },
+    {
+      "branch": "ls/5-trump-final-corrections-account2-worker1-oRtt",
+      "old": "3289d34787d2d7cdc7d1eb84a4e530898b198ebb",
+      "head": "3289d34787d2d7cdc7d1eb84a4e530898b198ebb"
+    },
+    {
+      "branch": "ls/7-trump-files-impact368-review-06-of-12-sjBp",
+      "old": "c029b189fa96be74f0b9fa3ded9a1181657f3fdb",
+      "head": "c029b189fa96be74f0b9fa3ded9a1181657f3fdb"
+    },
+    {
+      "branch": "ls/6-trump-files-web425-review-06-of-12-boco",
+      "old": "e1fba52915d32ae185fb04484e53f107d6cdcd67",
+      "head": "e1fba52915d32ae185fb04484e53f107d6cdcd67"
+    },
+    {
+      "branch": "ls/6-trump-files-sample100-review-06-of-12-pfm2",
+      "old": "b61360ea11c788952e3de2588b6f2e96b1486cec",
+      "head": "b61360ea11c788952e3de2588b6f2e96b1486cec"
+    },
+    {
+      "branch": "ls/6-trump-files-source118-review-06-of-12-vQap",
+      "old": "a8b9cadad4c059dac1f3c962254dbd60ccef356a",
+      "head": "a8b9cadad4c059dac1f3c962254dbd60ccef356a"
+    },
+    {
+      "branch": "ls/7-trump-description-rescue-07-of-12-53-dis-zltS",
+      "old": "9f32698a762318ac9b7a88b9a1794839693e0007",
+      "head": "9f32698a762318ac9b7a88b9a1794839693e0007"
+    },
+    {
+      "branch": "ls/6-trump-final-corrections-account2-worker1-zeIF",
+      "old": "57fef8df4882fed49eb14cde23bde9f2aa2b6199",
+      "head": "57fef8df4882fed49eb14cde23bde9f2aa2b6199"
+    },
+    {
+      "branch": "ls/8-trump-files-impact368-review-07-of-12-7OJh",
+      "old": "a86eee9abf00333c18253e256e6ffa5ba17c360c",
+      "head": "a86eee9abf00333c18253e256e6ffa5ba17c360c"
+    },
+    {
+      "branch": "ls/7-trump-files-web425-review-07-of-12-vbH-",
+      "old": "a72d47c5a950fbdece34c6e12d1e98cb7253f15e",
+      "head": "a72d47c5a950fbdece34c6e12d1e98cb7253f15e"
+    },
+    {
+      "branch": "ls/7-trump-files-sample100-review-07-of-12-WFXm",
+      "old": "a53ec2d4fea4a2a3d9f75facafcf63328c96b18a",
+      "head": "a53ec2d4fea4a2a3d9f75facafcf63328c96b18a"
+    },
+    {
+      "branch": "ls/7-trump-files-source118-review-07-of-12-Asbx",
+      "old": "a4fba9198635b99817436bc2bcb0e52c81ee352a",
+      "head": "a4fba9198635b99817436bc2bcb0e52c81ee352a"
+    },
+    {
+      "branch": "ls/8-trump-description-rescue-08-of-12-53-dis-W2qL",
+      "old": "5c10882f4c8de6fceec956e52ac4181ac9e1cefd",
+      "head": "5c10882f4c8de6fceec956e52ac4181ac9e1cefd"
+    },
+    {
+      "branch": "ls/8-trump-final-corrections-account2-worker2-A12f",
+      "old": "6c7877a80152184eb69aea35391b835ab5929973",
+      "head": "6c7877a80152184eb69aea35391b835ab5929973"
+    },
+    {
+      "branch": "ls/9-trump-files-impact368-review-08-of-12-3Ywr",
+      "old": "6b3292a8be4bd18dbf121a92036ac4f6adfebbfc",
+      "head": "6b3292a8be4bd18dbf121a92036ac4f6adfebbfc"
+    },
+    {
+      "branch": "ls/8-trump-files-web425-review-08-of-12-9xY1",
+      "old": "2e851787c76eccd44d57f883954f3abcb7d5c9d4",
+      "head": "2e851787c76eccd44d57f883954f3abcb7d5c9d4"
+    },
+    {
+      "branch": "ls/8-trump-files-sample100-review-08-of-12-Qhy0",
+      "old": "a74b31f70fdae9cf750d5bb901293d858df90ce4",
+      "head": "a74b31f70fdae9cf750d5bb901293d858df90ce4"
+    },
+    {
+      "branch": "ls/8-trump-files-source118-review-08-of-12-pXJX",
+      "old": "b700ea2daabb9b4a1b1d41b83134b82252480be6",
+      "head": "b700ea2daabb9b4a1b1d41b83134b82252480be6"
+    },
+    {
+      "branch": "ls/9-trump-description-rescue-09-of-12-52-dis-a_J8",
+      "old": "5f7538a88b2ee3d2970375e6ce7650768054f1b5",
+      "head": "5f7538a88b2ee3d2970375e6ce7650768054f1b5"
+    },
+    {
+      "branch": "ls/9-trump-final-corrections-account2-worker2-xNvR",
+      "old": "1d28075e627ca749fffd1899a6c9e85e73cede03",
+      "head": "1d28075e627ca749fffd1899a6c9e85e73cede03"
+    },
+    {
+      "branch": "ls/10-trump-files-impact368-review-09-of-12-jMbt",
+      "old": "f26570242797aeea2cbb4de4bb762d84fd3f0af7",
+      "head": "f26570242797aeea2cbb4de4bb762d84fd3f0af7"
+    },
+    {
+      "branch": "ls/9-trump-files-web425-review-09-of-12-1tgF",
+      "old": "d6eefc1a9a34e2592a66e0d2ea0f67889d3f3a02",
+      "head": "d6eefc1a9a34e2592a66e0d2ea0f67889d3f3a02"
+    },
+    {
+      "branch": "ls/9-trump-files-sample100-review-09-of-12-WtKf",
+      "old": "d5581fae6b6291f6d8bd1b52ee4950e8b922cf80",
+      "head": "d5581fae6b6291f6d8bd1b52ee4950e8b922cf80"
+    },
+    {
+      "branch": "ls/9-trump-files-source118-review-09-of-12-278g",
+      "old": "69088c77cc512da0050e6adfe57a3295e9e1a189",
+      "head": "69088c77cc512da0050e6adfe57a3295e9e1a189"
+    },
+    {
+      "branch": "ls/10-trump-description-rescue-10-of-12-52-dis-7sqL",
+      "old": "926db32c3cffdd254ab5fc93049227479cee9879",
+      "head": "926db32c3cffdd254ab5fc93049227479cee9879"
+    },
+    {
+      "branch": "ls/10-trump-final-corrections-account2-worker2-qX6f",
+      "old": "ea311b8c1376bb0aa11ac07399fb0054384017fa",
+      "head": "ea311b8c1376bb0aa11ac07399fb0054384017fa"
+    },
+    {
+      "branch": "ls/11-trump-files-impact368-review-10-of-12-Kjf6",
+      "old": "7c9665d1eeeaeaef0012b19ab517f0aca6d429b8",
+      "head": "7c9665d1eeeaeaef0012b19ab517f0aca6d429b8"
+    },
+    {
+      "branch": "ls/10-trump-files-web425-review-10-of-12-aLan",
+      "old": "d29775b093842992ad5f37ab741950a5b7e8f3d0",
+      "head": "d29775b093842992ad5f37ab741950a5b7e8f3d0"
+    },
+    {
+      "branch": "ls/10-trump-files-sample100-review-10-of-12-5b45",
+      "old": "7de6818332dc7ccea80ae25c40e76103870cfd2f",
+      "head": "7de6818332dc7ccea80ae25c40e76103870cfd2f"
+    },
+    {
+      "branch": "ls/10-trump-files-source118-review-10-of-12-0nIr",
+      "old": "53e162da2d881d2004b347249f789a4bbae57873",
+      "head": "53e162da2d881d2004b347249f789a4bbae57873"
+    },
+    {
+      "branch": "ls/11-trump-description-rescue-11-of-12-52-dis-QZkS",
+      "old": "eeaecbb4ac80442da1bff08aecf53488aa478ab3",
+      "head": "eeaecbb4ac80442da1bff08aecf53488aa478ab3"
+    },
+    {
+      "branch": "ls/12-trump-final-corrections-account2-worker2-KcuW",
+      "old": "3db019303954903485bcf0a005d6e2d28c2b9c0c",
+      "head": "3db019303954903485bcf0a005d6e2d28c2b9c0c"
+    },
+    {
+      "branch": "ls/12-trump-files-impact368-review-11-of-12-DPiB",
+      "old": "ecf8f453632d6250ff10c9f87680ea938c2970bb",
+      "head": "ecf8f453632d6250ff10c9f87680ea938c2970bb"
+    },
+    {
+      "branch": "ls/11-trump-files-web425-review-11-of-12-Nsfp",
+      "old": "3fe1eadfd93d8671b5077d8b291fd472684e8d96",
+      "head": "3fe1eadfd93d8671b5077d8b291fd472684e8d96"
+    },
+    {
+      "branch": "ls/11-trump-files-sample100-review-11-of-12-mShY",
+      "old": "2add426d6d375cf27507ccf20607ad3929b7596d",
+      "head": "2add426d6d375cf27507ccf20607ad3929b7596d"
+    },
+    {
+      "branch": "ls/11-trump-files-source118-review-11-of-12-8RJW",
+      "old": "804d6560db913ff6415bad8c4be94cb3086ddf67",
+      "head": "804d6560db913ff6415bad8c4be94cb3086ddf67"
+    },
+    {
+      "branch": "ls/12-trump-description-rescue-12-of-12-52-dis--oyt",
+      "old": "802ce7af44084b9dc9e6a99f753db9a692351775",
+      "head": "802ce7af44084b9dc9e6a99f753db9a692351775"
+    },
+    {
+      "branch": "ls/11-trump-final-corrections-account2-worker2-gfyp",
+      "old": "68a42fd21ac2e41eddc2ba49e8aeaffbfe38047a",
+      "head": "68a42fd21ac2e41eddc2ba49e8aeaffbfe38047a"
+    },
+    {
+      "branch": "ls/13-trump-files-impact368-review-12-of-12-lHzI",
+      "old": "fb9b0d1661af2872d3f87111f2a0681d943328e9",
+      "head": "fb9b0d1661af2872d3f87111f2a0681d943328e9"
+    },
+    {
+      "branch": "ls/12-trump-files-web425-review-12-of-12-bsCj",
+      "old": "d3dd626896701e8675c81bd915e0a9136baad0d3",
+      "head": "d3dd626896701e8675c81bd915e0a9136baad0d3"
+    },
+    {
+      "branch": "ls/12-trump-files-sample100-review-12-of-12-fLSj",
+      "old": "752f07a48e3c82078ea317df37dbdb333106910e",
+      "head": "752f07a48e3c82078ea317df37dbdb333106910e"
+    },
+    {
+      "branch": "ls/12-trump-files-source118-review-12-of-12-MQJb",
+      "old": "4c666074dde760b1d5830562698172c159746d03",
+      "head": "4c666074dde760b1d5830562698172c159746d03"
+    }
+  ]
+}
