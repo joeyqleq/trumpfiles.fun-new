@@ -1,0 +1,26 @@
+{
+  "worker": 11,
+  "task": "Trump Files migration reconciliation 11 of84 2026-10-06",
+  "repository": {
+    "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "github_repository_id": 1082328314,
+    "identity_verified_as": "p5n-n3t/trumpfiles-fun-new",
+    "branch": "ls/14-trump-files-migration-reconciliation-11--symm"
+  },
+  "packet": {
+    "branch": "codex/migration-reconcile336-2026-10-06",
+    "commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "fetch_command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "fetch_exit_code": 0,
+    "fetch_result": "Fetched requested branch; requested commit resolves as commit and is origin/codex/migration-reconcile336-2026-10-06."
+  },
+  "completed_ids": [
+    "entry-1726"
+  ],
+  "remaining_ids": [
+    "entry-5809",
+    "entry-6612",
+    "entry-6913"
+  ],
+  "push_history": []
+}
