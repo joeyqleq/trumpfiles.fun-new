@@ -9,11 +9,10 @@
   "completed_record_ids": [
     "entry-2332",
     "entry-5850",
-    "entry-6642"
-  ],
-  "remaining_record_ids": [
+    "entry-6642",
     "entry-6933"
   ],
+  "remaining_record_ids": [],
   "task_branch": "ls/3-trump-files-migration-reconciliation-20--i7_e",
   "canonical_remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
   "github_repository": {
@@ -61,8 +60,8 @@
       "success": true
     }
   ],
-  "current_record_id": null,
-  "updated_at_utc": "2026-10-06T10:45:43.680195+00:00",
+  "current_record_id": "entry-6933",
+  "updated_at_utc": "2026-10-06T10:45:45.854066+00:00",
   "last_successful_data_push": {
     "record_id": "entry-6642",
     "commit": "bf6360a985ae3339c2c666eca6aafcecc18ad6ac",
