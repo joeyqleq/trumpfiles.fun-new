@@ -17,12 +17,11 @@
   },
   "completedIDs": [
     "entry-2458",
+    "entry-6200",
     "entry-6691",
     "entry-6943"
   ],
-  "remainingIDs": [
-    "entry-6200"
-  ],
+  "remainingIDs": [],
   "push_results": [
     {
       "record_id": "entry-2458",
@@ -59,6 +58,14 @@
       "command": "git push origin HEAD:refs/heads/ls/4-trump-files-migration-reconciliation-27--LFfL",
       "exit_code": 0,
       "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   ef2987bf..b483f583  HEAD -> ls/4-trump-files-migration-reconciliation-27--LFfL"
+    },
+    {
+      "record_id": "entry-6200",
+      "correction_revision": 3,
+      "data_commit": "a61d1620331525caf00a30d8332ce60ce966748c",
+      "command": "git push origin HEAD:refs/heads/ls/4-trump-files-migration-reconciliation-27--LFfL",
+      "exit_code": 0,
+      "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   b483f583..a61d1620  HEAD -> ls/4-trump-files-migration-reconciliation-27--LFfL"
     }
   ],
   "parent_gate_results": [
@@ -150,7 +157,7 @@
       }
     }
   ],
-  "updated_at": "2026-10-06T22:41:31.368041+00:00",
+  "updated_at": "2026-10-06T22:41:46.046938+00:00",
   "core_label_corrections": [
     {
       "record_id": "entry-2458",
@@ -163,7 +170,8 @@
       "record_id": "entry-6200",
       "amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-27-amendment-6.jsonl",
       "revision": 3,
-      "status": "appended_pending_push"
+      "status": "pushed",
+      "commit": "a61d1620"
     }
   ]
 }
