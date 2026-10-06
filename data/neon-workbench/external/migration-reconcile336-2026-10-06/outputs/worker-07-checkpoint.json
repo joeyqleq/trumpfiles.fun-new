@@ -11,19 +11,15 @@
   },
   "completed_ids": [
     "entry-954",
-    "entry-5755"
+    "entry-5755",
+    "entry-6606"
   ],
   "remaining_ids": [
-    "entry-6606",
     "entry-6884"
   ],
   "last_push": {
-    "record_id": "entry-5755",
-    "status": "success",
-    "command": "git push origin HEAD",
-    "commit": "39803731",
-    "branch": "ls/1-trump-files-migration-reconciliation-07--I4WO",
-    "output": "Remote branch advanced from 1c6e6866 to 39803731."
+    "status": "pending",
+    "branch": "ls/1-trump-files-migration-reconciliation-07--I4WO"
   },
   "push_history": [
     {
