@@ -103,6 +103,16 @@
       "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
       "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm",
       "response": "GitHub accepted the push and reported the registered alias moved to the canonical repository."
+    },
+    {
+      "after_record_id": "entry-6612-checkpoint",
+      "commit": "3ea65996",
+      "result": "success",
+      "exit_code": 0,
+      "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm",
+      "response": "GitHub accepted the checkpoint update and reported the registered alias moved to the canonical repository."
     }
   ],
   "reconciliation_progress": {
@@ -115,14 +125,13 @@
     "completed_ids": [
       "entry-1726",
       "entry-5809",
-      "entry-6612"
-    ],
-    "remaining_ids": [
+      "entry-6612",
       "entry-6913"
     ],
-    "latest_action": "Retained entry-6612 as hold based on supplied resume2 recheck and explicit revision-2 amendment; no corrected proposal exists, so no terminal row or amendment was written.",
-    "latest_amendment_path": null,
-    "latest_amendment_revision": null,
+    "remaining_ids": [],
+    "latest_action": "Appended revision 2 core-label correction for entry-6913 after applying the supplied corrected proposal; terminal output history left unchanged. All four assigned parents reconciled.",
+    "latest_amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/worker-11-amendment-2.jsonl",
+    "latest_amendment_revision": 2,
     "latest_push_result": "pending"
   },
   "held_records": [
