@@ -1,6 +1,6 @@
 {
   "worker": "35",
-  "status": "complete",
+  "status": "in_progress",
   "processed_record_ids": [
     "entry-2562",
     "entry-6356",
@@ -57,5 +57,13 @@
       "result": "push succeeded; remote advanced from 780beeed"
     }
   ],
-  "all_assigned_records_pushed": true
+  "all_assigned_records_pushed": true,
+  "amendment_processed_record_ids": [
+    "entry-2562"
+  ],
+  "amendment_remaining_record_ids": [
+    "entry-6356",
+    "entry-6743"
+  ],
+  "latest_amendment_revision": 2
 }
