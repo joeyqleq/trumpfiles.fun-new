@@ -10,11 +10,10 @@
   "completed_ids": [
     "entry-835",
     "entry-5749",
-    "entry-6600"
-  ],
-  "remaining_ids": [
+    "entry-6600",
     "entry-6866"
   ],
+  "remaining_ids": [],
   "repository": {
     "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "full_name": "p5n-n3t/trumpfiles-fun-new",
@@ -77,10 +76,10 @@
       "result": "success; GitHub redirected to the canonical repository"
     }
   ],
-  "last_record_id": "entry-6600",
+  "last_record_id": "entry-6866",
   "last_validation_gate": {
     "available": false,
-    "custom_checks": "entry-6600 wrapper shape, exact issue, unverified boundary, and copy lengths pass"
+    "custom_checks": "All three missing-core-label issues have explicit revision-2 amendments; final exact-ID, wrapper-shape, copy-length, quote-attribution, unverified-boundary, and deferred-impact checks pending."
   },
   "checkpoint_push_results": [
     {
