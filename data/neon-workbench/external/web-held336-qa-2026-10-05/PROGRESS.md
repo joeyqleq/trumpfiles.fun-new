@@ -20,4 +20,4 @@ Six cross-parent event duplicates were reconciled through separate merge/referen
 
 Claims accepted as drafting inputs remain distinct from source verification. `unverified_as_supplied` drafts and holds are publication-ineligible. Primary-worker source excerpts and access claims are supplied evidence to QA unless a separate QA retrieval is explicitly documented. Narrow QA retrievals are recorded in source provenance/research logs, including the correct White House transcript URL for the North Korea remark.
 
-Only files under this QA directory changed. No LightSprint outputs, canonical data, or Neon were written. Draft PR pending.
+Only files under this QA directory changed. No LightSprint outputs, canonical data, or Neon were written. Draft PR: [#67](https://github.com/p5n-n3t/trumpfiles-fun-new/pull/67), targeting the research branch. It remains draft and unmerged. Authoritative index pointers were read back from GitHub and match all 336 full outcomes.
