@@ -7,8 +7,9 @@
   "fetch_receipt": {
     "branch": "codex/migration-reconcile336-2026-10-06",
     "commit": "19a772e15765348b82f6d708ad63f58927931321",
-    "result": "success; fetched from canonical origin",
-    "command": "git fetch origin codex/migration-reconcile336-2026-10-06"
+    "result": "success; fetched from canonical origin and FETCH_HEAD matched requested commit",
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "resolved_repository_id": 1082328314
   },
   "assignedIDs": [
     "entry-2401",
@@ -68,7 +69,7 @@
       "push_url": "legacy alias redirected by GitHub to canonical repository"
     }
   ],
-  "updated_at": "2026-10-06T10:47:47.893252+00:00",
+  "updated_at": "2026-10-06T22:44:29.444996+00:00",
   "checkpoint_push_receipts": [
     {
       "commit": "6c1546e3",
@@ -100,5 +101,27 @@
       "exit_code": 0,
       "output": "5ab90c3b..eb1fb8fe HEAD -> ls/16-trump-files-migration-reconciliation-25--qfNe"
     }
-  ]
+  ],
+  "latest_amendment": {
+    "record_id": "entry-6673",
+    "revision": 2,
+    "path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-25-amendment-05.jsonl",
+    "state": "written and custom-validated; push receipt pending"
+  },
+  "validation_receipt": {
+    "result": "custom contract checks passed for all four assigned IDs",
+    "checks": {
+      "exact_assigned_id_set": true,
+      "wrapper_shape_and_status": true,
+      "copy_length_limits": true,
+      "literal_source_quote_matches": true,
+      "scored_impact_weighted_arithmetic": true,
+      "unverified_and_publication_boundaries_preserved": true,
+      "entry_6673_core_labels_present": true
+    },
+    "held336_gate": {
+      "invoked": false,
+      "reason": "No validate_held336 module, command, or tool is present in the checkout or available session tools."
+    }
+  }
 }
