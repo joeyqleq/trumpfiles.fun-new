@@ -5,8 +5,8 @@
   "repo_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
   "repo_id": 1082328314,
   "remote_verification": {
-    "command": "gh api repos/p5n-n3t/trumpfiles-fun-new --jq .id",
-    "output": "1082328314",
+    "command": "git ls-remote --get-url origin; curl -fsSL https://api.github.com/repos/p5n-n3t/trumpfiles-fun-new",
+    "output": "https://github.com/p5n-n3t/trumpfiles-fun-new.git; full_name=p5n-n3t/trumpfiles-fun-new, id=1082328314",
     "status": "success"
   },
   "fetch_verification": {
@@ -65,5 +65,13 @@
     }
   ],
   "last_completed_parent": "entry-6922",
-  "checkpoint_finalized_after_all_parents": true
+  "checkpoint_finalized_after_all_parents": true,
+  "amendment_progress": {
+    "record_id": "entry-5815",
+    "file": "worker-13-amendment-2.jsonl",
+    "revision": 2,
+    "issue": "migration336:entry-5815:missing_core_labels:entry-5815",
+    "status": "validated_pending_commit_and_push"
+  },
+  "amendment_push_results": []
 }
