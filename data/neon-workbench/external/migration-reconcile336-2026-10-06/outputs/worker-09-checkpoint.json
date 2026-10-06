@@ -49,12 +49,18 @@
       "command": "git push -u origin HEAD (stack-registered push alias; same immutable GitHub repository ID 1082328314)",
       "exit_code": 0,
       "output": "remote: This repository moved. Please use the new location:        \nremote:   https://github.com/p5n-n3t/trumpfiles-fun-new.git        \nremote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit: https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot\nTo https://github.com/p5n-n3t/trumpfiles.fun-new.git\n   72cf7d70..ce88d803  HEAD -> ls/15-trump-files-migration-reconciliation-09--TU3z\nbranch 'ls/15-trump-files-migration-reconciliation-09--TU3z' set up to track 'origin/ls/15-trump-files-migration-reconciliation-09--TU3z'."
+    },
+    {
+      "record_id": "entry-6609",
+      "command": "git push -u origin HEAD (stack-registered push alias; same immutable GitHub repository ID 1082328314)",
+      "exit_code": 0,
+      "output": "remote: This repository moved. Please use the new location:        \nremote:   https://github.com/p5n-n3t/trumpfiles-fun-new.git        \nremote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit: https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot\nTo https://github.com/p5n-n3t/trumpfiles.fun-new.git\n   c6a7a92d..cf5005ac  HEAD -> ls/15-trump-files-migration-reconciliation-09--TU3z\nbranch 'ls/15-trump-files-migration-reconciliation-09--TU3z' set up to track 'origin/ls/15-trump-files-migration-reconciliation-09--TU3z'."
     }
   ],
-  "push_pending_for": "entry-6609",
+  "push_pending_for": null,
   "last_parent_push": {
-    "record_id": "entry-5760",
-    "commit": "ce88d803",
+    "record_id": "entry-6609",
+    "commit": "cf5005ac",
     "status": "pushed",
     "target_repository_id": 1082328314
   },
