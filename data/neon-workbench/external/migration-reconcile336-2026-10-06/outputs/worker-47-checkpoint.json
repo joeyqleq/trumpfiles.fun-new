@@ -25,13 +25,12 @@
     "entry-7085"
   ],
   "completedIDs": [
-    "entry-7085",
     "entry-4198",
-    "entry-6423"
+    "entry-6423",
+    "entry-6781",
+    "entry-7085"
   ],
-  "remainingIDs": [
-    "entry-6781"
-  ],
+  "remainingIDs": [],
   "push_results": [
     {
       "record_id": "entry-4198",
@@ -110,9 +109,18 @@
       "push_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
       "exit_code": 0,
       "result": "success; GitHub redirected the registered stack alias to canonical repository ID 1082328314"
+    },
+    {
+      "record_id": "entry-6423",
+      "commit": "a9bb0cc4",
+      "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/19-trump-files-migration-reconciliation-47--mq59",
+      "fetch_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "push_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "exit_code": 0,
+      "result": "success; GitHub redirected the registered stack alias to canonical repository ID 1082328314"
     }
   ],
-  "last_push_result": "entry-4198 wrapper-label amendment b89282a9 pushed successfully; entry-6423 wrapper-label amendment prepared, push pending",
+  "last_push_result": "entry-6423 wrapper-label amendment a9bb0cc4 pushed successfully; entry-6781 wrapper-label amendment prepared, push pending",
   "validation_summary": {
     "assignedIDs_exact": true,
     "terminal_rows_exact": [
@@ -144,10 +152,9 @@
     ],
     "completed": [
       "entry-4198",
-      "entry-6423"
-    ],
-    "remaining": [
+      "entry-6423",
       "entry-6781"
-    ]
+    ],
+    "remaining": []
   }
 }
