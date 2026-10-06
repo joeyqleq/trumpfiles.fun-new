@@ -26,7 +26,15 @@
       "exit_code": 0,
       "stdout": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n * [new branch]        HEAD -> ls/7-trump-files-migration-reconciliation-48--YctR\nbranch set to track origin/ls/7-trump-files-migration-reconciliation-48--YctR",
       "result": "success; created and tracked the required task branch"
+    },
+    {
+      "record_id": "entry-6424",
+      "commit": "7d9fc5bf",
+      "command": "git push origin HEAD",
+      "exit_code": 0,
+      "stdout": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   5a12a295..7d9fc5bf  HEAD -> ls/7-trump-files-migration-reconciliation-48--YctR",
+      "result": "success; parent amendment pushed to required task branch"
     }
   ],
-  "checkpoint_state": "entry-6424 reconciled; awaiting parent push result"
+  "checkpoint_state": "entries 4239 and 6424 committed and pushed; exact remaining IDs recorded"
 }
