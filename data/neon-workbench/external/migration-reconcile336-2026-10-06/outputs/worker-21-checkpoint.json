@@ -9,11 +9,10 @@
   "completed_ids": [
     "entry-2343",
     "entry-5851",
-    "entry-6655"
-  ],
-  "remaining_ids": [
+    "entry-6655",
     "entry-6935"
   ],
+  "remaining_ids": [],
   "repository": {
     "origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "github_full_name": "p5n-n3t/trumpfiles-fun-new",
@@ -65,16 +64,24 @@
       "result": "success",
       "push_output": "remote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit:        \nremote:      https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot        \nremote: \nTo https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   e4bc41cf..af7720cf  HEAD -> ls/3-trump-files-migration-reconciliation-21--_Ne9",
       "verified_at": "2026-10-06T10:44:49.239341+00:00"
+    },
+    {
+      "event": "entry-6655 revision 2 amendment",
+      "local_commit": "d4ebafc9",
+      "remote_ref": "refs/heads/ls/3-trump-files-migration-reconciliation-21--_Ne9",
+      "remote_commit": "d4ebafc9",
+      "result": "success",
+      "push_output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   7457f942..d4ebafc9  HEAD -> ls/3-trump-files-migration-reconciliation-21--_Ne9",
+      "verified_at": "2026-10-06T22:41:30Z"
     }
   ],
   "current_reconciliation": {
     "latest_amendment_file": "worker-21-amendment-2.jsonl",
     "completed_in_this_revision": [
-      "entry-6655"
-    ],
-    "remaining_ids": [
+      "entry-6655",
       "entry-6935"
     ],
-    "note": "Existing worker-21-terminal.jsonl rows were preserved; corrections are append-only amendments."
+    "remaining_ids": [],
+    "note": "Existing terminal history preserved. Entry 6655 gained core_labels; entry 6935 is an internal unverified draft with full-length attributed copy."
   }
 }
