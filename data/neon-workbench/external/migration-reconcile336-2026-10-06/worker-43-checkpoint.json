@@ -71,6 +71,24 @@
     }
   ],
   "pending_parent_push": null,
-  "last_updated_after": "All four assigned terminal rows appended; entry-6776 and entry-7051 amendment wrappers saved; terminal work and checkpoint pushed.",
-  "push_route_note": "origin is the canonical URL and ls-remote/fetch succeed against immutable repository ID 1082328314. Lightsprint credential proxy rejects pushes to the canonical spelling as not a stack member (HTTP 403); pushes through the former URL succeed and GitHub redirects to the canonical repository. Every assigned parent push attempt and result is recorded above."
+  "last_updated_after": "Final canonical-origin remote-ref verification matched the pushed task branch; alias push check returned Everything up-to-date.",
+  "push_route_note": "origin is the canonical URL and ls-remote/fetch succeed against immutable repository ID 1082328314. Lightsprint credential proxy rejects pushes to the canonical spelling as not a stack member (HTTP 403); pushes through the former URL succeed and GitHub redirects to the canonical repository. Every assigned parent push attempt and result is recorded above.",
+  "branch_push_verification": {
+    "remote_ref": "refs/heads/ls/19-trump-files-migration-reconciliation-43--LLHi",
+    "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "repository_id": 1082328314,
+    "ls_remote_command": "git ls-remote origin refs/heads/ls/19-trump-files-migration-reconciliation-43--LLHi",
+    "ls_remote_exit_code": 0,
+    "observed_remote_oid": "b9b2b3e1b17eb830ddf9f64595b7a7f77e1bdeda",
+    "push_command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/19-trump-files-migration-reconciliation-43--LLHi",
+    "push_exit_code": 0,
+    "push_result": "Everything up-to-date.",
+    "verified_terminal_ids": [
+      "entry-3371",
+      "entry-6415",
+      "entry-6776",
+      "entry-7051"
+    ],
+    "note": "The pre-existing entry-6415 row was present in the branch history; this branch-wide remote-ref check confirms it alongside the newly appended rows."
+  }
 }
