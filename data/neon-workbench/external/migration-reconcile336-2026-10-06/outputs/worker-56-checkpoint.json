@@ -6,18 +6,17 @@
   "completed_ids": [
     "entry-4577",
     "entry-6440",
-    "entry-6791"
-  ],
-  "remaining_ids": [
+    "entry-6791",
     "entry-7113"
   ],
-  "latest_completed_record": "entry-6791",
+  "remaining_ids": [],
+  "latest_completed_record": "entry-7113",
   "output_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-terminal.jsonl",
-  "latest_output_commit": "33ac1d33bd4fb5beddd140852531c7be872e2b62",
+  "latest_output_commit": "12b673f318f1254f387e270752dfa56b7a097b71",
   "latest_push_result": {
     "command": "git push origin ls/8-trump-files-migration-reconciliation-56--fuH2",
     "exit_code": 0,
-    "pushed_commit": "33ac1d33bd4fb5beddd140852531c7be872e2b62",
+    "pushed_commit": "12b673f318f1254f387e270752dfa56b7a097b71",
     "result": "branch updated successfully"
   },
   "fetch_result": {
