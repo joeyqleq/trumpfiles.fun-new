@@ -27,9 +27,23 @@
   "parent_push_receipts": [
     {
       "record_id": "entry-2401",
-      "commit": "pending",
-      "result": "pending"
+      "commit": "5b160cb1",
+      "attempts": [
+        {
+          "push_url": "canonical origin",
+          "result": "failed",
+          "exit_code": 128,
+          "output": "curl: (22) The requested URL returned error: 403; credential service: Repository is not a member of this stack."
+        },
+        {
+          "push_url": "legacy GitHub alias; server redirected to canonical repository",
+          "result": "success",
+          "exit_code": 0,
+          "output": "To https://github.com/p5n-n3t/trumpfiles.fun-new.git; [new branch] HEAD -> ls/16-trump-files-migration-reconciliation-25--qfNe; GitHub reported moved location https://github.com/p5n-n3t/trumpfiles-fun-new.git."
+        }
+      ],
+      "verified_canonical_remote_branch": "ls/16-trump-files-migration-reconciliation-25--qfNe"
     }
   ],
-  "updated_at": "2026-10-06T10:44:50.093041+00:00"
+  "updated_at": "2026-10-06T10:46:00Z"
 }
