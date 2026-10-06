@@ -89,5 +89,5 @@
   ],
   "current_parent_push": "all four assigned parent commits pushed successfully via the verified legacy redirect",
   "stack_mapping_note": "Lightsprint registers repository ID 1082328314 under the stale fullName p5n-n3t/trumpfiles.fun-new; GitHub API confirms the legacy name resolves to canonical repository ID 1082328314. Keep origin canonical and push via the verified redirect when needed.",
-  "final_branch_commit": "18a97705"
+  "last_parent_commit": "18a97705"
 }
