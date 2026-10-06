@@ -24,10 +24,7 @@
         "persistence": 5
       },
       "weighted_total": 4.2,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 4.2,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-03.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-2624",
@@ -42,10 +39,7 @@
         "persistence": 2
       },
       "weighted_total": 2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-2854",
@@ -60,10 +54,7 @@
         "persistence": 0
       },
       "weighted_total": 0.4,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0.4,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-06.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-3380",
@@ -78,10 +69,7 @@
         "persistence": 2
       },
       "weighted_total": 2.25,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.25,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4198",
@@ -96,10 +84,7 @@
         "persistence": 2
       },
       "weighted_total": 2.9,
-      "event_state": "threatened",
-      "weighted_total_unrounded": 2.9,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-08.jsonl"
+      "event_state": "threatened"
     },
     {
       "parent_record_id": "entry-4239",
@@ -114,10 +99,7 @@
         "persistence": 4
       },
       "weighted_total": 3.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.2,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-08.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4239",
@@ -132,10 +114,7 @@
         "persistence": 3
       },
       "weighted_total": 2.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.2,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-08.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4239",
@@ -150,10 +129,7 @@
         "persistence": 3
       },
       "weighted_total": 2.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.2,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-08.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4240",
@@ -168,10 +144,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-08.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4240",
@@ -186,10 +159,7 @@
         "persistence": 0
       },
       "weighted_total": 1,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-08.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4407",
@@ -204,10 +174,7 @@
         "persistence": 2.5
       },
       "weighted_total": 4.35,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.35,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-08.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4407",
@@ -222,10 +189,7 @@
         "persistence": 2.5
       },
       "weighted_total": 4.35,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.35,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-batch-08.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4438",
@@ -240,550 +204,7 @@
         "persistence": 3
       },
       "weighted_total": 2.86,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.86,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-1-amendment-02.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5161",
-      "record_id": "entry-5161-child-01",
-      "path": "entry-5161.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 0.5,
-        "reach": 6,
-        "institutions": 0,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 1.55,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.55,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5161",
-      "record_id": "entry-5161-child-02",
-      "path": "entry-5161.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 4,
-        "reach": 8,
-        "institutions": 4,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 3.6,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.6,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5189",
-      "record_id": "entry-5189-child-01",
-      "path": "entry-5189.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 2.5,
-        "reach": 4,
-        "institutions": 3,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 2.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.2,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5189",
-      "record_id": "entry-5189-child-02",
-      "path": "entry-5189.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 4.5,
-        "reach": 6,
-        "institutions": 2,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 3.5
-      },
-      "weighted_total": 3.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.2,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5189",
-      "record_id": "entry-5189-child-03",
-      "path": "entry-5189.children[2].impact_proposal",
-      "dimensions": {
-        "harm": 2.5,
-        "reach": 2,
-        "institutions": 3,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 1.8,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.8,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5190",
-      "record_id": "entry-5190-child-01",
-      "path": "entry-5190.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 0,
-        "reach": 5,
-        "institutions": 0,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 1.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.2,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-amendment-04.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5190",
-      "record_id": "entry-5190-child-02",
-      "path": "entry-5190.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 1,
-        "reach": 2,
-        "institutions": 1,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 1
-      },
-      "weighted_total": 0.95,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0.95,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-amendment-04.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5190",
-      "record_id": "entry-5190-child-03",
-      "path": "entry-5190.children[2].impact_proposal",
-      "dimensions": {
-        "harm": 1,
-        "reach": 5,
-        "institutions": 3,
-        "procedural_abuse": 2,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 2.25,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.25,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-amendment-04.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5191",
-      "record_id": "entry-5191-child-01",
-      "path": "entry-5191.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 3,
-        "reach": 2,
-        "institutions": 2,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 1
-      },
-      "weighted_total": 1.7,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.7,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-01.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5191",
-      "record_id": "entry-5191-child-02",
-      "path": "entry-5191.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 5,
-        "reach": 8,
-        "institutions": 0,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 0
-      },
-      "weighted_total": 3.1,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 3.1,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-01.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5207",
-      "record_id": "entry-5207-child-01",
-      "path": "entry-5207.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 4,
-        "reach": 2,
-        "institutions": 3,
-        "procedural_abuse": 2,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 2.55,
-      "event_state": "threatened",
-      "weighted_total_unrounded": 2.55,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-01.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5207",
-      "record_id": "entry-5207-child-02",
-      "path": "entry-5207.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 2,
-        "reach": 2,
-        "institutions": 2,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 1
-      },
-      "weighted_total": 1.4,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.4,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-01.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5213",
-      "record_id": "entry-5213-child-01",
-      "path": "entry-5213.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 1,
-        "reach": 2,
-        "institutions": 2.5,
-        "procedural_abuse": 2,
-        "self_dealing": 0,
-        "persistence": 1
-      },
-      "weighted_total": 1.48,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.475,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-01.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5213",
-      "record_id": "entry-5213-child-02",
-      "path": "entry-5213.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 1,
-        "reach": 3,
-        "institutions": 3,
-        "procedural_abuse": 2.5,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 1.93,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.925,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-01.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5224",
-      "record_id": "entry-5224-child-01",
-      "path": "entry-5224.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 4.5,
-        "reach": 6,
-        "institutions": 5,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 3
-      },
-      "weighted_total": 3.6,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.6,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-01.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5224",
-      "record_id": "entry-5224-child-02",
-      "path": "entry-5224.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 4,
-        "reach": 4.5,
-        "institutions": 4.5,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 3
-      },
-      "weighted_total": 3.08,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.075,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-01.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5752",
-      "record_id": "entry-5752-child-01",
-      "path": "entry-5752.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 4.5,
-        "reach": 5,
-        "institutions": 4,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2.5
-      },
-      "weighted_total": 3.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.2,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-02.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5752",
-      "record_id": "entry-5752-child-02",
-      "path": "entry-5752.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 5.5,
-        "reach": 5,
-        "institutions": 6,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 3
-      },
-      "weighted_total": 3.85,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.85,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-02.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5754",
-      "record_id": "entry-5754",
-      "path": "entry-5754.impact_proposal",
-      "dimensions": {
-        "harm": 4.5,
-        "reach": 5,
-        "institutions": 5,
-        "procedural_abuse": 5,
-        "self_dealing": 0,
-        "persistence": 2.5
-      },
-      "weighted_total": 4.1,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.1,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-02.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5809",
-      "record_id": "entry-5809",
-      "path": "entry-5809.impact_proposal",
-      "dimensions": {
-        "harm": 5,
-        "reach": 2,
-        "institutions": 5,
-        "procedural_abuse": 4,
-        "self_dealing": 0,
-        "persistence": 3
-      },
-      "weighted_total": 3.55,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.55,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-02.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5814",
-      "record_id": "entry-5814-child-01",
-      "path": "entry-5814.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 0,
-        "reach": 0,
-        "institutions": 0,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 0
-      },
-      "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5814",
-      "record_id": "entry-5814-child-02",
-      "path": "entry-5814.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 1.5,
-        "reach": 7,
-        "institutions": 2,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 1
-      },
-      "weighted_total": 2.25,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.25,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5815",
-      "record_id": "entry-5815",
-      "path": "entry-5815.impact_proposal",
-      "dimensions": {
-        "harm": 2.5,
-        "reach": 5,
-        "institutions": 2.5,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 2.33,
-      "event_state": "unclear",
-      "weighted_total_unrounded": 2.325,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5816",
-      "record_id": "entry-5816-child-01",
-      "path": "entry-5816.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 0,
-        "reach": 8,
-        "institutions": 5.5,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 3
-      },
-      "weighted_total": 2.73,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.725,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-amendment-08.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5816",
-      "record_id": "entry-5816-child-02",
-      "path": "entry-5816.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 3.5,
-        "reach": 5,
-        "institutions": 3.5,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 3
-      },
-      "weighted_total": 2.88,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.875,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-amendment-08.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5832",
-      "record_id": "entry-5832-child-01",
-      "path": "entry-5832.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 3,
-        "reach": 8,
-        "institutions": 1,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 4
-      },
-      "weighted_total": 3.05,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.05,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5336",
-      "record_id": "entry-5336",
-      "path": "entry-5336.impact_proposal",
-      "dimensions": {
-        "harm": 5.5,
-        "reach": 2.5,
-        "institutions": 4.5,
-        "procedural_abuse": 3,
-        "self_dealing": 0,
-        "persistence": 5
-      },
-      "weighted_total": 3.78,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.775,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5340",
-      "record_id": "entry-5340",
-      "path": "entry-5340.impact_proposal",
-      "dimensions": {
-        "harm": 0,
-        "reach": 0,
-        "institutions": 0,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 0
-      },
-      "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5344",
-      "record_id": "entry-5344-child-02",
-      "path": "entry-5344.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 2.5,
-        "reach": 5,
-        "institutions": 3,
-        "procedural_abuse": 2,
-        "self_dealing": 0,
-        "persistence": 3
-      },
-      "weighted_total": 2.8,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 2.8,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5344",
-      "record_id": "entry-5344-child-03",
-      "path": "entry-5344.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 3.5,
-        "reach": 7,
-        "institutions": 4.5,
-        "procedural_abuse": 4,
-        "self_dealing": 0,
-        "persistence": 3.5
-      },
-      "weighted_total": 4.08,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.075,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4457",
@@ -798,28 +219,7 @@
         "persistence": 1
       },
       "weighted_total": 1.55,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.55,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5478",
-      "record_id": "entry-5478",
-      "path": "entry-5478.impact_proposal",
-      "dimensions": {
-        "harm": 0,
-        "reach": 2,
-        "institutions": 0,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 0.6,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0.6,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4467",
@@ -834,10 +234,7 @@
         "persistence": 2
       },
       "weighted_total": 1.35,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.35,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4538",
@@ -852,10 +249,7 @@
         "persistence": 7
       },
       "weighted_total": 4.75,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.75,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4577",
@@ -870,10 +264,7 @@
         "persistence": 3
       },
       "weighted_total": 2.95,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.95,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4577",
@@ -888,10 +279,7 @@
         "persistence": 2
       },
       "weighted_total": 2.25,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 2.25,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-4577",
@@ -906,46 +294,7 @@
         "persistence": 2
       },
       "weighted_total": 1.7,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.7,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5512",
-      "record_id": "entry-5512-child-01",
-      "path": "entry-5512.children[0].impact_proposal",
-      "dimensions": {
-        "harm": 2,
-        "reach": 8,
-        "institutions": 2,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 2.7,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.7,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5512",
-      "record_id": "entry-5512-child-02",
-      "path": "entry-5512.children[1].impact_proposal",
-      "dimensions": {
-        "harm": 4,
-        "reach": 5,
-        "institutions": 3,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 2.5
-      },
-      "weighted_total": 2.9,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.9,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4696",
@@ -960,10 +309,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4696",
@@ -978,28 +324,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5597",
-      "record_id": "entry-5597",
-      "path": "entry-5597.impact_proposal",
-      "dimensions": {
-        "harm": 2,
-        "reach": 2,
-        "institutions": 2,
-        "procedural_abuse": 1,
-        "self_dealing": 0,
-        "persistence": 2
-      },
-      "weighted_total": 1.65,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.65,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4708",
@@ -1014,10 +339,7 @@
         "persistence": 3
       },
       "weighted_total": 2.98,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.975,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4708",
@@ -1032,10 +354,7 @@
         "persistence": 3
       },
       "weighted_total": 2.7,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.7,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4708",
@@ -1050,28 +369,7 @@
         "persistence": 3
       },
       "weighted_total": 3.1,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.1,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
-    },
-    {
-      "parent_record_id": "entry-5728",
-      "record_id": "entry-5728",
-      "path": "entry-5728.impact_proposal",
-      "dimensions": {
-        "harm": 0,
-        "reach": 0,
-        "institutions": 0,
-        "procedural_abuse": 0,
-        "self_dealing": 0,
-        "persistence": 0
-      },
-      "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-amendment-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4739",
@@ -1086,10 +384,7 @@
         "persistence": 8
       },
       "weighted_total": 3.75,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.75,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4753",
@@ -1104,10 +399,7 @@
         "persistence": 0
       },
       "weighted_total": 1.6,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.6,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4753",
@@ -1122,10 +414,7 @@
         "persistence": 2
       },
       "weighted_total": 1.8,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.8,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4827",
@@ -1140,10 +429,7 @@
         "persistence": 2
       },
       "weighted_total": 4.95,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 4.95,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-2-batch-04.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-4906",
@@ -1158,10 +444,7 @@
         "persistence": 2
       },
       "weighted_total": 2.25,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.25,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-4906",
@@ -1176,10 +459,547 @@
         "persistence": 2
       },
       "weighted_total": 1.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.2,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-02.jsonl"
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5161",
+      "record_id": "entry-5161-child-01",
+      "path": "entry-5161.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 0.5,
+        "reach": 6,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 1.55,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5161",
+      "record_id": "entry-5161-child-02",
+      "path": "entry-5161.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 4,
+        "reach": 8,
+        "institutions": 4,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 3.6,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5189",
+      "record_id": "entry-5189-child-01",
+      "path": "entry-5189.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 2.5,
+        "reach": 4,
+        "institutions": 3,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 2.2,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5189",
+      "record_id": "entry-5189-child-02",
+      "path": "entry-5189.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 4.5,
+        "reach": 6,
+        "institutions": 2,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 3.5
+      },
+      "weighted_total": 3.2,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5189",
+      "record_id": "entry-5189-child-03",
+      "path": "entry-5189.children[2].impact_proposal",
+      "dimensions": {
+        "harm": 2.5,
+        "reach": 2,
+        "institutions": 3,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 1.8,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5190",
+      "record_id": "entry-5190-child-01",
+      "path": "entry-5190.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 5,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 1.2,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5190",
+      "record_id": "entry-5190-child-02",
+      "path": "entry-5190.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 1,
+        "reach": 2,
+        "institutions": 1,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 1
+      },
+      "weighted_total": 0.95,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5190",
+      "record_id": "entry-5190-child-03",
+      "path": "entry-5190.children[2].impact_proposal",
+      "dimensions": {
+        "harm": 1,
+        "reach": 5,
+        "institutions": 3,
+        "procedural_abuse": 2,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 2.25,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5191",
+      "record_id": "entry-5191-child-01",
+      "path": "entry-5191.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 3,
+        "reach": 2,
+        "institutions": 2,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 1
+      },
+      "weighted_total": 1.7,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5191",
+      "record_id": "entry-5191-child-02",
+      "path": "entry-5191.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 5,
+        "reach": 8,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 0
+      },
+      "weighted_total": 3.1,
+      "event_state": "proposed"
+    },
+    {
+      "parent_record_id": "entry-5207",
+      "record_id": "entry-5207-child-01",
+      "path": "entry-5207.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 4,
+        "reach": 2,
+        "institutions": 3,
+        "procedural_abuse": 2,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 2.55,
+      "event_state": "threatened"
+    },
+    {
+      "parent_record_id": "entry-5207",
+      "record_id": "entry-5207-child-02",
+      "path": "entry-5207.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 2,
+        "reach": 2,
+        "institutions": 2,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 1
+      },
+      "weighted_total": 1.4,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5213",
+      "record_id": "entry-5213-child-01",
+      "path": "entry-5213.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 1,
+        "reach": 2,
+        "institutions": 2.5,
+        "procedural_abuse": 2,
+        "self_dealing": 0,
+        "persistence": 1
+      },
+      "weighted_total": 1.48,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5213",
+      "record_id": "entry-5213-child-02",
+      "path": "entry-5213.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 1,
+        "reach": 3,
+        "institutions": 3,
+        "procedural_abuse": 2.5,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 1.93,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5224",
+      "record_id": "entry-5224-child-01",
+      "path": "entry-5224.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 4.5,
+        "reach": 6,
+        "institutions": 5,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 3.6,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5224",
+      "record_id": "entry-5224-child-02",
+      "path": "entry-5224.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 4,
+        "reach": 4.5,
+        "institutions": 4.5,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 3.08,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5336",
+      "record_id": "entry-5336",
+      "path": "entry-5336.impact_proposal",
+      "dimensions": {
+        "harm": 5.5,
+        "reach": 2.5,
+        "institutions": 4.5,
+        "procedural_abuse": 3,
+        "self_dealing": 0,
+        "persistence": 5
+      },
+      "weighted_total": 3.78,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5340",
+      "record_id": "entry-5340",
+      "path": "entry-5340.impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 0,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 0
+      },
+      "weighted_total": 0,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5344",
+      "record_id": "entry-5344-child-02",
+      "path": "entry-5344.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 2.5,
+        "reach": 5,
+        "institutions": 3,
+        "procedural_abuse": 2,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 2.8,
+      "event_state": "proposed"
+    },
+    {
+      "parent_record_id": "entry-5344",
+      "record_id": "entry-5344-child-03",
+      "path": "entry-5344.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 3.5,
+        "reach": 7,
+        "institutions": 4.5,
+        "procedural_abuse": 4,
+        "self_dealing": 0,
+        "persistence": 3.5
+      },
+      "weighted_total": 4.08,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5478",
+      "record_id": "entry-5478",
+      "path": "entry-5478.impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 2,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 0.6,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5512",
+      "record_id": "entry-5512-child-01",
+      "path": "entry-5512.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 2,
+        "reach": 8,
+        "institutions": 2,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 2.7,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5512",
+      "record_id": "entry-5512-child-02",
+      "path": "entry-5512.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 4,
+        "reach": 5,
+        "institutions": 3,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2.5
+      },
+      "weighted_total": 2.9,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5597",
+      "record_id": "entry-5597",
+      "path": "entry-5597.impact_proposal",
+      "dimensions": {
+        "harm": 2,
+        "reach": 2,
+        "institutions": 2,
+        "procedural_abuse": 1,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 1.65,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5728",
+      "record_id": "entry-5728",
+      "path": "entry-5728.impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 0,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 0
+      },
+      "weighted_total": 0,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5752",
+      "record_id": "entry-5752-child-01",
+      "path": "entry-5752.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 4.5,
+        "reach": 5,
+        "institutions": 4,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2.5
+      },
+      "weighted_total": 3.2,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5752",
+      "record_id": "entry-5752-child-02",
+      "path": "entry-5752.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 5.5,
+        "reach": 5,
+        "institutions": 6,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 3.85,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5754",
+      "record_id": "entry-5754",
+      "path": "entry-5754.impact_proposal",
+      "dimensions": {
+        "harm": 4.5,
+        "reach": 5,
+        "institutions": 5,
+        "procedural_abuse": 5,
+        "self_dealing": 0,
+        "persistence": 2.5
+      },
+      "weighted_total": 4.1,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5809",
+      "record_id": "entry-5809",
+      "path": "entry-5809.impact_proposal",
+      "dimensions": {
+        "harm": 5,
+        "reach": 2,
+        "institutions": 5,
+        "procedural_abuse": 4,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 3.55,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5814",
+      "record_id": "entry-5814-child-01",
+      "path": "entry-5814.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 0,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 0
+      },
+      "weighted_total": 0,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5814",
+      "record_id": "entry-5814-child-02",
+      "path": "entry-5814.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 1.5,
+        "reach": 7,
+        "institutions": 2,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 1
+      },
+      "weighted_total": 2.25,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5815",
+      "record_id": "entry-5815",
+      "path": "entry-5815.impact_proposal",
+      "dimensions": {
+        "harm": 2.5,
+        "reach": 5,
+        "institutions": 2.5,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2
+      },
+      "weighted_total": 2.33,
+      "event_state": "unclear"
+    },
+    {
+      "parent_record_id": "entry-5816",
+      "record_id": "entry-5816-child-01",
+      "path": "entry-5816.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 8,
+        "institutions": 5.5,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 2.73,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5816",
+      "record_id": "entry-5816-child-02",
+      "path": "entry-5816.children[1].impact_proposal",
+      "dimensions": {
+        "harm": 3.5,
+        "reach": 5,
+        "institutions": 3.5,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 2.88,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5832",
+      "record_id": "entry-5832-child-01",
+      "path": "entry-5832.children[0].impact_proposal",
+      "dimensions": {
+        "harm": 3,
+        "reach": 8,
+        "institutions": 1,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 4
+      },
+      "weighted_total": 3.05,
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-5845",
+      "record_id": "entry-5845",
+      "path": "entry-5845.proposed_survivor_patch.impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 1,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 0.5
+      },
+      "weighted_total": 0.25,
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-5851",
@@ -1194,10 +1014,7 @@
         "persistence": 1
       },
       "weighted_total": 1.35,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.35,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6324",
@@ -1212,10 +1029,7 @@
         "persistence": 2
       },
       "weighted_total": 2.33,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.325,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6379",
@@ -1230,10 +1044,7 @@
         "persistence": 0
       },
       "weighted_total": 1.15,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.15,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6409",
@@ -1248,10 +1059,7 @@
         "persistence": 1
       },
       "weighted_total": 1.8,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.8,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-amendment-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6424",
@@ -1266,10 +1074,7 @@
         "persistence": 2
       },
       "weighted_total": 2.85,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.85,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6424",
@@ -1284,10 +1089,7 @@
         "persistence": 2
       },
       "weighted_total": 3.23,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.225,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6425",
@@ -1302,10 +1104,7 @@
         "persistence": 2
       },
       "weighted_total": 3.05,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.05,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6428",
@@ -1320,10 +1119,7 @@
         "persistence": 2
       },
       "weighted_total": 2.7,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.7,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-amendment-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6433",
@@ -1338,10 +1134,7 @@
         "persistence": 4
       },
       "weighted_total": 3.48,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.475,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6437",
@@ -1356,10 +1149,7 @@
         "persistence": 1.5
       },
       "weighted_total": 2.6,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.6,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6443",
@@ -1374,10 +1164,7 @@
         "persistence": 3
       },
       "weighted_total": 3.1,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.1,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-amendment-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6456",
@@ -1392,10 +1179,7 @@
         "persistence": 4
       },
       "weighted_total": 3.75,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.75,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6456",
@@ -1410,10 +1194,7 @@
         "persistence": 4
       },
       "weighted_total": 3.75,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.75,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6460",
@@ -1428,10 +1209,7 @@
         "persistence": 0
       },
       "weighted_total": 1.6,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.6,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6463",
@@ -1446,10 +1224,7 @@
         "persistence": 1
       },
       "weighted_total": 2.5,
-      "event_state": "threatened",
-      "weighted_total_unrounded": 2.5,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-3-batch-05.jsonl"
+      "event_state": "threatened"
     },
     {
       "parent_record_id": "entry-6464",
@@ -1464,10 +1239,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6475",
@@ -1482,10 +1254,7 @@
         "persistence": 2.5
       },
       "weighted_total": 3.28,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.275,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6479",
@@ -1500,10 +1269,7 @@
         "persistence": 3
       },
       "weighted_total": 2.85,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.85,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6479",
@@ -1518,10 +1284,7 @@
         "persistence": 3
       },
       "weighted_total": 2.85,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.85,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6511",
@@ -1536,10 +1299,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6521",
@@ -1554,10 +1314,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6560",
@@ -1572,10 +1329,22 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-amendments-03.jsonl"
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-6571",
+      "record_id": "entry-633",
+      "path": "entry-6571.survivor_score_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 2,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 0.7,
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6577",
@@ -1590,10 +1359,7 @@
         "persistence": 4
       },
       "weighted_total": 0.8,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0.8,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6583",
@@ -1608,10 +1374,7 @@
         "persistence": 1
       },
       "weighted_total": 0.8,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0.8,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6585",
@@ -1626,10 +1389,7 @@
         "persistence": 3
       },
       "weighted_total": 0.7,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0.7,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-amendments-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6601",
@@ -1644,10 +1404,7 @@
         "persistence": 0.5
       },
       "weighted_total": 1.73,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 1.725,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-03.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-6619",
@@ -1662,10 +1419,7 @@
         "persistence": 3
       },
       "weighted_total": 2.73,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.725,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-amendments-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6625",
@@ -1680,10 +1434,7 @@
         "persistence": 4
       },
       "weighted_total": 3.6,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.6,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6631",
@@ -1698,10 +1449,7 @@
         "persistence": 3
       },
       "weighted_total": 4.23,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.225,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6642",
@@ -1716,10 +1464,7 @@
         "persistence": 3.5
       },
       "weighted_total": 3.75,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.75,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6668",
@@ -1734,10 +1479,7 @@
         "persistence": 2
       },
       "weighted_total": 1.8,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.8,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6673",
@@ -1752,10 +1494,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-amendments-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6679",
@@ -1770,10 +1509,7 @@
         "persistence": 6
       },
       "weighted_total": 4.4,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.4,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-4-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6738",
@@ -1788,10 +1524,7 @@
         "persistence": 1
       },
       "weighted_total": 1.85,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 1.85,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-01.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-6739",
@@ -1806,10 +1539,7 @@
         "persistence": 5
       },
       "weighted_total": 4.35,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.35,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6743",
@@ -1824,10 +1554,7 @@
         "persistence": 3.5
       },
       "weighted_total": 4.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.2,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6749",
@@ -1842,10 +1569,7 @@
         "persistence": 2
       },
       "weighted_total": 3.23,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.225,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6757",
@@ -1860,10 +1584,7 @@
         "persistence": 4
       },
       "weighted_total": 3.93,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.925,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-batch-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6758",
@@ -1878,10 +1599,7 @@
         "persistence": 4
       },
       "weighted_total": 3.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.2,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-batch-02.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6763",
@@ -1896,10 +1614,7 @@
         "persistence": 1.5
       },
       "weighted_total": 2.23,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.225,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6785",
@@ -1914,10 +1629,7 @@
         "persistence": 2
       },
       "weighted_total": 2.1,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.1,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6794",
@@ -1932,10 +1644,7 @@
         "persistence": 0
       },
       "weighted_total": 3.15,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 3.15,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-03.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-6797",
@@ -1950,10 +1659,7 @@
         "persistence": 4
       },
       "weighted_total": 3.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.2,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6798",
@@ -1968,10 +1674,7 @@
         "persistence": 2
       },
       "weighted_total": 2.55,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.55,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-batch-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6799",
@@ -1986,10 +1689,7 @@
         "persistence": 2
       },
       "weighted_total": 2.1,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.1,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6801",
@@ -2004,10 +1704,7 @@
         "persistence": 1
       },
       "weighted_total": 1.28,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.275,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6811",
@@ -2022,10 +1719,22 @@
         "persistence": 5
       },
       "weighted_total": 3.75,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.75,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-batch-04.jsonl"
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-6817",
+      "record_id": "entry-6817",
+      "path": "entry-6817.impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 6,
+        "institutions": 5,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 3
+      },
+      "weighted_total": 2.25,
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6818",
@@ -2040,10 +1749,22 @@
         "persistence": 3.5
       },
       "weighted_total": 4.88,
-      "event_state": "realized",
-      "weighted_total_unrounded": 4.875,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-amendment-06.jsonl"
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-6823",
+      "record_id": "entry-6823",
+      "path": "entry-6823.impact_proposal",
+      "dimensions": {
+        "harm": 4.5,
+        "reach": 5.5,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 2.5
+      },
+      "weighted_total": 2.7,
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6824",
@@ -2058,10 +1779,7 @@
         "persistence": 2
       },
       "weighted_total": 2.55,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.55,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-batch-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6827",
@@ -2076,10 +1794,7 @@
         "persistence": 0
       },
       "weighted_total": 2.5,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 2.5,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-batch-05.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-6828",
@@ -2094,10 +1809,7 @@
         "persistence": 2.5
       },
       "weighted_total": 2.38,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.375,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-5-batch-05.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6829",
@@ -2112,10 +1824,7 @@
         "persistence": 1.5
       },
       "weighted_total": 1.08,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 1.075,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-04.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-6834",
@@ -2130,10 +1839,7 @@
         "persistence": 2
       },
       "weighted_total": 2.8,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.8,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-6-amendment-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6835",
@@ -2148,10 +1854,7 @@
         "persistence": 2
       },
       "weighted_total": 3.3,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 3.3,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-6-amendment-01.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-6841",
@@ -2166,10 +1869,7 @@
         "persistence": 2
       },
       "weighted_total": 2.7,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.7,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-6-amendment-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6857",
@@ -2184,10 +1884,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-6-amendment-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6865",
@@ -2202,10 +1899,7 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6889",
@@ -2220,10 +1914,22 @@
         "persistence": 0
       },
       "weighted_total": 0,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-04.jsonl"
+      "event_state": "realized"
+    },
+    {
+      "parent_record_id": "entry-6900",
+      "record_id": "entry-6900",
+      "path": "entry-6900.merge_proposal.proposed_survivor_patch.impact_proposal",
+      "dimensions": {
+        "harm": 0,
+        "reach": 2,
+        "institutions": 0,
+        "procedural_abuse": 0,
+        "self_dealing": 0,
+        "persistence": 1
+      },
+      "weighted_total": 0.5,
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6913",
@@ -2238,10 +1944,7 @@
         "persistence": 2
       },
       "weighted_total": 1.1,
-      "event_state": "realized",
-      "weighted_total_unrounded": 1.1,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-6-batch-03.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6930",
@@ -2256,10 +1959,7 @@
         "persistence": 1
       },
       "weighted_total": 1.4,
-      "event_state": "proposed",
-      "weighted_total_unrounded": 1.4,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-6-amendment-01.jsonl"
+      "event_state": "proposed"
     },
     {
       "parent_record_id": "entry-6941",
@@ -2274,10 +1974,7 @@
         "persistence": 4
       },
       "weighted_total": 3.2,
-      "event_state": "realized",
-      "weighted_total_unrounded": 3.2,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/qa-6-amendment-01.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-6955",
@@ -2292,10 +1989,7 @@
         "persistence": 3
       },
       "weighted_total": 2.88,
-      "event_state": "realized",
-      "weighted_total_unrounded": 2.875,
-      "qa_status": "pass",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-amendment-04.jsonl"
+      "event_state": "realized"
     },
     {
       "parent_record_id": "entry-954",
@@ -2310,10 +2004,7 @@
         "persistence": 3
       },
       "weighted_total": 0.7,
-      "event_state": "realized",
-      "weighted_total_unrounded": 0.7,
-      "qa_status": "revise",
-      "authoritative_qa_path": "data/neon-workbench/external/web-held336-qa-2026-10-05/root-batch-03.jsonl"
+      "event_state": "realized"
     }
   ]
 }
