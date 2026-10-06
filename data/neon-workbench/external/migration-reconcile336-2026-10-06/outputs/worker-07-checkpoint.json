@@ -10,18 +10,15 @@
     "output": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * branch codex/migration-reconcile336-2026-10-06 -> FETCH_HEAD\n * [new branch] codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06"
   },
   "completed_ids": [
-    "entry-954"
+    "entry-954",
+    "entry-5755"
   ],
   "remaining_ids": [
-    "entry-5755",
     "entry-6606",
     "entry-6884"
   ],
   "last_push": {
-    "status": "success",
-    "command": "git push -u origin HEAD",
-    "commit": "254458a3",
-    "branch": "ls/1-trump-files-migration-reconciliation-07--I4WO",
-    "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n * [new branch] HEAD -> ls/1-trump-files-migration-reconciliation-07--I4WO\nbranch set up to track origin/ls/1-trump-files-migration-reconciliation-07--I4WO"
+    "status": "pending",
+    "branch": "ls/1-trump-files-migration-reconciliation-07--I4WO"
   }
 }
