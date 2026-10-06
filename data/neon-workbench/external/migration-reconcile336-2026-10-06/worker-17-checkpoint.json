@@ -16,11 +16,10 @@
   "completed_ids": [
     "entry-1779",
     "entry-5840",
-    "entry-6631"
-  ],
-  "remaining_ids": [
+    "entry-6631",
     "entry-6929"
   ],
+  "remaining_ids": [],
   "push_results": [
     {
       "record_id": "entry-1779",
@@ -100,11 +99,10 @@
     }
   ],
   "latest_correction": {
-    "record_id": "entry-6631",
+    "record_id": "entry-6929",
     "revision": 5,
     "path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-17-amendment-5.jsonl",
-    "line": 1,
-    "commit": "ac5ae76e",
-    "status": "pushed via GitHub rename redirect"
+    "line": 2,
+    "status": "appended; awaiting commit and push"
   }
 }
