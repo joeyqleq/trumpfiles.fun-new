@@ -13,7 +13,26 @@
     "ls_remote": "19a772e15765348b82f6d708ad63f58927931321\trefs/heads/codex/migration-reconcile336-2026-10-06",
     "fetch_command": "git fetch origin codex/migration-reconcile336-2026-10-06",
     "fetch_exit_code": 0,
-    "fetch_result": "Fetched origin/codex/migration-reconcile336-2026-10-06 at 19a772e15765348b82f6d708ad63f58927931321; git cat-file confirmed commit object."
+    "fetch_result": "Fetched origin/codex/migration-reconcile336-2026-10-06 at 19a772e15765348b82f6d708ad63f58927931321; git cat-file confirmed commit object.",
+    "actual_canonical_push_attempt": {
+      "command": "git push -u origin HEAD",
+      "exit_code": 128,
+      "result": "curl: (22) The requested URL returned error: 403; invalid credential line: Repository is not a member of this stack; could not read Username for canonical origin."
+    },
+    "actual_recovery_push": {
+      "content_commit": "799f510729df367b154c2a9caedc695cc9895f8a",
+      "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
+      "exit_code": 0,
+      "result": "GitHub accepted the push through the old repository URL and returned the moved-repository notice naming the canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git.",
+      "status": "success",
+      "redirect_target": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "repository_id": 1082328314,
+      "canonical_origin_remote_head_check": {
+        "exit_code": 0,
+        "result": "799f510729df367b154c2a9caedc695cc9895f8a\trefs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
+        "matches_pushed_commit": true
+      }
+    }
   },
   "assigned_ids": [
     "entry-2380",
@@ -60,16 +79,46 @@
       "exit_code": 128,
       "result": "curl: (22) The requested URL returned error: 403\nwarning: invalid credential line: Repository is not a member of this stack\nfatal: could not read Username for 'https://github.com/p5n-n3t/trumpfiles-fun-new.git': No such device or address",
       "status": "failed"
+    },
+    {
+      "parent_id": "entry-6939",
+      "content_commit": "799f510729df367b154c2a9caedc695cc9895f8a",
+      "command": "git push -u origin HEAD",
+      "exit_code": 128,
+      "result": "curl: (22) The requested URL returned error: 403; invalid credential line: Repository is not a member of this stack; could not read Username for canonical origin.",
+      "status": "failed"
+    },
+    {
+      "parent_id": "entry-6939",
+      "content_commit": "799f510729df367b154c2a9caedc695cc9895f8a",
+      "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
+      "exit_code": 0,
+      "result": "GitHub accepted the push through the old repository URL and returned the moved-repository notice naming the canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git.",
+      "status": "success",
+      "redirect_target": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "repository_id": 1082328314,
+      "canonical_origin_remote_head_check": {
+        "exit_code": 0,
+        "result": "799f510729df367b154c2a9caedc695cc9895f8a\trefs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
+        "matches_pushed_commit": true
+      }
     }
   ],
   "last_parent_saved": "entry-6939",
   "last_push_result": {
     "parent_id": "entry-6939",
-    "content_commit": "3ec679bc4015e83350a00b663c23697075fe796f",
-    "command": "git push -u origin HEAD",
-    "exit_code": 128,
-    "result": "curl: (22) The requested URL returned error: 403\nwarning: invalid credential line: Repository is not a member of this stack\nfatal: could not read Username for 'https://github.com/p5n-n3t/trumpfiles-fun-new.git': No such device or address",
-    "status": "failed"
+    "content_commit": "799f510729df367b154c2a9caedc695cc9895f8a",
+    "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
+    "exit_code": 0,
+    "result": "GitHub accepted the push through the old repository URL and returned the moved-repository notice naming the canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git.",
+    "status": "success",
+    "redirect_target": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "repository_id": 1082328314,
+    "canonical_origin_remote_head_check": {
+      "exit_code": 0,
+      "result": "799f510729df367b154c2a9caedc695cc9895f8a\trefs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
+      "matches_pushed_commit": true
+    }
   },
   "successful_recovery_push": {
     "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
@@ -89,19 +138,34 @@
   },
   "all_assigned_outputs_pushed": true,
   "post_completion_correction": {
-    "record_id": "entry-6672",
-    "reason": "Set terminal entry_number from null to frozen input value 6672.",
-    "amendment_file": "worker-24-amendment-5.jsonl",
-    "revision": 5,
-    "supersedes": "worker-24-amendment-3.jsonl revision 3.",
+    "record_id": "entry-6939",
+    "reason": "Resolve only migration336:entry-6939:missing_core_labels:entry-6939 by adding core labels already present as topic tags.",
+    "amendment_file": "worker-24-amendment-6.jsonl",
+    "revision": 6,
+    "supersedes": "worker-24-amendment-4.jsonl revision 4; terminal row 4 remains immutable.",
     "push_receipt": {
-      "commit": "c919f3eadd08c5b7a66b989e54115c1c7ed5d9d9",
+      "parent_id": "entry-6939",
+      "content_commit": "799f510729df367b154c2a9caedc695cc9895f8a",
       "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
       "exit_code": 0,
-      "result": "remote: This repository moved. Please use the new location:        \nremote:   https://github.com/p5n-n3t/trumpfiles-fun-new.git        \nremote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit:        \nremote:      https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot        \nremote: \nTo https://github.com/p5n-n3t/trumpfiles.fun-new.git\n   53b94cde..c919f3ea  HEAD -> ls/16-trump-files-migration-reconciliation-24--AFHh",
+      "result": "GitHub accepted the push through the old repository URL and returned the moved-repository notice naming the canonical URL https://github.com/p5n-n3t/trumpfiles-fun-new.git.",
       "status": "success",
       "redirect_target": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
-      "repository_id": 1082328314
+      "repository_id": 1082328314,
+      "canonical_origin_remote_head_check": {
+        "exit_code": 0,
+        "result": "799f510729df367b154c2a9caedc695cc9895f8a\trefs/heads/ls/16-trump-files-migration-reconciliation-24--AFHh",
+        "matches_pushed_commit": true
+      }
+    },
+    "validation": {
+      "assigned_ids_exact": "pass",
+      "terminal_wrappers": "pass",
+      "copy_lengths": "pass for present layers; long copy withheld only for documented holds/duplicate resolution",
+      "known_quotes": "pass",
+      "impact_v2": "all four proposals deferred; dimensions null and weighted arithmetic not applicable",
+      "core_labels": "pass for entry-6939; values selected from existing topic_tags",
+      "validate_held336_gate": "callable unavailable in workspace/tools; manual supplied-gate criteria checked"
     }
   }
 }
