@@ -9,11 +9,10 @@
   "completedIDs": [
     "entry-1727",
     "entry-5814",
-    "entry-6614"
-  ],
-  "remainingIDs": [
+    "entry-6614",
     "entry-6915"
   ],
+  "remainingIDs": [],
   "repo": {
     "full_name": "p5n-n3t/trumpfiles-fun-new",
     "immutable_id": 1082328314,
@@ -67,12 +66,12 @@
       "result": "success"
     }
   ],
-  "last_completed_parent": "entry-6614",
-  "updated_at": "2026-10-06T10:46:47.483387+00:00",
+  "last_completed_parent": "entry-6915",
+  "updated_at": "2026-10-06T10:46:54.479134+00:00",
   "push_transport": {
     "fetch_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
     "resolution": "GitHub API and git ls-remote resolve the registered former name to p5n-n3t/trumpfiles-fun-new, repository ID 1082328314; canonical push URL was rejected because Lightsprint credential binding reported the repository was not a stack member under the new slug."
   },
-  "last_parent_push_result": "success"
+  "last_parent_push_result": "pending"
 }
