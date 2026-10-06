@@ -54,7 +54,16 @@
       "exit_code": 0,
       "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   d381a76c..94d6bf44  HEAD -> ls/2-trump-files-migration-reconciliation-13--lN8f",
       "status": "success"
+    },
+    {
+      "record_id": "entry-6922",
+      "commit": "052f915f",
+      "command": "git push origin HEAD:ls/2-trump-files-migration-reconciliation-13--lN8f",
+      "exit_code": 0,
+      "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   94d6bf44..052f915f  HEAD -> ls/2-trump-files-migration-reconciliation-13--lN8f",
+      "status": "success"
     }
   ],
-  "last_completed_parent": "entry-6922"
+  "last_completed_parent": "entry-6922",
+  "checkpoint_finalized_after_all_parents": true
 }
