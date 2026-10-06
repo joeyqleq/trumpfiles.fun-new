@@ -105,12 +105,28 @@
       "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
       "result": "success",
       "detail": "GitHub redirected the stack-registered legacy slug to canonical repository ID 1082328314; ls-remote confirmed commit d59c301c41835e761735931fb1f6c04e2c20f527 on the target branch."
+    },
+    {
+      "record_id": "entry-6611",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "result": "success",
+      "detail": "GitHub redirected the stack-registered legacy slug to canonical repository ID 1082328314; ls-remote confirmed commit 7c09c078a83610181f670260cd082a3a92a5e993 on the target branch."
     }
   ],
   "current_worker_push_results": [
     {
       "record_id": "entry-5761",
       "commit": "d59c301c41835e761735931fb1f6c04e2c20f527",
+      "result": "success",
+      "transport_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "canonical_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "canonical_repository_id": 1082328314,
+      "remote_branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf",
+      "detail": "GitHub accepted the push through the stack-registered legacy slug and redirected it to the canonical repository."
+    },
+    {
+      "record_id": "entry-6611",
+      "commit": "7c09c078a83610181f670260cd082a3a92a5e993",
       "result": "success",
       "transport_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
       "canonical_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
