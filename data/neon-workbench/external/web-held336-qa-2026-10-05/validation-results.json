@@ -4,9 +4,9 @@
     "authoritative_count": 336,
     "unique_count": 336,
     "status_counts": {
-      "revise": 93,
-      "hold": 133,
-      "pass": 104,
+      "revise": 98,
+      "hold": 127,
+      "pass": 105,
       "draft_unverified": 6
     },
     "missing_ids": [],
@@ -14,11 +14,9 @@
     "passed": true
   },
   "effective_card_validation": {
-    "passed": true,
-    "card_count": 167,
-    "score_count": 128,
-    "failures": [],
-    "card_lengths": [
+    "card_count": 170,
+    "score_count": 133,
+    "cards": [
       {
         "parent_record_id": "entry-1181",
         "record_id": "entry-1181",
@@ -263,6 +261,168 @@
         "long_words": 162
       },
       {
+        "parent_record_id": "entry-4457",
+        "record_id": "entry-4457-child-01",
+        "path": "entry-4457.children[0]",
+        "title_chars": 68,
+        "short_chars": 136,
+        "medium_words": 68,
+        "long_words": 168
+      },
+      {
+        "parent_record_id": "entry-4457",
+        "record_id": "entry-4457-child-02",
+        "path": "entry-4457.children[1]",
+        "title_chars": 83,
+        "short_chars": 163,
+        "medium_words": 75,
+        "long_words": 190
+      },
+      {
+        "parent_record_id": "entry-4467",
+        "record_id": "entry-4467",
+        "path": "entry-4467",
+        "title_chars": 76,
+        "short_chars": 148,
+        "medium_words": 70,
+        "long_words": 176
+      },
+      {
+        "parent_record_id": "entry-4538",
+        "record_id": "entry-4538",
+        "path": "entry-4538",
+        "title_chars": 81,
+        "short_chars": 135,
+        "medium_words": 72,
+        "long_words": 198
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-01",
+        "path": "entry-4577.children[0]",
+        "title_chars": 64,
+        "short_chars": 108,
+        "medium_words": 68,
+        "long_words": 155
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-02",
+        "path": "entry-4577.children[1]",
+        "title_chars": 78,
+        "short_chars": 87,
+        "medium_words": 66,
+        "long_words": 171
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-03",
+        "path": "entry-4577.children[2]",
+        "title_chars": 76,
+        "short_chars": 108,
+        "medium_words": 66,
+        "long_words": 169
+      },
+      {
+        "parent_record_id": "entry-4696",
+        "record_id": "entry-4696-child-01",
+        "path": "entry-4696.children[0]",
+        "title_chars": 65,
+        "short_chars": 86,
+        "medium_words": 51,
+        "long_words": 153
+      },
+      {
+        "parent_record_id": "entry-4696",
+        "record_id": "entry-4696-child-02",
+        "path": "entry-4696.children[1]",
+        "title_chars": 59,
+        "short_chars": 125,
+        "medium_words": 52,
+        "long_words": 156
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-01",
+        "path": "entry-4708.children[0]",
+        "title_chars": 90,
+        "short_chars": 112,
+        "medium_words": 65,
+        "long_words": 184
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-02",
+        "path": "entry-4708.children[1]",
+        "title_chars": 72,
+        "short_chars": 115,
+        "medium_words": 63,
+        "long_words": 190
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-03",
+        "path": "entry-4708.children[2]",
+        "title_chars": 74,
+        "short_chars": 127,
+        "medium_words": 66,
+        "long_words": 191
+      },
+      {
+        "parent_record_id": "entry-4739",
+        "record_id": "entry-4739-child-01",
+        "path": "entry-4739.children[0]",
+        "title_chars": 45,
+        "short_chars": 146,
+        "medium_words": 48,
+        "long_words": 155
+      },
+      {
+        "parent_record_id": "entry-4753",
+        "record_id": "entry-4753-child-01",
+        "path": "entry-4753.children[0]",
+        "title_chars": 70,
+        "short_chars": 177,
+        "medium_words": 54,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-4753",
+        "record_id": "entry-4753-child-02",
+        "path": "entry-4753.children[1]",
+        "title_chars": 85,
+        "short_chars": 120,
+        "medium_words": 53,
+        "long_words": 165
+      },
+      {
+        "parent_record_id": "entry-4827",
+        "record_id": "entry-4827",
+        "path": "entry-4827",
+        "title_chars": 90,
+        "short_chars": 161,
+        "medium_words": 65,
+        "long_words": 179
+      },
+      {
+        "parent_record_id": "entry-4906",
+        "record_id": "entry-4906-child-01",
+        "path": "entry-4906.children[0]",
+        "title_chars": 49,
+        "short_chars": 105,
+        "medium_words": 54,
+        "long_words": 153
+      },
+      {
+        "parent_record_id": "entry-4906",
+        "record_id": "entry-4906-child-02",
+        "path": "entry-4906.children[1]",
+        "title_chars": 62,
+        "short_chars": 99,
+        "medium_words": 52,
+        "long_words": 173
+      },
+      {
         "parent_record_id": "entry-5112",
         "record_id": "entry-5112",
         "path": "entry-5112",
@@ -434,6 +594,87 @@
         "long_words": 165
       },
       {
+        "parent_record_id": "entry-5336",
+        "record_id": "entry-5336",
+        "path": "entry-5336",
+        "title_chars": 69,
+        "short_chars": 150,
+        "medium_words": 75,
+        "long_words": 172
+      },
+      {
+        "parent_record_id": "entry-5340",
+        "record_id": "entry-5340",
+        "path": "entry-5340",
+        "title_chars": 73,
+        "short_chars": 108,
+        "medium_words": 67,
+        "long_words": 198
+      },
+      {
+        "parent_record_id": "entry-5344",
+        "record_id": "entry-5344-child-02",
+        "path": "entry-5344.children[0]",
+        "title_chars": 64,
+        "short_chars": 64,
+        "medium_words": 54,
+        "long_words": 169
+      },
+      {
+        "parent_record_id": "entry-5344",
+        "record_id": "entry-5344-child-03",
+        "path": "entry-5344.children[1]",
+        "title_chars": 75,
+        "short_chars": 75,
+        "medium_words": 56,
+        "long_words": 171
+      },
+      {
+        "parent_record_id": "entry-5478",
+        "record_id": "entry-5478",
+        "path": "entry-5478",
+        "title_chars": 66,
+        "short_chars": 128,
+        "medium_words": 64,
+        "long_words": 177
+      },
+      {
+        "parent_record_id": "entry-5512",
+        "record_id": "entry-5512-child-01",
+        "path": "entry-5512.children[0]",
+        "title_chars": 58,
+        "short_chars": 86,
+        "medium_words": 54,
+        "long_words": 143
+      },
+      {
+        "parent_record_id": "entry-5512",
+        "record_id": "entry-5512-child-02",
+        "path": "entry-5512.children[1]",
+        "title_chars": 92,
+        "short_chars": 121,
+        "medium_words": 62,
+        "long_words": 148
+      },
+      {
+        "parent_record_id": "entry-5597",
+        "record_id": "entry-5597",
+        "path": "entry-5597",
+        "title_chars": 65,
+        "short_chars": 93,
+        "medium_words": 63,
+        "long_words": 195
+      },
+      {
+        "parent_record_id": "entry-5728",
+        "record_id": "entry-5728",
+        "path": "entry-5728",
+        "title_chars": 61,
+        "short_chars": 134,
+        "medium_words": 80,
+        "long_words": 199
+      },
+      {
         "parent_record_id": "entry-5752",
         "record_id": "entry-5752-child-01",
         "path": "entry-5752.children[0]",
@@ -533,247 +774,13 @@
         "long_words": 181
       },
       {
-        "parent_record_id": "entry-5336",
-        "record_id": "entry-5336",
-        "path": "entry-5336",
-        "title_chars": 69,
-        "short_chars": 150,
-        "medium_words": 75,
-        "long_words": 172
-      },
-      {
-        "parent_record_id": "entry-5340",
-        "record_id": "entry-5340",
-        "path": "entry-5340",
-        "title_chars": 73,
-        "short_chars": 108,
-        "medium_words": 67,
-        "long_words": 198
-      },
-      {
-        "parent_record_id": "entry-5344",
-        "record_id": "entry-5344-child-02",
-        "path": "entry-5344.children[0]",
-        "title_chars": 64,
-        "short_chars": 64,
-        "medium_words": 54,
-        "long_words": 169
-      },
-      {
-        "parent_record_id": "entry-5344",
-        "record_id": "entry-5344-child-03",
-        "path": "entry-5344.children[1]",
-        "title_chars": 75,
-        "short_chars": 75,
-        "medium_words": 56,
-        "long_words": 171
-      },
-      {
-        "parent_record_id": "entry-4457",
-        "record_id": "entry-4457-child-01",
-        "path": "entry-4457.children[0]",
-        "title_chars": 68,
-        "short_chars": 136,
-        "medium_words": 68,
-        "long_words": 168
-      },
-      {
-        "parent_record_id": "entry-4457",
-        "record_id": "entry-4457-child-02",
-        "path": "entry-4457.children[1]",
-        "title_chars": 83,
-        "short_chars": 163,
-        "medium_words": 75,
-        "long_words": 190
-      },
-      {
-        "parent_record_id": "entry-5478",
-        "record_id": "entry-5478",
-        "path": "entry-5478",
-        "title_chars": 66,
-        "short_chars": 128,
-        "medium_words": 64,
-        "long_words": 177
-      },
-      {
-        "parent_record_id": "entry-4467",
-        "record_id": "entry-4467",
-        "path": "entry-4467",
-        "title_chars": 76,
-        "short_chars": 148,
-        "medium_words": 70,
-        "long_words": 176
-      },
-      {
-        "parent_record_id": "entry-4538",
-        "record_id": "entry-4538",
-        "path": "entry-4538",
-        "title_chars": 81,
-        "short_chars": 135,
-        "medium_words": 72,
-        "long_words": 198
-      },
-      {
-        "parent_record_id": "entry-4577",
-        "record_id": "entry-4577-child-01",
-        "path": "entry-4577.children[0]",
-        "title_chars": 64,
-        "short_chars": 108,
-        "medium_words": 68,
-        "long_words": 155
-      },
-      {
-        "parent_record_id": "entry-4577",
-        "record_id": "entry-4577-child-02",
-        "path": "entry-4577.children[1]",
-        "title_chars": 78,
-        "short_chars": 87,
-        "medium_words": 66,
-        "long_words": 171
-      },
-      {
-        "parent_record_id": "entry-4577",
-        "record_id": "entry-4577-child-03",
-        "path": "entry-4577.children[2]",
-        "title_chars": 76,
-        "short_chars": 108,
-        "medium_words": 66,
-        "long_words": 169
-      },
-      {
-        "parent_record_id": "entry-5512",
-        "record_id": "entry-5512-child-01",
-        "path": "entry-5512.children[0]",
-        "title_chars": 58,
-        "short_chars": 86,
-        "medium_words": 54,
-        "long_words": 143
-      },
-      {
-        "parent_record_id": "entry-5512",
-        "record_id": "entry-5512-child-02",
-        "path": "entry-5512.children[1]",
-        "title_chars": 92,
-        "short_chars": 121,
-        "medium_words": 62,
-        "long_words": 148
-      },
-      {
-        "parent_record_id": "entry-4696",
-        "record_id": "entry-4696-child-01",
-        "path": "entry-4696.children[0]",
-        "title_chars": 65,
-        "short_chars": 86,
-        "medium_words": 51,
-        "long_words": 153
-      },
-      {
-        "parent_record_id": "entry-4696",
-        "record_id": "entry-4696-child-02",
-        "path": "entry-4696.children[1]",
-        "title_chars": 59,
+        "parent_record_id": "entry-5845",
+        "record_id": "entry-5845",
+        "path": "entry-5845.proposed_survivor_patch",
+        "title_chars": 77,
         "short_chars": 125,
-        "medium_words": 52,
-        "long_words": 156
-      },
-      {
-        "parent_record_id": "entry-5597",
-        "record_id": "entry-5597",
-        "path": "entry-5597",
-        "title_chars": 65,
-        "short_chars": 93,
-        "medium_words": 63,
-        "long_words": 195
-      },
-      {
-        "parent_record_id": "entry-4708",
-        "record_id": "entry-4708-child-01",
-        "path": "entry-4708.children[0]",
-        "title_chars": 90,
-        "short_chars": 112,
-        "medium_words": 65,
-        "long_words": 184
-      },
-      {
-        "parent_record_id": "entry-4708",
-        "record_id": "entry-4708-child-02",
-        "path": "entry-4708.children[1]",
-        "title_chars": 72,
-        "short_chars": 115,
-        "medium_words": 63,
-        "long_words": 190
-      },
-      {
-        "parent_record_id": "entry-4708",
-        "record_id": "entry-4708-child-03",
-        "path": "entry-4708.children[2]",
-        "title_chars": 74,
-        "short_chars": 127,
-        "medium_words": 66,
-        "long_words": 191
-      },
-      {
-        "parent_record_id": "entry-5728",
-        "record_id": "entry-5728",
-        "path": "entry-5728",
-        "title_chars": 61,
-        "short_chars": 134,
-        "medium_words": 80,
-        "long_words": 199
-      },
-      {
-        "parent_record_id": "entry-4739",
-        "record_id": "entry-4739-child-01",
-        "path": "entry-4739.children[0]",
-        "title_chars": 45,
-        "short_chars": 146,
-        "medium_words": 48,
-        "long_words": 155
-      },
-      {
-        "parent_record_id": "entry-4753",
-        "record_id": "entry-4753-child-01",
-        "path": "entry-4753.children[0]",
-        "title_chars": 70,
-        "short_chars": 177,
-        "medium_words": 54,
-        "long_words": 165
-      },
-      {
-        "parent_record_id": "entry-4753",
-        "record_id": "entry-4753-child-02",
-        "path": "entry-4753.children[1]",
-        "title_chars": 85,
-        "short_chars": 120,
-        "medium_words": 53,
-        "long_words": 165
-      },
-      {
-        "parent_record_id": "entry-4827",
-        "record_id": "entry-4827",
-        "path": "entry-4827",
-        "title_chars": 90,
-        "short_chars": 161,
-        "medium_words": 65,
-        "long_words": 179
-      },
-      {
-        "parent_record_id": "entry-4906",
-        "record_id": "entry-4906-child-01",
-        "path": "entry-4906.children[0]",
-        "title_chars": 49,
-        "short_chars": 105,
-        "medium_words": 54,
-        "long_words": 153
-      },
-      {
-        "parent_record_id": "entry-4906",
-        "record_id": "entry-4906-child-02",
-        "path": "entry-4906.children[1]",
-        "title_chars": 62,
-        "short_chars": 99,
-        "medium_words": 52,
-        "long_words": 173
+        "medium_words": 56,
+        "long_words": 205
       },
       {
         "parent_record_id": "entry-5851",
@@ -1352,6 +1359,15 @@
         "long_words": 152
       },
       {
+        "parent_record_id": "entry-6823",
+        "record_id": "entry-6823",
+        "path": "entry-6823",
+        "title_chars": 54,
+        "short_chars": 141,
+        "medium_words": 68,
+        "long_words": 146
+      },
+      {
         "parent_record_id": "entry-6824",
         "record_id": "entry-6824",
         "path": "entry-6824",
@@ -1460,6 +1476,15 @@
         "long_words": 203
       },
       {
+        "parent_record_id": "entry-6900",
+        "record_id": "entry-6900",
+        "path": "entry-6900.merge_proposal.proposed_survivor_patch",
+        "title_chars": 86,
+        "short_chars": 124,
+        "medium_words": 47,
+        "long_words": 173
+      },
+      {
         "parent_record_id": "entry-6913",
         "record_id": "entry-6913",
         "path": "entry-6913",
@@ -1522,13 +1547,2017 @@
         "medium_words": 47,
         "long_words": 145
       }
-    ]
+    ],
+    "scores": [
+      {
+        "parent_record_id": "entry-236",
+        "record_id": "entry-236",
+        "path": "entry-236.impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 8,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 5
+        },
+        "weighted_total": 4.2,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-2624",
+        "record_id": "entry-2624",
+        "path": "entry-2624.impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 3,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-2854",
+        "record_id": "entry-2854",
+        "path": "entry-2854.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0.4,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-3380",
+        "record_id": "entry-3380",
+        "path": "entry-3380.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 2,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.25,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4198",
+        "record_id": "entry-4198",
+        "path": "entry-4198.impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 6,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.9,
+        "event_state": "threatened"
+      },
+      {
+        "parent_record_id": "entry-4239",
+        "record_id": "entry-4239-child-01",
+        "path": "entry-4239.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 5,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4239",
+        "record_id": "entry-4239-child-02",
+        "path": "entry-4239.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 8,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4239",
+        "record_id": "entry-4239-child-03",
+        "path": "entry-4239.children[2].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 8,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4240",
+        "record_id": "entry-4240-child-01",
+        "path": "entry-4240.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4240",
+        "record_id": "entry-4240-child-02",
+        "path": "entry-4240.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 5,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 1,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4407",
+        "record_id": "entry-4407-child-01",
+        "path": "entry-4407.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 7,
+          "institutions": 4,
+          "procedural_abuse": 5,
+          "self_dealing": 0,
+          "persistence": 2.5
+        },
+        "weighted_total": 4.35,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4407",
+        "record_id": "entry-4407-child-02",
+        "path": "entry-4407.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 7,
+          "institutions": 4,
+          "procedural_abuse": 5,
+          "self_dealing": 0,
+          "persistence": 2.5
+        },
+        "weighted_total": 4.35,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4438",
+        "record_id": "entry-4438",
+        "path": "entry-4438.impact_proposal",
+        "dimensions": {
+          "harm": 3.2,
+          "reach": 4,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 5,
+          "persistence": 3
+        },
+        "weighted_total": 2.86,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4457",
+        "record_id": "entry-4457-child-01",
+        "path": "entry-4457.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 1,
+          "reach": 2,
+          "institutions": 3,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.55,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4467",
+        "record_id": "entry-4467",
+        "path": "entry-4467.impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.35,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4538",
+        "record_id": "entry-4538",
+        "path": "entry-4538.impact_proposal",
+        "dimensions": {
+          "harm": 7,
+          "reach": 9,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 7
+        },
+        "weighted_total": 4.75,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-01",
+        "path": "entry-4577.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 8,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.95,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-02",
+        "path": "entry-4577.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 5,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.25,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-4577",
+        "record_id": "entry-4577-child-03",
+        "path": "entry-4577.children[2].impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 3,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4696",
+        "record_id": "entry-4696-child-01",
+        "path": "entry-4696.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4696",
+        "record_id": "entry-4696-child-02",
+        "path": "entry-4696.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-01",
+        "path": "entry-4708.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 4,
+          "institutions": 3.5,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.98,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-02",
+        "path": "entry-4708.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 3,
+          "institutions": 4,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4708",
+        "record_id": "entry-4708-child-03",
+        "path": "entry-4708.children[2].impact_proposal",
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 3.5,
+          "institutions": 4.5,
+          "procedural_abuse": 2.5,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 3.1,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4739",
+        "record_id": "entry-4739-child-01",
+        "path": "entry-4739.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 8.5,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 8
+        },
+        "weighted_total": 3.75,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4753",
+        "record_id": "entry-4753-child-01",
+        "path": "entry-4753.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 8,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 1.6,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4753",
+        "record_id": "entry-4753-child-02",
+        "path": "entry-4753.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 2,
+          "institutions": 2,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.8,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4827",
+        "record_id": "entry-4827",
+        "path": "entry-4827.impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 8,
+          "institutions": 6,
+          "procedural_abuse": 5,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 4.95,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-4906",
+        "record_id": "entry-4906-child-01",
+        "path": "entry-4906.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 1,
+          "reach": 8,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.25,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-4906",
+        "record_id": "entry-4906-child-02",
+        "path": "entry-4906.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 5,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5161",
+        "record_id": "entry-5161-child-01",
+        "path": "entry-5161.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 0.5,
+          "reach": 6,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.55,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5161",
+        "record_id": "entry-5161-child-02",
+        "path": "entry-5161.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 8,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 3.6,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5189",
+        "record_id": "entry-5189-child-01",
+        "path": "entry-5189.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 4,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5189",
+        "record_id": "entry-5189-child-02",
+        "path": "entry-5189.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 6,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3.5
+        },
+        "weighted_total": 3.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5189",
+        "record_id": "entry-5189-child-03",
+        "path": "entry-5189.children[2].impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 2,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.8,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5190",
+        "record_id": "entry-5190-child-01",
+        "path": "entry-5190.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 5,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5190",
+        "record_id": "entry-5190-child-02",
+        "path": "entry-5190.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 1,
+          "reach": 2,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 0.95,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5190",
+        "record_id": "entry-5190-child-03",
+        "path": "entry-5190.children[2].impact_proposal",
+        "dimensions": {
+          "harm": 1,
+          "reach": 5,
+          "institutions": 3,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.25,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5191",
+        "record_id": "entry-5191-child-01",
+        "path": "entry-5191.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 2,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5191",
+        "record_id": "entry-5191-child-02",
+        "path": "entry-5191.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 8,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 3.1,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-5207",
+        "record_id": "entry-5207-child-01",
+        "path": "entry-5207.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 2,
+          "institutions": 3,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.55,
+        "event_state": "threatened"
+      },
+      {
+        "parent_record_id": "entry-5207",
+        "record_id": "entry-5207-child-02",
+        "path": "entry-5207.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 2,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.4,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5213",
+        "record_id": "entry-5213-child-01",
+        "path": "entry-5213.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 1,
+          "reach": 2,
+          "institutions": 2.5,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.48,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5213",
+        "record_id": "entry-5213-child-02",
+        "path": "entry-5213.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 1,
+          "reach": 3,
+          "institutions": 3,
+          "procedural_abuse": 2.5,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.93,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5224",
+        "record_id": "entry-5224-child-01",
+        "path": "entry-5224.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 6,
+          "institutions": 5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 3.6,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5224",
+        "record_id": "entry-5224-child-02",
+        "path": "entry-5224.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 4.5,
+          "institutions": 4.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 3.08,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5336",
+        "record_id": "entry-5336",
+        "path": "entry-5336.impact_proposal",
+        "dimensions": {
+          "harm": 5.5,
+          "reach": 2.5,
+          "institutions": 4.5,
+          "procedural_abuse": 3,
+          "self_dealing": 0,
+          "persistence": 5
+        },
+        "weighted_total": 3.78,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5340",
+        "record_id": "entry-5340",
+        "path": "entry-5340.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5344",
+        "record_id": "entry-5344-child-02",
+        "path": "entry-5344.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 5,
+          "institutions": 3,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.8,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-5344",
+        "record_id": "entry-5344-child-03",
+        "path": "entry-5344.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 7,
+          "institutions": 4.5,
+          "procedural_abuse": 4,
+          "self_dealing": 0,
+          "persistence": 3.5
+        },
+        "weighted_total": 4.08,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5478",
+        "record_id": "entry-5478",
+        "path": "entry-5478.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 0.6,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5512",
+        "record_id": "entry-5512-child-01",
+        "path": "entry-5512.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 8,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5512",
+        "record_id": "entry-5512-child-02",
+        "path": "entry-5512.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 5,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2.5
+        },
+        "weighted_total": 2.9,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5597",
+        "record_id": "entry-5597",
+        "path": "entry-5597.impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 2,
+          "institutions": 2,
+          "procedural_abuse": 1,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.65,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5728",
+        "record_id": "entry-5728",
+        "path": "entry-5728.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5752",
+        "record_id": "entry-5752-child-01",
+        "path": "entry-5752.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 5,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2.5
+        },
+        "weighted_total": 3.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5752",
+        "record_id": "entry-5752-child-02",
+        "path": "entry-5752.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 5.5,
+          "reach": 5,
+          "institutions": 6,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 3.85,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5754",
+        "record_id": "entry-5754",
+        "path": "entry-5754.impact_proposal",
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 5,
+          "institutions": 5,
+          "procedural_abuse": 5,
+          "self_dealing": 0,
+          "persistence": 2.5
+        },
+        "weighted_total": 4.1,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5809",
+        "record_id": "entry-5809",
+        "path": "entry-5809.impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 2,
+          "institutions": 5,
+          "procedural_abuse": 4,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 3.55,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5814",
+        "record_id": "entry-5814-child-01",
+        "path": "entry-5814.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5814",
+        "record_id": "entry-5814-child-02",
+        "path": "entry-5814.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 1.5,
+          "reach": 7,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 2.25,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5815",
+        "record_id": "entry-5815",
+        "path": "entry-5815.impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 5,
+          "institutions": 2.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.33,
+        "event_state": "unclear"
+      },
+      {
+        "parent_record_id": "entry-5816",
+        "record_id": "entry-5816-child-01",
+        "path": "entry-5816.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 8,
+          "institutions": 5.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.73,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5816",
+        "record_id": "entry-5816-child-02",
+        "path": "entry-5816.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 5,
+          "institutions": 3.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.88,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5832",
+        "record_id": "entry-5832-child-01",
+        "path": "entry-5832.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 8,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.05,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5845",
+        "record_id": "entry-5845",
+        "path": "entry-5845.proposed_survivor_patch.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 1,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0.5
+        },
+        "weighted_total": 0.25,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-5851",
+        "record_id": "entry-5851",
+        "path": "entry-5851.impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 1,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.35,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6324",
+        "record_id": "entry-6324",
+        "path": "entry-6324.impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 5,
+          "institutions": 2.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.33,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6379",
+        "record_id": "entry-6379",
+        "path": "entry-6379.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 5,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 1.15,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6409",
+        "record_id": "entry-6409",
+        "path": "entry-6409.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 7,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.8,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6424",
+        "record_id": "entry-6424-child-01",
+        "path": "entry-6424.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 5,
+          "institutions": 3,
+          "procedural_abuse": 3,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.85,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6424",
+        "record_id": "entry-6424-child-02",
+        "path": "entry-6424.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 5,
+          "institutions": 4,
+          "procedural_abuse": 3.5,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 3.23,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6425",
+        "record_id": "entry-6425",
+        "path": "entry-6425.impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 4.5,
+          "institutions": 4.5,
+          "procedural_abuse": 3.5,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 3.05,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6428",
+        "record_id": "entry-6428",
+        "path": "entry-6428.impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 5,
+          "institutions": 5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6433",
+        "record_id": "entry-6433",
+        "path": "entry-6433.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 6,
+          "institutions": 4.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.48,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6437",
+        "record_id": "entry-6437",
+        "path": "entry-6437.impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 4,
+          "institutions": 3.5,
+          "procedural_abuse": 2.5,
+          "self_dealing": 0,
+          "persistence": 1.5
+        },
+        "weighted_total": 2.6,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6443",
+        "record_id": "entry-6443-child-02",
+        "path": "entry-6443.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 8,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 3.1,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6456",
+        "record_id": "entry-6456-child-01",
+        "path": "entry-6456.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 8,
+          "reach": 4,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.75,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6456",
+        "record_id": "entry-6456-child-02",
+        "path": "entry-6456.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 7,
+          "reach": 4,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.75,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6460",
+        "record_id": "entry-6460",
+        "path": "entry-6460.impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 5,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 1.6,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6463",
+        "record_id": "entry-6463",
+        "path": "entry-6463.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 6,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 2.5,
+        "event_state": "threatened"
+      },
+      {
+        "parent_record_id": "entry-6464",
+        "record_id": "entry-6464",
+        "path": "entry-6464.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6475",
+        "record_id": "entry-6475",
+        "path": "entry-6475.impact_proposal",
+        "dimensions": {
+          "harm": 5.5,
+          "reach": 5,
+          "institutions": 2.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2.5
+        },
+        "weighted_total": 3.28,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6479",
+        "record_id": "entry-6479-child-01",
+        "path": "entry-6479.children[0].impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 6,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.85,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6479",
+        "record_id": "entry-6479-child-02",
+        "path": "entry-6479.children[1].impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 6,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.85,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6511",
+        "record_id": "entry-6511",
+        "path": "entry-6511.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6521",
+        "record_id": "entry-6521",
+        "path": "entry-6521.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6560",
+        "record_id": "entry-6560",
+        "path": "entry-6560.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6571",
+        "record_id": "entry-633",
+        "path": "entry-6571.survivor_score_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 0.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6577",
+        "record_id": "entry-6577",
+        "path": "entry-6577.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 0.8,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6583",
+        "record_id": "entry-6583",
+        "path": "entry-6583.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 0.8,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6585",
+        "record_id": "entry-6585",
+        "path": "entry-6585.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 0.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6601",
+        "record_id": "entry-6601",
+        "path": "entry-6601.impact_proposal",
+        "dimensions": {
+          "harm": 1.5,
+          "reach": 5,
+          "institutions": 1.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0.5
+        },
+        "weighted_total": 1.73,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-6619",
+        "record_id": "entry-6619",
+        "path": "entry-6619.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 8,
+          "institutions": 5.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.73,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6625",
+        "record_id": "entry-6625",
+        "path": "entry-6625.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 7,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.6,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6631",
+        "record_id": "entry-6631",
+        "path": "entry-6631.impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 5,
+          "institutions": 5.5,
+          "procedural_abuse": 4,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 4.23,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6642",
+        "record_id": "entry-6642",
+        "path": "entry-6642.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 8,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3.5
+        },
+        "weighted_total": 3.75,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6668",
+        "record_id": "entry-6668",
+        "path": "entry-6668.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 8,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 1.8,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6673",
+        "record_id": "entry-6673",
+        "path": "entry-6673.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6679",
+        "record_id": "entry-6679",
+        "path": "entry-6679.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 4,
+          "institutions": 2,
+          "procedural_abuse": 6,
+          "self_dealing": 6,
+          "persistence": 6
+        },
+        "weighted_total": 4.4,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6738",
+        "record_id": "entry-6738",
+        "path": "entry-6738.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 8,
+          "institutions": 1,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.85,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-6739",
+        "record_id": "entry-6739",
+        "path": "entry-6739.impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 8,
+          "institutions": 5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 5
+        },
+        "weighted_total": 4.35,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6743",
+        "record_id": "entry-6743",
+        "path": "entry-6743.impact_proposal",
+        "dimensions": {
+          "harm": 5.5,
+          "reach": 8,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3.5
+        },
+        "weighted_total": 4.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6749",
+        "record_id": "entry-6749",
+        "path": "entry-6749.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 5,
+          "institutions": 5.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 3.23,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6757",
+        "record_id": "entry-6757",
+        "path": "entry-6757.impact_proposal",
+        "dimensions": {
+          "harm": 5.5,
+          "reach": 6,
+          "institutions": 4.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.93,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6758",
+        "record_id": "entry-6758",
+        "path": "entry-6758.impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 8,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6763",
+        "record_id": "entry-6763",
+        "path": "entry-6763.impact_proposal",
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 2.5,
+          "institutions": 3.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1.5
+        },
+        "weighted_total": 2.23,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6785",
+        "record_id": "entry-6785",
+        "path": "entry-6785.impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 5,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.1,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6794",
+        "record_id": "entry-6794",
+        "path": "entry-6794.impact_proposal",
+        "dimensions": {
+          "harm": 5.5,
+          "reach": 4.5,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 3.15,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-6797",
+        "record_id": "entry-6797",
+        "path": "entry-6797.impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 8,
+          "institutions": 4,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6798",
+        "record_id": "entry-6798",
+        "path": "entry-6798.impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 5,
+          "institutions": 3,
+          "procedural_abuse": 2,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.55,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6799",
+        "record_id": "entry-6799",
+        "path": "entry-6799.impact_proposal",
+        "dimensions": {
+          "harm": 1,
+          "reach": 8,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.1,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6801",
+        "record_id": "entry-6801",
+        "path": "entry-6801.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 4,
+          "institutions": 2.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.28,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6811",
+        "record_id": "entry-6811",
+        "path": "entry-6811.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 8,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 5
+        },
+        "weighted_total": 3.75,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6817",
+        "record_id": "entry-6817",
+        "path": "entry-6817.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 6,
+          "institutions": 5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.25,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6818",
+        "record_id": "entry-6818",
+        "path": "entry-6818.impact_proposal",
+        "dimensions": {
+          "harm": 6,
+          "reach": 6.5,
+          "institutions": 5,
+          "procedural_abuse": 4.5,
+          "self_dealing": 0,
+          "persistence": 3.5
+        },
+        "weighted_total": 4.88,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6823",
+        "record_id": "entry-6823",
+        "path": "entry-6823.impact_proposal",
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 5.5,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2.5
+        },
+        "weighted_total": 2.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6824",
+        "record_id": "entry-6824",
+        "path": "entry-6824.impact_proposal",
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 5,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.55,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6827",
+        "record_id": "entry-6827",
+        "path": "entry-6827.impact_proposal",
+        "dimensions": {
+          "harm": 3,
+          "reach": 8,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 2.5,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-6828",
+        "record_id": "entry-6828",
+        "path": "entry-6828.impact_proposal",
+        "dimensions": {
+          "harm": 2.5,
+          "reach": 5,
+          "institutions": 2.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2.5
+        },
+        "weighted_total": 2.38,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6829",
+        "record_id": "entry-6829",
+        "path": "entry-6829.impact_proposal",
+        "dimensions": {
+          "harm": 1,
+          "reach": 2,
+          "institutions": 1.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1.5
+        },
+        "weighted_total": 1.08,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-6834",
+        "record_id": "entry-6834",
+        "path": "entry-6834.impact_proposal",
+        "dimensions": {
+          "harm": 4.5,
+          "reach": 4,
+          "institutions": 3,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.8,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6835",
+        "record_id": "entry-6835",
+        "path": "entry-6835.impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 8,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 3.3,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-6841",
+        "record_id": "entry-6841",
+        "path": "entry-6841.impact_proposal",
+        "dimensions": {
+          "harm": 5,
+          "reach": 5,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 2
+        },
+        "weighted_total": 2.7,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6857",
+        "record_id": "entry-6857",
+        "path": "entry-6857.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6865",
+        "record_id": "entry-6865",
+        "path": "entry-6865.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6889",
+        "record_id": "entry-6889",
+        "path": "entry-6889.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 0,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 0
+        },
+        "weighted_total": 0,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6900",
+        "record_id": "entry-6900",
+        "path": "entry-6900.merge_proposal.proposed_survivor_patch.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 0.5,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6913",
+        "record_id": "entry-6913",
+        "path": "entry-6913.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 2,
+          "persistence": 2
+        },
+        "weighted_total": 1.1,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6930",
+        "record_id": "entry-6930",
+        "path": "entry-6930.impact_proposal",
+        "dimensions": {
+          "harm": 2,
+          "reach": 2,
+          "institutions": 2,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 1
+        },
+        "weighted_total": 1.4,
+        "event_state": "proposed"
+      },
+      {
+        "parent_record_id": "entry-6941",
+        "record_id": "entry-6941",
+        "path": "entry-6941.impact_proposal",
+        "dimensions": {
+          "harm": 4,
+          "reach": 8,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 4
+        },
+        "weighted_total": 3.2,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-6955",
+        "record_id": "entry-6955",
+        "path": "entry-6955.impact_proposal",
+        "dimensions": {
+          "harm": 3.5,
+          "reach": 5,
+          "institutions": 3.5,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 2.88,
+        "event_state": "realized"
+      },
+      {
+        "parent_record_id": "entry-954",
+        "record_id": "entry-954",
+        "path": "entry-954.impact_proposal",
+        "dimensions": {
+          "harm": 0,
+          "reach": 2,
+          "institutions": 0,
+          "procedural_abuse": 0,
+          "self_dealing": 0,
+          "persistence": 3
+        },
+        "weighted_total": 0.7,
+        "event_state": "realized"
+      }
+    ],
+    "failures": [],
+    "passed": true
   },
   "source_provenance_validation": {
     "passed": true,
     "failures": [],
     "branches_refreshed": 72,
-    "heads_changed": 0
+    "heads_changed": 0,
+    "final_head_refresh": {
+      "branches": 72,
+      "failures": [],
+      "changed": []
+    }
   },
   "assignment_reconciliation": [
     {
@@ -1577,5 +3606,30 @@
   "actual_peak_concurrency": 7,
   "excluded_withdrawn_file": "qa-3-batch-01.jsonl",
   "evidence_policy": "Structural checks supplement each worker's semantic review; they do not independently verify every supplied claim. Frozen comparison snapshots are excluded from proposed-copy length gates. Holds are completed QA dispositions with exact blockers, not awaiting output.",
-  "passed": true
+  "passed": true,
+  "continuation": {
+    "assigned": 133,
+    "audited_unique": 133,
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "recovered_ids": [
+      "entry-5845",
+      "entry-6414",
+      "entry-6571",
+      "entry-6817",
+      "entry-6823",
+      "entry-6900"
+    ],
+    "remaining_recheck_ids": [],
+    "rejected_copy_only_repairs": [
+      "entry-6830",
+      "entry-6832",
+      "entry-6844",
+      "entry-6925",
+      "entry-6926",
+      "entry-6931"
+    ],
+    "full_counterpart_rows_preserved": 9,
+    "publication_note": "Counterpart retrieval confirms record identity only, not live-source verification; proposals remain separate, new repairs publication-ineligible."
+  }
 }
