@@ -15,6 +15,14 @@
     "entry-6763",
     "entry-7048"
   ],
-  "push_results": [],
-  "last_updated_after": "entry-2854 reconciliation before initial push"
+  "push_results": [
+    {
+      "record_id": "entry-2854",
+      "commit": "f132c123",
+      "command": "git push -u origin HEAD",
+      "result": "success; created remote branch ls/6-trump-files-migration-reconciliation-41--XF6N on canonical origin",
+      "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
+    }
+  ],
+  "last_updated_after": "entry-2854 push verified; remaining IDs unchanged"
 }
