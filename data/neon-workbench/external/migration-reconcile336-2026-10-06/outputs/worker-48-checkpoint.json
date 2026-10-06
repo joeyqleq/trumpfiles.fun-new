@@ -16,7 +16,9 @@
     "entry-6782",
     "entry-7086"
   ],
-  "remaining_ids": [],
+  "remaining_ids": [
+    "entry-6424"
+  ],
   "push_results": [
     {
       "record_id": "entry-4239",
@@ -43,5 +45,25 @@
       "result": "success; parent amendment pushed to required task branch"
     }
   ],
-  "checkpoint_state": "all four assigned IDs reconciled and validated; awaiting final parent push result"
+  "checkpoint_state": "entry-4239 core-label correction saved in immutable amendment revision 5; entry-6424 correction remains; all four existing parent outcomes are retained.",
+  "correction_status": {
+    "scope": "Resolve only the coordinator-listed missing_core_labels artifacts on entries 4239 and 6424.",
+    "completed_correction_ids": [
+      "entry-4239"
+    ],
+    "remaining_correction_ids": [
+      "entry-6424"
+    ],
+    "terminal_rows_missing": [],
+    "amendment_files": [
+      "worker-48-amendment-5.jsonl"
+    ]
+  },
+  "pre_correction_remote_verification": {
+    "command": "git rev-parse HEAD origin/ls/7-trump-files-migration-reconciliation-48--YctR",
+    "local_head": "be4c101263e4bf713dda48624c512103376d207e",
+    "remote_head": "be4c101263e4bf713dda48624c512103376d207e",
+    "exit_code": 0,
+    "result": "The existing entry-7086 commit is present on the canonical task branch; the prior checkpoint lacked its push stdout, so this records observed remote state rather than inventing a push transcript."
+  }
 }
