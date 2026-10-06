@@ -1,5 +1,5 @@
 {
-  "phase": "complete_pr_pending",
+  "phase": "complete",
   "assigned_count": 336,
   "assessed_count": 336,
   "unique_authoritative_count": 336,
@@ -26,5 +26,12 @@
   "canonical_writes": false,
   "neon_writes": false,
   "lightsprint_output_writes": false,
-  "draft_pr": null
+  "draft_pr": {
+    "number": 67,
+    "url": "https://github.com/p5n-n3t/trumpfiles-fun-new/pull/67",
+    "draft": true,
+    "base": "codex/held336-research-2026-10-05"
+  },
+  "authoritative_index_readback_passed": true,
+  "all_changed_paths_within_qa_directory": true
 }
