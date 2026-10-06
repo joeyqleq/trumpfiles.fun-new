@@ -11,12 +11,14 @@
     "fetch_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "push_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "github_api_id": 1082328314,
-    "ls_remote_packet_branch": "19a772e15765348b82f6d708ad63f58927931321"
+    "verification": "git remote -v and gh api repos/p5n-n3t/trumpfiles-fun-new matched canonical origin and immutable repository ID"
   },
   "fetch_result": {
-    "command": "git fetch origin codex/migration-reconcile336-2026-10-06 19a772e15765348b82f6d708ad63f58927931321",
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
     "exit_code": 0,
-    "output": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * branch codex/migration-reconcile336-2026-10-06 -> FETCH_HEAD\n * branch 19a772e15765348b82f6d708ad63f58927931321 -> FETCH_HEAD\n * [new branch] codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06"
+    "output": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * branch codex/migration-reconcile336-2026-10-06 -> FETCH_HEAD\n * [new branch] codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06",
+    "fetch_head": "19a772e15765348b82f6d708ad63f58927931321",
+    "command_verification": "git rev-parse FETCH_HEAD matched the requested commit"
   },
   "completedIDs": [
     "entry-4240",
@@ -75,6 +77,15 @@
       "exit_code": 0,
       "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git; 95d19e2b..d7baee43 ls/7-trump-files-migration-reconciliation-49--bL3n -> ls/7-trump-files-migration-reconciliation-49--bL3n",
       "commit": "d7baee43"
+    },
+    {
+      "for_completedIDs": [
+        "entry-4240"
+      ],
+      "command": "git push -u origin HEAD",
+      "exit_code": 0,
+      "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   0eb2b8bb..4e926563  HEAD -> ls/7-trump-files-migration-reconciliation-49--bL3n\nbranch set to track origin/ls/7-trump-files-migration-reconciliation-49--bL3n",
+      "commit": "4e926563"
     }
   ]
 }
