@@ -27,6 +27,26 @@
     "result": "success; fetched origin/codex/migration-reconcile336-2026-10-06 to FETCH_HEAD and origin tracking ref",
     "command_exit_code": 0
   },
-  "push_results": [],
+  "push_results": [
+    {
+      "record_id": "entry-835",
+      "output_commit": "af470cfe5783dda36acca69f6f0632b4cce8a43d",
+      "attempts": [
+        {
+          "remote": "origin",
+          "command": "git push origin HEAD",
+          "exit_code": 128,
+          "result": "failed: Lightsprint credential helper returned HTTP 403, “Repository is not a member of this stack”; no branch update."
+        },
+        {
+          "remote": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+          "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
+          "exit_code": 0,
+          "result": "success; GitHub reported the repository moved to the canonical URL and created the branch; both URLs resolve to immutable repository ID 1082328314."
+        }
+      ],
+      "verified_remote_branch_head": "af470cfe5783dda36acca69f6f0632b4cce8a43d"
+    }
+  ],
   "last_record_id": "entry-835"
 }
