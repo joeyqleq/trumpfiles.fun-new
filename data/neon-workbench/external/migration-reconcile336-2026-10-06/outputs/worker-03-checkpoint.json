@@ -67,7 +67,7 @@
     },
     {
       "record_id": "entry-6599",
-      "commit": "d58c2cb2819366463ce92a5a17e70cbdd75b6d5c",
+      "commit": "d58c2cb23c36dfa8c5dbd84921bd8b2cf12a0f25",
       "attempts": [
         {
           "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d",
@@ -79,7 +79,24 @@
       "canonical_remote_verification": {
         "command": "git ls-remote origin refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d",
         "exit_code": 0,
-        "output": "d58c2cb2819366463ce92a5a17e70cbdd75b6d5c refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d"
+        "output": "d58c2cb23c36dfa8c5dbd84921bd8b2cf12a0f25 refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d"
+      }
+    },
+    {
+      "record_id": "entry-6865",
+      "commit": "9741d42047fd8cf4a7508e4ac7a995d3a3cfea0a",
+      "attempts": [
+        {
+          "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d",
+          "exit_code": 0,
+          "result": "pushed",
+          "output": "GitHub moved the legacy slug to the canonical repository; branch advanced from d58c2cb2 to 9741d420."
+        }
+      ],
+      "canonical_remote_verification": {
+        "command": "git ls-remote origin refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d",
+        "exit_code": 0,
+        "output": "9741d42047fd8cf4a7508e4ac7a995d3a3cfea0a refs/heads/ls/13-trump-files-migration-reconciliation-03--ZE-d"
       }
     }
   ],
