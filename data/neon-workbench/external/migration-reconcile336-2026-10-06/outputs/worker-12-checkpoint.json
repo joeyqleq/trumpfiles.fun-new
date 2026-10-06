@@ -56,14 +56,23 @@
       "stdout": "To https://github.com/p5n-n3t/trumpfiles.fun-new.git\n   da0ee6d8..37a11583  HEAD -> ls/14-trump-files-migration-reconciliation-12--JYV1",
       "verified_remote_sha": "37a11583bd4fd0b5b07e34a64a763c50c52dc0cf",
       "result": "success"
+    },
+    {
+      "parent_id": "entry-6614",
+      "command": "git push -u origin HEAD",
+      "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git (redirects to canonical URL)",
+      "exit_code": 0,
+      "stdout": "To https://github.com/p5n-n3t/trumpfiles.fun-new.git\n   a62ae63a..f4731723  HEAD -> ls/14-trump-files-migration-reconciliation-12--JYV1",
+      "verified_remote_sha": "f47317238e59af93672358ec3c3d817b71141bc0",
+      "result": "success"
     }
   ],
   "last_completed_parent": "entry-6614",
-  "updated_at": "2026-10-06T10:46:32.859079+00:00",
+  "updated_at": "2026-10-06T10:46:47.483387+00:00",
   "push_transport": {
     "fetch_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
     "resolution": "GitHub API and git ls-remote resolve the registered former name to p5n-n3t/trumpfiles-fun-new, repository ID 1082328314; canonical push URL was rejected because Lightsprint credential binding reported the repository was not a stack member under the new slug."
   },
-  "last_parent_push_result": "pending"
+  "last_parent_push_result": "success"
 }
