@@ -1,6 +1,6 @@
 {
   "worker": "35",
-  "status": "in_progress",
+  "status": "complete",
   "processed_record_ids": [
     "entry-2562",
     "entry-6356",
@@ -60,11 +60,10 @@
   "all_assigned_records_pushed": true,
   "amendment_processed_record_ids": [
     "entry-2562",
-    "entry-6356"
-  ],
-  "amendment_remaining_record_ids": [
+    "entry-6356",
     "entry-6743"
   ],
+  "amendment_remaining_record_ids": [],
   "latest_amendment_revision": 2,
   "amendment_push_results": [
     {
