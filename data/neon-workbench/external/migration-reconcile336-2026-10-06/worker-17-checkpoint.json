@@ -51,6 +51,21 @@
         "result": "GitHub confirmed moved to canonical URL and updated the required branch.",
         "immutable_repository_id": 1082328314
       }
+    },
+    {
+      "record_id": "entry-6631",
+      "commit": "dfdb490a",
+      "canonical_origin_attempt": {
+        "url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "exit_code": null,
+        "result": "Not retried after recorded stack-membership 403; origin remains canonical."
+      },
+      "successful_redirect_push": {
+        "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+        "exit_code": 0,
+        "result": "GitHub confirmed moved to canonical URL and updated the required branch.",
+        "immutable_repository_id": 1082328314
+      }
     }
   ]
 }
