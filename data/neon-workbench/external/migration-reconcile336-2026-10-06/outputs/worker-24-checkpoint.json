@@ -24,11 +24,10 @@
   "completed_ids": [
     "entry-2380",
     "entry-6007",
-    "entry-6672"
-  ],
-  "remaining_ids": [
+    "entry-6672",
     "entry-6939"
   ],
+  "remaining_ids": [],
   "push_receipts": [
     {
       "parent_id": "entry-2380",
@@ -55,7 +54,7 @@
       "status": "failed"
     }
   ],
-  "last_parent_saved": "entry-6672",
+  "last_parent_saved": "entry-6939",
   "last_push_result": {
     "parent_id": "entry-6672",
     "content_commit": "ccd58dfe9e44864df3272ea82736cedbc2852842",
