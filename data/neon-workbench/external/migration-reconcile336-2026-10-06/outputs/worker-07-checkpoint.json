@@ -17,12 +17,12 @@
   ],
   "remaining_ids": [],
   "last_push": {
-    "record_id": "entry-6606",
+    "record_id": "entry-6884",
     "status": "success",
     "command": "git push origin HEAD",
-    "commit": "21f9bd76",
+    "commit": "32bdda09",
     "branch": "ls/1-trump-files-migration-reconciliation-07--I4WO",
-    "output": "Remote branch advanced from 3420f332 to 21f9bd76."
+    "output": "Remote branch advanced from 58a74894 to 32bdda09."
   },
   "push_history": [
     {
@@ -96,6 +96,14 @@
       "commit": "21f9bd76",
       "branch": "ls/1-trump-files-migration-reconciliation-07--I4WO",
       "output": "Remote branch advanced from 3420f332 to 21f9bd76."
+    },
+    {
+      "record_id": "entry-6884",
+      "status": "success",
+      "command": "git push origin HEAD",
+      "commit": "32bdda09",
+      "branch": "ls/1-trump-files-migration-reconciliation-07--I4WO",
+      "output": "Remote branch advanced from 58a74894 to 32bdda09."
     }
   ],
   "final_remaining_ids": [],
@@ -125,7 +133,6 @@
       "entry-6606",
       "entry-6884"
     ],
-    "remaining_ids": [],
-    "current_record_push_pending": "entry-6884"
+    "remaining_ids": []
   }
 }
