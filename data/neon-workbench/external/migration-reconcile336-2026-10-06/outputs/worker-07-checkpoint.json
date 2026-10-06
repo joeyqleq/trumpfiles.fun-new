@@ -11,11 +11,12 @@
   },
   "completed_ids": [
     "entry-954",
-    "entry-5755",
+    "entry-5755"
+  ],
+  "remaining_ids": [
     "entry-6606",
     "entry-6884"
   ],
-  "remaining_ids": [],
   "last_push": {
     "record_id": "entry-6884",
     "status": "success",
@@ -82,7 +83,10 @@
       "output": "Remote branch advanced from f2b273a6 to 49d286cb."
     }
   ],
-  "final_remaining_ids": [],
+  "final_remaining_ids": [
+    "entry-6606",
+    "entry-6884"
+  ],
   "core_label_repair": {
     "assigned_issues": [
       "migration336:entry-954:missing_core_labels:entry-954",
@@ -95,5 +99,22 @@
       "entry-6884"
     ],
     "remaining_ids": []
+  },
+  "revision_repair": {
+    "assigned_issues": [
+      "ambiguous_amendment_revision:entry-954",
+      "ambiguous_amendment_revision:entry-6606",
+      "migration336:entry-954:missing_core_labels:entry-954",
+      "migration336:entry-6606:missing_core_labels:entry-6606",
+      "migration336:entry-6884:missing_core_labels:entry-6884"
+    ],
+    "completed_ids": [
+      "entry-954"
+    ],
+    "remaining_ids": [
+      "entry-6606",
+      "entry-6884"
+    ],
+    "current_record_push_pending": "entry-954"
   }
 }
