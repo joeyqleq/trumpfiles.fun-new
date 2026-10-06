@@ -27,6 +27,12 @@
       "ref": "ls/6-trump-files-migration-reconciliation-42--0k0G",
       "command": "git push origin ls/6-trump-files-migration-reconciliation-42--0k0G",
       "status": "success"
+    },
+    {
+      "commit": "b74cff25",
+      "ref": "ls/6-trump-files-migration-reconciliation-42--0k0G",
+      "command": "git push -u origin HEAD",
+      "status": "success"
     }
   ],
   "completed_ids": [
