@@ -1,0 +1,30 @@
+{
+  "worker": 49,
+  "canonical_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+  "github_repository_id": 1082328314,
+  "branch": "ls/7-trump-files-migration-reconciliation-49--bL3n",
+  "packet": {
+    "branch": "codex/migration-reconcile336-2026-10-06",
+    "commit": "19a772e15765348b82f6d708ad63f58927931321"
+  },
+  "remote_verification": {
+    "fetch_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "push_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "github_api_id": 1082328314,
+    "ls_remote_packet_branch": "19a772e15765348b82f6d708ad63f58927931321"
+  },
+  "fetch_result": {
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06 19a772e15765348b82f6d708ad63f58927931321",
+    "exit_code": 0,
+    "output": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * branch codex/migration-reconcile336-2026-10-06 -> FETCH_HEAD\n * branch 19a772e15765348b82f6d708ad63f58927931321 -> FETCH_HEAD\n * [new branch] codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06"
+  },
+  "completedIDs": [
+    "entry-4240"
+  ],
+  "remainingIDs": [
+    "entry-6425",
+    "entry-6784",
+    "entry-7087"
+  ],
+  "push_results": []
+}
