@@ -9,22 +9,25 @@
   "completed_ids": [
     "entry-1716",
     "entry-5761",
-    "entry-6611",
     "entry-6900"
   ],
-  "remaining_ids": [],
+  "remaining_ids": [
+    "entry-6611"
+  ],
   "status": "in_progress",
   "repository": {
     "origin_before": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
     "origin_after": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "immutable_repository_id": 1082328314,
-    "branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf"
+    "branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf",
+    "canonical_identity_verified": true
   },
   "packet_fetch": {
     "branch": "codex/migration-reconcile336-2026-10-06",
     "commit": "19a772e15765348b82f6d708ad63f58927931321",
     "result": "success",
-    "resolved_commit": "19a772e15765348b82f6d708ad63f58927931321"
+    "resolved_commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "method": "git fetch origin codex/migration-reconcile336-2026-10-06; git rev-parse FETCH_HEAD; GitHub API repository ID confirmed 1082328314"
   },
   "parent_push_results": [
     {
@@ -60,7 +63,7 @@
       "remote_branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf"
     }
   ],
-  "last_completed_record_id": "entry-6900",
+  "last_completed_record_id": "entry-5761",
   "push_attempts": [
     {
       "record_id": "entry-1716",
@@ -92,5 +95,6 @@
       "result": "success",
       "detail": "GitHub redirected the stack-registered legacy name to canonical repository ID 1082328314."
     }
-  ]
+  ],
+  "current_worker_push_results": []
 }
