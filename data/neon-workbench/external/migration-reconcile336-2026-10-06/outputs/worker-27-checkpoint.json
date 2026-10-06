@@ -1,0 +1,59 @@
+{
+  "worker_number": 27,
+  "branch": "ls/4-trump-files-migration-reconciliation-27--LFfL",
+  "packet_branch": "codex/migration-reconcile336-2026-10-06",
+  "packet_commit": "19a772e15765348b82f6d708ad63f58927931321",
+  "repository": {
+    "origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "github_repository_id": 1082328314
+  },
+  "fetch_result": {
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "exit_code": 0,
+    "resolved_commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "verification": "git cat-file -t returned commit; FETCH_HEAD matched requested SHA",
+    "remote_resolution": "git ls-remote returned requested SHA for refs/heads/codex/migration-reconcile336-2026-10-06",
+    "output": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * branch ... -> FETCH_HEAD\n * [new branch] codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06"
+  },
+  "completedIDs": [
+    "entry-2458"
+  ],
+  "remainingIDs": [
+    "entry-6200",
+    "entry-6691",
+    "entry-6943"
+  ],
+  "push_results": [],
+  "parent_gate_results": [
+    {
+      "record_id": "entry-2458",
+      "validator_errors": [],
+      "copy_lengths": {
+        "title": {
+          "characters": 66,
+          "words": 9
+        },
+        "description_short": {
+          "characters": 84,
+          "words": 14
+        },
+        "description_medium": {
+          "characters": 340,
+          "words": 50
+        },
+        "description_long": {
+          "characters": 1168,
+          "words": 188
+        }
+      },
+      "known_quotes": [],
+      "impact_v2": {
+        "status": "deferred",
+        "dimensions": null,
+        "weighted_total": null,
+        "arithmetic": "deferred; no numeric dimensions"
+      }
+    }
+  ],
+  "updated_at": "2026-10-06T10:44:48.462016+00:00"
+}
