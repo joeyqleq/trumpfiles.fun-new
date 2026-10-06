@@ -74,11 +74,12 @@
       "migration336:entry-6884:missing_core_labels:entry-6884"
     ],
     "completed_ids": [
-      "entry-954"
+      "entry-954",
+      "entry-6606"
     ],
     "remaining_ids": [
-      "entry-6606",
       "entry-6884"
-    ]
+    ],
+    "current_record_push_pending": "entry-6606"
   }
 }
