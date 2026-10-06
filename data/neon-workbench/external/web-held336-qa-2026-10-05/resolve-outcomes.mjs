@@ -1,7 +1,7 @@
 export function resolveOutcomes(files, excludedPaths = [], authoritativeIndex = null) {
   const included = files.filter(f => !excludedPaths.includes(f.path));
   const map = new Map(), history = {};
-  const rank = path => /\/resume-.*-amendments-/.test(path) ? 2 : /-amend/.test(path) ? 1 : 0;
+  const rank = path => /\/resume2-.*-amendments-/.test(path) ? 3 : /\/resume-.*-amendments-/.test(path) ? 2 : /-amend/.test(path) ? 1 : 0;
   const ordered = included.filter(f => /-batch-|-amend/.test(f.path)).sort((a,b) => rank(a.path)-rank(b.path) || a.path.localeCompare(b.path));
   for (const f of ordered) for (const [i, raw] of f.rows.entries()) {
     const row = raw.terminal_record || raw;
