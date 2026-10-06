@@ -32,7 +32,16 @@
       "remote": "origin",
       "exit_code": 128,
       "result": "rejected: Lightsprint credential helper returned HTTP 403, Repository is not a member of this stack; no remote branch update confirmed"
+    },
+    {
+      "record_id": "entry-4198",
+      "commit_range": "a6a5b6c1..2fee5170",
+      "exit_code": 0,
+      "command": "git push -u origin HEAD",
+      "fetch_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "result": "success; GitHub reported the repository moved to the canonical URL and updated the branch at the verified immutable repository ID 1082328314"
     }
   ],
-  "last_push_result": "entry-4198 commit a6a5b6c1 push failed with exit 128; stack-membership rejection"
+  "last_push_result": "successful push of entry-4198 data and checkpoint commits to the same immutable repository; old stack fullName alias redirected to canonical repo"
 }
