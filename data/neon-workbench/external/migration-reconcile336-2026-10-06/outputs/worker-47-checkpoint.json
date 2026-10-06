@@ -1,0 +1,30 @@
+{
+  "worker": 47,
+  "branch": "ls/19-trump-files-migration-reconciliation-47--mq59",
+  "repository_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+  "repository_id": 1082328314,
+  "packet_branch": "codex/migration-reconcile336-2026-10-06",
+  "packet_commit": "19a772e15765348b82f6d708ad63f58927931321",
+  "fetch_result": {
+    "remote": "origin",
+    "exit_code": 0,
+    "fetched_commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "ref": "origin/codex/migration-reconcile336-2026-10-06"
+  },
+  "assignedIDs": [
+    "entry-4198",
+    "entry-6423",
+    "entry-6781",
+    "entry-7085"
+  ],
+  "completedIDs": [
+    "entry-4198"
+  ],
+  "remainingIDs": [
+    "entry-6423",
+    "entry-6781",
+    "entry-7085"
+  ],
+  "push_results": [],
+  "last_push_result": "pending first parent commit"
+}
