@@ -25,11 +25,12 @@
   ],
   "completed_ids": [
     "entry-1730",
-    "entry-5815",
+    "entry-5815"
+  ],
+  "remaining_ids": [
     "entry-6615",
     "entry-6922"
   ],
-  "remaining_ids": [],
   "parent_push_results": [
     {
       "record_id": "entry-1730",
@@ -65,13 +66,12 @@
     }
   ],
   "last_completed_parent": "entry-5815",
-  "checkpoint_finalized_after_all_parents": true,
+  "checkpoint_finalized_after_all_parents": false,
   "amendment_progress": {
-    "record_id": "entry-5815",
-    "file": "worker-13-amendment-2.jsonl",
+    "record_id": "entry-1730",
+    "file": "worker-13-amendment-3.jsonl",
     "revision": 2,
-    "issue": "migration336:entry-5815:missing_core_labels:entry-5815",
-    "status": "pushed"
+    "status": "validated_pending_commit_and_push"
   },
   "amendment_push_results": [
     {
