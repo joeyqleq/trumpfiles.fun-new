@@ -13,7 +13,7 @@ export function validateQA(expectedIds, outcomes) {
         const n = measure(row[field]); if (n < min || n > max) failures.push({path,field,n,min,max});
       }
     }
-    for (const key of ["impact_proposal","score_proposal"]) {
+    for (const key of ["impact_proposal","score_proposal","survivor_score_proposal"]) {
       const s = row[key]; if (!s) continue;
       if (s.status === "deferred" && s.dimensions !== null) failures.push({path,key,check:"deferred_dimensions"});
       if (s.status === "scored") {
