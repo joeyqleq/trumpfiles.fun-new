@@ -27,8 +27,8 @@
     "result": "success",
     "remote": "origin",
     "branch": "ls/5-trump-files-migration-reconciliation-34--VMtO",
-    "pushed_commit": "89881112",
-    "scope": "new immutable amendment revision 3 exposes entry-2557 core_labels on both wrapper and terminal record"
+    "pushed_commit": "9eee8099",
+    "scope": "new immutable amendment revision 3 exposes entry-6324 core_labels on both wrapper and terminal record"
   },
   "validator_runtime": "validate_held336.gate unavailable; manual equivalent checks recorded per wrapper",
   "repository_identity": {
@@ -45,10 +45,10 @@
       "entry-6955"
     ],
     "completed_ids": [
-      "entry-2557"
+      "entry-2557",
+      "entry-6324"
     ],
     "remaining_ids": [
-      "entry-6324",
       "entry-6739",
       "entry-6955"
     ],
