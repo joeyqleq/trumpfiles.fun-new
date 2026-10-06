@@ -18,9 +18,9 @@
   "validation_errors": 0,
   "delivery": {
     "branch": "codex/web-trump-recovery-20261007",
-    "local_commit": "ef504d584da2e7ff31560648219e746e09d94fc1",
-    "push": "blocked",
-    "blocker": "git push over HTTPS could not read a GitHub username because this execution environment has no configured credential helper; no retry was attempted."
+    "github_commit": "9a481b40d5b9ca5e1d04e92f4a84d8684eed6338",
+    "push": "completed_via_github_ui",
+    "draft_pr": "https://github.com/p5n-n3t/trumpfiles-fun-new/pull/68"
   },
   "next": [
     "Review this independent proposal set and its conflicts.jsonl.",
