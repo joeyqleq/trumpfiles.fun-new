@@ -18,10 +18,10 @@
     }
   ],
   "completed_record_ids": [
-    "entry-3371"
+    "entry-3371",
+    "entry-6415"
   ],
   "remaining_record_ids": [
-    "entry-6415",
     "entry-6776",
     "entry-7051"
   ],
@@ -40,7 +40,10 @@
       }
     }
   ],
-  "pending_parent_push": null,
-  "last_updated_after": "entry-3371 commit 022071f2 pushed successfully through same-repository redirect; canonical origin push rejection recorded",
+  "pending_parent_push": {
+    "record_id": "entry-6415",
+    "status": "awaiting_push"
+  },
+  "last_updated_after": "entry-6415 content appended; push result to follow",
   "push_route_note": "origin remains the requested canonical URL. The stack registration names the same immutable repo under its former slug, so the credential proxy rejects canonical URL membership; push through the former URL succeeds and GitHub redirects to the canonical repo."
 }
