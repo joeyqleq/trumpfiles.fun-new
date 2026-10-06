@@ -24,6 +24,12 @@
     "entry-6739",
     "entry-6955"
   ],
-  "last_push_result": "pending first output commit",
+  "last_push_result": {
+    "result": "success",
+    "remote": "origin",
+    "branch": "ls/5-trump-files-migration-reconciliation-34--VMtO",
+    "pushed_commit": "f900c3c1",
+    "scope": "entry-2557 output and checkpoint"
+  },
   "validator_runtime": "validate_held336.gate unavailable; manual equivalent checks recorded per wrapper"
 }
