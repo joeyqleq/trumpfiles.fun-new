@@ -67,12 +67,21 @@
     },
     {
       "event": "entry-6655 revision 2 amendment",
-      "local_commit": "d4ebafc9",
+      "local_commit": "d4ebafc9ff6496874206c9798aa055d3ed9276d2",
       "remote_ref": "refs/heads/ls/3-trump-files-migration-reconciliation-21--_Ne9",
-      "remote_commit": "d4ebafc9",
+      "remote_commit": "d4ebafc9ff6496874206c9798aa055d3ed9276d2",
       "result": "success",
       "push_output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   7457f942..d4ebafc9  HEAD -> ls/3-trump-files-migration-reconciliation-21--_Ne9",
-      "verified_at": "2026-10-06T22:41:30Z"
+      "verified_at": "2026-10-06T22:41:10+00:00"
+    },
+    {
+      "event": "entry-6935 revision 2 amendment",
+      "local_commit": "5473412bd63ed04edf4374d60b144c624507f995",
+      "remote_ref": "refs/heads/ls/3-trump-files-migration-reconciliation-21--_Ne9",
+      "remote_commit": "5473412bd63ed04edf4374d60b144c624507f995",
+      "result": "success",
+      "push_output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   d4ebafc9..5473412b  HEAD -> ls/3-trump-files-migration-reconciliation-21--_Ne9",
+      "verified_at": "2026-10-06T22:41:45Z"
     }
   ],
   "current_reconciliation": {
@@ -83,5 +92,6 @@
     ],
     "remaining_ids": [],
     "note": "Existing terminal history preserved. Entry 6655 gained core_labels; entry 6935 is an internal unverified draft with full-length attributed copy."
-  }
+  },
+  "final_branch_head": "5473412bd63ed04edf4374d60b144c624507f995"
 }
