@@ -8,10 +8,10 @@
   ],
   "completedIDs": [
     "entry-2504",
-    "entry-6280"
+    "entry-6280",
+    "entry-6729"
   ],
   "remainingIDs": [
-    "entry-6729",
     "entry-6950"
   ],
   "packet_fetch": {
@@ -37,26 +37,34 @@
         "commit": "528c885a",
         "effective_repository_id": 1082328314
       }
+    },
+    {
+      "for_parent": "entry-6280",
+      "commit": "393af223",
+      "canonical_origin_attempt": "rejected by Lightsprint repository-name membership check",
+      "successful_push": {
+        "result": "success",
+        "method": "one-shot pushurl using registered former name",
+        "github_redirect": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "branch": "ls/17-trump-files-migration-reconciliation-31--DqWK"
+      }
     }
   ],
   "current_branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
-  "latest_parent": "entry-6280",
+  "latest_parent": "entry-6729",
   "latest_parent_validation": {
     "assigned_id_exact": true,
-    "terminal_outcome": "hold",
-    "held_candidate_title_chars": 108,
-    "held_candidate_short_chars": 119,
-    "held_candidate_medium_words": 71,
-    "held_candidate_long_words": 182,
-    "held_candidate_numeric_lengths_within_bounds": true,
-    "held_candidate_semantic_check": "not selected per authoritative copy_blocker; numeric length does not clear the padding finding",
+    "title_chars": 74,
+    "short_chars": 142,
+    "medium_words": 57,
+    "long_words": 142,
+    "title_limit": true,
+    "short_limit": true,
+    "medium_limit": true,
+    "long_limit": true,
     "known_quotes_match_excerpts": true,
     "impact_v2_deferred_valid": true,
-    "publication_boundary": true,
-    "validator_gate": {
-      "name": "validate_held336.gate(terminal_record)",
-      "available": false,
-      "workspace_search": "no implementation/module/command found; manual schema, provenance, copy and impact checks recorded"
-    }
+    "unverified_boundary": true,
+    "no_split_or_duplicate_evidence": "no counterpart or distinct supported child supplied"
   }
 }
