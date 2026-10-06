@@ -9,11 +9,10 @@
   "completedIDs": [
     "entry-2504",
     "entry-6280",
-    "entry-6729"
-  ],
-  "remainingIDs": [
+    "entry-6729",
     "entry-6950"
   ],
+  "remainingIDs": [],
   "packet_fetch": {
     "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "repository_id": 1082328314,
@@ -74,27 +73,68 @@
         "commit": "42e066d1",
         "effective_repository_id": 1082328314
       }
+    },
+    {
+      "for_parent": "entry-6950",
+      "change": "entry-6950 terminal hold row",
+      "commit": "168f6aaf",
+      "canonical_origin_attempt": "not retried; canonical-name membership-check HTTP 403 remains documented above",
+      "successful_push": {
+        "result": "success",
+        "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push -u origin HEAD",
+        "registered_alias_response": "GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
+        "commit": "168f6aaf",
+        "effective_repository_id": 1082328314
+      }
+    },
+    {
+      "for_parent": "entry-6950",
+      "change": "entry-6950 immutable exact-date correction",
+      "commit": "e3b7358f",
+      "canonical_origin_attempt": "not retried; canonical-name membership-check HTTP 403 remains documented above",
+      "successful_push": {
+        "result": "success",
+        "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push -u origin HEAD",
+        "registered_alias_response": "GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
+        "commit": "e3b7358f",
+        "effective_repository_id": 1082328314
+      }
     }
   ],
   "current_branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
-  "latest_parent": "entry-6729",
+  "latest_parent": "entry-6950",
   "latest_parent_validation": {
     "assigned_id_exact": true,
-    "terminal_outcome": "draft_as_supplied",
-    "title_chars": 74,
-    "short_chars": 142,
-    "medium_words": 57,
-    "long_words": 142,
-    "title_limit": true,
-    "short_limit": true,
-    "medium_limit": true,
-    "long_limit": true,
-    "known_quotes_match_excerpts": true,
+    "terminal_outcome": "hold",
+    "candidate_title_chars": 60,
+    "candidate_short_chars": 135,
+    "candidate_medium_words": 55,
+    "candidate_long_words": 186,
+    "candidate_copy_selected": false,
     "held336_gate_errors": [],
     "evidence_status": "unverified_as_supplied",
     "publication_eligible": false,
-    "core_labels_present": true,
+    "exact_date_unverified": true,
     "impact_v2_deferred_valid": true,
-    "duplicate_split_check": "no counterpart or distinct supported child supplied"
+    "authoritative_hold_confirmed_by": "revision-1 QA plus resume2 amendment and recheck"
+  },
+  "final_set_validation": {
+    "assignedIDs": [
+      "entry-2504",
+      "entry-6280",
+      "entry-6729",
+      "entry-6950"
+    ],
+    "remainingIDs": [],
+    "terminal_rows_added": [
+      "entry-6950"
+    ],
+    "immutable_corrections": [
+      "entry-2504 revision 2",
+      "entry-6729 revision 4",
+      "entry-6950 revision 1"
+    ]
   }
 }
