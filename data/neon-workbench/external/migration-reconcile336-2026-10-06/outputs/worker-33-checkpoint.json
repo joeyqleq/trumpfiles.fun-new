@@ -115,14 +115,73 @@
         ]
       },
       "remaining_ids": []
+    },
+    {
+      "run_date": "2026-10-06",
+      "assigned_ids": [
+        "entry-2518",
+        "entry-6316",
+        "entry-6738",
+        "entry-6954"
+      ],
+      "new_amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/worker-33-amendment-05.jsonl",
+      "amendments": [
+        {
+          "record_id": "entry-6316",
+          "revision": 5
+        },
+        {
+          "record_id": "entry-6738",
+          "revision": 6
+        },
+        {
+          "record_id": "entry-6954",
+          "revision": 7
+        }
+      ],
+      "terminal_rows_appended": 0,
+      "reason_no_terminal_append": "All four assigned terminal rows already exist; preserved append-only output history and wrote immutable full-wrapper corrections for the three coordinator-flagged IDs.",
+      "coordinator_artifacts_resolved": [
+        "migration336:entry-6316:missing_core_labels:entry-6316",
+        "migration336:entry-6738:missing_core_labels:entry-6738",
+        "migration336:entry-6954:missing_core_labels:entry-6954"
+      ],
+      "validation": {
+        "amendment_ids_exactly_flagged_set": true,
+        "amendment_revisions_positive_and_new": true,
+        "full_parent_wrappers_preserved": true,
+        "nonempty_people_organizations_topics_core_labels": true,
+        "core_label_values_match_corresponding_tags": true,
+        "copy_limits_medium_and_long_passed": true,
+        "title_and_short_limits_passed": true,
+        "known_quote_errors": 0,
+        "source_fact_map_quotes_valid": true,
+        "impact_weighted_arithmetic_entry_6738": {
+          "expected": 1.85,
+          "verified": true
+        },
+        "deferred_scores_for_unestablished_events_have_reasons": true,
+        "unverified_as_supplied_boundary_preserved": [
+          "entry-6316",
+          "entry-6954"
+        ],
+        "exact_terminal_id_set": [
+          "entry-2518",
+          "entry-6316",
+          "entry-6738",
+          "entry-6954"
+        ],
+        "remaining_ids": []
+      },
+      "gate_runtime": "validate_held336.gate is not installed, importable, or exposed as a command in this checkout. Existing terminal rows retain their stored empty gate-result arrays; new amendments were checked against the requested structural and content criteria directly.",
+      "push_result": "pending_until_commit_and_push"
     }
   ],
   "latest_reconciliation_push": {
-    "result": "success",
-    "commit": "13ad2a2b",
+    "result": "pending_until_push",
+    "commit": null,
     "branch": "ls/17-trump-files-migration-reconciliation-33--fQgz",
-    "canonical_origin_attempt": "failed with HTTP 403: Repository is not a member of this stack",
-    "successful_redirect_push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
-    "remote_report": "GitHub moved repository redirect; branch update succeeded on repository ID 1082328314."
+    "resolved_repository_id": 1082328314,
+    "amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/worker-33-amendment-05.jsonl"
   }
 }
