@@ -11,11 +11,10 @@
   "completedIDs": [
     "entry-2515",
     "entry-6315",
-    "entry-6736"
-  ],
-  "remainingIDs": [
+    "entry-6736",
     "entry-6951"
   ],
+  "remainingIDs": [],
   "last_successful_push": {
     "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:ls/17-trump-files-migration-reconciliation-32--rVYQ",
     "result": "succeeded; GitHub redirected the registered spelling to the canonical repository and advanced the task branch.",
@@ -25,5 +24,15 @@
   "origin_push_result": {
     "command": "git push -u origin HEAD",
     "result": "failed with HTTP 403; Lightsprint credential reported the repository is not a member of this stack because its registered fullName retains the old .fun-new spelling."
+  },
+  "actual_fetch": {
+    "origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "repository_id": 1082328314,
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "result": "succeeded; origin/codex/migration-reconcile336-2026-10-06 points to requested commit 19a772e15765348b82f6d708ad63f58927931321"
+  },
+  "latest_push_attempt": {
+    "status": "pending",
+    "command": "git push -u origin HEAD"
   }
 }
