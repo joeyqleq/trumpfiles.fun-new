@@ -83,6 +83,16 @@
       "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
       "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm",
       "response": "GitHub reported the old registered remote moved to the canonical URL and accepted the push."
+    },
+    {
+      "after_record_id": "entry-1726-checkpoint",
+      "commit": "5bd94d91",
+      "result": "success",
+      "exit_code": 0,
+      "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm",
+      "response": "GitHub accepted the checkpoint update and reported the registered alias moved to the canonical repository."
     }
   ],
   "reconciliation_progress": {
@@ -93,16 +103,16 @@
       "entry-6913"
     ],
     "completed_ids": [
-      "entry-1726"
+      "entry-1726",
+      "entry-5809"
     ],
     "remaining_ids": [
-      "entry-5809",
       "entry-6612",
       "entry-6913"
     ],
-    "latest_action": "Appended revision 2 core-label correction for entry-1726; terminal output history left unchanged.",
+    "latest_action": "Appended revision 2 core-label correction for entry-5809; terminal output history left unchanged.",
     "latest_amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/worker-11-amendment-2.jsonl",
     "latest_amendment_revision": 2,
-    "latest_push_result": "success: ec999871 pushed to refs/heads/ls/14-trump-files-migration-reconciliation-11--symm through registered alias; GitHub resolved it to the canonical repository."
+    "latest_push_result": "pending"
   }
 }
