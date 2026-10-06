@@ -18,10 +18,10 @@
     "fetch_result": "Fetched requested branch; requested commit resolves as commit and is origin/codex/migration-reconcile336-2026-10-06."
   },
   "completed_ids": [
-    "entry-1726"
+    "entry-1726",
+    "entry-5809"
   ],
   "remaining_ids": [
-    "entry-5809",
     "entry-6612",
     "entry-6913"
   ],
@@ -45,5 +45,9 @@
         }
       ]
     }
-  ]
+  ],
+  "current_push": {
+    "record_id": "entry-5809",
+    "result": "pending until parent commit push"
+  }
 }
