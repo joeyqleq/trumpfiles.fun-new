@@ -54,10 +54,16 @@
       "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
       "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm",
       "response": "GitHub accepted the push and reported the repository moved to its canonical URL."
+    },
+    {
+      "after_record_id": "entry-6612",
+      "commit": "7cf477eb",
+      "result": "success",
+      "exit_code": 0,
+      "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "resolved_repository": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+      "ref": "refs/heads/ls/14-trump-files-migration-reconciliation-11--symm",
+      "response": "GitHub accepted the push and reported the repository moved to its canonical URL."
     }
-  ],
-  "current_push": {
-    "record_id": "entry-6612",
-    "result": "pending until parent commit push"
-  }
+  ]
 }
