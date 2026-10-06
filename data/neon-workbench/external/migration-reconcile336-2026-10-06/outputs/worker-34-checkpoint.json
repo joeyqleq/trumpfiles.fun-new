@@ -27,8 +27,8 @@
     "result": "success",
     "remote": "origin",
     "branch": "ls/5-trump-files-migration-reconciliation-34--VMtO",
-    "pushed_commit": "583171bb",
-    "scope": "append-only wrapper correction for entry-6955 clarifies that evidence_status is absent in the selected primary terminal and preserves that boundary"
+    "pushed_commit": "89881112",
+    "scope": "new immutable amendment revision 3 exposes entry-2557 core_labels on both wrapper and terminal record"
   },
   "validator_runtime": "validate_held336.gate unavailable; manual equivalent checks recorded per wrapper",
   "repository_identity": {
@@ -36,5 +36,22 @@
     "immutable_repository_id": 1082328314,
     "verified_with": "gh api repos/p5n-n3t/trumpfiles-fun-new --jq .id",
     "result": "1082328314"
+  },
+  "core_label_audit": {
+    "assigned_ids": [
+      "entry-2557",
+      "entry-6324",
+      "entry-6739",
+      "entry-6955"
+    ],
+    "completed_ids": [
+      "entry-2557"
+    ],
+    "remaining_ids": [
+      "entry-6324",
+      "entry-6739",
+      "entry-6955"
+    ],
+    "resolution": "Outer wrapper and terminal_record now both carry the same core_labels."
   }
 }
