@@ -25,12 +25,13 @@
     "entry-7085"
   ],
   "completedIDs": [
-    "entry-4198",
-    "entry-6423",
-    "entry-6781",
-    "entry-7085"
+    "entry-7085",
+    "entry-4198"
   ],
-  "remainingIDs": [],
+  "remainingIDs": [
+    "entry-6423",
+    "entry-6781"
+  ],
   "push_results": [
     {
       "record_id": "entry-4198",
@@ -102,7 +103,7 @@
       "result": "success; GitHub redirected the registered stack alias to canonical repository ID 1082328314"
     }
   ],
-  "last_push_result": "All assigned parent outputs and checkpoint were pushed through the registered GitHub alias; GitHub redirected to canonical repository ID 1082328314.",
+  "last_push_result": "entry-4198 wrapper-label amendment prepared; push pending",
   "validation_summary": {
     "assignedIDs_exact": true,
     "terminal_rows_exact": [
@@ -125,5 +126,19 @@
       "entry-6423"
     ],
     "validate_held336_gate": "unavailable in this session; equivalent checks run manually and passed"
+  },
+  "followup_artifacts": {
+    "reported_missing_core_labels": [
+      "entry-4198",
+      "entry-6423",
+      "entry-6781"
+    ],
+    "completed": [
+      "entry-4198"
+    ],
+    "remaining": [
+      "entry-6423",
+      "entry-6781"
+    ]
   }
 }
