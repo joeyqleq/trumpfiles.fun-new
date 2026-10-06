@@ -10,13 +10,13 @@
     "entry-7113"
   ],
   "remaining_ids": [],
-  "latest_completed_record": "entry-6440",
+  "latest_completed_record": "entry-6791",
   "output_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-terminal.jsonl",
-  "latest_output_commit": "09b412af4cb146d06f4e93d17883e85685b3c607",
+  "latest_output_commit": "21a906a30a377f895709ded7dbeea77fb3029b3b",
   "latest_push_result": {
     "command": "git push origin ls/8-trump-files-migration-reconciliation-56--fuH2",
     "exit_code": 0,
-    "pushed_commit": "09b412af4cb146d06f4e93d17883e85685b3c607",
+    "pushed_commit": "21a906a30a377f895709ded7dbeea77fb3029b3b",
     "result": "branch updated successfully"
   },
   "fetch_result": {
@@ -92,13 +92,28 @@
       "duplicate_survivor": "entry-7107"
     }
   },
-  "latest_amended_record": "entry-6440",
+  "latest_amended_record": "entry-6791",
   "amendment_history": [
     {
       "record_id": "entry-6440",
       "revision": 1,
       "path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-amendment-2.jsonl",
       "supersedes_terminal_line": 2
+    },
+    {
+      "record_id": "entry-6791",
+      "revision": 1,
+      "path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-amendment-2.jsonl",
+      "supersedes_terminal_line": 3
+    }
+  ],
+  "amendment_push_results": [
+    {
+      "record_id": "entry-6440",
+      "revision": 1,
+      "commit": "21a906a30a377f895709ded7dbeea77fb3029b3b",
+      "exit_code": 0,
+      "result": "branch updated successfully"
     }
   ]
 }
