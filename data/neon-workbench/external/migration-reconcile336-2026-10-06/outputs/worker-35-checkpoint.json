@@ -59,10 +59,10 @@
   ],
   "all_assigned_records_pushed": true,
   "amendment_processed_record_ids": [
-    "entry-2562"
+    "entry-2562",
+    "entry-6356"
   ],
   "amendment_remaining_record_ids": [
-    "entry-6356",
     "entry-6743"
   ],
   "latest_amendment_revision": 2,
