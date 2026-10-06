@@ -46,8 +46,24 @@
         }
       ],
       "verified_remote_branch_head": "af470cfe5783dda36acca69f6f0632b4cce8a43d"
+    },
+    {
+      "record_id": "entry-5749",
+      "output_commit": "e044e16c",
+      "remote": "immutable repository 1082328314 via stack-recognized renamed-repository alias https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "command": "git push <renamed-repository-alias> HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
+      "exit_code": 0,
+      "result": "success; GitHub redirected to canonical https://github.com/p5n-n3t/trumpfiles-fun-new.git"
     }
   ],
   "last_record_id": "entry-5749",
-  "last_validation_gate": []
+  "last_validation_gate": [],
+  "checkpoint_push_results": [
+    {
+      "record_id": "entry-835",
+      "commit": "60e412ca",
+      "exit_code": 0,
+      "result": "success via renamed-repository alias"
+    }
+  ]
 }
