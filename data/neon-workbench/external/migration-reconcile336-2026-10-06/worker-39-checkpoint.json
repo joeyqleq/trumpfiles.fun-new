@@ -111,8 +111,18 @@
       "record_id": "entry-6757",
       "revision": 2,
       "amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-39-amendment-6.jsonl",
-      "commit": "pending",
-      "push_result": "pending",
+      "commit": "a713d694",
+      "push_result": {
+        "fallback_push": {
+          "exit_code": 0,
+          "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+          "result": "success; GitHub reported repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+          "repository_id": 1082328314,
+          "branch": "ls/18-trump-files-migration-reconciliation-39--w96S"
+        },
+        "configured_origin": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "canonical_origin_attempt": "not repeated; the immediately preceding canonical attempt was rejected by the Lightsprint credential helper for this same repository"
+      },
       "remainingIDs": []
     }
   ]
