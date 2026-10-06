@@ -9,10 +9,10 @@
   "fetch_result": "git fetch origin codex/migration-reconcile336-2026-10-06 succeeded; FETCH_HEAD resolved to 19a772e15765348b82f6d708ad63f58927931321",
   "completed_ids": [
     "entry-2854",
-    "entry-6413"
+    "entry-6413",
+    "entry-6763"
   ],
   "remaining_ids": [
-    "entry-6763",
     "entry-7048"
   ],
   "push_results": [
@@ -31,5 +31,5 @@
       "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
     }
   ],
-  "last_updated_after": "entry-6413 push verified; remaining IDs unchanged"
+  "last_updated_after": "entry-6763 reconciliation before initial push"
 }
