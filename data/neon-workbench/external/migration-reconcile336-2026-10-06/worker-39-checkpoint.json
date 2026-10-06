@@ -47,10 +47,17 @@
         "repository_id": 1082328314,
         "configured_origin_remains": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
       }
+    },
+    {
+      "record_id": "entry-6757",
+      "revision": 1,
+      "amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-39-amendment-3.jsonl",
+      "output_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-39-terminal.jsonl",
+      "commit": "pending",
+      "push_result": "pending"
     }
   ],
   "remainingIDs": [
-    "entry-6757",
     "entry-6964"
   ]
 }
