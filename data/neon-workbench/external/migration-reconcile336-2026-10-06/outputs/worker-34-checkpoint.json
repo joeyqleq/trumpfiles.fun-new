@@ -28,8 +28,8 @@
     "result": "success",
     "remote": "origin",
     "branch": "ls/5-trump-files-migration-reconciliation-34--VMtO",
-    "pushed_commit": "07def2b4",
-    "scope": "checkpoint after entry-2557; entry-6324 appended for next push"
+    "pushed_commit": "df81853b",
+    "scope": "entry-6324 terminal wrapper and amendment ledger; remaining IDs preserved"
   },
   "validator_runtime": "validate_held336.gate unavailable; manual equivalent checks recorded per wrapper"
 }
