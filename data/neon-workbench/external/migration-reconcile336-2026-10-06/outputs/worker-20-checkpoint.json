@@ -29,7 +29,7 @@
   },
   "output_files": {
     "terminal_snapshot": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-20-terminal.jsonl",
-    "append_only_amendments": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-20-amendment-1.jsonl"
+    "append_only_amendments": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-20-amendment-2.jsonl"
   },
   "per_parent_push_results": [
     {
@@ -70,7 +70,7 @@
     }
   ],
   "current_record_id": null,
-  "updated_at_utc": "2026-10-06T10:45:47.821127+00:00",
+  "updated_at_utc": "2026-10-06T22:41:30.806235+00:00",
   "last_successful_data_push": {
     "record_id": "entry-6933",
     "commit": "ce7f8c7f5997d258ba8b717d6a1695f4b9309d98",
@@ -79,5 +79,39 @@
     "stdout": "",
     "stderr": "remote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit:        \nremote:      https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot        \nremote: \nTo https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   0c6e0cc9..ce7f8c7f  HEAD -> ls/3-trump-files-migration-reconciliation-20--i7_e",
     "success": true
+  },
+  "latest_packet_fetch_result": {
+    "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
+    "exit_code": 0,
+    "fetched_ref": "origin/codex/migration-reconcile336-2026-10-06",
+    "commit": "19a772e15765348b82f6d708ad63f58927931321",
+    "stdout": "From https://github.com/p5n-n3t/trumpfiles-fun-new\n * branch codex/migration-reconcile336-2026-10-06 -> FETCH_HEAD\n * [new branch] codex/migration-reconcile336-2026-10-06 -> origin/codex/migration-reconcile336-2026-10-06",
+    "result": "The fetched commit matches the requested packet commit."
+  },
+  "repository_identity_verification": {
+    "remote_url": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+    "github_full_name": "p5n-n3t/trumpfiles-fun-new",
+    "immutable_id": 1082328314,
+    "verified": true
+  },
+  "latest_amendment_append": {
+    "file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-20-amendment-2.jsonl",
+    "record_ids": [
+      "entry-5850",
+      "entry-6933"
+    ],
+    "revision": 2,
+    "reason": "Resolve the two coordinator-reported missing_core_labels issues; preserve the previous terminal and amendment history."
+  },
+  "validation_summary": {
+    "exact_assigned_ids": [
+      "entry-2332",
+      "entry-5850",
+      "entry-6642",
+      "entry-6933"
+    ],
+    "direct_checks": "Passed exact IDs, wrapper completeness, title/short/medium/long limits, literal quotes, impact-v2 arithmetic, duplicate survivor handling, core labels, and unverified publication boundary.",
+    "held336_gate": "The validate_held336 implementation/tool is not present in this checkout. Existing recorded gate findings are empty; direct criteria were checked locally.",
+    "checked_at_utc": "2026-10-06T22:41:30.806199+00:00"
   }
 }
