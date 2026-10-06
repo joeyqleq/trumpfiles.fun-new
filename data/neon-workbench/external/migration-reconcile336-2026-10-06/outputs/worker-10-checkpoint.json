@@ -43,6 +43,14 @@
       "transport_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
       "canonical_repository_id": 1082328314,
       "remote_branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf"
+    },
+    {
+      "record_id": "entry-6611",
+      "commit": "4441a46b6f6b151622a244616e6ab2c2f13c2f44",
+      "result": "success",
+      "transport_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "canonical_repository_id": 1082328314,
+      "remote_branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf"
     }
   ],
   "last_completed_record_id": "entry-6611",
@@ -64,7 +72,12 @@
       "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
       "result": "success",
       "detail": "GitHub redirected the stack-registered legacy name to canonical repository ID 1082328314."
+    },
+    {
+      "record_id": "entry-6611",
+      "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+      "result": "success",
+      "detail": "GitHub redirected the stack-registered legacy name to canonical repository ID 1082328314."
     }
-  ],
-  "current_parent_push": "pending"
+  ]
 }
