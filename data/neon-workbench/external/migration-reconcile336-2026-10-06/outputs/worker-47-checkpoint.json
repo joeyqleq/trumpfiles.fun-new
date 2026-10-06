@@ -25,6 +25,14 @@
     "entry-6781",
     "entry-7085"
   ],
-  "push_results": [],
-  "last_push_result": "pending first parent commit"
+  "push_results": [
+    {
+      "record_id": "entry-4198",
+      "commit": "a6a5b6c1",
+      "remote": "origin",
+      "exit_code": 128,
+      "result": "rejected: Lightsprint credential helper returned HTTP 403, Repository is not a member of this stack; no remote branch update confirmed"
+    }
+  ],
+  "last_push_result": "entry-4198 commit a6a5b6c1 push failed with exit 128; stack-membership rejection"
 }
