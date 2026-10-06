@@ -61,6 +61,14 @@
       "command": "git push <renamed-repository-alias> HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
       "exit_code": 0,
       "result": "success; GitHub redirected to the canonical repository"
+    },
+    {
+      "record_id": "entry-6866",
+      "output_commit": "e28fa542",
+      "remote": "immutable repository 1082328314 via stack-recognized renamed-repository alias",
+      "command": "git push <renamed-repository-alias> HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
+      "exit_code": 0,
+      "result": "success; GitHub redirected to the canonical repository"
     }
   ],
   "last_record_id": "entry-6866",
@@ -75,6 +83,12 @@
     {
       "record_id": "entry-5749",
       "commit": "5ad904f5",
+      "exit_code": 0,
+      "result": "success via renamed-repository alias"
+    },
+    {
+      "record_id": "entry-6600",
+      "commit": "e1ddf3dc",
       "exit_code": 0,
       "result": "success via renamed-repository alias"
     }
