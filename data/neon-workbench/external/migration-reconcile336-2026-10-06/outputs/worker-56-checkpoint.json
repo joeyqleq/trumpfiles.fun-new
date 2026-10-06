@@ -12,11 +12,11 @@
   "remaining_ids": [],
   "latest_completed_record": "entry-6791",
   "output_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-terminal.jsonl",
-  "latest_output_commit": "21a906a30a377f895709ded7dbeea77fb3029b3b",
+  "latest_output_commit": "b1d9384ae912471377dfb544a909008c93dbe6a5",
   "latest_push_result": {
     "command": "git push origin ls/8-trump-files-migration-reconciliation-56--fuH2",
     "exit_code": 0,
-    "pushed_commit": "21a906a30a377f895709ded7dbeea77fb3029b3b",
+    "pushed_commit": "b1d9384ae912471377dfb544a909008c93dbe6a5",
     "result": "branch updated successfully"
   },
   "fetch_result": {
@@ -89,7 +89,10 @@
         "entry-4577-child-03": 1.7
       },
       "unverified_publication_boundary": true,
-      "duplicate_survivor": "entry-7107"
+      "duplicate_survivor": "entry-7107",
+      "entry_6440_core_labels": true,
+      "entry_6791_core_labels": true,
+      "draft_status_and_publication_boundary_preserved": true
     }
   },
   "latest_amended_record": "entry-6791",
@@ -112,6 +115,13 @@
       "record_id": "entry-6440",
       "revision": 1,
       "commit": "21a906a30a377f895709ded7dbeea77fb3029b3b",
+      "exit_code": 0,
+      "result": "branch updated successfully"
+    },
+    {
+      "record_id": "entry-6791",
+      "revision": 1,
+      "commit": "b1d9384ae912471377dfb544a909008c93dbe6a5",
       "exit_code": 0,
       "result": "branch updated successfully"
     }
