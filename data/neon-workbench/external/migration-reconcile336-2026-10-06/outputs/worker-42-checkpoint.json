@@ -35,5 +35,11 @@
     "entry-6774",
     "entry-7050"
   ],
-  "remaining_ids": []
+  "remaining_ids": [],
+  "last_artifact_repair": {
+    "record_id": "entry-6774",
+    "amendment": "worker-42-amendment-5.jsonl",
+    "revision": 2,
+    "status": "validated"
+  }
 }
