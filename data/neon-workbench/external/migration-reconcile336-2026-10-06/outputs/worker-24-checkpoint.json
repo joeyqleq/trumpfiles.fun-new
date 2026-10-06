@@ -29,6 +29,23 @@
     "entry-6672",
     "entry-6939"
   ],
-  "push_receipts": [],
-  "last_parent_saved": "entry-2380"
+  "push_receipts": [
+    {
+      "parent_id": "entry-2380",
+      "content_commit": "28fd95cb60c37c491ae3cea3140f8a3479891daf",
+      "command": "git push -u origin HEAD",
+      "exit_code": 128,
+      "result": "curl: (22) The requested URL returned error: 403\nwarning: invalid credential line: Repository is not a member of this stack\nfatal: could not read Username for 'https://github.com/p5n-n3t/trumpfiles-fun-new.git': No such device or address",
+      "status": "failed"
+    }
+  ],
+  "last_parent_saved": "entry-2380",
+  "last_push_result": {
+    "parent_id": "entry-2380",
+    "content_commit": "28fd95cb60c37c491ae3cea3140f8a3479891daf",
+    "command": "git push -u origin HEAD",
+    "exit_code": 128,
+    "result": "curl: (22) The requested URL returned error: 403\nwarning: invalid credential line: Repository is not a member of this stack\nfatal: could not read Username for 'https://github.com/p5n-n3t/trumpfiles-fun-new.git': No such device or address",
+    "status": "failed"
+  }
 }
