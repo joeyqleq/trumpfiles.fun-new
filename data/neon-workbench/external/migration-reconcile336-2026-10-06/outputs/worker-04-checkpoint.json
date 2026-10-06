@@ -44,11 +44,13 @@
           "result": "success; GitHub reported the repository moved to the canonical URL and created the branch; both URLs resolve to immutable repository ID 1082328314."
         }
       ],
-      "verified_remote_branch_head": "af470cfe5783dda36acca69f6f0632b4cce8a43d"
+      "verified_remote_branch_head": "af470cfe5783dda36acca69f6f0632b4cce8a43d",
+      "exit_code": 0,
+      "result": "success via the stack-recognized renamed-repository alias; origin URL credential lookup failed as separately recorded in attempts"
     },
     {
       "record_id": "entry-5749",
-      "output_commit": "e044e16c",
+      "output_commit": "e044e16c65480d20cffdd48c23c0c500a79a9c3b",
       "remote": "immutable repository 1082328314 via stack-recognized renamed-repository alias https://github.com/p5n-n3t/trumpfiles.fun-new.git",
       "command": "git push <renamed-repository-alias> HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
       "exit_code": 0,
@@ -56,7 +58,7 @@
     },
     {
       "record_id": "entry-6600",
-      "output_commit": "0e764e08",
+      "output_commit": "0e764e082fa8ae3d360c85ca87d1d84a6624ed1a",
       "remote": "immutable repository 1082328314 via stack-recognized renamed-repository alias",
       "command": "git push <renamed-repository-alias> HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
       "exit_code": 0,
@@ -64,7 +66,7 @@
     },
     {
       "record_id": "entry-6866",
-      "output_commit": "e28fa542",
+      "output_commit": "e28fa542711a0c4a350ff638a3d82294f3d3176c",
       "remote": "immutable repository 1082328314 via stack-recognized renamed-repository alias",
       "command": "git push <renamed-repository-alias> HEAD:refs/heads/ls/13-trump-files-migration-reconciliation-04--KTLZ",
       "exit_code": 0,
@@ -76,19 +78,19 @@
   "checkpoint_push_results": [
     {
       "record_id": "entry-835",
-      "commit": "60e412ca",
+      "commit": "60e412ca72799ff9dcb3205f940975f50c386f8a",
       "exit_code": 0,
       "result": "success via renamed-repository alias"
     },
     {
       "record_id": "entry-5749",
-      "commit": "5ad904f5",
+      "commit": "5ad904f5f54f099f582d7f6e9258892ec56f611f",
       "exit_code": 0,
       "result": "success via renamed-repository alias"
     },
     {
       "record_id": "entry-6600",
-      "commit": "e1ddf3dc",
+      "commit": "e1ddf3dcf758498811d1379813eaf54f057cb835",
       "exit_code": 0,
       "result": "success via renamed-repository alias"
     }
