@@ -15,10 +15,10 @@
     "result": "Fetched origin/codex/migration-reconcile336-2026-10-06 and the requested commit to FETCH_HEAD."
   },
   "completed_ids": [
-    "entry-2373"
+    "entry-2373",
+    "entry-5899"
   ],
   "remaining_ids": [
-    "entry-5899",
     "entry-6668",
     "entry-6937"
   ],
@@ -30,6 +30,12 @@
       "result": "Created origin branch ls/17-trump-files-migration-reconciliation-23--lRef; GitHub confirmed the legacy registered URL moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git."
     },
     "entry-5899": {
+      "status": "success",
+      "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push -u origin HEAD",
+      "exit_code": 0,
+      "result": "Updated the worker branch on the repository GitHub identifies at the canonical trumpfiles-fun-new URL; the registered legacy URL redirected to the canonical location."
+    },
+    "entry-6668": {
       "status": "pending"
     }
   }
