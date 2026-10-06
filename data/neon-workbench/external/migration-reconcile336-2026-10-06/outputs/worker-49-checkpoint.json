@@ -23,11 +23,10 @@
   "completedIDs": [
     "entry-4240",
     "entry-6425",
-    "entry-6784"
-  ],
-  "remainingIDs": [
+    "entry-6784",
     "entry-7087"
   ],
+  "remainingIDs": [],
   "push_results": [
     {
       "for_completedIDs": [
@@ -86,6 +85,17 @@
       "exit_code": 0,
       "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   0eb2b8bb..4e926563  HEAD -> ls/7-trump-files-migration-reconciliation-49--bL3n\nbranch set to track origin/ls/7-trump-files-migration-reconciliation-49--bL3n",
       "commit": "4e926563"
+    },
+    {
+      "for_completedIDs": [
+        "entry-4240",
+        "entry-6425",
+        "entry-6784"
+      ],
+      "command": "git push -u origin HEAD",
+      "exit_code": 0,
+      "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\\n   4e926563..de2e9e7b  HEAD -> ls/7-trump-files-migration-reconciliation-49--bL3n\\nbranch set to track origin/ls/7-trump-files-migration-reconciliation-49--bL3n",
+      "commit": "de2e9e7b"
     }
   ]
 }
