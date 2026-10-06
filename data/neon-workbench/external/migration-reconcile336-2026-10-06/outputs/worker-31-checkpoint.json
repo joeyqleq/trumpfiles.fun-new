@@ -21,6 +21,23 @@
     "commit": "19a772e15765348b82f6d708ad63f58927931321",
     "result": "success; git fetch origin codex/migration-reconcile336-2026-10-06; FETCH_HEAD matched requested commit"
   },
-  "push_results": [],
+  "push_results": [
+    {
+      "for_parent": "entry-2504",
+      "commit": "528c885a",
+      "canonical_origin_attempt": {
+        "result": "failed",
+        "details": "origin is canonical; Lightsprint credential helper returned HTTP 403 with “Repository is not a member of this stack”; no refs updated"
+      },
+      "successful_push": {
+        "result": "success",
+        "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push -u origin HEAD",
+        "registered_alias_response": "GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
+        "commit": "528c885a",
+        "effective_repository_id": 1082328314
+      }
+    }
+  ],
   "current_branch": "ls/17-trump-files-migration-reconciliation-31--DqWK"
 }
