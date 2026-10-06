@@ -39,8 +39,14 @@
       "revision": 1,
       "amendment_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-39-amendment-2.jsonl",
       "output_file": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-39-terminal.jsonl",
-      "commit": "pending",
-      "push_result": "pending"
+      "commit": "238af529",
+      "push_result": {
+        "exit_code": 0,
+        "push_url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+        "result": "pushed successfully; GitHub confirmed redirect to canonical trumpfiles-fun-new repository",
+        "repository_id": 1082328314,
+        "configured_origin_remains": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
+      }
     }
   ],
   "remainingIDs": [
