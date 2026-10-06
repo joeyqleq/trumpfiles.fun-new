@@ -8,10 +8,10 @@
     "entry-6866"
   ],
   "completed_ids": [
-    "entry-835"
+    "entry-835",
+    "entry-5749"
   ],
   "remaining_ids": [
-    "entry-5749",
     "entry-6600",
     "entry-6866"
   ],
@@ -48,5 +48,6 @@
       "verified_remote_branch_head": "af470cfe5783dda36acca69f6f0632b4cce8a43d"
     }
   ],
-  "last_record_id": "entry-835"
+  "last_record_id": "entry-5749",
+  "last_validation_gate": []
 }
