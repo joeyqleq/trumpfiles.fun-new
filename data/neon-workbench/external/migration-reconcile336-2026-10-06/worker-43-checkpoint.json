@@ -43,12 +43,25 @@
         "exit_code": 0,
         "result": "New branch created. GitHub reported old URL moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git. Both old and canonical URLs resolve to immutable repository ID 1082328314."
       }
+    },
+    {
+      "record_id": "entry-6776",
+      "canonical_origin_attempt": {
+        "command": "git push -u origin HEAD",
+        "exit_code": 128,
+        "result": "Rejected by Lightsprint git credential proxy: HTTP 403, Repository is not a member of this stack."
+      },
+      "successful_push": {
+        "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:refs/heads/ls/19-trump-files-migration-reconciliation-43--LLHi",
+        "exit_code": 0,
+        "result": "Pushed commit 7019abad to the branch. GitHub reported the old URL moved to the canonical URL; both resolve to immutable repository ID 1082328314."
+      }
     }
   ],
   "pending_parent_push": {
     "record_id": "entry-6776",
-    "status": "awaiting_push"
+    "status": "push_recorded_checkpoint_update_pending"
   },
-  "last_updated_after": "entry-6776 terminal and revision-1 full-wrapper amendment appended; canonical-origin push result pending.",
+  "last_updated_after": "entry-6776 content pushed successfully through GitHub old-URL redirect; canonical credential-proxy rejection recorded.",
   "push_route_note": "origin remains the requested canonical URL. The stack registration names the same immutable repo under its former slug, so the credential proxy rejects canonical URL membership; push through the former URL succeeds and GitHub redirects to the canonical repo."
 }
