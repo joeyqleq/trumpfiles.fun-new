@@ -19,10 +19,10 @@
     "entry-6928"
   ],
   "completed_ids": [
-    "entry-1777"
+    "entry-1777",
+    "entry-5832"
   ],
   "remaining_ids": [
-    "entry-5832",
     "entry-6625",
     "entry-6928"
   ],
@@ -46,5 +46,10 @@
       "result": "Lightsprint credential helper returned HTTP 403: Repository is not a member of this stack; no branch was pushed by this attempt."
     },
     "successful_method": "Temporary push URL used the registered historic slug; GitHub returned its moved-repository notice to the canonical URL, and the canonical repository accepted the push. The configured origin URL remains canonical."
+  },
+  "last_parent_push": {
+    "record_id": "entry-5832",
+    "revision": 2,
+    "status": "pending"
   }
 }
