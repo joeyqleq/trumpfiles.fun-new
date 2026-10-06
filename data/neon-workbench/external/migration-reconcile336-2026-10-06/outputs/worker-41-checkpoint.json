@@ -44,7 +44,7 @@
       "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
     }
   ],
-  "last_updated_after": "all three coordinator-reported core-label corrections appended as revision-2 amendments; final push result pending",
+  "last_updated_after": "all assigned records reconciled; three coordinator core-label findings resolved by immutable revision-2 amendments; no remaining IDs",
   "fetch_verification": {
     "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
     "result": "success; FETCH_HEAD and origin/codex/migration-reconcile336-2026-10-06 resolved to 19a772e15765348b82f6d708ad63f58927931321",
@@ -69,6 +69,14 @@
       "record_id": "entry-6413",
       "amendment_revision": 2,
       "commit": "3a5afb89",
+      "command": "git push origin HEAD",
+      "result": "success; remote branch updated on canonical origin",
+      "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
+    },
+    {
+      "record_id": "entry-6763",
+      "amendment_revision": 2,
+      "commit": "ead3ee60",
       "command": "git push origin HEAD",
       "result": "success; remote branch updated on canonical origin",
       "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git"
