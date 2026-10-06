@@ -7,10 +7,10 @@
     "entry-6900"
   ],
   "completed_ids": [
-    "entry-1716"
+    "entry-1716",
+    "entry-5761"
   ],
   "remaining_ids": [
-    "entry-5761",
     "entry-6611",
     "entry-6900"
   ],
@@ -37,7 +37,7 @@
       "remote_branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf"
     }
   ],
-  "last_completed_record_id": "entry-1716",
+  "last_completed_record_id": "entry-5761",
   "push_attempts": [
     {
       "record_id": "entry-1716",
@@ -51,5 +51,6 @@
       "result": "success",
       "detail": "Push accepted. GitHub reports this repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git; both names resolve to immutable repository ID 1082328314."
     }
-  ]
+  ],
+  "current_parent_push": "pending"
 }
