@@ -10,7 +10,7 @@
     "entry-7113"
   ],
   "remaining_ids": [],
-  "latest_completed_record": "entry-7113",
+  "latest_completed_record": "entry-6440",
   "output_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-terminal.jsonl",
   "latest_output_commit": "09b412af4cb146d06f4e93d17883e85685b3c607",
   "latest_push_result": {
@@ -25,7 +25,7 @@
     "resolved_commit": "19a772e15765348b82f6d708ad63f58927931321",
     "branch_ref": "origin/codex/migration-reconcile336-2026-10-06"
   },
-  "latest_amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-amendment-1.jsonl",
+  "latest_amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-amendment-2.jsonl",
   "latest_amendment_revision": 1,
   "push_results": [
     {
@@ -91,5 +91,14 @@
       "unverified_publication_boundary": true,
       "duplicate_survivor": "entry-7107"
     }
-  }
+  },
+  "latest_amended_record": "entry-6440",
+  "amendment_history": [
+    {
+      "record_id": "entry-6440",
+      "revision": 1,
+      "path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-56-amendment-2.jsonl",
+      "supersedes_terminal_line": 2
+    }
+  ]
 }
