@@ -12,10 +12,10 @@
   },
   "completed_ids": [
     "entry-4239",
-    "entry-6424"
+    "entry-6424",
+    "entry-6782"
   ],
   "remaining_ids": [
-    "entry-6782",
     "entry-7086"
   ],
   "push_results": [
@@ -36,5 +36,5 @@
       "result": "success; parent amendment pushed to required task branch"
     }
   ],
-  "checkpoint_state": "entries 4239 and 6424 committed and pushed; exact remaining IDs recorded"
+  "checkpoint_state": "entry-6782 reconciled; awaiting parent push result"
 }
