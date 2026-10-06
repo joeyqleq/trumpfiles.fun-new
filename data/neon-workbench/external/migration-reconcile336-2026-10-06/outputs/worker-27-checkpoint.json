@@ -17,11 +17,12 @@
   },
   "completedIDs": [
     "entry-2458",
-    "entry-6200",
     "entry-6691",
     "entry-6943"
   ],
-  "remainingIDs": [],
+  "remainingIDs": [
+    "entry-6200"
+  ],
   "push_results": [
     {
       "record_id": "entry-2458",
@@ -141,5 +142,19 @@
       }
     }
   ],
-  "updated_at": "2026-10-06T10:46:16.868398+00:00"
+  "updated_at": "2026-10-06T22:41:13.330261+00:00",
+  "core_label_corrections": [
+    {
+      "record_id": "entry-2458",
+      "amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-27-amendment-5.jsonl",
+      "revision": 2,
+      "status": "appended_pending_push"
+    },
+    {
+      "record_id": "entry-6200",
+      "amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-27-amendment-6.jsonl",
+      "revision": 3,
+      "status": "appended_pending_commit"
+    }
+  ]
 }
