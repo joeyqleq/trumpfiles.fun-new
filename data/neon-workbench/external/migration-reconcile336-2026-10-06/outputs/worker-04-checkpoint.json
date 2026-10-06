@@ -9,11 +9,12 @@
   ],
   "completed_ids": [
     "entry-835",
-    "entry-5749",
+    "entry-5749"
+  ],
+  "remaining_ids": [
     "entry-6600",
     "entry-6866"
   ],
-  "remaining_ids": [],
   "repository": {
     "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "full_name": "p5n-n3t/trumpfiles-fun-new",
@@ -21,10 +22,13 @@
     "branch": "ls/13-trump-files-migration-reconciliation-04--KTLZ"
   },
   "packet_fetch": {
+    "remote": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
     "remote_ref": "refs/heads/codex/migration-reconcile336-2026-10-06",
     "commit": "19a772e15765348b82f6d708ad63f58927931321",
-    "result": "success; fetched origin/codex/migration-reconcile336-2026-10-06 to FETCH_HEAD and origin tracking ref",
-    "command_exit_code": 0
+    "result": "success; direct canonical-URL fetch populated FETCH_HEAD and matched requested commit",
+    "command": "git fetch https://github.com/p5n-n3t/trumpfiles-fun-new.git codex/migration-reconcile336-2026-10-06",
+    "command_exit_code": 0,
+    "verified_with": "git rev-parse FETCH_HEAD; git cat-file -t requested SHA; git ls-remote origin refs/heads/codex/migration-reconcile336-2026-10-06"
   },
   "push_results": [
     {
@@ -73,8 +77,11 @@
       "result": "success; GitHub redirected to the canonical repository"
     }
   ],
-  "last_record_id": "entry-6866",
-  "last_validation_gate": [],
+  "last_record_id": "entry-5749",
+  "last_validation_gate": {
+    "available": false,
+    "reason": "validate_held336.gate is not installed or present in the repository; custom structural and content checks are being run."
+  },
   "checkpoint_push_results": [
     {
       "record_id": "entry-835",
@@ -94,5 +101,6 @@
       "exit_code": 0,
       "result": "success via renamed-repository alias"
     }
-  ]
+  ],
+  "label_correction_push_results": []
 }
