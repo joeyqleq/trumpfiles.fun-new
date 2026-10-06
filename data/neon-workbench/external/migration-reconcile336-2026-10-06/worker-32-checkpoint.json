@@ -16,5 +16,14 @@
     "entry-6736",
     "entry-6951"
   ],
-  "last_successful_push": null
+  "last_successful_push": {
+    "command": "git push https://github.com/p5n-n3t/trumpfiles.fun-new.git HEAD:ls/17-trump-files-migration-reconciliation-32--rVYQ",
+    "result": "succeeded; GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git and created the branch there.",
+    "repository_id": 1082328314,
+    "commit": "c38dad60"
+  },
+  "origin_push_result": {
+    "command": "git push -u origin HEAD",
+    "result": "failed with HTTP 403; Lightsprint credential reported the repository is not a member of this stack because its registered fullName retains the old .fun-new spelling."
+  }
 }
