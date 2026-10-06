@@ -3,10 +3,10 @@
   "status": "in_progress",
   "processed_record_ids": [
     "entry-2562",
-    "entry-6356"
+    "entry-6356",
+    "entry-6743"
   ],
   "remaining_record_ids": [
-    "entry-6743",
     "entry-6958"
   ],
   "assigned_record_ids": [
