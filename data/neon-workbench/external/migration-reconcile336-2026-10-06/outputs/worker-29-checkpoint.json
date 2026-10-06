@@ -61,7 +61,19 @@
           "result": "Push succeeded; GitHub reported redirect to canonical repository URL, immutable repository ID 1082328314."
         }
       ]
+    },
+    {
+      "parent_record_id": "entry-6696",
+      "commit": "364541d96756d94ec3ee70bea1a27609739be4db",
+      "success": true,
+      "attempts": [
+        {
+          "url": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
+          "command": "git push <verified-redirect-url> HEAD:refs/heads/ls/17-trump-files-migration-reconciliation-29--M0N2",
+          "exit_code": 0,
+          "result": "Push succeeded; GitHub reported redirect to canonical repository URL, immutable repository ID 1082328314."
+        }
+      ]
     }
-  ],
-  "pending_push_for_parent_commit": "entry-6696"
+  ]
 }
