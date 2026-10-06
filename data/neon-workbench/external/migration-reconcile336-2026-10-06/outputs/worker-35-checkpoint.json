@@ -2,10 +2,10 @@
   "worker": "35",
   "status": "in_progress",
   "processed_record_ids": [
-    "entry-2562"
+    "entry-2562",
+    "entry-6356"
   ],
   "remaining_record_ids": [
-    "entry-6356",
     "entry-6743",
     "entry-6958"
   ],
