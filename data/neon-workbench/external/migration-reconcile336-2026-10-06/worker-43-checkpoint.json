@@ -25,11 +25,10 @@
   "completed_record_ids": [
     "entry-3371",
     "entry-6415",
-    "entry-6776"
-  ],
-  "remaining_record_ids": [
+    "entry-6776",
     "entry-7051"
   ],
+  "remaining_record_ids": [],
   "parent_push_results": [
     {
       "record_id": "entry-3371",
@@ -59,9 +58,9 @@
     }
   ],
   "pending_parent_push": {
-    "record_id": "entry-6776",
-    "status": "push_recorded_checkpoint_update_pending"
+    "record_id": "entry-7051",
+    "status": "awaiting_push"
   },
-  "last_updated_after": "entry-6776 content pushed successfully through GitHub old-URL redirect; canonical credential-proxy rejection recorded.",
+  "last_updated_after": "entry-7051 terminal and revision-1 full-wrapper amendment appended; push result pending.",
   "push_route_note": "origin remains the requested canonical URL. The stack registration names the same immutable repo under its former slug, so the credential proxy rejects canonical URL membership; push through the former URL succeeds and GitHub redirects to the canonical repo."
 }
