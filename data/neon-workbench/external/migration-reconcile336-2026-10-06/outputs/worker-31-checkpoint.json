@@ -8,10 +8,10 @@
   ],
   "completedIDs": [
     "entry-2504",
-    "entry-6280",
-    "entry-6729"
+    "entry-6280"
   ],
   "remainingIDs": [
+    "entry-6729",
     "entry-6950"
   ],
   "packet_fetch": {
@@ -48,23 +48,40 @@
         "github_redirect": "https://github.com/p5n-n3t/trumpfiles-fun-new.git",
         "branch": "ls/17-trump-files-migration-reconciliation-31--DqWK"
       }
+    },
+    {
+      "for_parent": "entry-2504",
+      "commit": "5188c4c5",
+      "canonical_origin_attempt": "not retried; the checkpoint already records the canonical-name membership-check HTTP 403",
+      "successful_push": {
+        "result": "success",
+        "command": "git -c remote.origin.pushurl=https://github.com/p5n-n3t/trumpfiles.fun-new.git push -u origin HEAD",
+        "registered_alias_response": "GitHub reported the repository moved to https://github.com/p5n-n3t/trumpfiles-fun-new.git",
+        "branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
+        "commit": "5188c4c5",
+        "effective_repository_id": 1082328314
+      }
     }
   ],
   "current_branch": "ls/17-trump-files-migration-reconciliation-31--DqWK",
-  "latest_parent": "entry-6729",
+  "latest_parent": "entry-2504",
   "latest_parent_validation": {
     "assigned_id_exact": true,
-    "title_chars": 74,
-    "short_chars": 142,
-    "medium_words": 57,
-    "long_words": 142,
+    "terminal_outcome": "draft_as_supplied",
+    "title_chars": 67,
+    "short_chars": 131,
+    "medium_words": 72,
+    "long_words": 164,
     "title_limit": true,
     "short_limit": true,
     "medium_limit": true,
     "long_limit": true,
     "known_quotes_match_excerpts": true,
+    "held336_gate_errors": [],
+    "evidence_status": "unverified_as_supplied",
+    "publication_eligible": false,
+    "core_labels_present": true,
     "impact_v2_deferred_valid": true,
-    "unverified_boundary": true,
-    "no_split_or_duplicate_evidence": "no counterpart or distinct supported child supplied"
+    "unresolved_nexus": "No Trump-related collection nexus established; remain unpublished contextual draft."
   }
 }
