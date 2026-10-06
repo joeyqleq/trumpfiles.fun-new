@@ -47,6 +47,15 @@
       "command": "git push origin ls/5-trump-files-migration-reconciliation-35--38S7",
       "exit_code": 0,
       "result": "push succeeded; remote advanced from 7962c684"
+    },
+    {
+      "record_id": "entry-6958",
+      "commit": "d12f0b56",
+      "branch": "ls/5-trump-files-migration-reconciliation-35--38S7",
+      "command": "git push origin ls/5-trump-files-migration-reconciliation-35--38S7",
+      "exit_code": 0,
+      "result": "push succeeded; remote advanced from 780beeed"
     }
-  ]
+  ],
+  "all_assigned_records_pushed": true
 }
