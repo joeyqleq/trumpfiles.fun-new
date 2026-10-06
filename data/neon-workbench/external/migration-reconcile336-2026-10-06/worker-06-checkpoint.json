@@ -45,6 +45,20 @@
       "command": "git push origin HEAD",
       "exit_code": 0,
       "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n d91f8443..86816967 HEAD -> ls/1-trump-files-migration-reconciliation-06--0ROU"
+    },
+    {
+      "after_parent_id": "entry-5754",
+      "commit": "37b85f27",
+      "command": "git push origin HEAD",
+      "exit_code": 0,
+      "output": "To https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   6ec35338..37b85f27  HEAD -> ls/1-trump-files-migration-reconciliation-06--0ROU"
     }
-  ]
+  ],
+  "latest_reconciliation": {
+    "parent_id": "entry-5754",
+    "artifact_issue_resolved": "migration336:entry-5754:missing_core_labels:entry-5754",
+    "amendment_path": "data/neon-workbench/external/migration-reconcile336-2026-10-06/outputs/worker-06-amendment-5.jsonl",
+    "revision": 2,
+    "commit": "37b85f27"
+  }
 }
