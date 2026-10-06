@@ -9,11 +9,10 @@
   "completed_ids": [
     "entry-1716",
     "entry-5761",
-    "entry-6611"
-  ],
-  "remaining_ids": [
+    "entry-6611",
     "entry-6900"
   ],
+  "remaining_ids": [],
   "status": "in_progress",
   "repository": {
     "origin_before": "https://github.com/p5n-n3t/trumpfiles.fun-new.git",
@@ -53,7 +52,7 @@
       "remote_branch": "ls/14-trump-files-migration-reconciliation-10--Z2Zf"
     }
   ],
-  "last_completed_record_id": "entry-6611",
+  "last_completed_record_id": "entry-6900",
   "push_attempts": [
     {
       "record_id": "entry-1716",
@@ -79,5 +78,6 @@
       "result": "success",
       "detail": "GitHub redirected the stack-registered legacy name to canonical repository ID 1082328314."
     }
-  ]
+  ],
+  "current_parent_push": "pending"
 }
