@@ -70,7 +70,7 @@
     }
   ],
   "current_record_id": null,
-  "updated_at_utc": "2026-10-06T22:41:40.518560+00:00",
+  "updated_at_utc": "2026-10-06T22:41:54.828873+00:00",
   "last_successful_data_push": {
     "record_ids": [
       "entry-5850",
@@ -79,9 +79,8 @@
     "commit": "ebe385555b5f1d83156ca883b4ec62d2b4371324",
     "command": "git push -u origin HEAD",
     "exit_code": 0,
-    "stdout": "branch ls/3-trump-files-migration-reconciliation-20--i7_e pushed to origin; remote accepted HEAD as ls/3-trump-files-migration-reconciliation-20--i7_e.",
-    "stderr": "GitHub emitted its default-branch vulnerability notice; push completed successfully.",
-    "success": true
+    "success": true,
+    "output": "remote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit:        \nremote:      https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot        \nremote: \nTo https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   79f592e7..ebe38555  HEAD -> ls/3-trump-files-migration-reconciliation-20--i7_e\nbranch 'ls/3-trump-files-migration-reconciliation-20--i7_e' set up to track 'origin/ls/3-trump-files-migration-reconciliation-20--i7_e'."
   },
   "latest_packet_fetch_result": {
     "command": "git fetch origin codex/migration-reconcile336-2026-10-06",
@@ -125,8 +124,7 @@
     "commit": "ebe385555b5f1d83156ca883b4ec62d2b4371324",
     "command": "git push -u origin HEAD",
     "exit_code": 0,
-    "stdout": "branch ls/3-trump-files-migration-reconciliation-20--i7_e pushed to origin; remote accepted HEAD as ls/3-trump-files-migration-reconciliation-20--i7_e.",
-    "stderr": "GitHub emitted its default-branch vulnerability notice; push completed successfully.",
-    "success": true
+    "success": true,
+    "output": "remote: \nremote: GitHub found 42 vulnerabilities on p5n-n3t/trumpfiles-fun-new's default branch (17 high, 21 moderate, 4 low). To find out more, visit:        \nremote:      https://github.com/p5n-n3t/trumpfiles-fun-new/security/dependabot        \nremote: \nTo https://github.com/p5n-n3t/trumpfiles-fun-new.git\n   79f592e7..ebe38555  HEAD -> ls/3-trump-files-migration-reconciliation-20--i7_e\nbranch 'ls/3-trump-files-migration-reconciliation-20--i7_e' set up to track 'origin/ls/3-trump-files-migration-reconciliation-20--i7_e'."
   }
 }
