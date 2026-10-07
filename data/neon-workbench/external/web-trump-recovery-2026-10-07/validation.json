@@ -1,0 +1,38 @@
+{
+  "assigned_records": 336,
+  "final_records": 336,
+  "input_rows": 336,
+  "missing_ids": [],
+  "duplicate_outcomes": 0,
+  "outside_assignment": 0,
+  "validation_errors": 0,
+  "status_counts": {
+    "draft_as_supplied": 40,
+    "duplicate_resolved": 68,
+    "exclusion_candidate": 8,
+    "hold": 109,
+    "pass": 86,
+    "split_ready": 25
+  },
+  "inputs": [
+    "recovered-terminal-results.jsonl",
+    "partials/missing-a.jsonl",
+    "partials/missing-b.jsonl",
+    "partials/missing-c.jsonl",
+    "partials/missing-d.jsonl",
+    "partials/missing-e.jsonl",
+    "partials/missing-f.jsonl",
+    "partials/recovery-gaps.jsonl"
+  ],
+  "checks": [
+    "exact assigned universe",
+    "JSONL",
+    "wrapper/status schema",
+    "text limits",
+    "impact arithmetic and precision",
+    "source URL format",
+    "literal quote excerpts",
+    "split parent links",
+    "duplicate survivor mappings"
+  ]
+}

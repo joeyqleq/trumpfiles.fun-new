@@ -1,0 +1,53 @@
+{
+  "reviewed_records": 336,
+  "assigned_records": 336,
+  "missing_ids": [],
+  "duplicate_ids": 0,
+  "source_status_counts": {
+    "draft_as_supplied": 40,
+    "duplicate_resolved": 68,
+    "exclusion_candidate": 8,
+    "hold": 109,
+    "pass": 86,
+    "split_ready": 25
+  },
+  "review_status_counts": {
+    "retain_duplicate_mapping": 68,
+    "retain_exclusion_candidate": 8,
+    "retain_hold": 109,
+    "retain_proposal": 86,
+    "retain_split_ready": 25,
+    "retain_unverified_draft": 40
+  },
+  "content_recheck_errors": [],
+  "proposed_amendments": {
+    "entry-5845": {
+      "type": "survivor_merge_patch",
+      "survivor_record_id": "entry-665",
+      "instruction": "Correct the survivor to three provisional Ivanka Trump China approvals dated 2017-04-06; preserve CNN/AP URLs and do not infer causation from the dinner timing."
+    },
+    "entry-6673": {
+      "type": "copy_narrowing",
+      "instruction": "Remove the unsupported $300 million revenue claim while retaining the sourced branded-Bible promotion account."
+    },
+    "entry-6797": {
+      "type": "copy_narrowing",
+      "instruction": "Remove the unsupported independent-counsel repeal claim; retain the sourced agency-supervision/OIRA order."
+    },
+    "entry-6955": {
+      "type": "score_completion",
+      "instruction": "Add the missing computed weighted_total 2.875 to the existing impact proposal, or explicitly preserve it as an unscored exception. Dimensions already calculate to 2.875."
+    }
+  },
+  "checks": [
+    "exact review universe",
+    "one outcome per parent",
+    "copy lengths",
+    "source URL format",
+    "literal quote excerpts",
+    "impact arithmetic",
+    "split child links retained",
+    "duplicate mappings explicitly non-canonical"
+  ],
+  "counterpart_limit": "This checkout contains mapping evidence but not canonical survivor records; duplicate outcomes remain merge proposals pending canonical editorial review."
+}
